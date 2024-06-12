@@ -1,63 +1,62 @@
-# Project Environment
+# Projektumgebung
 
-Organizing your files is crucial for efficiency and accessibility in data science and software development projects. To start, we create a folder named `toolkit-lab` on your machine and establish subdirectories `code` and `data` to keep your project organized.
+Das Organisieren Ihrer Dateien ist entscheidend für Effizienz und Zugänglichkeit in Datenwissenschafts- und Softwareentwicklungsprojekten. Zunächst erstellen wir einen Ordner namens `toolkit-lab` auf Ihrem Rechner und legen Unterverzeichnisse `code` und `data` an, um Ihr Projekt strukturiert zu halten.
 
-Instead of using a graphical user interface (GUI) like Windows File Explorer or macOS Finder, we will use the Command Line Interface (CLI) to accomplish this. 
+Anstatt eine grafische Benutzeroberfläche (GUI) wie den Windows-Explorer oder den macOS Finder zu verwenden, werden wir die Befehlszeilenschnittstelle (CLI) nutzen, um dies zu erreichen.
 
 :::{.callout-note appearance="minimal"}
-The command line may seem daunting at first, but it opens up a new level of interaction with your computer. As you become more familiar with it, you'll find many tasks can be completed more efficiently than using a GUI.
+Die Befehlszeile mag auf den ersten Blick einschüchternd wirken, aber sie eröffnet eine neue Ebene der Interaktion mit Ihrem Computer. Wenn Sie sich daran gewöhnt haben, werden Sie feststellen, dass viele Aufgaben effizienter erledigt werden können als mit einer GUI.
 :::
 
-The CLI, also known as cmd, prompt, console, or terminal, is a powerful tool for setting up your working environment. It operates through a program called a *shell*, enabling direct communication with the operating system via text-based inputs.
+Die CLI, auch bekannt als cmd, Eingabeaufforderung, Konsole oder Terminal, ist ein leistungsstarkes Werkzeug zum Einrichten Ihrer Arbeitsumgebung. Sie arbeitet über ein Programm namens *Shell*, das eine direkte Kommunikation mit dem Betriebssystem über textbasierte Eingaben ermöglicht.
 
 ## Windows
 
-Follow these steps to create the main directory and subdirectories using the Windows Command Prompt:
+Folgen Sie diesen Schritten, um das Hauptverzeichnis und die Unterverzeichnisse mit der Windows-Eingabeaufforderung zu erstellen:
 
-1. Press `Windows + R` keys simultaneously to open the Run dialog.
-1. Type `cmd` and press `Enter` to open the Command Prompt.
-1. We create a new folder named `toolkit-lab` (copy this code and enter it in your Command Prompt):
+1. Drücken Sie gleichzeitig die Tasten `Windows + R`, um das Ausführen-Dialogfeld zu öffnen.
+2. Geben Sie `cmd` ein und drücken Sie `Enter`, um die Eingabeaufforderung zu öffnen.
+3. Erstellen Sie einen neuen Ordner namens `toolkit-lab` (kopieren Sie diesen Code und geben Sie ihn in Ihre Eingabeaufforderung ein):
 
     ```bash
     mkdir toolkit-lab
     ```
 
-1. Use `cd`(change directory) to navigate into the `toolkit-lab` directory:
+4. Verwenden Sie `cd` (change directory), um in das Verzeichnis `toolkit-lab` zu wechseln:
 
     ```bash
     cd toolkit-lab
     ```
 
-1. Use `mkdir` (make directory) to create the subdirectories `code` and `data`:
+5. Verwenden Sie `mkdir` (make directory), um die Unterverzeichnisse `code` und `data` zu erstellen:
 
     ```bash
     mkdir code data
     ```
 
-These commands set up a parent directory `toolkit-lab` with two subdirectories `code` for your scripts and applications, and `data` for storing datasets and related files.
-
+Diese Befehle richten ein Hauptverzeichnis `toolkit-lab` mit zwei Unterverzeichnissen ein: `code` für Ihre Skripte und Anwendungen und `data` zum Speichern von Datensätzen und zugehörigen Dateien.
 
 ## macOS/Linux
 
-Follow these steps to create the main directory and subdirectories using the Terminal in macOS or Linux:
+Folgen Sie diesen Schritten, um das Hauptverzeichnis und die Unterverzeichnisse mit dem Terminal in macOS oder Linux zu erstellen:
 
-1. To open the Terminal in macOS, you can use Spotlight Search (`Cmd + Space`) and type "Terminal," or navigate through `Applications -> Utilities -> Terminal`.
-1. We create a new folder named `toolkit-lab` (copy this code and enter it in your Terminal):
+1. Um das Terminal in macOS zu öffnen, können Sie die Spotlight-Suche (`Cmd + Space`) verwenden und "Terminal" eingeben oder über `Programme -> Dienstprogramme -> Terminal` navigieren.
+2. Erstellen Sie einen neuen Ordner namens `toolkit-lab` (kopieren Sie diesen Code und geben Sie ihn in Ihr Terminal ein):
 
     ```bash
     mkdir toolkit-lab
     ```
 
-1. Use `cd`(change directory) to navigate into the `toolkit-lab` directory:
+3. Verwenden Sie `cd` (change directory), um in das Verzeichnis `toolkit-lab` zu wechseln:
 
     ```bash
     cd toolkit-lab
     ```
 
-1. Use `mkdir` (make directory) to create the subdirectories `code` and `data`:
+4. Verwenden Sie `mkdir` (make directory), um die Unterverzeichnisse `code` und `data` zu erstellen:
 
     ```bash
     mkdir code data
     ```
 
-These commands set up a parent directory `toolkit-lab` with two subdirectories `code` for your scripts and applications, and `data` for storing datasets and related files.
+Diese Befehle richten ein Hauptverzeichnis `toolkit-lab` mit zwei Unterverzeichnissen ein: `code` für Ihre Skripte und Anwendungen und `data` zum Speichern von Datensätzen und zugehörigen Dateien.
