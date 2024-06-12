@@ -1,146 +1,145 @@
-# Control Flow
+# Kontrollstrukturen
 
-- [Download Juypter Notebook](../code/python-control-flow.ipynb){download="python-control-flow.ipynb"}
+- [Jupyter Notebook herunterladen](../code/python-control-flow.ipynb){download="python-control-flow.ipynb"}
 
-Control flow structures are essential in Python programming as they allow your code to make decisions, repeat tasks, and control the order of execution. 
+Kontrollstrukturen sind essenziell in der Python-Programmierung, da sie es Ihrem Code ermöglichen, Entscheidungen zu treffen, Aufgaben zu wiederholen und die Ausführungsreihenfolge zu steuern.
 
-We'll cover three fundamental structures:
+Wir werden drei grundlegende Strukturen behandeln:
 
-1. Conditional Statements: Making decisions based on conditions.
-2. Loops: Repeating a block of code multiple times.
-3. Exceptions: Handling errors gracefully.
+1. Bedingte Anweisungen: Entscheidungen basierend auf Bedingungen treffen.
+2. Schleifen: Einen Codeblock mehrfach wiederholen.
+3. Ausnahmen: Fehler elegant behandeln.
 
-## Conditional Statements
+## Bedingte Anweisungen
 
-Conditional statements help execute certain code only if specific conditions are met.
+Bedingte Anweisungen helfen dabei, bestimmten Code nur auszuführen, wenn bestimmte Bedingungen erfüllt sind.
 
-### Basic If-Else Statement
+### Grundlegende If-Else-Anweisung
 
 ```{python}
-# Determine if a number is positive, negative, or zero
+# Bestimmen, ob eine Zahl positiv, negativ oder null ist
 number = -3
 
 if number > 0:
-    print(f"{number} is a positive number.")
+    print(f"{number} ist eine positive Zahl.")
 elif number < 0:
-    print(f"{number} is a negative number.")
+    print(f"{number} ist eine negative Zahl.")
 else:
-    print(f"{number} is zero.")
+    print(f"{number} ist null.")
 ```
 
-Explanation:
+Erläuterung:
 
-- `if` checks if `number` is greater than 0 and prints that it's positive.
-- `elif` (else if) checks if `number` is less than 0 and prints that it's negative.
-- `else` captures any other condition (zero here) and prints accordingly.
+- `if` prüft, ob `number` größer als 0 ist und gibt aus, dass sie positiv ist.
+- `elif` (else if) prüft, ob `number` kleiner als 0 ist und gibt aus, dass sie negativ ist.
+- `else` fängt alle anderen Bedingungen ab (hier null) und gibt entsprechend aus.
 
-### Nested Conditionals
+### Verschachtelte Bedingungsanweisungen
 
 ```{python}
-# Classify an age into different life stages
+# Ein Alter in verschiedene Lebensphasen einordnen
 age = 25
 
 if age < 13:
-    print("Child")
+    print("Kind")
 elif age < 18:
     print("Teenager")
 else:
     if age < 65:
-        print("Adult")
+        print("Erwachsener")
     else:
         print("Senior")
 ```
 
-Explanation:
+Erläuterung:
 
-- The outer `if-elif-else` checks if `age` is less than 13 or 18, printing "Child" or "Teenager."
-- If not, a nested `if-else` further checks if `age` is less than 65 or greater, printing "Adult" or "Senior."
+- Das äußere `if-elif-else` prüft, ob `age` kleiner als 13 oder 18 ist und gibt "Kind" oder "Teenager" aus.
+- Falls nicht, prüft ein verschachteltes `if-else` weiter, ob `age` kleiner als 65 ist oder größer, und gibt "Erwachsener" oder "Senior" aus.
 
-## Loops
+## Schleifen
 
-Loops repeat a block of code several times.
+Schleifen wiederholen einen Codeblock mehrere Male.
 
-### For Loops
+### For-Schleifen
 
-For loops iterate over a range or collection.
+For-Schleifen iterieren über einen Bereich oder eine Sammlung.
 
-Looping Over a Range
+Schleife über einen Bereich
 
 ```{python}
-# Print numbers from 1 to 5
+# Zahlen von 1 bis 5 ausgeben
 for num in range(1, 6):
-    print(f"Number: {num}")
+    print(f"Nummer: {num}")
 ```
 
-Explanation:
+Erläuterung:
 
-- `range(1, 6)` generates numbers from 1 to 5 (6 is exclusive).
-- Each number is printed using an f-string.
+- `range(1, 6)` erzeugt Zahlen von 1 bis 5 (6 ist exklusiv).
+- Jede Zahl wird mit einem f-String ausgegeben.
 
-Looping Over a List
+Schleife über eine Liste
 
 ```{python}
-# List of colors
-colors = ["red", "green", "blue"]
+# Liste von Farben
+colors = ["rot", "grün", "blau"]
 
-# Loop through each color and print it
+# Durch jede Farbe in der Liste schleifen und ausgeben
 for color in colors:
-    print(f"Color: {color}")
+    print(f"Farbe: {color}")
 ```
 
-Explanation:
+Erläuterung:
 
-- The list `colors` contains three strings.
-- `for color in colors` iterates over each item in the list, and each value is printed.
+- Die Liste `colors` enthält drei Zeichenketten.
+- `for color in colors` iteriert über jedes Element in der Liste, und jeder Wert wird ausgegeben.
 
-### While Loops
+### While-Schleifen
 
-A while loop continues to execute as long as a condition is `True`.
+Eine While-Schleife wird so lange ausgeführt, wie eine Bedingung `True` ist.
 
-
-Example: Simple While Loop
+Beispiel: Einfache While-Schleife
 
 ```{python}
-# Countdown from 5 to 1
+# Countdown von 5 bis 1
 count = 5
 
 while count > 0:
     print(f"Countdown: {count}")
-    count -= 1  # Decrease count by 1
+    count -= 1  # Zählt count um 1 herunter
 ```
 
-Explanation:
+Erläuterung:
 
-- Initial Variable Setup: The variable `count` is initialized to 5.
-- While Loop Condition: The `while` loop runs as long as the condition `count > 0` remains `True`. This condition is checked before each iteration starts.
-- Inside the Loop:
-  - The `print` function outputs the current value of `count`, prefixed with "Countdown:", using an f-string.
-  - The statement `count -= 1` decreases the value of `count` by 1. This shorthand notation is equivalent to `count = count - 1`.
-  - After each decrement, `count` gets closer to 0.
-- Loop Exit:
-  - Once `count` is no longer greater than 0 (meaning `count` is 0 or less), the `while` condition becomes `False` and the loop exits.
+- Anfangswert der Variable: Die Variable `count` wird auf 5 gesetzt.
+- Bedingung der While-Schleife: Die `while`-Schleife läuft, solange die Bedingung `count > 0` `True` bleibt. Diese Bedingung wird vor jedem Schleifendurchlauf geprüft.
+- Innerhalb der Schleife:
+  - Die Funktion `print` gibt den aktuellen Wert von `count`, vorangestellt mit "Countdown:", mittels eines f-Strings aus.
+  - Die Anweisung `count -= 1` verringert den Wert von `count` um 1. Diese Kurzschreibweise ist äquivalent zu `count = count - 1`.
+  - Nach jedem Dekrement wird `count` näher an 0 herangeführt.
+- Verlassen der Schleife:
+  - Sobald `count` nicht mehr größer als 0 ist (also `count` 0 oder weniger ist), wird die `while`-Bedingung `False` und die Schleife wird beendet.
 
-The decrement operation (`count -= 1`) ensures the loop will not run indefinitely and helps create a countdown sequence.
+Die Dekrement-Operation (`count -= 1`) stellt sicher, dass die Schleife nicht unendlich läuft und hilft, eine Countdown-Sequenz zu erstellen.
 
-## Exceptions
+## Ausnahmen
 
-Exceptions handle errors that occur during execution without crashing the program.
+Ausnahmen behandeln Fehler, die während der Ausführung auftreten, ohne das Programm zum Absturz zu bringen.
 
-Example: Handling Division by Zero
+Beispiel: Umgang mit Division durch Null
 
 ```{python}
-# Attempt division by zero and handle the error
+# Versuch der Division durch Null und Fehlerbehandlung
 numerator = 10
 denominator = 0
 
 try:
     result = numerator / denominator
-    print(f"Result: {result}")
+    print(f"Ergebnis: {result}")
 except ZeroDivisionError:
-    print("Error: Cannot divide by zero.")
+    print("Fehler: Division durch Null ist nicht möglich.")
 ```
 
-Explanation:
+Erläuterung:
 
-- The `try` block contains code that might raise an error (division by zero here).
-- `except ZeroDivisionError` catches this specific error and prints an appropriate message.
+- Der `try`-Block enthält Code, der möglicherweise einen Fehler auslöst (hier die Division durch Null).
+- `except ZeroDivisionError` fängt diesen spezifischen Fehler ab und gibt eine entsprechende Nachricht aus.
