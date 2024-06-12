@@ -1,59 +1,59 @@
 # Jupyter Notebook
 
-The Anaconda Distribution includes Jupyter Notebook, a powerful tool for interactive computing.
+Die Anaconda Distribution beinhaltet Jupyter Notebook, ein leistungsstarkes Werkzeug für interaktives Computing.
 
 :::{.callout-note}
-Jupyter Notebook is an interactive web-based environment where you can write and run Python code, integrate narrative text with Markdown, and display outputs like plots directly within the web interface.
+Jupyter Notebook ist eine interaktive, webbasierte Umgebung, in der Sie Python-Code schreiben und ausführen, narrative Texte mit Markdown integrieren und Ausgaben wie Diagramme direkt in der Web-Oberfläche anzeigen können.
 :::
 
-Unlike the Python IDLE, which operates primarily as a basic editor, Jupyter Notebook enhances your interactive experience with these features:
+Im Gegensatz zum Python IDLE, das hauptsächlich als einfacher Editor fungiert, verbessert Jupyter Notebook Ihre interaktive Erfahrung mit diesen Funktionen:
 
-1. **Write and Execute Code:** Each interactive "cell" in a Jupyter Notebook can contain Python code, which you can execute independently.
-2. **Combine Text and Code:** Easily switch a cell to "Markdown" mode to integrate narrative text, formatted instructions, or even mathematical equations using LaTeX.
-3. **Visualize Results:** Display charts, graphs, and other visualizations directly within the notebook, facilitating instant feedback loops beneficial for exploratory data analysis.
+1. **Code schreiben und ausführen:** Jede interaktive "Zelle" in einem Jupyter Notebook kann Python-Code enthalten, den Sie unabhängig voneinander ausführen können.
+2. **Text und Code kombinieren:** Wechseln Sie einfach eine Zelle in den "Markdown"-Modus, um narrative Texte, formatierte Anweisungen oder sogar mathematische Gleichungen mit LaTeX zu integrieren.
+3. **Ergebnisse visualisieren:** Zeigen Sie Diagramme, Grafiken und andere Visualisierungen direkt im Notebook an, was sofortige Rückmeldungen ermöglicht und für explorative Datenanalysen von Vorteil ist.
 
-## Launch Jupyter Notebook
+## Jupyter Notebook starten
 
-1. Open Anaconda Navigator:
-   - **Windows:** Open the Start Menu and search for "Anaconda Navigator." Click to launch it.
-   - **macOS/Linux:** Search for "Anaconda Navigator" in your applications or open a terminal and type:
+1. Öffnen Sie Anaconda Navigator:
+   - **Windows:** Öffnen Sie das Startmenü und suchen Sie nach "Anaconda Navigator". Klicken Sie, um es zu starten.
+   - **macOS/Linux:** Suchen Sie in Ihren Anwendungen nach "Anaconda Navigator" oder öffnen Sie ein Terminal und geben Sie ein:
    ```bash
    anaconda-navigator
    ```
-2. In Anaconda Navigator, locate the Jupyter Notebook application.
-3. Click the "Launch" button. This opens Jupyter Notebook in your default web browser.
+2. Finden Sie im Anaconda Navigator die Jupyter Notebook-Anwendung.
+3. Klicken Sie auf die Schaltfläche "Launch". Dies öffnet Jupyter Notebook in Ihrem Standard-Webbrowser.
 
-## Create Your First Notebook
+## Ihr erstes Notebook erstellen
 
-1. In Jupyter's web interface, navigate to the `code` directory (refer to our [folder structure](command-line.qmd) explanation).
-2. Click "New" in the top-right corner and select "Python [default environment]" to create a new notebook.
-3. A new notebook page opens with an empty code cell.
+1. Navigieren Sie in der Web-Oberfläche von Jupyter zum `code`-Verzeichnis (siehe unsere Erklärung zur [Ordnerstruktur](command-line.qmd)).
+2. Klicken Sie oben rechts auf "New" und wählen Sie "Python [default environment]", um ein neues Notebook zu erstellen.
+3. Eine neue Notebook-Seite öffnet sich mit einer leeren Code-Zelle.
 
-### Writing and Running Code
+### Code schreiben und ausführen
 
-1. Type any Python code in the first cell, such as:
+1. Geben Sie einen beliebigen Python-Code in die erste Zelle ein, zum Beispiel:
    ```python
    print("Hello, Jupyter!")
    ```
-2. Execute the code by pressing `Shift+Enter` or clicking "Run." The output displays directly below the cell.
+2. Führen Sie den Code aus, indem Sie `Shift+Enter` drücken oder auf "Run" klicken. Die Ausgabe wird direkt unter der Zelle angezeigt.
 
-### Adding Markdown Text
+### Markdown-Text hinzufügen
 
-1. Click the "+" button to add a new cell.
-2. Change the cell type from "Code" to "Markdown" using the dropdown menu.
-3. Write your text in Markdown, for example:
+1. Klicken Sie auf die Schaltfläche "+", um eine neue Zelle hinzuzufügen.
+2. Ändern Sie den Zellentyp von "Code" auf "Markdown" über das Dropdown-Menü.
+3. Schreiben Sie Ihren Text in Markdown, zum Beispiel:
    ```markdown
-   This is **bold** markdown
+   Dies ist **fetter** Markdown-Text
    ```
-4. Render the Markdown as formatted text by pressing `Shift+Enter`.
+4. Rendern Sie den Markdown-Text als formatierten Text, indem Sie `Shift+Enter` drücken.
 
-### Save the Notebook
+### Das Notebook speichern
 
-1. Use the "File" menu to save the notebook.
-2. Name the file `hello-jupyter.ipynb` and save it in the `code` folder.
+1. Verwenden Sie das "File"-Menü, um das Notebook zu speichern.
+2. Benennen Sie die Datei `hello-jupyter.ipynb` und speichern Sie sie im `code`-Verzeichnis.
 
 :::{.callout-note}
-`.ipynb` files are documents produced by Jupyter Notebook. These files contain both the inputs (code, Markdown text) and outputs (code execution results, visualizations) of interactive sessions. This format enables you to capture a complete and reproducible record of your computation process, enhancing collaboration and sharing in data science projects.
+`.ipynb`-Dateien sind Dokumente, die von Jupyter Notebook erstellt werden. Diese Dateien enthalten sowohl die Eingaben (Code, Markdown-Text) als auch die Ausgaben (Code-Ausführungsergebnisse, Visualisierungen) interaktiver Sitzungen. Dieses Format ermöglicht es Ihnen, einen vollständigen und reproduzierbaren Ablauf Ihres Rechenprozesses festzuhalten, was die Zusammenarbeit und das Teilen in Datenwissenschaftsprojekten verbessert.
 :::
 
-Each `.ipynb` file is structured as a JSON document, containing an ordered list of "cells" which can be code, Markdown, or raw text. This structure allows you to execute code in pieces, revisit earlier results, or make changes without rerunning the entire script, unlike traditional `.py` scripts which run sequentially from start to finish.
+Jede `.ipynb`-Datei ist als JSON-Dokument strukturiert und enthält eine geordnete Liste von "Zellen", die Code, Markdown oder reinen Text enthalten können. Diese Struktur ermöglicht es Ihnen, Code in Teilen auszuführen, frühere Ergebnisse erneut zu betrachten oder Änderungen vorzunehmen, ohne das gesamte Skript neu auszuführen, im Gegensatz zu traditionellen `.py`-Skripten, die sequentiell von Anfang bis Ende ausgeführt werden.
