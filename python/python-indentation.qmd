@@ -1,40 +1,39 @@
-# Indentation
+# Einrückung
 
-Before we explore Python functions in the next section, it’s crucial to understand Python’s indentation rules, as they are fundamental to writing structured and error-free Python code.
+Bevor wir im nächsten Abschnitt Python-Funktionen erkunden, ist es wichtig, die Einrückungsregeln von Python zu verstehen, da diese grundlegend sind, um strukturierten und fehlerfreien Python-Code zu schreiben.
 
-Indentation is not just a matter of style in Python; it is syntactically significant. Python uses indentation to define blocks of code. The correct use of indentation is essential for your code to run as expected.
+Einrückung ist in Python nicht nur eine Stilfrage; sie hat eine syntaktische Bedeutung. Python verwendet Einrückungen, um Codeblöcke zu definieren. Die korrekte Verwendung von Einrückungen ist entscheidend, damit Ihr Code wie erwartet ausgeführt wird.
 
-**Key Points About Indentation:**
+**Wichtige Punkte zur Einrückung:**
 
-- **Consistency**: Python's standard is to use 4 spaces per indentation level, though some environments may configure tabs to automatically convert to spaces.
-- **Blocks of Code**: Functions, loops, conditionals, and other control structures rely on indentation to define what code belongs inside the block.
+- **Konsistenz**: Der Standard in Python ist die Verwendung von 4 Leerzeichen pro Einrückungsebene, obwohl einige Umgebungen Tabs so konfigurieren können, dass sie automatisch in Leerzeichen umgewandelt werden.
+- **Codeblöcke**: Funktionen, Schleifen, Bedingungen und andere Steuerstrukturen verwenden Einrückungen, um anzugeben, welcher Code innerhalb des Blocks gehört.
 
-## Proper Indentation
+## Richtige Einrückung
 
-Example code:
+Beispielcode:
 
 ```{python}
 def compute_area(width, height):
-    # This is the start of a function block
+    # Dies ist der Anfang eines Funktionsblocks
     area = width * height 
     return area 
 
-# Calling the function
-print(compute_area(5, 10))  # This line is not indented, showing it's not part of the function
+# Aufrufen der Funktion
+print(compute_area(5, 10))  # Diese Zeile ist nicht eingerückt, was zeigt, dass sie nicht Teil der Funktion ist
 ```
 
-Explanation:
+Erläuterung:
 
-- The function `compute_area` starts with a colon (`:`) and the subsequent code is indented four spaces.
-- Both the calculation of `area` and the `return` statement are part of the function due to their indentation.
-- The `print` statement is not indented relative to the function definition, indicating it is outside the function.
+- Die Funktion `compute_area` beginnt mit einem Doppelpunkt (`:`) und der nachfolgende Code ist vier Leerzeichen eingerückt.
+- Sowohl die Berechnung von `area` als auch die `return`-Anweisung sind aufgrund ihrer Einrückung Teil der Funktion.
+- Die `print`-Anweisung ist relativ zur Funktionsdefinition nicht eingerückt, was zeigt, dass sie außerhalb der Funktion steht.
 
+Sicherlich! Hier ist ein Beispiel, das falsche Einrückung und die potenziellen Probleme, die sie verursachen kann, veranschaulicht. Dieses Beispiel kann im einleitenden Abschnitt zur Python-Einrückung enthalten sein, um die Bedeutung der genauen Einhaltung der Python-Einrückungsregeln zu zeigen.
 
-Certainly! Here’s an example that illustrates incorrect indentation and the potential issues it can cause. This example can be included in the introductory section on Python indentation to show the importance of following Python’s indentation rules accurately.
+## Falsche Einrückung
 
-## Incorrect Indentation
-
-Example code with incorrect Indentation:
+Beispielcode mit falscher Einrückung:
 
 ```python
 def calculate_percentage(total, amount):
@@ -50,14 +49,13 @@ else:
 IndentationError: expected an indented block after 'if' statement on line 3
 ```
 
+Erläuterung:
 
-Explanation:
+- **Fehler**: Das obige Beispiel führt zu einem `IndentationError`, weil die Einrückungsebenen nicht konsistent sind.
+- **Zeile 3**: Die Zeile `percentage = (amount / total) * 100` soll ausgeführt werden, wenn die Bedingung `total > 0` wahr ist. Sie ist jedoch nicht eingerückt, was unklar macht, ob sie innerhalb der `if`-Anweisung oder außerhalb ausgeführt werden soll.
+- **Zeilen 4 und 5**: Die `return percentage`-Anweisung sollte eingerückt werden, um unter die `if`-Bedingung zu fallen, was zeigt, dass sie Teil des `if`-Blocks ist. Die `else:`-Zeile ist ebenfalls nicht korrekt mit der `if`-Zeile ausgerichtet, was zu einem Syntaxfehler führt.
 
-- **Error**: The example above will result in a `IndentationError` because the indentation levels are not consistent.
-- **Line 3**: The line `percentage = (amount / total) * 100` is meant to be executed if the condition `total > 0` is true. However, it's not indented, making it unclear whether it's supposed to be inside the `if` statement or outside.
-- **Line 4 and 5**: The `return percentage` statement should be indented to align under the `if` condition, indicating that it is part of the `if` block. The `else:` line is also not correctly aligned with the `if`, causing a syntax error.
-
-Corrected Version:
+Korrigierte Version:
 
 ```{python}
 def calculate_percentage(total, amount):
@@ -68,9 +66,9 @@ def calculate_percentage(total, amount):
         return 0
 ```
 
-What this corrects:
+Was dies korrigiert:
 
-- The `percentage = (amount / total) * 100` statement is now properly indented under the `if` condition, clearly indicating it belongs to the block that executes when `total > 0`.
-- The `return percentage` is also indented correctly to show that it’s part of the `if` condition. The `else` block is aligned with the `if` statement, maintaining consistent structure.
+- Die Zeile `percentage = (amount / total) * 100` ist jetzt korrekt unter die `if`-Bedingung eingerückt, was klar anzeigt, dass sie zu dem Block gehört, der ausgeführt wird, wenn `total > 0`.
+- Die `return percentage`-Anweisung ist ebenfalls korrekt eingerückt, um zu zeigen, dass sie Teil der `if`-Bedingung ist. Der `else`-Block ist mit der `if`-Anweisung ausgerichtet, wodurch die Struktur konsistent bleibt.
 
-This example highlights how improper indentation can lead to syntax errors and logical errors in Python. It’s vital to keep a consistent indentation level throughout the code block to ensure clarity and functionality of the code. By adhering to these practices, you prevent runtime errors and make your code easier to read and debug.
+Dieses Beispiel zeigt, wie falsche Einrückung zu Syntaxfehlern und logischen Fehlern in Python führen kann. Es ist entscheidend, eine konsistente Einrückungsebene im gesamten Codeblock beizubehalten, um Klarheit und Funktionalität des Codes sicherzustellen. Indem Sie diese Praktiken einhalten, verhindern Sie Laufzeitfehler und machen Ihren Code leichter lesbar und debuggen.
