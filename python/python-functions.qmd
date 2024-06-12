@@ -1,145 +1,145 @@
-# Functions
+# Funktionen
 
-- [Download Juypter Notebook](../code/python-functions.ipynb){download="python-functions.ipynb"}
+- [Jupyter Notebook herunterladen](../code/python-functions.ipynb){download="python-functions.ipynb"}
 
-Functions help you write modular, reusable blocks of code. This section will demonstrate defining, calling, and documenting functions.
+Funktionen helfen Ihnen, modulare, wiederverwendbare Codeblöcke zu schreiben. In diesem Abschnitt wird das Definieren, Aufrufen und Dokumentieren von Funktionen demonstriert.
 
-## Simple Function
+## Einfache Funktion
 
-Start with a basic function that calculates the square of a number:
+Beginnen wir mit einer einfachen Funktion, die das Quadrat einer Zahl berechnet:
 
 ```{python}
-# Function to calculate the square of a number
+# Funktion zur Berechnung des Quadrats einer Zahl
 def square(num):
-    """Calculate and return the square of a number."""
+    """Berechnen und zurückgeben des Quadrats einer Zahl."""
     return num * num
 
-# Using the function to find the square of 4
+# Verwendung der Funktion zur Berechnung des Quadrats von 4
 result = square(4)
-print(f"Square of 4: {result}")
+print(f"Quadrat von 4: {result}")
 ```
 
-Explanation:
+Erläuterung:
 
-- `def` begins the function definition, followed by the function name `square` and a parameter `num`.
-- The docstring `"""` briefly describes the function's purpose.
-- The function calculates the square using the formula `num * num`.
-- The `return` statement gives back the result to where the function is called.
-- The `print` function uses an f-string, a formatted string prefixed with `f` that allows inserting variables within `{}` curly braces. It's more concise and easier to read than traditional string concatenation.
+- `def` beginnt die Funktionsdefinition, gefolgt vom Funktionsnamen `square` und einem Parameter `num`.
+- Die Docstring `"""` beschreibt kurz den Zweck der Funktion.
+- Die Funktion berechnet das Quadrat mit der Formel `num * num`.
+- Die `return`-Anweisung gibt das Ergebnis an die Stelle zurück, an der die Funktion aufgerufen wurde.
+- Die `print`-Funktion verwendet einen f-String, eine formatierte Zeichenkette, die mit `f` vorangestellt ist und das Einfügen von Variablen innerhalb von `{}` geschweiften Klammern ermöglicht. Sie ist kürzer und leichter lesbar als die traditionelle Zeichenkettenverkettung.
 
-Advantages of f-Strings:
+Vorteile von f-Strings:
 
-- They provide a clean, intuitive way to include variables in strings.
-- Support for formatting is built-in (e.g., decimal places, padding).
-- They simplify string interpolation and enhance readability.
+- Sie bieten eine saubere, intuitive Möglichkeit, Variablen in Zeichenketten einzufügen.
+- Unterstützung für Formatierungen ist eingebaut (z.B. Dezimalstellen, Auffüllungen).
+- Sie vereinfachen die Zeichenketteninterpolation und verbessern die Lesbarkeit.
 
-## Function with Multiple Parameters
+## Funktion mit mehreren Parametern
 
-Functions can accept more than one parameter. Here's a function that calculates the area of a rectangle:
+Funktionen können mehr als einen Parameter akzeptieren. Hier ist eine Funktion, die die Fläche eines Rechtecks berechnet:
 
 ```{python}
-# Function to calculate the area of a rectangle
+# Funktion zur Berechnung der Fläche eines Rechtecks
 def calculate_rectangle_area(length, width):
-    """Calculate the area of a rectangle using its length and width."""
+    """Berechnen der Fläche eines Rechtecks anhand seiner Länge und Breite."""
     return length * width
 
-# Using the function with example values
+# Verwendung der Funktion mit Beispielwerten
 length = 10
 width = 5
 
 area = calculate_rectangle_area(length, width)
 
-print(f"Rectangle with length {length} and width {width} has an area of {area}")
+print(f"Rechteck mit Länge {length} und Breite {width} hat eine Fläche von {area}")
 ```
 
-Explanation:
+Erläuterung:
 
-- `length` and `width` are parameters that the function uses to compute the rectangle's area.
-- `calculate_rectangle_area` is called with specific values.
-- The f-string within the `print` statement provides clear output showing both input values and the calculated result.
+- `length` und `width` sind Parameter, die die Funktion zur Berechnung der Fläche des Rechtecks verwendet.
+- `calculate_rectangle_area` wird mit bestimmten Werten aufgerufen.
+- Der f-String innerhalb der `print`-Anweisung liefert eine klare Ausgabe, die sowohl die Eingabewerte als auch das berechnete Ergebnis zeigt.
 
-## Default Parameters
+## Standardparameter
 
-Default values for parameters are used when no arguments are provided.
+Standardwerte für Parameter werden verwendet, wenn keine Argumente bereitgestellt werden.
 
 ```{python}
-# Function with a default parameter value
+# Funktion mit einem Standardparameterwert
 def greet(name="there"):
-    """Greet a person by their name or with 'Hello there' by default."""
-    print(f"Hello, {name}!")
+    """Begrüßen einer Person mit ihrem Namen oder mit 'Hallo zusammen' als Standard."""
+    print(f"Hallo, {name}!")
 
-# Calling the function with a specific name
+# Aufruf der Funktion mit einem bestimmten Namen
 greet("Alice")
 
-# Calling the function without an argument (uses the default)
+# Aufruf der Funktion ohne Argument (verwendet den Standardwert)
 greet()
 ```
 
-Explanation:
+Erläuterung:
 
-- The `name="there"` parameter provides a default value.
-- When calling `greet("Alice")`, it prints "Hello, Alice!"
-- Calling `greet()` without arguments uses the default "there."
+- Der Parameter `name="there"` liefert einen Standardwert.
+- Beim Aufruf von `greet("Alice")` wird "Hallo, Alice!" ausgegeben.
+- Der Aufruf von `greet()` ohne Argumente verwendet den Standardwert "there".
 
-## Lambda Functions
+## Lambda-Funktionen
 
-Lambda functions are small, anonymous functions useful for concise operations or passing as arguments. Here's a basic example:
+Lambda-Funktionen sind kleine, anonyme Funktionen, die nützlich für kurze Operationen oder das Übergeben als Argumente sind. Hier ist ein einfaches Beispiel:
 
 ```{python}
-# Lambda function to add two numbers
+# Lambda-Funktion zum Addieren zweier Zahlen
 add = lambda x, y: x + y
 
-# Using the lambda function
+# Verwendung der Lambda-Funktion
 result = add(3, 5)
-print(f"Sum of 3 and 5: {result}")
+print(f"Summe von 3 und 5: {result}")
 ```
 
-Explanation:
+Erläuterung:
 
-- `lambda` defines a quick function in a single line.
-- The expression `x + y` is calculated and returned.
-- Lambda functions are useful when you need a simple function temporarily.
+- `lambda` definiert eine schnelle Funktion in einer einzigen Zeile.
+- Der Ausdruck `x + y` wird berechnet und zurückgegeben.
+- Lambda-Funktionen sind nützlich, wenn Sie eine einfache Funktion vorübergehend benötigen.
 
-## Lambda Functions with DataFrames
+## Lambda-Funktionen mit DataFrames
 
-Lambda functions are especially useful when you want to apply a custom transformation to each row or column of a DataFrame. 
+Lambda-Funktionen sind besonders nützlich, wenn Sie eine benutzerdefinierte Transformation auf jede Zeile oder Spalte eines DataFrames anwenden möchten.
 
-For instance, if you want to classify numbers based on certain conditions, a lambda function can help.
+Zum Beispiel, wenn Sie Zahlen basierend auf bestimmten Bedingungen klassifizieren möchten, kann eine Lambda-Funktion helfen.
 
-Example Code:
+Beispielcode:
 
 ```{python}
-# Creating a DataFrame and using a lambda function for custom classification
+# Erstellen eines DataFrame und Verwendung einer Lambda-Funktion für eine benutzerdefinierte Klassifizierung
 import pandas as pd
 
-# Example DataFrame
+# Beispiel-DataFrame
 data = {"Numbers": [1, 2, 3, 4, 5, 15, 20, 25]}
 df = pd.DataFrame(data)
 
-# Define a custom function to classify numbers
+# Definieren einer benutzerdefinierten Funktion zur Klassifizierung von Zahlen
 def classify_number(num):
     if num < 10:
-        return "Single-Digit"
+        return "Einstellig"
     elif num < 20:
-        return "Teens"
+        return "Teenager"
     else:
-        return "Twenties or More"
+        return "Zwanzig oder mehr"
 
-# Apply the custom function with a lambda function to create a new column
-df["Classification"] = df["Numbers"].apply(lambda x: classify_number(x))
+# Anwenden der benutzerdefinierten Funktion mit einer Lambda-Funktion zur Erstellung einer neuen Spalte
+df["Klassifizierung"] = df["Numbers"].apply(lambda x: classify_number(x))
 
-# Display the DataFrame
+# Anzeigen des DataFrame
 df
 ```
 
-Explanation:
+Erläuterung:
 
-- The DataFrame `df` is created with a column `Numbers` containing a range of values.
-- The function `classify_number` defines custom classification criteria:
-  - Less than 10 is "Single-Digit".
-  - Less than 20 but not below 10 is "Teens".
-  - Values 20 or above are "Twenties or More."
-- The `apply` method uses a lambda function to pass each value of `Numbers` through `classify_number`.
-- The result is a new `Classification` column containing the categorized values.
+- Der DataFrame `df` wird mit einer Spalte `Numbers` erstellt, die eine Reihe von Werten enthält.
+- Die Funktion `classify_number` definiert benutzerdefinierte Klassifizierungskriterien:
+  - Weniger als 10 ist "Einstellig".
+  - Weniger als 20, aber nicht unter 10 ist "Teenager".
+  - Werte ab 20 sind "Zwanzig oder mehr."
+- Die Methode `apply` verwendet eine Lambda-Funktion, um jeden Wert von `Numbers` durch `classify_number` zu übergeben.
+- Das Ergebnis ist eine neue Spalte `Klassifizierung`, die die kategorisierten Werte enthält.
 
-In this case, using a lambda function with `apply` is beneficial for quickly transforming the DataFrame based on a function that would otherwise require looping through each value individually.
+In diesem Fall ist die Verwendung einer Lambda-Funktion mit `apply` vorteilhaft, um den DataFrame schnell zu transformieren, basierend auf einer Funktion, die sonst das Durchlaufen jedes Wertes einzeln erfordern würde.
