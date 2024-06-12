@@ -1,45 +1,43 @@
 # Python IDLE
 
-Python IDLE is a simple IDE (Integrated Development Environment) that comes installed with the Python programming language. It's designed to help write and execute Python code efficiently.
+Python IDLE ist eine einfache IDE (Integrated Development Environment), die mit der Programmiersprache Python installiert wird. Sie ist darauf ausgelegt, das Schreiben und Ausführen von Python-Code effizient zu unterstützen.
 
+*IDLE ist nach Eric Idle benannt, einem Mitglied der Monty Python Comedy-Gruppe, von der auch Python seinen Namen hat.*
 
-*IDLE is named after Eric Idle, a member of the Monty Python comedy group, from which Python also gets its name.*
+## Python IDLE starten
 
+Nach der Installation von Python starten Sie IDLE über das Suchmenü Ihres Betriebssystems:
 
-## Launching Python IDLE
+- **Windows**: Öffnen Sie das Startmenü und geben Sie `IDLE` ein.
+- **MacOS**: Verwenden Sie die Spotlight-Suche (Cmd + Leertaste), geben Sie `IDLE` ein und drücken Sie Enter.
+- **Linux**: Finden Sie IDLE im Anwendungsmenü oder führen Sie `idle` im Terminal aus.
 
-After installing Python, launch IDLE from your operating system’s search menu:
+## Einfache Berechnungen
 
-- **Windows**: Open the Start menu and type `IDLE`.
-- **MacOS**: Use Spotlight search (Cmd + Space), type `IDLE`, and press enter.
-- **Linux**: Find IDLE in your Applications menu or run `idle` from the terminal.
+Das IDLE-Shell-Fenster fungiert als interaktiver Interpreter, der jede Codezeile sofort ausführt, wenn Sie Enter drücken.
 
-## Simple Calculations 
+Direkt in der IDLE-Shell können Sie arithmetische Ausdrücke wie `2 + 3` eingeben und Enter drücken, um sofort die Ergebnisse zu sehen.
 
-The IDLE shell window acts as an interactive interpreter, executing each line of code immediately when you press Enter.
+Diese Funktion macht IDLE ideal für schnelle Berechnungen und Experimente mit den mathematischen Fähigkeiten von Python, ohne dass ein Skript gespeichert oder ausgeführt werden muss.
 
-Directly in the IDLE shell, you can input arithmetic expressions like `2 + 3` and press Enter to see the results immediately. 
+## Python-Skripte
 
-This feature makes IDLE ideal for quick calculations and experiments with Python's mathematical capabilities, without needing to save or execute a script.
+Als nächstes erstellen und führen wir ein einfaches Python-Skript aus:
 
-## Python Scripts
-
-Next, we create and run a simple Python script:
-
-1. **Open a New File**: Navigate in IDLE to `File` > `New File` to open an editor window.
-2. **Enter Your Code**: Type the following in the new editor window:
+1. **Eine neue Datei öffnen**: Navigieren Sie in IDLE zu `Datei` > `Neue Datei`, um ein Editor-Fenster zu öffnen.
+2. **Geben Sie Ihren Code ein**: Geben Sie Folgendes in das neue Editor-Fenster ein:
 
    ```python
-   print("Hello, Python!")
+   print("Hallo, Python!")
    ```
 
-3. **Save Your Script**: Save the file via `File` > `Save As...` naming it `hello.py`. Ideally, save it in your directory `code` within your `toolkit-labs` folder (refer to this explanation regarding our [folder structure](command-line-folders.qmd)).
-4. **Execute Your Script**: Press `F5` or go to `Run` > `Run Module` to execute your script. The output `Hello, Python!` should appear in the IDLE shell.
+3. **Speichern Sie Ihr Skript**: Speichern Sie die Datei über `Datei` > `Speichern unter...` und benennen Sie sie `hello.py`. Idealerweise speichern Sie sie in Ihrem Verzeichnis `code` innerhalb Ihres `toolkit-labs`-Ordners (siehe dazu die Erklärung zur [Ordnerstruktur](command-line-folders.qmd)).
+4. **Führen Sie Ihr Skript aus**: Drücken Sie `F5` oder gehen Sie zu `Ausführen` > `Modul ausführen`, um Ihr Skript auszuführen. Die Ausgabe `Hallo, Python!` sollte in der IDLE-Shell erscheinen.
 
-Now modify your script with varied messages. You can also Type `help(print)` or `help()` in the IDLE shell to explore Python's extensive help documentation and learn about other functions.
+Modifizieren Sie nun Ihr Skript mit verschiedenen Nachrichten. Sie können auch `help(print)` oder `help()` in die IDLE-Shell eingeben, um die umfangreiche Hilfedokumentation von Python zu erkunden und andere Funktionen kennenzulernen.
 
-## What's next?
+## Was kommt als nächstes?
 
-Python IDLE provides an introduction to programming in Python, offering a straightforward interface for code development and execution. In one of the following sections, we are exploring more advanced IDEs like Visual Studio Code that support larger projects with additional features.
+Python IDLE bietet eine Einführung in die Programmierung mit Python und eine einfache Oberfläche für die Codeentwicklung und -ausführung. In einem der folgenden Abschnitte werden wir fortschrittlichere IDEs wie Visual Studio Code erkunden, die größere Projekte mit zusätzlichen Funktionen unterstützen.
 
-The next chapter will cover the installation and basic usage of Anaconda, a popular Python distribution that includes a robust package manager and a suite of pre-installed libraries commonly used in data science and machine learning.
+Im nächsten Kapitel wird die Installation und grundlegende Nutzung von Anaconda behandelt, einer beliebten Python-Distribution, die einen robusten Paketmanager und eine Suite von vorinstallierten Bibliotheken umfasst, die häufig in der Datenwissenschaft und im maschinellen Lernen verwendet werden.
