@@ -1,61 +1,61 @@
-# Environments
+# Umgebungen
 
-Environments are isolated workspaces where you can install and manage Python packages separately for each project. They help you maintain distinct sets of dependencies for different projects, ensuring compatibility and avoiding conflicts.
+Umgebungen sind isolierte Arbeitsbereiche, in denen Sie Python-Pakete separat für jedes Projekt installieren und verwalten können. Sie helfen Ihnen, verschiedene Abhängigkeiten für unterschiedliche Projekte zu verwalten, um Kompatibilität zu gewährleisten und Konflikte zu vermeiden.
 
-Benefits:
+Vorteile:
 
-- Dependency Management: An environment ensures that the correct version of each package is available for your project, preventing errors from incompatible versions.
+- **Abhängigkeitsverwaltung**: Eine Umgebung stellt sicher, dass die richtige Version jedes Pakets für Ihr Projekt verfügbar ist, wodurch Fehler durch inkompatible Versionen vermieden werden.
   
-- Project Separation: You can have different projects with separate package requirements, avoiding conflicts. For instance, a data science project may require specific versions of data analysis libraries, while a web development project might have different needs.
+- **Projekttrennung**: Sie können verschiedene Projekte mit unterschiedlichen Paketanforderungen haben und so Konflikte vermeiden. Beispielsweise kann ein Data-Science-Projekt spezifische Versionen von Datenanalysebibliotheken erfordern, während ein Webentwicklungsprojekt andere Bedürfnisse haben könnte.
   
-- Custom Module Development: If you create your own modules, environments help include them in your projects without affecting your global Python installation.
+- **Entwicklung benutzerdefinierter Module**: Wenn Sie Ihre eigenen Module erstellen, helfen Umgebungen dabei, diese in Ihre Projekte zu integrieren, ohne Ihre globale Python-Installation zu beeinträchtigen.
 
 
-## Create Environment
+## Umgebung erstellen
 
-To set up an environment, follow these instructions based on your operating system:
+Um eine Umgebung einzurichten, befolgen Sie diese Anweisungen basierend auf Ihrem Betriebssystem:
 
 
-1. Access the Command Prompt or Terminal:
-   - Windows Users: Open the Anaconda Command Prompt from the Start Menu.
-   - macOS Users: Open Terminal from Applications > Utilities or by searching "Terminal."  
+1. Zugriff auf die Eingabeaufforderung oder das Terminal:
+   - **Windows-Benutzer**: Öffnen Sie die Anaconda-Eingabeaufforderung über das Startmenü.
+   - **macOS-Benutzer**: Öffnen Sie das Terminal unter Programme > Dienstprogramme oder durch die Suche nach "Terminal".  
 
-2. Create the Environment:
-   - Use the following command to create a new conda environment named `basics` with Python 3.11:
+2. Erstellen der Umgebung:
+   - Verwenden Sie den folgenden Befehl, um eine neue Conda-Umgebung namens `basics` mit Python 3.11 zu erstellen:
    
    ```bash
    conda create --name basics python=3.11 pip
    ```
-   - This command ensures that pip is included by default.
+   - Dieser Befehl stellt sicher, dass `pip` standardmäßig enthalten ist.
 
-3. Activate the Environment:
-   - Once the environment is created, activate it with:
+3. Aktivieren der Umgebung:
+   - Sobald die Umgebung erstellt ist, aktivieren Sie sie mit:
    
    ```bash
    conda activate basics
    ```
 
-   - The prompt will change to indicate that the environment is active.
+   - Die Eingabeaufforderung ändert sich, um anzuzeigen, dass die Umgebung aktiv ist.
 
-4. Install Required Libraries:
-   - With the environment active, install the libraries:
+4. Installieren der benötigten Bibliotheken:
+   - Mit aktivierter Umgebung installieren Sie die Bibliotheken:
 
    ```bash
    pip install numpy pandas matplotlib seaborn altair
    ```
 
-   - This command will fetch and install all packages from PyPI.
+   - Dieser Befehl ruft alle Pakete von PyPI ab und installiert sie.
 
    ::: {.callout-note}
-   Although you can also install packages using `conda install`, we exclusively use `pip` to avoid potential conflicts between conda-installed and pip-installed packages. This approach ensures consistent and reliable management of dependencies in your Python environment.
+   Obwohl Sie Pakete auch mit `conda install` installieren können, verwenden wir ausschließlich `pip`, um mögliche Konflikte zwischen Conda- und Pip-installierten Paketen zu vermeiden. Dieser Ansatz stellt eine konsistente und zuverlässige Verwaltung von Abhängigkeiten in Ihrer Python-Umgebung sicher.
    :::
 
-5. Verify Package Installation:
-   - After installation, open a Jupyter Notebook and verify that the packages are available by importing them in Python.
+5. Überprüfen der Paketinstallation:
+   - Nach der Installation öffnen Sie ein Jupyter Notebook und überprüfen, ob die Pakete verfügbar sind, indem Sie sie in Python importieren.
 
 
    ::: {.callout-note}
-   To make it easier to use the libraries' functions and methods throughout your code, we often import them using shorter, standardized aliases (using these standard aliases improves code readability and reduces typing) 
+   Um die Nutzung der Funktionen und Methoden der Bibliotheken in Ihrem Code zu erleichtern, importieren wir sie häufig mit kürzeren, standardisierten Aliasen (die Verwendung dieser Standard-Aliase verbessert die Lesbarkeit des Codes und reduziert den Schreibaufwand).
    :::
 
    ```python
@@ -66,26 +66,26 @@ To set up an environment, follow these instructions based on your operating syst
    import altair as alt
    ```
   
-   - If no errors occur, the libraries have been correctly installed.
+   - Wenn keine Fehler auftreten, wurden die Bibliotheken korrekt installiert.
    
-   :::{.callout-tip collapse="true" title="Explanation of Packages"} 
+   :::{.callout-tip collapse="true" title="Erklärung der Pakete"} 
 
-   NumPy (`np`): The alias `np` is widely used and allows concise access to NumPy's array manipulation and numerical computing functions.
+   **NumPy (`np`)**: Der Alias `np` wird weit verbreitet verwendet und ermöglicht einen prägnanten Zugriff auf NumPys Funktionen zur Array-Manipulation und numerischen Berechnung.
 
-   Pandas (`pd`): The alias `pd` provides a shorthand to Pandas' powerful data manipulation tools, like DataFrame and Series.
+   **Pandas (`pd`)**: Der Alias `pd` bietet eine Kurzform für Pandas' leistungsstarke Datenmanipulationstools, wie DataFrame und Series.
 
-   Matplotlib (`plt`): The alias `plt` simplifies calling Matplotlib's functions for plotting, creating figures, and customizing graphs.
+   **Matplotlib (`plt`)**: Der Alias `plt` vereinfacht das Aufrufen der Funktionen von Matplotlib zum Plotten, Erstellen von Abbildungen und Anpassen von Grafiken.
 
-   Seaborn (`sns`): The alias `sns` makes it easier to access Seaborn's statistical data visualization tools, which integrate seamlessly with Matplotlib.
+   **Seaborn (`sns`)**: Der Alias `sns` erleichtert den Zugriff auf Seaborns statistische Datenvisualisierungstools, die nahtlos mit Matplotlib integriert sind.
 
-   Altair (`alt`): The alias `alt` allows quick access to Altair's declarative visualization syntax for interactive plotting using Vega-Lite.
+   **Altair (`alt`)**: Der Alias `alt` ermöglicht einen schnellen Zugriff auf Altairs deklarative Visualisierungssyntax für interaktives Plotten mit Vega-Lite.
    :::
-   
-6. Deactivate the Environment:
-   - When you're done working or want to switch back to the base environment, deactivate the current environment:
+
+6. Deaktivieren der Umgebung:
+   - Wenn Sie fertig sind oder zur Basisumgebung zurückkehren möchten, deaktivieren Sie die aktuelle Umgebung:
 
    ```bash
    conda deactivate
    ```
 
-Creating a separate environment for Python basics ensures that your workspace remains isolated and stable. 
+Das Erstellen einer separaten Umgebung für Python-Grundlagen stellt sicher, dass Ihr Arbeitsbereich isoliert und stabil bleibt.
