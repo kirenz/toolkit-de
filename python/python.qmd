@@ -1,11 +1,11 @@
-# Python 
+# Python
 
-Python is an object-oriented programming language, meaning that it represents data as objects containing both information and functionality. 
+Python ist eine objektorientierte Programmiersprache, was bedeutet, dass es Daten als Objekte darstellt, die sowohl Informationen als auch Funktionalität enthalten.
 
-A distinctive feature of Python is that it is interpreted rather than compiled. The interpreter executes the code line by line, which is particularly beneficial for tasks like data analysis and the creation of interactive, executable documents such as Jupyter Notebooks.
+Ein markantes Merkmal von Python ist, dass es interpretiert und nicht kompiliert wird. Der Interpreter führt den Code Zeile für Zeile aus, was besonders vorteilhaft für Aufgaben wie Datenanalyse und die Erstellung interaktiver, ausführbarer Dokumente wie Jupyter-Notebooks ist.
 
 :::{.callout-note}
-Python is an interpreted language, where the interpreter runs a program by executing one statement at a time.
+Python ist eine interpretierte Sprache, bei der der Interpreter ein Programm durch die Ausführung einer Anweisung nach der anderen ausführt.
 :::
 
-Beyond this core functionality, Python boasts a vast ecosystem of third-party tools and modules, like Jupyter Notebook, that provide specialized features for data science.
+Über diese Kernfunktionalität hinaus bietet Python ein riesiges Ökosystem an Drittanbieter-Tools und -Modulen, wie das Jupyter-Notebook, die spezialisierte Funktionen für die Datenwissenschaft bereitstellen.
