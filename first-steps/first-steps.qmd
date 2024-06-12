@@ -1,9 +1,9 @@
-# First Steps 
+# Erste Schritte
 
-In this initial section, we will establish a basic working environment essential for any data related endeavor. 
+In diesem ersten Abschnitt werden wir eine grundlegende Arbeitsumgebung einrichten, die für jedes datenbezogene Vorhaben unerlässlich ist.
 
-You'll learn how to navigate your computer's command line, set up Python for the first time, and use the Anaconda distribution. 
+Sie lernen, wie Sie sich auf der Befehlszeile Ihres Computers zurechtfinden, Python zum ersten Mal einrichten und die Anaconda-Distribution verwenden.
 
-Additionally, we'll guide you through using Jupyter Notebook, a powerful tool for interactive data exploration, and teach you the basics of Markdown to document your work effectively. 
+Zusätzlich zeigen wir Ihnen, wie Sie Jupyter Notebook, ein leistungsstarkes Werkzeug zur interaktiven Datenexploration, nutzen und bringen Ihnen die Grundlagen von Markdown bei, um Ihre Arbeit effektiv zu dokumentieren.
 
-Whether you're just starting out or refreshing your skills, these first steps will set you up for success as you continue to explore and analyze data.
+Egal, ob Sie gerade erst anfangen oder Ihre Fähigkeiten auffrischen möchten, diese ersten Schritte werden Ihnen den Weg zum Erfolg ebnen, während Sie weiterhin Daten erkunden und analysieren.
