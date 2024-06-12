@@ -1,113 +1,108 @@
-# Classes
+# Klassen
 
-Object-Oriented Programming (OOP) is a foundational concept in software development, particularly useful in managing and structuring large codebases for complex data science projects. Understanding classes and objects is crucial for implementing modular and scalable code. 
+Objektorientierte Programmierung (OOP) ist ein grundlegendes Konzept in der Softwareentwicklung, das besonders nützlich ist, um große Codebasen für komplexe Data-Science-Projekte zu verwalten und zu strukturieren. Das Verständnis von Klassen und Objekten ist entscheidend, um modularen und skalierbaren Code zu implementieren.
 
-In this section, we will cover the basics of creating classes and objects, adding methods and attributes, and using inheritance to extend functionality, all through practical examples tailored for typical data science tasks.
+In diesem Abschnitt werden wir die Grundlagen zur Erstellung von Klassen und Objekten, das Hinzufügen von Methoden und Attributen sowie die Verwendung von Vererbung zur Erweiterung der Funktionalität durch praktische Beispiele für typische Data-Science-Aufgaben behandeln.
 
+- **Klasse**: Eine Blaupause oder ein Template, aus dem Objekte erstellt werden. Klassen definieren die Attribute (Daten) und das Verhalten (Methoden), die ihre Objekte haben werden.
+- **Objekt**: Eine Instanz einer Klasse. Jedes Objekt repräsentiert eine Entität, die die von ihrer Klasse definierten Attribute und Verhaltensweisen besitzt.
 
-- **Class**: A blueprint or template from which objects are created. Classes define the attributes (data) and behaviors (methods) that their objects will have.
+## Erstellung einer Klasse
 
-- **Object**: An instance of a class. Each object represents an entity that possesses the attributes and behaviors defined by its class.
-
-## Creating a Class 
-
-Let's begin by defining a simple class, `DataPoint`, which will represent a single observation in a dataset:
+Beginnen wir mit der Definition einer einfachen Klasse `DataPoint`, die eine einzelne Beobachtung in einem Datensatz darstellt:
 
 ```{python}
-# Define a simple class representing a data observation
+# Definiere eine einfache Klasse, die eine Datenbeobachtung repräsentiert
 class DataPoint:
-    """A class representing a data observation with features and label."""
+    """Eine Klasse, die eine Datenbeobachtung mit Merkmalen und Label repräsentiert."""
 
     def __init__(self, features, label):
-        """Initialize the data point with features and a label."""
+        """Initialisiere den Datenpunkt mit Merkmalen und einem Label."""
         self.features = features
         self.label = label
 
     def describe(self):
-        """Return a formatted string describing the data point."""
-        return f"Features: {self.features}, Label: {self.label}"
+        """Gibt einen formatierten String zurück, der den Datenpunkt beschreibt."""
+        return f"Merkmale: {self.features}, Label: {self.label}"
 
-# Create an instance (object) of the DataPoint class
-sample_point = DataPoint([0.25, 0.75, 0.5], 'Positive')
+# Erstelle eine Instanz (Objekt) der DataPoint-Klasse
+sample_point = DataPoint([0.25, 0.75, 0.5], 'Positiv')
 
-# Display the description of the data point
+# Zeige die Beschreibung des Datenpunkts an
 print(sample_point.describe())
 ```
 
-**Explanation**:   
+**Erklärung**:
 
-- The `DataPoint` class has an `__init__` method that initializes the features and label of the data point.  
-- The `describe` method provides a way to output the characteristics of the data point.  
-- `sample_point` is an instance of `DataPoint`, initialized with specific values for its features and label.
+- Die `DataPoint`-Klasse hat eine `__init__`-Methode, die die Merkmale und das Label des Datenpunkts initialisiert.
+- Die `describe`-Methode bietet eine Möglichkeit, die Eigenschaften des Datenpunkts auszugeben.
+- `sample_point` ist eine Instanz von `DataPoint`, die mit spezifischen Werten für ihre Merkmale und ihr Label initialisiert wird.
 
-## Methods and Attributes
+## Methoden und Attribute
 
-Adding more functionality to a class makes it more versatile. Let's enhance our class to manage a collection of data points:
-
+Das Hinzufügen weiterer Funktionalität zu einer Klasse macht sie vielseitiger. Lassen Sie uns unsere Klasse erweitern, um eine Sammlung von Datenpunkten zu verwalten:
 
 ```{python}
-# Define a class for managing a dataset
+# Definiere eine Klasse zur Verwaltung eines Datensatzes
 class DataSet:
-    """A class representing a collection of data points."""
+    """Eine Klasse, die eine Sammlung von Datenpunkten repräsentiert."""
 
     def __init__(self):
-        """Initialize the empty data point collection."""
+        """Initialisiere die leere Sammlung von Datenpunkten."""
         self.data_points = []
 
     def add_data_point(self, data_point):
-        """Add a data point to the collection."""
+        """Füge einen Datenpunkt zur Sammlung hinzu."""
         self.data_points.append(data_point)
 
     def display_data(self):
-        """Display all data points in the collection."""
+        """Zeige alle Datenpunkte in der Sammlung an."""
         for data_point in self.data_points:
             print(data_point.describe())
 
-# Create an instance of the DataSet class
+# Erstelle eine Instanz der DataSet-Klasse
 my_data_set = DataSet()
 
-# Add multiple DataPoint objects to the dataset
-my_data_set.add_data_point(DataPoint([0.1, 0.2, 0.5], 'Negative'))
-my_data_set.add_data_point(DataPoint([0.8, 0.4, 0.3], 'Positive'))
+# Füge mehrere DataPoint-Objekte zum Datensatz hinzu
+my_data_set.add_data_point(DataPoint([0.1, 0.2, 0.5], 'Negativ'))
+my_data_set.add_data_point(DataPoint([0.8, 0.4, 0.3], 'Positiv'))
 
-# Display all data points in the dataset
+# Zeige alle Datenpunkte im Datensatz an
 my_data_set.display_data()
 ```
 
-**Explanation**: 
+**Erklärung**:
 
-- The `DataSet` class stores multiple `DataPoint` objects.
-- Methods like `add_data_point` and `display_data` allow for adding data points and displaying all points, respectively.
+- Die `DataSet`-Klasse speichert mehrere `DataPoint`-Objekte.
+- Methoden wie `add_data_point` und `display_data` ermöglichen das Hinzufügen von Datenpunkten und das Anzeigen aller Punkte.
 
-## Inheritance 
+## Vererbung
 
-Inheritance allows us to extend existing classes to create more specialized versions without repeating code. For instance, let's define a `TimeSeriesDataPoint` that extends `DataPoint` by adding a timestamp:
-
+Vererbung ermöglicht es uns, bestehende Klassen zu erweitern, um spezialisiertere Versionen zu erstellen, ohne den Code zu wiederholen. Beispielsweise definieren wir einen `TimeSeriesDataPoint`, der `DataPoint` erweitert, indem ein Zeitstempel hinzugefügt wird:
 
 ```{python}
-# Define a class representing a time series data point
+# Definiere eine Klasse, die einen Zeitreihendatenpunkt repräsentiert
 class TimeSeriesDataPoint(DataPoint):
-    """A class extending DataPoint with a timestamp for time series data."""
+    """Eine Klasse, die DataPoint um einen Zeitstempel für Zeitreihendaten erweitert."""
 
     def __init__(self, features, label, timestamp):
-        """Initialize the TimeSeriesDataPoint attributes."""
+        """Initialisiere die Attribute des TimeSeriesDataPoint."""
         super().__init__(features, label)
         self.timestamp = timestamp
 
     def describe(self):
-        """Return a formatted string describing the time series data point."""
+        """Gibt einen formatierten String zurück, der den Zeitreihendatenpunkt beschreibt."""
         base_description = super().describe()
-        return f"{base_description}, Timestamp: {self.timestamp}"
+        return f"{base_description}, Zeitstempel: {self.timestamp}"
 
-# Create an instance of the TimeSeriesDataPoint class
-time_series_point = TimeSeriesDataPoint([0.9, 0.1, 0.2], 'Negative', '2024-09-05T12:00:00')
+# Erstelle eine Instanz der TimeSeriesDataPoint-Klasse
+time_series_point = TimeSeriesDataPoint([0.9, 0.1, 0.2], 'Negativ', '2024-09-05T12:00:00')
 
-# Display the description of the time series data point
+# Zeige die Beschreibung des Zeitreihendatenpunkts an
 print(time_series_point.describe())
 ```
 
-**Explanation**: 
+**Erklärung**:
 
-- `TimeSeriesDataPoint` inherits from `DataPoint` and adds a `timestamp` attribute.  
-- The `describe` method is overridden to include the timestamp information.
-
+- `TimeSeriesDataPoint` erbt von `DataPoint` und fügt ein `timestamp`-Attribut hinzu.
+- Die `describe`-Methode wird überschrieben, um die Zeitstempelinformationen einzuschließen.
