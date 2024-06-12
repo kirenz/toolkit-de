@@ -1,0 +1,21 @@
+# Colab {#sec-colab}
+
+Colaboratory, or “Colab” for short, is a free to use product from Google Research. Colab allows anybody to write and execute python code through the browser, and is especially well suited to perform data analysis and machine learning.
+
+:::{.callout-note}
+Colab is a free Jupyter notebook environment that requires no setup, and runs entirely on the Cloud.
+:::
+
+Watch this video to get a first impression of Colab:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/inN8seMm7UI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Let`s start your first Colab notebook to get an overview about some basic features:
+
+::: {.callout-important}
+## To do
+- [Colab basic features overview](https://colab.research.google.com/notebooks/basic_features_overview.ipynb)
+- [Interactive Colab Markdown guide](https://colab.research.google.com/notebooks/markdown_guide.ipynb)
+:::
+
+To download the Jupyter Notebook go to the Colab menu and choose: "File" > "Download" > "Download .ipynb"

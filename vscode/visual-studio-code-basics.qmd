@@ -1,0 +1,67 @@
+# Basic tips
+
+This section will provide some essential tips to help you get started.
+
+
+## Files vs. folders
+
+Understanding the difference between opening a file and opening a folder in VS Code is crucial for managing your workflow.
+
+When you open a *file* in VS Code, you are editing that single file. This is straightforward and suitable for quick edits.
+
+- Use `File > Open File...` or `Ctrl+O` and choose the file you want to edit.
+
+Opening a *folder* (like our folder `toolkit-lab`) sets that directory as your "workspace". This is essential for project management as it allows VS Code to provide enhanced features like search across multiple files, running tasks, version control, and more.
+
+- Use `File > Open Folder...` to open the entire folder as your workspace. 
+- This approach is recommended when working on a project with multiple files as it allows VS Code to better manage and understand the context of your project.
+
+:::{.callout-note}
+Opening a folder in VS Code is akin to setting up a 'project' in other development environments. It enables VS Code to treat all files and subdirectories within it as part of a single, cohesive unit, improving functionality like IntelliSense, debugging, and custom settings.
+:::
+
+These tips will help you effectively use Visual Studio Code to boost your productivity, whether you're managing simple scripts or complex projects.
+
+## Workspace Trust
+
+Upon opening a new project folder in Visual Studio Code, you'll encounter a prompt asking if you trust the authors of the files ([Workspace Trust](https://code.visualstudio.com/docs/editor/workspace-trust)):
+
+- **Yes, I trust the authors**: Selecting this option should be your default choice if you are familiar with the source or if the project comes from a reliable origin. This selection will enable full functionality of Visual Studio Code, allowing all features and extensions to operate as intended.
+
+- **No, I don't trust the authors**: Use this option if you have concerns about the source of the files. This will limit certain functionalities within VS Code to prevent any unauthorized code execution.
+
+:::{.callout-tip}
+When working in a trusted environment or with code from known collaborators, selecting **"Yes, I trust the authors"** is essential to utilize Visual Studio Code's capabilities fully. This ensures a seamless development experience while keeping your system secure.
+:::
+
+
+
+## Jupyter Notebook
+
+Visual Studio Code supports Jupyter notebooks natively once you install the Jupyter extension, providing an integrated environment to execute Python code, visualize data, and document your process step-by-step. 
+
+Here’s how to set up and start using a Jupyter notebook in VS Code:
+
+1. Open Visual Studio Code.
+2. Ensure the Jupyter extension is installed as previously instructed.
+3. Use the shortcut `Ctrl+Shift+P` (Windows) or `Command+Shift+P` (Mac) to open the Command Palette.
+4. Type and select `File: Open Folder...`. Navigate to and select the folder named `toolkit-lab` to set it as your working directory.
+5. When opening a new project folder for the first time, such as `toolkit-lab`, you will be prompted with a Workspace Trust request. It is important to select **"Yes, I trust the authors"**.
+6. Once the folder is open, use the Command Palette again and type `Jupyter: Create New Blank Notebook`. This will open a new notebook within VS Code.
+7. Save the notebook in the `code` subfolder within `toolkit-lab` by clicking on `File > Save As` and navigating to the `code` subfolder.
+8. To add cells to your notebook, click the `+` icon (you can add either code or markdown cells).
+9. Before executing any code, you need to select a **kernel** that corresponds to the Python environment you wish to use. Click on "Select Kernel" on the upper right-hand corner of your notebook, choose "Python Environments" and select the kernel `basics`, which we've [previously set up](../python/python-environment-basics.qmd)) (for a more detailed explanation, refer to [these instructions](https://code.visualstudio.com/docs/datascience/jupyter-kernel-management).)
+
+
+:::{.callout-note}
+A "kernel" in a Jupyter notebook is a computational engine that executes the code contained in the notebook document. When working with Python, the kernel is an instance of the Python environment on your machine. 
+:::
+
+## More resources
+
+More resources to get familiar with VS Code:
+
+- [Take a look at the intro videos](https://code.visualstudio.com/docs/getstarted/introvideos)
+- [Data Science in VS Code tutorial](https://code.visualstudio.com/docs/datascience/data-science-tutorial)
+- Pro tips: [25 VS Code Productivity Tips and Speed Hacks](https://www.youtube.com/watch?v=ifTF3ags0XI)
+

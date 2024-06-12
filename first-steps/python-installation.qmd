@@ -1,0 +1,50 @@
+# Python installation
+
+Python can be installed directly from the official Python website or through a package manager like Anaconda, which offers additional tools and simplifies package management. 
+
+This chapter focuses on installing Python directly from the official source.
+
+## Installation steps
+
+### Windows Users
+
+1. Download the Installer: Navigate to the [Python website](https://www.python.org/downloads/) and download the latest version available for your version of Windows (usually Windows installer 64-bit).
+2. Run the Installer: Right-click the downloaded installer and choose "Run as administrator. Ensure you check the box labeled "Add Python 3.x to PATH" at the bottom of the installer window to ensure that Python is added to your system’s environment variables.
+3. Customize Installation (Optional): You can customize the installation by clicking on "Customize installation". This allows you to select specific features such as documentation, pip, tests, etc.
+4. Install: Click "Install Now" to start the installation process.
+
+
+### macOS Users
+
+1. Download the Installer: Navigate to the [Python website](https://www.python.org/downloads/) and download the latest version available.
+2. Install Python: Open the downloaded `.pkg` file and follow the instructions to install Python. The installer will guide you through the necessary steps.
+
+<!-- 3. Add Python to PATH: The installer should handle this step, but you can verify it by opening a terminal and typing `echo $PATH`. Ensure that the directory where Python is installed appears in the output. -->
+
+## Verifying the Installation
+
+After installation, verify that Python is correctly installed by opening a command line (Terminal on macOS, Command Prompt or PowerShell on Windows) and typing:
+
+```bash
+python --version
+```
+
+This command should return the version of Python that you have installed. 
+
+::: {.callout-caution title="Different Python Version" collapse="true"}
+If you already have Python or a Python distribution like Anaconda installed, running `python --version` in your terminal may show a different Python version than the one you just installed. This variation occurs because your system can manage multiple Python installations simultaneously. The terminal command picks the version that appears first in the system's PATH variable, which may not be the one you installed last.
+
+This is a common situation and not a cause for concern. We will revisit this topic in a later chapter to discuss managing multiple Python versions effectively, ensuring you can select and use different Python environments as needed for your projects.
+:::
+
+
+
+## Troubleshooting Common Issues
+
+- Python Not Recognized: If the command line does not recognize the `python` command, it may be due to Python not being added to your PATH. Revisit the installation steps to ensure you selected the option to add Python to your PATH.
+
+- Permission Errors During Installation: This usually occurs on Windows and can be resolved by running the installer as an administrator.
+
+
+
+

@@ -1,0 +1,117 @@
+---
+title: "PostgreSQL"
+number-sections: true
+---
+
+
+# PostgreSQL RDBMS
+
+
+*PostgreSQL* (often pronounced "Post-gress-Q-L") is an advanced, open-source relational database management system (RDBMS). 
+
+::: {.callout-important}
+## To do
+
+- [Install PostgreSQL](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
+- During the installation process, select "PostgreSQL Server", "pgAdmin4" and "Command Line Tools"
+- `Password`: Provide a password (make sure to make a note - you can no longer change the password)
+- `Port`: Use the suggested port
+- `Locale`: Use [Default Locale]
+
+:::
+
+# PgAdmin4
+
+*pgAdmin4* is a popular open-source administration and management tool for the PostgreSQL relational database (it has already been installed together with PostgreSQL). 
+
+## Add New Server
+
+First, let's create a new connection to a PostgreSQL database instance. We will call this instance `local-connection`.
+
+Once added, this server will appear in your list of servers in *pgAdmin4's* interface, allowing you to quickly connect, manage, and query that database instance. 
+
+- Open *pgAdmin4*
+- Click on `Servers` on the left sidebar
+- Select `Add New Server` (in the main window below "Quick Links")
+- Provide the name: `local-connection`
+- Move to the tab `Connection`
+  - Host name/address: localhost
+  - Password: enter the password you used during the installation process and choose "Save password"
+- We are done and you can select `Save`
+
+
+# Create a Database
+
+Use *pgadmin4* to create a new database called `db_data`
+
+- Right click on our new connection `local-connection` in the left sidebar and select: Create > Database
+- In the tab "General", provide as "Database": `db_data` 
+- We are done and you can select `Save`
+
+
+# Create a Table
+
+Next, we include a table in our database.
+
+## Create a simple table
+
+We'll begin by creating a table named campaigns that will hold data about different marketing campaigns. 
+
+:::{.callout-note collapse="true"}
+# Columns in marketing campaigns table
+
+- id: A unique identifier for each campaign.
+- name: The name of the marketing campaign.
+- start_date & end_date: The time frame of the campaign.
+- budget: The budget allocated to the campaign.
+- channel: The channel used for the campaign (e.g., "Email", "Social Media", "TV").
+:::
+
+
+- Click on the database `db_data`
+- Open a new query tab (Tools > Query Tool) in *pgAdmin4*
+- Copy the SQL statement below and paste it into the Query Tab
+
+```sql
+CREATE TABLE campaigns (
+    id BIGSERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    start_date DATE,
+    end_date DATE,
+    budget DECIMAL(10, 2),
+    channel VARCHAR(255)
+);
+```
+
+- Click on the ▶️ symbol to execute the script
+- Select the database "db_data" at the left sidebar and expand "Schemas" > "Tables" > "campaigns" > "Columns" to view the columns of the table   
+
+
+## Insert values into the table
+
+Let's now insert some sample marketing campaigns into our table:
+
+- Open a new query tab (Tools > Query Tool) in *pgAdmin4*
+- Copy the SQL statement below and paste it into the Query Tab
+
+```sql
+INSERT INTO campaigns (name, start_date, end_date, budget, channel) VALUES
+('Winter Sale', '2023-12-01', '2023-12-31', 5000.00, 'Email'),
+('Summer Festival', '2023-06-01', '2023-06-15', 10000.00, 'Social Media'),
+('Back to School', '2023-08-01', '2023-08-20', 7500.00, 'TV');
+```
+
+- Click on the ▶️ symbol to execute the script
+
+
+## Retrieve values from the table
+
+After inserting the campaigns, you can retrieve them using a simple SELECT query. For instance:
+
+- Open a new query tab (Tools > Query Tool) in *pgAdmin4*
+- Copy the SQL statement below and paste it into the Query Tab
+
+```sql
+SELECT * 
+FROM campaigns;
+```

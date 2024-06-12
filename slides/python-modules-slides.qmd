@@ -1,0 +1,141 @@
+---
+title: Modules, Packages, and Environments
+lang: en
+subtitle: Subtitle
+author: Jan Kirenz
+execute:
+  eval: false
+  echo: true
+highlight-style: github
+format:
+  revealjs: 
+    toc: true
+    toc-depth: 1
+    embed-resources: false
+    theme: [dark, ../custom.scss]  
+    incremental: false
+    transition: slide
+    background-transition: fade
+    transition-speed: slow
+    code-copy: true
+    code-line-numbers: true
+    smaller: false
+    scrollable: true
+    slide-number: c
+    preview-links: auto
+    chalkboard: 
+      buttons: false
+   #logo: images/logo.png
+    footer: Jan Kirenz
+---
+
+
+In Python development, modules, packages, and environments are essential concepts that play distinct yet interconnected roles in organizing and managing your projects.
+
+## Modules and Packages
+
+**Modules** are individual Python files containing reusable code, like functions and variables. They allow you to organize related definitions logically, making your programs modular and improving maintainability. Modules are essentially the building blocks for more complex applications.
+
+::: {.callout-tip title="Kitchen Analogy for Modules" collapse="true" }
+Python is comparable to a well-equipped kitchen that allows you to whip up a variety of dishes. When cooking, you often reach for specific tools and ingredients, each suited to particular tasks or recipes. In Python, these tools and ingredients are represented by *modules*.
+
+There are countless Python modules available, which you can think of as recipe books filled with pre-written recipes (functions) that you can use to perform common tasks, such as sending emails, performing mathematical operations, or handling dates and times.
+
+Imagine you're in a kitchen. Instead of creating every dish from scratch, you use tools and ingredients that are already prepared. In this analogy:
+
+- **The kitchen** is your Python environment where you cook up your programs.
+- **Recipe books** are like **Python modules**. Each book (module) contains a set of recipes (functions) you can follow to make specific dishes (perform specific tasks).
+- **Ingredients** can be thought of as the **data types** and **variables** you use in Python.
+- **The cooking utensils** are the **methods** from the modules, helping you manipulate the ingredients.
+
+Just as you wouldn’t use a single tool or ingredient for all dishes, in Python, you use different modules for different purposes. For instance, if you need to perform file operations, you open your 'os' and 'shutil' recipe books. Need to handle dates and times? You turn to the 'datetime' module.
+:::
+
+**Packages** are collections of related modules grouped together in directories containing a special `__init__.py` file. This structure helps organize modules logically and provides a more comprehensive toolkit for specific tasks.
+
+::: {.callout-tip title="Kitchen Analogy for Packages" collapse="true" }
+In the kitchen analogy, if a module is like a recipe book containing specific instructions and tools for preparing individual dishes, a **package** would be like a complete cookbook or a curated collection of related recipe books. 
+
+Each recipe book (module) in the collection is specialized, but together they offer comprehensive instructions for preparing various dishes within a particular cuisine or cooking style.
+:::
+
+For instance, the `pandas` package includes multiple modules that handle data frames, I/O operations, and more.
+
+## Benefits 
+
+1. **Reduce Complexity:** Modules and packages encapsulate code into manageable components, simplifying programming.
+   
+2. **Enhance Reusability:** Write once, use everywhere. Modules and packages allow the same code to be reused across different projects.
+   
+3. **Improve Organization:** They help structure code logically, making it easier to understand.
+
+## Example
+
+To use an existing module or package, you import it using the `import` statement. For instance, to use the `math` module:
+
+```python
+import math
+
+result = math.sqrt(16) 
+print(result)
+```
+
+## Environments
+
+Environments are isolated workspaces where you can install and manage Python packages separately for each project. They help you maintain distinct sets of dependencies for different projects, ensuring compatibility and avoiding conflicts.
+
+## Benefits
+
+**Dependency Management:** An environment ensures that the correct version of each package is available for your project, preventing errors from incompatible versions.
+  
+**Project Separation:** You can have different projects with separate package requirements, avoiding conflicts. For instance, a data science project may require specific versions of data analysis libraries, while a web development project might have different needs.
+  
+**Custom Module Development:** If you create your own modules, environments help include them in your projects without affecting your global Python installation.
+
+## Setting Up an Environment
+
+To set up an environment, follow these instructions based on your operating system:
+
+1. **Access the Command Prompt or Terminal:**
+   - **Windows Users:** On Windows, use the Anaconda Command Prompt, which comes with the Anaconda distribution. To open it, search for "Anaconda Command Prompt" in the Start Menu and click to launch.
+   - **macOS Users:** Open Terminal from Applications > Utilities or by searching "Terminal."
+
+2. **Create an Environment:**
+   - Use the following command to create an environment named `myenv` with Python 3.11 and pip pre-installed:
+   
+   ```bash
+   conda create --name myenv python=3.11 pip
+   ```
+   - This command will set up an environment called `myenv` and include pip as the default package installer.
+
+:::{.callout-note}
+**Pip** is the Python package installer that simplifies accessing the Python Package Index (PyPI) and other repositories.
+:::
+
+
+3. **Activate the Environment:**
+   - Once the environment is created, activate it with the following command:
+   
+   ```bash
+   conda activate myenv
+   ```
+
+   The prompt will change to indicate that the environment is active.
+
+4. **Install Packages with Pip:**
+   - With the environment active, you can now install packages using pip .
+
+   Example using pip:
+   ```bash
+   pip install pandas
+   ```
+
+Although you can also install packages using `conda install`, we exclusively use `pip` to avoid potential conflicts between conda-installed and pip-installed packages. This approach ensures consistent and reliable management of dependencies in your Python environment.
+
+
+5. **Deactivate the Environment:**
+   - When you want to switch back to your base environment or deactivate the current environment, use:
+   
+   ```bash
+   conda deactivate
+   ```

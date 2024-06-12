@@ -1,0 +1,168 @@
+# MySQL 
+
+MySQL, pronounced "My S-Q-L" or sometimes "My Sequel," is a robust open-source relational database management system (RDBMS). 
+
+It leverages structured query language (SQL) for data management, manipulation, and retrieval in relational databases.
+
+
+## Installation 
+
+### Windows
+
+1. Download the Installer
+   - Visit the [MySQL Downloads page](https://dev.mysql.com/downloads/installer/).
+   - Select Windows as the platform and download the MySQL Installer for Windows corresponding to version 8.0.37.
+
+2. Run the Installer
+   - Execute the downloaded file. If prompted by a security dialog, click ‘Yes’ to allow the installer to make changes to your system.
+
+3. Choosing Setup Type
+   - When prompted to choose a setup type, select "Custom". This allows you to select specific components such as MySQL Server, MySQL Workbench, and other useful tools like MySQL Shell.
+
+4. Select Products and Features
+   - Choose the components you wish to install. Ensure that 'MySQL Server' and 'MySQL Workbench' are selected for a complete installation.
+
+5. Installation
+   - Follow the installer's prompts to install the selected components. This might take a few minutes depending on your internet connection and system speed.
+
+6. Configure MySQL Server
+   - After the installation, the MySQL Server configuration wizard will guide you through setting up the root password, configuring user accounts, and adjusting settings such as Windows Service and networking options.
+
+7. Complete Installation
+   - Finish the installation process. 
+   
+   
+Next, open MySQL Workbench to confirm that MySQL Server is operational (see next step)
+
+### Mac
+
+1. Download the DMG Archive
+   - Navigate to the [MySQL Downloads page](https://dev.mysql.com/downloads/mysql/) and choose macOS as the operating system.
+   - Download the DMG file for macOS, version 8.0.36.
+
+2. Install MySQL
+   - Open the downloaded DMG file and follow the on-screen instructions.
+
+<!-- 3. Initialize MySQL Database
+   - Open a terminal window and execute the following commands to secure your MySQL installation:
+     ```bash
+     sudo /usr/local/mysql/bin/mysqld --initialize
+     sudo /usr/local/mysql/bin/mysql_secure_installation
+     ```
+   - These commands set up the database system tables and apply security settings, including the root password.
+
+### 4. Start MySQL Server
+   - You can start the MySQL Server through System Preferences under the MySQL tab or via the command line:
+     ```bash
+     sudo /usr/local/mysql/support-files/mysql.server start
+     ```
+
+### 5. Verify Installation
+   - Use the MySQL command-line client with the root password to connect to the MySQL server, ensuring that everything is set up correctly. -->
+
+## Workbench 
+
+MySQL Workbench integrates visual tools for data modeling, SQL development, and database administration, including user management.
+
+### Installation
+
+If MySQL Workbench was not included during the initial MySQL Server setup, you can install it separately using the following steps for both Windows and Mac:
+
+1. Download MySQL Workbench
+   - Visit the [MySQL Workbench download page](https://dev.mysql.com/downloads/workbench/) and select the appropriate version for your operating system.
+
+2. Install the Application
+   - For Windows, execute the downloaded installer and follow the installation prompts.
+   - For Mac, open the downloaded DMG file and complete any setup instructions.
+
+
+### New Connection 
+
+Open MySQL Workbench to confirm that MySQL Server is operational.
+
+1. Launch MySQL Workbench
+   - Start MySQL Workbench from your applications list. Initially, configure network access and security settings as needed.
+
+2. Create a New Connection
+   - Set up a new connection to your MySQL server to start managing your databases using the settings specified during the server setup. Name your connection `local-connection`, select "Store in Vault," and enter your password.
+
+Continue with the next step.
+
+## Using MySQL
+
+
+### Create a Database
+
+Start by creating a database named `db_data` using MySQL Workbench:
+
+1. Connect using your local connection.
+2. Execute the following SQL commands in the MySQL Query window:
+
+  ```sql
+  DROP DATABASE IF EXISTS `db_data`;
+  CREATE DATABASE `db_data`; 
+  USE `db_data`;
+  ```
+
+3. Run the script using the ⚡ symbol.
+4. Select `Schemas` from the menu (if you can't see the database, refresh the database list using the 🔃 symbol)
+
+### Create a Table
+
+Construct a table to manage data about various marketing campaigns:
+
+:::{.callout-note}
+**Table Structure: Campaigns**
+- `id`: Primary key, auto-incremented.
+- `name`: Name of the marketing campaign.
+- `start_date` & `end_date`: Campaign duration.
+- `budget`: Allocated budget.
+- `channel`: Medium used (e.g., Email, Social Media, TV).
+:::
+
+1. Open a new query tab (select the symbol at the top left side of the screen) and run the following SQL command:
+
+```sql
+CREATE TABLE campaigns (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    start_date DATE,
+    end_date DATE,
+    budget DECIMAL(10, 2),
+    channel VARCHAR(255)
+);
+```
+
+2. Refresh the schema view to confirm the table's creation.
+
+### Insert Values into the Table
+
+Populate the `campaigns` table with sample data:
+
+- Open a new query tab and run this insert command:
+
+```sql
+INSERT INTO campaigns (name, start_date, end_date, budget, channel) VALUES
+('Winter Sale', '2023-12-01', '2023-12-31', 5000.00, 'Email'),
+('Summer Festival', '2023-06-01', '2023-06-15', 10000.00, 'Social Media'),
+('Back to School', '2023-08-01', '2023-08-20', 7500.00, 'TV');
+```
+
+### Retrieve Values from the Table
+
+To view the data in your campaigns table:
+
+- Open a new query tab and execute a SELECT query:
+
+```sql
+SELECT * 
+FROM campaigns;
+```
+
+This should output:
+
+|id |name                         |start_date|end_date                                     |budget  |channel     |
+|---|-----------------------------|----------|---------------------------------------------|--------|------------|
+|1  |Winter Sale                  |2023-12-01|2023-12-31                                   |5000.00 |Email       |
+|2  |Summer Festival              |2023-06-01|2023-06-15                                   |10000.00|Social Media|
+|3  |Back to School               |2023-08-01|2023-08-20                                   |7500.00 |TV          |

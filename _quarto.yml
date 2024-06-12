@@ -1,0 +1,72 @@
+project:
+  type: book
+
+execute:
+  freeze: auto
+
+book:
+  title: "Data Science, AI & Analytics Toolkit"
+  description: "Programming Toolkit for Data Science, AI & Analytics"
+
+  image: "/images/logo.png"
+  favicon: "/images/logo.png"
+  search:
+    type: overlay  
+  page-footer:
+    left: |
+      © [Jan Kirenz](https://www.kirenz.com/), 2024
+
+  chapters:
+    - index.qmd
+    # - introduction.qmd
+
+    - part: first-steps/first-steps.qmd
+      chapters:
+        - first-steps/project-environment.qmd 
+        - first-steps/python-installation.qmd
+        - first-steps/python-idle.qmd
+        - first-steps/anaconda-installation.qmd
+        - first-steps/jupyter-notebook.qmd
+        - first-steps/markdown.qmd
+
+    - part: python/python.qmd
+      chapters:
+        - python/python-modules.qmd
+        - python/python-environment-basics.qmd
+        - python/python-workspace.qmd
+        - python/python-basics.qmd
+        - python/python-indentation.qmd
+        - python/python-functions.qmd
+        - python/python-control-flow.qmd
+        - python/python-classes.qmd
+
+    - part: vscode/visual-studio-code.qmd
+      chapters:
+        - vscode/visual-studio-code-installation.qmd
+        - vscode/visual-studio-code-extensions.qmd
+        - vscode/visual-studio-code-basics.qmd
+
+    - part: sql/sql.qmd
+      chapters:
+        - sql/sql-mysql.qmd
+        - sql/sql-postgresql.qmd
+        - sql/sql-python.qmd
+
+    - part: github/github.qmd
+      chapters:
+        - github/github-git.qmd
+        - github/github-setup.qmd
+        - github/github-repo.qmd
+        - github/github-organization.qmd
+        - github/github-projects.qmd        
+
+format:
+  html:
+    toc: true
+    theme: cosmo
+    css: theme.scss
+    code-copy: true
+    highlight-style: github-dark
+    code-overflow: wrap
+    author-meta: "Jan Kirenz"
+    callout-appearance: simple

@@ -1,0 +1,174 @@
+# Basics
+
+- [Download Juypter Notebook](../code/python-basics.ipynb){download="python-basics.ipynb"}
+
+
+## Importing Libraries
+
+Importing libraries is essential for accessing additional Python features. We import them at the top of the file for clarity and efficiency. An alias (a short name) makes it easier to reference them throughout your code. 
+
+Insert the following code in a new code cell directly under your title and execute it:
+
+```{python}
+# Importing libraries (at the top)
+import numpy as np
+import pandas as pd
+import altair as alt
+```
+
+## Variables and Data Types
+
+Variables are used to store different kinds of data in Python. Data types define the nature of this data and influence how it can be used.
+
+Add a new code cell, then copy and paste the code provided below into that cell. Make sure to run the cell afterward.
+
+Example Code:
+
+
+```{python}
+# Assigning variables (using descriptive names)
+name = "Alice"  # String for a person's name
+age = 30  # Integer for age
+height = 5.5  # Float for height in feet
+numbers = [1, 2, 3]  # List of integers
+person = {"name": "Alice", "age": 30}  # Dictionary for person data
+```
+
+Explanation:
+
+- `name` is a **string** that stores a sequence of characters representing a name.
+- `age` is an **integer** variable representing a whole number.
+- `height` is a **float** representing a number with a decimal point.
+- `numbers` is a **list**, which is an ordered collection of items.
+- `person` is a **dictionary** consisting of key-value pairs that can store multiple attributes.
+
+To inspect the values stored in these variables, you can use the `print` function:
+  
+```{python}
+print(name)  # Output: Alice
+print(age)  # Output: 30
+print(numbers)  # Output: [1, 2, 3]
+print(person)  # Output: {'name': 'Alice', 'age': 30}
+```
+
+## Basic Operators and Calculations
+
+Operators allow you to perform calculations, comparisons, and logical operations.
+
+Example Code:
+
+
+```{python}
+# Arithmetic operations with multiple variables
+length = 10
+width = 5
+```
+
+```{python}
+# Calculate the area and perimeter
+area = length * width  # Multiplication
+perimeter = 2 * (length + width)  # Addition and multiplication
+
+# Display perimeter
+perimeter
+```
+
+```{python}
+# Comparison operations
+is_square = length == width  # Check if length and width are equal
+
+is_square
+```
+
+```{python}
+# Logical operations
+is_large_rectangle = (area > 20) and (perimeter > 10)  # Logical AND
+
+is_large_rectangle
+```
+
+Explanation:
+
+- `length` and `width` are multiplied to calculate the `area`.
+- `perimeter` is calculated by adding `length` and `width` together and then multiplying by 2.
+- `is_square` checks if the two sides are of equal length.
+- `is_large_rectangle` uses logical operators to determine if the rectangle is both large in area and perimeter.
+
+
+## Working with DataFrames
+
+A DataFrame is a two-dimensional, tabular data structure provided by Pandas. It allows you to efficiently manipulate data, similar to a spreadsheet or SQL table.
+
+Example Code:
+
+```{python}
+# Prepare data
+data = { "Numbers": [1, 2, 3, 4, 5], 
+         "Squares": np.array([1, 2, 3, 4, 5]) ** 2}
+
+# Creating a DataFrame with Pandas
+df = pd.DataFrame(data)
+
+# Inspecting the DataFrame
+df
+```
+
+Explanation:
+
+- The dictionary `data` contains two lists: numbers and their squares.
+- The DataFrame `df` is created from this dictionary using the `pd.DataFrame` function, which organizes the data into rows and columns.
+- Typing just `df` in a Jupyter Notebook cell displays the DataFrame in a tabular format.
+
+## Understanding Methods
+
+A method is a function that is associated with an object (like a DataFrame, list, or string) and is accessed using dot notation (`.`). This makes it easy to manipulate the object and retrieve information.
+
+Example Code:
+
+`df.head()` is a method that displays the first few rows of a DataFrame to preview the data:
+
+```{python}
+df.head() 
+```
+
+
+`df.describe()` provides summary statistics like mean, count, and standard deviation. Additionally, we use the method `.round(2)` to round the values:
+
+
+```{python}
+df.describe().round(2) 
+```
+
+
+General Method Concept:
+
+- **Object:** An entity containing data and functionality (e.g., DataFrame, list, or string).
+- **Method:** A function associated with an object.
+- **Dot Notation (`.`):** Used to call a method on an object.
+
+## Plotting Data
+
+After understanding the structure of a DataFrame, you can visualize its data using Altair.
+
+Example Code:
+
+```{python}
+
+# Creating the chart
+alt.Chart(df).mark_point().encode(
+    x='Numbers',
+    y='Squares'
+)
+```
+
+Explanation:
+
+- **Altair Library**: A declarative visualization library that simplifies the process of creating charts and graphs.
+- **`alt.Chart(df)`**: Creates a new chart object from the DataFrame `df`.
+- **`mark_bar()`**: Specifies the type of chart (scatter plot in this case).
+- **`encode`**: Maps DataFrame columns to chart attributes.
+  - **`x='Numbers'`**: Sets the horizontal axis to use the `Numbers` column.
+  - **`y='Squares'`**: Sets the vertical axis to use the `Squares` column.
+
+This concise syntax allows for rapid creation and customization of visualizations.
+

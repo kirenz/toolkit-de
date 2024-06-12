@@ -1,0 +1,25 @@
+---
+title: "Jupyter Notebook"
+number-sections: true
+---
+
+
+# Jupyter Notebook
+
+[Jupyter Notebook](https://jupyter.org/) is an open-source application that allows you to create and share documents that contain code, equations, visualizations and narrative text. 
+
+<br>
+
+![](/images/jupyter.png){width="50%"}
+
+
+<br>
+
+A notebook is basically a list of cells and the cells contain either
+
+1. explanatory text (written in markdown)
+1. executable code
+1. code output
+
+Note that we will use Jupyter Notebook inside the coding editor Visual Studio Code or Google Colab.
+

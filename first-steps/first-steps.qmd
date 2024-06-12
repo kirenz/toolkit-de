@@ -1,0 +1,9 @@
+# First Steps 
+
+In this initial section, we will establish a basic working environment essential for any data related endeavor. 
+
+You'll learn how to navigate your computer's command line, set up Python for the first time, and use the Anaconda distribution. 
+
+Additionally, we'll guide you through using Jupyter Notebook, a powerful tool for interactive data exploration, and teach you the basics of Markdown to document your work effectively. 
+
+Whether you're just starting out or refreshing your skills, these first steps will set you up for success as you continue to explore and analyze data.

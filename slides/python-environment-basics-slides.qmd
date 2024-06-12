@@ -1,0 +1,107 @@
+---
+title: Create Environment
+lang: en
+subtitle: Subtitle
+author: Jan Kirenz
+execute:
+  eval: false
+  echo: true
+highlight-style: github
+format:
+  revealjs: 
+    toc: true
+    toc-depth: 1
+    embed-resources: false
+    theme: [dark, ../custom.scss]  
+    incremental: false
+    transition: slide
+    background-transition: fade
+    transition-speed: slow
+    code-copy: true
+    code-line-numbers: true
+    smaller: false
+    scrollable: true
+    slide-number: c
+    preview-links: auto
+    chalkboard: 
+      buttons: false
+   #logo: images/logo.png
+    footer: Jan Kirenz
+---
+
+
+To keep your data science projects organized and ensure compatibility, it's best to use a dedicated environment for the following steps. 
+
+We'll create a new conda environment called `basics` and install essential data science packages like NumPy (numerical computing with arrays), Pandas (data manipulation and analysis), Matplotlib (data visualization), Seaborn (statistical data visualization), and Altair (interactive visualizations).
+
+## Create Environment
+
+1. **Access the Command Prompt or Terminal:**
+   - **Windows Users:** Open the Anaconda Command Prompt from the Start Menu.
+   - **macOS Users:** Open Terminal from Applications > Utilities or by searching "Terminal."
+
+2. **Create the Environment:**
+   - Use the following command to create a new conda environment named `basics` with Python 3.11:
+   
+   ```bash
+   conda create --name basics python=3.11 pip
+   ```
+   - This command ensures that pip is included by default.
+
+3. **Activate the Environment:**
+   - Once the environment is created, activate it with:
+   
+   ```bash
+   conda activate basics
+   ```
+
+   - The prompt will change to indicate that the environment is active.
+
+4. **Install Required Libraries:**
+   - With the environment active, install the necessary data science libraries:
+
+   ```bash
+   pip install numpy pandas matplotlib seaborn altair
+   ```
+
+   - This command will fetch and install all packages from PyPI.
+
+5. **Verify Package Installation:**
+   - After installation, open a Jupyter Notebook and verify that the packages are available by importing them in Python.
+
+
+   ::: {.callout-note}
+   To make it easier to use the libraries' functions and methods throughout your code, we often import them using shorter, standardized aliases (using these standard aliases improves code readability, reduces typing, and makes your code easier to share with other data scientists who will recognize these conventions)
+   :::
+
+   ```python
+   import numpy as np
+   import pandas as pd
+   import matplotlib.pyplot as plt
+   import seaborn as sns
+   import altair as alt
+   ```
+  
+   - If no errors occur, the libraries have been correctly installed.
+   
+   :::{.callout-tip collapse="true" title="Explanation of Packages"} 
+
+   **NumPy (`np`):** The alias `np` is widely used and allows concise access to NumPy's array manipulation and numerical computing functions.
+
+   **Pandas (`pd`):** The alias `pd` provides a shorthand to Pandas' powerful data manipulation tools, like DataFrame and Series.
+
+   **Matplotlib (`plt`):** The alias `plt` simplifies calling Matplotlib's functions for plotting, creating figures, and customizing graphs.
+
+   **Seaborn (`sns`):** The alias `sns` makes it easier to access Seaborn's statistical data visualization tools, which integrate seamlessly with Matplotlib.
+
+   **Altair (`alt`):** The alias `alt` allows quick access to Altair's declarative visualization syntax for interactive plotting using Vega-Lite.
+   :::
+   
+6. **Deactivate the Environment:**
+   - When you're done working or want to switch back to the base environment, deactivate the current environment:
+
+   ```bash
+   conda deactivate
+   ```
+
+Creating a separate environment for Python basics ensures that your workspace remains isolated and stable. 

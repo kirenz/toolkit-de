@@ -1,0 +1,26 @@
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+// set default font family
+$font-family-sans-serif: "Inter", sans-serif;
+
+/*-- scss:defaults --*/
+$link-color: #4AA181;
+// $font-size-root: 13pt;	
+$font-color:	#35373F;
+/*-- scss:rules --*/
+
+
+h1 {
+  font-size: 1.3em; 
+}
+
+h2 {
+  font-size: 1.1em; 
+}
+
+h3 {
+  font-size: 1.0em; 
+}
+
+

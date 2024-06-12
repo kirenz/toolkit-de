@@ -1,0 +1,291 @@
+---
+title: "Python"
+number-sections: true
+---
+
+# Basics
+
+Python is an object-oriented language (an object is an entity that contains data along with associated metadata and/or functionality).
+
+One thing that distinguishes Python from many other programming languages is that it is interpreted rather than compiled. This means that it is executed line by line which is particular useful for data analysis, as well as the creation of interactive, executable documents like Jupyter Notebooks.
+
+:::{.callout-note}
+Python is an interpreted language. The Python interpreter runs a program by executing one statement at a time.
+:::
+
+On top of this, there is a broad ecosystem of third-party tools and modules (like Jupyter Notebook) that offer more specialized data science functionality.
+
+
+# Jupyter Notebook
+
+[Jupyter Notebook](https://jupyter.org/) is an open-source application that allows you to create and share documents that contain code, equations, visualizations and narrative text. 
+
+<br>
+
+![](/images/jupyter.png){width="50%"}
+
+
+<br>
+
+A notebook is basically a list of cells and the cells contain either
+
+1. explanatory text (written in markdown)
+1. executable code
+1. code output
+
+Note that we will use Jupyter Notebook inside the coding editor Visual Studio Code or Google Colab.
+
+
+# Markdown
+
+Markdown is one of the world’s most popular markup languages used in data science. Jupyter Notebooks use Markdown to provide an unified authoring framework for data science, combining code, its results, and commentary in Markdown. 
+
+:::{.callout-note}
+Markdown is a simple way to format text that looks great on any device.
+:::
+
+Review this sites to learn more about Markdown:
+
+::: {.callout-important}
+## To do
+- [Interactive 10 minute Markdown tutorial](https://commonmark.org/help/)
+:::
+
+
+
+# Colab {#sec-colab}
+
+Colaboratory, or “Colab” for short, is a free to use product from Google Research. Colab allows anybody to write and execute python code through the browser, and is especially well suited to perform data analysis and machine learning.
+
+:::{.callout-note}
+Colab is a free Jupyter notebook environment that requires no setup, and runs entirely on the Cloud.
+:::
+
+Watch this video to get a first impression of Colab:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/inN8seMm7UI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Let`s start your first Colab notebook to get an overview about some basic features:
+
+::: {.callout-important}
+## To do
+- [Colab basic features overview](https://colab.research.google.com/notebooks/basic_features_overview.ipynb)
+- [Interactive Colab Markdown guide](https://colab.research.google.com/notebooks/markdown_guide.ipynb)
+:::
+
+To download the Jupyter Notebook go to the Colab menu and choose: "File" > "Download" > "Download .ipynb"
+
+<!--
+
+# Amazon SageMaker Studio Lab
+
+
+[Amazon SageMaker Studio Lab](https://aws.amazon.com/sagemaker/studio-lab/) is a free machine learning (ML) development environment that provides the compute, storage (up to 15GB), and security—all at no cost—for anyone to learn and experiment with ML. 
+
+
+![](/images/studio.png)
+
+All you need to get started is a valid email address—you don’t need to configure infrastructure or manage identity and access or even sign up for an AWS account. SageMaker Studio Lab accelerates model building through GitHub integration, and it comes preconfigured with the most popular ML tools, frameworks, and libraries to get you started immediately. SageMaker Studio Lab automatically saves your work so you don’t need to restart in between sessions. It’s as easy as closing your laptop and coming back later.
+
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/k2nVIvHB1dk?si=kKZa1j316JLtfkgn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
+::: {.callout-important}
+## To do
+- [Sign up for an Amazon SageMaker Studio Lab Account](https://aws.amazon.com/sagemaker/studio-lab/)
+:::
+
+-->
+
+# Anaconda {#sec-anaconda}
+
+## Basics
+
+The open-source [Anaconda Distribution](https://www.anaconda.com/download) is one of the easiest ways to get started with data science projects. It already includes Python and the most important data science modules. 
+
+:::{.callout-note}
+Anaconda is a data science toolkit which already includes most of the data science modules we need.
+:::
+
+Anaconda's package manager `conda` makes it easy to manage multiple data environments that can be maintained and run separately without interference from each other (in so called virtual environments).
+
+::: {.callout-note collapse="true"}
+## Expand to learn about conda
+
+*conda* analyses the current environment including everything currently installed, and, together with any version limitations specified (e.g. the user may wish to have TensorFlow version 2.0 or higher), works out how to install a compatible set of dependencies, and shows a important if this cannot be done. 
+:::
+
+Instead of conda, you can also use `pip` (the standard package installer for Python) to install packages. 
+
+Note that you should only use either conda or pip in one environment (we usually use pip).
+
+## If you already have Anaconda
+
+If you already have Anaconda on your machine, make sure that you use the latest version (in our course, we use Python 3.11). 
+
+In your command line tool, type `python --version` to see which Python version you are using in your Anaconda base environment:
+
+
+- On *Windows* open the Start menu and open an ["Anaconda Command Prompt"](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html#starting-conda). Type `python --version` to see which Python version you are using in your Anaconda base environment.
+
+- On *macOS* or *Linux* open a [terminal window](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html#starting-conda). Type `python --version` to see which Python version you are using in your Anaconda base environment.
+
+*You may also uninstall your current Anaconda environment from your machine and install the latest version: here a guide of how to [uninstall Anaconda](https://docs.anaconda.com/anaconda/install/uninstall/).*
+
+
+## Installation
+
+Install the latest version of the Anaconda Distribution:
+
+::: {.callout-important}
+## To do
+
+- [Anaconda installation](https://www.anaconda.com/download)
+
+:::
+
+After you have installed Anaconda, you can update it. The following commands will update all packages in the default "base" environment to the latest version but will not update Python:
+
+::: {.callout-important}
+## To do
+
+- On *Windows* open the Start menu and open an ["Anaconda Command Prompt"](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html#starting-conda). 
+- On *macOS* or *Linux* open a [terminal window](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html#starting-conda).
+- In your terminal, type: `conda update --all`
+:::
+
+Now follow the steps described in the next section.
+
+
+## Anaconda environment
+
+After you have installed and updated Anaconda, you can install the modules you need for a specific lab in a new environment. 
+
+
+::: {.callout-important}
+## To do
+- Go to [GitHub course environments](https://github.com/kirenz/environments)
+- Follow the instructions in the GitHub repo and install the environment `env-lab` 
+:::
+
+
+<!--
+
+#### Install or update Modules
+
+Take a look at all the modules in your environment:
+
+```bash
+conda list
+```
+
+Make sure that you use `scikit-learn` in version 1.0.2 or higher. If this is not the case, update Anaconda. If you only want to **update specific modules**, use conda update and the name of the module (e.g., scikit-learn)
+
+```bash
+conda update scikit-learn
+```
+
+If you want to **install new modules** in your environment, you should always use conda (and not the package installer for Python: [pip](https://pypi.org/project/pip/)). Here is an example of how to install scikit-learn [see conda documentation](https://anaconda.org/anaconda/scikit-learn)
+
+```bash
+conda install scikit-learn
+```
+
+Or, if you want to install a specific version
+
+```bash
+conda install scikit-learn=1.0.2
+```
+
+Finally, take a look at the [Anaconda Cheat Sheet](https://docs.conda.io/projects/conda/en/latest/_downloads/843d9e0198f2a193a3484886fa28163c/conda-cheatsheet.pdf) which provides a list of useful commands.
+
+-->
+
+
+
+### Miniforge {#sec-miniforge}
+
+As an alternative to Anaconda, you can also use the open-source project [Miniforge](https://github.com/conda-forge/miniforge).
+
+Miniforge is a small, bootstrap version of the data science platform Anaconda that includes only Python, the open source package management system [conda](https://docs.conda.io/en/latest/) and a small number of other useful packages. 
+
+Miniforge also uses Anaconda's package manager `conda`, which makes it easy to manage multiple data environments that can be maintained and run separately without interference from each other (in so called virtual environments).
+
+:::{.callout-note}
+Miniforge is an community-led alternative to the data science platforms Anaconda and Miniconda, provided by Anaconda, Inc.
+:::
+
+Compared to Anaconda, Miniforge provides more up-to-date packages, and is more user-friendly. Therefore, I recommend using Miniforge for data science projects.
+
+::: {.callout-note}
+## To do
+
+Install the latest version of the Miniforge
+
+- [Miniforge installation tutorial](https://kirenz.github.io/codelabs/codelabs/miniforge-setup/#0)
+
+:::
+
+
+
+
+# Visual Studio Code {#sec-vscode}
+
+## Basics
+
+Visual Studio Code (also called Code) is a powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. It comes with a rich ecosystem of extensions for Python.
+
+:::{.callout-note}
+Visual Studio Code is a code editor that can be used with a variety of programming languages including Python.
+:::
+
+<br>
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/KMxo3T_MTvY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
+
+## Installation
+
+Install VS Code:
+
+::: {.callout-important}
+## To do
+- [Install Code](https://code.visualstudio.com/)
+:::
+
+## Install extensions
+
+The features that Visual Studio Code includes out-of-the-box are just the start. VS Code extensions let you add languages, debuggers, and tools to your installation to support your development workflow.
+
+Let's install some important extensions:
+
+::: {.callout-important}
+## To do
+- [Visual Studio Code Extensions](https://vscode.dev/profile/github/94d1b9a0184dec88655f9622c87b866d)
+:::
+
+## Jupyter Notebooks
+
+We usually work with Jupyter Notebook files in VS Code:
+
+::: {.callout-important}
+## To do
+- [Learn how to use Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks)
+:::
+
+To use a specific Anaconda environment as Jupyter kernel, select the kernel (e.g. `lab`) using the [kernel picker](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_create-or-open-a-jupyter-notebook) in the top right of VS Code.
+
+
+
+## Optional tutorials
+
+Some resources to get familiar with VS Code:
+
+- [Take a look at the intro videos](https://code.visualstudio.com/docs/getstarted/introvideos)
+- [Data Science in VS Code tutorial](https://code.visualstudio.com/docs/datascience/data-science-tutorial)
+- Pro tips: [25 VS Code Productivity Tips and Speed Hacks](https://www.youtube.com/watch?v=ifTF3ags0XI)
+
+

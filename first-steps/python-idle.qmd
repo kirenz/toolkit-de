@@ -1,0 +1,45 @@
+# Python IDLE
+
+Python IDLE is a simple IDE (Integrated Development Environment) that comes installed with the Python programming language. It's designed to help write and execute Python code efficiently.
+
+
+*IDLE is named after Eric Idle, a member of the Monty Python comedy group, from which Python also gets its name.*
+
+
+## Launching Python IDLE
+
+After installing Python, launch IDLE from your operating system’s search menu:
+
+- **Windows**: Open the Start menu and type `IDLE`.
+- **MacOS**: Use Spotlight search (Cmd + Space), type `IDLE`, and press enter.
+- **Linux**: Find IDLE in your Applications menu or run `idle` from the terminal.
+
+## Simple Calculations 
+
+The IDLE shell window acts as an interactive interpreter, executing each line of code immediately when you press Enter.
+
+Directly in the IDLE shell, you can input arithmetic expressions like `2 + 3` and press Enter to see the results immediately. 
+
+This feature makes IDLE ideal for quick calculations and experiments with Python's mathematical capabilities, without needing to save or execute a script.
+
+## Python Scripts
+
+Next, we create and run a simple Python script:
+
+1. **Open a New File**: Navigate in IDLE to `File` > `New File` to open an editor window.
+2. **Enter Your Code**: Type the following in the new editor window:
+
+   ```python
+   print("Hello, Python!")
+   ```
+
+3. **Save Your Script**: Save the file via `File` > `Save As...` naming it `hello.py`. Ideally, save it in your directory `code` within your `toolkit-labs` folder (refer to this explanation regarding our [folder structure](command-line-folders.qmd)).
+4. **Execute Your Script**: Press `F5` or go to `Run` > `Run Module` to execute your script. The output `Hello, Python!` should appear in the IDLE shell.
+
+Now modify your script with varied messages. You can also Type `help(print)` or `help()` in the IDLE shell to explore Python's extensive help documentation and learn about other functions.
+
+## What's next?
+
+Python IDLE provides an introduction to programming in Python, offering a straightforward interface for code development and execution. In one of the following sections, we are exploring more advanced IDEs like Visual Studio Code that support larger projects with additional features.
+
+The next chapter will cover the installation and basic usage of Anaconda, a popular Python distribution that includes a robust package manager and a suite of pre-installed libraries commonly used in data science and machine learning.

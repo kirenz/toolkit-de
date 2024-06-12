@@ -1,0 +1,166 @@
+# GitHub
+
+
+![](/images/github.png)
+
+# Basics
+
+[GitHub](https://github.com/) is a provider of internet hosting for software development and version control using Git. We will use GitHub as a platform for web hosting and collaboration. 
+
+<br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/w3jLJU7DT5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+
+<br>
+
+
+
+## Git
+
+Git is a version control system -- like the "Track Changes" features from Microsoft Word with many more additional features:
+
+- Git can be used to store content 
+- Code can be changed and other developers can add code in parallel.
+- Git has a remote repository which is stored in a server and a local repository which is stored in the computer of each developer.  
+
+
+::: {.callout-important}
+## To do
+Check if you have Git on your machine (see instructions below)
+:::
+
+We need Git for our course. To see if Git is already installed on your machine, you can go in the command line (on Windows), or in the terminal (on Mac) and type this command:
+
+```bash
+git --version
+```
+
+If you don't see the version, you need to install Git
+
+- 💾 Mac: Option 1: you can install Apple's [XCode](https://apps.apple.com/us/app/xcode/id497799835?mt=12), which includes Git. Option 2: Only install [Git](https://git-scm.com/download/mac) (in that case I recommend to use [homebrew(https://brew.sh/)])
+
+- 💾 Windows: [Install Git](https://git-scm.com/download/win). Follow [these instructions](https://www.heise.de/tipps-tricks/Git-auf-Windows-installieren-und-einrichten-5046134.html)
+
+
+:::{.callout-note}
+Learn about Git with ["Learn Git Branching"](https://learngitbranching.js.org/), the most visual and interactive way to learn Git on the web
+:::
+
+
+# Create GitHub account
+
+You need a free GitHub-account for our course. Please follow the instructions below (*in case you already have a GitHub account: please add your HdM-email address to your account*):
+
+::: {.callout-important}
+## To do
+
+- [Create a GitHub account with your HdM-email](https://github.com/join)
+- Verify your GitHub email
+- You may also sign up for the free [student developer pack](https://education.github.com/pack)  
+- Install the [VS Code GitHub extension](https://code.visualstudio.com/docs/editor/github)
+
+:::
+
+# Use .gitignore 
+
+You should use a `.gitignore` file in your repository's root directory to tell Git which files and directories to ignore when you make a commit. This means that these files will only exist on your local machine and not in your remote GitHub repository. For example, we don't want to commit our API-keys stored in `.env` to our remote GitHub repository.
+
+::: {.callout-important}
+## To do
+
+- [Download this .gitignore template](/.gitignore)
+- Place the file in your repository's root directory
+- Rename the file to `.gitignore`
+
+:::
+
+<!-- To learn more about API saftey, review [this information]( https://help.openai.com/en/articles/5112595-best-practices-for-api-key-safety). -->
+
+
+# GitHub Desktop
+
+Next, learn how to set up, authenticate, and configure GitHub Desktop to allow you to contribute to projects directly from your machine.
+
+::: {.callout-important}
+## To do
+- [Install GitHub desktop to synchronize your machine with GitHub](https://desktop.github.com/)
+- [Getting started with GitHub Desktop](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/overview/getting-started-with-github-desktop)
+:::
+
+
+<!--
+### GitHub SSH Key
+
+Using the SSH protocol, you can connect and authenticate to remote servers and services from your terminal. With SSH keys, you can connect to GitHub without supplying your username and personal access token at each visit.
+
+1. [Check for existing SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys)
+1. [Generate a SSH-Key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+1. [Add a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+1. [Test connection](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection)
+-->
+
+# GitHub Organization
+
+Organizations are shared accounts where businesses and open-source projects can collaborate across many projects at once, with sophisticated security and administrative features.
+
+::: {.callout-important}
+## To do
+Create one [free Organization account](https://github.com/organizations/plan) for your team and invite all members to that account
+:::
+
+Your team can collaborate on GitHub by using an organization account, which serves as a container for your shared work and gives the work a unique name and brand.
+
+Each person that uses GitHub always signs into a personal account, and multiple personal accounts can collaborate on shared projects by joining the same organization account.
+
+Learn how to [invite other team members](https://docs.github.com/en/organizations/managing-membership-in-your-organization/inviting-users-to-join-your-organization) to an Organization. 
+
+
+# GitHub Projects
+
+A project is an adaptable spreadsheet, task-board, and road map that integrates with your issues and pull requests on GitHub to help you plan and track your work effectively. 
+
+You can create and customize multiple views by filtering, sorting, grouping your issues and pull requests, visualize work with configurable charts, and add custom fields to track metadata specific to your team. 
+
+Learn how you can use GitHub Issues to plan and track your work:
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/yFQ-p6wMS_Y?si=vYu5dBCHN4XfyPk3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+More resources:
+
+- [Getting started with project planning on GitHub](https://github.blog/2022-02-11-getting-started-with-project-planning-on-github/)
+
+- [10 things you didn’t know you could do with GitHub Projects](https://github.blog/2023-08-28-10-things-you-didnt-know-you-could-do-with-github-projects/)
+
+- [GitHub Projects documentation](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
+
+# GitHub Codespaces
+
+A [GitHub Codespace](https://github.com/features/codespaces) is a fully configured development environment that's hosted in the cloud. 
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/_W9B7qc9lVc?si=WW1MwZp6g594GeHR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+You can connect to codespaces from your browser (links will be provided) or from your local [Visual Studio Code](https://docs.github.com/en/codespaces/developing-in-codespaces/using-github-codespaces-in-visual-studio-code) installation.
+
+
+::: {.callout-important}
+## To do
+- [Install the GitHub Codespaces Extension](https://marketplace.visualstudio.com/items?itemName=GitHub.codespaces)
+
+
+- [Learn how to use GitHub Codespaces in Visual Studio Code](https://docs.github.com/en/codespaces/developing-in-codespaces/using-github-codespaces-in-visual-studio-code)
+
+:::
+
+All personal GitHub.com accounts have a monthly quota of free use of GitHub Codespaces included in the Free or Pro plan ([see pricing details](https://github.com/features/codespaces)).
+
+
+:::{.callout-warning}
+You only have a limited quota of free hours per month so don't forget to stop your codespace if you are done: [Codespaces status overview in GitHub](https://github.com/codespaces)
+:::
+
+
+Regardless of your local operating system, your codespace will run in a Linux environment. 
+
+

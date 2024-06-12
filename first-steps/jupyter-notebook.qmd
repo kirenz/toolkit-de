@@ -1,0 +1,59 @@
+# Jupyter Notebook
+
+The Anaconda Distribution includes Jupyter Notebook, a powerful tool for interactive computing.
+
+:::{.callout-note}
+Jupyter Notebook is an interactive web-based environment where you can write and run Python code, integrate narrative text with Markdown, and display outputs like plots directly within the web interface.
+:::
+
+Unlike the Python IDLE, which operates primarily as a basic editor, Jupyter Notebook enhances your interactive experience with these features:
+
+1. **Write and Execute Code:** Each interactive "cell" in a Jupyter Notebook can contain Python code, which you can execute independently.
+2. **Combine Text and Code:** Easily switch a cell to "Markdown" mode to integrate narrative text, formatted instructions, or even mathematical equations using LaTeX.
+3. **Visualize Results:** Display charts, graphs, and other visualizations directly within the notebook, facilitating instant feedback loops beneficial for exploratory data analysis.
+
+## Launch Jupyter Notebook
+
+1. Open Anaconda Navigator:
+   - **Windows:** Open the Start Menu and search for "Anaconda Navigator." Click to launch it.
+   - **macOS/Linux:** Search for "Anaconda Navigator" in your applications or open a terminal and type:
+   ```bash
+   anaconda-navigator
+   ```
+2. In Anaconda Navigator, locate the Jupyter Notebook application.
+3. Click the "Launch" button. This opens Jupyter Notebook in your default web browser.
+
+## Create Your First Notebook
+
+1. In Jupyter's web interface, navigate to the `code` directory (refer to our [folder structure](command-line.qmd) explanation).
+2. Click "New" in the top-right corner and select "Python [default environment]" to create a new notebook.
+3. A new notebook page opens with an empty code cell.
+
+### Writing and Running Code
+
+1. Type any Python code in the first cell, such as:
+   ```python
+   print("Hello, Jupyter!")
+   ```
+2. Execute the code by pressing `Shift+Enter` or clicking "Run." The output displays directly below the cell.
+
+### Adding Markdown Text
+
+1. Click the "+" button to add a new cell.
+2. Change the cell type from "Code" to "Markdown" using the dropdown menu.
+3. Write your text in Markdown, for example:
+   ```markdown
+   This is **bold** markdown
+   ```
+4. Render the Markdown as formatted text by pressing `Shift+Enter`.
+
+### Save the Notebook
+
+1. Use the "File" menu to save the notebook.
+2. Name the file `hello-jupyter.ipynb` and save it in the `code` folder.
+
+:::{.callout-note}
+`.ipynb` files are documents produced by Jupyter Notebook. These files contain both the inputs (code, Markdown text) and outputs (code execution results, visualizations) of interactive sessions. This format enables you to capture a complete and reproducible record of your computation process, enhancing collaboration and sharing in data science projects.
+:::
+
+Each `.ipynb` file is structured as a JSON document, containing an ordered list of "cells" which can be code, Markdown, or raw text. This structure allows you to execute code in pieces, revisit earlier results, or make changes without rerunning the entire script, unlike traditional `.py` scripts which run sequentially from start to finish.

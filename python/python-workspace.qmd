@@ -1,0 +1,34 @@
+# Workspace setup
+
+Before programming in Python, let's make sure you have a properly configured workspace.
+
+## Starting Anaconda Navigator
+
+1. Launch Anaconda Navigator:
+   - Open Anaconda Navigator from the Applications folder on macOS or the Start Menu on Windows.
+
+2. Open Jupyter Notebook:
+   - In Anaconda Navigator, find Jupyter Notebook and click 'Launch' to open it in your web browser.
+
+## Setting Up Jupyter Notebook
+
+1. Select the Environment:
+   - In Jupyter Notebook, use the "New" dropdown menu (top right) to select the `python-basics` environment.
+
+2. Create a New Notebook:
+   - Click 'New' and select `python-basics` under the Notebooks section to start a new Notebook. Inside the notebook, create a new markdown cell to give the Notebook a title (e.g. Python basics):
+
+   ```markdown
+   # Python basics
+   ```
+
+3. Save the Notebook:
+   - Save your Notebook in the `code` folder (refer to our [folder structure](../first-steps/command-line.qmd) explanation) with a meaningful name (e.g. `python-basics.ipynb`)
+
+## Download Jupyter Notebook
+
+In the upcoming sections, you'll have the option to download the content as a notebook. Once downloaded, you can save it in your `code` folder and open the notebook in Jupyter.
+
+:::{.callout-tip}
+The download link is located at the start of each document containing code-related content.
+:::

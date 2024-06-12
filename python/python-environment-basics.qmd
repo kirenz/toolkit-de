@@ -1,0 +1,91 @@
+# Environments
+
+Environments are isolated workspaces where you can install and manage Python packages separately for each project. They help you maintain distinct sets of dependencies for different projects, ensuring compatibility and avoiding conflicts.
+
+Benefits:
+
+- Dependency Management: An environment ensures that the correct version of each package is available for your project, preventing errors from incompatible versions.
+  
+- Project Separation: You can have different projects with separate package requirements, avoiding conflicts. For instance, a data science project may require specific versions of data analysis libraries, while a web development project might have different needs.
+  
+- Custom Module Development: If you create your own modules, environments help include them in your projects without affecting your global Python installation.
+
+
+## Create Environment
+
+To set up an environment, follow these instructions based on your operating system:
+
+
+1. Access the Command Prompt or Terminal:
+   - Windows Users: Open the Anaconda Command Prompt from the Start Menu.
+   - macOS Users: Open Terminal from Applications > Utilities or by searching "Terminal."  
+
+2. Create the Environment:
+   - Use the following command to create a new conda environment named `basics` with Python 3.11:
+   
+   ```bash
+   conda create --name basics python=3.11 pip
+   ```
+   - This command ensures that pip is included by default.
+
+3. Activate the Environment:
+   - Once the environment is created, activate it with:
+   
+   ```bash
+   conda activate basics
+   ```
+
+   - The prompt will change to indicate that the environment is active.
+
+4. Install Required Libraries:
+   - With the environment active, install the libraries:
+
+   ```bash
+   pip install numpy pandas matplotlib seaborn altair
+   ```
+
+   - This command will fetch and install all packages from PyPI.
+
+   ::: {.callout-note}
+   Although you can also install packages using `conda install`, we exclusively use `pip` to avoid potential conflicts between conda-installed and pip-installed packages. This approach ensures consistent and reliable management of dependencies in your Python environment.
+   :::
+
+5. Verify Package Installation:
+   - After installation, open a Jupyter Notebook and verify that the packages are available by importing them in Python.
+
+
+   ::: {.callout-note}
+   To make it easier to use the libraries' functions and methods throughout your code, we often import them using shorter, standardized aliases (using these standard aliases improves code readability and reduces typing) 
+   :::
+
+   ```python
+   import numpy as np
+   import pandas as pd
+   import matplotlib.pyplot as plt
+   import seaborn as sns
+   import altair as alt
+   ```
+  
+   - If no errors occur, the libraries have been correctly installed.
+   
+   :::{.callout-tip collapse="true" title="Explanation of Packages"} 
+
+   NumPy (`np`): The alias `np` is widely used and allows concise access to NumPy's array manipulation and numerical computing functions.
+
+   Pandas (`pd`): The alias `pd` provides a shorthand to Pandas' powerful data manipulation tools, like DataFrame and Series.
+
+   Matplotlib (`plt`): The alias `plt` simplifies calling Matplotlib's functions for plotting, creating figures, and customizing graphs.
+
+   Seaborn (`sns`): The alias `sns` makes it easier to access Seaborn's statistical data visualization tools, which integrate seamlessly with Matplotlib.
+
+   Altair (`alt`): The alias `alt` allows quick access to Altair's declarative visualization syntax for interactive plotting using Vega-Lite.
+   :::
+   
+6. Deactivate the Environment:
+   - When you're done working or want to switch back to the base environment, deactivate the current environment:
+
+   ```bash
+   conda deactivate
+   ```
+
+Creating a separate environment for Python basics ensures that your workspace remains isolated and stable. 

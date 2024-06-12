@@ -1,0 +1,191 @@
+---
+title: Control Flow
+lang: en
+subtitle: Subtitle
+author: Jan Kirenz
+execute:
+  eval: false
+  echo: true
+highlight-style: github
+format:
+  revealjs: 
+    toc: true
+    toc-depth: 1
+    embed-resources: false
+    theme: [dark, ../custom.scss]  
+    incremental: false
+    transition: slide
+    background-transition: fade
+    transition-speed: slow
+    code-copy: true
+    code-line-numbers: true
+    smaller: false
+    scrollable: true
+    slide-number: c
+    preview-links: auto
+    chalkboard: 
+      buttons: false
+   #logo: images/logo.png
+    footer: Jan Kirenz
+---
+
+
+Control flow structures are essential in Python programming as they allow your code to make decisions, repeat tasks, and control the order of execution. 
+
+We'll cover three fundamental structures:
+
+1. **Conditional Statements**: Making decisions based on conditions.
+2. **Loops**: Repeating a block of code multiple times.
+3. **Exceptions**: Handling errors gracefully.
+
+## Setting Up Your Workspace
+
+Create a new notebook for control flow:
+
+1. **Create a New Notebook:**
+   - In Jupyter Notebook, click 'New' and select the appropriate environment.
+
+2. **Save and Name the Notebook:**
+   - Save the Notebook in the `data` folder as `control_flow.ipynb`.
+
+3. **Add a Title:**
+   - Create a new markdown cell and give your notebook a title by typing:
+
+   ```markdown
+   # Control Flow in Python
+   ```
+
+## Conditional Statements
+
+Conditional statements help execute certain code only if specific conditions are met.
+
+## Basic If-Else Statement
+
+```python
+# Determine if a number is positive, negative, or zero
+number = -3
+
+if number > 0:
+    print(f"{number} is a positive number.")
+elif number < 0:
+    print(f"{number} is a negative number.")
+else:
+    print(f"{number} is zero.")
+```
+
+**Explanation:**
+
+- `if` checks if `number` is greater than 0 and prints that it's positive.
+- `elif` (else if) checks if `number` is less than 0 and prints that it's negative.
+- `else` captures any other condition (zero here) and prints accordingly.
+
+## Nested Conditionals
+
+```python
+# Classify an age into different life stages
+age = 25
+
+if age < 13:
+    print("Child")
+elif age < 18:
+    print("Teenager")
+else:
+    if age < 65:
+        print("Adult")
+    else:
+        print("Senior")
+```
+
+**Explanation:**
+
+- The outer `if-elif-else` checks if `age` is less than 13 or 18, printing "Child" or "Teenager."
+- If not, a nested `if-else` further checks if `age` is less than 65 or greater, printing "Adult" or "Senior."
+
+## Loops
+
+Loops repeat a block of code several times.
+
+## For Loops
+
+For loops iterate over a range or collection.
+
+**Looping Over a Range**
+
+```python
+# Print numbers from 1 to 5
+for num in range(1, 6):
+    print(f"Number: {num}")
+```
+
+**Explanation:**
+
+- `range(1, 6)` generates numbers from 1 to 5 (6 is exclusive).
+- Each number is printed using an f-string.
+
+**Looping Over a List**
+
+```python
+# List of colors
+colors = ["red", "green", "blue"]
+
+# Loop through each color and print it
+for color in colors:
+    print(f"Color: {color}")
+```
+
+**Explanation:**
+
+- The list `colors` contains three strings.
+- `for color in colors` iterates over each item in the list, and each value is printed.
+
+## While Loops
+
+A while loop continues to execute as long as a condition is `True`.
+
+
+**Example: Simple While Loop**
+
+```python
+# Countdown from 5 to 1
+count = 5
+
+while count > 0:
+    print(f"Countdown: {count}")
+    count -= 1  # Decrease count by 1
+```
+
+**Explanation:**
+
+- **Initial Variable Setup**: The variable `count` is initialized to 5.
+- **While Loop Condition**: The `while` loop runs as long as the condition `count > 0` remains `True`. This condition is checked before each iteration starts.
+- **Inside the Loop**:
+  - The `print` function outputs the current value of `count`, prefixed with "Countdown:", using an f-string.
+  - The statement `count -= 1` decreases the value of `count` by 1. This shorthand notation is equivalent to `count = count - 1`.
+  - After each decrement, `count` gets closer to 0.
+- **Loop Exit**:
+  - Once `count` is no longer greater than 0 (meaning `count` is 0 or less), the `while` condition becomes `False` and the loop exits.
+
+The decrement operation (`count -= 1`) ensures the loop will not run indefinitely and helps create a countdown sequence.
+
+## Exceptions
+
+Exceptions handle errors that occur during execution without crashing the program.
+
+**Example: Handling Division by Zero**
+
+```python
+# Attempt division by zero and handle the error
+numerator = 10
+denominator = 0
+
+try:
+    result = numerator / denominator
+    print(f"Result: {result}")
+except ZeroDivisionError:
+    print("Error: Cannot divide by zero.")
+```
+
+**Explanation:**
+
+- The `try` block contains code that might raise an error (division by zero here).
+- `except ZeroDivisionError` catches this specific error and prints an appropriate message.

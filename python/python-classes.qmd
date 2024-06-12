@@ -1,0 +1,113 @@
+# Classes
+
+Object-Oriented Programming (OOP) is a foundational concept in software development, particularly useful in managing and structuring large codebases for complex data science projects. Understanding classes and objects is crucial for implementing modular and scalable code. 
+
+In this section, we will cover the basics of creating classes and objects, adding methods and attributes, and using inheritance to extend functionality, all through practical examples tailored for typical data science tasks.
+
+
+- **Class**: A blueprint or template from which objects are created. Classes define the attributes (data) and behaviors (methods) that their objects will have.
+
+- **Object**: An instance of a class. Each object represents an entity that possesses the attributes and behaviors defined by its class.
+
+## Creating a Class 
+
+Let's begin by defining a simple class, `DataPoint`, which will represent a single observation in a dataset:
+
+```{python}
+# Define a simple class representing a data observation
+class DataPoint:
+    """A class representing a data observation with features and label."""
+
+    def __init__(self, features, label):
+        """Initialize the data point with features and a label."""
+        self.features = features
+        self.label = label
+
+    def describe(self):
+        """Return a formatted string describing the data point."""
+        return f"Features: {self.features}, Label: {self.label}"
+
+# Create an instance (object) of the DataPoint class
+sample_point = DataPoint([0.25, 0.75, 0.5], 'Positive')
+
+# Display the description of the data point
+print(sample_point.describe())
+```
+
+**Explanation**:   
+
+- The `DataPoint` class has an `__init__` method that initializes the features and label of the data point.  
+- The `describe` method provides a way to output the characteristics of the data point.  
+- `sample_point` is an instance of `DataPoint`, initialized with specific values for its features and label.
+
+## Methods and Attributes
+
+Adding more functionality to a class makes it more versatile. Let's enhance our class to manage a collection of data points:
+
+
+```{python}
+# Define a class for managing a dataset
+class DataSet:
+    """A class representing a collection of data points."""
+
+    def __init__(self):
+        """Initialize the empty data point collection."""
+        self.data_points = []
+
+    def add_data_point(self, data_point):
+        """Add a data point to the collection."""
+        self.data_points.append(data_point)
+
+    def display_data(self):
+        """Display all data points in the collection."""
+        for data_point in self.data_points:
+            print(data_point.describe())
+
+# Create an instance of the DataSet class
+my_data_set = DataSet()
+
+# Add multiple DataPoint objects to the dataset
+my_data_set.add_data_point(DataPoint([0.1, 0.2, 0.5], 'Negative'))
+my_data_set.add_data_point(DataPoint([0.8, 0.4, 0.3], 'Positive'))
+
+# Display all data points in the dataset
+my_data_set.display_data()
+```
+
+**Explanation**: 
+
+- The `DataSet` class stores multiple `DataPoint` objects.
+- Methods like `add_data_point` and `display_data` allow for adding data points and displaying all points, respectively.
+
+## Inheritance 
+
+Inheritance allows us to extend existing classes to create more specialized versions without repeating code. For instance, let's define a `TimeSeriesDataPoint` that extends `DataPoint` by adding a timestamp:
+
+
+```{python}
+# Define a class representing a time series data point
+class TimeSeriesDataPoint(DataPoint):
+    """A class extending DataPoint with a timestamp for time series data."""
+
+    def __init__(self, features, label, timestamp):
+        """Initialize the TimeSeriesDataPoint attributes."""
+        super().__init__(features, label)
+        self.timestamp = timestamp
+
+    def describe(self):
+        """Return a formatted string describing the time series data point."""
+        base_description = super().describe()
+        return f"{base_description}, Timestamp: {self.timestamp}"
+
+# Create an instance of the TimeSeriesDataPoint class
+time_series_point = TimeSeriesDataPoint([0.9, 0.1, 0.2], 'Negative', '2024-09-05T12:00:00')
+
+# Display the description of the time series data point
+print(time_series_point.describe())
+```
+
+**Explanation**: 
+
+- `TimeSeriesDataPoint` inherits from `DataPoint` and adds a `timestamp` attribute.  
+- The `describe` method is overridden to include the timestamp information.
+

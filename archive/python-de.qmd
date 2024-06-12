@@ -1,0 +1,219 @@
+---
+title: "Python"
+number-sections: true
+---
+
+# Grundlagen
+
+Python ist eine objektorientierte Sprache (ein Objekt ist eine Entität, die Daten zusammen mit zugehörigen Metadaten und/oder Funktionalitäten enthält).
+
+Eines der Merkmale, das Python von vielen anderen Programmiersprachen unterscheidet, ist, dass es interpretiert und nicht kompiliert wird. Das bedeutet, dass es Zeile für Zeile ausgeführt wird, was besonders nützlich für die Datenanalyse ist, sowie für die Erstellung von interaktiven, ausführbaren Dokumenten wie Jupyter Notebooks.
+
+:::{.callout-note}
+Python ist eine interpretierte Sprache. Der Python-Interpreter führt ein Programm aus, indem er eine Anweisung nach der anderen ausführt.
+:::
+
+Darüber hinaus gibt es ein breites Ökosystem von Drittanbieter-Tools und -Modulen (wie Jupyter Notebook), die spezialisierte Funktionen in der Datenwissenschaft anbieten.
+
+# Jupyter Notebook
+
+[Jupyter Notebook](https://jupyter.org/) ist eine Open-Source-Anwendung, die es ermöglicht, Dokumente zu erstellen und zu teilen, die Code, Gleichungen, Visualisierungen und Text enthalten.
+
+<br>
+
+![](/images/jupyter.png){width="50%"}
+
+<br>
+
+Ein Notebook besteht im Grunde aus einer Liste von Zellen und die Zellen enthalten entweder:
+
+1. erklärenden Text (geschrieben in Markdown)
+2. ausführbaren Code
+3. Code-Ausgabe
+
+Wir verwenden Jupyter Notebook üblicherweise innerhalb des Code-Editors Visual Studio Code oder in Google Colab.
+
+# Markdown
+
+Markdown ist eine der weltweit beliebtesten Auszeichnungssprachen, die in der Datenwissenschaft verwendet wird. 
+
+Jupyter Notebooks verwenden Markdown, um einen einheitlichen Autorenrahmen für die Datenwissenschaft bereitzustellen, der Code, seine Ergebnisse und Kommentare in Markdown kombiniert.
+
+:::{.callout-note}
+Markdown ist eine einfache Möglichkeit, Text zu formatieren, der auf jedem Gerät ansprechend aussieht.
+:::
+
+Besuchen Sie diese Seiten, um mehr über Markdown zu erfahren:
+
+::: {.callout-important}
+## Zu tun
+- [Interaktives 10-Minuten-Markdown-Tutorial](https://commonmark.org/help/)
+:::
+
+# Colab {#sec-colab}
+
+Colaboratory, oder kurz "Colab", ist ein kostenlos nutzbares Tool von Google Research. Colab ermöglicht es, Python-Code über den Browser zu schreiben und auszuführen und eignet sich besonders gut für Datenanalysen und maschinelles Lernen.
+
+:::{.callout-note}
+Colab ist eine kostenlose Jupyter-Notebook-Umgebung, die keine Einrichtung erfordert und vollständig in der Cloud läuft.
+:::
+
+Schauen Sie sich dieses Video an, um einen ersten Eindruck von Colab zu bekommen:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/inN8seMm7UI" title="YouTube-Videoplayer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Beginnen Sie Ihr erstes Colab-Notebook, um einen Überblick über einige grundlegende Funktionen zu erhalten:
+
+::: {.callout-important}
+## Zu tun
+- [Überblick über die grundlegenden Funktionen von Colab](https://colab.research.google.com/notebooks/basic_features_overview.ipynb)
+- [Interaktiver Colab Markdown-Leitfaden](https://colab.research.google.com/notebooks/markdown_guide.ipynb)
+:::
+
+Um das Jupyter-Notebook herunterzuladen, gehen Sie im Colab-Menü zu: "Datei" > "Herunterladen" > "Download .ipynb"
+
+<!--
+
+# Amazon SageMaker Studio Lab
+
+[Amazon SageMaker Studio Lab](https://aws.amazon.com/sagemaker/studio-lab/) ist eine kostenlose Machine-Learning-(ML-)Entwicklungsumgebung, die Rechenleistung, Speicherplatz (bis zu 15 GB) und Sicherheit – alles ohne Kosten – für jeden bereitstellt, der mit ML experimentieren und lernen möchte.
+
+![](/images/studio.png)
+
+Alles, was Sie zum Starten benötigen, ist eine gültige E-Mail-Adresse – Sie müssen keine Infrastruktur konfigurieren, Identität und Zugriff verwalten oder sogar ein AWS-Konto anmelden. 
+
+SageMaker Studio Lab beschleunigt das Modellbau durch GitHub-Integration und ist vorab konfiguriert mit den beliebtesten ML-Tools, Frameworks und Bibliotheken, um sofort loslegen zu können. SageMaker Studio Lab speichert Ihre Arbeit automatisch, sodass Sie nicht neu starten müssen zwischen den Sitzungen. Es ist so einfach wie das Schließen Ihres Laptops und später zurückzukommen.
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/k2nVIvHB1dk?si=kKZa1j316JLtfkgn" title="YouTube-Videoplayer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+::: {.callout-important}
+## Zu tun
+- [Melden Sie sich für ein Amazon SageMaker Studio Lab-Konto an](https://aws.amazon.com/sagemaker/studio-lab/)
+:::
+
+-->
+
+# Anaconda {#sec-anaconda}
+
+## Grundlagen
+
+Die Open-Source-[Anaconda Distribution](https://www.anaconda.com/download) ist eine der einfachsten Möglichkeiten, um mit Datenwissenschaftsprojekten zu beginnen. Sie enthält bereits Python und die wichtigsten Datenwissenschaftsmodule.
+
+:::{.callout-note}
+Anaconda ist ein Datenwissenschafts-Toolkit, das bereits die meisten Datenwissenschaftsmodule enthält, die wir benötigen.
+:::
+
+Anaconadas Paketmanager `conda` erleichtert das Verwalten mehrerer Datenumgebungen, die separat aufrechterhalten und ausgeführt werden können, ohne sich gegenseitig zu stören (in sogenannten virtuellen Umgebungen).
+
+::: {.callout-note collapse="true"}
+## Erweitern, um über conda zu lernen
+
+*conda* analysiert die aktuelle Umgebung, einschließlich alles, was derzeit installiert ist, und zusammen mit etwaigen Versionseinschränkungen, die festgelegt sind (z.B. der Benutzer möchte TensorFlow Version 2.0 oder höher), arbeitet heraus, wie ein kompatibles Set von Abhängigkeiten installiert werden kann und zeigt eine Warnung, wenn dies nicht möglich ist.
+
+:::
+
+Anstelle von conda kann auch `pip` (der Standard-Paketinstaller für Python) verwendet werden, um Pakete zu installieren.
+
+Beachten Sie, dass Sie entweder conda oder pip in einer Umgebung verwenden sollten (wir verwenden normalerweise pip).
+
+## Wenn Sie bereits Anaconda haben
+
+Wenn Sie bereits Anaconda auf Ihrem Rechner installiert haben, stellen Sie sicher, dass Sie die neueste Version verwenden (in unserem Kurs verwenden wir Python 3.11).
+
+Geben Sie in Ihrem Befehlszeilenwerkzeug `python --version` ein, um zu sehen, welche Python-Version Sie in Ihrer Anaconda-Basisumgebung verwenden:
+
+- Unter *Windows* öffnen Sie das Startmenü und öffnen eine ["Anaconda-Befehlsaufforderung"](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html#starting-conda). Geben Sie `python --version` ein, um zu sehen, welche Python-Version Sie in Ihrer Anaconda-Basisumgebung verwenden.
+
+- Unter *macOS* oder *Linux* öffnen Sie ein [Terminalfenster](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html#starting-conda). Geben Sie `python --version` ein, um zu sehen, welche Python-Version Sie in Ihrer Anaconda-Basisumgebung verwenden.
+
+*Sie können auch Ihre aktuelle Anaconda-Umgebung von Ihrem Rechner deinstallieren und die neueste Version installieren: hier ein Leitfaden, wie Sie [Anaconda deinstallieren](https://docs.anaconda.com/anaconda/install/uninstall/).*
+
+## Installation
+
+Installieren Sie die neueste Version der Anaconda-Distribution:
+
+::: {.callout-important
+
+::: {.callout-important}
+## Zu tun
+
+- [Anaconda-Installation](https://www.anaconda.com/download)
+
+:::
+
+Nachdem Sie Anaconda installiert haben, können Sie es aktualisieren. Die folgenden Befehle aktualisieren alle Pakete in der Standard-"base"-Umgebung auf die neueste Version, aktualisieren aber nicht Python:
+
+::: {.callout-important}
+## Zu tun
+
+- Unter *Windows* öffnen Sie das Startmenü und öffnen eine ["Anaconda-Befehlsaufforderung"](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html#starting-conda). 
+- Unter *macOS* oder *Linux* öffnen Sie ein [Terminalfenster](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html#starting-conda).
+- Geben Sie in Ihrem Terminal ein: `conda update --all`
+:::
+
+Folgen Sie nun den Schritten im nächsten Abschnitt.
+
+## Anaconda-Umgebung
+
+Nachdem Sie Anaconda installiert und aktualisiert haben, können Sie die Module, die Sie für ein bestimmtes Labor benötigen, in einer neuen Umgebung installieren.
+
+::: {.callout-important}
+## Zu tun
+- Gehen Sie zu [GitHub Kurs-Umgebungen](https://github.com/kirenz/environments)
+- Folgen Sie den Anweisungen im GitHub-Repo und installieren Sie die Umgebung `env-lab` 
+:::
+
+# Visual Studio Code {#sec-vscode}
+
+## Grundlagen
+
+Visual Studio Code (auch Code genannt) ist ein leistungsfähiger Quellcode-Editor, der auf Ihrem Desktop läuft und für Windows, macOS und Linux verfügbar ist. Es kommt mit einem reichen Ökosystem von Erweiterungen für Python.
+
+:::{.callout-note}
+Visual Studio Code ist ein Code-Editor, der mit einer Vielzahl von Programmiersprachen, einschließlich Python, verwendet werden kann.
+:::
+
+<br>
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/KMxo3T_MTvY" title="YouTube-Videoplayer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
+
+## Installation
+
+Installieren Sie VS Code:
+
+::: {.callout-important}
+## Zu tun
+- [Code installieren](https://code.visualstudio.com/)
+:::
+
+## Erweiterungen installieren
+
+Die Funktionen, die Visual Studio Code standardmäßig enthält, sind nur der Anfang. VS Code-Erweiterungen ermöglichen es Ihnen, Sprachen, Debugger und Werkzeuge zu Ihrer Installation hinzuzufügen, um Ihren Entwicklungsworkflow zu unterstützen.
+
+Lassen Sie uns einige wichtige Erweiterungen installieren:
+
+::: {.callout-important}
+## Zu tun
+- [Visual Studio Code-Erweiterungen](https://vscode.dev/profile/github/94d1b9a0184dec88655f9622c87b866d)
+:::
+
+## Jupyter Notebooks
+
+Wir arbeiten normalerweise mit Jupyter Notebook-Dateien in VS Code:
+
+::: {.callout-important}
+## Zu tun
+- [Lernen Sie, wie man Jupyter Notebooks in VS Code verwendet](https://code.visualstudio.com/docs/datascience/jupyter-notebooks)
+:::
+
+Um eine spezifische Anaconda-Umgebung als Jupyter-Kernel zu verwenden, wählen Sie den Kernel (z.B. `lab`) mit dem [Kernel-Wähler](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_create-or-open-a-jupyter-notebook) oben rechts in VS Code aus.
+
+## Optionale Tutorials
+
+Einige Ressourcen, um sich mit VS Code vertraut zu machen:
+
+- [Schauen Sie sich die Einführungsvideos an](https://code.visualstudio.com/docs/getstarted/introvideos)
+- [Datenwissenschaft in VS Code-Tutorial](https://code.visualstudio.com/docs/datascience/data-science-tutorial)
+- Profi-Tipps: [25 VS Code-Produktivitätstipps und Geschwindigkeitstricks](https://www.youtube.com/watch?v=ifTF3ags0XI)

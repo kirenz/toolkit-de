@@ -1,0 +1,145 @@
+# Functions
+
+- [Download Juypter Notebook](../code/python-functions.ipynb){download="python-functions.ipynb"}
+
+Functions help you write modular, reusable blocks of code. This section will demonstrate defining, calling, and documenting functions.
+
+## Simple Function
+
+Start with a basic function that calculates the square of a number:
+
+```{python}
+# Function to calculate the square of a number
+def square(num):
+    """Calculate and return the square of a number."""
+    return num * num
+
+# Using the function to find the square of 4
+result = square(4)
+print(f"Square of 4: {result}")
+```
+
+Explanation:
+
+- `def` begins the function definition, followed by the function name `square` and a parameter `num`.
+- The docstring `"""` briefly describes the function's purpose.
+- The function calculates the square using the formula `num * num`.
+- The `return` statement gives back the result to where the function is called.
+- The `print` function uses an f-string, a formatted string prefixed with `f` that allows inserting variables within `{}` curly braces. It's more concise and easier to read than traditional string concatenation.
+
+Advantages of f-Strings:
+
+- They provide a clean, intuitive way to include variables in strings.
+- Support for formatting is built-in (e.g., decimal places, padding).
+- They simplify string interpolation and enhance readability.
+
+## Function with Multiple Parameters
+
+Functions can accept more than one parameter. Here's a function that calculates the area of a rectangle:
+
+```{python}
+# Function to calculate the area of a rectangle
+def calculate_rectangle_area(length, width):
+    """Calculate the area of a rectangle using its length and width."""
+    return length * width
+
+# Using the function with example values
+length = 10
+width = 5
+
+area = calculate_rectangle_area(length, width)
+
+print(f"Rectangle with length {length} and width {width} has an area of {area}")
+```
+
+Explanation:
+
+- `length` and `width` are parameters that the function uses to compute the rectangle's area.
+- `calculate_rectangle_area` is called with specific values.
+- The f-string within the `print` statement provides clear output showing both input values and the calculated result.
+
+## Default Parameters
+
+Default values for parameters are used when no arguments are provided.
+
+```{python}
+# Function with a default parameter value
+def greet(name="there"):
+    """Greet a person by their name or with 'Hello there' by default."""
+    print(f"Hello, {name}!")
+
+# Calling the function with a specific name
+greet("Alice")
+
+# Calling the function without an argument (uses the default)
+greet()
+```
+
+Explanation:
+
+- The `name="there"` parameter provides a default value.
+- When calling `greet("Alice")`, it prints "Hello, Alice!"
+- Calling `greet()` without arguments uses the default "there."
+
+## Lambda Functions
+
+Lambda functions are small, anonymous functions useful for concise operations or passing as arguments. Here's a basic example:
+
+```{python}
+# Lambda function to add two numbers
+add = lambda x, y: x + y
+
+# Using the lambda function
+result = add(3, 5)
+print(f"Sum of 3 and 5: {result}")
+```
+
+Explanation:
+
+- `lambda` defines a quick function in a single line.
+- The expression `x + y` is calculated and returned.
+- Lambda functions are useful when you need a simple function temporarily.
+
+## Lambda Functions with DataFrames
+
+Lambda functions are especially useful when you want to apply a custom transformation to each row or column of a DataFrame. 
+
+For instance, if you want to classify numbers based on certain conditions, a lambda function can help.
+
+Example Code:
+
+```{python}
+# Creating a DataFrame and using a lambda function for custom classification
+import pandas as pd
+
+# Example DataFrame
+data = {"Numbers": [1, 2, 3, 4, 5, 15, 20, 25]}
+df = pd.DataFrame(data)
+
+# Define a custom function to classify numbers
+def classify_number(num):
+    if num < 10:
+        return "Single-Digit"
+    elif num < 20:
+        return "Teens"
+    else:
+        return "Twenties or More"
+
+# Apply the custom function with a lambda function to create a new column
+df["Classification"] = df["Numbers"].apply(lambda x: classify_number(x))
+
+# Display the DataFrame
+df
+```
+
+Explanation:
+
+- The DataFrame `df` is created with a column `Numbers` containing a range of values.
+- The function `classify_number` defines custom classification criteria:
+  - Less than 10 is "Single-Digit".
+  - Less than 20 but not below 10 is "Teens".
+  - Values 20 or above are "Twenties or More."
+- The `apply` method uses a lambda function to pass each value of `Numbers` through `classify_number`.
+- The result is a new `Classification` column containing the categorized values.
+
+In this case, using a lambda function with `apply` is beneficial for quickly transforming the DataFrame based on a function that would otherwise require looping through each value individually.

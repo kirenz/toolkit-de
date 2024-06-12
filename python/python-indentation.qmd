@@ -1,0 +1,76 @@
+# Indentation
+
+Before we explore Python functions in the next section, it’s crucial to understand Python’s indentation rules, as they are fundamental to writing structured and error-free Python code.
+
+Indentation is not just a matter of style in Python; it is syntactically significant. Python uses indentation to define blocks of code. The correct use of indentation is essential for your code to run as expected.
+
+**Key Points About Indentation:**
+
+- **Consistency**: Python's standard is to use 4 spaces per indentation level, though some environments may configure tabs to automatically convert to spaces.
+- **Blocks of Code**: Functions, loops, conditionals, and other control structures rely on indentation to define what code belongs inside the block.
+
+## Proper Indentation
+
+Example code:
+
+```{python}
+def compute_area(width, height):
+    # This is the start of a function block
+    area = width * height 
+    return area 
+
+# Calling the function
+print(compute_area(5, 10))  # This line is not indented, showing it's not part of the function
+```
+
+Explanation:
+
+- The function `compute_area` starts with a colon (`:`) and the subsequent code is indented four spaces.
+- Both the calculation of `area` and the `return` statement are part of the function due to their indentation.
+- The `print` statement is not indented relative to the function definition, indicating it is outside the function.
+
+
+Certainly! Here’s an example that illustrates incorrect indentation and the potential issues it can cause. This example can be included in the introductory section on Python indentation to show the importance of following Python’s indentation rules accurately.
+
+## Incorrect Indentation
+
+Example code with incorrect Indentation:
+
+```python
+def calculate_percentage(total, amount):
+
+    if total > 0:
+    percentage = (amount / total) * 100 
+    return percentage  
+else:
+    return 0
+```
+
+```python
+IndentationError: expected an indented block after 'if' statement on line 3
+```
+
+
+Explanation:
+
+- **Error**: The example above will result in a `IndentationError` because the indentation levels are not consistent.
+- **Line 3**: The line `percentage = (amount / total) * 100` is meant to be executed if the condition `total > 0` is true. However, it's not indented, making it unclear whether it's supposed to be inside the `if` statement or outside.
+- **Line 4 and 5**: The `return percentage` statement should be indented to align under the `if` condition, indicating that it is part of the `if` block. The `else:` line is also not correctly aligned with the `if`, causing a syntax error.
+
+Corrected Version:
+
+```{python}
+def calculate_percentage(total, amount):
+    if total > 0:
+        percentage = (amount / total) * 100  
+        return percentage  
+    else:
+        return 0
+```
+
+What this corrects:
+
+- The `percentage = (amount / total) * 100` statement is now properly indented under the `if` condition, clearly indicating it belongs to the block that executes when `total > 0`.
+- The `return percentage` is also indented correctly to show that it’s part of the `if` condition. The `else` block is aligned with the `if` statement, maintaining consistent structure.
+
+This example highlights how improper indentation can lead to syntax errors and logical errors in Python. It’s vital to keep a consistent indentation level throughout the code block to ensure clarity and functionality of the code. By adhering to these practices, you prevent runtime errors and make your code easier to read and debug.

@@ -1,0 +1,138 @@
+# GitHub Codespaces
+
+A [GitHub Codespace](https://github.com/features/codespaces) is a fully configured development environment that's hosted in the cloud.
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/_W9B7qc9lVc?si=WW1MwZp6g594GeHR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+You can connect to codespaces from your browser or from your local Visual Studio Code installation. All personal GitHub accounts have a monthly quota of free use of GitHub Codespaces included in the Free or Pro plan ([see pricing details](https://github.com/features/codespaces)).
+
+:::{.callout-warning}
+You only have a limited quota of free hours per month so don't forget to stop your codespace if you are done: [Codespaces status overview in GitHub](https://github.com/codespaces)
+:::
+
+Regardless of your local operating system, your codespace will run in a Linux environment.
+
+## Setting Up a GitHub Codespace
+
+Step-by-step guide:
+
+1. **Navigate to Your Repository**:
+    Go to the repository where you want to create a codespace.
+
+2. **Click on 'Code'**:
+    In your repository's main page, click on the 'Code' button.
+
+3. **Select 'Open with Codespaces'**:
+    Choose the option 'Open with Codespaces' from the dropdown menu.
+
+4. **Create a New Codespace**:
+    Click on 'New codespace' to create your development environment.
+
+
+## Connecting to Codespaces
+
+### Using the Browser
+
+1. **Open Your Codespace**:
+    Once created, you can access your codespace directly from your browser. Navigate to the 'Codespaces' tab in your repository and click on your codespace to open it.
+
+### Using Visual Studio Code
+
+1. **Install Visual Studio Code**:
+    Download and install [Visual Studio Code](https://code.visualstudio.com/).
+
+2. **Install the GitHub Codespaces Extension**:
+    Go to the [Visual Studio Code marketplace](https://marketplace
+
+.visualstudio.com/items?itemName=GitHub.codespaces) and install the GitHub Codespaces extension.
+
+3. **Sign in to GitHub**:
+    Open Visual Studio Code, click on the Extensions view icon on the Sidebar, and sign in to your GitHub account.
+
+4. **Connect to Your Codespace**:
+    In Visual Studio Code, click on the 'Remote Explorer' icon on the Sidebar, select 'Codespaces', and choose your codespace from the list to connect.
+
+## Using GitHub Codespaces
+
+### Pre-configured Development Environment
+
+GitHub Codespaces provides a pre-configured development environment with:
+
+- **VS Code Extensions**: Automatically installed extensions that are defined in the repository.
+- **Docker-based Containers**: The development environment runs in a container, ensuring consistency.
+- **Pre-installed Tools**: Common development tools and dependencies are pre-installed.
+
+### Customizing Your Codespace
+
+You can customize your codespace by adding a `.devcontainer` directory to your repository. This directory contains configuration files that define the development environment.
+
+1. **Create a `.devcontainer` Directory**:
+    In the root of your repository, create a directory named `.devcontainer`.
+
+2. **Add a `devcontainer.json` File**:
+    Inside the `.devcontainer` directory, add a `devcontainer.json` file with the configuration for your environment.
+
+Example `devcontainer.json`:
+
+```json
+{
+  "name": "My Codespace",
+  "image": "mcr.microsoft.com/vscode/devcontainers/python:3",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "ms-python.python",
+    "ms-azuretools.vscode-docker"
+  ],
+  "postCreateCommand": "pip install -r requirements.txt"
+}
+```
+
+### Saving Changes
+
+Any changes you make in your codespace can be committed and pushed to your repository just like you would in a local development environment.
+
+## Managing Codespaces
+
+### Stopping and Deleting Codespaces
+
+To manage your usage and avoid hitting the monthly quota limit, you should stop or delete codespaces when they are not in use.
+
+1. **Navigate to Codespaces**:
+    Go to the 'Codespaces' tab in your repository or your GitHub profile.
+
+2. **Stop or Delete a Codespace**:
+    Click on the three dots next to your codespace and choose 'Stop codespace' or 'Delete codespace'.
+
+## Best Practices for Using GitHub Codespaces
+
+### Efficient Usage
+
+- **Stop Inactive Codespaces**: Always stop your codespaces when not in use to save on your usage quota.
+- **Monitor Usage**: Regularly check your codespaces usage to ensure you are within your free tier limits.
+
+### Customization
+
+- **Use Docker Images**: Leverage Docker images to ensure a consistent development environment across different codespaces.
+- **Define Dependencies**: Use the `devcontainer.json` to specify all necessary dependencies and tools.
+
+### Collaboration
+
+- **Share Configurations**: Share `.devcontainer` configurations within your team to ensure a consistent setup.
+- **Version Control**: Commit your `.devcontainer` directory to version control for easy setup across different environments.
+
+## Conclusion
+
+GitHub Codespaces provides a powerful, cloud-based development environment that simplifies setup and enhances collaboration. By following the steps and best practices outlined in this chapter, you can make the most of GitHub Codespaces for your development projects.
+
+For more detailed information, explore GitHub's official documentation on [GitHub Codespaces](https://docs.github.com/en/codespaces).
+
+::: {.callout-tip}
+## Tip
+Experiment with different configurations in your `.devcontainer` directory to optimize your development environment.
+:::
+
+---
+
+This chapter provides a detailed guide for beginners on setting up and using GitHub Codespaces. Adjust the examples and explanations to fit the depth required for your book.

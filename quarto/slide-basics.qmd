@@ -1,0 +1,25 @@
+---
+title: "Slides"
+number-sections: true
+---
+
+# Basics
+
+Most of the slides are made with the open source scientific and technical publishing system [Quarto](https://quarto.org/) and [reveal.js](https://revealjs.com/).
+
+`reveal.js` is an open source HTML presentation framework. It's a tool that enables anyone with a web browser to create fully-featured presentations for free. Presentations made with `reveal.js` are built on open web technologies. That means anything you can do on the web, you can do in your presentation.
+
+# Slides tutorial
+
+Read the tutorial below to learn how to
+
+- Navigate through the slides
+- Show all slides
+- Save slides as PDF
+- Print slides
+
+::: {.callout-important}
+## To do
+- [🖥️ Slides tutorial]
+:::
+

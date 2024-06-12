@@ -1,0 +1,63 @@
+# Project Environment
+
+Organizing your files is crucial for efficiency and accessibility in data science and software development projects. To start, we create a folder named `toolkit-lab` on your machine and establish subdirectories `code` and `data` to keep your project organized.
+
+Instead of using a graphical user interface (GUI) like Windows File Explorer or macOS Finder, we will use the Command Line Interface (CLI) to accomplish this. 
+
+:::{.callout-note appearance="minimal"}
+The command line may seem daunting at first, but it opens up a new level of interaction with your computer. As you become more familiar with it, you'll find many tasks can be completed more efficiently than using a GUI.
+:::
+
+The CLI, also known as cmd, prompt, console, or terminal, is a powerful tool for setting up your working environment. It operates through a program called a *shell*, enabling direct communication with the operating system via text-based inputs.
+
+## Windows
+
+Follow these steps to create the main directory and subdirectories using the Windows Command Prompt:
+
+1. Press `Windows + R` keys simultaneously to open the Run dialog.
+1. Type `cmd` and press `Enter` to open the Command Prompt.
+1. We create a new folder named `toolkit-lab` (copy this code and enter it in your Command Prompt):
+
+    ```bash
+    mkdir toolkit-lab
+    ```
+
+1. Use `cd`(change directory) to navigate into the `toolkit-lab` directory:
+
+    ```bash
+    cd toolkit-lab
+    ```
+
+1. Use `mkdir` (make directory) to create the subdirectories `code` and `data`:
+
+    ```bash
+    mkdir code data
+    ```
+
+These commands set up a parent directory `toolkit-lab` with two subdirectories `code` for your scripts and applications, and `data` for storing datasets and related files.
+
+
+## macOS/Linux
+
+Follow these steps to create the main directory and subdirectories using the Terminal in macOS or Linux:
+
+1. To open the Terminal in macOS, you can use Spotlight Search (`Cmd + Space`) and type "Terminal," or navigate through `Applications -> Utilities -> Terminal`.
+1. We create a new folder named `toolkit-lab` (copy this code and enter it in your Terminal):
+
+    ```bash
+    mkdir toolkit-lab
+    ```
+
+1. Use `cd`(change directory) to navigate into the `toolkit-lab` directory:
+
+    ```bash
+    cd toolkit-lab
+    ```
+
+1. Use `mkdir` (make directory) to create the subdirectories `code` and `data`:
+
+    ```bash
+    mkdir code data
+    ```
+
+These commands set up a parent directory `toolkit-lab` with two subdirectories `code` for your scripts and applications, and `data` for storing datasets and related files.
