@@ -1,78 +1,76 @@
 # GitHub Codespaces
 
-A [GitHub Codespace](https://github.com/features/codespaces) is a fully configured development environment that's hosted in the cloud.
+Ein [GitHub Codespace](https://github.com/features/codespaces) ist eine vollständig konfigurierte Entwicklungsumgebung, die in der Cloud gehostet wird.
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/_W9B7qc9lVc?si=WW1MwZp6g594GeHR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/_W9B7qc9lVc?si=WW1MwZp6g594GeHR" title="YouTube-Video-Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-You can connect to codespaces from your browser or from your local Visual Studio Code installation. All personal GitHub accounts have a monthly quota of free use of GitHub Codespaces included in the Free or Pro plan ([see pricing details](https://github.com/features/codespaces)).
+Sie können von Ihrem Browser oder Ihrer lokalen Visual Studio Code-Installation aus eine Verbindung zu Codespaces herstellen. Alle persönlichen GitHub-Konten haben ein monatliches Kontingent für die kostenlose Nutzung von GitHub Codespaces im Free- oder Pro-Plan enthalten ([siehe Preisinformationen](https://github.com/features/codespaces)).
 
 :::{.callout-warning}
-You only have a limited quota of free hours per month so don't forget to stop your codespace if you are done: [Codespaces status overview in GitHub](https://github.com/codespaces)
+Sie haben nur ein begrenztes Kontingent an kostenlosen Stunden pro Monat, also vergessen Sie nicht, Ihren Codespace zu stoppen, wenn Sie fertig sind: [Übersicht über den Codespaces-Status in GitHub](https://github.com/codespaces)
 :::
 
-Regardless of your local operating system, your codespace will run in a Linux environment.
+Unabhängig von Ihrem lokalen Betriebssystem läuft Ihr Codespace in einer Linux-Umgebung.
 
-## Setting Up a GitHub Codespace
+## Einrichten eines GitHub Codespace
 
-Step-by-step guide:
+Schritt-für-Schritt-Anleitung:
 
-1. **Navigate to Your Repository**:
-    Go to the repository where you want to create a codespace.
+1. **Navigieren Sie zu Ihrem Repository**:
+    Gehen Sie zu dem Repository, in dem Sie einen Codespace erstellen möchten.
 
-2. **Click on 'Code'**:
-    In your repository's main page, click on the 'Code' button.
+2. **Klicken Sie auf 'Code'**:
+    Klicken Sie auf der Hauptseite Ihres Repositorys auf die Schaltfläche 'Code'.
 
-3. **Select 'Open with Codespaces'**:
-    Choose the option 'Open with Codespaces' from the dropdown menu.
+3. **Wählen Sie 'Mit Codespaces öffnen'**:
+    Wählen Sie im Dropdown-Menü die Option 'Mit Codespaces öffnen'.
 
-4. **Create a New Codespace**:
-    Click on 'New codespace' to create your development environment.
+4. **Erstellen Sie einen neuen Codespace**:
+    Klicken Sie auf 'Neuer Codespace', um Ihre Entwicklungsumgebung zu erstellen.
 
 
-## Connecting to Codespaces
+## Verbinden mit Codespaces
 
-### Using the Browser
+### Verwenden des Browsers
 
-1. **Open Your Codespace**:
-    Once created, you can access your codespace directly from your browser. Navigate to the 'Codespaces' tab in your repository and click on your codespace to open it.
+1. **Öffnen Sie Ihren Codespace**:
+    Nachdem der Codespace erstellt wurde, können Sie direkt über Ihren Browser darauf zugreifen. Navigieren Sie zum 'Codespaces'-Tab in Ihrem Repository und klicken Sie auf Ihren Codespace, um ihn zu öffnen.
 
-### Using Visual Studio Code
+### Verwenden von Visual Studio Code
 
-1. **Install Visual Studio Code**:
-    Download and install [Visual Studio Code](https://code.visualstudio.com/).
+1. **Installieren Sie Visual Studio Code**:
+    Laden Sie [Visual Studio Code](https://code.visualstudio.com/) herunter und installieren Sie es.
 
-2. **Install the GitHub Codespaces Extension**:
-    Go to the [Visual Studio Code marketplace](https://marketplace
+2. **Installieren Sie die GitHub Codespaces-Erweiterung**:
+    Gehen Sie zum [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=GitHub.codespaces) und installieren Sie die GitHub Codespaces-Erweiterung.
 
-.visualstudio.com/items?itemName=GitHub.codespaces) and install the GitHub Codespaces extension.
+3. **Melden Sie sich bei GitHub an**:
+    Öffnen Sie Visual Studio Code, klicken Sie auf das Erweiterungs-Symbol in der Seitenleiste und melden Sie sich bei Ihrem GitHub-Konto an.
 
-3. **Sign in to GitHub**:
-    Open Visual Studio Code, click on the Extensions view icon on the Sidebar, and sign in to your GitHub account.
+4. **Verbinden Sie sich mit Ihrem Codespace**:
+    Klicken Sie in Visual Studio Code auf das Symbol 'Remote Explorer' in der Seitenleiste, wählen Sie 'Codespaces' und wählen Sie Ihren Codespace aus der Liste aus, um eine Verbindung herzustellen.
 
-4. **Connect to Your Codespace**:
-    In Visual Studio Code, click on the 'Remote Explorer' icon on the Sidebar, select 'Codespaces', and choose your codespace from the list to connect.
+## Verwendung von GitHub Codespaces
 
-## Using GitHub Codespaces
+### Vorgefertigte Entwicklungsumgebung
 
-### Pre-configured Development Environment
+GitHub Codespaces bietet eine vorgefertigte Entwicklungsumgebung mit:
 
-GitHub Codespaces provides a pre-configured development environment with:
+- **VS Code-Erweiterungen**: Automatisch installierte Erweiterungen, die im Repository definiert sind.
+- **Docker-basierte Container**: Die Entwicklungsumgebung läuft in einem Container und gewährleistet Konsistenz.
+- **Vorinstallierte Tools**: Gängige Entwicklungstools und Abhängigkeiten sind vorinstalliert.
 
-- **VS Code Extensions**: Automatically installed extensions that are defined in the repository.
-- **Docker-based Containers**: The development environment runs in a container, ensuring consistency.
-- **Pre-installed Tools**: Common development tools and dependencies are pre-installed.
+### Anpassen Ihres Codespace
 
-### Customizing Your Codespace
+Sie können Ihren Codespace anpassen, indem Sie Ihrem Repository ein Verzeichnis `.devcontainer` hinzufügen. Dieses Verzeichnis enthält Konfigurationsdateien, die die Entwicklungsumgebung definieren.
 
-You can customize your codespace by adding a `.devcontainer` directory to your repository. This directory contains configuration files that define the development environment.
+1. **Erstellen Sie ein `.devcontainer`-Verzeichnis**:
+    Erstellen Sie im Stammverzeichnis Ihres Repositorys ein Verzeichnis namens `.devcontainer`.
 
-1. **Create a `.devcontainer` Directory**:
-    In the root of your repository, create a directory named `.devcontainer`.
+2. **Fügen Sie eine `devcontainer.json`-Datei hinzu**:
+    Fügen Sie im Verzeichnis `.devcontainer` eine `devcontainer.json`-Datei mit der Konfiguration für Ihre Umgebung hinzu.
 
-2. **Add a `devcontainer.json` File**:
-    Inside the `.devcontainer` directory, add a `devcontainer.json` file with the configuration for your environment.
-
-Example `devcontainer.json`:
+Beispiel `devcontainer.json`:
 
 ```json
 {
@@ -89,50 +87,47 @@ Example `devcontainer.json`:
 }
 ```
 
-### Saving Changes
+### Änderungen speichern
 
-Any changes you make in your codespace can be committed and pushed to your repository just like you would in a local development environment.
+Alle Änderungen, die Sie in Ihrem Codespace vornehmen, können Sie wie in einer lokalen Entwicklungsumgebung committen und in Ihr Repository pushen.
 
-## Managing Codespaces
+## Codespaces verwalten
 
-### Stopping and Deleting Codespaces
+### Codespaces stoppen und löschen
 
-To manage your usage and avoid hitting the monthly quota limit, you should stop or delete codespaces when they are not in use.
+Um Ihre Nutzung zu verwalten und das monatliche Kontingent nicht zu überschreiten, sollten Sie Codespaces stoppen oder löschen, wenn sie nicht in Gebrauch sind.
 
-1. **Navigate to Codespaces**:
-    Go to the 'Codespaces' tab in your repository or your GitHub profile.
+1. **Navigieren Sie zu Codespaces**:
+    Gehen Sie zum 'Codespaces'-Tab in Ihrem Repository oder Ihrem GitHub-Profil.
 
-2. **Stop or Delete a Codespace**:
-    Click on the three dots next to your codespace and choose 'Stop codespace' or 'Delete codespace'.
+2. **Einen Codespace stoppen oder löschen**:
+    Klicken Sie auf die drei Punkte neben Ihrem Codespace und wählen Sie 'Codespace stoppen' oder 'Codespace löschen'.
 
-## Best Practices for Using GitHub Codespaces
+## Best Practices für die Nutzung von GitHub Codespaces
 
-### Efficient Usage
+### Effiziente Nutzung
 
-- **Stop Inactive Codespaces**: Always stop your codespaces when not in use to save on your usage quota.
-- **Monitor Usage**: Regularly check your codespaces usage to ensure you are within your free tier limits.
+- **Inaktive Codespaces stoppen**: Stoppen Sie immer Ihre Codespaces, wenn sie nicht in Gebrauch sind, um Ihr Nutzungskontingent zu schonen.
+- **Nutzung überwachen**: Überprüfen Sie regelmäßig Ihre Codespaces-Nutzung, um sicherzustellen, dass Sie innerhalb Ihrer kostenlosen Kontingentgrenzen bleiben.
 
-### Customization
+### Anpassung
 
-- **Use Docker Images**: Leverage Docker images to ensure a consistent development environment across different codespaces.
-- **Define Dependencies**: Use the `devcontainer.json` to specify all necessary dependencies and tools.
+- **Docker-Images verwenden**: Nutzen Sie Docker-Images, um eine konsistente Entwicklungsumgebung über verschiedene Codespaces hinweg zu gewährleisten.
+- **Abhängigkeiten definieren**: Verwenden Sie die `devcontainer.json`, um alle notwendigen Abhängigkeiten und Tools anzugeben.
 
-### Collaboration
+### Zusammenarbeit
 
-- **Share Configurations**: Share `.devcontainer` configurations within your team to ensure a consistent setup.
-- **Version Control**: Commit your `.devcontainer` directory to version control for easy setup across different environments.
+- **Konfigurationen teilen**: Teilen Sie `.devcontainer`-Konfigurationen innerhalb Ihres Teams, um eine konsistente Einrichtung zu gewährleisten.
+- **Versionskontrolle**: Committen Sie Ihr `.devcontainer`-Verzeichnis in die Versionskontrolle, um eine einfache Einrichtung in verschiedenen Umgebungen zu ermöglichen.
 
-## Conclusion
+## Fazit
 
-GitHub Codespaces provides a powerful, cloud-based development environment that simplifies setup and enhances collaboration. By following the steps and best practices outlined in this chapter, you can make the most of GitHub Codespaces for your development projects.
+GitHub Codespaces bietet eine leistungsstarke, cloudbasierte Entwicklungsumgebung, die die Einrichtung vereinfacht und die Zusammenarbeit verbessert. Indem Sie die in diesem Kapitel beschriebenen Schritte und Best Practices befolgen, können Sie GitHub Codespaces optimal für Ihre Entwicklungsprojekte nutzen.
 
-For more detailed information, explore GitHub's official documentation on [GitHub Codespaces](https://docs.github.com/en/codespaces).
+Für ausführlichere Informationen, erkunden Sie die offizielle Dokumentation von [GitHub Codespaces](https://docs.github.com/en/codespaces).
 
 ::: {.callout-tip}
-## Tip
-Experiment with different configurations in your `.devcontainer` directory to optimize your development environment.
+## Tipp
+Experimentieren Sie mit verschiedenen Konfigurationen in Ihrem `.devcontainer`-Verzeichnis, um Ihre Entwicklungsumgebung zu optimieren.
 :::
 
----
-
-This chapter provides a detailed guide for beginners on setting up and using GitHub Codespaces. Adjust the examples and explanations to fit the depth required for your book.
