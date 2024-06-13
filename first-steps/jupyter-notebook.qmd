@@ -25,7 +25,7 @@ Im Gegensatz zum Python IDLE, das hauptsächlich als einfacher Editor fungiert, 
 
 ## Ihr erstes Notebook erstellen
 
-1. Navigieren Sie in der Web-Oberfläche von Jupyter zum `code`-Verzeichnis (siehe unsere Erklärung zur [Ordnerstruktur](command-line.qmd)).
+1. Navigieren Sie in der Web-Oberfläche von Jupyter zum `code`-Verzeichnis (siehe unsere Erklärung zur [Ordnerstruktur](project-environment.qmd)).
 2. Klicken Sie oben rechts auf "New" und wählen Sie "Python [default environment]", um ein neues Notebook zu erstellen.
 3. Eine neue Notebook-Seite öffnet sich mit einer leeren Code-Zelle.
 
