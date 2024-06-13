@@ -1,5 +1,9 @@
 # Grundlagen
 
+## Jupyter Notebook herunterladen
+
+Sie haben die Möglichkeit, den gesamten Inhalt dieses Kapitels als Notebook herunterzuladen. Nach dem Herunterladen können Sie es in Ihrem `code` Ordner speichern und das Notebook in Jupyter öffnen:
+
 - [Juypter Notebook herunterladen](../code/python-basics.ipynb){download="python-basics.ipynb"}
 
 ## Bibliotheken importieren
@@ -14,6 +18,11 @@ import numpy as np
 import pandas as pd
 import altair as alt
 ```
+
+
+## Kommentare einfügen
+
+In Python kann man Kommentare im Code schreiben, indem man das Zeichen `#` verwendet. Alles, was nach diesem Zeichen auf derselben Zeile steht, wird vom Python-Interpreter ignoriert. Kommentare sind nützlich, um den Code zu dokumentieren, Erklärungen hinzuzufügen oder vorübergehend Teile des Codes zu deaktivieren. 
 
 ## Variablen und Datentypen
 
@@ -38,7 +47,7 @@ Erklärung:
 - `age` ist eine **Integer**-Variable, die eine ganze Zahl darstellt.
 - `height` ist ein **Float**, der eine Zahl mit einem Dezimalpunkt darstellt.
 - `numbers` ist eine **Liste**, die eine geordnete Sammlung von Elementen darstellt.
-- `person` ist ein **Wörterbuch**, das aus Schlüssel-Wert-Paaren besteht und mehrere Attribute speichern kann.
+- `person` ist ein **Dictionary (Wörterbuch)**, das aus Schlüssel-Wert-Paaren besteht und mehrere Attribute speichern kann.
 
 Um die in diesen Variablen gespeicherten Werte zu überprüfen, können Sie die `print`-Funktion verwenden:
 
@@ -56,13 +65,14 @@ Operatoren ermöglichen Berechnungen, Vergleiche und logische Operationen.
 Beispielcode:
 
 ```{python}
-# Arithmetische Operationen mit mehreren Variablen
+# Variablen erzeugen
 length = 10
 width = 5
 ```
 
+Berechnung der Fläche und des Umfangs:
+
 ```{python}
-# Berechnen Sie die Fläche und den Umfang
 area = length * width  # Multiplikation
 perimeter = 2 * (length + width)  # Addition und Multiplikation
 
@@ -70,49 +80,59 @@ perimeter = 2 * (length + width)  # Addition und Multiplikation
 perimeter
 ```
 
+- `length` und `width` werden multipliziert, um die `area` zu berechnen.
+- `perimeter` wird berechnet, indem `length` und `width` addiert und dann mit 2 multipliziert werden.
+
+Vergleichsoperationen:
+
 ```{python}
-# Vergleichsoperationen
 is_square = length == width  # Überprüfen, ob Länge und Breite gleich sind
 
 is_square
 ```
 
+- `is_square` überprüft, ob die beiden Seiten gleich lang sind.
+
+Logische Operationen:
+
 ```{python}
-# Logische Operationen
 is_large_rectangle = (area > 20) and (perimeter > 10)  # Logisches UND
 
 is_large_rectangle
 ```
 
-Erklärung:
-
-- `length` und `width` werden multipliziert, um die `area` zu berechnen.
-- `perimeter` wird berechnet, indem `length` und `width` addiert und dann mit 2 multipliziert werden.
-- `is_square` überprüft, ob die beiden Seiten gleich lang sind.
 - `is_large_rectangle` verwendet logische Operatoren, um festzustellen, ob das Rechteck sowohl eine große Fläche als auch einen großen Umfang hat.
 
 ## Arbeiten mit DataFrames
 
 Ein DataFrame ist eine zweidimensionale tabellarische Datenstruktur, die von Pandas bereitgestellt wird. Es ermöglicht eine effiziente Datenmanipulation, ähnlich wie ein Tabellenblatt oder eine SQL-Tabelle.
 
-Beispielcode:
+Hier ein Beispiel. Wir bereiten zunächst die Daten vor:
 
 ```{python}
-# Daten vorbereiten
-data = { "Numbers": [1, 2, 3, 4, 5], 
-         "Squares": np.array([1, 2, 3, 4, 5]) ** 2}
+data = { 
+         "Numbers": [1, 2, 3, 4, 5], 
+         "Squares": [1, 4, 9, 16, 25]
+}
+```
 
-# Erstellen eines DataFrame mit Pandas
+- Das Wörterbuch `data` enthält zwei Listen: Zahlen und deren Quadrate.
+
+Erstellen eines DataFrame mit Pandas:
+
+```{python}
 df = pd.DataFrame(data)
+```
 
-# Den DataFrame inspizieren
+- Der DataFrame `df` wird aus diesem Wörterbuch mit der Funktion `pd.DataFrame` erstellt, die die Daten in Zeilen und Spalten organisiert.
+
+Den DataFrame inspizieren (dafür verwenden wir nicht `print()`)
+
+```{python}
 df
 ```
 
-Erklärung:
 
-- Das Wörterbuch `data` enthält zwei Listen: Zahlen und deren Quadrate.
-- Der DataFrame `df` wird aus diesem Wörterbuch mit der Funktion `pd.DataFrame` erstellt, die die Daten in Zeilen und Spalten organisiert.
 - Das Eingeben von `df` in eine Jupyter Notebook-Zelle zeigt den DataFrame in tabellarischer Form an.
 
 ## Methoden verstehen
@@ -121,11 +141,12 @@ Eine Methode ist eine Funktion, die mit einem Objekt (wie einem DataFrame, einer
 
 Beispielcode:
 
-`df.head()` ist eine Methode, die die ersten paar Zeilen eines DataFrames anzeigt, um die Daten vorzuschauen:
+`df.head()` ist eine Methode, welche die ersten paar Zeilen eines DataFrames anzeigt, um die Daten zu zeigen:
 
 ```{python}
 df.head() 
 ```
+
 
 `df.describe()` liefert zusammenfassende Statistiken wie Mittelwert, Anzahl und Standardabweichung. Zusätzlich verwenden wir die Methode `.round(2)`, um die Werte auf zwei Dezimalstellen zu runden:
 
