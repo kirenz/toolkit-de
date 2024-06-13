@@ -1,6 +1,6 @@
 # Umgebungen
 
-Umgebungen sind isolierte Arbeitsbereiche, in denen Sie Python-Pakete separat für jedes Projekt installieren und verwalten können. Sie helfen Ihnen, verschiedene Abhängigkeiten für unterschiedliche Projekte zu verwalten, um Kompatibilität zu gewährleisten und Konflikte zu vermeiden.
+Umgebungen ("environments") sind isolierte Arbeitsbereiche, in denen Sie Python-Pakete separat für jedes Projekt installieren und verwalten können. Sie helfen Ihnen, verschiedene Abhängigkeiten für unterschiedliche Projekte zu verwalten, um Kompatibilität zu gewährleisten und Konflikte zu vermeiden.
 
 Vorteile:
 
@@ -26,7 +26,11 @@ Um eine Umgebung einzurichten, befolgen Sie diese Anweisungen basierend auf Ihre
    ```bash
    conda create --name basics python=3.11 pip
    ```
-   - Dieser Befehl stellt sicher, dass `pip` standardmäßig enthalten ist.
+   - Dieser Befehl stellt sicher, dass `pip` standardmäßig enthalten ist
+   
+   ::: {.callout-note}
+   pip ist ein Paketverwaltungstool für Python. Es steht für "Pip Installs Packages" oder "Pip Installs Python" und wird verwendet, um Python-Pakete aus dem [Python Package Index (PyPI)](https://pypi.org/) zu installieren und zu verwalten. Mit pip kann man Pakete installieren, aktualisieren und deinstallieren.
+   :::
 
 3. Aktivieren der Umgebung:
    - Sobald die Umgebung erstellt ist, aktivieren Sie sie mit:
@@ -35,7 +39,7 @@ Um eine Umgebung einzurichten, befolgen Sie diese Anweisungen basierend auf Ihre
    conda activate basics
    ```
 
-   - Die Eingabeaufforderung ändert sich, um anzuzeigen, dass die Umgebung aktiv ist.
+   - Die Eingabeaufforderung ändert sich, um anzuzeigen, dass die Umgebung `basics` aktiv ist.
 
 4. Installieren der benötigten Bibliotheken:
    - Mit aktivierter Umgebung installieren Sie die Bibliotheken:
@@ -70,15 +74,15 @@ Um eine Umgebung einzurichten, befolgen Sie diese Anweisungen basierend auf Ihre
    
    :::{.callout-tip collapse="true" title="Erklärung der Pakete"} 
 
-   **NumPy (`np`)**: Der Alias `np` wird weit verbreitet verwendet und ermöglicht einen prägnanten Zugriff auf NumPys Funktionen zur Array-Manipulation und numerischen Berechnung.
+   **NumPy (`np`)**: Der Alias `np` wird weit verbreitet verwendet und ermöglicht einen prägnanten Zugriff auf NumPys Funktionen für numerische Berechnungen.
 
-   **Pandas (`pd`)**: Der Alias `pd` bietet eine Kurzform für Pandas' leistungsstarke Datenmanipulationstools, wie DataFrame und Series.
+   **Pandas (`pd`)**: Der Alias `pd` bietet eine Kurzform für Pandas' leistungsstarke Datenmanipulationstools.
 
    **Matplotlib (`plt`)**: Der Alias `plt` vereinfacht das Aufrufen der Funktionen von Matplotlib zum Plotten, Erstellen von Abbildungen und Anpassen von Grafiken.
 
    **Seaborn (`sns`)**: Der Alias `sns` erleichtert den Zugriff auf Seaborns statistische Datenvisualisierungstools, die nahtlos mit Matplotlib integriert sind.
 
-   **Altair (`alt`)**: Der Alias `alt` ermöglicht einen schnellen Zugriff auf Altairs deklarative Visualisierungssyntax für interaktives Plotten mit Vega-Lite.
+   **Altair (`alt`)**: Der Alias `alt` ermöglicht einen schnellen Zugriff auf Altairs  Visualisierungssyntax für interaktives Plotten.
    :::
 
 6. Deaktivieren der Umgebung:
