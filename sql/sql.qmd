@@ -1,6 +1,5 @@
 # SQL
 
+*SQL* (Structured Query Language, ausgesprochen "S-Q-L" oder manchmal "Sequel") ist eine standardisierte Datenbanksprache, die speziell für die Verwaltung und Manipulation relationaler Datenbanken verwendet wird. Mit SQL können Benutzer Daten erstellen, abrufen, aktualisieren und löschen sowie Datenbankstrukturen entwerfen und verwalten.
 
-*SQL* (Structured Query Language, pronounced "S-Q-L" or sometimes "Sequel") is a standardized database language specifically used for managing and manipulating relational databases. Through SQL, users can create, retrieve, update, and delete data, as well as design and manage database structures. 
-
-A Relational Database Management System (RDBMS) is a type of database system where data is stored in structured tables with rows and columns, facilitating complex queries and transactions. Popular open source examples include *MySQL* and *PostgreSQL*.
+Ein Relationales Datenbankmanagementsystem (RDBMS) ist ein Datenbanksystem, in dem Daten in strukturierten Tabellen mit Zeilen und Spalten gespeichert werden, was komplexe Abfragen und Transaktionen erleichtert. Beliebte Open-Source-Beispiele sind *MySQL* und *PostgreSQL*.
