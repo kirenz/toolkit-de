@@ -1,47 +1,47 @@
 # Installation
 
-Visual Studio Code is easy to install on both Windows and macOS. Below are step-by-step guides for each operating system.
+Visual Studio Code ist sowohl auf Windows als auch auf macOS einfach zu installieren. Unten finden Sie Schritt-für-Schritt-Anleitungen für jedes Betriebssystem.
 
 ## Windows
 
-1. Download the Installer:
-   - Visit the [Visual Studio Code download page](https://code.visualstudio.com/Download).
-   - Click on the Windows version to download the `.exe` installer.
+1. Downloaden Sie den Installer:
+   - Besuchen Sie die [Visual Studio Code Download-Seite](https://code.visualstudio.com/Download).
+   - Klicken Sie auf die Windows-Version, um den `.exe` Installer herunterzuladen.
 
-2. Run the Installer:
-   - Once the download is complete, locate and double-click the `.exe` file to start the installation process.
-   - Follow the prompts in the Setup Wizard. Be sure to check the boxes to add VS Code to the PATH and create a desktop icon if you prefer easy access.
+2. Führen Sie den Installer aus:
+   - Nachdem der Download abgeschlossen ist, suchen Sie die `.exe` Datei und doppelklicken Sie darauf, um den Installationsprozess zu starten.
+   - Folgen Sie den Anweisungen im Setup-Assistenten. Achten Sie darauf, die Kästchen zu aktivieren, um VS Code zum PATH hinzuzufügen und ein Desktop-Symbol zu erstellen, falls Sie einfachen Zugriff bevorzugen.
 
-3. Launch Visual Studio Code:
-   - After installation, you can launch VS Code either from the desktop icon or through the Start menu.
-   - On first launch, VS Code will open a welcome page where you can customize your environment, install extensions, or open a project.
+3. Starten Sie Visual Studio Code:
+   - Nach der Installation können Sie VS Code entweder über das Desktop-Symbol oder über das Startmenü starten.
+   - Beim ersten Start öffnet VS Code eine Willkommensseite, auf der Sie Ihre Umgebung anpassen, Erweiterungen installieren oder ein Projekt öffnen können.
 
-4. Optional: Install Additional Components:
-   - For enhanced functionality, such as terminal integration and shell commands, ensure you check the appropriate options in the installer to integrate VS Code into your system shell.
-
-:::{.callout-tip}
-Adding VS Code to your PATH allows you to launch the editor from the command prompt or terminal by simply typing `code`.
-:::
-
-### Installation on macOS
-
-1. Download the Installer:
-   - Navigate to the [Visual Studio Code download page](https://code.visualstudio.com/Download).
-   - Click on the macOS version to download the `.zip` file.
-
-2. Install the Application:
-   - Once downloaded, open the `.zip` folder and extract the Visual Studio Code application.
-   - Drag the Visual Studio Code application to your "Applications" folder.
-
-3. Launch Visual Studio Code:
-   - Open your "Applications" folder and double-click on Visual Studio Code to start.
-   - As with Windows, the first launch will open a welcome page that can guide you through initial setup, including the installation of popular extensions.
-
-4. Optional: Add to Path:
-   - Adding VS Code to your path allows you to launch it from the terminal. To do this, open the Command Palette (`Cmd+Shift+P`), type 'Shell Command: Install `code` command in PATH', and press Enter.
+4. Optional: Installieren Sie zusätzliche Komponenten:
+   - Für erweiterte Funktionalitäten, wie Terminal-Integration und Shell-Befehle, stellen Sie sicher, dass Sie die entsprechenden Optionen im Installer aktivieren, um VS Code in Ihre System-Shell zu integrieren.
 
 :::{.callout-tip}
-Installing the `code` command in your PATH enables you to open VS Code from the terminal by typing `code .` in any directory, making it quick and easy to open projects.
+Das Hinzufügen von VS Code zu Ihrem PATH ermöglicht es Ihnen, den Editor über die Eingabeaufforderung oder das Terminal zu starten, indem Sie einfach `code` eingeben.
 :::
 
-By following these steps, you will have successfully installed Visual Studio Code on your Windows or macOS machine and are ready to begin configuring it for your development needs.
+### Installation auf macOS
+
+1. Downloaden Sie den Installer:
+   - Navigieren Sie zur [Visual Studio Code Download-Seite](https://code.visualstudio.com/Download).
+   - Klicken Sie auf die macOS-Version, um die `.zip` Datei herunterzuladen.
+
+2. Installieren Sie die Anwendung:
+   - Nach dem Download öffnen Sie den `.zip` Ordner und extrahieren die Visual Studio Code Anwendung.
+   - Ziehen Sie die Visual Studio Code Anwendung in Ihren "Programme"-Ordner.
+
+3. Starten Sie Visual Studio Code:
+   - Öffnen Sie Ihren "Programme"-Ordner und doppelklicken Sie auf Visual Studio Code, um es zu starten.
+   - Wie bei Windows öffnet der erste Start eine Willkommensseite, die Sie durch die erste Einrichtung, einschließlich der Installation beliebter Erweiterungen, führen kann.
+
+4. Optional: Zum PATH hinzufügen:
+   - Das Hinzufügen von VS Code zu Ihrem PATH ermöglicht es Ihnen, es vom Terminal aus zu starten. Öffnen Sie dazu die Befehlspalette (`Cmd+Shift+P`), geben Sie 'Shell Command: Install `code` command in PATH' ein und drücken Sie Enter.
+
+:::{.callout-tip}
+Die Installation des `code` Befehls in Ihrem PATH ermöglicht es Ihnen, VS Code aus dem Terminal zu öffnen, indem Sie `code .` in einem beliebigen Verzeichnis eingeben, was es schnell und einfach macht, Projekte zu öffnen.
+:::
+
+Wenn Sie diese Schritte befolgen, haben Sie Visual Studio Code erfolgreich auf Ihrem Windows- oder macOS-Rechner installiert und sind bereit, es für Ihre Entwicklungsbedürfnisse zu konfigurieren.
