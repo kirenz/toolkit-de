@@ -31,17 +31,17 @@ Hier sind einige wichtige Standardmodule und deren häufige Anwendungen:
 
 ## Pakete
 
-Pakete in Python sind Verzeichnisse von Python-Modulen mit einer speziellen Datei namens `__init__.py`. Sie ermöglichen es Entwicklern, mehrere Module zusammenzupacken, wodurch es einfacher wird, eine Sammlung von Modulen als eine Einheit zu verwalten und zu verteilen.
+Pakete in Python sind Verzeichnisse von Python-Modulen mit einer speziellen Datei namens `__init__.py`. Sie ermöglichen es Entwickler/innen, mehrere Module zusammenzupacken, wodurch es einfacher wird, eine Sammlung von Modulen als eine Einheit zu verwalten und zu verteilen.
 
 ::: {.callout-tip title="Küchen-Analogie für Pakete" collapse="true" }
 Wenn ein Modul einem Rezeptbuch ähnelt, ist ein Paket vergleichbar mit einer Sammlung von Rezeptbüchern, die möglicherweise eine komplette Küche oder eine umfassende Sammlung von Kochstilen darstellen. Jedes Buch (Modul) konzentriert sich auf einen bestimmten Bereich, aber zusammen bieten sie eine breite Palette kulinarischer Optionen.
 :::
 
-Für Datenwissenschaftler und Entwickler sind einige wesentliche Pakete:
+Für Datenwissenschaftler/innen und Entwickler/innen sind einige wesentliche Pakete:
 
-- `numpy`: Fundamentales Paket für numerische Berechnungen.
-- `pandas`: Unverzichtbar für Datenmanipulation und -analyse.
-- `matplotlib` und `seaborn`: Für Datenvisualisierung.
+- `numpy`: Paket für numerische Berechnungen.
+- `pandas`: Datenmanipulation und -analyse.
+- `matplotlib`, `seaborn` und `altair`: Datenvisualisierung.
 - `scikit-learn`: Implementiert eine breite Palette von Machine-Learning-Algorithmen.
 
 ## Vorteile
@@ -57,9 +57,11 @@ Vorteile der Verwendung von Modulen und Paketen:
 Hier sehen Sie, wie Sie ein Modul verwenden können, indem Sie es in Ihr Python-Skript importieren:
 
 ```{python}
+# Das Moudl wird importiert
 import math
 
 # Verwendung der sqrt-Funktion aus dem math-Modul zur Berechnung der Quadratwurzel
+# Das Ergebnis wird in der Variablen result gespeichert
 result = math.sqrt(16)
 print(result)  # Ausgabe: 4.0
 ```
