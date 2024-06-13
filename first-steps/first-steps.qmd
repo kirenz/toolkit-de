@@ -2,8 +2,6 @@
 
 In diesem ersten Abschnitt werden wir eine grundlegende Arbeitsumgebung einrichten, die für jedes datenbezogene Vorhaben unerlässlich ist.
 
-Sie lernen, wie Sie sich auf der Befehlszeile Ihres Computers zurechtfinden, Python zum ersten Mal einrichten und die Anaconda-Distribution verwenden.
+Sie lernen, wie Sie sich auf der Befehlszeile Ihres Computers zurechtfinden, Python zum ersten Mal einrichten und die Anaconda-Distribution (ein Data-Science-Softwarpaket) verwenden.
 
 Zusätzlich zeigen wir Ihnen, wie Sie Jupyter Notebook, ein leistungsstarkes Werkzeug zur interaktiven Datenexploration, nutzen und bringen Ihnen die Grundlagen von Markdown bei, um Ihre Arbeit effektiv zu dokumentieren.
-
-Egal, ob Sie gerade erst anfangen oder Ihre Fähigkeiten auffrischen möchten, diese ersten Schritte werden Ihnen den Weg zum Erfolg ebnen, während Sie weiterhin Daten erkunden und analysieren.
