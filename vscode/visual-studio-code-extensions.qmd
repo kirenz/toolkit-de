@@ -1,61 +1,61 @@
-# Extensions
+# Erweiterungen
 
-Extensions enhance the functionality of Visual Studio Code by providing additional features, language support, themes, and more. 
+Erweiterungen verbessern die Funktionalität von Visual Studio Code, indem sie zusätzliche Funktionen, Sprachunterstützung, Themen und mehr bieten.
 
-This section guides you through installing five key extensions that are particularly beneficial for developers: Python, Jupyter, GitHub Copilot, Atom One Dark Theme, and VS Code Icons.
+Dieser Abschnitt führt Sie durch die Installation von fünf wichtigen Erweiterungen, die für Entwickler besonders vorteilhaft sind: Python, Jupyter, GitHub Copilot, Atom One Dark Theme und VS Code Icons.
 
-## Python Extension
+## Python-Erweiterung
 
-The Python extension by Microsoft is essential for any Python developer using VS Code. It provides comprehensive support for Python coding, including IntelliSense (automatic code completions), linting, debugging, and easy navigation through code.
+Die Python-Erweiterung von Microsoft ist für jeden Python-Entwickler, der VS Code verwendet, unerlässlich. Sie bietet umfassende Unterstützung für das Python-Coding, einschließlich IntelliSense (automatische Code-Vervollständigungen), Linting, Debugging und einfacher Navigation durch den Code.
 
-How to Install:
+So installieren Sie die Erweiterung:
 
-1. Open Visual Studio Code.
-2. Go to the Extensions view by clicking on the square icon on the sidebar or pressing `Ctrl+Shift+X` (Windows) or `Command+Shift+X` (Mac).
-3. In the search bar, type "Python" and look for the Python extension authored by Microsoft.
-4. Click on 'Install' to add the extension to your editor.
+1. Öffnen Sie Visual Studio Code.
+2. Gehen Sie zur Ansicht Erweiterungen, indem Sie auf das Quadrat-Symbol in der Seitenleiste klicken oder `Ctrl+Shift+X` (Windows) bzw. `Command+Shift+X` (Mac) drücken.
+3. Geben Sie in der Suchleiste "Python" ein und suchen Sie nach der von Microsoft veröffentlichten Python-Erweiterung.
+4. Klicken Sie auf "Installieren", um die Erweiterung zu Ihrem Editor hinzuzufügen.
 
-## Jupyter Extension
+## Jupyter-Erweiterung
 
-The Jupyter extension allows you to directly create, edit, and run Jupyter notebooks within VS Code. This integration facilitates data science projects by enabling code execution, visualization, and data manipulation all in one place.
+Die Jupyter-Erweiterung ermöglicht es Ihnen, Jupyter-Notebooks direkt in VS Code zu erstellen, zu bearbeiten und auszuführen. Diese Integration erleichtert Datenwissenschaftsprojekte, indem sie die Code-Ausführung, Visualisierung und Datenmanipulation an einem Ort ermöglicht.
 
-How to Install:
+So installieren Sie die Erweiterung:
 
-1. Open the Extensions view as previously described.
-2. Search for "Jupyter".
-3. Select the Jupyter extension provided by Microsoft and click 'Install'.
+1. Öffnen Sie die Ansicht Erweiterungen wie zuvor beschrieben.
+2. Suchen Sie nach "Jupyter".
+3. Wählen Sie die von Microsoft bereitgestellte Jupyter-Erweiterung aus und klicken Sie auf "Installieren".
 
 <!-- ## GitHub Copilot
 
-GitHub Copilot is an AI-powered code completion tool that suggests whole lines or blocks of code as you type. It's like having a pair programming partner who helps you code faster and learn new APIs and languages along the way.
+GitHub Copilot ist ein KI-gestütztes Code-Vervollständigungstool, das ganze Zeilen oder Codeblöcke vorschlägt, während Sie tippen. Es ist wie ein Paarprogrammierungspartner, der Ihnen hilft, schneller zu codieren und neue APIs und Sprachen zu lernen.
 
-### How to Install:
-1. Navigate to the Extensions view in VS Code.
-2. Search for "GitHub Copilot".
-3. Click on 'Install' to start using GitHub’s AI assistant. -->
+### So installieren Sie die Erweiterung:
+1. Navigieren Sie zur Ansicht Erweiterungen in VS Code.
+2. Suchen Sie nach "GitHub Copilot".
+3. Klicken Sie auf "Installieren", um den KI-Assistenten von GitHub zu nutzen. -->
 
 ## Atom One Dark Theme
 
-For those who appreciate a darker, more comfortable development environment, the Atom One Dark Theme provides a sleek interface that reduces eye strain during extended coding sessions.
+Für diejenigen, die eine dunklere und komfortablere Entwicklungsumgebung bevorzugen, bietet das Atom One Dark Theme eine elegante Benutzeroberfläche, die die Augenbelastung bei längeren Codiersitzungen reduziert.
 
-How to Install:
+So installieren Sie die Erweiterung:
 
-1. Access the Extensions marketplace in VS Code.
-2. Search for "Atom One Dark Theme".
-3. Click 'Install' to apply the theme to your environment.
+1. Greifen Sie auf den Erweiterungsmarktplatz in VS Code zu.
+2. Suchen Sie nach "Atom One Dark Theme".
+3. Klicken Sie auf "Installieren", um das Theme auf Ihre Umgebung anzuwenden.
 
 ## VS Code Icons
 
-VS Code Icons extension enhances the visual organization of your project files by adding distinct, recognizable icons to each file type, making it easier to navigate complex projects.
+Die VS Code Icons-Erweiterung verbessert die visuelle Organisation Ihrer Projektdateien, indem sie für jeden Dateityp unverwechselbare, erkennbare Symbole hinzufügt, was die Navigation durch komplexe Projekte erleichtert.
 
-How to Install:
+So installieren Sie die Erweiterung:
 
-1. Open the Extensions view in VS Code.
-2. Type "VS Code Icons" into the search bar.
-3. Click on 'Install' to enhance your project file navigation.
+1. Öffnen Sie die Ansicht Erweiterungen in VS Code.
+2. Geben Sie "VS Code Icons" in die Suchleiste ein.
+3. Klicken Sie auf "Installieren", um Ihre Projektdatei-Navigation zu verbessern.
 
 :::{.callout-tip}
-After installing these extensions, take a moment to explore their settings and customize them to fit your workflow. For example, you can enable specific linters in the Python extension settings or customize how Jupyter notebooks are displayed.
+Nach der Installation dieser Erweiterungen nehmen Sie sich einen Moment Zeit, um deren Einstellungen zu erkunden und sie an Ihren Arbeitsablauf anzupassen. Sie können beispielsweise spezifische Linter in den Python-Erweiterungseinstellungen aktivieren oder anpassen, wie Jupyter-Notebooks angezeigt werden.
 :::
 
-With these extensions installed, your Visual Studio Code environment will be well-equipped to handle a wide range of development tasks, from writing Python code to managing Jupyter notebooks and enjoying an aesthetically pleasing coding environment.
+Mit diesen installierten Erweiterungen wird Ihre Visual Studio Code-Umgebung gut ausgestattet sein, um eine Vielzahl von Entwicklungsaufgaben zu bewältigen.
