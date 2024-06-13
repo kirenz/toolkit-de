@@ -6,7 +6,7 @@ execute:
 
 book:
   title: "Data Science, AI & Analytics Toolkit"
-  description: "Programming Toolkit for Data Science, AI & Analytics"
+  description: "Programming Toolkit für Data Science, AI & Analytics"
 
   image: "/images/logo.png"
   favicon: "/images/logo.png"
