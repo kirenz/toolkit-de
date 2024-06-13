@@ -1,0 +1,1172 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Data Science, AI & Analytics Toolkit",
+    "section": "",
+    "text": "Willkommen\nWillkommen zu Ihrem ersten Schritt in die faszinierende Welt der Datenwissenschaft und künstlichen Intelligenz (KI). Egal, ob Sie ein Student, ein Berufstätiger im Karrierewechsel oder ein neugieriger Datenenthusiast sind, dieses Buch soll Sie durch die wesentlichen Umgebungen und Werkzeuge führen, die das Rückgrat Ihrer Datenwissenschaftsreise bilden werden.\nAuf den folgenden Seiten werden wir erkunden, wie Sie verschiedene Plattformen und Werkzeuge einrichten und effektiv nutzen können, von den Grundlagen der Kommandozeilenoperationen bis hin zu den Komplexitäten virtueller Python-Umgebungen. Der Fokus liegt darauf, Ihnen praktisches Wissen zu vermitteln, das Sie sofort anwenden können, sei es bei persönlichen Projekten oder zur beruflichen Weiterentwicklung.\nDieses Buch ist so strukturiert, dass es sowohl zugänglich als auch informativ ist und sicherstellt, dass selbst Leser ohne technische Vorkenntnisse den Inhalt komfortabel durchgehen können. Wir beginnen mit grundlegenden Fähigkeiten wie dem Einrichten von Python und dem Beherrschen von Markdown zur Dokumentation Ihrer Projekte und bewegen uns dann schrittweise zu fortgeschritteneren Themen wie der Integration von SQL-Datenbanken und der Verwendung von GitHub zur Versionskontrolle.\nJedes Kapitel enthält Schritt-für-Schritt-Anleitungen, Tipps zur Verbesserung Ihres Lernens und häufige Fallstricke, die Sie vermeiden sollten. Am Ende dieses Buches werden Sie ein solides Verständnis der Werkzeuge und Umgebungen haben, die Datenwissenschaftler und KI-Praktiker weltweit befähigen.",
+    "crumbs": [
+      "Willkommen"
+    ]
+  },
+  {
+    "objectID": "first-steps/first-steps.html",
+    "href": "first-steps/first-steps.html",
+    "title": "Erste Schritte",
+    "section": "",
+    "text": "In diesem ersten Abschnitt werden wir eine grundlegende Arbeitsumgebung einrichten, die für jedes datenbezogene Vorhaben unerlässlich ist.\nSie lernen, wie Sie sich auf der Befehlszeile Ihres Computers zurechtfinden, Python zum ersten Mal einrichten und die Anaconda-Distribution verwenden.\nZusätzlich zeigen wir Ihnen, wie Sie Jupyter Notebook, ein leistungsstarkes Werkzeug zur interaktiven Datenexploration, nutzen und bringen Ihnen die Grundlagen von Markdown bei, um Ihre Arbeit effektiv zu dokumentieren.\nEgal, ob Sie gerade erst anfangen oder Ihre Fähigkeiten auffrischen möchten, diese ersten Schritte werden Ihnen den Weg zum Erfolg ebnen, während Sie weiterhin Daten erkunden und analysieren.",
+    "crumbs": [
+      "Erste Schritte"
+    ]
+  },
+  {
+    "objectID": "first-steps/project-environment.html",
+    "href": "first-steps/project-environment.html",
+    "title": "1  Projektumgebung",
+    "section": "",
+    "text": "1.1 Windows\nFolgen Sie diesen Schritten, um das Hauptverzeichnis und die Unterverzeichnisse mit der Windows-Eingabeaufforderung zu erstellen:\nDiese Befehle richten ein Hauptverzeichnis toolkit-lab mit zwei Unterverzeichnissen ein: code für Ihre Skripte und Anwendungen und data zum Speichern von Datensätzen und zugehörigen Dateien.",
+    "crumbs": [
+      "Erste Schritte",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Projektumgebung</span>"
+    ]
+  },
+  {
+    "objectID": "first-steps/project-environment.html#windows",
+    "href": "first-steps/project-environment.html#windows",
+    "title": "1  Projektumgebung",
+    "section": "",
+    "text": "Drücken Sie gleichzeitig die Tasten Windows + R, um das Ausführen-Dialogfeld zu öffnen.\nGeben Sie cmd ein und drücken Sie Enter, um die Eingabeaufforderung zu öffnen.\nErstellen Sie einen neuen Ordner namens toolkit-lab (kopieren Sie diesen Code und geben Sie ihn in Ihre Eingabeaufforderung ein):\nmkdir toolkit-lab\nVerwenden Sie cd (change directory), um in das Verzeichnis toolkit-lab zu wechseln:\ncd toolkit-lab\nVerwenden Sie mkdir (make directory), um die Unterverzeichnisse code und data zu erstellen:\nmkdir code data",
+    "crumbs": [
+      "Erste Schritte",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Projektumgebung</span>"
+    ]
+  },
+  {
+    "objectID": "first-steps/project-environment.html#macoslinux",
+    "href": "first-steps/project-environment.html#macoslinux",
+    "title": "1  Projektumgebung",
+    "section": "1.2 macOS/Linux",
+    "text": "1.2 macOS/Linux\nFolgen Sie diesen Schritten, um das Hauptverzeichnis und die Unterverzeichnisse mit dem Terminal in macOS oder Linux zu erstellen:\n\nUm das Terminal in macOS zu öffnen, können Sie die Spotlight-Suche (Cmd + Space) verwenden und “Terminal” eingeben oder über Programme -&gt; Dienstprogramme -&gt; Terminal navigieren.\nErstellen Sie einen neuen Ordner namens toolkit-lab (kopieren Sie diesen Code und geben Sie ihn in Ihr Terminal ein):\nmkdir toolkit-lab\nVerwenden Sie cd (change directory), um in das Verzeichnis toolkit-lab zu wechseln:\ncd toolkit-lab\nVerwenden Sie mkdir (make directory), um die Unterverzeichnisse code und data zu erstellen:\nmkdir code data\n\nDiese Befehle richten ein Hauptverzeichnis toolkit-lab mit zwei Unterverzeichnissen ein: code für Ihre Skripte und Anwendungen und data zum Speichern von Datensätzen und zugehörigen Dateien.",
+    "crumbs": [
+      "Erste Schritte",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Projektumgebung</span>"
+    ]
+  },
+  {
+    "objectID": "first-steps/python-installation.html",
+    "href": "first-steps/python-installation.html",
+    "title": "2  Python-Installation",
+    "section": "",
+    "text": "2.1 Installationsschritte",
+    "crumbs": [
+      "Erste Schritte",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Python-Installation</span>"
+    ]
+  },
+  {
+    "objectID": "first-steps/python-installation.html#installationsschritte",
+    "href": "first-steps/python-installation.html#installationsschritte",
+    "title": "2  Python-Installation",
+    "section": "",
+    "text": "2.1.1 Windows-Nutzer\n\nInstallationsprogramm herunterladen: Navigieren Sie zur Python-Website und laden Sie die neueste Version für Ihre Windows-Version herunter (normalerweise Windows-Installer 64-Bit).\nInstallationsprogramm ausführen: Klicken Sie mit der rechten Maustaste auf das heruntergeladene Installationsprogramm und wählen Sie “Als Administrator ausführen”. Stellen Sie sicher, dass Sie das Kästchen “Add Python 3.x to PATH” am unteren Rand des Installationsfensters markieren, um sicherzustellen, dass Python zu den Umgebungsvariablen Ihres Systems hinzugefügt wird.\nAnpassung der Installation (optional): Sie können die Installation anpassen, indem Sie auf “Customize installation” klicken. Dies ermöglicht es Ihnen, spezifische Funktionen wie Dokumentation, pip, Tests usw. auszuwählen.\nInstallation starten: Klicken Sie auf “Install Now”, um den Installationsvorgang zu starten.\n\n\n\n2.1.2 macOS-Nutzer\n\nInstallationsprogramm herunterladen: Navigieren Sie zur Python-Website und laden Sie die neueste Version herunter.\nPython installieren: Öffnen Sie die heruntergeladene .pkg-Datei und folgen Sie den Anweisungen zur Installation von Python. Der Installationsassistent führt Sie durch die notwendigen Schritte.",
+    "crumbs": [
+      "Erste Schritte",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Python-Installation</span>"
+    ]
+  },
+  {
+    "objectID": "first-steps/python-installation.html#überprüfung-der-installation",
+    "href": "first-steps/python-installation.html#überprüfung-der-installation",
+    "title": "2  Python-Installation",
+    "section": "2.2 Überprüfung der Installation",
+    "text": "2.2 Überprüfung der Installation\nNach der Installation überprüfen Sie, ob Python korrekt installiert wurde, indem Sie eine Kommandozeile öffnen (Terminal auf macOS, Eingabeaufforderung oder PowerShell auf Windows) und eingeben:\npython --version\nDieser Befehl sollte die Version von Python anzeigen, die Sie installiert haben.\n\n\n\n\n\n\nUnterschiedliche Python-Version\n\n\n\n\n\nWenn Sie bereits Python oder eine Python-Distribution wie Anaconda installiert haben, kann das Ausführen von python --version in Ihrem Terminal eine andere Python-Version anzeigen als die, die Sie gerade installiert haben. Diese Abweichung tritt auf, weil Ihr System mehrere Python-Installationen gleichzeitig verwalten kann. Der Terminalbefehl wählt die Version, die zuerst in der PATH-Variable des Systems erscheint, was möglicherweise nicht die zuletzt installierte Version ist.\nDies ist eine gängige Situation und kein Grund zur Sorge. Wir werden dieses Thema in einem späteren Kapitel erneut behandeln und besprechen, wie Sie mehrere Python-Versionen effektiv verwalten können, um sicherzustellen, dass Sie verschiedene Python-Umgebungen je nach Bedarf für Ihre Projekte auswählen und verwenden können.",
+    "crumbs": [
+      "Erste Schritte",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Python-Installation</span>"
+    ]
+  },
+  {
+    "objectID": "first-steps/python-installation.html#fehlerbehebung-bei-häufigen-problemen",
+    "href": "first-steps/python-installation.html#fehlerbehebung-bei-häufigen-problemen",
+    "title": "2  Python-Installation",
+    "section": "2.3 Fehlerbehebung bei häufigen Problemen",
+    "text": "2.3 Fehlerbehebung bei häufigen Problemen\n\nPython nicht erkannt: Wenn die Kommandozeile den Befehl python nicht erkennt, liegt es möglicherweise daran, dass Python nicht zu Ihrem PATH hinzugefügt wurde. Überprüfen Sie die Installationsschritte noch einmal, um sicherzustellen, dass Sie die Option ausgewählt haben, Python zu Ihrem PATH hinzuzufügen.\nBerechtigungsfehler während der Installation: Dies tritt normalerweise unter Windows auf und kann behoben werden, indem das Installationsprogramm als Administrator ausgeführt wird.",
+    "crumbs": [
+      "Erste Schritte",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Python-Installation</span>"
+    ]
+  },
+  {
+    "objectID": "first-steps/python-idle.html",
+    "href": "first-steps/python-idle.html",
+    "title": "3  Python IDLE",
+    "section": "",
+    "text": "3.1 Python IDLE starten\nNach der Installation von Python starten Sie IDLE über das Suchmenü Ihres Betriebssystems:",
+    "crumbs": [
+      "Erste Schritte",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Python IDLE</span>"
+    ]
+  },
+  {
+    "objectID": "first-steps/python-idle.html#python-idle-starten",
+    "href": "first-steps/python-idle.html#python-idle-starten",
+    "title": "3  Python IDLE",
+    "section": "",
+    "text": "Windows: Öffnen Sie das Startmenü und geben Sie IDLE ein.\nMacOS: Verwenden Sie die Spotlight-Suche (Cmd + Leertaste), geben Sie IDLE ein und drücken Sie Enter.\nLinux: Finden Sie IDLE im Anwendungsmenü oder führen Sie idle im Terminal aus.",
+    "crumbs": [
+      "Erste Schritte",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Python IDLE</span>"
+    ]
+  },
+  {
+    "objectID": "first-steps/python-idle.html#einfache-berechnungen",
+    "href": "first-steps/python-idle.html#einfache-berechnungen",
+    "title": "3  Python IDLE",
+    "section": "3.2 Einfache Berechnungen",
+    "text": "3.2 Einfache Berechnungen\nDas IDLE-Shell-Fenster fungiert als interaktiver Interpreter, der jede Codezeile sofort ausführt, wenn Sie Enter drücken.\nDirekt in der IDLE-Shell können Sie arithmetische Ausdrücke wie 2 + 3 eingeben und Enter drücken, um sofort die Ergebnisse zu sehen.\nDiese Funktion macht IDLE ideal für schnelle Berechnungen und Experimente mit den mathematischen Fähigkeiten von Python, ohne dass ein Skript gespeichert oder ausgeführt werden muss.",
+    "crumbs": [
+      "Erste Schritte",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Python IDLE</span>"
+    ]
+  },
+  {
+    "objectID": "first-steps/python-idle.html#python-skripte",
+    "href": "first-steps/python-idle.html#python-skripte",
+    "title": "3  Python IDLE",
+    "section": "3.3 Python-Skripte",
+    "text": "3.3 Python-Skripte\nAls nächstes erstellen und führen wir ein einfaches Python-Skript aus:\n\nEine neue Datei öffnen: Navigieren Sie in IDLE zu Datei &gt; Neue Datei, um ein Editor-Fenster zu öffnen.\nGeben Sie Ihren Code ein: Geben Sie Folgendes in das neue Editor-Fenster ein:\nprint(\"Hallo, Python!\")\nSpeichern Sie Ihr Skript: Speichern Sie die Datei über Datei &gt; Speichern unter... und benennen Sie sie hello.py. Idealerweise speichern Sie sie in Ihrem Verzeichnis code innerhalb Ihres toolkit-labs-Ordners (siehe dazu die Erklärung zur Ordnerstruktur).\nFühren Sie Ihr Skript aus: Drücken Sie F5 oder gehen Sie zu Ausführen &gt; Modul ausführen, um Ihr Skript auszuführen. Die Ausgabe Hallo, Python! sollte in der IDLE-Shell erscheinen.\n\nModifizieren Sie nun Ihr Skript mit verschiedenen Nachrichten. Sie können auch help(print) oder help() in die IDLE-Shell eingeben, um die umfangreiche Hilfedokumentation von Python zu erkunden und andere Funktionen kennenzulernen.",
+    "crumbs": [
+      "Erste Schritte",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Python IDLE</span>"
+    ]
+  },
+  {
+    "objectID": "first-steps/python-idle.html#was-kommt-als-nächstes",
+    "href": "first-steps/python-idle.html#was-kommt-als-nächstes",
+    "title": "3  Python IDLE",
+    "section": "3.4 Was kommt als nächstes?",
+    "text": "3.4 Was kommt als nächstes?\nPython IDLE bietet eine Einführung in die Programmierung mit Python und eine einfache Oberfläche für die Codeentwicklung und -ausführung. In einem der folgenden Abschnitte werden wir fortschrittlichere IDEs wie Visual Studio Code erkunden, die größere Projekte mit zusätzlichen Funktionen unterstützen.\nIm nächsten Kapitel wird die Installation und grundlegende Nutzung von Anaconda behandelt, einer beliebten Python-Distribution, die einen robusten Paketmanager und eine Suite von vorinstallierten Bibliotheken umfasst, die häufig in der Datenwissenschaft und im maschinellen Lernen verwendet werden.",
+    "crumbs": [
+      "Erste Schritte",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Python IDLE</span>"
+    ]
+  },
+  {
+    "objectID": "first-steps/anaconda-installation.html",
+    "href": "first-steps/anaconda-installation.html",
+    "title": "4  Anaconda installieren",
+    "section": "",
+    "text": "4.1 Installer herunterladen",
+    "crumbs": [
+      "Erste Schritte",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Anaconda installieren</span>"
+    ]
+  },
+  {
+    "objectID": "first-steps/anaconda-installation.html#installer-herunterladen",
+    "href": "first-steps/anaconda-installation.html#installer-herunterladen",
+    "title": "4  Anaconda installieren",
+    "section": "",
+    "text": "Gehen Sie zur Anaconda-Download-Seite.\nWählen Sie Ihr Betriebssystem aus (für macOS wählen Sie den entsprechenden grafischen Installer - wenn Ihr Gerät einen Apple-Chip hat, wählen Sie M1).\nLaden Sie den Installer herunter. Achten Sie darauf, den grafischen Installer herunterzuladen.",
+    "crumbs": [
+      "Erste Schritte",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Anaconda installieren</span>"
+    ]
+  },
+  {
+    "objectID": "first-steps/anaconda-installation.html#installationsanleitung",
+    "href": "first-steps/anaconda-installation.html#installationsanleitung",
+    "title": "4  Anaconda installieren",
+    "section": "4.2 Installationsanleitung",
+    "text": "4.2 Installationsanleitung\n\n4.2.1 Windows\n\nKlicken Sie mit der rechten Maustaste auf den heruntergeladenen Installer und wählen Sie “Als Administrator ausführen”.\nKlicken Sie auf “Weiter”, um durch die Setup-Bildschirme zu navigieren.\nStimmen Sie den Geschäftsbedingungen zu.\nWählen Sie den Installationstyp:\n\n“Nur für mich” (empfohlen) oder “Alle Benutzer”.\n\nWählen Sie den Zielordner für die Installation.\nWichtiger Schritt: Aktivieren Sie “Anaconda zu meiner PATH-Umgebungsvariablen hinzufügen” (optional, aber empfohlen).\nAktivieren Sie “Anaconda als meine Standard-Python-Version registrieren” (empfohlen).\nKlicken Sie auf “Installieren” und warten Sie, bis die Installation abgeschlossen ist.\nKlicken Sie auf “Weiter” und dann auf “Fertig stellen”, um die Installation abzuschließen.\n\n\n\n4.2.2 macOS\n\nSuchen Sie die heruntergeladene .pkg-Datei und doppelklicken Sie darauf, um die Installation zu starten.\nFolgen Sie den Anweisungen, um die Installation abzuschließen:\n\nLesen und akzeptieren Sie die Lizenzvereinbarung.\nWählen Sie das Ziellaufwerk für die Installation.\nKlicken Sie auf “Installieren”.\n\nSobald die Installation abgeschlossen ist, schließen Sie den Installer.\n\n\n\n4.2.3 Linux\n\nÖffnen Sie ein Terminalfenster und navigieren Sie zu dem Verzeichnis, in dem der .sh-Installer heruntergeladen wurde.\nFühren Sie den Installer mit folgendem Befehl aus:\nbash Anaconda3-&lt;ihre-version&gt;-Linux-x86_64.sh\nFolgen Sie den Anweisungen, um die Lizenzvereinbarung zu akzeptieren und den Installationsort auszuwählen.\nDer Installer wird fragen, ob Anaconda in Ihrer .bashrc-Datei initialisiert werden soll. Geben Sie “ja” ein.\nSchließen Sie das Terminal und öffnen Sie ein neues, um sicherzustellen, dass Anaconda richtig initialisiert ist.",
+    "crumbs": [
+      "Erste Schritte",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Anaconda installieren</span>"
+    ]
+  },
+  {
+    "objectID": "first-steps/anaconda-installation.html#installation-überprüfen",
+    "href": "first-steps/anaconda-installation.html#installation-überprüfen",
+    "title": "4  Anaconda installieren",
+    "section": "4.3 Installation überprüfen",
+    "text": "4.3 Installation überprüfen\nUm zu bestätigen, dass Anaconda erfolgreich installiert wurde: 1. Öffnen Sie ein Eingabeaufforderungsfenster (Windows) oder ein Terminal (macOS/Linux). 2. Führen Sie diesen Befehl aus, um zu überprüfen, ob Anaconda erkannt wird: bash    conda --version 3. Wenn Anaconda korrekt installiert ist, wird die Version im Terminal angezeigt.",
+    "crumbs": [
+      "Erste Schritte",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Anaconda installieren</span>"
+    ]
+  },
+  {
+    "objectID": "first-steps/anaconda-installation.html#erste-aktualisierung",
+    "href": "first-steps/anaconda-installation.html#erste-aktualisierung",
+    "title": "4  Anaconda installieren",
+    "section": "4.4 Erste Aktualisierung",
+    "text": "4.4 Erste Aktualisierung\n\nNach der Installation ist es eine gute Idee, alle Standardpakete zu aktualisieren:\nconda update --all\nFolgen Sie den Anweisungen, um die Aktualisierung abzuschließen.\n\nMit der Installation von Anaconda sind Sie bereit, Umgebungen zu erstellen, Pakete zu verwalten und mit Daten zu arbeiten. Der nächste Schritt wäre, Ihre erste Anaconda-Umgebung einzurichten.",
+    "crumbs": [
+      "Erste Schritte",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Anaconda installieren</span>"
+    ]
+  },
+  {
+    "objectID": "first-steps/jupyter-notebook.html",
+    "href": "first-steps/jupyter-notebook.html",
+    "title": "5  Jupyter Notebook",
+    "section": "",
+    "text": "5.1 Jupyter Notebook starten",
+    "crumbs": [
+      "Erste Schritte",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Jupyter Notebook</span>"
+    ]
+  },
+  {
+    "objectID": "first-steps/jupyter-notebook.html#jupyter-notebook-starten",
+    "href": "first-steps/jupyter-notebook.html#jupyter-notebook-starten",
+    "title": "5  Jupyter Notebook",
+    "section": "",
+    "text": "Öffnen Sie Anaconda Navigator:\n\nWindows: Öffnen Sie das Startmenü und suchen Sie nach “Anaconda Navigator”. Klicken Sie, um es zu starten.\nmacOS/Linux: Suchen Sie in Ihren Anwendungen nach “Anaconda Navigator” oder öffnen Sie ein Terminal und geben Sie ein:\n\nanaconda-navigator\nFinden Sie im Anaconda Navigator die Jupyter Notebook-Anwendung.\nKlicken Sie auf die Schaltfläche “Launch”. Dies öffnet Jupyter Notebook in Ihrem Standard-Webbrowser.",
+    "crumbs": [
+      "Erste Schritte",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Jupyter Notebook</span>"
+    ]
+  },
+  {
+    "objectID": "first-steps/jupyter-notebook.html#ihr-erstes-notebook-erstellen",
+    "href": "first-steps/jupyter-notebook.html#ihr-erstes-notebook-erstellen",
+    "title": "5  Jupyter Notebook",
+    "section": "5.2 Ihr erstes Notebook erstellen",
+    "text": "5.2 Ihr erstes Notebook erstellen\n\nNavigieren Sie in der Web-Oberfläche von Jupyter zum code-Verzeichnis (siehe unsere Erklärung zur Ordnerstruktur).\nKlicken Sie oben rechts auf “New” und wählen Sie “Python [default environment]”, um ein neues Notebook zu erstellen.\nEine neue Notebook-Seite öffnet sich mit einer leeren Code-Zelle.\n\n\n5.2.1 Code schreiben und ausführen\n\nGeben Sie einen beliebigen Python-Code in die erste Zelle ein, zum Beispiel:\nprint(\"Hello, Jupyter!\")\nFühren Sie den Code aus, indem Sie Shift+Enter drücken oder auf “Run” klicken. Die Ausgabe wird direkt unter der Zelle angezeigt.\n\n\n\n5.2.2 Markdown-Text hinzufügen\n\nKlicken Sie auf die Schaltfläche “+”, um eine neue Zelle hinzuzufügen.\nÄndern Sie den Zellentyp von “Code” auf “Markdown” über das Dropdown-Menü.\nSchreiben Sie Ihren Text in Markdown, zum Beispiel:\nDies ist **fetter** Markdown-Text\nRendern Sie den Markdown-Text als formatierten Text, indem Sie Shift+Enter drücken.\n\n\n\n5.2.3 Das Notebook speichern\n\nVerwenden Sie das “File”-Menü, um das Notebook zu speichern.\nBenennen Sie die Datei hello-jupyter.ipynb und speichern Sie sie im code-Verzeichnis.\n\n\n\n\n\n\n\n.ipynb-Dateien sind Dokumente, die von Jupyter Notebook erstellt werden. Diese Dateien enthalten sowohl die Eingaben (Code, Markdown-Text) als auch die Ausgaben (Code-Ausführungsergebnisse, Visualisierungen) interaktiver Sitzungen. Dieses Format ermöglicht es Ihnen, einen vollständigen und reproduzierbaren Ablauf Ihres Rechenprozesses festzuhalten, was die Zusammenarbeit und das Teilen in Datenwissenschaftsprojekten verbessert.\n\n\n\nJede .ipynb-Datei ist als JSON-Dokument strukturiert und enthält eine geordnete Liste von “Zellen”, die Code, Markdown oder reinen Text enthalten können. Diese Struktur ermöglicht es Ihnen, Code in Teilen auszuführen, frühere Ergebnisse erneut zu betrachten oder Änderungen vorzunehmen, ohne das gesamte Skript neu auszuführen, im Gegensatz zu traditionellen .py-Skripten, die sequentiell von Anfang bis Ende ausgeführt werden.",
+    "crumbs": [
+      "Erste Schritte",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Jupyter Notebook</span>"
+    ]
+  },
+  {
+    "objectID": "first-steps/markdown.html",
+    "href": "first-steps/markdown.html",
+    "title": "6  Markdown",
+    "section": "",
+    "text": "6.1 Einrichtung\nUm loszulegen, erstellen Sie zuerst ein neues Jupyter-Notebook. Wenn Sie nicht sicher sind, wie das geht, können Sie diesen Leitfaden zum Navigieren in Jupyter Notebook konsultieren. Benennen Sie Ihr Notebook hello-markdown.ipynb und speichern Sie es im Ordner code:\nSie können Ihr Markdown in eine für Code vorgesehene Zelle schreiben und diese dann über das Dropdown-Menü in eine Markdown-Zelle umwandeln. Führen Sie die Zelle mit Shift+Enter aus, um den Markdown-Text zu rendern. Denken Sie daran, Ihren Fortschritt häufig zu speichern.",
+    "crumbs": [
+      "Erste Schritte",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Markdown</span>"
+    ]
+  },
+  {
+    "objectID": "first-steps/markdown.html#einrichtung",
+    "href": "first-steps/markdown.html#einrichtung",
+    "title": "6  Markdown",
+    "section": "",
+    "text": "Navigieren Sie zu “File &gt; Save As…” und geben Sie den Notizbuchnamen ein.\nFügen Sie eine neue Zelle hinzu, indem Sie auf die Schaltfläche “+” klicken.\nÄndern Sie den Zelltyp mithilfe des Dropdown-Menüs in der Symbolleiste auf “Markdown”.",
+    "crumbs": [
+      "Erste Schritte",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Markdown</span>"
+    ]
+  },
+  {
+    "objectID": "first-steps/markdown.html#grundlegende-markdown-syntax",
+    "href": "first-steps/markdown.html#grundlegende-markdown-syntax",
+    "title": "6  Markdown",
+    "section": "6.2 Grundlegende Markdown-Syntax",
+    "text": "6.2 Grundlegende Markdown-Syntax\n\n6.2.1 Überschriften\nÜberschriften strukturieren das Dokument und schaffen eine Hierarchie der Abschnitte.\n# Hauptüberschrift (H1)\n## Unterüberschrift (H2)\n### Kleinere Unterüberschrift (H3)\n\n\n6.2.2 Listen\nListen organisieren Informationen klar und prägnant.\n\nGeordnete Listen:\n1. Erster Punkt\n2. Zweiter Punkt\nUngeordnete Listen:\n- Aufzählungspunkt A\n- Aufzählungspunkt B\n\n\n\n6.2.3 Hervorhebungen\nBetonen Sie Text, um wichtige Punkte hervorzuheben.\n*Kursiv*  \n**Fett**  \n_Kursiv mit Unterstrichen_  \n__Fett mit Unterstrichen__\n\n\n6.2.4 Blockzitate\nVerwenden Sie Blockzitate, um Quellen oder wichtige Informationen zu zitieren.\n&gt; \"Dies ist ein Blockzitat.\"\n\n\n6.2.5 Tabellen\nTabellen sind entscheidend für die effiziente Organisation von Daten.\n| Spalte 1 | Spalte 2 |\n|----------|----------|\n| Zeile 1  | Wert 1   |\n\n\n6.2.6 Links und Bilder\nLinks und Bilder bereichern das Dokument und bieten zusätzlichen Kontext.\nLinks:\n[Python-Dokumentation](https://docs.python.org/)\nBilder:\n![Alt-Text](image_url_or_path)\n\n\n6.2.7 Mathematische Ausdrücke\nLaTeX-Integration ermöglicht die Darstellung komplexer mathematischer Formeln.\nInline-Gleichung:\n$E = mc^2$\n\nBlock-Gleichung:\n\n$$\n\\frac{a}{b} + \\sqrt{x}\n$$\n\n\n6.2.8 Horizontale Linien\nVerwenden Sie horizontale Linien, um Abschnitte visuell zu trennen.\n---\n\n\n6.2.9 Code-Blöcke\nPräsentieren Sie Code-Snippets mit Syntax-Hervorhebung.\n```python\ndef greet(name):\n    return f\"Hallo, {name}!\"\n```",
+    "crumbs": [
+      "Erste Schritte",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Markdown</span>"
+    ]
+  },
+  {
+    "objectID": "first-steps/markdown.html#weiterführendes-lernen",
+    "href": "first-steps/markdown.html#weiterführendes-lernen",
+    "title": "6  Markdown",
+    "section": "6.3 Weiterführendes Lernen",
+    "text": "6.3 Weiterführendes Lernen\nErkunden Sie diese Ressourcen, um Ihr Verständnis und Ihre Beherrschung von Markdown weiter zu vertiefen:\n\nInteraktives 10-minütiges Markdown-Tutorial\n\nMarkdown meistern",
+    "crumbs": [
+      "Erste Schritte",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Markdown</span>"
+    ]
+  },
+  {
+    "objectID": "python/python.html",
+    "href": "python/python.html",
+    "title": "Python",
+    "section": "",
+    "text": "Python ist eine objektorientierte Programmiersprache, was bedeutet, dass es Daten als Objekte darstellt, die sowohl Informationen als auch Funktionalität enthalten.\nEin markantes Merkmal von Python ist, dass es interpretiert und nicht kompiliert wird. Der Interpreter führt den Code Zeile für Zeile aus, was besonders vorteilhaft für Aufgaben wie Datenanalyse und die Erstellung interaktiver, ausführbarer Dokumente wie Jupyter-Notebooks ist.\n\n\n\n\n\n\nPython ist eine interpretierte Sprache, bei der der Interpreter ein Programm durch die Ausführung einer Anweisung nach der anderen ausführt.\n\n\n\nÜber diese Kernfunktionalität hinaus bietet Python ein riesiges Ökosystem an Drittanbieter-Tools und -Modulen, wie das Jupyter-Notebook, die spezialisierte Funktionen für die Datenwissenschaft bereitstellen.",
+    "crumbs": [
+      "Python"
+    ]
+  },
+  {
+    "objectID": "python/python-modules.html",
+    "href": "python/python-modules.html",
+    "title": "7  Module und Pakete",
+    "section": "",
+    "text": "7.1 Module\nModule sind einzelne Python-Dateien, die Definitionen und Implementierungen von Funktionen und Variablen enthalten, die in verschiedenen Programmen wiederverwendet werden können.\nDiese Module helfen, den Code modular zu gestalten, was seine Wartbarkeit und Lesbarkeit verbessert.\nHier sind einige wichtige Standardmodule und deren häufige Anwendungen:",
+    "crumbs": [
+      "Python",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Module und Pakete</span>"
+    ]
+  },
+  {
+    "objectID": "python/python-modules.html#module",
+    "href": "python/python-modules.html#module",
+    "title": "7  Module und Pakete",
+    "section": "",
+    "text": "Variablen: Dies sind benannte Speicherorte, die Daten im Speicher speichern. Zum Beispiel speichert x = 5 die Ganzzahl 5 in einer Variable namens x.\nFunktionen: Funktionen sind wiederverwendbare Codeabschnitte, die eine bestimmte Aktion ausführen.\n\n\n\n\n\n\n\n\nKüchen-Analogie für Module\n\n\n\n\n\nStellen Sie sich Python wie eine gut ausgestattete Küche vor, in der Sie verschiedene Gerichte zubereiten können. Beim Kochen werden spezifische Werkzeuge und Zutaten für bestimmte Aufgaben oder Rezepte ausgewählt. Ähnlich repräsentieren in Python diese Werkzeuge und Zutaten Module—Sammlungen vorgefertigter Funktionen (Rezepte), die Sie zur Durchführung allgemeiner Aufgaben verwenden können, wie Dateiverwaltung mit os und shutil oder Datumsmanipulationen mit datetime.\nIn dieser Analogie: - Die Küche ist Ihre Python-Umgebung. - Rezeptbücher sind Python-Module, die jeweils Sets von Rezepten (Funktionen) für spezifische Aufgaben enthalten. - Zutaten stellen Datentypen und Variablen dar. - Kochutensilien sind Methoden aus den Modulen, die Ihnen helfen, die Zutaten zu manipulieren.\n\n\n\n\n\nos: Bietet Funktionen zur Interaktion mit dem Betriebssystem.\ndatetime: Behandelt Datums- und Zeitoperationen.\nmath: Enthält mathematische Funktionen.",
+    "crumbs": [
+      "Python",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Module und Pakete</span>"
+    ]
+  },
+  {
+    "objectID": "python/python-modules.html#pakete",
+    "href": "python/python-modules.html#pakete",
+    "title": "7  Module und Pakete",
+    "section": "7.2 Pakete",
+    "text": "7.2 Pakete\nPakete in Python sind Verzeichnisse von Python-Modulen mit einer speziellen Datei namens __init__.py. Sie ermöglichen es Entwicklern, mehrere Module zusammenzupacken, wodurch es einfacher wird, eine Sammlung von Modulen als eine Einheit zu verwalten und zu verteilen.\n\n\n\n\n\n\nKüchen-Analogie für Pakete\n\n\n\n\n\nWenn ein Modul einem Rezeptbuch ähnelt, ist ein Paket vergleichbar mit einer Sammlung von Rezeptbüchern, die möglicherweise eine komplette Küche oder eine umfassende Sammlung von Kochstilen darstellen. Jedes Buch (Modul) konzentriert sich auf einen bestimmten Bereich, aber zusammen bieten sie eine breite Palette kulinarischer Optionen.\n\n\n\nFür Datenwissenschaftler und Entwickler sind einige wesentliche Pakete:\n\nnumpy: Fundamentales Paket für numerische Berechnungen.\npandas: Unverzichtbar für Datenmanipulation und -analyse.\nmatplotlib und seaborn: Für Datenvisualisierung.\nscikit-learn: Implementiert eine breite Palette von Machine-Learning-Algorithmen.",
+    "crumbs": [
+      "Python",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Module und Pakete</span>"
+    ]
+  },
+  {
+    "objectID": "python/python-modules.html#vorteile",
+    "href": "python/python-modules.html#vorteile",
+    "title": "7  Module und Pakete",
+    "section": "7.3 Vorteile",
+    "text": "7.3 Vorteile\nVorteile der Verwendung von Modulen und Paketen:\n\nKomplexitätsreduktion: Durch Kapselung von Code machen Module und Pakete komplexe Systeme einfacher zu verwalten.\nErhöhte Wiederverwendbarkeit: Sie fördern die Wiederverwendung von Code, sodass Sie ihn einmal schreiben und überall verwenden können.\nVerbesserte Organisation: Sie helfen dabei, den Code logischer zu strukturieren, was die Wartung und das Verständnis erleichtert.",
+    "crumbs": [
+      "Python",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Module und Pakete</span>"
+    ]
+  },
+  {
+    "objectID": "python/python-modules.html#praktisches-beispiel",
+    "href": "python/python-modules.html#praktisches-beispiel",
+    "title": "7  Module und Pakete",
+    "section": "7.4 Praktisches Beispiel",
+    "text": "7.4 Praktisches Beispiel\nHier sehen Sie, wie Sie ein Modul verwenden können, indem Sie es in Ihr Python-Skript importieren:\n\nimport math\n\n# Verwendung der sqrt-Funktion aus dem math-Modul zur Berechnung der Quadratwurzel\nresult = math.sqrt(16)\nprint(result)  # Ausgabe: 4.0\n\n4.0\n\n\nDiese Struktur der Verwendung von Modulen und Paketen hilft nicht nur dabei, Ihren Code sauber und verständlich zu halten, sondern verbessert auch die Zusammenarbeit, indem sie Teammitgliedern ermöglicht, ihre Arbeit einfach zu teilen und zu integrieren.",
+    "crumbs": [
+      "Python",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Module und Pakete</span>"
+    ]
+  },
+  {
+    "objectID": "python/python-environment-basics.html",
+    "href": "python/python-environment-basics.html",
+    "title": "8  Umgebungen",
+    "section": "",
+    "text": "8.1 Umgebung erstellen\nUm eine Umgebung einzurichten, befolgen Sie diese Anweisungen basierend auf Ihrem Betriebssystem:\nDas Erstellen einer separaten Umgebung für Python-Grundlagen stellt sicher, dass Ihr Arbeitsbereich isoliert und stabil bleibt.",
+    "crumbs": [
+      "Python",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Umgebungen</span>"
+    ]
+  },
+  {
+    "objectID": "python/python-environment-basics.html#umgebung-erstellen",
+    "href": "python/python-environment-basics.html#umgebung-erstellen",
+    "title": "8  Umgebungen",
+    "section": "",
+    "text": "Zugriff auf die Eingabeaufforderung oder das Terminal:\n\nWindows-Benutzer: Öffnen Sie die Anaconda-Eingabeaufforderung über das Startmenü.\nmacOS-Benutzer: Öffnen Sie das Terminal unter Programme &gt; Dienstprogramme oder durch die Suche nach “Terminal”.\n\nErstellen der Umgebung:\n\nVerwenden Sie den folgenden Befehl, um eine neue Conda-Umgebung namens basics mit Python 3.11 zu erstellen:\n\nconda create --name basics python=3.11 pip\n\nDieser Befehl stellt sicher, dass pip standardmäßig enthalten ist.\n\nAktivieren der Umgebung:\n\nSobald die Umgebung erstellt ist, aktivieren Sie sie mit:\n\nconda activate basics\n\nDie Eingabeaufforderung ändert sich, um anzuzeigen, dass die Umgebung aktiv ist.\n\nInstallieren der benötigten Bibliotheken:\n\nMit aktivierter Umgebung installieren Sie die Bibliotheken:\n\npip install numpy pandas matplotlib seaborn altair\n\nDieser Befehl ruft alle Pakete von PyPI ab und installiert sie.\n\n\n\n\n\n\n\nObwohl Sie Pakete auch mit conda install installieren können, verwenden wir ausschließlich pip, um mögliche Konflikte zwischen Conda- und Pip-installierten Paketen zu vermeiden. Dieser Ansatz stellt eine konsistente und zuverlässige Verwaltung von Abhängigkeiten in Ihrer Python-Umgebung sicher.\n\n\n\nÜberprüfen der Paketinstallation:\n\nNach der Installation öffnen Sie ein Jupyter Notebook und überprüfen, ob die Pakete verfügbar sind, indem Sie sie in Python importieren.\n\n\n\n\n\n\n\nUm die Nutzung der Funktionen und Methoden der Bibliotheken in Ihrem Code zu erleichtern, importieren wir sie häufig mit kürzeren, standardisierten Aliasen (die Verwendung dieser Standard-Aliase verbessert die Lesbarkeit des Codes und reduziert den Schreibaufwand).\n\n\n\nimport numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport seaborn as sns\nimport altair as alt\n\nWenn keine Fehler auftreten, wurden die Bibliotheken korrekt installiert.\n\n\n\n\n\n\n\nErklärung der Pakete\n\n\n\n\n\nNumPy (np): Der Alias np wird weit verbreitet verwendet und ermöglicht einen prägnanten Zugriff auf NumPys Funktionen zur Array-Manipulation und numerischen Berechnung.\nPandas (pd): Der Alias pd bietet eine Kurzform für Pandas’ leistungsstarke Datenmanipulationstools, wie DataFrame und Series.\nMatplotlib (plt): Der Alias plt vereinfacht das Aufrufen der Funktionen von Matplotlib zum Plotten, Erstellen von Abbildungen und Anpassen von Grafiken.\nSeaborn (sns): Der Alias sns erleichtert den Zugriff auf Seaborns statistische Datenvisualisierungstools, die nahtlos mit Matplotlib integriert sind.\nAltair (alt): Der Alias alt ermöglicht einen schnellen Zugriff auf Altairs deklarative Visualisierungssyntax für interaktives Plotten mit Vega-Lite.\n\n\n\nDeaktivieren der Umgebung:\n\nWenn Sie fertig sind oder zur Basisumgebung zurückkehren möchten, deaktivieren Sie die aktuelle Umgebung:\n\nconda deactivate",
+    "crumbs": [
+      "Python",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Umgebungen</span>"
+    ]
+  },
+  {
+    "objectID": "python/python-workspace.html",
+    "href": "python/python-workspace.html",
+    "title": "9  Arbeitsbereich einrichten",
+    "section": "",
+    "text": "9.1 Anaconda Navigator starten",
+    "crumbs": [
+      "Python",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Arbeitsbereich einrichten</span>"
+    ]
+  },
+  {
+    "objectID": "python/python-workspace.html#anaconda-navigator-starten",
+    "href": "python/python-workspace.html#anaconda-navigator-starten",
+    "title": "9  Arbeitsbereich einrichten",
+    "section": "",
+    "text": "Anaconda Navigator starten:\n\nÖffnen Sie den Anaconda Navigator aus dem Anwendungsordner auf macOS oder dem Startmenü auf Windows.\n\nJupyter Notebook öffnen:\n\nFinden Sie im Anaconda Navigator das Jupyter Notebook und klicken Sie auf ‘Launch’, um es in Ihrem Webbrowser zu öffnen.",
+    "crumbs": [
+      "Python",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Arbeitsbereich einrichten</span>"
+    ]
+  },
+  {
+    "objectID": "python/python-workspace.html#jupyter-notebook-einrichten",
+    "href": "python/python-workspace.html#jupyter-notebook-einrichten",
+    "title": "9  Arbeitsbereich einrichten",
+    "section": "9.2 Jupyter Notebook einrichten",
+    "text": "9.2 Jupyter Notebook einrichten\n\nWählen Sie die Umgebung aus:\n\nVerwenden Sie im Jupyter Notebook das Dropdown-Menü “New” (oben rechts), um die python-basics Umgebung auszuwählen.\n\nErstellen Sie ein neues Notebook:\n\nKlicken Sie auf ‘New’ und wählen Sie python-basics unter dem Abschnitt Notebooks, um ein neues Notebook zu starten. Erstellen Sie in diesem Notebook eine neue Markdown-Zelle, um dem Notebook einen Titel zu geben (z.B. Python basics):\n\n# Python basics\nSpeichern Sie das Notebook:\n\nSpeichern Sie Ihr Notebook im code Ordner (siehe unsere Ordnerstruktur Erklärung) mit einem aussagekräftigen Namen (z.B. python-basics.ipynb).",
+    "crumbs": [
+      "Python",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Arbeitsbereich einrichten</span>"
+    ]
+  },
+  {
+    "objectID": "python/python-workspace.html#jupyter-notebook-herunterladen",
+    "href": "python/python-workspace.html#jupyter-notebook-herunterladen",
+    "title": "9  Arbeitsbereich einrichten",
+    "section": "9.3 Jupyter Notebook herunterladen",
+    "text": "9.3 Jupyter Notebook herunterladen\nIn den kommenden Abschnitten haben Sie die Möglichkeit, den Inhalt als Notebook herunterzuladen. Nach dem Herunterladen können Sie es in Ihrem code Ordner speichern und das Notebook in Jupyter öffnen.\n\n\n\n\n\n\nDer Download-Link befindet sich am Anfang jedes Dokuments, das Code-bezogene Inhalte enthält.",
+    "crumbs": [
+      "Python",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Arbeitsbereich einrichten</span>"
+    ]
+  },
+  {
+    "objectID": "python/python-basics.html",
+    "href": "python/python-basics.html",
+    "title": "10  Grundlagen",
+    "section": "",
+    "text": "10.1 Bibliotheken importieren\nDas Importieren von Bibliotheken ist unerlässlich, um zusätzliche Python-Funktionen nutzen zu können. Wir importieren sie am Anfang der Datei, um Übersichtlichkeit und Effizienz zu gewährleisten. Ein Alias (ein kurzer Name) erleichtert die Referenzierung im gesamten Code.\nFügen Sie den folgenden Code in eine neue Codezelle direkt unter Ihrem Titel ein und führen Sie ihn aus:\n# Bibliotheken importieren (am Anfang)\nimport numpy as np\nimport pandas as pd\nimport altair as alt",
+    "crumbs": [
+      "Python",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Grundlagen</span>"
+    ]
+  },
+  {
+    "objectID": "python/python-basics.html#variablen-und-datentypen",
+    "href": "python/python-basics.html#variablen-und-datentypen",
+    "title": "10  Grundlagen",
+    "section": "10.2 Variablen und Datentypen",
+    "text": "10.2 Variablen und Datentypen\nVariablen werden verwendet, um verschiedene Arten von Daten in Python zu speichern. Datentypen definieren die Natur dieser Daten und beeinflussen, wie sie verwendet werden können.\nFügen Sie eine neue Codezelle hinzu, kopieren Sie dann den unten angegebenen Code in diese Zelle und führen Sie die Zelle anschließend aus.\nBeispielcode:\n\n# Variablen zuweisen (mit beschreibenden Namen)\nname = \"Alice\"  # String für den Namen einer Person\nage = 30  # Integer für das Alter\nheight = 5.5  # Float für die Größe in Fuß\nnumbers = [1, 2, 3]  # Liste von ganzen Zahlen\nperson = {\"name\": \"Alice\", \"age\": 30}  # Wörterbuch für Personendaten\n\nErklärung:\n\nname ist ein String, der eine Zeichenfolge speichert, die einen Namen darstellt.\nage ist eine Integer-Variable, die eine ganze Zahl darstellt.\nheight ist ein Float, der eine Zahl mit einem Dezimalpunkt darstellt.\nnumbers ist eine Liste, die eine geordnete Sammlung von Elementen darstellt.\nperson ist ein Wörterbuch, das aus Schlüssel-Wert-Paaren besteht und mehrere Attribute speichern kann.\n\nUm die in diesen Variablen gespeicherten Werte zu überprüfen, können Sie die print-Funktion verwenden:\n\nprint(name)  # Ausgabe: Alice\nprint(age)  # Ausgabe: 30\nprint(numbers)  # Ausgabe: [1, 2, 3]\nprint(person)  # Ausgabe: {'name': 'Alice', 'age': 30}\n\nAlice\n30\n[1, 2, 3]\n{'name': 'Alice', 'age': 30}",
+    "crumbs": [
+      "Python",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Grundlagen</span>"
+    ]
+  },
+  {
+    "objectID": "python/python-basics.html#grundlegende-operatoren-und-berechnungen",
+    "href": "python/python-basics.html#grundlegende-operatoren-und-berechnungen",
+    "title": "10  Grundlagen",
+    "section": "10.3 Grundlegende Operatoren und Berechnungen",
+    "text": "10.3 Grundlegende Operatoren und Berechnungen\nOperatoren ermöglichen Berechnungen, Vergleiche und logische Operationen.\nBeispielcode:\n\n# Arithmetische Operationen mit mehreren Variablen\nlength = 10\nwidth = 5\n\n\n# Berechnen Sie die Fläche und den Umfang\narea = length * width  # Multiplikation\nperimeter = 2 * (length + width)  # Addition und Multiplikation\n\n# Umfang anzeigen\nperimeter\n\n30\n\n\n\n# Vergleichsoperationen\nis_square = length == width  # Überprüfen, ob Länge und Breite gleich sind\n\nis_square\n\nFalse\n\n\n\n# Logische Operationen\nis_large_rectangle = (area &gt; 20) and (perimeter &gt; 10)  # Logisches UND\n\nis_large_rectangle\n\nTrue\n\n\nErklärung:\n\nlength und width werden multipliziert, um die area zu berechnen.\nperimeter wird berechnet, indem length und width addiert und dann mit 2 multipliziert werden.\nis_square überprüft, ob die beiden Seiten gleich lang sind.\nis_large_rectangle verwendet logische Operatoren, um festzustellen, ob das Rechteck sowohl eine große Fläche als auch einen großen Umfang hat.",
+    "crumbs": [
+      "Python",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Grundlagen</span>"
+    ]
+  },
+  {
+    "objectID": "python/python-basics.html#arbeiten-mit-dataframes",
+    "href": "python/python-basics.html#arbeiten-mit-dataframes",
+    "title": "10  Grundlagen",
+    "section": "10.4 Arbeiten mit DataFrames",
+    "text": "10.4 Arbeiten mit DataFrames\nEin DataFrame ist eine zweidimensionale tabellarische Datenstruktur, die von Pandas bereitgestellt wird. Es ermöglicht eine effiziente Datenmanipulation, ähnlich wie ein Tabellenblatt oder eine SQL-Tabelle.\nBeispielcode:\n\n# Daten vorbereiten\ndata = { \"Numbers\": [1, 2, 3, 4, 5], \n         \"Squares\": np.array([1, 2, 3, 4, 5]) ** 2}\n\n# Erstellen eines DataFrame mit Pandas\ndf = pd.DataFrame(data)\n\n# Den DataFrame inspizieren\ndf\n\n\n\n\n\n\n\n\nNumbers\nSquares\n\n\n\n\n0\n1\n1\n\n\n1\n2\n4\n\n\n2\n3\n9\n\n\n3\n4\n16\n\n\n4\n5\n25\n\n\n\n\n\n\n\nErklärung:\n\nDas Wörterbuch data enthält zwei Listen: Zahlen und deren Quadrate.\nDer DataFrame df wird aus diesem Wörterbuch mit der Funktion pd.DataFrame erstellt, die die Daten in Zeilen und Spalten organisiert.\nDas Eingeben von df in eine Jupyter Notebook-Zelle zeigt den DataFrame in tabellarischer Form an.",
+    "crumbs": [
+      "Python",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Grundlagen</span>"
+    ]
+  },
+  {
+    "objectID": "python/python-basics.html#methoden-verstehen",
+    "href": "python/python-basics.html#methoden-verstehen",
+    "title": "10  Grundlagen",
+    "section": "10.5 Methoden verstehen",
+    "text": "10.5 Methoden verstehen\nEine Methode ist eine Funktion, die mit einem Objekt (wie einem DataFrame, einer Liste oder einem String) verknüpft ist und über die Punktnotation (.) aufgerufen wird. Dies erleichtert die Manipulation des Objekts und das Abrufen von Informationen.\nBeispielcode:\ndf.head() ist eine Methode, die die ersten paar Zeilen eines DataFrames anzeigt, um die Daten vorzuschauen:\n\ndf.head() \n\n\n\n\n\n\n\n\nNumbers\nSquares\n\n\n\n\n0\n1\n1\n\n\n1\n2\n4\n\n\n2\n3\n9\n\n\n3\n4\n16\n\n\n4\n5\n25\n\n\n\n\n\n\n\ndf.describe() liefert zusammenfassende Statistiken wie Mittelwert, Anzahl und Standardabweichung. Zusätzlich verwenden wir die Methode .round(2), um die Werte auf zwei Dezimalstellen zu runden:\n\ndf.describe().round(2) \n\n\n\n\n\n\n\n\nNumbers\nSquares\n\n\n\n\ncount\n5.00\n5.00\n\n\nmean\n3.00\n11.00\n\n\nstd\n1.58\n9.67\n\n\nmin\n1.00\n1.00\n\n\n25%\n2.00\n4.00\n\n\n50%\n3.00\n9.00\n\n\n75%\n4.00\n16.00\n\n\nmax\n5.00\n25.00\n\n\n\n\n\n\n\nAllgemeines Methodenkonzept:\n\nObjekt: Eine Entität, die Daten und Funktionalität enthält (z.B. DataFrame, Liste oder String).\nMethode: Eine Funktion, die mit einem Objekt verknüpft ist.\nPunktnotation (.): Wird verwendet, um eine Methode auf einem Objekt aufzurufen.",
+    "crumbs": [
+      "Python",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Grundlagen</span>"
+    ]
+  },
+  {
+    "objectID": "python/python-basics.html#daten-visualisieren",
+    "href": "python/python-basics.html#daten-visualisieren",
+    "title": "10  Grundlagen",
+    "section": "10.6 Daten visualisieren",
+    "text": "10.6 Daten visualisieren\nNachdem Sie die Struktur eines DataFrames verstanden haben, können Sie dessen Daten mit Altair visualisieren.\nBeispielcode:\n\n# Das Diagramm erstellen\nalt.Chart(df).mark_point().encode(\n    x='Numbers',\n    y='Squares'\n)\n\n\n\n\n\n\n\nErklärung:\n\nAltair-Bibliothek: Eine deklarative Visualisierungsbibliothek, die den Prozess der Erstellung von Diagrammen und Grafiken vereinfacht.\nalt.Chart(df): Erstellt ein neues Diagrammobjekt aus dem DataFrame df.\nmark_point(): Gibt den Diagrammtyp an (in diesem Fall ein Streudiagramm).\nencode: Ordnet DataFrame-Spalten Diagrammattributen zu.\n\nx='Numbers': Legt die horizontale Achse auf die Spalte Numbers fest.\ny='Squares': Legt die vertikale Achse auf die Spalte Squares fest.\n\n\nDiese prägnante Syntax ermöglicht die schnelle Erstellung und Anpassung von Visualisierungen.",
+    "crumbs": [
+      "Python",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Grundlagen</span>"
+    ]
+  },
+  {
+    "objectID": "python/python-indentation.html",
+    "href": "python/python-indentation.html",
+    "title": "11  Einrückung",
+    "section": "",
+    "text": "11.1 Richtige Einrückung\nBeispielcode:\ndef compute_area(width, height):\n    # Dies ist der Anfang eines Funktionsblocks\n    area = width * height \n    return area \n\n# Aufrufen der Funktion\nprint(compute_area(5, 10))  # Diese Zeile ist nicht eingerückt, was zeigt, dass sie nicht Teil der Funktion ist\n\n50\nErläuterung:\nSicherlich! Hier ist ein Beispiel, das falsche Einrückung und die potenziellen Probleme, die sie verursachen kann, veranschaulicht. Dieses Beispiel kann im einleitenden Abschnitt zur Python-Einrückung enthalten sein, um die Bedeutung der genauen Einhaltung der Python-Einrückungsregeln zu zeigen.",
+    "crumbs": [
+      "Python",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Einrückung</span>"
+    ]
+  },
+  {
+    "objectID": "python/python-indentation.html#richtige-einrückung",
+    "href": "python/python-indentation.html#richtige-einrückung",
+    "title": "11  Einrückung",
+    "section": "",
+    "text": "Die Funktion compute_area beginnt mit einem Doppelpunkt (:) und der nachfolgende Code ist vier Leerzeichen eingerückt.\nSowohl die Berechnung von area als auch die return-Anweisung sind aufgrund ihrer Einrückung Teil der Funktion.\nDie print-Anweisung ist relativ zur Funktionsdefinition nicht eingerückt, was zeigt, dass sie außerhalb der Funktion steht.",
+    "crumbs": [
+      "Python",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Einrückung</span>"
+    ]
+  },
+  {
+    "objectID": "python/python-indentation.html#falsche-einrückung",
+    "href": "python/python-indentation.html#falsche-einrückung",
+    "title": "11  Einrückung",
+    "section": "11.2 Falsche Einrückung",
+    "text": "11.2 Falsche Einrückung\nBeispielcode mit falscher Einrückung:\ndef calculate_percentage(total, amount):\n\n    if total &gt; 0:\n    percentage = (amount / total) * 100 \n    return percentage  \nelse:\n    return 0\nIndentationError: expected an indented block after 'if' statement on line 3\nErläuterung:\n\nFehler: Das obige Beispiel führt zu einem IndentationError, weil die Einrückungsebenen nicht konsistent sind.\nZeile 3: Die Zeile percentage = (amount / total) * 100 soll ausgeführt werden, wenn die Bedingung total &gt; 0 wahr ist. Sie ist jedoch nicht eingerückt, was unklar macht, ob sie innerhalb der if-Anweisung oder außerhalb ausgeführt werden soll.\nZeilen 4 und 5: Die return percentage-Anweisung sollte eingerückt werden, um unter die if-Bedingung zu fallen, was zeigt, dass sie Teil des if-Blocks ist. Die else:-Zeile ist ebenfalls nicht korrekt mit der if-Zeile ausgerichtet, was zu einem Syntaxfehler führt.\n\nKorrigierte Version:\n\ndef calculate_percentage(total, amount):\n    if total &gt; 0:\n        percentage = (amount / total) * 100  \n        return percentage  \n    else:\n        return 0\n\nWas dies korrigiert:\n\nDie Zeile percentage = (amount / total) * 100 ist jetzt korrekt unter die if-Bedingung eingerückt, was klar anzeigt, dass sie zu dem Block gehört, der ausgeführt wird, wenn total &gt; 0.\nDie return percentage-Anweisung ist ebenfalls korrekt eingerückt, um zu zeigen, dass sie Teil der if-Bedingung ist. Der else-Block ist mit der if-Anweisung ausgerichtet, wodurch die Struktur konsistent bleibt.\n\nDieses Beispiel zeigt, wie falsche Einrückung zu Syntaxfehlern und logischen Fehlern in Python führen kann. Es ist entscheidend, eine konsistente Einrückungsebene im gesamten Codeblock beizubehalten, um Klarheit und Funktionalität des Codes sicherzustellen. Indem Sie diese Praktiken einhalten, verhindern Sie Laufzeitfehler und machen Ihren Code leichter lesbar und debuggen.",
+    "crumbs": [
+      "Python",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Einrückung</span>"
+    ]
+  },
+  {
+    "objectID": "python/python-functions.html",
+    "href": "python/python-functions.html",
+    "title": "12  Funktionen",
+    "section": "",
+    "text": "12.1 Einfache Funktion\nBeginnen wir mit einer einfachen Funktion, die das Quadrat einer Zahl berechnet:\n# Funktion zur Berechnung des Quadrats einer Zahl\ndef square(num):\n    \"\"\"Berechnen und zurückgeben des Quadrats einer Zahl.\"\"\"\n    return num * num\n\n# Verwendung der Funktion zur Berechnung des Quadrats von 4\nresult = square(4)\nprint(f\"Quadrat von 4: {result}\")\n\nQuadrat von 4: 16\nErläuterung:\nVorteile von f-Strings:",
+    "crumbs": [
+      "Python",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Funktionen</span>"
+    ]
+  },
+  {
+    "objectID": "python/python-functions.html#einfache-funktion",
+    "href": "python/python-functions.html#einfache-funktion",
+    "title": "12  Funktionen",
+    "section": "",
+    "text": "def beginnt die Funktionsdefinition, gefolgt vom Funktionsnamen square und einem Parameter num.\nDie Docstring \"\"\" beschreibt kurz den Zweck der Funktion.\nDie Funktion berechnet das Quadrat mit der Formel num * num.\nDie return-Anweisung gibt das Ergebnis an die Stelle zurück, an der die Funktion aufgerufen wurde.\nDie print-Funktion verwendet einen f-String, eine formatierte Zeichenkette, die mit f vorangestellt ist und das Einfügen von Variablen innerhalb von {} geschweiften Klammern ermöglicht. Sie ist kürzer und leichter lesbar als die traditionelle Zeichenkettenverkettung.\n\n\n\nSie bieten eine saubere, intuitive Möglichkeit, Variablen in Zeichenketten einzufügen.\nUnterstützung für Formatierungen ist eingebaut (z.B. Dezimalstellen, Auffüllungen).\nSie vereinfachen die Zeichenketteninterpolation und verbessern die Lesbarkeit.",
+    "crumbs": [
+      "Python",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Funktionen</span>"
+    ]
+  },
+  {
+    "objectID": "python/python-functions.html#funktion-mit-mehreren-parametern",
+    "href": "python/python-functions.html#funktion-mit-mehreren-parametern",
+    "title": "12  Funktionen",
+    "section": "12.2 Funktion mit mehreren Parametern",
+    "text": "12.2 Funktion mit mehreren Parametern\nFunktionen können mehr als einen Parameter akzeptieren. Hier ist eine Funktion, die die Fläche eines Rechtecks berechnet:\n\n# Funktion zur Berechnung der Fläche eines Rechtecks\ndef calculate_rectangle_area(length, width):\n    \"\"\"Berechnen der Fläche eines Rechtecks anhand seiner Länge und Breite.\"\"\"\n    return length * width\n\n# Verwendung der Funktion mit Beispielwerten\nlength = 10\nwidth = 5\n\narea = calculate_rectangle_area(length, width)\n\nprint(f\"Rechteck mit Länge {length} und Breite {width} hat eine Fläche von {area}\")\n\nRechteck mit Länge 10 und Breite 5 hat eine Fläche von 50\n\n\nErläuterung:\n\nlength und width sind Parameter, die die Funktion zur Berechnung der Fläche des Rechtecks verwendet.\ncalculate_rectangle_area wird mit bestimmten Werten aufgerufen.\nDer f-String innerhalb der print-Anweisung liefert eine klare Ausgabe, die sowohl die Eingabewerte als auch das berechnete Ergebnis zeigt.",
+    "crumbs": [
+      "Python",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Funktionen</span>"
+    ]
+  },
+  {
+    "objectID": "python/python-functions.html#standardparameter",
+    "href": "python/python-functions.html#standardparameter",
+    "title": "12  Funktionen",
+    "section": "12.3 Standardparameter",
+    "text": "12.3 Standardparameter\nStandardwerte für Parameter werden verwendet, wenn keine Argumente bereitgestellt werden.\n\n# Funktion mit einem Standardparameterwert\ndef greet(name=\"there\"):\n    \"\"\"Begrüßen einer Person mit ihrem Namen oder mit 'Hallo zusammen' als Standard.\"\"\"\n    print(f\"Hallo, {name}!\")\n\n# Aufruf der Funktion mit einem bestimmten Namen\ngreet(\"Alice\")\n\n# Aufruf der Funktion ohne Argument (verwendet den Standardwert)\ngreet()\n\nHallo, Alice!\nHallo, there!\n\n\nErläuterung:\n\nDer Parameter name=\"there\" liefert einen Standardwert.\nBeim Aufruf von greet(\"Alice\") wird “Hallo, Alice!” ausgegeben.\nDer Aufruf von greet() ohne Argumente verwendet den Standardwert “there”.",
+    "crumbs": [
+      "Python",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Funktionen</span>"
+    ]
+  },
+  {
+    "objectID": "python/python-functions.html#lambda-funktionen",
+    "href": "python/python-functions.html#lambda-funktionen",
+    "title": "12  Funktionen",
+    "section": "12.4 Lambda-Funktionen",
+    "text": "12.4 Lambda-Funktionen\nLambda-Funktionen sind kleine, anonyme Funktionen, die nützlich für kurze Operationen oder das Übergeben als Argumente sind. Hier ist ein einfaches Beispiel:\n\n# Lambda-Funktion zum Addieren zweier Zahlen\nadd = lambda x, y: x + y\n\n# Verwendung der Lambda-Funktion\nresult = add(3, 5)\nprint(f\"Summe von 3 und 5: {result}\")\n\nSumme von 3 und 5: 8\n\n\nErläuterung:\n\nlambda definiert eine schnelle Funktion in einer einzigen Zeile.\nDer Ausdruck x + y wird berechnet und zurückgegeben.\nLambda-Funktionen sind nützlich, wenn Sie eine einfache Funktion vorübergehend benötigen.",
+    "crumbs": [
+      "Python",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Funktionen</span>"
+    ]
+  },
+  {
+    "objectID": "python/python-functions.html#lambda-funktionen-mit-dataframes",
+    "href": "python/python-functions.html#lambda-funktionen-mit-dataframes",
+    "title": "12  Funktionen",
+    "section": "12.5 Lambda-Funktionen mit DataFrames",
+    "text": "12.5 Lambda-Funktionen mit DataFrames\nLambda-Funktionen sind besonders nützlich, wenn Sie eine benutzerdefinierte Transformation auf jede Zeile oder Spalte eines DataFrames anwenden möchten.\nZum Beispiel, wenn Sie Zahlen basierend auf bestimmten Bedingungen klassifizieren möchten, kann eine Lambda-Funktion helfen.\nBeispielcode:\n\n# Erstellen eines DataFrame und Verwendung einer Lambda-Funktion für eine benutzerdefinierte Klassifizierung\nimport pandas as pd\n\n# Beispiel-DataFrame\ndata = {\"Numbers\": [1, 2, 3, 4, 5, 15, 20, 25]}\ndf = pd.DataFrame(data)\n\n# Definieren einer benutzerdefinierten Funktion zur Klassifizierung von Zahlen\ndef classify_number(num):\n    if num &lt; 10:\n        return \"Einstellig\"\n    elif num &lt; 20:\n        return \"Teenager\"\n    else:\n        return \"Zwanzig oder mehr\"\n\n# Anwenden der benutzerdefinierten Funktion mit einer Lambda-Funktion zur Erstellung einer neuen Spalte\ndf[\"Klassifizierung\"] = df[\"Numbers\"].apply(lambda x: classify_number(x))\n\n# Anzeigen des DataFrame\ndf\n\n\n\n\n\n\n\n\nNumbers\nKlassifizierung\n\n\n\n\n0\n1\nEinstellig\n\n\n1\n2\nEinstellig\n\n\n2\n3\nEinstellig\n\n\n3\n4\nEinstellig\n\n\n4\n5\nEinstellig\n\n\n5\n15\nTeenager\n\n\n6\n20\nZwanzig oder mehr\n\n\n7\n25\nZwanzig oder mehr\n\n\n\n\n\n\n\nErläuterung:\n\nDer DataFrame df wird mit einer Spalte Numbers erstellt, die eine Reihe von Werten enthält.\nDie Funktion classify_number definiert benutzerdefinierte Klassifizierungskriterien:\n\nWeniger als 10 ist “Einstellig”.\nWeniger als 20, aber nicht unter 10 ist “Teenager”.\nWerte ab 20 sind “Zwanzig oder mehr.”\n\nDie Methode apply verwendet eine Lambda-Funktion, um jeden Wert von Numbers durch classify_number zu übergeben.\nDas Ergebnis ist eine neue Spalte Klassifizierung, die die kategorisierten Werte enthält.\n\nIn diesem Fall ist die Verwendung einer Lambda-Funktion mit apply vorteilhaft, um den DataFrame schnell zu transformieren, basierend auf einer Funktion, die sonst das Durchlaufen jedes Wertes einzeln erfordern würde.",
+    "crumbs": [
+      "Python",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Funktionen</span>"
+    ]
+  },
+  {
+    "objectID": "python/python-control-flow.html",
+    "href": "python/python-control-flow.html",
+    "title": "13  Kontrollstrukturen",
+    "section": "",
+    "text": "13.1 Bedingte Anweisungen\nBedingte Anweisungen helfen dabei, bestimmten Code nur auszuführen, wenn bestimmte Bedingungen erfüllt sind.",
+    "crumbs": [
+      "Python",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Kontrollstrukturen</span>"
+    ]
+  },
+  {
+    "objectID": "python/python-control-flow.html#bedingte-anweisungen",
+    "href": "python/python-control-flow.html#bedingte-anweisungen",
+    "title": "13  Kontrollstrukturen",
+    "section": "",
+    "text": "13.1.1 Grundlegende If-Else-Anweisung\n\n# Bestimmen, ob eine Zahl positiv, negativ oder null ist\nnumber = -3\n\nif number &gt; 0:\n    print(f\"{number} ist eine positive Zahl.\")\nelif number &lt; 0:\n    print(f\"{number} ist eine negative Zahl.\")\nelse:\n    print(f\"{number} ist null.\")\n\n-3 ist eine negative Zahl.\n\n\nErläuterung:\n\nif prüft, ob number größer als 0 ist und gibt aus, dass sie positiv ist.\nelif (else if) prüft, ob number kleiner als 0 ist und gibt aus, dass sie negativ ist.\nelse fängt alle anderen Bedingungen ab (hier null) und gibt entsprechend aus.\n\n\n\n13.1.2 Verschachtelte Bedingungsanweisungen\n\n# Ein Alter in verschiedene Lebensphasen einordnen\nage = 25\n\nif age &lt; 13:\n    print(\"Kind\")\nelif age &lt; 18:\n    print(\"Teenager\")\nelse:\n    if age &lt; 65:\n        print(\"Erwachsener\")\n    else:\n        print(\"Senior\")\n\nErwachsener\n\n\nErläuterung:\n\nDas äußere if-elif-else prüft, ob age kleiner als 13 oder 18 ist und gibt “Kind” oder “Teenager” aus.\nFalls nicht, prüft ein verschachteltes if-else weiter, ob age kleiner als 65 ist oder größer, und gibt “Erwachsener” oder “Senior” aus.",
+    "crumbs": [
+      "Python",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Kontrollstrukturen</span>"
+    ]
+  },
+  {
+    "objectID": "python/python-control-flow.html#schleifen",
+    "href": "python/python-control-flow.html#schleifen",
+    "title": "13  Kontrollstrukturen",
+    "section": "13.2 Schleifen",
+    "text": "13.2 Schleifen\nSchleifen wiederholen einen Codeblock mehrere Male.\n\n13.2.1 For-Schleifen\nFor-Schleifen iterieren über einen Bereich oder eine Sammlung.\nSchleife über einen Bereich\n\n# Zahlen von 1 bis 5 ausgeben\nfor num in range(1, 6):\n    print(f\"Nummer: {num}\")\n\nNummer: 1\nNummer: 2\nNummer: 3\nNummer: 4\nNummer: 5\n\n\nErläuterung:\n\nrange(1, 6) erzeugt Zahlen von 1 bis 5 (6 ist exklusiv).\nJede Zahl wird mit einem f-String ausgegeben.\n\nSchleife über eine Liste\n\n# Liste von Farben\ncolors = [\"rot\", \"grün\", \"blau\"]\n\n# Durch jede Farbe in der Liste schleifen und ausgeben\nfor color in colors:\n    print(f\"Farbe: {color}\")\n\nFarbe: rot\nFarbe: grün\nFarbe: blau\n\n\nErläuterung:\n\nDie Liste colors enthält drei Zeichenketten.\nfor color in colors iteriert über jedes Element in der Liste, und jeder Wert wird ausgegeben.\n\n\n\n13.2.2 While-Schleifen\nEine While-Schleife wird so lange ausgeführt, wie eine Bedingung True ist.\nBeispiel: Einfache While-Schleife\n\n# Countdown von 5 bis 1\ncount = 5\n\nwhile count &gt; 0:\n    print(f\"Countdown: {count}\")\n    count -= 1  # Zählt count um 1 herunter\n\nCountdown: 5\nCountdown: 4\nCountdown: 3\nCountdown: 2\nCountdown: 1\n\n\nErläuterung:\n\nAnfangswert der Variable: Die Variable count wird auf 5 gesetzt.\nBedingung der While-Schleife: Die while-Schleife läuft, solange die Bedingung count &gt; 0 True bleibt. Diese Bedingung wird vor jedem Schleifendurchlauf geprüft.\nInnerhalb der Schleife:\n\nDie Funktion print gibt den aktuellen Wert von count, vorangestellt mit “Countdown:”, mittels eines f-Strings aus.\nDie Anweisung count -= 1 verringert den Wert von count um 1. Diese Kurzschreibweise ist äquivalent zu count = count - 1.\nNach jedem Dekrement wird count näher an 0 herangeführt.\n\nVerlassen der Schleife:\n\nSobald count nicht mehr größer als 0 ist (also count 0 oder weniger ist), wird die while-Bedingung False und die Schleife wird beendet.\n\n\nDie Dekrement-Operation (count -= 1) stellt sicher, dass die Schleife nicht unendlich läuft und hilft, eine Countdown-Sequenz zu erstellen.",
+    "crumbs": [
+      "Python",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Kontrollstrukturen</span>"
+    ]
+  },
+  {
+    "objectID": "python/python-control-flow.html#ausnahmen",
+    "href": "python/python-control-flow.html#ausnahmen",
+    "title": "13  Kontrollstrukturen",
+    "section": "13.3 Ausnahmen",
+    "text": "13.3 Ausnahmen\nAusnahmen behandeln Fehler, die während der Ausführung auftreten, ohne das Programm zum Absturz zu bringen.\nBeispiel: Umgang mit Division durch Null\n\n# Versuch der Division durch Null und Fehlerbehandlung\nnumerator = 10\ndenominator = 0\n\ntry:\n    result = numerator / denominator\n    print(f\"Ergebnis: {result}\")\nexcept ZeroDivisionError:\n    print(\"Fehler: Division durch Null ist nicht möglich.\")\n\nFehler: Division durch Null ist nicht möglich.\n\n\nErläuterung:\n\nDer try-Block enthält Code, der möglicherweise einen Fehler auslöst (hier die Division durch Null).\nexcept ZeroDivisionError fängt diesen spezifischen Fehler ab und gibt eine entsprechende Nachricht aus.",
+    "crumbs": [
+      "Python",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Kontrollstrukturen</span>"
+    ]
+  },
+  {
+    "objectID": "python/python-classes.html",
+    "href": "python/python-classes.html",
+    "title": "14  Klassen",
+    "section": "",
+    "text": "14.1 Erstellung einer Klasse\nBeginnen wir mit der Definition einer einfachen Klasse DataPoint, die eine einzelne Beobachtung in einem Datensatz darstellt:\n# Definiere eine einfache Klasse, die eine Datenbeobachtung repräsentiert\nclass DataPoint:\n    \"\"\"Eine Klasse, die eine Datenbeobachtung mit Merkmalen und Label repräsentiert.\"\"\"\n\n    def __init__(self, features, label):\n        \"\"\"Initialisiere den Datenpunkt mit Merkmalen und einem Label.\"\"\"\n        self.features = features\n        self.label = label\n\n    def describe(self):\n        \"\"\"Gibt einen formatierten String zurück, der den Datenpunkt beschreibt.\"\"\"\n        return f\"Merkmale: {self.features}, Label: {self.label}\"\n\n# Erstelle eine Instanz (Objekt) der DataPoint-Klasse\nsample_point = DataPoint([0.25, 0.75, 0.5], 'Positiv')\n\n# Zeige die Beschreibung des Datenpunkts an\nprint(sample_point.describe())\n\nMerkmale: [0.25, 0.75, 0.5], Label: Positiv\nErklärung:",
+    "crumbs": [
+      "Python",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Klassen</span>"
+    ]
+  },
+  {
+    "objectID": "python/python-classes.html#erstellung-einer-klasse",
+    "href": "python/python-classes.html#erstellung-einer-klasse",
+    "title": "14  Klassen",
+    "section": "",
+    "text": "Die DataPoint-Klasse hat eine __init__-Methode, die die Merkmale und das Label des Datenpunkts initialisiert.\nDie describe-Methode bietet eine Möglichkeit, die Eigenschaften des Datenpunkts auszugeben.\nsample_point ist eine Instanz von DataPoint, die mit spezifischen Werten für ihre Merkmale und ihr Label initialisiert wird.",
+    "crumbs": [
+      "Python",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Klassen</span>"
+    ]
+  },
+  {
+    "objectID": "python/python-classes.html#methoden-und-attribute",
+    "href": "python/python-classes.html#methoden-und-attribute",
+    "title": "14  Klassen",
+    "section": "14.2 Methoden und Attribute",
+    "text": "14.2 Methoden und Attribute\nDas Hinzufügen weiterer Funktionalität zu einer Klasse macht sie vielseitiger. Lassen Sie uns unsere Klasse erweitern, um eine Sammlung von Datenpunkten zu verwalten:\n\n# Definiere eine Klasse zur Verwaltung eines Datensatzes\nclass DataSet:\n    \"\"\"Eine Klasse, die eine Sammlung von Datenpunkten repräsentiert.\"\"\"\n\n    def __init__(self):\n        \"\"\"Initialisiere die leere Sammlung von Datenpunkten.\"\"\"\n        self.data_points = []\n\n    def add_data_point(self, data_point):\n        \"\"\"Füge einen Datenpunkt zur Sammlung hinzu.\"\"\"\n        self.data_points.append(data_point)\n\n    def display_data(self):\n        \"\"\"Zeige alle Datenpunkte in der Sammlung an.\"\"\"\n        for data_point in self.data_points:\n            print(data_point.describe())\n\n# Erstelle eine Instanz der DataSet-Klasse\nmy_data_set = DataSet()\n\n# Füge mehrere DataPoint-Objekte zum Datensatz hinzu\nmy_data_set.add_data_point(DataPoint([0.1, 0.2, 0.5], 'Negativ'))\nmy_data_set.add_data_point(DataPoint([0.8, 0.4, 0.3], 'Positiv'))\n\n# Zeige alle Datenpunkte im Datensatz an\nmy_data_set.display_data()\n\nMerkmale: [0.1, 0.2, 0.5], Label: Negativ\nMerkmale: [0.8, 0.4, 0.3], Label: Positiv\n\n\nErklärung:\n\nDie DataSet-Klasse speichert mehrere DataPoint-Objekte.\nMethoden wie add_data_point und display_data ermöglichen das Hinzufügen von Datenpunkten und das Anzeigen aller Punkte.",
+    "crumbs": [
+      "Python",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Klassen</span>"
+    ]
+  },
+  {
+    "objectID": "python/python-classes.html#vererbung",
+    "href": "python/python-classes.html#vererbung",
+    "title": "14  Klassen",
+    "section": "14.3 Vererbung",
+    "text": "14.3 Vererbung\nVererbung ermöglicht es uns, bestehende Klassen zu erweitern, um spezialisiertere Versionen zu erstellen, ohne den Code zu wiederholen. Beispielsweise definieren wir einen TimeSeriesDataPoint, der DataPoint erweitert, indem ein Zeitstempel hinzugefügt wird:\n\n# Definiere eine Klasse, die einen Zeitreihendatenpunkt repräsentiert\nclass TimeSeriesDataPoint(DataPoint):\n    \"\"\"Eine Klasse, die DataPoint um einen Zeitstempel für Zeitreihendaten erweitert.\"\"\"\n\n    def __init__(self, features, label, timestamp):\n        \"\"\"Initialisiere die Attribute des TimeSeriesDataPoint.\"\"\"\n        super().__init__(features, label)\n        self.timestamp = timestamp\n\n    def describe(self):\n        \"\"\"Gibt einen formatierten String zurück, der den Zeitreihendatenpunkt beschreibt.\"\"\"\n        base_description = super().describe()\n        return f\"{base_description}, Zeitstempel: {self.timestamp}\"\n\n# Erstelle eine Instanz der TimeSeriesDataPoint-Klasse\ntime_series_point = TimeSeriesDataPoint([0.9, 0.1, 0.2], 'Negativ', '2024-09-05T12:00:00')\n\n# Zeige die Beschreibung des Zeitreihendatenpunkts an\nprint(time_series_point.describe())\n\nMerkmale: [0.9, 0.1, 0.2], Label: Negativ, Zeitstempel: 2024-09-05T12:00:00\n\n\nErklärung:\n\nTimeSeriesDataPoint erbt von DataPoint und fügt ein timestamp-Attribut hinzu.\nDie describe-Methode wird überschrieben, um die Zeitstempelinformationen einzuschließen.",
+    "crumbs": [
+      "Python",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Klassen</span>"
+    ]
+  },
+  {
+    "objectID": "vscode/visual-studio-code.html",
+    "href": "vscode/visual-studio-code.html",
+    "title": "Visual Studio Code",
+    "section": "",
+    "text": "Warum Visual Studio Code wählen?\nDie Wahl der richtigen Entwicklungsumgebung kann die Produktivität und Effizienz des Workflows erheblich beeinflussen. Hier sind einige überzeugende Gründe, warum Visual Studio Code als bevorzugter Editor für sowohl Anfänger als auch erfahrene Entwickler hervorsticht:\nIn den folgenden Abschnitten werden wir untersuchen, wie man Visual Studio Code installiert und konfiguriert, um Ihren Entwicklungsworkflow zu optimieren, beginnend mit einem einfachen Installationsprozess.",
+    "crumbs": [
+      "Visual Studio Code"
+    ]
+  },
+  {
+    "objectID": "vscode/visual-studio-code.html#warum-visual-studio-code-wählen",
+    "href": "vscode/visual-studio-code.html#warum-visual-studio-code-wählen",
+    "title": "Visual Studio Code",
+    "section": "",
+    "text": "Benutzerfreundlichkeit: VS Code bietet eine saubere und intuitive Oberfläche, an die sich neue Benutzer schnell gewöhnen können, ohne sich überfordert zu fühlen.\nAnpassungsfähigkeit: Benutzer können den Editor nach ihren Bedürfnissen mit Themen, Tastenkombinationen und Editor-Einstellungen anpassen, um ein personalisiertes Entwicklungserlebnis zu schaffen.\nReiches Ökosystem: Der Editor verfügt über einen robusten Marktplatz, der mit Erweiterungen gefüllt ist, die verschiedenen Programmieranforderungen gerecht werden, einschließlich Linter, Formatierer, sprachspezifische Snippets und mehr.\nIntegrierte Entwicklungsfunktionen: Mit Funktionen wie IntelliSense für die Codevervollständigung, eingebauter Git-Unterstützung und einem leistungsstarken Debugging-Toolset dient VS Code als umfassendes Entwicklungswerkzeug, das den Bedarf an externen Anwendungen minimiert.\nAktive Community und kontinuierliche Updates: Als Open-Source-Projekt und unterstützt von Microsoft, profitiert VS Code von einer lebendigen Community und regelmäßigen Updates, die seine Funktionalität und Benutzererfahrung kontinuierlich verbessern.",
+    "crumbs": [
+      "Visual Studio Code"
+    ]
+  },
+  {
+    "objectID": "vscode/visual-studio-code-installation.html",
+    "href": "vscode/visual-studio-code-installation.html",
+    "title": "15  Installation",
+    "section": "",
+    "text": "15.1 Windows",
+    "crumbs": [
+      "Visual Studio Code",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Installation</span>"
+    ]
+  },
+  {
+    "objectID": "vscode/visual-studio-code-installation.html#windows",
+    "href": "vscode/visual-studio-code-installation.html#windows",
+    "title": "15  Installation",
+    "section": "",
+    "text": "Downloaden Sie den Installer:\n\nBesuchen Sie die Visual Studio Code Download-Seite.\nKlicken Sie auf die Windows-Version, um den .exe Installer herunterzuladen.\n\nFühren Sie den Installer aus:\n\nNachdem der Download abgeschlossen ist, suchen Sie die .exe Datei und doppelklicken Sie darauf, um den Installationsprozess zu starten.\nFolgen Sie den Anweisungen im Setup-Assistenten. Achten Sie darauf, die Kästchen zu aktivieren, um VS Code zum PATH hinzuzufügen und ein Desktop-Symbol zu erstellen, falls Sie einfachen Zugriff bevorzugen.\n\nStarten Sie Visual Studio Code:\n\nNach der Installation können Sie VS Code entweder über das Desktop-Symbol oder über das Startmenü starten.\nBeim ersten Start öffnet VS Code eine Willkommensseite, auf der Sie Ihre Umgebung anpassen, Erweiterungen installieren oder ein Projekt öffnen können.\n\nOptional: Installieren Sie zusätzliche Komponenten:\n\nFür erweiterte Funktionalitäten, wie Terminal-Integration und Shell-Befehle, stellen Sie sicher, dass Sie die entsprechenden Optionen im Installer aktivieren, um VS Code in Ihre System-Shell zu integrieren.\n\n\n\n\n\n\n\n\nDas Hinzufügen von VS Code zu Ihrem PATH ermöglicht es Ihnen, den Editor über die Eingabeaufforderung oder das Terminal zu starten, indem Sie einfach code eingeben.\n\n\n\n\n15.1.1 Installation auf macOS\n\nDownloaden Sie den Installer:\n\nNavigieren Sie zur Visual Studio Code Download-Seite.\nKlicken Sie auf die macOS-Version, um die .zip Datei herunterzuladen.\n\nInstallieren Sie die Anwendung:\n\nNach dem Download öffnen Sie den .zip Ordner und extrahieren die Visual Studio Code Anwendung.\nZiehen Sie die Visual Studio Code Anwendung in Ihren “Programme”-Ordner.\n\nStarten Sie Visual Studio Code:\n\nÖffnen Sie Ihren “Programme”-Ordner und doppelklicken Sie auf Visual Studio Code, um es zu starten.\nWie bei Windows öffnet der erste Start eine Willkommensseite, die Sie durch die erste Einrichtung, einschließlich der Installation beliebter Erweiterungen, führen kann.\n\nOptional: Zum PATH hinzufügen:\n\nDas Hinzufügen von VS Code zu Ihrem PATH ermöglicht es Ihnen, es vom Terminal aus zu starten. Öffnen Sie dazu die Befehlspalette (Cmd+Shift+P), geben Sie ‘Shell Command: Install code command in PATH’ ein und drücken Sie Enter.\n\n\n\n\n\n\n\n\nDie Installation des code Befehls in Ihrem PATH ermöglicht es Ihnen, VS Code aus dem Terminal zu öffnen, indem Sie code . in einem beliebigen Verzeichnis eingeben, was es schnell und einfach macht, Projekte zu öffnen.\n\n\n\nWenn Sie diese Schritte befolgen, haben Sie Visual Studio Code erfolgreich auf Ihrem Windows- oder macOS-Rechner installiert und sind bereit, es für Ihre Entwicklungsbedürfnisse zu konfigurieren.",
+    "crumbs": [
+      "Visual Studio Code",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Installation</span>"
+    ]
+  },
+  {
+    "objectID": "vscode/visual-studio-code-extensions.html",
+    "href": "vscode/visual-studio-code-extensions.html",
+    "title": "16  Erweiterungen",
+    "section": "",
+    "text": "16.1 Python-Erweiterung\nDie Python-Erweiterung von Microsoft ist für jeden Python-Entwickler, der VS Code verwendet, unerlässlich. Sie bietet umfassende Unterstützung für das Python-Coding, einschließlich IntelliSense (automatische Code-Vervollständigungen), Linting, Debugging und einfacher Navigation durch den Code.\nSo installieren Sie die Erweiterung:",
+    "crumbs": [
+      "Visual Studio Code",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Erweiterungen</span>"
+    ]
+  },
+  {
+    "objectID": "vscode/visual-studio-code-extensions.html#python-erweiterung",
+    "href": "vscode/visual-studio-code-extensions.html#python-erweiterung",
+    "title": "16  Erweiterungen",
+    "section": "",
+    "text": "Öffnen Sie Visual Studio Code.\nGehen Sie zur Ansicht Erweiterungen, indem Sie auf das Quadrat-Symbol in der Seitenleiste klicken oder Ctrl+Shift+X (Windows) bzw. Command+Shift+X (Mac) drücken.\nGeben Sie in der Suchleiste “Python” ein und suchen Sie nach der von Microsoft veröffentlichten Python-Erweiterung.\nKlicken Sie auf “Installieren”, um die Erweiterung zu Ihrem Editor hinzuzufügen.",
+    "crumbs": [
+      "Visual Studio Code",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Erweiterungen</span>"
+    ]
+  },
+  {
+    "objectID": "vscode/visual-studio-code-extensions.html#jupyter-erweiterung",
+    "href": "vscode/visual-studio-code-extensions.html#jupyter-erweiterung",
+    "title": "16  Erweiterungen",
+    "section": "16.2 Jupyter-Erweiterung",
+    "text": "16.2 Jupyter-Erweiterung\nDie Jupyter-Erweiterung ermöglicht es Ihnen, Jupyter-Notebooks direkt in VS Code zu erstellen, zu bearbeiten und auszuführen. Diese Integration erleichtert Datenwissenschaftsprojekte, indem sie die Code-Ausführung, Visualisierung und Datenmanipulation an einem Ort ermöglicht.\nSo installieren Sie die Erweiterung:\n\nÖffnen Sie die Ansicht Erweiterungen wie zuvor beschrieben.\nSuchen Sie nach “Jupyter”.\nWählen Sie die von Microsoft bereitgestellte Jupyter-Erweiterung aus und klicken Sie auf “Installieren”.",
+    "crumbs": [
+      "Visual Studio Code",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Erweiterungen</span>"
+    ]
+  },
+  {
+    "objectID": "vscode/visual-studio-code-extensions.html#atom-one-dark-theme",
+    "href": "vscode/visual-studio-code-extensions.html#atom-one-dark-theme",
+    "title": "16  Erweiterungen",
+    "section": "16.3 Atom One Dark Theme",
+    "text": "16.3 Atom One Dark Theme\nFür diejenigen, die eine dunklere und komfortablere Entwicklungsumgebung bevorzugen, bietet das Atom One Dark Theme eine elegante Benutzeroberfläche, die die Augenbelastung bei längeren Codiersitzungen reduziert.\nSo installieren Sie die Erweiterung:\n\nGreifen Sie auf den Erweiterungsmarktplatz in VS Code zu.\nSuchen Sie nach “Atom One Dark Theme”.\nKlicken Sie auf “Installieren”, um das Theme auf Ihre Umgebung anzuwenden.",
+    "crumbs": [
+      "Visual Studio Code",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Erweiterungen</span>"
+    ]
+  },
+  {
+    "objectID": "vscode/visual-studio-code-extensions.html#vs-code-icons",
+    "href": "vscode/visual-studio-code-extensions.html#vs-code-icons",
+    "title": "16  Erweiterungen",
+    "section": "16.4 VS Code Icons",
+    "text": "16.4 VS Code Icons\nDie VS Code Icons-Erweiterung verbessert die visuelle Organisation Ihrer Projektdateien, indem sie für jeden Dateityp unverwechselbare, erkennbare Symbole hinzufügt, was die Navigation durch komplexe Projekte erleichtert.\nSo installieren Sie die Erweiterung:\n\nÖffnen Sie die Ansicht Erweiterungen in VS Code.\nGeben Sie “VS Code Icons” in die Suchleiste ein.\nKlicken Sie auf “Installieren”, um Ihre Projektdatei-Navigation zu verbessern.\n\n\n\n\n\n\n\nNach der Installation dieser Erweiterungen nehmen Sie sich einen Moment Zeit, um deren Einstellungen zu erkunden und sie an Ihren Arbeitsablauf anzupassen. Sie können beispielsweise spezifische Linter in den Python-Erweiterungseinstellungen aktivieren oder anpassen, wie Jupyter-Notebooks angezeigt werden.\n\n\n\nMit diesen installierten Erweiterungen wird Ihre Visual Studio Code-Umgebung gut ausgestattet sein, um eine Vielzahl von Entwicklungsaufgaben zu bewältigen.",
+    "crumbs": [
+      "Visual Studio Code",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Erweiterungen</span>"
+    ]
+  },
+  {
+    "objectID": "vscode/visual-studio-code-basics.html",
+    "href": "vscode/visual-studio-code-basics.html",
+    "title": "17  Grundlegende Tipps",
+    "section": "",
+    "text": "17.1 Dateien vs. Ordner\nDas Verständnis des Unterschieds zwischen dem Öffnen einer Datei und dem Öffnen eines Ordners in VS Code ist entscheidend für die Verwaltung Ihres Workflows.\nWenn Sie eine Datei in VS Code öffnen, bearbeiten Sie nur diese eine Datei. Dies ist einfach und eignet sich für schnelle Bearbeitungen.\nDas Öffnen eines Ordners (wie unser Ordner toolkit-lab) setzt dieses Verzeichnis als Ihren “Arbeitsbereich” fest. Dies ist für die Projektverwaltung unerlässlich, da es VS Code ermöglicht, erweiterte Funktionen wie die Suche in mehreren Dateien, das Ausführen von Aufgaben, Versionskontrolle und mehr bereitzustellen.\nDiese Tipps helfen Ihnen, Visual Studio Code effektiv zu nutzen, um Ihre Produktivität zu steigern, egal ob Sie einfache Skripte oder komplexe Projekte verwalten.",
+    "crumbs": [
+      "Visual Studio Code",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Grundlegende Tipps</span>"
+    ]
+  },
+  {
+    "objectID": "vscode/visual-studio-code-basics.html#dateien-vs.-ordner",
+    "href": "vscode/visual-studio-code-basics.html#dateien-vs.-ordner",
+    "title": "17  Grundlegende Tipps",
+    "section": "",
+    "text": "Verwenden Sie Datei &gt; Datei öffnen... oder Strg+O und wählen Sie die Datei aus, die Sie bearbeiten möchten.\n\n\n\nVerwenden Sie Datei &gt; Ordner öffnen..., um den gesamten Ordner als Ihren Arbeitsbereich zu öffnen.\nDieser Ansatz wird empfohlen, wenn Sie an einem Projekt mit mehreren Dateien arbeiten, da VS Code so den Kontext Ihres Projekts besser verwalten und verstehen kann.\n\n\n\n\n\n\n\nDas Öffnen eines Ordners in VS Code ist vergleichbar mit dem Einrichten eines “Projekts” in anderen Entwicklungsumgebungen. Es ermöglicht VS Code, alle Dateien und Unterverzeichnisse darin als Teil einer einzigen, zusammenhängenden Einheit zu behandeln und verbessert Funktionen wie IntelliSense, Debugging und benutzerdefinierte Einstellungen.",
+    "crumbs": [
+      "Visual Studio Code",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Grundlegende Tipps</span>"
+    ]
+  },
+  {
+    "objectID": "vscode/visual-studio-code-basics.html#vertrauenswürdigkeit-des-arbeitsbereichs",
+    "href": "vscode/visual-studio-code-basics.html#vertrauenswürdigkeit-des-arbeitsbereichs",
+    "title": "17  Grundlegende Tipps",
+    "section": "17.2 Vertrauenswürdigkeit des Arbeitsbereichs",
+    "text": "17.2 Vertrauenswürdigkeit des Arbeitsbereichs\nBeim Öffnen eines neuen Projektordners in Visual Studio Code wird Ihnen eine Aufforderung angezeigt, ob Sie den Autoren der Dateien vertrauen (Workspace Trust):\n\nJa, ich vertraue den Autoren: Wählen Sie diese Option standardmäßig, wenn Sie die Quelle kennen oder wenn das Projekt aus einer zuverlässigen Quelle stammt. Diese Auswahl ermöglicht die volle Funktionalität von Visual Studio Code, sodass alle Funktionen und Erweiterungen wie vorgesehen arbeiten können.\nNein, ich vertraue den Autoren nicht: Verwenden Sie diese Option, wenn Sie Bedenken hinsichtlich der Quelle der Dateien haben. Dadurch werden bestimmte Funktionen innerhalb von VS Code eingeschränkt, um unbefugte Codeausführung zu verhindern.\n\n\n\n\n\n\n\nWenn Sie in einer vertrauenswürdigen Umgebung oder mit Code von bekannten Mitarbeitern arbeiten, ist es wichtig, “Ja, ich vertraue den Autoren” auszuwählen, um die vollen Fähigkeiten von Visual Studio Code zu nutzen. Dies sorgt für eine nahtlose Entwicklungserfahrung und schützt gleichzeitig Ihr System.",
+    "crumbs": [
+      "Visual Studio Code",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Grundlegende Tipps</span>"
+    ]
+  },
+  {
+    "objectID": "vscode/visual-studio-code-basics.html#jupyter-notebook",
+    "href": "vscode/visual-studio-code-basics.html#jupyter-notebook",
+    "title": "17  Grundlegende Tipps",
+    "section": "17.3 Jupyter Notebook",
+    "text": "17.3 Jupyter Notebook\nVisual Studio Code unterstützt Jupyter-Notebooks nativ, sobald Sie die Jupyter-Erweiterung installiert haben, und bietet eine integrierte Umgebung, um Python-Code auszuführen, Daten zu visualisieren und Ihren Prozess Schritt für Schritt zu dokumentieren.\nSo richten Sie ein Jupyter-Notebook in VS Code ein und verwenden es:\n\nÖffnen Sie Visual Studio Code.\nStellen Sie sicher, dass die Jupyter-Erweiterung wie zuvor beschrieben installiert ist.\nVerwenden Sie die Tastenkombination Strg+Shift+P (Windows) oder Command+Shift+P (Mac), um die Befehls-Palette zu öffnen.\nGeben Sie Datei: Ordner öffnen... ein und wählen Sie diesen Befehl aus. Navigieren Sie zu dem Ordner toolkit-lab und wählen Sie ihn als Ihr Arbeitsverzeichnis aus.\nBeim ersten Öffnen eines neuen Projektordners, wie toolkit-lab, werden Sie mit einer Anfrage zur Vertrauenswürdigkeit des Arbeitsbereichs konfrontiert. Es ist wichtig, “Ja, ich vertraue den Autoren” auszuwählen.\nNachdem der Ordner geöffnet ist, verwenden Sie erneut die Befehls-Palette und geben Sie Jupyter: Neues leeres Notebook erstellen ein. Dies öffnet ein neues Notebook in VS Code.\nSpeichern Sie das Notebook im Unterordner code innerhalb von toolkit-lab, indem Sie auf Datei &gt; Speichern unter klicken und zum Unterordner code navigieren.\nUm Zellen zu Ihrem Notebook hinzuzufügen, klicken Sie auf das +-Symbol (Sie können entweder Code- oder Markdown-Zellen hinzufügen).\nBevor Sie Code ausführen, müssen Sie einen Kernel auswählen, der der Python-Umgebung entspricht, die Sie verwenden möchten. Klicken Sie auf “Kernel auswählen” in der oberen rechten Ecke Ihres Notebooks, wählen Sie “Python-Umgebungen” und wählen Sie den Kernel basics, den wir zuvor eingerichtet haben (für eine detailliertere Erklärung siehe diese Anleitung).\n\n\n\n\n\n\n\nEin “Kernel” in einem Jupyter-Notebook ist eine Rechenmaschine, die den in das Notebook-Dokument eingebetteten Code ausführt. Bei der Arbeit mit Python ist der Kernel eine Instanz der Python-Umgebung auf Ihrem Computer.",
+    "crumbs": [
+      "Visual Studio Code",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Grundlegende Tipps</span>"
+    ]
+  },
+  {
+    "objectID": "vscode/visual-studio-code-basics.html#weitere-ressourcen",
+    "href": "vscode/visual-studio-code-basics.html#weitere-ressourcen",
+    "title": "17  Grundlegende Tipps",
+    "section": "17.4 Weitere Ressourcen",
+    "text": "17.4 Weitere Ressourcen\nWeitere Ressourcen, um sich mit VS Code vertraut zu machen:\n\nSehen Sie sich die Einführungsvideos an\nDatenwissenschaft in VS Code Tutorial\nPro-Tipps: 25 VS Code Productivity Tips and Speed Hacks",
+    "crumbs": [
+      "Visual Studio Code",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Grundlegende Tipps</span>"
+    ]
+  },
+  {
+    "objectID": "sql/sql.html",
+    "href": "sql/sql.html",
+    "title": "SQL",
+    "section": "",
+    "text": "SQL (Structured Query Language, ausgesprochen “S-Q-L” oder manchmal “Sequel”) ist eine standardisierte Datenbanksprache, die speziell für die Verwaltung und Manipulation relationaler Datenbanken verwendet wird. Mit SQL können Benutzer Daten erstellen, abrufen, aktualisieren und löschen sowie Datenbankstrukturen entwerfen und verwalten.\nEin Relationales Datenbankmanagementsystem (RDBMS) ist ein Datenbanksystem, in dem Daten in strukturierten Tabellen mit Zeilen und Spalten gespeichert werden, was komplexe Abfragen und Transaktionen erleichtert. Beliebte Open-Source-Beispiele sind MySQL und PostgreSQL.",
+    "crumbs": [
+      "SQL"
+    ]
+  },
+  {
+    "objectID": "sql/sql-mysql.html",
+    "href": "sql/sql-mysql.html",
+    "title": "18  MySQL",
+    "section": "",
+    "text": "18.1 Installation",
+    "crumbs": [
+      "SQL",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>MySQL</span>"
+    ]
+  },
+  {
+    "objectID": "sql/sql-mysql.html#installation",
+    "href": "sql/sql-mysql.html#installation",
+    "title": "18  MySQL",
+    "section": "",
+    "text": "18.1.1 Windows\n\nInstaller herunterladen\n\nGehen Sie zur MySQL Downloadseite.\nWählen Sie Windows als Plattform und laden Sie den MySQL-Installer für Windows herunter, speziell die Version 8.0.37.\n\nInstaller ausführen\n\nFühren Sie die heruntergeladene Datei aus. Wenn ein Sicherheitsdialog erscheint, klicken Sie auf “Ja”, um dem Installer die Erlaubnis zu erteilen, Änderungen an Ihrem System vorzunehmen.\n\nSetup-Typ auswählen\n\nWählen Sie bei Aufforderung “Custom” als Setup-Typ. Diese Option ermöglicht es Ihnen, spezifische Komponenten zur Installation auszuwählen, wie z.B. MySQL Server, MySQL Workbench und MySQL Shell.\n\nProdukte und Features auswählen\n\nStellen Sie sicher, dass ‘MySQL Server’ und ‘MySQL Workbench’ unter den Komponenten ausgewählt sind, die Sie benötigen. Diese sind für eine vollständige Installation unerlässlich.\n\nInstallation\n\nFolgen Sie den Anweisungen auf dem Bildschirm, um die gewählten Komponenten zu installieren. Dieser Vorgang kann einige Minuten dauern.\n\nMySQL Server konfigurieren\n\nNach der Installation werden Sie durch eine Reihe von Konfigurationsschritten geführt, einschließlich der Einrichtung des Root-Passworts, der Erstellung von Benutzerkonten und der Konfiguration der Netzwerkoptionen und des Windows-Dienstes.\n\nInstallation abschließen\n\nBeenden Sie das Setup, um die Installation von MySQL auf Ihrem System abzuschließen.\n\n\n\n\n18.1.2 Mac\n\nDMG-Archiv herunterladen\n\nBesuchen Sie die MySQL Downloadseite und wählen Sie macOS als Betriebssystem.\nLaden Sie die DMG-Datei für macOS herunter, entsprechend der Version 8.0.36.\n\nMySQL installieren\n\nÖffnen Sie die heruntergeladene DMG-Datei und folgen Sie den Installationsanweisungen auf dem Bildschirm.\n\n\nNun installieren Sie MySQL Workbench\n\nMySQL Workbench herunterladen\n\nGreifen Sie auf die MySQL Workbench Downloadseite zu.\nWählen Sie die passende Version für Ihr Betriebssystem und laden Sie sie herunter.\n\nAnwendung installieren und den Setup-Anweisungen folgen.",
+    "crumbs": [
+      "SQL",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>MySQL</span>"
+    ]
+  },
+  {
+    "objectID": "sql/sql-mysql.html#mysql-workbench",
+    "href": "sql/sql-mysql.html#mysql-workbench",
+    "title": "18  MySQL",
+    "section": "18.2 MySQL Workbench",
+    "text": "18.2 MySQL Workbench\nMySQL Workbench bietet eine grafische Oberfläche für die Datenbankverwaltung und SQL-Entwicklung. Es integriert visuelle Werkzeuge für die Datenmodellierung, SQL-Entwicklung und umfassende Datenbankverwaltung.\n\n18.2.1 Neue Verbindung\nDer nächste Schritt besteht darin, eine Verbindung zu Ihrem Server über MySQL Workbench herzustellen:\n\nMySQL Workbench starten\n\nÖffnen Sie MySQL Workbench aus Ihrer Anwendungsübersicht. Beim Start der Anwendung sehen Sie die Hauptoberfläche.\n\n\n\n\n\n\n\n\nTipp für Windows-Nutzer\n\n\n\n\n\nFalls MySQL Workbench während der anfänglichen Einrichtung des MySQL Servers nicht enthalten war, kann es separat installiert werden:\n\nGreifen Sie auf die MySQL Workbench Downloadseite zu.\nWählen Sie die passende Version für Ihr Betriebssystem und laden Sie sie herunter.\n\n\n\n\n\nNeue Verbindung erstellen\n\nAuf dem Startbildschirm sehen Sie einen Bereich mit der Bezeichnung “MySQL Connections”. Klicken Sie auf das “+”-Symbol, um eine neue Verbindung zu erstellen.\nIm Setup-Dialog:\n\nVerbindungsname: Geben Sie Ihrer Verbindung einen erkennbaren Namen wie local-connection.\nHostname: Geben Sie localhost ein, wenn Ihr Datenbankserver auf dem gleichen Rechner wie die Workbench läuft.\nPort: Der Standard-MySQL-Port ist 3306.\nBenutzername: Geben Sie den Benutzernamen ein, den Sie während der MySQL Server-Installation festgelegt haben (meist ‘root’).\nPasswort: Klicken Sie auf “Store in Vault” und geben Sie das Passwort für das Benutzerkonto ein.\n\nNachdem Sie diese Felder ausgefüllt haben, klicken Sie auf “Test Connection”, um sicherzustellen, dass alle Einstellungen korrekt sind und die Verbindung hergestellt werden kann.\n\nVerbindung speichern\n\nWenn der Verbindungstest erfolgreich ist, speichern Sie die Konfiguration, indem Sie auf “OK” klicken. Diese Verbindung wird nun auf dem MySQL Workbench-Startbildschirm für einen einfachen Zugriff angezeigt.",
+    "crumbs": [
+      "SQL",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>MySQL</span>"
+    ]
+  },
+  {
+    "objectID": "sql/sql-mysql.html#verwendung-von-mysql-workbench",
+    "href": "sql/sql-mysql.html#verwendung-von-mysql-workbench",
+    "title": "18  MySQL",
+    "section": "18.3 Verwendung von MySQL Workbench",
+    "text": "18.3 Verwendung von MySQL Workbench\nMySQL Workbench bietet verschiedene Werkzeuge und Abkürzungen zur Erleichterung der Datenbankverwaltung:\n\nToolbar: Oben finden Sie die Toolbar, die Schaltflächen wie das neue Abfrage-Tab, Abfrage ausführen und andere enthält.\nSeitenleiste: Links bietet die Seitenleiste Zugriff auf Instanzverwaltung, Leistungsüberwachung und mehr.\nAbfrage-Tab: Hier schreiben und führen Sie Ihre SQL-Abfragen aus. Sie können ein neues Abfrage-Tab öffnen, indem Sie auf das “+”-Symbol neben den vorhandenen Tabs klicken.\nAusgabebereich: Unterhalb des Abfrage-Editors zeigt dieser Bereich die Ergebnisse der ausgeführten Abfragen oder Nachrichten vom Datenbankserver an.\n\n\n18.3.1 Datenbank erstellen\n\nEine Datenbank erstellen\n\nVerbinden Sie sich mit Ihrer MySQL-Instanz über die eingerichtete Verbindung.\nÖffnen Sie ein neues Abfrage-Tab.\nGeben Sie die folgenden SQL-Befehle ein und führen Sie sie aus:\n\n\nDROP DATABASE IF EXISTS `db_data`;\nCREATE DATABASE `db_data`;\nUSE `db_data`;\n\nSchema-Liste aktualisieren\n\nNachdem Sie die Befehle ausgeführt haben, aktualisieren Sie die Schema-Liste auf der linken Seite der Oberfläche, um Ihre neue Datenbank zu sehen.\n\n\n\n\n18.3.2 Tabelle erstellen\nUm Daten über Marketingkampagnen zu strukturieren, benötigen Sie eine Tabelle:\n\nNeues Abfrage-Tab öffnen\n\nKlicken Sie auf das “+”-Symbol oben, um eine neue Abfrage zu starten.\n\nTabelle definieren\n\nFühren Sie das folgende SQL aus, um Ihre Tabelle zu erstellen:\n\n\nCREATE TABLE campaigns (\n    id INT AUTO_INCREMENT PRIMARY KEY,\n    name VARCHAR(255) NOT NULL,\n    start_date DATE,\n    end_date DATE,\n    budget DECIMAL(10, 2),\n    channel VARCHAR(255)\n    );\n\n\n\n\n\n\nErklärung der Tabellendefinition\n\n\n\n\n\nDer obige SQL-Befehl erstellt eine neue Tabelle namens campaigns. Hier ist eine Aufschlüsselung jeder Spaltendefinition:\n\nid: Eine Spalte namens id, die den Datentyp INT verwendet und automatisch inkrementiert wird, was sich gut als Primärschlüssel eignet.\nname: Eine Spalte zur Speicherung der Kampagnennamen als Text, definiert, um eine Zeichenkette von bis zu 255 Zeichen zu halten. Die NOT NULL-Einschränkung stellt sicher, dass jede Zeile einen Namen haben muss.\nstart_date und end_date: Diese Spalten speichern die Start- und Enddaten der Kampagnen mit dem Datentyp DATE.\nbudget: Eine Spalte für das Budget jeder Kampagne, die DECIMAL(10, 2) verwendet, um bis zu 10 Stellen mit 2 Dezimalstellen zu ermöglichen.\nchannel: Eine Spalte, um das verwendete Medium der Kampagne anzugeben, die Zeichenfolgen von bis zu 255 Zeichen speichern kann.\n\n\n\n\n\nBefehl ausführen\n\nKlicken Sie auf das Blitzsymbol (⚡), um den Befehl auszuführen. Überprüfen Sie die Schema-Ansicht, um die Erstellung der Tabelle zu bestätigen.\n\n\n\n\n18.3.3 Werte einfügen\nUm die Tabelle mit Daten zu füllen:\n\nDaten einfügen\n\nVerwenden Sie in einem neuen Abfrage-Tab diesen SQL-Befehl:\n\n\nINSERT INTO campaigns (name, start_date, end_date, budget, channel) VALUES\n('Winter Sale', '2023-12-01', '2023-12-31', 5000.00, 'Email'),\n('Summer Festival', '2023-06-01', '2023-06-15', 10000.00, 'Social Media'),\n('Back to School', '2023-08-01', '2023-08-20', 7500.00, 'TV');\n\n\n\n\n\n\nErklärung der Insert-Anweisung\n\n\n\n\n\nDieser SQL-Befehl fügt Daten in die campaigns-Tabelle ein. Jede Zeile von Werten entspricht einer anderen Marketingkampagne:\n\nErste Zeile: Fügt eine Kampagne namens “Winter Sale” ein, die vom 1. bis 31. Dezember 2023 läuft, mit einem Budget von $5000 und dem Kanal “Email”.\nZweite Zeile: Fügt “Summer Festival” ein, eine kürzere Kampagne vom 1. bis 15. Juni 2023, mit einem höheren Budget von $10000 und Nutzung von “Social Media\n\n“. - Dritte Zeile: Fügt die”Back to School”-Kampagne vom 1. bis 20. August 2023 hinzu, mit einem Budget von $7500, vermarktet über “TV”. Jeder Satz von Werten ist in Klammern eingeschlossen und durch Kommas getrennt, um verschiedene Kampagnen zu unterscheiden.\n\n\n\n\n\n18.3.4 Werte abrufen\nUm die Daten zu überprüfen:\n\nFühren Sie eine SELECT-Abfrage aus\n\nFühren Sie folgendes in einem neuen Abfrage-Tab aus:\n\n\nSELECT * FROM campaigns;\n\n\n\n\n\n\nErklärung der SELECT-Abfrage\n\n\n\n\n\nDieser SQL-Befehl ruft alle Spalten aus allen Zeilen in der campaigns-Tabelle ab. Er ist nützlich, um alle eingegebenen Daten in der Tabelle anzuzeigen, sicherzustellen, dass die Einträge korrekt sind, und um weitere Datenanalysen oder Berichte zu ermöglichen.\n\n\n\nDas sollte folgendes ausgeben:\n\n\n\nid\nname\nstart_date\nend_date\nbudget\nchannel\n\n\n\n\n1\nWinter Sale\n2023-12-01\n2023-12-31\n5000.00\nEmail\n\n\n2\nSummer Festival\n2023-06-01\n2023-06-15\n10000.00\nSocial Media\n\n\n3\nBack to School\n2023-08-01\n2023-08-20\n7500.00\nTV",
+    "crumbs": [
+      "SQL",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>MySQL</span>"
+    ]
+  },
+  {
+    "objectID": "sql/sql-postgresql.html",
+    "href": "sql/sql-postgresql.html",
+    "title": "19  PostgreSQL",
+    "section": "",
+    "text": "19.1 Installation",
+    "crumbs": [
+      "SQL",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>PostgreSQL</span>"
+    ]
+  },
+  {
+    "objectID": "sql/sql-postgresql.html#installation",
+    "href": "sql/sql-postgresql.html#installation",
+    "title": "19  PostgreSQL",
+    "section": "",
+    "text": "Laden Sie PostgreSQL von hier herunter und installieren Sie es.\nWählen Sie das Standard-Installationsverzeichnis aus.\nWählen Sie diese Komponenten aus:\n\nPostgreSQL Server\npgAdmin4\nKommandozeilenwerkzeuge\n\nWählen Sie das Standardverzeichnis für die Dateninstallation.\nPasswort: Setzen Sie ein einprägsames Passwort; es ist kritisch, da es später nicht leicht geändert werden kann.\nPort: Akzeptieren Sie den standardmäßig vorgeschlagenen Port (normalerweise 5432).\nGebietsschema: Setzen Sie es auf das Standardgebietsschema.",
+    "crumbs": [
+      "SQL",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>PostgreSQL</span>"
+    ]
+  },
+  {
+    "objectID": "sql/sql-postgresql.html#pgadmin4",
+    "href": "sql/sql-postgresql.html#pgadmin4",
+    "title": "19  PostgreSQL",
+    "section": "19.2 PgAdmin4",
+    "text": "19.2 PgAdmin4\npgAdmin4 ist das offizielle grafische Verwaltungstool für PostgreSQL und bietet eine benutzerfreundliche Oberfläche für die Datenbankverwaltung. Es wird als Teil der PostgreSQL-Installation installiert.\n\n19.2.1 Neuen Server hinzufügen\nUm Datenbanken zu verwalten, verbinden Sie sich zunächst mit einer PostgreSQL-Instanz, indem Sie eine neue Serververbindung in pgAdmin4 einrichten:\n\nÖffnen Sie pgAdmin4.\nKlicken Sie unter “Quick Links” auf Add New Server.\nGeben Sie für den Namen local-connection ein.\nWechseln Sie zum Reiter Connection:\n\nHostname/Adresse: Geben Sie localhost ein.\nStellen Sie sicher, dass der Port derselbe ist wie bei der Installation.\nPasswort: Geben Sie das während der Installation gesetzte Passwort ein und wählen Sie “Save password”.\n\nBestätigen Sie die Einrichtung durch Klicken auf Save.\nDies wird die local-connection in der linken Seitenleiste anzeigen.\n\n\n\n19.2.2 Eine Datenbank erstellen\nErstellen Sie als nächstes eine neue Datenbank, um Daten zu speichern:\n\n\n\n\n\n\nStandard PostgreSQL Datenbank\n\n\n\n\n\nBei der Installation von PostgreSQL wird automatisch eine Standarddatenbank namens postgres erstellt. Diese Datenbank wird typischerweise für administrative Zwecke und Tests verwendet. Es ist immer ratsam, neue Datenbanken für anwendungsspezifische Daten zu erstellen, um zu vermeiden, dass die Standarddatenbank mit Anwendungsdaten überladen wird.\n\n\n\n\nKlicken Sie in pgAdmin4 mit der rechten Maustaste auf den local-connection Server in der linken Seitenleiste.\nNavigieren Sie zu: Create &gt; Database.\nGeben Sie im Reiter “General” db_data als Datenbanknamen ein.\nKlicken Sie auf Save, um die Datenbank zu erstellen.\n\n\n\n19.2.3 Eine Tabelle erstellen\nErstellen Sie eine Tabelle, um Daten über Marketingkampagnen zu speichern.\n\n\n\n\n\n\nTabellendefinition\n\n\n\n\n\nSpalten in der Marketingkampagnen-Tabelle: - id: Eine eindeutige Kennung für jede Kampagne, automatisch inkrementiert. - name: Der Name der Marketingkampagne. - start_date & end_date: Der Zeitraum der Kampagne. - budget: Das der Kampagne zugewiesene Budget. - channel: Der für die Kampagne verwendete Kanal (z.B. “E-Mail”, “Soziale Medien”, “TV”).\n\n\n\n\nNavigieren Sie zur db_data Datenbank.\nÖffnen Sie das Abfragewerkzeug unter Tools &gt; Query Tool.\nGeben Sie den folgenden SQL-Befehl ein, um die campaigns Tabelle zu erstellen:\n\nCREATE TABLE campaigns (\n    id BIGSERIAL PRIMARY KEY,\n    name VARCHAR(255) NOT NULL,\n    start_date DATE,\n    end_date DATE,\n    budget DECIMAL(10, 2),\n    channel VARCHAR(255)\n);\n\n\n\n\n\n\nTabellendefinition Erklärung\n\n\n\n\n\nDer obige SQL-Befehl erstellt eine neue Tabelle namens campaigns. Hier ist eine Aufschlüsselung der einzelnen Spaltendefinitionen:\n\nid: Eine Spalte namens id, die den Datentyp BIGSERIAL verwendet, was ein automatisch inkrementierender Integer ist und sich für einen Primärschlüssel eignet.\nname: Eine Spalte zur Speicherung von Kampagnennamen als Text, definiert, um eine Zeichenfolge von bis zu 255 Zeichen zu halten. Die NOT NULL-Einschränkung stellt sicher, dass jede Zeile einen Namen haben muss.\nstart_date und end_date: Diese Spalten speichern die Start- und Enddaten der Kampagnen jeweils im DATE-Datentyp.\nbudget: Eine Spalte für das mit jeder Kampagne verbundene Budget, die DECIMAL(10, 2) verwendet, um bis zu 10 Ziffern mit 2 Dezimalstellen zu ermöglichen.\nchannel: Eine Spalte, um das für die Kampagne verwendete Medium anzugeben, die Zeichenfolgen von bis zu 255 Zeichen speichern kann.\n\n\n\n\n\nFühren Sie das Skript aus, indem Sie auf die ▶️ Schaltfläche klicken (oder F5 drücken).\nUm die Tabelle zu überprüfen, erweitern Sie “Schemas” &gt; “Tables” &gt; “campaigns” &gt; “Columns” in der Datenbank db_data.\n\n\n\n19.2.4 Werte in die Tabelle einfügen\nFüllen Sie die Tabelle mit Beispieldaten:\n\nVerwenden Sie erneut das Abfragewerkzeug, um die folgende Einfügeanweisung auszuführen:\n\nINSERT INTO campaigns (name, start_date, end_date, budget, channel) VALUES\n('Winter Sale', '2023-12-01', '2023-12-31', 5000.00, 'Email'),\n('Summer Festival', '2023-06-01', '2023-06-15', 10000.00, 'Social Media'),\n('Back to School', '2023-08-01', '2023-08-20', 7500.00, 'TV');\n\n\n\n\n\n\nInsert Statement Erklärung\n\n\n\n\n\nDieser SQL-Befehl fügt Daten in die campaigns Tabelle ein. Jede Zeile von Werten entspricht einer anderen Marketingkampagne:\n\nErste Zeile: Fügt eine Kampagne namens “Winter Sale” ein, die vom 1. bis 31. Dezember 2023 läuft, mit einem Budget von 5000 Dollar und dem Kanal “Email”.\nZweite Zeile: Fügt “Summer Festival” ein, eine kürzere Kampagne vom 1. bis 15. Juni 2023, mit einem höheren Budget von 10000 Dollar und nutzt “Soziale Medien”.\nDritte Zeile: Fügt die “Back to School”-Kampagne vom 1. bis 20. August 2023 hinzu, mit einem Budget von 7500 Dollar, vermarktet durch “TV”. Jeder Satz von Werten ist in Klammern eingeschlossen und durch Kommata getrennt, um verschiedene Kampagnen zu unterscheiden.\n\n\n\n\n\nFühren Sie das Skript aus, indem Sie auf die ▶️ Schaltfläche klicken.\n\n\n\n19.2.5 Werte abrufen\nSchließlich können Sie die Daten in der campaigns Tabelle anzeigen:\n\nÖffnen Sie eine neue Sitzung im Abfragewerkzeug und führen Sie eine SELECT-Abfrage aus:\n\nSELECT * \nFROM campaigns;\n\n\n\n\n\n\nSELECT Abfrage Erklärung\n\n\n\n\n\nDieser SQL-Befehl ruft alle Spalten aus allen Zeilen der campaigns Tabelle ab. Er ist nützlich, um alle Daten zu sehen, die in die Tabelle eingegeben wurden, um sicherzustellen, dass die Einträge korrekt sind, und um weitere Datenanalysen oder Berichte zu erleichtern.\n\n\n\nDies sollte folgendes ausgeben:\n\n\n\n\n\n\n\n\n\n\n\nid\nname\nstart_date\nend_date\nbudget\nchannel\n\n\n\n\n1\nWinter Sale\n2023-12-01\n2023-12-31\n5000.00\nEmail\n\n\n2\nSummer Festival\n2023-06-01\n2023-06-15\n10000.00\nSocial Media\n\n\n3\nBack to School\n2023-08-01\n2023-08-20\n7500.00\nTV",
+    "crumbs": [
+      "SQL",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>PostgreSQL</span>"
+    ]
+  },
+  {
+    "objectID": "sql/sql-python.html",
+    "href": "sql/sql-python.html",
+    "title": "20  SQL & Python",
+    "section": "",
+    "text": "20.1 Python-Umgebung\nRichten Sie zuerst eine isolierte Python-Umgebung mit Anaconda ein:",
+    "crumbs": [
+      "SQL",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>SQL & Python</span>"
+    ]
+  },
+  {
+    "objectID": "sql/sql-python.html#python-umgebung",
+    "href": "sql/sql-python.html#python-umgebung",
+    "title": "20  SQL & Python",
+    "section": "",
+    "text": "Erstellen Sie eine neue Umgebung (wenn Sie detailliertere Erklärungen benötigen, lesen Sie dieses Kapitel über die Erstellung von Umgebungen):\n\nconda create -n postgres python=3.11 pip\n\nAktivieren Sie die Umgebung:\n\nconda activate postgres\n\nInstallieren Sie die notwendigen Pakete: Wir benötigen psycopg2-binary für die PostgreSQL-Konnektivität, sqlalchemy für SQL-Operationen und pandas für die Datenmanipulation.\n\npip install psycopg2-binary sqlalchemy ipykernel jupyter pandas",
+    "crumbs": [
+      "SQL",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>SQL & Python</span>"
+    ]
+  },
+  {
+    "objectID": "sql/sql-python.html#datenbankverbindung",
+    "href": "sql/sql-python.html#datenbankverbindung",
+    "title": "20  SQL & Python",
+    "section": "20.2 Datenbankverbindung",
+    "text": "20.2 Datenbankverbindung\nUm von Python aus mit Ihrer PostgreSQL-Datenbank zu interagieren, richten Sie eine Verbindung mit SQLAlchemy ein:\n\nStarten Sie PostgreSQL: Stellen Sie sicher, dass Ihre PostgreSQL-Instanz läuft.\nImportieren Sie die Bibliotheken und erstellen Sie eine Engine: Die Engine ist Ihr Zugang zur Datenbank. Ersetzen Sie Platzhalter durch Ihre tatsächlichen Datenbank-Anmeldedaten.\n\nimport sqlalchemy as sa\n\n# Ersetzen Sie die Platzhalter durch Ihre Datenbank-Anmeldedaten\nengine = sa.create_engine('postgresql://your_username:your_password@localhost:your_port/your_database')\nHier müssen Sie Folgendes ersetzen:\n\nyour_username: Typischerweise postgres\nyour_password: Ihr Datenbank-Passwort\nyour_port: Üblicherweise 5432\nyour_database: Standardmäßig postgres (Sie können auch db_data verwenden)\n\nFür weitere Details zur Konfiguration der Engine, siehe die SQLAlchemy-Dokumentation.",
+    "crumbs": [
+      "SQL",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>SQL & Python</span>"
+    ]
+  },
+  {
+    "objectID": "sql/sql-python.html#daten-in-postgresql-schreiben",
+    "href": "sql/sql-python.html#daten-in-postgresql-schreiben",
+    "title": "20  SQL & Python",
+    "section": "20.3 Daten in PostgreSQL schreiben",
+    "text": "20.3 Daten in PostgreSQL schreiben\nMit der eingerichteten Verbindung übertragen wir nun Daten von einem pandas DataFrame nach PostgreSQL:\n\nLaden Sie die Daten in einen DataFrame:\n\nimport pandas as pd\n\n# Laden der Daten aus einer CSV-Datei\ndf = pd.read_csv(\"https://raw.githubusercontent.com/kirenz/datasets/master/gapminder.csv\")\n\nSchreiben Sie den DataFrame nach PostgreSQL: Verwenden Sie die Methode to_sql, um die Daten in eine neue Tabelle namens gapminder zu schreiben.\n\ndf.to_sql('gapminder', engine, if_exists='replace')\nDies sollte ausgeben: 704.\n\nÜberprüfen Sie die Tabelle in der Datenbank: Führen Sie eine Abfrage in der Datenbank aus, um zu bestätigen, dass die Tabelle existiert.\n\nwith engine.connect() as connection:\n      tables = connection.execute(sa.text(\"SELECT table_name FROM information_schema.tables WHERE table_schema='public'\"))\n      for table in tables:\n           print(table[0])\nDies sollte ausgeben: gapminder\n\nOptional: Entfernen Sie die Tabelle: Wenn Sie die Tabelle aus der Datenbank löschen müssen:\n\nsql = sa.text(\"DROP TABLE IF EXISTS gapminder\")\n\nwith engine.connect() as connection:\n      connection.execute(sql)\nWerfen Sie als Nächstes einen Blick auf die Tabelle mit PgAdmin4.",
+    "crumbs": [
+      "SQL",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>SQL & Python</span>"
+    ]
+  },
+  {
+    "objectID": "github/github.html",
+    "href": "github/github.html",
+    "title": "GitHub",
+    "section": "",
+    "text": "GitHub bietet Hosting für Softwareentwicklungsprojekte, die Git, ein Versionskontrollsystem, verwenden.\n\n\n\n\nEs ist wie ein kollaborativer Arbeitsbereich, in dem mehrere Entwickler ihre Projekte speichern, verwalten und Änderungen verfolgen können, ähnlich wie eine Online-Bibliothek digitaler Projekte.",
+    "crumbs": [
+      "GitHub"
+    ]
+  },
+  {
+    "objectID": "github/github-git.html",
+    "href": "github/github-git.html",
+    "title": "21  Git",
+    "section": "",
+    "text": "21.1 Git-Version\nUm zu überprüfen, ob Git auf Ihrem System installiert ist, öffnen Sie Ihr Terminal (Mac) oder die Eingabeaufforderung (Windows) und geben Sie ein:\nWenn Sie eine Versionsnummer sehen, ist Git bereits installiert. Wenn nicht, folgen Sie den unten stehenden Installationsanweisungen.",
+    "crumbs": [
+      "GitHub",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Git</span>"
+    ]
+  },
+  {
+    "objectID": "github/github-git.html#git-version",
+    "href": "github/github-git.html#git-version",
+    "title": "21  Git",
+    "section": "",
+    "text": "git --version",
+    "crumbs": [
+      "GitHub",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Git</span>"
+    ]
+  },
+  {
+    "objectID": "github/github-git.html#installation",
+    "href": "github/github-git.html#installation",
+    "title": "21  Git",
+    "section": "21.2 Installation",
+    "text": "21.2 Installation\n\nFür Mac-Benutzer:\n\nOption 1: Installieren Sie XCode, das Git enthält.\nOption 2: Alternativ installieren Sie Homebrew (Homebrew ist ein freies und quelloffenes Paketverwaltungssystem, das die Installation von Software auf macOS und Linux vereinfacht.) und verwenden Sie diesen Befehl:\nbrew install git\n\nFür Windows-Benutzer:\n\nLaden Sie Git von Git SCM herunter und folgen Sie den Installationsanweisungen.",
+    "crumbs": [
+      "GitHub",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Git</span>"
+    ]
+  },
+  {
+    "objectID": "github/github-setup.html",
+    "href": "github/github-setup.html",
+    "title": "22  GitHub Setup",
+    "section": "",
+    "text": "22.1 GitHub-Konto\nSo erstellen Sie ein GitHub-Konto:",
+    "crumbs": [
+      "GitHub",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>GitHub Setup</span>"
+    ]
+  },
+  {
+    "objectID": "github/github-setup.html#github-konto",
+    "href": "github/github-setup.html#github-konto",
+    "title": "22  GitHub Setup",
+    "section": "",
+    "text": "Gehen Sie zur GitHub Anmeldeseite.\nGeben Sie einen Benutzernamen, eine E-Mail-Adresse (verwenden Sie Ihre Universitäts-E-Mail, wenn Sie GitHub für akademische Zwecke nutzen) und ein Passwort ein.\nKlicken Sie auf Create an account.\nÜberprüfen Sie Ihre E-Mails auf einen Bestätigungslink von GitHub und klicken Sie darauf, um Ihre E-Mail-Adresse zu bestätigen.\nSchließen Sie die Profil-Einrichtung ab, indem Sie den Anweisungen auf dem Bildschirm folgen.\nOptional: Bewerben Sie sich für das GitHub Student Developer Pack für den Zugriff auf kostenlose Ressourcen (wie GitHub Copilot).\nVerbessern Sie Ihre Erfahrung, indem Sie die VS Code GitHub-Erweiterung installieren.",
+    "crumbs": [
+      "GitHub",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>GitHub Setup</span>"
+    ]
+  },
+  {
+    "objectID": "github/github-setup.html#github-desktop",
+    "href": "github/github-setup.html#github-desktop",
+    "title": "22  GitHub Setup",
+    "section": "22.2 GitHub Desktop",
+    "text": "22.2 GitHub Desktop\nGitHub Desktop bietet eine benutzerfreundliche grafische Oberfläche, um Ihre GitHub-Projekte zu verwalten, ohne Befehlszeilentools zu verwenden.\nSo richten Sie es ein:\n\nBesuchen Sie GitHub Desktop und laden Sie die Version für Ihr Betriebssystem herunter.\nNach dem Download führen Sie das Installationsprogramm aus und folgen den Anweisungen auf dem Bildschirm, um die Installation abzuschließen.\nNach der Installation öffnen Sie GitHub Desktop und melden sich mit Ihren GitHub-Kontodaten an.\nFolgen Sie der Einführung von GitHub Desktop, um sich mit den Funktionen vertraut zu machen und Ihre lokalen Projekte mit GitHub zu verbinden.\nSie können nun Repositories klonen, Änderungen committen und Updates direkt von Ihrem Desktop aus pushen.",
+    "crumbs": [
+      "GitHub",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>GitHub Setup</span>"
+    ]
+  },
+  {
+    "objectID": "github/github-repo.html",
+    "href": "github/github-repo.html",
+    "title": "23  GitHub-Repositories",
+    "section": "",
+    "text": "23.1 Erstellen\nMit GitHub-Repositories können Sie Ihr Projekt mit wichtigen Dateien wie einer README, .gitignore und einer Lizenz initialisieren, um Struktur und Klarheit zu schaffen. Hier ist eine detaillierte Anleitung, wie Sie dies tun können, einschließlich Erklärungen zu den einzelnen Komponenten.",
+    "crumbs": [
+      "GitHub",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>GitHub-Repositories</span>"
+    ]
+  },
+  {
+    "objectID": "github/github-repo.html#erstellen",
+    "href": "github/github-repo.html#erstellen",
+    "title": "23  GitHub-Repositories",
+    "section": "",
+    "text": "Anmelden bei GitHub\n\nÖffnen Sie GitHub in Ihrem Webbrowser.\nMelden Sie sich bei Ihrem GitHub-Konto an. Wenn Sie noch kein Konto haben, müssen Sie eines erstellen (siehe GitHub Setup).\n\nNavigieren Sie zu Ihrem Dashboard\n\nNach dem Anmelden gelangen Sie zu Ihrem GitHub-Dashboard. Hier können Sie Ihre bestehenden Repositories, die letzten Aktivitäten und mehr sehen.\n\nEin neues Repository starten\n\nKlicken Sie auf das +-Symbol in der oberen rechten Ecke der Seite und wählen Sie Neues Repository aus dem Dropdown-Menü.\n\nRepository-Details ausfüllen\n\nRepository-Name: Wählen Sie den Namen hello-github für Ihr Repository. Namen sollten immer prägnant und beschreibend sein.\nBeschreibung: (Optional) Fügen Sie eine kurze Beschreibung Ihres Projekts hinzu. Dies hilft anderen zu verstehen, worum es bei Ihrem Projekt geht.\nÖffentlich oder Privat: Wählen Sie, ob Ihr Repository öffentlich (für jeden sichtbar) oder privat (nur für Sie und Personen, denen Sie explizit Zugriff gewähren) sein soll. Wählen Sie öffentlich.\n\nDas Repository initialisieren\n\nREADME: Eine README-Datei ist eine Markdown-Datei (README.md), die als Frontseite Ihres Projekts dient. Es ist ein Ort, um Ihr Projekt vorzustellen und zu erklären. Aktivieren Sie das Kontrollkästchen Initialize this repository with a README, um diese Datei automatisch zu erstellen.\n.gitignore: Eine .gitignore-Datei gibt an, welche Dateien und Verzeichnisse von Git ignoriert werden sollen. Dies ist nützlich, um Dateien auszuschließen, die nicht verfolgt werden müssen, wie temporäre Dateien und Dateien mit geheimen API-Informationen. Sie können eine Vorlage auswählen, die zu Ihrer Projektsprache oder -umgebung passt (wählen Sie Python).\nLizenz: Eine Lizenzdatei legt die Bedingungen fest, unter denen Ihr Projekt verwendet, modifiziert und von anderen geteilt werden kann. Durch die Auswahl einer Lizenz stellen Sie sicher, dass andere Ihr Projekt legal verwenden und dazu beitragen können. GitHub bietet verschiedene Lizenzen zur Auswahl an, wie z.B. MIT, Apache, GPL usw. Wir verwenden die MIT-Lizenz, die es jedem erlaubt, Ihren Code zu verwenden, solange der ursprüngliche Urheberrechts- und Lizenzhinweis enthalten ist.\n\nRepository erstellen\n\nKlicken Sie auf die Schaltfläche Create repository, um Ihr neues Repository auf GitHub zu erstellen.",
+    "crumbs": [
+      "GitHub",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>GitHub-Repositories</span>"
+    ]
+  },
+  {
+    "objectID": "github/github-repo.html#klonen",
+    "href": "github/github-repo.html#klonen",
+    "title": "23  GitHub-Repositories",
+    "section": "23.2 Klonen",
+    "text": "23.2 Klonen\nDas Klonen eines Repositorys bedeutet, eine lokale Kopie eines Remote-Repositorys auf Ihrem Computer zu erstellen. Dies ermöglicht es Ihnen, offline an den Projektdateien zu arbeiten, Änderungen vorzunehmen und diese Änderungen dann mit dem Remote-Repository auf GitHub zu synchronisieren.\n\nÖffnen Sie GitHub und finden Sie Ihr Repository\n\nÖffnen Sie GitHub in Ihrem Webbrowser und navigieren Sie zu Ihrem hello-github-Repository.\nAuf der Hauptseite des hello-github-Repositorys klicken Sie auf die grüne Schaltfläche Code.\n\nKlon-Option auswählen\n\nIm Dropdown-Menü klicken Sie auf Open with GitHub Desktop. Dies wird GitHub Desktop dazu veranlassen, sich zu öffnen und den Klonvorgang zu starten.\nWenn Ihr Browser Sie dazu auffordert, GitHub Desktop zu öffnen, bestätigen Sie die Aktion.\n\nGitHub Desktop öffnet sich und der Klonvorgang beginnt\n\nGitHub Desktop öffnet sich und zeigt ein Dialogfeld an, um den lokalen Pfad für das Repository zu bestätigen.\nWählen Sie das Verzeichnis toolkit-lab auf Ihrem lokalen Rechner, in dem Sie das hello-github-Repository klonen möchten. Dies erstellt einen Ordner namens hello-github im Verzeichnis toolkit-lab.\nWichtig: Stellen Sie sicher, dass das Verzeichnis nicht mit Cloud-Speicherdiensten wie iCloud, OneDrive oder Google Drive synchronisiert wird. Die Synchronisierung mit diesen Diensten kann zu Konflikten und Problemen mit Ihrem Git-Repository führen.\n\nKlonen\n\nKlicken Sie auf Klonen, um das hello-github-Repository auf Ihren lokalen Rechner herunterzuladen.\n\nÖffnen Sie das Repository in GitHub Desktop\n\nNach Abschluss des Klonvorgangs öffnet GitHub Desktop automatisch das hello-github-Repository.",
+    "crumbs": [
+      "GitHub",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>GitHub-Repositories</span>"
+    ]
+  },
+  {
+    "objectID": "github/github-repo.html#commit",
+    "href": "github/github-repo.html#commit",
+    "title": "23  GitHub-Repositories",
+    "section": "23.3 Commit",
+    "text": "23.3 Commit\nNachdem Sie Ihr hello-github-Repository auf Ihren lokalen Rechner geklont haben, ist der nächste Schritt, an Ihren Projektdateien zu arbeiten. Wir verwenden Visual Studio Code (VS Code), um das Repository zu öffnen und Änderungen vorzunehmen.\nÖffnen des hello-github-Repositorys in VS Code\n\nÖffnen Sie VS Code\n\nStarten Sie Visual Studio Code auf Ihrem Computer.\n\nÖffnen Sie das geklonte Repository\n\nKlicken Sie in VS Code auf Datei &gt; Ordner öffnen….\nNavigieren Sie zum Verzeichnis toolkit-lab/hello-github, in dem Sie Ihr Repository geklont haben, und wählen Sie den Ordner hello-github.\nKlicken Sie auf Ordner auswählen, um das Repository in VS Code zu öffnen.\n\nDateien erstellen oder ändern\n\nSie können nun neue Dateien erstellen oder bestehende Dateien direkt in VS Code ändern. Zum Beispiel, um eine neue Python-Datei zu erstellen:\n\nKlicken Sie mit der rechten Maustaste im Explorer-Panel (linke Seitenleiste) und wählen Sie Neue Datei.\nNennen Sie die Datei script.py und fügen Sie etwas Python-Code hinzu. Speichern Sie Ihre Änderungen.\n\n\nÄnderungen in GitHub Desktop anzeigen\n\nNachdem Sie Änderungen in VS Code vorgenommen haben, wechseln Sie zurück zu GitHub Desktop. Sie sehen die Änderungen in der linken Seitenleiste.\n\nÄnderungen abrufen\n\nStellen Sie zunächst sicher, dass keine Änderungen im Remote-Repository hello-github vorliegen, die Sie nicht lokal haben. Sie können sie abrufen, indem Sie auf die Schaltfläche Fetch origin klicken und dann Pull, um Ihr lokales Repository mit den neuesten Änderungen zu aktualisieren.\n\nÄnderungen stagen\n\nStagen bedeutet, auszuwählen, welche Änderungen Sie in Ihren nächsten Schnappschuss (Commit) des Repositorys aufnehmen möchten.\nIn GitHub Desktop sehen Sie eine Liste der geänderten Dateien. Um Änderungen zu stagen:\n\nAktivieren Sie die Kontrollkästchen neben den Dateien, die Sie in Ihren Commit aufnehmen möchten.\nWenn Sie alle Änderungen auf einmal stagen möchten, können Sie auf die Schaltfläche Stage All klicken.\n\n\nÄnderungen committen\n\nCommitten bedeutet, Ihre gestagten Änderungen mit einer beschreibenden Nachricht zu speichern, die erklärt, was Sie getan haben. Diese Nachricht hilft Ihnen und anderen zu verstehen, welche Änderungen vorgenommen wurden und warum.\nSchreiben Sie eine kurze, aber beschreibende Commit-Nachricht in das Feld Zusammenfassung. Zum Beispiel: “Füge initiales Python-Skript hinzu”.\nKlicken Sie auf Commit to main, um die Änderungen in Ihrem lokalen Repository zu speichern.\n\nÄnderungen pushen\n\nNach dem Committen der Änderungen klicken Sie auf die Schaltfläche Push origin oben, um Ihre Änderungen in das Remote-Repository hello-github auf GitHub hochzuladen.",
+    "crumbs": [
+      "GitHub",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>GitHub-Repositories</span>"
+    ]
+  },
+  {
+    "objectID": "github/github-repo.html#tipps",
+    "href": "github/github-repo.html#tipps",
+    "title": "23  GitHub-Repositories",
+    "section": "23.4 Tipps",
+    "text": "23.4 Tipps\n\nOft committen: Machen Sie kleine, häufige Commits mit klaren Nachrichten. Dies erleichtert das Verfolgen von Änderungen und das Zurücksetzen, falls erforderlich.\nREADME: Eine gut dokumentierte README-Datei ist entscheidend. Sie sollte einen Überblick über das Projekt, Installations- und Nutzungshinweise sowie weitere relevante Informationen bieten.",
+    "crumbs": [
+      "GitHub",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>GitHub-Repositories</span>"
+    ]
+  },
+  {
+    "objectID": "github/github-organization.html",
+    "href": "github/github-organization.html",
+    "title": "24  GitHub-Organisation",
+    "section": "",
+    "text": "24.1 Erstellen einer Organisation\nSchritt-für-Schritt-Anleitung:",
+    "crumbs": [
+      "GitHub",
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>GitHub-Organisation</span>"
+    ]
+  },
+  {
+    "objectID": "github/github-organization.html#erstellen-einer-organisation",
+    "href": "github/github-organization.html#erstellen-einer-organisation",
+    "title": "24  GitHub-Organisation",
+    "section": "",
+    "text": "Navigieren Sie zu GitHub: Gehen Sie zu GitHub Organizations.\nKlicken Sie auf ‘Neue Organisation’: Sie werden aufgefordert, einen Plan auszuwählen. Wählen Sie zunächst den kostenlosen Plan.\nFüllen Sie die Organisationsdetails aus: Geben Sie einen eindeutigen Namen für Ihre Organisation und eine E-Mail-Adresse für Benachrichtigungen an.\nLaden Sie Ihr Team ein: Sobald Ihre Organisation erstellt ist, können Sie damit beginnen, Mitglieder einzuladen. Erfahren Sie im nächsten Abschnitt, wie Sie andere Teammitglieder zu einer Organisation einladen.",
+    "crumbs": [
+      "GitHub",
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>GitHub-Organisation</span>"
+    ]
+  },
+  {
+    "objectID": "github/github-organization.html#mitglieder-verwalten",
+    "href": "github/github-organization.html#mitglieder-verwalten",
+    "title": "24  GitHub-Organisation",
+    "section": "24.2 Mitglieder verwalten",
+    "text": "24.2 Mitglieder verwalten\nNach der Erstellung Ihrer Organisation ist die Verwaltung der Mitglieder entscheidend für eine reibungslose Zusammenarbeit.\nMitglieder einladen:\n\nGehen Sie zu Ihrer Organisationsseite: Klicken Sie auf Ihr Profilbild oben rechts, dann auf Ihre Organisationen und wählen Sie Ihre neue Organisation aus.\nNavigieren Sie zum Tab ‘Personen’: Klicken Sie auf ‘Mitglied einladen’ und geben Sie den Benutzernamen oder die E-Mail-Adresse der Person ein, die Sie einladen möchten.\nRollen und Berechtigungen festlegen: Weisen Sie Rollen wie Eigentümer, Mitglied oder Abrechnungsmanager zu, um Zugriffsebenen zu steuern.\n\nErfahren Sie mehr über das Verwalten von Mitgliedern und Teams in Ihrer Organisation.",
+    "crumbs": [
+      "GitHub",
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>GitHub-Organisation</span>"
+    ]
+  },
+  {
+    "objectID": "github/github-projects.html",
+    "href": "github/github-projects.html",
+    "title": "25  GitHub-Projekte",
+    "section": "",
+    "text": "25.1 Ein GitHub-Projekt erstellen\nSchritt-für-Schritt-Anleitung:",
+    "crumbs": [
+      "GitHub",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>GitHub-Projekte</span>"
+    ]
+  },
+  {
+    "objectID": "github/github-projects.html#ein-github-projekt-erstellen",
+    "href": "github/github-projects.html#ein-github-projekt-erstellen",
+    "title": "25  GitHub-Projekte",
+    "section": "",
+    "text": "Navigieren Sie zu Ihrem Repository oder Ihrer Organisation: Gehen Sie zu dem Repository oder der Organisation, in dem/der Sie ein Projekt erstellen möchten.\nZugriff auf den Tab ‘Projects’: Klicken Sie auf der Hauptseite Ihres Repositorys oder Ihrer Organisation auf den Tab ‘Projects’.\nKlicken Sie auf ‘New Project’: Klicken Sie auf die Schaltfläche ‘New project’, um ein neues Projekt zu erstellen.\nRichten Sie Ihr Projekt ein:\n\nName: Geben Sie Ihrem Projekt einen aussagekräftigen Namen.\nBeschreibung: Fügen Sie eine Beschreibung hinzu, um den Zweck des Projekts zu erklären.\nVorlage: Wählen Sie eine Vorlage, falls verfügbar, oder beginnen Sie mit einem leeren Projekt.",
+    "crumbs": [
+      "GitHub",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>GitHub-Projekte</span>"
+    ]
+  },
+  {
+    "objectID": "github/github-projects.html#projektboards-verwalten",
+    "href": "github/github-projects.html#projektboards-verwalten",
+    "title": "25  GitHub-Projekte",
+    "section": "25.2 Projektboards verwalten",
+    "text": "25.2 Projektboards verwalten\nSobald Ihr Projekt erstellt ist, können Sie beginnen, es durch Hinzufügen von Spalten und Karten zu verwalten.\n\n25.2.1 Spalten hinzufügen\nSpalten helfen, Aufgaben in Kategorien wie ‘To Do’, ‘In Progress’ und ‘Done’ zu organisieren.\n\nKlicken Sie auf ‘Add column’: Klicken Sie auf die Schaltfläche ‘Add column’ auf Ihrem Projektboard.\nBenennen Sie Ihre Spalte: Geben Sie der Spalte einen Namen, z.B. ‘To Do’.\nWiederholen Sie dies für zusätzliche Spalten: Erstellen Sie nach Bedarf zusätzliche Spalten für Ihren Workflow.\n\n\n\n25.2.2 Karten hinzufügen\nKarten repräsentieren Aufgaben und können Issues, Pull Requests oder Notizen sein.\n\nEin Issue oder einen Pull Request hinzufügen: Ziehen Sie ein vorhandenes Issue oder einen Pull Request von der Seitenleiste in eine Spalte.\nEine Notiz erstellen: Klicken Sie in einer Spalte auf ‘Add a note’, um eine benutzerdefinierte Aufgabe oder Notiz zu erstellen.",
+    "crumbs": [
+      "GitHub",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>GitHub-Projekte</span>"
+    ]
+  },
+  {
+    "objectID": "github/github-projects.html#best-practices-für-die-verwendung-von-github-projects",
+    "href": "github/github-projects.html#best-practices-für-die-verwendung-von-github-projects",
+    "title": "25  GitHub-Projekte",
+    "section": "25.3 Best Practices für die Verwendung von GitHub Projects",
+    "text": "25.3 Best Practices für die Verwendung von GitHub Projects\n\n25.3.1 Arbeit organisieren\n\nVerwenden Sie klare Spaltennamen: Nutzen Sie intuitive Namen für Spalten, die die Phasen des Workflows widerspiegeln.\nPriorisieren Sie Aufgaben: Ziehen Sie Karten, um Aufgaben innerhalb einer Spalte zu priorisieren.\n\n\n\n25.3.2 Zusammenarbeit\n\nKarten Teammitgliedern zuweisen: Weisen Sie Issues oder Pull Requests Teammitgliedern zu, um die Zuständigkeit zu klären.\nVerwenden Sie Labels: Wenden Sie Labels auf Karten an, um zusätzliche Kategorisierungen und Filterungen zu ermöglichen.\n\n\n\n25.3.3 Fortschritt verfolgen\n\nRegelmäßige Updates: Aktualisieren Sie den Status der Karten regelmäßig, um den aktuellen Fortschritt widerzuspiegeln.\nAbgeschlossene Karten schließen: Verschieben Sie abgeschlossene Aufgaben in die Spalte ‘Done’ und schließen Sie die entsprechenden Issues oder Pull Requests.",
+    "crumbs": [
+      "GitHub",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>GitHub-Projekte</span>"
+    ]
+  },
+  {
+    "objectID": "github/github-projects.html#erweiterte-funktionen",
+    "href": "github/github-projects.html#erweiterte-funktionen",
+    "title": "25  GitHub-Projekte",
+    "section": "25.4 Erweiterte Funktionen",
+    "text": "25.4 Erweiterte Funktionen\n\n25.4.1 Automatisierung\nGitHub Projects ermöglicht die Automatisierung von Workflows mit Auslösern, die Karten basierend auf bestimmten Aktionen wie dem Schließen eines Issues oder dem Mergen eines Pull Requests in andere Spalten verschieben.\n\n\n25.4.2 Integrationen\nIntegrieren Sie GitHub Projects mit anderen Tools und Diensten mithilfe von GitHub Actions, Webhooks oder Drittanbieterdiensten, um Ihr Projektmanagement zu verbessern.",
+    "crumbs": [
+      "GitHub",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>GitHub-Projekte</span>"
+    ]
+  }
+]

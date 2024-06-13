@@ -1,5 +1,0 @@
----
-title: "Classic Jupyter Notebook"
-number-sections: true
----
-

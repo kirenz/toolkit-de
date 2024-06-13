@@ -1,9 +1,0 @@
-# Welcome {.unnumbered}
-
-Welcome to your first step into the fascinating world of data science and artificial intelligence (AI). Whether you're a student, professional transitioning careers, or a curious data enthusiast, this book is designed to guide you through the essential environments and tools that will form the backbone of your data science journey.
-
-In the pages that follow, we'll explore how to set up and effectively use various platforms and tools, from the basics of command-line operations to the complexities of virtual Python environments. The focus is on giving you hands-on, practical knowledge that you can apply immediately, whether you're working on personal projects or aiming for professional development.
-
-This book is structured to be accessible and informative, ensuring that even readers with no prior technical background can comfortably navigate through the content. We will start with foundational skills like setting up Python and mastering Markdown for documenting your projects, then gradually move towards more advanced topics like integrating SQL databases and using GitHub for version control.
-
-Every chapter includes step-by-step guides, tips to enhance your learning, and common pitfalls to avoid. By the end of this book, you will have a solid understanding of the tools and environments that empower data scientists and AI practitioners across the globe.
