@@ -1,11 +1,11 @@
 # Projektumgebung
 
-Das Organisieren Ihrer Dateien ist entscheidend für Effizienz und Zugänglichkeit in Datenwissenschafts- und Softwareentwicklungsprojekten. Zunächst erstellen wir einen Ordner namens `toolkit-lab` auf Ihrem Rechner und legen Unterverzeichnisse `code` und `data` an, um Ihr Projekt strukturiert zu halten.
+Das Organisieren Ihrer Dateien ist entscheidend für die Effizienz und Zugänglichkeit Ihrer Projekte. Zunächst erstellen wir daher einen Ordner namens `toolkit-lab` auf Ihrem Rechner und legen die Unterverzeichnisse `code` und `data` an, um Ihr Projekt strukturiert zu halten.
 
 Anstatt eine grafische Benutzeroberfläche (GUI) wie den Windows-Explorer oder den macOS Finder zu verwenden, werden wir die Befehlszeilenschnittstelle (CLI) nutzen, um dies zu erreichen.
 
 :::{.callout-note appearance="minimal"}
-Die Befehlszeile mag auf den ersten Blick einschüchternd wirken, aber sie eröffnet eine neue Ebene der Interaktion mit Ihrem Computer. Wenn Sie sich daran gewöhnt haben, werden Sie feststellen, dass viele Aufgaben effizienter erledigt werden können als mit einer GUI.
+Die Befehlszeile eröffnet eine neue Ebene der Interaktion mit Ihrem Computer. Wenn Sie sich daran gewöhnt haben, werden Sie feststellen, dass viele Aufgaben effizienter erledigt werden können als mit einer GUI.
 :::
 
 Die CLI, auch bekannt als cmd, Eingabeaufforderung, Konsole oder Terminal, ist ein leistungsstarkes Werkzeug zum Einrichten Ihrer Arbeitsumgebung. Sie arbeitet über ein Programm namens *Shell*, das eine direkte Kommunikation mit dem Betriebssystem über textbasierte Eingaben ermöglicht.
