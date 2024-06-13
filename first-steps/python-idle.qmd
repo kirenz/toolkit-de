@@ -36,7 +36,7 @@ Als nächstes erstellen und führen wir ein einfaches Python-Skript aus:
 
 Modifizieren Sie nun Ihr Skript mit verschiedenen Nachrichten. Sie können auch `help(print)` oder `help()` in die IDLE-Shell eingeben, um die umfangreiche Hilfedokumentation von Python zu erkunden und andere Funktionen kennenzulernen.
 
-## Was kommt als nächstes?
+## Nächste Schritte
 
 Python IDLE bietet eine Einführung in die Programmierung mit Python und eine einfache Oberfläche für die Codeentwicklung und -ausführung. In einem der folgenden Abschnitte werden wir fortschrittlichere IDEs wie Visual Studio Code erkunden, die größere Projekte mit zusätzlichen Funktionen unterstützen.
 
