@@ -5,7 +5,7 @@ Anaconda bietet eine umfassende Plattform für datenbezogene Projekte, indem es 
 ## Installer herunterladen
 
 1. Gehen Sie zur [Anaconda-Download-Seite](https://www.anaconda.com/download/success).
-2. Wählen Sie Ihr Betriebssystem aus (für macOS wählen Sie den entsprechenden grafischen Installer - wenn Ihr Gerät einen [Apple-Chip](https://support.apple.com/en-us/116943) hat, wählen Sie M1).
+2. Wählen Sie Ihr Betriebssystem aus (für macOS wählen Sie den entsprechenden grafischen Installer - wenn Ihr Gerät einen [Apple-Chip](https://support.apple.com/en-us/116943) hat, wählen Sie die passende Ausführung - Apple Silicon. Andernfalls den Intel chip).
 3. Laden Sie den Installer herunter. Achten Sie darauf, den grafischen Installer herunterzuladen.
 
 ## Installationsanleitung
@@ -18,7 +18,7 @@ Anaconda bietet eine umfassende Plattform für datenbezogene Projekte, indem es 
 4. Wählen Sie den Installationstyp:
    - "Nur für mich" (empfohlen) oder "Alle Benutzer".
 5. Wählen Sie den Zielordner für die Installation.
-6. Wichtiger Schritt: **Aktivieren Sie "Anaconda zu meiner PATH-Umgebungsvariablen hinzufügen"** (optional, aber empfohlen).
+6. Wichtiger Schritt: **Aktivieren Sie "Anaconda zu meiner PATH-Umgebungsvariablen hinzufügen"** (empfohlen).
 7. Aktivieren Sie "Anaconda als meine Standard-Python-Version registrieren" (empfohlen).
 8. Klicken Sie auf "Installieren" und warten Sie, bis die Installation abgeschlossen ist.
 9. Klicken Sie auf "Weiter" und dann auf "Fertig stellen", um die Installation abzuschließen.
@@ -61,4 +61,4 @@ Um zu bestätigen, dass Anaconda erfolgreich installiert wurde:
    ```
 2. Folgen Sie den Anweisungen, um die Aktualisierung abzuschließen.
 
-Mit der Installation von Anaconda sind Sie bereit, Umgebungen zu erstellen, Pakete zu verwalten und mit Daten zu arbeiten. Der nächste Schritt wäre, Ihre erste Anaconda-Umgebung einzurichten.
+Mit der Installation von Anaconda sind Sie bereit, Umgebungen zu erstellen, Pakete zu verwalten und mit Daten zu arbeiten. 
