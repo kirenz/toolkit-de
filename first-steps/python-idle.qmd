@@ -31,7 +31,7 @@ Als nächstes erstellen und führen wir ein einfaches Python-Skript aus:
    print("Hallo, Python!")
    ```
 
-3. **Speichern Sie Ihr Skript**: Speichern Sie die Datei über `Datei` > `Speichern unter...` und benennen Sie sie `hello.py`. Idealerweise speichern Sie sie in Ihrem Verzeichnis `code` innerhalb Ihres `toolkit-labs`-Ordners (siehe dazu die Erklärung zur [Ordnerstruktur](command-line-folders.qmd)).
+3. **Speichern Sie Ihr Skript**: Speichern Sie die Datei über `Datei` > `Speichern unter...` und benennen Sie sie `hello.py`. Idealerweise speichern Sie sie in Ihrem Verzeichnis `code` innerhalb Ihres `toolkit-labs`-Ordners (siehe dazu die Erklärung zur [Ordnerstruktur](project-environment.qmd)).
 4. **Führen Sie Ihr Skript aus**: Drücken Sie `F5` oder gehen Sie zu `Ausführen` > `Modul ausführen`, um Ihr Skript auszuführen. Die Ausgabe `Hallo, Python!` sollte in der IDLE-Shell erscheinen.
 
 Modifizieren Sie nun Ihr Skript mit verschiedenen Nachrichten. Sie können auch `help(print)` oder `help()` in die IDLE-Shell eingeben, um die umfangreiche Hilfedokumentation von Python zu erkunden und andere Funktionen kennenzulernen.
