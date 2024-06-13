@@ -1,78 +1,78 @@
 # SQL & Python
 
-This tutorial will guide you through the process of transferring data from a pandas DataFrame to a PostgreSQL database. It's a valuable skill for handling data-driven projects in Python, allowing you to store and manage your data effectively.
+Dieses Tutorial führt Sie durch den Prozess des Übertragens von Daten aus einem pandas DataFrame in eine PostgreSQL-Datenbank. Es ist eine wertvolle Fähigkeit für datengetriebene Projekte in Python, die es Ihnen ermöglicht, Ihre Daten effektiv zu speichern und zu verwalten.
 
-Before you start, ensure you have [PostgreSQL installed](sql-postgresql.qmd) and running on your machine. 
+Stellen Sie sicher, dass [PostgreSQL installiert](sql-postgresql.qmd) und auf Ihrem Rechner ausgeführt wird, bevor Sie beginnen.
 
-## Python Environment
+## Python-Umgebung
 
-First, set up an isolated Python environment using Anaconda:
+Richten Sie zuerst eine isolierte Python-Umgebung mit Anaconda ein:
 
-1. Create a new environment (if you need more detailed explanations, review this chapter about the [creation of environments](../python/python-environment-basics.qmd)):
+1. Erstellen Sie eine neue Umgebung (wenn Sie detailliertere Erklärungen benötigen, lesen Sie dieses Kapitel über die [Erstellung von Umgebungen](../python/python-environment-basics.qmd)):
 
 ```bash
 conda create -n postgres python=3.11 pip
 ```
 
-2. Activate the environment:
+2. Aktivieren Sie die Umgebung:
 
 ```bash
 conda activate postgres
 ```
 
-3. Install necessary packages: We will need `psycopg2-binary` for PostgreSQL connectivity, `sqlalchemy` for SQL operations, and `pandas` for data manipulation.
+3. Installieren Sie die notwendigen Pakete: Wir benötigen `psycopg2-binary` für die PostgreSQL-Konnektivität, `sqlalchemy` für SQL-Operationen und `pandas` für die Datenmanipulation.
 
 ```bash
 pip install psycopg2-binary sqlalchemy ipykernel jupyter pandas
 ```
 
-## Database Connection
+## Datenbankverbindung
 
-To interact with your PostgreSQL database from Python, set up a connection using SQLAlchemy:
+Um von Python aus mit Ihrer PostgreSQL-Datenbank zu interagieren, richten Sie eine Verbindung mit SQLAlchemy ein:
 
-1. Start PostgreSQL: Ensure your PostgreSQL instance is running.
+1. Starten Sie PostgreSQL: Stellen Sie sicher, dass Ihre PostgreSQL-Instanz läuft.
 
-2. Import libraries and create an engine: The engine is your gateway to the database. Replace placeholders with your actual database credentials.
+2. Importieren Sie die Bibliotheken und erstellen Sie eine Engine: Die Engine ist Ihr Zugang zur Datenbank. Ersetzen Sie Platzhalter durch Ihre tatsächlichen Datenbank-Anmeldedaten.
 
 ```python
 import sqlalchemy as sa
 
-# Replace placeholders with your database credentials
+# Ersetzen Sie die Platzhalter durch Ihre Datenbank-Anmeldedaten
 engine = sa.create_engine('postgresql://your_username:your_password@localhost:your_port/your_database')
 ```
 
-Here's what you need to replace:
+Hier müssen Sie Folgendes ersetzen:
 
-- `your_username`: Typically `postgres`
-- `your_password`: Your database password
-- `your_port`: Commonly `5432`
-- `your_database`: Default is `postgres` (you can also use db_data)
+- `your_username`: Typischerweise `postgres`
+- `your_password`: Ihr Datenbank-Passwort
+- `your_port`: Üblicherweise `5432`
+- `your_database`: Standardmäßig `postgres` (Sie können auch db_data verwenden)
 
-   For more details on configuring the engine, see the [SQLAlchemy documentation](https://docs.sqlalchemy.org/en/14/core/engines.html).
+Für weitere Details zur Konfiguration der Engine, siehe die [SQLAlchemy-Dokumentation](https://docs.sqlalchemy.org/en/14/core/engines.html).
 
-## Writing Data to PostgreSQL
+## Daten in PostgreSQL schreiben
 
-With the connection set up, let's transfer data from a pandas DataFrame to PostgreSQL:
+Mit der eingerichteten Verbindung übertragen wir nun Daten von einem pandas DataFrame nach PostgreSQL:
 
-1. Load data into DataFrame:
+1. Laden Sie die Daten in einen DataFrame:
 ```python
 import pandas as pd
 
-# Load data from a CSV file
+# Laden der Daten aus einer CSV-Datei
 df = pd.read_csv("https://raw.githubusercontent.com/kirenz/datasets/master/gapminder.csv")
 ```
 
-2. Write DataFrame to PostgreSQL:
-   Using the `to_sql` method, write the data to a new table named `gapminder`.
+2. Schreiben Sie den DataFrame nach PostgreSQL:
+   Verwenden Sie die Methode `to_sql`, um die Daten in eine neue Tabelle namens `gapminder` zu schreiben.
 
 ```python
 df.to_sql('gapminder', engine, if_exists='replace')
 ```
 
-This should output: 704.
+Dies sollte ausgeben: 704.
 
-3. Verify the table in the database:
-   Query the database to confirm that the table exists.
+3. Überprüfen Sie die Tabelle in der Datenbank:
+   Führen Sie eine Abfrage in der Datenbank aus, um zu bestätigen, dass die Tabelle existiert.
 
 ```python
 with engine.connect() as connection:
@@ -81,11 +81,11 @@ with engine.connect() as connection:
            print(table[0])
 ```
 
-This should output: gapminder
+Dies sollte ausgeben: gapminder
 
 
-4. Optional: Remove the table:
-   If you need to delete the table from the database:
+4. Optional: Entfernen Sie die Tabelle:
+   Wenn Sie die Tabelle aus der Datenbank löschen müssen:
 
 ```python
 sql = sa.text("DROP TABLE IF EXISTS gapminder")
@@ -95,4 +95,4 @@ with engine.connect() as connection:
 ```
 
 
-Next, take a look at the table using [PgAdmin4](sql-postgresql.qmd).
+Werfen Sie als Nächstes einen Blick auf die Tabelle mit [PgAdmin4](sql-postgresql.qmd).
