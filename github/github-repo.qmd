@@ -8,7 +8,7 @@ Mit GitHub-Repositories können Sie Ihr Projekt mit wichtigen Dateien wie einer 
 
 1. **Anmelden bei GitHub**
     - Öffnen Sie [GitHub](https://github.com) in Ihrem Webbrowser.
-    - Melden Sie sich bei Ihrem GitHub-Konto an. Wenn Sie noch kein Konto haben, müssen Sie eines erstellen (siehe [GitHub Setup](github/github-setup.qmd)).
+    - Melden Sie sich bei Ihrem GitHub-Konto an. Wenn Sie noch kein Konto haben, müssen Sie eines erstellen (siehe [GitHub Setup](github-setup.qmd)).
 
 2. **Navigieren Sie zu Ihrem Dashboard**
     - Nach dem Anmelden gelangen Sie zu Ihrem GitHub-Dashboard. Hier können Sie Ihre bestehenden Repositories, die letzten Aktivitäten und mehr sehen.
