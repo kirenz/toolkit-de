@@ -23,7 +23,7 @@ Bevor Sie mit dem Programmieren in Python beginnen, stellen wir sicher, dass Sie
    ```
 
 3. Speichern Sie das Notebook:
-   - Speichern Sie Ihr Notebook im `code` Ordner (siehe unsere [Ordnerstruktur](../first-steps/command-line.qmd) Erklärung) mit einem aussagekräftigen Namen (z.B. `python-basics.ipynb`).
+   - Speichern Sie Ihr Notebook im `code` Ordner (siehe unsere [Ordnerstruktur](../first-steps/project-environment.qmd) Erklärung) mit einem aussagekräftigen Namen (z.B. `python-basics.ipynb`).
 
 ## Jupyter Notebook herunterladen
 
