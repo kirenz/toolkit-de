@@ -1,4 +1,4 @@
-# Python-Installation
+# Python Installation
 
 Python kann direkt von der offiziellen Python-Website oder über einen Paketmanager wie Anaconda installiert werden, der zusätzliche Tools bietet und das Paketmanagement vereinfacht.
 
@@ -9,7 +9,7 @@ Dieses Kapitel konzentriert sich auf die Installation von Python direkt von der 
 ### Windows-Nutzer
 
 1. **Installationsprogramm herunterladen**: Navigieren Sie zur [Python-Website](https://www.python.org/downloads/) und laden Sie die neueste Version für Ihre Windows-Version herunter (normalerweise Windows-Installer 64-Bit).
-2. **Installationsprogramm ausführen**: Klicken Sie mit der rechten Maustaste auf das heruntergeladene Installationsprogramm und wählen Sie "Als Administrator ausführen". Stellen Sie sicher, dass Sie das Kästchen "Add Python 3.x to PATH" am unteren Rand des Installationsfensters markieren, um sicherzustellen, dass Python zu den Umgebungsvariablen Ihres Systems hinzugefügt wird.
+2. **Installationsprogramm ausführen**: Klicken Sie mit der rechten Maustaste auf das heruntergeladene Installationsprogramm und wählen Sie "Als Administrator ausführen". Stellen Sie sicher, dass Sie das Kästchen "Add Python 3.x to PATH" am unteren Rand des Installationsfensters markieren, um sicherzustellen, dass Python zu den Umgebungsvariablen Ihres Systems hinzugefügt wird (Dies ist entscheidend, damit Python von jedem Verzeichnis im System aus über die Kommandozeile aufgerufen werden kann. Ohne diese Einstellung müssten Sie den vollständigen Pfad zur Python-Installation angeben, um Python auszuführen, was unpraktisch und fehleranfällig ist).
 3. **Anpassung der Installation (optional)**: Sie können die Installation anpassen, indem Sie auf "Customize installation" klicken. Dies ermöglicht es Ihnen, spezifische Funktionen wie Dokumentation, pip, Tests usw. auszuwählen.
 4. **Installation starten**: Klicken Sie auf "Install Now", um den Installationsvorgang zu starten.
 
