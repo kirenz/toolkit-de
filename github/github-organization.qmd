@@ -1,39 +1,38 @@
-# GitHub Organization
+# GitHub-Organisation
 
-Organizations are shared accounts where businesses and open-source projects can collaborate across many projects at once, with sophisticated security and administrative features.
+Organisationen sind gemeinsame Konten, bei denen Unternehmen und Open-Source-Projekte über viele Projekte hinweg zusammenarbeiten können, mit ausgeklügelten Sicherheits- und Verwaltungsfunktionen.
 
-Your team can collaborate on GitHub by using an organization account, which serves as a container for your shared work and gives the work a unique name and brand. Each person that uses GitHub always signs into a personal account, and multiple personal accounts can collaborate on shared projects by joining the same organization account.
+Ihr Team kann auf GitHub mithilfe eines Organisationskontos zusammenarbeiten, das als Container für Ihre gemeinsame Arbeit dient und der Arbeit einen einzigartigen Namen und eine Marke verleiht. Jede Person, die GitHub nutzt, meldet sich immer mit einem persönlichen Konto an, und mehrere persönliche Konten können an gemeinsamen Projekten zusammenarbeiten, indem sie demselben Organisationskonto beitreten.
 
-## Creating a Organization
+## Erstellen einer Organisation
 
-Step-by-step guide:
+Schritt-für-Schritt-Anleitung:
 
-1. **Navigate to GitHub**:
-    Go to [GitHub Organizations](https://github.com/organizations/plan).
+1. **Navigieren Sie zu GitHub**:
+    Gehen Sie zu [GitHub Organizations](https://github.com/organizations/plan).
 
-2. **Click on 'New organization'**:
-    You will be prompted to select a plan. Choose the free plan for starters.
+2. **Klicken Sie auf 'Neue Organisation'**:
+    Sie werden aufgefordert, einen Plan auszuwählen. Wählen Sie zunächst den kostenlosen Plan.
 
-3. **Fill in the Organization details**:
-    Provide a unique name for your organization and an email address for notifications.
+3. **Füllen Sie die Organisationsdetails aus**:
+    Geben Sie einen eindeutigen Namen für Ihre Organisation und eine E-Mail-Adresse für Benachrichtigungen an.
 
-4. **Invite your team**:
-    Once your organization is created, you can start inviting members to join. Learn how to invite other team members to an Organization in the next section.
+4. **Laden Sie Ihr Team ein**:
+    Sobald Ihre Organisation erstellt ist, können Sie damit beginnen, Mitglieder einzuladen. Erfahren Sie im nächsten Abschnitt, wie Sie andere Teammitglieder zu einer Organisation einladen.
 
-## Managing Members
+## Mitglieder verwalten
 
-After creating your organization, managing members is crucial to ensure smooth collaboration.
+Nach der Erstellung Ihrer Organisation ist die Verwaltung der Mitglieder entscheidend für eine reibungslose Zusammenarbeit.
 
-Inviting members:
+Mitglieder einladen:
 
-1. **Go to your Organization page**:
-    Click on your profile picture in the top right, then your organizations, and select your new organization.
+1. **Gehen Sie zu Ihrer Organisationsseite**:
+    Klicken Sie auf Ihr Profilbild oben rechts, dann auf Ihre Organisationen und wählen Sie Ihre neue Organisation aus.
 
-2. **Navigate to 'People' tab**:
-    Click on 'Invite member' and enter the username or email of the person you want to invite.
+2. **Navigieren Sie zum Tab 'Personen'**:
+    Klicken Sie auf 'Mitglied einladen' und geben Sie den Benutzernamen oder die E-Mail-Adresse der Person ein, die Sie einladen möchten.
 
-3. **Set roles and permissions**:
-    Assign roles such as Owner, Member, or Billing manager to control access levels.
+3. **Rollen und Berechtigungen festlegen**:
+    Weisen Sie Rollen wie Eigentümer, Mitglied oder Abrechnungsmanager zu, um Zugriffsebenen zu steuern.
 
-Learn more about [managing members and teams](https://docs.github.com/en/organizations/managing-membership-in-your-organization) in your organization.
-
+Erfahren Sie mehr über das [Verwalten von Mitgliedern und Teams](https://docs.github.com/en/organizations/managing-membership-in-your-organization) in Ihrer Organisation.
