@@ -1,15 +1,14 @@
 # Git
 
-Git ist vergleichbar mit der Funktion "Änderungen nachverfolgen" in Microsoft Word, aber wesentlich leistungsfähiger und speziell auf die Nachverfolgung von Codeänderungen zugeschnitten. Es ermöglicht Teams, gleichzeitig zu arbeiten, ohne sich gegenseitig zu überschreiben, dank seiner Fähigkeiten zur Handhabung mehrerer Projektversionen.
+Git ist ein verteiltes Versionskontrollsystem, das von Linus Torvalds, dem Schöpfer von Linux, entwickelt wurde. Es ermöglicht, den Verlauf von Änderungen im Code zu verfolgen, verschiedene Entwicklungszweige zu erstellen und zusammenzuführen sowie frühere Versionen von Projekten wiederherzustellen. 
 
-Die wichtigsten Funktionen von Git umfassen:
+:::{.callout-note}
+Git ist vergleichbar mit der Funktion "Änderungen nachverfolgen" in Microsoft Word, aber wesentlich leistungsfähiger und speziell auf die Nachverfolgung von Codeänderungen zugeschnitten. 
+:::
 
-- **Speicherkapazität**: Ermöglicht die effiziente Speicherung und Verwaltung von Projektrevisionen.
-- **Zusammenarbeit**: Ermöglicht es mehreren Personen, gleichzeitig am selben Projekt zu arbeiten.
-- **Lokale und Remote-Repositories**: Verwendet sowohl lokale Repositories auf einzelnen Geräten als auch Remote-Repositories auf Servern zur gemeinsamen Nutzung und Zusammenarbeit.
+Die Verwendung von Git erleichtert die Zusammenarbeit an Projekten, da es mehreren Personen ermöglicht, gleichzeitig an unterschiedlichen Teilen des Codes zu arbeiten, ohne dass ihre Änderungen in Konflikt geraten.
 
-Entdecken Sie ["Learn Git Branching"](https://learngitbranching.js.org/), um Git online visuell und interaktiv zu lernen.
-
+Besuchen Sie die Seite ["Learn Git Branching"](https://learngitbranching.js.org/), um die Verwendung von Git interaktiv zu lernen.
 
 ## Git-Version
 
@@ -21,12 +20,11 @@ git --version
 
 Wenn Sie eine Versionsnummer sehen, ist Git bereits installiert. Wenn nicht, folgen Sie den unten stehenden Installationsanweisungen.
 
-
 ## Installation
 
 - **Für Mac-Benutzer**:
   - **Option 1**: Installieren Sie [XCode](https://apps.apple.com/us/app/xcode/id497799835?mt=12), das Git enthält.
-  - **Option 2**: Alternativ installieren Sie [Homebrew](https://brew.sh/) (Homebrew ist ein freies und quelloffenes Paketverwaltungssystem, das die Installation von Software auf macOS und Linux vereinfacht.) und verwenden Sie diesen Befehl:
+  - **Option 2**: Alternativ installieren Sie [Homebrew](https://brew.sh/) (Homebrew ist ein Paketverwaltungssystem, das die Installation von Software auf macOS vereinfacht.) und verwenden Sie diesen Befehl:
     ```bash
     brew install git
     ```
