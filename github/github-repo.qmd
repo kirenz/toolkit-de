@@ -1,55 +1,64 @@
 # GitHub-Repositories
 
-Ein Repository (oft abgekürzt als "Repo") auf GitHub ist wie ein Speicherplatz, in dem alle Dateien und deren Versionsverlauf für Ihr Projekt aufbewahrt werden. Repositories werden verwendet, um Ihre Arbeit zu organisieren, mit anderen zusammenzuarbeiten, Änderungen an Ihrem Code zu verfolgen und verschiedene Versionen Ihres Projekts zu verwalten.
+Ein Repository (oft abgekürzt als "Repo") auf GitHub ist wie ein Speicherplatz, in dem alle Dateien und deren Versionsverlauf für Ihr Projekt gespeichert werden. 
 
-## Erstellen
+Repositories werden verwendet, um Ihre Arbeit zu organisieren, mit anderen zusammenzuarbeiten, Änderungen an Ihrem Code zu verfolgen und verschiedene Versionen Ihres Projekts zu verwalten.
 
-Mit GitHub-Repositories können Sie Ihr Projekt mit wichtigen Dateien wie einer README, `.gitignore` und einer Lizenz initialisieren, um Struktur und Klarheit zu schaffen. Hier ist eine detaillierte Anleitung, wie Sie dies tun können, einschließlich Erklärungen zu den einzelnen Komponenten.
+## Erstellung
+
+Mit GitHub-Repositories können Sie Ihr Projekt mit wichtigen Dateien wie einer README, `.gitignore` und einer Lizenz initialisieren, um Struktur und Klarheit zu schaffen. 
+
+Hier ist eine Anleitung, wie Sie dies tun können, einschließlich Erklärungen zu den einzelnen Komponenten.
 
 1. **Anmelden bei GitHub**
     - Öffnen Sie [GitHub](https://github.com) in Ihrem Webbrowser.
     - Melden Sie sich bei Ihrem GitHub-Konto an. Wenn Sie noch kein Konto haben, müssen Sie eines erstellen (siehe [GitHub Setup](github-setup.qmd)).
 
 2. **Navigieren Sie zu Ihrem Dashboard**
-    - Nach dem Anmelden gelangen Sie zu Ihrem GitHub-Dashboard. Hier können Sie Ihre bestehenden Repositories, die letzten Aktivitäten und mehr sehen.
+    - Nach dem Anmelden gelangen Sie zu Ihrem GitHub-Dashboard. 
 
 3. **Ein neues Repository starten**
-    - Klicken Sie auf das **+**-Symbol in der oberen rechten Ecke der Seite und wählen Sie **Neues Repository** aus dem Dropdown-Menü.
+    - Klicken Sie auf das **+**-Symbol in der oberen rechten Ecke der Seite und wählen Sie **New Repository** aus dem Dropdown-Menü.
 
 4. **Repository-Details ausfüllen**
-    - **Repository-Name**: Wählen Sie den Namen `hello-github` für Ihr Repository. Namen sollten immer prägnant und beschreibend sein.
-    - **Beschreibung**: (Optional) Fügen Sie eine kurze Beschreibung Ihres Projekts hinzu. Dies hilft anderen zu verstehen, worum es bei Ihrem Projekt geht.
-    - **Öffentlich oder Privat**: Wählen Sie, ob Ihr Repository öffentlich (für jeden sichtbar) oder privat (nur für Sie und Personen, denen Sie explizit Zugriff gewähren) sein soll. Wählen Sie **öffentlich**.
+    - **Repository template**: Wir verwenden "*No template*".
+    - **Repository name**: Geben Sie dem Repository den Namen `hello-github` (Namen sollten immer prägnant und beschreibend sein).
+    - **Description**: *Wir verzichten hier auf eine Beschreibung*. Dieses Feld hilft anderen zu verstehen, worum es bei Ihrem Projekt geht.
+    - **Public or Private**: Wählen Sie *Public*. Hier können Sie entscheiden, ob Ihr Repository öffentlich (für jeden sichtbar) oder privat (nur für Sie und Personen, denen Sie explizit Zugriff gewähren) sein soll.
 
-5. **Das Repository initialisieren**
-    - **README**: Eine README-Datei ist eine Markdown-Datei (README.md), die als Frontseite Ihres Projekts dient. Es ist ein Ort, um Ihr Projekt vorzustellen und zu erklären. Aktivieren Sie das Kontrollkästchen **Initialize this repository with a README**, um diese Datei automatisch zu erstellen.
-    - **.gitignore**: Eine `.gitignore`-Datei gibt an, welche Dateien und Verzeichnisse von Git ignoriert werden sollen. Dies ist nützlich, um Dateien auszuschließen, die nicht verfolgt werden müssen, wie temporäre Dateien und Dateien mit geheimen API-Informationen. Sie können eine Vorlage auswählen, die zu Ihrer Projektsprache oder -umgebung passt (wählen Sie Python).
-    - **Lizenz**: Eine Lizenzdatei legt die Bedingungen fest, unter denen Ihr Projekt verwendet, modifiziert und von anderen geteilt werden kann. Durch die Auswahl einer Lizenz stellen Sie sicher, dass andere Ihr Projekt legal verwenden und dazu beitragen können. GitHub bietet verschiedene Lizenzen zur Auswahl an, wie z.B. MIT, Apache, GPL usw. Wir verwenden die MIT-Lizenz, die es jedem erlaubt, Ihren Code zu verwenden, solange der ursprüngliche Urheberrechts- und Lizenzhinweis enthalten ist.
+5. **Das Repository initialisieren (Initialize this repository with:)**
+    - **Add a README file**: *Aktivieren Sie das Kontrollkästchen* "Initialize this repository with a README", um diese Datei automatisch zu erstellen. Eine README-Datei ist eine Markdown-Datei (README.md), die als Startseite Ihres Projekts dient. 
+    - **.gitignore**: wählen Sie die *Python*-Vorlage. Eine `.gitignore`-Datei gibt an, welche Dateien und Verzeichnisse von Git ignoriert werden sollen. Dies ist nützlich, um Dateien auszuschließen, deren Änderungen nicht verfolgt werden sollen. 
+    - **Lizenz**: Wählen Sie *MIT License*. Eine Lizenzdatei legt die Bedingungen fest, unter denen Ihr Projekt verwendet, modifiziert und von anderen geteilt werden kann. Durch die Auswahl einer Lizenz stellen Sie sicher, dass andere Ihr Projekt legal verwenden und dazu beitragen können. GitHub bietet verschiedene Lizenzen zur Auswahl an, wie z.B. MIT, Apache, GPL usw. Wir verwenden die MIT-Lizenz, die es jedem erlaubt, Ihren Code zu verwenden, solange der ursprüngliche Urheberrechts- und Lizenzhinweis enthalten ist. 
 
-6. **Repository erstellen**
-    - Klicken Sie auf die Schaltfläche **Create repository**, um Ihr neues Repository auf GitHub zu erstellen.
+6. **Create repository**
+    - Klicken Sie auf die grüne Schaltfläche *Create repository*, um Ihr neues Repository auf GitHub zu erstellen.
 
 ## Klonen
 
-Das Klonen eines Repositorys bedeutet, eine lokale Kopie eines Remote-Repositorys auf Ihrem Computer zu erstellen. Dies ermöglicht es Ihnen, offline an den Projektdateien zu arbeiten, Änderungen vorzunehmen und diese Änderungen dann mit dem Remote-Repository auf GitHub zu synchronisieren.
+Das Klonen eines Repositorys bedeutet, eine lokale Kopie eines Remote-Repositorys auf Ihrem Computer zu erstellen.
 
-1. **Öffnen Sie GitHub und finden Sie Ihr Repository**
+Dies ermöglicht es Ihnen, offline an den Projektdateien zu arbeiten, Änderungen vorzunehmen und diese Änderungen dann mit dem Remote-Repository auf GitHub zu synchronisieren.
+
+1. **Öffnen Sie GitHub**
     - Öffnen Sie [GitHub](https://github.com) in Ihrem Webbrowser und navigieren Sie zu Ihrem `hello-github`-Repository.
-    - Auf der Hauptseite des `hello-github`-Repositorys klicken Sie auf die grüne Schaltfläche **Code**.
+    - Auf der Hauptseite des `hello-github`-Repositorys klicken Sie auf die grüne Schaltfläche *Code*.
 
 2. **Klon-Option auswählen**
-    - Im Dropdown-Menü klicken Sie auf **Open with GitHub Desktop**. Dies wird GitHub Desktop dazu veranlassen, sich zu öffnen und den Klonvorgang zu starten.
+    - Im Dropdown-Menü klicken Sie auf *Open with GitHub Desktop*. Dies wird GitHub Desktop dazu veranlassen, sich zu öffnen und den Klonvorgang zu starten.
     - Wenn Ihr Browser Sie dazu auffordert, GitHub Desktop zu öffnen, bestätigen Sie die Aktion.
 
-3. **GitHub Desktop öffnet sich und der Klonvorgang beginnt**
+3. **Klonen mit GitHub Desktop**
     - GitHub Desktop öffnet sich und zeigt ein Dialogfeld an, um den lokalen Pfad für das Repository zu bestätigen.
-    - Wählen Sie das Verzeichnis `toolkit-lab` auf Ihrem lokalen Rechner, in dem Sie das `hello-github`-Repository klonen möchten. Dies erstellt einen Ordner namens `hello-github` im Verzeichnis `toolkit-lab`.
-    - **Wichtig**: Stellen Sie sicher, dass das Verzeichnis nicht mit Cloud-Speicherdiensten wie iCloud, OneDrive oder Google Drive synchronisiert wird. Die Synchronisierung mit diesen Diensten kann zu Konflikten und Problemen mit Ihrem Git-Repository führen.
+    - Wählen Sie das Verzeichnis `toolkit-lab` auf Ihrem lokalen Rechner, in dem wir das `hello-github`-Repository klonen möchten. Dies erstellt einen Ordner namens `hello-github` im Verzeichnis `toolkit-lab`.
 
-4. **Klonen**
+    :::{.callout-note collapse="true" title="Hinweis zum Klonen von Verzeichnissen"}
+    Stellen Sie immer sicher, dass das Verzeichnis nicht mit Cloud-Speicherdiensten wie iCloud, OneDrive oder Google Drive synchronisiert wird. Die Synchronisierung mit diesen Diensten kann zu Konflikten und Problemen mit Ihrem Git-Repository führen.
+    :::
+
     - Klicken Sie auf **Klonen**, um das `hello-github`-Repository auf Ihren lokalen Rechner herunterzuladen.
 
-5. **Öffnen Sie das Repository in GitHub Desktop**
+4. **Öffnen Sie das Repository in GitHub Desktop**
     - Nach Abschluss des Klonvorgangs öffnet GitHub Desktop automatisch das `hello-github`-Repository.
 
 ## Commit
