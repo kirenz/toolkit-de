@@ -1,18 +1,18 @@
 # PostgreSQL
 
-*PostgreSQL*, oft ausgesprochen als "Post-gress-Q-L", ist ein fortschrittliches, quelloffenes relationales Datenbankmanagementsystem (RDBMS), das für seine Robustheit und seine Fähigkeiten zur Verwaltung komplexer Datenoperationen bekannt ist.
+*PostgreSQL*, oft ausgesprochen als "Post-gress-Q-L", ist ein  relationales Datenbankmanagementsystem (RDBMS), das für seine Robustheit und seine Fähigkeiten zur Verwaltung komplexer Datenoperationen bekannt ist.
 
 ## Installation
 
-1. Laden Sie PostgreSQL von [hier](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads) herunter und installieren Sie es.
+1. Laden Sie PostgreSQL von [dieser Website](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads) herunter und installieren Sie es.
 2. Wählen Sie das Standard-Installationsverzeichnis aus.
 3. Wählen Sie diese Komponenten aus:
     - PostgreSQL Server
     - pgAdmin4
     - Kommandozeilenwerkzeuge
 4. Wählen Sie das Standardverzeichnis für die Dateninstallation.
-5. Passwort: Setzen Sie ein einprägsames Passwort; es ist kritisch, da es später nicht leicht geändert werden kann.
-6. Port: Akzeptieren Sie den standardmäßig vorgeschlagenen Port (normalerweise 5432).
+5. Passwort: Setzen Sie ein Passwort
+6. Port: Akzeptieren Sie den standardmäßig vorgeschlagenen Port (üblicherweise 5432).
 7. Gebietsschema: Setzen Sie es auf das Standardgebietsschema.
 
 ## PgAdmin4
@@ -28,7 +28,7 @@ Um Datenbanken zu verwalten, verbinden Sie sich zunächst mit einer PostgreSQL-I
 3. Geben Sie für den Namen `local-connection` ein.
 4. Wechseln Sie zum Reiter `Connection`:
     - Hostname/Adresse: Geben Sie `localhost` ein.
-    - Stellen Sie sicher, dass der Port derselbe ist wie bei der Installation.
+    - Stellen Sie sicher, dass der Port derselbe ist wie bei der Installation (üblicherweise 5432).
     - Passwort: Geben Sie das während der Installation gesetzte Passwort ein und wählen Sie "Save password".
 5. Bestätigen Sie die Einrichtung durch Klicken auf `Save`.
 6. Dies wird die `local-connection` in der linken Seitenleiste anzeigen.
@@ -48,7 +48,7 @@ Bei der Installation von PostgreSQL wird automatisch eine Standarddatenbank name
 
 ### Eine Tabelle erstellen
 
-Erstellen Sie eine Tabelle, um Daten über Marketingkampagnen zu speichern.
+Erstellen Sie eine Tabelle, um Daten zu Marketingkampagnen zu speichern.
 
 :::{.callout-note collapse="true" title="Tabellendefinition"}
 Spalten in der Marketingkampagnen-Tabelle:
@@ -104,8 +104,9 @@ INSERT INTO campaigns (name, start_date, end_date, budget, channel) VALUES
 Dieser SQL-Befehl fügt Daten in die `campaigns` Tabelle ein. Jede Zeile von Werten entspricht einer anderen Marketingkampagne:
 
 - **Erste Zeile**: Fügt eine Kampagne namens "Winter Sale" ein, die vom 1. bis 31. Dezember 2023 läuft, mit einem Budget von 5000 Dollar und dem Kanal "Email".
-- **Zweite Zeile**: Fügt "Summer Festival" ein, eine kürzere Kampagne vom 1. bis 15. Juni 2023, mit einem höheren Budget von 10000 Dollar und nutzt "Soziale Medien".
+- **Zweite Zeile**: Fügt "Summer Festival" ein, eine kürzere Kampagne vom 1. bis 15. Juni 2023, mit einem höheren Budget von 10000 Dollar und nutzt "Social Media".
 - **Dritte Zeile**: Fügt die "Back to School"-Kampagne vom 1. bis 20. August 2023 hinzu, mit einem Budget von 7500 Dollar, vermarktet durch "TV".
+
 Jeder Satz von Werten ist in Klammern eingeschlossen und durch Kommata getrennt, um verschiedene Kampagnen zu unterscheiden.
 :::
 
@@ -126,7 +127,7 @@ FROM campaigns;
 Dieser SQL-Befehl ruft alle Spalten aus allen Zeilen der `campaigns` Tabelle ab. Er ist nützlich, um alle Daten zu sehen, die in die Tabelle eingegeben wurden, um sicherzustellen, dass die Einträge korrekt sind, und um weitere Datenanalysen oder Berichte zu erleichtern.
 :::
 
-Dies sollte folgendes ausgeben:
+Dies sollte folgendes Ergebnis ausgeben:
 
 |id |name                         |start_date|end_date                                     |budget  |channel     |
 |---|-----------------------------|----------|---------------------------------------------|--------|------------|
