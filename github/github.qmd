@@ -8,4 +8,8 @@
 
 <br>
 
-Es ist wie ein kollaborativer Arbeitsbereich, in dem mehrere Entwickler ihre Projekte speichern, verwalten und Änderungen verfolgen können, ähnlich wie eine Online-Bibliothek digitaler Projekte.
+GitHub ist wie ein kollaborativer Arbeitsbereich, in dem mehrere Entwickler ihre Projekte speichern, verwalten und Änderungen verfolgen können, ähnlich wie eine Online-Bibliothek digitaler Projekte.
+
+Es ist eine Plattform, die es Entwicklern ermöglicht, gemeinsam an Softwareprojekten zu arbeiten, indem sie Git, ein verteiltes Versionskontrollsystem, nutzen. Mit GitHub können mehrere Entwickler gleichzeitig an verschiedenen Teilen eines Projekts arbeiten, Änderungen verfolgen und den Projektverlauf verwalten. Dies macht die Zusammenarbeit effizienter und die Verwaltung von Codeänderungen transparenter.
+
+Zusätzlich zu den grundlegenden Funktionen der Versionskontrolle bietet GitHub zahlreiche Tools und Features, die die Softwareentwicklung erleichtern. GitHub ist daher nicht nur ein Speicherort für Code, sondern ein umfassendes Werkzeug für die kollaborative Entwicklung und das Projektmanagement.
