@@ -1,5 +1,13 @@
 # SQL
 
-*SQL* (Structured Query Language, ausgesprochen "S-Q-L" oder manchmal "Sequel") ist eine standardisierte Datenbanksprache, die speziell für die Verwaltung und Manipulation relationaler Datenbanken verwendet wird. Mit SQL können Benutzer Daten erstellen, abrufen, aktualisieren und löschen sowie Datenbankstrukturen entwerfen und verwalten.
+Structured Query Language (SQL, ausgesprochen "S-Q-L" oder manchmal "Sequel") ist eine der grundlegendsten Fähigkeiten, die Sie im Umgang mit Daten beherrschen sollten. Es ermöglicht Ihnen, effizient mit Datenbanken zu interagieren, Daten abzurufen und zu manipulieren sowie komplexe Abfragen und Analysen durchzuführen. 
 
-Ein Relationales Datenbankmanagementsystem (RDBMS) ist ein Datenbanksystem, in dem Daten in strukturierten Tabellen mit Zeilen und Spalten gespeichert werden, was komplexe Abfragen und Transaktionen erleichtert. Beliebte Open-Source-Beispiele sind *MySQL* und *PostgreSQL*.
+Im nächsten Abschnitt werden wir uns mit der Einrichtung und Verwendung von MySQL und PostgreSQL befassen. Diese relationalen Datenbankmanagementsysteme (RDBMS) sind weit verbreitet und bieten robuste und leistungsstarke Lösungen für die Datenverwaltung.
+
+Wir werden die folgenden Themen behandeln:
+
+- Installation und Konfiguration von MySQL und PostgreSQL
+- Grundlegende Befehle und Abfragen in MySQL und PostgreSQL
+- Integration dieser Systeme mit Python
+
+Diese Kenntnisse werden Ihnen helfen, Ihre Daten effizient zu verwalten und komplexe Datenanalysen durchzuführen, indem Sie die Stärken dieser RDBMS in Kombination mit der Flexibilität und Leistungsfähigkeit von Python nutzen.
