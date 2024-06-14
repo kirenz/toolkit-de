@@ -10,7 +10,7 @@ Wir beginnen mit der Erstellung einer Funktion zur Berechnung des Quadrats einer
 
 ### Funktion definieren
 
-```python
+```{python}
 def square(num):
     """Berechnen und zurückgeben des Quadrats einer Zahl."""
     return num * num
@@ -41,7 +41,7 @@ Erläuterungen:
 
 Beispiel für die Verwendung der Funktion:
 
-```python
+```{python}
 # Aufruf der Funktion square mit dem Argument 4
 result = square(4)
 ```
@@ -152,7 +152,7 @@ Lambda-Funktionen sind einfache Funktionen, die in einer einzigen Zeile definier
 
 Hier ist ein einfaches Beispiel für eine Lambda-Funktion, die zwei Zahlen addiert:
 
-```python
+```{python}
 # Lambda-Funktion zum Addieren zweier Zahlen
 add = lambda x, y: x + y
 ```
@@ -162,14 +162,14 @@ add = lambda x, y: x + y
 
 Nachdem wir die Lambda-Funktion definiert haben, können wir sie wie jede andere Funktion aufrufen. Hier ist ein Beispiel, wie man die oben definierte `add` Lambda-Funktion verwendet:
 
-```python
+```{python}
 # Aufrufen der Lambda-Funktion mit den Argumenten 3 und 5
 result = add(3, 5)
 ```
 
 Um das Ergebnis zu sehen, können wir es ausdrucken:
 
-```python
+```{python}
 # Ausgabe des Ergebnisses
 print(f"Summe von 3 und 5: {result}")
 ```
@@ -185,7 +185,7 @@ Lambda-Funktionen sind besonders nützlich, wenn Sie eine Funktion nur vorüberg
 Hier sind zwei Beispiele, in denen Lambda-Funktionen nützlich sein können:
 
 1. **In Kombination mit map()**:
-   ```python
+   ```{python}
    # Lambda-Funktion zum Quadrieren von Zahlen
    numbers = [1, 2, 3, 4]
    squared_numbers = list(map(lambda x: x ** 2, numbers))
@@ -193,7 +193,7 @@ Hier sind zwei Beispiele, in denen Lambda-Funktionen nützlich sein können:
    ```
 
 2. **In Kombination mit filter()**:
-   ```python
+   ```{python}
    # Lambda-Funktion zum Filtern von geraden Zahlen
    numbers = [1, 2, 3, 4, 5, 6]
    even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
