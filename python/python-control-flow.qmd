@@ -2,19 +2,18 @@
 
 - [Jupyter Notebook herunterladen](../code/python-control-flow.ipynb){download="python-control-flow.ipynb"}
 
-Kontrollstrukturen sind essenziell in der Python-Programmierung, da sie es Ihrem Code ermöglichen, Entscheidungen zu treffen, Aufgaben zu wiederholen und die Ausführungsreihenfolge zu steuern.
 
-Wir werden drei grundlegende Strukturen behandeln:
+Kontrollstrukturen sind grundlegend in der Python-Programmierung. Wir werden drei wichtige Strukturen kennenlernen:
 
-1. Bedingte Anweisungen: Entscheidungen basierend auf Bedingungen treffen.
-2. Schleifen: Einen Codeblock mehrfach wiederholen.
-3. Ausnahmen: Fehler elegant behandeln.
+1. **Bedingte Anweisungen**: Treffen von Entscheidungen basierend auf bestimmten Bedingungen.
+2. **Schleifen**: Wiederholtes Ausführen eines Codeblocks.
+3. **Ausnahmen**: Umgang mit Fehlern und deren Behandlung.
 
 ## Bedingte Anweisungen
 
-Bedingte Anweisungen helfen dabei, bestimmten Code nur auszuführen, wenn bestimmte Bedingungen erfüllt sind.
+Bedingte Anweisungen helfen dabei, Code nur auszuführen, wenn bestimmte Bedingungen erfüllt sind.
 
-### Grundlegende If-Else-Anweisung
+Grundlegende If-Else-Anweisung:
 
 ```{python}
 # Bestimmen, ob eine Zahl positiv, negativ oder null ist
@@ -34,7 +33,7 @@ Erläuterung:
 - `elif` (else if) prüft, ob `number` kleiner als 0 ist und gibt aus, dass sie negativ ist.
 - `else` fängt alle anderen Bedingungen ab (hier null) und gibt entsprechend aus.
 
-### Verschachtelte Bedingungsanweisungen
+Verschachtelte Bedingungsanweisungen:
 
 ```{python}
 # Ein Alter in verschiedene Lebensphasen einordnen
@@ -64,7 +63,7 @@ Schleifen wiederholen einen Codeblock mehrere Male.
 
 For-Schleifen iterieren über einen Bereich oder eine Sammlung.
 
-Schleife über einen Bereich
+Schleife über einen Bereich ("range"):
 
 ```{python}
 # Zahlen von 1 bis 5 ausgeben
@@ -77,7 +76,7 @@ Erläuterung:
 - `range(1, 6)` erzeugt Zahlen von 1 bis 5 (6 ist exklusiv).
 - Jede Zahl wird mit einem f-String ausgegeben.
 
-Schleife über eine Liste
+Schleife über eine Liste:
 
 ```{python}
 # Liste von Farben
@@ -97,7 +96,7 @@ Erläuterung:
 
 Eine While-Schleife wird so lange ausgeführt, wie eine Bedingung `True` ist.
 
-Beispiel: Einfache While-Schleife
+Einfache While-Schleife:
 
 ```{python}
 # Countdown von 5 bis 1
@@ -121,14 +120,19 @@ Erläuterung:
 
 Die Dekrement-Operation (`count -= 1`) stellt sicher, dass die Schleife nicht unendlich läuft und hilft, eine Countdown-Sequenz zu erstellen.
 
+Klar, ich kann das für Python-Anfänger einfacher und verständlicher formulieren.
+
 ## Ausnahmen
 
-Ausnahmen behandeln Fehler, die während der Ausführung auftreten, ohne das Programm zum Absturz zu bringen.
+Ausnahmen helfen uns, Fehler zu behandeln, die während der Programmausführung auftreten, ohne dass das Programm abstürzt.
 
-Beispiel: Umgang mit Division durch Null
+Hier ist ein einfaches Beispiel, wie man mit einer Division durch Null umgehen kann:
+
+1. **try-Block**: Hier kommt der Code, der möglicherweise fehlerhaft ist.
+2. **except-Block**: Hier kommt der Code, der ausgeführt wird, wenn ein Fehler auftritt.
 
 ```{python}
-# Versuch der Division durch Null und Fehlerbehandlung
+# Versuch, eine Zahl durch Null zu teilen, und Fehlerbehandlung
 numerator = 10
 denominator = 0
 
@@ -136,10 +140,11 @@ try:
     result = numerator / denominator
     print(f"Ergebnis: {result}")
 except ZeroDivisionError:
-    print("Fehler: Division durch Null ist nicht möglich.")
+    print("Fehler: Division durch Null ist nicht erlaubt.")
 ```
 
-Erläuterung:
 
-- Der `try`-Block enthält Code, der möglicherweise einen Fehler auslöst (hier die Division durch Null).
-- `except ZeroDivisionError` fängt diesen spezifischen Fehler ab und gibt eine entsprechende Nachricht aus.
+- Der `try`-Block enthält den Code, der einen Fehler verursachen könnte (hier die Division durch Null).
+- `except ZeroDivisionError` fängt diesen speziellen Fehler ab und gibt eine Fehlermeldung aus.
+
+Durch die Verwendung von Ausnahmen können wir sicherstellen, dass unser Programm auch bei Fehlern weiterläuft und sinnvolle Fehlermeldungen liefert.
