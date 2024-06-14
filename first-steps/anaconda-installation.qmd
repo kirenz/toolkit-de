@@ -28,7 +28,7 @@ Anaconda bietet eine umfassende Plattform für datenbezogene Projekte, indem es 
 1. Suchen Sie die heruntergeladene `.pkg`-Datei und doppelklicken Sie darauf, um die Installation zu starten.
 2. Folgen Sie den Anweisungen, um die Installation abzuschließen:
    - Lesen und akzeptieren Sie die Lizenzvereinbarung.
-   - Wählen Sie das Ziellaufwerk für die Installation.
+   - Wählen Sie das Ziellaufwerk für die Installation aus (untere Option auswählen und zu Ihrem Ihrem Home-Verzeichnis navigieren - in meinem Fall `/Users/jankirenz`, da mein Benutzerkonto jankirenz heißt).
    - Klicken Sie auf "Installieren".
 3. Sobald die Installation abgeschlossen ist, schließen Sie den Installer.
 
