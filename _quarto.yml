@@ -1,6 +1,8 @@
 project:
   type: book
 
+lang: de
+
 execute:
   freeze: auto
 
