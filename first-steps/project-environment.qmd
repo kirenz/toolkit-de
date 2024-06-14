@@ -41,7 +41,13 @@ Diese Befehle richten ein Hauptverzeichnis `toolkit-lab` mit zwei Unterverzeichn
 Folgen Sie diesen Schritten, um das Hauptverzeichnis und die Unterverzeichnisse mit dem Terminal in macOS oder Linux zu erstellen:
 
 1. Um das Terminal in macOS zu öffnen, können Sie die Spotlight-Suche (`Cmd + Space`) verwenden und "Terminal" eingeben oder über `Programme -> Dienstprogramme -> Terminal` navigieren.
-2. Erstellen Sie einen neuen Ordner namens `toolkit-lab` (kopieren Sie diesen Code und geben Sie ihn in Ihr Terminal ein):
+2. Zuerst verwenden wir den Befehl pwd ("print working directory") und drücken die Eingabetaste, um den vollständigen Pfad des aktuellen Verzeichnisses anzuzeigen. Wenn Sie das Terminal gerade geöffnet haben, sollte das aktuelle Verzeichnis Ihr Home-Verzeichnis sein (in meinem Fall `/Users/jankirenz`, da mein Benutzerkonto jankirenz heißt):
+    
+    ```bash
+    pwd
+    ```
+
+2. Erstellen Sie nun einen neuen Ordner namens `toolkit-lab` in dem Home-Verzeichnis (kopieren Sie diesen Code und geben Sie ihn in Ihr Terminal ein):
 
     ```bash
     mkdir toolkit-lab
