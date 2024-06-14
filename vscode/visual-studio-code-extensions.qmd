@@ -1,12 +1,12 @@
 # Erweiterungen
 
-Erweiterungen verbessern die Funktionalität von Visual Studio Code, indem sie zusätzliche Funktionen, Sprachunterstützung, Themen und mehr bieten.
+Erweiterungen verbessern die Funktionalität von Visual Studio Code, indem sie zusätzliche Funktionalitäten bieten.
 
-Dieser Abschnitt führt Sie durch die Installation von fünf wichtigen Erweiterungen, die für Entwickler besonders vorteilhaft sind: Python, Jupyter, GitHub Copilot, Atom One Dark Theme und VS Code Icons.
+Dieser Abschnitt führt Sie durch die Installation von einigen hilfreichen Erweiterungen.
 
 ## Python-Erweiterung
 
-Die Python-Erweiterung von Microsoft ist für jeden Python-Entwickler, der VS Code verwendet, unerlässlich. Sie bietet umfassende Unterstützung für das Python-Coding, einschließlich IntelliSense (automatische Code-Vervollständigungen), Linting, Debugging und einfacher Navigation durch den Code.
+Die Python-Erweiterung von Microsoft bietet umfassende Unterstützung für das Python-Coding, einschließlich IntelliSense (automatische Code-Vervollständigungen).
 
 So installieren Sie die Erweiterung:
 
@@ -17,7 +17,7 @@ So installieren Sie die Erweiterung:
 
 ## Jupyter-Erweiterung
 
-Die Jupyter-Erweiterung ermöglicht es Ihnen, Jupyter-Notebooks direkt in VS Code zu erstellen, zu bearbeiten und auszuführen. Diese Integration erleichtert Datenwissenschaftsprojekte, indem sie die Code-Ausführung, Visualisierung und Datenmanipulation an einem Ort ermöglicht.
+Die Jupyter-Erweiterung ermöglicht es Ihnen, Jupyter-Notebooks direkt in VS Code zu erstellen, zu bearbeiten und auszuführen. 
 
 So installieren Sie die Erweiterung:
 
@@ -25,18 +25,10 @@ So installieren Sie die Erweiterung:
 2. Suchen Sie nach "Jupyter".
 3. Wählen Sie die von Microsoft bereitgestellte Jupyter-Erweiterung aus und klicken Sie auf "Installieren".
 
-<!-- ## GitHub Copilot
-
-GitHub Copilot ist ein KI-gestütztes Code-Vervollständigungstool, das ganze Zeilen oder Codeblöcke vorschlägt, während Sie tippen. Es ist wie ein Paarprogrammierungspartner, der Ihnen hilft, schneller zu codieren und neue APIs und Sprachen zu lernen.
-
-### So installieren Sie die Erweiterung:
-1. Navigieren Sie zur Ansicht Erweiterungen in VS Code.
-2. Suchen Sie nach "GitHub Copilot".
-3. Klicken Sie auf "Installieren", um den KI-Assistenten von GitHub zu nutzen. -->
 
 ## Atom One Dark Theme
 
-Für diejenigen, die eine dunklere und komfortablere Entwicklungsumgebung bevorzugen, bietet das Atom One Dark Theme eine elegante Benutzeroberfläche, die die Augenbelastung bei längeren Codiersitzungen reduziert.
+Für diejenigen, die eine dunkle Entwicklungsumgebung bevorzugen, bietet das Atom One Dark Theme eine attraktiv gestaltete Benutzeroberfläche.
 
 So installieren Sie die Erweiterung:
 
@@ -46,16 +38,21 @@ So installieren Sie die Erweiterung:
 
 ## VS Code Icons
 
-Die VS Code Icons-Erweiterung verbessert die visuelle Organisation Ihrer Projektdateien, indem sie für jeden Dateityp unverwechselbare, erkennbare Symbole hinzufügt, was die Navigation durch komplexe Projekte erleichtert.
+Die VS Code Icons-Erweiterung verbessert die visuelle Organisation Ihrer Projektdateien, indem sie für jeden Dateityp passende Symbole hinzufügt.
 
 So installieren Sie die Erweiterung:
 
 1. Öffnen Sie die Ansicht Erweiterungen in VS Code.
 2. Geben Sie "VS Code Icons" in die Suchleiste ein.
-3. Klicken Sie auf "Installieren", um Ihre Projektdatei-Navigation zu verbessern.
+3. Klicken Sie auf "Installieren".
 
-:::{.callout-tip}
-Nach der Installation dieser Erweiterungen nehmen Sie sich einen Moment Zeit, um deren Einstellungen zu erkunden und sie an Ihren Arbeitsablauf anzupassen. Sie können beispielsweise spezifische Linter in den Python-Erweiterungseinstellungen aktivieren oder anpassen, wie Jupyter-Notebooks angezeigt werden.
-:::
 
-Mit diesen installierten Erweiterungen wird Ihre Visual Studio Code-Umgebung gut ausgestattet sein, um eine Vielzahl von Entwicklungsaufgaben zu bewältigen.
+
+<!-- ## GitHub Copilot
+
+GitHub Copilot ist ein KI-gestütztes Code-Vervollständigungstool, das ganze Zeilen oder Codeblöcke vorschlägt, während Sie tippen. Es ist wie ein Paarprogrammierungspartner, der Ihnen hilft, schneller zu codieren und neue APIs und Sprachen zu lernen.
+
+### So installieren Sie die Erweiterung:
+1. Navigieren Sie zur Ansicht Erweiterungen in VS Code.
+2. Suchen Sie nach "GitHub Copilot".
+3. Klicken Sie auf "Installieren", um den KI-Assistenten von GitHub zu nutzen. -->
