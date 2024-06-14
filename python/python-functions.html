@@ -168,7 +168,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../first-steps/python-installation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Python-Installation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Python Installation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -365,11 +365,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#einfache-funktion" id="toc-einfache-funktion" class="nav-link active" data-scroll-target="#einfache-funktion"><span class="header-section-number">12.1</span> Einfache Funktion</a></li>
+  <li><a href="#einfache-funktion" id="toc-einfache-funktion" class="nav-link active" data-scroll-target="#einfache-funktion"><span class="header-section-number">12.1</span> Einfache Funktion</a>
+  <ul class="collapse">
+  <li><a href="#funktion-definieren" id="toc-funktion-definieren" class="nav-link" data-scroll-target="#funktion-definieren"><span class="header-section-number">12.1.1</span> Funktion definieren</a></li>
+  <li><a href="#funktion-verwenden" id="toc-funktion-verwenden" class="nav-link" data-scroll-target="#funktion-verwenden"><span class="header-section-number">12.1.2</span> Funktion verwenden</a></li>
+  <li><a href="#ergebnis-anzeigen" id="toc-ergebnis-anzeigen" class="nav-link" data-scroll-target="#ergebnis-anzeigen"><span class="header-section-number">12.1.3</span> Ergebnis anzeigen</a></li>
+  </ul></li>
   <li><a href="#funktion-mit-mehreren-parametern" id="toc-funktion-mit-mehreren-parametern" class="nav-link" data-scroll-target="#funktion-mit-mehreren-parametern"><span class="header-section-number">12.2</span> Funktion mit mehreren Parametern</a></li>
   <li><a href="#standardparameter" id="toc-standardparameter" class="nav-link" data-scroll-target="#standardparameter"><span class="header-section-number">12.3</span> Standardparameter</a></li>
-  <li><a href="#lambda-funktionen" id="toc-lambda-funktionen" class="nav-link" data-scroll-target="#lambda-funktionen"><span class="header-section-number">12.4</span> Lambda-Funktionen</a></li>
-  <li><a href="#lambda-funktionen-mit-dataframes" id="toc-lambda-funktionen-mit-dataframes" class="nav-link" data-scroll-target="#lambda-funktionen-mit-dataframes"><span class="header-section-number">12.5</span> Lambda-Funktionen mit DataFrames</a></li>
+  <li><a href="#lambda-funktionen" id="toc-lambda-funktionen" class="nav-link" data-scroll-target="#lambda-funktionen"><span class="header-section-number">12.4</span> Lambda-Funktionen</a>
+  <ul class="collapse">
+  <li><a href="#beispiel-funktion" id="toc-beispiel-funktion" class="nav-link" data-scroll-target="#beispiel-funktion"><span class="header-section-number">12.4.1</span> Beispiel-Funktion</a></li>
+  <li><a href="#lambda-funktion-mit-map-und-filter" id="toc-lambda-funktion-mit-map-und-filter" class="nav-link" data-scroll-target="#lambda-funktion-mit-map-und-filter"><span class="header-section-number">12.4.2</span> Lambda-Funktion mit map und filter</a></li>
+  <li><a href="#lambda-funktionen-mit-dataframes" id="toc-lambda-funktionen-mit-dataframes" class="nav-link" data-scroll-target="#lambda-funktionen-mit-dataframes"><span class="header-section-number">12.4.3</span> Lambda-Funktionen mit DataFrames</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -401,137 +410,246 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Funktionen helfen Ihnen, modulare, wiederverwendbare Codeblöcke zu schreiben. In diesem Abschnitt wird das Definieren, Aufrufen und Dokumentieren von Funktionen demonstriert.</p>
 <section id="einfache-funktion" class="level2" data-number="12.1">
 <h2 data-number="12.1" class="anchored" data-anchor-id="einfache-funktion"><span class="header-section-number">12.1</span> Einfache Funktion</h2>
-<p>Beginnen wir mit einer einfachen Funktion, die das Quadrat einer Zahl berechnet:</p>
-<div id="cbd9f63e" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Funktion zur Berechnung des Quadrats einer Zahl</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> square(num):</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Berechnen und zurückgeben des Quadrats einer Zahl."""</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> num <span class="op">*</span> num</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Verwendung der Funktion zur Berechnung des Quadrats von 4</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> square(<span class="dv">4</span>)</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Quadrat von 4: </span><span class="sc">{</span>result<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Wir beginnen mit der Erstellung einer Funktion zur Berechnung des Quadrats einer Zahl.</p>
+<section id="funktion-definieren" class="level3" data-number="12.1.1">
+<h3 data-number="12.1.1" class="anchored" data-anchor-id="funktion-definieren"><span class="header-section-number">12.1.1</span> Funktion definieren</h3>
+<div id="4b93c71e" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> square(num):</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Berechnen und zurückgeben des Quadrats einer Zahl."""</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> num <span class="op">*</span> num</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Erläuterungen:</p>
+<ol type="1">
+<li><strong>Funktionsdefinition</strong>:
+<ul>
+<li>Das Schlüsselwort <code>def</code> signalisiert den Beginn einer Funktionsdefinition.</li>
+<li>Der Name der Funktion folgt direkt danach. In diesem Fall ist der Funktionsname <code>square</code>.</li>
+<li>Die Klammern <code>()</code> enthalten die Parameterliste der Funktion. Hier gibt es einen Parameter, <code>num</code>, der eine Zahl repräsentiert, deren Quadrat berechnet werden soll.</li>
+</ul></li>
+<li><strong>Docstring</strong>:
+<ul>
+<li>Ein Docstring ist ein kurzer beschreibender Text, der die Funktion erklärt. Er wird zwischen dreifachen Anführungszeichen <code>"""</code> geschrieben.</li>
+<li>Der Docstring dieser Funktion lautet: <code>"Berechnen und zurückgeben des Quadrats einer Zahl."</code></li>
+<li>Docstrings sind nützlich, um den Zweck der Funktion und ihre Funktionsweise zu dokumentieren. Sie sind besonders hilfreich für andere Programmierer/innen oder für Sie selbst, wenn Sie den Code später wieder verwenden oder ändern möchten.</li>
+</ul></li>
+<li><strong>Berechnung des Quadrats</strong>:
+<ul>
+<li>Die Funktion verwendet die Formel <code>num * num</code>, um das Quadrat der Zahl zu berechnen. Dies bedeutet, dass die Zahl <code>num</code> mit sich selbst multipliziert wird.</li>
+<li>Beispielsweise, wenn <code>num</code> gleich 3 ist, berechnet die Funktion <code>3 * 3</code>, was 9 ergibt.</li>
+</ul></li>
+<li><strong>Rückgabe des Ergebnisses</strong>:
+<ul>
+<li>Das Schlüsselwort <code>return</code> weist die Funktion an, das Ergebnis der Berechnung zurückzugeben.</li>
+<li>In diesem Fall gibt <code>return num * num</code> das berechnete Quadrat der Zahl <code>num</code> zurück.</li>
+<li>Wenn die Funktion aufgerufen wird, wird der zurückgegebene Wert an die Stelle des Funktionsaufrufs übergeben.</li>
+</ul></li>
+</ol>
+</section>
+<section id="funktion-verwenden" class="level3" data-number="12.1.2">
+<h3 data-number="12.1.2" class="anchored" data-anchor-id="funktion-verwenden"><span class="header-section-number">12.1.2</span> Funktion verwenden</h3>
+<p>Beispiel für die Verwendung der Funktion:</p>
+<div id="ef2d3106" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Aufruf der Funktion square mit dem Argument 4</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> square(<span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>Wir rufen die Funktion <code>square</code> mit dem Argument <code>4</code> auf.</li>
+<li>Die Funktion berechnet das Quadrat von 4 und gibt 16 zurück.</li>
+<li>Der zurückgegebene Wert wird in der Variable <code>result</code> gespeichert.</li>
+</ul>
+</section>
+<section id="ergebnis-anzeigen" class="level3" data-number="12.1.3">
+<h3 data-number="12.1.3" class="anchored" data-anchor-id="ergebnis-anzeigen"><span class="header-section-number">12.1.3</span> Ergebnis anzeigen</h3>
+<p>Einfache Ausgabe des Ergebnisses mit Hilfe von <code>print()</code>:</p>
+<div id="3a0771bb" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result)  <span class="co"># Dies wird 16 ausgeben, da 4 * 4 gleich 16 ist</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>16</code></pre>
+</div>
+</div>
+<ul>
+<li>In diesem Code wird der Wert von <code>result</code> mit <code>print</code> ausgegeben, was 16 ist.</li>
+</ul>
+<p>Als Alternative dazu kann eine <code>print</code>-Funktion mit einem <em>f-String</em> verwendet werden. Dies ist eine formatierte Zeichenkette, die mit <code>f</code> vorangestellt ist und das Einfügen von Variablen innerhalb von <code>{}</code> geschweiften Klammern ermöglicht:</p>
+<div id="dadea1dc" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Quadrat von 4: </span><span class="sc">{</span>result<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Quadrat von 4: 16</code></pre>
 </div>
 </div>
-<p>Erläuterung:</p>
-<ul>
-<li><code>def</code> beginnt die Funktionsdefinition, gefolgt vom Funktionsnamen <code>square</code> und einem Parameter <code>num</code>.</li>
-<li>Die Docstring <code>"""</code> beschreibt kurz den Zweck der Funktion.</li>
-<li>Die Funktion berechnet das Quadrat mit der Formel <code>num * num</code>.</li>
-<li>Die <code>return</code>-Anweisung gibt das Ergebnis an die Stelle zurück, an der die Funktion aufgerufen wurde.</li>
-<li>Die <code>print</code>-Funktion verwendet einen f-String, eine formatierte Zeichenkette, die mit <code>f</code> vorangestellt ist und das Einfügen von Variablen innerhalb von <code>{}</code> geschweiften Klammern ermöglicht. Sie ist kürzer und leichter lesbar als die traditionelle Zeichenkettenverkettung.</li>
-</ul>
 <p>Vorteile von f-Strings:</p>
 <ul>
-<li>Sie bieten eine saubere, intuitive Möglichkeit, Variablen in Zeichenketten einzufügen.</li>
-<li>Unterstützung für Formatierungen ist eingebaut (z.B. Dezimalstellen, Auffüllungen).</li>
-<li>Sie vereinfachen die Zeichenketteninterpolation und verbessern die Lesbarkeit.</li>
+<li>Sie bieten eine intuitive Möglichkeit, Variablen in Zeichenketten einzufügen.</li>
+<li>Unterstützung für Formatierungen ist eingebaut (z.B. Runden von Dezimalstellen).</li>
 </ul>
+</section>
 </section>
 <section id="funktion-mit-mehreren-parametern" class="level2" data-number="12.2">
 <h2 data-number="12.2" class="anchored" data-anchor-id="funktion-mit-mehreren-parametern"><span class="header-section-number">12.2</span> Funktion mit mehreren Parametern</h2>
 <p>Funktionen können mehr als einen Parameter akzeptieren. Hier ist eine Funktion, die die Fläche eines Rechtecks berechnet:</p>
-<div id="40eb92a3" class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Funktion zur Berechnung der Fläche eines Rechtecks</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calculate_rectangle_area(length, width):</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Berechnen der Fläche eines Rechtecks anhand seiner Länge und Breite."""</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> length <span class="op">*</span> width</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Verwendung der Funktion mit Beispielwerten</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>length <span class="op">=</span> <span class="dv">10</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>width <span class="op">=</span> <span class="dv">5</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>area <span class="op">=</span> calculate_rectangle_area(length, width)</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Rechteck mit Länge </span><span class="sc">{</span>length<span class="sc">}</span><span class="ss"> und Breite </span><span class="sc">{</span>width<span class="sc">}</span><span class="ss"> hat eine Fläche von </span><span class="sc">{</span>area<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="420e39a4" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Funktion zur Berechnung der Fläche eines Rechtecks</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calculate_rectangle_area(length, width):</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Berechnen der Fläche eines Rechtecks anhand seiner Länge und Breite."""</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> length <span class="op">*</span> width</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Verwendung der Funktion mit Beispielwerten:</p>
+<div id="c4a05524" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>length <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>width <span class="op">=</span> <span class="dv">5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li><code>length</code> und <code>width</code> sind Parameter, die die Funktion zur Berechnung der Fläche des Rechtecks verwendet.</li>
+</ul>
+<p>Funktion verwenden:</p>
+<div id="95dedb57" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>area <span class="op">=</span> calculate_rectangle_area(length, width)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li><code>calculate_rectangle_area</code> wird mit bestimmten Werten aufgerufen.</li>
+</ul>
+<p>Ergebnis anzeigen:</p>
+<div id="4e7fbcd1" class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Rechteck mit Länge </span><span class="sc">{</span>length<span class="sc">}</span><span class="ss"> und Breite </span><span class="sc">{</span>width<span class="sc">}</span><span class="ss"> hat eine Fläche von </span><span class="sc">{</span>area<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Rechteck mit Länge 10 und Breite 5 hat eine Fläche von 50</code></pre>
 </div>
 </div>
-<p>Erläuterung:</p>
 <ul>
-<li><code>length</code> und <code>width</code> sind Parameter, die die Funktion zur Berechnung der Fläche des Rechtecks verwendet.</li>
-<li><code>calculate_rectangle_area</code> wird mit bestimmten Werten aufgerufen.</li>
-<li>Der f-String innerhalb der <code>print</code>-Anweisung liefert eine klare Ausgabe, die sowohl die Eingabewerte als auch das berechnete Ergebnis zeigt.</li>
+<li>Der f-String innerhalb der <code>print</code>-Anweisung liefert eine Ausgabe, die sowohl die Eingabewerte als auch das berechnete Ergebnis zeigt.</li>
 </ul>
 </section>
 <section id="standardparameter" class="level2" data-number="12.3">
 <h2 data-number="12.3" class="anchored" data-anchor-id="standardparameter"><span class="header-section-number">12.3</span> Standardparameter</h2>
 <p>Standardwerte für Parameter werden verwendet, wenn keine Argumente bereitgestellt werden.</p>
-<div id="7b9317d2" class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Funktion mit einem Standardparameterwert</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> greet(name<span class="op">=</span><span class="st">"there"</span>):</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Begrüßen einer Person mit ihrem Namen oder mit 'Hallo zusammen' als Standard."""</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Hallo, </span><span class="sc">{</span>name<span class="sc">}</span><span class="ss">!"</span>)</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Aufruf der Funktion mit einem bestimmten Namen</span></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>greet(<span class="st">"Alice"</span>)</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Aufruf der Funktion ohne Argument (verwendet den Standardwert)</span></span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>greet()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Hallo, Alice!
-Hallo, there!</code></pre>
+<div id="525e4dce" class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Funktion mit einem Standardparameterwert</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> greet(name<span class="op">=</span><span class="st">"zusammen"</span>):</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Begrüßen einer Person mit ihrem Namen oder mit 'Hallo zusammen' als Standard."""</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Hallo </span><span class="sc">{</span>name<span class="sc">}</span><span class="ss">!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
-<p>Erläuterung:</p>
 <ul>
-<li>Der Parameter <code>name="there"</code> liefert einen Standardwert.</li>
-<li>Beim Aufruf von <code>greet("Alice")</code> wird “Hallo, Alice!” ausgegeben.</li>
-<li>Der Aufruf von <code>greet()</code> ohne Argumente verwendet den Standardwert “there”.</li>
+<li>Der Parameter <code>name="zusammen"</code> liefert einen Standardwert.</li>
+</ul>
+<p>Aufruf der Funktion mit einem bestimmten Namen:</p>
+<div id="11b6400f" class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>greet(<span class="st">"Alice"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Hallo Alice!</code></pre>
+</div>
+</div>
+<ul>
+<li>Beim Aufruf von <code>greet("Alice")</code> wird “Hallo Alice!” ausgegeben.</li>
+</ul>
+<p>Aufruf der Funktion ohne Argument (verwendet den Standardwert):</p>
+<div id="1e355f27" class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>greet()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Hallo zusammen!</code></pre>
+</div>
+</div>
+<ul>
+<li>Der Aufruf von <code>greet()</code> ohne Argumente verwendet den Standardwert “zusammen”.</li>
 </ul>
 </section>
 <section id="lambda-funktionen" class="level2" data-number="12.4">
 <h2 data-number="12.4" class="anchored" data-anchor-id="lambda-funktionen"><span class="header-section-number">12.4</span> Lambda-Funktionen</h2>
-<p>Lambda-Funktionen sind kleine, anonyme Funktionen, die nützlich für kurze Operationen oder das Übergeben als Argumente sind. Hier ist ein einfaches Beispiel:</p>
-<div id="651d85b6" class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Lambda-Funktion zum Addieren zweier Zahlen</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>add <span class="op">=</span> <span class="kw">lambda</span> x, y: x <span class="op">+</span> y</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Verwendung der Lambda-Funktion</span></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> add(<span class="dv">3</span>, <span class="dv">5</span>)</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Summe von 3 und 5: </span><span class="sc">{</span>result<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Lambda-Funktionen sind kleine, anonyme Funktionen in Python, die besonders nützlich sind für kurze Operationen oder wenn Funktionen als Argumente an andere Funktionen übergeben werden sollen. Sie sind eine kompakte Art, Funktionen zu schreiben, ohne sie zwingend mit einem Namen zu versehen.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Lambda-Funktionen sind einfache Funktionen, die in einer einzigen Zeile definiert werden können. Sie werden mit dem Schlüsselwort <code>lambda</code> erstellt. Diese Funktionen können beliebig viele Argumente haben, aber nur einen Ausdruck, der ausgewertet und zurückgegeben wird.</p>
+</div>
+</div>
+</div>
+<section id="beispiel-funktion" class="level3" data-number="12.4.1">
+<h3 data-number="12.4.1" class="anchored" data-anchor-id="beispiel-funktion"><span class="header-section-number">12.4.1</span> Beispiel-Funktion</h3>
+<p>Hier ist ein einfaches Beispiel für eine Lambda-Funktion, die zwei Zahlen addiert:</p>
+<div id="f2caaf8c" class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Lambda-Funktion zum Addieren zweier Zahlen</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>add <span class="op">=</span> <span class="kw">lambda</span> x, y: x <span class="op">+</span> y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li><code>lambda x, y:</code> definiert die Lambda-Funktion mit den Argumenten <code>x</code> und <code>y</code>.</li>
+<li>Der Ausdruck <code>x + y</code> wird berechnet und als Ergebnis zurückgegeben.</li>
+</ul>
+<p>Nachdem wir die Lambda-Funktion definiert haben, können wir sie wie jede andere Funktion aufrufen. Hier ist ein Beispiel, wie man die oben definierte <code>add</code> Lambda-Funktion verwendet:</p>
+<div id="ce0c517b" class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Aufrufen der Lambda-Funktion mit den Argumenten 3 und 5</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> add(<span class="dv">3</span>, <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Um das Ergebnis zu sehen, können wir es ausdrucken:</p>
+<div id="2f26c95d" class="cell" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Ausgabe des Ergebnisses</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Summe von 3 und 5: </span><span class="sc">{</span>result<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Summe von 3 und 5: 8</code></pre>
 </div>
 </div>
-<p>Erläuterung:</p>
-<ul>
-<li><code>lambda</code> definiert eine schnelle Funktion in einer einzigen Zeile.</li>
-<li>Der Ausdruck <code>x + y</code> wird berechnet und zurückgegeben.</li>
-<li>Lambda-Funktionen sind nützlich, wenn Sie eine einfache Funktion vorübergehend benötigen.</li>
-</ul>
 </section>
-<section id="lambda-funktionen-mit-dataframes" class="level2" data-number="12.5">
-<h2 data-number="12.5" class="anchored" data-anchor-id="lambda-funktionen-mit-dataframes"><span class="header-section-number">12.5</span> Lambda-Funktionen mit DataFrames</h2>
-<p>Lambda-Funktionen sind besonders nützlich, wenn Sie eine benutzerdefinierte Transformation auf jede Zeile oder Spalte eines DataFrames anwenden möchten.</p>
+<section id="lambda-funktion-mit-map-und-filter" class="level3" data-number="12.4.2">
+<h3 data-number="12.4.2" class="anchored" data-anchor-id="lambda-funktion-mit-map-und-filter"><span class="header-section-number">12.4.2</span> Lambda-Funktion mit map und filter</h3>
+<p>Lambda-Funktionen sind besonders nützlich, wenn Sie eine Funktion nur vorübergehend benötigen, zum Beispiel als Argument für eine andere Funktion wie <code>map()</code> und <code>filter()</code>.</p>
+<ul>
+<li><p>Die <code>map</code>-Funktion wird verwendet, um eine gegebene Funktion auf alle Elemente einer Liste oder einer anderen iterierbaren Sequenz anzuwenden und ein neues Objekt mit den Ergebnissen zurückzugeben.</p></li>
+<li><p>Die <code>filter</code>-Funktion wird verwendet, um Elemente aus einer iterierbaren Sequenz herauszufiltern, die eine bestimmte Bedingung erfüllen. Die Bedingung wird durch eine Funktion bestimmt, die entweder True oder False zurückgibt.</p></li>
+</ul>
+<p>Hier sind zwei Beispiele, in denen Lambda-Funktionen nützlich sein können:</p>
+<ol type="1">
+<li><p><strong>In Kombination mit map()</strong>:</p>
+<div id="63d7ca35" class="cell" data-execution_count="15">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Lambda-Funktion zum Quadrieren von Zahlen</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>numbers <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>]</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>squared_numbers <span class="op">=</span> <span class="bu">list</span>(<span class="bu">map</span>(<span class="kw">lambda</span> x: x <span class="op">**</span> <span class="dv">2</span>, numbers))</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(squared_numbers)  <span class="co"># Ausgabe: [1, 4, 9, 16]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1, 4, 9, 16]</code></pre>
+</div>
+</div></li>
+<li><p><strong>In Kombination mit filter()</strong>:</p>
+<div id="0f581261" class="cell" data-execution_count="16">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Lambda-Funktion zum Filtern von geraden Zahlen</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>numbers <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>]</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>even_numbers <span class="op">=</span> <span class="bu">list</span>(<span class="bu">filter</span>(<span class="kw">lambda</span> x: x <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span>, numbers))</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(even_numbers)  <span class="co"># Ausgabe: [2, 4, 6]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[2, 4, 6]</code></pre>
+</div>
+</div></li>
+</ol>
+<p>Lambda-Funktionen sind also eine flexible und effiziente Möglichkeit, kleine Funktionen schnell und unkompliziert zu definieren.</p>
+</section>
+<section id="lambda-funktionen-mit-dataframes" class="level3" data-number="12.4.3">
+<h3 data-number="12.4.3" class="anchored" data-anchor-id="lambda-funktionen-mit-dataframes"><span class="header-section-number">12.4.3</span> Lambda-Funktionen mit DataFrames</h3>
+<p>Lambda-Funktionen sind auch dann hilfreich, wenn Sie eine benutzerdefinierte Transformation auf jede Zeile oder Spalte eines DataFrames anwenden möchten.</p>
 <p>Zum Beispiel, wenn Sie Zahlen basierend auf bestimmten Bedingungen klassifizieren möchten, kann eine Lambda-Funktion helfen.</p>
 <p>Beispielcode:</p>
-<div id="ca287561" class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Erstellen eines DataFrame und Verwendung einer Lambda-Funktion für eine benutzerdefinierte Klassifizierung</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Beispiel-DataFrame</span></span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> {<span class="st">"Numbers"</span>: [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">15</span>, <span class="dv">20</span>, <span class="dv">25</span>]}</span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(data)</span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Definieren einer benutzerdefinierten Funktion zur Klassifizierung von Zahlen</span></span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> classify_number(num):</span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> num <span class="op">&lt;</span> <span class="dv">10</span>:</span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"Einstellig"</span></span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> num <span class="op">&lt;</span> <span class="dv">20</span>:</span>
-<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"Teenager"</span></span>
-<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
-<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"Zwanzig oder mehr"</span></span>
-<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Anwenden der benutzerdefinierten Funktion mit einer Lambda-Funktion zur Erstellung einer neuen Spalte</span></span>
-<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"Klassifizierung"</span>] <span class="op">=</span> df[<span class="st">"Numbers"</span>].<span class="bu">apply</span>(<span class="kw">lambda</span> x: classify_number(x))</span>
-<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Anzeigen des DataFrame</span></span>
-<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="5">
+<div id="bfdb683f" class="cell" data-execution_count="17">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Erstellen eines DataFrame und Verwendung einer Lambda-Funktion für eine benutzerdefinierte Klassifizierung</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Beispiel-DataFrame</span></span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> {<span class="st">"Numbers"</span>: [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">15</span>, <span class="dv">20</span>, <span class="dv">25</span>]}</span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(data)</span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Definieren einer benutzerdefinierten Funktion zur Klassifizierung von Zahlen</span></span>
+<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> classify_number(num):</span>
+<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> num <span class="op">&lt;</span> <span class="dv">10</span>:</span>
+<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"Einstellig"</span></span>
+<span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> num <span class="op">&lt;</span> <span class="dv">20</span>:</span>
+<span id="cb25-13"><a href="#cb25-13" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"Teenager"</span></span>
+<span id="cb25-14"><a href="#cb25-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb25-15"><a href="#cb25-15" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"Zwanzig oder mehr"</span></span>
+<span id="cb25-16"><a href="#cb25-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-17"><a href="#cb25-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Anwenden der benutzerdefinierten Funktion mit einer Lambda-Funktion zur Erstellung einer neuen Spalte</span></span>
+<span id="cb25-18"><a href="#cb25-18" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"Klassifizierung"</span>] <span class="op">=</span> df[<span class="st">"Numbers"</span>].<span class="bu">apply</span>(<span class="kw">lambda</span> x: classify_number(x))</span>
+<span id="cb25-19"><a href="#cb25-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-20"><a href="#cb25-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Anzeigen des DataFrame</span></span>
+<span id="cb25-21"><a href="#cb25-21" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="17">
 <div>
 
 
@@ -605,6 +723,7 @@ Hallo, there!</code></pre>
 <p>In diesem Fall ist die Verwendung einer Lambda-Funktion mit <code>apply</code> vorteilhaft, um den DataFrame schnell zu transformieren, basierend auf einer Funktion, die sonst das Durchlaufen jedes Wertes einzeln erfordern würde.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

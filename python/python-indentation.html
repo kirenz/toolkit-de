@@ -165,7 +165,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../first-steps/python-installation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Python-Installation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Python Installation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -389,24 +389,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Bevor wir im nächsten Abschnitt Python-Funktionen erkunden, ist es wichtig, die Einrückungsregeln von Python zu verstehen, da diese grundlegend sind, um strukturierten und fehlerfreien Python-Code zu schreiben.</p>
+<p>Bevor wir im nächsten Abschnitt Python-Funktionen erkunden, ist es wichtig, die Einrückungsregeln von Python zu verstehen, da diese grundlegend sind, um fehlerfreien Python-Code zu schreiben.</p>
 <p>Einrückung ist in Python nicht nur eine Stilfrage; sie hat eine syntaktische Bedeutung. Python verwendet Einrückungen, um Codeblöcke zu definieren. Die korrekte Verwendung von Einrückungen ist entscheidend, damit Ihr Code wie erwartet ausgeführt wird.</p>
-<p><strong>Wichtige Punkte zur Einrückung:</strong></p>
+<p><strong>Wichtige Hinweise zur Einrückung:</strong></p>
 <ul>
-<li><strong>Konsistenz</strong>: Der Standard in Python ist die Verwendung von 4 Leerzeichen pro Einrückungsebene, obwohl einige Umgebungen Tabs so konfigurieren können, dass sie automatisch in Leerzeichen umgewandelt werden.</li>
+<li><strong>Konsistenz</strong>: Der Standard in Python ist die Verwendung von 4 Leerzeichen pro Einrückungsebene, (in einigen Entwicklungs-Umgebungen können Tabs so konfiguriert werden, dass sie automatisch in Leerzeichen umgewandelt werden).</li>
 <li><strong>Codeblöcke</strong>: Funktionen, Schleifen, Bedingungen und andere Steuerstrukturen verwenden Einrückungen, um anzugeben, welcher Code innerhalb des Blocks gehört.</li>
 </ul>
 <section id="richtige-einrückung" class="level2" data-number="11.1">
 <h2 data-number="11.1" class="anchored" data-anchor-id="richtige-einrückung"><span class="header-section-number">11.1</span> Richtige Einrückung</h2>
-<p>Beispielcode:</p>
-<div id="7e7c1e7e" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> compute_area(width, height):</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Dies ist der Anfang eines Funktionsblocks</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    area <span class="op">=</span> width <span class="op">*</span> height </span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> area </span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Aufrufen der Funktion</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(compute_area(<span class="dv">5</span>, <span class="dv">10</span>))  <span class="co"># Diese Zeile ist nicht eingerückt, was zeigt, dass sie nicht Teil der Funktion ist</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Beispielcode für die Erzeugung einer Funktion (wir behandeln Funktionen an einer <a href="../python/python-functions.html">anderen Stelle des Buches</a> im Detail):</p>
+<div id="71be5bb3" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Funktion wird erzeugt</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> compute_area(width, height):</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Dies ist der Anfang eines Funktionsblocks</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    area <span class="op">=</span> width <span class="op">*</span> height </span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> area </span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">#Aufrufen der Funktion</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(compute_area(<span class="dv">5</span>, <span class="dv">10</span>))  <span class="co"># Diese Zeile ist nicht eingerückt, was zeigt, dass sie nicht Teil der Funktion ist</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>50</code></pre>
 </div>
@@ -417,18 +418,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Sowohl die Berechnung von <code>area</code> als auch die <code>return</code>-Anweisung sind aufgrund ihrer Einrückung Teil der Funktion.</li>
 <li>Die <code>print</code>-Anweisung ist relativ zur Funktionsdefinition nicht eingerückt, was zeigt, dass sie außerhalb der Funktion steht.</li>
 </ul>
-<p>Sicherlich! Hier ist ein Beispiel, das falsche Einrückung und die potenziellen Probleme, die sie verursachen kann, veranschaulicht. Dieses Beispiel kann im einleitenden Abschnitt zur Python-Einrückung enthalten sein, um die Bedeutung der genauen Einhaltung der Python-Einrückungsregeln zu zeigen.</p>
 </section>
 <section id="falsche-einrückung" class="level2" data-number="11.2">
 <h2 data-number="11.2" class="anchored" data-anchor-id="falsche-einrückung"><span class="header-section-number">11.2</span> Falsche Einrückung</h2>
 <p>Beispielcode mit falscher Einrückung:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calculate_percentage(total, amount):</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> total <span class="op">&gt;</span> <span class="dv">0</span>:</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    percentage <span class="op">=</span> (amount <span class="op">/</span> total) <span class="op">*</span> <span class="dv">100</span> </span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> percentage  </span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="dv">0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> total <span class="op">&gt;</span> <span class="dv">0</span>:</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    percentage <span class="op">=</span> (amount <span class="op">/</span> total) <span class="op">*</span> <span class="dv">100</span> </span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> percentage  </span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="dv">0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="pp">IndentationError</span>: expected an indented block after <span class="st">'if'</span> statement on line <span class="dv">3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Erläuterung:</p>
 <ul>
@@ -437,7 +436,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><strong>Zeilen 4 und 5</strong>: Die <code>return percentage</code>-Anweisung sollte eingerückt werden, um unter die <code>if</code>-Bedingung zu fallen, was zeigt, dass sie Teil des <code>if</code>-Blocks ist. Die <code>else:</code>-Zeile ist ebenfalls nicht korrekt mit der <code>if</code>-Zeile ausgerichtet, was zu einem Syntaxfehler führt.</li>
 </ul>
 <p>Korrigierte Version:</p>
-<div id="d5b867ae" class="cell" data-execution_count="2">
+<div id="19b65577" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calculate_percentage(total, amount):</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> total <span class="op">&gt;</span> <span class="dv">0</span>:</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>        percentage <span class="op">=</span> (amount <span class="op">/</span> total) <span class="op">*</span> <span class="dv">100</span>  </span>
@@ -450,7 +449,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Die Zeile <code>percentage = (amount / total) * 100</code> ist jetzt korrekt unter die <code>if</code>-Bedingung eingerückt, was klar anzeigt, dass sie zu dem Block gehört, der ausgeführt wird, wenn <code>total &gt; 0</code>.</li>
 <li>Die <code>return percentage</code>-Anweisung ist ebenfalls korrekt eingerückt, um zu zeigen, dass sie Teil der <code>if</code>-Bedingung ist. Der <code>else</code>-Block ist mit der <code>if</code>-Anweisung ausgerichtet, wodurch die Struktur konsistent bleibt.</li>
 </ul>
-<p>Dieses Beispiel zeigt, wie falsche Einrückung zu Syntaxfehlern und logischen Fehlern in Python führen kann. Es ist entscheidend, eine konsistente Einrückungsebene im gesamten Codeblock beizubehalten, um Klarheit und Funktionalität des Codes sicherzustellen. Indem Sie diese Praktiken einhalten, verhindern Sie Laufzeitfehler und machen Ihren Code leichter lesbar und debuggen.</p>
+<p>Dieses Beispiel zeigt, wie falsche Einrückung zu Syntaxfehlern und logischen Fehlern in Python führen kann. Es ist entscheidend, eine konsistente Einrückungsebene im gesamten Codeblock beizubehalten, um Klarheit und Funktionalität des Codes sicherzustellen. Indem Sie diese Praktiken einhalten, verhindern Sie Fehler und machen Ihren Code leichter lesbar.</p>
 
 
 </section>

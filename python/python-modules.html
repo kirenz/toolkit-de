@@ -165,7 +165,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../first-steps/python-installation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Python-Installation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Python Installation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -427,7 +427,7 @@ Küchen-Analogie für Module
 </section>
 <section id="pakete" class="level2" data-number="7.2">
 <h2 data-number="7.2" class="anchored" data-anchor-id="pakete"><span class="header-section-number">7.2</span> Pakete</h2>
-<p>Pakete in Python sind Verzeichnisse von Python-Modulen mit einer speziellen Datei namens <code>__init__.py</code>. Sie ermöglichen es Entwicklern, mehrere Module zusammenzupacken, wodurch es einfacher wird, eine Sammlung von Modulen als eine Einheit zu verwalten und zu verteilen.</p>
+<p>Pakete in Python sind Verzeichnisse von Python-Modulen mit einer speziellen Datei namens <code>__init__.py</code>. Sie ermöglichen es Entwickler/innen, mehrere Module zusammenzupacken, wodurch es einfacher wird, eine Sammlung von Modulen als eine Einheit zu verwalten und zu verteilen.</p>
 <div class="callout callout-style-simple callout-tip callout-titled" title="Küchen-Analogie für Pakete">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -444,11 +444,11 @@ Küchen-Analogie für Pakete
 </div>
 </div>
 </div>
-<p>Für Datenwissenschaftler und Entwickler sind einige wesentliche Pakete:</p>
+<p>Für Datenwissenschaftler/innen und Entwickler/innen sind einige wesentliche Pakete:</p>
 <ul>
-<li><code>numpy</code>: Fundamentales Paket für numerische Berechnungen.</li>
-<li><code>pandas</code>: Unverzichtbar für Datenmanipulation und -analyse.</li>
-<li><code>matplotlib</code> und <code>seaborn</code>: Für Datenvisualisierung.</li>
+<li><code>numpy</code>: Paket für numerische Berechnungen.</li>
+<li><code>pandas</code>: Datenmanipulation und -analyse.</li>
+<li><code>matplotlib</code>, <code>seaborn</code> und <code>altair</code>: Datenvisualisierung.</li>
 <li><code>scikit-learn</code>: Implementiert eine breite Palette von Machine-Learning-Algorithmen.</li>
 </ul>
 </section>
@@ -464,12 +464,14 @@ Küchen-Analogie für Pakete
 <section id="praktisches-beispiel" class="level2" data-number="7.4">
 <h2 data-number="7.4" class="anchored" data-anchor-id="praktisches-beispiel"><span class="header-section-number">7.4</span> Praktisches Beispiel</h2>
 <p>Hier sehen Sie, wie Sie ein Modul verwenden können, indem Sie es in Ihr Python-Skript importieren:</p>
-<div id="27eb707d" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Verwendung der sqrt-Funktion aus dem math-Modul zur Berechnung der Quadratwurzel</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> math.sqrt(<span class="dv">16</span>)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result)  <span class="co"># Ausgabe: 4.0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="7e3ff0e0" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Das Moudl wird importiert</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Verwendung der sqrt-Funktion aus dem math-Modul zur Berechnung der Quadratwurzel</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Das Ergebnis wird in der Variablen result gespeichert</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> math.sqrt(<span class="dv">16</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result)  <span class="co"># Ausgabe: 4.0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>4.0</code></pre>
 </div>
