@@ -1,56 +1,57 @@
 # Grundlegende Tipps
 
-Dieser Abschnitt enthält einige wesentliche Tipps, die Ihnen den Einstieg erleichtern.
+Dieser Abschnitt enthält einige Tipps, die Ihnen den Einstieg in VS Code erleichtern sollen.
 
 ## Dateien vs. Ordner
 
 Das Verständnis des Unterschieds zwischen dem Öffnen einer Datei und dem Öffnen eines Ordners in VS Code ist entscheidend für die Verwaltung Ihres Workflows.
 
-Wenn Sie eine *Datei* in VS Code öffnen, bearbeiten Sie nur diese eine Datei. Dies ist einfach und eignet sich für schnelle Bearbeitungen.
+Wenn Sie eine *Datei* in VS Code öffnen, bearbeiten Sie nur diese eine Datei. Dies eignet sich für schnelle Bearbeitungen.
 
-- Verwenden Sie `Datei > Datei öffnen...` oder `Strg+O` und wählen Sie die Datei aus, die Sie bearbeiten möchten.
+- Verwenden Sie `Datei > Datei öffnen...` und wählen Sie die Datei aus, die Sie bearbeiten möchten.
 
-Das Öffnen eines *Ordners* (wie unser Ordner `toolkit-lab`) setzt dieses Verzeichnis als Ihren "Arbeitsbereich" fest. Dies ist für die Projektverwaltung unerlässlich, da es VS Code ermöglicht, erweiterte Funktionen wie die Suche in mehreren Dateien, das Ausführen von Aufgaben, Versionskontrolle und mehr bereitzustellen.
+Das Öffnen eines *Ordners* (wie unser Ordner `toolkit-lab`) setzt dieses Verzeichnis als Ihren "Arbeitsbereich" fest. Dies ist für die Projektverwaltung unerlässlich, da es VS Code ermöglicht, erweiterte Funktionen bereitzustellen.
 
 - Verwenden Sie `Datei > Ordner öffnen...`, um den gesamten Ordner als Ihren Arbeitsbereich zu öffnen.
 - Dieser Ansatz wird empfohlen, wenn Sie an einem Projekt mit mehreren Dateien arbeiten, da VS Code so den Kontext Ihres Projekts besser verwalten und verstehen kann.
 
 :::{.callout-note}
-Das Öffnen eines Ordners in VS Code ist vergleichbar mit dem Einrichten eines "Projekts" in anderen Entwicklungsumgebungen. Es ermöglicht VS Code, alle Dateien und Unterverzeichnisse darin als Teil einer einzigen, zusammenhängenden Einheit zu behandeln und verbessert Funktionen wie IntelliSense, Debugging und benutzerdefinierte Einstellungen.
+Das Öffnen eines Ordners in VS Code ist vergleichbar mit dem Einrichten eines "Projekts" in anderen Entwicklungsumgebungen. Es ermöglicht VS Code, alle Dateien und Unterverzeichnisse darin als Teil einer einzigen, zusammenhängenden Einheit zu behandeln.
 :::
 
-Diese Tipps helfen Ihnen, Visual Studio Code effektiv zu nutzen, um Ihre Produktivität zu steigern, egal ob Sie einfache Skripte oder komplexe Projekte verwalten.
+
 
 ## Vertrauenswürdigkeit des Arbeitsbereichs
 
 Beim Öffnen eines neuen Projektordners in Visual Studio Code wird Ihnen eine Aufforderung angezeigt, ob Sie den Autoren der Dateien vertrauen ([Workspace Trust](https://code.visualstudio.com/docs/editor/workspace-trust)):
 
-- **Ja, ich vertraue den Autoren**: Wählen Sie diese Option standardmäßig, wenn Sie die Quelle kennen oder wenn das Projekt aus einer zuverlässigen Quelle stammt. Diese Auswahl ermöglicht die volle Funktionalität von Visual Studio Code, sodass alle Funktionen und Erweiterungen wie vorgesehen arbeiten können.
-
-- **Nein, ich vertraue den Autoren nicht**: Verwenden Sie diese Option, wenn Sie Bedenken hinsichtlich der Quelle der Dateien haben. Dadurch werden bestimmte Funktionen innerhalb von VS Code eingeschränkt, um unbefugte Codeausführung zu verhindern.
+- **Ja, ich vertraue den Autoren** (empfohlen): Wählen Sie diese Option standardmäßig, wenn Sie die Quelle kennen oder wenn das Projekt aus einer zuverlässigen Quelle stammt. Diese Auswahl ermöglicht die volle Funktionalität von Visual Studio Code, sodass alle Funktionen und Erweiterungen verwendet werden können.
 
 :::{.callout-tip}
-Wenn Sie in einer vertrauenswürdigen Umgebung oder mit Code von bekannten Mitarbeitern arbeiten, ist es wichtig, **"Ja, ich vertraue den Autoren"** auszuwählen, um die vollen Fähigkeiten von Visual Studio Code zu nutzen. Dies sorgt für eine nahtlose Entwicklungserfahrung und schützt gleichzeitig Ihr System.
+Wenn Sie in einer vertrauenswürdigen Umgebung oder mit Code von bekannten Mitarbeitern arbeiten, ist es wichtig, **"Ja, ich vertraue den Autoren"** auszuwählen, um die vollen Fähigkeiten von Visual Studio Code zu nutzen. 
 :::
+
+- **Nein, ich vertraue den Autoren nicht**: Verwenden Sie diese Option nur, wenn Sie Bedenken hinsichtlich der Quelle der Dateien haben. Dadurch werden bestimmte Funktionen innerhalb von VS Code eingeschränkt, um unbefugte Codeausführung zu verhindern.
+
 
 ## Jupyter Notebook
 
-Visual Studio Code unterstützt Jupyter-Notebooks nativ, sobald Sie die Jupyter-Erweiterung installiert haben, und bietet eine integrierte Umgebung, um Python-Code auszuführen, Daten zu visualisieren und Ihren Prozess Schritt für Schritt zu dokumentieren.
+Visual Studio Code unterstützt Jupyter-Notebooks, sobald Sie die Jupyter-Erweiterung installiert haben, und bietet eine integrierte Umgebung, um Python-Code auszuführen, Daten zu visualisieren und Ihren Prozess Schritt für Schritt zu dokumentieren.
 
 So richten Sie ein Jupyter-Notebook in VS Code ein und verwenden es:
 
 1. Öffnen Sie Visual Studio Code.
-2. Stellen Sie sicher, dass die Jupyter-Erweiterung wie zuvor beschrieben installiert ist.
+2. Stellen Sie sicher, dass die Jupyter-Erweiterung [wie zuvor beschrieben](visual-studio-code-extensions.qmd) installiert ist.
 3. Verwenden Sie die Tastenkombination `Strg+Shift+P` (Windows) oder `Command+Shift+P` (Mac), um die Befehls-Palette zu öffnen.
 4. Geben Sie `Datei: Ordner öffnen...` ein und wählen Sie diesen Befehl aus. Navigieren Sie zu dem Ordner `toolkit-lab` und wählen Sie ihn als Ihr Arbeitsverzeichnis aus.
 5. Beim ersten Öffnen eines neuen Projektordners, wie `toolkit-lab`, werden Sie mit einer Anfrage zur Vertrauenswürdigkeit des Arbeitsbereichs konfrontiert. Es ist wichtig, **"Ja, ich vertraue den Autoren"** auszuwählen.
 6. Nachdem der Ordner geöffnet ist, verwenden Sie erneut die Befehls-Palette und geben Sie `Jupyter: Neues leeres Notebook erstellen` ein. Dies öffnet ein neues Notebook in VS Code.
 7. Speichern Sie das Notebook im Unterordner `code` innerhalb von `toolkit-lab`, indem Sie auf `Datei > Speichern unter` klicken und zum Unterordner `code` navigieren.
 8. Um Zellen zu Ihrem Notebook hinzuzufügen, klicken Sie auf das `+`-Symbol (Sie können entweder Code- oder Markdown-Zellen hinzufügen).
-9. Bevor Sie Code ausführen, müssen Sie einen **Kernel** auswählen, der der Python-Umgebung entspricht, die Sie verwenden möchten. Klicken Sie auf "Kernel auswählen" in der oberen rechten Ecke Ihres Notebooks, wählen Sie "Python-Umgebungen" und wählen Sie den Kernel `basics`, den wir [zuvor eingerichtet haben](../python/python-environment-basics.qmd) (für eine detailliertere Erklärung siehe [diese Anleitung](https://code.visualstudio.com/docs/datascience/jupyter-kernel-management)).
+9. Bevor Sie Code ausführen, müssen Sie einen **Kernel** auswählen, der der Python-Umgebung entspricht, die Sie verwenden möchten. Klicken Sie auf "Kernel auswählen" in der oberen rechten Ecke Ihres Notebooks, wählen Sie "Python-Umgebungen" und wählen Sie den Kernel `basics`, den wir [zuvor eingerichtet haben](../python/python-environment-basics.qmd).
 
 :::{.callout-note}
-Ein "Kernel" in einem Jupyter-Notebook ist eine Rechenmaschine, die den in das Notebook-Dokument eingebetteten Code ausführt. Bei der Arbeit mit Python ist der Kernel eine Instanz der Python-Umgebung auf Ihrem Computer.
+Ein "Kernel" in einem Jupyter-Notebook ist ein Prozess, der den im Notebook-Dokument eingebetteten Code ausführt. Bei der Arbeit mit Python ist der Kernel eine Instanz der Python-Laufzeitumgebung auf Ihrem Computer.
 :::
 
 ## Weitere Ressourcen
