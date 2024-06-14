@@ -1,19 +1,9 @@
 # Visual Studio Code {#sec-vscode}
 
-Visual Studio Code (VS Code) ist ein kostenloser, Open-Source-Editor, der von Microsoft entwickelt wurde. Bekannt für seine Leistung und Vielseitigkeit, unterstützt er Entwicklungsaufgaben in einer Vielzahl von Programmiersprachen, darunter Python, JavaScript, C++ und viele mehr. Seine Verfügbarkeit auf mehreren Plattformen — Windows, macOS und Linux — macht ihn zu einer zugänglichen Wahl für Entwickler weltweit.
+Visual Studio Code (VS Code) ist ein Open-Source-Editor, der von Microsoft entwickelt wurde.
 
 :::{.callout-note}
 Obwohl VS Code nahezu jede Programmieraufgabe bewältigen kann, ist es besonders in der Python-Community aufgrund seiner umfangreichen Python-spezifischen Funktionen und Erweiterungen beliebt.
 :::
 
-## Warum Visual Studio Code wählen?
-
-Die Wahl der richtigen Entwicklungsumgebung kann die Produktivität und Effizienz des Workflows erheblich beeinflussen. Hier sind einige überzeugende Gründe, warum Visual Studio Code als bevorzugter Editor für sowohl Anfänger als auch erfahrene Entwickler hervorsticht:
-
-- **Benutzerfreundlichkeit**: VS Code bietet eine saubere und intuitive Oberfläche, an die sich neue Benutzer schnell gewöhnen können, ohne sich überfordert zu fühlen.
-- **Anpassungsfähigkeit**: Benutzer können den Editor nach ihren Bedürfnissen mit Themen, Tastenkombinationen und Editor-Einstellungen anpassen, um ein personalisiertes Entwicklungserlebnis zu schaffen.
-- **Reiches Ökosystem**: Der Editor verfügt über einen robusten Marktplatz, der mit Erweiterungen gefüllt ist, die verschiedenen Programmieranforderungen gerecht werden, einschließlich Linter, Formatierer, sprachspezifische Snippets und mehr.
-- **Integrierte Entwicklungsfunktionen**: Mit Funktionen wie IntelliSense für die Codevervollständigung, eingebauter Git-Unterstützung und einem leistungsstarken Debugging-Toolset dient VS Code als umfassendes Entwicklungswerkzeug, das den Bedarf an externen Anwendungen minimiert.
-- **Aktive Community und kontinuierliche Updates**: Als Open-Source-Projekt und unterstützt von Microsoft, profitiert VS Code von einer lebendigen Community und regelmäßigen Updates, die seine Funktionalität und Benutzererfahrung kontinuierlich verbessern.
-
-In den folgenden Abschnitten werden wir untersuchen, wie man Visual Studio Code installiert und konfiguriert, um Ihren Entwicklungsworkflow zu optimieren, beginnend mit einem einfachen Installationsprozess.
+Die Wahl der richtigen Entwicklungsumgebung kann die Produktivität und Effizienz des Workflows erheblich beeinflussen. In den folgenden Abschnitten werden wir behandeln, wie man Visual Studio Code installiert und konfiguriert, um Ihren Entwicklungsworkflow zu optimieren.
