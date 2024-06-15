@@ -1,0 +1,108 @@
+# Starten und stoppen
+
+## Windows
+
+### MongoDB starten
+
+MongoDB sollte als Dienst automatisch gestartet werden, wenn Sie die Option "Install MongoDB as a Service" während der Installation aktiviert haben. 
+
+Sie können den Dienst auch manuell starten, falls er nicht automatisch gestartet wurde oder falls Sie den Dienst neu starten möchten:
+
+
+1. **Öffnen Sie die Dienstverwaltung**:
+   - Drücken Sie die `Windows-Taste` + `R`, um das Ausführen-Dialogfeld zu öffnen.
+   - Geben Sie `services.msc` ein und drücken Sie `Enter`.
+
+2. **Finden Sie den MongoDB-Dienst**:
+   - Im Fenster "Dienste" scrollen Sie nach unten, bis Sie den Dienst namens `MongoDB` finden.
+
+3. **Starten Sie den Dienst**:
+   - Klicken Sie mit der rechten Maustaste auf den `MongoDB`-Dienst und wählen Sie `Starten` aus dem Kontextmenü.
+
+Alternativ können Sie den MongoDB-Dienst auch über die Eingabeaufforderung starten:
+
+1. **Öffnen Sie die Eingabeaufforderung als Administrator**:
+   - Drücken Sie die `Windows-Taste`, geben Sie `cmd` ein, klicken Sie mit der rechten Maustaste auf `Eingabeaufforderung` und wählen Sie `Als Administrator ausführen`.
+
+2. **Führen Sie den folgenden Befehl aus, um den MongoDB-Dienst zu starten**:
+   ```sh
+   net start MongoDB
+   ```
+
+### MongoDB stoppen
+
+Um MongoDB zu stoppen, können Sie entweder die Dienstverwaltung verwenden oder einen Befehl in der Eingabeaufforderung ausführen.
+
+**So stoppen Sie den MongoDB-Dienst manuell:**
+
+1. **Öffnen Sie die Dienstverwaltung**:
+   - Drücken Sie die `Windows-Taste` + `R`, um das Ausführen-Dialogfeld zu öffnen.
+   - Geben Sie `services.msc` ein und drücken Sie `Enter`.
+
+2. **Finden Sie den MongoDB-Dienst**:
+   - Im Fenster "Dienste" scrollen Sie nach unten, bis Sie den Dienst namens `MongoDB` finden.
+
+3. **Stoppen Sie den Dienst**:
+   - Klicken Sie mit der rechten Maustaste auf den `MongoDB`-Dienst und wählen Sie `Beenden` aus dem Kontextmenü.
+
+Alternativ können Sie den MongoDB-Dienst auch über die Eingabeaufforderung stoppen:
+
+1. **Öffnen Sie die Eingabeaufforderung als Administrator**:
+   - Drücken Sie die `Windows-Taste`, geben Sie `cmd` ein, klicken Sie mit der rechten Maustaste auf `Eingabeaufforderung` und wählen Sie `Als Administrator ausführen`.
+
+2. **Führen Sie den folgenden Befehl aus, um den MongoDB-Dienst zu stoppen**:
+   ```sh
+   net stop MongoDB
+   ```
+
+Durch das Starten und Stoppen des MongoDB-Dienstes können Sie sicherstellen, dass die Datenbank ordnungsgemäß läuft oder heruntergefahren wird, je nach Ihren Anforderungen.
+
+## macOS
+
+### MongoDB starten
+
+Nach der Installation von MongoDB können Sie den Datenbankdienst einfach mit Homebrew starten. Homebrew verwaltet Dienste wie MongoDB und ermöglicht es Ihnen, diese mit einfachen Befehlen zu starten und zu stoppen.
+
+**So starten Sie den MongoDB-Dienst:**
+
+1. **Öffnen Sie das Terminal**:
+   - Sie finden das Terminal im Ordner "Dienstprogramme" innerhalb des Ordners "Programme" oder indem Sie `cmd + Leertaste` drücken und "Terminal" eingeben.
+
+2. **Starten Sie den MongoDB-Dienst**:
+   - Geben Sie den folgenden Befehl im Terminal ein und drücken Sie `Enter`:
+
+   ```sh
+   brew services start mongodb-community@7.0
+   ```
+
+   - Wenn alles korrekt eingerichtet ist, sehen Sie eine Bestätigungsmeldung, dass der Dienst gestartet wurde.
+
+
+Um sicherzustellen, dass MongoDB korrekt gestartet wurde und läuft, können Sie eine Liste aller von Homebrew verwalteten Dienste anzeigen.
+
+**So überprüfen Sie den Status von MongoDB:**
+
+1. **Geben Sie den folgenden Befehl im Terminal ein und drücken Sie `Enter`**:
+
+   ```sh
+   brew services list
+   ```
+
+   - Dieser Befehl zeigt eine Liste aller Dienste an, die von Homebrew verwaltet werden, sowie deren aktuellen Status.
+
+2. **Überprüfen Sie den Eintrag für `mongodb-community`**:
+   - In der Liste sollten Sie `mongodb-community` sehen, gefolgt von der Versionsnummer und dem Status `started`. Dies zeigt an, dass MongoDB erfolgreich läuft.
+
+### MongoDB stoppen
+
+Wenn Sie MongoDB beenden möchten, können Sie dies ebenfalls mit einem einfachen Homebrew-Befehl tun.
+
+**So stoppen Sie den MongoDB-Dienst:**
+
+1. **Geben Sie den folgenden Befehl im Terminal ein und drücken Sie `Enter`**:
+
+   ```sh
+   brew services stop mongodb-community@7.0
+   ```
+
+   - Es sollte eine Bestätigungsmeldung erscheinen, dass der Dienst gestoppt wurde.
