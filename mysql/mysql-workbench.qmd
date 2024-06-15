@@ -1,4 +1,4 @@
-# MySQL Workbench
+# MySQL Workbench basics
 
 Die MySQL Workbench bietet verschiedene Werkzeuge zur Erleichterung der Datenbankverwaltung:
 
