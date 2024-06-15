@@ -1,44 +1,15 @@
 # MySQL Workbench
 
-MySQL Workbench bietet eine grafische Oberfläche für die Datenbankverwaltung und SQL-Entwicklung. Es integriert visuelle Werkzeuge für die Datenmodellierung, SQL-Entwicklung und umfassende Datenbankverwaltung.
-
-## Neue Verbindung
-
-Der erste Schritt besteht darin, eine Verbindung zu Ihrem Server über MySQL Workbench herzustellen:
-
-1. **MySQL Workbench starten**
-   - Öffnen Sie MySQL Workbench aus Ihrer Anwendungsübersicht. Beim Start der Anwendung sehen Sie die Hauptoberfläche.
-
-   :::{.callout-tip collapse="true" title="Tipp für Windows-Nutzer"}
-   Falls MySQL Workbench während der anfänglichen Einrichtung des MySQL Servers nicht enthalten war, kann es separat installiert werden:
-
-   - Greifen Sie auf die [MySQL Workbench Downloadseite](https://dev.mysql.com/downloads/workbench/) zu.
-   - Wählen Sie die passende Version für Ihr Betriebssystem und laden Sie sie herunter.
-   :::
-
-2. **Neue Verbindung erstellen**
-   - Auf dem Startbildschirm sehen Sie einen Bereich mit der Bezeichnung "MySQL Connections". Klicken Sie auf das "+"-Symbol, um eine neue Verbindung zu erstellen.
-   - Im Setup-Dialog:
-     - Verbindungsname: Geben Sie Ihrer Verbindung einen erkennbaren Namen (nutzen Sie hierfür `local-connection`).
-     - Hostname: Geben Sie `localhost` ein (wir verwenden diese Bezeichnung, da der Datenbankserver auf dem gleichen Rechner wie die Workbench läuft).
-     - Port: Der Standard-MySQL-Port ist `3306`.
-     - Benutzername: Geben Sie den Benutzernamen ein, den Sie während der MySQL Server-Installation festgelegt haben (meist 'root').
-     - Passwort: Klicken Sie auf "Store in Vault" und geben Sie das Passwort für das Benutzerkonto ein.
-   - Nachdem Sie diese Felder ausgefüllt haben, klicken Sie auf "Test Connection", um sicherzustellen, dass alle Einstellungen korrekt sind und die Verbindung hergestellt werden kann.
-
-3. **Verbindung speichern**
-   - Wenn der Verbindungstest erfolgreich ist, speichern Sie die Konfiguration, indem Sie auf "OK" klicken. Diese Verbindung wird nun auf dem MySQL Workbench-Startbildschirm für einen einfachen Zugriff angezeigt.
-
-## Verwendung von MySQL Workbench
-
-MySQL Workbench bietet verschiedene Werkzeuge und Abkürzungen zur Erleichterung der Datenbankverwaltung:
+Die MySQL Workbench bietet verschiedene Werkzeuge zur Erleichterung der Datenbankverwaltung:
 
 - **Toolbar**: Oben finden Sie die Toolbar, die Schaltflächen wie das neue Abfrage-Tab, Abfrage ausführen und andere enthält.
 - **Seitenleiste**: Links bietet die Seitenleiste Zugriff auf Instanzverwaltung, Leistungsüberwachung und mehr.
 - **Abfrage-Tab**: Hier schreiben und führen Sie Ihre SQL-Abfragen aus. Sie können ein neues Abfrage-Tab öffnen, indem Sie auf das "+"-Symbol neben den vorhandenen Tabs klicken.
 - **Ausgabebereich**: Unterhalb des Abfrage-Editors zeigt dieser Bereich die Ergebnisse der ausgeführten Abfragen oder Nachrichten vom Datenbankserver an.
 
-### Datenbank erstellen
+Nachfolgend behandeln wir einige typische Aufgaben in MySQL Workbench, die bei der Arbeit mit Datenbanken anfallen.
+
+## Datenbank erstellen
 
 1. **Eine Datenbank erstellen**
    - Verbinden Sie sich mit Ihrer MySQL-Instanz über die eingerichtete Verbindung (`local-connection`).
@@ -74,7 +45,7 @@ MySQL Workbench bietet verschiedene Werkzeuge und Abkürzungen zur Erleichterung
 5. **Schema-Liste aktualisieren**
    - Nachdem Sie die Befehle ausgeführt haben, aktualisieren Sie die Schema-Liste auf der linken Seite der Oberfläche, um Ihre neue Datenbank zu sehen.
 
-### Tabelle erstellen
+## Tabelle erstellen
 
 Als Beispieldaten erstellen wir eine Tabelle zu einer Marketingkampagne:
 
@@ -108,7 +79,7 @@ Als Beispieldaten erstellen wir eine Tabelle zu einer Marketingkampagne:
 3. **Befehl ausführen**
    - Klicken Sie auf das Blitzsymbol (⚡), um den Befehl auszuführen. Überprüfen Sie die Schema-Ansicht, um die Erstellung der Tabelle zu bestätigen.
 
-### Werte einfügen
+## Werte einfügen
 
 Gehen Sie wie folgt vor, um die Tabelle mit Daten zu füllen:
 
@@ -132,7 +103,7 @@ Gehen Sie wie folgt vor, um die Tabelle mit Daten zu füllen:
    Jeder Satz von Werten ist in Klammern eingeschlossen und durch Kommas getrennt, um verschiedene Kampagnen zu unterscheiden.
    :::
 
-### Werte abrufen
+## Werte abrufen
 
 Um die Daten zu überprüfen:
 
