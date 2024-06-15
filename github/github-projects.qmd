@@ -1,4 +1,4 @@
-# GitHub-Projekte
+# Projects
 
 GitHub Projects ist eine leistungsstarke Funktion, die Ihnen hilft, die Arbeit an Ihren Repositories zu organisieren und zu verfolgen. Es bietet Kanban-Boards zur effizienten Verwaltung von Aufgaben und Workflows.
 
