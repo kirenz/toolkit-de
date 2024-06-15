@@ -1,0 +1,31 @@
+# Python-Integration mit MongoDB
+
+## Installation 
+
+Installieren Sie `pymongo`, den offiziellen MongoDB-Treiber für Python.
+
+```python
+pip install pymongo
+```
+
+### Verbindung zu MongoDB herstellen
+
+```python
+import pymongo
+
+# Verbindung zur MongoDB herstellen
+client = pymongo.MongoClient("mongodb://localhost:27017/")
+
+# Datenbank auswählen
+db = client["mydatabase"]
+
+# Sammlung auswählen
+collection = db["mycollection"]
+
+# Dokument einfügen
+collection.insert_one({"name": "Alice", "age": 25})
+
+# Dokumente abfragen
+for doc in collection.find():
+    print(doc)
+```
