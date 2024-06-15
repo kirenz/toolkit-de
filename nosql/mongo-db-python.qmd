@@ -1,14 +1,41 @@
 # Python-Integration mit MongoDB
 
-## Installation 
 
-Installieren Sie `pymongo`, den offiziellen MongoDB-Treiber für Python.
+## Umgebung erstellen
 
-```python
-pip install pymongo
-```
+Um eine Umgebung einzurichten, befolgen Sie diese Anweisungen basierend auf Ihrem Betriebssystem:
 
-### Verbindung zu MongoDB herstellen
+1. Zugriff auf die Eingabeaufforderung oder das Terminal:
+   - **Windows-Benutzer**: Öffnen Sie die Anaconda-Eingabeaufforderung über das Startmenü.
+   - **macOS-Benutzer**: Öffnen Sie das Terminal unter Programme > Dienstprogramme oder durch die Suche nach "Terminal".  
+
+2. Erstellen der Umgebung:
+   - Verwenden Sie den folgenden Befehl, um eine neue Conda-Umgebung namens `mongodb` mit Python 3.11 zu erstellen:
+   
+   ```bash
+   conda create --name mongodb python=3.11 pip
+   ```
+
+3. Aktivieren der Umgebung:
+   - Sobald die Umgebung erstellt ist, aktivieren Sie sie mit:
+   
+   ```bash
+   conda activate mongodb
+   ```
+
+   - Die Eingabeaufforderung ändert sich, um anzuzeigen, dass die Umgebung `mongodb` aktiv ist.
+
+4. Installieren der benötigten Bibliotheken:
+   - Mit aktivierter Umgebung installieren Sie die Bibliotheken:
+
+   ```bash
+   pip install pymongo numpy pandas matplotlib seaborn altair jupyter ipykernel
+   ```
+
+   - Dieser Befehl ruft alle Pakete von PyPI ab und installiert sie.
+
+
+## Verbindung herstellen
 
 ```python
 import pymongo
