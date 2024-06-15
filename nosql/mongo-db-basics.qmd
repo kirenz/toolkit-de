@@ -1,74 +1,93 @@
-
 # Grundlegende Nutzung von MongoDB
 
-## MongoDB Shell
+In diesem Abschnitt lernen Sie die grundlegende Nutzung von MongoDB, einschließlich der Verbindung zur Datenbank, grundlegender Befehle und Datenbankmanipulation.
 
-Um MongoDB zu nutzen, verbinden Sie mongosh mit der laufenden Instanz. Öffnen Sie ein neues Terminal und geben Sie den folgenden Befehl ein:
+Die MongoDB Shell (mongosh) ist das primäre Interface zur Interaktion mit Ihrer MongoDB-Datenbank. Sie ermöglicht es Ihnen, Befehle direkt einzugeben und auszuführen.
+
+## Verbindung zur MongoDB-Instanz
+
+Um die MongoDB Shell zu starten und sich mit Ihrer laufenden MongoDB-Instanz zu verbinden, öffnen Sie ein Terminal und geben Sie den folgenden Befehl ein:
 
 ```sh
 mongosh
 ```
 
-Dieser Befehl startet die MongoDB Shell (mongosh) und verbindet sich mit der MongoDB-Instanz, die auf Ihrem System läuft. Wenn die Verbindung erfolgreich ist, sehen Sie die mongosh-Eingabeaufforderung, an der Sie Ihre MongoDB-Befehle eingeben können.
+Wenn die Verbindung erfolgreich ist, sehen Sie die mongosh-Eingabeaufforderung:
 
-Falls Sie eine Fehlermeldung erhalten, prüfen Sie zunächst, ob [MongoDB](mongo-db-start-stop.qmd.qmd) auf Ihrem System läuft.
-
-## Grundlegende Befehle
-
-- **Datenbanken anzeigen**:
-  ```sh
-  show dbs
-  ```
-
-- **Datenbank auswählen oder erstellen**:
-  ```sh
-  use mydatabase
-  ```
-
-- **Sammlung (Collection) erstellen**:
-  ```sh
-  db.createCollection("mycollection")
-  ```
-
-- **Dokument einfügen**:
-  ```sh
-  db.mycollection.insertOne({name: "Jan", age: 44})
-  ```
-
-- **Dokumente abfragen**:
-  ```sh
-  db.mycollection.find()
-  ```
-
-## Python-Integration mit MongoDB
-
-### Installation des MongoDB Python Treibers
-
-Installieren Sie `pymongo`, den offiziellen MongoDB-Treiber für Python.
-
-```{python}
-!pip install pymongo
+```sh
+test>
 ```
 
-### Verbindung zu MongoDB herstellen
+Falls Sie eine Fehlermeldung erhalten, stellen Sie sicher, dass [MongoDB auf Ihrem System läuft](mongo-db-start-stop.qmd). 
 
-```{python}
-import pymongo
 
-# Verbindung zur MongoDB herstellen
-client = pymongo.MongoClient("mongodb://localhost:27017/")
+## Datenbanken anzeigen
 
-# Datenbank auswählen
-db = client["mydatabase"]
+Um alle verfügbaren Datenbanken aufzulisten, verwenden Sie den folgenden Befehl:
 
-# Sammlung auswählen
-collection = db["mycollection"]
-
-# Dokument einfügen
-collection.insert_one({"name": "Alice", "age": 25})
-
-# Dokumente abfragen
-for doc in collection.find():
-    print(doc)
+```sh
+show dbs
 ```
+
+Dieser Befehl zeigt eine Liste aller Datenbanken, die auf der MongoDB-Instanz gespeichert sind.
+
+## Datenbank auswählen oder erstellen
+
+Um eine spezifische Datenbank auszuwählen oder zu erstellen, verwenden Sie den `use`-Befehl:
+
+```sh
+use mydatabase
+```
+
+Dieser Befehl wechselt zur Datenbank `mydatabase`. Wenn die Datenbank noch nicht existiert, wird sie erstellt.
+
+## Sammlung (Collection) erstellen
+
+Um eine neue Sammlung innerhalb der aktuellen Datenbank zu erstellen, verwenden Sie den `createCollection`-Befehl:
+
+```sh
+db.createCollection("mycollection")
+```
+
+Dieser Befehl erstellt eine neue Sammlung namens `mycollection`.
+
+## Dokument einfügen
+
+Um ein Dokument in eine Sammlung einzufügen, verwenden Sie den `insertOne`-Befehl:
+
+```sh
+db.mycollection.insertOne({name: "Jan", age: 44})
+```
+
+Dieser Befehl fügt ein neues Dokument in die Sammlung `mycollection` ein.
+
+## Dokumente abfragen
+
+Um alle Dokumente in einer Sammlung abzufragen, verwenden Sie den `find`-Befehl:
+
+```sh
+db.mycollection.find()
+```
+
+Dieser Befehl gibt alle Dokumente in der Sammlung `mycollection` zurück.
+
+## Weitere Befehle
+
+- **Ein spezifisches Dokument abfragen**:
+  ```sh
+  db.mycollection.findOne({name: "Jan"})
+  ```
+  Dieser Befehl gibt das erste Dokument zurück, das den angegebenen Kriterien entspricht.
+
+- **Dokumente aktualisieren**:
+  ```sh
+  db.mycollection.updateOne({name: "Jan"}, {$set: {age: 45}})
+  ```
+  Dieser Befehl aktualisiert das Alter von `Jan` auf 45.
+
+- **Dokumente löschen**:
+  ```sh
+  db.mycollection.deleteOne({name: "Jan"})
+  ```
+  Dieser Befehl löscht das erste Dokument, das den angegebenen Kriterien entspricht.
 
