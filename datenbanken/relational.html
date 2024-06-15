@@ -9,7 +9,7 @@
 <meta name="author" content="Jan Kirenz">
 <meta name="description" content="Programming Toolkit für Data Science, AI &amp; Analytics">
 
-<title>Data Science, AI &amp; Analytics Toolkit - 28&nbsp; Grundlegende Nutzung</title>
+<title>Data Science, AI &amp; Analytics Toolkit - 18&nbsp; Relationale Datenbanken</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,40 +22,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -66,8 +32,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../mongodb/mongodb-python.html" rel="next">
-<link href="../mongodb/mongodb-start-stop.html" rel="prev">
+<link href="../datenbanken/nosql.html" rel="next">
+<link href="../datenbanken/datenbanken.html" rel="prev">
 <link href="..//images/logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -118,7 +84,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../mongodb/mongodb.html">MongoDB</a></li><li class="breadcrumb-item"><a href="../mongodb/mongodb-basics.html"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Grundlegende Nutzung</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../datenbanken/datenbanken.html">Datenbanken</a></li><li class="breadcrumb-item"><a href="../datenbanken/relational.html"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Relationale Datenbanken</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -293,7 +259,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../datenbanken/relational.html" class="sidebar-item-text sidebar-link">
+  <a href="../datenbanken/relational.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Relationale Datenbanken</span></span></a>
   </div>
 </li>
@@ -386,7 +352,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../mongodb/mongodb-basics.html" class="sidebar-item-text sidebar-link active">
+  <a href="../mongodb/mongodb-basics.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Grundlegende Nutzung</span></span></a>
   </div>
 </li>
@@ -445,26 +411,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Inhaltsverzeichnis</h2>
-   
-  <ul>
-  <li><a href="#verbindung-zur-mongodb-instanz" id="toc-verbindung-zur-mongodb-instanz" class="nav-link active" data-scroll-target="#verbindung-zur-mongodb-instanz"><span class="header-section-number">28.1</span> Verbindung zur MongoDB-Instanz</a></li>
-  <li><a href="#datenbanken-anzeigen" id="toc-datenbanken-anzeigen" class="nav-link" data-scroll-target="#datenbanken-anzeigen"><span class="header-section-number">28.2</span> Datenbanken anzeigen</a></li>
-  <li><a href="#datenbank-auswählen-oder-erstellen" id="toc-datenbank-auswählen-oder-erstellen" class="nav-link" data-scroll-target="#datenbank-auswählen-oder-erstellen"><span class="header-section-number">28.3</span> Datenbank auswählen oder erstellen</a></li>
-  <li><a href="#sammlung-collection-erstellen" id="toc-sammlung-collection-erstellen" class="nav-link" data-scroll-target="#sammlung-collection-erstellen"><span class="header-section-number">28.4</span> Sammlung (Collection) erstellen</a></li>
-  <li><a href="#dokument-einfügen" id="toc-dokument-einfügen" class="nav-link" data-scroll-target="#dokument-einfügen"><span class="header-section-number">28.5</span> Dokument einfügen</a></li>
-  <li><a href="#dokumente-abfragen" id="toc-dokumente-abfragen" class="nav-link" data-scroll-target="#dokumente-abfragen"><span class="header-section-number">28.6</span> Dokumente abfragen</a></li>
-  <li><a href="#weitere-befehle" id="toc-weitere-befehle" class="nav-link" data-scroll-target="#weitere-befehle"><span class="header-section-number">28.7</span> Weitere Befehle</a></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../mongodb/mongodb.html">MongoDB</a></li><li class="breadcrumb-item"><a href="../mongodb/mongodb-basics.html"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Grundlegende Nutzung</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../datenbanken/datenbanken.html">Datenbanken</a></li><li class="breadcrumb-item"><a href="../datenbanken/relational.html"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Relationale Datenbanken</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Grundlegende Nutzung</span></h1>
+<h1 class="title"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Relationale Datenbanken</span></h1>
 </div>
 
 
@@ -481,62 +435,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>In diesem Abschnitt lernen Sie die grundlegende Nutzung von MongoDB, einschließlich der Verbindung zur Datenbank, grundlegender Befehle und Datenbankmanipulation.</p>
-<p>Die MongoDB Shell (mongosh) ist das primäre Interface zur Interaktion mit Ihrer MongoDB-Datenbank. Sie ermöglicht es Ihnen, Befehle direkt einzugeben und auszuführen.</p>
-<section id="verbindung-zur-mongodb-instanz" class="level2" data-number="28.1">
-<h2 data-number="28.1" class="anchored" data-anchor-id="verbindung-zur-mongodb-instanz"><span class="header-section-number">28.1</span> Verbindung zur MongoDB-Instanz</h2>
-<p>Um die MongoDB Shell zu starten und sich mit Ihrer laufenden MongoDB-Instanz zu verbinden, öffnen Sie ein Terminal und geben Sie den folgenden Befehl ein:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">mongosh</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Wenn die Verbindung erfolgreich ist, sehen Sie die mongosh-Eingabeaufforderung:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">test</span><span class="op">&gt;</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Falls Sie eine Fehlermeldung erhalten, stellen Sie sicher, dass <a href="../mongodb/mongodb-start-stop.html">MongoDB auf Ihrem System läuft</a>.</p>
-</section>
-<section id="datenbanken-anzeigen" class="level2" data-number="28.2">
-<h2 data-number="28.2" class="anchored" data-anchor-id="datenbanken-anzeigen"><span class="header-section-number">28.2</span> Datenbanken anzeigen</h2>
-<p>Um alle verfügbaren Datenbanken aufzulisten, verwenden Sie den folgenden Befehl:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">show</span> dbs</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Dieser Befehl zeigt eine Liste aller Datenbanken, die auf der MongoDB-Instanz gespeichert sind.</p>
-</section>
-<section id="datenbank-auswählen-oder-erstellen" class="level2" data-number="28.3">
-<h2 data-number="28.3" class="anchored" data-anchor-id="datenbank-auswählen-oder-erstellen"><span class="header-section-number">28.3</span> Datenbank auswählen oder erstellen</h2>
-<p>Um eine spezifische Datenbank auszuwählen oder zu erstellen, verwenden Sie den <code>use</code>-Befehl:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">use</span> mydatabase</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Dieser Befehl wechselt zur Datenbank <code>mydatabase</code>. Wenn die Datenbank noch nicht existiert, wird sie erstellt.</p>
-</section>
-<section id="sammlung-collection-erstellen" class="level2" data-number="28.4">
-<h2 data-number="28.4" class="anchored" data-anchor-id="sammlung-collection-erstellen"><span class="header-section-number">28.4</span> Sammlung (Collection) erstellen</h2>
-<p>Um eine neue Sammlung innerhalb der aktuellen Datenbank zu erstellen, verwenden Sie den <code>createCollection</code>-Befehl:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">db.createCollection</span><span class="er">(</span><span class="st">"mycollection"</span><span class="kw">)</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Dieser Befehl erstellt eine neue Sammlung namens <code>mycollection</code>.</p>
-</section>
-<section id="dokument-einfügen" class="level2" data-number="28.5">
-<h2 data-number="28.5" class="anchored" data-anchor-id="dokument-einfügen"><span class="header-section-number">28.5</span> Dokument einfügen</h2>
-<p>Um ein Dokument in eine Sammlung einzufügen, verwenden Sie den <code>insertOne</code>-Befehl:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">db.mycollection.insertOne</span><span class="er">(</span><span class="ex">{name:</span> <span class="st">"Jan"</span>, age: 44}<span class="kw">)</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Dieser Befehl fügt ein neues Dokument in die Sammlung <code>mycollection</code> ein.</p>
-</section>
-<section id="dokumente-abfragen" class="level2" data-number="28.6">
-<h2 data-number="28.6" class="anchored" data-anchor-id="dokumente-abfragen"><span class="header-section-number">28.6</span> Dokumente abfragen</h2>
-<p>Um alle Dokumente in einer Sammlung abzufragen, verwenden Sie den <code>find</code>-Befehl:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">db.mycollection.find()</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Dieser Befehl gibt alle Dokumente in der Sammlung <code>mycollection</code> zurück.</p>
-</section>
-<section id="weitere-befehle" class="level2" data-number="28.7">
-<h2 data-number="28.7" class="anchored" data-anchor-id="weitere-befehle"><span class="header-section-number">28.7</span> Weitere Befehle</h2>
+<p>Eine relationale Datenbank ist eine Sammlung von Datenobjekten mit vordefinierten Beziehungen zwischen ihnen. Diese Objekte sind als eine Reihe von Tabellen mit Spalten und Zeilen organisiert (<a href="https://aws.amazon.com/relational-database/?nc1=h_ls">AWS</a>):</p>
 <ul>
-<li><p><strong>Ein spezifisches Dokument abfragen</strong>:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">db.mycollection.findOne</span><span class="er">(</span><span class="ex">{name:</span> <span class="st">"Jan"</span>}<span class="kw">)</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Dieser Befehl gibt das erste Dokument zurück, das den angegebenen Kriterien entspricht.</p></li>
-<li><p><strong>Dokumente aktualisieren</strong>:</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">db.mycollection.updateOne</span><span class="er">(</span><span class="ex">{name:</span> <span class="st">"Jan"</span>}, {<span class="va">$set</span>: {age: 45}}<span class="kw">)</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Dieser Befehl aktualisiert das Alter von <code>Jan</code> auf 45.</p></li>
-<li><p><strong>Dokumente löschen</strong>:</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">db.mycollection.deleteOne</span><span class="er">(</span><span class="ex">{name:</span> <span class="st">"Jan"</span>}<span class="kw">)</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Dieser Befehl löscht das erste Dokument, das den angegebenen Kriterien entspricht.</p></li>
+<li><p><em>Tabellen</em> werden verwendet, um Informationen über die in der Datenbank darzustellenden Objekte zu speichern.</p></li>
+<li><p>Jede <em>Spalte</em> in einer Tabelle enthält eine bestimmte Art von Daten, und ein Feld speichert den tatsächlichen Wert eines Attributs.</p></li>
+<li><p>Die <em>Zeilen</em> in der Tabelle stellen eine Sammlung verwandter Werte eines Objekts oder einer Entität dar.</p></li>
+<li><p>Jede Zeile in einer Tabelle kann mit einem eindeutigen Bezeichner, dem <em>Primärschlüssel</em>, markiert werden, und Zeilen in mehreren Tabellen können mithilfe von <em>Fremdschlüsseln</em> miteinander in Beziehung gesetzt werden.</p></li>
 </ul>
+<p>Diese Daten können auf viele verschiedene Arten (z.B. mit SQL) abgerufen werden. <strong>Structured Query Language</strong> (SQL, ausgesprochen “S-Q-L” oder manchmal “Sequel”) ist eine der grundlegendsten Fähigkeiten, die Sie im Umgang mit Daten beherrschen sollten. Es ermöglicht Ihnen, effizient mit Datenbanken zu interagieren, Daten abzurufen und zu manipulieren sowie komplexe Abfragen und Analysen durchzuführen.</p>
+<p>Im nächsten Abschnitt werden wir uns mit der Einrichtung und Verwendung von MySQL und PostgreSQL befassen. Diese relationalen Datenbankmanagementsysteme (RDBMS) sind weit verbreitet und bieten robuste und leistungsstarke Lösungen für die Datenverwaltung.</p>
+<p>Wir werden die folgenden Themen behandeln:</p>
+<ul>
+<li>Installation und Konfiguration von MySQL und PostgreSQL</li>
+<li>Grundlegende Befehle und Abfragen in MySQL und PostgreSQL</li>
+<li>Integration dieser Systeme mit Python</li>
+</ul>
+<p>Diese Kenntnisse werden Ihnen helfen, Ihre Daten effizient zu verwalten und komplexe Datenanalysen durchzuführen, indem Sie die Stärken dieser RDBMS in Kombination mit der Flexibilität und Leistungsfähigkeit von Python nutzen.</p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -950,13 +866,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../mongodb/mongodb-start-stop.html" class="pagination-link" aria-label="Starten und stoppen">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Starten und stoppen</span></span>
+      <a href="../datenbanken/datenbanken.html" class="pagination-link" aria-label="Datenbanken">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Datenbanken</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../mongodb/mongodb-python.html" class="pagination-link" aria-label="Python-Integration">
-        <span class="nav-page-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Python-Integration</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../datenbanken/nosql.html" class="pagination-link" aria-label="NoSQL Datenbanken">
+        <span class="nav-page-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">NoSQL Datenbanken</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
