@@ -54,13 +54,12 @@ book:
             - datenbanken/sql/sql-mysql.qmd 
             - datenbanken/sql/sql-postgresql.qmd
             - datenbanken/sql/sql-python.qmd
-      chapters:
         - datenbanken/nosql/nosql.qmd
           chapters:
             - datenbanken/nosql/mongo-db-installation.qmd 
             - datenbanken/nosql/mongo-db-start-stop.qmd
             - datenbanken/nosql/mongo-db-basics.qmd  
-            - datenbanken/nosql/mongo-db-oython.qmd  
+            - datenbanken/nosql/mongo-db-python.qmd   
 
     - part: github/github.qmd
       chapters:
