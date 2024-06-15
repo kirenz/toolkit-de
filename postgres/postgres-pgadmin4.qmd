@@ -1,22 +1,8 @@
-# PgAdmin4
+# PgAdmin4 basics
 
-*pgAdmin4* ist das offizielle grafische Verwaltungstool für PostgreSQL und bietet eine benutzerfreundliche Oberfläche für die Datenbankverwaltung. Es wird als Teil der PostgreSQL-Installation installiert.
+Nachfolgend behandeln wir einige typische Aufgaben in PgAdmin4, die bei der Arbeit mit Datenbanken anfallen.
 
-## Neuen Server hinzufügen
-
-Um Datenbanken zu verwalten, verbinden Sie sich zunächst mit einer PostgreSQL-Instanz, indem Sie eine neue Serververbindung in pgAdmin4 einrichten:
-
-1. Öffnen Sie *pgAdmin4*.
-2. Klicken Sie unter "Quick Links" auf `Add New Server`.
-3. Geben Sie für den Namen `local-connection` ein.
-4. Wechseln Sie zum Reiter `Connection`:
-    - Hostname/Adresse: Geben Sie `localhost` ein.
-    - Stellen Sie sicher, dass der Port derselbe ist wie bei der Installation (üblicherweise 5432).
-    - Passwort: Geben Sie das während der Installation gesetzte Passwort ein und wählen Sie "Save password".
-5. Bestätigen Sie die Einrichtung durch Klicken auf `Save`.
-6. Dies wird die `local-connection` in der linken Seitenleiste anzeigen.
-
-## Eine Datenbank erstellen
+## Datenbank erstellen
 
 Erstellen Sie als nächstes eine neue Datenbank, um Daten zu speichern:
 
@@ -29,7 +15,7 @@ Bei der Installation von PostgreSQL wird automatisch eine Standarddatenbank name
 3. Geben Sie im Reiter "General" `db_data` als Datenbanknamen ein.
 4. Klicken Sie auf `Save`, um die Datenbank zu erstellen.
 
-## Eine Tabelle erstellen
+## Tabelle erstellen
 
 Erstellen Sie eine Tabelle, um Daten zu Marketingkampagnen zu speichern.
 
@@ -70,7 +56,7 @@ Der obige SQL-Befehl erstellt eine neue Tabelle namens `campaigns`. Hier ist ein
 4. Führen Sie das Skript aus, indem Sie auf die ▶️ Schaltfläche klicken (oder F5 drücken).
 5. Um die Tabelle zu überprüfen, erweitern Sie "Schemas" > "Tables" > "campaigns" > "Columns" in der Datenbank `db_data`.
 
-## Werte in die Tabelle einfügen
+## Werte einfügen
 
 Füllen Sie die Tabelle mit Beispieldaten:
 
