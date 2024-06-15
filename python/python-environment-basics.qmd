@@ -1,150 +1,96 @@
-# Python-Integration mit MongoDB
+# Umgebungen
+
+Umgebungen ("environments") sind isolierte Arbeitsbereiche, in denen Sie Python-Pakete separat für jedes Projekt installieren und verwalten können. Sie helfen Ihnen, verschiedene Abhängigkeiten für unterschiedliche Projekte zu verwalten, um Kompatibilität zu gewährleisten und Konflikte zu vermeiden.
+
+Vorteile:
+
+- **Abhängigkeitsverwaltung**: Eine Umgebung stellt sicher, dass die richtige Version jedes Pakets für Ihr Projekt verfügbar ist, wodurch Fehler durch inkompatible Versionen vermieden werden.
+  
+- **Projekttrennung**: Sie können verschiedene Projekte mit unterschiedlichen Paketanforderungen haben und so Konflikte vermeiden. Beispielsweise kann ein Data-Science-Projekt spezifische Versionen von Datenanalysebibliotheken erfordern, während ein Webentwicklungsprojekt andere Bedürfnisse haben könnte.
+  
+- **Entwicklung benutzerdefinierter Module**: Wenn Sie Ihre eigenen Module erstellen, helfen Umgebungen dabei, diese in Ihre Projekte zu integrieren, ohne Ihre globale Python-Installation zu beeinträchtigen.
+
 
 ## Umgebung erstellen
 
 Um eine Umgebung einzurichten, befolgen Sie diese Anweisungen basierend auf Ihrem Betriebssystem:
+
 
 1. Zugriff auf die Eingabeaufforderung oder das Terminal:
    - **Windows-Benutzer**: Öffnen Sie die Anaconda-Eingabeaufforderung über das Startmenü.
    - **macOS-Benutzer**: Öffnen Sie das Terminal unter Programme > Dienstprogramme oder durch die Suche nach "Terminal".  
 
 2. Erstellen der Umgebung:
-   - Verwenden Sie den folgenden Befehl, um eine neue Conda-Umgebung namens `mongodb` mit Python 3.11 und pip zu erstellen:
+   - Verwenden Sie den folgenden Befehl, um eine neue Conda-Umgebung namens `basics` mit Python 3.11 und pip zu erstellen:
    
    ```bash
-   conda create --name mongodb python=3.11 pip
+   conda create --name basics python=3.11 pip
    ```
+
+   - Geben Sie bei `Proceed ([y]/n)?`ein `y` ein, um die Installtion zu starten.
+   
+   ::: {.callout-note}
+   pip ist ein Paketverwaltungstool für Python. Es steht für "Pip Installs Packages" oder "Pip Installs Python" und wird verwendet, um Python-Pakete aus dem [Python Package Index (PyPI)](https://pypi.org/) zu installieren und zu verwalten. Mit pip kann man Pakete installieren, aktualisieren und deinstallieren.
+   :::
 
 3. Aktivieren der Umgebung:
    - Sobald die Umgebung erstellt ist, aktivieren Sie sie mit:
    
    ```bash
-   conda activate mongodb
+   conda activate basics
    ```
 
-   - Die Eingabeaufforderung ändert sich, um anzuzeigen, dass die Umgebung `mongodb` aktiv ist.
+   - Die Eingabeaufforderung ändert sich, um anzuzeigen, dass die Umgebung `basics` aktiv ist.
 
 4. Installieren der benötigten Bibliotheken:
    - Mit aktivierter Umgebung installieren Sie die Bibliotheken:
 
    ```bash
-   pip install pymongo numpy pandas matplotlib seaborn altair jupyter ipykernel
+   pip install numpy pandas matplotlib seaborn altair jupyter ipykernel
    ```
 
    - Dieser Befehl ruft alle Pakete von PyPI ab und installiert sie.
 
-## Verbindung herstellen
+   ::: {.callout-note}
+   Obwohl Sie Pakete auch mit `conda install` installieren können, verwenden wir ausschließlich `pip`, um mögliche Konflikte zwischen Conda- und Pip-installierten Paketen zu vermeiden. Dieser Ansatz stellt eine konsistente und zuverlässige Verwaltung von Abhängigkeiten in Ihrer Python-Umgebung sicher.
+   :::
 
-Um mit MongoDB zu arbeiten, müssen Sie in einem Jupyter Notebook eine Verbindung zur Datenbank herstellen. Dies erfolgt in mehreren Schritten, die unten beschrieben sind:
+5. Überprüfen der Paketinstallation:
+   - Nach der Installation öffnen Sie ein Jupyter Notebook und überprüfen, ob die Pakete verfügbar sind, indem Sie sie in Python importieren.
 
-**Schritt 1: Importieren der pymongo-Bibliothek**
 
-Zuerst müssen Sie die `pymongo`-Bibliothek importieren, die eine Schnittstelle zwischen Python und MongoDB bietet.
+   ::: {.callout-note}
+   Um die Nutzung der Funktionen und Methoden der Bibliotheken in Ihrem Code zu erleichtern, importieren wir sie häufig mit kürzeren, standardisierten Aliasen (die Verwendung dieser Standard-Aliase verbessert die Lesbarkeit des Codes und reduziert den Schreibaufwand).
+   :::
 
-```python
-import pymongo
-```
+   ```python
+   import numpy as np
+   import pandas as pd
+   import matplotlib.pyplot as plt
+   import seaborn as sns
+   import altair as alt
+   ```
+  
+   - Wenn keine Fehler auftreten, wurden die Bibliotheken korrekt installiert.
+   
+   :::{.callout-tip collapse="true" title="Erklärung der Pakete"} 
 
-**Schritt 2: Erstellen eines MongoDB-Clients**
+   **NumPy (`np`)**: Der Alias `np` wird weit verbreitet verwendet und ermöglicht einen prägnanten Zugriff auf NumPys Funktionen für numerische Berechnungen.
 
-Erstellen Sie eine Verbindung zum MongoDB-Server. Der Standardanschluss für MongoDB ist `27017`.
+   **Pandas (`pd`)**: Der Alias `pd` bietet eine Kurzform für Pandas' leistungsstarke Datenmanipulationstools.
 
-```python
-# Verbindung zur MongoDB herstellen
-client = pymongo.MongoClient("mongodb://localhost:27017/")
-```
+   **Matplotlib (`plt`)**: Der Alias `plt` vereinfacht das Aufrufen der Funktionen von Matplotlib zum Plotten, Erstellen von Abbildungen und Anpassen von Grafiken.
 
-Hier verwenden wir `localhost`, da der MongoDB-Server auf dem lokalen Rechner läuft. Wenn der Server auf einem Remote-Server läuft, ersetzen Sie `localhost` durch die IP-Adresse oder den Domain-Namen des Servers.
+   **Seaborn (`sns`)**: Der Alias `sns` erleichtert den Zugriff auf Seaborns statistische Datenvisualisierungstools, die nahtlos mit Matplotlib integriert sind.
 
-**Schritt 3: Auswählen der Datenbank**
+   **Altair (`alt`)**: Der Alias `alt` ermöglicht einen schnellen Zugriff auf Altairs  Visualisierungssyntax für interaktives Plotten.
+   :::
 
-MongoDB organisiert Daten in Datenbanken. Um eine bestimmte Datenbank zu verwenden, greifen Sie auf diese wie folgt zu:
+6. Deaktivieren der Umgebung:
+   - Wenn Sie fertig sind oder zur Basisumgebung zurückkehren möchten, deaktivieren Sie die aktuelle Umgebung:
 
-```python
-# Datenbank auswählen
-db = client["mydatabase"]
-```
+   ```bash
+   conda deactivate
+   ```
 
-Falls die Datenbank noch nicht existiert, wird sie erstellt, sobald Sie ein Dokument einfügen.
-
-**Schritt 4: Auswählen der Sammlung**
-
-Innerhalb einer Datenbank organisiert MongoDB Daten in Sammlungen (ähnlich wie Tabellen in SQL-Datenbanken). Sie können eine Sammlung wie folgt auswählen:
-
-```python
-# Sammlung auswählen
-collection = db["mycollection"]
-```
-
-Auch hier gilt: Falls die Sammlung noch nicht existiert, wird sie erstellt, sobald Sie ein Dokument einfügen.
-
-**Schritt 5: Einfügen eines Dokuments**
-
-Ein Dokument in MongoDB ist ein JSON-ähnliches Objekt. Sie können ein Dokument wie folgt einfügen:
-
-```python
-# Dokument einfügen
-collection.insert_one({"name": "Alice", "age": 25})
-```
-
-Der Befehl `insert_one` fügt ein einzelnes Dokument in die Sammlung ein.
-
-**Schritt 6: Abfragen von Dokumenten**
-
-Um Dokumente aus einer Sammlung abzufragen, können Sie die Methode `find` verwenden. Diese gibt alle Dokumente in der Sammlung zurück:
-
-```python
-# Dokumente abfragen
-for doc in collection.find():
-    print(doc)
-```
-
-Dieser Code durchläuft alle Dokumente in der Sammlung und druckt sie aus. 
-
-Hier der Output der Abfrage:
-
-```sh
-{'_id': ObjectId('666d5f5b50a5f96c3ed89649'), 'name': 'Jan', 'age': 44}
-{'_id': ObjectId('666d7727c1365bab40959889'), 'name': 'Alice', 'age': 25}
-```
-
-## Fehlerbehandlung
-
-Es ist wichtig, bei der Arbeit mit Datenbanken Fehler zu behandeln. Hier ist ein Beispiel, wie Sie Verbindungsfehler abfangen können:
-
-```python
-try:
-    client = pymongo.MongoClient("mongodb://localhost:27017/")
-    print("Verbindung erfolgreich")
-except pymongo.errors.ConnectionError as e:
-    print("Verbindung fehlgeschlagen:", e)
-```
-
-Dieses Beispiel fängt Verbindungsfehler ab und gibt eine entsprechende Meldung aus.
-
-## Weitere Funktionen
-
-`pymongo` bietet viele weitere Funktionen, wie das Aktualisieren und Löschen von Dokumenten sowie das Erstellen von Indizes. Hier sind einige Beispiele:
-
-**Dokument aktualisieren**
-
-```python
-# Dokument aktualisieren
-collection.update_one({"name": "Alice"}, {"$set": {"age": 26}})
-```
-
-**Dokument löschen**
-
-```python
-# Dokument löschen
-collection.delete_one({"name": "Alice"})
-```
-
-**Indizes erstellen**
-
-```python
-# Index erstellen
-collection.create_index([("name", pymongo.ASCENDING)])
-```
-
-Diese zusätzlichen Funktionen ermöglichen eine umfassendere Interaktion mit Ihrer MongoDB-Datenbank.
+Das Erstellen einer separaten Umgebung für Python-Grundlagen stellt sicher, dass Ihr Arbeitsbereich isoliert und stabil bleibt.
