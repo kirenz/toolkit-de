@@ -23,7 +23,7 @@ Das Hinzufügen von VS Code zu Ihrem PATH ermöglicht es Ihnen, den Editor über
 Beim Starten von Visual Studio Code wird Ihnen möglicherweise eine Aufforderung angezeigt, ob Sie den Autoren der Dateien vertrauen ([Workspace Trust](https://code.visualstudio.com/docs/editor/workspace-trust)). Wählen Sie "**Ja, ich vertraue den Autoren**" (diese Auswahl ermöglicht die volle Funktionalität von Visual Studio Code, sodass alle Funktionen und Erweiterungen verwendet werden können).
 
 
-### Installation auf macOS
+## Mac
 
 1. Downloaden Sie den Installer:
    - Navigieren Sie zur [Visual Studio Code Download-Seite](https://code.visualstudio.com/Download).
