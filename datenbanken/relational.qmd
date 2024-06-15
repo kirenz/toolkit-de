@@ -1,4 +1,4 @@
-# Relationale Datenbanken
+# Relational
 
 Eine relationale Datenbank ist eine Sammlung von Datenobjekten mit vordefinierten Beziehungen zwischen ihnen. Diese Objekte sind als eine Reihe von Tabellen mit Spalten und Zeilen organisiert ([AWS](https://aws.amazon.com/relational-database/?nc1=h_ls)):
 
