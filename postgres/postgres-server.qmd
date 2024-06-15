@@ -1,4 +1,4 @@
-# Server hinzufügen
+# Server einrichten
 
 Um Datenbanken zu verwalten, verbinden Sie sich zunächst mit einer PostgreSQL-Instanz, indem Sie eine neue Serververbindung in pgAdmin4 einrichten:
 
