@@ -1,4 +1,4 @@
-# Python Installation
+# Python 
 
 Python kann direkt von der offiziellen Python-Website oder über einen Paketmanager wie Anaconda installiert werden, der zusätzliche Tools bietet und das Paketmanagement vereinfacht.
 
