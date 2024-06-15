@@ -1,4 +1,4 @@
-# GitHub-Organisation
+# Organization
 
 Organisationen sind gemeinsame Konten, bei denen Unternehmen und Open-Source-Projekte über viele Projekte hinweg zusammenarbeiten können, mit ausgeklügelten Sicherheits- und Verwaltungsfunktionen.
 
