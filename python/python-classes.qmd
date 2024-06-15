@@ -59,7 +59,7 @@ In diesem Beispiel:
 
 In diesem Beispiel behandeln wir ausführlich die Definition einer Klasse `DataPoint`, die eine einzelne Beobachtung in einem Datensatz darstellt. 
 
-```python
+```{python}
 # Definiere eine einfache Klasse, die eine Datenbeobachtung repräsentiert
 class DataPoint:
     """Eine Klasse, die eine Datenbeobachtung mit Merkmalen und Label repräsentiert."""
