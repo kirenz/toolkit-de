@@ -1,4 +1,4 @@
-# GitHub Codespaces
+# Codespaces
 
 Ein [GitHub Codespace](https://github.com/features/codespaces) ist eine vollständig konfigurierte Entwicklungsumgebung, die in der Cloud gehostet wird.
 
