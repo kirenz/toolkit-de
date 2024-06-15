@@ -1,5 +1,8 @@
 # Klassen und Objekte
 
+- [⬇️ Jupyter Notebook herunterladen](../code/python-classes.ipynb){download="python-classes.ipynb"}
+
+
 Die objektorientierte Programmierung (OOP) ist ein wichtiges Konzept in der Softwareentwicklung. Es hilft besonders dabei, große Codebasen für komplexe Data-Science-Projekte zu organisieren und zu verwalten. 
 
 In diesem Abschnitt lernen wir:
