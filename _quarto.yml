@@ -55,13 +55,13 @@ book:
     - part: mysql/mysql.qmd
       chapters:
         - mysql/mysql-installation.qmd 
-        - mysql/mysql-workbench-server.qmd
+        - mysql/mysql-server.qmd
         - mysql/mysql-workbench.qmd
-     
 
     - part: postgres/postgres.qmd
       chapters:
         - postgres/postgres-installation.qmd
+        - postgres/postgres-server.qmd
         - postgres/postgres-pgadmin4.qmd
         - postgres/postgres-python.qmd
 
