@@ -20,7 +20,6 @@ book:
 
   chapters:
     - index.qmd
-    # - introduction.qmd
 
     - part: first-steps/first-steps.qmd
       chapters:
@@ -48,11 +47,20 @@ book:
         - vscode/visual-studio-code-extensions.qmd
         - vscode/visual-studio-code-basics.qmd
 
-    - part: sql/sql.qmd
+    - part: datenbanken/datenbanken.qmd
       chapters:
-        - sql/sql-mysql.qmd
-        - sql/sql-postgresql.qmd
-        - sql/sql-python.qmd
+        - datenbanken/sql/sql.qmd
+          chapters:
+            - datenbanken/sql/sql-mysql.qmd 
+            - datenbanken/sql/sql-postgresql.qmd
+            - datenbanken/sql/sql-python.qmd
+      chapters:
+        - datenbanken/nosql/nosql.qmd
+          chapters:
+            - datenbanken/nosql/mongo-db-installation.qmd 
+            - datenbanken/nosql/mongo-db-start-stop.qmd
+            - datenbanken/nosql/mongo-db-basics.qmd  
+            - datenbanken/nosql/mongo-db-oython.qmd  
 
     - part: github/github.qmd
       chapters:
