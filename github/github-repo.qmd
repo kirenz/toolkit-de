@@ -1,4 +1,4 @@
-# GitHub-Repositories
+# Repositories
 
 Ein Repository (oft abgekürzt als "Repo") auf GitHub ist wie ein Speicherplatz, in dem alle Dateien und deren Versionsverlauf für Ihr Projekt gespeichert werden. 
 
