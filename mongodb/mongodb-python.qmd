@@ -1,0 +1,150 @@
+# Python-Integration
+
+## Umgebung erstellen
+
+Um eine Umgebung einzurichten, befolgen Sie diese Anweisungen basierend auf Ihrem Betriebssystem:
+
+1. Zugriff auf die Eingabeaufforderung oder das Terminal:
+   - **Windows-Benutzer**: Öffnen Sie die Anaconda-Eingabeaufforderung über das Startmenü.
+   - **macOS-Benutzer**: Öffnen Sie das Terminal unter Programme > Dienstprogramme oder durch die Suche nach "Terminal".  
+
+2. Erstellen der Umgebung:
+   - Verwenden Sie den folgenden Befehl, um eine neue Conda-Umgebung namens `mongodb` mit Python 3.11 und pip zu erstellen:
+   
+   ```bash
+   conda create --name mongodb python=3.11 pip
+   ```
+
+3. Aktivieren der Umgebung:
+   - Sobald die Umgebung erstellt ist, aktivieren Sie sie mit:
+   
+   ```bash
+   conda activate mongodb
+   ```
+
+   - Die Eingabeaufforderung ändert sich, um anzuzeigen, dass die Umgebung `mongodb` aktiv ist.
+
+4. Installieren der benötigten Bibliotheken:
+   - Mit aktivierter Umgebung installieren Sie die Bibliotheken:
+
+   ```bash
+   pip install pymongo numpy pandas matplotlib seaborn altair jupyter ipykernel
+   ```
+
+   - Dieser Befehl ruft alle Pakete von PyPI ab und installiert sie.
+
+## Verbindung herstellen
+
+Um mit MongoDB zu arbeiten, müssen Sie in einem Jupyter Notebook eine Verbindung zur Datenbank herstellen. Dies erfolgt in mehreren Schritten, die unten beschrieben sind:
+
+**Schritt 1: Importieren der pymongo-Bibliothek**
+
+Zuerst müssen Sie die `pymongo`-Bibliothek importieren, die eine Schnittstelle zwischen Python und MongoDB bietet.
+
+```python
+import pymongo
+```
+
+**Schritt 2: Erstellen eines MongoDB-Clients**
+
+Erstellen Sie eine Verbindung zum MongoDB-Server. Der Standardanschluss für MongoDB ist `27017`.
+
+```python
+# Verbindung zur MongoDB herstellen
+client = pymongo.MongoClient("mongodb://localhost:27017/")
+```
+
+Hier verwenden wir `localhost`, da der MongoDB-Server auf dem lokalen Rechner läuft. Wenn der Server auf einem Remote-Server läuft, ersetzen Sie `localhost` durch die IP-Adresse oder den Domain-Namen des Servers.
+
+**Schritt 3: Auswählen der Datenbank**
+
+MongoDB organisiert Daten in Datenbanken. Um eine bestimmte Datenbank zu verwenden, greifen Sie auf diese wie folgt zu:
+
+```python
+# Datenbank auswählen
+db = client["mydatabase"]
+```
+
+Falls die Datenbank noch nicht existiert, wird sie erstellt, sobald Sie ein Dokument einfügen.
+
+**Schritt 4: Auswählen der Sammlung**
+
+Innerhalb einer Datenbank organisiert MongoDB Daten in Sammlungen (ähnlich wie Tabellen in SQL-Datenbanken). Sie können eine Sammlung wie folgt auswählen:
+
+```python
+# Sammlung auswählen
+collection = db["mycollection"]
+```
+
+Auch hier gilt: Falls die Sammlung noch nicht existiert, wird sie erstellt, sobald Sie ein Dokument einfügen.
+
+**Schritt 5: Einfügen eines Dokuments**
+
+Ein Dokument in MongoDB ist ein JSON-ähnliches Objekt. Sie können ein Dokument wie folgt einfügen:
+
+```python
+# Dokument einfügen
+collection.insert_one({"name": "Alice", "age": 25})
+```
+
+Der Befehl `insert_one` fügt ein einzelnes Dokument in die Sammlung ein.
+
+**Schritt 6: Abfragen von Dokumenten**
+
+Um Dokumente aus einer Sammlung abzufragen, können Sie die Methode `find` verwenden. Diese gibt alle Dokumente in der Sammlung zurück:
+
+```python
+# Dokumente abfragen
+for doc in collection.find():
+    print(doc)
+```
+
+Dieser Code durchläuft alle Dokumente in der Sammlung und druckt sie aus. 
+
+Hier der Output der Abfrage:
+
+```sh
+{'_id': ObjectId('666d5f5b50a5f96c3ed89649'), 'name': 'Jan', 'age': 44}
+{'_id': ObjectId('666d7727c1365bab40959889'), 'name': 'Alice', 'age': 25}
+```
+
+## Fehlerbehandlung
+
+Es ist wichtig, bei der Arbeit mit Datenbanken Fehler zu behandeln. Hier ist ein Beispiel, wie Sie Verbindungsfehler abfangen können:
+
+```python
+try:
+    client = pymongo.MongoClient("mongodb://localhost:27017/")
+    print("Verbindung erfolgreich")
+except pymongo.errors.ConnectionError as e:
+    print("Verbindung fehlgeschlagen:", e)
+```
+
+Dieses Beispiel fängt Verbindungsfehler ab und gibt eine entsprechende Meldung aus.
+
+## Weitere Funktionen
+
+`pymongo` bietet viele weitere Funktionen, wie das Aktualisieren und Löschen von Dokumenten sowie das Erstellen von Indizes. Hier sind einige Beispiele:
+
+**Dokument aktualisieren**
+
+```python
+# Dokument aktualisieren
+collection.update_one({"name": "Alice"}, {"$set": {"age": 26}})
+```
+
+**Dokument löschen**
+
+```python
+# Dokument löschen
+collection.delete_one({"name": "Alice"})
+```
+
+**Indizes erstellen**
+
+```python
+# Index erstellen
+collection.create_index([("name", pymongo.ASCENDING)])
+```
+
+Diese zusätzlichen Funktionen ermöglichen eine umfassendere Interaktion mit Ihrer MongoDB-Datenbank.
