@@ -1,6 +1,6 @@
-# Organization
+# Organizations
 
-Organisationen sind gemeinsame Konten, bei denen Unternehmen und Open-Source-Projekte über viele Projekte hinweg zusammenarbeiten können, mit ausgeklügelten Sicherheits- und Verwaltungsfunktionen.
+GitHub-Organizations sind gemeinsame Konten, bei denen Unternehmen und Open-Source-Projekte über viele Projekte hinweg zusammenarbeiten können, mit ausgeklügelten Sicherheits- und Verwaltungsfunktionen.
 
 Ihr Team kann auf GitHub mithilfe eines Organisationskontos zusammenarbeiten, das als Container für Ihre gemeinsame Arbeit dient und der Arbeit einen einzigartigen Namen und eine Marke verleiht. Jede Person, die GitHub nutzt, meldet sich immer mit einem persönlichen Konto an, und mehrere persönliche Konten können an gemeinsamen Projekten zusammenarbeiten, indem sie demselben Organisationskonto beitreten.
 
