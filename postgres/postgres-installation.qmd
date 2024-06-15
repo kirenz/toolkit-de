@@ -35,7 +35,7 @@
     - Überprüfen Sie die Einstellungen und klicken Sie auf "Next", um die Installation zu starten.
     - Nach Abschluss der Installation klicken Sie auf "Finish".
 
-## Mac Installation
+## Mac 
 
 1. **PostgreSQL herunterladen und installieren**
     - Laden Sie PostgreSQL von [dieser Website](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads) herunter.
