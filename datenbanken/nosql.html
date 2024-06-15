@@ -9,7 +9,7 @@
 <meta name="author" content="Jan Kirenz">
 <meta name="description" content="Programming Toolkit für Data Science, AI &amp; Analytics">
 
-<title>Data Science, AI &amp; Analytics Toolkit - 19&nbsp; PostgreSQL</title>
+<title>Data Science, AI &amp; Analytics Toolkit - 19&nbsp; NoSQL Datenbanken</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,40 +22,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -66,8 +32,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../sql/sql-python.html" rel="next">
-<link href="../sql/sql-mysql.html" rel="prev">
+<link href="../mysql/mysql.html" rel="next">
+<link href="../datenbanken/sql.html" rel="prev">
 <link href="..//images/logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -118,7 +84,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../sql/sql.html">Relationale Datenbanken</a></li><li class="breadcrumb-item"><a href="../sql/sql-postgresql.html"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">PostgreSQL</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../datenbanken/datenbanken.html">Datenbanken</a></li><li class="breadcrumb-item"><a href="../datenbanken/nosql.html"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">NoSQL Datenbanken</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -284,8 +250,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../sql/sql.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Relationale Datenbanken</span></a>
+            <a href="../datenbanken/datenbanken.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Datenbanken</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -293,28 +259,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../sql/sql-mysql.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">MySQL</span></span></a>
+  <a href="../datenbanken/sql.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Relationale Datenbanken</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../sql/sql-postgresql.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">PostgreSQL</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../sql/sql-python.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">SQL &amp; Python</span></span></a>
+  <a href="../datenbanken/nosql.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">NoSQL Datenbanken</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../nosql/nosql.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">NoSQL Datenbanken</span></a>
+            <a href="../mysql/mysql.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">MySQL</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -322,26 +282,78 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../nosql/mongo-db-installation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">MongoDB</span></span></a>
+  <a href="../mysql/mysql-installation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Installation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../nosql/mongo-db-start-stop.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">MongoDB starten und stoppen</span></span></a>
+  <a href="../mysql/mysql-workbench.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">MySQL Workbench</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../postgres/postgres.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PostgreSQL</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../postgres/postgres-installation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Installation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../nosql/mongo-db-basics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Grundlegende Nutzung von MongoDB</span></span></a>
+  <a href="../postgres/postgres-pgadmin4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">PgAdmin4</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../nosql/mongo-db-python.html" class="sidebar-item-text sidebar-link">
+  <a href="../postgres/postgres-python.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Python-Integration</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../mongodb/mongodb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">MongoDB</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mongodb/mongodb-installation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Installation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mongodb/mongodb-start-stop.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Starten und stoppen</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mongodb/mongodb-basics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Grundlegende Nutzung</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mongodb/mongodb-python.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Python-Integration</span></span></a>
   </div>
 </li>
       </ul>
@@ -350,39 +362,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="sidebar-item-container"> 
             <a href="../github/github.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">GitHub</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true" aria-label="Abschnitt umschalten">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github/github-git.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Git</span></span></a>
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Git</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github/github-setup.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">GitHub Setup</span></span></a>
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">GitHub Setup</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github/github-repo.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">GitHub-Repositories</span></span></a>
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">GitHub-Repositories</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github/github-organization.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">GitHub-Organisation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">GitHub-Organisation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github/github-projects.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">GitHub-Projekte</span></span></a>
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">GitHub-Projekte</span></span></a>
   </div>
 </li>
       </ul>
@@ -397,14 +409,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-  <li><a href="#installation" id="toc-installation" class="nav-link active" data-scroll-target="#installation"><span class="header-section-number">19.1</span> Installation</a></li>
-  <li><a href="#pgadmin4" id="toc-pgadmin4" class="nav-link" data-scroll-target="#pgadmin4"><span class="header-section-number">19.2</span> PgAdmin4</a>
+  <li><a href="#datenmodelle" id="toc-datenmodelle" class="nav-link active" data-scroll-target="#datenmodelle"><span class="header-section-number">19.1</span> Datenmodelle</a>
   <ul class="collapse">
-  <li><a href="#neuen-server-hinzufügen" id="toc-neuen-server-hinzufügen" class="nav-link" data-scroll-target="#neuen-server-hinzufügen"><span class="header-section-number">19.2.1</span> Neuen Server hinzufügen</a></li>
-  <li><a href="#eine-datenbank-erstellen" id="toc-eine-datenbank-erstellen" class="nav-link" data-scroll-target="#eine-datenbank-erstellen"><span class="header-section-number">19.2.2</span> Eine Datenbank erstellen</a></li>
-  <li><a href="#eine-tabelle-erstellen" id="toc-eine-tabelle-erstellen" class="nav-link" data-scroll-target="#eine-tabelle-erstellen"><span class="header-section-number">19.2.3</span> Eine Tabelle erstellen</a></li>
-  <li><a href="#werte-in-die-tabelle-einfügen" id="toc-werte-in-die-tabelle-einfügen" class="nav-link" data-scroll-target="#werte-in-die-tabelle-einfügen"><span class="header-section-number">19.2.4</span> Werte in die Tabelle einfügen</a></li>
-  <li><a href="#werte-abrufen" id="toc-werte-abrufen" class="nav-link" data-scroll-target="#werte-abrufen"><span class="header-section-number">19.2.5</span> Werte abrufen</a></li>
+  <li><a href="#dokumentenorientierter-speicher" id="toc-dokumentenorientierter-speicher" class="nav-link" data-scroll-target="#dokumentenorientierter-speicher"><span class="header-section-number">19.1.1</span> Dokumentenorientierter Speicher</a></li>
+  <li><a href="#schlüssel-wert-speicher" id="toc-schlüssel-wert-speicher" class="nav-link" data-scroll-target="#schlüssel-wert-speicher"><span class="header-section-number">19.1.2</span> Schlüssel-Wert-Speicher</a></li>
+  <li><a href="#spaltenorientierter-speicher" id="toc-spaltenorientierter-speicher" class="nav-link" data-scroll-target="#spaltenorientierter-speicher"><span class="header-section-number">19.1.3</span> Spaltenorientierter Speicher</a></li>
+  <li><a href="#graph-speicher" id="toc-graph-speicher" class="nav-link" data-scroll-target="#graph-speicher"><span class="header-section-number">19.1.4</span> Graph-Speicher</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -412,9 +422,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../sql/sql.html">Relationale Datenbanken</a></li><li class="breadcrumb-item"><a href="../sql/sql-postgresql.html"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">PostgreSQL</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../datenbanken/datenbanken.html">Datenbanken</a></li><li class="breadcrumb-item"><a href="../datenbanken/nosql.html"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">NoSQL Datenbanken</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">PostgreSQL</span></h1>
+<h1 class="title"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">NoSQL Datenbanken</span></h1>
 </div>
 
 
@@ -431,237 +441,69 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p><em>PostgreSQL</em>, oft ausgesprochen als “Post-gress-Q-L”, ist ein relationales Datenbankmanagementsystem (RDBMS), das für seine Robustheit und seine Fähigkeiten zur Verwaltung komplexer Datenoperationen bekannt ist.</p>
-<section id="installation" class="level2" data-number="19.1">
-<h2 data-number="19.1" class="anchored" data-anchor-id="installation"><span class="header-section-number">19.1</span> Installation</h2>
-<ol type="1">
-<li>Laden Sie PostgreSQL von <a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloads">dieser Website</a> herunter und installieren Sie es.</li>
-<li>Wählen Sie das Standard-Installationsverzeichnis aus.</li>
-<li>Wählen Sie diese Komponenten aus:
+<p>NoSQL steht für “Not only SQL” und bezeichnet eine Klasse von Datenbanksystemen, die sich von traditionellen, relationalen Datenbanken unterscheiden. Sie wurden entwickelt, um die Skalierbarkeit und Leistung zu verbessern und um flexibler mit den Daten umgehen zu können.</p>
+<p>Anstatt Tabellen normalisierter Daten zu verbinden, speichern NoSQL-Datenbanken <em>unstrukturierte</em> oder <em>halbstrukturierte Daten</em>, oft in Schlüssel-Wert-Paaren oder JSON-Dokumenten.</p>
+<p>NoSQL-Datenbanken umfassen mehrere verschiedene Modelle zum Zugriff und zur Verwaltung von Daten, die jeweils für spezifische Anwendungsfälle geeignet sind (<a href="https://docs.microsoft.com/en-us/dotnet/architecture/cloud-native/relational-vs-nosql-data">Microsoft, 2021</a>). Hier sind einige Hauptmerkmale und -modelle von NoSQL-Datenbanken:</p>
 <ul>
-<li>PostgreSQL Server</li>
-<li>pgAdmin4</li>
-<li>Kommandozeilenwerkzeuge</li>
-</ul></li>
-<li>Wählen Sie das Standardverzeichnis für die Dateninstallation.</li>
-<li>Passwort: Setzen Sie ein Passwort</li>
-<li>Port: Akzeptieren Sie den standardmäßig vorgeschlagenen Port (üblicherweise 5432).</li>
-<li>Gebietsschema: Setzen Sie es auf das Standardgebietsschema.</li>
-</ol>
-</section>
-<section id="pgadmin4" class="level2" data-number="19.2">
-<h2 data-number="19.2" class="anchored" data-anchor-id="pgadmin4"><span class="header-section-number">19.2</span> PgAdmin4</h2>
-<p><em>pgAdmin4</em> ist das offizielle grafische Verwaltungstool für PostgreSQL und bietet eine benutzerfreundliche Oberfläche für die Datenbankverwaltung. Es wird als Teil der PostgreSQL-Installation installiert.</p>
-<section id="neuen-server-hinzufügen" class="level3" data-number="19.2.1">
-<h3 data-number="19.2.1" class="anchored" data-anchor-id="neuen-server-hinzufügen"><span class="header-section-number">19.2.1</span> Neuen Server hinzufügen</h3>
-<p>Um Datenbanken zu verwalten, verbinden Sie sich zunächst mit einer PostgreSQL-Instanz, indem Sie eine neue Serververbindung in pgAdmin4 einrichten:</p>
-<ol type="1">
-<li>Öffnen Sie <em>pgAdmin4</em>.</li>
-<li>Klicken Sie unter “Quick Links” auf <code>Add New Server</code>.</li>
-<li>Geben Sie für den Namen <code>local-connection</code> ein.</li>
-<li>Wechseln Sie zum Reiter <code>Connection</code>:
-<ul>
-<li>Hostname/Adresse: Geben Sie <code>localhost</code> ein.</li>
-<li>Stellen Sie sicher, dass der Port derselbe ist wie bei der Installation (üblicherweise 5432).</li>
-<li>Passwort: Geben Sie das während der Installation gesetzte Passwort ein und wählen Sie “Save password”.</li>
-</ul></li>
-<li>Bestätigen Sie die Einrichtung durch Klicken auf <code>Save</code>.</li>
-<li>Dies wird die <code>local-connection</code> in der linken Seitenleiste anzeigen.</li>
-</ol>
-</section>
-<section id="eine-datenbank-erstellen" class="level3" data-number="19.2.2">
-<h3 data-number="19.2.2" class="anchored" data-anchor-id="eine-datenbank-erstellen"><span class="header-section-number">19.2.2</span> Eine Datenbank erstellen</h3>
-<p>Erstellen Sie als nächstes eine neue Datenbank, um Daten zu speichern:</p>
-<div class="callout callout-style-simple callout-note callout-titled" title="Standard PostgreSQL Datenbank">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Standard PostgreSQL Datenbank
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Bei der Installation von PostgreSQL wird automatisch eine Standarddatenbank namens <code>postgres</code> erstellt. Diese Datenbank wird typischerweise für administrative Zwecke und Tests verwendet. Es ist immer ratsam, neue Datenbanken für anwendungsspezifische Daten zu erstellen, um zu vermeiden, dass die Standarddatenbank mit Anwendungsdaten überladen wird.</p>
-</div>
-</div>
-</div>
-<ol type="1">
-<li>Klicken Sie in pgAdmin4 mit der rechten Maustaste auf den <code>local-connection</code> Server in der linken Seitenleiste.</li>
-<li>Navigieren Sie zu: Create &gt; Database.</li>
-<li>Geben Sie im Reiter “General” <code>db_data</code> als Datenbanknamen ein.</li>
-<li>Klicken Sie auf <code>Save</code>, um die Datenbank zu erstellen.</li>
-</ol>
-</section>
-<section id="eine-tabelle-erstellen" class="level3" data-number="19.2.3">
-<h3 data-number="19.2.3" class="anchored" data-anchor-id="eine-tabelle-erstellen"><span class="header-section-number">19.2.3</span> Eine Tabelle erstellen</h3>
-<p>Erstellen Sie eine Tabelle, um Daten zu Marketingkampagnen zu speichern.</p>
-<div class="callout callout-style-simple callout-note callout-titled" title="Tabellendefinition">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tabellendefinition
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Spalten in der Marketingkampagnen-Tabelle: - id: Eine eindeutige Kennung für jede Kampagne, automatisch inkrementiert. - name: Der Name der Marketingkampagne. - start_date &amp; end_date: Der Zeitraum der Kampagne. - budget: Das der Kampagne zugewiesene Budget. - channel: Der für die Kampagne verwendete Kanal (z.B. “E-Mail”, “Soziale Medien”, “TV”).</p>
-</div>
-</div>
-</div>
-<ol type="1">
-<li>Navigieren Sie zur <code>db_data</code> Datenbank.</li>
-<li>Öffnen Sie das Abfragewerkzeug unter Tools &gt; Query Tool.</li>
-<li>Geben Sie den folgenden SQL-Befehl ein, um die <code>campaigns</code> Tabelle zu erstellen:</li>
-</ol>
-<div class="sourceCode" id="cb1"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">CREATE</span> <span class="kw">TABLE</span> campaigns (</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">id</span> BIGSERIAL <span class="kw">PRIMARY</span> <span class="kw">KEY</span>,</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    name <span class="dt">VARCHAR</span>(<span class="dv">255</span>) <span class="kw">NOT</span> <span class="kw">NULL</span>,</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    start_date <span class="dt">DATE</span>,</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    end_date <span class="dt">DATE</span>,</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    budget <span class="dt">DECIMAL</span>(<span class="dv">10</span>, <span class="dv">2</span>),</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    channel <span class="dt">VARCHAR</span>(<span class="dv">255</span>)</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>);</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout callout-style-simple callout-note callout-titled" title="Tabellendefinition Erklärung">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tabellendefinition Erklärung
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Der obige SQL-Befehl erstellt eine neue Tabelle namens <code>campaigns</code>. Hier ist eine Aufschlüsselung der einzelnen Spaltendefinitionen:</p>
-<ul>
-<li><strong>id</strong>: Eine Spalte namens <code>id</code>, die den Datentyp <code>BIGSERIAL</code> verwendet, was ein automatisch inkrementierender Integer ist und sich für einen Primärschlüssel eignet.</li>
-<li><strong>name</strong>: Eine Spalte zur Speicherung von Kampagnennamen als Text, definiert, um eine Zeichenfolge von bis zu 255 Zeichen zu halten. Die <code>NOT NULL</code>-Einschränkung stellt sicher, dass jede Zeile einen Namen haben muss.</li>
-<li><strong>start_date</strong> und <strong>end_date</strong>: Diese Spalten speichern die Start- und Enddaten der Kampagnen jeweils im <code>DATE</code>-Datentyp.</li>
-<li><strong>budget</strong>: Eine Spalte für das mit jeder Kampagne verbundene Budget, die <code>DECIMAL(10, 2)</code> verwendet, um bis zu 10 Ziffern mit 2 Dezimalstellen zu ermöglichen.</li>
-<li><strong>channel</strong>: Eine Spalte, um das für die Kampagne verwendete Medium anzugeben, die Zeichenfolgen von bis zu 255 Zeichen speichern kann.</li>
+<li><p><strong>Schemaflexibilität</strong>: Im Gegensatz zu relationalen Datenbanken, bei denen das Schema festgelegt ist, bieten NoSQL-Datenbanken die Möglichkeit, Daten ohne vordefiniertes Schema zu speichern. Dies ermöglicht eine schnelle Anpassung an sich ändernde Datenanforderungen.</p></li>
+<li><p><strong>Horizontale Skalierbarkeit</strong>: NoSQL-Datenbanken sind darauf ausgelegt, große Datenmengen auf vielen Servern zu verteilen. Sie unterstützen eine horizontale Skalierung, was bedeutet, dass sie durch Hinzufügen weiterer Server in ein Netzwerk skalierbar sind.</p></li>
+<li><p><strong>Hohe Verfügbarkeit und Fehlertoleranz</strong>: NoSQL-Datenbanken sind so konzipiert, dass sie auch bei Ausfällen einzelner Knoten im Netzwerk weiterhin verfügbar sind.</p></li>
 </ul>
-</div>
-</div>
-</div>
-<ol start="4" type="1">
-<li>Führen Sie das Skript aus, indem Sie auf die ▶️ Schaltfläche klicken (oder F5 drücken).</li>
-<li>Um die Tabelle zu überprüfen, erweitern Sie “Schemas” &gt; “Tables” &gt; “campaigns” &gt; “Columns” in der Datenbank <code>db_data</code>.</li>
-</ol>
-</section>
-<section id="werte-in-die-tabelle-einfügen" class="level3" data-number="19.2.4">
-<h3 data-number="19.2.4" class="anchored" data-anchor-id="werte-in-die-tabelle-einfügen"><span class="header-section-number">19.2.4</span> Werte in die Tabelle einfügen</h3>
-<p>Füllen Sie die Tabelle mit Beispieldaten:</p>
-<ol type="1">
-<li>Verwenden Sie erneut das Abfragewerkzeug, um die folgende Einfügeanweisung auszuführen:</li>
-</ol>
-<div class="sourceCode" id="cb2"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">INSERT</span> <span class="kw">INTO</span> campaigns (name, start_date, end_date, budget, channel) <span class="kw">VALUES</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>(<span class="st">'Winter Sale'</span>, <span class="st">'2023-12-01'</span>, <span class="st">'2023-12-31'</span>, <span class="fl">5000.00</span>, <span class="st">'Email'</span>),</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>(<span class="st">'Summer Festival'</span>, <span class="st">'2023-06-01'</span>, <span class="st">'2023-06-15'</span>, <span class="fl">10000.00</span>, <span class="st">'Social Media'</span>),</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>(<span class="st">'Back to School'</span>, <span class="st">'2023-08-01'</span>, <span class="st">'2023-08-20'</span>, <span class="fl">7500.00</span>, <span class="st">'TV'</span>);</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout callout-style-simple callout-note callout-titled" title="Insert Statement Erklärung">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Insert Statement Erklärung
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Dieser SQL-Befehl fügt Daten in die <code>campaigns</code> Tabelle ein. Jede Zeile von Werten entspricht einer anderen Marketingkampagne:</p>
-<ul>
-<li><strong>Erste Zeile</strong>: Fügt eine Kampagne namens “Winter Sale” ein, die vom 1. bis 31. Dezember 2023 läuft, mit einem Budget von 5000 Dollar und dem Kanal “Email”.</li>
-<li><strong>Zweite Zeile</strong>: Fügt “Summer Festival” ein, eine kürzere Kampagne vom 1. bis 15. Juni 2023, mit einem höheren Budget von 10000 Dollar und nutzt “Social Media”.</li>
-<li><strong>Dritte Zeile</strong>: Fügt die “Back to School”-Kampagne vom 1. bis 20. August 2023 hinzu, mit einem Budget von 7500 Dollar, vermarktet durch “TV”.</li>
-</ul>
-<p>Jeder Satz von Werten ist in Klammern eingeschlossen und durch Kommata getrennt, um verschiedene Kampagnen zu unterscheiden.</p>
-</div>
-</div>
-</div>
-<ol start="2" type="1">
-<li>Führen Sie das Skript aus, indem Sie auf die ▶️ Schaltfläche klicken.</li>
-</ol>
-</section>
-<section id="werte-abrufen" class="level3" data-number="19.2.5">
-<h3 data-number="19.2.5" class="anchored" data-anchor-id="werte-abrufen"><span class="header-section-number">19.2.5</span> Werte abrufen</h3>
-<p>Schließlich können Sie die Daten in der <code>campaigns</code> Tabelle anzeigen:</p>
-<ul>
-<li>Öffnen Sie eine neue Sitzung im Abfragewerkzeug und führen Sie eine SELECT-Abfrage aus:</li>
-</ul>
-<div class="sourceCode" id="cb3"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> <span class="op">*</span> </span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> campaigns;</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout callout-style-simple callout-note callout-titled" title="SELECT Abfrage Erklärung">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-SELECT Abfrage Erklärung
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Dieser SQL-Befehl ruft alle Spalten aus allen Zeilen der <code>campaigns</code> Tabelle ab. Er ist nützlich, um alle Daten zu sehen, die in die Tabelle eingegeben wurden, um sicherzustellen, dass die Einträge korrekt sind, und um weitere Datenanalysen oder Berichte zu erleichtern.</p>
-</div>
-</div>
-</div>
-<p>Dies sollte folgendes Ergebnis ausgeben:</p>
+<section id="datenmodelle" class="level2" data-number="19.1">
+<h2 data-number="19.1" class="anchored" data-anchor-id="datenmodelle"><span class="header-section-number">19.1</span> Datenmodelle</h2>
+<p>NoSQL-Datenbanken bieten eine Vielzahl von Möglichkeiten, um verschiedene Arten von Daten effizient zu speichern und abzurufen. Sie sind besonders nützlich in Szenarien, in denen traditionelle relationale Datenbanken an ihre Grenzen stoßen.</p>
+<p><br></p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 2%">
-<col style="width: 27%">
-<col style="width: 9%">
-<col style="width: 42%">
-<col style="width: 7%">
-<col style="width: 11%">
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>id</th>
-<th>name</th>
-<th>start_date</th>
-<th>end_date</th>
-<th>budget</th>
-<th>channel</th>
+<th>Modell</th>
+<th>Eigenschaften</th>
+<th>Open Source</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>1</td>
-<td>Winter Sale</td>
-<td>2023-12-01</td>
-<td>2023-12-31</td>
-<td>5000.00</td>
-<td>Email</td>
+<td>Dokumentenorientierter Speicher</td>
+<td>Daten und Metadaten werden hierarchisch in JSON-basierten Dokumenten innerhalb der Datenbank gespeichert.</td>
+<td>MongoDB, CouchDB</td>
 </tr>
 <tr class="even">
-<td>2</td>
-<td>Summer Festival</td>
-<td>2023-06-01</td>
-<td>2023-06-15</td>
-<td>10000.00</td>
-<td>Social Media</td>
+<td>Schlüssel-Wert-Speicher</td>
+<td>Die einfachsten NoSQL-Datenbanken, Daten werden als eine Sammlung von Schlüssel-Wert-Paaren dargestellt.</td>
+<td>Redis</td>
 </tr>
 <tr class="odd">
-<td>3</td>
-<td>Back to School</td>
-<td>2023-08-01</td>
-<td>2023-08-20</td>
-<td>7500.00</td>
-<td>TV</td>
+<td>Spaltenorientierter Speicher</td>
+<td>Verwandte Daten werden als eine Reihe von verschachtelten Schlüssel/Wert-Paaren innerhalb einer einzigen Spalte gespeichert.</td>
+<td>HBase, Cassandra</td>
+</tr>
+<tr class="even">
+<td>Graph-Speicher</td>
+<td>Daten werden in einer Graphstruktur als Knoten, Kanten und Dateneigenschaften gespeichert.</td>
+<td>Neo4j</td>
 </tr>
 </tbody>
 </table>
+<section id="dokumentenorientierter-speicher" class="level3" data-number="19.1.1">
+<h3 data-number="19.1.1" class="anchored" data-anchor-id="dokumentenorientierter-speicher"><span class="header-section-number">19.1.1</span> Dokumentenorientierter Speicher</h3>
+<p>In dokumentenorientierten Datenbanken werden Daten in Form von Dokumenten gespeichert, die meist auf JSON (JavaScript Object Notation) basieren. Diese Dokumente enthalten nicht nur die Daten, sondern auch die Struktur der Daten, was eine große Flexibilität bietet. Beispiele sind MongoDB und CouchDB.</p>
+</section>
+<section id="schlüssel-wert-speicher" class="level3" data-number="19.1.2">
+<h3 data-number="19.1.2" class="anchored" data-anchor-id="schlüssel-wert-speicher"><span class="header-section-number">19.1.2</span> Schlüssel-Wert-Speicher</h3>
+<p>Schlüssel-Wert-Datenbanken speichern Daten als eine Sammlung von Schlüssel-Wert-Paaren. Jede Datenstruktur besteht aus einem eindeutigen Schlüssel und einem Wert, der jede Art von Daten enthalten kann. Redis ist ein bekanntes Beispiel für einen Schlüssel-Wert-Speicher.</p>
+</section>
+<section id="spaltenorientierter-speicher" class="level3" data-number="19.1.3">
+<h3 data-number="19.1.3" class="anchored" data-anchor-id="spaltenorientierter-speicher"><span class="header-section-number">19.1.3</span> Spaltenorientierter Speicher</h3>
+<p>Spaltenorientierte Datenbanken speichern Daten in Tabellen, aber im Gegensatz zu relationalen Datenbanken sind die Daten in Spalten anstatt in Reihen organisiert. Dies ermöglicht eine effiziente Speicherung und Abfrage von großen Datenmengen. Beispiele sind HBase und Cassandra.</p>
+</section>
+<section id="graph-speicher" class="level3" data-number="19.1.4">
+<h3 data-number="19.1.4" class="anchored" data-anchor-id="graph-speicher"><span class="header-section-number">19.1.4</span> Graph-Speicher</h3>
+<p>Graph-Datenbanken speichern Daten in Form von Graphen, bei denen Knoten die Datenobjekte und Kanten die Beziehungen zwischen diesen Objekten darstellen. Dies ermöglicht komplexe Abfragen von Beziehungen. Ein bekanntes Beispiel ist Neo4j.</p>
 
 
 </section>
@@ -1079,13 +921,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../sql/sql-mysql.html" class="pagination-link" aria-label="MySQL">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">MySQL</span></span>
+      <a href="../datenbanken/sql.html" class="pagination-link" aria-label="Relationale Datenbanken">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Relationale Datenbanken</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../sql/sql-python.html" class="pagination-link" aria-label="SQL &amp; Python">
-        <span class="nav-page-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">SQL &amp; Python</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../mysql/mysql.html" class="pagination-link" aria-label="MySQL">
+        <span class="nav-page-text">MySQL</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

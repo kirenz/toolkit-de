@@ -9,7 +9,7 @@
 <meta name="author" content="Jan Kirenz">
 <meta name="description" content="Programming Toolkit für Data Science, AI &amp; Analytics">
 
-<title>Data Science, AI &amp; Analytics Toolkit - Relationale Datenbanken</title>
+<title>Data Science, AI &amp; Analytics Toolkit - 26&nbsp; Starten und stoppen</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -32,8 +66,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../sql/sql-mysql.html" rel="next">
-<link href="../vscode/visual-studio-code-basics.html" rel="prev">
+<link href="../mongodb/mongodb-basics.html" rel="next">
+<link href="../mongodb/mongodb-installation.html" rel="prev">
 <link href="..//images/logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -84,7 +118,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../sql/sql.html">Relationale Datenbanken</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../mongodb/mongodb.html">MongoDB</a></li><li class="breadcrumb-item"><a href="../mongodb/mongodb-start-stop.html"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Starten und stoppen</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -250,8 +284,8 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../sql/sql.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Relationale Datenbanken</span></a>
+            <a href="../datenbanken/datenbanken.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Datenbanken</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -259,28 +293,22 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../sql/sql-mysql.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">MySQL</span></span></a>
+  <a href="../datenbanken/sql.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Relationale Datenbanken</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../sql/sql-postgresql.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">PostgreSQL</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../sql/sql-python.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">SQL &amp; Python</span></span></a>
+  <a href="../datenbanken/nosql.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">NoSQL Datenbanken</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../nosql/nosql.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">NoSQL Datenbanken</span></a>
+            <a href="../mysql/mysql.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">MySQL</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -288,26 +316,78 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../nosql/mongo-db-installation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">MongoDB</span></span></a>
+  <a href="../mysql/mysql-installation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Installation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../nosql/mongo-db-start-stop.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">MongoDB starten und stoppen</span></span></a>
+  <a href="../mysql/mysql-workbench.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">MySQL Workbench</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../postgres/postgres.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PostgreSQL</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../postgres/postgres-installation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Installation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../nosql/mongo-db-basics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Grundlegende Nutzung von MongoDB</span></span></a>
+  <a href="../postgres/postgres-pgadmin4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">PgAdmin4</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../nosql/mongo-db-python.html" class="sidebar-item-text sidebar-link">
+  <a href="../postgres/postgres-python.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Python-Integration</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../mongodb/mongodb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">MongoDB</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mongodb/mongodb-installation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Installation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mongodb/mongodb-start-stop.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Starten und stoppen</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mongodb/mongodb-basics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Grundlegende Nutzung</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mongodb/mongodb-python.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Python-Integration</span></span></a>
   </div>
 </li>
       </ul>
@@ -316,39 +396,39 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../github/github.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">GitHub</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true" aria-label="Abschnitt umschalten">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github/github-git.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Git</span></span></a>
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Git</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github/github-setup.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">GitHub Setup</span></span></a>
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">GitHub Setup</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github/github-repo.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">GitHub-Repositories</span></span></a>
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">GitHub-Repositories</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github/github-organization.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">GitHub-Organisation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">GitHub-Organisation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github/github-projects.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">GitHub-Projekte</span></span></a>
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">GitHub-Projekte</span></span></a>
   </div>
 </li>
       </ul>
@@ -359,14 +439,29 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Inhaltsverzeichnis</h2>
+   
+  <ul>
+  <li><a href="#windows" id="toc-windows" class="nav-link active" data-scroll-target="#windows"><span class="header-section-number">26.1</span> Windows</a>
+  <ul class="collapse">
+  <li><a href="#mongodb-starten" id="toc-mongodb-starten" class="nav-link" data-scroll-target="#mongodb-starten"><span class="header-section-number">26.1.1</span> MongoDB starten</a></li>
+  <li><a href="#mongodb-stoppen" id="toc-mongodb-stoppen" class="nav-link" data-scroll-target="#mongodb-stoppen"><span class="header-section-number">26.1.2</span> MongoDB stoppen</a></li>
+  </ul></li>
+  <li><a href="#macos" id="toc-macos" class="nav-link" data-scroll-target="#macos"><span class="header-section-number">26.2</span> macOS</a>
+  <ul class="collapse">
+  <li><a href="#mongodb-starten-1" id="toc-mongodb-starten-1" class="nav-link" data-scroll-target="#mongodb-starten-1"><span class="header-section-number">26.2.1</span> MongoDB starten</a></li>
+  <li><a href="#mongodb-stoppen-1" id="toc-mongodb-stoppen-1" class="nav-link" data-scroll-target="#mongodb-stoppen-1"><span class="header-section-number">26.2.2</span> MongoDB stoppen</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../mongodb/mongodb.html">MongoDB</a></li><li class="breadcrumb-item"><a href="../mongodb/mongodb-start-stop.html"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Starten und stoppen</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Relationale Datenbanken</h1>
+<h1 class="title"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Starten und stoppen</span></h1>
 </div>
 
 
@@ -383,24 +478,117 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Eine relationale Datenbank ist eine Sammlung von Datenobjekten mit vordefinierten Beziehungen zwischen ihnen. Diese Objekte sind als eine Reihe von Tabellen mit Spalten und Zeilen organisiert (<a href="https://aws.amazon.com/relational-database/?nc1=h_ls">AWS</a>):</p>
+<section id="windows" class="level2" data-number="26.1">
+<h2 data-number="26.1" class="anchored" data-anchor-id="windows"><span class="header-section-number">26.1</span> Windows</h2>
+<section id="mongodb-starten" class="level3" data-number="26.1.1">
+<h3 data-number="26.1.1" class="anchored" data-anchor-id="mongodb-starten"><span class="header-section-number">26.1.1</span> MongoDB starten</h3>
+<p>MongoDB sollte als Dienst automatisch gestartet werden, wenn Sie die Option “Install MongoDB as a Service” während der Installation aktiviert haben.</p>
+<p>Sie können den Dienst auch manuell starten, falls er nicht automatisch gestartet wurde oder falls Sie den Dienst neu starten möchten:</p>
+<ol type="1">
+<li><strong>Öffnen Sie die Dienstverwaltung</strong>:
 <ul>
-<li><p><em>Tabellen</em> werden verwendet, um Informationen über die in der Datenbank darzustellenden Objekte zu speichern.</p></li>
-<li><p>Jede <em>Spalte</em> in einer Tabelle enthält eine bestimmte Art von Daten, und ein Feld speichert den tatsächlichen Wert eines Attributs.</p></li>
-<li><p>Die <em>Zeilen</em> in der Tabelle stellen eine Sammlung verwandter Werte eines Objekts oder einer Entität dar.</p></li>
-<li><p>Jede Zeile in einer Tabelle kann mit einem eindeutigen Bezeichner, dem <em>Primärschlüssel</em>, markiert werden, und Zeilen in mehreren Tabellen können mithilfe von <em>Fremdschlüsseln</em> miteinander in Beziehung gesetzt werden.</p></li>
-</ul>
-<p>Diese Daten können auf viele verschiedene Arten (z.B. mit SQL) abgerufen werden. <strong>Structured Query Language</strong> (SQL, ausgesprochen “S-Q-L” oder manchmal “Sequel”) ist eine der grundlegendsten Fähigkeiten, die Sie im Umgang mit Daten beherrschen sollten. Es ermöglicht Ihnen, effizient mit Datenbanken zu interagieren, Daten abzurufen und zu manipulieren sowie komplexe Abfragen und Analysen durchzuführen.</p>
-<p>Im nächsten Abschnitt werden wir uns mit der Einrichtung und Verwendung von MySQL und PostgreSQL befassen. Diese relationalen Datenbankmanagementsysteme (RDBMS) sind weit verbreitet und bieten robuste und leistungsstarke Lösungen für die Datenverwaltung.</p>
-<p>Wir werden die folgenden Themen behandeln:</p>
+<li>Drücken Sie die <code>Windows-Taste</code> + <code>R</code>, um das Ausführen-Dialogfeld zu öffnen.</li>
+<li>Geben Sie <code>services.msc</code> ein und drücken Sie <code>Enter</code>.</li>
+</ul></li>
+<li><strong>Finden Sie den MongoDB-Dienst</strong>:
 <ul>
-<li>Installation und Konfiguration von MySQL und PostgreSQL</li>
-<li>Grundlegende Befehle und Abfragen in MySQL und PostgreSQL</li>
-<li>Integration dieser Systeme mit Python</li>
+<li>Im Fenster “Dienste” scrollen Sie nach unten, bis Sie den Dienst namens <code>MongoDB</code> finden.</li>
+</ul></li>
+<li><strong>Starten Sie den Dienst</strong>:
+<ul>
+<li>Klicken Sie mit der rechten Maustaste auf den <code>MongoDB</code>-Dienst und wählen Sie <code>Starten</code> aus dem Kontextmenü.</li>
+</ul></li>
+</ol>
+<p>Alternativ können Sie den MongoDB-Dienst auch über die Eingabeaufforderung starten:</p>
+<ol type="1">
+<li><p><strong>Öffnen Sie die Eingabeaufforderung als Administrator</strong>:</p>
+<ul>
+<li>Drücken Sie die <code>Windows-Taste</code>, geben Sie <code>cmd</code> ein, klicken Sie mit der rechten Maustaste auf <code>Eingabeaufforderung</code> und wählen Sie <code>Als Administrator ausführen</code>.</li>
+</ul></li>
+<li><p><strong>Führen Sie den folgenden Befehl aus, um den MongoDB-Dienst zu starten</strong>:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">net</span> start MongoDB</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ol>
+</section>
+<section id="mongodb-stoppen" class="level3" data-number="26.1.2">
+<h3 data-number="26.1.2" class="anchored" data-anchor-id="mongodb-stoppen"><span class="header-section-number">26.1.2</span> MongoDB stoppen</h3>
+<p>Um MongoDB zu stoppen, können Sie entweder die Dienstverwaltung verwenden oder einen Befehl in der Eingabeaufforderung ausführen.</p>
+<p><strong>So stoppen Sie den MongoDB-Dienst manuell:</strong></p>
+<ol type="1">
+<li><strong>Öffnen Sie die Dienstverwaltung</strong>:
+<ul>
+<li>Drücken Sie die <code>Windows-Taste</code> + <code>R</code>, um das Ausführen-Dialogfeld zu öffnen.</li>
+<li>Geben Sie <code>services.msc</code> ein und drücken Sie <code>Enter</code>.</li>
+</ul></li>
+<li><strong>Finden Sie den MongoDB-Dienst</strong>:
+<ul>
+<li>Im Fenster “Dienste” scrollen Sie nach unten, bis Sie den Dienst namens <code>MongoDB</code> finden.</li>
+</ul></li>
+<li><strong>Stoppen Sie den Dienst</strong>:
+<ul>
+<li>Klicken Sie mit der rechten Maustaste auf den <code>MongoDB</code>-Dienst und wählen Sie <code>Beenden</code> aus dem Kontextmenü.</li>
+</ul></li>
+</ol>
+<p>Alternativ können Sie den MongoDB-Dienst auch über die Eingabeaufforderung stoppen:</p>
+<ol type="1">
+<li><p><strong>Öffnen Sie die Eingabeaufforderung als Administrator</strong>:</p>
+<ul>
+<li>Drücken Sie die <code>Windows-Taste</code>, geben Sie <code>cmd</code> ein, klicken Sie mit der rechten Maustaste auf <code>Eingabeaufforderung</code> und wählen Sie <code>Als Administrator ausführen</code>.</li>
+</ul></li>
+<li><p><strong>Führen Sie den folgenden Befehl aus, um den MongoDB-Dienst zu stoppen</strong>:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">net</span> stop MongoDB</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ol>
+<p>Durch das Starten und Stoppen des MongoDB-Dienstes können Sie sicherstellen, dass die Datenbank ordnungsgemäß läuft oder heruntergefahren wird, je nach Ihren Anforderungen.</p>
+</section>
+</section>
+<section id="macos" class="level2" data-number="26.2">
+<h2 data-number="26.2" class="anchored" data-anchor-id="macos"><span class="header-section-number">26.2</span> macOS</h2>
+<section id="mongodb-starten-1" class="level3" data-number="26.2.1">
+<h3 data-number="26.2.1" class="anchored" data-anchor-id="mongodb-starten-1"><span class="header-section-number">26.2.1</span> MongoDB starten</h3>
+<p>Nach der Installation von MongoDB können Sie den Datenbankdienst einfach mit Homebrew starten. Homebrew verwaltet Dienste wie MongoDB und ermöglicht es Ihnen, diese mit einfachen Befehlen zu starten und zu stoppen.</p>
+<p><strong>So starten Sie den MongoDB-Dienst:</strong></p>
+<ol type="1">
+<li><strong>Öffnen Sie das Terminal</strong>:
+<ul>
+<li>Sie finden das Terminal im Ordner “Dienstprogramme” innerhalb des Ordners “Programme” oder indem Sie <code>cmd + Leertaste</code> drücken und “Terminal” eingeben.</li>
+</ul></li>
+<li><strong>Starten Sie den MongoDB-Dienst</strong>:
+<ul>
+<li>Geben Sie den folgenden Befehl im Terminal ein und drücken Sie <code>Enter</code>:</li>
 </ul>
-<p>Diese Kenntnisse werden Ihnen helfen, Ihre Daten effizient zu verwalten und komplexe Datenanalysen durchzuführen, indem Sie die Stärken dieser RDBMS in Kombination mit der Flexibilität und Leistungsfähigkeit von Python nutzen.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> services start mongodb-community@7.0</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Wenn alles korrekt eingerichtet ist, sehen Sie eine Bestätigungsmeldung, dass der Dienst gestartet wurde.</li>
+</ul></li>
+</ol>
+<p>Um sicherzustellen, dass MongoDB korrekt gestartet wurde und läuft, können Sie eine Liste aller von Homebrew verwalteten Dienste anzeigen.</p>
+<p><strong>So überprüfen Sie den Status von MongoDB:</strong></p>
+<ol type="1">
+<li><p><strong>Geben Sie den folgenden Befehl im Terminal ein und drücken Sie <code>Enter</code></strong>:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> services list</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Dieser Befehl zeigt eine Liste aller Dienste an, die von Homebrew verwaltet werden, sowie deren aktuellen Status.</li>
+</ul></li>
+<li><p><strong>Überprüfen Sie den Eintrag für <code>mongodb-community</code></strong>:</p>
+<ul>
+<li>In der Liste sollten Sie <code>mongodb-community</code> sehen, gefolgt von der Versionsnummer und dem Status <code>started</code>. Dies zeigt an, dass MongoDB erfolgreich läuft.</li>
+</ul></li>
+</ol>
+</section>
+<section id="mongodb-stoppen-1" class="level3" data-number="26.2.2">
+<h3 data-number="26.2.2" class="anchored" data-anchor-id="mongodb-stoppen-1"><span class="header-section-number">26.2.2</span> MongoDB stoppen</h3>
+<p>Wenn Sie MongoDB beenden möchten, können Sie dies ebenfalls mit einem einfachen Homebrew-Befehl tun.</p>
+<p><strong>So stoppen Sie den MongoDB-Dienst:</strong></p>
+<ol type="1">
+<li><p><strong>Geben Sie den folgenden Befehl im Terminal ein und drücken Sie <code>Enter</code></strong>:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> services stop mongodb-community@7.0</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Es sollte eine Bestätigungsmeldung erscheinen, dass der Dienst gestoppt wurde.</li>
+</ul></li>
+</ol>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -814,13 +1002,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../vscode/visual-studio-code-basics.html" class="pagination-link" aria-label="Tipps">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Tipps</span></span>
+      <a href="../mongodb/mongodb-installation.html" class="pagination-link" aria-label="Installation">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Installation</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../sql/sql-mysql.html" class="pagination-link" aria-label="MySQL">
-        <span class="nav-page-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">MySQL</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../mongodb/mongodb-basics.html" class="pagination-link" aria-label="Grundlegende Nutzung">
+        <span class="nav-page-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Grundlegende Nutzung</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

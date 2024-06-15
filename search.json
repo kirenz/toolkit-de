@@ -810,374 +810,524 @@
     ]
   },
   {
-    "objectID": "sql/sql.html",
-    "href": "sql/sql.html",
-    "title": "Relationale Datenbanken",
+    "objectID": "datenbanken/datenbanken.html",
+    "href": "datenbanken/datenbanken.html",
+    "title": "Datenbanken",
+    "section": "",
+    "text": "Daten kommen in verschiedenen Formaten vor – von strukturierten Daten in relationalen Datenbankmanagementsystemen (RDBMS) bis hin zu locker typisierten, halbstrukturierten und unstrukturierten Daten wie Textdokumenten, E-Mails, Videos und Audiodaten, die in NoSQL-Datenbanken gespeichert werden können.",
+    "crumbs": [
+      "Datenbanken"
+    ]
+  },
+  {
+    "objectID": "datenbanken/sql.html",
+    "href": "datenbanken/sql.html",
+    "title": "18  Relationale Datenbanken",
     "section": "",
     "text": "Eine relationale Datenbank ist eine Sammlung von Datenobjekten mit vordefinierten Beziehungen zwischen ihnen. Diese Objekte sind als eine Reihe von Tabellen mit Spalten und Zeilen organisiert (AWS):\n\nTabellen werden verwendet, um Informationen über die in der Datenbank darzustellenden Objekte zu speichern.\nJede Spalte in einer Tabelle enthält eine bestimmte Art von Daten, und ein Feld speichert den tatsächlichen Wert eines Attributs.\nDie Zeilen in der Tabelle stellen eine Sammlung verwandter Werte eines Objekts oder einer Entität dar.\nJede Zeile in einer Tabelle kann mit einem eindeutigen Bezeichner, dem Primärschlüssel, markiert werden, und Zeilen in mehreren Tabellen können mithilfe von Fremdschlüsseln miteinander in Beziehung gesetzt werden.\n\nDiese Daten können auf viele verschiedene Arten (z.B. mit SQL) abgerufen werden. Structured Query Language (SQL, ausgesprochen “S-Q-L” oder manchmal “Sequel”) ist eine der grundlegendsten Fähigkeiten, die Sie im Umgang mit Daten beherrschen sollten. Es ermöglicht Ihnen, effizient mit Datenbanken zu interagieren, Daten abzurufen und zu manipulieren sowie komplexe Abfragen und Analysen durchzuführen.\nIm nächsten Abschnitt werden wir uns mit der Einrichtung und Verwendung von MySQL und PostgreSQL befassen. Diese relationalen Datenbankmanagementsysteme (RDBMS) sind weit verbreitet und bieten robuste und leistungsstarke Lösungen für die Datenverwaltung.\nWir werden die folgenden Themen behandeln:\n\nInstallation und Konfiguration von MySQL und PostgreSQL\nGrundlegende Befehle und Abfragen in MySQL und PostgreSQL\nIntegration dieser Systeme mit Python\n\nDiese Kenntnisse werden Ihnen helfen, Ihre Daten effizient zu verwalten und komplexe Datenanalysen durchzuführen, indem Sie die Stärken dieser RDBMS in Kombination mit der Flexibilität und Leistungsfähigkeit von Python nutzen.",
     "crumbs": [
-      "Relationale Datenbanken"
+      "Datenbanken",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Relationale Datenbanken</span>"
     ]
   },
   {
-    "objectID": "sql/sql-mysql.html",
-    "href": "sql/sql-mysql.html",
-    "title": "18  MySQL",
+    "objectID": "datenbanken/nosql.html",
+    "href": "datenbanken/nosql.html",
+    "title": "19  NoSQL Datenbanken",
     "section": "",
-    "text": "18.1 Installation",
+    "text": "19.1 Datenmodelle\nNoSQL-Datenbanken bieten eine Vielzahl von Möglichkeiten, um verschiedene Arten von Daten effizient zu speichern und abzurufen. Sie sind besonders nützlich in Szenarien, in denen traditionelle relationale Datenbanken an ihre Grenzen stoßen.",
     "crumbs": [
-      "Relationale Datenbanken",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>MySQL</span>"
+      "Datenbanken",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>NoSQL Datenbanken</span>"
     ]
   },
   {
-    "objectID": "sql/sql-mysql.html#installation",
-    "href": "sql/sql-mysql.html#installation",
-    "title": "18  MySQL",
+    "objectID": "datenbanken/nosql.html#datenmodelle",
+    "href": "datenbanken/nosql.html#datenmodelle",
+    "title": "19  NoSQL Datenbanken",
     "section": "",
-    "text": "18.1.1 Windows\n\nInstaller herunterladen\n\nGehen Sie zur MySQL Downloadseite.\nWählen Sie Windows als Plattform und laden Sie den MySQL-Installer für Windows in der Version 8.0.37. herunter.\n\nInstaller ausführen\n\nFühren Sie die heruntergeladene Datei aus. Wenn ein Sicherheitsdialog erscheint, klicken Sie auf “Ja”, um dem Installer die Erlaubnis zu erteilen, Änderungen an Ihrem System vorzunehmen.\n\nSetup-Typ auswählen\n\nWählen Sie bei Aufforderung “Custom” als Setup-Typ. Diese Option ermöglicht es Ihnen, spezifische Komponenten zur Installation auszuwählen, wie z.B. MySQL Server, MySQL Workbench und MySQL Shell.\n\nProdukte und Features auswählen\n\nWählen Sie ‘MySQL Server’ und ‘MySQL Workbench’ für die Installation aus.\n\nInstallation\n\nFolgen Sie den Anweisungen auf dem Bildschirm, um die gewählten Komponenten zu installieren.\n\nMySQL Server konfigurieren\n\nNach der Installation werden Sie durch eine Reihe von Konfigurationsschritten geführt, einschließlich der Einrichtung des Root-Passworts, der Erstellung von Benutzerkonten und der Konfiguration der Netzwerkoptionen und des Windows-Dienstes.\n\nInstallation abschließen\n\nBeenden Sie das Setup, um die Installation von MySQL auf Ihrem System abzuschließen.\n\n\n\n\n18.1.2 Mac\n\nDatei herunterladen\n\nBesuchen Sie die MySQL Downloadseite und wählen Sie macOS als Betriebssystem.\nLaden Sie die DMG-Datei für macOS herunter (in der Version 8.0.36.)\n\n\n2.** MySQL installieren** - Öffnen Sie die heruntergeladene DMG-Datei und folgen Sie den Installationsanweisungen auf dem Bildschirm.\nNun installieren Sie MySQL Workbench\n\nMySQL Workbench herunterladen\n\nGreifen Sie auf die MySQL Workbench Downloadseite zu.\nWählen Sie die passende Version für Ihr Betriebssystem und laden Sie diese herunter.\n\nAnwendung installieren und den Setup-Anweisungen folgen.",
+    "text": "Modell\nEigenschaften\nOpen Source\n\n\n\n\nDokumentenorientierter Speicher\nDaten und Metadaten werden hierarchisch in JSON-basierten Dokumenten innerhalb der Datenbank gespeichert.\nMongoDB, CouchDB\n\n\nSchlüssel-Wert-Speicher\nDie einfachsten NoSQL-Datenbanken, Daten werden als eine Sammlung von Schlüssel-Wert-Paaren dargestellt.\nRedis\n\n\nSpaltenorientierter Speicher\nVerwandte Daten werden als eine Reihe von verschachtelten Schlüssel/Wert-Paaren innerhalb einer einzigen Spalte gespeichert.\nHBase, Cassandra\n\n\nGraph-Speicher\nDaten werden in einer Graphstruktur als Knoten, Kanten und Dateneigenschaften gespeichert.\nNeo4j\n\n\n\n\n19.1.1 Dokumentenorientierter Speicher\nIn dokumentenorientierten Datenbanken werden Daten in Form von Dokumenten gespeichert, die meist auf JSON (JavaScript Object Notation) basieren. Diese Dokumente enthalten nicht nur die Daten, sondern auch die Struktur der Daten, was eine große Flexibilität bietet. Beispiele sind MongoDB und CouchDB.\n\n\n19.1.2 Schlüssel-Wert-Speicher\nSchlüssel-Wert-Datenbanken speichern Daten als eine Sammlung von Schlüssel-Wert-Paaren. Jede Datenstruktur besteht aus einem eindeutigen Schlüssel und einem Wert, der jede Art von Daten enthalten kann. Redis ist ein bekanntes Beispiel für einen Schlüssel-Wert-Speicher.\n\n\n19.1.3 Spaltenorientierter Speicher\nSpaltenorientierte Datenbanken speichern Daten in Tabellen, aber im Gegensatz zu relationalen Datenbanken sind die Daten in Spalten anstatt in Reihen organisiert. Dies ermöglicht eine effiziente Speicherung und Abfrage von großen Datenmengen. Beispiele sind HBase und Cassandra.\n\n\n19.1.4 Graph-Speicher\nGraph-Datenbanken speichern Daten in Form von Graphen, bei denen Knoten die Datenobjekte und Kanten die Beziehungen zwischen diesen Objekten darstellen. Dies ermöglicht komplexe Abfragen von Beziehungen. Ein bekanntes Beispiel ist Neo4j.",
     "crumbs": [
-      "Relationale Datenbanken",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>MySQL</span>"
+      "Datenbanken",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>NoSQL Datenbanken</span>"
     ]
   },
   {
-    "objectID": "sql/sql-mysql.html#mysql-workbench",
-    "href": "sql/sql-mysql.html#mysql-workbench",
-    "title": "18  MySQL",
-    "section": "18.2 MySQL Workbench",
-    "text": "18.2 MySQL Workbench\nMySQL Workbench bietet eine grafische Oberfläche für die Datenbankverwaltung und SQL-Entwicklung. Es integriert visuelle Werkzeuge für die Datenmodellierung, SQL-Entwicklung und umfassende Datenbankverwaltung.\n\n18.2.1 Neue Verbindung\nDer nächste Schritt besteht darin, eine Verbindung zu Ihrem Server über MySQL Workbench herzustellen:\n\nMySQL Workbench starten\n\nÖffnen Sie MySQL Workbench aus Ihrer Anwendungsübersicht. Beim Start der Anwendung sehen Sie die Hauptoberfläche.\n\n\n\n\n\n\n\nTipp für Windows-Nutzer\n\n\n\n\n\nFalls MySQL Workbench während der anfänglichen Einrichtung des MySQL Servers nicht enthalten war, kann es separat installiert werden:\n\nGreifen Sie auf die MySQL Workbench Downloadseite zu.\nWählen Sie die passende Version für Ihr Betriebssystem und laden Sie sie herunter.\n\n\n\n\nNeue Verbindung erstellen\n\nAuf dem Startbildschirm sehen Sie einen Bereich mit der Bezeichnung “MySQL Connections”. Klicken Sie auf das “+”-Symbol, um eine neue Verbindung zu erstellen.\nIm Setup-Dialog:\n\nVerbindungsname: Geben Sie Ihrer Verbindung einen erkennbaren Namen (nutzen Sie hierfür local-connection).\nHostname: Geben Sie localhost ein (wir verwenden diese Bezeichnung, da der Datenbankserver auf dem gleichen Rechner wie die Workbench läuft).\nPort: Der Standard-MySQL-Port ist 3306.\nBenutzername: Geben Sie den Benutzernamen ein, den Sie während der MySQL Server-Installation festgelegt haben (meist ‘root’).\nPasswort: Klicken Sie auf “Store in Vault” und geben Sie das Passwort für das Benutzerkonto ein.\n\nNachdem Sie diese Felder ausgefüllt haben, klicken Sie auf “Test Connection”, um sicherzustellen, dass alle Einstellungen korrekt sind und die Verbindung hergestellt werden kann.\n\nVerbindung speichern\n\nWenn der Verbindungstest erfolgreich ist, speichern Sie die Konfiguration, indem Sie auf “OK” klicken. Diese Verbindung wird nun auf dem MySQL Workbench-Startbildschirm für einen einfachen Zugriff angezeigt.",
-    "crumbs": [
-      "Relationale Datenbanken",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>MySQL</span>"
-    ]
-  },
-  {
-    "objectID": "sql/sql-mysql.html#verwendung-von-mysql-workbench",
-    "href": "sql/sql-mysql.html#verwendung-von-mysql-workbench",
-    "title": "18  MySQL",
-    "section": "18.3 Verwendung von MySQL Workbench",
-    "text": "18.3 Verwendung von MySQL Workbench\nMySQL Workbench bietet verschiedene Werkzeuge und Abkürzungen zur Erleichterung der Datenbankverwaltung:\n\nToolbar: Oben finden Sie die Toolbar, die Schaltflächen wie das neue Abfrage-Tab, Abfrage ausführen und andere enthält.\nSeitenleiste: Links bietet die Seitenleiste Zugriff auf Instanzverwaltung, Leistungsüberwachung und mehr.\nAbfrage-Tab: Hier schreiben und führen Sie Ihre SQL-Abfragen aus. Sie können ein neues Abfrage-Tab öffnen, indem Sie auf das “+”-Symbol neben den vorhandenen Tabs klicken.\nAusgabebereich: Unterhalb des Abfrage-Editors zeigt dieser Bereich die Ergebnisse der ausgeführten Abfragen oder Nachrichten vom Datenbankserver an.\n\n\n18.3.1 Datenbank erstellen\n\nEine Datenbank erstellen\n\nVerbinden Sie sich mit Ihrer MySQL-Instanz über die eingerichtete Verbindung (local-connection).\n\nNeues Abfrage-Tab öffnen\n\nKlicken Sie auf das “+”-Symbol oben, um eine neue Abfrage zu starten.\n\nGeben Sie die folgenden SQL-Befehle ein:\nDROP DATABASE IF EXISTS `db_data`;\nCREATE DATABASE `db_data`;\nUSE `db_data`;\n\n\n\n\n\n\nErklärung der SQL-Befehle\n\n\n\n\n\nDer SQL-Code führt drei Operationen durch:\n\nDROP DATABASE IF EXISTS db_data;\n\nDieser Befehl löscht die Datenbank db_data, falls sie existiert. Dies ist nützlich, um sicherzustellen, dass Sie mit einer neuen Datenbank arbeiten, indem eine eventuell vorhandene Datenbank mit demselben Namen entfernt wird.\n\nCREATE DATABASE db_data;\n\nDieser Befehl erstellt eine neue Datenbank mit dem Namen db_data. Dies legt die Basis für eine neue Datenbank, in der Sie Tabellen und andere Datenbankobjekte erstellen können.\n\nUSE db_data;\n\nDieser Befehl setzt die neu erstellte Datenbank db_data als die aktuell verwendete Datenbank. Alle nachfolgenden SQL-Befehle werden auf dieser Datenbank ausgeführt.\n\n\n\n\n\nBefehl ausführen\n\nKlicken Sie auf das Blitzsymbol (⚡), um den Befehl auszuführen.\n\nSchema-Liste aktualisieren\n\nNachdem Sie die Befehle ausgeführt haben, aktualisieren Sie die Schema-Liste auf der linken Seite der Oberfläche, um Ihre neue Datenbank zu sehen.\n\n\n\n\n18.3.2 Tabelle erstellen\nAls Beispieldaten erstellen wir eine Tabelle zu einer Marketingkampagne:\n\nNeues Abfrage-Tab öffnen\n\nKlicken Sie auf das “+”-Symbol oben, um eine neue Abfrage zu starten.\n\nTabelle definieren\n\nFühren Sie das folgende SQL aus, um Ihre Tabelle zu erstellen:\n\nCREATE TABLE campaigns (\n   id INT AUTO_INCREMENT PRIMARY KEY,\n   name VARCHAR(255) NOT NULL,\n   start_date DATE,\n   end_date DATE,\n   budget DECIMAL(10, 2),\n   channel VARCHAR(255)\n   );\n\n\n\n\n\n\nErklärung der Tabellendefinition\n\n\n\n\n\nDer obige SQL-Befehl erstellt eine neue Tabelle namens campaigns. Hier ist eine Aufschlüsselung jeder Spaltendefinition:\n\nid: Eine Spalte namens id, die den Datentyp INT (integer) verwendet und automatisch inkrementiert wird (d.h. 1, 2, 3, …), was sich gut als Primärschlüssel eignet.\nname: Eine Spalte zur Speicherung der Kampagnennamen als Text, um eine Zeichenkette von bis zu 255 Zeichen zu halten. Die NOT NULL-Einschränkung stellt sicher, dass jede Zeile einen Namen haben muss.\nstart_date und end_date: Diese Spalten speichern die Start- und Enddaten der Kampagnen mit dem Datentyp DATE.\nbudget: Eine Spalte für das Budget jeder Kampagne, die DECIMAL(10, 2) verwendet, um bis zu 10 Stellen mit 2 Dezimalstellen zu ermöglichen.\nchannel: Eine Spalte, um das verwendete Medium der Kampagne anzugeben, die Zeichenfolgen von bis zu 255 Zeichen speichern kann.\n\n\n\n\nBefehl ausführen\n\nKlicken Sie auf das Blitzsymbol (⚡), um den Befehl auszuführen. Überprüfen Sie die Schema-Ansicht, um die Erstellung der Tabelle zu bestätigen.\n\n\n\n\n18.3.3 Werte einfügen\nGehen Sie wie folgt vor, um die Tabelle mit Daten zu füllen:\n\nDaten einfügen\n\nVerwenden Sie in einem neuen Abfrage-Tab diesen SQL-Befehl:\n\nINSERT INTO campaigns (name, start_date, end_date, budget, channel) VALUES\n('Winter Sale', '2023-12-01', '2023-12-31', 5000.00, 'Email'),\n('Summer Festival', '2023-06-01', '2023-06-15', 10000.00, 'Social Media'),\n('Back to School', '2023-08-01', '2023-08-20', 7500.00, 'TV');\n\n\n\n\n\n\nErklärung der Insert-Anweisung\n\n\n\n\n\nDieser SQL-Befehl fügt Daten in die campaigns-Tabelle ein. Jede Zeile von Werten entspricht einer anderen Marketingkampagne:\n\nErste Zeile: Fügt eine Kampagne namens “Winter Sale” ein, die vom 1. bis 31. Dezember 2023 läuft, mit einem Budget von $5000 und dem Kanal “Email”.\nZweite Zeile: Fügt “Summer Festival” ein, eine kürzere Kampagne vom 1. bis 15. Juni 2023, mit einem höheren Budget von $10000 und dem Kanal “Social Media”.\nDritte Zeile: Fügt die “Back to School”-Kampagne vom 1. bis 20. August 2023 hinzu, mit einem Budget von $7500, vermarktet über “TV”.\n\nJeder Satz von Werten ist in Klammern eingeschlossen und durch Kommas getrennt, um verschiedene Kampagnen zu unterscheiden.\n\n\n\n\n\n\n18.3.4 Werte abrufen\nUm die Daten zu überprüfen:\n\nFühren Sie eine SELECT-Abfrage aus\n\nFühren Sie folgendes in einem neuen Abfrage-Tab aus:\n\nSELECT * FROM campaigns;\n\n\n\n\n\n\nErklärung der SELECT-Abfrage\n\n\n\n\n\nDer SQL-Befehl ruft alle Spalten aus allen Zeilen in der campaigns-Tabelle ab. Er ist nützlich, um alle eingegebenen Daten in der Tabelle anzuzeigen, sicherzustellen, dass die Einträge korrekt sind, und um weitere Datenanalysen oder Berichte zu ermöglichen.\n\n\n\n\nDie Abfrage sollte folgendes Ergebnis ausgeben:\n\n\n\nid\nname\nstart_date\nend_date\nbudget\nchannel\n\n\n\n\n1\nWinter Sale\n2023-12-01\n2023-12-31\n5000.00\nEmail\n\n\n2\nSummer Festival\n2023-06-01\n2023-06-15\n10000.00\nSocial Media\n\n\n3\nBack to School\n2023-08-01\n2023-08-20\n7500.00\nTV",
-    "crumbs": [
-      "Relationale Datenbanken",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>MySQL</span>"
-    ]
-  },
-  {
-    "objectID": "sql/sql-postgresql.html",
-    "href": "sql/sql-postgresql.html",
-    "title": "19  PostgreSQL",
+    "objectID": "mysql/mysql.html",
+    "href": "mysql/mysql.html",
+    "title": "MySQL",
     "section": "",
-    "text": "19.1 Installation",
+    "text": "MySQL, das sowohl als “My S-Q-L” als auch als “My Sequel” ausgesprochen wird, ist ein relationales Datenbankverwaltungssystem (RDBMS). Dieses System wird genutzt, um Daten in relationalen Datenbanken zu verwalten.\nEs verwendet die Structured Query Language (SQL) für verschiedene Aufgaben wie Datenverwaltung, Datenmanipulation und das Abfragen von Daten. MySQL ermöglicht es Benutzern, große Mengen an Daten effizient zu speichern, abzurufen und zu analysieren. Durch seine weit verbreitete Nutzung in der Industrie ist es eine Schlüsselkomponente in vielen datengetriebenen Anwendungen und Projekten.",
     "crumbs": [
-      "Relationale Datenbanken",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>PostgreSQL</span>"
+      "MySQL"
     ]
   },
   {
-    "objectID": "sql/sql-postgresql.html#installation",
-    "href": "sql/sql-postgresql.html#installation",
-    "title": "19  PostgreSQL",
+    "objectID": "mysql/mysql-installation.html",
+    "href": "mysql/mysql-installation.html",
+    "title": "20  Installation",
+    "section": "",
+    "text": "20.1 Windows",
+    "crumbs": [
+      "MySQL",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Installation</span>"
+    ]
+  },
+  {
+    "objectID": "mysql/mysql-installation.html#windows",
+    "href": "mysql/mysql-installation.html#windows",
+    "title": "20  Installation",
+    "section": "",
+    "text": "Installer herunterladen\n\nGehen Sie zur MySQL Downloadseite.\nWählen Sie Windows als Plattform und laden Sie den MySQL-Installer für Windows in der Version 8.0.37. herunter.\n\nInstaller ausführen\n\nFühren Sie die heruntergeladene Datei aus. Wenn ein Sicherheitsdialog erscheint, klicken Sie auf “Ja”, um dem Installer die Erlaubnis zu erteilen, Änderungen an Ihrem System vorzunehmen.\n\nSetup-Typ auswählen\n\nWählen Sie bei Aufforderung “Custom” als Setup-Typ. Diese Option ermöglicht es Ihnen, spezifische Komponenten zur Installation auszuwählen, wie z.B. MySQL Server, MySQL Workbench und MySQL Shell.\n\nProdukte und Features auswählen\n\nWählen Sie ‘MySQL Server’ und ‘MySQL Workbench’ für die Installation aus.\n\nInstallation\n\nFolgen Sie den Anweisungen auf dem Bildschirm, um die gewählten Komponenten zu installieren.\n\nMySQL Server konfigurieren\n\nNach der Installation werden Sie durch eine Reihe von Konfigurationsschritten geführt, einschließlich der Einrichtung des Root-Passworts, der Erstellung von Benutzerkonten und der Konfiguration der Netzwerkoptionen und des Windows-Dienstes.\n\nInstallation abschließen\n\nBeenden Sie das Setup, um die Installation von MySQL auf Ihrem System abzuschließen.",
+    "crumbs": [
+      "MySQL",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Installation</span>"
+    ]
+  },
+  {
+    "objectID": "mysql/mysql-installation.html#mac",
+    "href": "mysql/mysql-installation.html#mac",
+    "title": "20  Installation",
+    "section": "20.2 Mac",
+    "text": "20.2 Mac\n\nDatei herunterladen\n\nBesuchen Sie die MySQL Downloadseite und wählen Sie macOS als Betriebssystem.\nLaden Sie die DMG-Datei für macOS herunter (in der Version 8.0.36.)\n\n\n2.** MySQL installieren** - Öffnen Sie die heruntergeladene DMG-Datei und folgen Sie den Installationsanweisungen auf dem Bildschirm.\nNun installieren Sie MySQL Workbench\n\nMySQL Workbench herunterladen\n\nGreifen Sie auf die MySQL Workbench Downloadseite zu.\nWählen Sie die passende Version für Ihr Betriebssystem und laden Sie diese herunter.\n\nAnwendung installieren und den Setup-Anweisungen folgen.",
+    "crumbs": [
+      "MySQL",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Installation</span>"
+    ]
+  },
+  {
+    "objectID": "mysql/mysql-workbench.html",
+    "href": "mysql/mysql-workbench.html",
+    "title": "21  MySQL Workbench",
+    "section": "",
+    "text": "21.1 Neue Verbindung\nDer erste Schritt besteht darin, eine Verbindung zu Ihrem Server über MySQL Workbench herzustellen:",
+    "crumbs": [
+      "MySQL",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>MySQL Workbench</span>"
+    ]
+  },
+  {
+    "objectID": "mysql/mysql-workbench.html#neue-verbindung",
+    "href": "mysql/mysql-workbench.html#neue-verbindung",
+    "title": "21  MySQL Workbench",
+    "section": "",
+    "text": "MySQL Workbench starten\n\nÖffnen Sie MySQL Workbench aus Ihrer Anwendungsübersicht. Beim Start der Anwendung sehen Sie die Hauptoberfläche.\n\n\n\n\n\n\n\nTipp für Windows-Nutzer\n\n\n\n\n\nFalls MySQL Workbench während der anfänglichen Einrichtung des MySQL Servers nicht enthalten war, kann es separat installiert werden:\n\nGreifen Sie auf die MySQL Workbench Downloadseite zu.\nWählen Sie die passende Version für Ihr Betriebssystem und laden Sie sie herunter.\n\n\n\n\nNeue Verbindung erstellen\n\nAuf dem Startbildschirm sehen Sie einen Bereich mit der Bezeichnung “MySQL Connections”. Klicken Sie auf das “+”-Symbol, um eine neue Verbindung zu erstellen.\nIm Setup-Dialog:\n\nVerbindungsname: Geben Sie Ihrer Verbindung einen erkennbaren Namen (nutzen Sie hierfür local-connection).\nHostname: Geben Sie localhost ein (wir verwenden diese Bezeichnung, da der Datenbankserver auf dem gleichen Rechner wie die Workbench läuft).\nPort: Der Standard-MySQL-Port ist 3306.\nBenutzername: Geben Sie den Benutzernamen ein, den Sie während der MySQL Server-Installation festgelegt haben (meist ‘root’).\nPasswort: Klicken Sie auf “Store in Vault” und geben Sie das Passwort für das Benutzerkonto ein.\n\nNachdem Sie diese Felder ausgefüllt haben, klicken Sie auf “Test Connection”, um sicherzustellen, dass alle Einstellungen korrekt sind und die Verbindung hergestellt werden kann.\n\nVerbindung speichern\n\nWenn der Verbindungstest erfolgreich ist, speichern Sie die Konfiguration, indem Sie auf “OK” klicken. Diese Verbindung wird nun auf dem MySQL Workbench-Startbildschirm für einen einfachen Zugriff angezeigt.",
+    "crumbs": [
+      "MySQL",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>MySQL Workbench</span>"
+    ]
+  },
+  {
+    "objectID": "mysql/mysql-workbench.html#verwendung-von-mysql-workbench",
+    "href": "mysql/mysql-workbench.html#verwendung-von-mysql-workbench",
+    "title": "21  MySQL Workbench",
+    "section": "21.2 Verwendung von MySQL Workbench",
+    "text": "21.2 Verwendung von MySQL Workbench\nMySQL Workbench bietet verschiedene Werkzeuge und Abkürzungen zur Erleichterung der Datenbankverwaltung:\n\nToolbar: Oben finden Sie die Toolbar, die Schaltflächen wie das neue Abfrage-Tab, Abfrage ausführen und andere enthält.\nSeitenleiste: Links bietet die Seitenleiste Zugriff auf Instanzverwaltung, Leistungsüberwachung und mehr.\nAbfrage-Tab: Hier schreiben und führen Sie Ihre SQL-Abfragen aus. Sie können ein neues Abfrage-Tab öffnen, indem Sie auf das “+”-Symbol neben den vorhandenen Tabs klicken.\nAusgabebereich: Unterhalb des Abfrage-Editors zeigt dieser Bereich die Ergebnisse der ausgeführten Abfragen oder Nachrichten vom Datenbankserver an.\n\n\n21.2.1 Datenbank erstellen\n\nEine Datenbank erstellen\n\nVerbinden Sie sich mit Ihrer MySQL-Instanz über die eingerichtete Verbindung (local-connection).\n\nNeues Abfrage-Tab öffnen\n\nKlicken Sie auf das “+”-Symbol oben, um eine neue Abfrage zu starten.\n\nGeben Sie die folgenden SQL-Befehle ein:\nDROP DATABASE IF EXISTS `db_data`;\nCREATE DATABASE `db_data`;\nUSE `db_data`;\n\n\n\n\n\n\nErklärung der SQL-Befehle\n\n\n\n\n\nDer SQL-Code führt drei Operationen durch:\n\nDROP DATABASE IF EXISTS db_data;\n\nDieser Befehl löscht die Datenbank db_data, falls sie existiert. Dies ist nützlich, um sicherzustellen, dass Sie mit einer neuen Datenbank arbeiten, indem eine eventuell vorhandene Datenbank mit demselben Namen entfernt wird.\n\nCREATE DATABASE db_data;\n\nDieser Befehl erstellt eine neue Datenbank mit dem Namen db_data. Dies legt die Basis für eine neue Datenbank, in der Sie Tabellen und andere Datenbankobjekte erstellen können.\n\nUSE db_data;\n\nDieser Befehl setzt die neu erstellte Datenbank db_data als die aktuell verwendete Datenbank. Alle nachfolgenden SQL-Befehle werden auf dieser Datenbank ausgeführt.\n\n\n\n\n\nBefehl ausführen\n\nKlicken Sie auf das Blitzsymbol (⚡), um den Befehl auszuführen.\n\nSchema-Liste aktualisieren\n\nNachdem Sie die Befehle ausgeführt haben, aktualisieren Sie die Schema-Liste auf der linken Seite der Oberfläche, um Ihre neue Datenbank zu sehen.\n\n\n\n\n21.2.2 Tabelle erstellen\nAls Beispieldaten erstellen wir eine Tabelle zu einer Marketingkampagne:\n\nNeues Abfrage-Tab öffnen\n\nKlicken Sie auf das “+”-Symbol oben, um eine neue Abfrage zu starten.\n\nTabelle definieren\n\nFühren Sie das folgende SQL aus, um Ihre Tabelle zu erstellen:\n\nCREATE TABLE campaigns (\n   id INT AUTO_INCREMENT PRIMARY KEY,\n   name VARCHAR(255) NOT NULL,\n   start_date DATE,\n   end_date DATE,\n   budget DECIMAL(10, 2),\n   channel VARCHAR(255)\n   );\n\n\n\n\n\n\nErklärung der Tabellendefinition\n\n\n\n\n\nDer obige SQL-Befehl erstellt eine neue Tabelle namens campaigns. Hier ist eine Aufschlüsselung jeder Spaltendefinition:\n\nid: Eine Spalte namens id, die den Datentyp INT (integer) verwendet und automatisch inkrementiert wird (d.h. 1, 2, 3, …), was sich gut als Primärschlüssel eignet.\nname: Eine Spalte zur Speicherung der Kampagnennamen als Text, um eine Zeichenkette von bis zu 255 Zeichen zu halten. Die NOT NULL-Einschränkung stellt sicher, dass jede Zeile einen Namen haben muss.\nstart_date und end_date: Diese Spalten speichern die Start- und Enddaten der Kampagnen mit dem Datentyp DATE.\nbudget: Eine Spalte für das Budget jeder Kampagne, die DECIMAL(10, 2) verwendet, um bis zu 10 Stellen mit 2 Dezimalstellen zu ermöglichen.\nchannel: Eine Spalte, um das verwendete Medium der Kampagne anzugeben, die Zeichenfolgen von bis zu 255 Zeichen speichern kann.\n\n\n\n\nBefehl ausführen\n\nKlicken Sie auf das Blitzsymbol (⚡), um den Befehl auszuführen. Überprüfen Sie die Schema-Ansicht, um die Erstellung der Tabelle zu bestätigen.\n\n\n\n\n21.2.3 Werte einfügen\nGehen Sie wie folgt vor, um die Tabelle mit Daten zu füllen:\n\nDaten einfügen\n\nVerwenden Sie in einem neuen Abfrage-Tab diesen SQL-Befehl:\n\nINSERT INTO campaigns (name, start_date, end_date, budget, channel) VALUES\n('Winter Sale', '2023-12-01', '2023-12-31', 5000.00, 'Email'),\n('Summer Festival', '2023-06-01', '2023-06-15', 10000.00, 'Social Media'),\n('Back to School', '2023-08-01', '2023-08-20', 7500.00, 'TV');\n\n\n\n\n\n\nErklärung der Insert-Anweisung\n\n\n\n\n\nDieser SQL-Befehl fügt Daten in die campaigns-Tabelle ein. Jede Zeile von Werten entspricht einer anderen Marketingkampagne:\n\nErste Zeile: Fügt eine Kampagne namens “Winter Sale” ein, die vom 1. bis 31. Dezember 2023 läuft, mit einem Budget von $5000 und dem Kanal “Email”.\nZweite Zeile: Fügt “Summer Festival” ein, eine kürzere Kampagne vom 1. bis 15. Juni 2023, mit einem höheren Budget von $10000 und dem Kanal “Social Media”.\nDritte Zeile: Fügt die “Back to School”-Kampagne vom 1. bis 20. August 2023 hinzu, mit einem Budget von $7500, vermarktet über “TV”.\n\nJeder Satz von Werten ist in Klammern eingeschlossen und durch Kommas getrennt, um verschiedene Kampagnen zu unterscheiden.\n\n\n\n\n\n\n21.2.4 Werte abrufen\nUm die Daten zu überprüfen:\n\nFühren Sie eine SELECT-Abfrage aus\n\nFühren Sie folgendes in einem neuen Abfrage-Tab aus:\n\nSELECT * FROM campaigns;\n\n\n\n\n\n\nErklärung der SELECT-Abfrage\n\n\n\n\n\nDer SQL-Befehl ruft alle Spalten aus allen Zeilen in der campaigns-Tabelle ab. Er ist nützlich, um alle eingegebenen Daten in der Tabelle anzuzeigen, sicherzustellen, dass die Einträge korrekt sind, und um weitere Datenanalysen oder Berichte zu ermöglichen.\n\n\n\n\nDie Abfrage sollte folgendes Ergebnis ausgeben:\n\n\n\nid\nname\nstart_date\nend_date\nbudget\nchannel\n\n\n\n\n1\nWinter Sale\n2023-12-01\n2023-12-31\n5000.00\nEmail\n\n\n2\nSummer Festival\n2023-06-01\n2023-06-15\n10000.00\nSocial Media\n\n\n3\nBack to School\n2023-08-01\n2023-08-20\n7500.00\nTV",
+    "crumbs": [
+      "MySQL",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>MySQL Workbench</span>"
+    ]
+  },
+  {
+    "objectID": "postgres/postgres.html",
+    "href": "postgres/postgres.html",
+    "title": "PostgreSQL",
+    "section": "",
+    "text": "Installation",
+    "crumbs": [
+      "PostgreSQL"
+    ]
+  },
+  {
+    "objectID": "postgres/postgres.html#installation",
+    "href": "postgres/postgres.html#installation",
+    "title": "PostgreSQL",
     "section": "",
     "text": "Laden Sie PostgreSQL von dieser Website herunter und installieren Sie es.\nWählen Sie das Standard-Installationsverzeichnis aus.\nWählen Sie diese Komponenten aus:\n\nPostgreSQL Server\npgAdmin4\nKommandozeilenwerkzeuge\n\nWählen Sie das Standardverzeichnis für die Dateninstallation.\nPasswort: Setzen Sie ein Passwort\nPort: Akzeptieren Sie den standardmäßig vorgeschlagenen Port (üblicherweise 5432).\nGebietsschema: Setzen Sie es auf das Standardgebietsschema.",
     "crumbs": [
-      "Relationale Datenbanken",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>PostgreSQL</span>"
+      "PostgreSQL"
     ]
   },
   {
-    "objectID": "sql/sql-postgresql.html#pgadmin4",
-    "href": "sql/sql-postgresql.html#pgadmin4",
-    "title": "19  PostgreSQL",
-    "section": "19.2 PgAdmin4",
-    "text": "19.2 PgAdmin4\npgAdmin4 ist das offizielle grafische Verwaltungstool für PostgreSQL und bietet eine benutzerfreundliche Oberfläche für die Datenbankverwaltung. Es wird als Teil der PostgreSQL-Installation installiert.\n\n19.2.1 Neuen Server hinzufügen\nUm Datenbanken zu verwalten, verbinden Sie sich zunächst mit einer PostgreSQL-Instanz, indem Sie eine neue Serververbindung in pgAdmin4 einrichten:\n\nÖffnen Sie pgAdmin4.\nKlicken Sie unter “Quick Links” auf Add New Server.\nGeben Sie für den Namen local-connection ein.\nWechseln Sie zum Reiter Connection:\n\nHostname/Adresse: Geben Sie localhost ein.\nStellen Sie sicher, dass der Port derselbe ist wie bei der Installation (üblicherweise 5432).\nPasswort: Geben Sie das während der Installation gesetzte Passwort ein und wählen Sie “Save password”.\n\nBestätigen Sie die Einrichtung durch Klicken auf Save.\nDies wird die local-connection in der linken Seitenleiste anzeigen.\n\n\n\n19.2.2 Eine Datenbank erstellen\nErstellen Sie als nächstes eine neue Datenbank, um Daten zu speichern:\n\n\n\n\n\n\nStandard PostgreSQL Datenbank\n\n\n\n\n\nBei der Installation von PostgreSQL wird automatisch eine Standarddatenbank namens postgres erstellt. Diese Datenbank wird typischerweise für administrative Zwecke und Tests verwendet. Es ist immer ratsam, neue Datenbanken für anwendungsspezifische Daten zu erstellen, um zu vermeiden, dass die Standarddatenbank mit Anwendungsdaten überladen wird.\n\n\n\n\nKlicken Sie in pgAdmin4 mit der rechten Maustaste auf den local-connection Server in der linken Seitenleiste.\nNavigieren Sie zu: Create &gt; Database.\nGeben Sie im Reiter “General” db_data als Datenbanknamen ein.\nKlicken Sie auf Save, um die Datenbank zu erstellen.\n\n\n\n19.2.3 Eine Tabelle erstellen\nErstellen Sie eine Tabelle, um Daten zu Marketingkampagnen zu speichern.\n\n\n\n\n\n\nTabellendefinition\n\n\n\n\n\nSpalten in der Marketingkampagnen-Tabelle: - id: Eine eindeutige Kennung für jede Kampagne, automatisch inkrementiert. - name: Der Name der Marketingkampagne. - start_date & end_date: Der Zeitraum der Kampagne. - budget: Das der Kampagne zugewiesene Budget. - channel: Der für die Kampagne verwendete Kanal (z.B. “E-Mail”, “Soziale Medien”, “TV”).\n\n\n\n\nNavigieren Sie zur db_data Datenbank.\nÖffnen Sie das Abfragewerkzeug unter Tools &gt; Query Tool.\nGeben Sie den folgenden SQL-Befehl ein, um die campaigns Tabelle zu erstellen:\n\nCREATE TABLE campaigns (\n    id BIGSERIAL PRIMARY KEY,\n    name VARCHAR(255) NOT NULL,\n    start_date DATE,\n    end_date DATE,\n    budget DECIMAL(10, 2),\n    channel VARCHAR(255)\n);\n\n\n\n\n\n\nTabellendefinition Erklärung\n\n\n\n\n\nDer obige SQL-Befehl erstellt eine neue Tabelle namens campaigns. Hier ist eine Aufschlüsselung der einzelnen Spaltendefinitionen:\n\nid: Eine Spalte namens id, die den Datentyp BIGSERIAL verwendet, was ein automatisch inkrementierender Integer ist und sich für einen Primärschlüssel eignet.\nname: Eine Spalte zur Speicherung von Kampagnennamen als Text, definiert, um eine Zeichenfolge von bis zu 255 Zeichen zu halten. Die NOT NULL-Einschränkung stellt sicher, dass jede Zeile einen Namen haben muss.\nstart_date und end_date: Diese Spalten speichern die Start- und Enddaten der Kampagnen jeweils im DATE-Datentyp.\nbudget: Eine Spalte für das mit jeder Kampagne verbundene Budget, die DECIMAL(10, 2) verwendet, um bis zu 10 Ziffern mit 2 Dezimalstellen zu ermöglichen.\nchannel: Eine Spalte, um das für die Kampagne verwendete Medium anzugeben, die Zeichenfolgen von bis zu 255 Zeichen speichern kann.\n\n\n\n\n\nFühren Sie das Skript aus, indem Sie auf die ▶️ Schaltfläche klicken (oder F5 drücken).\nUm die Tabelle zu überprüfen, erweitern Sie “Schemas” &gt; “Tables” &gt; “campaigns” &gt; “Columns” in der Datenbank db_data.\n\n\n\n19.2.4 Werte in die Tabelle einfügen\nFüllen Sie die Tabelle mit Beispieldaten:\n\nVerwenden Sie erneut das Abfragewerkzeug, um die folgende Einfügeanweisung auszuführen:\n\nINSERT INTO campaigns (name, start_date, end_date, budget, channel) VALUES\n('Winter Sale', '2023-12-01', '2023-12-31', 5000.00, 'Email'),\n('Summer Festival', '2023-06-01', '2023-06-15', 10000.00, 'Social Media'),\n('Back to School', '2023-08-01', '2023-08-20', 7500.00, 'TV');\n\n\n\n\n\n\nInsert Statement Erklärung\n\n\n\n\n\nDieser SQL-Befehl fügt Daten in die campaigns Tabelle ein. Jede Zeile von Werten entspricht einer anderen Marketingkampagne:\n\nErste Zeile: Fügt eine Kampagne namens “Winter Sale” ein, die vom 1. bis 31. Dezember 2023 läuft, mit einem Budget von 5000 Dollar und dem Kanal “Email”.\nZweite Zeile: Fügt “Summer Festival” ein, eine kürzere Kampagne vom 1. bis 15. Juni 2023, mit einem höheren Budget von 10000 Dollar und nutzt “Social Media”.\nDritte Zeile: Fügt die “Back to School”-Kampagne vom 1. bis 20. August 2023 hinzu, mit einem Budget von 7500 Dollar, vermarktet durch “TV”.\n\nJeder Satz von Werten ist in Klammern eingeschlossen und durch Kommata getrennt, um verschiedene Kampagnen zu unterscheiden.\n\n\n\n\nFühren Sie das Skript aus, indem Sie auf die ▶️ Schaltfläche klicken.\n\n\n\n19.2.5 Werte abrufen\nSchließlich können Sie die Daten in der campaigns Tabelle anzeigen:\n\nÖffnen Sie eine neue Sitzung im Abfragewerkzeug und führen Sie eine SELECT-Abfrage aus:\n\nSELECT * \nFROM campaigns;\n\n\n\n\n\n\nSELECT Abfrage Erklärung\n\n\n\n\n\nDieser SQL-Befehl ruft alle Spalten aus allen Zeilen der campaigns Tabelle ab. Er ist nützlich, um alle Daten zu sehen, die in die Tabelle eingegeben wurden, um sicherzustellen, dass die Einträge korrekt sind, und um weitere Datenanalysen oder Berichte zu erleichtern.\n\n\n\nDies sollte folgendes Ergebnis ausgeben:\n\n\n\n\n\n\n\n\n\n\n\nid\nname\nstart_date\nend_date\nbudget\nchannel\n\n\n\n\n1\nWinter Sale\n2023-12-01\n2023-12-31\n5000.00\nEmail\n\n\n2\nSummer Festival\n2023-06-01\n2023-06-15\n10000.00\nSocial Media\n\n\n3\nBack to School\n2023-08-01\n2023-08-20\n7500.00\nTV",
+    "objectID": "postgres/postgres.html#pgadmin4",
+    "href": "postgres/postgres.html#pgadmin4",
+    "title": "PostgreSQL",
+    "section": "PgAdmin4",
+    "text": "PgAdmin4\npgAdmin4 ist das offizielle grafische Verwaltungstool für PostgreSQL und bietet eine benutzerfreundliche Oberfläche für die Datenbankverwaltung. Es wird als Teil der PostgreSQL-Installation installiert.\n\nNeuen Server hinzufügen\nUm Datenbanken zu verwalten, verbinden Sie sich zunächst mit einer PostgreSQL-Instanz, indem Sie eine neue Serververbindung in pgAdmin4 einrichten:\n\nÖffnen Sie pgAdmin4.\nKlicken Sie unter “Quick Links” auf Add New Server.\nGeben Sie für den Namen local-connection ein.\nWechseln Sie zum Reiter Connection:\n\nHostname/Adresse: Geben Sie localhost ein.\nStellen Sie sicher, dass der Port derselbe ist wie bei der Installation (üblicherweise 5432).\nPasswort: Geben Sie das während der Installation gesetzte Passwort ein und wählen Sie “Save password”.\n\nBestätigen Sie die Einrichtung durch Klicken auf Save.\nDies wird die local-connection in der linken Seitenleiste anzeigen.\n\n\n\nEine Datenbank erstellen\nErstellen Sie als nächstes eine neue Datenbank, um Daten zu speichern:\n\n\n\n\n\n\nStandard PostgreSQL Datenbank\n\n\n\n\n\nBei der Installation von PostgreSQL wird automatisch eine Standarddatenbank namens postgres erstellt. Diese Datenbank wird typischerweise für administrative Zwecke und Tests verwendet. Es ist immer ratsam, neue Datenbanken für anwendungsspezifische Daten zu erstellen, um zu vermeiden, dass die Standarddatenbank mit Anwendungsdaten überladen wird.\n\n\n\n\nKlicken Sie in pgAdmin4 mit der rechten Maustaste auf den local-connection Server in der linken Seitenleiste.\nNavigieren Sie zu: Create &gt; Database.\nGeben Sie im Reiter “General” db_data als Datenbanknamen ein.\nKlicken Sie auf Save, um die Datenbank zu erstellen.\n\n\n\nEine Tabelle erstellen\nErstellen Sie eine Tabelle, um Daten zu Marketingkampagnen zu speichern.\n\n\n\n\n\n\nTabellendefinition\n\n\n\n\n\nSpalten in der Marketingkampagnen-Tabelle: - id: Eine eindeutige Kennung für jede Kampagne, automatisch inkrementiert. - name: Der Name der Marketingkampagne. - start_date & end_date: Der Zeitraum der Kampagne. - budget: Das der Kampagne zugewiesene Budget. - channel: Der für die Kampagne verwendete Kanal (z.B. “E-Mail”, “Soziale Medien”, “TV”).\n\n\n\n\nNavigieren Sie zur db_data Datenbank.\nÖffnen Sie das Abfragewerkzeug unter Tools &gt; Query Tool.\nGeben Sie den folgenden SQL-Befehl ein, um die campaigns Tabelle zu erstellen:\n\nCREATE TABLE campaigns (\n    id BIGSERIAL PRIMARY KEY,\n    name VARCHAR(255) NOT NULL,\n    start_date DATE,\n    end_date DATE,\n    budget DECIMAL(10, 2),\n    channel VARCHAR(255)\n);\n\n\n\n\n\n\nTabellendefinition Erklärung\n\n\n\n\n\nDer obige SQL-Befehl erstellt eine neue Tabelle namens campaigns. Hier ist eine Aufschlüsselung der einzelnen Spaltendefinitionen:\n\nid: Eine Spalte namens id, die den Datentyp BIGSERIAL verwendet, was ein automatisch inkrementierender Integer ist und sich für einen Primärschlüssel eignet.\nname: Eine Spalte zur Speicherung von Kampagnennamen als Text, definiert, um eine Zeichenfolge von bis zu 255 Zeichen zu halten. Die NOT NULL-Einschränkung stellt sicher, dass jede Zeile einen Namen haben muss.\nstart_date und end_date: Diese Spalten speichern die Start- und Enddaten der Kampagnen jeweils im DATE-Datentyp.\nbudget: Eine Spalte für das mit jeder Kampagne verbundene Budget, die DECIMAL(10, 2) verwendet, um bis zu 10 Ziffern mit 2 Dezimalstellen zu ermöglichen.\nchannel: Eine Spalte, um das für die Kampagne verwendete Medium anzugeben, die Zeichenfolgen von bis zu 255 Zeichen speichern kann.\n\n\n\n\n\nFühren Sie das Skript aus, indem Sie auf die ▶️ Schaltfläche klicken (oder F5 drücken).\nUm die Tabelle zu überprüfen, erweitern Sie “Schemas” &gt; “Tables” &gt; “campaigns” &gt; “Columns” in der Datenbank db_data.\n\n\n\nWerte in die Tabelle einfügen\nFüllen Sie die Tabelle mit Beispieldaten:\n\nVerwenden Sie erneut das Abfragewerkzeug, um die folgende Einfügeanweisung auszuführen:\n\nINSERT INTO campaigns (name, start_date, end_date, budget, channel) VALUES\n('Winter Sale', '2023-12-01', '2023-12-31', 5000.00, 'Email'),\n('Summer Festival', '2023-06-01', '2023-06-15', 10000.00, 'Social Media'),\n('Back to School', '2023-08-01', '2023-08-20', 7500.00, 'TV');\n\n\n\n\n\n\nInsert Statement Erklärung\n\n\n\n\n\nDieser SQL-Befehl fügt Daten in die campaigns Tabelle ein. Jede Zeile von Werten entspricht einer anderen Marketingkampagne:\n\nErste Zeile: Fügt eine Kampagne namens “Winter Sale” ein, die vom 1. bis 31. Dezember 2023 läuft, mit einem Budget von 5000 Dollar und dem Kanal “Email”.\nZweite Zeile: Fügt “Summer Festival” ein, eine kürzere Kampagne vom 1. bis 15. Juni 2023, mit einem höheren Budget von 10000 Dollar und nutzt “Social Media”.\nDritte Zeile: Fügt die “Back to School”-Kampagne vom 1. bis 20. August 2023 hinzu, mit einem Budget von 7500 Dollar, vermarktet durch “TV”.\n\nJeder Satz von Werten ist in Klammern eingeschlossen und durch Kommata getrennt, um verschiedene Kampagnen zu unterscheiden.\n\n\n\n\nFühren Sie das Skript aus, indem Sie auf die ▶️ Schaltfläche klicken.\n\n\n\nWerte abrufen\nSchließlich können Sie die Daten in der campaigns Tabelle anzeigen:\n\nÖffnen Sie eine neue Sitzung im Abfragewerkzeug und führen Sie eine SELECT-Abfrage aus:\n\nSELECT * \nFROM campaigns;\n\n\n\n\n\n\nSELECT Abfrage Erklärung\n\n\n\n\n\nDieser SQL-Befehl ruft alle Spalten aus allen Zeilen der campaigns Tabelle ab. Er ist nützlich, um alle Daten zu sehen, die in die Tabelle eingegeben wurden, um sicherzustellen, dass die Einträge korrekt sind, und um weitere Datenanalysen oder Berichte zu erleichtern.\n\n\n\nDies sollte folgendes Ergebnis ausgeben:\n\n\n\n\n\n\n\n\n\n\n\nid\nname\nstart_date\nend_date\nbudget\nchannel\n\n\n\n\n1\nWinter Sale\n2023-12-01\n2023-12-31\n5000.00\nEmail\n\n\n2\nSummer Festival\n2023-06-01\n2023-06-15\n10000.00\nSocial Media\n\n\n3\nBack to School\n2023-08-01\n2023-08-20\n7500.00\nTV",
     "crumbs": [
-      "Relationale Datenbanken",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>PostgreSQL</span>"
+      "PostgreSQL"
     ]
   },
   {
-    "objectID": "sql/sql-python.html",
-    "href": "sql/sql-python.html",
-    "title": "20  SQL & Python",
-    "section": "",
-    "text": "20.1 Python-Umgebung\nRichten Sie zuerst eine isolierte Python-Umgebung mit Anaconda ein:",
-    "crumbs": [
-      "Relationale Datenbanken",
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>SQL & Python</span>"
-    ]
-  },
-  {
-    "objectID": "sql/sql-python.html#python-umgebung",
-    "href": "sql/sql-python.html#python-umgebung",
-    "title": "20  SQL & Python",
-    "section": "",
-    "text": "Erstellen Sie eine neue Umgebung (wenn Sie detailliertere Erklärungen benötigen, lesen Sie dieses Kapitel über die Erstellung von Umgebungen):\n\nconda create -n postgres python=3.11 pip\n\nAktivieren Sie die Umgebung:\n\nconda activate postgres\n\nInstallieren Sie die notwendigen Pakete: Wir benötigen psycopg2-binary für die PostgreSQL-Konnektivität, sqlalchemy für SQL-Operationen und pandas für die Datenmanipulation.\n\npip install psycopg2-binary sqlalchemy ipykernel jupyter pandas",
-    "crumbs": [
-      "Relationale Datenbanken",
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>SQL & Python</span>"
-    ]
-  },
-  {
-    "objectID": "sql/sql-python.html#datenbankverbindung",
-    "href": "sql/sql-python.html#datenbankverbindung",
-    "title": "20  SQL & Python",
-    "section": "20.2 Datenbankverbindung",
-    "text": "20.2 Datenbankverbindung\nUm von Python aus mit Ihrer PostgreSQL-Datenbank zu interagieren, richten Sie eine Verbindung mit SQLAlchemy ein:\n\nStarten Sie PostgreSQL: Stellen Sie sicher, dass Ihre PostgreSQL-Instanz läuft.\nImportieren Sie die Bibliotheken und erstellen Sie eine Engine: Die Engine ist Ihr Zugang zur Datenbank. Ersetzen Sie Platzhalter durch Ihre tatsächlichen Datenbank-Anmeldedaten.\n\nimport sqlalchemy as sa\n\n# Ersetzen Sie die Platzhalter durch Ihre Datenbank-Anmeldedaten\nengine = sa.create_engine('postgresql://your_username:your_password@localhost:your_port/your_database')\nSie müssen die links aufgeführten Platzhalter in der oben gezeigten Funktion ersetzen:\n\nyour_username: Typischerweise postgres\nyour_password: Ihr Datenbank-Passwort\nyour_port: Üblicherweise 5432\nyour_database: Standardmäßig postgres (Sie sollten die von uns bereits erstelle Datenbank db_data verwenden)\n\nHier ein Beispiel, in welchem als Passwort der Begriff mysecretpasswordverwendet wurde:\nimport sqlalchemy as sa\n\n# Ersetzen Sie die Platzhalter durch Ihre Datenbank-Anmeldedaten\nengine = sa.create_engine('postgresql://postgres:mysecretpassword@localhost:5432/db_data')\nFür weitere Details zur Konfiguration der Engine, siehe die SQLAlchemy-Dokumentation.",
-    "crumbs": [
-      "Relationale Datenbanken",
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>SQL & Python</span>"
-    ]
-  },
-  {
-    "objectID": "sql/sql-python.html#daten-in-postgresql-schreiben",
-    "href": "sql/sql-python.html#daten-in-postgresql-schreiben",
-    "title": "20  SQL & Python",
-    "section": "20.3 Daten in PostgreSQL schreiben",
-    "text": "20.3 Daten in PostgreSQL schreiben\nMit der eingerichteten Verbindung übertragen wir nun Daten von einem pandas DataFrame nach PostgreSQL:\n\nLaden Sie die Daten in einen DataFrame:\nimport pandas as pd\n\n# Laden der Daten aus einer CSV-Datei\ndf = pd.read_csv(\"https://raw.githubusercontent.com/kirenz/datasets/master/gapminder.csv\")\n\n\n\n\n\n\nErklärung des Codes\n\n\n\n\n\nDer Python-Code verwendet die Bibliothek pandas, um Daten aus einer CSV-Datei zu laden:\n\nImportieren der pandas-Bibliothek:\n\npandas ist eine weit verbreitete Bibliothek in Python, die leistungsstarke, benutzerfreundliche Datenstrukturen und Datenanalyse-Tools bietet.\nMit import pandas as pd importieren wir die Bibliothek und geben ihr das Alias pd, um den Code kürzer und lesbarer zu machen.\n\nLaden der Daten aus einer CSV-Datei:\n\npd.read_csv: Diese Methode wird verwendet, um eine CSV-Datei in einen pandas DataFrame zu laden.\nURL der CSV-Datei: \"https://raw.githubusercontent.com/kirenz/datasets/master/gapminder.csv\" ist die URL der CSV-Datei, die die Daten enthält. Die Methode kann Daten direkt von einer URL laden, ohne dass die Datei lokal gespeichert werden muss.\ndf: Der resultierende DataFrame wird in der Variablen df gespeichert. Ein DataFrame ist eine tabellarische Datenstruktur, die sowohl Zeilen- als auch Spaltenbeschriftungen hat, ähnlich wie eine Tabelle in einer Datenbank oder ein Datenblatt in Excel.\n\n\n\n\n\nSchreiben Sie den DataFrame nach PostgreSQL: Verwenden Sie die Methode to_sql, um die Daten in eine neue Tabelle namens gapminder zu schreiben.\ndf.to_sql('gapminder', engine, if_exists='replace')\n\n\n\n\n\n\nErklärung des Codes\n\n\n\n\n\nDer Python-Code verwendet die Methode to_sql von pandas, um einen DataFrame in eine SQL-Datenbank zu schreiben:\n\ndf.to_sql:\n\nDiese Methode schreibt den DataFrame df in eine SQL-Datenbank.\n\n'gapminder':\n\nDies ist der Name der Tabelle, in die die Daten geschrieben werden. In diesem Fall wird die Tabelle gapminder genannt.\n\nengine:\n\nDies ist die SQLAlchemy-Engine, die die Verbindung zur Datenbank darstellt. Die Engine enthält alle notwendigen Informationen, um sich mit der Datenbank zu verbinden und Befehle auszuführen.\n\nif_exists='replace':\n\nDiese Option gibt an, was geschehen soll, wenn die Tabelle gapminder bereits in der Datenbank existiert.\nreplace: Diese Option sorgt dafür, dass die vorhandene Tabelle gelöscht und durch die neue Tabelle ersetzt wird, die aus dem DataFrame df erstellt wird.\n\n\n\n\n\nDies sollte als Ergebnis 704 ausgeben (die Anzahl der Zeilen, die in die neue Tabelle geschrieben wurden.).\nÜberprüfen Sie die Tabelle in der Datenbank: Führen Sie eine Abfrage in der Datenbank aus, um zu bestätigen, dass die Tabelle existiert.\nwith engine.connect() as connection:\n      tables = connection.execute(sa.text(\"SELECT table_name FROM information_schema.tables WHERE table_schema='public'\"))\n      for table in tables:\n         print(table[0])\n\n\n\n\n\n\nErklärung des Codes\n\n\n\n\n\nDer Code öffnet eine Verbindung zu einer SQL-Datenbank mithilfe der SQLAlchemy-Engine.\n\nInnerhalb des with-Blocks wird sichergestellt, dass die Verbindung nach Abschluss des Blocks automatisch geschlossen wird.\nDer Befehl connection.execute führt eine SQL-Abfrage aus, die die Namen aller Tabellen im public-Schema der Datenbank aus der information_schema.tables-Tabelle abruft.\nDiese Abfrage gibt eine Liste der Tabellennamen zurück.\nDiese Liste wird in einer Schleife durchlaufen.\nInnerhalb der Schleife wird der Name jeder Tabelle mit print(table[0]) auf der Konsole ausgegeben.\n\n\n\n\nDies sollte ausgeben: gapminder (d.h. die Tabelle gapminder ist in der Datenbank enthalten)\nOptional: Entfernen Sie die Tabelle: Wenn Sie die Tabelle aus der Datenbank löschen möchten:\nsql = sa.text(\"DROP TABLE IF EXISTS gapminder\")\n\nwith engine.connect() as connection:\n      connection.execute(sql)\n\n\n\n\n\n\nErklärung des Codes\n\n\n\n\n\nDer Code definiert eine SQL-Abfrage, die überprüft, ob die Tabelle gapminder existiert, und sie löscht, falls sie vorhanden ist. Diese Abfrage wird in der Variablen sql gespeichert.\n\nEin with-Block wird verwendet, um eine Verbindung zur SQL-Datenbank mithilfe der SQLAlchemy-Engine zu öffnen. Der with-Block stellt sicher, dass die Verbindung nach Abschluss des Blocks automatisch geschlossen wird.\nInnerhalb des with-Blocks wird die SQL-Abfrage sql mit dem Befehl connection.execute(sql) ausgeführt.\nDiese Ausführung löscht die Tabelle gapminder, falls sie in der Datenbank existiert.\n\n\n\n\n\nSie sollten die Tabelle nun auch in PgAdmin4 sehen.",
-    "crumbs": [
-      "Relationale Datenbanken",
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>SQL & Python</span>"
-    ]
-  },
-  {
-    "objectID": "nosql/nosql.html",
-    "href": "nosql/nosql.html",
-    "title": "NoSQL Datenbanken",
-    "section": "",
-    "text": "NoSQL Datenmodelle\nNoSQL-Datenbanken bieten eine Vielzahl von Möglichkeiten, um verschiedene Arten von Daten effizient zu speichern und abzurufen. Sie sind besonders nützlich in Szenarien, in denen traditionelle relationale Datenbanken an ihre Grenzen stoßen.",
-    "crumbs": [
-      "NoSQL Datenbanken"
-    ]
-  },
-  {
-    "objectID": "nosql/nosql.html#nosql-datenmodelle",
-    "href": "nosql/nosql.html#nosql-datenmodelle",
-    "title": "NoSQL Datenbanken",
-    "section": "",
-    "text": "Modell\nEigenschaften\nOpen Source\n\n\n\n\nDokumentenorientierter Speicher\nDaten und Metadaten werden hierarchisch in JSON-basierten Dokumenten innerhalb der Datenbank gespeichert.\nMongoDB, CouchDB\n\n\nSchlüssel-Wert-Speicher\nDie einfachsten NoSQL-Datenbanken, Daten werden als eine Sammlung von Schlüssel-Wert-Paaren dargestellt.\nRedis\n\n\nSpaltenorientierter Speicher\nVerwandte Daten werden als eine Reihe von verschachtelten Schlüssel/Wert-Paaren innerhalb einer einzigen Spalte gespeichert.\nHBase, Cassandra\n\n\nGraph-Speicher\nDaten werden in einer Graphstruktur als Knoten, Kanten und Dateneigenschaften gespeichert.\nNeo4j\n\n\n\n\nDokumentenorientierter Speicher\nIn dokumentenorientierten Datenbanken werden Daten in Form von Dokumenten gespeichert, die meist auf JSON (JavaScript Object Notation) basieren. Diese Dokumente enthalten nicht nur die Daten, sondern auch die Struktur der Daten, was eine große Flexibilität bietet. Beispiele sind MongoDB und CouchDB.\n\n\nSchlüssel-Wert-Speicher\nSchlüssel-Wert-Datenbanken speichern Daten als eine Sammlung von Schlüssel-Wert-Paaren. Jede Datenstruktur besteht aus einem eindeutigen Schlüssel und einem Wert, der jede Art von Daten enthalten kann. Redis ist ein bekanntes Beispiel für einen Schlüssel-Wert-Speicher.\n\n\nSpaltenorientierter Speicher\nSpaltenorientierte Datenbanken speichern Daten in Tabellen, aber im Gegensatz zu relationalen Datenbanken sind die Daten in Spalten anstatt in Reihen organisiert. Dies ermöglicht eine effiziente Speicherung und Abfrage von großen Datenmengen. Beispiele sind HBase und Cassandra.\n\n\nGraph-Speicher\nGraph-Datenbanken speichern Daten in Form von Graphen, bei denen Knoten die Datenobjekte und Kanten die Beziehungen zwischen diesen Objekten darstellen. Dies ermöglicht komplexe Abfragen von Beziehungen. Ein bekanntes Beispiel ist Neo4j.",
-    "crumbs": [
-      "NoSQL Datenbanken"
-    ]
-  },
-  {
-    "objectID": "nosql/mongo-db-installation.html",
-    "href": "nosql/mongo-db-installation.html",
-    "title": "21  MongoDB",
-    "section": "",
-    "text": "21.1 Installation",
-    "crumbs": [
-      "NoSQL Datenbanken",
-      "<span class='chapter-number'>21</span>  <span class='chapter-title'>MongoDB</span>"
-    ]
-  },
-  {
-    "objectID": "nosql/mongo-db-installation.html#installation",
-    "href": "nosql/mongo-db-installation.html#installation",
-    "title": "21  MongoDB",
-    "section": "",
-    "text": "21.1.1 Windows\n\nMongoDB herunterladen:\nBesuchen Sie die offizielle MongoDB-Download-Seite und laden Sie die aktuelle (“current”) MongoDB Community Server-Version für Windows herunter.\n\nVersion: … (current).\nPlatform: Windows x64\nPackage: msi\n\nInstallation:\n\nFühren Sie das Installationsprogramm aus und folgen Sie den Anweisungen.\nWählen Sie “Complete” als Setup-Typ.\nAktivieren Sie die Option “Install MongoDB as a Service”.\n\nMongoDB Shell (mongosh) herunterladen:\nBesuchen Sie die MongoDB Shell Download-Seite und laden Sie die aktuelle Version von MongoDB Shell herunter (wählen Sie als Plattform Windows und als Package msi).\n\nUm MongoDB von jeder Eingabeaufforderung aus zugänglich zu machen, setzen wir nun eine Umgebungsvariable. Dadurch können Sie mongod und mongo von jeder Eingabeaufforderung aus ohne Angabe des vollständigen Pfades ausführen.\nHier ist eine detaillierte Anleitung, wie Sie die Umgebungsvariable unter Windows setzen können:\n\nPfad zu mongod.exe und mongosh.exe ermitteln:\n\nDer Pfad ist in der Regel C:\\Program Files\\MongoDB\\Server\\&lt;Version&gt;\\bin. Finden Sie den Pfad im Datei-Explorer und notieren Sie ihn.\n\nUmgebungsvariablen öffnen:\n\nDrücken Sie die Windows-Taste und geben Sie “Umgebungsvariablen” ein.\nWählen Sie “Umgebungsvariablen für dieses Konto bearbeiten” oder “Systemumgebungsvariablen bearbeiten” aus.\n\nSystemumgebungsvariablen bearbeiten:\n\nIm Fenster “Systemeigenschaften” klicken Sie auf die Schaltfläche “Umgebungsvariablen”.\n\nPfad-Variable bearbeiten:\n\nIm Abschnitt “Systemvariablen” suchen Sie die Variable “Path” und wählen Sie sie aus. Klicken Sie dann auf “Bearbeiten”.\n\nNeuen Pfad hinzufügen:\n\nKlicken Sie auf “Neu” und fügen Sie den Pfad zu mongod.exe hinzu (z.B. C:\\Program Files\\MongoDB\\Server\\&lt;Version&gt;\\bin).\n\nÄnderungen speichern:\n\nKlicken Sie auf “OK”, um alle Fenster zu schließen und die Änderungen zu speichern.\n\n\nUm sicherzustellen, dass die Umgebungsvariablen korrekt gesetzt wurden, öffnen Sie eine neue Eingabeaufforderung und führen Sie die folgenden Befehle aus:\nmongod --version\nmongosh --version\nWenn beide Befehle die Versionsnummern von MongoDB und MongoDB Shell (mongosh) zurückgeben, wurde die Umgebungsvariable erfolgreich gesetzt\n\n\n21.1.2 macOS\nFolgen Sie der Installationsanweisung der MongoDB-Dokumentation:\n\nXcode Command-Line Tools installieren (falls noch nicht installiert): Homebrew benötigt die Xcode Command-Line Tools von Apples Xcode.\n\nPrüfen Sie im Terminal, ob XCode installiert ist (wenn Xcode installiert ist, wird die Version angezeigt. Wenn nicht, wird eine entsprechende Fehlermeldung angezeigt und Sie müssen XCode installieren):\n\nxcode-select --version\n\nFalls notwendig, installieren Sie die Xcode Command-Line Tools mit folgendem Befehl im macOS Terminal:\n\nxcode-select --install\nHomebrew installieren (falls noch nicht installiert):\n\nFühren Sie diesen Befehl im Terminal aus, um den Homebrew-Paketmanager zu installieren:\n\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"\nMongoDB installieren:\n\nLaden Sie das offizielle Homebrew-Formular für MongoDB und die Datenbank-Tools herunter, indem Sie folgenden Befehl im macOS Terminal ausführen:\n\nbrew tap mongodb/brew\n\nAktualisieren Sie Homebrew und alle vorhandenen Formeln:\n\nbrew update\n\nUm MongoDB zu installieren, führen Sie folgenden Befehl im macOS Terminal aus:\n\nbrew install mongodb-community@7.0\n\nDie Installation umfasst folgende Binärdateien:\n\nDer mongod-Server\nDer mongos-Sharded-Cluster-Query-Router\nDie MongoDB Shell, mongosh",
-    "crumbs": [
-      "NoSQL Datenbanken",
-      "<span class='chapter-number'>21</span>  <span class='chapter-title'>MongoDB</span>"
-    ]
-  },
-  {
-    "objectID": "nosql/mongo-db-installation.html#mongodb-starten-und-stoppen",
-    "href": "nosql/mongo-db-installation.html#mongodb-starten-und-stoppen",
-    "title": "21  MongoDB",
-    "section": "21.2 MongoDB starten und stoppen",
-    "text": "21.2 MongoDB starten und stoppen\n\n21.2.1 Windows\n\n21.2.1.1 Starten\nMongoDB sollte als Dienst automatisch gestartet werden, wenn Sie die Option “Install MongoDB as a Service” während der Installation aktiviert haben.\nSie können den Dienst auch manuell starten, falls er nicht automatisch gestartet wurde oder falls Sie den Dienst neu starten möchten:\n\nÖffnen Sie die Dienstverwaltung:\n\nDrücken Sie die Windows-Taste + R, um das Ausführen-Dialogfeld zu öffnen.\nGeben Sie services.msc ein und drücken Sie Enter.\n\nFinden Sie den MongoDB-Dienst:\n\nIm Fenster “Dienste” scrollen Sie nach unten, bis Sie den Dienst namens MongoDB finden.\n\nStarten Sie den Dienst:\n\nKlicken Sie mit der rechten Maustaste auf den MongoDB-Dienst und wählen Sie Starten aus dem Kontextmenü.\n\n\nAlternativ können Sie den MongoDB-Dienst auch über die Eingabeaufforderung starten:\n\nÖffnen Sie die Eingabeaufforderung als Administrator:\n\nDrücken Sie die Windows-Taste, geben Sie cmd ein, klicken Sie mit der rechten Maustaste auf Eingabeaufforderung und wählen Sie Als Administrator ausführen.\n\nFühren Sie den folgenden Befehl aus, um den MongoDB-Dienst zu starten:\nnet start MongoDB\n\n\n\n\n21.2.2 Stoppen\nUm MongoDB zu stoppen, können Sie entweder die Dienstverwaltung verwenden oder einen Befehl in der Eingabeaufforderung ausführen.\nSo stoppen Sie den MongoDB-Dienst manuell:\n\nÖffnen Sie die Dienstverwaltung:\n\nDrücken Sie die Windows-Taste + R, um das Ausführen-Dialogfeld zu öffnen.\nGeben Sie services.msc ein und drücken Sie Enter.\n\nFinden Sie den MongoDB-Dienst:\n\nIm Fenster “Dienste” scrollen Sie nach unten, bis Sie den Dienst namens MongoDB finden.\n\nStoppen Sie den Dienst:\n\nKlicken Sie mit der rechten Maustaste auf den MongoDB-Dienst und wählen Sie Beenden aus dem Kontextmenü.\n\n\nAlternativ können Sie den MongoDB-Dienst auch über die Eingabeaufforderung stoppen:\n\nÖffnen Sie die Eingabeaufforderung als Administrator:\n\nDrücken Sie die Windows-Taste, geben Sie cmd ein, klicken Sie mit der rechten Maustaste auf Eingabeaufforderung und wählen Sie Als Administrator ausführen.\n\nFühren Sie den folgenden Befehl aus, um den MongoDB-Dienst zu stoppen:\nnet stop MongoDB\n\nDurch das Starten und Stoppen des MongoDB-Dienstes können Sie sicherstellen, dass die Datenbank ordnungsgemäß läuft oder heruntergefahren wird, je nach Ihren Anforderungen.\n\n\n21.2.3 macOS\n\n21.2.3.1 Starten\nNach der Installation von MongoDB können Sie den Datenbankdienst einfach mit Homebrew starten. Homebrew verwaltet Dienste wie MongoDB und ermöglicht es Ihnen, diese mit einfachen Befehlen zu starten und zu stoppen.\nSo starten Sie den MongoDB-Dienst:\n\nÖffnen Sie das Terminal:\n\nSie finden das Terminal im Ordner “Dienstprogramme” innerhalb des Ordners “Programme” oder indem Sie cmd + Leertaste drücken und “Terminal” eingeben.\n\nStarten Sie den MongoDB-Dienst:\n\nGeben Sie den folgenden Befehl im Terminal ein und drücken Sie Enter:\n\nbrew services start mongodb-community@7.0\n\nWenn alles korrekt eingerichtet ist, sehen Sie eine Bestätigungsmeldung, dass der Dienst gestartet wurde.\n\n\n\n\n21.2.3.2 Überprüfen, ob MongoDB läuft\nUm sicherzustellen, dass MongoDB korrekt gestartet wurde und läuft, können Sie eine Liste aller von Homebrew verwalteten Dienste anzeigen.\nSo überprüfen Sie den Status von MongoDB:\n\nGeben Sie den folgenden Befehl im Terminal ein und drücken Sie Enter:\nbrew services list\n\nDieser Befehl zeigt eine Liste aller Dienste an, die von Homebrew verwaltet werden, sowie deren aktuellen Status.\n\nÜberprüfen Sie den Eintrag für mongodb-community:\n\nIn der Liste sollten Sie mongodb-community sehen, gefolgt von der Versionsnummer und dem Status started. Dies zeigt an, dass MongoDB erfolgreich läuft.\n\n\n\n\n21.2.3.3 Stoppen von MongoDB\nWenn Sie MongoDB beenden möchten, können Sie dies ebenfalls mit einem einfachen Homebrew-Befehl tun.\nSo stoppen Sie den MongoDB-Dienst:\n\nGeben Sie den folgenden Befehl im Terminal ein und drücken Sie Enter:\nbrew services stop mongodb-community@7.0\n\nAuch hier sollte eine Bestätigungsmeldung erscheinen, dass der Dienst gestoppt wurde.\n\n\n\n\n21.2.3.4 Zusammenfassung\n\nStarten: Um MongoDB zu starten, verwenden Sie den Befehl:\nbrew services start mongodb-community@7.0\nPrüfen: Um zu überprüfen, ob MongoDB läuft, verwenden Sie den Befehl:\nbrew services list\n\nSuchen Sie in der Liste nach mongodb-community und stellen Sie sicher, dass der Status started angezeigt wird.\n\nStoppen: Um MongoDB zu stoppen, verwenden Sie den Befehl:\nbrew services stop mongodb-community@7.0\n\nDiese Befehle bieten eine einfache Möglichkeit, den MongoDB-Dienst zu verwalten, ohne tiefere technische Kenntnisse über macOS-Dienste zu benötigen.",
-    "crumbs": [
-      "NoSQL Datenbanken",
-      "<span class='chapter-number'>21</span>  <span class='chapter-title'>MongoDB</span>"
-    ]
-  },
-  {
-    "objectID": "nosql/mongo-db-start-stop.html",
-    "href": "nosql/mongo-db-start-stop.html",
-    "title": "22  MongoDB starten und stoppen",
+    "objectID": "postgres/postgres-installation.html",
+    "href": "postgres/postgres-installation.html",
+    "title": "22  Installation",
     "section": "",
     "text": "22.1 Windows",
     "crumbs": [
-      "NoSQL Datenbanken",
-      "<span class='chapter-number'>22</span>  <span class='chapter-title'>MongoDB starten und stoppen</span>"
+      "PostgreSQL",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Installation</span>"
     ]
   },
   {
-    "objectID": "nosql/mongo-db-start-stop.html#windows",
-    "href": "nosql/mongo-db-start-stop.html#windows",
-    "title": "22  MongoDB starten und stoppen",
+    "objectID": "postgres/postgres-installation.html#windows",
+    "href": "postgres/postgres-installation.html#windows",
+    "title": "22  Installation",
     "section": "",
-    "text": "22.1.1 MongoDB starten\nMongoDB sollte als Dienst automatisch gestartet werden, wenn Sie die Option “Install MongoDB as a Service” während der Installation aktiviert haben.\nSie können den Dienst auch manuell starten, falls er nicht automatisch gestartet wurde oder falls Sie den Dienst neu starten möchten:\n\nÖffnen Sie die Dienstverwaltung:\n\nDrücken Sie die Windows-Taste + R, um das Ausführen-Dialogfeld zu öffnen.\nGeben Sie services.msc ein und drücken Sie Enter.\n\nFinden Sie den MongoDB-Dienst:\n\nIm Fenster “Dienste” scrollen Sie nach unten, bis Sie den Dienst namens MongoDB finden.\n\nStarten Sie den Dienst:\n\nKlicken Sie mit der rechten Maustaste auf den MongoDB-Dienst und wählen Sie Starten aus dem Kontextmenü.\n\n\nAlternativ können Sie den MongoDB-Dienst auch über die Eingabeaufforderung starten:\n\nÖffnen Sie die Eingabeaufforderung als Administrator:\n\nDrücken Sie die Windows-Taste, geben Sie cmd ein, klicken Sie mit der rechten Maustaste auf Eingabeaufforderung und wählen Sie Als Administrator ausführen.\n\nFühren Sie den folgenden Befehl aus, um den MongoDB-Dienst zu starten:\nnet start MongoDB",
+    "text": "PostgreSQL herunterladen und installieren\n\nLaden Sie PostgreSQL von dieser Website herunter.\nWählen Sie das Installationsprogramm für Windows aus und starten Sie den Download.\nNach dem Download führen Sie das Installationsprogramm aus.\n\nStandard-Installationsverzeichnis auswählen\n\nKlicken Sie im Installationsassistenten auf “Next”.\nAkzeptieren Sie das vorgeschlagene Standard-Installationsverzeichnis oder wählen Sie ein eigenes Verzeichnis und klicken Sie auf “Next”.\n\nKomponenten auswählen\n\nWählen Sie die folgenden Komponenten aus:\n\nPostgreSQL Server\npgAdmin 4\nKommandozeilenwerkzeuge\n\nKlicken Sie auf “Next”.\n\nVerzeichnis für die Dateninstallation auswählen\n\nAkzeptieren Sie das vorgeschlagene Datenverzeichnis oder wählen Sie ein eigenes Verzeichnis und klicken Sie auf “Next”.\n\nPasswort setzen\n\nGeben Sie ein Passwort für den PostgreSQL Superuser (Postgres) ein und bestätigen Sie es.\nKlicken Sie auf “Next”.\n\nPort akzeptieren\n\nAkzeptieren Sie den standardmäßig vorgeschlagenen Port (üblicherweise 5432) und klicken Sie auf “Next”.\n\nGebietsschema setzen\n\nSetzen Sie das Gebietsschema auf das Standardgebietsschema und klicken Sie auf “Next”.\n\nInstallation abschließen\n\nÜberprüfen Sie die Einstellungen und klicken Sie auf “Next”, um die Installation zu starten.\nNach Abschluss der Installation klicken Sie auf “Finish”.",
     "crumbs": [
-      "NoSQL Datenbanken",
-      "<span class='chapter-number'>22</span>  <span class='chapter-title'>MongoDB starten und stoppen</span>"
+      "PostgreSQL",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Installation</span>"
     ]
   },
   {
-    "objectID": "nosql/mongo-db-start-stop.html#mongodb-stoppen",
-    "href": "nosql/mongo-db-start-stop.html#mongodb-stoppen",
-    "title": "22  MongoDB starten und stoppen",
-    "section": "22.2 MongoDB stoppen",
-    "text": "22.2 MongoDB stoppen\nUm MongoDB zu stoppen, können Sie entweder die Dienstverwaltung verwenden oder einen Befehl in der Eingabeaufforderung ausführen.\nSo stoppen Sie den MongoDB-Dienst manuell:\n\nÖffnen Sie die Dienstverwaltung:\n\nDrücken Sie die Windows-Taste + R, um das Ausführen-Dialogfeld zu öffnen.\nGeben Sie services.msc ein und drücken Sie Enter.\n\nFinden Sie den MongoDB-Dienst:\n\nIm Fenster “Dienste” scrollen Sie nach unten, bis Sie den Dienst namens MongoDB finden.\n\nStoppen Sie den Dienst:\n\nKlicken Sie mit der rechten Maustaste auf den MongoDB-Dienst und wählen Sie Beenden aus dem Kontextmenü.\n\n\nAlternativ können Sie den MongoDB-Dienst auch über die Eingabeaufforderung stoppen:\n\nÖffnen Sie die Eingabeaufforderung als Administrator:\n\nDrücken Sie die Windows-Taste, geben Sie cmd ein, klicken Sie mit der rechten Maustaste auf Eingabeaufforderung und wählen Sie Als Administrator ausführen.\n\nFühren Sie den folgenden Befehl aus, um den MongoDB-Dienst zu stoppen:\nnet stop MongoDB\n\nDurch das Starten und Stoppen des MongoDB-Dienstes können Sie sicherstellen, dass die Datenbank ordnungsgemäß läuft oder heruntergefahren wird, je nach Ihren Anforderungen.",
+    "objectID": "postgres/postgres-installation.html#mac-installation",
+    "href": "postgres/postgres-installation.html#mac-installation",
+    "title": "22  Installation",
+    "section": "22.2 Mac Installation",
+    "text": "22.2 Mac Installation\n\nPostgreSQL herunterladen und installieren\n\nLaden Sie PostgreSQL von dieser Website herunter.\nWählen Sie das Installationsprogramm für MacOS aus und starten Sie den Download.\nNach dem Download öffnen Sie das Installationsprogramm (dmg-Datei).\n\nInstallationsprogramm starten\n\nZiehen Sie das PostgreSQL-Symbol in den Anwendungsordner, um die Installation zu starten.\nÖffnen Sie den Anwendungsordner und starten Sie das PostgreSQL-Installationsprogramm.\n\nKomponenten auswählen\n\nWählen Sie die folgenden Komponenten aus:\n\nPostgreSQL Server\npgAdmin 4\nKommandozeilenwerkzeuge\n\nKlicken Sie auf “Next”.\n\nVerzeichnis für die Dateninstallation auswählen\n\nAkzeptieren Sie das vorgeschlagene Datenverzeichnis oder wählen Sie ein eigenes Verzeichnis und klicken Sie auf “Next”.\n\nPasswort setzen\n\nGeben Sie ein Passwort für den PostgreSQL Superuser (Postgres) ein und bestätigen Sie es.\nKlicken Sie auf “Next”.\n\nPort akzeptieren\n\nAkzeptieren Sie den standardmäßig vorgeschlagenen Port (üblicherweise 5432) und klicken Sie auf “Next”.\n\nGebietsschema setzen\n\nSetzen Sie das Gebietsschema auf das Standardgebietsschema und klicken Sie auf “Next”.\n\nInstallation abschließen\n\nÜberprüfen Sie die Einstellungen und klicken Sie auf “Next”, um die Installation zu starten.\nNach Abschluss der Installation klicken Sie auf “Finish”.",
     "crumbs": [
-      "NoSQL Datenbanken",
-      "<span class='chapter-number'>22</span>  <span class='chapter-title'>MongoDB starten und stoppen</span>"
+      "PostgreSQL",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Installation</span>"
     ]
   },
   {
-    "objectID": "nosql/mongo-db-start-stop.html#macos",
-    "href": "nosql/mongo-db-start-stop.html#macos",
-    "title": "22  MongoDB starten und stoppen",
-    "section": "22.3 macOS",
-    "text": "22.3 macOS\n\n22.3.1 MongoDB starten\nNach der Installation von MongoDB können Sie den Datenbankdienst einfach mit Homebrew starten. Homebrew verwaltet Dienste wie MongoDB und ermöglicht es Ihnen, diese mit einfachen Befehlen zu starten und zu stoppen.\nSo starten Sie den MongoDB-Dienst:\n\nÖffnen Sie das Terminal:\n\nSie finden das Terminal im Ordner “Dienstprogramme” innerhalb des Ordners “Programme” oder indem Sie cmd + Leertaste drücken und “Terminal” eingeben.\n\nStarten Sie den MongoDB-Dienst:\n\nGeben Sie den folgenden Befehl im Terminal ein und drücken Sie Enter:\n\nbrew services start mongodb-community@7.0\n\nWenn alles korrekt eingerichtet ist, sehen Sie eine Bestätigungsmeldung, dass der Dienst gestartet wurde.\n\n\nUm sicherzustellen, dass MongoDB korrekt gestartet wurde und läuft, können Sie eine Liste aller von Homebrew verwalteten Dienste anzeigen.\nSo überprüfen Sie den Status von MongoDB:\n\nGeben Sie den folgenden Befehl im Terminal ein und drücken Sie Enter:\nbrew services list\n\nDieser Befehl zeigt eine Liste aller Dienste an, die von Homebrew verwaltet werden, sowie deren aktuellen Status.\n\nÜberprüfen Sie den Eintrag für mongodb-community:\n\nIn der Liste sollten Sie mongodb-community sehen, gefolgt von der Versionsnummer und dem Status started. Dies zeigt an, dass MongoDB erfolgreich läuft.\n\n\n\n\n22.3.2 MongoDB stoppen\nWenn Sie MongoDB beenden möchten, können Sie dies ebenfalls mit einem einfachen Homebrew-Befehl tun.\nSo stoppen Sie den MongoDB-Dienst:\n\nGeben Sie den folgenden Befehl im Terminal ein und drücken Sie Enter:\nbrew services stop mongodb-community@7.0\n\nEs sollte eine Bestätigungsmeldung erscheinen, dass der Dienst gestoppt wurde.",
-    "crumbs": [
-      "NoSQL Datenbanken",
-      "<span class='chapter-number'>22</span>  <span class='chapter-title'>MongoDB starten und stoppen</span>"
-    ]
-  },
-  {
-    "objectID": "nosql/mongo-db-basics.html",
-    "href": "nosql/mongo-db-basics.html",
-    "title": "23  Grundlegende Nutzung von MongoDB",
+    "objectID": "postgres/postgres-pgadmin4.html",
+    "href": "postgres/postgres-pgadmin4.html",
+    "title": "23  PgAdmin4",
     "section": "",
-    "text": "23.1 Verbindung zur MongoDB-Instanz\nUm die MongoDB Shell zu starten und sich mit Ihrer laufenden MongoDB-Instanz zu verbinden, öffnen Sie ein Terminal und geben Sie den folgenden Befehl ein:\nWenn die Verbindung erfolgreich ist, sehen Sie die mongosh-Eingabeaufforderung:\nFalls Sie eine Fehlermeldung erhalten, stellen Sie sicher, dass MongoDB auf Ihrem System läuft.",
+    "text": "23.1 Neuen Server hinzufügen\nUm Datenbanken zu verwalten, verbinden Sie sich zunächst mit einer PostgreSQL-Instanz, indem Sie eine neue Serververbindung in pgAdmin4 einrichten:",
     "crumbs": [
-      "NoSQL Datenbanken",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Grundlegende Nutzung von MongoDB</span>"
+      "PostgreSQL",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>PgAdmin4</span>"
     ]
   },
   {
-    "objectID": "nosql/mongo-db-basics.html#verbindung-zur-mongodb-instanz",
-    "href": "nosql/mongo-db-basics.html#verbindung-zur-mongodb-instanz",
-    "title": "23  Grundlegende Nutzung von MongoDB",
+    "objectID": "postgres/postgres-pgadmin4.html#neuen-server-hinzufügen",
+    "href": "postgres/postgres-pgadmin4.html#neuen-server-hinzufügen",
+    "title": "23  PgAdmin4",
+    "section": "",
+    "text": "Öffnen Sie pgAdmin4.\nKlicken Sie unter “Quick Links” auf Add New Server.\nGeben Sie für den Namen local-connection ein.\nWechseln Sie zum Reiter Connection:\n\nHostname/Adresse: Geben Sie localhost ein.\nStellen Sie sicher, dass der Port derselbe ist wie bei der Installation (üblicherweise 5432).\nPasswort: Geben Sie das während der Installation gesetzte Passwort ein und wählen Sie “Save password”.\n\nBestätigen Sie die Einrichtung durch Klicken auf Save.\nDies wird die local-connection in der linken Seitenleiste anzeigen.",
+    "crumbs": [
+      "PostgreSQL",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>PgAdmin4</span>"
+    ]
+  },
+  {
+    "objectID": "postgres/postgres-pgadmin4.html#eine-datenbank-erstellen",
+    "href": "postgres/postgres-pgadmin4.html#eine-datenbank-erstellen",
+    "title": "23  PgAdmin4",
+    "section": "23.2 Eine Datenbank erstellen",
+    "text": "23.2 Eine Datenbank erstellen\nErstellen Sie als nächstes eine neue Datenbank, um Daten zu speichern:\n\n\n\n\n\n\nStandard PostgreSQL Datenbank\n\n\n\n\n\nBei der Installation von PostgreSQL wird automatisch eine Standarddatenbank namens postgres erstellt. Diese Datenbank wird typischerweise für administrative Zwecke und Tests verwendet. Es ist immer ratsam, neue Datenbanken für anwendungsspezifische Daten zu erstellen, um zu vermeiden, dass die Standarddatenbank mit Anwendungsdaten überladen wird.\n\n\n\n\nKlicken Sie in pgAdmin4 mit der rechten Maustaste auf den local-connection Server in der linken Seitenleiste.\nNavigieren Sie zu: Create &gt; Database.\nGeben Sie im Reiter “General” db_data als Datenbanknamen ein.\nKlicken Sie auf Save, um die Datenbank zu erstellen.",
+    "crumbs": [
+      "PostgreSQL",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>PgAdmin4</span>"
+    ]
+  },
+  {
+    "objectID": "postgres/postgres-pgadmin4.html#eine-tabelle-erstellen",
+    "href": "postgres/postgres-pgadmin4.html#eine-tabelle-erstellen",
+    "title": "23  PgAdmin4",
+    "section": "23.3 Eine Tabelle erstellen",
+    "text": "23.3 Eine Tabelle erstellen\nErstellen Sie eine Tabelle, um Daten zu Marketingkampagnen zu speichern.\n\n\n\n\n\n\nTabellendefinition\n\n\n\n\n\nSpalten in der Marketingkampagnen-Tabelle: - id: Eine eindeutige Kennung für jede Kampagne, automatisch inkrementiert. - name: Der Name der Marketingkampagne. - start_date & end_date: Der Zeitraum der Kampagne. - budget: Das der Kampagne zugewiesene Budget. - channel: Der für die Kampagne verwendete Kanal (z.B. “E-Mail”, “Soziale Medien”, “TV”).\n\n\n\n\nNavigieren Sie zur db_data Datenbank.\nÖffnen Sie das Abfragewerkzeug unter Tools &gt; Query Tool.\nGeben Sie den folgenden SQL-Befehl ein, um die campaigns Tabelle zu erstellen:\n\nCREATE TABLE campaigns (\n    id BIGSERIAL PRIMARY KEY,\n    name VARCHAR(255) NOT NULL,\n    start_date DATE,\n    end_date DATE,\n    budget DECIMAL(10, 2),\n    channel VARCHAR(255)\n);\n\n\n\n\n\n\nTabellendefinition Erklärung\n\n\n\n\n\nDer obige SQL-Befehl erstellt eine neue Tabelle namens campaigns. Hier ist eine Aufschlüsselung der einzelnen Spaltendefinitionen:\n\nid: Eine Spalte namens id, die den Datentyp BIGSERIAL verwendet, was ein automatisch inkrementierender Integer ist und sich für einen Primärschlüssel eignet.\nname: Eine Spalte zur Speicherung von Kampagnennamen als Text, definiert, um eine Zeichenfolge von bis zu 255 Zeichen zu halten. Die NOT NULL-Einschränkung stellt sicher, dass jede Zeile einen Namen haben muss.\nstart_date und end_date: Diese Spalten speichern die Start- und Enddaten der Kampagnen jeweils im DATE-Datentyp.\nbudget: Eine Spalte für das mit jeder Kampagne verbundene Budget, die DECIMAL(10, 2) verwendet, um bis zu 10 Ziffern mit 2 Dezimalstellen zu ermöglichen.\nchannel: Eine Spalte, um das für die Kampagne verwendete Medium anzugeben, die Zeichenfolgen von bis zu 255 Zeichen speichern kann.\n\n\n\n\n\nFühren Sie das Skript aus, indem Sie auf die ▶️ Schaltfläche klicken (oder F5 drücken).\nUm die Tabelle zu überprüfen, erweitern Sie “Schemas” &gt; “Tables” &gt; “campaigns” &gt; “Columns” in der Datenbank db_data.",
+    "crumbs": [
+      "PostgreSQL",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>PgAdmin4</span>"
+    ]
+  },
+  {
+    "objectID": "postgres/postgres-pgadmin4.html#werte-in-die-tabelle-einfügen",
+    "href": "postgres/postgres-pgadmin4.html#werte-in-die-tabelle-einfügen",
+    "title": "23  PgAdmin4",
+    "section": "23.4 Werte in die Tabelle einfügen",
+    "text": "23.4 Werte in die Tabelle einfügen\nFüllen Sie die Tabelle mit Beispieldaten:\n\nVerwenden Sie erneut das Abfragewerkzeug, um die folgende Einfügeanweisung auszuführen:\n\nINSERT INTO campaigns (name, start_date, end_date, budget, channel) VALUES\n('Winter Sale', '2023-12-01', '2023-12-31', 5000.00, 'Email'),\n('Summer Festival', '2023-06-01', '2023-06-15', 10000.00, 'Social Media'),\n('Back to School', '2023-08-01', '2023-08-20', 7500.00, 'TV');\n\n\n\n\n\n\nInsert Statement Erklärung\n\n\n\n\n\nDieser SQL-Befehl fügt Daten in die campaigns Tabelle ein. Jede Zeile von Werten entspricht einer anderen Marketingkampagne:\n\nErste Zeile: Fügt eine Kampagne namens “Winter Sale” ein, die vom 1. bis 31. Dezember 2023 läuft, mit einem Budget von 5000 Dollar und dem Kanal “Email”.\nZweite Zeile: Fügt “Summer Festival” ein, eine kürzere Kampagne vom 1. bis 15. Juni 2023, mit einem höheren Budget von 10000 Dollar und nutzt “Social Media”.\nDritte Zeile: Fügt die “Back to School”-Kampagne vom 1. bis 20. August 2023 hinzu, mit einem Budget von 7500 Dollar, vermarktet durch “TV”.\n\nJeder Satz von Werten ist in Klammern eingeschlossen und durch Kommata getrennt, um verschiedene Kampagnen zu unterscheiden.\n\n\n\n\nFühren Sie das Skript aus, indem Sie auf die ▶️ Schaltfläche klicken.",
+    "crumbs": [
+      "PostgreSQL",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>PgAdmin4</span>"
+    ]
+  },
+  {
+    "objectID": "postgres/postgres-pgadmin4.html#werte-abrufen",
+    "href": "postgres/postgres-pgadmin4.html#werte-abrufen",
+    "title": "23  PgAdmin4",
+    "section": "23.5 Werte abrufen",
+    "text": "23.5 Werte abrufen\nSchließlich können Sie die Daten in der campaigns Tabelle anzeigen:\n\nÖffnen Sie eine neue Sitzung im Abfragewerkzeug und führen Sie eine SELECT-Abfrage aus:\n\nSELECT * \nFROM campaigns;\n\n\n\n\n\n\nSELECT Abfrage Erklärung\n\n\n\n\n\nDieser SQL-Befehl ruft alle Spalten aus allen Zeilen der campaigns Tabelle ab. Er ist nützlich, um alle Daten zu sehen, die in die Tabelle eingegeben wurden, um sicherzustellen, dass die Einträge korrekt sind, und um weitere Datenanalysen oder Berichte zu erleichtern.\n\n\n\nDies sollte folgendes Ergebnis ausgeben:\n\n\n\n\n\n\n\n\n\n\n\nid\nname\nstart_date\nend_date\nbudget\nchannel\n\n\n\n\n1\nWinter Sale\n2023-12-01\n2023-12-31\n5000.00\nEmail\n\n\n2\nSummer Festival\n2023-06-01\n2023-06-15\n10000.00\nSocial Media\n\n\n3\nBack to School\n2023-08-01\n2023-08-20\n7500.00\nTV",
+    "crumbs": [
+      "PostgreSQL",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>PgAdmin4</span>"
+    ]
+  },
+  {
+    "objectID": "postgres/postgres-python.html",
+    "href": "postgres/postgres-python.html",
+    "title": "24  Python-Integration",
+    "section": "",
+    "text": "24.1 Python-Umgebung\nRichten Sie zuerst eine isolierte Python-Umgebung mit Anaconda ein:",
+    "crumbs": [
+      "PostgreSQL",
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Python-Integration</span>"
+    ]
+  },
+  {
+    "objectID": "postgres/postgres-python.html#python-umgebung",
+    "href": "postgres/postgres-python.html#python-umgebung",
+    "title": "24  Python-Integration",
+    "section": "",
+    "text": "Erstellen Sie eine neue Umgebung (wenn Sie detailliertere Erklärungen benötigen, lesen Sie dieses Kapitel über die Erstellung von Umgebungen):\n\nconda create -n postgres python=3.11 pip\n\nAktivieren Sie die Umgebung:\n\nconda activate postgres\n\nInstallieren Sie die notwendigen Pakete: Wir benötigen psycopg2-binary für die PostgreSQL-Konnektivität, sqlalchemy für SQL-Operationen und pandas für die Datenmanipulation.\n\npip install psycopg2-binary sqlalchemy ipykernel jupyter pandas",
+    "crumbs": [
+      "PostgreSQL",
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Python-Integration</span>"
+    ]
+  },
+  {
+    "objectID": "postgres/postgres-python.html#datenbankverbindung",
+    "href": "postgres/postgres-python.html#datenbankverbindung",
+    "title": "24  Python-Integration",
+    "section": "24.2 Datenbankverbindung",
+    "text": "24.2 Datenbankverbindung\nUm von Python aus mit Ihrer PostgreSQL-Datenbank zu interagieren, richten Sie eine Verbindung mit SQLAlchemy ein:\n\nStarten Sie PostgreSQL: Stellen Sie sicher, dass Ihre PostgreSQL-Instanz läuft.\nImportieren Sie die Bibliotheken und erstellen Sie eine Engine: Die Engine ist Ihr Zugang zur Datenbank. Ersetzen Sie Platzhalter durch Ihre tatsächlichen Datenbank-Anmeldedaten.\n\nimport sqlalchemy as sa\n\n# Ersetzen Sie die Platzhalter durch Ihre Datenbank-Anmeldedaten\nengine = sa.create_engine('postgresql://your_username:your_password@localhost:your_port/your_database')\nSie müssen die links aufgeführten Platzhalter in der oben gezeigten Funktion ersetzen:\n\nyour_username: Typischerweise postgres\nyour_password: Ihr Datenbank-Passwort\nyour_port: Üblicherweise 5432\nyour_database: Standardmäßig postgres (Sie sollten die von uns bereits erstelle Datenbank db_data verwenden)\n\nHier ein Beispiel, in welchem als Passwort der Begriff mysecretpasswordverwendet wurde:\nimport sqlalchemy as sa\n\n# Ersetzen Sie die Platzhalter durch Ihre Datenbank-Anmeldedaten\nengine = sa.create_engine('postgresql://postgres:mysecretpassword@localhost:5432/db_data')\nFür weitere Details zur Konfiguration der Engine, siehe die SQLAlchemy-Dokumentation.",
+    "crumbs": [
+      "PostgreSQL",
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Python-Integration</span>"
+    ]
+  },
+  {
+    "objectID": "postgres/postgres-python.html#daten-in-postgresql-schreiben",
+    "href": "postgres/postgres-python.html#daten-in-postgresql-schreiben",
+    "title": "24  Python-Integration",
+    "section": "24.3 Daten in PostgreSQL schreiben",
+    "text": "24.3 Daten in PostgreSQL schreiben\nMit der eingerichteten Verbindung übertragen wir nun Daten von einem pandas DataFrame nach PostgreSQL:\n\nLaden Sie die Daten in einen DataFrame:\nimport pandas as pd\n\n# Laden der Daten aus einer CSV-Datei\ndf = pd.read_csv(\"https://raw.githubusercontent.com/kirenz/datasets/master/gapminder.csv\")\n\n\n\n\n\n\nErklärung des Codes\n\n\n\n\n\nDer Python-Code verwendet die Bibliothek pandas, um Daten aus einer CSV-Datei zu laden:\n\nImportieren der pandas-Bibliothek:\n\npandas ist eine weit verbreitete Bibliothek in Python, die leistungsstarke, benutzerfreundliche Datenstrukturen und Datenanalyse-Tools bietet.\nMit import pandas as pd importieren wir die Bibliothek und geben ihr das Alias pd, um den Code kürzer und lesbarer zu machen.\n\nLaden der Daten aus einer CSV-Datei:\n\npd.read_csv: Diese Methode wird verwendet, um eine CSV-Datei in einen pandas DataFrame zu laden.\nURL der CSV-Datei: \"https://raw.githubusercontent.com/kirenz/datasets/master/gapminder.csv\" ist die URL der CSV-Datei, die die Daten enthält. Die Methode kann Daten direkt von einer URL laden, ohne dass die Datei lokal gespeichert werden muss.\ndf: Der resultierende DataFrame wird in der Variablen df gespeichert. Ein DataFrame ist eine tabellarische Datenstruktur, die sowohl Zeilen- als auch Spaltenbeschriftungen hat, ähnlich wie eine Tabelle in einer Datenbank oder ein Datenblatt in Excel.\n\n\n\n\n\nSchreiben Sie den DataFrame nach PostgreSQL: Verwenden Sie die Methode to_sql, um die Daten in eine neue Tabelle namens gapminder zu schreiben.\ndf.to_sql('gapminder', engine, if_exists='replace')\n\n\n\n\n\n\nErklärung des Codes\n\n\n\n\n\nDer Python-Code verwendet die Methode to_sql von pandas, um einen DataFrame in eine SQL-Datenbank zu schreiben:\n\ndf.to_sql:\n\nDiese Methode schreibt den DataFrame df in eine SQL-Datenbank.\n\n'gapminder':\n\nDies ist der Name der Tabelle, in die die Daten geschrieben werden. In diesem Fall wird die Tabelle gapminder genannt.\n\nengine:\n\nDies ist die SQLAlchemy-Engine, die die Verbindung zur Datenbank darstellt. Die Engine enthält alle notwendigen Informationen, um sich mit der Datenbank zu verbinden und Befehle auszuführen.\n\nif_exists='replace':\n\nDiese Option gibt an, was geschehen soll, wenn die Tabelle gapminder bereits in der Datenbank existiert.\nreplace: Diese Option sorgt dafür, dass die vorhandene Tabelle gelöscht und durch die neue Tabelle ersetzt wird, die aus dem DataFrame df erstellt wird.\n\n\n\n\n\nDies sollte als Ergebnis 704 ausgeben (die Anzahl der Zeilen, die in die neue Tabelle geschrieben wurden.).\nÜberprüfen Sie die Tabelle in der Datenbank: Führen Sie eine Abfrage in der Datenbank aus, um zu bestätigen, dass die Tabelle existiert.\nwith engine.connect() as connection:\n      tables = connection.execute(sa.text(\"SELECT table_name FROM information_schema.tables WHERE table_schema='public'\"))\n      for table in tables:\n         print(table[0])\n\n\n\n\n\n\nErklärung des Codes\n\n\n\n\n\nDer Code öffnet eine Verbindung zu einer SQL-Datenbank mithilfe der SQLAlchemy-Engine.\n\nInnerhalb des with-Blocks wird sichergestellt, dass die Verbindung nach Abschluss des Blocks automatisch geschlossen wird.\nDer Befehl connection.execute führt eine SQL-Abfrage aus, die die Namen aller Tabellen im public-Schema der Datenbank aus der information_schema.tables-Tabelle abruft.\nDiese Abfrage gibt eine Liste der Tabellennamen zurück.\nDiese Liste wird in einer Schleife durchlaufen.\nInnerhalb der Schleife wird der Name jeder Tabelle mit print(table[0]) auf der Konsole ausgegeben.\n\n\n\n\nDies sollte ausgeben: gapminder (d.h. die Tabelle gapminder ist in der Datenbank enthalten)\nOptional: Entfernen Sie die Tabelle: Wenn Sie die Tabelle aus der Datenbank löschen möchten:\nsql = sa.text(\"DROP TABLE IF EXISTS gapminder\")\n\nwith engine.connect() as connection:\n      connection.execute(sql)\n\n\n\n\n\n\nErklärung des Codes\n\n\n\n\n\nDer Code definiert eine SQL-Abfrage, die überprüft, ob die Tabelle gapminder existiert, und sie löscht, falls sie vorhanden ist. Diese Abfrage wird in der Variablen sql gespeichert.\n\nEin with-Block wird verwendet, um eine Verbindung zur SQL-Datenbank mithilfe der SQLAlchemy-Engine zu öffnen. Der with-Block stellt sicher, dass die Verbindung nach Abschluss des Blocks automatisch geschlossen wird.\nInnerhalb des with-Blocks wird die SQL-Abfrage sql mit dem Befehl connection.execute(sql) ausgeführt.\nDiese Ausführung löscht die Tabelle gapminder, falls sie in der Datenbank existiert.\n\n\n\n\n\nSie sollten die Tabelle nun auch in PgAdmin4 sehen. Öffnen Sie dafür die Anwendung und navigieren Sie zu der Tabelle (siehe dazu diese Hinweise)",
+    "crumbs": [
+      "PostgreSQL",
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Python-Integration</span>"
+    ]
+  },
+  {
+    "objectID": "mongodb/mongodb.html",
+    "href": "mongodb/mongodb.html",
+    "title": "MongoDB",
+    "section": "",
+    "text": "Hauptmerkmale von MongoDB\nFlexibilität: MongoDB verwendet ein dokumentenorientiertes Modell, bei dem die Daten in Dokumenten gespeichert werden, die ähnliche Strukturen wie JSON haben, technisch aber im BSON-Format (Binary JSON) gespeichert werden. Dies ermöglicht eine hohe Flexibilität bei der Strukturierung der Daten, da jedes Dokument unterschiedliche Felder und Datentypen enthalten kann.\nSkalierbarkeit: MongoDB ist darauf ausgelegt, horizontal zu skalieren, was bedeutet, dass die Datenbank einfach auf mehrere Server verteilt werden kann. Dies wird durch Sharding erreicht, eine Methode zur Verteilung von Daten über mehrere Maschinen, um sowohl die Speicherkapazität als auch die Verarbeitungsgeschwindigkeit zu erhöhen. MongoDB unterstützt auch Replikation, wodurch Daten über mehrere Server repliziert werden, um Ausfallsicherheit und hohe Verfügbarkeit sicherzustellen.\nLeistungsfähigkeit: Durch den Verzicht auf JOIN-Operationen und die Möglichkeit, Daten in einem einzigen Dokument zu speichern, kann MongoDB oft schnellere Schreib- und Leseoperationen durchführen als relationale Datenbanken. Zudem ermöglicht die Indexierung auf Felder innerhalb von Dokumenten eine effiziente Suche und Abfrage der Daten.\nEntwicklerfreundlich: MongoDB bietet Treiber für eine Vielzahl von Programmiersprachen, darunter Python, JavaScript, Java, C#, und viele mehr.",
+    "crumbs": [
+      "MongoDB"
+    ]
+  },
+  {
+    "objectID": "mongodb/mongodb.html#mongodb-shell-mongosh",
+    "href": "mongodb/mongodb.html#mongodb-shell-mongosh",
+    "title": "MongoDB",
+    "section": "MongoDB Shell (mongosh)",
+    "text": "MongoDB Shell (mongosh)\nFür die Arbeit mit der Datenbank nutzen wir die MongoDB Shell (mongosh). Diese bietet eine schnelle und intuitive Möglichkeit, sich mit MongoDB zu verbinden und zu arbeiten. Mit mongosh können wir Daten abfragen, Einstellungen konfigurieren und verschiedene Aktionen durchführen.\nDie Hauptfunktionen von mongosh umfassen:\n\nSyntaxhervorhebung: Der Shell unterstützt Syntaxhervorhebung, die den Code lesbarer macht und die Erkennung von Fehlern erleichtert.\nIntelligente Autovervollständigung: Diese Funktion hilft bei der Eingabe von Befehlen und Parametern, indem sie Vorschläge macht und somit die Produktivität erhöht.\nKontextbezogene Hilfe: mongosh bietet direkte Hilfe zu Befehlen und Optionen, was besonders nützlich für Einsteiger ist.\nFehlermeldungen: Klare und präzise Fehlermeldungen helfen dabei, Probleme schnell zu identifizieren und zu beheben.\n\nUm mit MongoDB zu beginnen, müssen wir zunächst den MongoDB-Dienst starten und dann die MongoDB Shell öffnen. Sobald die Shell geöffnet ist, können wir grundlegende Befehle ausführen, um Datenbanken und Sammlungen zu erstellen, Daten einzufügen und Abfragen auszuführen.",
+    "crumbs": [
+      "MongoDB"
+    ]
+  },
+  {
+    "objectID": "mongodb/mongodb-installation.html",
+    "href": "mongodb/mongodb-installation.html",
+    "title": "25  Installation",
+    "section": "",
+    "text": "25.1 Windows\nUm MongoDB von jeder Eingabeaufforderung aus zugänglich zu machen, setzen wir nun eine Umgebungsvariable. Dadurch können Sie mongod und mongo von jeder Eingabeaufforderung aus ohne Angabe des vollständigen Pfades ausführen.\nHier ist eine detaillierte Anleitung, wie Sie die Umgebungsvariable unter Windows setzen können:\nUm sicherzustellen, dass die Umgebungsvariablen korrekt gesetzt wurden, öffnen Sie eine neue Eingabeaufforderung und führen Sie die folgenden Befehle aus:\nWenn beide Befehle die Versionsnummern von MongoDB und MongoDB Shell (mongosh) zurückgeben, wurde die Umgebungsvariable erfolgreich gesetzt",
+    "crumbs": [
+      "MongoDB",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Installation</span>"
+    ]
+  },
+  {
+    "objectID": "mongodb/mongodb-installation.html#windows",
+    "href": "mongodb/mongodb-installation.html#windows",
+    "title": "25  Installation",
+    "section": "",
+    "text": "MongoDB herunterladen:\nBesuchen Sie die offizielle MongoDB-Download-Seite und laden Sie die aktuelle (“current”) MongoDB Community Server-Version für Windows herunter.\n\nVersion: … (current).\nPlatform: Windows x64\nPackage: msi\n\nInstallation:\n\nFühren Sie das Installationsprogramm aus und folgen Sie den Anweisungen.\nWählen Sie “Complete” als Setup-Typ.\nAktivieren Sie die Option “Install MongoDB as a Service”.\n\nMongoDB Shell (mongosh) herunterladen:\nBesuchen Sie die MongoDB Shell Download-Seite und laden Sie die aktuelle Version von MongoDB Shell herunter (wählen Sie als Plattform Windows und als Package msi).\n\n\n\n\nPfad zu mongod.exe und mongosh.exe ermitteln:\n\nDer Pfad ist in der Regel C:\\Program Files\\MongoDB\\Server\\&lt;Version&gt;\\bin. Finden Sie den Pfad im Datei-Explorer und notieren Sie ihn.\n\nUmgebungsvariablen öffnen:\n\nDrücken Sie die Windows-Taste und geben Sie “Umgebungsvariablen” ein.\nWählen Sie “Umgebungsvariablen für dieses Konto bearbeiten” oder “Systemumgebungsvariablen bearbeiten” aus.\n\nSystemumgebungsvariablen bearbeiten:\n\nIm Fenster “Systemeigenschaften” klicken Sie auf die Schaltfläche “Umgebungsvariablen”.\n\nPfad-Variable bearbeiten:\n\nIm Abschnitt “Systemvariablen” suchen Sie die Variable “Path” und wählen Sie sie aus. Klicken Sie dann auf “Bearbeiten”.\n\nNeuen Pfad hinzufügen:\n\nKlicken Sie auf “Neu” und fügen Sie den Pfad zu mongod.exe hinzu (z.B. C:\\Program Files\\MongoDB\\Server\\&lt;Version&gt;\\bin).\n\nÄnderungen speichern:\n\nKlicken Sie auf “OK”, um alle Fenster zu schließen und die Änderungen zu speichern.\n\n\n\nmongod --version\nmongosh --version",
+    "crumbs": [
+      "MongoDB",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Installation</span>"
+    ]
+  },
+  {
+    "objectID": "mongodb/mongodb-installation.html#macos",
+    "href": "mongodb/mongodb-installation.html#macos",
+    "title": "25  Installation",
+    "section": "25.2 macOS",
+    "text": "25.2 macOS\nFolgen Sie der Installationsanweisung der MongoDB-Dokumentation:\n\nXcode Command-Line Tools installieren (falls noch nicht installiert): Homebrew benötigt die Xcode Command-Line Tools von Apples Xcode.\n\nPrüfen Sie im Terminal, ob XCode installiert ist (wenn Xcode installiert ist, wird die Version angezeigt. Wenn nicht, wird eine entsprechende Fehlermeldung angezeigt und Sie müssen XCode installieren):\n\nxcode-select --version\n\nFalls notwendig, installieren Sie die Xcode Command-Line Tools mit folgendem Befehl im macOS Terminal:\n\nxcode-select --install\nHomebrew installieren (falls noch nicht installiert):\n\nFühren Sie diesen Befehl im Terminal aus, um den Homebrew-Paketmanager zu installieren:\n\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"\nMongoDB installieren:\n\nLaden Sie das offizielle Homebrew-Formular für MongoDB und die Datenbank-Tools herunter, indem Sie folgenden Befehl im macOS Terminal ausführen:\n\nbrew tap mongodb/brew\n\nAktualisieren Sie Homebrew und alle vorhandenen Formeln:\n\nbrew update\n\nUm MongoDB zu installieren, führen Sie folgenden Befehl im macOS Terminal aus:\n\nbrew install mongodb-community@7.0\n\nDie Installation umfasst folgende Binärdateien:\n\nDer mongod-Server\nDer mongos-Sharded-Cluster-Query-Router\nDie MongoDB Shell, mongosh",
+    "crumbs": [
+      "MongoDB",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Installation</span>"
+    ]
+  },
+  {
+    "objectID": "mongodb/mongodb-start-stop.html",
+    "href": "mongodb/mongodb-start-stop.html",
+    "title": "26  Starten und stoppen",
+    "section": "",
+    "text": "26.1 Windows",
+    "crumbs": [
+      "MongoDB",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Starten und stoppen</span>"
+    ]
+  },
+  {
+    "objectID": "mongodb/mongodb-start-stop.html#windows",
+    "href": "mongodb/mongodb-start-stop.html#windows",
+    "title": "26  Starten und stoppen",
+    "section": "",
+    "text": "26.1.1 MongoDB starten\nMongoDB sollte als Dienst automatisch gestartet werden, wenn Sie die Option “Install MongoDB as a Service” während der Installation aktiviert haben.\nSie können den Dienst auch manuell starten, falls er nicht automatisch gestartet wurde oder falls Sie den Dienst neu starten möchten:\n\nÖffnen Sie die Dienstverwaltung:\n\nDrücken Sie die Windows-Taste + R, um das Ausführen-Dialogfeld zu öffnen.\nGeben Sie services.msc ein und drücken Sie Enter.\n\nFinden Sie den MongoDB-Dienst:\n\nIm Fenster “Dienste” scrollen Sie nach unten, bis Sie den Dienst namens MongoDB finden.\n\nStarten Sie den Dienst:\n\nKlicken Sie mit der rechten Maustaste auf den MongoDB-Dienst und wählen Sie Starten aus dem Kontextmenü.\n\n\nAlternativ können Sie den MongoDB-Dienst auch über die Eingabeaufforderung starten:\n\nÖffnen Sie die Eingabeaufforderung als Administrator:\n\nDrücken Sie die Windows-Taste, geben Sie cmd ein, klicken Sie mit der rechten Maustaste auf Eingabeaufforderung und wählen Sie Als Administrator ausführen.\n\nFühren Sie den folgenden Befehl aus, um den MongoDB-Dienst zu starten:\nnet start MongoDB\n\n\n\n26.1.2 MongoDB stoppen\nUm MongoDB zu stoppen, können Sie entweder die Dienstverwaltung verwenden oder einen Befehl in der Eingabeaufforderung ausführen.\nSo stoppen Sie den MongoDB-Dienst manuell:\n\nÖffnen Sie die Dienstverwaltung:\n\nDrücken Sie die Windows-Taste + R, um das Ausführen-Dialogfeld zu öffnen.\nGeben Sie services.msc ein und drücken Sie Enter.\n\nFinden Sie den MongoDB-Dienst:\n\nIm Fenster “Dienste” scrollen Sie nach unten, bis Sie den Dienst namens MongoDB finden.\n\nStoppen Sie den Dienst:\n\nKlicken Sie mit der rechten Maustaste auf den MongoDB-Dienst und wählen Sie Beenden aus dem Kontextmenü.\n\n\nAlternativ können Sie den MongoDB-Dienst auch über die Eingabeaufforderung stoppen:\n\nÖffnen Sie die Eingabeaufforderung als Administrator:\n\nDrücken Sie die Windows-Taste, geben Sie cmd ein, klicken Sie mit der rechten Maustaste auf Eingabeaufforderung und wählen Sie Als Administrator ausführen.\n\nFühren Sie den folgenden Befehl aus, um den MongoDB-Dienst zu stoppen:\nnet stop MongoDB\n\nDurch das Starten und Stoppen des MongoDB-Dienstes können Sie sicherstellen, dass die Datenbank ordnungsgemäß läuft oder heruntergefahren wird, je nach Ihren Anforderungen.",
+    "crumbs": [
+      "MongoDB",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Starten und stoppen</span>"
+    ]
+  },
+  {
+    "objectID": "mongodb/mongodb-start-stop.html#macos",
+    "href": "mongodb/mongodb-start-stop.html#macos",
+    "title": "26  Starten und stoppen",
+    "section": "26.2 macOS",
+    "text": "26.2 macOS\n\n26.2.1 MongoDB starten\nNach der Installation von MongoDB können Sie den Datenbankdienst einfach mit Homebrew starten. Homebrew verwaltet Dienste wie MongoDB und ermöglicht es Ihnen, diese mit einfachen Befehlen zu starten und zu stoppen.\nSo starten Sie den MongoDB-Dienst:\n\nÖffnen Sie das Terminal:\n\nSie finden das Terminal im Ordner “Dienstprogramme” innerhalb des Ordners “Programme” oder indem Sie cmd + Leertaste drücken und “Terminal” eingeben.\n\nStarten Sie den MongoDB-Dienst:\n\nGeben Sie den folgenden Befehl im Terminal ein und drücken Sie Enter:\n\nbrew services start mongodb-community@7.0\n\nWenn alles korrekt eingerichtet ist, sehen Sie eine Bestätigungsmeldung, dass der Dienst gestartet wurde.\n\n\nUm sicherzustellen, dass MongoDB korrekt gestartet wurde und läuft, können Sie eine Liste aller von Homebrew verwalteten Dienste anzeigen.\nSo überprüfen Sie den Status von MongoDB:\n\nGeben Sie den folgenden Befehl im Terminal ein und drücken Sie Enter:\nbrew services list\n\nDieser Befehl zeigt eine Liste aller Dienste an, die von Homebrew verwaltet werden, sowie deren aktuellen Status.\n\nÜberprüfen Sie den Eintrag für mongodb-community:\n\nIn der Liste sollten Sie mongodb-community sehen, gefolgt von der Versionsnummer und dem Status started. Dies zeigt an, dass MongoDB erfolgreich läuft.\n\n\n\n\n26.2.2 MongoDB stoppen\nWenn Sie MongoDB beenden möchten, können Sie dies ebenfalls mit einem einfachen Homebrew-Befehl tun.\nSo stoppen Sie den MongoDB-Dienst:\n\nGeben Sie den folgenden Befehl im Terminal ein und drücken Sie Enter:\nbrew services stop mongodb-community@7.0\n\nEs sollte eine Bestätigungsmeldung erscheinen, dass der Dienst gestoppt wurde.",
+    "crumbs": [
+      "MongoDB",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Starten und stoppen</span>"
+    ]
+  },
+  {
+    "objectID": "mongodb/mongodb-basics.html",
+    "href": "mongodb/mongodb-basics.html",
+    "title": "27  Grundlegende Nutzung",
+    "section": "",
+    "text": "27.1 Verbindung zur MongoDB-Instanz\nUm die MongoDB Shell zu starten und sich mit Ihrer laufenden MongoDB-Instanz zu verbinden, öffnen Sie ein Terminal und geben Sie den folgenden Befehl ein:\nWenn die Verbindung erfolgreich ist, sehen Sie die mongosh-Eingabeaufforderung:\nFalls Sie eine Fehlermeldung erhalten, stellen Sie sicher, dass MongoDB auf Ihrem System läuft.",
+    "crumbs": [
+      "MongoDB",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Grundlegende Nutzung</span>"
+    ]
+  },
+  {
+    "objectID": "mongodb/mongodb-basics.html#verbindung-zur-mongodb-instanz",
+    "href": "mongodb/mongodb-basics.html#verbindung-zur-mongodb-instanz",
+    "title": "27  Grundlegende Nutzung",
     "section": "",
     "text": "mongosh\n\ntest&gt;",
     "crumbs": [
-      "NoSQL Datenbanken",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Grundlegende Nutzung von MongoDB</span>"
+      "MongoDB",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Grundlegende Nutzung</span>"
     ]
   },
   {
-    "objectID": "nosql/mongo-db-basics.html#datenbanken-anzeigen",
-    "href": "nosql/mongo-db-basics.html#datenbanken-anzeigen",
-    "title": "23  Grundlegende Nutzung von MongoDB",
-    "section": "23.2 Datenbanken anzeigen",
-    "text": "23.2 Datenbanken anzeigen\nUm alle verfügbaren Datenbanken aufzulisten, verwenden Sie den folgenden Befehl:\nshow dbs\nDieser Befehl zeigt eine Liste aller Datenbanken, die auf der MongoDB-Instanz gespeichert sind.",
+    "objectID": "mongodb/mongodb-basics.html#datenbanken-anzeigen",
+    "href": "mongodb/mongodb-basics.html#datenbanken-anzeigen",
+    "title": "27  Grundlegende Nutzung",
+    "section": "27.2 Datenbanken anzeigen",
+    "text": "27.2 Datenbanken anzeigen\nUm alle verfügbaren Datenbanken aufzulisten, verwenden Sie den folgenden Befehl:\nshow dbs\nDieser Befehl zeigt eine Liste aller Datenbanken, die auf der MongoDB-Instanz gespeichert sind.",
     "crumbs": [
-      "NoSQL Datenbanken",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Grundlegende Nutzung von MongoDB</span>"
+      "MongoDB",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Grundlegende Nutzung</span>"
     ]
   },
   {
-    "objectID": "nosql/mongo-db-basics.html#datenbank-auswählen-oder-erstellen",
-    "href": "nosql/mongo-db-basics.html#datenbank-auswählen-oder-erstellen",
-    "title": "23  Grundlegende Nutzung von MongoDB",
-    "section": "23.3 Datenbank auswählen oder erstellen",
-    "text": "23.3 Datenbank auswählen oder erstellen\nUm eine spezifische Datenbank auszuwählen oder zu erstellen, verwenden Sie den use-Befehl:\nuse mydatabase\nDieser Befehl wechselt zur Datenbank mydatabase. Wenn die Datenbank noch nicht existiert, wird sie erstellt.",
+    "objectID": "mongodb/mongodb-basics.html#datenbank-auswählen-oder-erstellen",
+    "href": "mongodb/mongodb-basics.html#datenbank-auswählen-oder-erstellen",
+    "title": "27  Grundlegende Nutzung",
+    "section": "27.3 Datenbank auswählen oder erstellen",
+    "text": "27.3 Datenbank auswählen oder erstellen\nUm eine spezifische Datenbank auszuwählen oder zu erstellen, verwenden Sie den use-Befehl:\nuse mydatabase\nDieser Befehl wechselt zur Datenbank mydatabase. Wenn die Datenbank noch nicht existiert, wird sie erstellt.",
     "crumbs": [
-      "NoSQL Datenbanken",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Grundlegende Nutzung von MongoDB</span>"
+      "MongoDB",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Grundlegende Nutzung</span>"
     ]
   },
   {
-    "objectID": "nosql/mongo-db-basics.html#sammlung-collection-erstellen",
-    "href": "nosql/mongo-db-basics.html#sammlung-collection-erstellen",
-    "title": "23  Grundlegende Nutzung von MongoDB",
-    "section": "23.4 Sammlung (Collection) erstellen",
-    "text": "23.4 Sammlung (Collection) erstellen\nUm eine neue Sammlung innerhalb der aktuellen Datenbank zu erstellen, verwenden Sie den createCollection-Befehl:\ndb.createCollection(\"mycollection\")\nDieser Befehl erstellt eine neue Sammlung namens mycollection.",
+    "objectID": "mongodb/mongodb-basics.html#sammlung-collection-erstellen",
+    "href": "mongodb/mongodb-basics.html#sammlung-collection-erstellen",
+    "title": "27  Grundlegende Nutzung",
+    "section": "27.4 Sammlung (Collection) erstellen",
+    "text": "27.4 Sammlung (Collection) erstellen\nUm eine neue Sammlung innerhalb der aktuellen Datenbank zu erstellen, verwenden Sie den createCollection-Befehl:\ndb.createCollection(\"mycollection\")\nDieser Befehl erstellt eine neue Sammlung namens mycollection.",
     "crumbs": [
-      "NoSQL Datenbanken",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Grundlegende Nutzung von MongoDB</span>"
+      "MongoDB",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Grundlegende Nutzung</span>"
     ]
   },
   {
-    "objectID": "nosql/mongo-db-basics.html#dokument-einfügen",
-    "href": "nosql/mongo-db-basics.html#dokument-einfügen",
-    "title": "23  Grundlegende Nutzung von MongoDB",
-    "section": "23.5 Dokument einfügen",
-    "text": "23.5 Dokument einfügen\nUm ein Dokument in eine Sammlung einzufügen, verwenden Sie den insertOne-Befehl:\ndb.mycollection.insertOne({name: \"Jan\", age: 44})\nDieser Befehl fügt ein neues Dokument in die Sammlung mycollection ein.",
+    "objectID": "mongodb/mongodb-basics.html#dokument-einfügen",
+    "href": "mongodb/mongodb-basics.html#dokument-einfügen",
+    "title": "27  Grundlegende Nutzung",
+    "section": "27.5 Dokument einfügen",
+    "text": "27.5 Dokument einfügen\nUm ein Dokument in eine Sammlung einzufügen, verwenden Sie den insertOne-Befehl:\ndb.mycollection.insertOne({name: \"Jan\", age: 44})\nDieser Befehl fügt ein neues Dokument in die Sammlung mycollection ein.",
     "crumbs": [
-      "NoSQL Datenbanken",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Grundlegende Nutzung von MongoDB</span>"
+      "MongoDB",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Grundlegende Nutzung</span>"
     ]
   },
   {
-    "objectID": "nosql/mongo-db-basics.html#dokumente-abfragen",
-    "href": "nosql/mongo-db-basics.html#dokumente-abfragen",
-    "title": "23  Grundlegende Nutzung von MongoDB",
-    "section": "23.6 Dokumente abfragen",
-    "text": "23.6 Dokumente abfragen\nUm alle Dokumente in einer Sammlung abzufragen, verwenden Sie den find-Befehl:\ndb.mycollection.find()\nDieser Befehl gibt alle Dokumente in der Sammlung mycollection zurück.",
+    "objectID": "mongodb/mongodb-basics.html#dokumente-abfragen",
+    "href": "mongodb/mongodb-basics.html#dokumente-abfragen",
+    "title": "27  Grundlegende Nutzung",
+    "section": "27.6 Dokumente abfragen",
+    "text": "27.6 Dokumente abfragen\nUm alle Dokumente in einer Sammlung abzufragen, verwenden Sie den find-Befehl:\ndb.mycollection.find()\nDieser Befehl gibt alle Dokumente in der Sammlung mycollection zurück.",
     "crumbs": [
-      "NoSQL Datenbanken",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Grundlegende Nutzung von MongoDB</span>"
+      "MongoDB",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Grundlegende Nutzung</span>"
     ]
   },
   {
-    "objectID": "nosql/mongo-db-basics.html#weitere-befehle",
-    "href": "nosql/mongo-db-basics.html#weitere-befehle",
-    "title": "23  Grundlegende Nutzung von MongoDB",
-    "section": "23.7 Weitere Befehle",
-    "text": "23.7 Weitere Befehle\n\nEin spezifisches Dokument abfragen:\ndb.mycollection.findOne({name: \"Jan\"})\nDieser Befehl gibt das erste Dokument zurück, das den angegebenen Kriterien entspricht.\nDokumente aktualisieren:\ndb.mycollection.updateOne({name: \"Jan\"}, {$set: {age: 45}})\nDieser Befehl aktualisiert das Alter von Jan auf 45.\nDokumente löschen:\ndb.mycollection.deleteOne({name: \"Jan\"})\nDieser Befehl löscht das erste Dokument, das den angegebenen Kriterien entspricht.",
+    "objectID": "mongodb/mongodb-basics.html#weitere-befehle",
+    "href": "mongodb/mongodb-basics.html#weitere-befehle",
+    "title": "27  Grundlegende Nutzung",
+    "section": "27.7 Weitere Befehle",
+    "text": "27.7 Weitere Befehle\n\nEin spezifisches Dokument abfragen:\ndb.mycollection.findOne({name: \"Jan\"})\nDieser Befehl gibt das erste Dokument zurück, das den angegebenen Kriterien entspricht.\nDokumente aktualisieren:\ndb.mycollection.updateOne({name: \"Jan\"}, {$set: {age: 45}})\nDieser Befehl aktualisiert das Alter von Jan auf 45.\nDokumente löschen:\ndb.mycollection.deleteOne({name: \"Jan\"})\nDieser Befehl löscht das erste Dokument, das den angegebenen Kriterien entspricht.",
     "crumbs": [
-      "NoSQL Datenbanken",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Grundlegende Nutzung von MongoDB</span>"
+      "MongoDB",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Grundlegende Nutzung</span>"
     ]
   },
   {
-    "objectID": "nosql/mongo-db-python.html",
-    "href": "nosql/mongo-db-python.html",
-    "title": "24  Python-Integration",
+    "objectID": "mongodb/mongodb-python.html",
+    "href": "mongodb/mongodb-python.html",
+    "title": "28  Python-Integration",
     "section": "",
-    "text": "24.1 Umgebung erstellen\nUm eine Umgebung einzurichten, befolgen Sie diese Anweisungen basierend auf Ihrem Betriebssystem:",
+    "text": "28.1 Umgebung erstellen\nUm eine Umgebung einzurichten, befolgen Sie diese Anweisungen basierend auf Ihrem Betriebssystem:",
     "crumbs": [
-      "NoSQL Datenbanken",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Python-Integration</span>"
+      "MongoDB",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Python-Integration</span>"
     ]
   },
   {
-    "objectID": "nosql/mongo-db-python.html#umgebung-erstellen",
-    "href": "nosql/mongo-db-python.html#umgebung-erstellen",
-    "title": "24  Python-Integration",
+    "objectID": "mongodb/mongodb-python.html#umgebung-erstellen",
+    "href": "mongodb/mongodb-python.html#umgebung-erstellen",
+    "title": "28  Python-Integration",
     "section": "",
     "text": "Zugriff auf die Eingabeaufforderung oder das Terminal:\n\nWindows-Benutzer: Öffnen Sie die Anaconda-Eingabeaufforderung über das Startmenü.\nmacOS-Benutzer: Öffnen Sie das Terminal unter Programme &gt; Dienstprogramme oder durch die Suche nach “Terminal”.\n\nErstellen der Umgebung:\n\nVerwenden Sie den folgenden Befehl, um eine neue Conda-Umgebung namens mongodb mit Python 3.11 und pip zu erstellen:\n\nconda create --name mongodb python=3.11 pip\nAktivieren der Umgebung:\n\nSobald die Umgebung erstellt ist, aktivieren Sie sie mit:\n\nconda activate mongodb\n\nDie Eingabeaufforderung ändert sich, um anzuzeigen, dass die Umgebung mongodb aktiv ist.\n\nInstallieren der benötigten Bibliotheken:\n\nMit aktivierter Umgebung installieren Sie die Bibliotheken:\n\npip install pymongo numpy pandas matplotlib seaborn altair jupyter ipykernel\n\nDieser Befehl ruft alle Pakete von PyPI ab und installiert sie.",
     "crumbs": [
-      "NoSQL Datenbanken",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Python-Integration</span>"
+      "MongoDB",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Python-Integration</span>"
     ]
   },
   {
-    "objectID": "nosql/mongo-db-python.html#verbindung-herstellen",
-    "href": "nosql/mongo-db-python.html#verbindung-herstellen",
-    "title": "24  Python-Integration",
-    "section": "24.2 Verbindung herstellen",
-    "text": "24.2 Verbindung herstellen\nUm mit MongoDB zu arbeiten, müssen Sie in einem Jupyter Notebook eine Verbindung zur Datenbank herstellen. Dies erfolgt in mehreren Schritten, die unten beschrieben sind:\nSchritt 1: Importieren der pymongo-Bibliothek\nZuerst müssen Sie die pymongo-Bibliothek importieren, die eine Schnittstelle zwischen Python und MongoDB bietet.\nimport pymongo\nSchritt 2: Erstellen eines MongoDB-Clients\nErstellen Sie eine Verbindung zum MongoDB-Server. Der Standardanschluss für MongoDB ist 27017.\n# Verbindung zur MongoDB herstellen\nclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\nHier verwenden wir localhost, da der MongoDB-Server auf dem lokalen Rechner läuft. Wenn der Server auf einem Remote-Server läuft, ersetzen Sie localhost durch die IP-Adresse oder den Domain-Namen des Servers.\nSchritt 3: Auswählen der Datenbank\nMongoDB organisiert Daten in Datenbanken. Um eine bestimmte Datenbank zu verwenden, greifen Sie auf diese wie folgt zu:\n# Datenbank auswählen\ndb = client[\"mydatabase\"]\nFalls die Datenbank noch nicht existiert, wird sie erstellt, sobald Sie ein Dokument einfügen.\nSchritt 4: Auswählen der Sammlung\nInnerhalb einer Datenbank organisiert MongoDB Daten in Sammlungen (ähnlich wie Tabellen in SQL-Datenbanken). Sie können eine Sammlung wie folgt auswählen:\n# Sammlung auswählen\ncollection = db[\"mycollection\"]\nAuch hier gilt: Falls die Sammlung noch nicht existiert, wird sie erstellt, sobald Sie ein Dokument einfügen.\nSchritt 5: Einfügen eines Dokuments\nEin Dokument in MongoDB ist ein JSON-ähnliches Objekt. Sie können ein Dokument wie folgt einfügen:\n# Dokument einfügen\ncollection.insert_one({\"name\": \"Alice\", \"age\": 25})\nDer Befehl insert_one fügt ein einzelnes Dokument in die Sammlung ein.\nSchritt 6: Abfragen von Dokumenten\nUm Dokumente aus einer Sammlung abzufragen, können Sie die Methode find verwenden. Diese gibt alle Dokumente in der Sammlung zurück:\n# Dokumente abfragen\nfor doc in collection.find():\n    print(doc)\nDieser Code durchläuft alle Dokumente in der Sammlung und druckt sie aus.\nHier der Output der Abfrage:\n{'_id': ObjectId('666d5f5b50a5f96c3ed89649'), 'name': 'Jan', 'age': 44}\n{'_id': ObjectId('666d7727c1365bab40959889'), 'name': 'Alice', 'age': 25}",
+    "objectID": "mongodb/mongodb-python.html#verbindung-herstellen",
+    "href": "mongodb/mongodb-python.html#verbindung-herstellen",
+    "title": "28  Python-Integration",
+    "section": "28.2 Verbindung herstellen",
+    "text": "28.2 Verbindung herstellen\nUm mit MongoDB zu arbeiten, müssen Sie in einem Jupyter Notebook eine Verbindung zur Datenbank herstellen. Dies erfolgt in mehreren Schritten, die unten beschrieben sind:\nSchritt 1: Importieren der pymongo-Bibliothek\nZuerst müssen Sie die pymongo-Bibliothek importieren, die eine Schnittstelle zwischen Python und MongoDB bietet.\nimport pymongo\nSchritt 2: Erstellen eines MongoDB-Clients\nErstellen Sie eine Verbindung zum MongoDB-Server. Der Standardanschluss für MongoDB ist 27017.\n# Verbindung zur MongoDB herstellen\nclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\nHier verwenden wir localhost, da der MongoDB-Server auf dem lokalen Rechner läuft. Wenn der Server auf einem Remote-Server läuft, ersetzen Sie localhost durch die IP-Adresse oder den Domain-Namen des Servers.\nSchritt 3: Auswählen der Datenbank\nMongoDB organisiert Daten in Datenbanken. Um eine bestimmte Datenbank zu verwenden, greifen Sie auf diese wie folgt zu:\n# Datenbank auswählen\ndb = client[\"mydatabase\"]\nFalls die Datenbank noch nicht existiert, wird sie erstellt, sobald Sie ein Dokument einfügen.\nSchritt 4: Auswählen der Sammlung\nInnerhalb einer Datenbank organisiert MongoDB Daten in Sammlungen (ähnlich wie Tabellen in SQL-Datenbanken). Sie können eine Sammlung wie folgt auswählen:\n# Sammlung auswählen\ncollection = db[\"mycollection\"]\nAuch hier gilt: Falls die Sammlung noch nicht existiert, wird sie erstellt, sobald Sie ein Dokument einfügen.\nSchritt 5: Einfügen eines Dokuments\nEin Dokument in MongoDB ist ein JSON-ähnliches Objekt. Sie können ein Dokument wie folgt einfügen:\n# Dokument einfügen\ncollection.insert_one({\"name\": \"Alice\", \"age\": 25})\nDer Befehl insert_one fügt ein einzelnes Dokument in die Sammlung ein.\nSchritt 6: Abfragen von Dokumenten\nUm Dokumente aus einer Sammlung abzufragen, können Sie die Methode find verwenden. Diese gibt alle Dokumente in der Sammlung zurück:\n# Dokumente abfragen\nfor doc in collection.find():\n    print(doc)\nDieser Code durchläuft alle Dokumente in der Sammlung und druckt sie aus.\nHier der Output der Abfrage:\n{'_id': ObjectId('666d5f5b50a5f96c3ed89649'), 'name': 'Jan', 'age': 44}\n{'_id': ObjectId('666d7727c1365bab40959889'), 'name': 'Alice', 'age': 25}",
     "crumbs": [
-      "NoSQL Datenbanken",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Python-Integration</span>"
+      "MongoDB",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Python-Integration</span>"
     ]
   },
   {
-    "objectID": "nosql/mongo-db-python.html#fehlerbehandlung",
-    "href": "nosql/mongo-db-python.html#fehlerbehandlung",
-    "title": "24  Python-Integration",
-    "section": "24.3 Fehlerbehandlung",
-    "text": "24.3 Fehlerbehandlung\nEs ist wichtig, bei der Arbeit mit Datenbanken Fehler zu behandeln. Hier ist ein Beispiel, wie Sie Verbindungsfehler abfangen können:\ntry:\n    client = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n    print(\"Verbindung erfolgreich\")\nexcept pymongo.errors.ConnectionError as e:\n    print(\"Verbindung fehlgeschlagen:\", e)\nDieses Beispiel fängt Verbindungsfehler ab und gibt eine entsprechende Meldung aus.",
+    "objectID": "mongodb/mongodb-python.html#fehlerbehandlung",
+    "href": "mongodb/mongodb-python.html#fehlerbehandlung",
+    "title": "28  Python-Integration",
+    "section": "28.3 Fehlerbehandlung",
+    "text": "28.3 Fehlerbehandlung\nEs ist wichtig, bei der Arbeit mit Datenbanken Fehler zu behandeln. Hier ist ein Beispiel, wie Sie Verbindungsfehler abfangen können:\ntry:\n    client = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n    print(\"Verbindung erfolgreich\")\nexcept pymongo.errors.ConnectionError as e:\n    print(\"Verbindung fehlgeschlagen:\", e)\nDieses Beispiel fängt Verbindungsfehler ab und gibt eine entsprechende Meldung aus.",
     "crumbs": [
-      "NoSQL Datenbanken",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Python-Integration</span>"
+      "MongoDB",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Python-Integration</span>"
     ]
   },
   {
-    "objectID": "nosql/mongo-db-python.html#weitere-funktionen",
-    "href": "nosql/mongo-db-python.html#weitere-funktionen",
-    "title": "24  Python-Integration",
-    "section": "24.4 Weitere Funktionen",
-    "text": "24.4 Weitere Funktionen\npymongo bietet viele weitere Funktionen, wie das Aktualisieren und Löschen von Dokumenten sowie das Erstellen von Indizes. Hier sind einige Beispiele:\nDokument aktualisieren\n# Dokument aktualisieren\ncollection.update_one({\"name\": \"Alice\"}, {\"$set\": {\"age\": 26}})\nDokument löschen\n# Dokument löschen\ncollection.delete_one({\"name\": \"Alice\"})\nIndizes erstellen\n# Index erstellen\ncollection.create_index([(\"name\", pymongo.ASCENDING)])\nDiese zusätzlichen Funktionen ermöglichen eine umfassendere Interaktion mit Ihrer MongoDB-Datenbank.",
+    "objectID": "mongodb/mongodb-python.html#weitere-funktionen",
+    "href": "mongodb/mongodb-python.html#weitere-funktionen",
+    "title": "28  Python-Integration",
+    "section": "28.4 Weitere Funktionen",
+    "text": "28.4 Weitere Funktionen\npymongo bietet viele weitere Funktionen, wie das Aktualisieren und Löschen von Dokumenten sowie das Erstellen von Indizes. Hier sind einige Beispiele:\nDokument aktualisieren\n# Dokument aktualisieren\ncollection.update_one({\"name\": \"Alice\"}, {\"$set\": {\"age\": 26}})\nDokument löschen\n# Dokument löschen\ncollection.delete_one({\"name\": \"Alice\"})\nIndizes erstellen\n# Index erstellen\ncollection.create_index([(\"name\", pymongo.ASCENDING)])\nDiese zusätzlichen Funktionen ermöglichen eine umfassendere Interaktion mit Ihrer MongoDB-Datenbank.",
     "crumbs": [
-      "NoSQL Datenbanken",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Python-Integration</span>"
+      "MongoDB",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Python-Integration</span>"
     ]
   },
   {
@@ -1193,210 +1343,210 @@
   {
     "objectID": "github/github-git.html",
     "href": "github/github-git.html",
-    "title": "25  Git",
+    "title": "29  Git",
     "section": "",
-    "text": "25.1 Git-Version\nUm zu überprüfen, ob Git auf Ihrem System installiert ist, öffnen Sie Ihr Terminal (Mac) oder die Eingabeaufforderung (Windows) und geben Sie ein:\nWenn Sie eine Versionsnummer sehen, ist Git bereits installiert. Wenn nicht, folgen Sie den unten stehenden Installationsanweisungen.",
+    "text": "29.1 Git-Version\nUm zu überprüfen, ob Git auf Ihrem System installiert ist, öffnen Sie Ihr Terminal (Mac) oder die Eingabeaufforderung (Windows) und geben Sie ein:\nWenn Sie eine Versionsnummer sehen, ist Git bereits installiert. Wenn nicht, folgen Sie den unten stehenden Installationsanweisungen.",
     "crumbs": [
       "GitHub",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Git</span>"
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Git</span>"
     ]
   },
   {
     "objectID": "github/github-git.html#git-version",
     "href": "github/github-git.html#git-version",
-    "title": "25  Git",
+    "title": "29  Git",
     "section": "",
     "text": "git --version",
     "crumbs": [
       "GitHub",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Git</span>"
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Git</span>"
     ]
   },
   {
     "objectID": "github/github-git.html#installation",
     "href": "github/github-git.html#installation",
-    "title": "25  Git",
-    "section": "25.2 Installation",
-    "text": "25.2 Installation\n\nFür Mac-Benutzer:\n\nOption 1: Installieren Sie XCode, das Git enthält.\nOption 2: Alternativ installieren Sie Homebrew (Homebrew ist ein Paketverwaltungssystem, das die Installation von Software auf macOS vereinfacht.) und verwenden Sie diesen Befehl:\nbrew install git\n\nFür Windows-Benutzer:\n\nLaden Sie Git von Git SCM herunter und folgen Sie den Installationsanweisungen.",
+    "title": "29  Git",
+    "section": "29.2 Installation",
+    "text": "29.2 Installation\n\nFür Mac-Benutzer:\n\nOption 1: Installieren Sie XCode, das Git enthält.\nOption 2: Alternativ installieren Sie Homebrew (Homebrew ist ein Paketverwaltungssystem, das die Installation von Software auf macOS vereinfacht.) und verwenden Sie diesen Befehl:\nbrew install git\n\nFür Windows-Benutzer:\n\nLaden Sie Git von Git SCM herunter und folgen Sie den Installationsanweisungen.",
     "crumbs": [
       "GitHub",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Git</span>"
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Git</span>"
     ]
   },
   {
     "objectID": "github/github-setup.html",
     "href": "github/github-setup.html",
-    "title": "26  GitHub Setup",
+    "title": "30  GitHub Setup",
     "section": "",
-    "text": "26.1 GitHub-Konto\nSo erstellen Sie ein GitHub-Konto:",
+    "text": "30.1 GitHub-Konto\nSo erstellen Sie ein GitHub-Konto:",
     "crumbs": [
       "GitHub",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>GitHub Setup</span>"
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>GitHub Setup</span>"
     ]
   },
   {
     "objectID": "github/github-setup.html#github-konto",
     "href": "github/github-setup.html#github-konto",
-    "title": "26  GitHub Setup",
+    "title": "30  GitHub Setup",
     "section": "",
     "text": "Gehen Sie zur GitHub Anmeldeseite.\nGeben Sie einen Benutzernamen, eine E-Mail-Adresse (verwenden Sie Ihre Universitäts-E-Mail, wenn Sie GitHub für akademische Zwecke nutzen) und ein Passwort ein.\nKlicken Sie auf Create an account.\nÜberprüfen Sie Ihre E-Mails auf einen Bestätigungslink von GitHub und klicken Sie darauf, um Ihre E-Mail-Adresse zu bestätigen.\nSchließen Sie die Profil-Einrichtung ab, indem Sie den Anweisungen auf dem Bildschirm folgen.\nOptional: Bewerben Sie sich für das GitHub Student Developer Pack für den Zugriff auf kostenlose Ressourcen (wie GitHub Copilot).\nOptional: Installieren Sie die Visual Studio Code GitHub-Erweiterung.",
     "crumbs": [
       "GitHub",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>GitHub Setup</span>"
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>GitHub Setup</span>"
     ]
   },
   {
     "objectID": "github/github-setup.html#github-desktop",
     "href": "github/github-setup.html#github-desktop",
-    "title": "26  GitHub Setup",
-    "section": "26.2 GitHub Desktop",
-    "text": "26.2 GitHub Desktop\nGitHub Desktop bietet eine benutzerfreundliche grafische Oberfläche, um Ihre GitHub-Projekte zu verwalten, ohne Befehlszeilentools zu verwenden.\nSo richten Sie es ein:\n\nBesuchen Sie die Webseite GitHub Desktop und laden Sie die Version für Ihr Betriebssystem herunter.\nNach dem Download führen Sie das Installationsprogramm aus und folgen den Anweisungen auf dem Bildschirm, um die Installation abzuschließen.\nNach der Installation öffnen Sie GitHub Desktop und melden sich mit Ihren GitHub-Kontodaten an.\nFolgen Sie der Einführung von GitHub Desktop, um sich mit den Funktionen vertraut zu machen.\n\nIn dem nächsten Abschnitt werden Sie lernen, wie GitHub Desktop verwendet wird.",
+    "title": "30  GitHub Setup",
+    "section": "30.2 GitHub Desktop",
+    "text": "30.2 GitHub Desktop\nGitHub Desktop bietet eine benutzerfreundliche grafische Oberfläche, um Ihre GitHub-Projekte zu verwalten, ohne Befehlszeilentools zu verwenden.\nSo richten Sie es ein:\n\nBesuchen Sie die Webseite GitHub Desktop und laden Sie die Version für Ihr Betriebssystem herunter.\nNach dem Download führen Sie das Installationsprogramm aus und folgen den Anweisungen auf dem Bildschirm, um die Installation abzuschließen.\nNach der Installation öffnen Sie GitHub Desktop und melden sich mit Ihren GitHub-Kontodaten an.\nFolgen Sie der Einführung von GitHub Desktop, um sich mit den Funktionen vertraut zu machen.\n\nIn dem nächsten Abschnitt werden Sie lernen, wie GitHub Desktop verwendet wird.",
     "crumbs": [
       "GitHub",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>GitHub Setup</span>"
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>GitHub Setup</span>"
     ]
   },
   {
     "objectID": "github/github-repo.html",
     "href": "github/github-repo.html",
-    "title": "27  GitHub-Repositories",
+    "title": "31  GitHub-Repositories",
     "section": "",
-    "text": "27.1 Erstellung\nMit GitHub-Repositories können Sie Ihr Projekt mit wichtigen Dateien wie einer README, .gitignore und einer Lizenz initialisieren, um Struktur und Klarheit zu schaffen.\nHier ist eine Anleitung, wie Sie dies tun können, einschließlich Erklärungen zu den einzelnen Komponenten.",
+    "text": "31.1 Erstellung\nMit GitHub-Repositories können Sie Ihr Projekt mit wichtigen Dateien wie einer README, .gitignore und einer Lizenz initialisieren, um Struktur und Klarheit zu schaffen.\nHier ist eine Anleitung, wie Sie dies tun können, einschließlich Erklärungen zu den einzelnen Komponenten.",
     "crumbs": [
       "GitHub",
-      "<span class='chapter-number'>27</span>  <span class='chapter-title'>GitHub-Repositories</span>"
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>GitHub-Repositories</span>"
     ]
   },
   {
     "objectID": "github/github-repo.html#erstellung",
     "href": "github/github-repo.html#erstellung",
-    "title": "27  GitHub-Repositories",
+    "title": "31  GitHub-Repositories",
     "section": "",
     "text": "Anmelden bei GitHub\n\nÖffnen Sie GitHub in Ihrem Webbrowser.\nMelden Sie sich bei Ihrem GitHub-Konto an. Wenn Sie noch kein Konto haben, müssen Sie eines erstellen (siehe GitHub Setup).\n\nNavigieren Sie zu Ihrem Dashboard\n\nNach dem Anmelden gelangen Sie zu Ihrem GitHub-Dashboard.\n\nEin neues Repository starten\n\nKlicken Sie auf das +-Symbol in der oberen rechten Ecke der Seite und wählen Sie New Repository aus dem Dropdown-Menü.\n\nRepository-Details ausfüllen\n\nRepository template: Wir verwenden “No template”.\nRepository name: Geben Sie dem Repository den Namen hello-github (Namen sollten immer prägnant und beschreibend sein).\nDescription: Wir verzichten hier auf eine Beschreibung. Dieses Feld hilft anderen zu verstehen, worum es bei Ihrem Projekt geht.\nPublic or Private: Wählen Sie Public. Hier können Sie entscheiden, ob Ihr Repository öffentlich (für jeden sichtbar) oder privat (nur für Sie und Personen, denen Sie explizit Zugriff gewähren) sein soll.\n\nDas Repository initialisieren (Initialize this repository with:)\n\nAdd a README file: Aktivieren Sie das Kontrollkästchen “Initialize this repository with a README”, um diese Datei automatisch zu erstellen. Eine README-Datei ist eine Markdown-Datei (README.md), die als Startseite Ihres Projekts dient.\n.gitignore: wählen Sie die Python-Vorlage. Eine .gitignore-Datei gibt an, welche Dateien und Verzeichnisse von Git ignoriert werden sollen. Dies ist nützlich, um Dateien auszuschließen, deren Änderungen nicht verfolgt werden sollen.\nLizenz: Wählen Sie MIT License. Eine Lizenzdatei legt die Bedingungen fest, unter denen Ihr Projekt verwendet, modifiziert und von anderen geteilt werden kann. Durch die Auswahl einer Lizenz stellen Sie sicher, dass andere Ihr Projekt legal verwenden und dazu beitragen können. GitHub bietet verschiedene Lizenzen zur Auswahl an, wie z.B. MIT, Apache, GPL usw. Wir verwenden die MIT-Lizenz, die es jedem erlaubt, Ihren Code zu verwenden, solange der ursprüngliche Urheberrechts- und Lizenzhinweis enthalten ist.\n\nCreate repository\n\nKlicken Sie auf die grüne Schaltfläche Create repository, um Ihr neues Repository auf GitHub zu erstellen.",
     "crumbs": [
       "GitHub",
-      "<span class='chapter-number'>27</span>  <span class='chapter-title'>GitHub-Repositories</span>"
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>GitHub-Repositories</span>"
     ]
   },
   {
     "objectID": "github/github-repo.html#klonen",
     "href": "github/github-repo.html#klonen",
-    "title": "27  GitHub-Repositories",
-    "section": "27.2 Klonen",
-    "text": "27.2 Klonen\nDas Klonen eines Repositorys bedeutet, eine lokale Kopie eines Remote-Repositorys auf Ihrem Computer zu erstellen.\nDies ermöglicht es Ihnen, offline an den Projektdateien zu arbeiten, Änderungen vorzunehmen und diese Änderungen dann mit dem Remote-Repository auf GitHub zu synchronisieren.\n\nÖffnen Sie GitHub\n\nÖffnen Sie GitHub in Ihrem Webbrowser und navigieren Sie zu Ihrem hello-github-Repository.\nAuf der Hauptseite des hello-github-Repositorys klicken Sie auf die grüne Schaltfläche Code.\n\nKlon-Option auswählen\n\nIm Dropdown-Menü klicken Sie auf Open with GitHub Desktop. Dies wird GitHub Desktop dazu veranlassen, sich zu öffnen und den Klonvorgang zu starten.\nWenn Ihr Browser Sie dazu auffordert, GitHub Desktop zu öffnen, bestätigen Sie die Aktion.\n\nKlonen mit GitHub Desktop\n\nGitHub Desktop öffnet sich und zeigt ein Dialogfeld an, um den lokalen Pfad für das Repository zu bestätigen.\nWählen Sie das Verzeichnis toolkit-lab auf Ihrem lokalen Rechner, in dem wir das hello-github-Repository klonen möchten. Dies erstellt einen Ordner namens hello-github im Verzeichnis toolkit-lab.\n\n:::{.callout-note collapse=“true” title=“Hinweis zum Klonen von Verzeichnissen”} Stellen Sie immer sicher, dass das Verzeichnis nicht mit Cloud-Speicherdiensten wie iCloud, OneDrive oder Google Drive synchronisiert wird. Die Synchronisierung mit diesen Diensten kann zu Konflikten und Problemen mit Ihrem Git-Repository führen. :::\n\nKlicken Sie auf Klonen, um das hello-github-Repository auf Ihren lokalen Rechner herunterzuladen.\n\nÖffnen Sie das Repository in GitHub Desktop\n\nNach Abschluss des Klonvorgangs öffnet GitHub Desktop automatisch das hello-github-Repository.",
+    "title": "31  GitHub-Repositories",
+    "section": "31.2 Klonen",
+    "text": "31.2 Klonen\nDas Klonen eines Repositorys bedeutet, eine lokale Kopie eines Remote-Repositorys auf Ihrem Computer zu erstellen.\nDies ermöglicht es Ihnen, offline an den Projektdateien zu arbeiten, Änderungen vorzunehmen und diese Änderungen dann mit dem Remote-Repository auf GitHub zu synchronisieren.\n\nÖffnen Sie GitHub\n\nÖffnen Sie GitHub in Ihrem Webbrowser und navigieren Sie zu Ihrem hello-github-Repository.\nAuf der Hauptseite des hello-github-Repositorys klicken Sie auf die grüne Schaltfläche Code.\n\nKlon-Option auswählen\n\nIm Dropdown-Menü klicken Sie auf Open with GitHub Desktop. Dies wird GitHub Desktop dazu veranlassen, sich zu öffnen und den Klonvorgang zu starten.\nWenn Ihr Browser Sie dazu auffordert, GitHub Desktop zu öffnen, bestätigen Sie die Aktion.\n\nKlonen mit GitHub Desktop\n\nGitHub Desktop öffnet sich und zeigt ein Dialogfeld an, um den lokalen Pfad für das Repository zu bestätigen.\nWählen Sie das Verzeichnis toolkit-lab auf Ihrem lokalen Rechner, in dem wir das hello-github-Repository klonen möchten. Dies erstellt einen Ordner namens hello-github im Verzeichnis toolkit-lab.\n\n:::{.callout-note collapse=“true” title=“Hinweis zum Klonen von Verzeichnissen”} Stellen Sie immer sicher, dass das Verzeichnis nicht mit Cloud-Speicherdiensten wie iCloud, OneDrive oder Google Drive synchronisiert wird. Die Synchronisierung mit diesen Diensten kann zu Konflikten und Problemen mit Ihrem Git-Repository führen. :::\n\nKlicken Sie auf Klonen, um das hello-github-Repository auf Ihren lokalen Rechner herunterzuladen.\n\nÖffnen Sie das Repository in GitHub Desktop\n\nNach Abschluss des Klonvorgangs öffnet GitHub Desktop automatisch das hello-github-Repository.",
     "crumbs": [
       "GitHub",
-      "<span class='chapter-number'>27</span>  <span class='chapter-title'>GitHub-Repositories</span>"
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>GitHub-Repositories</span>"
     ]
   },
   {
     "objectID": "github/github-repo.html#commit",
     "href": "github/github-repo.html#commit",
-    "title": "27  GitHub-Repositories",
-    "section": "27.3 Commit",
-    "text": "27.3 Commit\nNachdem Sie Ihr hello-github-Repository auf Ihren lokalen Rechner geklont haben, ist der nächste Schritt, an Ihren Projektdateien zu arbeiten. Wir verwenden Visual Studio Code (VS Code), um das Repository zu öffnen und Änderungen vorzunehmen.\nÖffnen des hello-github-Repositorys in VS Code\n\nÖffnen Sie VS Code\n\nStarten Sie Visual Studio Code auf Ihrem Computer.\n\nÖffnen Sie das geklonte Repository\n\nKlicken Sie in VS Code auf Datei &gt; Ordner öffnen….\nNavigieren Sie zum Verzeichnis toolkit-lab/hello-github, in dem Sie Ihr Repository geklont haben, und wählen Sie den Ordner hello-github.\nKlicken Sie auf Ordner auswählen, um das Repository in VS Code zu öffnen.\n\nDateien erstellen oder ändern\n\nSie können nun neue Dateien erstellen oder bestehende Dateien direkt in VS Code ändern. Zum Beispiel, um eine neue Python-Datei zu erstellen:\n\nKlicken Sie mit der rechten Maustaste im Explorer-Panel (linke Seitenleiste) und wählen Sie Neue Datei.\nNennen Sie die Datei script.py und fügen Sie etwas Python-Code hinzu. Speichern Sie Ihre Änderungen.\n\n\nÄnderungen in GitHub Desktop anzeigen\n\nNachdem Sie Änderungen in VS Code vorgenommen haben, wechseln Sie zurück zu GitHub Desktop. Sie sehen die Änderungen in der linken Seitenleiste.\n\nÄnderungen abrufen\n\nStellen Sie zunächst sicher, dass keine Änderungen im Remote-Repository hello-github vorliegen, die Sie nicht lokal haben. Sie können sie abrufen, indem Sie auf die Schaltfläche Fetch origin klicken und dann Pull, um Ihr lokales Repository mit den neuesten Änderungen zu aktualisieren.\n\nÄnderungen stagen\n\nStagen bedeutet, auszuwählen, welche Änderungen Sie in Ihren nächsten Schnappschuss (Commit) des Repositorys aufnehmen möchten.\nIn GitHub Desktop sehen Sie eine Liste der geänderten Dateien. Um Änderungen zu stagen:\n\nAktivieren Sie die Kontrollkästchen neben den Dateien, die Sie in Ihren Commit aufnehmen möchten.\nWenn Sie alle Änderungen auf einmal stagen möchten, können Sie auf die Schaltfläche Stage All klicken.\n\n\nÄnderungen committen\n\nCommitten bedeutet, Ihre gestagten Änderungen mit einer beschreibenden Nachricht zu speichern, die erklärt, was Sie getan haben. Diese Nachricht hilft Ihnen und anderen zu verstehen, welche Änderungen vorgenommen wurden und warum.\nSchreiben Sie eine kurze, aber beschreibende Commit-Nachricht in das Feld Zusammenfassung. Zum Beispiel: “Füge initiales Python-Skript hinzu”.\nKlicken Sie auf Commit to main, um die Änderungen in Ihrem lokalen Repository zu speichern.\n\nÄnderungen pushen\n\nNach dem Committen der Änderungen klicken Sie auf die Schaltfläche Push origin oben, um Ihre Änderungen in das Remote-Repository hello-github auf GitHub hochzuladen.",
+    "title": "31  GitHub-Repositories",
+    "section": "31.3 Commit",
+    "text": "31.3 Commit\nNachdem Sie Ihr hello-github-Repository auf Ihren lokalen Rechner geklont haben, ist der nächste Schritt, an Ihren Projektdateien zu arbeiten. Wir verwenden Visual Studio Code (VS Code), um das Repository zu öffnen und Änderungen vorzunehmen.\nÖffnen des hello-github-Repositorys in VS Code\n\nÖffnen Sie VS Code\n\nStarten Sie Visual Studio Code auf Ihrem Computer.\n\nÖffnen Sie das geklonte Repository\n\nKlicken Sie in VS Code auf Datei &gt; Ordner öffnen….\nNavigieren Sie zum Verzeichnis toolkit-lab/hello-github, in dem Sie Ihr Repository geklont haben, und wählen Sie den Ordner hello-github.\nKlicken Sie auf Ordner auswählen, um das Repository in VS Code zu öffnen.\n\nDateien erstellen oder ändern\n\nSie können nun neue Dateien erstellen oder bestehende Dateien direkt in VS Code ändern. Zum Beispiel, um eine neue Python-Datei zu erstellen:\n\nKlicken Sie mit der rechten Maustaste im Explorer-Panel (linke Seitenleiste) und wählen Sie Neue Datei.\nNennen Sie die Datei script.py und fügen Sie etwas Python-Code hinzu. Speichern Sie Ihre Änderungen.\n\n\nÄnderungen in GitHub Desktop anzeigen\n\nNachdem Sie Änderungen in VS Code vorgenommen haben, wechseln Sie zurück zu GitHub Desktop. Sie sehen die Änderungen in der linken Seitenleiste.\n\nÄnderungen abrufen\n\nStellen Sie zunächst sicher, dass keine Änderungen im Remote-Repository hello-github vorliegen, die Sie nicht lokal haben. Sie können sie abrufen, indem Sie auf die Schaltfläche Fetch origin klicken und dann Pull, um Ihr lokales Repository mit den neuesten Änderungen zu aktualisieren.\n\nÄnderungen stagen\n\nStagen bedeutet, auszuwählen, welche Änderungen Sie in Ihren nächsten Schnappschuss (Commit) des Repositorys aufnehmen möchten.\nIn GitHub Desktop sehen Sie eine Liste der geänderten Dateien. Um Änderungen zu stagen:\n\nAktivieren Sie die Kontrollkästchen neben den Dateien, die Sie in Ihren Commit aufnehmen möchten.\nWenn Sie alle Änderungen auf einmal stagen möchten, können Sie auf die Schaltfläche Stage All klicken.\n\n\nÄnderungen committen\n\nCommitten bedeutet, Ihre gestagten Änderungen mit einer beschreibenden Nachricht zu speichern, die erklärt, was Sie getan haben. Diese Nachricht hilft Ihnen und anderen zu verstehen, welche Änderungen vorgenommen wurden und warum.\nSchreiben Sie eine kurze, aber beschreibende Commit-Nachricht in das Feld Zusammenfassung. Zum Beispiel: “Füge initiales Python-Skript hinzu”.\nKlicken Sie auf Commit to main, um die Änderungen in Ihrem lokalen Repository zu speichern.\n\nÄnderungen pushen\n\nNach dem Committen der Änderungen klicken Sie auf die Schaltfläche Push origin oben, um Ihre Änderungen in das Remote-Repository hello-github auf GitHub hochzuladen.",
     "crumbs": [
       "GitHub",
-      "<span class='chapter-number'>27</span>  <span class='chapter-title'>GitHub-Repositories</span>"
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>GitHub-Repositories</span>"
     ]
   },
   {
     "objectID": "github/github-repo.html#tipps",
     "href": "github/github-repo.html#tipps",
-    "title": "27  GitHub-Repositories",
-    "section": "27.4 Tipps",
-    "text": "27.4 Tipps\n\nOft committen: Machen Sie kleine, häufige Commits mit klaren Nachrichten. Dies erleichtert das Verfolgen von Änderungen und das Zurücksetzen, falls erforderlich.\nREADME: Eine gut dokumentierte README-Datei ist entscheidend. Sie sollte einen Überblick über das Projekt, Installations- und Nutzungshinweise sowie weitere relevante Informationen bieten.",
+    "title": "31  GitHub-Repositories",
+    "section": "31.4 Tipps",
+    "text": "31.4 Tipps\n\nOft committen: Machen Sie kleine, häufige Commits mit klaren Nachrichten. Dies erleichtert das Verfolgen von Änderungen und das Zurücksetzen, falls erforderlich.\nREADME: Eine gut dokumentierte README-Datei ist entscheidend. Sie sollte einen Überblick über das Projekt, Installations- und Nutzungshinweise sowie weitere relevante Informationen bieten.",
     "crumbs": [
       "GitHub",
-      "<span class='chapter-number'>27</span>  <span class='chapter-title'>GitHub-Repositories</span>"
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>GitHub-Repositories</span>"
     ]
   },
   {
     "objectID": "github/github-organization.html",
     "href": "github/github-organization.html",
-    "title": "28  GitHub-Organisation",
+    "title": "32  GitHub-Organisation",
     "section": "",
-    "text": "28.1 Erstellen einer Organisation\nSchritt-für-Schritt-Anleitung:",
+    "text": "32.1 Erstellen einer Organisation\nSchritt-für-Schritt-Anleitung:",
     "crumbs": [
       "GitHub",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>GitHub-Organisation</span>"
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>GitHub-Organisation</span>"
     ]
   },
   {
     "objectID": "github/github-organization.html#erstellen-einer-organisation",
     "href": "github/github-organization.html#erstellen-einer-organisation",
-    "title": "28  GitHub-Organisation",
+    "title": "32  GitHub-Organisation",
     "section": "",
     "text": "Navigieren Sie zu GitHub: Gehen Sie zu GitHub Organizations.\nKlicken Sie auf ‘Neue Organisation’: Sie werden aufgefordert, einen Plan auszuwählen. Wählen Sie zunächst den kostenlosen Plan.\nFüllen Sie die Organisationsdetails aus: Geben Sie einen eindeutigen Namen für Ihre Organisation und eine E-Mail-Adresse für Benachrichtigungen an.\nLaden Sie Ihr Team ein: Sobald Ihre Organisation erstellt ist, können Sie damit beginnen, Mitglieder einzuladen. Erfahren Sie im nächsten Abschnitt, wie Sie andere Teammitglieder zu einer Organisation einladen.",
     "crumbs": [
       "GitHub",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>GitHub-Organisation</span>"
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>GitHub-Organisation</span>"
     ]
   },
   {
     "objectID": "github/github-organization.html#mitglieder-verwalten",
     "href": "github/github-organization.html#mitglieder-verwalten",
-    "title": "28  GitHub-Organisation",
-    "section": "28.2 Mitglieder verwalten",
-    "text": "28.2 Mitglieder verwalten\nNach der Erstellung Ihrer Organisation ist die Verwaltung der Mitglieder entscheidend für eine reibungslose Zusammenarbeit.\nMitglieder einladen:\n\nGehen Sie zu Ihrer Organisationsseite: Klicken Sie auf Ihr Profilbild oben rechts, dann auf Ihre Organisationen und wählen Sie Ihre neue Organisation aus.\nNavigieren Sie zum Tab ‘Personen’: Klicken Sie auf ‘Mitglied einladen’ und geben Sie den Benutzernamen oder die E-Mail-Adresse der Person ein, die Sie einladen möchten.\nRollen und Berechtigungen festlegen: Weisen Sie Rollen wie Eigentümer, Mitglied oder Abrechnungsmanager zu, um Zugriffsebenen zu steuern.\n\nErfahren Sie mehr über das Verwalten von Mitgliedern und Teams in Ihrer Organisation.",
+    "title": "32  GitHub-Organisation",
+    "section": "32.2 Mitglieder verwalten",
+    "text": "32.2 Mitglieder verwalten\nNach der Erstellung Ihrer Organisation ist die Verwaltung der Mitglieder entscheidend für eine reibungslose Zusammenarbeit.\nMitglieder einladen:\n\nGehen Sie zu Ihrer Organisationsseite: Klicken Sie auf Ihr Profilbild oben rechts, dann auf Ihre Organisationen und wählen Sie Ihre neue Organisation aus.\nNavigieren Sie zum Tab ‘Personen’: Klicken Sie auf ‘Mitglied einladen’ und geben Sie den Benutzernamen oder die E-Mail-Adresse der Person ein, die Sie einladen möchten.\nRollen und Berechtigungen festlegen: Weisen Sie Rollen wie Eigentümer, Mitglied oder Abrechnungsmanager zu, um Zugriffsebenen zu steuern.\n\nErfahren Sie mehr über das Verwalten von Mitgliedern und Teams in Ihrer Organisation.",
     "crumbs": [
       "GitHub",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>GitHub-Organisation</span>"
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>GitHub-Organisation</span>"
     ]
   },
   {
     "objectID": "github/github-projects.html",
     "href": "github/github-projects.html",
-    "title": "29  GitHub-Projekte",
+    "title": "33  GitHub-Projekte",
     "section": "",
-    "text": "29.1 Ein GitHub-Projekt erstellen\nSchritt-für-Schritt-Anleitung:",
+    "text": "33.1 Ein GitHub-Projekt erstellen\nSchritt-für-Schritt-Anleitung:",
     "crumbs": [
       "GitHub",
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>GitHub-Projekte</span>"
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>GitHub-Projekte</span>"
     ]
   },
   {
     "objectID": "github/github-projects.html#ein-github-projekt-erstellen",
     "href": "github/github-projects.html#ein-github-projekt-erstellen",
-    "title": "29  GitHub-Projekte",
+    "title": "33  GitHub-Projekte",
     "section": "",
     "text": "Navigieren Sie zu Ihrem Repository oder Ihrer Organisation: Gehen Sie zu dem Repository oder der Organisation, in dem/der Sie ein Projekt erstellen möchten.\nZugriff auf den Tab ‘Projects’: Klicken Sie auf der Hauptseite Ihres Repositorys oder Ihrer Organisation auf den Tab ‘Projects’.\nKlicken Sie auf ‘New Project’: Klicken Sie auf die Schaltfläche ‘New project’, um ein neues Projekt zu erstellen.\nRichten Sie Ihr Projekt ein:\n\nName: Geben Sie Ihrem Projekt einen aussagekräftigen Namen.\nBeschreibung: Fügen Sie eine Beschreibung hinzu, um den Zweck des Projekts zu erklären.\nVorlage: Wählen Sie eine Vorlage, falls verfügbar, oder beginnen Sie mit einem leeren Projekt.",
     "crumbs": [
       "GitHub",
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>GitHub-Projekte</span>"
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>GitHub-Projekte</span>"
     ]
   },
   {
     "objectID": "github/github-projects.html#projektboards-verwalten",
     "href": "github/github-projects.html#projektboards-verwalten",
-    "title": "29  GitHub-Projekte",
-    "section": "29.2 Projektboards verwalten",
-    "text": "29.2 Projektboards verwalten\nSobald Ihr Projekt erstellt ist, können Sie beginnen, es durch Hinzufügen von Spalten und Karten zu verwalten.\n\n29.2.1 Spalten hinzufügen\nSpalten helfen, Aufgaben in Kategorien wie ‘To Do’, ‘In Progress’ und ‘Done’ zu organisieren.\n\nKlicken Sie auf ‘Add column’: Klicken Sie auf die Schaltfläche ‘Add column’ auf Ihrem Projektboard.\nBenennen Sie Ihre Spalte: Geben Sie der Spalte einen Namen, z.B. ‘To Do’.\nWiederholen Sie dies für zusätzliche Spalten: Erstellen Sie nach Bedarf zusätzliche Spalten für Ihren Workflow.\n\n\n\n29.2.2 Karten hinzufügen\nKarten repräsentieren Aufgaben und können Issues, Pull Requests oder Notizen sein.\n\nEin Issue oder einen Pull Request hinzufügen: Ziehen Sie ein vorhandenes Issue oder einen Pull Request von der Seitenleiste in eine Spalte.\nEine Notiz erstellen: Klicken Sie in einer Spalte auf ‘Add a note’, um eine benutzerdefinierte Aufgabe oder Notiz zu erstellen.",
+    "title": "33  GitHub-Projekte",
+    "section": "33.2 Projektboards verwalten",
+    "text": "33.2 Projektboards verwalten\nSobald Ihr Projekt erstellt ist, können Sie beginnen, es durch Hinzufügen von Spalten und Karten zu verwalten.\n\n33.2.1 Spalten hinzufügen\nSpalten helfen, Aufgaben in Kategorien wie ‘To Do’, ‘In Progress’ und ‘Done’ zu organisieren.\n\nKlicken Sie auf ‘Add column’: Klicken Sie auf die Schaltfläche ‘Add column’ auf Ihrem Projektboard.\nBenennen Sie Ihre Spalte: Geben Sie der Spalte einen Namen, z.B. ‘To Do’.\nWiederholen Sie dies für zusätzliche Spalten: Erstellen Sie nach Bedarf zusätzliche Spalten für Ihren Workflow.\n\n\n\n33.2.2 Karten hinzufügen\nKarten repräsentieren Aufgaben und können Issues, Pull Requests oder Notizen sein.\n\nEin Issue oder einen Pull Request hinzufügen: Ziehen Sie ein vorhandenes Issue oder einen Pull Request von der Seitenleiste in eine Spalte.\nEine Notiz erstellen: Klicken Sie in einer Spalte auf ‘Add a note’, um eine benutzerdefinierte Aufgabe oder Notiz zu erstellen.",
     "crumbs": [
       "GitHub",
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>GitHub-Projekte</span>"
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>GitHub-Projekte</span>"
     ]
   },
   {
     "objectID": "github/github-projects.html#best-practices-für-die-verwendung-von-github-projects",
     "href": "github/github-projects.html#best-practices-für-die-verwendung-von-github-projects",
-    "title": "29  GitHub-Projekte",
-    "section": "29.3 Best Practices für die Verwendung von GitHub Projects",
-    "text": "29.3 Best Practices für die Verwendung von GitHub Projects\n\n29.3.1 Arbeit organisieren\n\nVerwenden Sie klare Spaltennamen: Nutzen Sie intuitive Namen für Spalten, die die Phasen des Workflows widerspiegeln.\nPriorisieren Sie Aufgaben: Ziehen Sie Karten, um Aufgaben innerhalb einer Spalte zu priorisieren.\n\n\n\n29.3.2 Zusammenarbeit\n\nKarten Teammitgliedern zuweisen: Weisen Sie Issues oder Pull Requests Teammitgliedern zu, um die Zuständigkeit zu klären.\nVerwenden Sie Labels: Wenden Sie Labels auf Karten an, um zusätzliche Kategorisierungen und Filterungen zu ermöglichen.\n\n\n\n29.3.3 Fortschritt verfolgen\n\nRegelmäßige Updates: Aktualisieren Sie den Status der Karten regelmäßig, um den aktuellen Fortschritt widerzuspiegeln.\nAbgeschlossene Karten schließen: Verschieben Sie abgeschlossene Aufgaben in die Spalte ‘Done’ und schließen Sie die entsprechenden Issues oder Pull Requests.",
+    "title": "33  GitHub-Projekte",
+    "section": "33.3 Best Practices für die Verwendung von GitHub Projects",
+    "text": "33.3 Best Practices für die Verwendung von GitHub Projects\n\n33.3.1 Arbeit organisieren\n\nVerwenden Sie klare Spaltennamen: Nutzen Sie intuitive Namen für Spalten, die die Phasen des Workflows widerspiegeln.\nPriorisieren Sie Aufgaben: Ziehen Sie Karten, um Aufgaben innerhalb einer Spalte zu priorisieren.\n\n\n\n33.3.2 Zusammenarbeit\n\nKarten Teammitgliedern zuweisen: Weisen Sie Issues oder Pull Requests Teammitgliedern zu, um die Zuständigkeit zu klären.\nVerwenden Sie Labels: Wenden Sie Labels auf Karten an, um zusätzliche Kategorisierungen und Filterungen zu ermöglichen.\n\n\n\n33.3.3 Fortschritt verfolgen\n\nRegelmäßige Updates: Aktualisieren Sie den Status der Karten regelmäßig, um den aktuellen Fortschritt widerzuspiegeln.\nAbgeschlossene Karten schließen: Verschieben Sie abgeschlossene Aufgaben in die Spalte ‘Done’ und schließen Sie die entsprechenden Issues oder Pull Requests.",
     "crumbs": [
       "GitHub",
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>GitHub-Projekte</span>"
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>GitHub-Projekte</span>"
     ]
   },
   {
     "objectID": "github/github-projects.html#erweiterte-funktionen",
     "href": "github/github-projects.html#erweiterte-funktionen",
-    "title": "29  GitHub-Projekte",
-    "section": "29.4 Erweiterte Funktionen",
-    "text": "29.4 Erweiterte Funktionen\n\n29.4.1 Automatisierung\nGitHub Projects ermöglicht die Automatisierung von Workflows mit Auslösern, die Karten basierend auf bestimmten Aktionen wie dem Schließen eines Issues oder dem Mergen eines Pull Requests in andere Spalten verschieben.\n\n\n29.4.2 Integrationen\nIntegrieren Sie GitHub Projects mit anderen Tools und Diensten mithilfe von GitHub Actions, Webhooks oder Drittanbieterdiensten, um Ihr Projektmanagement zu verbessern.",
+    "title": "33  GitHub-Projekte",
+    "section": "33.4 Erweiterte Funktionen",
+    "text": "33.4 Erweiterte Funktionen\n\n33.4.1 Automatisierung\nGitHub Projects ermöglicht die Automatisierung von Workflows mit Auslösern, die Karten basierend auf bestimmten Aktionen wie dem Schließen eines Issues oder dem Mergen eines Pull Requests in andere Spalten verschieben.\n\n\n33.4.2 Integrationen\nIntegrieren Sie GitHub Projects mit anderen Tools und Diensten mithilfe von GitHub Actions, Webhooks oder Drittanbieterdiensten, um Ihr Projektmanagement zu verbessern.",
     "crumbs": [
       "GitHub",
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>GitHub-Projekte</span>"
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>GitHub-Projekte</span>"
     ]
   }
 ]

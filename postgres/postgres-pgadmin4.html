@@ -9,7 +9,7 @@
 <meta name="author" content="Jan Kirenz">
 <meta name="description" content="Programming Toolkit für Data Science, AI &amp; Analytics">
 
-<title>Data Science, AI &amp; Analytics Toolkit - 20&nbsp; SQL &amp; Python</title>
+<title>Data Science, AI &amp; Analytics Toolkit - 23&nbsp; PgAdmin4</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -66,8 +66,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../nosql/nosql.html" rel="next">
-<link href="../sql/sql-postgresql.html" rel="prev">
+<link href="../postgres/postgres-python.html" rel="next">
+<link href="../postgres/postgres-installation.html" rel="prev">
 <link href="..//images/logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -118,7 +118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../sql/sql.html">Relationale Datenbanken</a></li><li class="breadcrumb-item"><a href="../sql/sql-python.html"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">SQL &amp; Python</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../postgres/postgres.html">PostgreSQL</a></li><li class="breadcrumb-item"><a href="../postgres/postgres-pgadmin4.html"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">PgAdmin4</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -284,8 +284,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../sql/sql.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Relationale Datenbanken</span></a>
+            <a href="../datenbanken/datenbanken.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Datenbanken</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -293,28 +293,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../sql/sql-mysql.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">MySQL</span></span></a>
+  <a href="../datenbanken/sql.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Relationale Datenbanken</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../sql/sql-postgresql.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">PostgreSQL</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../sql/sql-python.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">SQL &amp; Python</span></span></a>
+  <a href="../datenbanken/nosql.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">NoSQL Datenbanken</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../nosql/nosql.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">NoSQL Datenbanken</span></a>
+            <a href="../mysql/mysql.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">MySQL</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -322,26 +316,78 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../nosql/mongo-db-installation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">MongoDB</span></span></a>
+  <a href="../mysql/mysql-installation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Installation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../nosql/mongo-db-start-stop.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">MongoDB starten und stoppen</span></span></a>
+  <a href="../mysql/mysql-workbench.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">MySQL Workbench</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../postgres/postgres.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PostgreSQL</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../postgres/postgres-installation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Installation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../nosql/mongo-db-basics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Grundlegende Nutzung von MongoDB</span></span></a>
+  <a href="../postgres/postgres-pgadmin4.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">PgAdmin4</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../nosql/mongo-db-python.html" class="sidebar-item-text sidebar-link">
+  <a href="../postgres/postgres-python.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Python-Integration</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../mongodb/mongodb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">MongoDB</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mongodb/mongodb-installation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Installation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mongodb/mongodb-start-stop.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Starten und stoppen</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mongodb/mongodb-basics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Grundlegende Nutzung</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mongodb/mongodb-python.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Python-Integration</span></span></a>
   </div>
 </li>
       </ul>
@@ -350,39 +396,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="sidebar-item-container"> 
             <a href="../github/github.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">GitHub</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true" aria-label="Abschnitt umschalten">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github/github-git.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Git</span></span></a>
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Git</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github/github-setup.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">GitHub Setup</span></span></a>
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">GitHub Setup</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github/github-repo.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">GitHub-Repositories</span></span></a>
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">GitHub-Repositories</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github/github-organization.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">GitHub-Organisation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">GitHub-Organisation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github/github-projects.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">GitHub-Projekte</span></span></a>
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">GitHub-Projekte</span></span></a>
   </div>
 </li>
       </ul>
@@ -397,18 +443,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-  <li><a href="#python-umgebung" id="toc-python-umgebung" class="nav-link active" data-scroll-target="#python-umgebung"><span class="header-section-number">20.1</span> Python-Umgebung</a></li>
-  <li><a href="#datenbankverbindung" id="toc-datenbankverbindung" class="nav-link" data-scroll-target="#datenbankverbindung"><span class="header-section-number">20.2</span> Datenbankverbindung</a></li>
-  <li><a href="#daten-in-postgresql-schreiben" id="toc-daten-in-postgresql-schreiben" class="nav-link" data-scroll-target="#daten-in-postgresql-schreiben"><span class="header-section-number">20.3</span> Daten in PostgreSQL schreiben</a></li>
+  <li><a href="#neuen-server-hinzufügen" id="toc-neuen-server-hinzufügen" class="nav-link active" data-scroll-target="#neuen-server-hinzufügen"><span class="header-section-number">23.1</span> Neuen Server hinzufügen</a></li>
+  <li><a href="#eine-datenbank-erstellen" id="toc-eine-datenbank-erstellen" class="nav-link" data-scroll-target="#eine-datenbank-erstellen"><span class="header-section-number">23.2</span> Eine Datenbank erstellen</a></li>
+  <li><a href="#eine-tabelle-erstellen" id="toc-eine-tabelle-erstellen" class="nav-link" data-scroll-target="#eine-tabelle-erstellen"><span class="header-section-number">23.3</span> Eine Tabelle erstellen</a></li>
+  <li><a href="#werte-in-die-tabelle-einfügen" id="toc-werte-in-die-tabelle-einfügen" class="nav-link" data-scroll-target="#werte-in-die-tabelle-einfügen"><span class="header-section-number">23.4</span> Werte in die Tabelle einfügen</a></li>
+  <li><a href="#werte-abrufen" id="toc-werte-abrufen" class="nav-link" data-scroll-target="#werte-abrufen"><span class="header-section-number">23.5</span> Werte abrufen</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../sql/sql.html">Relationale Datenbanken</a></li><li class="breadcrumb-item"><a href="../sql/sql-python.html"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">SQL &amp; Python</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../postgres/postgres.html">PostgreSQL</a></li><li class="breadcrumb-item"><a href="../postgres/postgres-pgadmin4.html"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">PgAdmin4</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">SQL &amp; Python</span></h1>
+<h1 class="title"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">PgAdmin4</span></h1>
 </div>
 
 
@@ -425,182 +473,217 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Dieses Tutorial führt Sie durch den Prozess des Übertragens von Daten aus einem pandas DataFrame in eine PostgreSQL-Datenbank. Es ist eine wichtige Fähigkeit für datengetriebene Projekte in Python, die es Ihnen ermöglicht, Ihre Daten effektiv zu speichern und zu verwalten.</p>
-<p>Stellen Sie sicher, dass <a href="../sql/sql-postgresql.html">PostgreSQL installiert</a> und die Datenbank auf Ihrem Rechner geöffnet ist, bevor Sie beginnen.</p>
-<section id="python-umgebung" class="level2" data-number="20.1">
-<h2 data-number="20.1" class="anchored" data-anchor-id="python-umgebung"><span class="header-section-number">20.1</span> Python-Umgebung</h2>
-<p>Richten Sie zuerst eine isolierte Python-Umgebung mit Anaconda ein:</p>
+<p><em>pgAdmin4</em> ist das offizielle grafische Verwaltungstool für PostgreSQL und bietet eine benutzerfreundliche Oberfläche für die Datenbankverwaltung. Es wird als Teil der PostgreSQL-Installation installiert.</p>
+<section id="neuen-server-hinzufügen" class="level2" data-number="23.1">
+<h2 data-number="23.1" class="anchored" data-anchor-id="neuen-server-hinzufügen"><span class="header-section-number">23.1</span> Neuen Server hinzufügen</h2>
+<p>Um Datenbanken zu verwalten, verbinden Sie sich zunächst mit einer PostgreSQL-Instanz, indem Sie eine neue Serververbindung in pgAdmin4 einrichten:</p>
 <ol type="1">
-<li>Erstellen Sie eine neue Umgebung (wenn Sie detailliertere Erklärungen benötigen, lesen Sie dieses Kapitel über die <a href="../python/python-environment-basics.html">Erstellung von Umgebungen</a>):</li>
-</ol>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> create <span class="at">-n</span> postgres python=3.11 pip</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ol start="2" type="1">
-<li>Aktivieren Sie die Umgebung:</li>
-</ol>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate postgres</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ol start="3" type="1">
-<li>Installieren Sie die notwendigen Pakete: Wir benötigen <code>psycopg2-binary</code> für die PostgreSQL-Konnektivität, <code>sqlalchemy</code> für SQL-Operationen und <code>pandas</code> für die Datenmanipulation.</li>
-</ol>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install psycopg2-binary sqlalchemy ipykernel jupyter pandas</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="datenbankverbindung" class="level2" data-number="20.2">
-<h2 data-number="20.2" class="anchored" data-anchor-id="datenbankverbindung"><span class="header-section-number">20.2</span> Datenbankverbindung</h2>
-<p>Um von Python aus mit Ihrer PostgreSQL-Datenbank zu interagieren, richten Sie eine Verbindung mit SQLAlchemy ein:</p>
-<ol type="1">
-<li><p>Starten Sie PostgreSQL: Stellen Sie sicher, dass Ihre PostgreSQL-Instanz läuft.</p></li>
-<li><p>Importieren Sie die Bibliotheken und erstellen Sie eine Engine: Die Engine ist Ihr Zugang zur Datenbank. Ersetzen Sie Platzhalter durch Ihre tatsächlichen Datenbank-Anmeldedaten.</p></li>
-</ol>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sqlalchemy <span class="im">as</span> sa</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Ersetzen Sie die Platzhalter durch Ihre Datenbank-Anmeldedaten</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>engine <span class="op">=</span> sa.create_engine(<span class="st">'postgresql://your_username:your_password@localhost:your_port/your_database'</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Sie müssen die links aufgeführten Platzhalter in der oben gezeigten Funktion ersetzen:</p>
+<li>Öffnen Sie <em>pgAdmin4</em>.</li>
+<li>Klicken Sie unter “Quick Links” auf <code>Add New Server</code>.</li>
+<li>Geben Sie für den Namen <code>local-connection</code> ein.</li>
+<li>Wechseln Sie zum Reiter <code>Connection</code>:
 <ul>
-<li><code>your_username</code>: Typischerweise <code>postgres</code></li>
-<li><code>your_password</code>: Ihr Datenbank-Passwort</li>
-<li><code>your_port</code>: Üblicherweise <code>5432</code></li>
-<li><code>your_database</code>: Standardmäßig <code>postgres</code> (Sie sollten die von uns <a href="../sql/sql-postgresql.html">bereits erstelle</a> Datenbank <code>db_data</code> verwenden)</li>
-</ul>
-<p>Hier ein Beispiel, in welchem als Passwort der Begriff <code>mysecretpassword</code>verwendet wurde:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sqlalchemy <span class="im">as</span> sa</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Ersetzen Sie die Platzhalter durch Ihre Datenbank-Anmeldedaten</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>engine <span class="op">=</span> sa.create_engine(<span class="st">'postgresql://postgres:mysecretpassword@localhost:5432/db_data'</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Für weitere Details zur Konfiguration der Engine, siehe die <a href="https://docs.sqlalchemy.org/en/14/core/engines.html">SQLAlchemy-Dokumentation</a>.</p>
+<li>Hostname/Adresse: Geben Sie <code>localhost</code> ein.</li>
+<li>Stellen Sie sicher, dass der Port derselbe ist wie bei der Installation (üblicherweise 5432).</li>
+<li>Passwort: Geben Sie das während der Installation gesetzte Passwort ein und wählen Sie “Save password”.</li>
+</ul></li>
+<li>Bestätigen Sie die Einrichtung durch Klicken auf <code>Save</code>.</li>
+<li>Dies wird die <code>local-connection</code> in der linken Seitenleiste anzeigen.</li>
+</ol>
 </section>
-<section id="daten-in-postgresql-schreiben" class="level2" data-number="20.3">
-<h2 data-number="20.3" class="anchored" data-anchor-id="daten-in-postgresql-schreiben"><span class="header-section-number">20.3</span> Daten in PostgreSQL schreiben</h2>
-<p>Mit der eingerichteten Verbindung übertragen wir nun Daten von einem pandas DataFrame nach PostgreSQL:</p>
-<ol type="1">
-<li><p>Laden Sie die Daten in einen DataFrame:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Laden der Daten aus einer CSV-Datei</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">"https://raw.githubusercontent.com/kirenz/datasets/master/gapminder.csv"</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout callout-style-simple callout-note callout-titled" title="Erklärung des Codes">
+<section id="eine-datenbank-erstellen" class="level2" data-number="23.2">
+<h2 data-number="23.2" class="anchored" data-anchor-id="eine-datenbank-erstellen"><span class="header-section-number">23.2</span> Eine Datenbank erstellen</h2>
+<p>Erstellen Sie als nächstes eine neue Datenbank, um Daten zu speichern:</p>
+<div class="callout callout-style-simple callout-note callout-titled" title="Standard PostgreSQL Datenbank">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Erklärung des Codes
+Standard PostgreSQL Datenbank
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Der Python-Code verwendet die Bibliothek pandas, um Daten aus einer CSV-Datei zu laden:</p>
+<p>Bei der Installation von PostgreSQL wird automatisch eine Standarddatenbank namens <code>postgres</code> erstellt. Diese Datenbank wird typischerweise für administrative Zwecke und Tests verwendet. Es ist immer ratsam, neue Datenbanken für anwendungsspezifische Daten zu erstellen, um zu vermeiden, dass die Standarddatenbank mit Anwendungsdaten überladen wird.</p>
+</div>
+</div>
+</div>
 <ol type="1">
-<li><strong>Importieren der pandas-Bibliothek</strong>:
-<ul>
-<li><strong>pandas</strong> ist eine weit verbreitete Bibliothek in Python, die leistungsstarke, benutzerfreundliche Datenstrukturen und Datenanalyse-Tools bietet.</li>
-<li>Mit <code>import pandas as pd</code> importieren wir die Bibliothek und geben ihr das Alias <code>pd</code>, um den Code kürzer und lesbarer zu machen.</li>
-</ul></li>
-<li><strong>Laden der Daten aus einer CSV-Datei</strong>:
-<ul>
-<li><strong><code>pd.read_csv</code></strong>: Diese Methode wird verwendet, um eine CSV-Datei in einen pandas DataFrame zu laden.</li>
-<li><strong>URL der CSV-Datei</strong>: <code>"https://raw.githubusercontent.com/kirenz/datasets/master/gapminder.csv"</code> ist die URL der CSV-Datei, die die Daten enthält. Die Methode kann Daten direkt von einer URL laden, ohne dass die Datei lokal gespeichert werden muss.</li>
-<li><strong><code>df</code></strong>: Der resultierende DataFrame wird in der Variablen <code>df</code> gespeichert. Ein DataFrame ist eine tabellarische Datenstruktur, die sowohl Zeilen- als auch Spaltenbeschriftungen hat, ähnlich wie eine Tabelle in einer Datenbank oder ein Datenblatt in Excel.</li>
-</ul></li>
+<li>Klicken Sie in pgAdmin4 mit der rechten Maustaste auf den <code>local-connection</code> Server in der linken Seitenleiste.</li>
+<li>Navigieren Sie zu: Create &gt; Database.</li>
+<li>Geben Sie im Reiter “General” <code>db_data</code> als Datenbanknamen ein.</li>
+<li>Klicken Sie auf <code>Save</code>, um die Datenbank zu erstellen.</li>
 </ol>
-</div>
-</div>
-</div></li>
-<li><p>Schreiben Sie den DataFrame nach PostgreSQL: Verwenden Sie die Methode <code>to_sql</code>, um die Daten in eine neue Tabelle namens <code>gapminder</code> zu schreiben.</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>df.to_sql(<span class="st">'gapminder'</span>, engine, if_exists<span class="op">=</span><span class="st">'replace'</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout callout-style-simple callout-note callout-titled" title="Erklärung des Codes">
+</section>
+<section id="eine-tabelle-erstellen" class="level2" data-number="23.3">
+<h2 data-number="23.3" class="anchored" data-anchor-id="eine-tabelle-erstellen"><span class="header-section-number">23.3</span> Eine Tabelle erstellen</h2>
+<p>Erstellen Sie eine Tabelle, um Daten zu Marketingkampagnen zu speichern.</p>
+<div class="callout callout-style-simple callout-note callout-titled" title="Tabellendefinition">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Erklärung des Codes
+Tabellendefinition
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Der Python-Code verwendet die Methode <code>to_sql</code> von pandas, um einen DataFrame in eine SQL-Datenbank zu schreiben:</p>
+<p>Spalten in der Marketingkampagnen-Tabelle: - id: Eine eindeutige Kennung für jede Kampagne, automatisch inkrementiert. - name: Der Name der Marketingkampagne. - start_date &amp; end_date: Der Zeitraum der Kampagne. - budget: Das der Kampagne zugewiesene Budget. - channel: Der für die Kampagne verwendete Kanal (z.B. “E-Mail”, “Soziale Medien”, “TV”).</p>
+</div>
+</div>
+</div>
 <ol type="1">
-<li><strong><code>df.to_sql</code></strong>:
-<ul>
-<li>Diese Methode schreibt den DataFrame <code>df</code> in eine SQL-Datenbank.</li>
-</ul></li>
-<li><strong><code>'gapminder'</code></strong>:
-<ul>
-<li>Dies ist der Name der Tabelle, in die die Daten geschrieben werden. In diesem Fall wird die Tabelle <code>gapminder</code> genannt.</li>
-</ul></li>
-<li><strong><code>engine</code></strong>:
-<ul>
-<li>Dies ist die SQLAlchemy-Engine, die die Verbindung zur Datenbank darstellt. Die Engine enthält alle notwendigen Informationen, um sich mit der Datenbank zu verbinden und Befehle auszuführen.</li>
-</ul></li>
-<li><strong><code>if_exists='replace'</code></strong>:
-<ul>
-<li>Diese Option gibt an, was geschehen soll, wenn die Tabelle <code>gapminder</code> bereits in der Datenbank existiert.</li>
-<li><strong><code>replace</code></strong>: Diese Option sorgt dafür, dass die vorhandene Tabelle gelöscht und durch die neue Tabelle ersetzt wird, die aus dem DataFrame <code>df</code> erstellt wird.</li>
-</ul></li>
+<li>Navigieren Sie zur <code>db_data</code> Datenbank.</li>
+<li>Öffnen Sie das Abfragewerkzeug unter Tools &gt; Query Tool.</li>
+<li>Geben Sie den folgenden SQL-Befehl ein, um die <code>campaigns</code> Tabelle zu erstellen:</li>
 </ol>
-</div>
-</div>
-</div>
-<p>Dies sollte als Ergebnis <code>704</code> ausgeben (die Anzahl der Zeilen, die in die neue Tabelle geschrieben wurden.).</p></li>
-<li><p>Überprüfen Sie die Tabelle in der Datenbank: Führen Sie eine Abfrage in der Datenbank aus, um zu bestätigen, dass die Tabelle existiert.</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> engine.<span class="ex">connect</span>() <span class="im">as</span> connection:</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>      tables <span class="op">=</span> connection.execute(sa.text(<span class="st">"SELECT table_name FROM information_schema.tables WHERE table_schema='public'"</span>))</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>      <span class="cf">for</span> table <span class="kw">in</span> tables:</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>         <span class="bu">print</span>(table[<span class="dv">0</span>])</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout callout-style-simple callout-note callout-titled" title="Erklärung des Codes">
+<div class="sourceCode" id="cb1"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">CREATE</span> <span class="kw">TABLE</span> campaigns (</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">id</span> BIGSERIAL <span class="kw">PRIMARY</span> <span class="kw">KEY</span>,</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    name <span class="dt">VARCHAR</span>(<span class="dv">255</span>) <span class="kw">NOT</span> <span class="kw">NULL</span>,</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    start_date <span class="dt">DATE</span>,</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    end_date <span class="dt">DATE</span>,</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    budget <span class="dt">DECIMAL</span>(<span class="dv">10</span>, <span class="dv">2</span>),</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    channel <span class="dt">VARCHAR</span>(<span class="dv">255</span>)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>);</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout callout-style-simple callout-note callout-titled" title="Tabellendefinition Erklärung">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Erklärung des Codes
+Tabellendefinition Erklärung
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Der Code öffnet eine Verbindung zu einer SQL-Datenbank mithilfe der SQLAlchemy-Engine.</p>
+<p>Der obige SQL-Befehl erstellt eine neue Tabelle namens <code>campaigns</code>. Hier ist eine Aufschlüsselung der einzelnen Spaltendefinitionen:</p>
 <ul>
-<li>Innerhalb des <code>with</code>-Blocks wird sichergestellt, dass die Verbindung nach Abschluss des Blocks automatisch geschlossen wird.</li>
-<li>Der Befehl <code>connection.execute</code> führt eine SQL-Abfrage aus, die die Namen aller Tabellen im <code>public</code>-Schema der Datenbank aus der <code>information_schema.tables</code>-Tabelle abruft.</li>
-<li>Diese Abfrage gibt eine Liste der Tabellennamen zurück.</li>
-<li>Diese Liste wird in einer Schleife durchlaufen.</li>
-<li>Innerhalb der Schleife wird der Name jeder Tabelle mit <code>print(table[0])</code> auf der Konsole ausgegeben.</li>
+<li><strong>id</strong>: Eine Spalte namens <code>id</code>, die den Datentyp <code>BIGSERIAL</code> verwendet, was ein automatisch inkrementierender Integer ist und sich für einen Primärschlüssel eignet.</li>
+<li><strong>name</strong>: Eine Spalte zur Speicherung von Kampagnennamen als Text, definiert, um eine Zeichenfolge von bis zu 255 Zeichen zu halten. Die <code>NOT NULL</code>-Einschränkung stellt sicher, dass jede Zeile einen Namen haben muss.</li>
+<li><strong>start_date</strong> und <strong>end_date</strong>: Diese Spalten speichern die Start- und Enddaten der Kampagnen jeweils im <code>DATE</code>-Datentyp.</li>
+<li><strong>budget</strong>: Eine Spalte für das mit jeder Kampagne verbundene Budget, die <code>DECIMAL(10, 2)</code> verwendet, um bis zu 10 Ziffern mit 2 Dezimalstellen zu ermöglichen.</li>
+<li><strong>channel</strong>: Eine Spalte, um das für die Kampagne verwendete Medium anzugeben, die Zeichenfolgen von bis zu 255 Zeichen speichern kann.</li>
 </ul>
 </div>
 </div>
 </div>
-<p>Dies sollte ausgeben: <code>gapminder</code> (d.h. die Tabelle gapminder ist in der Datenbank enthalten)</p></li>
-<li><p>Optional: Entfernen Sie die Tabelle: Wenn Sie die Tabelle aus der Datenbank löschen möchten:</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>sql <span class="op">=</span> sa.text(<span class="st">"DROP TABLE IF EXISTS gapminder"</span>)</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> engine.<span class="ex">connect</span>() <span class="im">as</span> connection:</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>      connection.execute(sql)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout callout-style-simple callout-note callout-titled" title="Erklärung des Codes">
+<ol start="4" type="1">
+<li>Führen Sie das Skript aus, indem Sie auf die ▶️ Schaltfläche klicken (oder F5 drücken).</li>
+<li>Um die Tabelle zu überprüfen, erweitern Sie “Schemas” &gt; “Tables” &gt; “campaigns” &gt; “Columns” in der Datenbank <code>db_data</code>.</li>
+</ol>
+</section>
+<section id="werte-in-die-tabelle-einfügen" class="level2" data-number="23.4">
+<h2 data-number="23.4" class="anchored" data-anchor-id="werte-in-die-tabelle-einfügen"><span class="header-section-number">23.4</span> Werte in die Tabelle einfügen</h2>
+<p>Füllen Sie die Tabelle mit Beispieldaten:</p>
+<ol type="1">
+<li>Verwenden Sie erneut das Abfragewerkzeug, um die folgende Einfügeanweisung auszuführen:</li>
+</ol>
+<div class="sourceCode" id="cb2"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">INSERT</span> <span class="kw">INTO</span> campaigns (name, start_date, end_date, budget, channel) <span class="kw">VALUES</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>(<span class="st">'Winter Sale'</span>, <span class="st">'2023-12-01'</span>, <span class="st">'2023-12-31'</span>, <span class="fl">5000.00</span>, <span class="st">'Email'</span>),</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>(<span class="st">'Summer Festival'</span>, <span class="st">'2023-06-01'</span>, <span class="st">'2023-06-15'</span>, <span class="fl">10000.00</span>, <span class="st">'Social Media'</span>),</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>(<span class="st">'Back to School'</span>, <span class="st">'2023-08-01'</span>, <span class="st">'2023-08-20'</span>, <span class="fl">7500.00</span>, <span class="st">'TV'</span>);</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout callout-style-simple callout-note callout-titled" title="Insert Statement Erklärung">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Erklärung des Codes
+Insert Statement Erklärung
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Der Code definiert eine SQL-Abfrage, die überprüft, ob die Tabelle <code>gapminder</code> existiert, und sie löscht, falls sie vorhanden ist. Diese Abfrage wird in der Variablen <code>sql</code> gespeichert.</p>
+<p>Dieser SQL-Befehl fügt Daten in die <code>campaigns</code> Tabelle ein. Jede Zeile von Werten entspricht einer anderen Marketingkampagne:</p>
 <ul>
-<li>Ein <code>with</code>-Block wird verwendet, um eine Verbindung zur SQL-Datenbank mithilfe der SQLAlchemy-Engine zu öffnen. Der <code>with</code>-Block stellt sicher, dass die Verbindung nach Abschluss des Blocks automatisch geschlossen wird.</li>
-<li>Innerhalb des <code>with</code>-Blocks wird die SQL-Abfrage <code>sql</code> mit dem Befehl <code>connection.execute(sql)</code> ausgeführt.</li>
-<li>Diese Ausführung löscht die Tabelle <code>gapminder</code>, falls sie in der Datenbank existiert.</li>
+<li><strong>Erste Zeile</strong>: Fügt eine Kampagne namens “Winter Sale” ein, die vom 1. bis 31. Dezember 2023 läuft, mit einem Budget von 5000 Dollar und dem Kanal “Email”.</li>
+<li><strong>Zweite Zeile</strong>: Fügt “Summer Festival” ein, eine kürzere Kampagne vom 1. bis 15. Juni 2023, mit einem höheren Budget von 10000 Dollar und nutzt “Social Media”.</li>
+<li><strong>Dritte Zeile</strong>: Fügt die “Back to School”-Kampagne vom 1. bis 20. August 2023 hinzu, mit einem Budget von 7500 Dollar, vermarktet durch “TV”.</li>
 </ul>
+<p>Jeder Satz von Werten ist in Klammern eingeschlossen und durch Kommata getrennt, um verschiedene Kampagnen zu unterscheiden.</p>
 </div>
 </div>
-</div></li>
+</div>
+<ol start="2" type="1">
+<li>Führen Sie das Skript aus, indem Sie auf die ▶️ Schaltfläche klicken.</li>
 </ol>
-<p>Sie sollten die Tabelle nun auch in <a href="../sql/sql-postgresql.html">PgAdmin4</a> sehen.</p>
+</section>
+<section id="werte-abrufen" class="level2" data-number="23.5">
+<h2 data-number="23.5" class="anchored" data-anchor-id="werte-abrufen"><span class="header-section-number">23.5</span> Werte abrufen</h2>
+<p>Schließlich können Sie die Daten in der <code>campaigns</code> Tabelle anzeigen:</p>
+<ul>
+<li>Öffnen Sie eine neue Sitzung im Abfragewerkzeug und führen Sie eine SELECT-Abfrage aus:</li>
+</ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> <span class="op">*</span> </span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> campaigns;</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout callout-style-simple callout-note callout-titled" title="SELECT Abfrage Erklärung">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+SELECT Abfrage Erklärung
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Dieser SQL-Befehl ruft alle Spalten aus allen Zeilen der <code>campaigns</code> Tabelle ab. Er ist nützlich, um alle Daten zu sehen, die in die Tabelle eingegeben wurden, um sicherzustellen, dass die Einträge korrekt sind, und um weitere Datenanalysen oder Berichte zu erleichtern.</p>
+</div>
+</div>
+</div>
+<p>Dies sollte folgendes Ergebnis ausgeben:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 2%">
+<col style="width: 27%">
+<col style="width: 9%">
+<col style="width: 42%">
+<col style="width: 7%">
+<col style="width: 11%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>id</th>
+<th>name</th>
+<th>start_date</th>
+<th>end_date</th>
+<th>budget</th>
+<th>channel</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Winter Sale</td>
+<td>2023-12-01</td>
+<td>2023-12-31</td>
+<td>5000.00</td>
+<td>Email</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Summer Festival</td>
+<td>2023-06-01</td>
+<td>2023-06-15</td>
+<td>10000.00</td>
+<td>Social Media</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Back to School</td>
+<td>2023-08-01</td>
+<td>2023-08-20</td>
+<td>7500.00</td>
+<td>TV</td>
+</tr>
+</tbody>
+</table>
 
 
 </section>
@@ -1017,13 +1100,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../sql/sql-postgresql.html" class="pagination-link" aria-label="PostgreSQL">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">PostgreSQL</span></span>
+      <a href="../postgres/postgres-installation.html" class="pagination-link" aria-label="Installation">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Installation</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../nosql/nosql.html" class="pagination-link" aria-label="NoSQL Datenbanken">
-        <span class="nav-page-text">NoSQL Datenbanken</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../postgres/postgres-python.html" class="pagination-link" aria-label="Python-Integration">
+        <span class="nav-page-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Python-Integration</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
