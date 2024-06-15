@@ -1,7 +1,0 @@
-# Datenbanken
-
-Daten kommen in verschiedenen Formaten vor – von strukturierten Daten in relationalen Datenbankmanagementsystemen (RDBMS) bis hin zu locker typisierten, halbstrukturierten und unstrukturierten Daten wie Textdokumenten, E-Mails, Videos und Audiodaten, die in NoSQL-Datenbanken gespeichert werden können.
-
-In diesem Tutorial behandeln wir die Einrichtung der weit verbreiteten relationalen Datenbanksysteme MySQL und PostgreSQL und deren Nutzung mit SQL und Python.
-
-Zusätzlich richten wir die NoSQL-Datenbank MongoDB ein und lernen einige grundlegende Funktionen kennen.
