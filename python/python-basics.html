@@ -168,7 +168,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../first-steps/python-installation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Python Installation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Python</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -180,7 +180,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../first-steps/anaconda-installation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Anaconda installieren</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Anaconda</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -221,7 +221,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../python/python-workspace.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Arbeitsbereich einrichten</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Arbeitsbereich</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -396,7 +396,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../mongodb/mongodb-basics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Grundlegende Nutzung</span></span></a>
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Basics</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -491,14 +491,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p>Sie haben die Möglichkeit, den gesamten Inhalt dieses Kapitels als Notebook herunterzuladen. Nach dem Herunterladen können Sie es in Ihrem <code>code</code> Ordner speichern und das Notebook in Jupyter öffnen:</p>
-<ul>
-<li><a href="../code/python-basics.ipynb" download="python-basics.ipynb">⬇️ Juypter Notebook herunterladen</a></li>
-</ul>
+<p><a href="../code/python-basics.ipynb" download="python-basics.ipynb">⬇️ Juypter Notebook herunterladen</a></p>
 <section id="bibliotheken-importieren" class="level2" data-number="10.1">
 <h2 data-number="10.1" class="anchored" data-anchor-id="bibliotheken-importieren"><span class="header-section-number">10.1</span> Bibliotheken importieren</h2>
 <p>Das Importieren von Bibliotheken ist unerlässlich, um zusätzliche Python-Funktionen nutzen zu können. Wir importieren sie am Anfang der Datei, um Übersichtlichkeit und Effizienz zu gewährleisten. Ein Alias (ein kurzer Name) erleichtert die Referenzierung im gesamten Code.</p>
 <p>Fügen Sie den folgenden Code in eine neue Codezelle direkt unter Ihrem Titel ein und führen Sie ihn aus:</p>
-<div id="d40f3781" class="cell" data-execution_count="1">
+<div id="5e8420d1" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Bibliotheken importieren (am Anfang)</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -514,7 +512,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Variablen werden verwendet, um verschiedene Arten von Daten in Python zu speichern. Datentypen definieren die Natur dieser Daten und beeinflussen, wie sie verwendet werden können.</p>
 <p>Fügen Sie eine neue Codezelle hinzu, kopieren Sie dann den unten angegebenen Code in diese Zelle und führen Sie die Zelle anschließend aus.</p>
 <p>Beispielcode:</p>
-<div id="52237bd5" class="cell" data-execution_count="2">
+<div id="c357d114" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Variablen zuweisen (mit beschreibenden Namen)</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="st">"Alice"</span>  <span class="co"># String für den Namen einer Person</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>age <span class="op">=</span> <span class="dv">30</span>  <span class="co"># Integer für das Alter</span></span>
@@ -531,7 +529,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><code>person</code> ist ein <strong>Dictionary (Wörterbuch)</strong>, das aus Schlüssel-Wert-Paaren besteht und mehrere Attribute speichern kann.</li>
 </ul>
 <p>Um die in diesen Variablen gespeicherten Werte zu überprüfen, können Sie die <code>print</code>-Funktion verwenden:</p>
-<div id="a90e2ac6" class="cell" data-execution_count="3">
+<div id="bffc056c" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(name)  <span class="co"># Ausgabe: Alice</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(age)  <span class="co"># Ausgabe: 30</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(numbers)  <span class="co"># Ausgabe: [1, 2, 3]</span></span>
@@ -548,13 +546,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 data-number="10.4" class="anchored" data-anchor-id="grundlegende-operatoren-und-berechnungen"><span class="header-section-number">10.4</span> Grundlegende Operatoren und Berechnungen</h2>
 <p>Operatoren ermöglichen Berechnungen, Vergleiche und logische Operationen.</p>
 <p>Beispielcode:</p>
-<div id="b8922846" class="cell" data-execution_count="4">
+<div id="64d4c160" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Variablen erzeugen</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>length <span class="op">=</span> <span class="dv">10</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>width <span class="op">=</span> <span class="dv">5</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Berechnung der Fläche und des Umfangs:</p>
-<div id="3ad996af" class="cell" data-execution_count="5">
+<div id="6da63b5c" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>area <span class="op">=</span> length <span class="op">*</span> width  <span class="co"># Multiplikation</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>perimeter <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> (length <span class="op">+</span> width)  <span class="co"># Addition und Multiplikation</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -569,7 +567,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><code>perimeter</code> wird berechnet, indem <code>length</code> und <code>width</code> addiert und dann mit 2 multipliziert werden.</li>
 </ul>
 <p>Vergleichsoperationen:</p>
-<div id="567b48d4" class="cell" data-execution_count="6">
+<div id="b1982d90" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>is_square <span class="op">=</span> length <span class="op">==</span> width  <span class="co"># Überprüfen, ob Länge und Breite gleich sind</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>is_square</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -581,7 +579,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><code>is_square</code> überprüft, ob die beiden Seiten gleich lang sind.</li>
 </ul>
 <p>Logische Operationen:</p>
-<div id="ddb56628" class="cell" data-execution_count="7">
+<div id="a3160286" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>is_large_rectangle <span class="op">=</span> (area <span class="op">&gt;</span> <span class="dv">20</span>) <span class="kw">and</span> (perimeter <span class="op">&gt;</span> <span class="dv">10</span>)  <span class="co"># Logisches UND</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>is_large_rectangle</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -597,7 +595,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 data-number="10.5" class="anchored" data-anchor-id="arbeiten-mit-dataframes"><span class="header-section-number">10.5</span> Arbeiten mit DataFrames</h2>
 <p>Ein DataFrame ist eine zweidimensionale tabellarische Datenstruktur, die von Pandas bereitgestellt wird. Es ermöglicht eine effiziente Datenmanipulation, ähnlich wie ein Tabellenblatt oder eine SQL-Tabelle.</p>
 <p>Hier ein Beispiel. Wir bereiten zunächst die Daten vor:</p>
-<div id="504a29ef" class="cell" data-execution_count="8">
+<div id="b9245d10" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> { </span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>         <span class="st">"Numbers"</span>: [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>], </span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>         <span class="st">"Squares"</span>: [<span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">9</span>, <span class="dv">16</span>, <span class="dv">25</span>]</span>
@@ -607,14 +605,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Das Wörterbuch <code>data</code> enthält zwei Listen: Zahlen und deren Quadrate.</li>
 </ul>
 <p>Erstellen eines DataFrame mit Pandas:</p>
-<div id="63bf92b2" class="cell" data-execution_count="9">
+<div id="233a0b14" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(data)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>Der DataFrame <code>df</code> wird aus diesem Wörterbuch mit der Funktion <code>pd.DataFrame</code> erstellt, die die Daten in Zeilen und Spalten organisiert.</li>
 </ul>
 <p>Den DataFrame inspizieren (dafür verwenden wir nicht <code>print()</code>)</p>
-<div id="6c85fe71" class="cell" data-execution_count="10">
+<div id="0cec4c0f" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="10">
 <div>
@@ -669,7 +667,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Eine Methode ist eine Funktion, die mit einem Objekt (wie einem DataFrame, einer Liste oder einem String) verknüpft ist und über die Punktnotation (<code>.</code>) aufgerufen wird. Dies erleichtert die Manipulation des Objekts und das Abrufen von Informationen.</p>
 <p>Beispielcode:</p>
 <p><code>df.head()</code> ist eine Methode, welche die ersten paar Zeilen eines DataFrames anzeigt, um die Daten zu zeigen:</p>
-<div id="57f46921" class="cell" data-execution_count="11">
+<div id="9204663b" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>df.head() </span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="11">
 <div>
@@ -716,7 +714,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p><code>df.describe()</code> liefert zusammenfassende Statistiken wie Mittelwert, Anzahl und Standardabweichung. Zusätzlich verwenden wir die Methode <code>.round(2)</code>, um die Werte auf zwei Dezimalstellen zu runden:</p>
-<div id="8e0991f7" class="cell" data-execution_count="12">
+<div id="78e3a901" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>df.describe().<span class="bu">round</span>(<span class="dv">2</span>) </span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="12">
 <div>
@@ -788,7 +786,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 data-number="10.7" class="anchored" data-anchor-id="daten-visualisieren"><span class="header-section-number">10.7</span> Daten visualisieren</h2>
 <p>Nachdem Sie die Struktur eines DataFrames verstanden haben, können Sie dessen Daten mit Altair visualisieren.</p>
 <p>Beispielcode:</p>
-<div id="20f2388b" class="cell" data-execution_count="13">
+<div id="0d65fcea" class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Das Diagramm erstellen</span></span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>alt.Chart(df).mark_point().encode(</span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span><span class="st">'Numbers'</span>,</span>
@@ -797,23 +795,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output cell-output-display" data-execution_count="13">
 
 <style>
-  #altair-viz-2c3ef481190a4bc9bfd0375314dfdfbf.vega-embed {
+  #altair-viz-58d3b9b2319e426c89fd8c35eb523bbc.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-2c3ef481190a4bc9bfd0375314dfdfbf.vega-embed details,
-  #altair-viz-2c3ef481190a4bc9bfd0375314dfdfbf.vega-embed details summary {
+  #altair-viz-58d3b9b2319e426c89fd8c35eb523bbc.vega-embed details,
+  #altair-viz-58d3b9b2319e426c89fd8c35eb523bbc.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-2c3ef481190a4bc9bfd0375314dfdfbf"></div>
+<div id="altair-viz-58d3b9b2319e426c89fd8c35eb523bbc"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-2c3ef481190a4bc9bfd0375314dfdfbf") {
-      outputDiv = document.getElementById("altair-viz-2c3ef481190a4bc9bfd0375314dfdfbf");
+    if (outputDiv.id !== "altair-viz-58d3b9b2319e426c89fd8c35eb523bbc") {
+      outputDiv = document.getElementById("altair-viz-58d3b9b2319e426c89fd8c35eb523bbc");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -1291,8 +1289,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../python/python-workspace.html" class="pagination-link" aria-label="Arbeitsbereich einrichten">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Arbeitsbereich einrichten</span></span>
+      <a href="../python/python-workspace.html" class="pagination-link" aria-label="Arbeitsbereich">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Arbeitsbereich</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

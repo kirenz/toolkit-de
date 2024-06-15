@@ -55,45 +55,45 @@
   {
     "objectID": "first-steps/python-installation.html",
     "href": "first-steps/python-installation.html",
-    "title": "2  Python Installation",
+    "title": "2  Python",
     "section": "",
     "text": "2.1 Installationsschritte",
     "crumbs": [
       "Erste Schritte",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Python Installation</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Python</span>"
     ]
   },
   {
     "objectID": "first-steps/python-installation.html#installationsschritte",
     "href": "first-steps/python-installation.html#installationsschritte",
-    "title": "2  Python Installation",
+    "title": "2  Python",
     "section": "",
     "text": "2.1.1 Windows-Nutzer\n\nInstallationsprogramm herunterladen: Navigieren Sie zur Python-Website und laden Sie die neueste Version für Ihre Windows-Version herunter (normalerweise Windows-Installer 64-Bit).\nInstallationsprogramm ausführen: Klicken Sie mit der rechten Maustaste auf das heruntergeladene Installationsprogramm und wählen Sie “Als Administrator ausführen”. Stellen Sie sicher, dass Sie das Kästchen “Add Python 3.x to PATH” am unteren Rand des Installationsfensters markieren, um sicherzustellen, dass Python zu den Umgebungsvariablen Ihres Systems hinzugefügt wird (Dies ist entscheidend, damit Python von jedem Verzeichnis im System aus über die Kommandozeile aufgerufen werden kann. Ohne diese Einstellung müssten Sie den vollständigen Pfad zur Python-Installation angeben, um Python auszuführen, was unpraktisch und fehleranfällig ist).\nAnpassung der Installation (optional): Sie können die Installation anpassen, indem Sie auf “Customize installation” klicken. Dies ermöglicht es Ihnen, spezifische Funktionen wie Dokumentation, pip, Tests usw. auszuwählen.\nInstallation starten: Klicken Sie auf “Install Now”, um den Installationsvorgang zu starten.\n\n\n\n2.1.2 macOS-Nutzer\n\nInstallationsprogramm herunterladen: Navigieren Sie zur Python-Website und laden Sie die neueste Version herunter.\nPython installieren: Öffnen Sie die heruntergeladene .pkg-Datei und folgen Sie den Anweisungen zur Installation von Python. Der Installationsassistent führt Sie durch die notwendigen Schritte.",
     "crumbs": [
       "Erste Schritte",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Python Installation</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Python</span>"
     ]
   },
   {
     "objectID": "first-steps/python-installation.html#überprüfung-der-installation",
     "href": "first-steps/python-installation.html#überprüfung-der-installation",
-    "title": "2  Python Installation",
+    "title": "2  Python",
     "section": "2.2 Überprüfung der Installation",
     "text": "2.2 Überprüfung der Installation\nNach der Installation überprüfen Sie, ob Python korrekt installiert wurde, indem Sie eine Kommandozeile öffnen (Terminal auf macOS, Eingabeaufforderung oder PowerShell auf Windows) und eingeben:\npython --version\nDieser Befehl sollte die Version von Python anzeigen, die Sie installiert haben.\n\n\n\n\n\n\nUnterschiedliche Python-Version\n\n\n\n\n\nWenn Sie bereits Python oder eine Python-Distribution wie Anaconda installiert haben, kann das Ausführen von python --version in Ihrem Terminal eine andere Python-Version anzeigen als die, die Sie gerade installiert haben. Diese Abweichung tritt auf, weil Ihr System mehrere Python-Installationen gleichzeitig verwalten kann. Der Terminalbefehl wählt die Version, die zuerst in der PATH-Variable des Systems erscheint, was möglicherweise nicht die zuletzt installierte Version ist.\nDies ist eine gängige Situation und kein Grund zur Sorge. Wir werden dieses Thema in einem späteren Kapitel erneut behandeln und besprechen, wie Sie mehrere Python-Versionen effektiv verwalten können, um sicherzustellen, dass Sie verschiedene Python-Umgebungen je nach Bedarf für Ihre Projekte auswählen und verwenden können.",
     "crumbs": [
       "Erste Schritte",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Python Installation</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Python</span>"
     ]
   },
   {
     "objectID": "first-steps/python-installation.html#fehlerbehebung-bei-häufigen-problemen",
     "href": "first-steps/python-installation.html#fehlerbehebung-bei-häufigen-problemen",
-    "title": "2  Python Installation",
+    "title": "2  Python",
     "section": "2.3 Fehlerbehebung bei häufigen Problemen",
     "text": "2.3 Fehlerbehebung bei häufigen Problemen\n\nPython nicht erkannt: Wenn die Kommandozeile den Befehl python nicht erkennt, liegt es möglicherweise daran, dass Python nicht zu Ihrem PATH hinzugefügt wurde. Überprüfen Sie die Installationsschritte noch einmal, um sicherzustellen, dass Sie die Option ausgewählt haben, Python zu Ihrem PATH hinzuzufügen.\nBerechtigungsfehler während der Installation: Dies tritt normalerweise unter Windows auf und kann behoben werden, indem das Installationsprogramm als Administrator ausgeführt wird.",
     "crumbs": [
       "Erste Schritte",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Python Installation</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Python</span>"
     ]
   },
   {
@@ -154,56 +154,56 @@
   {
     "objectID": "first-steps/anaconda-installation.html",
     "href": "first-steps/anaconda-installation.html",
-    "title": "4  Anaconda installieren",
+    "title": "4  Anaconda",
     "section": "",
     "text": "4.1 Installer herunterladen",
     "crumbs": [
       "Erste Schritte",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Anaconda installieren</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Anaconda</span>"
     ]
   },
   {
     "objectID": "first-steps/anaconda-installation.html#installer-herunterladen",
     "href": "first-steps/anaconda-installation.html#installer-herunterladen",
-    "title": "4  Anaconda installieren",
+    "title": "4  Anaconda",
     "section": "",
     "text": "Gehen Sie zur Anaconda-Download-Seite.\nWählen Sie Ihr Betriebssystem aus (für macOS wählen Sie den entsprechenden grafischen Installer - wenn Ihr Gerät einen Apple-Chip hat, wählen Sie die passende Ausführung - Apple Silicon. Andernfalls den Intel chip).\nLaden Sie den Installer herunter. Achten Sie darauf, den grafischen Installer herunterzuladen.",
     "crumbs": [
       "Erste Schritte",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Anaconda installieren</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Anaconda</span>"
     ]
   },
   {
     "objectID": "first-steps/anaconda-installation.html#installationsanleitung",
     "href": "first-steps/anaconda-installation.html#installationsanleitung",
-    "title": "4  Anaconda installieren",
+    "title": "4  Anaconda",
     "section": "4.2 Installationsanleitung",
     "text": "4.2 Installationsanleitung\n\n4.2.1 Windows\n\nKlicken Sie mit der rechten Maustaste auf den heruntergeladenen Installer und wählen Sie “Als Administrator ausführen”.\nKlicken Sie auf “Weiter”, um durch die Setup-Bildschirme zu navigieren.\nStimmen Sie den Geschäftsbedingungen zu.\nWählen Sie den Installationstyp:\n\n“Nur für mich” (empfohlen) oder “Alle Benutzer”.\n\nWählen Sie den Zielordner für die Installation.\nWichtiger Schritt: Aktivieren Sie “Anaconda zu meiner PATH-Umgebungsvariablen hinzufügen” (empfohlen).\nAktivieren Sie “Anaconda als meine Standard-Python-Version registrieren” (empfohlen).\nKlicken Sie auf “Installieren” und warten Sie, bis die Installation abgeschlossen ist.\nKlicken Sie auf “Weiter” und dann auf “Fertig stellen”, um die Installation abzuschließen.\n\n\n\n4.2.2 macOS\n\nSuchen Sie die heruntergeladene .pkg-Datei und doppelklicken Sie darauf, um die Installation zu starten.\nFolgen Sie den Anweisungen, um die Installation abzuschließen:\n\nLesen und akzeptieren Sie die Lizenzvereinbarung.\nWählen Sie das Ziellaufwerk für die Installation aus (untere Option auswählen und zu Ihrem Ihrem Home-Verzeichnis navigieren - in meinem Fall /Users/jankirenz, da mein Benutzerkonto jankirenz heißt).\nKlicken Sie auf “Installieren”.\n\nSobald die Installation abgeschlossen ist, schließen Sie den Installer.\n\n\n\n4.2.3 Linux\n\nÖffnen Sie ein Terminalfenster und navigieren Sie zu dem Verzeichnis, in dem der .sh-Installer heruntergeladen wurde.\nFühren Sie den Installer mit folgendem Befehl aus:\nbash Anaconda3-&lt;ihre-version&gt;-Linux-x86_64.sh\nFolgen Sie den Anweisungen, um die Lizenzvereinbarung zu akzeptieren und den Installationsort auszuwählen.\nDer Installer wird fragen, ob Anaconda in Ihrer .bashrc-Datei initialisiert werden soll. Geben Sie “ja” ein.\nSchließen Sie das Terminal und öffnen Sie ein neues, um sicherzustellen, dass Anaconda richtig initialisiert ist.",
     "crumbs": [
       "Erste Schritte",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Anaconda installieren</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Anaconda</span>"
     ]
   },
   {
     "objectID": "first-steps/anaconda-installation.html#installation-überprüfen",
     "href": "first-steps/anaconda-installation.html#installation-überprüfen",
-    "title": "4  Anaconda installieren",
+    "title": "4  Anaconda",
     "section": "4.3 Installation überprüfen",
     "text": "4.3 Installation überprüfen\nUm zu bestätigen, dass Anaconda erfolgreich installiert wurde: 1. Öffnen Sie ein Eingabeaufforderungsfenster (Windows) oder ein Terminal (macOS/Linux). 2. Führen Sie diesen Befehl aus, um zu überprüfen, ob Anaconda erkannt wird: bash    conda --version 3. Wenn Anaconda korrekt installiert ist, wird die Version im Terminal angezeigt.",
     "crumbs": [
       "Erste Schritte",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Anaconda installieren</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Anaconda</span>"
     ]
   },
   {
     "objectID": "first-steps/anaconda-installation.html#erste-aktualisierung",
     "href": "first-steps/anaconda-installation.html#erste-aktualisierung",
-    "title": "4  Anaconda installieren",
+    "title": "4  Anaconda",
     "section": "4.4 Erste Aktualisierung",
     "text": "4.4 Erste Aktualisierung\n\nNach der Installation ist es eine gute Idee, alle Standardpakete zu aktualisieren:\nconda update --all\nFolgen Sie den Anweisungen, um die Aktualisierung abzuschließen.\n\nMit der Installation von Anaconda sind Sie bereit, Umgebungen zu erstellen, Pakete zu verwalten und mit Daten zu arbeiten.",
     "crumbs": [
       "Erste Schritte",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Anaconda installieren</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Anaconda</span>"
     ]
   },
   {
@@ -373,34 +373,34 @@
   {
     "objectID": "python/python-workspace.html",
     "href": "python/python-workspace.html",
-    "title": "9  Arbeitsbereich einrichten",
+    "title": "9  Arbeitsbereich",
     "section": "",
     "text": "9.1 Anaconda Navigator starten",
     "crumbs": [
       "Python",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Arbeitsbereich einrichten</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Arbeitsbereich</span>"
     ]
   },
   {
     "objectID": "python/python-workspace.html#anaconda-navigator-starten",
     "href": "python/python-workspace.html#anaconda-navigator-starten",
-    "title": "9  Arbeitsbereich einrichten",
+    "title": "9  Arbeitsbereich",
     "section": "",
     "text": "Anaconda Navigator starten:\n\nÖffnen Sie den Anaconda Navigator aus dem Anwendungsordner auf macOS oder dem Startmenü auf Windows.\n\nJupyter Notebook öffnen:\n\nFinden Sie im Anaconda Navigator das Jupyter Notebook und klicken Sie auf ‘Launch’, um es in Ihrem Webbrowser zu öffnen.",
     "crumbs": [
       "Python",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Arbeitsbereich einrichten</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Arbeitsbereich</span>"
     ]
   },
   {
     "objectID": "python/python-workspace.html#jupyter-notebook-einrichten",
     "href": "python/python-workspace.html#jupyter-notebook-einrichten",
-    "title": "9  Arbeitsbereich einrichten",
+    "title": "9  Arbeitsbereich",
     "section": "9.2 Jupyter Notebook einrichten",
     "text": "9.2 Jupyter Notebook einrichten\n\nNavigieren Sie in der Web-Oberfläche von Jupyter zum code-Verzeichnis (siehe die Erklärung zur Ordnerstruktur).\nKlicken Sie oben rechts auf “New” und wählen Sie “Notebook”, um ein neues Notebook zu erstellen.\nNun öffnet sich ein Fenster in welchem Sie den Kernel (eine Python-Instanz) auswählen können. Wählen Sie die eben installierte basics-Umgebung aus (siehe diese Anleitung).\nErstellen Sie in diesem Notebook eine neue Markdown-Zelle, um dem Notebook einen Titel zu geben (z.B. Python basics):\n# Python basics\nSpeichern Sie das Notebook:\n\nSpeichern Sie Ihr Notebook im code Ordner (siehe unsere Ordnerstruktur Erklärung) mit einem aussagekräftigen Namen (z.B. python-basics.ipynb).",
     "crumbs": [
       "Python",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Arbeitsbereich einrichten</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Arbeitsbereich</span>"
     ]
   },
   {
@@ -693,7 +693,18 @@
     "href": "vscode/visual-studio-code-installation.html#windows",
     "title": "15  Installation",
     "section": "",
-    "text": "Downloaden Sie den Installer:\n\nBesuchen Sie die Visual Studio Code Download-Seite.\nKlicken Sie auf die Windows-Version, um den .exe Installer herunterzuladen.\n\nFühren Sie den Installer aus:\n\nNachdem der Download abgeschlossen ist, suchen Sie die .exe Datei und doppelklicken Sie darauf, um den Installationsprozess zu starten.\nFolgen Sie den Anweisungen im Setup-Assistenten. Achten Sie darauf, die Kästchen zu aktivieren, um VS Code zum PATH hinzuzufügen und ein Desktop-Symbol zu erstellen.\n\n\n\n\n\n\n\n\nDas Hinzufügen von VS Code zu Ihrem PATH ermöglicht es Ihnen, den Editor über die Eingabeaufforderung oder das Terminal zu starten, indem Sie einfach code eingeben.\n\n\n\n\nStarten Sie Visual Studio Code:\n\nNach der Installation können Sie VS Code entweder über das Desktop-Symbol oder über das Startmenü starten.\nBeim ersten Start öffnet VS Code eine Willkommensseite, auf der Sie Ihre Umgebung anpassen, Erweiterungen installieren oder ein Projekt öffnen können.\n\n\n\n\n15.1.1 Installation auf macOS\n\nDownloaden Sie den Installer:\n\nNavigieren Sie zur Visual Studio Code Download-Seite.\nKlicken Sie auf die macOS-Version, um die .zip Datei herunterzuladen.\n\nInstallieren Sie die Anwendung:\n\nNach dem Download öffnen Sie den .zip Ordner und extrahieren die Visual Studio Code Anwendung.\nZiehen Sie die Visual Studio Code Anwendung in Ihren “Programme”-Ordner.\n\nStarten Sie Visual Studio Code:\n\nÖffnen Sie Ihren “Programme”-Ordner und doppelklicken Sie auf Visual Studio Code, um es zu starten.\nDer erste Start öffnet eine Willkommensseite, die Sie durch die erste Einrichtung, einschließlich der Installation beliebter Erweiterungen, führt.\n\nZum PATH hinzufügen:\n\nDas Hinzufügen von VS Code zu Ihrem PATH ermöglicht es Ihnen, es vom Terminal aus zu starten. Öffnen Sie dazu die Befehlspalette (Cmd+Shift+P), geben Sie ‘Shell Command: Install code command in PATH’ ein und drücken Sie Enter.\n\n\n\n\n\n\n\n\nDie Installation des code Befehls in Ihrem PATH ermöglicht es Ihnen, VS Code aus dem Terminal zu öffnen, indem Sie code . in einem beliebigen Verzeichnis eingeben, was es schnell und einfach macht, Projekte zu öffnen.\n\n\n\nBeim Starten von Visual Studio Code wird Ihnen möglicherweise eine Aufforderung angezeigt, ob Sie den Autoren der Dateien vertrauen (Workspace Trust). Wählen Sie “Ja, ich vertraue den Autoren” (diese Auswahl ermöglicht die volle Funktionalität von Visual Studio Code, sodass alle Funktionen und Erweiterungen verwendet werden können).",
+    "text": "Downloaden Sie den Installer:\n\nBesuchen Sie die Visual Studio Code Download-Seite.\nKlicken Sie auf die Windows-Version, um den .exe Installer herunterzuladen.\n\nFühren Sie den Installer aus:\n\nNachdem der Download abgeschlossen ist, suchen Sie die .exe Datei und doppelklicken Sie darauf, um den Installationsprozess zu starten.\nFolgen Sie den Anweisungen im Setup-Assistenten. Achten Sie darauf, die Kästchen zu aktivieren, um VS Code zum PATH hinzuzufügen und ein Desktop-Symbol zu erstellen.\n\n\n\n\n\n\n\n\nDas Hinzufügen von VS Code zu Ihrem PATH ermöglicht es Ihnen, den Editor über die Eingabeaufforderung oder das Terminal zu starten, indem Sie einfach code eingeben.\n\n\n\n\nStarten Sie Visual Studio Code:\n\nNach der Installation können Sie VS Code entweder über das Desktop-Symbol oder über das Startmenü starten.\nBeim ersten Start öffnet VS Code eine Willkommensseite, auf der Sie Ihre Umgebung anpassen, Erweiterungen installieren oder ein Projekt öffnen können.",
+    "crumbs": [
+      "Visual Studio Code",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Installation</span>"
+    ]
+  },
+  {
+    "objectID": "vscode/visual-studio-code-installation.html#mac",
+    "href": "vscode/visual-studio-code-installation.html#mac",
+    "title": "15  Installation",
+    "section": "15.2 Mac",
+    "text": "15.2 Mac\n\nDownloaden Sie den Installer:\n\nNavigieren Sie zur Visual Studio Code Download-Seite.\nKlicken Sie auf die macOS-Version, um die .zip Datei herunterzuladen.\n\nInstallieren Sie die Anwendung:\n\nNach dem Download öffnen Sie den .zip Ordner und extrahieren die Visual Studio Code Anwendung.\nZiehen Sie die Visual Studio Code Anwendung in Ihren “Programme”-Ordner.\n\nStarten Sie Visual Studio Code:\n\nÖffnen Sie Ihren “Programme”-Ordner und doppelklicken Sie auf Visual Studio Code, um es zu starten.\nDer erste Start öffnet eine Willkommensseite, die Sie durch die erste Einrichtung, einschließlich der Installation beliebter Erweiterungen, führt.\n\nZum PATH hinzufügen:\n\nDas Hinzufügen von VS Code zu Ihrem PATH ermöglicht es Ihnen, es vom Terminal aus zu starten. Öffnen Sie dazu die Befehlspalette (Cmd+Shift+P), geben Sie ‘Shell Command: Install code command in PATH’ ein und drücken Sie Enter.\n\n\n\n\n\n\n\n\nDie Installation des code Befehls in Ihrem PATH ermöglicht es Ihnen, VS Code aus dem Terminal zu öffnen, indem Sie code . in einem beliebigen Verzeichnis eingeben, was es schnell und einfach macht, Projekte zu öffnen.\n\n\n\nBeim Starten von Visual Studio Code wird Ihnen möglicherweise eine Aufforderung angezeigt, ob Sie den Autoren der Dateien vertrauen (Workspace Trust). Wählen Sie “Ja, ich vertraue den Autoren” (diese Auswahl ermöglicht die volle Funktionalität von Visual Studio Code, sodass alle Funktionen und Erweiterungen verwendet werden können).",
     "crumbs": [
       "Visual Studio Code",
       "<span class='chapter-number'>15</span>  <span class='chapter-title'>Installation</span>"
@@ -994,11 +1005,11 @@
     ]
   },
   {
-    "objectID": "postgres/postgres-installation.html#mac-installation",
-    "href": "postgres/postgres-installation.html#mac-installation",
+    "objectID": "postgres/postgres-installation.html#mac",
+    "href": "postgres/postgres-installation.html#mac",
     "title": "23  Installation",
-    "section": "23.2 Mac Installation",
-    "text": "23.2 Mac Installation\n\nPostgreSQL herunterladen und installieren\n\nLaden Sie PostgreSQL von dieser Website herunter.\nWählen Sie das Installationsprogramm für MacOS aus und starten Sie den Download.\nNach dem Download öffnen Sie das Installationsprogramm (dmg-Datei).\n\nInstallationsprogramm starten\n\nZiehen Sie das PostgreSQL-Symbol in den Anwendungsordner, um die Installation zu starten.\nÖffnen Sie den Anwendungsordner und starten Sie das PostgreSQL-Installationsprogramm.\n\nKomponenten auswählen\n\nWählen Sie die folgenden Komponenten aus:\n\nPostgreSQL Server\npgAdmin 4\nKommandozeilenwerkzeuge\n\nKlicken Sie auf “Next”.\n\nVerzeichnis für die Dateninstallation auswählen\n\nAkzeptieren Sie das vorgeschlagene Datenverzeichnis oder wählen Sie ein eigenes Verzeichnis und klicken Sie auf “Next”.\n\nPasswort setzen\n\nGeben Sie ein Passwort für den PostgreSQL Superuser (Postgres) ein und bestätigen Sie es.\nKlicken Sie auf “Next”.\n\nPort akzeptieren\n\nAkzeptieren Sie den standardmäßig vorgeschlagenen Port (üblicherweise 5432) und klicken Sie auf “Next”.\n\nGebietsschema setzen\n\nSetzen Sie das Gebietsschema auf das Standardgebietsschema und klicken Sie auf “Next”.\n\nInstallation abschließen\n\nÜberprüfen Sie die Einstellungen und klicken Sie auf “Next”, um die Installation zu starten.\nNach Abschluss der Installation klicken Sie auf “Finish”.",
+    "section": "23.2 Mac",
+    "text": "23.2 Mac\n\nPostgreSQL herunterladen und installieren\n\nLaden Sie PostgreSQL von dieser Website herunter.\nWählen Sie das Installationsprogramm für MacOS aus und starten Sie den Download.\nNach dem Download öffnen Sie das Installationsprogramm (dmg-Datei).\n\nInstallationsprogramm starten\n\nZiehen Sie das PostgreSQL-Symbol in den Anwendungsordner, um die Installation zu starten.\nÖffnen Sie den Anwendungsordner und starten Sie das PostgreSQL-Installationsprogramm.\n\nKomponenten auswählen\n\nWählen Sie die folgenden Komponenten aus:\n\nPostgreSQL Server\npgAdmin 4\nKommandozeilenwerkzeuge\n\nKlicken Sie auf “Next”.\n\nVerzeichnis für die Dateninstallation auswählen\n\nAkzeptieren Sie das vorgeschlagene Datenverzeichnis oder wählen Sie ein eigenes Verzeichnis und klicken Sie auf “Next”.\n\nPasswort setzen\n\nGeben Sie ein Passwort für den PostgreSQL Superuser (Postgres) ein und bestätigen Sie es.\nKlicken Sie auf “Next”.\n\nPort akzeptieren\n\nAkzeptieren Sie den standardmäßig vorgeschlagenen Port (üblicherweise 5432) und klicken Sie auf “Next”.\n\nGebietsschema setzen\n\nSetzen Sie das Gebietsschema auf das Standardgebietsschema und klicken Sie auf “Next”.\n\nInstallation abschließen\n\nÜberprüfen Sie die Einstellungen und klicken Sie auf “Next”, um die Installation zu starten.\nNach Abschluss der Installation klicken Sie auf “Finish”.",
     "crumbs": [
       "PostgreSQL",
       "<span class='chapter-number'>23</span>  <span class='chapter-title'>Installation</span>"
@@ -1203,89 +1214,89 @@
   {
     "objectID": "mongodb/mongodb-basics.html",
     "href": "mongodb/mongodb-basics.html",
-    "title": "29  Grundlegende Nutzung",
+    "title": "29  Basics",
     "section": "",
     "text": "29.1 Verbindung zur MongoDB-Instanz\nUm die MongoDB Shell zu starten und sich mit Ihrer laufenden MongoDB-Instanz zu verbinden, öffnen Sie ein Terminal und geben Sie den folgenden Befehl ein:\nWenn die Verbindung erfolgreich ist, sehen Sie die mongosh-Eingabeaufforderung:\nFalls Sie eine Fehlermeldung erhalten, stellen Sie sicher, dass MongoDB auf Ihrem System läuft.",
     "crumbs": [
       "MongoDB",
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Grundlegende Nutzung</span>"
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Basics</span>"
     ]
   },
   {
     "objectID": "mongodb/mongodb-basics.html#verbindung-zur-mongodb-instanz",
     "href": "mongodb/mongodb-basics.html#verbindung-zur-mongodb-instanz",
-    "title": "29  Grundlegende Nutzung",
+    "title": "29  Basics",
     "section": "",
     "text": "mongosh\n\ntest&gt;",
     "crumbs": [
       "MongoDB",
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Grundlegende Nutzung</span>"
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Basics</span>"
     ]
   },
   {
     "objectID": "mongodb/mongodb-basics.html#datenbanken-anzeigen",
     "href": "mongodb/mongodb-basics.html#datenbanken-anzeigen",
-    "title": "29  Grundlegende Nutzung",
+    "title": "29  Basics",
     "section": "29.2 Datenbanken anzeigen",
     "text": "29.2 Datenbanken anzeigen\nUm alle verfügbaren Datenbanken aufzulisten, verwenden Sie den folgenden Befehl:\nshow dbs\nDieser Befehl zeigt eine Liste aller Datenbanken, die auf der MongoDB-Instanz gespeichert sind.",
     "crumbs": [
       "MongoDB",
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Grundlegende Nutzung</span>"
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Basics</span>"
     ]
   },
   {
     "objectID": "mongodb/mongodb-basics.html#datenbank-auswählen-oder-erstellen",
     "href": "mongodb/mongodb-basics.html#datenbank-auswählen-oder-erstellen",
-    "title": "29  Grundlegende Nutzung",
+    "title": "29  Basics",
     "section": "29.3 Datenbank auswählen oder erstellen",
     "text": "29.3 Datenbank auswählen oder erstellen\nUm eine spezifische Datenbank auszuwählen oder zu erstellen, verwenden Sie den use-Befehl:\nuse mydatabase\nDieser Befehl wechselt zur Datenbank mydatabase. Wenn die Datenbank noch nicht existiert, wird sie erstellt.",
     "crumbs": [
       "MongoDB",
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Grundlegende Nutzung</span>"
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Basics</span>"
     ]
   },
   {
     "objectID": "mongodb/mongodb-basics.html#sammlung-collection-erstellen",
     "href": "mongodb/mongodb-basics.html#sammlung-collection-erstellen",
-    "title": "29  Grundlegende Nutzung",
+    "title": "29  Basics",
     "section": "29.4 Sammlung (Collection) erstellen",
     "text": "29.4 Sammlung (Collection) erstellen\nUm eine neue Sammlung innerhalb der aktuellen Datenbank zu erstellen, verwenden Sie den createCollection-Befehl:\ndb.createCollection(\"mycollection\")\nDieser Befehl erstellt eine neue Sammlung namens mycollection.",
     "crumbs": [
       "MongoDB",
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Grundlegende Nutzung</span>"
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Basics</span>"
     ]
   },
   {
     "objectID": "mongodb/mongodb-basics.html#dokument-einfügen",
     "href": "mongodb/mongodb-basics.html#dokument-einfügen",
-    "title": "29  Grundlegende Nutzung",
+    "title": "29  Basics",
     "section": "29.5 Dokument einfügen",
     "text": "29.5 Dokument einfügen\nUm ein Dokument in eine Sammlung einzufügen, verwenden Sie den insertOne-Befehl:\ndb.mycollection.insertOne({name: \"Jan\", age: 44})\nDieser Befehl fügt ein neues Dokument in die Sammlung mycollection ein.",
     "crumbs": [
       "MongoDB",
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Grundlegende Nutzung</span>"
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Basics</span>"
     ]
   },
   {
     "objectID": "mongodb/mongodb-basics.html#dokumente-abfragen",
     "href": "mongodb/mongodb-basics.html#dokumente-abfragen",
-    "title": "29  Grundlegende Nutzung",
+    "title": "29  Basics",
     "section": "29.6 Dokumente abfragen",
     "text": "29.6 Dokumente abfragen\nUm alle Dokumente in einer Sammlung abzufragen, verwenden Sie den find-Befehl:\ndb.mycollection.find()\nDieser Befehl gibt alle Dokumente in der Sammlung mycollection zurück.",
     "crumbs": [
       "MongoDB",
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Grundlegende Nutzung</span>"
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Basics</span>"
     ]
   },
   {
     "objectID": "mongodb/mongodb-basics.html#weitere-befehle",
     "href": "mongodb/mongodb-basics.html#weitere-befehle",
-    "title": "29  Grundlegende Nutzung",
+    "title": "29  Basics",
     "section": "29.7 Weitere Befehle",
     "text": "29.7 Weitere Befehle\n\nEin spezifisches Dokument abfragen:\ndb.mycollection.findOne({name: \"Jan\"})\nDieser Befehl gibt das erste Dokument zurück, das den angegebenen Kriterien entspricht.\nDokumente aktualisieren:\ndb.mycollection.updateOne({name: \"Jan\"}, {$set: {age: 45}})\nDieser Befehl aktualisiert das Alter von Jan auf 45.\nDokumente löschen:\ndb.mycollection.deleteOne({name: \"Jan\"})\nDieser Befehl löscht das erste Dokument, das den angegebenen Kriterien entspricht.",
     "crumbs": [
       "MongoDB",
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Grundlegende Nutzung</span>"
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Basics</span>"
     ]
   },
   {
