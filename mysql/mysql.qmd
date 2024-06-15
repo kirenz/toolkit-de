@@ -1,0 +1,5 @@
+# MySQL
+
+MySQL, das sowohl als "My S-Q-L" als auch als "My Sequel" ausgesprochen wird, ist ein relationales Datenbankverwaltungssystem (RDBMS). Dieses System wird genutzt, um Daten in relationalen Datenbanken zu verwalten. 
+
+Es verwendet die Structured Query Language (SQL) für verschiedene Aufgaben wie Datenverwaltung, Datenmanipulation und das Abfragen von Daten. MySQL ermöglicht es Benutzern, große Mengen an Daten effizient zu speichern, abzurufen und zu analysieren. Durch seine weit verbreitete Nutzung in der Industrie ist es eine Schlüsselkomponente in vielen datengetriebenen Anwendungen und Projekten.
