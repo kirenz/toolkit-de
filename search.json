@@ -1376,177 +1376,177 @@
   {
     "objectID": "github/github-setup.html",
     "href": "github/github-setup.html",
-    "title": "30  GitHub Setup",
+    "title": "30  Setup",
     "section": "",
     "text": "30.1 GitHub-Konto\nSo erstellen Sie ein GitHub-Konto:",
     "crumbs": [
       "GitHub",
-      "<span class='chapter-number'>30</span>  <span class='chapter-title'>GitHub Setup</span>"
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Setup</span>"
     ]
   },
   {
     "objectID": "github/github-setup.html#github-konto",
     "href": "github/github-setup.html#github-konto",
-    "title": "30  GitHub Setup",
+    "title": "30  Setup",
     "section": "",
     "text": "Gehen Sie zur GitHub Anmeldeseite.\nGeben Sie einen Benutzernamen, eine E-Mail-Adresse (verwenden Sie Ihre Universitäts-E-Mail, wenn Sie GitHub für akademische Zwecke nutzen) und ein Passwort ein.\nKlicken Sie auf Create an account.\nÜberprüfen Sie Ihre E-Mails auf einen Bestätigungslink von GitHub und klicken Sie darauf, um Ihre E-Mail-Adresse zu bestätigen.\nSchließen Sie die Profil-Einrichtung ab, indem Sie den Anweisungen auf dem Bildschirm folgen.\nOptional: Bewerben Sie sich für das GitHub Student Developer Pack für den Zugriff auf kostenlose Ressourcen (wie GitHub Copilot).\nOptional: Installieren Sie die Visual Studio Code GitHub-Erweiterung.",
     "crumbs": [
       "GitHub",
-      "<span class='chapter-number'>30</span>  <span class='chapter-title'>GitHub Setup</span>"
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Setup</span>"
     ]
   },
   {
     "objectID": "github/github-setup.html#github-desktop",
     "href": "github/github-setup.html#github-desktop",
-    "title": "30  GitHub Setup",
+    "title": "30  Setup",
     "section": "30.2 GitHub Desktop",
     "text": "30.2 GitHub Desktop\nGitHub Desktop bietet eine benutzerfreundliche grafische Oberfläche, um Ihre GitHub-Projekte zu verwalten, ohne Befehlszeilentools zu verwenden.\nSo richten Sie es ein:\n\nBesuchen Sie die Webseite GitHub Desktop und laden Sie die Version für Ihr Betriebssystem herunter.\nNach dem Download führen Sie das Installationsprogramm aus und folgen den Anweisungen auf dem Bildschirm, um die Installation abzuschließen.\nNach der Installation öffnen Sie GitHub Desktop und melden sich mit Ihren GitHub-Kontodaten an.\nFolgen Sie der Einführung von GitHub Desktop, um sich mit den Funktionen vertraut zu machen.\n\nIn dem nächsten Abschnitt werden Sie lernen, wie GitHub Desktop verwendet wird.",
     "crumbs": [
       "GitHub",
-      "<span class='chapter-number'>30</span>  <span class='chapter-title'>GitHub Setup</span>"
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Setup</span>"
     ]
   },
   {
     "objectID": "github/github-repo.html",
     "href": "github/github-repo.html",
-    "title": "31  GitHub-Repositories",
+    "title": "31  Repositories",
     "section": "",
     "text": "31.1 Erstellung\nMit GitHub-Repositories können Sie Ihr Projekt mit wichtigen Dateien wie einer README, .gitignore und einer Lizenz initialisieren, um Struktur und Klarheit zu schaffen.\nHier ist eine Anleitung, wie Sie dies tun können, einschließlich Erklärungen zu den einzelnen Komponenten.",
     "crumbs": [
       "GitHub",
-      "<span class='chapter-number'>31</span>  <span class='chapter-title'>GitHub-Repositories</span>"
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Repositories</span>"
     ]
   },
   {
     "objectID": "github/github-repo.html#erstellung",
     "href": "github/github-repo.html#erstellung",
-    "title": "31  GitHub-Repositories",
+    "title": "31  Repositories",
     "section": "",
     "text": "Anmelden bei GitHub\n\nÖffnen Sie GitHub in Ihrem Webbrowser.\nMelden Sie sich bei Ihrem GitHub-Konto an. Wenn Sie noch kein Konto haben, müssen Sie eines erstellen (siehe GitHub Setup).\n\nNavigieren Sie zu Ihrem Dashboard\n\nNach dem Anmelden gelangen Sie zu Ihrem GitHub-Dashboard.\n\nEin neues Repository starten\n\nKlicken Sie auf das +-Symbol in der oberen rechten Ecke der Seite und wählen Sie New Repository aus dem Dropdown-Menü.\n\nRepository-Details ausfüllen\n\nRepository template: Wir verwenden “No template”.\nRepository name: Geben Sie dem Repository den Namen hello-github (Namen sollten immer prägnant und beschreibend sein).\nDescription: Wir verzichten hier auf eine Beschreibung. Dieses Feld hilft anderen zu verstehen, worum es bei Ihrem Projekt geht.\nPublic or Private: Wählen Sie Public. Hier können Sie entscheiden, ob Ihr Repository öffentlich (für jeden sichtbar) oder privat (nur für Sie und Personen, denen Sie explizit Zugriff gewähren) sein soll.\n\nDas Repository initialisieren (Initialize this repository with:)\n\nAdd a README file: Aktivieren Sie das Kontrollkästchen “Initialize this repository with a README”, um diese Datei automatisch zu erstellen. Eine README-Datei ist eine Markdown-Datei (README.md), die als Startseite Ihres Projekts dient.\n.gitignore: wählen Sie die Python-Vorlage. Eine .gitignore-Datei gibt an, welche Dateien und Verzeichnisse von Git ignoriert werden sollen. Dies ist nützlich, um Dateien auszuschließen, deren Änderungen nicht verfolgt werden sollen.\nLizenz: Wählen Sie MIT License. Eine Lizenzdatei legt die Bedingungen fest, unter denen Ihr Projekt verwendet, modifiziert und von anderen geteilt werden kann. Durch die Auswahl einer Lizenz stellen Sie sicher, dass andere Ihr Projekt legal verwenden und dazu beitragen können. GitHub bietet verschiedene Lizenzen zur Auswahl an, wie z.B. MIT, Apache, GPL usw. Wir verwenden die MIT-Lizenz, die es jedem erlaubt, Ihren Code zu verwenden, solange der ursprüngliche Urheberrechts- und Lizenzhinweis enthalten ist.\n\nCreate repository\n\nKlicken Sie auf die grüne Schaltfläche Create repository, um Ihr neues Repository auf GitHub zu erstellen.",
     "crumbs": [
       "GitHub",
-      "<span class='chapter-number'>31</span>  <span class='chapter-title'>GitHub-Repositories</span>"
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Repositories</span>"
     ]
   },
   {
     "objectID": "github/github-repo.html#klonen",
     "href": "github/github-repo.html#klonen",
-    "title": "31  GitHub-Repositories",
+    "title": "31  Repositories",
     "section": "31.2 Klonen",
     "text": "31.2 Klonen\nDas Klonen eines Repositorys bedeutet, eine lokale Kopie eines Remote-Repositorys auf Ihrem Computer zu erstellen.\nDies ermöglicht es Ihnen, offline an den Projektdateien zu arbeiten, Änderungen vorzunehmen und diese Änderungen dann mit dem Remote-Repository auf GitHub zu synchronisieren.\n\nÖffnen Sie GitHub\n\nÖffnen Sie GitHub in Ihrem Webbrowser und navigieren Sie zu Ihrem hello-github-Repository.\nAuf der Hauptseite des hello-github-Repositorys klicken Sie auf die grüne Schaltfläche Code.\n\nKlon-Option auswählen\n\nIm Dropdown-Menü klicken Sie auf Open with GitHub Desktop. Dies wird GitHub Desktop dazu veranlassen, sich zu öffnen und den Klonvorgang zu starten.\nWenn Ihr Browser Sie dazu auffordert, GitHub Desktop zu öffnen, bestätigen Sie die Aktion.\n\nKlonen mit GitHub Desktop\n\nGitHub Desktop öffnet sich und zeigt ein Dialogfeld an, um den lokalen Pfad für das Repository zu bestätigen.\nWählen Sie das Verzeichnis toolkit-lab auf Ihrem lokalen Rechner, in dem wir das hello-github-Repository klonen möchten. Dies erstellt einen Ordner namens hello-github im Verzeichnis toolkit-lab.\n\n:::{.callout-note collapse=“true” title=“Hinweis zum Klonen von Verzeichnissen”} Stellen Sie immer sicher, dass das Verzeichnis nicht mit Cloud-Speicherdiensten wie iCloud, OneDrive oder Google Drive synchronisiert wird. Die Synchronisierung mit diesen Diensten kann zu Konflikten und Problemen mit Ihrem Git-Repository führen. :::\n\nKlicken Sie auf Klonen, um das hello-github-Repository auf Ihren lokalen Rechner herunterzuladen.\n\nÖffnen Sie das Repository in GitHub Desktop\n\nNach Abschluss des Klonvorgangs öffnet GitHub Desktop automatisch das hello-github-Repository.",
     "crumbs": [
       "GitHub",
-      "<span class='chapter-number'>31</span>  <span class='chapter-title'>GitHub-Repositories</span>"
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Repositories</span>"
     ]
   },
   {
     "objectID": "github/github-repo.html#commit",
     "href": "github/github-repo.html#commit",
-    "title": "31  GitHub-Repositories",
+    "title": "31  Repositories",
     "section": "31.3 Commit",
     "text": "31.3 Commit\nNachdem Sie Ihr hello-github-Repository auf Ihren lokalen Rechner geklont haben, ist der nächste Schritt, an Ihren Projektdateien zu arbeiten. Wir verwenden Visual Studio Code (VS Code), um das Repository zu öffnen und Änderungen vorzunehmen.\nÖffnen des hello-github-Repositorys in VS Code\n\nÖffnen Sie VS Code\n\nStarten Sie Visual Studio Code auf Ihrem Computer.\n\nÖffnen Sie das geklonte Repository\n\nKlicken Sie in VS Code auf Datei &gt; Ordner öffnen….\nNavigieren Sie zum Verzeichnis toolkit-lab/hello-github, in dem Sie Ihr Repository geklont haben, und wählen Sie den Ordner hello-github.\nKlicken Sie auf Ordner auswählen, um das Repository in VS Code zu öffnen.\n\nDateien erstellen oder ändern\n\nSie können nun neue Dateien erstellen oder bestehende Dateien direkt in VS Code ändern. Zum Beispiel, um eine neue Python-Datei zu erstellen:\n\nKlicken Sie mit der rechten Maustaste im Explorer-Panel (linke Seitenleiste) und wählen Sie Neue Datei.\nNennen Sie die Datei script.py und fügen Sie etwas Python-Code hinzu. Speichern Sie Ihre Änderungen.\n\n\nÄnderungen in GitHub Desktop anzeigen\n\nNachdem Sie Änderungen in VS Code vorgenommen haben, wechseln Sie zurück zu GitHub Desktop. Sie sehen die Änderungen in der linken Seitenleiste.\n\nÄnderungen abrufen\n\nStellen Sie zunächst sicher, dass keine Änderungen im Remote-Repository hello-github vorliegen, die Sie nicht lokal haben. Sie können sie abrufen, indem Sie auf die Schaltfläche Fetch origin klicken und dann Pull, um Ihr lokales Repository mit den neuesten Änderungen zu aktualisieren.\n\nÄnderungen stagen\n\nStagen bedeutet, auszuwählen, welche Änderungen Sie in Ihren nächsten Schnappschuss (Commit) des Repositorys aufnehmen möchten.\nIn GitHub Desktop sehen Sie eine Liste der geänderten Dateien. Um Änderungen zu stagen:\n\nAktivieren Sie die Kontrollkästchen neben den Dateien, die Sie in Ihren Commit aufnehmen möchten.\nWenn Sie alle Änderungen auf einmal stagen möchten, können Sie auf die Schaltfläche Stage All klicken.\n\n\nÄnderungen committen\n\nCommitten bedeutet, Ihre gestagten Änderungen mit einer beschreibenden Nachricht zu speichern, die erklärt, was Sie getan haben. Diese Nachricht hilft Ihnen und anderen zu verstehen, welche Änderungen vorgenommen wurden und warum.\nSchreiben Sie eine kurze, aber beschreibende Commit-Nachricht in das Feld Zusammenfassung. Zum Beispiel: “Füge initiales Python-Skript hinzu”.\nKlicken Sie auf Commit to main, um die Änderungen in Ihrem lokalen Repository zu speichern.\n\nÄnderungen pushen\n\nNach dem Committen der Änderungen klicken Sie auf die Schaltfläche Push origin oben, um Ihre Änderungen in das Remote-Repository hello-github auf GitHub hochzuladen.",
     "crumbs": [
       "GitHub",
-      "<span class='chapter-number'>31</span>  <span class='chapter-title'>GitHub-Repositories</span>"
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Repositories</span>"
     ]
   },
   {
     "objectID": "github/github-repo.html#tipps",
     "href": "github/github-repo.html#tipps",
-    "title": "31  GitHub-Repositories",
+    "title": "31  Repositories",
     "section": "31.4 Tipps",
     "text": "31.4 Tipps\n\nOft committen: Machen Sie kleine, häufige Commits mit klaren Nachrichten. Dies erleichtert das Verfolgen von Änderungen und das Zurücksetzen, falls erforderlich.\nREADME: Eine gut dokumentierte README-Datei ist entscheidend. Sie sollte einen Überblick über das Projekt, Installations- und Nutzungshinweise sowie weitere relevante Informationen bieten.",
     "crumbs": [
       "GitHub",
-      "<span class='chapter-number'>31</span>  <span class='chapter-title'>GitHub-Repositories</span>"
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Repositories</span>"
     ]
   },
   {
     "objectID": "github/github-organization.html",
     "href": "github/github-organization.html",
-    "title": "32  GitHub-Organisation",
+    "title": "32  Organizations",
     "section": "",
     "text": "32.1 Erstellen einer Organisation\nSchritt-für-Schritt-Anleitung:",
     "crumbs": [
       "GitHub",
-      "<span class='chapter-number'>32</span>  <span class='chapter-title'>GitHub-Organisation</span>"
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Organizations</span>"
     ]
   },
   {
     "objectID": "github/github-organization.html#erstellen-einer-organisation",
     "href": "github/github-organization.html#erstellen-einer-organisation",
-    "title": "32  GitHub-Organisation",
+    "title": "32  Organizations",
     "section": "",
     "text": "Navigieren Sie zu GitHub: Gehen Sie zu GitHub Organizations.\nKlicken Sie auf ‘Neue Organisation’: Sie werden aufgefordert, einen Plan auszuwählen. Wählen Sie zunächst den kostenlosen Plan.\nFüllen Sie die Organisationsdetails aus: Geben Sie einen eindeutigen Namen für Ihre Organisation und eine E-Mail-Adresse für Benachrichtigungen an.\nLaden Sie Ihr Team ein: Sobald Ihre Organisation erstellt ist, können Sie damit beginnen, Mitglieder einzuladen. Erfahren Sie im nächsten Abschnitt, wie Sie andere Teammitglieder zu einer Organisation einladen.",
     "crumbs": [
       "GitHub",
-      "<span class='chapter-number'>32</span>  <span class='chapter-title'>GitHub-Organisation</span>"
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Organizations</span>"
     ]
   },
   {
     "objectID": "github/github-organization.html#mitglieder-verwalten",
     "href": "github/github-organization.html#mitglieder-verwalten",
-    "title": "32  GitHub-Organisation",
+    "title": "32  Organizations",
     "section": "32.2 Mitglieder verwalten",
     "text": "32.2 Mitglieder verwalten\nNach der Erstellung Ihrer Organisation ist die Verwaltung der Mitglieder entscheidend für eine reibungslose Zusammenarbeit.\nMitglieder einladen:\n\nGehen Sie zu Ihrer Organisationsseite: Klicken Sie auf Ihr Profilbild oben rechts, dann auf Ihre Organisationen und wählen Sie Ihre neue Organisation aus.\nNavigieren Sie zum Tab ‘Personen’: Klicken Sie auf ‘Mitglied einladen’ und geben Sie den Benutzernamen oder die E-Mail-Adresse der Person ein, die Sie einladen möchten.\nRollen und Berechtigungen festlegen: Weisen Sie Rollen wie Eigentümer, Mitglied oder Abrechnungsmanager zu, um Zugriffsebenen zu steuern.\n\nErfahren Sie mehr über das Verwalten von Mitgliedern und Teams in Ihrer Organisation.",
     "crumbs": [
       "GitHub",
-      "<span class='chapter-number'>32</span>  <span class='chapter-title'>GitHub-Organisation</span>"
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Organizations</span>"
     ]
   },
   {
     "objectID": "github/github-projects.html",
     "href": "github/github-projects.html",
-    "title": "33  GitHub-Projekte",
+    "title": "33  Projects",
     "section": "",
     "text": "33.1 Ein GitHub-Projekt erstellen\nSchritt-für-Schritt-Anleitung:",
     "crumbs": [
       "GitHub",
-      "<span class='chapter-number'>33</span>  <span class='chapter-title'>GitHub-Projekte</span>"
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Projects</span>"
     ]
   },
   {
     "objectID": "github/github-projects.html#ein-github-projekt-erstellen",
     "href": "github/github-projects.html#ein-github-projekt-erstellen",
-    "title": "33  GitHub-Projekte",
+    "title": "33  Projects",
     "section": "",
     "text": "Navigieren Sie zu Ihrem Repository oder Ihrer Organisation: Gehen Sie zu dem Repository oder der Organisation, in dem/der Sie ein Projekt erstellen möchten.\nZugriff auf den Tab ‘Projects’: Klicken Sie auf der Hauptseite Ihres Repositorys oder Ihrer Organisation auf den Tab ‘Projects’.\nKlicken Sie auf ‘New Project’: Klicken Sie auf die Schaltfläche ‘New project’, um ein neues Projekt zu erstellen.\nRichten Sie Ihr Projekt ein:\n\nName: Geben Sie Ihrem Projekt einen aussagekräftigen Namen.\nBeschreibung: Fügen Sie eine Beschreibung hinzu, um den Zweck des Projekts zu erklären.\nVorlage: Wählen Sie eine Vorlage, falls verfügbar, oder beginnen Sie mit einem leeren Projekt.",
     "crumbs": [
       "GitHub",
-      "<span class='chapter-number'>33</span>  <span class='chapter-title'>GitHub-Projekte</span>"
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Projects</span>"
     ]
   },
   {
     "objectID": "github/github-projects.html#projektboards-verwalten",
     "href": "github/github-projects.html#projektboards-verwalten",
-    "title": "33  GitHub-Projekte",
+    "title": "33  Projects",
     "section": "33.2 Projektboards verwalten",
     "text": "33.2 Projektboards verwalten\nSobald Ihr Projekt erstellt ist, können Sie beginnen, es durch Hinzufügen von Spalten und Karten zu verwalten.\n\n33.2.1 Spalten hinzufügen\nSpalten helfen, Aufgaben in Kategorien wie ‘To Do’, ‘In Progress’ und ‘Done’ zu organisieren.\n\nKlicken Sie auf ‘Add column’: Klicken Sie auf die Schaltfläche ‘Add column’ auf Ihrem Projektboard.\nBenennen Sie Ihre Spalte: Geben Sie der Spalte einen Namen, z.B. ‘To Do’.\nWiederholen Sie dies für zusätzliche Spalten: Erstellen Sie nach Bedarf zusätzliche Spalten für Ihren Workflow.\n\n\n\n33.2.2 Karten hinzufügen\nKarten repräsentieren Aufgaben und können Issues, Pull Requests oder Notizen sein.\n\nEin Issue oder einen Pull Request hinzufügen: Ziehen Sie ein vorhandenes Issue oder einen Pull Request von der Seitenleiste in eine Spalte.\nEine Notiz erstellen: Klicken Sie in einer Spalte auf ‘Add a note’, um eine benutzerdefinierte Aufgabe oder Notiz zu erstellen.",
     "crumbs": [
       "GitHub",
-      "<span class='chapter-number'>33</span>  <span class='chapter-title'>GitHub-Projekte</span>"
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Projects</span>"
     ]
   },
   {
     "objectID": "github/github-projects.html#best-practices-für-die-verwendung-von-github-projects",
     "href": "github/github-projects.html#best-practices-für-die-verwendung-von-github-projects",
-    "title": "33  GitHub-Projekte",
+    "title": "33  Projects",
     "section": "33.3 Best Practices für die Verwendung von GitHub Projects",
     "text": "33.3 Best Practices für die Verwendung von GitHub Projects\n\n33.3.1 Arbeit organisieren\n\nVerwenden Sie klare Spaltennamen: Nutzen Sie intuitive Namen für Spalten, die die Phasen des Workflows widerspiegeln.\nPriorisieren Sie Aufgaben: Ziehen Sie Karten, um Aufgaben innerhalb einer Spalte zu priorisieren.\n\n\n\n33.3.2 Zusammenarbeit\n\nKarten Teammitgliedern zuweisen: Weisen Sie Issues oder Pull Requests Teammitgliedern zu, um die Zuständigkeit zu klären.\nVerwenden Sie Labels: Wenden Sie Labels auf Karten an, um zusätzliche Kategorisierungen und Filterungen zu ermöglichen.\n\n\n\n33.3.3 Fortschritt verfolgen\n\nRegelmäßige Updates: Aktualisieren Sie den Status der Karten regelmäßig, um den aktuellen Fortschritt widerzuspiegeln.\nAbgeschlossene Karten schließen: Verschieben Sie abgeschlossene Aufgaben in die Spalte ‘Done’ und schließen Sie die entsprechenden Issues oder Pull Requests.",
     "crumbs": [
       "GitHub",
-      "<span class='chapter-number'>33</span>  <span class='chapter-title'>GitHub-Projekte</span>"
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Projects</span>"
     ]
   },
   {
     "objectID": "github/github-projects.html#erweiterte-funktionen",
     "href": "github/github-projects.html#erweiterte-funktionen",
-    "title": "33  GitHub-Projekte",
+    "title": "33  Projects",
     "section": "33.4 Erweiterte Funktionen",
     "text": "33.4 Erweiterte Funktionen\n\n33.4.1 Automatisierung\nGitHub Projects ermöglicht die Automatisierung von Workflows mit Auslösern, die Karten basierend auf bestimmten Aktionen wie dem Schließen eines Issues oder dem Mergen eines Pull Requests in andere Spalten verschieben.\n\n\n33.4.2 Integrationen\nIntegrieren Sie GitHub Projects mit anderen Tools und Diensten mithilfe von GitHub Actions, Webhooks oder Drittanbieterdiensten, um Ihr Projektmanagement zu verbessern.",
     "crumbs": [
       "GitHub",
-      "<span class='chapter-number'>33</span>  <span class='chapter-title'>GitHub-Projekte</span>"
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Projects</span>"
     ]
   }
 ]
