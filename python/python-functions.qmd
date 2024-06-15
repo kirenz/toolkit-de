@@ -1,6 +1,6 @@
 # Funktionen
 
-- [Jupyter Notebook herunterladen](../code/python-functions.ipynb){download="python-functions.ipynb"}
+- [⬇️ Jupyter Notebook herunterladen](../code/python-functions.ipynb){download="python-functions.ipynb"}
 
 Funktionen helfen Ihnen, modulare, wiederverwendbare Codeblöcke zu schreiben. In diesem Abschnitt wird das Definieren, Aufrufen und Dokumentieren von Funktionen demonstriert.
 
