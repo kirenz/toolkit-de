@@ -17,8 +17,6 @@ NoSQL-Datenbanken umfassen mehrere verschiedene Modelle zum Zugriff und zur Verw
 
 NoSQL-Datenbanken bieten eine Vielzahl von Möglichkeiten, um verschiedene Arten von Daten effizient zu speichern und abzurufen. Sie sind besonders nützlich in Szenarien, in denen traditionelle relationale Datenbanken an ihre Grenzen stoßen.
 
-<br>
-
 
 Modell	| Eigenschaften | Open Source
 --|--|--
@@ -27,18 +25,11 @@ Schlüssel-Wert-Speicher | Die einfachsten NoSQL-Datenbanken, Daten werden als e
 Spaltenorientierter Speicher | Verwandte Daten werden als eine Reihe von verschachtelten Schlüssel/Wert-Paaren innerhalb einer einzigen Spalte gespeichert. | HBase, Cassandra
 Graph-Speicher | Daten werden in einer Graphstruktur als Knoten, Kanten und Dateneigenschaften gespeichert. | Neo4j
 
-### Dokumentenorientierter Speicher
+**Dokumentenorientierter Speicher**: In dokumentenorientierten Datenbanken werden Daten in Form von Dokumenten gespeichert, die meist auf JSON (JavaScript Object Notation) basieren. Diese Dokumente enthalten nicht nur die Daten, sondern auch die Struktur der Daten, was eine große Flexibilität bietet. Beispiele sind MongoDB und CouchDB.
 
-In dokumentenorientierten Datenbanken werden Daten in Form von Dokumenten gespeichert, die meist auf JSON (JavaScript Object Notation) basieren. Diese Dokumente enthalten nicht nur die Daten, sondern auch die Struktur der Daten, was eine große Flexibilität bietet. Beispiele sind MongoDB und CouchDB.
+**Schlüssel-Wert-Speicher**: Schlüssel-Wert-Datenbanken speichern Daten als eine Sammlung von Schlüssel-Wert-Paaren. Jede Datenstruktur besteht aus einem eindeutigen Schlüssel und einem Wert, der jede Art von Daten enthalten kann. Redis ist ein bekanntes Beispiel für einen Schlüssel-Wert-Speicher.
 
-### Schlüssel-Wert-Speicher
+**Spaltenorientierter Speicher**: Spaltenorientierte Datenbanken speichern Daten in Tabellen, aber im Gegensatz zu relationalen Datenbanken sind die Daten in Spalten anstatt in Reihen organisiert. Dies ermöglicht eine effiziente Speicherung und Abfrage von großen Datenmengen. Beispiele sind HBase und Cassandra.
 
-Schlüssel-Wert-Datenbanken speichern Daten als eine Sammlung von Schlüssel-Wert-Paaren. Jede Datenstruktur besteht aus einem eindeutigen Schlüssel und einem Wert, der jede Art von Daten enthalten kann. Redis ist ein bekanntes Beispiel für einen Schlüssel-Wert-Speicher.
+**Graph-Speicher**: Graph-Datenbanken speichern Daten in Form von Graphen, bei denen Knoten die Datenobjekte und Kanten die Beziehungen zwischen diesen Objekten darstellen. Dies ermöglicht komplexe Abfragen von Beziehungen. Ein bekanntes Beispiel ist Neo4j.
 
-### Spaltenorientierter Speicher
-
-Spaltenorientierte Datenbanken speichern Daten in Tabellen, aber im Gegensatz zu relationalen Datenbanken sind die Daten in Spalten anstatt in Reihen organisiert. Dies ermöglicht eine effiziente Speicherung und Abfrage von großen Datenmengen. Beispiele sind HBase und Cassandra.
-
-### Graph-Speicher
-
-Graph-Datenbanken speichern Daten in Form von Graphen, bei denen Knoten die Datenobjekte und Kanten die Beziehungen zwischen diesen Objekten darstellen. Dies ermöglicht komplexe Abfragen von Beziehungen. Ein bekanntes Beispiel ist Neo4j.
