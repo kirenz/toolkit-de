@@ -1,6 +1,6 @@
 # Einrückung
 
-- [⬇️ Jupyter Notebook herunterladen](../code/python-identation.ipynb){download="python-identation.ipynb"}
+[⬇️ Jupyter Notebook herunterladen](../code/python-identation.ipynb){download="python-identation.ipynb"}
 
 Bevor wir im nächsten Abschnitt Python-Funktionen erkunden, ist es wichtig, die Einrückungsregeln von Python zu verstehen, da diese grundlegend sind, um fehlerfreien Python-Code zu schreiben.
 
