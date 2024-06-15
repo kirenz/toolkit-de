@@ -9,7 +9,7 @@
 <meta name="author" content="Jan Kirenz">
 <meta name="description" content="Programming Toolkit für Data Science, AI &amp; Analytics">
 
-<title>Data Science, AI &amp; Analytics Toolkit - Erste Schritte</title>
+<title>Data Science, AI &amp; Analytics Toolkit - 21&nbsp; MongoDB</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -32,8 +66,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../first-steps/project-environment.html" rel="next">
-<link href="../index.html" rel="prev">
+<link href="../nosql/mongo-db-start-stop.html" rel="next">
+<link href="../nosql/nosql.html" rel="prev">
 <link href="..//images/logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -84,7 +118,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../first-steps/first-steps.html">Erste Schritte</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../nosql/nosql.html">NoSQL Datenbanken</a></li><li class="breadcrumb-item"><a href="../nosql/mongo-db-installation.html"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">MongoDB</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -115,7 +149,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../first-steps/first-steps.html" class="sidebar-item-text sidebar-link active">
+            <a href="../first-steps/first-steps.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Erste Schritte</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -288,7 +322,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../nosql/mongo-db-installation.html" class="sidebar-item-text sidebar-link">
+  <a href="../nosql/mongo-db-installation.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">MongoDB</span></span></a>
   </div>
 </li>
@@ -359,14 +393,30 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Inhaltsverzeichnis</h2>
+   
+  <ul>
+  <li><a href="#installation" id="toc-installation" class="nav-link active" data-scroll-target="#installation"><span class="header-section-number">21.1</span> Installation</a>
+  <ul class="collapse">
+  <li><a href="#windows" id="toc-windows" class="nav-link" data-scroll-target="#windows"><span class="header-section-number">21.1.1</span> Windows</a></li>
+  <li><a href="#macos" id="toc-macos" class="nav-link" data-scroll-target="#macos"><span class="header-section-number">21.1.2</span> macOS</a></li>
+  </ul></li>
+  <li><a href="#mongodb-starten-und-stoppen" id="toc-mongodb-starten-und-stoppen" class="nav-link" data-scroll-target="#mongodb-starten-und-stoppen"><span class="header-section-number">21.2</span> MongoDB starten und stoppen</a>
+  <ul class="collapse">
+  <li><a href="#windows-1" id="toc-windows-1" class="nav-link" data-scroll-target="#windows-1"><span class="header-section-number">21.2.1</span> Windows</a></li>
+  <li><a href="#stoppen" id="toc-stoppen" class="nav-link" data-scroll-target="#stoppen"><span class="header-section-number">21.2.2</span> Stoppen</a></li>
+  <li><a href="#macos-1" id="toc-macos-1" class="nav-link" data-scroll-target="#macos-1"><span class="header-section-number">21.2.3</span> macOS</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../nosql/nosql.html">NoSQL Datenbanken</a></li><li class="breadcrumb-item"><a href="../nosql/mongo-db-installation.html"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">MongoDB</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Erste Schritte</h1>
+<h1 class="title"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">MongoDB</span></h1>
 </div>
 
 
@@ -383,11 +433,235 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>In diesem ersten Abschnitt werden wir eine grundlegende Arbeitsumgebung einrichten, die für jedes datenbezogene Vorhaben unerlässlich ist.</p>
-<p>Sie lernen, wie Sie sich auf der Befehlszeile Ihres Computers zurechtfinden, Python zum ersten Mal einrichten und die Anaconda-Distribution (ein Data-Science-Softwarpaket) verwenden.</p>
-<p>Zusätzlich zeigen wir Ihnen, wie Sie Jupyter Notebook, ein leistungsstarkes Werkzeug zur interaktiven Datenexploration, nutzen und bringen Ihnen die Grundlagen von Markdown bei, um Ihre Arbeit effektiv zu dokumentieren.</p>
+<p><strong>MongoDB</strong> ist eine NoSQL-Datenbank, die für ihre Flexibilität und Skalierbarkeit bekannt ist. Sie speichert Daten in JSON-ähnlichen Dokumenten, was es einfach macht, komplexe Datenstrukturen zu handhaben.</p>
+<p>Für die Arbeit mit der Datenbank nutzen wir die <strong>MongoDB Shell</strong> (<code>mongosh</code>). Diese bietet eine schnelle Möglichkeit, sich mit MongoDB zu verbinden und zu arbeiten. Sie ermöglicht das Abfragen von Daten, Konfigurieren von Einstellungen und Ausführen weiterer Aktionen mit einer modernen, erweiterbaren Befehlszeilenschnittstelle, die Syntaxhervorhebung, intelligente Autovervollständigung, kontextbezogene Hilfe und Fehlermeldungen umfasst.</p>
+<section id="installation" class="level2" data-number="21.1">
+<h2 data-number="21.1" class="anchored" data-anchor-id="installation"><span class="header-section-number">21.1</span> Installation</h2>
+<section id="windows" class="level3" data-number="21.1.1">
+<h3 data-number="21.1.1" class="anchored" data-anchor-id="windows"><span class="header-section-number">21.1.1</span> Windows</h3>
+<ol type="1">
+<li><strong>MongoDB herunterladen</strong>:<br>
+Besuchen Sie die <a href="https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-windows/#install-mongodb-community-edition">offizielle MongoDB-Download-Seite</a> und laden Sie die aktuelle (“current”) MongoDB Community Server-Version für Windows herunter.
+<ul>
+<li>Version: … (current).</li>
+<li>Platform: Windows x64</li>
+<li>Package: msi</li>
+</ul></li>
+<li><strong>Installation</strong>:
+<ul>
+<li>Führen Sie das Installationsprogramm aus und folgen Sie den Anweisungen.</li>
+<li>Wählen Sie “Complete” als Setup-Typ.</li>
+<li>Aktivieren Sie die Option “Install MongoDB as a Service”.</li>
+</ul></li>
+<li><strong>MongoDB Shell (<code>mongosh</code>) herunterladen</strong>:<br>
+Besuchen Sie die <a href="https://www.mongodb.com/try/download/shell">MongoDB Shell Download-Seite</a> und laden Sie die aktuelle Version von MongoDB Shell herunter (wählen Sie als Plattform <em>Windows</em> und als Package <em>msi</em>).</li>
+</ol>
+<p>Um MongoDB von jeder Eingabeaufforderung aus zugänglich zu machen, setzen wir nun eine Umgebungsvariable. Dadurch können Sie <code>mongod</code> und <code>mongo</code> von jeder Eingabeaufforderung aus ohne Angabe des vollständigen Pfades ausführen.</p>
+<p>Hier ist eine detaillierte Anleitung, wie Sie die Umgebungsvariable unter Windows setzen können:</p>
+<ol start="4" type="1">
+<li><strong>Pfad zu <code>mongod.exe</code> und <code>mongosh.exe</code> ermitteln</strong>:
+<ul>
+<li>Der Pfad ist in der Regel <code>C:\Program Files\MongoDB\Server\&lt;Version&gt;\bin</code>. Finden Sie den Pfad im Datei-Explorer und notieren Sie ihn.</li>
+</ul></li>
+<li><strong>Umgebungsvariablen öffnen</strong>:
+<ul>
+<li>Drücken Sie die Windows-Taste und geben Sie “Umgebungsvariablen” ein.</li>
+<li>Wählen Sie “Umgebungsvariablen für dieses Konto bearbeiten” oder “Systemumgebungsvariablen bearbeiten” aus.</li>
+</ul></li>
+<li><strong>Systemumgebungsvariablen bearbeiten</strong>:
+<ul>
+<li>Im Fenster “Systemeigenschaften” klicken Sie auf die Schaltfläche “Umgebungsvariablen”.</li>
+</ul></li>
+<li><strong>Pfad-Variable bearbeiten</strong>:
+<ul>
+<li>Im Abschnitt “Systemvariablen” suchen Sie die Variable “Path” und wählen Sie sie aus. Klicken Sie dann auf “Bearbeiten”.</li>
+</ul></li>
+<li><strong>Neuen Pfad hinzufügen</strong>:
+<ul>
+<li>Klicken Sie auf “Neu” und fügen Sie den Pfad zu <code>mongod.exe</code> hinzu (z.B. <code>C:\Program Files\MongoDB\Server\&lt;Version&gt;\bin</code>).</li>
+</ul></li>
+<li><strong>Änderungen speichern</strong>:
+<ul>
+<li>Klicken Sie auf “OK”, um alle Fenster zu schließen und die Änderungen zu speichern.</li>
+</ul></li>
+</ol>
+<p>Um sicherzustellen, dass die Umgebungsvariablen korrekt gesetzt wurden, öffnen Sie eine neue Eingabeaufforderung und führen Sie die folgenden Befehle aus:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">mongod</span> <span class="at">--version</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">mongosh</span> <span class="at">--version</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Wenn beide Befehle die Versionsnummern von MongoDB und MongoDB Shell (mongosh) zurückgeben, wurde die Umgebungsvariable erfolgreich gesetzt</p>
+</section>
+<section id="macos" class="level3" data-number="21.1.2">
+<h3 data-number="21.1.2" class="anchored" data-anchor-id="macos"><span class="header-section-number">21.1.2</span> macOS</h3>
+<p>Folgen Sie der Installationsanweisung der <a href="https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/#install-mongodb-community-edition">MongoDB-Dokumentation</a>:</p>
+<ol type="1">
+<li><p><strong>Xcode Command-Line Tools installieren</strong> (falls noch nicht installiert): Homebrew benötigt die Xcode Command-Line Tools von Apples Xcode.</p>
+<ul>
+<li>Prüfen Sie im Terminal, ob XCode installiert ist (wenn Xcode installiert ist, wird die Version angezeigt. Wenn nicht, wird eine entsprechende Fehlermeldung angezeigt und Sie müssen XCode installieren):</li>
+</ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">xcode-select</span> <span class="at">--version</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Falls notwendig, installieren Sie die Xcode Command-Line Tools mit folgendem Befehl im macOS Terminal:</li>
+</ul>
+<div class="sourceCode" id="cb4"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">xcode-select</span> <span class="at">--install</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p><strong>Homebrew installieren</strong> (falls noch nicht installiert):</p>
+<ul>
+<li>Führen Sie diesen Befehl im Terminal aus, um den <a href="https://brew.sh/">Homebrew</a>-Paketmanager zu installieren:</li>
+</ul>
+<div class="sourceCode" id="cb5"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">/bin/bash</span> <span class="at">-c</span> <span class="st">"</span><span class="va">$(</span><span class="ex">curl</span> <span class="at">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="va">)</span><span class="st">"</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p><strong>MongoDB installieren</strong>:</p>
+<ul>
+<li>Laden Sie das offizielle Homebrew-Formular für MongoDB und die Datenbank-Tools herunter, indem Sie folgenden Befehl im macOS Terminal ausführen:</li>
+</ul>
+<div class="sourceCode" id="cb6"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> tap mongodb/brew</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Aktualisieren Sie Homebrew und alle vorhandenen Formeln:</li>
+</ul>
+<div class="sourceCode" id="cb7"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> update</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Um MongoDB zu installieren, führen Sie folgenden Befehl im macOS Terminal aus:</li>
+</ul>
+<div class="sourceCode" id="cb8"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install mongodb-community@7.0</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ol>
+<p>Die Installation umfasst folgende Binärdateien:</p>
+<ul>
+<li>Der mongod-Server</li>
+<li>Der mongos-Sharded-Cluster-Query-Router</li>
+<li>Die MongoDB Shell, mongosh</li>
+</ul>
+</section>
+</section>
+<section id="mongodb-starten-und-stoppen" class="level2" data-number="21.2">
+<h2 data-number="21.2" class="anchored" data-anchor-id="mongodb-starten-und-stoppen"><span class="header-section-number">21.2</span> MongoDB starten und stoppen</h2>
+<section id="windows-1" class="level3" data-number="21.2.1">
+<h3 data-number="21.2.1" class="anchored" data-anchor-id="windows-1"><span class="header-section-number">21.2.1</span> Windows</h3>
+<section id="starten" class="level4" data-number="21.2.1.1">
+<h4 data-number="21.2.1.1" class="anchored" data-anchor-id="starten"><span class="header-section-number">21.2.1.1</span> Starten</h4>
+<p>MongoDB sollte als Dienst automatisch gestartet werden, wenn Sie die Option “Install MongoDB as a Service” während der Installation aktiviert haben.</p>
+<p>Sie können den Dienst auch manuell starten, falls er nicht automatisch gestartet wurde oder falls Sie den Dienst neu starten möchten:</p>
+<ol type="1">
+<li><strong>Öffnen Sie die Dienstverwaltung</strong>:
+<ul>
+<li>Drücken Sie die <code>Windows-Taste</code> + <code>R</code>, um das Ausführen-Dialogfeld zu öffnen.</li>
+<li>Geben Sie <code>services.msc</code> ein und drücken Sie <code>Enter</code>.</li>
+</ul></li>
+<li><strong>Finden Sie den MongoDB-Dienst</strong>:
+<ul>
+<li>Im Fenster “Dienste” scrollen Sie nach unten, bis Sie den Dienst namens <code>MongoDB</code> finden.</li>
+</ul></li>
+<li><strong>Starten Sie den Dienst</strong>:
+<ul>
+<li>Klicken Sie mit der rechten Maustaste auf den <code>MongoDB</code>-Dienst und wählen Sie <code>Starten</code> aus dem Kontextmenü.</li>
+</ul></li>
+</ol>
+<p>Alternativ können Sie den MongoDB-Dienst auch über die Eingabeaufforderung starten:</p>
+<ol type="1">
+<li><p><strong>Öffnen Sie die Eingabeaufforderung als Administrator</strong>:</p>
+<ul>
+<li>Drücken Sie die <code>Windows-Taste</code>, geben Sie <code>cmd</code> ein, klicken Sie mit der rechten Maustaste auf <code>Eingabeaufforderung</code> und wählen Sie <code>Als Administrator ausführen</code>.</li>
+</ul></li>
+<li><p><strong>Führen Sie den folgenden Befehl aus, um den MongoDB-Dienst zu starten</strong>:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">net</span> start MongoDB</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ol>
+</section>
+</section>
+<section id="stoppen" class="level3" data-number="21.2.2">
+<h3 data-number="21.2.2" class="anchored" data-anchor-id="stoppen"><span class="header-section-number">21.2.2</span> Stoppen</h3>
+<p>Um MongoDB zu stoppen, können Sie entweder die Dienstverwaltung verwenden oder einen Befehl in der Eingabeaufforderung ausführen.</p>
+<p><strong>So stoppen Sie den MongoDB-Dienst manuell:</strong></p>
+<ol type="1">
+<li><strong>Öffnen Sie die Dienstverwaltung</strong>:
+<ul>
+<li>Drücken Sie die <code>Windows-Taste</code> + <code>R</code>, um das Ausführen-Dialogfeld zu öffnen.</li>
+<li>Geben Sie <code>services.msc</code> ein und drücken Sie <code>Enter</code>.</li>
+</ul></li>
+<li><strong>Finden Sie den MongoDB-Dienst</strong>:
+<ul>
+<li>Im Fenster “Dienste” scrollen Sie nach unten, bis Sie den Dienst namens <code>MongoDB</code> finden.</li>
+</ul></li>
+<li><strong>Stoppen Sie den Dienst</strong>:
+<ul>
+<li>Klicken Sie mit der rechten Maustaste auf den <code>MongoDB</code>-Dienst und wählen Sie <code>Beenden</code> aus dem Kontextmenü.</li>
+</ul></li>
+</ol>
+<p>Alternativ können Sie den MongoDB-Dienst auch über die Eingabeaufforderung stoppen:</p>
+<ol type="1">
+<li><p><strong>Öffnen Sie die Eingabeaufforderung als Administrator</strong>:</p>
+<ul>
+<li>Drücken Sie die <code>Windows-Taste</code>, geben Sie <code>cmd</code> ein, klicken Sie mit der rechten Maustaste auf <code>Eingabeaufforderung</code> und wählen Sie <code>Als Administrator ausführen</code>.</li>
+</ul></li>
+<li><p><strong>Führen Sie den folgenden Befehl aus, um den MongoDB-Dienst zu stoppen</strong>:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">net</span> stop MongoDB</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ol>
+<p>Durch das Starten und Stoppen des MongoDB-Dienstes können Sie sicherstellen, dass die Datenbank ordnungsgemäß läuft oder heruntergefahren wird, je nach Ihren Anforderungen.</p>
+</section>
+<section id="macos-1" class="level3" data-number="21.2.3">
+<h3 data-number="21.2.3" class="anchored" data-anchor-id="macos-1"><span class="header-section-number">21.2.3</span> macOS</h3>
+<section id="starten-1" class="level4" data-number="21.2.3.1">
+<h4 data-number="21.2.3.1" class="anchored" data-anchor-id="starten-1"><span class="header-section-number">21.2.3.1</span> Starten</h4>
+<p>Nach der Installation von MongoDB können Sie den Datenbankdienst einfach mit Homebrew starten. Homebrew verwaltet Dienste wie MongoDB und ermöglicht es Ihnen, diese mit einfachen Befehlen zu starten und zu stoppen.</p>
+<p><strong>So starten Sie den MongoDB-Dienst:</strong></p>
+<ol type="1">
+<li><strong>Öffnen Sie das Terminal</strong>:
+<ul>
+<li>Sie finden das Terminal im Ordner “Dienstprogramme” innerhalb des Ordners “Programme” oder indem Sie <code>cmd + Leertaste</code> drücken und “Terminal” eingeben.</li>
+</ul></li>
+<li><strong>Starten Sie den MongoDB-Dienst</strong>:
+<ul>
+<li>Geben Sie den folgenden Befehl im Terminal ein und drücken Sie <code>Enter</code>:</li>
+</ul>
+<div class="sourceCode" id="cb11"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> services start mongodb-community@7.0</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Wenn alles korrekt eingerichtet ist, sehen Sie eine Bestätigungsmeldung, dass der Dienst gestartet wurde.</li>
+</ul></li>
+</ol>
+</section>
+<section id="überprüfen-ob-mongodb-läuft" class="level4" data-number="21.2.3.2">
+<h4 data-number="21.2.3.2" class="anchored" data-anchor-id="überprüfen-ob-mongodb-läuft"><span class="header-section-number">21.2.3.2</span> Überprüfen, ob MongoDB läuft</h4>
+<p>Um sicherzustellen, dass MongoDB korrekt gestartet wurde und läuft, können Sie eine Liste aller von Homebrew verwalteten Dienste anzeigen.</p>
+<p><strong>So überprüfen Sie den Status von MongoDB:</strong></p>
+<ol type="1">
+<li><p><strong>Geben Sie den folgenden Befehl im Terminal ein und drücken Sie <code>Enter</code></strong>:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> services list</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Dieser Befehl zeigt eine Liste aller Dienste an, die von Homebrew verwaltet werden, sowie deren aktuellen Status.</li>
+</ul></li>
+<li><p><strong>Überprüfen Sie den Eintrag für <code>mongodb-community</code></strong>:</p>
+<ul>
+<li>In der Liste sollten Sie <code>mongodb-community</code> sehen, gefolgt von der Versionsnummer und dem Status <code>started</code>. Dies zeigt an, dass MongoDB erfolgreich läuft.</li>
+</ul></li>
+</ol>
+</section>
+<section id="stoppen-von-mongodb" class="level4" data-number="21.2.3.3">
+<h4 data-number="21.2.3.3" class="anchored" data-anchor-id="stoppen-von-mongodb"><span class="header-section-number">21.2.3.3</span> Stoppen von MongoDB</h4>
+<p>Wenn Sie MongoDB beenden möchten, können Sie dies ebenfalls mit einem einfachen Homebrew-Befehl tun.</p>
+<p><strong>So stoppen Sie den MongoDB-Dienst:</strong></p>
+<ol type="1">
+<li><p><strong>Geben Sie den folgenden Befehl im Terminal ein und drücken Sie <code>Enter</code></strong>:</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> services stop mongodb-community@7.0</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Auch hier sollte eine Bestätigungsmeldung erscheinen, dass der Dienst gestoppt wurde.</li>
+</ul></li>
+</ol>
+</section>
+<section id="zusammenfassung" class="level4" data-number="21.2.3.4">
+<h4 data-number="21.2.3.4" class="anchored" data-anchor-id="zusammenfassung"><span class="header-section-number">21.2.3.4</span> Zusammenfassung</h4>
+<ul>
+<li><p><strong>Starten</strong>: Um MongoDB zu starten, verwenden Sie den Befehl:</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> services start mongodb-community@7.0</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p><strong>Prüfen</strong>: Um zu überprüfen, ob MongoDB läuft, verwenden Sie den Befehl:</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> services list</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Suchen Sie in der Liste nach <code>mongodb-community</code> und stellen Sie sicher, dass der Status <code>started</code> angezeigt wird.</li>
+</ul></li>
+<li><p><strong>Stoppen</strong>: Um MongoDB zu stoppen, verwenden Sie den Befehl:</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> services stop mongodb-community@7.0</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ul>
+<p>Diese Befehle bieten eine einfache Möglichkeit, den MongoDB-Dienst zu verwalten, ohne tiefere technische Kenntnisse über macOS-Dienste zu benötigen.</p>
 
 
+</section>
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -801,13 +1075,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../index.html" class="pagination-link" aria-label="Willkommen">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Willkommen</span>
+      <a href="../nosql/nosql.html" class="pagination-link" aria-label="NoSQL Datenbanken">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">NoSQL Datenbanken</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../first-steps/project-environment.html" class="pagination-link" aria-label="Projektumgebung">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Projektumgebung</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../nosql/mongo-db-start-stop.html" class="pagination-link" aria-label="MongoDB starten und stoppen">
+        <span class="nav-page-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">MongoDB starten und stoppen</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

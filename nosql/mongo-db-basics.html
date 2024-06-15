@@ -9,7 +9,7 @@
 <meta name="author" content="Jan Kirenz">
 <meta name="description" content="Programming Toolkit für Data Science, AI &amp; Analytics">
 
-<title>Data Science, AI &amp; Analytics Toolkit - Erste Schritte</title>
+<title>Data Science, AI &amp; Analytics Toolkit - 23&nbsp; Grundlegende Nutzung von MongoDB</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -32,8 +66,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../first-steps/project-environment.html" rel="next">
-<link href="../index.html" rel="prev">
+<link href="../nosql/mongo-db-python.html" rel="next">
+<link href="../nosql/mongo-db-start-stop.html" rel="prev">
 <link href="..//images/logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -84,7 +118,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../first-steps/first-steps.html">Erste Schritte</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../nosql/nosql.html">NoSQL Datenbanken</a></li><li class="breadcrumb-item"><a href="../nosql/mongo-db-basics.html"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Grundlegende Nutzung von MongoDB</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -115,7 +149,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../first-steps/first-steps.html" class="sidebar-item-text sidebar-link active">
+            <a href="../first-steps/first-steps.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Erste Schritte</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -300,7 +334,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../nosql/mongo-db-basics.html" class="sidebar-item-text sidebar-link">
+  <a href="../nosql/mongo-db-basics.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Grundlegende Nutzung von MongoDB</span></span></a>
   </div>
 </li>
@@ -359,14 +393,26 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Inhaltsverzeichnis</h2>
+   
+  <ul>
+  <li><a href="#verbindung-zur-mongodb-instanz" id="toc-verbindung-zur-mongodb-instanz" class="nav-link active" data-scroll-target="#verbindung-zur-mongodb-instanz"><span class="header-section-number">23.1</span> Verbindung zur MongoDB-Instanz</a></li>
+  <li><a href="#datenbanken-anzeigen" id="toc-datenbanken-anzeigen" class="nav-link" data-scroll-target="#datenbanken-anzeigen"><span class="header-section-number">23.2</span> Datenbanken anzeigen</a></li>
+  <li><a href="#datenbank-auswählen-oder-erstellen" id="toc-datenbank-auswählen-oder-erstellen" class="nav-link" data-scroll-target="#datenbank-auswählen-oder-erstellen"><span class="header-section-number">23.3</span> Datenbank auswählen oder erstellen</a></li>
+  <li><a href="#sammlung-collection-erstellen" id="toc-sammlung-collection-erstellen" class="nav-link" data-scroll-target="#sammlung-collection-erstellen"><span class="header-section-number">23.4</span> Sammlung (Collection) erstellen</a></li>
+  <li><a href="#dokument-einfügen" id="toc-dokument-einfügen" class="nav-link" data-scroll-target="#dokument-einfügen"><span class="header-section-number">23.5</span> Dokument einfügen</a></li>
+  <li><a href="#dokumente-abfragen" id="toc-dokumente-abfragen" class="nav-link" data-scroll-target="#dokumente-abfragen"><span class="header-section-number">23.6</span> Dokumente abfragen</a></li>
+  <li><a href="#weitere-befehle" id="toc-weitere-befehle" class="nav-link" data-scroll-target="#weitere-befehle"><span class="header-section-number">23.7</span> Weitere Befehle</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../nosql/nosql.html">NoSQL Datenbanken</a></li><li class="breadcrumb-item"><a href="../nosql/mongo-db-basics.html"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Grundlegende Nutzung von MongoDB</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Erste Schritte</h1>
+<h1 class="title"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Grundlegende Nutzung von MongoDB</span></h1>
 </div>
 
 
@@ -383,11 +429,62 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>In diesem ersten Abschnitt werden wir eine grundlegende Arbeitsumgebung einrichten, die für jedes datenbezogene Vorhaben unerlässlich ist.</p>
-<p>Sie lernen, wie Sie sich auf der Befehlszeile Ihres Computers zurechtfinden, Python zum ersten Mal einrichten und die Anaconda-Distribution (ein Data-Science-Softwarpaket) verwenden.</p>
-<p>Zusätzlich zeigen wir Ihnen, wie Sie Jupyter Notebook, ein leistungsstarkes Werkzeug zur interaktiven Datenexploration, nutzen und bringen Ihnen die Grundlagen von Markdown bei, um Ihre Arbeit effektiv zu dokumentieren.</p>
+<p>In diesem Abschnitt lernen Sie die grundlegende Nutzung von MongoDB, einschließlich der Verbindung zur Datenbank, grundlegender Befehle und Datenbankmanipulation.</p>
+<p>Die MongoDB Shell (mongosh) ist das primäre Interface zur Interaktion mit Ihrer MongoDB-Datenbank. Sie ermöglicht es Ihnen, Befehle direkt einzugeben und auszuführen.</p>
+<section id="verbindung-zur-mongodb-instanz" class="level2" data-number="23.1">
+<h2 data-number="23.1" class="anchored" data-anchor-id="verbindung-zur-mongodb-instanz"><span class="header-section-number">23.1</span> Verbindung zur MongoDB-Instanz</h2>
+<p>Um die MongoDB Shell zu starten und sich mit Ihrer laufenden MongoDB-Instanz zu verbinden, öffnen Sie ein Terminal und geben Sie den folgenden Befehl ein:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">mongosh</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Wenn die Verbindung erfolgreich ist, sehen Sie die mongosh-Eingabeaufforderung:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">test</span><span class="op">&gt;</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Falls Sie eine Fehlermeldung erhalten, stellen Sie sicher, dass <a href="../nosql/mongo-db-start-stop.html">MongoDB auf Ihrem System läuft</a>.</p>
+</section>
+<section id="datenbanken-anzeigen" class="level2" data-number="23.2">
+<h2 data-number="23.2" class="anchored" data-anchor-id="datenbanken-anzeigen"><span class="header-section-number">23.2</span> Datenbanken anzeigen</h2>
+<p>Um alle verfügbaren Datenbanken aufzulisten, verwenden Sie den folgenden Befehl:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">show</span> dbs</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Dieser Befehl zeigt eine Liste aller Datenbanken, die auf der MongoDB-Instanz gespeichert sind.</p>
+</section>
+<section id="datenbank-auswählen-oder-erstellen" class="level2" data-number="23.3">
+<h2 data-number="23.3" class="anchored" data-anchor-id="datenbank-auswählen-oder-erstellen"><span class="header-section-number">23.3</span> Datenbank auswählen oder erstellen</h2>
+<p>Um eine spezifische Datenbank auszuwählen oder zu erstellen, verwenden Sie den <code>use</code>-Befehl:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">use</span> mydatabase</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Dieser Befehl wechselt zur Datenbank <code>mydatabase</code>. Wenn die Datenbank noch nicht existiert, wird sie erstellt.</p>
+</section>
+<section id="sammlung-collection-erstellen" class="level2" data-number="23.4">
+<h2 data-number="23.4" class="anchored" data-anchor-id="sammlung-collection-erstellen"><span class="header-section-number">23.4</span> Sammlung (Collection) erstellen</h2>
+<p>Um eine neue Sammlung innerhalb der aktuellen Datenbank zu erstellen, verwenden Sie den <code>createCollection</code>-Befehl:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">db.createCollection</span><span class="er">(</span><span class="st">"mycollection"</span><span class="kw">)</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Dieser Befehl erstellt eine neue Sammlung namens <code>mycollection</code>.</p>
+</section>
+<section id="dokument-einfügen" class="level2" data-number="23.5">
+<h2 data-number="23.5" class="anchored" data-anchor-id="dokument-einfügen"><span class="header-section-number">23.5</span> Dokument einfügen</h2>
+<p>Um ein Dokument in eine Sammlung einzufügen, verwenden Sie den <code>insertOne</code>-Befehl:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">db.mycollection.insertOne</span><span class="er">(</span><span class="ex">{name:</span> <span class="st">"Jan"</span>, age: 44}<span class="kw">)</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Dieser Befehl fügt ein neues Dokument in die Sammlung <code>mycollection</code> ein.</p>
+</section>
+<section id="dokumente-abfragen" class="level2" data-number="23.6">
+<h2 data-number="23.6" class="anchored" data-anchor-id="dokumente-abfragen"><span class="header-section-number">23.6</span> Dokumente abfragen</h2>
+<p>Um alle Dokumente in einer Sammlung abzufragen, verwenden Sie den <code>find</code>-Befehl:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">db.mycollection.find()</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Dieser Befehl gibt alle Dokumente in der Sammlung <code>mycollection</code> zurück.</p>
+</section>
+<section id="weitere-befehle" class="level2" data-number="23.7">
+<h2 data-number="23.7" class="anchored" data-anchor-id="weitere-befehle"><span class="header-section-number">23.7</span> Weitere Befehle</h2>
+<ul>
+<li><p><strong>Ein spezifisches Dokument abfragen</strong>:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">db.mycollection.findOne</span><span class="er">(</span><span class="ex">{name:</span> <span class="st">"Jan"</span>}<span class="kw">)</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Dieser Befehl gibt das erste Dokument zurück, das den angegebenen Kriterien entspricht.</p></li>
+<li><p><strong>Dokumente aktualisieren</strong>:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">db.mycollection.updateOne</span><span class="er">(</span><span class="ex">{name:</span> <span class="st">"Jan"</span>}, {<span class="va">$set</span>: {age: 45}}<span class="kw">)</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Dieser Befehl aktualisiert das Alter von <code>Jan</code> auf 45.</p></li>
+<li><p><strong>Dokumente löschen</strong>:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">db.mycollection.deleteOne</span><span class="er">(</span><span class="ex">{name:</span> <span class="st">"Jan"</span>}<span class="kw">)</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Dieser Befehl löscht das erste Dokument, das den angegebenen Kriterien entspricht.</p></li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -801,13 +898,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../index.html" class="pagination-link" aria-label="Willkommen">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Willkommen</span>
+      <a href="../nosql/mongo-db-start-stop.html" class="pagination-link" aria-label="MongoDB starten und stoppen">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">MongoDB starten und stoppen</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../first-steps/project-environment.html" class="pagination-link" aria-label="Projektumgebung">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Projektumgebung</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../nosql/mongo-db-python.html" class="pagination-link" aria-label="Python-Integration mit MongoDB">
+        <span class="nav-page-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Python-Integration mit MongoDB</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
