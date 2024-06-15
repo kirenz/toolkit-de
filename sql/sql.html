@@ -9,7 +9,7 @@
 <meta name="author" content="Jan Kirenz">
 <meta name="description" content="Programming Toolkit für Data Science, AI &amp; Analytics">
 
-<title>Data Science, AI &amp; Analytics Toolkit - Relationale Datenbanken und SQL</title>
+<title>Data Science, AI &amp; Analytics Toolkit - Relationale Datenbanken</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -84,7 +84,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../sql/sql.html">Relationale Datenbanken und SQL</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../sql/sql.html">Relationale Datenbanken</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -178,7 +178,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../python/python-environment-basics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Python-Integration mit MongoDB</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Umgebungen</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -243,7 +243,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../vscode/visual-studio-code-basics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Grundlegende Tipps</span></span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Tipps</span></span></a>
   </div>
 </li>
       </ul>
@@ -251,7 +251,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../sql/sql.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Relationale Datenbanken und SQL</span></a>
+ <span class="menu-text">Relationale Datenbanken</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -307,7 +307,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../nosql/mongo-db-python.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Python-Integration mit MongoDB</span></span></a>
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Python-Integration</span></span></a>
   </div>
 </li>
       </ul>
@@ -366,7 +366,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Relationale Datenbanken und SQL</h1>
+<h1 class="title">Relationale Datenbanken</h1>
 </div>
 
 
@@ -385,16 +385,11 @@ ul.task-list li input[type="checkbox"] {
 
 <p>Eine relationale Datenbank ist eine Sammlung von Datenobjekten mit vordefinierten Beziehungen zwischen ihnen. Diese Objekte sind als eine Reihe von Tabellen mit Spalten und Zeilen organisiert (<a href="https://aws.amazon.com/relational-database/?nc1=h_ls">AWS</a>):</p>
 <ul>
-<li><em>Tabellen</em> werden verwendet, um Informationen über die in der Datenbank darzustellenden Objekte zu speichern.</li>
-<li>Jede <em>Spalte</em> in einer Tabelle enthält eine bestimmte Art von Daten, und ein Feld speichert den tatsächlichen Wert eines Attributs.</li>
-<li>Die <em>Zeilen</em> in der Tabelle stellen eine Sammlung verwandter Werte eines Objekts oder einer Entität dar.</li>
-<li>Jede Zeile in einer Tabelle kann mit einem eindeutigen Bezeichner, dem <em>Primärschlüssel</em>, markiert werden, und Zeilen in mehreren Tabellen können mithilfe von <em>Fremdschlüsseln</em> miteinander in Beziehung gesetzt werden.</li>
+<li><p><em>Tabellen</em> werden verwendet, um Informationen über die in der Datenbank darzustellenden Objekte zu speichern.</p></li>
+<li><p>Jede <em>Spalte</em> in einer Tabelle enthält eine bestimmte Art von Daten, und ein Feld speichert den tatsächlichen Wert eines Attributs.</p></li>
+<li><p>Die <em>Zeilen</em> in der Tabelle stellen eine Sammlung verwandter Werte eines Objekts oder einer Entität dar.</p></li>
+<li><p>Jede Zeile in einer Tabelle kann mit einem eindeutigen Bezeichner, dem <em>Primärschlüssel</em>, markiert werden, und Zeilen in mehreren Tabellen können mithilfe von <em>Fremdschlüsseln</em> miteinander in Beziehung gesetzt werden.</p></li>
 </ul>
-<p>Was ist eine relationale Datenbank:</p>
-<p><br></p>
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/OqjJjpjDRLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
-</iframe>
-<p><br></p>
 <p>Diese Daten können auf viele verschiedene Arten (z.B. mit SQL) abgerufen werden. <strong>Structured Query Language</strong> (SQL, ausgesprochen “S-Q-L” oder manchmal “Sequel”) ist eine der grundlegendsten Fähigkeiten, die Sie im Umgang mit Daten beherrschen sollten. Es ermöglicht Ihnen, effizient mit Datenbanken zu interagieren, Daten abzurufen und zu manipulieren sowie komplexe Abfragen und Analysen durchzuführen.</p>
 <p>Im nächsten Abschnitt werden wir uns mit der Einrichtung und Verwendung von MySQL und PostgreSQL befassen. Diese relationalen Datenbankmanagementsysteme (RDBMS) sind weit verbreitet und bieten robuste und leistungsstarke Lösungen für die Datenverwaltung.</p>
 <p>Wir werden die folgenden Themen behandeln:</p>
@@ -819,8 +814,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../vscode/visual-studio-code-basics.html" class="pagination-link" aria-label="Grundlegende Tipps">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Grundlegende Tipps</span></span>
+      <a href="../vscode/visual-studio-code-basics.html" class="pagination-link" aria-label="Tipps">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Tipps</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

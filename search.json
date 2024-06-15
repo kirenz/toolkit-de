@@ -351,56 +351,23 @@
   {
     "objectID": "python/python-environment-basics.html",
     "href": "python/python-environment-basics.html",
-    "title": "8  Python-Integration mit MongoDB",
+    "title": "8  Umgebungen",
     "section": "",
-    "text": "8.1 Umgebung erstellen\nUm eine Umgebung einzurichten, befolgen Sie diese Anweisungen basierend auf Ihrem Betriebssystem:",
+    "text": "8.1 Umgebung erstellen\nUm eine Umgebung einzurichten, befolgen Sie diese Anweisungen basierend auf Ihrem Betriebssystem:\nDas Erstellen einer separaten Umgebung für Python-Grundlagen stellt sicher, dass Ihr Arbeitsbereich isoliert und stabil bleibt.",
     "crumbs": [
       "Python",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Python-Integration mit MongoDB</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Umgebungen</span>"
     ]
   },
   {
     "objectID": "python/python-environment-basics.html#umgebung-erstellen",
     "href": "python/python-environment-basics.html#umgebung-erstellen",
-    "title": "8  Python-Integration mit MongoDB",
+    "title": "8  Umgebungen",
     "section": "",
-    "text": "Zugriff auf die Eingabeaufforderung oder das Terminal:\n\nWindows-Benutzer: Öffnen Sie die Anaconda-Eingabeaufforderung über das Startmenü.\nmacOS-Benutzer: Öffnen Sie das Terminal unter Programme &gt; Dienstprogramme oder durch die Suche nach “Terminal”.\n\nErstellen der Umgebung:\n\nVerwenden Sie den folgenden Befehl, um eine neue Conda-Umgebung namens mongodb mit Python 3.11 und pip zu erstellen:\n\nconda create --name mongodb python=3.11 pip\nAktivieren der Umgebung:\n\nSobald die Umgebung erstellt ist, aktivieren Sie sie mit:\n\nconda activate mongodb\n\nDie Eingabeaufforderung ändert sich, um anzuzeigen, dass die Umgebung mongodb aktiv ist.\n\nInstallieren der benötigten Bibliotheken:\n\nMit aktivierter Umgebung installieren Sie die Bibliotheken:\n\npip install pymongo numpy pandas matplotlib seaborn altair jupyter ipykernel\n\nDieser Befehl ruft alle Pakete von PyPI ab und installiert sie.",
+    "text": "Zugriff auf die Eingabeaufforderung oder das Terminal:\n\nWindows-Benutzer: Öffnen Sie die Anaconda-Eingabeaufforderung über das Startmenü.\nmacOS-Benutzer: Öffnen Sie das Terminal unter Programme &gt; Dienstprogramme oder durch die Suche nach “Terminal”.\n\nErstellen der Umgebung:\n\nVerwenden Sie den folgenden Befehl, um eine neue Conda-Umgebung namens basics mit Python 3.11 und pip zu erstellen:\n\nconda create --name basics python=3.11 pip\n\nGeben Sie bei Proceed ([y]/n)?ein y ein, um die Installtion zu starten.\n\n\n\n\n\n\n\npip ist ein Paketverwaltungstool für Python. Es steht für “Pip Installs Packages” oder “Pip Installs Python” und wird verwendet, um Python-Pakete aus dem Python Package Index (PyPI) zu installieren und zu verwalten. Mit pip kann man Pakete installieren, aktualisieren und deinstallieren.\n\n\n\nAktivieren der Umgebung:\n\nSobald die Umgebung erstellt ist, aktivieren Sie sie mit:\n\nconda activate basics\n\nDie Eingabeaufforderung ändert sich, um anzuzeigen, dass die Umgebung basics aktiv ist.\n\nInstallieren der benötigten Bibliotheken:\n\nMit aktivierter Umgebung installieren Sie die Bibliotheken:\n\npip install numpy pandas matplotlib seaborn altair jupyter ipykernel\n\nDieser Befehl ruft alle Pakete von PyPI ab und installiert sie.\n\n\n\n\n\n\n\nObwohl Sie Pakete auch mit conda install installieren können, verwenden wir ausschließlich pip, um mögliche Konflikte zwischen Conda- und Pip-installierten Paketen zu vermeiden. Dieser Ansatz stellt eine konsistente und zuverlässige Verwaltung von Abhängigkeiten in Ihrer Python-Umgebung sicher.\n\n\n\nÜberprüfen der Paketinstallation:\n\nNach der Installation öffnen Sie ein Jupyter Notebook und überprüfen, ob die Pakete verfügbar sind, indem Sie sie in Python importieren.\n\n\n\n\n\n\n\nUm die Nutzung der Funktionen und Methoden der Bibliotheken in Ihrem Code zu erleichtern, importieren wir sie häufig mit kürzeren, standardisierten Aliasen (die Verwendung dieser Standard-Aliase verbessert die Lesbarkeit des Codes und reduziert den Schreibaufwand).\n\n\n\nimport numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport seaborn as sns\nimport altair as alt\n\nWenn keine Fehler auftreten, wurden die Bibliotheken korrekt installiert.\n\n\n\n\n\n\n\nErklärung der Pakete\n\n\n\n\n\nNumPy (np): Der Alias np wird weit verbreitet verwendet und ermöglicht einen prägnanten Zugriff auf NumPys Funktionen für numerische Berechnungen.\nPandas (pd): Der Alias pd bietet eine Kurzform für Pandas’ leistungsstarke Datenmanipulationstools.\nMatplotlib (plt): Der Alias plt vereinfacht das Aufrufen der Funktionen von Matplotlib zum Plotten, Erstellen von Abbildungen und Anpassen von Grafiken.\nSeaborn (sns): Der Alias sns erleichtert den Zugriff auf Seaborns statistische Datenvisualisierungstools, die nahtlos mit Matplotlib integriert sind.\nAltair (alt): Der Alias alt ermöglicht einen schnellen Zugriff auf Altairs Visualisierungssyntax für interaktives Plotten.\n\n\n\nDeaktivieren der Umgebung:\n\nWenn Sie fertig sind oder zur Basisumgebung zurückkehren möchten, deaktivieren Sie die aktuelle Umgebung:\n\nconda deactivate",
     "crumbs": [
       "Python",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Python-Integration mit MongoDB</span>"
-    ]
-  },
-  {
-    "objectID": "python/python-environment-basics.html#verbindung-herstellen",
-    "href": "python/python-environment-basics.html#verbindung-herstellen",
-    "title": "8  Python-Integration mit MongoDB",
-    "section": "8.2 Verbindung herstellen",
-    "text": "8.2 Verbindung herstellen\nUm mit MongoDB zu arbeiten, müssen Sie in einem Jupyter Notebook eine Verbindung zur Datenbank herstellen. Dies erfolgt in mehreren Schritten, die unten beschrieben sind:\nSchritt 1: Importieren der pymongo-Bibliothek\nZuerst müssen Sie die pymongo-Bibliothek importieren, die eine Schnittstelle zwischen Python und MongoDB bietet.\nimport pymongo\nSchritt 2: Erstellen eines MongoDB-Clients\nErstellen Sie eine Verbindung zum MongoDB-Server. Der Standardanschluss für MongoDB ist 27017.\n# Verbindung zur MongoDB herstellen\nclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\nHier verwenden wir localhost, da der MongoDB-Server auf dem lokalen Rechner läuft. Wenn der Server auf einem Remote-Server läuft, ersetzen Sie localhost durch die IP-Adresse oder den Domain-Namen des Servers.\nSchritt 3: Auswählen der Datenbank\nMongoDB organisiert Daten in Datenbanken. Um eine bestimmte Datenbank zu verwenden, greifen Sie auf diese wie folgt zu:\n# Datenbank auswählen\ndb = client[\"mydatabase\"]\nFalls die Datenbank noch nicht existiert, wird sie erstellt, sobald Sie ein Dokument einfügen.\nSchritt 4: Auswählen der Sammlung\nInnerhalb einer Datenbank organisiert MongoDB Daten in Sammlungen (ähnlich wie Tabellen in SQL-Datenbanken). Sie können eine Sammlung wie folgt auswählen:\n# Sammlung auswählen\ncollection = db[\"mycollection\"]\nAuch hier gilt: Falls die Sammlung noch nicht existiert, wird sie erstellt, sobald Sie ein Dokument einfügen.\nSchritt 5: Einfügen eines Dokuments\nEin Dokument in MongoDB ist ein JSON-ähnliches Objekt. Sie können ein Dokument wie folgt einfügen:\n# Dokument einfügen\ncollection.insert_one({\"name\": \"Alice\", \"age\": 25})\nDer Befehl insert_one fügt ein einzelnes Dokument in die Sammlung ein.\nSchritt 6: Abfragen von Dokumenten\nUm Dokumente aus einer Sammlung abzufragen, können Sie die Methode find verwenden. Diese gibt alle Dokumente in der Sammlung zurück:\n# Dokumente abfragen\nfor doc in collection.find():\n    print(doc)\nDieser Code durchläuft alle Dokumente in der Sammlung und druckt sie aus.\nHier der Output der Abfrage:\n{'_id': ObjectId('666d5f5b50a5f96c3ed89649'), 'name': 'Jan', 'age': 44}\n{'_id': ObjectId('666d7727c1365bab40959889'), 'name': 'Alice', 'age': 25}",
-    "crumbs": [
-      "Python",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Python-Integration mit MongoDB</span>"
-    ]
-  },
-  {
-    "objectID": "python/python-environment-basics.html#fehlerbehandlung",
-    "href": "python/python-environment-basics.html#fehlerbehandlung",
-    "title": "8  Python-Integration mit MongoDB",
-    "section": "8.3 Fehlerbehandlung",
-    "text": "8.3 Fehlerbehandlung\nEs ist wichtig, bei der Arbeit mit Datenbanken Fehler zu behandeln. Hier ist ein Beispiel, wie Sie Verbindungsfehler abfangen können:\ntry:\n    client = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n    print(\"Verbindung erfolgreich\")\nexcept pymongo.errors.ConnectionError as e:\n    print(\"Verbindung fehlgeschlagen:\", e)\nDieses Beispiel fängt Verbindungsfehler ab und gibt eine entsprechende Meldung aus.",
-    "crumbs": [
-      "Python",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Python-Integration mit MongoDB</span>"
-    ]
-  },
-  {
-    "objectID": "python/python-environment-basics.html#weitere-funktionen",
-    "href": "python/python-environment-basics.html#weitere-funktionen",
-    "title": "8  Python-Integration mit MongoDB",
-    "section": "8.4 Weitere Funktionen",
-    "text": "8.4 Weitere Funktionen\npymongo bietet viele weitere Funktionen, wie das Aktualisieren und Löschen von Dokumenten sowie das Erstellen von Indizes. Hier sind einige Beispiele:\nDokument aktualisieren\n# Dokument aktualisieren\ncollection.update_one({\"name\": \"Alice\"}, {\"$set\": {\"age\": 26}})\nDokument löschen\n# Dokument löschen\ncollection.delete_one({\"name\": \"Alice\"})\nIndizes erstellen\n# Index erstellen\ncollection.create_index([(\"name\", pymongo.ASCENDING)])\nDiese zusätzlichen Funktionen ermöglichen eine umfassendere Interaktion mit Ihrer MongoDB-Datenbank.",
-    "crumbs": [
-      "Python",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Python-Integration mit MongoDB</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Umgebungen</span>"
     ]
   },
   {
@@ -441,29 +408,7 @@
     "href": "python/python-basics.html",
     "title": "10  Grundlagen",
     "section": "",
-    "text": "10.1 Jupyter Notebook herunterladen\nSie haben die Möglichkeit, den gesamten Inhalt dieses Kapitels als Notebook herunterzuladen. Nach dem Herunterladen können Sie es in Ihrem code Ordner speichern und das Notebook in Jupyter öffnen:",
-    "crumbs": [
-      "Python",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Grundlagen</span>"
-    ]
-  },
-  {
-    "objectID": "python/python-basics.html#jupyter-notebook-herunterladen",
-    "href": "python/python-basics.html#jupyter-notebook-herunterladen",
-    "title": "10  Grundlagen",
-    "section": "",
-    "text": "Juypter Notebook herunterladen",
-    "crumbs": [
-      "Python",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Grundlagen</span>"
-    ]
-  },
-  {
-    "objectID": "python/python-basics.html#bibliotheken-importieren",
-    "href": "python/python-basics.html#bibliotheken-importieren",
-    "title": "10  Grundlagen",
-    "section": "10.2 Bibliotheken importieren",
-    "text": "10.2 Bibliotheken importieren\nDas Importieren von Bibliotheken ist unerlässlich, um zusätzliche Python-Funktionen nutzen zu können. Wir importieren sie am Anfang der Datei, um Übersichtlichkeit und Effizienz zu gewährleisten. Ein Alias (ein kurzer Name) erleichtert die Referenzierung im gesamten Code.\nFügen Sie den folgenden Code in eine neue Codezelle direkt unter Ihrem Titel ein und führen Sie ihn aus:\n\n# Bibliotheken importieren (am Anfang)\nimport numpy as np\nimport pandas as pd\nimport altair as alt",
+    "text": "10.1 Bibliotheken importieren\nDas Importieren von Bibliotheken ist unerlässlich, um zusätzliche Python-Funktionen nutzen zu können. Wir importieren sie am Anfang der Datei, um Übersichtlichkeit und Effizienz zu gewährleisten. Ein Alias (ein kurzer Name) erleichtert die Referenzierung im gesamten Code.\nFügen Sie den folgenden Code in eine neue Codezelle direkt unter Ihrem Titel ein und führen Sie ihn aus:\n# Bibliotheken importieren (am Anfang)\nimport numpy as np\nimport pandas as pd\nimport altair as alt",
     "crumbs": [
       "Python",
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>Grundlagen</span>"
@@ -473,8 +418,8 @@
     "objectID": "python/python-basics.html#kommentare-einfügen",
     "href": "python/python-basics.html#kommentare-einfügen",
     "title": "10  Grundlagen",
-    "section": "10.3 Kommentare einfügen",
-    "text": "10.3 Kommentare einfügen\nIn Python kann man Kommentare im Code schreiben, indem man das Zeichen # verwendet. Alles, was nach diesem Zeichen auf derselben Zeile steht, wird vom Python-Interpreter ignoriert. Kommentare sind nützlich, um den Code zu dokumentieren, Erklärungen hinzuzufügen oder vorübergehend Teile des Codes zu deaktivieren.",
+    "section": "10.2 Kommentare einfügen",
+    "text": "10.2 Kommentare einfügen\nIn Python kann man Kommentare im Code schreiben, indem man das Zeichen # verwendet. Alles, was nach diesem Zeichen auf derselben Zeile steht, wird vom Python-Interpreter ignoriert. Kommentare sind nützlich, um den Code zu dokumentieren, Erklärungen hinzuzufügen oder vorübergehend Teile des Codes zu deaktivieren.",
     "crumbs": [
       "Python",
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>Grundlagen</span>"
@@ -484,8 +429,8 @@
     "objectID": "python/python-basics.html#variablen-und-datentypen",
     "href": "python/python-basics.html#variablen-und-datentypen",
     "title": "10  Grundlagen",
-    "section": "10.4 Variablen und Datentypen",
-    "text": "10.4 Variablen und Datentypen\nVariablen werden verwendet, um verschiedene Arten von Daten in Python zu speichern. Datentypen definieren die Natur dieser Daten und beeinflussen, wie sie verwendet werden können.\nFügen Sie eine neue Codezelle hinzu, kopieren Sie dann den unten angegebenen Code in diese Zelle und führen Sie die Zelle anschließend aus.\nBeispielcode:\n\n# Variablen zuweisen (mit beschreibenden Namen)\nname = \"Alice\"  # String für den Namen einer Person\nage = 30  # Integer für das Alter\nheight = 5.5  # Float für die Größe in Fuß\nnumbers = [1, 2, 3]  # Liste von ganzen Zahlen\nperson = {\"name\": \"Alice\", \"age\": 30}  # Wörterbuch für Personendaten\n\nErklärung:\n\nname ist ein String, der eine Zeichenfolge speichert, die einen Namen darstellt.\nage ist eine Integer-Variable, die eine ganze Zahl darstellt.\nheight ist ein Float, der eine Zahl mit einem Dezimalpunkt darstellt.\nnumbers ist eine Liste, die eine geordnete Sammlung von Elementen darstellt.\nperson ist ein Dictionary (Wörterbuch), das aus Schlüssel-Wert-Paaren besteht und mehrere Attribute speichern kann.\n\nUm die in diesen Variablen gespeicherten Werte zu überprüfen, können Sie die print-Funktion verwenden:\n\nprint(name)  # Ausgabe: Alice\nprint(age)  # Ausgabe: 30\nprint(numbers)  # Ausgabe: [1, 2, 3]\nprint(person)  # Ausgabe: {'name': 'Alice', 'age': 30}\n\nAlice\n30\n[1, 2, 3]\n{'name': 'Alice', 'age': 30}",
+    "section": "10.3 Variablen und Datentypen",
+    "text": "10.3 Variablen und Datentypen\nVariablen werden verwendet, um verschiedene Arten von Daten in Python zu speichern. Datentypen definieren die Natur dieser Daten und beeinflussen, wie sie verwendet werden können.\nFügen Sie eine neue Codezelle hinzu, kopieren Sie dann den unten angegebenen Code in diese Zelle und führen Sie die Zelle anschließend aus.\nBeispielcode:\n\n# Variablen zuweisen (mit beschreibenden Namen)\nname = \"Alice\"  # String für den Namen einer Person\nage = 30  # Integer für das Alter\nheight = 5.5  # Float für die Größe in Fuß\nnumbers = [1, 2, 3]  # Liste von ganzen Zahlen\nperson = {\"name\": \"Alice\", \"age\": 30}  # Wörterbuch für Personendaten\n\nErklärung:\n\nname ist ein String, der eine Zeichenfolge speichert, die einen Namen darstellt.\nage ist eine Integer-Variable, die eine ganze Zahl darstellt.\nheight ist ein Float, der eine Zahl mit einem Dezimalpunkt darstellt.\nnumbers ist eine Liste, die eine geordnete Sammlung von Elementen darstellt.\nperson ist ein Dictionary (Wörterbuch), das aus Schlüssel-Wert-Paaren besteht und mehrere Attribute speichern kann.\n\nUm die in diesen Variablen gespeicherten Werte zu überprüfen, können Sie die print-Funktion verwenden:\n\nprint(name)  # Ausgabe: Alice\nprint(age)  # Ausgabe: 30\nprint(numbers)  # Ausgabe: [1, 2, 3]\nprint(person)  # Ausgabe: {'name': 'Alice', 'age': 30}\n\nAlice\n30\n[1, 2, 3]\n{'name': 'Alice', 'age': 30}",
     "crumbs": [
       "Python",
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>Grundlagen</span>"
@@ -495,8 +440,8 @@
     "objectID": "python/python-basics.html#grundlegende-operatoren-und-berechnungen",
     "href": "python/python-basics.html#grundlegende-operatoren-und-berechnungen",
     "title": "10  Grundlagen",
-    "section": "10.5 Grundlegende Operatoren und Berechnungen",
-    "text": "10.5 Grundlegende Operatoren und Berechnungen\nOperatoren ermöglichen Berechnungen, Vergleiche und logische Operationen.\nBeispielcode:\n\n# Variablen erzeugen\nlength = 10\nwidth = 5\n\nBerechnung der Fläche und des Umfangs:\n\narea = length * width  # Multiplikation\nperimeter = 2 * (length + width)  # Addition und Multiplikation\n\n# Umfang anzeigen\nperimeter\n\n30\n\n\n\nlength und width werden multipliziert, um die area zu berechnen.\nperimeter wird berechnet, indem length und width addiert und dann mit 2 multipliziert werden.\n\nVergleichsoperationen:\n\nis_square = length == width  # Überprüfen, ob Länge und Breite gleich sind\n\nis_square\n\nFalse\n\n\n\nis_square überprüft, ob die beiden Seiten gleich lang sind.\n\nLogische Operationen:\n\nis_large_rectangle = (area &gt; 20) and (perimeter &gt; 10)  # Logisches UND\n\nis_large_rectangle\n\nTrue\n\n\n\nis_large_rectangle verwendet logische Operatoren, um festzustellen, ob das Rechteck sowohl eine große Fläche als auch einen großen Umfang hat.",
+    "section": "10.4 Grundlegende Operatoren und Berechnungen",
+    "text": "10.4 Grundlegende Operatoren und Berechnungen\nOperatoren ermöglichen Berechnungen, Vergleiche und logische Operationen.\nBeispielcode:\n\n# Variablen erzeugen\nlength = 10\nwidth = 5\n\nBerechnung der Fläche und des Umfangs:\n\narea = length * width  # Multiplikation\nperimeter = 2 * (length + width)  # Addition und Multiplikation\n\n# Umfang anzeigen\nperimeter\n\n30\n\n\n\nlength und width werden multipliziert, um die area zu berechnen.\nperimeter wird berechnet, indem length und width addiert und dann mit 2 multipliziert werden.\n\nVergleichsoperationen:\n\nis_square = length == width  # Überprüfen, ob Länge und Breite gleich sind\n\nis_square\n\nFalse\n\n\n\nis_square überprüft, ob die beiden Seiten gleich lang sind.\n\nLogische Operationen:\n\nis_large_rectangle = (area &gt; 20) and (perimeter &gt; 10)  # Logisches UND\n\nis_large_rectangle\n\nTrue\n\n\n\nis_large_rectangle verwendet logische Operatoren, um festzustellen, ob das Rechteck sowohl eine große Fläche als auch einen großen Umfang hat.",
     "crumbs": [
       "Python",
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>Grundlagen</span>"
@@ -506,8 +451,8 @@
     "objectID": "python/python-basics.html#arbeiten-mit-dataframes",
     "href": "python/python-basics.html#arbeiten-mit-dataframes",
     "title": "10  Grundlagen",
-    "section": "10.6 Arbeiten mit DataFrames",
-    "text": "10.6 Arbeiten mit DataFrames\nEin DataFrame ist eine zweidimensionale tabellarische Datenstruktur, die von Pandas bereitgestellt wird. Es ermöglicht eine effiziente Datenmanipulation, ähnlich wie ein Tabellenblatt oder eine SQL-Tabelle.\nHier ein Beispiel. Wir bereiten zunächst die Daten vor:\n\ndata = { \n         \"Numbers\": [1, 2, 3, 4, 5], \n         \"Squares\": [1, 4, 9, 16, 25]\n}\n\n\nDas Wörterbuch data enthält zwei Listen: Zahlen und deren Quadrate.\n\nErstellen eines DataFrame mit Pandas:\n\ndf = pd.DataFrame(data)\n\n\nDer DataFrame df wird aus diesem Wörterbuch mit der Funktion pd.DataFrame erstellt, die die Daten in Zeilen und Spalten organisiert.\n\nDen DataFrame inspizieren (dafür verwenden wir nicht print())\n\ndf\n\n\n\n\n\n\n\n\nNumbers\nSquares\n\n\n\n\n0\n1\n1\n\n\n1\n2\n4\n\n\n2\n3\n9\n\n\n3\n4\n16\n\n\n4\n5\n25\n\n\n\n\n\n\n\n\nDas Eingeben von df in eine Jupyter Notebook-Zelle zeigt den DataFrame in tabellarischer Form an.",
+    "section": "10.5 Arbeiten mit DataFrames",
+    "text": "10.5 Arbeiten mit DataFrames\nEin DataFrame ist eine zweidimensionale tabellarische Datenstruktur, die von Pandas bereitgestellt wird. Es ermöglicht eine effiziente Datenmanipulation, ähnlich wie ein Tabellenblatt oder eine SQL-Tabelle.\nHier ein Beispiel. Wir bereiten zunächst die Daten vor:\n\ndata = { \n         \"Numbers\": [1, 2, 3, 4, 5], \n         \"Squares\": [1, 4, 9, 16, 25]\n}\n\n\nDas Wörterbuch data enthält zwei Listen: Zahlen und deren Quadrate.\n\nErstellen eines DataFrame mit Pandas:\n\ndf = pd.DataFrame(data)\n\n\nDer DataFrame df wird aus diesem Wörterbuch mit der Funktion pd.DataFrame erstellt, die die Daten in Zeilen und Spalten organisiert.\n\nDen DataFrame inspizieren (dafür verwenden wir nicht print())\n\ndf\n\n\n\n\n\n\n\n\nNumbers\nSquares\n\n\n\n\n0\n1\n1\n\n\n1\n2\n4\n\n\n2\n3\n9\n\n\n3\n4\n16\n\n\n4\n5\n25\n\n\n\n\n\n\n\n\nDas Eingeben von df in eine Jupyter Notebook-Zelle zeigt den DataFrame in tabellarischer Form an.",
     "crumbs": [
       "Python",
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>Grundlagen</span>"
@@ -517,8 +462,8 @@
     "objectID": "python/python-basics.html#methoden-verstehen",
     "href": "python/python-basics.html#methoden-verstehen",
     "title": "10  Grundlagen",
-    "section": "10.7 Methoden verstehen",
-    "text": "10.7 Methoden verstehen\nEine Methode ist eine Funktion, die mit einem Objekt (wie einem DataFrame, einer Liste oder einem String) verknüpft ist und über die Punktnotation (.) aufgerufen wird. Dies erleichtert die Manipulation des Objekts und das Abrufen von Informationen.\nBeispielcode:\ndf.head() ist eine Methode, welche die ersten paar Zeilen eines DataFrames anzeigt, um die Daten zu zeigen:\n\ndf.head() \n\n\n\n\n\n\n\n\nNumbers\nSquares\n\n\n\n\n0\n1\n1\n\n\n1\n2\n4\n\n\n2\n3\n9\n\n\n3\n4\n16\n\n\n4\n5\n25\n\n\n\n\n\n\n\ndf.describe() liefert zusammenfassende Statistiken wie Mittelwert, Anzahl und Standardabweichung. Zusätzlich verwenden wir die Methode .round(2), um die Werte auf zwei Dezimalstellen zu runden:\n\ndf.describe().round(2) \n\n\n\n\n\n\n\n\nNumbers\nSquares\n\n\n\n\ncount\n5.00\n5.00\n\n\nmean\n3.00\n11.00\n\n\nstd\n1.58\n9.67\n\n\nmin\n1.00\n1.00\n\n\n25%\n2.00\n4.00\n\n\n50%\n3.00\n9.00\n\n\n75%\n4.00\n16.00\n\n\nmax\n5.00\n25.00\n\n\n\n\n\n\n\nAllgemeines Methodenkonzept:\n\nObjekt: Eine Entität, die Daten und Funktionalität enthält (z.B. DataFrame, Liste oder String).\nMethode: Eine Funktion, die mit einem Objekt verknüpft ist.\nPunktnotation (.): Wird verwendet, um eine Methode auf einem Objekt aufzurufen.",
+    "section": "10.6 Methoden verstehen",
+    "text": "10.6 Methoden verstehen\nEine Methode ist eine Funktion, die mit einem Objekt (wie einem DataFrame, einer Liste oder einem String) verknüpft ist und über die Punktnotation (.) aufgerufen wird. Dies erleichtert die Manipulation des Objekts und das Abrufen von Informationen.\nBeispielcode:\ndf.head() ist eine Methode, welche die ersten paar Zeilen eines DataFrames anzeigt, um die Daten zu zeigen:\n\ndf.head() \n\n\n\n\n\n\n\n\nNumbers\nSquares\n\n\n\n\n0\n1\n1\n\n\n1\n2\n4\n\n\n2\n3\n9\n\n\n3\n4\n16\n\n\n4\n5\n25\n\n\n\n\n\n\n\ndf.describe() liefert zusammenfassende Statistiken wie Mittelwert, Anzahl und Standardabweichung. Zusätzlich verwenden wir die Methode .round(2), um die Werte auf zwei Dezimalstellen zu runden:\n\ndf.describe().round(2) \n\n\n\n\n\n\n\n\nNumbers\nSquares\n\n\n\n\ncount\n5.00\n5.00\n\n\nmean\n3.00\n11.00\n\n\nstd\n1.58\n9.67\n\n\nmin\n1.00\n1.00\n\n\n25%\n2.00\n4.00\n\n\n50%\n3.00\n9.00\n\n\n75%\n4.00\n16.00\n\n\nmax\n5.00\n25.00\n\n\n\n\n\n\n\nAllgemeines Methodenkonzept:\n\nObjekt: Eine Entität, die Daten und Funktionalität enthält (z.B. DataFrame, Liste oder String).\nMethode: Eine Funktion, die mit einem Objekt verknüpft ist.\nPunktnotation (.): Wird verwendet, um eine Methode auf einem Objekt aufzurufen.",
     "crumbs": [
       "Python",
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>Grundlagen</span>"
@@ -528,8 +473,8 @@
     "objectID": "python/python-basics.html#daten-visualisieren",
     "href": "python/python-basics.html#daten-visualisieren",
     "title": "10  Grundlagen",
-    "section": "10.8 Daten visualisieren",
-    "text": "10.8 Daten visualisieren\nNachdem Sie die Struktur eines DataFrames verstanden haben, können Sie dessen Daten mit Altair visualisieren.\nBeispielcode:\n\n# Das Diagramm erstellen\nalt.Chart(df).mark_point().encode(\n    x='Numbers',\n    y='Squares'\n)\n\n\n\n\n\n\n\nErklärung:\n\nAltair-Bibliothek: Eine deklarative Visualisierungsbibliothek, die den Prozess der Erstellung von Diagrammen und Grafiken vereinfacht.\nalt.Chart(df): Erstellt ein neues Diagrammobjekt aus dem DataFrame df.\nmark_point(): Gibt den Diagrammtyp an (in diesem Fall ein Streudiagramm).\nencode: Ordnet DataFrame-Spalten Diagrammattributen zu.\n\nx='Numbers': Legt die horizontale Achse auf die Spalte Numbers fest.\ny='Squares': Legt die vertikale Achse auf die Spalte Squares fest.\n\n\nDiese prägnante Syntax ermöglicht die schnelle Erstellung und Anpassung von Visualisierungen.",
+    "section": "10.7 Daten visualisieren",
+    "text": "10.7 Daten visualisieren\nNachdem Sie die Struktur eines DataFrames verstanden haben, können Sie dessen Daten mit Altair visualisieren.\nBeispielcode:\n\n# Das Diagramm erstellen\nalt.Chart(df).mark_point().encode(\n    x='Numbers',\n    y='Squares'\n)\n\n\n\n\n\n\n\nErklärung:\n\nAltair-Bibliothek: Eine deklarative Visualisierungsbibliothek, die den Prozess der Erstellung von Diagrammen und Grafiken vereinfacht.\nalt.Chart(df): Erstellt ein neues Diagrammobjekt aus dem DataFrame df.\nmark_point(): Gibt den Diagrammtyp an (in diesem Fall ein Streudiagramm).\nencode: Ordnet DataFrame-Spalten Diagrammattributen zu.\n\nx='Numbers': Legt die horizontale Achse auf die Spalte Numbers fest.\ny='Squares': Legt die vertikale Achse auf die Spalte Squares fest.\n\n\nDiese prägnante Syntax ermöglicht die schnelle Erstellung und Anpassung von Visualisierungen.",
     "crumbs": [
       "Python",
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>Grundlagen</span>"
@@ -812,66 +757,66 @@
   {
     "objectID": "vscode/visual-studio-code-basics.html",
     "href": "vscode/visual-studio-code-basics.html",
-    "title": "17  Grundlegende Tipps",
+    "title": "17  Tipps",
     "section": "",
     "text": "17.1 Dateien vs. Ordner\nDas Verständnis des Unterschieds zwischen dem Öffnen einer Datei und dem Öffnen eines Ordners in VS Code ist entscheidend für die Verwaltung Ihres Workflows.\nWenn Sie eine Datei in VS Code öffnen, bearbeiten Sie nur diese eine Datei. Dies eignet sich für schnelle Bearbeitungen.\nDas Öffnen eines Ordners (wie unser Ordner toolkit-lab) setzt dieses Verzeichnis als Ihren “Arbeitsbereich” fest. Dies ist für die Projektverwaltung unerlässlich, da es VS Code ermöglicht, erweiterte Funktionen bereitzustellen.",
     "crumbs": [
       "Visual Studio Code",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Grundlegende Tipps</span>"
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Tipps</span>"
     ]
   },
   {
     "objectID": "vscode/visual-studio-code-basics.html#dateien-vs.-ordner",
     "href": "vscode/visual-studio-code-basics.html#dateien-vs.-ordner",
-    "title": "17  Grundlegende Tipps",
+    "title": "17  Tipps",
     "section": "",
     "text": "Verwenden Sie Datei &gt; Datei öffnen... und wählen Sie die Datei aus, die Sie bearbeiten möchten.\n\n\n\nVerwenden Sie Datei &gt; Ordner öffnen..., um den gesamten Ordner als Ihren Arbeitsbereich zu öffnen.\nDieser Ansatz wird empfohlen, wenn Sie an einem Projekt mit mehreren Dateien arbeiten, da VS Code so den Kontext Ihres Projekts besser verwalten und verstehen kann.\n\n\n\n\n\n\n\nDas Öffnen eines Ordners in VS Code ist vergleichbar mit dem Einrichten eines “Projekts” in anderen Entwicklungsumgebungen. Es ermöglicht VS Code, alle Dateien und Unterverzeichnisse darin als Teil einer einzigen, zusammenhängenden Einheit zu behandeln.",
     "crumbs": [
       "Visual Studio Code",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Grundlegende Tipps</span>"
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Tipps</span>"
     ]
   },
   {
     "objectID": "vscode/visual-studio-code-basics.html#vertrauenswürdigkeit-des-arbeitsbereichs",
     "href": "vscode/visual-studio-code-basics.html#vertrauenswürdigkeit-des-arbeitsbereichs",
-    "title": "17  Grundlegende Tipps",
+    "title": "17  Tipps",
     "section": "17.2 Vertrauenswürdigkeit des Arbeitsbereichs",
     "text": "17.2 Vertrauenswürdigkeit des Arbeitsbereichs\nBeim Öffnen eines neuen Projektordners in Visual Studio Code wird Ihnen eine Aufforderung angezeigt, ob Sie den Autoren der Dateien vertrauen (Workspace Trust):\n\nJa, ich vertraue den Autoren (empfohlen): Wählen Sie diese Option standardmäßig, wenn Sie die Quelle kennen oder wenn das Projekt aus einer zuverlässigen Quelle stammt. Diese Auswahl ermöglicht die volle Funktionalität von Visual Studio Code, sodass alle Funktionen und Erweiterungen verwendet werden können.\n\n\n\n\n\n\n\nWenn Sie in einer vertrauenswürdigen Umgebung oder mit Code von bekannten Mitarbeitern arbeiten, ist es wichtig, “Ja, ich vertraue den Autoren” auszuwählen, um die vollen Fähigkeiten von Visual Studio Code zu nutzen.\n\n\n\n\nNein, ich vertraue den Autoren nicht: Verwenden Sie diese Option nur, wenn Sie Bedenken hinsichtlich der Quelle der Dateien haben. Dadurch werden bestimmte Funktionen innerhalb von VS Code eingeschränkt, um unbefugte Codeausführung zu verhindern.",
     "crumbs": [
       "Visual Studio Code",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Grundlegende Tipps</span>"
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Tipps</span>"
     ]
   },
   {
     "objectID": "vscode/visual-studio-code-basics.html#jupyter-notebook",
     "href": "vscode/visual-studio-code-basics.html#jupyter-notebook",
-    "title": "17  Grundlegende Tipps",
+    "title": "17  Tipps",
     "section": "17.3 Jupyter Notebook",
     "text": "17.3 Jupyter Notebook\nVisual Studio Code unterstützt Jupyter-Notebooks, sobald Sie die Jupyter-Erweiterung installiert haben, und bietet eine integrierte Umgebung, um Python-Code auszuführen, Daten zu visualisieren und Ihren Prozess Schritt für Schritt zu dokumentieren.\nSo richten Sie ein Jupyter-Notebook in VS Code ein und verwenden es:\n\nÖffnen Sie Visual Studio Code.\nStellen Sie sicher, dass die Jupyter-Erweiterung wie zuvor beschrieben installiert ist.\nVerwenden Sie die Tastenkombination Strg+Shift+P (Windows) oder Command+Shift+P (Mac), um die Befehls-Palette zu öffnen.\nGeben Sie Datei: Ordner öffnen... ein und wählen Sie diesen Befehl aus. Navigieren Sie zu dem Ordner toolkit-lab und wählen Sie ihn als Ihr Arbeitsverzeichnis aus.\nBeim ersten Öffnen eines neuen Projektordners, wie toolkit-lab, werden Sie mit einer Anfrage zur Vertrauenswürdigkeit des Arbeitsbereichs konfrontiert. Es ist wichtig, “Ja, ich vertraue den Autoren” auszuwählen.\nNachdem der Ordner geöffnet ist, verwenden Sie erneut die Befehls-Palette und geben Sie Jupyter: Neues leeres Notebook erstellen ein. Dies öffnet ein neues Notebook in VS Code.\nSpeichern Sie das Notebook im Unterordner code innerhalb von toolkit-lab, indem Sie auf Datei &gt; Speichern unter klicken und zum Unterordner code navigieren.\nUm Zellen zu Ihrem Notebook hinzuzufügen, klicken Sie auf das +-Symbol (Sie können entweder Code- oder Markdown-Zellen hinzufügen).\nBevor Sie Code ausführen, müssen Sie einen Kernel auswählen, der der Python-Umgebung entspricht, die Sie verwenden möchten. Klicken Sie auf “Kernel auswählen” in der oberen rechten Ecke Ihres Notebooks, wählen Sie “Python-Umgebungen” und wählen Sie den Kernel basics, den wir zuvor eingerichtet haben.\n\n\n\n\n\n\n\nEin “Kernel” in einem Jupyter-Notebook ist ein Prozess, der den im Notebook-Dokument eingebetteten Code ausführt. Bei der Arbeit mit Python ist der Kernel eine Instanz der Python-Laufzeitumgebung auf Ihrem Computer.",
     "crumbs": [
       "Visual Studio Code",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Grundlegende Tipps</span>"
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Tipps</span>"
     ]
   },
   {
     "objectID": "vscode/visual-studio-code-basics.html#weitere-ressourcen",
     "href": "vscode/visual-studio-code-basics.html#weitere-ressourcen",
-    "title": "17  Grundlegende Tipps",
+    "title": "17  Tipps",
     "section": "17.4 Weitere Ressourcen",
     "text": "17.4 Weitere Ressourcen\nWeitere Ressourcen, um sich mit VS Code vertraut zu machen:\n\nSehen Sie sich die Einführungsvideos an\nDatenwissenschaft in VS Code Tutorial\nPro-Tipps: 25 VS Code Productivity Tips and Speed Hacks",
     "crumbs": [
       "Visual Studio Code",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Grundlegende Tipps</span>"
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Tipps</span>"
     ]
   },
   {
     "objectID": "sql/sql.html",
     "href": "sql/sql.html",
-    "title": "Relationale Datenbanken und SQL",
+    "title": "Relationale Datenbanken",
     "section": "",
-    "text": "Eine relationale Datenbank ist eine Sammlung von Datenobjekten mit vordefinierten Beziehungen zwischen ihnen. Diese Objekte sind als eine Reihe von Tabellen mit Spalten und Zeilen organisiert (AWS):\n\nTabellen werden verwendet, um Informationen über die in der Datenbank darzustellenden Objekte zu speichern.\nJede Spalte in einer Tabelle enthält eine bestimmte Art von Daten, und ein Feld speichert den tatsächlichen Wert eines Attributs.\nDie Zeilen in der Tabelle stellen eine Sammlung verwandter Werte eines Objekts oder einer Entität dar.\nJede Zeile in einer Tabelle kann mit einem eindeutigen Bezeichner, dem Primärschlüssel, markiert werden, und Zeilen in mehreren Tabellen können mithilfe von Fremdschlüsseln miteinander in Beziehung gesetzt werden.\n\nWas ist eine relationale Datenbank:\n\n\n\n\nDiese Daten können auf viele verschiedene Arten (z.B. mit SQL) abgerufen werden. Structured Query Language (SQL, ausgesprochen “S-Q-L” oder manchmal “Sequel”) ist eine der grundlegendsten Fähigkeiten, die Sie im Umgang mit Daten beherrschen sollten. Es ermöglicht Ihnen, effizient mit Datenbanken zu interagieren, Daten abzurufen und zu manipulieren sowie komplexe Abfragen und Analysen durchzuführen.\nIm nächsten Abschnitt werden wir uns mit der Einrichtung und Verwendung von MySQL und PostgreSQL befassen. Diese relationalen Datenbankmanagementsysteme (RDBMS) sind weit verbreitet und bieten robuste und leistungsstarke Lösungen für die Datenverwaltung.\nWir werden die folgenden Themen behandeln:\n\nInstallation und Konfiguration von MySQL und PostgreSQL\nGrundlegende Befehle und Abfragen in MySQL und PostgreSQL\nIntegration dieser Systeme mit Python\n\nDiese Kenntnisse werden Ihnen helfen, Ihre Daten effizient zu verwalten und komplexe Datenanalysen durchzuführen, indem Sie die Stärken dieser RDBMS in Kombination mit der Flexibilität und Leistungsfähigkeit von Python nutzen.",
+    "text": "Eine relationale Datenbank ist eine Sammlung von Datenobjekten mit vordefinierten Beziehungen zwischen ihnen. Diese Objekte sind als eine Reihe von Tabellen mit Spalten und Zeilen organisiert (AWS):\n\nTabellen werden verwendet, um Informationen über die in der Datenbank darzustellenden Objekte zu speichern.\nJede Spalte in einer Tabelle enthält eine bestimmte Art von Daten, und ein Feld speichert den tatsächlichen Wert eines Attributs.\nDie Zeilen in der Tabelle stellen eine Sammlung verwandter Werte eines Objekts oder einer Entität dar.\nJede Zeile in einer Tabelle kann mit einem eindeutigen Bezeichner, dem Primärschlüssel, markiert werden, und Zeilen in mehreren Tabellen können mithilfe von Fremdschlüsseln miteinander in Beziehung gesetzt werden.\n\nDiese Daten können auf viele verschiedene Arten (z.B. mit SQL) abgerufen werden. Structured Query Language (SQL, ausgesprochen “S-Q-L” oder manchmal “Sequel”) ist eine der grundlegendsten Fähigkeiten, die Sie im Umgang mit Daten beherrschen sollten. Es ermöglicht Ihnen, effizient mit Datenbanken zu interagieren, Daten abzurufen und zu manipulieren sowie komplexe Abfragen und Analysen durchzuführen.\nIm nächsten Abschnitt werden wir uns mit der Einrichtung und Verwendung von MySQL und PostgreSQL befassen. Diese relationalen Datenbankmanagementsysteme (RDBMS) sind weit verbreitet und bieten robuste und leistungsstarke Lösungen für die Datenverwaltung.\nWir werden die folgenden Themen behandeln:\n\nInstallation und Konfiguration von MySQL und PostgreSQL\nGrundlegende Befehle und Abfragen in MySQL und PostgreSQL\nIntegration dieser Systeme mit Python\n\nDiese Kenntnisse werden Ihnen helfen, Ihre Daten effizient zu verwalten und komplexe Datenanalysen durchzuführen, indem Sie die Stärken dieser RDBMS in Kombination mit der Flexibilität und Leistungsfähigkeit von Python nutzen.",
     "crumbs": [
-      "Relationale Datenbanken und SQL"
+      "Relationale Datenbanken"
     ]
   },
   {
@@ -881,7 +826,7 @@
     "section": "",
     "text": "18.1 Installation",
     "crumbs": [
-      "Relationale Datenbanken und SQL",
+      "Relationale Datenbanken",
       "<span class='chapter-number'>18</span>  <span class='chapter-title'>MySQL</span>"
     ]
   },
@@ -892,7 +837,7 @@
     "section": "",
     "text": "18.1.1 Windows\n\nInstaller herunterladen\n\nGehen Sie zur MySQL Downloadseite.\nWählen Sie Windows als Plattform und laden Sie den MySQL-Installer für Windows in der Version 8.0.37. herunter.\n\nInstaller ausführen\n\nFühren Sie die heruntergeladene Datei aus. Wenn ein Sicherheitsdialog erscheint, klicken Sie auf “Ja”, um dem Installer die Erlaubnis zu erteilen, Änderungen an Ihrem System vorzunehmen.\n\nSetup-Typ auswählen\n\nWählen Sie bei Aufforderung “Custom” als Setup-Typ. Diese Option ermöglicht es Ihnen, spezifische Komponenten zur Installation auszuwählen, wie z.B. MySQL Server, MySQL Workbench und MySQL Shell.\n\nProdukte und Features auswählen\n\nWählen Sie ‘MySQL Server’ und ‘MySQL Workbench’ für die Installation aus.\n\nInstallation\n\nFolgen Sie den Anweisungen auf dem Bildschirm, um die gewählten Komponenten zu installieren.\n\nMySQL Server konfigurieren\n\nNach der Installation werden Sie durch eine Reihe von Konfigurationsschritten geführt, einschließlich der Einrichtung des Root-Passworts, der Erstellung von Benutzerkonten und der Konfiguration der Netzwerkoptionen und des Windows-Dienstes.\n\nInstallation abschließen\n\nBeenden Sie das Setup, um die Installation von MySQL auf Ihrem System abzuschließen.\n\n\n\n\n18.1.2 Mac\n\nDatei herunterladen\n\nBesuchen Sie die MySQL Downloadseite und wählen Sie macOS als Betriebssystem.\nLaden Sie die DMG-Datei für macOS herunter (in der Version 8.0.36.)\n\n\n2.** MySQL installieren** - Öffnen Sie die heruntergeladene DMG-Datei und folgen Sie den Installationsanweisungen auf dem Bildschirm.\nNun installieren Sie MySQL Workbench\n\nMySQL Workbench herunterladen\n\nGreifen Sie auf die MySQL Workbench Downloadseite zu.\nWählen Sie die passende Version für Ihr Betriebssystem und laden Sie diese herunter.\n\nAnwendung installieren und den Setup-Anweisungen folgen.",
     "crumbs": [
-      "Relationale Datenbanken und SQL",
+      "Relationale Datenbanken",
       "<span class='chapter-number'>18</span>  <span class='chapter-title'>MySQL</span>"
     ]
   },
@@ -903,7 +848,7 @@
     "section": "18.2 MySQL Workbench",
     "text": "18.2 MySQL Workbench\nMySQL Workbench bietet eine grafische Oberfläche für die Datenbankverwaltung und SQL-Entwicklung. Es integriert visuelle Werkzeuge für die Datenmodellierung, SQL-Entwicklung und umfassende Datenbankverwaltung.\n\n18.2.1 Neue Verbindung\nDer nächste Schritt besteht darin, eine Verbindung zu Ihrem Server über MySQL Workbench herzustellen:\n\nMySQL Workbench starten\n\nÖffnen Sie MySQL Workbench aus Ihrer Anwendungsübersicht. Beim Start der Anwendung sehen Sie die Hauptoberfläche.\n\n\n\n\n\n\n\nTipp für Windows-Nutzer\n\n\n\n\n\nFalls MySQL Workbench während der anfänglichen Einrichtung des MySQL Servers nicht enthalten war, kann es separat installiert werden:\n\nGreifen Sie auf die MySQL Workbench Downloadseite zu.\nWählen Sie die passende Version für Ihr Betriebssystem und laden Sie sie herunter.\n\n\n\n\nNeue Verbindung erstellen\n\nAuf dem Startbildschirm sehen Sie einen Bereich mit der Bezeichnung “MySQL Connections”. Klicken Sie auf das “+”-Symbol, um eine neue Verbindung zu erstellen.\nIm Setup-Dialog:\n\nVerbindungsname: Geben Sie Ihrer Verbindung einen erkennbaren Namen (nutzen Sie hierfür local-connection).\nHostname: Geben Sie localhost ein (wir verwenden diese Bezeichnung, da der Datenbankserver auf dem gleichen Rechner wie die Workbench läuft).\nPort: Der Standard-MySQL-Port ist 3306.\nBenutzername: Geben Sie den Benutzernamen ein, den Sie während der MySQL Server-Installation festgelegt haben (meist ‘root’).\nPasswort: Klicken Sie auf “Store in Vault” und geben Sie das Passwort für das Benutzerkonto ein.\n\nNachdem Sie diese Felder ausgefüllt haben, klicken Sie auf “Test Connection”, um sicherzustellen, dass alle Einstellungen korrekt sind und die Verbindung hergestellt werden kann.\n\nVerbindung speichern\n\nWenn der Verbindungstest erfolgreich ist, speichern Sie die Konfiguration, indem Sie auf “OK” klicken. Diese Verbindung wird nun auf dem MySQL Workbench-Startbildschirm für einen einfachen Zugriff angezeigt.",
     "crumbs": [
-      "Relationale Datenbanken und SQL",
+      "Relationale Datenbanken",
       "<span class='chapter-number'>18</span>  <span class='chapter-title'>MySQL</span>"
     ]
   },
@@ -914,7 +859,7 @@
     "section": "18.3 Verwendung von MySQL Workbench",
     "text": "18.3 Verwendung von MySQL Workbench\nMySQL Workbench bietet verschiedene Werkzeuge und Abkürzungen zur Erleichterung der Datenbankverwaltung:\n\nToolbar: Oben finden Sie die Toolbar, die Schaltflächen wie das neue Abfrage-Tab, Abfrage ausführen und andere enthält.\nSeitenleiste: Links bietet die Seitenleiste Zugriff auf Instanzverwaltung, Leistungsüberwachung und mehr.\nAbfrage-Tab: Hier schreiben und führen Sie Ihre SQL-Abfragen aus. Sie können ein neues Abfrage-Tab öffnen, indem Sie auf das “+”-Symbol neben den vorhandenen Tabs klicken.\nAusgabebereich: Unterhalb des Abfrage-Editors zeigt dieser Bereich die Ergebnisse der ausgeführten Abfragen oder Nachrichten vom Datenbankserver an.\n\n\n18.3.1 Datenbank erstellen\n\nEine Datenbank erstellen\n\nVerbinden Sie sich mit Ihrer MySQL-Instanz über die eingerichtete Verbindung (local-connection).\n\nNeues Abfrage-Tab öffnen\n\nKlicken Sie auf das “+”-Symbol oben, um eine neue Abfrage zu starten.\n\nGeben Sie die folgenden SQL-Befehle ein:\nDROP DATABASE IF EXISTS `db_data`;\nCREATE DATABASE `db_data`;\nUSE `db_data`;\n\n\n\n\n\n\nErklärung der SQL-Befehle\n\n\n\n\n\nDer SQL-Code führt drei Operationen durch:\n\nDROP DATABASE IF EXISTS db_data;\n\nDieser Befehl löscht die Datenbank db_data, falls sie existiert. Dies ist nützlich, um sicherzustellen, dass Sie mit einer neuen Datenbank arbeiten, indem eine eventuell vorhandene Datenbank mit demselben Namen entfernt wird.\n\nCREATE DATABASE db_data;\n\nDieser Befehl erstellt eine neue Datenbank mit dem Namen db_data. Dies legt die Basis für eine neue Datenbank, in der Sie Tabellen und andere Datenbankobjekte erstellen können.\n\nUSE db_data;\n\nDieser Befehl setzt die neu erstellte Datenbank db_data als die aktuell verwendete Datenbank. Alle nachfolgenden SQL-Befehle werden auf dieser Datenbank ausgeführt.\n\n\n\n\n\nBefehl ausführen\n\nKlicken Sie auf das Blitzsymbol (⚡), um den Befehl auszuführen.\n\nSchema-Liste aktualisieren\n\nNachdem Sie die Befehle ausgeführt haben, aktualisieren Sie die Schema-Liste auf der linken Seite der Oberfläche, um Ihre neue Datenbank zu sehen.\n\n\n\n\n18.3.2 Tabelle erstellen\nAls Beispieldaten erstellen wir eine Tabelle zu einer Marketingkampagne:\n\nNeues Abfrage-Tab öffnen\n\nKlicken Sie auf das “+”-Symbol oben, um eine neue Abfrage zu starten.\n\nTabelle definieren\n\nFühren Sie das folgende SQL aus, um Ihre Tabelle zu erstellen:\n\nCREATE TABLE campaigns (\n   id INT AUTO_INCREMENT PRIMARY KEY,\n   name VARCHAR(255) NOT NULL,\n   start_date DATE,\n   end_date DATE,\n   budget DECIMAL(10, 2),\n   channel VARCHAR(255)\n   );\n\n\n\n\n\n\nErklärung der Tabellendefinition\n\n\n\n\n\nDer obige SQL-Befehl erstellt eine neue Tabelle namens campaigns. Hier ist eine Aufschlüsselung jeder Spaltendefinition:\n\nid: Eine Spalte namens id, die den Datentyp INT (integer) verwendet und automatisch inkrementiert wird (d.h. 1, 2, 3, …), was sich gut als Primärschlüssel eignet.\nname: Eine Spalte zur Speicherung der Kampagnennamen als Text, um eine Zeichenkette von bis zu 255 Zeichen zu halten. Die NOT NULL-Einschränkung stellt sicher, dass jede Zeile einen Namen haben muss.\nstart_date und end_date: Diese Spalten speichern die Start- und Enddaten der Kampagnen mit dem Datentyp DATE.\nbudget: Eine Spalte für das Budget jeder Kampagne, die DECIMAL(10, 2) verwendet, um bis zu 10 Stellen mit 2 Dezimalstellen zu ermöglichen.\nchannel: Eine Spalte, um das verwendete Medium der Kampagne anzugeben, die Zeichenfolgen von bis zu 255 Zeichen speichern kann.\n\n\n\n\nBefehl ausführen\n\nKlicken Sie auf das Blitzsymbol (⚡), um den Befehl auszuführen. Überprüfen Sie die Schema-Ansicht, um die Erstellung der Tabelle zu bestätigen.\n\n\n\n\n18.3.3 Werte einfügen\nGehen Sie wie folgt vor, um die Tabelle mit Daten zu füllen:\n\nDaten einfügen\n\nVerwenden Sie in einem neuen Abfrage-Tab diesen SQL-Befehl:\n\nINSERT INTO campaigns (name, start_date, end_date, budget, channel) VALUES\n('Winter Sale', '2023-12-01', '2023-12-31', 5000.00, 'Email'),\n('Summer Festival', '2023-06-01', '2023-06-15', 10000.00, 'Social Media'),\n('Back to School', '2023-08-01', '2023-08-20', 7500.00, 'TV');\n\n\n\n\n\n\nErklärung der Insert-Anweisung\n\n\n\n\n\nDieser SQL-Befehl fügt Daten in die campaigns-Tabelle ein. Jede Zeile von Werten entspricht einer anderen Marketingkampagne:\n\nErste Zeile: Fügt eine Kampagne namens “Winter Sale” ein, die vom 1. bis 31. Dezember 2023 läuft, mit einem Budget von $5000 und dem Kanal “Email”.\nZweite Zeile: Fügt “Summer Festival” ein, eine kürzere Kampagne vom 1. bis 15. Juni 2023, mit einem höheren Budget von $10000 und dem Kanal “Social Media”.\nDritte Zeile: Fügt die “Back to School”-Kampagne vom 1. bis 20. August 2023 hinzu, mit einem Budget von $7500, vermarktet über “TV”.\n\nJeder Satz von Werten ist in Klammern eingeschlossen und durch Kommas getrennt, um verschiedene Kampagnen zu unterscheiden.\n\n\n\n\n\n\n18.3.4 Werte abrufen\nUm die Daten zu überprüfen:\n\nFühren Sie eine SELECT-Abfrage aus\n\nFühren Sie folgendes in einem neuen Abfrage-Tab aus:\n\nSELECT * FROM campaigns;\n\n\n\n\n\n\nErklärung der SELECT-Abfrage\n\n\n\n\n\nDer SQL-Befehl ruft alle Spalten aus allen Zeilen in der campaigns-Tabelle ab. Er ist nützlich, um alle eingegebenen Daten in der Tabelle anzuzeigen, sicherzustellen, dass die Einträge korrekt sind, und um weitere Datenanalysen oder Berichte zu ermöglichen.\n\n\n\n\nDie Abfrage sollte folgendes Ergebnis ausgeben:\n\n\n\nid\nname\nstart_date\nend_date\nbudget\nchannel\n\n\n\n\n1\nWinter Sale\n2023-12-01\n2023-12-31\n5000.00\nEmail\n\n\n2\nSummer Festival\n2023-06-01\n2023-06-15\n10000.00\nSocial Media\n\n\n3\nBack to School\n2023-08-01\n2023-08-20\n7500.00\nTV",
     "crumbs": [
-      "Relationale Datenbanken und SQL",
+      "Relationale Datenbanken",
       "<span class='chapter-number'>18</span>  <span class='chapter-title'>MySQL</span>"
     ]
   },
@@ -925,7 +870,7 @@
     "section": "",
     "text": "19.1 Installation",
     "crumbs": [
-      "Relationale Datenbanken und SQL",
+      "Relationale Datenbanken",
       "<span class='chapter-number'>19</span>  <span class='chapter-title'>PostgreSQL</span>"
     ]
   },
@@ -936,7 +881,7 @@
     "section": "",
     "text": "Laden Sie PostgreSQL von dieser Website herunter und installieren Sie es.\nWählen Sie das Standard-Installationsverzeichnis aus.\nWählen Sie diese Komponenten aus:\n\nPostgreSQL Server\npgAdmin4\nKommandozeilenwerkzeuge\n\nWählen Sie das Standardverzeichnis für die Dateninstallation.\nPasswort: Setzen Sie ein Passwort\nPort: Akzeptieren Sie den standardmäßig vorgeschlagenen Port (üblicherweise 5432).\nGebietsschema: Setzen Sie es auf das Standardgebietsschema.",
     "crumbs": [
-      "Relationale Datenbanken und SQL",
+      "Relationale Datenbanken",
       "<span class='chapter-number'>19</span>  <span class='chapter-title'>PostgreSQL</span>"
     ]
   },
@@ -947,7 +892,7 @@
     "section": "19.2 PgAdmin4",
     "text": "19.2 PgAdmin4\npgAdmin4 ist das offizielle grafische Verwaltungstool für PostgreSQL und bietet eine benutzerfreundliche Oberfläche für die Datenbankverwaltung. Es wird als Teil der PostgreSQL-Installation installiert.\n\n19.2.1 Neuen Server hinzufügen\nUm Datenbanken zu verwalten, verbinden Sie sich zunächst mit einer PostgreSQL-Instanz, indem Sie eine neue Serververbindung in pgAdmin4 einrichten:\n\nÖffnen Sie pgAdmin4.\nKlicken Sie unter “Quick Links” auf Add New Server.\nGeben Sie für den Namen local-connection ein.\nWechseln Sie zum Reiter Connection:\n\nHostname/Adresse: Geben Sie localhost ein.\nStellen Sie sicher, dass der Port derselbe ist wie bei der Installation (üblicherweise 5432).\nPasswort: Geben Sie das während der Installation gesetzte Passwort ein und wählen Sie “Save password”.\n\nBestätigen Sie die Einrichtung durch Klicken auf Save.\nDies wird die local-connection in der linken Seitenleiste anzeigen.\n\n\n\n19.2.2 Eine Datenbank erstellen\nErstellen Sie als nächstes eine neue Datenbank, um Daten zu speichern:\n\n\n\n\n\n\nStandard PostgreSQL Datenbank\n\n\n\n\n\nBei der Installation von PostgreSQL wird automatisch eine Standarddatenbank namens postgres erstellt. Diese Datenbank wird typischerweise für administrative Zwecke und Tests verwendet. Es ist immer ratsam, neue Datenbanken für anwendungsspezifische Daten zu erstellen, um zu vermeiden, dass die Standarddatenbank mit Anwendungsdaten überladen wird.\n\n\n\n\nKlicken Sie in pgAdmin4 mit der rechten Maustaste auf den local-connection Server in der linken Seitenleiste.\nNavigieren Sie zu: Create &gt; Database.\nGeben Sie im Reiter “General” db_data als Datenbanknamen ein.\nKlicken Sie auf Save, um die Datenbank zu erstellen.\n\n\n\n19.2.3 Eine Tabelle erstellen\nErstellen Sie eine Tabelle, um Daten zu Marketingkampagnen zu speichern.\n\n\n\n\n\n\nTabellendefinition\n\n\n\n\n\nSpalten in der Marketingkampagnen-Tabelle: - id: Eine eindeutige Kennung für jede Kampagne, automatisch inkrementiert. - name: Der Name der Marketingkampagne. - start_date & end_date: Der Zeitraum der Kampagne. - budget: Das der Kampagne zugewiesene Budget. - channel: Der für die Kampagne verwendete Kanal (z.B. “E-Mail”, “Soziale Medien”, “TV”).\n\n\n\n\nNavigieren Sie zur db_data Datenbank.\nÖffnen Sie das Abfragewerkzeug unter Tools &gt; Query Tool.\nGeben Sie den folgenden SQL-Befehl ein, um die campaigns Tabelle zu erstellen:\n\nCREATE TABLE campaigns (\n    id BIGSERIAL PRIMARY KEY,\n    name VARCHAR(255) NOT NULL,\n    start_date DATE,\n    end_date DATE,\n    budget DECIMAL(10, 2),\n    channel VARCHAR(255)\n);\n\n\n\n\n\n\nTabellendefinition Erklärung\n\n\n\n\n\nDer obige SQL-Befehl erstellt eine neue Tabelle namens campaigns. Hier ist eine Aufschlüsselung der einzelnen Spaltendefinitionen:\n\nid: Eine Spalte namens id, die den Datentyp BIGSERIAL verwendet, was ein automatisch inkrementierender Integer ist und sich für einen Primärschlüssel eignet.\nname: Eine Spalte zur Speicherung von Kampagnennamen als Text, definiert, um eine Zeichenfolge von bis zu 255 Zeichen zu halten. Die NOT NULL-Einschränkung stellt sicher, dass jede Zeile einen Namen haben muss.\nstart_date und end_date: Diese Spalten speichern die Start- und Enddaten der Kampagnen jeweils im DATE-Datentyp.\nbudget: Eine Spalte für das mit jeder Kampagne verbundene Budget, die DECIMAL(10, 2) verwendet, um bis zu 10 Ziffern mit 2 Dezimalstellen zu ermöglichen.\nchannel: Eine Spalte, um das für die Kampagne verwendete Medium anzugeben, die Zeichenfolgen von bis zu 255 Zeichen speichern kann.\n\n\n\n\n\nFühren Sie das Skript aus, indem Sie auf die ▶️ Schaltfläche klicken (oder F5 drücken).\nUm die Tabelle zu überprüfen, erweitern Sie “Schemas” &gt; “Tables” &gt; “campaigns” &gt; “Columns” in der Datenbank db_data.\n\n\n\n19.2.4 Werte in die Tabelle einfügen\nFüllen Sie die Tabelle mit Beispieldaten:\n\nVerwenden Sie erneut das Abfragewerkzeug, um die folgende Einfügeanweisung auszuführen:\n\nINSERT INTO campaigns (name, start_date, end_date, budget, channel) VALUES\n('Winter Sale', '2023-12-01', '2023-12-31', 5000.00, 'Email'),\n('Summer Festival', '2023-06-01', '2023-06-15', 10000.00, 'Social Media'),\n('Back to School', '2023-08-01', '2023-08-20', 7500.00, 'TV');\n\n\n\n\n\n\nInsert Statement Erklärung\n\n\n\n\n\nDieser SQL-Befehl fügt Daten in die campaigns Tabelle ein. Jede Zeile von Werten entspricht einer anderen Marketingkampagne:\n\nErste Zeile: Fügt eine Kampagne namens “Winter Sale” ein, die vom 1. bis 31. Dezember 2023 läuft, mit einem Budget von 5000 Dollar und dem Kanal “Email”.\nZweite Zeile: Fügt “Summer Festival” ein, eine kürzere Kampagne vom 1. bis 15. Juni 2023, mit einem höheren Budget von 10000 Dollar und nutzt “Social Media”.\nDritte Zeile: Fügt die “Back to School”-Kampagne vom 1. bis 20. August 2023 hinzu, mit einem Budget von 7500 Dollar, vermarktet durch “TV”.\n\nJeder Satz von Werten ist in Klammern eingeschlossen und durch Kommata getrennt, um verschiedene Kampagnen zu unterscheiden.\n\n\n\n\nFühren Sie das Skript aus, indem Sie auf die ▶️ Schaltfläche klicken.\n\n\n\n19.2.5 Werte abrufen\nSchließlich können Sie die Daten in der campaigns Tabelle anzeigen:\n\nÖffnen Sie eine neue Sitzung im Abfragewerkzeug und führen Sie eine SELECT-Abfrage aus:\n\nSELECT * \nFROM campaigns;\n\n\n\n\n\n\nSELECT Abfrage Erklärung\n\n\n\n\n\nDieser SQL-Befehl ruft alle Spalten aus allen Zeilen der campaigns Tabelle ab. Er ist nützlich, um alle Daten zu sehen, die in die Tabelle eingegeben wurden, um sicherzustellen, dass die Einträge korrekt sind, und um weitere Datenanalysen oder Berichte zu erleichtern.\n\n\n\nDies sollte folgendes Ergebnis ausgeben:\n\n\n\n\n\n\n\n\n\n\n\nid\nname\nstart_date\nend_date\nbudget\nchannel\n\n\n\n\n1\nWinter Sale\n2023-12-01\n2023-12-31\n5000.00\nEmail\n\n\n2\nSummer Festival\n2023-06-01\n2023-06-15\n10000.00\nSocial Media\n\n\n3\nBack to School\n2023-08-01\n2023-08-20\n7500.00\nTV",
     "crumbs": [
-      "Relationale Datenbanken und SQL",
+      "Relationale Datenbanken",
       "<span class='chapter-number'>19</span>  <span class='chapter-title'>PostgreSQL</span>"
     ]
   },
@@ -958,7 +903,7 @@
     "section": "",
     "text": "20.1 Python-Umgebung\nRichten Sie zuerst eine isolierte Python-Umgebung mit Anaconda ein:",
     "crumbs": [
-      "Relationale Datenbanken und SQL",
+      "Relationale Datenbanken",
       "<span class='chapter-number'>20</span>  <span class='chapter-title'>SQL & Python</span>"
     ]
   },
@@ -969,7 +914,7 @@
     "section": "",
     "text": "Erstellen Sie eine neue Umgebung (wenn Sie detailliertere Erklärungen benötigen, lesen Sie dieses Kapitel über die Erstellung von Umgebungen):\n\nconda create -n postgres python=3.11 pip\n\nAktivieren Sie die Umgebung:\n\nconda activate postgres\n\nInstallieren Sie die notwendigen Pakete: Wir benötigen psycopg2-binary für die PostgreSQL-Konnektivität, sqlalchemy für SQL-Operationen und pandas für die Datenmanipulation.\n\npip install psycopg2-binary sqlalchemy ipykernel jupyter pandas",
     "crumbs": [
-      "Relationale Datenbanken und SQL",
+      "Relationale Datenbanken",
       "<span class='chapter-number'>20</span>  <span class='chapter-title'>SQL & Python</span>"
     ]
   },
@@ -980,7 +925,7 @@
     "section": "20.2 Datenbankverbindung",
     "text": "20.2 Datenbankverbindung\nUm von Python aus mit Ihrer PostgreSQL-Datenbank zu interagieren, richten Sie eine Verbindung mit SQLAlchemy ein:\n\nStarten Sie PostgreSQL: Stellen Sie sicher, dass Ihre PostgreSQL-Instanz läuft.\nImportieren Sie die Bibliotheken und erstellen Sie eine Engine: Die Engine ist Ihr Zugang zur Datenbank. Ersetzen Sie Platzhalter durch Ihre tatsächlichen Datenbank-Anmeldedaten.\n\nimport sqlalchemy as sa\n\n# Ersetzen Sie die Platzhalter durch Ihre Datenbank-Anmeldedaten\nengine = sa.create_engine('postgresql://your_username:your_password@localhost:your_port/your_database')\nSie müssen die links aufgeführten Platzhalter in der oben gezeigten Funktion ersetzen:\n\nyour_username: Typischerweise postgres\nyour_password: Ihr Datenbank-Passwort\nyour_port: Üblicherweise 5432\nyour_database: Standardmäßig postgres (Sie sollten die von uns bereits erstelle Datenbank db_data verwenden)\n\nHier ein Beispiel, in welchem als Passwort der Begriff mysecretpasswordverwendet wurde:\nimport sqlalchemy as sa\n\n# Ersetzen Sie die Platzhalter durch Ihre Datenbank-Anmeldedaten\nengine = sa.create_engine('postgresql://postgres:mysecretpassword@localhost:5432/db_data')\nFür weitere Details zur Konfiguration der Engine, siehe die SQLAlchemy-Dokumentation.",
     "crumbs": [
-      "Relationale Datenbanken und SQL",
+      "Relationale Datenbanken",
       "<span class='chapter-number'>20</span>  <span class='chapter-title'>SQL & Python</span>"
     ]
   },
@@ -991,7 +936,7 @@
     "section": "20.3 Daten in PostgreSQL schreiben",
     "text": "20.3 Daten in PostgreSQL schreiben\nMit der eingerichteten Verbindung übertragen wir nun Daten von einem pandas DataFrame nach PostgreSQL:\n\nLaden Sie die Daten in einen DataFrame:\nimport pandas as pd\n\n# Laden der Daten aus einer CSV-Datei\ndf = pd.read_csv(\"https://raw.githubusercontent.com/kirenz/datasets/master/gapminder.csv\")\n\n\n\n\n\n\nErklärung des Codes\n\n\n\n\n\nDer Python-Code verwendet die Bibliothek pandas, um Daten aus einer CSV-Datei zu laden:\n\nImportieren der pandas-Bibliothek:\n\npandas ist eine weit verbreitete Bibliothek in Python, die leistungsstarke, benutzerfreundliche Datenstrukturen und Datenanalyse-Tools bietet.\nMit import pandas as pd importieren wir die Bibliothek und geben ihr das Alias pd, um den Code kürzer und lesbarer zu machen.\n\nLaden der Daten aus einer CSV-Datei:\n\npd.read_csv: Diese Methode wird verwendet, um eine CSV-Datei in einen pandas DataFrame zu laden.\nURL der CSV-Datei: \"https://raw.githubusercontent.com/kirenz/datasets/master/gapminder.csv\" ist die URL der CSV-Datei, die die Daten enthält. Die Methode kann Daten direkt von einer URL laden, ohne dass die Datei lokal gespeichert werden muss.\ndf: Der resultierende DataFrame wird in der Variablen df gespeichert. Ein DataFrame ist eine tabellarische Datenstruktur, die sowohl Zeilen- als auch Spaltenbeschriftungen hat, ähnlich wie eine Tabelle in einer Datenbank oder ein Datenblatt in Excel.\n\n\n\n\n\nSchreiben Sie den DataFrame nach PostgreSQL: Verwenden Sie die Methode to_sql, um die Daten in eine neue Tabelle namens gapminder zu schreiben.\ndf.to_sql('gapminder', engine, if_exists='replace')\n\n\n\n\n\n\nErklärung des Codes\n\n\n\n\n\nDer Python-Code verwendet die Methode to_sql von pandas, um einen DataFrame in eine SQL-Datenbank zu schreiben:\n\ndf.to_sql:\n\nDiese Methode schreibt den DataFrame df in eine SQL-Datenbank.\n\n'gapminder':\n\nDies ist der Name der Tabelle, in die die Daten geschrieben werden. In diesem Fall wird die Tabelle gapminder genannt.\n\nengine:\n\nDies ist die SQLAlchemy-Engine, die die Verbindung zur Datenbank darstellt. Die Engine enthält alle notwendigen Informationen, um sich mit der Datenbank zu verbinden und Befehle auszuführen.\n\nif_exists='replace':\n\nDiese Option gibt an, was geschehen soll, wenn die Tabelle gapminder bereits in der Datenbank existiert.\nreplace: Diese Option sorgt dafür, dass die vorhandene Tabelle gelöscht und durch die neue Tabelle ersetzt wird, die aus dem DataFrame df erstellt wird.\n\n\n\n\n\nDies sollte als Ergebnis 704 ausgeben (die Anzahl der Zeilen, die in die neue Tabelle geschrieben wurden.).\nÜberprüfen Sie die Tabelle in der Datenbank: Führen Sie eine Abfrage in der Datenbank aus, um zu bestätigen, dass die Tabelle existiert.\nwith engine.connect() as connection:\n      tables = connection.execute(sa.text(\"SELECT table_name FROM information_schema.tables WHERE table_schema='public'\"))\n      for table in tables:\n         print(table[0])\n\n\n\n\n\n\nErklärung des Codes\n\n\n\n\n\nDer Code öffnet eine Verbindung zu einer SQL-Datenbank mithilfe der SQLAlchemy-Engine.\n\nInnerhalb des with-Blocks wird sichergestellt, dass die Verbindung nach Abschluss des Blocks automatisch geschlossen wird.\nDer Befehl connection.execute führt eine SQL-Abfrage aus, die die Namen aller Tabellen im public-Schema der Datenbank aus der information_schema.tables-Tabelle abruft.\nDiese Abfrage gibt eine Liste der Tabellennamen zurück.\nDiese Liste wird in einer Schleife durchlaufen.\nInnerhalb der Schleife wird der Name jeder Tabelle mit print(table[0]) auf der Konsole ausgegeben.\n\n\n\n\nDies sollte ausgeben: gapminder (d.h. die Tabelle gapminder ist in der Datenbank enthalten)\nOptional: Entfernen Sie die Tabelle: Wenn Sie die Tabelle aus der Datenbank löschen möchten:\nsql = sa.text(\"DROP TABLE IF EXISTS gapminder\")\n\nwith engine.connect() as connection:\n      connection.execute(sql)\n\n\n\n\n\n\nErklärung des Codes\n\n\n\n\n\nDer Code definiert eine SQL-Abfrage, die überprüft, ob die Tabelle gapminder existiert, und sie löscht, falls sie vorhanden ist. Diese Abfrage wird in der Variablen sql gespeichert.\n\nEin with-Block wird verwendet, um eine Verbindung zur SQL-Datenbank mithilfe der SQLAlchemy-Engine zu öffnen. Der with-Block stellt sicher, dass die Verbindung nach Abschluss des Blocks automatisch geschlossen wird.\nInnerhalb des with-Blocks wird die SQL-Abfrage sql mit dem Befehl connection.execute(sql) ausgeführt.\nDiese Ausführung löscht die Tabelle gapminder, falls sie in der Datenbank existiert.\n\n\n\n\n\nSie sollten die Tabelle nun auch in PgAdmin4 sehen.",
     "crumbs": [
-      "Relationale Datenbanken und SQL",
+      "Relationale Datenbanken",
       "<span class='chapter-number'>20</span>  <span class='chapter-title'>SQL & Python</span>"
     ]
   },
@@ -1183,34 +1128,56 @@
   {
     "objectID": "nosql/mongo-db-python.html",
     "href": "nosql/mongo-db-python.html",
-    "title": "24  Python-Integration mit MongoDB",
+    "title": "24  Python-Integration",
     "section": "",
     "text": "24.1 Umgebung erstellen\nUm eine Umgebung einzurichten, befolgen Sie diese Anweisungen basierend auf Ihrem Betriebssystem:",
     "crumbs": [
       "NoSQL Datenbanken",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Python-Integration mit MongoDB</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Python-Integration</span>"
     ]
   },
   {
     "objectID": "nosql/mongo-db-python.html#umgebung-erstellen",
     "href": "nosql/mongo-db-python.html#umgebung-erstellen",
-    "title": "24  Python-Integration mit MongoDB",
+    "title": "24  Python-Integration",
     "section": "",
-    "text": "Zugriff auf die Eingabeaufforderung oder das Terminal:\n\nWindows-Benutzer: Öffnen Sie die Anaconda-Eingabeaufforderung über das Startmenü.\nmacOS-Benutzer: Öffnen Sie das Terminal unter Programme &gt; Dienstprogramme oder durch die Suche nach “Terminal”.\n\nErstellen der Umgebung:\n\nVerwenden Sie den folgenden Befehl, um eine neue Conda-Umgebung namens mongodb mit Python 3.11 zu erstellen:\n\nconda create --name mongodb python=3.11 pip\nAktivieren der Umgebung:\n\nSobald die Umgebung erstellt ist, aktivieren Sie sie mit:\n\nconda activate mongodb\n\nDie Eingabeaufforderung ändert sich, um anzuzeigen, dass die Umgebung mongodb aktiv ist.\n\nInstallieren der benötigten Bibliotheken:\n\nMit aktivierter Umgebung installieren Sie die Bibliotheken:\n\npip install pymongo numpy pandas matplotlib seaborn altair jupyter ipykernel\n\nDieser Befehl ruft alle Pakete von PyPI ab und installiert sie.",
+    "text": "Zugriff auf die Eingabeaufforderung oder das Terminal:\n\nWindows-Benutzer: Öffnen Sie die Anaconda-Eingabeaufforderung über das Startmenü.\nmacOS-Benutzer: Öffnen Sie das Terminal unter Programme &gt; Dienstprogramme oder durch die Suche nach “Terminal”.\n\nErstellen der Umgebung:\n\nVerwenden Sie den folgenden Befehl, um eine neue Conda-Umgebung namens mongodb mit Python 3.11 und pip zu erstellen:\n\nconda create --name mongodb python=3.11 pip\nAktivieren der Umgebung:\n\nSobald die Umgebung erstellt ist, aktivieren Sie sie mit:\n\nconda activate mongodb\n\nDie Eingabeaufforderung ändert sich, um anzuzeigen, dass die Umgebung mongodb aktiv ist.\n\nInstallieren der benötigten Bibliotheken:\n\nMit aktivierter Umgebung installieren Sie die Bibliotheken:\n\npip install pymongo numpy pandas matplotlib seaborn altair jupyter ipykernel\n\nDieser Befehl ruft alle Pakete von PyPI ab und installiert sie.",
     "crumbs": [
       "NoSQL Datenbanken",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Python-Integration mit MongoDB</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Python-Integration</span>"
     ]
   },
   {
     "objectID": "nosql/mongo-db-python.html#verbindung-herstellen",
     "href": "nosql/mongo-db-python.html#verbindung-herstellen",
-    "title": "24  Python-Integration mit MongoDB",
+    "title": "24  Python-Integration",
     "section": "24.2 Verbindung herstellen",
-    "text": "24.2 Verbindung herstellen\nimport pymongo\n\n# Verbindung zur MongoDB herstellen\nclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n\n# Datenbank auswählen\ndb = client[\"mydatabase\"]\n\n# Sammlung auswählen\ncollection = db[\"mycollection\"]\n\n# Dokument einfügen\ncollection.insert_one({\"name\": \"Alice\", \"age\": 25})\n\n# Dokumente abfragen\nfor doc in collection.find():\n    print(doc)",
+    "text": "24.2 Verbindung herstellen\nUm mit MongoDB zu arbeiten, müssen Sie in einem Jupyter Notebook eine Verbindung zur Datenbank herstellen. Dies erfolgt in mehreren Schritten, die unten beschrieben sind:\nSchritt 1: Importieren der pymongo-Bibliothek\nZuerst müssen Sie die pymongo-Bibliothek importieren, die eine Schnittstelle zwischen Python und MongoDB bietet.\nimport pymongo\nSchritt 2: Erstellen eines MongoDB-Clients\nErstellen Sie eine Verbindung zum MongoDB-Server. Der Standardanschluss für MongoDB ist 27017.\n# Verbindung zur MongoDB herstellen\nclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\nHier verwenden wir localhost, da der MongoDB-Server auf dem lokalen Rechner läuft. Wenn der Server auf einem Remote-Server läuft, ersetzen Sie localhost durch die IP-Adresse oder den Domain-Namen des Servers.\nSchritt 3: Auswählen der Datenbank\nMongoDB organisiert Daten in Datenbanken. Um eine bestimmte Datenbank zu verwenden, greifen Sie auf diese wie folgt zu:\n# Datenbank auswählen\ndb = client[\"mydatabase\"]\nFalls die Datenbank noch nicht existiert, wird sie erstellt, sobald Sie ein Dokument einfügen.\nSchritt 4: Auswählen der Sammlung\nInnerhalb einer Datenbank organisiert MongoDB Daten in Sammlungen (ähnlich wie Tabellen in SQL-Datenbanken). Sie können eine Sammlung wie folgt auswählen:\n# Sammlung auswählen\ncollection = db[\"mycollection\"]\nAuch hier gilt: Falls die Sammlung noch nicht existiert, wird sie erstellt, sobald Sie ein Dokument einfügen.\nSchritt 5: Einfügen eines Dokuments\nEin Dokument in MongoDB ist ein JSON-ähnliches Objekt. Sie können ein Dokument wie folgt einfügen:\n# Dokument einfügen\ncollection.insert_one({\"name\": \"Alice\", \"age\": 25})\nDer Befehl insert_one fügt ein einzelnes Dokument in die Sammlung ein.\nSchritt 6: Abfragen von Dokumenten\nUm Dokumente aus einer Sammlung abzufragen, können Sie die Methode find verwenden. Diese gibt alle Dokumente in der Sammlung zurück:\n# Dokumente abfragen\nfor doc in collection.find():\n    print(doc)\nDieser Code durchläuft alle Dokumente in der Sammlung und druckt sie aus.\nHier der Output der Abfrage:\n{'_id': ObjectId('666d5f5b50a5f96c3ed89649'), 'name': 'Jan', 'age': 44}\n{'_id': ObjectId('666d7727c1365bab40959889'), 'name': 'Alice', 'age': 25}",
     "crumbs": [
       "NoSQL Datenbanken",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Python-Integration mit MongoDB</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Python-Integration</span>"
+    ]
+  },
+  {
+    "objectID": "nosql/mongo-db-python.html#fehlerbehandlung",
+    "href": "nosql/mongo-db-python.html#fehlerbehandlung",
+    "title": "24  Python-Integration",
+    "section": "24.3 Fehlerbehandlung",
+    "text": "24.3 Fehlerbehandlung\nEs ist wichtig, bei der Arbeit mit Datenbanken Fehler zu behandeln. Hier ist ein Beispiel, wie Sie Verbindungsfehler abfangen können:\ntry:\n    client = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n    print(\"Verbindung erfolgreich\")\nexcept pymongo.errors.ConnectionError as e:\n    print(\"Verbindung fehlgeschlagen:\", e)\nDieses Beispiel fängt Verbindungsfehler ab und gibt eine entsprechende Meldung aus.",
+    "crumbs": [
+      "NoSQL Datenbanken",
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Python-Integration</span>"
+    ]
+  },
+  {
+    "objectID": "nosql/mongo-db-python.html#weitere-funktionen",
+    "href": "nosql/mongo-db-python.html#weitere-funktionen",
+    "title": "24  Python-Integration",
+    "section": "24.4 Weitere Funktionen",
+    "text": "24.4 Weitere Funktionen\npymongo bietet viele weitere Funktionen, wie das Aktualisieren und Löschen von Dokumenten sowie das Erstellen von Indizes. Hier sind einige Beispiele:\nDokument aktualisieren\n# Dokument aktualisieren\ncollection.update_one({\"name\": \"Alice\"}, {\"$set\": {\"age\": 26}})\nDokument löschen\n# Dokument löschen\ncollection.delete_one({\"name\": \"Alice\"})\nIndizes erstellen\n# Index erstellen\ncollection.create_index([(\"name\", pymongo.ASCENDING)])\nDiese zusätzlichen Funktionen ermöglichen eine umfassendere Interaktion mit Ihrer MongoDB-Datenbank.",
+    "crumbs": [
+      "NoSQL Datenbanken",
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Python-Integration</span>"
     ]
   },
   {

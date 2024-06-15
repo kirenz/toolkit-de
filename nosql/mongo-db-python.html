@@ -9,7 +9,7 @@
 <meta name="author" content="Jan Kirenz">
 <meta name="description" content="Programming Toolkit für Data Science, AI &amp; Analytics">
 
-<title>Data Science, AI &amp; Analytics Toolkit - 24&nbsp; Python-Integration mit MongoDB</title>
+<title>Data Science, AI &amp; Analytics Toolkit - 24&nbsp; Python-Integration</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -118,7 +118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../nosql/nosql.html">NoSQL Datenbanken</a></li><li class="breadcrumb-item"><a href="../nosql/mongo-db-python.html"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Python-Integration mit MongoDB</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../nosql/nosql.html">NoSQL Datenbanken</a></li><li class="breadcrumb-item"><a href="../nosql/mongo-db-python.html"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Python-Integration</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -212,7 +212,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../python/python-environment-basics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Python-Integration mit MongoDB</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Umgebungen</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -277,7 +277,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../vscode/visual-studio-code-basics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Grundlegende Tipps</span></span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Tipps</span></span></a>
   </div>
 </li>
       </ul>
@@ -285,7 +285,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../sql/sql.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Relationale Datenbanken und SQL</span></a>
+ <span class="menu-text">Relationale Datenbanken</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -341,7 +341,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../nosql/mongo-db-python.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Python-Integration mit MongoDB</span></span></a>
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Python-Integration</span></span></a>
   </div>
 </li>
       </ul>
@@ -399,15 +399,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#umgebung-erstellen" id="toc-umgebung-erstellen" class="nav-link active" data-scroll-target="#umgebung-erstellen"><span class="header-section-number">24.1</span> Umgebung erstellen</a></li>
   <li><a href="#verbindung-herstellen" id="toc-verbindung-herstellen" class="nav-link" data-scroll-target="#verbindung-herstellen"><span class="header-section-number">24.2</span> Verbindung herstellen</a></li>
+  <li><a href="#fehlerbehandlung" id="toc-fehlerbehandlung" class="nav-link" data-scroll-target="#fehlerbehandlung"><span class="header-section-number">24.3</span> Fehlerbehandlung</a></li>
+  <li><a href="#weitere-funktionen" id="toc-weitere-funktionen" class="nav-link" data-scroll-target="#weitere-funktionen"><span class="header-section-number">24.4</span> Weitere Funktionen</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../nosql/nosql.html">NoSQL Datenbanken</a></li><li class="breadcrumb-item"><a href="../nosql/mongo-db-python.html"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Python-Integration mit MongoDB</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../nosql/nosql.html">NoSQL Datenbanken</a></li><li class="breadcrumb-item"><a href="../nosql/mongo-db-python.html"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Python-Integration</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Python-Integration mit MongoDB</span></h1>
+<h1 class="title"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Python-Integration</span></h1>
 </div>
 
 
@@ -435,7 +437,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul></li>
 <li>Erstellen der Umgebung:
 <ul>
-<li>Verwenden Sie den folgenden Befehl, um eine neue Conda-Umgebung namens <code>mongodb</code> mit Python 3.11 zu erstellen:</li>
+<li>Verwenden Sie den folgenden Befehl, um eine neue Conda-Umgebung namens <code>mongodb</code> mit Python 3.11 und pip zu erstellen:</li>
 </ul>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> create <span class="at">--name</span> mongodb python=3.11 pip</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li>Aktivieren der Umgebung:
@@ -458,23 +460,63 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="verbindung-herstellen" class="level2" data-number="24.2">
 <h2 data-number="24.2" class="anchored" data-anchor-id="verbindung-herstellen"><span class="header-section-number">24.2</span> Verbindung herstellen</h2>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pymongo</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Verbindung zur MongoDB herstellen</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>client <span class="op">=</span> pymongo.MongoClient(<span class="st">"mongodb://localhost:27017/"</span>)</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Datenbank auswählen</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>db <span class="op">=</span> client[<span class="st">"mydatabase"</span>]</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Sammlung auswählen</span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>collection <span class="op">=</span> db[<span class="st">"mycollection"</span>]</span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Dokument einfügen</span></span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>collection.insert_one({<span class="st">"name"</span>: <span class="st">"Alice"</span>, <span class="st">"age"</span>: <span class="dv">25</span>})</span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Dokumente abfragen</span></span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> doc <span class="kw">in</span> collection.find():</span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(doc)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Um mit MongoDB zu arbeiten, müssen Sie in einem Jupyter Notebook eine Verbindung zur Datenbank herstellen. Dies erfolgt in mehreren Schritten, die unten beschrieben sind:</p>
+<p><strong>Schritt 1: Importieren der pymongo-Bibliothek</strong></p>
+<p>Zuerst müssen Sie die <code>pymongo</code>-Bibliothek importieren, die eine Schnittstelle zwischen Python und MongoDB bietet.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pymongo</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Schritt 2: Erstellen eines MongoDB-Clients</strong></p>
+<p>Erstellen Sie eine Verbindung zum MongoDB-Server. Der Standardanschluss für MongoDB ist <code>27017</code>.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Verbindung zur MongoDB herstellen</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>client <span class="op">=</span> pymongo.MongoClient(<span class="st">"mongodb://localhost:27017/"</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Hier verwenden wir <code>localhost</code>, da der MongoDB-Server auf dem lokalen Rechner läuft. Wenn der Server auf einem Remote-Server läuft, ersetzen Sie <code>localhost</code> durch die IP-Adresse oder den Domain-Namen des Servers.</p>
+<p><strong>Schritt 3: Auswählen der Datenbank</strong></p>
+<p>MongoDB organisiert Daten in Datenbanken. Um eine bestimmte Datenbank zu verwenden, greifen Sie auf diese wie folgt zu:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Datenbank auswählen</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>db <span class="op">=</span> client[<span class="st">"mydatabase"</span>]</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Falls die Datenbank noch nicht existiert, wird sie erstellt, sobald Sie ein Dokument einfügen.</p>
+<p><strong>Schritt 4: Auswählen der Sammlung</strong></p>
+<p>Innerhalb einer Datenbank organisiert MongoDB Daten in Sammlungen (ähnlich wie Tabellen in SQL-Datenbanken). Sie können eine Sammlung wie folgt auswählen:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Sammlung auswählen</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>collection <span class="op">=</span> db[<span class="st">"mycollection"</span>]</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Auch hier gilt: Falls die Sammlung noch nicht existiert, wird sie erstellt, sobald Sie ein Dokument einfügen.</p>
+<p><strong>Schritt 5: Einfügen eines Dokuments</strong></p>
+<p>Ein Dokument in MongoDB ist ein JSON-ähnliches Objekt. Sie können ein Dokument wie folgt einfügen:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Dokument einfügen</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>collection.insert_one({<span class="st">"name"</span>: <span class="st">"Alice"</span>, <span class="st">"age"</span>: <span class="dv">25</span>})</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Der Befehl <code>insert_one</code> fügt ein einzelnes Dokument in die Sammlung ein.</p>
+<p><strong>Schritt 6: Abfragen von Dokumenten</strong></p>
+<p>Um Dokumente aus einer Sammlung abzufragen, können Sie die Methode <code>find</code> verwenden. Diese gibt alle Dokumente in der Sammlung zurück:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Dokumente abfragen</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> doc <span class="kw">in</span> collection.find():</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(doc)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Dieser Code durchläuft alle Dokumente in der Sammlung und druckt sie aus.</p>
+<p>Hier der Output der Abfrage:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">{</span><span class="st">'_id'</span><span class="ex">:</span> ObjectId<span class="er">(</span><span class="st">'666d5f5b50a5f96c3ed89649'</span><span class="kw">)</span><span class="ex">,</span> <span class="st">'name'</span>: <span class="st">'Jan'</span>, <span class="st">'age'</span>: 44}</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="ex">{</span><span class="st">'_id'</span><span class="ex">:</span> ObjectId<span class="er">(</span><span class="st">'666d7727c1365bab40959889'</span><span class="kw">)</span><span class="ex">,</span> <span class="st">'name'</span>: <span class="st">'Alice'</span>, <span class="st">'age'</span>: 25}</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="fehlerbehandlung" class="level2" data-number="24.3">
+<h2 data-number="24.3" class="anchored" data-anchor-id="fehlerbehandlung"><span class="header-section-number">24.3</span> Fehlerbehandlung</h2>
+<p>Es ist wichtig, bei der Arbeit mit Datenbanken Fehler zu behandeln. Hier ist ein Beispiel, wie Sie Verbindungsfehler abfangen können:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="cf">try</span>:</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    client <span class="op">=</span> pymongo.MongoClient(<span class="st">"mongodb://localhost:27017/"</span>)</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Verbindung erfolgreich"</span>)</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="cf">except</span> pymongo.errors.<span class="pp">ConnectionError</span> <span class="im">as</span> e:</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Verbindung fehlgeschlagen:"</span>, e)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Dieses Beispiel fängt Verbindungsfehler ab und gibt eine entsprechende Meldung aus.</p>
+</section>
+<section id="weitere-funktionen" class="level2" data-number="24.4">
+<h2 data-number="24.4" class="anchored" data-anchor-id="weitere-funktionen"><span class="header-section-number">24.4</span> Weitere Funktionen</h2>
+<p><code>pymongo</code> bietet viele weitere Funktionen, wie das Aktualisieren und Löschen von Dokumenten sowie das Erstellen von Indizes. Hier sind einige Beispiele:</p>
+<p><strong>Dokument aktualisieren</strong></p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Dokument aktualisieren</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>collection.update_one({<span class="st">"name"</span>: <span class="st">"Alice"</span>}, {<span class="st">"$set"</span>: {<span class="st">"age"</span>: <span class="dv">26</span>}})</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Dokument löschen</strong></p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Dokument löschen</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>collection.delete_one({<span class="st">"name"</span>: <span class="st">"Alice"</span>})</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Indizes erstellen</strong></p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Index erstellen</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>collection.create_index([(<span class="st">"name"</span>, pymongo.ASCENDING)])</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Diese zusätzlichen Funktionen ermöglichen eine umfassendere Interaktion mit Ihrer MongoDB-Datenbank.</p>
 
 
 </section>
