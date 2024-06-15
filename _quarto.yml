@@ -49,12 +49,13 @@ book:
 
     - part: datenbanken/datenbanken.qmd
       chapters:
-        - datenbanken/sql.qmd 
+        - datenbanken/relational.qmd 
         - datenbanken/nosql.qmd 
 
     - part: mysql/mysql.qmd
       chapters:
         - mysql/mysql-installation.qmd 
+        - mysql/mysql-workbench-server.qmd
         - mysql/mysql-workbench.qmd
      
 
