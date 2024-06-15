@@ -1,5 +1,7 @@
 # Installation
 
+In den folgenden Schritten wird die Installation von MySQL und dem Tool MySQL Workbench behandelt.
+
 ## Windows
 
 1. **Installer herunterladen**
