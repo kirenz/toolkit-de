@@ -1,4 +1,4 @@
-# Anaconda installieren
+# Anaconda
 
 Anaconda bietet eine umfassende Plattform für datenbezogene Projekte, indem es Python und viele wichtige Datenwissenschaftsbibliotheken enthält.
 
