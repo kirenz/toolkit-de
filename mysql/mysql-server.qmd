@@ -1,0 +1,26 @@
+# Server hinzufügen
+
+Nach der Installation besteht der nächste Schritt darin, eine Verbindung zu Ihrem MySQL-Server über MySQL Workbench herzustellen, d.h. wir fügen einen Server hinzu:
+
+1. **MySQL Workbench starten**
+   - Öffnen Sie MySQL Workbench aus Ihrer Anwendungsübersicht. Beim Start der Anwendung sehen Sie die Hauptoberfläche.
+
+   :::{.callout-tip collapse="true" title="Tipp für Windows-Nutzer"}
+   Falls MySQL Workbench während der anfänglichen Einrichtung des MySQL Servers nicht enthalten war, kann es separat installiert werden:
+
+   - Greifen Sie auf die [MySQL Workbench Downloadseite](https://dev.mysql.com/downloads/workbench/) zu.
+   - Wählen Sie die passende Version für Ihr Betriebssystem und laden Sie sie herunter.
+   :::
+
+2. **Neue Verbindung erstellen**
+   - Auf dem Startbildschirm sehen Sie einen Bereich mit der Bezeichnung "MySQL Connections". Klicken Sie auf das "+"-Symbol, um eine neue Verbindung zu erstellen.
+   - Im Setup-Dialog:
+     - Verbindungsname: Geben Sie Ihrer Verbindung einen erkennbaren Namen (nutzen Sie hierfür `local-connection`).
+     - Hostname: Geben Sie `localhost` ein (wir verwenden diese Bezeichnung, da der Datenbankserver auf dem gleichen Rechner wie die Workbench läuft).
+     - Port: Der Standard-MySQL-Port ist `3306`.
+     - Benutzername: Geben Sie den Benutzernamen ein, den Sie während der MySQL Server-Installation festgelegt haben (meist 'root').
+     - Passwort: Klicken Sie auf "Store in Vault" und geben Sie das Passwort für das Benutzerkonto ein.
+   - Nachdem Sie diese Felder ausgefüllt haben, klicken Sie auf "Test Connection", um sicherzustellen, dass alle Einstellungen korrekt sind und die Verbindung hergestellt werden kann.
+
+3. **Verbindung speichern**
+   - Wenn der Verbindungstest erfolgreich ist, speichern Sie die Konfiguration, indem Sie auf "OK" klicken. Diese Verbindung wird nun auf dem MySQL Workbench-Startbildschirm für einen einfachen Zugriff angezeigt.
