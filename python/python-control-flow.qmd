@@ -1,6 +1,6 @@
 # Kontrollstrukturen
 
-- [⬇️ Jupyter Notebook herunterladen](../code/python-control-flow.ipynb){download="python-control-flow.ipynb"}
+[⬇️ Jupyter Notebook herunterladen](../code/python-control-flow.ipynb){download="python-control-flow.ipynb"}
 
 Kontrollstrukturen sind grundlegend in der Python-Programmierung. Wir werden drei wichtige Strukturen kennenlernen:
 
