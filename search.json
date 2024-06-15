@@ -57,18 +57,18 @@
     "href": "first-steps/python-installation.html",
     "title": "2  Python",
     "section": "",
-    "text": "2.1 Installationsschritte",
+    "text": "2.1 Installation",
     "crumbs": [
       "Erste Schritte",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Python</span>"
     ]
   },
   {
-    "objectID": "first-steps/python-installation.html#installationsschritte",
-    "href": "first-steps/python-installation.html#installationsschritte",
+    "objectID": "first-steps/python-installation.html#installation",
+    "href": "first-steps/python-installation.html#installation",
     "title": "2  Python",
     "section": "",
-    "text": "2.1.1 Windows-Nutzer\n\nInstallationsprogramm herunterladen: Navigieren Sie zur Python-Website und laden Sie die neueste Version für Ihre Windows-Version herunter (normalerweise Windows-Installer 64-Bit).\nInstallationsprogramm ausführen: Klicken Sie mit der rechten Maustaste auf das heruntergeladene Installationsprogramm und wählen Sie “Als Administrator ausführen”. Stellen Sie sicher, dass Sie das Kästchen “Add Python 3.x to PATH” am unteren Rand des Installationsfensters markieren, um sicherzustellen, dass Python zu den Umgebungsvariablen Ihres Systems hinzugefügt wird (Dies ist entscheidend, damit Python von jedem Verzeichnis im System aus über die Kommandozeile aufgerufen werden kann. Ohne diese Einstellung müssten Sie den vollständigen Pfad zur Python-Installation angeben, um Python auszuführen, was unpraktisch und fehleranfällig ist).\nAnpassung der Installation (optional): Sie können die Installation anpassen, indem Sie auf “Customize installation” klicken. Dies ermöglicht es Ihnen, spezifische Funktionen wie Dokumentation, pip, Tests usw. auszuwählen.\nInstallation starten: Klicken Sie auf “Install Now”, um den Installationsvorgang zu starten.\n\n\n\n2.1.2 macOS-Nutzer\n\nInstallationsprogramm herunterladen: Navigieren Sie zur Python-Website und laden Sie die neueste Version herunter.\nPython installieren: Öffnen Sie die heruntergeladene .pkg-Datei und folgen Sie den Anweisungen zur Installation von Python. Der Installationsassistent führt Sie durch die notwendigen Schritte.",
+    "text": "2.1.1 Windows\n\nInstallationsprogramm herunterladen: Navigieren Sie zur Python-Website und laden Sie die neueste Version für Ihre Windows-Version herunter (normalerweise Windows-Installer 64-Bit).\nInstallationsprogramm ausführen: Klicken Sie mit der rechten Maustaste auf das heruntergeladene Installationsprogramm und wählen Sie “Als Administrator ausführen”. Stellen Sie sicher, dass Sie das Kästchen “Add Python 3.x to PATH” am unteren Rand des Installationsfensters markieren, um sicherzustellen, dass Python zu den Umgebungsvariablen Ihres Systems hinzugefügt wird (Dies ist entscheidend, damit Python von jedem Verzeichnis im System aus über die Kommandozeile aufgerufen werden kann. Ohne diese Einstellung müssten Sie den vollständigen Pfad zur Python-Installation angeben, um Python auszuführen, was unpraktisch und fehleranfällig ist).\nAnpassung der Installation (optional): Sie können die Installation anpassen, indem Sie auf “Customize installation” klicken. Dies ermöglicht es Ihnen, spezifische Funktionen wie Dokumentation, pip, Tests usw. auszuwählen.\nInstallation starten: Klicken Sie auf “Install Now”, um den Installationsvorgang zu starten.\n\n\n\n2.1.2 Mac\n\nInstallationsprogramm herunterladen: Navigieren Sie zur Python-Website und laden Sie die neueste Version herunter.\nPython installieren: Öffnen Sie die heruntergeladene .pkg-Datei und folgen Sie den Anweisungen zur Installation von Python. Der Installationsassistent führt Sie durch die notwendigen Schritte.",
     "crumbs": [
       "Erste Schritte",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Python</span>"
@@ -86,11 +86,11 @@
     ]
   },
   {
-    "objectID": "first-steps/python-installation.html#fehlerbehebung-bei-häufigen-problemen",
-    "href": "first-steps/python-installation.html#fehlerbehebung-bei-häufigen-problemen",
+    "objectID": "first-steps/python-installation.html#fehlerbehebung",
+    "href": "first-steps/python-installation.html#fehlerbehebung",
     "title": "2  Python",
-    "section": "2.3 Fehlerbehebung bei häufigen Problemen",
-    "text": "2.3 Fehlerbehebung bei häufigen Problemen\n\nPython nicht erkannt: Wenn die Kommandozeile den Befehl python nicht erkennt, liegt es möglicherweise daran, dass Python nicht zu Ihrem PATH hinzugefügt wurde. Überprüfen Sie die Installationsschritte noch einmal, um sicherzustellen, dass Sie die Option ausgewählt haben, Python zu Ihrem PATH hinzuzufügen.\nBerechtigungsfehler während der Installation: Dies tritt normalerweise unter Windows auf und kann behoben werden, indem das Installationsprogramm als Administrator ausgeführt wird.",
+    "section": "2.3 Fehlerbehebung",
+    "text": "2.3 Fehlerbehebung\n\nPython nicht erkannt: Wenn die Kommandozeile den Befehl python nicht erkennt, liegt es möglicherweise daran, dass Python nicht zu Ihrem PATH hinzugefügt wurde. Überprüfen Sie die Installationsschritte noch einmal, um sicherzustellen, dass Sie die Option ausgewählt haben, Python zu Ihrem PATH hinzuzufügen.\nBerechtigungsfehler während der Installation: Dies tritt normalerweise unter Windows auf und kann behoben werden, indem das Installationsprogramm als Administrator ausgeführt wird.",
     "crumbs": [
       "Erste Schritte",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Python</span>"
