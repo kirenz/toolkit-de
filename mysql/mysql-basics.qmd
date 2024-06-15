@@ -1,0 +1,120 @@
+# SQL basics
+
+Nachfolgend behandeln wir einige typische Aufgaben in MySQL Workbench, die bei der Arbeit mit Datenbanken anfallen.
+
+## Datenbank erstellen
+
+1. **Eine Datenbank erstellen**
+   - Verbinden Sie sich mit Ihrer MySQL-Instanz über die eingerichtete Verbindung (`local-connection`).
+
+2. **Neues Abfrage-Tab öffnen**
+   - Klicken Sie auf das "+"-Symbol oben, um eine neue Abfrage zu starten.
+
+3. Geben Sie die folgenden SQL-Befehle ein:
+
+   ```sql
+   DROP DATABASE IF EXISTS `db_data`;
+   CREATE DATABASE `db_data`;
+   USE `db_data`;
+   ```
+
+   :::{.callout-note collapse="true" title="Erklärung der SQL-Befehle"}
+   Der SQL-Code führt drei Operationen durch:
+
+   1. **DROP DATABASE IF EXISTS `db_data`;**
+      - Dieser Befehl löscht die Datenbank `db_data`, falls sie existiert. Dies ist nützlich, um sicherzustellen, dass Sie mit einer neuen Datenbank arbeiten, indem eine eventuell vorhandene Datenbank mit demselben Namen entfernt wird.
+
+   2. **CREATE DATABASE `db_data`;**
+      - Dieser Befehl erstellt eine neue Datenbank mit dem Namen `db_data`. Dies legt die Basis für eine neue Datenbank, in der Sie Tabellen und andere Datenbankobjekte erstellen können.
+
+   3. **USE `db_data`;**
+      - Dieser Befehl setzt die neu erstellte Datenbank `db_data` als die aktuell verwendete Datenbank. Alle nachfolgenden SQL-Befehle werden auf dieser Datenbank ausgeführt.
+   :::
+
+
+4. **Befehl ausführen**
+   - Klicken Sie auf das Blitzsymbol (⚡), um den Befehl auszuführen. 
+
+5. **Schema-Liste aktualisieren**
+   - Nachdem Sie die Befehle ausgeführt haben, aktualisieren Sie die Schema-Liste auf der linken Seite der Oberfläche, um Ihre neue Datenbank zu sehen.
+
+## Tabelle erstellen
+
+Als Beispieldaten erstellen wir eine Tabelle zu einer Marketingkampagne:
+
+1. **Neues Abfrage-Tab öffnen**
+   - Klicken Sie auf das "+"-Symbol oben, um eine neue Abfrage zu starten.
+
+2. **Tabelle definieren**
+   - Führen Sie das folgende SQL aus, um Ihre Tabelle zu erstellen:
+
+   ```sql
+   CREATE TABLE campaigns (
+      id INT AUTO_INCREMENT PRIMARY KEY,
+      name VARCHAR(255) NOT NULL,
+      start_date DATE,
+      end_date DATE,
+      budget DECIMAL(10, 2),
+      channel VARCHAR(255)
+      );
+   ```
+
+   :::{.callout-note collapse="true" title="Erklärung der Tabellendefinition"}
+   Der obige SQL-Befehl erstellt eine neue Tabelle namens `campaigns`. Hier ist eine Aufschlüsselung jeder Spaltendefinition:
+
+   - **id**: Eine Spalte namens `id`, die den Datentyp `INT` (integer) verwendet und automatisch inkrementiert wird (d.h. 1, 2, 3, ...), was sich gut als Primärschlüssel eignet.
+   - **name**: Eine Spalte zur Speicherung der Kampagnennamen als Text, um eine Zeichenkette von bis zu 255 Zeichen zu halten. Die `NOT NULL`-Einschränkung stellt sicher, dass jede Zeile einen Namen haben muss.
+   - **start_date** und **end_date**: Diese Spalten speichern die Start- und Enddaten der Kampagnen mit dem Datentyp `DATE`.
+   - **budget**: Eine Spalte für das Budget jeder Kampagne, die `DECIMAL(10, 2)` verwendet, um bis zu 10 Stellen mit 2 Dezimalstellen zu ermöglichen.
+   - **channel**: Eine Spalte, um das verwendete Medium der Kampagne anzugeben, die Zeichenfolgen von bis zu 255 Zeichen speichern kann.
+   :::
+
+3. **Befehl ausführen**
+   - Klicken Sie auf das Blitzsymbol (⚡), um den Befehl auszuführen. Überprüfen Sie die Schema-Ansicht, um die Erstellung der Tabelle zu bestätigen.
+
+## Werte einfügen
+
+Gehen Sie wie folgt vor, um die Tabelle mit Daten zu füllen:
+
+1. **Daten einfügen**
+   - Verwenden Sie in einem neuen Abfrage-Tab diesen SQL-Befehl:
+
+   ```sql
+   INSERT INTO campaigns (name, start_date, end_date, budget, channel) VALUES
+   ('Winter Sale', '2023-12-01', '2023-12-31', 5000.00, 'Email'),
+   ('Summer Festival', '2023-06-01', '2023-06-15', 10000.00, 'Social Media'),
+   ('Back to School', '2023-08-01', '2023-08-20', 7500.00, 'TV');
+   ```
+
+   :::{.callout-note collapse="true" title="Erklärung der Insert-Anweisung"}
+   Dieser SQL-Befehl fügt Daten in die `campaigns`-Tabelle ein. Jede Zeile von Werten entspricht einer anderen Marketingkampagne:
+
+   - **Erste Zeile**: Fügt eine Kampagne namens "Winter Sale" ein, die vom 1. bis 31. Dezember 2023 läuft, mit einem Budget von $5000 und dem Kanal "Email".
+   - **Zweite Zeile**: Fügt "Summer Festival" ein, eine kürzere Kampagne vom 1. bis 15. Juni 2023, mit einem höheren Budget von $10000 und dem Kanal "Social Media".
+   - **Dritte Zeile**: Fügt die "Back to School"-Kampagne vom 1. bis 20. August 2023 hinzu, mit einem Budget von $7500, vermarktet über "TV".
+
+   Jeder Satz von Werten ist in Klammern eingeschlossen und durch Kommas getrennt, um verschiedene Kampagnen zu unterscheiden.
+   :::
+
+## Werte abrufen
+
+Um die Daten zu überprüfen:
+
+1. **Führen Sie eine SELECT-Abfrage aus**
+   - Führen Sie folgendes in einem neuen Abfrage-Tab aus:
+
+   ```sql
+   SELECT * FROM campaigns;
+   ```
+
+   :::{.callout-note collapse="true" title="Erklärung der SELECT-Abfrage"}
+   Der SQL-Befehl ruft alle Spalten aus allen Zeilen in der `campaigns`-Tabelle ab. Er ist nützlich, um alle eingegebenen Daten in der Tabelle anzuzeigen, sicherzustellen, dass die Einträge korrekt sind, und um weitere Datenanalysen oder Berichte zu ermöglichen.
+   :::
+
+Die Abfrage sollte folgendes Ergebnis ausgeben:
+
+|id |name              |start_date|end_date  |budget  |channel     |
+|---|------------------|----------|----------|--------|------------|
+|1  |Winter Sale       |2023-12-01|2023-12-31|5000.00 |Email       |
+|2  |Summer Festival   |2023-06-01|2023-06-15|10000.00|Social Media|
+|3  |Back to School    |2023-08-01|2023-08-20|7500.00 |TV          |
