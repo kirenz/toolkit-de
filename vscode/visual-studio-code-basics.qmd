@@ -1,4 +1,4 @@
-# Grundlegende Tipps
+# Tipps
 
 Dieser Abschnitt enthält einige Tipps, die Ihnen den Einstieg in VS Code erleichtern sollen.
 
