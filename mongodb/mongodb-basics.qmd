@@ -1,4 +1,4 @@
-# Grundlegende Nutzung
+# Basics
 
 In diesem Abschnitt lernen Sie die grundlegende Nutzung von MongoDB, einschließlich der Verbindung zur Datenbank, grundlegender Befehle und Datenbankmanipulation.
 
