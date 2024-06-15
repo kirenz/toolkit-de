@@ -1,0 +1,13 @@
+# Server hinzufügen
+
+Um Datenbanken zu verwalten, verbinden Sie sich zunächst mit einer PostgreSQL-Instanz, indem Sie eine neue Serververbindung in pgAdmin4 einrichten:
+
+1. Öffnen Sie *pgAdmin4*.
+2. Klicken Sie unter "Quick Links" auf `Add New Server`.
+3. Geben Sie für den Namen `local-connection` ein.
+4. Wechseln Sie zum Reiter `Connection`:
+    - Hostname/Adresse: Geben Sie `localhost` ein.
+    - Stellen Sie sicher, dass der Port derselbe ist wie bei der Installation (üblicherweise 5432).
+    - Passwort: Geben Sie das während der Installation gesetzte Passwort ein und wählen Sie "Save password".
+5. Bestätigen Sie die Einrichtung durch Klicken auf `Save`.
+6. Dies wird die `local-connection` in der linken Seitenleiste anzeigen.
