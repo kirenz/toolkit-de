@@ -1,0 +1,3 @@
+# Datenbanken
+
+Daten kommen in verschiedenen Formaten vor – von strukturierten Daten in relationalen Datenbankmanagementsystemen (RDBMS) bis hin zu locker typisierten, halbstrukturierten und unstrukturierten Daten wie Textdokumenten, E-Mails, Videos und Audiodaten, die in NoSQL-Datenbanken gespeichert werden können.
