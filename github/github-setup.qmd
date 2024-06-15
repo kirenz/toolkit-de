@@ -1,4 +1,4 @@
-# GitHub Setup
+# Setup
 
 GitHub ist eine webbasierte Plattform, die Versionskontrolle und kollaborative Softwareentwicklung ermöglicht und Git als Kerntechnologie nutzt.
 
