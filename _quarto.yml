@@ -47,18 +47,29 @@ book:
         - vscode/visual-studio-code-extensions.qmd
         - vscode/visual-studio-code-basics.qmd
 
-    - part: sql/sql.qmd
+    - part: datenbanken/datenbanken.qmd
       chapters:
-        - sql/sql-mysql.qmd 
-        - sql/sql-postgresql.qmd
-        - sql/sql-python.qmd
+        - datenbanken/sql.qmd 
+        - datenbanken/nosql.qmd 
 
-    - part: nosql/nosql.qmd
+    - part: mysql/mysql.qmd
       chapters:
-        - nosql/mongo-db-installation.qmd 
-        - nosql/mongo-db-start-stop.qmd
-        - nosql/mongo-db-basics.qmd  
-        - nosql/mongo-db-python.qmd  
+        - mysql/mysql-installation.qmd 
+        - mysql/mysql-workbench.qmd
+     
+
+    - part: postgres/postgres.qmd
+      chapters:
+        - postgres/postgres-installation.qmd
+        - postgres/postgres-pgadmin4.qmd
+        - postgres/postgres-python.qmd
+
+    - part: mongodb/mongodb.qmd
+      chapters:
+        - mongodb/mongodb-installation.qmd 
+        - mongodb/mongodb-start-stop.qmd
+        - mongodb/mongodb-basics.qmd  
+        - mongodb/mongodb-python.qmd  
 
     - part: github/github.qmd
       chapters:
