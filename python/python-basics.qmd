@@ -2,7 +2,7 @@
 
 Sie haben die Möglichkeit, den gesamten Inhalt dieses Kapitels als Notebook herunterzuladen. Nach dem Herunterladen können Sie es in Ihrem `code` Ordner speichern und das Notebook in Jupyter öffnen:
 
-- [⬇️ Juypter Notebook herunterladen](../code/python-basics.ipynb){download="python-basics.ipynb"}
+[⬇️ Juypter Notebook herunterladen](../code/python-basics.ipynb){download="python-basics.ipynb"}
 
 ## Bibliotheken importieren
 
