@@ -1,4 +1,4 @@
-# Server hinzufügen
+# Server einrichten
 
 Nach der Installation besteht der nächste Schritt darin, eine Verbindung zu Ihrem MySQL-Server über MySQL Workbench herzustellen, d.h. wir fügen einen Server hinzu:
 
