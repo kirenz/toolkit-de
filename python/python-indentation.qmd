@@ -1,5 +1,7 @@
 # Einrückung
 
+- [⬇️ Jupyter Notebook herunterladen](../code/python-identation.ipynb){download="python-identation.ipynb"}
+
 Bevor wir im nächsten Abschnitt Python-Funktionen erkunden, ist es wichtig, die Einrückungsregeln von Python zu verstehen, da diese grundlegend sind, um fehlerfreien Python-Code zu schreiben.
 
 Einrückung ist in Python nicht nur eine Stilfrage; sie hat eine syntaktische Bedeutung. Python verwendet Einrückungen, um Codeblöcke zu definieren. Die korrekte Verwendung von Einrückungen ist entscheidend, damit Ihr Code wie erwartet ausgeführt wird.
