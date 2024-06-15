@@ -1,12 +1,10 @@
 # NoSQL Datenbanken
 
-NoSQL-Datenbanken beziehen sich auf hochleistungsfähige, nicht-relationale Datenspeicher. Anstatt Tabellen normalisierter Daten zu verbinden, speichern NoSQL-Datenbanken *unstrukturierte* oder *halbstrukturierte Daten*, oft in Schlüssel-Wert-Paaren oder JSON-Dokumenten. 
-
-NoSQL-Datenbanken umfassen mehrere verschiedene Modelle zum Zugriff und zur Verwaltung von Daten, die jeweils für spezifische Anwendungsfälle geeignet sind ([Microsoft, 2021](https://docs.microsoft.com/en-us/dotnet/architecture/cloud-native/relational-vs-nosql-data)):
-
 NoSQL steht für "Not only SQL" und bezeichnet eine Klasse von Datenbanksystemen, die sich von traditionellen, relationalen Datenbanken unterscheiden. Sie wurden entwickelt, um die Skalierbarkeit und Leistung zu verbessern und um flexibler mit den Daten umgehen zu können. 
 
-Hier sind einige Hauptmerkmale und -modelle von NoSQL-Datenbanken:
+Anstatt Tabellen normalisierter Daten zu verbinden, speichern NoSQL-Datenbanken *unstrukturierte* oder *halbstrukturierte Daten*, oft in Schlüssel-Wert-Paaren oder JSON-Dokumenten. 
+
+NoSQL-Datenbanken umfassen mehrere verschiedene Modelle zum Zugriff und zur Verwaltung von Daten, die jeweils für spezifische Anwendungsfälle geeignet sind ([Microsoft, 2021](https://docs.microsoft.com/en-us/dotnet/architecture/cloud-native/relational-vs-nosql-data)). Hier sind einige Hauptmerkmale und -modelle von NoSQL-Datenbanken:
 
 - **Schemaflexibilität**: Im Gegensatz zu relationalen Datenbanken, bei denen das Schema festgelegt ist, bieten NoSQL-Datenbanken die Möglichkeit, Daten ohne vordefiniertes Schema zu speichern. Dies ermöglicht eine schnelle Anpassung an sich ändernde Datenanforderungen.
 
@@ -15,11 +13,12 @@ Hier sind einige Hauptmerkmale und -modelle von NoSQL-Datenbanken:
 - **Hohe Verfügbarkeit und Fehlertoleranz**: NoSQL-Datenbanken sind so konzipiert, dass sie auch bei Ausfällen einzelner Knoten im Netzwerk weiterhin verfügbar sind.
 
 
+## NoSQL Datenmodelle
+
 NoSQL-Datenbanken bieten eine Vielzahl von Möglichkeiten, um verschiedene Arten von Daten effizient zu speichern und abzurufen. Sie sind besonders nützlich in Szenarien, in denen traditionelle relationale Datenbanken an ihre Grenzen stoßen.
 
 <br>
 
-![Arten von NoSQL-Datenspeichern](../_static/img/types-of-nosql-datastores.png)
 
 Modell	| Eigenschaften | Open Source
 --|--|--
