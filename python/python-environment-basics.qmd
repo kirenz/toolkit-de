@@ -46,8 +46,19 @@ Um eine Umgebung einzurichten, befolgen Sie diese Anweisungen basierend auf Ihre
    - Mit aktivierter Umgebung installieren Sie die Bibliotheken:
 
    ```bash
-   pip install numpy pandas matplotlib seaborn altair jupyter ipykernel
+   pip install numpy pandas openpyxl matplotlib seaborn altair jupyter ipykernel
    ```
+   
+   :::{.callout-note collapse="true" title="Erklärung der Pakete"}
+   - **numpy**: Eine leistungsfähige Bibliothek für numerische Berechnungen.
+   - **pandas**: Ein wichtiges Tool zur Datenmanipulation und -analyse. 
+   - **openpyxl**: Ermöglicht das Lesen und Schreiben von Excel-Dateien (.xlsx) und wird oft in Verbindung mit Pandas verwendet, um Excel-Daten zu bearbeiten.
+   - **matplotlib**: Eine weitverbreitete Bibliothek zur Erstellung von Visualisierungen in Python.
+   - **seaborn**: Aufbauend auf matplotlib, bietet diese Bibliothek statistische Datenvisualisierungen.
+   - **altair**: Eine Visualisierungsbibliothek, die interaktive Grafiken erstellt.
+   - **jupyter**: Ein Open-Source-Webanwendungs-Tool, das es ermöglicht, Dokumente zu erstellen und zu teilen, die Live-Code, Gleichungen, Visualisierungen und narrativen Text enthalten.
+   - **ipykernel**: Ermöglicht die Integration von Jupyter Notebooks mit dem IPython-Kernel, was das Ausführen von Python-Code innerhalb der Jupyter-Umgebung unterstützt.
+   :::
 
    - Dieser Befehl ruft alle Pakete von PyPI ab und installiert sie.
 
