@@ -4,9 +4,9 @@
 
 ### MongoDB starten
 
-MongoDB sollte als Dienst automatisch gestartet werden, wenn Sie die Option "Install MongoDB as a Service" während der Installation aktiviert haben. 
+MongoDB sollte als Dienst automatisch gestartet werden, wenn Sie die Option "Install MongoDB as a Service" während der Installation aktiviert haben. Sie müssen daher zunächst keine weiteren Schritte unternehmen und können zum nächsten Kaptitel übergehen. 
 
-Sie können den Dienst auch manuell starten, falls er nicht automatisch gestartet wurde oder falls Sie den Dienst neu starten möchten:
+Führen Sie die folgenden Schritte nur dann aus, falls MongoDB nicht automatisch gestartet wurde oder falls Sie den Dienst neu starten möchten:
 
 
 1. **Öffnen Sie die Dienstverwaltung**:
