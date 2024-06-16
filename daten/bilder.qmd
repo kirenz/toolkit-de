@@ -4,130 +4,57 @@ Bilddaten sind eine wichtige Datenart in der Datenwissenschaft, besonders in Ber
 
 Ein Bild besteht aus einer Matrix von Pixeln, wobei jeder Pixel einen Farbwert repräsentiert. Die häufigsten Farbmodelle sind RGB (Rot, Grün, Blau) und Graustufen. Im RGB-Modell wird die Farbe eines Pixels durch die Intensitätswerte der drei Grundfarben Rot, Grün und Blau bestimmt.
 
-### Beispiel eines RGB-Bildes
+Ein RGB-Bild kann als eine dreidimensionale Matrix betrachtet werden, bei der die Dimensionen die Höhe, Breite und die drei Farbkanäle (Rot, Grün, Blau) sind. 
 
-Ein RGB-Bild kann als eine dreidimensionale Matrix betrachtet werden, bei der die Dimensionen die Höhe, Breite und die drei Farbkanäle (Rot, Grün, Blau) sind.
-
-## Werkzeuge und Bibliotheken
-
-Für die Verarbeitung und Analyse von Bilddaten in Python gibt es mehrere leistungsstarke Bibliotheken, darunter OpenCV und Pillow. Diese Bibliotheken bieten eine Vielzahl von Funktionen für die Bildmanipulation und -analyse.
-
-### Installation von OpenCV
-
-Um OpenCV zu installieren, verwenden Sie den folgenden Befehl:
+Hier zunächst ein einfaches Beispiel einer 3x3-Graustufen-Bildmatrix:
 
 ```{python}
-!pip install opencv-python
-```
-
-## Grundlegende Operationen mit OpenCV
-
-### Lesen und Anzeigen von Bildern
-
-Mit OpenCV können Sie Bilder einfach lesen und anzeigen. Hier ist ein Beispiel:
-
-```{python}
-import cv2
-
-# Bild lesen
-image = cv2.imread('example.jpg')
-
-# Bild anzeigen
-cv2.imshow('Example Image', image)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
-```
-
-### Bildmanipulation
-
-Sie können verschiedene Operationen auf Bildern durchführen, wie z.B. Zuschneiden, Skalieren und Drehen.
-
-```{python}
-# Bild zuschneiden
-cropped_image = image[50:200, 50:200]
-
-# Bild skalieren
-scaled_image = cv2.resize(image, (100, 100))
-
-# Bild drehen
-(h, w) = image.shape[:2]
-center = (w // 2, h // 2)
-M = cv2.getRotationMatrix2D(center, 45, 1.0)
-rotated_image = cv2.warpAffine(image, M, (w, h))
-```
-
-## Bildanalyse
-
-### Kanten- und Konturenerkennung
-
-Eine häufige Operation in der Bildverarbeitung ist die Kanten- und Konturenerkennung. OpenCV bietet dafür verschiedene Algorithmen.
-
-```{python}
-# Graustufenbild erzeugen
-gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-
-# Kanten erkennen
-edges = cv2.Canny(gray_image, 100, 200)
-
-# Konturen finden
-contours, _ = cv2.findContours(edges, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-cv2.drawContours(image, contours, -1, (0, 255, 0), 2)
-```
-
-## Bilddaten und maschinelles Lernen
-
-### Einführung in Convolutional Neural Networks (CNNs)
-
-Convolutional Neural Networks (CNNs) sind speziell für die Verarbeitung von Bilddaten entwickelt worden. Sie nutzen Faltungsschichten, um Merkmale aus Bildern zu extrahieren und zu analysieren.
-
-Hier ist ein einfaches Beispiel eines CNNs mit der Bibliothek Keras:
-
-```{python}
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
-
-# Modell erstellen
-model = Sequential([
-    Conv2D(32, (3, 3), activation='relu', input_shape=(64, 64, 3)),
-    MaxPooling2D(pool_size=(2, 2)),
-    Flatten(),
-    Dense(128, activation='relu'),
-    Dense(10, activation='softmax')
-])
-
-# Modell zusammenfassen
-model.summary()
-```
-
-## Praxisprojekte
-
-### Beispielprojekt: Objekterkennung
-
-Ein einfaches Projekt zur Anwendung des Gelernten ist die Objekterkennung in Bildern. Hier ist ein Beispiel, wie man ein vortrainiertes Modell wie MobileNetV2 zur Objekterkennung verwenden kann:
-
-```{python}
-from tensorflow.keras.applications import MobileNetV2
-from tensorflow.keras.preprocessing import image
-from tensorflow.keras.applications.mobilenet_v2 import preprocess_input, decode_predictions
 import numpy as np
 
-# Modell laden
-model = MobileNetV2(weights='imagenet')
+# Beispiel einer 3x3-Graustufen-Bildmatrix
+image_matrix = np.array([
+    [  0, 128, 255],
+    [ 64, 192,  32],
+    [255, 128,   0]
+])
 
-# Bild laden und vorbereiten
-img_path = 'elephant.jpg'
-img = image.load_img(img_path, target_size=(224, 224))
-x = image.img_to_array(img)
-x = np.expand_dims(x, axis=0)
-x = preprocess_input(x)
-
-# Vorhersage machen
-preds = model.predict(x)
-
-# Ergebnisse anzeigen
-print('Predicted:', decode_predictions(preds, top=3)[0])
+print(image_matrix)
 ```
 
-## Zusammenfassung
+Diese Matrix repräsentiert ein kleines Bild mit 3x3 Pixeln. Jeder Wert in der Matrix ist ein Graustufenwert zwischen 0 und 255. Um die Matrix als Bild anzuzeigen, können wir die Bibliothek Matplotlib verwenden:
 
-In diesem Kapitel haben wir die Grundlagen der Bildverarbeitung und -analyse mit Python und OpenCV kennengelernt. Bilddaten sind ein zentraler Bestandteil vieler Datenwissenschaftsprojekte, insbesondere in den Bereichen Computer Vision und maschinelles Lernen. Die vorgestellten Techniken und Werkzeuge bieten eine solide Grundlage für weiterführende Studien und Anwendungen in diesen Bereichen.
+```{python}
+import matplotlib.pyplot as plt
+
+# Bild anzeigen
+plt.imshow(image_matrix, cmap='gray')
+plt.colorbar()  # Farbleiste anzeigen
+plt.show()
+```
+
+Dieses Beispiel zeigt, wie eine einfache Datenmatrix in ein Bild umgewandelt und angezeigt werden kann.
+
+Für RGB-Bilder benötigen wir eine dreidimensionale Matrix, bei der die dritte Dimension die Farbkanäle (Rot, Grün, Blau) repräsentiert. Hier ist ein Beispiel einer 3x3-RGB-Bildmatrix:
+
+```{python}
+# Beispiel einer 3x3-RGB-Bildmatrix
+rgb_image_matrix = np.array([
+    [[255,   0,   0], [  0, 255,   0], [  0,   0, 255]],  # Erste Zeile: Rot, Grün, Blau
+    [[255, 255,   0], [  0, 255, 255], [255,   0, 255]],  # Zweite Zeile: Gelb, Cyan, Magenta
+    [[192, 192, 192], [128, 128, 128], [ 64,  64,  64]]   # Dritte Zeile: Verschiedene Grautöne
+])
+
+print(rgb_image_matrix)
+```
+
+
+Um die RGB-Matrix als Bild anzuzeigen, können wir ebenfalls Matplotlib verwenden:
+
+```{python}
+# RGB-Bild anzeigen
+plt.imshow(rgb_image_matrix)
+plt.show()
+```
+
+Dieses Beispiel zeigt, wie eine dreidimensionale Datenmatrix, die ein RGB-Bild repräsentiert, visualisiert werden kann.
+
