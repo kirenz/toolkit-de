@@ -47,10 +47,18 @@ book:
         - vscode/visual-studio-code-extensions.qmd
         - vscode/visual-studio-code-basics.qmd
 
+    - part: daten/daten.qmd
+      chapters:
+        - daten/dictionary.qmd
+        - daten/csv.qmd
+        - daten/excel.qmd
+        - daten/json.qmd
+
     - part: datenbanken/datenbanken.qmd
       chapters:
-        - datenbanken/relational.qmd 
-        - datenbanken/nosql.qmd 
+        - datenbanken/relational.qmd
+        - datenbanken/nosql.qmd
+
 
     - part: mysql/mysql.qmd
       chapters:
