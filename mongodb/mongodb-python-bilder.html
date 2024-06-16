@@ -9,7 +9,7 @@
 <meta name="author" content="Jan Kirenz">
 <meta name="description" content="Programming Toolkit für Data Science, AI &amp; Analytics">
 
-<title>Data Science, AI &amp; Analytics Toolkit - PostgreSQL</title>
+<title>Data Science, AI &amp; Analytics Toolkit - 36&nbsp; Bilder</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -32,8 +66,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../postgres/postgres-installation.html" rel="next">
-<link href="../mysql/mysql-basics.html" rel="prev">
+<link href="../github/github.html" rel="next">
+<link href="../mongodb/mongodb-python.html" rel="prev">
 <link href="..//images/logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -84,7 +118,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../postgres/postgres.html">PostgreSQL</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../mongodb/mongodb.html">MongoDB</a></li><li class="breadcrumb-item"><a href="../mongodb/mongodb-python-bilder.html"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Bilder</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -337,7 +371,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../postgres/postgres.html" class="sidebar-item-text sidebar-link active">
+            <a href="../postgres/postgres.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">PostgreSQL</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -405,7 +439,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../mongodb/mongodb-python-bilder.html" class="sidebar-item-text sidebar-link">
+  <a href="../mongodb/mongodb-python-bilder.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Bilder</span></span></a>
   </div>
 </li>
@@ -458,14 +492,23 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Inhaltsverzeichnis</h2>
+   
+  <ul>
+  <li><a href="#setup" id="toc-setup" class="nav-link active" data-scroll-target="#setup"><span class="header-section-number">36.1</span> Setup</a></li>
+  <li><a href="#bild-laden" id="toc-bild-laden" class="nav-link" data-scroll-target="#bild-laden"><span class="header-section-number">36.2</span> Bild laden</a></li>
+  <li><a href="#bild-abrufen" id="toc-bild-abrufen" class="nav-link" data-scroll-target="#bild-abrufen"><span class="header-section-number">36.3</span> Bild abrufen</a></li>
+  <li><a href="#fehlerbehandlung" id="toc-fehlerbehandlung" class="nav-link" data-scroll-target="#fehlerbehandlung"><span class="header-section-number">36.4</span> Fehlerbehandlung</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../mongodb/mongodb.html">MongoDB</a></li><li class="breadcrumb-item"><a href="../mongodb/mongodb-python-bilder.html"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Bilder</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">PostgreSQL</h1>
+<h1 class="title"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Bilder</span></h1>
 </div>
 
 
@@ -482,10 +525,72 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><em>PostgreSQL</em>, oft ausgesprochen als “Post-gress-Q-L”, ist ein relationales Datenbankmanagementsystem (RDBMS), das für seine Robustheit und seine Fähigkeiten zur Verwaltung komplexer Datenoperationen bekannt ist.</p>
-<p><em>pgAdmin4</em> ist das offizielle grafische Verwaltungstool für PostgreSQL und bietet eine benutzerfreundliche Oberfläche für die Datenbankverwaltung. Es wird als Teil der PostgreSQL-Installation installiert.</p>
+<p>Das Speichern und Abrufen von Bildern in MongoDB kann auf verschiedene Weisen erfolgen. Eine gängige Methode ist die Verwendung von GridFS, einem Spezialsystem von MongoDB zum Speichern und Abrufen von großen Dateien, einschließlich Bildern.</p>
+<p>Im nächsten Abschnitt werden wir uns auf die Verwendung von GridFS konzentrieren, um Bilder in einer MongoDB-Datenbank zu speichern und abzurufen.</p>
+<section id="setup" class="level2" data-number="36.1">
+<h2 data-number="36.1" class="anchored" data-anchor-id="setup"><span class="header-section-number">36.1</span> Setup</h2>
+<p>Wir beginnen mit dem Importieren der notwendigen Bibliotheken. Zusätzlich zu <code>pymongo</code> benötigen wir <code>gridfs</code> und <code>Pillow</code>, eine Bibliothek zur Bildbearbeitung in Python.</p>
+<ul>
+<li><code>gridfs</code>ist ein Modul zur Speicherung großer Dateien in MongoDB, indem sie in kleinere Chunks aufgeteilt werden.</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pymongo</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> gridfs</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> PIL <span class="im">import</span> Image</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> io</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Stellen Sie eine Verbindung zur MongoDB-Datenbank her.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Verbindung zur MongoDB herstellen</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>client <span class="op">=</span> pymongo.MongoClient(<span class="st">"mongodb://localhost:27017/"</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>db <span class="op">=</span> client[<span class="st">"mydatabase"</span>]</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Erstellen Sie eine GridFS-Instanz für die Datenbank.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># GridFS-Instanz erstellen</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>fs <span class="op">=</span> gridfs.GridFS(db)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="bild-laden" class="level2" data-number="36.2">
+<h2 data-number="36.2" class="anchored" data-anchor-id="bild-laden"><span class="header-section-number">36.2</span> Bild laden</h2>
+<p>Laden Sie ein Bild mit <code>Pillow</code>, konvertieren Sie es in ein Byte-Format und speichern Sie es mit GridFS in MongoDB.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Bild laden</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>image_path <span class="op">=</span> <span class="st">"mongodb.png"</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>image <span class="op">=</span> Image.<span class="bu">open</span>(image_path)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Bild in Bytes konvertieren</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>image_bytes <span class="op">=</span> io.BytesIO()</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>image.save(image_bytes, <span class="bu">format</span><span class="op">=</span><span class="st">'PNG'</span>)</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>image_bytes <span class="op">=</span> image_bytes.getvalue()</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Bild in MongoDB speichern</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>file_id <span class="op">=</span> fs.put(image_bytes, filename<span class="op">=</span><span class="st">"my_image.png"</span>)</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Bild gespeichert mit File-ID: </span><span class="sc">{</span>file_id<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="bild-abrufen" class="level2" data-number="36.3">
+<h2 data-number="36.3" class="anchored" data-anchor-id="bild-abrufen"><span class="header-section-number">36.3</span> Bild abrufen</h2>
+<p>Um ein Bild aus MongoDB abzurufen und anzuzeigen, verwenden Sie den <code>find</code>-Befehl von GridFS.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Bild aus MongoDB abrufen</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>output_image <span class="op">=</span> fs.get(file_id)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Bild in Bytes konvertieren</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>output_image_bytes <span class="op">=</span> output_image.read()</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Bild anzeigen</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>output_image <span class="op">=</span> Image.<span class="bu">open</span>(io.BytesIO(output_image_bytes))</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>output_image.show()</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="fehlerbehandlung" class="level2" data-number="36.4">
+<h2 data-number="36.4" class="anchored" data-anchor-id="fehlerbehandlung"><span class="header-section-number">36.4</span> Fehlerbehandlung</h2>
+<p>Wie bei jeder Datenbankoperation ist es wichtig, Fehler zu behandeln. Hier ist ein Beispiel, wie Sie Fehler abfangen können:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="cf">try</span>:</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    client <span class="op">=</span> pymongo.MongoClient(<span class="st">"mongodb://localhost:27017/"</span>)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Verbindung erfolgreich"</span>)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="cf">except</span> pymongo.errors.<span class="pp">ConnectionError</span> <span class="im">as</span> e:</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Verbindung fehlgeschlagen:"</span>, e)</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="cf">try</span>:</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    file_id <span class="op">=</span> fs.put(image_bytes, filename<span class="op">=</span><span class="st">"my_image.png"</span>)</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Bild gespeichert mit File-ID: </span><span class="sc">{</span>file_id<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="cf">except</span> <span class="pp">Exception</span> <span class="im">as</span> e:</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Fehler beim Speichern des Bildes:"</span>, e)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -899,13 +1004,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../mysql/mysql-basics.html" class="pagination-link" aria-label="SQL basics">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">SQL basics</span></span>
+      <a href="../mongodb/mongodb-python.html" class="pagination-link" aria-label="Python-Integration">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Python-Integration</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../postgres/postgres-installation.html" class="pagination-link" aria-label="Installation">
-        <span class="nav-page-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Installation</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../github/github.html" class="pagination-link" aria-label="GitHub">
+        <span class="nav-page-text">GitHub</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
