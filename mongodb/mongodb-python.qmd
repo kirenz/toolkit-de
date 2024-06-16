@@ -28,9 +28,17 @@ Um eine Umgebung einzurichten, befolgen Sie diese Anweisungen basierend auf Ihre
    - Mit aktivierter Umgebung installieren Sie die Bibliotheken:
 
    ```bash
-   pip install pymongo numpy pandas matplotlib seaborn altair jupyter ipykernel
+   pip install pymongo gridfs pillow jupyter ipykernel pandas
    ```
 
+  :::{.callout-note collapse="true" title="Erklärung der Bibliotheken"}
+   - **pymongo**: Bietet eine Python-Schnittstelle zu MongoDB, einer NoSQL-Datenbank.
+   - **pillow**: Eine Bibliothek für die Bildverarbeitung in Python, die das Öffnen, Bearbeiten und Speichern von Bilddateien unterstützt.
+   - **jupyter**: Eine interaktive Entwicklungsumgebung zur Erstellung und Ausführung von Jupyter-Notebooks.
+   - **ipykernel**: Eine Implementierung des Jupyter-Kernels für Python, die die Ausführung von Python-Code in Jupyter-Notebooks ermöglicht.
+   - **pandas**: Eine leistungsfähige Datenanalysebibliothek für Python, die Datenmanipulation und -analyse vereinfacht.
+   :::
+   
    - Dieser Befehl ruft alle Pakete von PyPI ab und installiert sie.
 
 ## Verbindung herstellen
