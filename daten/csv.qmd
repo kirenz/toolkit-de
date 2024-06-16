@@ -1,0 +1,256 @@
+# CSV
+
+CSV-Dateien (Comma-Separated Values) sind einfache Textdateien, die Tabellenkalkulationsdaten in einem lesbaren Format speichern. Jede Zeile einer CSV-Datei entspricht einer Zeile in der Tabelle, und die Spaltenwerte werden durch Kommas getrennt.
+
+:::{.callout-note}
+Eine CSV-Datei besteht aus Zeilen, wobei jede Zeile eine Liste von Werten enthält, die durch Kommas getrennt sind. Die erste Zeile enthält normalerweise die Spaltenüberschriften.
+:::
+
+Beispielinhalt einer CSV-Datei:
+
+```plaintext
+Name,Alter,Stadt
+Max,24,Berlin
+Anna,30,Hamburg
+Tom,22,München
+```
+
+Diese CSV-Datei enthält eine einfache Tabelle mit drei Spalten: Name, Alter und Stadt. Jede Zeile der Datei repräsentiert einen Datensatz mit den entsprechenden Werten für jede Spalte. Die erste Zeile enthält die Spaltenüberschriften, die die Art der Daten in jeder Spalte beschreiben.
+
+- **Name**: Enthält die Namen der Personen (z. B. Max, Anna, Tom).
+- **Alter**: Enthält das Alter der Personen in Jahren (z. B. 24, 30, 22).
+- **Stadt**: Enthält die Namen der Städte, in denen die Personen wohnen (z. B. Berlin, Hamburg, München).
+
+Diese Struktur ermöglicht es, die Daten einfach in Tabellenform zu organisieren und sie in Programmen wie Excel oder in Datenanalyse-Tools wie Pandas zu verwenden.
+
+## Excel und Google Sheets
+
+Excel-Tabellen und Google Sheets können leicht in das CSV-Format überführt werden. Dies ist besonders nützlich, wenn Sie Daten in einem leicht zugänglichen und plattformunabhängigen Format speichern möchten.
+
+### Excel-Tabellen in CSV konvertieren
+
+In Microsoft Excel können Sie eine Tabelle als CSV-Datei speichern, indem Sie folgende Schritte ausführen:
+
+1. Öffnen Sie die Excel-Datei.
+2. Klicken Sie auf "Datei" und wählen Sie "Speichern unter".
+3. Wählen Sie den Speicherort und den Dateinamen.
+4. Wählen Sie im Dropdown-Menü "Dateityp" die Option "CSV (Trennzeichen-getrennt) (*.csv)" aus.
+5. Klicken Sie auf "Speichern".
+
+Diese Konvertierungen ermöglichen es Ihnen, Daten aus Excel-Tabellen einfach in Ihre Python-Projekte zu integrieren und weiterzuverarbeiten.
+
+### Google Sheets in CSV konvertieren
+
+In Google Sheets können Sie eine Tabelle als CSV-Datei exportieren, indem Sie folgende Schritte ausführen:
+
+1. Öffnen Sie das Google Sheet.
+2. Klicken Sie auf "Datei" in der oberen Menüleiste.
+3. Wählen Sie "Download" und dann "Comma-separated values (.csv, aktuelles Blatt)".
+4. Die CSV-Datei wird auf Ihren Computer heruntergeladen.
+
+Diese Konvertierungen ermöglichen es Ihnen, Daten aus Google Sheets einfach in Ihre Python-Projekte zu integrieren und weiterzuverarbeiten.
+
+## CSV in Python
+
+Wir verwenden die Bibliothek Pandas, um CSV-Daten in Python zu erstellen oder einzulesen.
+
+### Erstellung
+
+```{python}
+import pandas as pd
+
+# Daten erstellen
+daten = {
+    "Name": ["Max", "Anna", "Tom"],
+    "Alter": [24, 30, 22],
+    "Stadt": ["Berlin", "Hamburg", "München"]
+}
+
+df = pd.DataFrame(daten)
+
+# CSV-Datei speichern
+df.to_csv('daten.csv', index=False)
+```
+
+
+In diesem Code-Snippet wird ein DataFrame in Pandas erstellt und anschließend als CSV-Datei gespeichert. 
+
+
+:::{.callout-note collapse="true" title="Ausführliche Erklärung"}
+
+1. Importieren der Pandas-Bibliothek
+
+```python
+import pandas as pd
+```
+
+Die `pandas`-Bibliothek wird importiert. Pandas ist eine leistungsstarke Bibliothek für die Datenmanipulation und -analyse in Python. Sie bietet Datenstrukturen wie DataFrames, die für die Arbeit mit tabellarischen Daten sehr nützlich sind.
+
+2. Erstellen eines Daten-Dictionaries
+
+```python
+daten = {
+    "Name": ["Max", "Anna", "Tom"],
+    "Alter": [24, 30, 22],
+    "Stadt": ["Berlin", "Hamburg", "München"]
+}
+```
+
+Hier wird ein Dictionary namens `daten` erstellt. Dieses Dictionary enthält drei Schlüssel: "Name", "Alter" und "Stadt". Jeder Schlüssel ist einer Liste von Werten zugeordnet:
+
+- "Name": Liste der Namen ["Max", "Anna", "Tom"]
+- "Alter": Liste der Alter [24, 30, 22]
+- "Stadt": Liste der Städte ["Berlin", "Hamburg", "München"]
+
+Dieses Dictionary repräsentiert eine tabellarische Struktur, bei der jede Liste eine Spalte der Tabelle darstellt.
+
+3. Erstellen eines DataFrame
+
+```python
+df = pd.DataFrame(daten)
+```
+
+Das Dictionary `daten` wird in einen Pandas DataFrame konvertiert. Ein DataFrame ist eine zweidimensionale, tabellarische Datenstruktur, die aus Zeilen und Spalten besteht. In diesem Fall enthält der DataFrame drei Spalten: "Name", "Alter" und "Stadt", entsprechend den Schlüsseln im Dictionary.
+
+Der resultierende DataFrame `df` sieht wie folgt aus:
+
+```
+   Name  Alter     Stadt
+0   Max     24    Berlin
+1  Anna     30   Hamburg
+2   Tom     22   München
+```
+
+Jede Zeile im DataFrame repräsentiert einen Datensatz (eine Person) und jede Spalte repräsentiert eine Eigenschaft dieser Datensätze (Name, Alter, Stadt).
+
+4. Speichern des DataFrame als CSV-Datei
+
+```python
+df.to_csv('daten.csv', index=False)
+```
+
+Der DataFrame `df` wird als CSV-Datei mit dem Namen `daten.csv` gespeichert. Der Parameter `index=False` stellt sicher, dass die Indizes der Zeilen (die automatisch generierten Nummern 0, 1, 2, ...) nicht in die CSV-Datei geschrieben werden. Ohne diesen Parameter würde die CSV-Datei eine zusätzliche Spalte mit den Zeilenindizes enthalten.
+
+Die resultierende CSV-Datei `daten.csv` hat folgendes Format:
+
+```
+Name,Alter,Stadt
+Max,24,Berlin
+Anna,30,Hamburg
+Tom,22,München
+```
+
+Jede Zeile der CSV-Datei entspricht einer Zeile im DataFrame, und jede Spalte entspricht einer Spalte im DataFrame. Die erste Zeile enthält die Spaltenüberschriften, die die Namen der Spalten im DataFrame repräsentieren.
+:::
+
+Wenn Sie beim Speichern einer Datei keinen Pfad angeben, wird die Datei im aktuellen Arbeitsverzeichnis gespeichert. Das bedeutet, dass die Datei in dem Verzeichnis abgelegt wird, in dem das Python-Skript ausgeführt wird.
+
+In unserem Beispiel `df.to_csv('daten.csv', index=False)` wird die Datei `daten.csv` im aktuellen Arbeitsverzeichnis gespeichert. Das aktuelle Arbeitsverzeichnis ist der Ordner, in dem das Python-Programm gestartet wurde. Der entsprechende Pfad kann mit `os.getcwd()` ermittelt werden:
+
+
+```python
+import os
+
+print(os.getcwd())
+```
+
+Diese Funktion gibt das aktuelle Arbeitsverzeichnis aus, in welchem die Datei gespeichert wird.
+
+
+### Einlesen
+
+```{python}
+import pandas as pd
+
+# CSV-Datei lesen
+df = pd.read_csv('daten.csv')
+
+df
+```
+
+
+In diesem Code-Snippet wird eine CSV-Datei (die sich in dem aktuellen Arbeitsverzeichnis befindet) gelesen und in einen Pandas DataFrame konvertiert. Anschließend wird der DataFrame ausgegeben:
+
+1. Importieren der Pandas-Bibliothek.
+2. Lesen der CSV-Datei `daten.csv` und Erstellen eines Pandas DataFrame aus den Daten.
+3. Ausgeben des DataFrame.
+
+:::{.callout-note collapse="true" title="Ausführliche Erklärung"}
+
+1. Importieren der Pandas-Bibliothek
+
+```python
+import pandas as pd
+```
+
+Die `pandas`-Bibliothek wird importiert. 
+
+2. Lesen einer CSV-Datei
+
+```python
+df = pd.read_csv('daten.csv')
+```
+
+Die Methode `pd.read_csv('daten.csv')` liest die CSV-Datei `daten.csv` und erstellt daraus einen Pandas DataFrame. Diese Methode nimmt den Dateinamen als Argument und lädt die Daten aus der CSV-Datei in einen DataFrame.
+
+Angenommen, die Datei `daten.csv` hat folgenden Inhalt:
+
+```plaintext
+Name,Alter,Stadt
+Max,24,Berlin
+Anna,30,Hamburg
+Tom,22,München
+```
+Diese Datei enthält drei Spalten: "Name", "Alter" und "Stadt". Die erste Zeile der Datei enthält die Spaltenüberschriften.
+
+Die Methode `pd.read_csv` interpretiert die erste Zeile als Spaltennamen und die nachfolgenden Zeilen als Daten. Der resultierende DataFrame `df` sieht wie folgt aus:
+
+```plaintext
+   Name  Alter     Stadt
+0   Max     24    Berlin
+1  Anna     30   Hamburg
+2   Tom     22   München
+```
+
+Jede Zeile im DataFrame repräsentiert einen Datensatz (eine Person) und jede Spalte repräsentiert eine Eigenschaft dieser Datensätze (Name, Alter, Stadt).
+
+3. Ausgeben des DataFrame
+
+```python
+df
+```
+
+Der DataFrame wird in einer tabellarischen Form angezeigt, die die Daten klar und übersichtlich darstellt.
+
+Die Ausgabe sieht wie folgt aus:
+
+```plaintext
+   Name  Alter     Stadt
+0   Max     24    Berlin
+1  Anna     30   Hamburg
+2   Tom     22   München
+```
+
+Diese Ausgabe zeigt alle Zeilen und Spalten des DataFrame an. Jede Zeile entspricht einem Datensatz aus der CSV-Datei, und jede Spalte entspricht einer Eigenschaft der Datensätze.
+
+:::
+
+
+**Hinweis zum Pfad der CSV-Datei:**
+
+Es ist wichtig sicherzustellen, dass der Pfad zur CSV-Datei korrekt angegeben ist. Wenn sich die CSV-Datei nicht im aktuellen Arbeitsverzeichnis befindet, muss der vollständige Pfad zur Datei angegeben werden. Beispielsweise:
+
+```python
+df = pd.read_csv('/pfad/zum/verzeichnis/daten.csv')
+```
+
+Stellen Sie sicher, dass der angegebene Pfad korrekt ist und die Datei `daten.csv` tatsächlich an diesem Ort existiert. Andernfalls wird ein `FileNotFoundError` ausgelöst. Sie können das aktuelle Arbeitsverzeichnis in Python überprüfen, um sicherzustellen, dass sich die CSV-Datei im richtigen Verzeichnis befindet:
+
+```python
+import os
+
+print(os.getcwd())
+```
+
+Diese Funktion gibt das aktuelle Arbeitsverzeichnis aus. Stellen Sie sicher, dass Ihre CSV-Datei in diesem Verzeichnis oder im angegebenen Pfad vorhanden ist.
+
