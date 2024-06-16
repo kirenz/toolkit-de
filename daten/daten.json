@@ -1,0 +1,19 @@
+{
+    "Personen": [
+        {
+            "Name": "Max",
+            "Alter": 24,
+            "Stadt": "Berlin"
+        },
+        {
+            "Name": "Anna",
+            "Alter": 30,
+            "Stadt": "Hamburg"
+        },
+        {
+            "Name": "Tom",
+            "Alter": 22,
+            "Stadt": "M\u00fcnchen"
+        }
+    ]
+}
