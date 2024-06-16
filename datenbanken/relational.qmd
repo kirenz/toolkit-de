@@ -1,4 +1,4 @@
-# Relationale Datenbanken (RDBMS)
+# Relational
 
 Relationale Datenbanken sind das Rückgrat vieler moderner Datenbankanwendungen und werden durch ihre Fähigkeit, Daten in strukturierten Tabellen zu organisieren und zu verwalten, definiert. In diesem Kapitel werden wir die Grundkonzepte und Architektur relationaler Datenbanken beleuchten, einschließlich ihrer Komponenten, Vorteile und typischen Anwendungsfälle.
 
