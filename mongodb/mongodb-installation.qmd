@@ -97,9 +97,18 @@ Folgen Sie der Installationsanweisung der [MongoDB-Dokumentation](https://www.mo
    brew install mongodb-community@7.0
    ```
 
-Die Installation umfasst folgende Binärdateien:
+Öffnen Sie -nachdem alles installiert wurde- eine neue Eingabeaufforderung und führen Sie die folgenden Befehle aus:
 
-- Der mongod-Server
-- Der mongos-Sharded-Cluster-Query-Router
-- Die MongoDB Shell, mongosh
+Prüfung mongod-Server:
 
+```sh
+mongod --version
+```
+
+Die MongoDB Shell: mongosh
+
+```sh
+mongosh --version
+```
+
+Wenn bei beiden Befehlen eine Version angezeigt wird, war die Installation erfolgreich.
