@@ -9,7 +9,7 @@
 <meta name="author" content="Jan Kirenz">
 <meta name="description" content="Programming Toolkit für Data Science, AI &amp; Analytics">
 
-<title>Data Science, AI &amp; Analytics Toolkit - 25&nbsp; Server einrichten</title>
+<title>Data Science, AI &amp; Analytics Toolkit - 21&nbsp; JSON</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -32,8 +66,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../mysql/mysql-basics.html" rel="next">
-<link href="../mysql/mysql-installation.html" rel="prev">
+<link href="../datenbanken/datenbanken.html" rel="next">
+<link href="../daten/excel.html" rel="prev">
 <link href="..//images/logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -84,7 +118,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../mysql/mysql.html">MySQL</a></li><li class="breadcrumb-item"><a href="../mysql/mysql-server.html"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Server einrichten</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../daten/daten.html">Daten</a></li><li class="breadcrumb-item"><a href="../daten/json.html"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">JSON</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -277,7 +311,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../daten/json.html" class="sidebar-item-text sidebar-link">
+  <a href="../daten/json.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">JSON</span></span></a>
   </div>
 </li>
@@ -323,7 +357,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../mysql/mysql-server.html" class="sidebar-item-text sidebar-link active">
+  <a href="../mysql/mysql-server.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Server einrichten</span></span></a>
   </div>
 </li>
@@ -452,14 +486,28 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Inhaltsverzeichnis</h2>
+   
+  <ul>
+  <li><a href="#schreiben-einer-json-datei" id="toc-schreiben-einer-json-datei" class="nav-link active" data-scroll-target="#schreiben-einer-json-datei"><span class="header-section-number">21.1</span> Schreiben einer JSON-Datei</a></li>
+  <li><a href="#lesen-einer-json-datei" id="toc-lesen-einer-json-datei" class="nav-link" data-scroll-target="#lesen-einer-json-datei"><span class="header-section-number">21.2</span> Lesen einer JSON-Datei</a></li>
+  <li><a href="#erweiterte-funktionen" id="toc-erweiterte-funktionen" class="nav-link" data-scroll-target="#erweiterte-funktionen"><span class="header-section-number">21.3</span> Erweiterte Funktionen</a>
+  <ul class="collapse">
+  <li><a href="#json-in-dictionary" id="toc-json-in-dictionary" class="nav-link" data-scroll-target="#json-in-dictionary"><span class="header-section-number">21.3.1</span> JSON in Dictionary</a></li>
+  <li><a href="#dictionary-zu-json" id="toc-dictionary-zu-json" class="nav-link" data-scroll-target="#dictionary-zu-json"><span class="header-section-number">21.3.2</span> Dictionary zu JSON</a></li>
+  <li><a href="#verschachtelte-json-daten" id="toc-verschachtelte-json-daten" class="nav-link" data-scroll-target="#verschachtelte-json-daten"><span class="header-section-number">21.3.3</span> Verschachtelte JSON-Daten</a></li>
+  </ul></li>
+  <li><a href="#zusammenfassung" id="toc-zusammenfassung" class="nav-link" data-scroll-target="#zusammenfassung"><span class="header-section-number">21.4</span> Zusammenfassung</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../mysql/mysql.html">MySQL</a></li><li class="breadcrumb-item"><a href="../mysql/mysql-server.html"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Server einrichten</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../daten/daten.html">Daten</a></li><li class="breadcrumb-item"><a href="../daten/json.html"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">JSON</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Server einrichten</span></h1>
+<h1 class="title"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">JSON</span></h1>
 </div>
 
 
@@ -476,52 +524,242 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Nach der Installation besteht der nächste Schritt darin, eine Verbindung zu Ihrem MySQL-Server über MySQL Workbench herzustellen, d.h. wir fügen einen Server hinzu:</p>
-<ol type="1">
-<li><strong>MySQL Workbench starten</strong>
-<ul>
-<li>Öffnen Sie MySQL Workbench aus Ihrer Anwendungsübersicht. Beim Start der Anwendung sehen Sie die Hauptoberfläche.</li>
-</ul>
-<div class="callout callout-style-simple callout-tip callout-titled" title="Tipp für Windows-Nutzer">
+<p>JSON (JavaScript Object Notation) ist ein textbasiertes Datenformat, das einfach lesbar und schreibbar ist. JSON-Daten bestehen aus Schlüssel-Wert-Paaren und unterstützen verschiedene Datentypen wie Zeichenfolgen, Zahlen, Arrays (Listen) und Objekte (Dictionaries).</p>
+<p>Beispiel einer JSON-Datei:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"Personen"</span><span class="fu">:</span> <span class="ot">[</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        <span class="fu">{</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"Name"</span><span class="fu">:</span> <span class="st">"Max"</span><span class="fu">,</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"Alter"</span><span class="fu">:</span> <span class="dv">24</span><span class="fu">,</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"Stadt"</span><span class="fu">:</span> <span class="st">"Berlin"</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>        <span class="fu">}</span><span class="ot">,</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>        <span class="fu">{</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"Name"</span><span class="fu">:</span> <span class="st">"Anna"</span><span class="fu">,</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"Alter"</span><span class="fu">:</span> <span class="dv">30</span><span class="fu">,</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"Stadt"</span><span class="fu">:</span> <span class="st">"Hamburg"</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>        <span class="fu">}</span><span class="ot">,</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>        <span class="fu">{</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"Name"</span><span class="fu">:</span> <span class="st">"Tom"</span><span class="fu">,</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"Alter"</span><span class="fu">:</span> <span class="dv">22</span><span class="fu">,</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>            <span class="dt">"Stadt"</span><span class="fu">:</span> <span class="st">"München"</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>        <span class="fu">}</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    <span class="ot">]</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Diese JSON-Datei enthält ein Objekt mit einem Schlüssel <code>Personen</code>, der eine Liste von Objekten enthält. Jedes dieser Objekte repräsentiert eine Person mit den Attributen <code>Name</code>, <code>Alter</code> und <code>Stadt</code>. Dieses Format ist sehr nützlich, um strukturierte Daten wie eine Liste von Personen mit deren Eigenschaften zu speichern und zu übertragen.</p>
+<p>Im oben genannten Beispiel könnten wir nach dem Laden der JSON-Datei auf die Liste der Personen mit <code>daten["Personen"]</code> zugreifen und die Informationen jeder Person entsprechend verwenden.</p>
+<section id="schreiben-einer-json-datei" class="level2" data-number="21.1">
+<h2 data-number="21.1" class="anchored" data-anchor-id="schreiben-einer-json-datei"><span class="header-section-number">21.1</span> Schreiben einer JSON-Datei</h2>
+<p>Das Speichern von Daten in eine JSON-Datei ist mit der <code>json</code>-Bibliothek sehr einfach. Die Methode <code>json.dump()</code> ermöglicht das Speichern eines Python Dictionaries in eine JSON-Datei.</p>
+<div id="59b5db16" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Daten erstellen</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>daten <span class="op">=</span> {</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Personen"</span>: [</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>        {<span class="st">"Name"</span>: <span class="st">"Max"</span>, <span class="st">"Alter"</span>: <span class="dv">24</span>, <span class="st">"Stadt"</span>: <span class="st">"Berlin"</span>},</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>        {<span class="st">"Name"</span>: <span class="st">"Anna"</span>, <span class="st">"Alter"</span>: <span class="dv">30</span>, <span class="st">"Stadt"</span>: <span class="st">"Hamburg"</span>},</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>        {<span class="st">"Name"</span>: <span class="st">"Tom"</span>, <span class="st">"Alter"</span>: <span class="dv">22</span>, <span class="st">"Stadt"</span>: <span class="st">"München"</span>}</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    ]</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co"># JSON-Datei speichern</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'daten.json'</span>, <span class="st">'w'</span>) <span class="im">as</span> jsonfile:</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    json.dump(daten, jsonfile, indent<span class="op">=</span><span class="dv">4</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="callout callout-style-simple callout-note callout-titled" title="Ausführliche Erklärung">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tipp für Windows-Nutzer
+Ausführliche Erklärung
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Falls MySQL Workbench während der anfänglichen Einrichtung des MySQL Servers nicht enthalten war, kann es separat installiert werden:</p>
+<ol type="1">
+<li><p><strong>Importieren der JSON-Bibliothek</strong>: <code>python     import json</code></p></li>
+<li><p><strong>Erstellen von Daten</strong>:</p>
 <ul>
-<li>Greifen Sie auf die <a href="https://dev.mysql.com/downloads/workbench/">MySQL Workbench Downloadseite</a> zu.</li>
-<li>Wählen Sie die passende Version für Ihr Betriebssystem und laden Sie sie herunter.</li>
+<li>Daten können in Form eines Dictionaries erstellt werden.</li>
 </ul>
-</div>
-</div>
-</div></li>
-<li><strong>Neue Verbindung erstellen</strong>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>daten <span class="op">=</span> {</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Personen"</span>: [</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>        {<span class="st">"Name"</span>: <span class="st">"Max"</span>, <span class="st">"Alter"</span>: <span class="dv">24</span>, <span class="st">"Stadt"</span>: <span class="st">"Berlin"</span>},</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>        {<span class="st">"Name"</span>: <span class="st">"Anna"</span>, <span class="st">"Alter"</span>: <span class="dv">30</span>, <span class="st">"Stadt"</span>: <span class="st">"Hamburg"</span>},</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>        {<span class="st">"Name"</span>: <span class="st">"Tom"</span>, <span class="st">"Alter"</span>: <span class="dv">22</span>, <span class="st">"Stadt"</span>: <span class="st">"München"</span>}</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    ]</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p><strong>Speichern der Daten in eine JSON-Datei</strong>: <code>python     with open('daten.json', 'w') as jsonfile:         json.dump(daten, jsonfile, indent=4)</code></p>
 <ul>
-<li>Auf dem Startbildschirm sehen Sie einen Bereich mit der Bezeichnung “MySQL Connections”. Klicken Sie auf das “+”-Symbol, um eine neue Verbindung zu erstellen.</li>
-<li>Im Setup-Dialog:
+<li><strong>Argumente</strong>:
 <ul>
-<li>Verbindungsname: Geben Sie Ihrer Verbindung einen erkennbaren Namen (nutzen Sie hierfür <code>local-connection</code>).</li>
-<li>Hostname: Geben Sie <code>localhost</code> ein (wir verwenden diese Bezeichnung, da der Datenbankserver auf dem gleichen Rechner wie die Workbench läuft).</li>
-<li>Port: Der Standard-MySQL-Port ist <code>3306</code>.</li>
-<li>Benutzername: Geben Sie den Benutzernamen ein, den Sie während der MySQL Server-Installation festgelegt haben (meist ‘root’).</li>
-<li>Passwort: Klicken Sie auf “Store in Vault” und geben Sie das Passwort für das Benutzerkonto ein.</li>
+<li>Wir verwenden den <code>with</code>-Befehl, um eine Datei im Schreibmodus zu öffnen. Der with-Befehl sorgt dafür, dass die Datei nach Abschluss der Operation automatisch geschlossen wird, auch wenn ein Fehler auftritt.</li>
+<li>Der erste Parameter ist der Dateiname (<code>'daten.json'</code>). Wenn kein Pfad angegeben ist, wird die Datei im aktuellen Arbeitsverzeichnis gespeichert.</li>
+<li><code>open('daten.json', 'w')</code> öffnet die Datei daten.json im Schreibmodus (w steht für write). Wenn die Datei nicht existiert, wird sie erstellt. Wenn sie bereits existiert, wird ihr Inhalt überschrieben.</li>
+<li><code>as jsonfile</code> weist die geöffnete Datei dem Variablennamen <code>jsonfile</code> zu, der innerhalb des with-Blocks verwendet werden kann.</li>
+<li><code>indent=4</code> sorgt für eine formatierte Ausgabe mit Einrückungen, die die JSON-Datei besser lesbar macht.</li>
 </ul></li>
-<li>Nachdem Sie diese Felder ausgefüllt haben, klicken Sie auf “Test Connection”, um sicherzustellen, dass alle Einstellungen korrekt sind und die Verbindung hergestellt werden kann.</li>
-</ul></li>
-<li><strong>Verbindung speichern</strong>
-<ul>
-<li>Wenn der Verbindungstest erfolgreich ist, speichern Sie die Konfiguration, indem Sie auf “OK” klicken. Diese Verbindung wird nun auf dem MySQL Workbench-Startbildschirm für einen einfachen Zugriff angezeigt.</li>
 </ul></li>
 </ol>
+</div>
+</div>
+</div>
+</section>
+<section id="lesen-einer-json-datei" class="level2" data-number="21.2">
+<h2 data-number="21.2" class="anchored" data-anchor-id="lesen-einer-json-datei"><span class="header-section-number">21.2</span> Lesen einer JSON-Datei</h2>
+<p>Das Lesen von JSON-Dateien in Python ist mit der <code>json</code>-Bibliothek ebenfalls sehr einfach. Die Methode <code>json.load()</code> ermöglicht das Einlesen von JSON-Daten aus einer Datei in ein Python Dictionary.</p>
+<div id="1c425160" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># JSON-Datei lesen</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'daten.json'</span>, <span class="st">'r'</span>) <span class="im">as</span> jsonfile:</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    daten <span class="op">=</span> json.load(jsonfile)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(daten)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>{'Personen': [{'Name': 'Max', 'Alter': 24, 'Stadt': 'Berlin'}, {'Name': 'Anna', 'Alter': 30, 'Stadt': 'Hamburg'}, {'Name': 'Tom', 'Alter': 22, 'Stadt': 'München'}]}</code></pre>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note callout-titled" title="Ausführliche Erklärung">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Ausführliche Erklärung
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p><strong>Importieren der JSON-Bibliothek</strong>: <code>python     import json</code></p>
+<ul>
+<li><strong>Erklärung</strong>: Die JSON-Bibliothek ist eine eingebaute Python-Bibliothek, die es ermöglicht, JSON-Daten zu parsen (lesen) und zu generieren (schreiben). JSON (JavaScript Object Notation) ist ein weit verbreitetes Format zur Darstellung strukturierter Daten.</li>
+</ul></li>
+<li><p><strong>Lesen der JSON-Datei</strong>: <code>python     with open('daten.json', 'r') as jsonfile:         daten = json.load(jsonfile)</code></p>
+<ul>
+<li><p><strong>Erklärung</strong>: Hier wird die JSON-Datei <code>'daten.json'</code> geöffnet und ihr Inhalt in die Variable <code>daten</code> geladen.</p></li>
+<li><p><strong>Schritt-für-Schritt</strong>:</p>
+<ul>
+<li><code>open('daten.json', 'r')</code>: Diese Funktion öffnet die Datei <code>'daten.json'</code> im Lesemodus (<code>'r'</code>).</li>
+<li><code>as jsonfile</code>: Der <code>open</code>-Befehl wird im Kontext eines <code>with</code>-Statements verwendet, was sicherstellt, dass die Datei nach dem Lesen automatisch geschlossen wird.</li>
+<li><code>json.load(jsonfile)</code>: Diese Methode liest den Inhalt der Datei und wandelt ihn in ein Python-Objekt (üblicherweise ein Dictionary) um.</li>
+</ul></li>
+<li><p><strong>Argumente</strong>:</p>
+<ul>
+<li>Der erste Parameter ist der Pfad zur JSON-Datei (<code>'daten.json'</code>). Wenn sich die Datei nicht im aktuellen Arbeitsverzeichnis befindet, muss der vollständige Pfad angegeben werden.</li>
+<li>Der Modus <code>'r'</code> gibt an, dass die Datei nur gelesen werden soll.</li>
+</ul></li>
+</ul></li>
+<li><p><strong>Ausgeben der Daten</strong>: <code>python     print(daten)</code></p>
+<ul>
+<li><strong>Erklärung</strong>: Diese Anweisung gibt den Inhalt des <code>daten</code>-Dictionaries auf der Konsole aus.</li>
+<li><strong>Details</strong>:
+<ul>
+<li><code>daten</code> ist ein Dictionary, das die aus der JSON-Datei gelesenen Daten enthält. Durch das Drucken dieses Dictionaries können wir den strukturierten Inhalt der Datei anzeigen.</li>
+<li>Es ist eine gute Methode, die gelesenen Daten auszugeben, um sicherzustellen, dass sie korrekt eingelesen wurden und um zu verstehen, welche Struktur die Daten haben.</li>
+</ul></li>
+</ul></li>
+</ol>
+</div>
+</div>
+</div>
+<p>Diese ausführliche Erklärung sollte dir helfen, den Prozess des Lesens einer JSON-Datei in Python besser zu verstehen. Von der Verwendung der Bibliothek bis hin zum Öffnen, Lesen und Anzeigen der Datei werden alle Schritte detailliert beschrieben.</p>
+</section>
+<section id="erweiterte-funktionen" class="level2" data-number="21.3">
+<h2 data-number="21.3" class="anchored" data-anchor-id="erweiterte-funktionen"><span class="header-section-number">21.3</span> Erweiterte Funktionen</h2>
+<p>JSON kann leicht in Python-Datenstrukturen konvertiert werden und umgekehrt.</p>
+<section id="json-in-dictionary" class="level3" data-number="21.3.1">
+<h3 data-number="21.3.1" class="anchored" data-anchor-id="json-in-dictionary"><span class="header-section-number">21.3.1</span> JSON in Dictionary</h3>
+<p>JSON in ein Python Dictionary konvertieren:</p>
+<div id="ce3823e6" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>json_daten <span class="op">=</span> <span class="st">'''</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="st">{</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="st">    "Name": "Max",</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="st">    "Alter": 24,</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="st">    "Stadt": "Berlin"</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="st">}</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="st">'''</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>daten <span class="op">=</span> json.loads(json_daten)</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(daten)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>{'Name': 'Max', 'Alter': 24, 'Stadt': 'Berlin'}</code></pre>
+</div>
+</div>
+</section>
+<section id="dictionary-zu-json" class="level3" data-number="21.3.2">
+<h3 data-number="21.3.2" class="anchored" data-anchor-id="dictionary-zu-json"><span class="header-section-number">21.3.2</span> Dictionary zu JSON</h3>
+<p>Python Dictionary in JSON konvertieren:</p>
+<div id="7362e17f" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>daten <span class="op">=</span> {</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Name"</span>: <span class="st">"Max"</span>,</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Alter"</span>: <span class="dv">24</span>,</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Stadt"</span>: <span class="st">"Berlin"</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>json_daten <span class="op">=</span> json.dumps(daten, indent<span class="op">=</span><span class="dv">4</span>)</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(json_daten)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>{
+    "Name": "Max",
+    "Alter": 24,
+    "Stadt": "Berlin"
+}</code></pre>
+</div>
+</div>
+</section>
+<section id="verschachtelte-json-daten" class="level3" data-number="21.3.3">
+<h3 data-number="21.3.3" class="anchored" data-anchor-id="verschachtelte-json-daten"><span class="header-section-number">21.3.3</span> Verschachtelte JSON-Daten</h3>
+<p>JSON-Daten können verschachtelte Strukturen enthalten, wie Listen von Objekten oder Objekte innerhalb von Objekten. Python kann diese Strukturen direkt verarbeiten.</p>
+<div id="6deb4c45" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>json_daten <span class="op">=</span> <span class="st">'''</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="st">{</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="st">    "Personen": [</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="st">        {</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="st">            "Name": "Max",</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a><span class="st">            "Alter": 24,</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="st">            "Stadt": "Berlin",</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a><span class="st">            "Hobbys": ["Lesen", "Schwimmen"]</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a><span class="st">        },</span></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a><span class="st">        {</span></span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a><span class="st">            "Name": "Anna",</span></span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a><span class="st">            "Alter": 30,</span></span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a><span class="st">            "Stadt": "Hamburg",</span></span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a><span class="st">            "Hobbys": ["Radfahren", "Kochen"]</span></span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a><span class="st">        }</span></span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a><span class="st">    ]</span></span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a><span class="st">}</span></span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a><span class="st">'''</span></span>
+<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a>daten <span class="op">=</span> json.loads(json_daten)</span>
+<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-24"><a href="#cb10-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Zugriff auf verschachtelte Daten</span></span>
+<span id="cb10-25"><a href="#cb10-25" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> person <span class="kw">in</span> daten[<span class="st">"Personen"</span>]:</span>
+<span id="cb10-26"><a href="#cb10-26" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Name: </span><span class="sc">{</span>person[<span class="st">'Name'</span>]<span class="sc">}</span><span class="ss">, Hobbys: </span><span class="sc">{</span><span class="st">', '</span><span class="sc">.</span>join(person[<span class="st">'Hobbys'</span>])<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Name: Max, Hobbys: Lesen, Schwimmen
+Name: Anna, Hobbys: Radfahren, Kochen</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="zusammenfassung" class="level2" data-number="21.4">
+<h2 data-number="21.4" class="anchored" data-anchor-id="zusammenfassung"><span class="header-section-number">21.4</span> Zusammenfassung</h2>
+<p>In diesem Kapitel haben wir gelernt, wie man JSON-Dateien in Python mit der <code>json</code>-Bibliothek liest und schreibt.</p>
+<p>JSON ist ein flexibles und weit verbreitetes Format für den Datenaustausch und die Speicherung. Wir haben auch einige erweiterte Funktionen und Techniken behandelt, um mit JSON-Daten in Python effizient zu arbeiten. Diese Fähigkeiten sind essenziell für die Verarbeitung und Analyse von strukturierten und teilweise strukturierten Daten in verschiedenen Projekten der Datenwissenschaft.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -935,13 +1173,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../mysql/mysql-installation.html" class="pagination-link" aria-label="Installation">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Installation</span></span>
+      <a href="../daten/excel.html" class="pagination-link" aria-label="Excel-Tabellen">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Excel-Tabellen</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../mysql/mysql-basics.html" class="pagination-link" aria-label="SQL basics">
-        <span class="nav-page-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">SQL basics</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../datenbanken/datenbanken.html" class="pagination-link" aria-label="Datenbanken">
+        <span class="nav-page-text">Datenbanken</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

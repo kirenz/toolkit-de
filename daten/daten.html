@@ -9,7 +9,7 @@
 <meta name="author" content="Jan Kirenz">
 <meta name="description" content="Programming Toolkit für Data Science, AI &amp; Analytics">
 
-<title>Data Science, AI &amp; Analytics Toolkit - 25&nbsp; Server einrichten</title>
+<title>Data Science, AI &amp; Analytics Toolkit - Daten</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,8 +32,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../mysql/mysql-basics.html" rel="next">
-<link href="../mysql/mysql-installation.html" rel="prev">
+<link href="../daten/dictionary.html" rel="next">
+<link href="../vscode/visual-studio-code-basics.html" rel="prev">
 <link href="..//images/logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -84,7 +84,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../mysql/mysql.html">MySQL</a></li><li class="breadcrumb-item"><a href="../mysql/mysql-server.html"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Server einrichten</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../daten/daten.html">Daten</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -250,7 +250,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../daten/daten.html" class="sidebar-item-text sidebar-link">
+            <a href="../daten/daten.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Daten</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -323,7 +323,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../mysql/mysql-server.html" class="sidebar-item-text sidebar-link active">
+  <a href="../mysql/mysql-server.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Server einrichten</span></span></a>
   </div>
 </li>
@@ -452,14 +452,23 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Inhaltsverzeichnis</h2>
+   
+  <ul>
+  <li><a href="#strukturierte-daten" id="toc-strukturierte-daten" class="nav-link active" data-scroll-target="#strukturierte-daten">Strukturierte Daten</a></li>
+  <li><a href="#teilweise-strukturierte-daten" id="toc-teilweise-strukturierte-daten" class="nav-link" data-scroll-target="#teilweise-strukturierte-daten">Teilweise strukturierte Daten</a></li>
+  <li><a href="#unstrukturierte-daten" id="toc-unstrukturierte-daten" class="nav-link" data-scroll-target="#unstrukturierte-daten">Unstrukturierte Daten</a></li>
+  <li><a href="#zusammenfassung" id="toc-zusammenfassung" class="nav-link" data-scroll-target="#zusammenfassung">Zusammenfassung</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../mysql/mysql.html">MySQL</a></li><li class="breadcrumb-item"><a href="../mysql/mysql-server.html"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Server einrichten</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Server einrichten</span></h1>
+<h1 class="title">Daten</h1>
 </div>
 
 
@@ -476,52 +485,67 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Nach der Installation besteht der nächste Schritt darin, eine Verbindung zu Ihrem MySQL-Server über MySQL Workbench herzustellen, d.h. wir fügen einen Server hinzu:</p>
-<ol type="1">
-<li><strong>MySQL Workbench starten</strong>
+<p>Daten sind das Herzstück der Datenwissenschaft. Sie ermöglichen es uns, Erkenntnisse zu gewinnen, Entscheidungen zu treffen und Vorhersagen zu treffen. Daten können in verschiedenen Formen vorliegen und werden in der Regel in drei Hauptkategorien eingeteilt:</p>
 <ul>
-<li>Öffnen Sie MySQL Workbench aus Ihrer Anwendungsübersicht. Beim Start der Anwendung sehen Sie die Hauptoberfläche.</li>
+<li>strukturierte,</li>
+<li>teilweise strukturierte und</li>
+<li>unstrukturierte Daten.</li>
 </ul>
-<div class="callout callout-style-simple callout-tip callout-titled" title="Tipp für Windows-Nutzer">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tipp für Windows-Nutzer
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Falls MySQL Workbench während der anfänglichen Einrichtung des MySQL Servers nicht enthalten war, kann es separat installiert werden:</p>
+<p>In diesem Kapitel werden wir diese Kategorien untersuchen und Beispiele für jede Art von Daten geben.</p>
+<section id="strukturierte-daten" class="level2">
+<h2 class="anchored" data-anchor-id="strukturierte-daten">Strukturierte Daten</h2>
+<p>Strukturierte Daten sind Daten, die in einem festen Format organisiert sind und leicht in Tabellenform dargestellt werden können. Diese Daten sind typischerweise in relationalen Datenbanken oder Tabellenkalkulationen gespeichert. Strukturierte Daten sind durch ihre klare Struktur leicht zu durchsuchen und zu analysieren.</p>
+<p>Beispiele für strukturierte Daten:</p>
 <ul>
-<li>Greifen Sie auf die <a href="https://dev.mysql.com/downloads/workbench/">MySQL Workbench Downloadseite</a> zu.</li>
-<li>Wählen Sie die passende Version für Ihr Betriebssystem und laden Sie sie herunter.</li>
+<li>CSV-Dateien</li>
+<li>Excel-Tabellen</li>
+<li>Tabellen in relationalen Datenbanken (z. B. SQL-Datenbanken)</li>
 </ul>
-</div>
-</div>
-</div></li>
-<li><strong>Neue Verbindung erstellen</strong>
+<p>Merkmale strukturierter Daten:</p>
 <ul>
-<li>Auf dem Startbildschirm sehen Sie einen Bereich mit der Bezeichnung “MySQL Connections”. Klicken Sie auf das “+”-Symbol, um eine neue Verbindung zu erstellen.</li>
-<li>Im Setup-Dialog:
+<li>Feste Datenschemata (Spalten und Datentypen sind definiert)</li>
+<li>Einfach zu durchsuchen und zu filtern</li>
+<li>Eindeutige Datenbeziehungen (z. B. Fremdschlüssel in relationalen Datenbanken)</li>
+</ul>
+</section>
+<section id="teilweise-strukturierte-daten" class="level2">
+<h2 class="anchored" data-anchor-id="teilweise-strukturierte-daten">Teilweise strukturierte Daten</h2>
+<p>Teilweise strukturierte Daten sind Daten, die nicht in ein festes Schema passen, aber dennoch eine gewisse Struktur aufweisen. Diese Daten sind flexibler als strukturierte Daten und können in Formaten wie JSON vorliegen. Teilweise strukturierte Daten werden häufig für den Datenaustausch zwischen Systemen verwendet.</p>
+<p>Beispiele für teilweise strukturierte Daten:</p>
 <ul>
-<li>Verbindungsname: Geben Sie Ihrer Verbindung einen erkennbaren Namen (nutzen Sie hierfür <code>local-connection</code>).</li>
-<li>Hostname: Geben Sie <code>localhost</code> ein (wir verwenden diese Bezeichnung, da der Datenbankserver auf dem gleichen Rechner wie die Workbench läuft).</li>
-<li>Port: Der Standard-MySQL-Port ist <code>3306</code>.</li>
-<li>Benutzername: Geben Sie den Benutzernamen ein, den Sie während der MySQL Server-Installation festgelegt haben (meist ‘root’).</li>
-<li>Passwort: Klicken Sie auf “Store in Vault” und geben Sie das Passwort für das Benutzerkonto ein.</li>
-</ul></li>
-<li>Nachdem Sie diese Felder ausgefüllt haben, klicken Sie auf “Test Connection”, um sicherzustellen, dass alle Einstellungen korrekt sind und die Verbindung hergestellt werden kann.</li>
-</ul></li>
-<li><strong>Verbindung speichern</strong>
+<li>JSON-Dateien</li>
+<li>Python Dictionary</li>
+</ul>
+<p>Merkmale teilweise strukturierter Daten:</p>
 <ul>
-<li>Wenn der Verbindungstest erfolgreich ist, speichern Sie die Konfiguration, indem Sie auf “OK” klicken. Diese Verbindung wird nun auf dem MySQL Workbench-Startbildschirm für einen einfachen Zugriff angezeigt.</li>
-</ul></li>
-</ol>
+<li>Flexibles Schema (Felder und Strukturen können variieren)</li>
+<li>Hierarchische oder baumartige Struktur</li>
+<li>Leicht menschen- und maschinenlesbar</li>
+</ul>
+</section>
+<section id="unstrukturierte-daten" class="level2">
+<h2 class="anchored" data-anchor-id="unstrukturierte-daten">Unstrukturierte Daten</h2>
+<p>Unstrukturierte Daten sind Daten, die keine feste Struktur oder kein definiertes Schema haben. Diese Daten können in verschiedenen Formaten vorliegen und umfassen oft Multimedia-Inhalte. Unstrukturierte Daten sind schwer zu analysieren, erfordern daher spezielle Techniken und Tools, um nützliche Informationen daraus zu gewinnen.</p>
+<p>Beispiele für unstrukturierte Daten:</p>
+<ul>
+<li>Textdateien (z. B. E-Mails, Dokumente)</li>
+<li>Bilder (z. B. JPEG, PNG)</li>
+<li>Videos (z. B. MP4, AVI)</li>
+<li>Audiodateien (z. B. MP3, WAV)</li>
+</ul>
+<p>Merkmale unstrukturierter Daten:</p>
+<ul>
+<li>Keine festgelegte Struktur oder Schema</li>
+<li>Vielfältige Formate und Typen</li>
+<li>Erfordert spezialisierte Techniken zur Analyse (z. B. Bild- und Spracherkennung)</li>
+</ul>
+</section>
+<section id="zusammenfassung" class="level2">
+<h2 class="anchored" data-anchor-id="zusammenfassung">Zusammenfassung</h2>
+<p>Das Verständnis der verschiedenen Arten von Daten ist ein grundlegender Schritt in der Datenwissenschaft. Strukturierte Daten sind leicht zu verwalten und zu analysieren, während teilweise strukturierte und unstrukturierte Daten mehr Flexibilität bieten, aber komplexere Analysemethoden erfordern. In den folgenden Kapiteln werden wir uns eingehender mit diesen Datentypen beschäftigen und lernen, wie wir sie speichern, verarbeiten und analysieren können.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -935,13 +959,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../mysql/mysql-installation.html" class="pagination-link" aria-label="Installation">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Installation</span></span>
+      <a href="../vscode/visual-studio-code-basics.html" class="pagination-link" aria-label="Tipps">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Tipps</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../mysql/mysql-basics.html" class="pagination-link" aria-label="SQL basics">
-        <span class="nav-page-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">SQL basics</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../daten/dictionary.html" class="pagination-link" aria-label="Dictionaries">
+        <span class="nav-page-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Dictionaries</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

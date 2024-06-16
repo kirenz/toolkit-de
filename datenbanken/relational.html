@@ -9,7 +9,7 @@
 <meta name="author" content="Jan Kirenz">
 <meta name="description" content="Programming Toolkit für Data Science, AI &amp; Analytics">
 
-<title>Data Science, AI &amp; Analytics Toolkit - 18&nbsp; Relational</title>
+<title>Data Science, AI &amp; Analytics Toolkit - 22&nbsp; Relationale Datenbanken (RDBMS)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -84,7 +118,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../datenbanken/datenbanken.html">Datenbanken</a></li><li class="breadcrumb-item"><a href="../datenbanken/relational.html"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Relational</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../datenbanken/datenbanken.html">Datenbanken</a></li><li class="breadcrumb-item"><a href="../datenbanken/relational.html"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Relationale Datenbanken (RDBMS)</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -250,8 +284,8 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../datenbanken/datenbanken.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Datenbanken</span></a>
+            <a href="../daten/daten.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Daten</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -259,14 +293,49 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../daten/dictionary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Dictionaries</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../daten/csv.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">CSV</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../daten/excel.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Excel-Tabellen</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../daten/json.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">JSON</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../datenbanken/datenbanken.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Datenbanken</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../datenbanken/relational.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Relational</span></span></a>
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Relationale Datenbanken (RDBMS)</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../datenbanken/nosql.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">NoSQL</span></span></a>
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">NoSQL-Datenbanken</span></span></a>
   </div>
 </li>
       </ul>
@@ -275,27 +344,27 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../mysql/mysql.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">MySQL</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Abschnitt umschalten">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../mysql/mysql-installation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Installation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Installation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../mysql/mysql-server.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Server einrichten</span></span></a>
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Server einrichten</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../mysql/mysql-basics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">SQL basics</span></span></a>
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">SQL basics</span></span></a>
   </div>
 </li>
       </ul>
@@ -304,33 +373,33 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../postgres/postgres.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">PostgreSQL</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true" aria-label="Abschnitt umschalten">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../postgres/postgres-installation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Installation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Installation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../postgres/postgres-server.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Server einrichten</span></span></a>
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Server einrichten</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../postgres/postgres-basics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">SQL basics</span></span></a>
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">SQL basics</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../postgres/postgres-python.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Python-Integration</span></span></a>
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Python-Integration</span></span></a>
   </div>
 </li>
       </ul>
@@ -339,33 +408,33 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../mongodb/mongodb.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">MongoDB</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true" aria-label="Abschnitt umschalten">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../mongodb/mongodb-installation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Installation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Installation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../mongodb/mongodb-start-stop.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Starten und stoppen</span></span></a>
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Starten und stoppen</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../mongodb/mongodb-basics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Basics</span></span></a>
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Basics</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../mongodb/mongodb-python.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Python-Integration</span></span></a>
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Python-Integration</span></span></a>
   </div>
 </li>
       </ul>
@@ -374,39 +443,39 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../github/github.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">GitHub</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true" aria-label="Abschnitt umschalten">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github/github-git.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Git</span></span></a>
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Git</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github/github-setup.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Setup</span></span></a>
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Setup</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github/github-repo.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Repositories</span></span></a>
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Repositories</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github/github-organization.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Organizations</span></span></a>
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Organizations</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github/github-projects.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Projects</span></span></a>
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Projects</span></span></a>
   </div>
 </li>
       </ul>
@@ -417,14 +486,37 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Inhaltsverzeichnis</h2>
+   
+  <ul>
+  <li><a href="#grundkonzepte-relationaler-datenbanken" id="toc-grundkonzepte-relationaler-datenbanken" class="nav-link active" data-scroll-target="#grundkonzepte-relationaler-datenbanken"><span class="header-section-number">22.1</span> Grundkonzepte relationaler Datenbanken</a>
+  <ul class="collapse">
+  <li><a href="#tabellen" id="toc-tabellen" class="nav-link" data-scroll-target="#tabellen"><span class="header-section-number">22.1.1</span> Tabellen</a></li>
+  <li><a href="#spalten-und-datentypen" id="toc-spalten-und-datentypen" class="nav-link" data-scroll-target="#spalten-und-datentypen"><span class="header-section-number">22.1.2</span> Spalten und Datentypen</a></li>
+  <li><a href="#primärschlüssel" id="toc-primärschlüssel" class="nav-link" data-scroll-target="#primärschlüssel"><span class="header-section-number">22.1.3</span> Primärschlüssel</a></li>
+  <li><a href="#fremdschlüssel" id="toc-fremdschlüssel" class="nav-link" data-scroll-target="#fremdschlüssel"><span class="header-section-number">22.1.4</span> Fremdschlüssel</a></li>
+  <li><a href="#normalisierung" id="toc-normalisierung" class="nav-link" data-scroll-target="#normalisierung"><span class="header-section-number">22.1.5</span> Normalisierung</a></li>
+  <li><a href="#sql-structured-query-language" id="toc-sql-structured-query-language" class="nav-link" data-scroll-target="#sql-structured-query-language"><span class="header-section-number">22.1.6</span> SQL (Structured Query Language)</a></li>
+  </ul></li>
+  <li><a href="#architektur-relationaler-datenbanken" id="toc-architektur-relationaler-datenbanken" class="nav-link" data-scroll-target="#architektur-relationaler-datenbanken"><span class="header-section-number">22.2</span> Architektur relationaler Datenbanken</a>
+  <ul class="collapse">
+  <li><a href="#datenbankmanagementsystem-dbms" id="toc-datenbankmanagementsystem-dbms" class="nav-link" data-scroll-target="#datenbankmanagementsystem-dbms"><span class="header-section-number">22.2.1</span> Datenbankmanagementsystem (DBMS)</a></li>
+  <li><a href="#client-server-modell" id="toc-client-server-modell" class="nav-link" data-scroll-target="#client-server-modell"><span class="header-section-number">22.2.2</span> Client-Server-Modell</a></li>
+  <li><a href="#transaktionen" id="toc-transaktionen" class="nav-link" data-scroll-target="#transaktionen"><span class="header-section-number">22.2.3</span> Transaktionen</a></li>
+  <li><a href="#acid-eigenschaften" id="toc-acid-eigenschaften" class="nav-link" data-scroll-target="#acid-eigenschaften"><span class="header-section-number">22.2.4</span> ACID-Eigenschaften</a></li>
+  </ul></li>
+  <li><a href="#vorteile-relationaler-datenbanken" id="toc-vorteile-relationaler-datenbanken" class="nav-link" data-scroll-target="#vorteile-relationaler-datenbanken"><span class="header-section-number">22.3</span> Vorteile relationaler Datenbanken</a></li>
+  <li><a href="#anwendungsfälle" id="toc-anwendungsfälle" class="nav-link" data-scroll-target="#anwendungsfälle"><span class="header-section-number">22.4</span> Anwendungsfälle</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../datenbanken/datenbanken.html">Datenbanken</a></li><li class="breadcrumb-item"><a href="../datenbanken/relational.html"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Relational</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../datenbanken/datenbanken.html">Datenbanken</a></li><li class="breadcrumb-item"><a href="../datenbanken/relational.html"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Relationale Datenbanken (RDBMS)</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Relational</span></h1>
+<h1 class="title"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Relationale Datenbanken (RDBMS)</span></h1>
 </div>
 
 
@@ -441,24 +533,125 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Eine relationale Datenbank ist eine Sammlung von Datenobjekten mit vordefinierten Beziehungen zwischen ihnen. Diese Objekte sind als eine Reihe von Tabellen mit Spalten und Zeilen organisiert (<a href="https://aws.amazon.com/relational-database/?nc1=h_ls">AWS</a>):</p>
+<p>Relationale Datenbanken sind das Rückgrat vieler moderner Datenbankanwendungen und werden durch ihre Fähigkeit, Daten in strukturierten Tabellen zu organisieren und zu verwalten, definiert. In diesem Kapitel werden wir die Grundkonzepte und Architektur relationaler Datenbanken beleuchten, einschließlich ihrer Komponenten, Vorteile und typischen Anwendungsfälle.</p>
+<section id="grundkonzepte-relationaler-datenbanken" class="level2" data-number="22.1">
+<h2 data-number="22.1" class="anchored" data-anchor-id="grundkonzepte-relationaler-datenbanken"><span class="header-section-number">22.1</span> Grundkonzepte relationaler Datenbanken</h2>
+<section id="tabellen" class="level3" data-number="22.1.1">
+<h3 data-number="22.1.1" class="anchored" data-anchor-id="tabellen"><span class="header-section-number">22.1.1</span> Tabellen</h3>
+<p>Im Zentrum jeder relationalen Datenbank stehen Tabellen. Eine Tabelle ist eine strukturierte Sammlung von Daten, die in Zeilen und Spalten organisiert ist. Jede Tabelle repräsentiert eine Entität, und jede Zeile in der Tabelle stellt ein einzelnes Datensatz dieser Entität dar.</p>
+<p>Beispiel einer einfachen Tabelle “Kunden”:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>KundenID</th>
+<th>Name</th>
+<th>Email</th>
+<th>Stadt</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Max Müller</td>
+<td>max.mueller@beispiel.de</td>
+<td>Berlin</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Anna Schmidt</td>
+<td>anna.schmidt@beispiel.de</td>
+<td>Hamburg</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Peter Weber</td>
+<td>peter.weber@beispiel.de</td>
+<td>München</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="spalten-und-datentypen" class="level3" data-number="22.1.2">
+<h3 data-number="22.1.2" class="anchored" data-anchor-id="spalten-und-datentypen"><span class="header-section-number">22.1.2</span> Spalten und Datentypen</h3>
+<p>Jede Spalte in einer Tabelle hat einen bestimmten Datentyp, der die Art der Daten definiert, die in dieser Spalte gespeichert werden können. Häufig verwendete Datentypen sind:</p>
 <ul>
-<li><p><em>Tabellen</em> werden verwendet, um Informationen über die in der Datenbank darzustellenden Objekte zu speichern.</p></li>
-<li><p>Jede <em>Spalte</em> in einer Tabelle enthält eine bestimmte Art von Daten, und ein Feld speichert den tatsächlichen Wert eines Attributs.</p></li>
-<li><p>Die <em>Zeilen</em> in der Tabelle stellen eine Sammlung verwandter Werte eines Objekts oder einer Entität dar.</p></li>
-<li><p>Jede Zeile in einer Tabelle kann mit einem eindeutigen Bezeichner, dem <em>Primärschlüssel</em>, markiert werden, und Zeilen in mehreren Tabellen können mithilfe von <em>Fremdschlüsseln</em> miteinander in Beziehung gesetzt werden.</p></li>
+<li><strong>INTEGER:</strong> Ganze Zahlen</li>
+<li><strong>VARCHAR:</strong> Zeichenketten variabler Länge</li>
+<li><strong>DATE:</strong> Datumsangaben</li>
+<li><strong>BOOLEAN:</strong> Wahrheitswerte (true/false)</li>
 </ul>
-<p>Diese Daten können auf viele verschiedene Arten (z.B. mit SQL) abgerufen werden. <strong>Structured Query Language</strong> (SQL, ausgesprochen “S-Q-L” oder manchmal “Sequel”) ist eine der grundlegendsten Fähigkeiten, die Sie im Umgang mit Daten beherrschen sollten. Es ermöglicht Ihnen, effizient mit Datenbanken zu interagieren, Daten abzurufen und zu manipulieren sowie komplexe Abfragen und Analysen durchzuführen.</p>
-<p>Im nächsten Abschnitt werden wir uns mit der Einrichtung und Verwendung von MySQL und PostgreSQL befassen. Diese relationalen Datenbankmanagementsysteme (RDBMS) sind weit verbreitet und bieten robuste und leistungsstarke Lösungen für die Datenverwaltung.</p>
-<p>Wir werden die folgenden Themen behandeln:</p>
+</section>
+<section id="primärschlüssel" class="level3" data-number="22.1.3">
+<h3 data-number="22.1.3" class="anchored" data-anchor-id="primärschlüssel"><span class="header-section-number">22.1.3</span> Primärschlüssel</h3>
+<p>Ein Primärschlüssel ist eine Spalte oder eine Kombination von Spalten, die jeden Datensatz in einer Tabelle eindeutig identifiziert. Im obigen Beispiel ist die Spalte “KundenID” der Primärschlüssel der Tabelle “Kunden”.</p>
+</section>
+<section id="fremdschlüssel" class="level3" data-number="22.1.4">
+<h3 data-number="22.1.4" class="anchored" data-anchor-id="fremdschlüssel"><span class="header-section-number">22.1.4</span> Fremdschlüssel</h3>
+<p>Ein Fremdschlüssel ist eine Spalte, die eine Beziehung zwischen zwei Tabellen herstellt. Ein Fremdschlüssel in einer Tabelle verweist auf den Primärschlüssel einer anderen Tabelle. Diese Beziehungen sind das Herzstück des relationalen Modells, da sie es ermöglichen, Daten aus verschiedenen Tabellen zu verknüpfen und komplexe Abfragen zu erstellen.</p>
+</section>
+<section id="normalisierung" class="level3" data-number="22.1.5">
+<h3 data-number="22.1.5" class="anchored" data-anchor-id="normalisierung"><span class="header-section-number">22.1.5</span> Normalisierung</h3>
+<p>Normalisierung ist ein Prozess zur Organisation von Daten in einer Datenbank, um Redundanz zu minimieren und Datenintegrität zu gewährleisten. Es gibt mehrere Normalformen (Normal Forms), die Regeln für die Strukturierung von Tabellen definieren.</p>
+</section>
+<section id="sql-structured-query-language" class="level3" data-number="22.1.6">
+<h3 data-number="22.1.6" class="anchored" data-anchor-id="sql-structured-query-language"><span class="header-section-number">22.1.6</span> SQL (Structured Query Language)</h3>
+<p>SQL ist die Standardsprache für die Verwaltung und Abfrage von Daten in einer relationalen Datenbank. Mit SQL können Sie Daten einfügen, aktualisieren, löschen und abfragen sowie Datenbankstrukturen wie Tabellen und Indizes erstellen und ändern.</p>
+<p>Ein einfaches SQL-Abfragebeispiel:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> Name, Email</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> Kunden</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">WHERE</span> Stadt <span class="op">=</span> <span class="st">'Berlin'</span>;</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Diese Abfrage selektiert die Spalten “Name” und “Email” aus der Tabelle “Kunden”, wobei nur die Datensätze berücksichtigt werden, bei denen die Stadt “Berlin” ist.</p>
+</section>
+</section>
+<section id="architektur-relationaler-datenbanken" class="level2" data-number="22.2">
+<h2 data-number="22.2" class="anchored" data-anchor-id="architektur-relationaler-datenbanken"><span class="header-section-number">22.2</span> Architektur relationaler Datenbanken</h2>
+<section id="datenbankmanagementsystem-dbms" class="level3" data-number="22.2.1">
+<h3 data-number="22.2.1" class="anchored" data-anchor-id="datenbankmanagementsystem-dbms"><span class="header-section-number">22.2.1</span> Datenbankmanagementsystem (DBMS)</h3>
+<p>Ein DBMS ist die Software, die die Erstellung, Verwaltung und Nutzung von Datenbanken ermöglicht. Ein relationales DBMS (RDBMS) bietet Funktionen wie Datenintegrität, Transaktionsverwaltung und Sicherheitsmechanismen. Bekannte RDBMS sind MySQL, PostgreSQL und SQLite.</p>
+</section>
+<section id="client-server-modell" class="level3" data-number="22.2.2">
+<h3 data-number="22.2.2" class="anchored" data-anchor-id="client-server-modell"><span class="header-section-number">22.2.2</span> Client-Server-Modell</h3>
+<p>In einem typischen RDBMS werden Datenbankabfragen von einem Client (zum Beispiel eine Anwendung oder ein Benutzer) an den Server gesendet, der das DBMS hostet. Der Server verarbeitet die Abfrage und sendet die Ergebnisse an den Client zurück. Dieses Modell unterstützt mehrere gleichzeitige Benutzerzugriffe und eine zentrale Verwaltung der Datenbank.</p>
+</section>
+<section id="transaktionen" class="level3" data-number="22.2.3">
+<h3 data-number="22.2.3" class="anchored" data-anchor-id="transaktionen"><span class="header-section-number">22.2.3</span> Transaktionen</h3>
+<p>Transaktionen sind eine zentrale Komponente von RDBMS und gewährleisten, dass eine Gruppe von Operationen entweder vollständig oder gar nicht ausgeführt wird. Dies garantiert die Konsistenz der Datenbank, selbst bei Systemausfällen oder Fehlern.</p>
+</section>
+<section id="acid-eigenschaften" class="level3" data-number="22.2.4">
+<h3 data-number="22.2.4" class="anchored" data-anchor-id="acid-eigenschaften"><span class="header-section-number">22.2.4</span> ACID-Eigenschaften</h3>
+<p>Die ACID-Eigenschaften beschreiben die wichtigsten Anforderungen an Transaktionen in einer relationalen Datenbank:</p>
 <ul>
-<li>Installation und Konfiguration von MySQL und PostgreSQL</li>
-<li>Grundlegende Befehle und Abfragen in MySQL und PostgreSQL</li>
-<li>Integration dieser Systeme mit Python</li>
+<li><strong>Atomicity (Atomarität):</strong> Eine Transaktion wird entweder vollständig ausgeführt oder gar nicht.</li>
+<li><strong>Consistency (Konsistenz):</strong> Eine Transaktion bringt die Datenbank von einem konsistenten Zustand in einen anderen.</li>
+<li><strong>Isolation (Isolation):</strong> Gleichzeitige Transaktionen beeinflussen sich nicht gegenseitig.</li>
+<li><strong>Durability (Dauerhaftigkeit):</strong> Nach Abschluss einer Transaktion bleiben die Änderungen auch bei Systemausfällen erhalten.</li>
 </ul>
-<p>Diese Kenntnisse werden Ihnen helfen, Ihre Daten effizient zu verwalten und komplexe Datenanalysen durchzuführen, indem Sie die Stärken dieser RDBMS in Kombination mit der Flexibilität und Leistungsfähigkeit von Python nutzen.</p>
+</section>
+</section>
+<section id="vorteile-relationaler-datenbanken" class="level2" data-number="22.3">
+<h2 data-number="22.3" class="anchored" data-anchor-id="vorteile-relationaler-datenbanken"><span class="header-section-number">22.3</span> Vorteile relationaler Datenbanken</h2>
+<ul>
+<li><strong>Strukturierte Daten:</strong> Relationale Datenbanken sind ideal für strukturierte Daten, die in klar definierten Tabellen organisiert werden können.</li>
+<li><strong>Flexibilität:</strong> SQL ermöglicht komplexe Abfragen und Manipulationen der Daten.</li>
+<li><strong>Datenintegrität:</strong> Durch Primär- und Fremdschlüssel sowie durch Normalisierung kann die Datenintegrität gewährleistet werden.</li>
+<li><strong>Sicherheit:</strong> RDBMS bieten umfassende Sicherheitsmechanismen, einschließlich Benutzerberechtigungen und Verschlüsselung.</li>
+<li><strong>Transaktionsunterstützung:</strong> ACID-Eigenschaften gewährleisten die Zuverlässigkeit von Transaktionen.</li>
+</ul>
+</section>
+<section id="anwendungsfälle" class="level2" data-number="22.4">
+<h2 data-number="22.4" class="anchored" data-anchor-id="anwendungsfälle"><span class="header-section-number">22.4</span> Anwendungsfälle</h2>
+<p>Relationale Datenbanken sind in vielen Bereichen weit verbreitet, darunter:</p>
+<ul>
+<li><strong>Finanzwesen:</strong> Verwaltung von Kontodaten, Transaktionen und Finanzberichten.</li>
+<li><strong>E-Commerce:</strong> Verwaltung von Produktkatalogen, Bestellungen und Kundeninformationen.</li>
+<li><strong>Gesundheitswesen:</strong> Verwaltung von Patientendaten, Terminen und medizinischen Aufzeichnungen.</li>
+<li><strong>Bildung:</strong> Verwaltung von Schülerdaten, Kursen und Noten.</li>
+</ul>
+<p>Durch ihre Struktur, Flexibilität und Zuverlässigkeit bleiben relationale Datenbanken ein zentrales Werkzeug in der Datenverwaltung und -analyse.</p>
+<p>In den folgenden Kapiteln werden wir uns eingehender mit der Implementierung und Nutzung von MySQL und PostgreSQL befassen, zwei der beliebtesten relationalen Datenbankmanagementsysteme.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -877,8 +1070,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../datenbanken/nosql.html" class="pagination-link" aria-label="NoSQL">
-        <span class="nav-page-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">NoSQL</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../datenbanken/nosql.html" class="pagination-link" aria-label="NoSQL-Datenbanken">
+        <span class="nav-page-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">NoSQL-Datenbanken</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

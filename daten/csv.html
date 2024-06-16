@@ -9,7 +9,7 @@
 <meta name="author" content="Jan Kirenz">
 <meta name="description" content="Programming Toolkit für Data Science, AI &amp; Analytics">
 
-<title>Data Science, AI &amp; Analytics Toolkit - 25&nbsp; Server einrichten</title>
+<title>Data Science, AI &amp; Analytics Toolkit - 19&nbsp; CSV</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,18 +22,52 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../mysql/mysql-basics.html" rel="next">
-<link href="../mysql/mysql-installation.html" rel="prev">
+<link href="../daten/excel.html" rel="next">
+<link href="../daten/dictionary.html" rel="prev">
 <link href="..//images/logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -70,6 +104,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Suchen"
   }
 }</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
 <link rel="stylesheet" href="../theme.scss">
@@ -84,7 +121,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../mysql/mysql.html">MySQL</a></li><li class="breadcrumb-item"><a href="../mysql/mysql-server.html"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Server einrichten</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../daten/daten.html">Daten</a></li><li class="breadcrumb-item"><a href="../daten/csv.html"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">CSV</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -265,7 +302,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../daten/csv.html" class="sidebar-item-text sidebar-link">
+  <a href="../daten/csv.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">CSV</span></span></a>
   </div>
 </li>
@@ -323,7 +360,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../mysql/mysql-server.html" class="sidebar-item-text sidebar-link active">
+  <a href="../mysql/mysql-server.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Server einrichten</span></span></a>
   </div>
 </li>
@@ -452,14 +489,29 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Inhaltsverzeichnis</h2>
+   
+  <ul>
+  <li><a href="#excel-und-google-sheets" id="toc-excel-und-google-sheets" class="nav-link active" data-scroll-target="#excel-und-google-sheets"><span class="header-section-number">19.1</span> Excel und Google Sheets</a>
+  <ul class="collapse">
+  <li><a href="#excel-tabellen-in-csv-konvertieren" id="toc-excel-tabellen-in-csv-konvertieren" class="nav-link" data-scroll-target="#excel-tabellen-in-csv-konvertieren"><span class="header-section-number">19.1.1</span> Excel-Tabellen in CSV konvertieren</a></li>
+  <li><a href="#google-sheets-in-csv-konvertieren" id="toc-google-sheets-in-csv-konvertieren" class="nav-link" data-scroll-target="#google-sheets-in-csv-konvertieren"><span class="header-section-number">19.1.2</span> Google Sheets in CSV konvertieren</a></li>
+  </ul></li>
+  <li><a href="#csv-in-python" id="toc-csv-in-python" class="nav-link" data-scroll-target="#csv-in-python"><span class="header-section-number">19.2</span> CSV in Python</a>
+  <ul class="collapse">
+  <li><a href="#erstellung" id="toc-erstellung" class="nav-link" data-scroll-target="#erstellung"><span class="header-section-number">19.2.1</span> Erstellung</a></li>
+  <li><a href="#einlesen" id="toc-einlesen" class="nav-link" data-scroll-target="#einlesen"><span class="header-section-number">19.2.2</span> Einlesen</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../mysql/mysql.html">MySQL</a></li><li class="breadcrumb-item"><a href="../mysql/mysql-server.html"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Server einrichten</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../daten/daten.html">Daten</a></li><li class="breadcrumb-item"><a href="../daten/csv.html"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">CSV</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Server einrichten</span></h1>
+<h1 class="title"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">CSV</span></h1>
 </div>
 
 
@@ -476,52 +528,254 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Nach der Installation besteht der nächste Schritt darin, eine Verbindung zu Ihrem MySQL-Server über MySQL Workbench herzustellen, d.h. wir fügen einen Server hinzu:</p>
-<ol type="1">
-<li><strong>MySQL Workbench starten</strong>
+<p>CSV-Dateien (Comma-Separated Values) sind einfache Textdateien, die Tabellenkalkulationsdaten in einem lesbaren Format speichern. Jede Zeile einer CSV-Datei entspricht einer Zeile in der Tabelle, und die Spaltenwerte werden durch Kommas getrennt.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Eine CSV-Datei besteht aus Zeilen, wobei jede Zeile eine Liste von Werten enthält, die durch Kommas getrennt sind. Die erste Zeile enthält normalerweise die Spaltenüberschriften.</p>
+</div>
+</div>
+</div>
+<p>Beispielinhalt einer CSV-Datei:</p>
+<pre class="plaintext"><code>Name,Alter,Stadt
+Max,24,Berlin
+Anna,30,Hamburg
+Tom,22,München</code></pre>
+<p>Diese CSV-Datei enthält eine einfache Tabelle mit drei Spalten: Name, Alter und Stadt. Jede Zeile der Datei repräsentiert einen Datensatz mit den entsprechenden Werten für jede Spalte. Die erste Zeile enthält die Spaltenüberschriften, die die Art der Daten in jeder Spalte beschreiben.</p>
 <ul>
-<li>Öffnen Sie MySQL Workbench aus Ihrer Anwendungsübersicht. Beim Start der Anwendung sehen Sie die Hauptoberfläche.</li>
+<li><strong>Name</strong>: Enthält die Namen der Personen (z. B. Max, Anna, Tom).</li>
+<li><strong>Alter</strong>: Enthält das Alter der Personen in Jahren (z. B. 24, 30, 22).</li>
+<li><strong>Stadt</strong>: Enthält die Namen der Städte, in denen die Personen wohnen (z. B. Berlin, Hamburg, München).</li>
 </ul>
-<div class="callout callout-style-simple callout-tip callout-titled" title="Tipp für Windows-Nutzer">
+<p>Diese Struktur ermöglicht es, die Daten einfach in Tabellenform zu organisieren und sie in Programmen wie Excel oder in Datenanalyse-Tools wie Pandas zu verwenden.</p>
+<section id="excel-und-google-sheets" class="level2" data-number="19.1">
+<h2 data-number="19.1" class="anchored" data-anchor-id="excel-und-google-sheets"><span class="header-section-number">19.1</span> Excel und Google Sheets</h2>
+<p>Excel-Tabellen und Google Sheets können leicht in das CSV-Format überführt werden. Dies ist besonders nützlich, wenn Sie Daten in einem leicht zugänglichen und plattformunabhängigen Format speichern möchten.</p>
+<section id="excel-tabellen-in-csv-konvertieren" class="level3" data-number="19.1.1">
+<h3 data-number="19.1.1" class="anchored" data-anchor-id="excel-tabellen-in-csv-konvertieren"><span class="header-section-number">19.1.1</span> Excel-Tabellen in CSV konvertieren</h3>
+<p>In Microsoft Excel können Sie eine Tabelle als CSV-Datei speichern, indem Sie folgende Schritte ausführen:</p>
+<ol type="1">
+<li>Öffnen Sie die Excel-Datei.</li>
+<li>Klicken Sie auf “Datei” und wählen Sie “Speichern unter”.</li>
+<li>Wählen Sie den Speicherort und den Dateinamen.</li>
+<li>Wählen Sie im Dropdown-Menü “Dateityp” die Option “CSV (Trennzeichen-getrennt) (*.csv)” aus.</li>
+<li>Klicken Sie auf “Speichern”.</li>
+</ol>
+<p>Diese Konvertierungen ermöglichen es Ihnen, Daten aus Excel-Tabellen einfach in Ihre Python-Projekte zu integrieren und weiterzuverarbeiten.</p>
+</section>
+<section id="google-sheets-in-csv-konvertieren" class="level3" data-number="19.1.2">
+<h3 data-number="19.1.2" class="anchored" data-anchor-id="google-sheets-in-csv-konvertieren"><span class="header-section-number">19.1.2</span> Google Sheets in CSV konvertieren</h3>
+<p>In Google Sheets können Sie eine Tabelle als CSV-Datei exportieren, indem Sie folgende Schritte ausführen:</p>
+<ol type="1">
+<li>Öffnen Sie das Google Sheet.</li>
+<li>Klicken Sie auf “Datei” in der oberen Menüleiste.</li>
+<li>Wählen Sie “Download” und dann “Comma-separated values (.csv, aktuelles Blatt)”.</li>
+<li>Die CSV-Datei wird auf Ihren Computer heruntergeladen.</li>
+</ol>
+<p>Diese Konvertierungen ermöglichen es Ihnen, Daten aus Google Sheets einfach in Ihre Python-Projekte zu integrieren und weiterzuverarbeiten.</p>
+</section>
+</section>
+<section id="csv-in-python" class="level2" data-number="19.2">
+<h2 data-number="19.2" class="anchored" data-anchor-id="csv-in-python"><span class="header-section-number">19.2</span> CSV in Python</h2>
+<p>Wir verwenden die Bibliothek Pandas, um CSV-Daten in Python zu erstellen oder einzulesen.</p>
+<section id="erstellung" class="level3" data-number="19.2.1">
+<h3 data-number="19.2.1" class="anchored" data-anchor-id="erstellung"><span class="header-section-number">19.2.1</span> Erstellung</h3>
+<div id="6636ab42" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Daten erstellen</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>daten <span class="op">=</span> {</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Name"</span>: [<span class="st">"Max"</span>, <span class="st">"Anna"</span>, <span class="st">"Tom"</span>],</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Alter"</span>: [<span class="dv">24</span>, <span class="dv">30</span>, <span class="dv">22</span>],</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Stadt"</span>: [<span class="st">"Berlin"</span>, <span class="st">"Hamburg"</span>, <span class="st">"München"</span>]</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(daten)</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co"># CSV-Datei speichern</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>df.to_csv(<span class="st">'daten.csv'</span>, index<span class="op">=</span><span class="va">False</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>In diesem Code-Snippet wird ein DataFrame in Pandas erstellt und anschließend als CSV-Datei gespeichert.</p>
+<div class="callout callout-style-simple callout-note callout-titled" title="Ausführliche Erklärung">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tipp für Windows-Nutzer
+Ausführliche Erklärung
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Falls MySQL Workbench während der anfänglichen Einrichtung des MySQL Servers nicht enthalten war, kann es separat installiert werden:</p>
-<ul>
-<li>Greifen Sie auf die <a href="https://dev.mysql.com/downloads/workbench/">MySQL Workbench Downloadseite</a> zu.</li>
-<li>Wählen Sie die passende Version für Ihr Betriebssystem und laden Sie sie herunter.</li>
-</ul>
-</div>
-</div>
-</div></li>
-<li><strong>Neue Verbindung erstellen</strong>
-<ul>
-<li>Auf dem Startbildschirm sehen Sie einen Bereich mit der Bezeichnung “MySQL Connections”. Klicken Sie auf das “+”-Symbol, um eine neue Verbindung zu erstellen.</li>
-<li>Im Setup-Dialog:
-<ul>
-<li>Verbindungsname: Geben Sie Ihrer Verbindung einen erkennbaren Namen (nutzen Sie hierfür <code>local-connection</code>).</li>
-<li>Hostname: Geben Sie <code>localhost</code> ein (wir verwenden diese Bezeichnung, da der Datenbankserver auf dem gleichen Rechner wie die Workbench läuft).</li>
-<li>Port: Der Standard-MySQL-Port ist <code>3306</code>.</li>
-<li>Benutzername: Geben Sie den Benutzernamen ein, den Sie während der MySQL Server-Installation festgelegt haben (meist ‘root’).</li>
-<li>Passwort: Klicken Sie auf “Store in Vault” und geben Sie das Passwort für das Benutzerkonto ein.</li>
-</ul></li>
-<li>Nachdem Sie diese Felder ausgefüllt haben, klicken Sie auf “Test Connection”, um sicherzustellen, dass alle Einstellungen korrekt sind und die Verbindung hergestellt werden kann.</li>
-</ul></li>
-<li><strong>Verbindung speichern</strong>
-<ul>
-<li>Wenn der Verbindungstest erfolgreich ist, speichern Sie die Konfiguration, indem Sie auf “OK” klicken. Diese Verbindung wird nun auf dem MySQL Workbench-Startbildschirm für einen einfachen Zugriff angezeigt.</li>
-</ul></li>
+<ol type="1">
+<li>Importieren der Pandas-Bibliothek</li>
 </ol>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Die <code>pandas</code>-Bibliothek wird importiert. Pandas ist eine leistungsstarke Bibliothek für die Datenmanipulation und -analyse in Python. Sie bietet Datenstrukturen wie DataFrames, die für die Arbeit mit tabellarischen Daten sehr nützlich sind.</p>
+<ol start="2" type="1">
+<li>Erstellen eines Daten-Dictionaries</li>
+</ol>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>daten <span class="op">=</span> {</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Name"</span>: [<span class="st">"Max"</span>, <span class="st">"Anna"</span>, <span class="st">"Tom"</span>],</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Alter"</span>: [<span class="dv">24</span>, <span class="dv">30</span>, <span class="dv">22</span>],</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Stadt"</span>: [<span class="st">"Berlin"</span>, <span class="st">"Hamburg"</span>, <span class="st">"München"</span>]</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Hier wird ein Dictionary namens <code>daten</code> erstellt. Dieses Dictionary enthält drei Schlüssel: “Name”, “Alter” und “Stadt”. Jeder Schlüssel ist einer Liste von Werten zugeordnet:</p>
+<ul>
+<li>“Name”: Liste der Namen [“Max”, “Anna”, “Tom”]</li>
+<li>“Alter”: Liste der Alter [24, 30, 22]</li>
+<li>“Stadt”: Liste der Städte [“Berlin”, “Hamburg”, “München”]</li>
+</ul>
+<p>Dieses Dictionary repräsentiert eine tabellarische Struktur, bei der jede Liste eine Spalte der Tabelle darstellt.</p>
+<ol start="3" type="1">
+<li>Erstellen eines DataFrame</li>
+</ol>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(daten)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Das Dictionary <code>daten</code> wird in einen Pandas DataFrame konvertiert. Ein DataFrame ist eine zweidimensionale, tabellarische Datenstruktur, die aus Zeilen und Spalten besteht. In diesem Fall enthält der DataFrame drei Spalten: “Name”, “Alter” und “Stadt”, entsprechend den Schlüsseln im Dictionary.</p>
+<p>Der resultierende DataFrame <code>df</code> sieht wie folgt aus:</p>
+<pre><code>   Name  Alter     Stadt
+0   Max     24    Berlin
+1  Anna     30   Hamburg
+2   Tom     22   München</code></pre>
+<p>Jede Zeile im DataFrame repräsentiert einen Datensatz (eine Person) und jede Spalte repräsentiert eine Eigenschaft dieser Datensätze (Name, Alter, Stadt).</p>
+<ol start="4" type="1">
+<li>Speichern des DataFrame als CSV-Datei</li>
+</ol>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>df.to_csv(<span class="st">'daten.csv'</span>, index<span class="op">=</span><span class="va">False</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Der DataFrame <code>df</code> wird als CSV-Datei mit dem Namen <code>daten.csv</code> gespeichert. Der Parameter <code>index=False</code> stellt sicher, dass die Indizes der Zeilen (die automatisch generierten Nummern 0, 1, 2, …) nicht in die CSV-Datei geschrieben werden. Ohne diesen Parameter würde die CSV-Datei eine zusätzliche Spalte mit den Zeilenindizes enthalten.</p>
+<p>Die resultierende CSV-Datei <code>daten.csv</code> hat folgendes Format:</p>
+<pre><code>Name,Alter,Stadt
+Max,24,Berlin
+Anna,30,Hamburg
+Tom,22,München</code></pre>
+<p>Jede Zeile der CSV-Datei entspricht einer Zeile im DataFrame, und jede Spalte entspricht einer Spalte im DataFrame. Die erste Zeile enthält die Spaltenüberschriften, die die Namen der Spalten im DataFrame repräsentieren.</p>
+</div>
+</div>
+</div>
+<p>Wenn Sie beim Speichern einer Datei keinen Pfad angeben, wird die Datei im aktuellen Arbeitsverzeichnis gespeichert. Das bedeutet, dass die Datei in dem Verzeichnis abgelegt wird, in dem das Python-Skript ausgeführt wird.</p>
+<p>In unserem Beispiel <code>df.to_csv('daten.csv', index=False)</code> wird die Datei <code>daten.csv</code> im aktuellen Arbeitsverzeichnis gespeichert. Das aktuelle Arbeitsverzeichnis ist der Ordner, in dem das Python-Programm gestartet wurde. Der entsprechende Pfad kann mit <code>os.getcwd()</code> ermittelt werden:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(os.getcwd())</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Diese Funktion gibt das aktuelle Arbeitsverzeichnis aus, in welchem die Datei gespeichert wird.</p>
+</section>
+<section id="einlesen" class="level3" data-number="19.2.2">
+<h3 data-number="19.2.2" class="anchored" data-anchor-id="einlesen"><span class="header-section-number">19.2.2</span> Einlesen</h3>
+<div id="d1fdc89c" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="co"># CSV-Datei lesen</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">'daten.csv'</span>)</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="2">
+<div>
 
 
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Name</th>
+<th data-quarto-table-cell-role="th">Alter</th>
+<th data-quarto-table-cell-role="th">Stadt</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>Max</td>
+<td>24</td>
+<td>Berlin</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>Anna</td>
+<td>30</td>
+<td>Hamburg</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>Tom</td>
+<td>22</td>
+<td>München</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<p>In diesem Code-Snippet wird eine CSV-Datei (die sich in dem aktuellen Arbeitsverzeichnis befindet) gelesen und in einen Pandas DataFrame konvertiert. Anschließend wird der DataFrame ausgegeben:</p>
+<ol type="1">
+<li>Importieren der Pandas-Bibliothek.</li>
+<li>Lesen der CSV-Datei <code>daten.csv</code> und Erstellen eines Pandas DataFrame aus den Daten.</li>
+<li>Ausgeben des DataFrame.</li>
+</ol>
+<div class="callout callout-style-simple callout-note callout-titled" title="Ausführliche Erklärung">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Ausführliche Erklärung
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>Importieren der Pandas-Bibliothek</li>
+</ol>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Die <code>pandas</code>-Bibliothek wird importiert.</p>
+<ol start="2" type="1">
+<li>Lesen einer CSV-Datei</li>
+</ol>
+<div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">'daten.csv'</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Die Methode <code>pd.read_csv('daten.csv')</code> liest die CSV-Datei <code>daten.csv</code> und erstellt daraus einen Pandas DataFrame. Diese Methode nimmt den Dateinamen als Argument und lädt die Daten aus der CSV-Datei in einen DataFrame.</p>
+<p>Angenommen, die Datei <code>daten.csv</code> hat folgenden Inhalt:</p>
+<pre class="plaintext"><code>Name,Alter,Stadt
+Max,24,Berlin
+Anna,30,Hamburg
+Tom,22,München</code></pre>
+<p>Diese Datei enthält drei Spalten: “Name”, “Alter” und “Stadt”. Die erste Zeile der Datei enthält die Spaltenüberschriften.</p>
+<p>Die Methode <code>pd.read_csv</code> interpretiert die erste Zeile als Spaltennamen und die nachfolgenden Zeilen als Daten. Der resultierende DataFrame <code>df</code> sieht wie folgt aus:</p>
+<pre class="plaintext"><code>   Name  Alter     Stadt
+0   Max     24    Berlin
+1  Anna     30   Hamburg
+2   Tom     22   München</code></pre>
+<p>Jede Zeile im DataFrame repräsentiert einen Datensatz (eine Person) und jede Spalte repräsentiert eine Eigenschaft dieser Datensätze (Name, Alter, Stadt).</p>
+<ol start="3" type="1">
+<li>Ausgeben des DataFrame</li>
+</ol>
+<div class="sourceCode" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Der DataFrame wird in einer tabellarischen Form angezeigt, die die Daten klar und übersichtlich darstellt.</p>
+<p>Die Ausgabe sieht wie folgt aus:</p>
+<pre class="plaintext"><code>   Name  Alter     Stadt
+0   Max     24    Berlin
+1  Anna     30   Hamburg
+2   Tom     22   München</code></pre>
+<p>Diese Ausgabe zeigt alle Zeilen und Spalten des DataFrame an. Jede Zeile entspricht einem Datensatz aus der CSV-Datei, und jede Spalte entspricht einer Eigenschaft der Datensätze.</p>
+</div>
+</div>
+</div>
+<p><strong>Hinweis zum Pfad der CSV-Datei:</strong></p>
+<p>Es ist wichtig sicherzustellen, dass der Pfad zur CSV-Datei korrekt angegeben ist. Wenn sich die CSV-Datei nicht im aktuellen Arbeitsverzeichnis befindet, muss der vollständige Pfad zur Datei angegeben werden. Beispielsweise:</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">'/pfad/zum/verzeichnis/daten.csv'</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Stellen Sie sicher, dass der angegebene Pfad korrekt ist und die Datei <code>daten.csv</code> tatsächlich an diesem Ort existiert. Andernfalls wird ein <code>FileNotFoundError</code> ausgelöst. Sie können das aktuelle Arbeitsverzeichnis in Python überprüfen, um sicherzustellen, dass sich die CSV-Datei im richtigen Verzeichnis befindet:</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(os.getcwd())</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Diese Funktion gibt das aktuelle Arbeitsverzeichnis aus. Stellen Sie sicher, dass Ihre CSV-Datei in diesem Verzeichnis oder im angegebenen Pfad vorhanden ist.</p>
+
+
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -935,13 +1189,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../mysql/mysql-installation.html" class="pagination-link" aria-label="Installation">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Installation</span></span>
+      <a href="../daten/dictionary.html" class="pagination-link" aria-label="Dictionaries">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Dictionaries</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../mysql/mysql-basics.html" class="pagination-link" aria-label="SQL basics">
-        <span class="nav-page-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">SQL basics</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../daten/excel.html" class="pagination-link" aria-label="Excel-Tabellen">
+        <span class="nav-page-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Excel-Tabellen</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

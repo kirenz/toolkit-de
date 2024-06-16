@@ -9,7 +9,7 @@
 <meta name="author" content="Jan Kirenz">
 <meta name="description" content="Programming Toolkit für Data Science, AI &amp; Analytics">
 
-<title>Data Science, AI &amp; Analytics Toolkit - 25&nbsp; Server einrichten</title>
+<title>Data Science, AI &amp; Analytics Toolkit - 20&nbsp; Excel-Tabellen</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -32,8 +66,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../mysql/mysql-basics.html" rel="next">
-<link href="../mysql/mysql-installation.html" rel="prev">
+<link href="../daten/json.html" rel="next">
+<link href="../daten/csv.html" rel="prev">
 <link href="..//images/logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -84,7 +118,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../mysql/mysql.html">MySQL</a></li><li class="breadcrumb-item"><a href="../mysql/mysql-server.html"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Server einrichten</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../daten/daten.html">Daten</a></li><li class="breadcrumb-item"><a href="../daten/excel.html"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Excel-Tabellen</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -271,7 +305,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../daten/excel.html" class="sidebar-item-text sidebar-link">
+  <a href="../daten/excel.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Excel-Tabellen</span></span></a>
   </div>
 </li>
@@ -323,7 +357,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../mysql/mysql-server.html" class="sidebar-item-text sidebar-link active">
+  <a href="../mysql/mysql-server.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Server einrichten</span></span></a>
   </div>
 </li>
@@ -452,14 +486,23 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Inhaltsverzeichnis</h2>
+   
+  <ul>
+  <li><a href="#schreiben-einer-excel-datei" id="toc-schreiben-einer-excel-datei" class="nav-link active" data-scroll-target="#schreiben-einer-excel-datei"><span class="header-section-number">20.1</span> Schreiben einer Excel-Datei</a></li>
+  <li><a href="#lesen-einer-excel-datei" id="toc-lesen-einer-excel-datei" class="nav-link" data-scroll-target="#lesen-einer-excel-datei"><span class="header-section-number">20.2</span> Lesen einer Excel-Datei</a></li>
+  <li><a href="#erweiterte-funktionen" id="toc-erweiterte-funktionen" class="nav-link" data-scroll-target="#erweiterte-funktionen"><span class="header-section-number">20.3</span> Erweiterte Funktionen</a></li>
+  <li><a href="#zusammenfassung" id="toc-zusammenfassung" class="nav-link" data-scroll-target="#zusammenfassung"><span class="header-section-number">20.4</span> Zusammenfassung</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../mysql/mysql.html">MySQL</a></li><li class="breadcrumb-item"><a href="../mysql/mysql-server.html"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Server einrichten</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../daten/daten.html">Daten</a></li><li class="breadcrumb-item"><a href="../daten/excel.html"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Excel-Tabellen</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Server einrichten</span></h1>
+<h1 class="title"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Excel-Tabellen</span></h1>
 </div>
 
 
@@ -476,52 +519,125 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Nach der Installation besteht der nächste Schritt darin, eine Verbindung zu Ihrem MySQL-Server über MySQL Workbench herzustellen, d.h. wir fügen einen Server hinzu:</p>
-<ol type="1">
-<li><strong>MySQL Workbench starten</strong>
-<ul>
-<li>Öffnen Sie MySQL Workbench aus Ihrer Anwendungsübersicht. Beim Start der Anwendung sehen Sie die Hauptoberfläche.</li>
-</ul>
-<div class="callout callout-style-simple callout-tip callout-titled" title="Tipp für Windows-Nutzer">
+<p>Excel-Dateien sind weit verbreitet und werden häufig für die Speicherung und Analyse von Daten in Tabellenform verwendet. Sie bieten umfangreiche Funktionen für die Datenmanipulation und -visualisierung. In diesem Kapitel werden wir uns eingehend mit dem Lesen und Schreiben von Excel-Dateien in Python mithilfe der <code>pandas</code>-Bibliothek beschäftigen.</p>
+<section id="schreiben-einer-excel-datei" class="level2" data-number="20.1">
+<h2 data-number="20.1" class="anchored" data-anchor-id="schreiben-einer-excel-datei"><span class="header-section-number">20.1</span> Schreiben einer Excel-Datei</h2>
+<p>Das Speichern von Daten in eine Excel-Datei ist mit der <code>pandas</code>-Bibliothek sehr einfach. Die Methode <code>df.to_excel()</code> ermöglicht das Speichern eines DataFrame in eine Excel-Datei:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Daten erstellen</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>daten <span class="op">=</span> {</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Name"</span>: [<span class="st">"Max"</span>, <span class="st">"Anna"</span>, <span class="st">"Tom"</span>],</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Alter"</span>: [<span class="dv">24</span>, <span class="dv">30</span>, <span class="dv">22</span>],</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Stadt"</span>: [<span class="st">"Berlin"</span>, <span class="st">"Hamburg"</span>, <span class="st">"München"</span>]</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(daten)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Excel-Datei speichern</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>df.to_excel(<span class="st">'daten.xlsx'</span>, index<span class="op">=</span><span class="va">False</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout callout-style-simple callout-note callout-titled" title="Ausführliche Erklärung">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tipp für Windows-Nutzer
+Ausführliche Erklärung
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Falls MySQL Workbench während der anfänglichen Einrichtung des MySQL Servers nicht enthalten war, kann es separat installiert werden:</p>
+<ol type="1">
+<li><p><strong>Importieren der Pandas-Bibliothek</strong>: <code>python     import pandas as pd</code></p></li>
+<li><p><strong>Erstellen von Daten</strong>:</p>
 <ul>
-<li>Greifen Sie auf die <a href="https://dev.mysql.com/downloads/workbench/">MySQL Workbench Downloadseite</a> zu.</li>
-<li>Wählen Sie die passende Version für Ihr Betriebssystem und laden Sie sie herunter.</li>
+<li>Daten können in Form eines Dictionaries erstellt und anschließend in einen DataFrame konvertiert werden.</li>
 </ul>
-</div>
-</div>
-</div></li>
-<li><strong>Neue Verbindung erstellen</strong>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>daten <span class="op">=</span> {</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Name"</span>: [<span class="st">"Max"</span>, <span class="st">"Anna"</span>, <span class="st">"Tom"</span>],</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Alter"</span>: [<span class="dv">24</span>, <span class="dv">30</span>, <span class="dv">22</span>],</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Stadt"</span>: [<span class="st">"Berlin"</span>, <span class="st">"Hamburg"</span>, <span class="st">"München"</span>]</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(daten)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p><strong>Speichern der Daten in eine Excel-Datei</strong>: <code>python     # Excel-Datei speichern     df.to_excel('daten.xlsx', index=False)</code></p>
 <ul>
-<li>Auf dem Startbildschirm sehen Sie einen Bereich mit der Bezeichnung “MySQL Connections”. Klicken Sie auf das “+”-Symbol, um eine neue Verbindung zu erstellen.</li>
-<li>Im Setup-Dialog:
+<li><strong>Argumente</strong>:
 <ul>
-<li>Verbindungsname: Geben Sie Ihrer Verbindung einen erkennbaren Namen (nutzen Sie hierfür <code>local-connection</code>).</li>
-<li>Hostname: Geben Sie <code>localhost</code> ein (wir verwenden diese Bezeichnung, da der Datenbankserver auf dem gleichen Rechner wie die Workbench läuft).</li>
-<li>Port: Der Standard-MySQL-Port ist <code>3306</code>.</li>
-<li>Benutzername: Geben Sie den Benutzernamen ein, den Sie während der MySQL Server-Installation festgelegt haben (meist ‘root’).</li>
-<li>Passwort: Klicken Sie auf “Store in Vault” und geben Sie das Passwort für das Benutzerkonto ein.</li>
+<li>Der erste Parameter ist der Dateiname (<code>'daten.xlsx'</code>). Wenn kein Pfad angegeben ist, wird die Datei im aktuellen Arbeitsverzeichnis gespeichert.</li>
+<li><code>index=False</code> stellt sicher, dass die Zeilenindizes nicht in die Excel-Datei geschrieben werden. Andernfalls würde eine zusätzliche Spalte mit den Indizes in der Excel-Datei erscheinen.</li>
 </ul></li>
-<li>Nachdem Sie diese Felder ausgefüllt haben, klicken Sie auf “Test Connection”, um sicherzustellen, dass alle Einstellungen korrekt sind und die Verbindung hergestellt werden kann.</li>
-</ul></li>
-<li><strong>Verbindung speichern</strong>
-<ul>
-<li>Wenn der Verbindungstest erfolgreich ist, speichern Sie die Konfiguration, indem Sie auf “OK” klicken. Diese Verbindung wird nun auf dem MySQL Workbench-Startbildschirm für einen einfachen Zugriff angezeigt.</li>
 </ul></li>
 </ol>
+</div>
+</div>
+</div>
+</section>
+<section id="lesen-einer-excel-datei" class="level2" data-number="20.2">
+<h2 data-number="20.2" class="anchored" data-anchor-id="lesen-einer-excel-datei"><span class="header-section-number">20.2</span> Lesen einer Excel-Datei</h2>
+<p>Die Methode <code>pd.read_excel()</code> der Pandas Bibliothek ermöglicht das Einlesen von Daten aus Excel-Dateien in einen DataFrame:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Excel-Datei lesen</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_excel(<span class="st">'daten.xlsx'</span>)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout callout-style-simple callout-note callout-titled" title="Ausführliche Erklärung">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Ausführliche Erklärung
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p><strong>Importieren der Pandas-Bibliothek</strong>: <code>python     import pandas as pd</code></p></li>
+<li><p><strong>Lesen der Excel-Datei</strong>: <code>python     # Excel-Datei lesen     df = pd.read_excel('daten.xlsx')</code></p>
+<ul>
+<li><p><strong>Argumente</strong>:</p>
+<ul>
+<li>Der erste Parameter ist der Pfad zur Excel-Datei (<code>'daten.xlsx'</code>). Wenn sich die Datei nicht im aktuellen Arbeitsverzeichnis befindet, muss der vollständige Pfad angegeben werden.</li>
+</ul></li>
+<li><p><strong>Beispiel</strong>:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_excel(<span class="st">'/pfad/zur/datei/daten.xlsx'</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ul></li>
+<li><p><strong>Ausgeben des DataFrame</strong>: <code>python     df</code></p>
+<ul>
+<li>Dies zeigt den Inhalt des DataFrame an, der die Daten aus der Excel-Datei enthält.</li>
+</ul></li>
+</ol>
+</div>
+</div>
+</div>
+</section>
+<section id="erweiterte-funktionen" class="level2" data-number="20.3">
+<h2 data-number="20.3" class="anchored" data-anchor-id="erweiterte-funktionen"><span class="header-section-number">20.3</span> Erweiterte Funktionen</h2>
+<p>Wenn eine Excel-Datei mehrere Blätter (Sheets) enthält, können Sie ein spezifisches Blatt einlesen, indem Sie den <code>sheet_name</code> Parameter verwenden.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_excel(<span class="st">'daten.xlsx'</span>, sheet_name<span class="op">=</span><span class="st">'Sheet1'</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Sie können auch Daten auf ein spezifisches Blatt schreiben:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>df.to_excel(<span class="st">'daten.xlsx'</span>, sheet_name<span class="op">=</span><span class="st">'Sheet1'</span>, index<span class="op">=</span><span class="va">False</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Mit <code>ExcelWriter</code> können Sie mehrere DataFrames in verschiedene Blätter derselben Excel-Datei schreiben:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> pd.ExcelWriter(<span class="st">'mehrere_blaetter.xlsx'</span>) <span class="im">as</span> writer:</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    df1.to_excel(writer, sheet_name<span class="op">=</span><span class="st">'Blatt1'</span>)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    df2.to_excel(writer, sheet_name<span class="op">=</span><span class="st">'Blatt2'</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Sie können das Format der geschriebenen Excel-Datei weiter anpassen, z.B. die Breite der Spalten einstellen oder Formatierungen hinzufügen, indem Sie die <code>xlsxwriter</code>-Engine in Pandas verwenden (anstelle des Standard-Moduls <code>openpyxl</code>). Dazu muss zunächst das Modul <code>XlsxWriter</code>installiert werden. Folgen Sie dazu <a href="https://pypi.org/project/XlsxWriter/">diesen Hinweisen</a>.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> pd.ExcelWriter(<span class="st">'formatiert.xlsx'</span>, engine<span class="op">=</span><span class="st">'xlsxwriter'</span>) <span class="im">as</span> writer:</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    df.to_excel(writer, sheet_name<span class="op">=</span><span class="st">'Sheet1'</span>)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    workbook  <span class="op">=</span> writer.book</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    worksheet <span class="op">=</span> writer.sheets[<span class="st">'Sheet1'</span>]</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    worksheet.set_column(<span class="st">'A:A'</span>, <span class="dv">20</span>)  <span class="co"># Setzt die Breite der Spalte A auf 20</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="zusammenfassung" class="level2" data-number="20.4">
+<h2 data-number="20.4" class="anchored" data-anchor-id="zusammenfassung"><span class="header-section-number">20.4</span> Zusammenfassung</h2>
+<p>In diesem Kapitel haben wir gelernt, wie man Excel-Dateien in Python mit der <code>pandas</code>-Bibliothek liest und schreibt. Diese Fähigkeiten sind essenziell für die Arbeit mit tabellarischen Daten und ermöglichen es Ihnen, Excel-Dateien effizient in Ihre Datenanalyse-Workflows zu integrieren. Wir haben auch einige erweiterte Funktionen behandelt, die Ihnen helfen, komplexere Aufgaben mit Excel-Dateien zu bewältigen.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -935,13 +1051,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../mysql/mysql-installation.html" class="pagination-link" aria-label="Installation">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Installation</span></span>
+      <a href="../daten/csv.html" class="pagination-link" aria-label="CSV">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">CSV</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../mysql/mysql-basics.html" class="pagination-link" aria-label="SQL basics">
-        <span class="nav-page-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">SQL basics</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../daten/json.html" class="pagination-link" aria-label="JSON">
+        <span class="nav-page-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">JSON</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
