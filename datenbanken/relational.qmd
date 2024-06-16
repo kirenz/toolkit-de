@@ -1,23 +1,97 @@
-# Relational
+# Relationale Datenbanken (RDBMS)
 
-Eine relationale Datenbank ist eine Sammlung von Datenobjekten mit vordefinierten Beziehungen zwischen ihnen. Diese Objekte sind als eine Reihe von Tabellen mit Spalten und Zeilen organisiert ([AWS](https://aws.amazon.com/relational-database/?nc1=h_ls)):
+Relationale Datenbanken sind das Rückgrat vieler moderner Datenbankanwendungen und werden durch ihre Fähigkeit, Daten in strukturierten Tabellen zu organisieren und zu verwalten, definiert. In diesem Kapitel werden wir die Grundkonzepte und Architektur relationaler Datenbanken beleuchten, einschließlich ihrer Komponenten, Vorteile und typischen Anwendungsfälle.
 
-- *Tabellen* werden verwendet, um Informationen über die in der Datenbank darzustellenden Objekte zu speichern.
+## Grundkonzepte relationaler Datenbanken
 
-- Jede *Spalte* in einer Tabelle enthält eine bestimmte Art von Daten, und ein Feld speichert den tatsächlichen Wert eines Attributs.
+### Tabellen
 
-- Die *Zeilen* in der Tabelle stellen eine Sammlung verwandter Werte eines Objekts oder einer Entität dar.
+Im Zentrum jeder relationalen Datenbank stehen Tabellen. Eine Tabelle ist eine strukturierte Sammlung von Daten, die in Zeilen und Spalten organisiert ist. Jede Tabelle repräsentiert eine Entität, und jede Zeile in der Tabelle stellt ein einzelnes Datensatz dieser Entität dar.
 
-- Jede Zeile in einer Tabelle kann mit einem eindeutigen Bezeichner, dem *Primärschlüssel*, markiert werden, und Zeilen in mehreren Tabellen können mithilfe von *Fremdschlüsseln* miteinander in Beziehung gesetzt werden.
+Beispiel einer einfachen Tabelle "Kunden":
 
-Diese Daten können auf viele verschiedene Arten (z.B. mit SQL) abgerufen werden. **Structured Query Language** (SQL, ausgesprochen "S-Q-L" oder manchmal "Sequel") ist eine der grundlegendsten Fähigkeiten, die Sie im Umgang mit Daten beherrschen sollten. Es ermöglicht Ihnen, effizient mit Datenbanken zu interagieren, Daten abzurufen und zu manipulieren sowie komplexe Abfragen und Analysen durchzuführen. 
+| KundenID | Name        | Email                | Stadt      |
+|----------|-------------|----------------------|------------|
+| 1        | Max Müller  | max.mueller@beispiel.de | Berlin     |
+| 2        | Anna Schmidt| anna.schmidt@beispiel.de | Hamburg    |
+| 3        | Peter Weber | peter.weber@beispiel.de  | München    |
 
-Im nächsten Abschnitt werden wir uns mit der Einrichtung und Verwendung von MySQL und PostgreSQL befassen. Diese relationalen Datenbankmanagementsysteme (RDBMS) sind weit verbreitet und bieten robuste und leistungsstarke Lösungen für die Datenverwaltung.
+### Spalten und Datentypen
 
-Wir werden die folgenden Themen behandeln:
+Jede Spalte in einer Tabelle hat einen bestimmten Datentyp, der die Art der Daten definiert, die in dieser Spalte gespeichert werden können. Häufig verwendete Datentypen sind:
 
-- Installation und Konfiguration von MySQL und PostgreSQL
-- Grundlegende Befehle und Abfragen in MySQL und PostgreSQL
-- Integration dieser Systeme mit Python
+- **INTEGER:** Ganze Zahlen
+- **VARCHAR:** Zeichenketten variabler Länge
+- **DATE:** Datumsangaben
+- **BOOLEAN:** Wahrheitswerte (true/false)
 
-Diese Kenntnisse werden Ihnen helfen, Ihre Daten effizient zu verwalten und komplexe Datenanalysen durchzuführen, indem Sie die Stärken dieser RDBMS in Kombination mit der Flexibilität und Leistungsfähigkeit von Python nutzen.
+### Primärschlüssel
+
+Ein Primärschlüssel ist eine Spalte oder eine Kombination von Spalten, die jeden Datensatz in einer Tabelle eindeutig identifiziert. Im obigen Beispiel ist die Spalte "KundenID" der Primärschlüssel der Tabelle "Kunden".
+
+### Fremdschlüssel
+
+Ein Fremdschlüssel ist eine Spalte, die eine Beziehung zwischen zwei Tabellen herstellt. Ein Fremdschlüssel in einer Tabelle verweist auf den Primärschlüssel einer anderen Tabelle. Diese Beziehungen sind das Herzstück des relationalen Modells, da sie es ermöglichen, Daten aus verschiedenen Tabellen zu verknüpfen und komplexe Abfragen zu erstellen.
+
+### Normalisierung
+
+Normalisierung ist ein Prozess zur Organisation von Daten in einer Datenbank, um Redundanz zu minimieren und Datenintegrität zu gewährleisten. Es gibt mehrere Normalformen (Normal Forms), die Regeln für die Strukturierung von Tabellen definieren.
+
+### SQL (Structured Query Language)
+
+SQL ist die Standardsprache für die Verwaltung und Abfrage von Daten in einer relationalen Datenbank. Mit SQL können Sie Daten einfügen, aktualisieren, löschen und abfragen sowie Datenbankstrukturen wie Tabellen und Indizes erstellen und ändern.
+
+Ein einfaches SQL-Abfragebeispiel:
+
+```sql
+SELECT Name, Email
+FROM Kunden
+WHERE Stadt = 'Berlin';
+```
+
+Diese Abfrage selektiert die Spalten "Name" und "Email" aus der Tabelle "Kunden", wobei nur die Datensätze berücksichtigt werden, bei denen die Stadt "Berlin" ist.
+
+## Architektur relationaler Datenbanken
+
+### Datenbankmanagementsystem (DBMS)
+
+Ein DBMS ist die Software, die die Erstellung, Verwaltung und Nutzung von Datenbanken ermöglicht. Ein relationales DBMS (RDBMS) bietet Funktionen wie Datenintegrität, Transaktionsverwaltung und Sicherheitsmechanismen. Bekannte RDBMS sind MySQL, PostgreSQL und SQLite.
+
+### Client-Server-Modell
+
+In einem typischen RDBMS werden Datenbankabfragen von einem Client (zum Beispiel eine Anwendung oder ein Benutzer) an den Server gesendet, der das DBMS hostet. Der Server verarbeitet die Abfrage und sendet die Ergebnisse an den Client zurück. Dieses Modell unterstützt mehrere gleichzeitige Benutzerzugriffe und eine zentrale Verwaltung der Datenbank.
+
+### Transaktionen
+
+Transaktionen sind eine zentrale Komponente von RDBMS und gewährleisten, dass eine Gruppe von Operationen entweder vollständig oder gar nicht ausgeführt wird. Dies garantiert die Konsistenz der Datenbank, selbst bei Systemausfällen oder Fehlern.
+
+### ACID-Eigenschaften
+
+Die ACID-Eigenschaften beschreiben die wichtigsten Anforderungen an Transaktionen in einer relationalen Datenbank:
+
+- **Atomicity (Atomarität):** Eine Transaktion wird entweder vollständig ausgeführt oder gar nicht.
+- **Consistency (Konsistenz):** Eine Transaktion bringt die Datenbank von einem konsistenten Zustand in einen anderen.
+- **Isolation (Isolation):** Gleichzeitige Transaktionen beeinflussen sich nicht gegenseitig.
+- **Durability (Dauerhaftigkeit):** Nach Abschluss einer Transaktion bleiben die Änderungen auch bei Systemausfällen erhalten.
+
+## Vorteile relationaler Datenbanken
+
+- **Strukturierte Daten:** Relationale Datenbanken sind ideal für strukturierte Daten, die in klar definierten Tabellen organisiert werden können.
+- **Flexibilität:** SQL ermöglicht komplexe Abfragen und Manipulationen der Daten.
+- **Datenintegrität:** Durch Primär- und Fremdschlüssel sowie durch Normalisierung kann die Datenintegrität gewährleistet werden.
+- **Sicherheit:** RDBMS bieten umfassende Sicherheitsmechanismen, einschließlich Benutzerberechtigungen und Verschlüsselung.
+- **Transaktionsunterstützung:** ACID-Eigenschaften gewährleisten die Zuverlässigkeit von Transaktionen.
+
+## Anwendungsfälle
+
+Relationale Datenbanken sind in vielen Bereichen weit verbreitet, darunter:
+
+- **Finanzwesen:** Verwaltung von Kontodaten, Transaktionen und Finanzberichten.
+- **E-Commerce:** Verwaltung von Produktkatalogen, Bestellungen und Kundeninformationen.
+- **Gesundheitswesen:** Verwaltung von Patientendaten, Terminen und medizinischen Aufzeichnungen.
+- **Bildung:** Verwaltung von Schülerdaten, Kursen und Noten.
+
+Durch ihre Struktur, Flexibilität und Zuverlässigkeit bleiben relationale Datenbanken ein zentrales Werkzeug in der Datenverwaltung und -analyse.
+
+
+In den folgenden Kapiteln werden wir uns eingehender mit der Implementierung und Nutzung von MySQL und PostgreSQL befassen, zwei der beliebtesten relationalen Datenbankmanagementsysteme.
