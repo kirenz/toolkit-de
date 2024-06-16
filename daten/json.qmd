@@ -1,0 +1,222 @@
+# JSON
+
+JSON (JavaScript Object Notation) ist ein textbasiertes Datenformat, das einfach lesbar und schreibbar ist. JSON-Daten bestehen aus Schlüssel-Wert-Paaren und unterstützen verschiedene Datentypen wie Zeichenfolgen, Zahlen, Arrays (Listen) und Objekte (Dictionaries).
+
+Beispiel einer JSON-Datei:
+
+```json
+{
+    "Personen": [
+        {
+            "Name": "Max",
+            "Alter": 24,
+            "Stadt": "Berlin"
+        },
+        {
+            "Name": "Anna",
+            "Alter": 30,
+            "Stadt": "Hamburg"
+        },
+        {
+            "Name": "Tom",
+            "Alter": 22,
+            "Stadt": "München"
+        }
+    ]
+}
+```
+
+Diese JSON-Datei enthält ein Objekt mit einem Schlüssel `Personen`, der eine Liste von Objekten enthält. Jedes dieser Objekte repräsentiert eine Person mit den Attributen `Name`, `Alter` und `Stadt`. Dieses Format ist sehr nützlich, um strukturierte Daten wie eine Liste von Personen mit deren Eigenschaften zu speichern und zu übertragen.
+
+Im oben genannten Beispiel könnten wir nach dem Laden der JSON-Datei auf die Liste der Personen mit `daten["Personen"]` zugreifen und die Informationen jeder Person entsprechend verwenden.
+
+## Schreiben einer JSON-Datei
+
+Das Speichern von Daten in eine JSON-Datei ist mit der `json`-Bibliothek sehr einfach. Die Methode `json.dump()` ermöglicht das Speichern eines Python Dictionaries in eine JSON-Datei.
+
+```{python}
+import json
+
+# Daten erstellen
+daten = {
+    "Personen": [
+        {"Name": "Max", "Alter": 24, "Stadt": "Berlin"},
+        {"Name": "Anna", "Alter": 30, "Stadt": "Hamburg"},
+        {"Name": "Tom", "Alter": 22, "Stadt": "München"}
+    ]
+}
+
+# JSON-Datei speichern
+with open('daten.json', 'w') as jsonfile:
+    json.dump(daten, jsonfile, indent=4)
+```
+
+:::{.callout-note collapse="true" title="Ausführliche Erklärung"}
+
+1. **Importieren der JSON-Bibliothek**:
+    ```python
+    import json
+    ```
+
+2. **Erstellen von Daten**:
+    - Daten können in Form eines Dictionaries erstellt werden.
+    ```python
+    daten = {
+        "Personen": [
+            {"Name": "Max", "Alter": 24, "Stadt": "Berlin"},
+            {"Name": "Anna", "Alter": 30, "Stadt": "Hamburg"},
+            {"Name": "Tom", "Alter": 22, "Stadt": "München"}
+        ]
+    }
+    ```
+
+3. **Speichern der Daten in eine JSON-Datei**:
+    ```python
+    with open('daten.json', 'w') as jsonfile:
+        json.dump(daten, jsonfile, indent=4)
+    ```
+
+    - **Argumente**:
+      - Wir verwenden den `with`-Befehl, um eine Datei im Schreibmodus zu öffnen. Der with-Befehl sorgt dafür, dass die Datei nach Abschluss der Operation automatisch geschlossen wird, auch wenn ein Fehler auftritt.
+      - Der erste Parameter ist der Dateiname (`'daten.json'`). Wenn kein Pfad angegeben ist, wird die Datei im aktuellen Arbeitsverzeichnis gespeichert.
+      - `open('daten.json', 'w')` öffnet die Datei daten.json im Schreibmodus (w steht für write). Wenn die Datei nicht existiert, wird sie erstellt. Wenn sie bereits existiert, wird ihr Inhalt überschrieben.
+      - `as jsonfile` weist die geöffnete Datei dem Variablennamen `jsonfile` zu, der innerhalb des with-Blocks verwendet werden kann.
+      - `indent=4` sorgt für eine formatierte Ausgabe mit Einrückungen, die die JSON-Datei besser lesbar macht.
+
+:::
+
+## Lesen einer JSON-Datei
+
+Das Lesen von JSON-Dateien in Python ist mit der `json`-Bibliothek ebenfalls sehr einfach. Die Methode `json.load()` ermöglicht das Einlesen von JSON-Daten aus einer Datei in ein Python Dictionary.
+
+```{python}
+import json
+
+# JSON-Datei lesen
+with open('daten.json', 'r') as jsonfile:
+    daten = json.load(jsonfile)
+
+print(daten)
+```
+
+:::{.callout-note collapse="true" title="Ausführliche Erklärung"}
+
+1. **Importieren der JSON-Bibliothek**:
+    ```python
+    import json
+    ```
+
+    - **Erklärung**: Die JSON-Bibliothek ist eine eingebaute Python-Bibliothek, die es ermöglicht, JSON-Daten zu parsen (lesen) und zu generieren (schreiben). JSON (JavaScript Object Notation) ist ein weit verbreitetes Format zur Darstellung strukturierter Daten.
+
+2. **Lesen der JSON-Datei**:
+    ```python
+    with open('daten.json', 'r') as jsonfile:
+        daten = json.load(jsonfile)
+    ```
+
+    - **Erklärung**: Hier wird die JSON-Datei `'daten.json'` geöffnet und ihr Inhalt in die Variable `daten` geladen.
+    
+    - **Schritt-für-Schritt**:
+        - `open('daten.json', 'r')`: Diese Funktion öffnet die Datei `'daten.json'` im Lesemodus (`'r'`).
+        - `as jsonfile`: Der `open`-Befehl wird im Kontext eines `with`-Statements verwendet, was sicherstellt, dass die Datei nach dem Lesen automatisch geschlossen wird.
+        - `json.load(jsonfile)`: Diese Methode liest den Inhalt der Datei und wandelt ihn in ein Python-Objekt (üblicherweise ein Dictionary) um.
+
+    - **Argumente**:
+      - Der erste Parameter ist der Pfad zur JSON-Datei (`'daten.json'`). Wenn sich die Datei nicht im aktuellen Arbeitsverzeichnis befindet, muss der vollständige Pfad angegeben werden.
+      - Der Modus `'r'` gibt an, dass die Datei nur gelesen werden soll.
+
+3. **Ausgeben der Daten**:
+    ```python
+    print(daten)
+    ```
+
+    - **Erklärung**: Diese Anweisung gibt den Inhalt des `daten`-Dictionaries auf der Konsole aus.
+    - **Details**: 
+        - `daten` ist ein Dictionary, das die aus der JSON-Datei gelesenen Daten enthält. Durch das Drucken dieses Dictionaries können wir den strukturierten Inhalt der Datei anzeigen.
+        - Es ist eine gute Methode, die gelesenen Daten auszugeben, um sicherzustellen, dass sie korrekt eingelesen wurden und um zu verstehen, welche Struktur die Daten haben.
+
+:::
+
+Diese ausführliche Erklärung sollte dir helfen, den Prozess des Lesens einer JSON-Datei in Python besser zu verstehen. Von der Verwendung der Bibliothek bis hin zum Öffnen, Lesen und Anzeigen der Datei werden alle Schritte detailliert beschrieben.
+
+## Erweiterte Funktionen
+
+
+JSON kann leicht in Python-Datenstrukturen konvertiert werden und umgekehrt.
+
+### JSON in Dictionary
+
+JSON in ein Python Dictionary konvertieren:
+
+```{python}
+import json
+
+json_daten = '''
+{
+    "Name": "Max",
+    "Alter": 24,
+    "Stadt": "Berlin"
+}
+'''
+
+daten = json.loads(json_daten)
+print(daten)
+```
+
+### Dictionary zu JSON
+
+Python Dictionary in JSON konvertieren:
+
+```{python}
+import json
+
+daten = {
+    "Name": "Max",
+    "Alter": 24,
+    "Stadt": "Berlin"
+}
+
+json_daten = json.dumps(daten, indent=4)
+print(json_daten)
+```
+
+
+
+### Verschachtelte JSON-Daten
+
+JSON-Daten können verschachtelte Strukturen enthalten, wie Listen von Objekten oder Objekte innerhalb von Objekten. Python kann diese Strukturen direkt verarbeiten.
+
+```{python}
+import json
+
+json_daten = '''
+{
+    "Personen": [
+        {
+            "Name": "Max",
+            "Alter": 24,
+            "Stadt": "Berlin",
+            "Hobbys": ["Lesen", "Schwimmen"]
+        },
+        {
+            "Name": "Anna",
+            "Alter": 30,
+            "Stadt": "Hamburg",
+            "Hobbys": ["Radfahren", "Kochen"]
+        }
+    ]
+}
+'''
+
+daten = json.loads(json_daten)
+
+# Zugriff auf verschachtelte Daten
+for person in daten["Personen"]:
+    print(f"Name: {person['Name']}, Hobbys: {', '.join(person['Hobbys'])}")
+```
+
+## Zusammenfassung
+
+In diesem Kapitel haben wir gelernt, wie man JSON-Dateien in Python mit der `json`-Bibliothek liest und schreibt. 
+
+JSON ist ein flexibles und weit verbreitetes Format für den Datenaustausch und die Speicherung. Wir haben auch einige erweiterte Funktionen und Techniken behandelt, um mit JSON-Daten in Python effizient zu arbeiten. Diese Fähigkeiten sind essenziell für die Verarbeitung und Analyse von strukturierten und teilweise strukturierten Daten in verschiedenen Projekten der Datenwissenschaft.
