@@ -79,6 +79,7 @@ book:
         - mongodb/mongodb-start-stop.qmd
         - mongodb/mongodb-basics.qmd  
         - mongodb/mongodb-python.qmd  
+        - mongodb/mongodb-python-bilder.qmd  
 
     - part: github/github.qmd
       chapters:
