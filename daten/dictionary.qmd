@@ -1,0 +1,192 @@
+# Dictionaries
+
+Dictionaries in Python sind eine leistungsstarke Datenstruktur, die es ermöglicht, Daten in Form von Schlüssel-Wert-Paaren zu speichern und effizient darauf zuzugreifen. Sie sind besonders nützlich, wenn Sie eine schnelle Zuordnung von Schlüsseln zu Werten benötigen, ähnlich wie bei einem realen Wörterbuch, das Begriffe (Schlüssel) und deren Definitionen (Werte) enthält.
+
+:::{.callout-note}
+Ein Dictionary in Python besteht aus Schlüssel-Wert-Paaren, die in geschweiften Klammern `{}` eingeschlossen sind. Jeder Schlüssel ist eindeutig und wird einem Wert zugeordnet.
+:::
+
+Beispiel eines einfachen Dictionary:
+
+```{python}
+person = {
+    "Name": "Max",
+    "Alter": 24,
+    "Stadt": "Berlin"
+}
+```
+
+Dieses Dictionary enthält Informationen über eine Person mit drei Schlüsseln: "Name", "Alter" und "Stadt". Die entsprechenden Werte sind "Max", 24 und "Berlin".
+
+- **Name**: Enthält den Namen der Person (z. B. Max).
+- **Alter**: Enthält das Alter der Person in Jahren (z. B. 24).
+- **Stadt**: Enthält den Namen der Stadt, in der die Person wohnt (z. B. Berlin).
+
+Diese Struktur ermöglicht es, die Daten einfach zu organisieren und schnell darauf zuzugreifen.
+
+## Erstellung und Zugriff
+
+### Erstellung eines Dictionary
+
+Ein Dictionary kann durch einfache Zuweisung von Schlüssel-Wert-Paaren erstellt werden:
+
+```{python}
+person = {
+    "Name": "Anna",
+    "Alter": 30,
+    "Stadt": "Hamburg"
+}
+```
+
+Hier wird ein Dictionary namens `person` erstellt, das die Daten einer Person enthält. Die Schlüssel sind "Name", "Alter" und "Stadt", und die entsprechenden Werte sind "Anna", 30 und "Hamburg".
+
+### Zugriff auf Werte
+
+Um auf einen Wert in einem Dictionary zuzugreifen, verwenden Sie den entsprechenden Schlüssel:
+
+```{python}
+name = person["Name"]
+print(name)  # Ausgabe: Anna
+```
+
+In diesem Beispiel wird der Wert des Schlüssels "Name" aus dem Dictionary `person` abgerufen und in der Variablen `name` gespeichert. Anschließend wird der Wert "Anna" ausgegeben.
+
+## Hinzufügen und Entfernen von Elementen
+
+### Hinzufügen von Elementen
+
+Um ein neues Schlüssel-Wert-Paar zu einem Dictionary hinzuzufügen, verwenden Sie die folgende Syntax:
+
+```{python}
+person["Beruf"] = "Ingenieur"
+print(person)
+```
+
+Nach dem Hinzufügen sieht das Dictionary `person` wie folgt aus:
+
+```python
+{
+    "Name": "Anna",
+    "Alter": 30,
+    "Stadt": "Hamburg",
+    "Beruf": "Ingenieur"
+}
+```
+
+Das neue Schlüssel-Wert-Paar "Beruf": "Ingenieur" wurde dem Dictionary hinzugefügt.
+
+### Entfernen von Elementen
+
+Um ein Schlüssel-Wert-Paar aus einem Dictionary zu entfernen, verwenden Sie die Methode `pop()` oder das `del`-Schlüsselwort:
+
+```{python}
+# Entfernen mit pop()
+beruf = person.pop("Beruf")
+print(beruf)  # Ausgabe: Ingenieur
+print(person)
+
+# Entfernen mit del
+del person["Stadt"]
+print(person)
+```
+
+Nach dem Entfernen sieht das Dictionary `person` wie folgt aus:
+
+```python
+{
+    "Name": "Anna",
+    "Alter": 30
+}
+```
+
+Das Schlüssel-Wert-Paar "Beruf": "Ingenieur" wurde mit `pop()` entfernt, und "Stadt": "Hamburg" wurde mit `del` entfernt.
+
+## Iterieren durch ein Dictionary
+
+Es gibt verschiedene Möglichkeiten, durch ein Dictionary zu iterieren:
+
+### Iterieren durch Schlüssel
+
+```{python}
+for key in person:
+    print(key)
+```
+
+### Iterieren durch Werte
+
+```{python}
+for value in person.values():
+    print(value)
+```
+
+### Iterieren durch Schlüssel-Wert-Paare
+
+```{python}
+for key, value in person.items():
+    print(f"{key}: {value}")
+```
+
+:::{.callout-note collapse="true" title="Ausführliche Erklärung"}
+
+1. **Iterieren durch Schlüssel:**
+
+```python
+for key in person:
+    print(key)
+```
+
+Hier wird durch die Schlüssel des Dictionary `person` iteriert und jeder Schlüssel wird ausgegeben.
+
+2. **Iterieren durch Werte:**
+
+```python
+for value in person.values():
+    print(value)
+```
+
+Hier wird durch die Werte des Dictionary `person` iteriert und jeder Wert wird ausgegeben.
+
+3. **Iterieren durch Schlüssel-Wert-Paare:**
+
+```python
+for key, value in person.items():
+    print(f"{key}: {value}")
+```
+
+Hier wird durch die Schlüssel-Wert-Paare des Dictionary `person` iteriert und jedes Paar wird im Format `Schlüssel: Wert` ausgegeben.
+
+:::
+
+## Anwendung von Dictionaries in der Datenanalyse
+
+Dictionaries sind in der Datenanalyse besonders nützlich, wenn es darum geht, Daten zu strukturieren und darauf zuzugreifen. In Kombination mit Bibliotheken wie Pandas können Dictionaries verwendet werden, um DataFrames zu erstellen und zu manipulieren.
+
+### Erstellung eines DataFrame aus einem Dictionary
+
+```{python}
+import pandas as pd
+
+daten = {
+    "Name": ["Max", "Anna", "Tom"],
+    "Alter": [24, 30, 22],
+    "Stadt": ["Berlin", "Hamburg", "München"]
+}
+
+df = pd.DataFrame(daten)
+print(df)
+```
+
+In diesem Beispiel wird ein Dictionary `daten` erstellt, das Listen von Werten enthält. Diese Listen werden verwendet, um einen Pandas DataFrame zu erstellen. Der resultierende DataFrame `df` sieht wie folgt aus:
+
+```plaintext
+   Name  Alter    Stadt
+0   Max     24   Berlin
+1  Anna     30  Hamburg
+2   Tom     22  München
+```
+
+Der DataFrame enthält drei Spalten: "Name", "Alter" und "Stadt", entsprechend den Schlüsseln im Dictionary. Jede Zeile im DataFrame repräsentiert einen Datensatz (eine Person) und jede Spalte repräsentiert eine Eigenschaft dieser Datensätze.
+
+## Zusammenfassung
+
+Dictionaries sind eine vielseitige und effiziente Datenstruktur in Python, die es ermöglicht, Daten in Form von Schlüssel-Wert-Paaren zu speichern und schnell darauf zuzugreifen. Sie sind besonders nützlich in der Datenanalyse, wenn es darum geht, strukturierte Daten zu organisieren und zu manipulieren. Durch die Kombination von Dictionaries mit leistungsstarken Bibliotheken wie Pandas können komplexe Datenanalysen und -manipulationen einfach und effizient durchgeführt werden.
