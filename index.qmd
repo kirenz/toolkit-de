@@ -10,3 +10,4 @@ Egal, ob Sie ein Student, ein Berufstätiger oder einfach jemand sind, der neugi
 
 Viel Erfolg und Freude beim Lernen!
 
+[Slides](/slides/python-basics-slides.qmd)
