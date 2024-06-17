@@ -1,4 +1,3 @@
-```markdown
 # MongoDB
 
 **MongoDB** ist eine NoSQL-Datenbank, die für ihre Flexibilität und Skalierbarkeit bekannt ist. Sie speichert Daten in JSON-ähnlichen Dokumenten, was es einfach macht, komplexe Datenstrukturen zu handhaben. Diese Strukturierung ermöglicht es, hierarchische Beziehungen, Arrays und andere komplexe Datentypen ohne die Einschränkungen eines starren, tabellenbasierten Schemas darzustellen. Dadurch können Änderungen am Datenmodell schneller und effizienter umgesetzt werden.
