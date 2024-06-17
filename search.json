@@ -10,35 +10,45 @@
     ]
   },
   {
-    "objectID": "erste-schritte/project-environment.html",
-    "href": "erste-schritte/project-environment.html",
+    "objectID": "erste-schritte/index.html",
+    "href": "erste-schritte/index.html",
+    "title": "Erste Schritte",
+    "section": "",
+    "text": "In diesem ersten Abschnitt werden wir eine grundlegende Arbeitsumgebung einrichten, die für jedes datenbezogene Vorhaben unerlässlich ist.\nSie lernen, wie Sie:\n\nDie Befehlszeile Ihres Computers nutzen können.\nPython zum ersten Mal einrichten.\nDie Anaconda-Distribution (ein Data-Science-Softwarpaket) verwenden.\nJupyter Notebook, ein leistungsstarkes Werkzeug zur interaktiven Datenexploration, nutzen",
+    "crumbs": [
+      "Erste Schritte"
+    ]
+  },
+  {
+    "objectID": "erste-schritte/projektumgebung.html",
+    "href": "erste-schritte/projektumgebung.html",
     "title": "2  Projektumgebung",
     "section": "",
     "text": "2.1 Windows\nFolgen Sie diesen Schritten, um das Hauptverzeichnis und die Unterverzeichnisse mit der Windows-Eingabeaufforderung zu erstellen:\nDiese Befehle richten ein Hauptverzeichnis toolkit-lab mit zwei Unterverzeichnissen ein: code für Ihre Skripte und Anwendungen und data zum Speichern von Datensätzen und zugehörigen Dateien.",
     "crumbs": [
-      "erste-schritte/first-steps.qmd",
+      "Erste Schritte",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Projektumgebung</span>"
     ]
   },
   {
-    "objectID": "erste-schritte/project-environment.html#windows",
-    "href": "erste-schritte/project-environment.html#windows",
+    "objectID": "erste-schritte/projektumgebung.html#windows",
+    "href": "erste-schritte/projektumgebung.html#windows",
     "title": "2  Projektumgebung",
     "section": "",
     "text": "Drücken Sie gleichzeitig die Tasten Windows + R, um das Ausführen-Dialogfeld zu öffnen.\nGeben Sie cmd ein und drücken Sie Enter, um die Eingabeaufforderung zu öffnen.\nErstellen Sie einen neuen Ordner namens toolkit-lab (kopieren Sie diesen Code und geben Sie ihn in Ihre Eingabeaufforderung ein):\nmkdir toolkit-lab\nVerwenden Sie cd (change directory), um in das Verzeichnis toolkit-lab zu wechseln:\ncd toolkit-lab\nVerwenden Sie mkdir (make directory), um die Unterverzeichnisse code und data zu erstellen:\nmkdir code data",
     "crumbs": [
-      "erste-schritte/first-steps.qmd",
+      "Erste Schritte",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Projektumgebung</span>"
     ]
   },
   {
-    "objectID": "erste-schritte/project-environment.html#macoslinux",
-    "href": "erste-schritte/project-environment.html#macoslinux",
+    "objectID": "erste-schritte/projektumgebung.html#macoslinux",
+    "href": "erste-schritte/projektumgebung.html#macoslinux",
     "title": "2  Projektumgebung",
     "section": "2.2 macOS/Linux",
     "text": "2.2 macOS/Linux\nFolgen Sie diesen Schritten, um das Hauptverzeichnis und die Unterverzeichnisse mit dem Terminal in macOS oder Linux zu erstellen:\n\nUm das Terminal in macOS zu öffnen, können Sie die Spotlight-Suche (Cmd + Space) verwenden und “Terminal” eingeben oder über Programme -&gt; Dienstprogramme -&gt; Terminal navigieren.\nZuerst verwenden wir den Befehl pwd (“print working directory”) und drücken die Eingabetaste, um den vollständigen Pfad des aktuellen Verzeichnisses anzuzeigen. Wenn Sie das Terminal gerade geöffnet haben, sollte das aktuelle Verzeichnis Ihr Home-Verzeichnis sein (in meinem Fall /Users/jankirenz, da mein Benutzerkonto jankirenz heißt):\npwd\nErstellen Sie nun einen neuen Ordner namens toolkit-lab in dem Home-Verzeichnis (kopieren Sie diesen Code und geben Sie ihn in Ihr Terminal ein):\nmkdir toolkit-lab\nVerwenden Sie cd (change directory), um in das Verzeichnis toolkit-lab zu wechseln:\ncd toolkit-lab\nVerwenden Sie mkdir (make directory), um die Unterverzeichnisse code und data zu erstellen:\nmkdir code data\n\nDiese Befehle richten ein Hauptverzeichnis toolkit-lab mit zwei Unterverzeichnissen ein: code für Ihre Skripte und Anwendungen und data zum Speichern von Datensätzen und zugehörigen Dateien.",
     "crumbs": [
-      "erste-schritte/first-steps.qmd",
+      "Erste Schritte",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Projektumgebung</span>"
     ]
   },
@@ -49,7 +59,7 @@
     "section": "",
     "text": "3.1 Installation",
     "crumbs": [
-      "erste-schritte/first-steps.qmd",
+      "Erste Schritte",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Python</span>"
     ]
   },
@@ -60,7 +70,7 @@
     "section": "",
     "text": "3.1.1 Windows\n\nInstallationsprogramm herunterladen: Navigieren Sie zur Python-Website und laden Sie die neueste Version für Ihre Windows-Version herunter (normalerweise Windows-Installer 64-Bit).\nInstallationsprogramm ausführen: Klicken Sie mit der rechten Maustaste auf das heruntergeladene Installationsprogramm und wählen Sie “Als Administrator ausführen”. Stellen Sie sicher, dass Sie das Kästchen “Add Python 3.x to PATH” am unteren Rand des Installationsfensters markieren, um sicherzustellen, dass Python zu den Umgebungsvariablen Ihres Systems hinzugefügt wird (Dies ist entscheidend, damit Python von jedem Verzeichnis im System aus über die Kommandozeile aufgerufen werden kann. Ohne diese Einstellung müssten Sie den vollständigen Pfad zur Python-Installation angeben, um Python auszuführen, was unpraktisch und fehleranfällig ist).\nAnpassung der Installation (optional): Sie können die Installation anpassen, indem Sie auf “Customize installation” klicken. Dies ermöglicht es Ihnen, spezifische Funktionen wie Dokumentation, pip, Tests usw. auszuwählen.\nInstallation starten: Klicken Sie auf “Install Now”, um den Installationsvorgang zu starten.\n\n\n\n3.1.2 Mac\n\nInstallationsprogramm herunterladen: Navigieren Sie zur Python-Website und laden Sie die neueste Version herunter.\nPython installieren: Öffnen Sie die heruntergeladene .pkg-Datei und folgen Sie den Anweisungen zur Installation von Python. Der Installationsassistent führt Sie durch die notwendigen Schritte.",
     "crumbs": [
-      "erste-schritte/first-steps.qmd",
+      "Erste Schritte",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Python</span>"
     ]
   },
@@ -71,7 +81,7 @@
     "section": "3.2 Überprüfung der Installation",
     "text": "3.2 Überprüfung der Installation\nNach der Installation überprüfen Sie, ob Python korrekt installiert wurde, indem Sie eine Kommandozeile öffnen (Terminal auf macOS, Eingabeaufforderung oder PowerShell auf Windows) und eingeben:\npython --version\nDieser Befehl sollte die Version von Python anzeigen, die Sie installiert haben.\n\n\n\n\n\n\nUnterschiedliche Python-Version\n\n\n\n\n\nWenn Sie bereits Python oder eine Python-Distribution wie Anaconda installiert haben, kann das Ausführen von python --version in Ihrem Terminal eine andere Python-Version anzeigen als die, die Sie gerade installiert haben. Diese Abweichung tritt auf, weil Ihr System mehrere Python-Installationen gleichzeitig verwalten kann. Der Terminalbefehl wählt die Version, die zuerst in der PATH-Variable des Systems erscheint, was möglicherweise nicht die zuletzt installierte Version ist.\nDies ist eine gängige Situation und kein Grund zur Sorge. Wir werden dieses Thema in einem späteren Kapitel erneut behandeln und besprechen, wie Sie mehrere Python-Versionen effektiv verwalten können, um sicherzustellen, dass Sie verschiedene Python-Umgebungen je nach Bedarf für Ihre Projekte auswählen und verwenden können.",
     "crumbs": [
-      "erste-schritte/first-steps.qmd",
+      "Erste Schritte",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Python</span>"
     ]
   },
@@ -82,7 +92,7 @@
     "section": "3.3 Fehlerbehebung",
     "text": "3.3 Fehlerbehebung\n\nPython nicht erkannt: Wenn die Kommandozeile den Befehl python nicht erkennt, liegt es möglicherweise daran, dass Python nicht zu Ihrem PATH hinzugefügt wurde. Überprüfen Sie die Installationsschritte noch einmal, um sicherzustellen, dass Sie die Option ausgewählt haben, Python zu Ihrem PATH hinzuzufügen.\nBerechtigungsfehler während der Installation: Dies tritt normalerweise unter Windows auf und kann behoben werden, indem das Installationsprogramm als Administrator ausgeführt wird.",
     "crumbs": [
-      "erste-schritte/first-steps.qmd",
+      "Erste Schritte",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Python</span>"
     ]
   },
@@ -93,7 +103,7 @@
     "section": "",
     "text": "4.1 Python IDLE starten\nNach der Installation von Python starten Sie IDLE über das Suchmenü Ihres Betriebssystems:",
     "crumbs": [
-      "erste-schritte/first-steps.qmd",
+      "Erste Schritte",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Python IDLE</span>"
     ]
   },
@@ -104,7 +114,7 @@
     "section": "",
     "text": "Windows: Öffnen Sie das Startmenü und geben Sie IDLE ein.\nMacOS: Verwenden Sie die Spotlight-Suche (Cmd + Leertaste), geben Sie IDLE ein und drücken Sie Enter.\nLinux: Finden Sie IDLE im Anwendungsmenü oder führen Sie idle im Terminal aus.",
     "crumbs": [
-      "erste-schritte/first-steps.qmd",
+      "Erste Schritte",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Python IDLE</span>"
     ]
   },
@@ -115,7 +125,7 @@
     "section": "4.2 Einfache Berechnungen",
     "text": "4.2 Einfache Berechnungen\nDas IDLE-Shell-Fenster fungiert als interaktiver Interpreter, der jede Codezeile sofort ausführt, wenn Sie Enter drücken.\nDirekt in der IDLE-Shell können Sie arithmetische Ausdrücke wie 2 + 3 eingeben und Enter drücken, um sofort die Ergebnisse zu sehen.\nDiese Funktion macht IDLE ideal für schnelle Berechnungen und Experimente mit den mathematischen Fähigkeiten von Python, ohne dass ein Skript gespeichert oder ausgeführt werden muss.",
     "crumbs": [
-      "erste-schritte/first-steps.qmd",
+      "Erste Schritte",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Python IDLE</span>"
     ]
   },
@@ -126,7 +136,7 @@
     "section": "4.3 Python-Skripte",
     "text": "4.3 Python-Skripte\nAls nächstes erstellen und führen wir ein einfaches Python-Skript aus:\n\nEine neue Datei öffnen: Navigieren Sie in IDLE zu Datei &gt; Neue Datei, um ein Editor-Fenster zu öffnen.\nGeben Sie Ihren Code ein: Geben Sie Folgendes in das neue Editor-Fenster ein:\nprint(\"Hallo, Python!\")\nSpeichern Sie Ihr Skript: Speichern Sie die Datei über Datei &gt; Speichern unter... und benennen Sie sie hello.py. Idealerweise speichern Sie sie in Ihrem Verzeichnis code innerhalb Ihres toolkit-labs-Ordners (siehe dazu die Erklärung zur Ordnerstruktur).\nFühren Sie Ihr Skript aus: Drücken Sie F5 oder gehen Sie zu Ausführen &gt; Modul ausführen, um Ihr Skript auszuführen. Die Ausgabe Hallo, Python! sollte in der IDLE-Shell erscheinen.\n\nModifizieren Sie nun Ihr Skript mit verschiedenen Nachrichten. Sie können auch help(print) oder help() in die IDLE-Shell eingeben, um die umfangreiche Hilfedokumentation von Python zu erkunden und andere Funktionen kennenzulernen.",
     "crumbs": [
-      "erste-schritte/first-steps.qmd",
+      "Erste Schritte",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Python IDLE</span>"
     ]
   },
@@ -137,7 +147,7 @@
     "section": "4.4 Nächste Schritte",
     "text": "4.4 Nächste Schritte\nPython IDLE bietet eine Einführung in die Programmierung mit Python und eine einfache Oberfläche für die Codeentwicklung und -ausführung. In einem der folgenden Abschnitte werden wir fortschrittlichere IDEs wie Visual Studio Code erkunden, die größere Projekte mit zusätzlichen Funktionen unterstützen.\nIm nächsten Kapitel wird die Installation und grundlegende Nutzung von Anaconda behandelt, einer beliebten Python-Distribution, die einen robusten Paketmanager und eine Suite von vorinstallierten Bibliotheken umfasst, die häufig in der Datenwissenschaft und im maschinellen Lernen verwendet werden.",
     "crumbs": [
-      "erste-schritte/first-steps.qmd",
+      "Erste Schritte",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Python IDLE</span>"
     ]
   },
@@ -148,7 +158,7 @@
     "section": "",
     "text": "5.1 Installer herunterladen",
     "crumbs": [
-      "erste-schritte/first-steps.qmd",
+      "Erste Schritte",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Anaconda</span>"
     ]
   },
@@ -159,7 +169,7 @@
     "section": "",
     "text": "Gehen Sie zur Anaconda-Download-Seite.\nWählen Sie Ihr Betriebssystem aus (für macOS wählen Sie den entsprechenden grafischen Installer - wenn Ihr Gerät einen Apple-Chip hat, wählen Sie die passende Ausführung - Apple Silicon. Andernfalls den Intel chip).\nLaden Sie den Installer herunter. Achten Sie darauf, den grafischen Installer herunterzuladen.",
     "crumbs": [
-      "erste-schritte/first-steps.qmd",
+      "Erste Schritte",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Anaconda</span>"
     ]
   },
@@ -170,7 +180,7 @@
     "section": "5.2 Installationsanleitung",
     "text": "5.2 Installationsanleitung\n\n5.2.1 Windows\n\nKlicken Sie mit der rechten Maustaste auf den heruntergeladenen Installer und wählen Sie “Als Administrator ausführen”.\nKlicken Sie auf “Weiter”, um durch die Setup-Bildschirme zu navigieren.\nStimmen Sie den Geschäftsbedingungen zu.\nWählen Sie den Installationstyp:\n\n“Nur für mich” (empfohlen) oder “Alle Benutzer”.\n\nWählen Sie den Zielordner für die Installation.\nWichtiger Schritt: Aktivieren Sie “Anaconda zu meiner PATH-Umgebungsvariablen hinzufügen” (empfohlen).\nAktivieren Sie “Anaconda als meine Standard-Python-Version registrieren” (empfohlen).\nKlicken Sie auf “Installieren” und warten Sie, bis die Installation abgeschlossen ist.\nKlicken Sie auf “Weiter” und dann auf “Fertig stellen”, um die Installation abzuschließen.\n\n\n\n5.2.2 macOS\n\nSuchen Sie die heruntergeladene .pkg-Datei und doppelklicken Sie darauf, um die Installation zu starten.\nFolgen Sie den Anweisungen, um die Installation abzuschließen:\n\nLesen und akzeptieren Sie die Lizenzvereinbarung.\nWählen Sie das Ziellaufwerk für die Installation aus (untere Option auswählen und zu Ihrem Ihrem Home-Verzeichnis navigieren - in meinem Fall /Users/jankirenz, da mein Benutzerkonto jankirenz heißt).\nKlicken Sie auf “Installieren”.\n\nSobald die Installation abgeschlossen ist, schließen Sie den Installer.\n\n\n\n5.2.3 Linux\n\nÖffnen Sie ein Terminalfenster und navigieren Sie zu dem Verzeichnis, in dem der .sh-Installer heruntergeladen wurde.\nFühren Sie den Installer mit folgendem Befehl aus:\nbash Anaconda3-&lt;ihre-version&gt;-Linux-x86_64.sh\nFolgen Sie den Anweisungen, um die Lizenzvereinbarung zu akzeptieren und den Installationsort auszuwählen.\nDer Installer wird fragen, ob Anaconda in Ihrer .bashrc-Datei initialisiert werden soll. Geben Sie “ja” ein.\nSchließen Sie das Terminal und öffnen Sie ein neues, um sicherzustellen, dass Anaconda richtig initialisiert ist.",
     "crumbs": [
-      "erste-schritte/first-steps.qmd",
+      "Erste Schritte",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Anaconda</span>"
     ]
   },
@@ -181,7 +191,7 @@
     "section": "5.3 Installation überprüfen",
     "text": "5.3 Installation überprüfen\nUm zu bestätigen, dass Anaconda erfolgreich installiert wurde: 1. Öffnen Sie ein Eingabeaufforderungsfenster (Windows) oder ein Terminal (macOS/Linux). 2. Führen Sie diesen Befehl aus, um zu überprüfen, ob Anaconda erkannt wird: bash    conda --version 3. Wenn Anaconda korrekt installiert ist, wird die Version im Terminal angezeigt.",
     "crumbs": [
-      "erste-schritte/first-steps.qmd",
+      "Erste Schritte",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Anaconda</span>"
     ]
   },
@@ -192,7 +202,7 @@
     "section": "5.4 Erste Aktualisierung",
     "text": "5.4 Erste Aktualisierung\n\nNach der Installation ist es eine gute Idee, alle Standardpakete zu aktualisieren:\nconda update --all\nFolgen Sie den Anweisungen, um die Aktualisierung abzuschließen.\n\nMit der Installation von Anaconda sind Sie bereit, Umgebungen zu erstellen, Pakete zu verwalten und mit Daten zu arbeiten.",
     "crumbs": [
-      "erste-schritte/first-steps.qmd",
+      "Erste Schritte",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Anaconda</span>"
     ]
   },
@@ -203,7 +213,7 @@
     "section": "",
     "text": "6.1 Jupyter Notebook starten",
     "crumbs": [
-      "erste-schritte/first-steps.qmd",
+      "Erste Schritte",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Jupyter Notebook</span>"
     ]
   },
@@ -214,7 +224,7 @@
     "section": "",
     "text": "Öffnen Sie Anaconda Navigator:\n\nWindows: Öffnen Sie das Startmenü und suchen Sie nach “Anaconda Navigator”. Klicken Sie, um es zu starten.\nmacOS/Linux: Suchen Sie in Ihren Anwendungen nach “Anaconda Navigator” oder öffnen Sie ein Terminal und geben Sie ein:\n\nanaconda-navigator\nFinden Sie im Anaconda Navigator die Jupyter Notebook-Anwendung.\nKlicken Sie auf die Schaltfläche “Launch”. Dies öffnet Jupyter Notebook in Ihrem Standard-Webbrowser.",
     "crumbs": [
-      "erste-schritte/first-steps.qmd",
+      "Erste Schritte",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Jupyter Notebook</span>"
     ]
   },
@@ -225,7 +235,7 @@
     "section": "6.2 Ihr erstes Notebook erstellen",
     "text": "6.2 Ihr erstes Notebook erstellen\n\nNavigieren Sie in der Web-Oberfläche von Jupyter zum code-Verzeichnis (siehe unsere Erklärung zur Ordnerstruktur).\nKlicken Sie oben rechts auf “New” und wählen Sie “Notebook”, um ein neues Notebook zu erstellen.\nNun öffnet sich ein Fenster in welchem Sie den Kernel (eine Python-Instanz) auswählen können. Wählen Sie bspw. die von Anaconda installierte base-Umgebung aus (die base-Umgebung ist die standardmäßige Python-Umgebung, die bei der Installation von Anaconda erstellt wird. Diese Umgebung enthält die grundlegenden Bibliotheken und Werkzeuge, die für viele Datenwissenschafts- und Maschinenlernaufgaben erforderlich sind).\nEine neue Notebook-Seite öffnet sich mit einer leeren Code-Zelle.\n\n\n6.2.1 Code schreiben und ausführen\n\nGeben Sie einen beliebigen Python-Code in die erste Zelle ein, zum Beispiel:\nprint(\"Hello, Jupyter!\")\nFühren Sie den Code aus, indem Sie Shift+Enter drücken oder auf “Run” klicken. Die Ausgabe wird direkt unter der Zelle angezeigt.\n\n\n\n6.2.2 Markdown-Text hinzufügen\n\nKlicken Sie auf die Schaltfläche “+”, um eine neue Zelle hinzuzufügen.\nÄndern Sie den Zellentyp von “Code” auf “Markdown” über das Dropdown-Menü.\nSchreiben Sie Ihren Text in Markdown, zum Beispiel:\nDies ist **fetter** Markdown-Text\nRendern Sie den Markdown-Text als formatierten Text, indem Sie Shift+Enter drücken (im Kontext von Markdown bezieht sich das Rendern auf den Prozess, bei dem der Markdown-Code in das formatierte Dokument umgewandelt wird, das in dem Webbrowser angezeigt wird.)\n\n\n\n6.2.3 Das Notebook speichern\n\nVerwenden Sie das “File”-Menü, um das Notebook zu speichern.\nBenennen Sie die Datei hello-jupyter.ipynb und speichern Sie sie im code-Verzeichnis.\n\n\n\n\n\n\n\n.ipynb-Dateien sind Dokumente, die von Jupyter Notebook erstellt werden. Diese Dateien enthalten sowohl die Eingaben (Code, Markdown-Text) als auch die Ausgaben (Code-Ausführungsergebnisse, Visualisierungen) interaktiver Sitzungen. Dieses Format ermöglicht es Ihnen, einen vollständigen und reproduzierbaren Ablauf Ihres Rechenprozesses festzuhalten, was die Zusammenarbeit und das Teilen in Datenwissenschaftsprojekten verbessert.\n\n\n\nJede .ipynb-Datei ist als JSON-Dokument strukturiert und enthält eine geordnete Liste von “Zellen”, die Code, Markdown oder reinen Text enthalten können. Diese Struktur ermöglicht es Ihnen, Code in Teilen auszuführen, frühere Ergebnisse erneut zu betrachten oder Änderungen vorzunehmen, ohne das gesamte Skript neu auszuführen, im Gegensatz zu traditionellen .py-Skripten, die sequentiell von Anfang bis Ende ausgeführt werden.",
     "crumbs": [
-      "erste-schritte/first-steps.qmd",
+      "Erste Schritte",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Jupyter Notebook</span>"
     ]
   },
@@ -236,7 +246,7 @@
     "section": "",
     "text": "7.1 Einrichtung\nUm loszulegen, erstellen Sie zuerst ein neues Jupyter-Notebook. Wenn Sie nicht sicher sind, wie das geht, können Sie diesen Leitfaden zu Jupyter Notebooks durcharbeiten. Benennen Sie Ihr Notebook hello-markdown.ipynb und speichern Sie es im Ordner code:\nFühren Sie die Zelle mit Shift+Enter aus, um den Markdown-Text zu rendern. Denken Sie daran, Ihren Fortschritt regelmäßig zu speichern.",
     "crumbs": [
-      "erste-schritte/first-steps.qmd",
+      "Erste Schritte",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Markdown</span>"
     ]
   },
@@ -247,7 +257,7 @@
     "section": "",
     "text": "Navigieren Sie zu “File &gt; Save As…” und geben Sie den Namen hello-markdown ein.\nFügen Sie in dem Notebook eine neue Zelle hinzu, indem Sie auf die Schaltfläche “+” klicken.\nÄndern Sie den Zelltyp mithilfe des Dropdown-Menüs in der Symbolleiste auf “Markdown”.",
     "crumbs": [
-      "erste-schritte/first-steps.qmd",
+      "Erste Schritte",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Markdown</span>"
     ]
   },
@@ -258,7 +268,7 @@
     "section": "7.2 Grundlegende Markdown-Syntax",
     "text": "7.2 Grundlegende Markdown-Syntax\n\n7.2.1 Überschriften\nÜberschriften strukturieren das Dokument und schaffen eine Hierarchie der Abschnitte.\n# Hauptüberschrift (H1)\n## Unterüberschrift (H2)\n### Kleinere Unterüberschrift (H3)\n\n\n7.2.2 Listen\nListen organisieren Informationen klar und prägnant.\n\nGeordnete Listen:\n1. Erster Punkt\n2. Zweiter Punkt\nUngeordnete Listen:\n- Aufzählungspunkt A\n- Aufzählungspunkt B\n\n\n\n7.2.3 Hervorhebungen\nBetonen Sie Text, um wichtige Punkte hervorzuheben.\n*Kursiv*  \n**Fett**  \n_Kursiv mit Unterstrichen_  \n__Fett mit Unterstrichen__\n\n\n7.2.4 Blockzitate\nVerwenden Sie Blockzitate, um Quellen oder wichtige Informationen zu zitieren.\n&gt; \"Dies ist ein Blockzitat.\"\n\n\n7.2.5 Tabellen\nTabellen sind entscheidend für die effiziente Organisation von Daten.\n| Spalte 1 | Spalte 2 |\n|----------|----------|\n| Zeile 1  | Wert 1   |\n\n\n7.2.6 Links und Bilder\nLinks und Bilder bereichern das Dokument und bieten zusätzlichen Kontext.\nLinks:\n[Python-Dokumentation](https://docs.python.org/)\nBilder:\n![Alt-Text](image_url_or_path)\n\n\n7.2.7 Mathematische Ausdrücke\nLaTeX-Integration ermöglicht die Darstellung komplexer mathematischer Formeln.\nInline-Gleichung:\n$E = mc^2$\n\nBlock-Gleichung:\n\n$$\n\\frac{a}{b} + \\sqrt{x}\n$$\n\n\n7.2.8 Horizontale Linien\nVerwenden Sie horizontale Linien, um Abschnitte visuell zu trennen.\n---\n\n\n7.2.9 Code-Blöcke\nPräsentieren Sie Code-Snippets mit Syntax-Hervorhebung.\n```python\nprint(\"Hallo, Python!\")\n```",
     "crumbs": [
-      "erste-schritte/first-steps.qmd",
+      "Erste Schritte",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Markdown</span>"
     ]
   },
@@ -269,7 +279,7 @@
     "section": "7.3 Weiterführendes Lernen",
     "text": "7.3 Weiterführendes Lernen\nErkunden Sie diese Ressourcen, um Ihr Verständnis von Markdown weiter zu vertiefen:\n\nInteraktives 10-minütiges Markdown-Tutorial\n\nMarkdown meistern",
     "crumbs": [
-      "erste-schritte/first-steps.qmd",
+      "Erste Schritte",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Markdown</span>"
     ]
   },
