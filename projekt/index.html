@@ -9,7 +9,7 @@
 <meta name="author" content="Jan Kirenz">
 <meta name="description" content="Programming Toolkit für Data Science, AI &amp; Analytics">
 
-<title>Data Science, AI &amp; Analytics Toolkit - 2&nbsp; Projektumgebung</title>
+<title>Data Science, AI &amp; Analytics Toolkit - Analytics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,40 +22,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -66,8 +32,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../first-steps/python-installation.html" rel="next">
-<link href="../first-steps/first-steps.html" rel="prev">
+<link href="../projekt/analytics.html" rel="next">
+<link href="../github/github-projects.html" rel="prev">
 <link href="..//images/logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -118,7 +84,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../first-steps/first-steps.html">Erste Schritte</a></li><li class="breadcrumb-item"><a href="../first-steps/project-environment.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Projektumgebung</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../projekt/index.html">Analytics</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -158,7 +124,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../first-steps/project-environment.html" class="sidebar-item-text sidebar-link active">
+  <a href="../first-steps/project-environment.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Projektumgebung</span></span></a>
   </div>
 </li>
@@ -488,7 +454,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../projekt/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../projekt/index.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Analytics</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -509,21 +475,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Inhaltsverzeichnis</h2>
-   
-  <ul>
-  <li><a href="#windows" id="toc-windows" class="nav-link active" data-scroll-target="#windows"><span class="header-section-number">2.1</span> Windows</a></li>
-  <li><a href="#macoslinux" id="toc-macoslinux" class="nav-link" data-scroll-target="#macoslinux"><span class="header-section-number">2.2</span> macOS/Linux</a></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../first-steps/first-steps.html">Erste Schritte</a></li><li class="breadcrumb-item"><a href="../first-steps/project-environment.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Projektumgebung</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Projektumgebung</span></h1>
+<h1 class="title">Analytics</h1>
 </div>
 
 
@@ -540,52 +499,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Das Organisieren Ihrer Dateien ist entscheidend für die Effizienz und Zugänglichkeit Ihrer Projekte. Zunächst erstellen wir daher einen Ordner namens <code>toolkit-lab</code> auf Ihrem Rechner und legen die Unterverzeichnisse <code>code</code> und <code>data</code> an, um Ihr Projekt strukturiert zu halten.</p>
-<p>Anstatt eine grafische Benutzeroberfläche (GUI) wie den Windows-Explorer oder den macOS Finder zu verwenden, werden wir die Befehlszeilenschnittstelle (CLI) nutzen, um dies zu erreichen.</p>
-<div class="callout callout-style-simple callout-note no-icon">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>Die Befehlszeile eröffnet eine neue Ebene der Interaktion mit Ihrem Computer. Wenn Sie sich daran gewöhnt haben, werden Sie feststellen, dass viele Aufgaben effizienter erledigt werden können als mit einer GUI.</p>
-</div>
-</div>
-</div>
-<p>Die CLI, auch bekannt als cmd, Eingabeaufforderung, Konsole oder Terminal, ist ein leistungsstarkes Werkzeug zum Einrichten Ihrer Arbeitsumgebung. Sie arbeitet über ein Programm namens <em>Shell</em>, das eine direkte Kommunikation mit dem Betriebssystem über textbasierte Eingaben ermöglicht.</p>
-<section id="windows" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="windows"><span class="header-section-number">2.1</span> Windows</h2>
-<p>Folgen Sie diesen Schritten, um das Hauptverzeichnis und die Unterverzeichnisse mit der Windows-Eingabeaufforderung zu erstellen:</p>
-<ol type="1">
-<li><p>Drücken Sie gleichzeitig die Tasten <code>Windows + R</code>, um das Ausführen-Dialogfeld zu öffnen.</p></li>
-<li><p>Geben Sie <code>cmd</code> ein und drücken Sie <code>Enter</code>, um die Eingabeaufforderung zu öffnen.</p></li>
-<li><p>Erstellen Sie einen neuen Ordner namens <code>toolkit-lab</code> (kopieren Sie diesen Code und geben Sie ihn in Ihre Eingabeaufforderung ein):</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> toolkit-lab</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>Verwenden Sie <code>cd</code> (change directory), um in das Verzeichnis <code>toolkit-lab</code> zu wechseln:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> toolkit-lab</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>Verwenden Sie <code>mkdir</code> (make directory), um die Unterverzeichnisse <code>code</code> und <code>data</code> zu erstellen:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> code data</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-</ol>
-<p>Diese Befehle richten ein Hauptverzeichnis <code>toolkit-lab</code> mit zwei Unterverzeichnissen ein: <code>code</code> für Ihre Skripte und Anwendungen und <code>data</code> zum Speichern von Datensätzen und zugehörigen Dateien.</p>
-</section>
-<section id="macoslinux" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="macoslinux"><span class="header-section-number">2.2</span> macOS/Linux</h2>
-<p>Folgen Sie diesen Schritten, um das Hauptverzeichnis und die Unterverzeichnisse mit dem Terminal in macOS oder Linux zu erstellen:</p>
-<ol type="1">
-<li><p>Um das Terminal in macOS zu öffnen, können Sie die Spotlight-Suche (<code>Cmd + Space</code>) verwenden und “Terminal” eingeben oder über <code>Programme -&gt; Dienstprogramme -&gt; Terminal</code> navigieren.</p></li>
-<li><p>Zuerst verwenden wir den Befehl pwd (“print working directory”) und drücken die Eingabetaste, um den vollständigen Pfad des aktuellen Verzeichnisses anzuzeigen. Wenn Sie das Terminal gerade geöffnet haben, sollte das aktuelle Verzeichnis Ihr Home-Verzeichnis sein (in meinem Fall <code>/Users/jankirenz</code>, da mein Benutzerkonto jankirenz heißt):</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">pwd</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>Erstellen Sie nun einen neuen Ordner namens <code>toolkit-lab</code> in dem Home-Verzeichnis (kopieren Sie diesen Code und geben Sie ihn in Ihr Terminal ein):</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> toolkit-lab</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>Verwenden Sie <code>cd</code> (change directory), um in das Verzeichnis <code>toolkit-lab</code> zu wechseln:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> toolkit-lab</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>Verwenden Sie <code>mkdir</code> (make directory), um die Unterverzeichnisse <code>code</code> und <code>data</code> zu erstellen:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> code data</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-</ol>
-<p>Diese Befehle richten ein Hauptverzeichnis <code>toolkit-lab</code> mit zwei Unterverzeichnissen ein: <code>code</code> für Ihre Skripte und Anwendungen und <code>data</code> zum Speichern von Datensätzen und zugehörigen Dateien.</p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -999,13 +914,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../first-steps/first-steps.html" class="pagination-link" aria-label="Erste Schritte">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Erste Schritte</span>
+      <a href="../github/github-projects.html" class="pagination-link" aria-label="Projects">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Projects</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../first-steps/python-installation.html" class="pagination-link" aria-label="Python">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Python</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../projekt/analytics.html" class="pagination-link" aria-label="Analytics">
+        <span class="nav-page-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">Analytics</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
