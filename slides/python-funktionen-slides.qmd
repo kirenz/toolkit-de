@@ -1,0 +1,278 @@
+---
+title: Funktionen
+lang: en
+subtitle: Subtitle
+author: Jan Kirenz
+execute:
+  eval: false
+  echo: true
+highlight-style: github
+format:
+  revealjs: 
+    toc: false
+    toc-depth: 1
+    embed-resources: false
+    theme: [dark, ../custom.scss]  
+    incremental: true
+    transition: slide
+    background-transition: fade
+    transition-speed: slow
+    code-copy: true
+    code-line-numbers: true
+    smaller: false
+    scrollable: true
+    slide-number: c
+    preview-links: auto
+    chalkboard: 
+      buttons: false
+   #logo: images/logo.png
+    footer: Jan Kirenz
+---
+
+
+[⬇️ Jupyter Notebook herunterladen](../code/python-funktionen.ipynb){download="python-funktionen.ipynb"}
+
+Funktionen helfen Ihnen, modulare, wiederverwendbare Codeblöcke zu schreiben. In diesem Abschnitt wird das Definieren, Aufrufen und Dokumentieren von Funktionen demonstriert.
+
+## Einfache Funktion
+
+Wir beginnen mit der Erstellung einer Funktion zur Berechnung des Quadrats einer Zahl.
+
+## Funktion definieren
+
+```{python}
+def square(num):
+    """Berechnen und zurückgeben des Quadrats einer Zahl."""
+    return num * num
+```
+
+Erläuterungen:
+
+1. **Funktionsdefinition**:
+   - Das Schlüsselwort `def` signalisiert den Beginn einer Funktionsdefinition.
+   - Der Name der Funktion folgt direkt danach. In diesem Fall ist der Funktionsname `square`.
+   - Die Klammern `()` enthalten die Parameterliste der Funktion. Hier gibt es einen Parameter, `num`, der eine Zahl repräsentiert, deren Quadrat berechnet werden soll.
+
+2. **Docstring**:
+   - Ein Docstring ist ein kurzer beschreibender Text, der die Funktion erklärt. Er wird zwischen dreifachen Anführungszeichen `"""` geschrieben.
+   - Der Docstring dieser Funktion lautet: `"Berechnen und zurückgeben des Quadrats einer Zahl."`
+   - Docstrings sind nützlich, um den Zweck der Funktion und ihre Funktionsweise zu dokumentieren. Sie sind besonders hilfreich für andere Programmierer/innen oder für Sie selbst, wenn Sie den Code später wieder verwenden oder ändern möchten.
+
+3. **Berechnung des Quadrats**:
+   - Die Funktion verwendet die Formel `num * num`, um das Quadrat der Zahl zu berechnen. Dies bedeutet, dass die Zahl `num` mit sich selbst multipliziert wird.
+   - Beispielsweise, wenn `num` gleich 3 ist, berechnet die Funktion `3 * 3`, was 9 ergibt.
+
+4. **Rückgabe des Ergebnisses**:
+   - Das Schlüsselwort `return` weist die Funktion an, das Ergebnis der Berechnung zurückzugeben.
+   - In diesem Fall gibt `return num * num` das berechnete Quadrat der Zahl `num` zurück.
+   - Wenn die Funktion aufgerufen wird, wird der zurückgegebene Wert an die Stelle des Funktionsaufrufs übergeben.
+
+## Funktion verwenden
+
+Beispiel für die Verwendung der Funktion:
+
+```{python}
+# Aufruf der Funktion square mit dem Argument 4
+result = square(4)
+```
+
+- Wir rufen die Funktion `square` mit dem Argument `4` auf.
+- Die Funktion berechnet das Quadrat von 4 und gibt 16 zurück.
+- Der zurückgegebene Wert wird in der Variable `result` gespeichert.
+
+
+## Ergebnis anzeigen
+
+Einfache Ausgabe des Ergebnisses mit Hilfe von `print()`:
+
+```{python}
+print(result)  # Dies wird 16 ausgeben, da 4 * 4 gleich 16 ist
+```
+
+- In diesem Code wird der Wert von `result` mit `print` ausgegeben, was 16 ist.
+
+Als Alternative dazu kann eine `print`-Funktion mit einem *f-String* verwendet werden. Dies ist eine formatierte Zeichenkette, die mit `f` vorangestellt ist und das Einfügen von Variablen innerhalb von `{}` geschweiften Klammern ermöglicht:
+
+```{python}
+print(f"Quadrat von 4: {result}")
+```
+
+Vorteile von f-Strings:
+
+- Sie bieten eine intuitive Möglichkeit, Variablen in Zeichenketten einzufügen.
+- Unterstützung für Formatierungen ist eingebaut (z.B. Runden von Dezimalstellen).
+
+## Funktion mit mehreren Parametern
+
+Funktionen können mehr als einen Parameter akzeptieren. Hier ist eine Funktion, die die Fläche eines Rechtecks berechnet:
+
+```{python}
+# Funktion zur Berechnung der Fläche eines Rechtecks
+def calculate_rectangle_area(length, width):
+    """Berechnen der Fläche eines Rechtecks anhand seiner Länge und Breite."""
+    return length * width
+```
+
+Verwendung der Funktion mit Beispielwerten:
+
+```{python}
+length = 10
+width = 5
+```
+
+- `length` und `width` sind Parameter, die die Funktion zur Berechnung der Fläche des Rechtecks verwendet.
+
+Funktion verwenden:
+
+```{python}
+area = calculate_rectangle_area(length, width)
+```
+
+- `calculate_rectangle_area` wird mit bestimmten Werten aufgerufen.
+
+Ergebnis anzeigen:
+
+```{python}
+print(f"Rechteck mit Länge {length} und Breite {width} hat eine Fläche von {area}")
+```
+
+- Der f-String innerhalb der `print`-Anweisung liefert eine Ausgabe, die sowohl die Eingabewerte als auch das berechnete Ergebnis zeigt.
+
+## Standardparameter
+
+Standardwerte für Parameter werden verwendet, wenn keine Argumente bereitgestellt werden.
+
+```{python}
+# Funktion mit einem Standardparameterwert
+def greet(name="zusammen"):
+    """Begrüßen einer Person mit ihrem Namen oder mit 'Hallo zusammen' als Standard."""
+    print(f"Hallo {name}!")
+```
+
+- Der Parameter `name="zusammen"` liefert einen Standardwert.
+
+
+Aufruf der Funktion mit einem bestimmten Namen:
+
+```{python}
+greet("Alice")
+```
+
+- Beim Aufruf von `greet("Alice")` wird "Hallo Alice!" ausgegeben.
+
+
+Aufruf der Funktion ohne Argument (verwendet den Standardwert):
+
+```{python}
+greet()
+```
+
+- Der Aufruf von `greet()` ohne Argumente verwendet den Standardwert "zusammen".
+
+
+## Lambda-Funktionen
+
+Lambda-Funktionen sind kleine, anonyme Funktionen in Python, die besonders nützlich sind für kurze Operationen oder wenn Funktionen als Argumente an andere Funktionen übergeben werden sollen. Sie sind eine kompakte Art, Funktionen zu schreiben, ohne sie zwingend mit einem Namen zu versehen. 
+
+:::{.callout-note}
+Lambda-Funktionen sind einfache Funktionen, die in einer einzigen Zeile definiert werden können. Sie werden mit dem Schlüsselwort `lambda` erstellt. Diese Funktionen können beliebig viele Argumente haben, aber nur einen Ausdruck, der ausgewertet und zurückgegeben wird.
+:::
+
+## Beispiel-Funktion
+
+Hier ist ein einfaches Beispiel für eine Lambda-Funktion, die zwei Zahlen addiert:
+
+```{python}
+# Lambda-Funktion zum Addieren zweier Zahlen
+add = lambda x, y: x + y
+```
+
+- `lambda x, y:` definiert die Lambda-Funktion mit den Argumenten `x` und `y`.
+- Der Ausdruck `x + y` wird berechnet und als Ergebnis zurückgegeben.
+
+Nachdem wir die Lambda-Funktion definiert haben, können wir sie wie jede andere Funktion aufrufen. Hier ist ein Beispiel, wie man die oben definierte `add` Lambda-Funktion verwendet:
+
+```{python}
+# Aufrufen der Lambda-Funktion mit den Argumenten 3 und 5
+result = add(3, 5)
+```
+
+Um das Ergebnis zu sehen, können wir es ausdrucken:
+
+```{python}
+# Ausgabe des Ergebnisses
+print(f"Summe von 3 und 5: {result}")
+```
+
+## Lambda-Funktion mit map und filter
+
+Lambda-Funktionen sind besonders nützlich, wenn Sie eine Funktion nur vorübergehend benötigen, zum Beispiel als Argument für eine andere Funktion wie `map()` und `filter()`.
+
+- Die `map`-Funktion wird verwendet, um eine gegebene Funktion auf alle Elemente einer Liste oder einer anderen iterierbaren Sequenz anzuwenden und ein neues Objekt mit den Ergebnissen zurückzugeben.
+
+- Die `filter`-Funktion wird verwendet, um Elemente aus einer iterierbaren Sequenz herauszufiltern, die eine bestimmte Bedingung erfüllen. Die Bedingung wird durch eine Funktion bestimmt, die entweder True oder False zurückgibt.
+
+Hier sind zwei Beispiele, in denen Lambda-Funktionen nützlich sein können:
+
+1. **In Kombination mit map()**:
+   ```{python}
+   # Lambda-Funktion zum Quadrieren von Zahlen
+   numbers = [1, 2, 3, 4]
+   squared_numbers = list(map(lambda x: x ** 2, numbers))
+   print(squared_numbers)  # Ausgabe: [1, 4, 9, 16]
+   ```
+
+2. **In Kombination mit filter()**:
+   ```{python}
+   # Lambda-Funktion zum Filtern von geraden Zahlen
+   numbers = [1, 2, 3, 4, 5, 6]
+   even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
+   print(even_numbers)  # Ausgabe: [2, 4, 6]
+   ```
+
+
+Lambda-Funktionen sind also eine flexible und effiziente Möglichkeit, kleine Funktionen schnell und unkompliziert zu definieren.
+
+## Lambda-Funktionen mit DataFrames
+
+Lambda-Funktionen sind auch dann hilfreich, wenn Sie eine benutzerdefinierte Transformation auf jede Zeile oder Spalte eines DataFrames anwenden möchten.
+
+Zum Beispiel, wenn Sie Zahlen basierend auf bestimmten Bedingungen klassifizieren möchten, kann eine Lambda-Funktion helfen.
+
+Beispielcode:
+
+```{python}
+# Erstellen eines DataFrame und Verwendung einer Lambda-Funktion für eine benutzerdefinierte Klassifizierung
+import pandas as pd
+
+# Beispiel-DataFrame
+data = {"Numbers": [1, 2, 3, 4, 5, 15, 20, 25]}
+df = pd.DataFrame(data)
+
+# Definieren einer benutzerdefinierten Funktion zur Klassifizierung von Zahlen
+def classify_number(num):
+    if num < 10:
+        return "Einstellig"
+    elif num < 20:
+        return "Teenager"
+    else:
+        return "Zwanzig oder mehr"
+
+# Anwenden der benutzerdefinierten Funktion mit einer Lambda-Funktion zur Erstellung einer neuen Spalte
+df["Klassifizierung"] = df["Numbers"].apply(lambda x: classify_number(x))
+
+# Anzeigen des DataFrame
+df
+```
+
+Erläuterung:
+
+- Der DataFrame `df` wird mit einer Spalte `Numbers` erstellt, die eine Reihe von Werten enthält.
+- Die Funktion `classify_number` definiert benutzerdefinierte Klassifizierungskriterien:
+  - Weniger als 10 ist "Einstellig".
+  - Weniger als 20, aber nicht unter 10 ist "Teenager".
+  - Werte ab 20 sind "Zwanzig oder mehr."
+- Die Methode `apply` verwendet eine Lambda-Funktion, um jeden Wert von `Numbers` durch `classify_number` zu übergeben.
+- Das Ergebnis ist eine neue Spalte `Klassifizierung`, die die kategorisierten Werte enthält.
+
+In diesem Fall ist die Verwendung einer Lambda-Funktion mit `apply` vorteilhaft, um den DataFrame schnell zu transformieren, basierend auf einer Funktion, die sonst das Durchlaufen jedes Wertes einzeln erfordern würde.
