@@ -32,7 +32,7 @@ In den folgenden Schritten wird die Installation von MySQL und dem Tool MySQL Wo
    - Besuchen Sie die [MySQL Downloadseite](https://dev.mysql.com/downloads/mysql/) und wählen Sie macOS als Betriebssystem.
    - Laden Sie die DMG-Datei für macOS herunter (in der Version **8.0.36.**)
 
-2.** MySQL installieren**
+2. **MySQL installieren**
    - Öffnen Sie die heruntergeladene DMG-Datei und folgen Sie den Installationsanweisungen auf dem Bildschirm.
 
 Nun installieren Sie MySQL Workbench
