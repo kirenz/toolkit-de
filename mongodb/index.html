@@ -9,7 +9,7 @@
 <meta name="author" content="Jan Kirenz">
 <meta name="description" content="Programming Toolkit für Data Science, AI &amp; Analytics">
 
-<title>Data Science, AI &amp; Analytics Toolkit - MySQL</title>
+<title>Data Science, AI &amp; Analytics Toolkit - MongoDB</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,8 +32,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../mysql/mysql-installation.html" rel="next">
-<link href="../datenbanken/nosql.html" rel="prev">
+<link href="../mongodb/mongodb-installation.html" rel="next">
+<link href="../postgres/postgres-python.html" rel="prev">
 <link href="..//images/logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -84,7 +84,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../mysql/mysql.html">MySQL</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../mongodb/index.html">MongoDB</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -115,8 +115,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../first-steps/first-steps.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Erste Schritte</span></a>
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">erste-schritte/first-steps.qmd</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -124,37 +124,37 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../first-steps/project-environment.html" class="sidebar-item-text sidebar-link">
+  <a href="../erste-schritte/project-environment.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Projektumgebung</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../first-steps/python-installation.html" class="sidebar-item-text sidebar-link">
+  <a href="../erste-schritte/python-installation.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Python</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../first-steps/python-idle.html" class="sidebar-item-text sidebar-link">
+  <a href="../erste-schritte/python-idle.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Python IDLE</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../first-steps/anaconda-installation.html" class="sidebar-item-text sidebar-link">
+  <a href="../erste-schritte/anaconda-installation.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Anaconda</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../first-steps/jupyter-notebook.html" class="sidebar-item-text sidebar-link">
+  <a href="../erste-schritte/jupyter-notebook.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Jupyter Notebook</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../first-steps/markdown.html" class="sidebar-item-text sidebar-link">
+  <a href="../erste-schritte/markdown.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Markdown</span></span></a>
   </div>
 </li>
@@ -162,7 +162,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../python/python.html" class="sidebar-item-text sidebar-link">
+            <a href="../python/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Python</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -221,7 +221,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../vscode/visual-studio-code.html" class="sidebar-item-text sidebar-link">
+            <a href="../vscode/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Visual Studio Code</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -250,8 +250,8 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../daten/daten.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Daten</span></a>
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text">daten/index.qmd</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -285,7 +285,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../datenbanken/datenbanken.html" class="sidebar-item-text sidebar-link">
+            <a href="../datenbanken/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Datenbanken</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -308,8 +308,8 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../mysql/mysql.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">MySQL</span></a>
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">
+ <span class="menu-text">mysql/index.qmd</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -337,7 +337,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../postgres/postgres.html" class="sidebar-item-text sidebar-link">
+            <a href="../postgres/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">PostgreSQL</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -372,7 +372,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../mongodb/mongodb.html" class="sidebar-item-text sidebar-link">
+            <a href="../mongodb/index.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">MongoDB</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -413,7 +413,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../github/github.html" class="sidebar-item-text sidebar-link">
+            <a href="../github/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">GitHub</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -475,14 +475,21 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Inhaltsverzeichnis</h2>
+   
+  <ul>
+  <li><a href="#hauptmerkmale-von-mongodb" id="toc-hauptmerkmale-von-mongodb" class="nav-link active" data-scroll-target="#hauptmerkmale-von-mongodb">Hauptmerkmale von MongoDB</a></li>
+  <li><a href="#mongodb-shell-mongosh" id="toc-mongodb-shell-mongosh" class="nav-link" data-scroll-target="#mongodb-shell-mongosh">MongoDB Shell (mongosh)</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">MySQL</h1>
+<h1 class="title">MongoDB</h1>
 </div>
 
 
@@ -499,17 +506,28 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>MySQL, das sowohl als “My S-Q-L” als auch als “My Sequel” ausgesprochen wird, ist ein relationales Datenbankverwaltungssystem (RDBMS). Dieses System wird genutzt, um Daten in relationalen Datenbanken zu verwalten. Es verwendet die Structured Query Language (SQL) für verschiedene Aufgaben wie Datenverwaltung, Datenmanipulation und das Abfragen von Daten.</p>
-<p>MySQL Workbench bietet eine grafische Oberfläche für die Datenbankverwaltung und SQL-Entwicklung. Es integriert visuelle Werkzeuge für die Datenmodellierung, SQL-Entwicklung und umfassende Datenbankverwaltung.</p>
-<p>Die MySQL Workbench bietet verschiedene Werkzeuge zur Erleichterung der Datenbankverwaltung:</p>
+<p><strong>MongoDB</strong> ist eine NoSQL-Datenbank, die für ihre Flexibilität und Skalierbarkeit bekannt ist. Sie speichert Daten in JSON-ähnlichen Dokumenten, was es einfach macht, komplexe Datenstrukturen zu handhaben. Diese Strukturierung ermöglicht es, hierarchische Beziehungen, Arrays und andere komplexe Datentypen ohne die Einschränkungen eines starren, tabellenbasierten Schemas darzustellen. Dadurch können Änderungen am Datenmodell schneller und effizienter umgesetzt werden.</p>
+<section id="hauptmerkmale-von-mongodb" class="level2">
+<h2 class="anchored" data-anchor-id="hauptmerkmale-von-mongodb">Hauptmerkmale von MongoDB</h2>
+<p><strong>Flexibilität</strong>: MongoDB verwendet ein dokumentenorientiertes Modell, bei dem die Daten in Dokumenten gespeichert werden, die ähnliche Strukturen wie JSON haben, technisch aber im BSON-Format (Binary JSON) gespeichert werden. Dies ermöglicht eine hohe Flexibilität bei der Strukturierung der Daten, da jedes Dokument unterschiedliche Felder und Datentypen enthalten kann.</p>
+<p><strong>Skalierbarkeit</strong>: MongoDB ist darauf ausgelegt, horizontal zu skalieren, was bedeutet, dass die Datenbank einfach auf mehrere Server verteilt werden kann. Dies wird durch Sharding erreicht, eine Methode zur Verteilung von Daten über mehrere Maschinen, um sowohl die Speicherkapazität als auch die Verarbeitungsgeschwindigkeit zu erhöhen. MongoDB unterstützt auch Replikation, wodurch Daten über mehrere Server repliziert werden, um Ausfallsicherheit und hohe Verfügbarkeit sicherzustellen.</p>
+<p><strong>Leistungsfähigkeit</strong>: Durch den Verzicht auf JOIN-Operationen und die Möglichkeit, Daten in einem einzigen Dokument zu speichern, kann MongoDB oft schnellere Schreib- und Leseoperationen durchführen als relationale Datenbanken. Zudem ermöglicht die Indexierung auf Felder innerhalb von Dokumenten eine effiziente Suche und Abfrage der Daten.</p>
+<p><strong>Entwicklerfreundlich</strong>: MongoDB bietet Treiber für eine Vielzahl von Programmiersprachen, darunter Python, JavaScript, Java, C#, und viele mehr.</p>
+</section>
+<section id="mongodb-shell-mongosh" class="level2">
+<h2 class="anchored" data-anchor-id="mongodb-shell-mongosh">MongoDB Shell (mongosh)</h2>
+<p>Für die Arbeit mit der Datenbank nutzen wir die <strong>MongoDB Shell</strong> (<code>mongosh</code>). Diese bietet eine schnelle und intuitive Möglichkeit, sich mit MongoDB zu verbinden und zu arbeiten. Mit <code>mongosh</code> können wir Daten abfragen, Einstellungen konfigurieren und verschiedene Aktionen durchführen.</p>
+<p>Die Hauptfunktionen von mongosh umfassen:</p>
 <ul>
-<li><strong>Toolbar</strong>: Oben finden Sie die Toolbar, die Schaltflächen wie das neue Abfrage-Tab, Abfrage ausführen und andere enthält.</li>
-<li><strong>Seitenleiste</strong>: Links bietet die Seitenleiste Zugriff auf Instanzverwaltung, Leistungsüberwachung und mehr.</li>
-<li><strong>Abfrage-Tab</strong>: Hier schreiben und führen Sie Ihre SQL-Abfragen aus. Sie können ein neues Abfrage-Tab öffnen, indem Sie auf das “+”-Symbol neben den vorhandenen Tabs klicken.</li>
-<li><strong>Ausgabebereich</strong>: Unterhalb des Abfrage-Editors zeigt dieser Bereich die Ergebnisse der ausgeführten Abfragen oder Nachrichten vom Datenbankserver an.</li>
+<li><strong>Syntaxhervorhebung</strong>: Der Shell unterstützt Syntaxhervorhebung, die den Code lesbarer macht und die Erkennung von Fehlern erleichtert.</li>
+<li><strong>Intelligente Autovervollständigung</strong>: Diese Funktion hilft bei der Eingabe von Befehlen und Parametern, indem sie Vorschläge macht und somit die Produktivität erhöht.</li>
+<li><strong>Kontextbezogene Hilfe</strong>: <code>mongosh</code> bietet direkte Hilfe zu Befehlen und Optionen, was besonders nützlich für Einsteiger ist.</li>
+<li><strong>Fehlermeldungen</strong>: Klare und präzise Fehlermeldungen helfen dabei, Probleme schnell zu identifizieren und zu beheben.</li>
 </ul>
+<p>Um mit MongoDB zu beginnen, müssen wir zunächst den MongoDB-Dienst starten und dann die MongoDB Shell öffnen. Sobald die Shell geöffnet ist, können wir grundlegende Befehle ausführen, um Datenbanken und Sammlungen zu erstellen, Daten einzufügen und Abfragen auszuführen.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -923,13 +941,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../datenbanken/nosql.html" class="pagination-link" aria-label="NoSQL">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">NoSQL</span></span>
+      <a href="../postgres/postgres-python.html" class="pagination-link" aria-label="Python-Integration">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Python-Integration</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../mysql/mysql-installation.html" class="pagination-link" aria-label="Installation">
-        <span class="nav-page-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Installation</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../mongodb/mongodb-installation.html" class="pagination-link" aria-label="Installation">
+        <span class="nav-page-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Installation</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
