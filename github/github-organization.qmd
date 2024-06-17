@@ -8,16 +8,16 @@ Ihr Team kann auf GitHub mithilfe eines Organisationskontos zusammenarbeiten, da
 
 Schritt-für-Schritt-Anleitung:
 
-1. **Navigieren Sie zu GitHub**:
+1. Navigieren Sie zu GitHub:
     Gehen Sie zu [GitHub Organizations](https://github.com/organizations/plan).
 
-2. **Klicken Sie auf 'Neue Organisation'**:
+2. Klicken Sie auf 'Neue Organisation':
     Sie werden aufgefordert, einen Plan auszuwählen. Wählen Sie zunächst den kostenlosen Plan.
 
-3. **Füllen Sie die Organisationsdetails aus**:
+3. Füllen Sie die Organisationsdetails aus:
     Geben Sie einen eindeutigen Namen für Ihre Organisation und eine E-Mail-Adresse für Benachrichtigungen an.
 
-4. **Laden Sie Ihr Team ein**:
+4. Laden Sie Ihr Team ein:
     Sobald Ihre Organisation erstellt ist, können Sie damit beginnen, Mitglieder einzuladen. Erfahren Sie im nächsten Abschnitt, wie Sie andere Teammitglieder zu einer Organisation einladen.
 
 ## Mitglieder verwalten
@@ -26,13 +26,13 @@ Nach der Erstellung Ihrer Organisation ist die Verwaltung der Mitglieder entsche
 
 Mitglieder einladen:
 
-1. **Gehen Sie zu Ihrer Organisationsseite**:
+1. Gehen Sie zu Ihrer Organisationsseite:
     Klicken Sie auf Ihr Profilbild oben rechts, dann auf Ihre Organisationen und wählen Sie Ihre neue Organisation aus.
 
-2. **Navigieren Sie zum Tab 'Personen'**:
+2. Navigieren Sie zum Tab 'Personen':
     Klicken Sie auf 'Mitglied einladen' und geben Sie den Benutzernamen oder die E-Mail-Adresse der Person ein, die Sie einladen möchten.
 
-3. **Rollen und Berechtigungen festlegen**:
+3. Rollen und Berechtigungen festlegen:
     Weisen Sie Rollen wie Eigentümer, Mitglied oder Abrechnungsmanager zu, um Zugriffsebenen zu steuern.
 
 Erfahren Sie mehr über das [Verwalten von Mitgliedern und Teams](https://docs.github.com/en/organizations/managing-membership-in-your-organization) in Ihrer Organisation.
