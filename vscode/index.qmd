@@ -1,0 +1,9 @@
+# Visual Studio Code {#sec-vscode}
+
+Visual Studio Code (VS Code) ist ein Open-Source-Editor, der von Microsoft entwickelt wurde.
+
+:::{.callout-note}
+Obwohl VS Code nahezu jede Programmieraufgabe bewältigen kann, ist es besonders in der Python-Community aufgrund seiner umfangreichen Python-spezifischen Funktionen und Erweiterungen beliebt.
+:::
+
+Die Wahl der richtigen Entwicklungsumgebung kann die Produktivität und Effizienz des Workflows erheblich beeinflussen. In den folgenden Abschnitten werden wir behandeln, wie man Visual Studio Code installiert und konfiguriert, um Ihren Entwicklungsworkflow zu optimieren.
