@@ -14,7 +14,7 @@ Um loszulegen, erstellen Sie zuerst ein neues Jupyter-Notebook. Wenn Sie nicht s
 
 Führen Sie die Zelle mit `Shift+Enter` aus, um den Markdown-Text zu rendern. Denken Sie daran, Ihren Fortschritt regelmäßig zu speichern.
 
-## Grundlegende Markdown-Syntax
+## Markdown-Syntax
 
 ### Überschriften
 
