@@ -822,13 +822,53 @@
     ]
   },
   {
+    "objectID": "daten/index.html",
+    "href": "daten/index.html",
+    "title": "Daten",
+    "section": "",
+    "text": "Strukturierte Daten\nStrukturierte Daten sind Daten, die in einem festen Format organisiert sind und leicht in Tabellenform dargestellt werden können. Diese Daten sind typischerweise in relationalen Datenbanken oder Tabellenkalkulationen gespeichert. Strukturierte Daten sind durch ihre klare Struktur leicht zu durchsuchen und zu analysieren.\nBeispiele für strukturierte Daten:\nMerkmale strukturierter Daten:",
+    "crumbs": [
+      "Daten"
+    ]
+  },
+  {
+    "objectID": "daten/index.html#strukturierte-daten",
+    "href": "daten/index.html#strukturierte-daten",
+    "title": "Daten",
+    "section": "",
+    "text": "CSV-Dateien\nExcel-Tabellen\nTabellen in relationalen Datenbanken (z. B. SQL-Datenbanken)\n\n\n\nFeste Datenschemata (Spalten und Datentypen sind definiert)\nEinfach zu durchsuchen und zu filtern\nEindeutige Datenbeziehungen (z. B. Fremdschlüssel in relationalen Datenbanken)",
+    "crumbs": [
+      "Daten"
+    ]
+  },
+  {
+    "objectID": "daten/index.html#teilweise-strukturierte-daten",
+    "href": "daten/index.html#teilweise-strukturierte-daten",
+    "title": "Daten",
+    "section": "Teilweise strukturierte Daten",
+    "text": "Teilweise strukturierte Daten\nTeilweise strukturierte Daten sind Daten, die nicht in ein festes Schema passen, aber dennoch eine gewisse Struktur aufweisen. Diese Daten sind flexibler als strukturierte Daten und können in Formaten wie JSON vorliegen. Teilweise strukturierte Daten werden häufig für den Datenaustausch zwischen Systemen verwendet.\nBeispiele für teilweise strukturierte Daten:\n\nJSON-Dateien\nPython Dictionary\n\nMerkmale teilweise strukturierter Daten:\n\nFlexibles Schema (Felder und Strukturen können variieren)\nHierarchische oder baumartige Struktur\nLeicht menschen- und maschinenlesbar",
+    "crumbs": [
+      "Daten"
+    ]
+  },
+  {
+    "objectID": "daten/index.html#unstrukturierte-daten",
+    "href": "daten/index.html#unstrukturierte-daten",
+    "title": "Daten",
+    "section": "Unstrukturierte Daten",
+    "text": "Unstrukturierte Daten\nUnstrukturierte Daten sind Daten, die keine feste Struktur oder kein definiertes Schema haben. Diese Daten können in verschiedenen Formaten vorliegen und umfassen oft Multimedia-Inhalte. Unstrukturierte Daten sind schwer zu analysieren, erfordern daher spezielle Techniken und Tools, um nützliche Informationen daraus zu gewinnen.\nBeispiele für unstrukturierte Daten:\n\nTextdateien (z. B. E-Mails, Dokumente)\nBilder (z. B. JPEG, PNG)\nVideos (z. B. MP4, AVI)\nAudiodateien (z. B. MP3, WAV)\n\nMerkmale unstrukturierter Daten:\n\nKeine festgelegte Struktur oder Schema\nVielfältige Formate und Typen\nErfordert spezialisierte Techniken zur Analyse (z. B. Bild- und Spracherkennung)",
+    "crumbs": [
+      "Daten"
+    ]
+  },
+  {
     "objectID": "daten/dictionary.html",
     "href": "daten/dictionary.html",
     "title": "19  Dictionaries",
     "section": "",
     "text": "19.1 Erstellung und Zugriff",
     "crumbs": [
-      "daten/index.qmd",
+      "Daten",
       "<span class='chapter-number'>19</span>  <span class='chapter-title'>Dictionaries</span>"
     ]
   },
@@ -839,7 +879,7 @@
     "section": "",
     "text": "19.1.1 Erstellung eines Dictionary\nEin Dictionary kann durch einfache Zuweisung von Schlüssel-Wert-Paaren erstellt werden:\n\nperson = {\n    \"Name\": \"Anna\",\n    \"Alter\": 30,\n    \"Stadt\": \"Hamburg\"\n}\n\nHier wird ein Dictionary namens person erstellt, das die Daten einer Person enthält. Die Schlüssel sind “Name”, “Alter” und “Stadt”, und die entsprechenden Werte sind “Anna”, 30 und “Hamburg”.\n\n\n19.1.2 Zugriff auf Werte\nUm auf einen Wert in einem Dictionary zuzugreifen, verwenden Sie den entsprechenden Schlüssel:\n\nname = person[\"Name\"]\nprint(name)  # Ausgabe: Anna\n\nAnna\n\n\nIn diesem Beispiel wird der Wert des Schlüssels “Name” aus dem Dictionary person abgerufen und in der Variablen name gespeichert. Anschließend wird der Wert “Anna” ausgegeben.",
     "crumbs": [
-      "daten/index.qmd",
+      "Daten",
       "<span class='chapter-number'>19</span>  <span class='chapter-title'>Dictionaries</span>"
     ]
   },
@@ -850,7 +890,7 @@
     "section": "19.2 Hinzufügen und Entfernen von Elementen",
     "text": "19.2 Hinzufügen und Entfernen von Elementen\n\n19.2.1 Hinzufügen von Elementen\nUm ein neues Schlüssel-Wert-Paar zu einem Dictionary hinzuzufügen, verwenden Sie die folgende Syntax:\n\nperson[\"Beruf\"] = \"Ingenieur\"\nprint(person)\n\n{'Name': 'Anna', 'Alter': 30, 'Stadt': 'Hamburg', 'Beruf': 'Ingenieur'}\n\n\nNach dem Hinzufügen sieht das Dictionary person wie folgt aus:\n{\n    \"Name\": \"Anna\",\n    \"Alter\": 30,\n    \"Stadt\": \"Hamburg\",\n    \"Beruf\": \"Ingenieur\"\n}\nDas neue Schlüssel-Wert-Paar “Beruf”: “Ingenieur” wurde dem Dictionary hinzugefügt.\n\n\n19.2.2 Entfernen von Elementen\nUm ein Schlüssel-Wert-Paar aus einem Dictionary zu entfernen, verwenden Sie die Methode pop() oder das del-Schlüsselwort:\n\n# Entfernen mit pop()\nberuf = person.pop(\"Beruf\")\nprint(beruf)  # Ausgabe: Ingenieur\nprint(person)\n\n# Entfernen mit del\ndel person[\"Stadt\"]\nprint(person)\n\nIngenieur\n{'Name': 'Anna', 'Alter': 30, 'Stadt': 'Hamburg'}\n{'Name': 'Anna', 'Alter': 30}\n\n\nNach dem Entfernen sieht das Dictionary person wie folgt aus:\n{\n    \"Name\": \"Anna\",\n    \"Alter\": 30\n}\nDas Schlüssel-Wert-Paar “Beruf”: “Ingenieur” wurde mit pop() entfernt, und “Stadt”: “Hamburg” wurde mit del entfernt.",
     "crumbs": [
-      "daten/index.qmd",
+      "Daten",
       "<span class='chapter-number'>19</span>  <span class='chapter-title'>Dictionaries</span>"
     ]
   },
@@ -861,7 +901,7 @@
     "section": "19.3 Iterieren durch ein Dictionary",
     "text": "19.3 Iterieren durch ein Dictionary\nEs gibt verschiedene Möglichkeiten, durch ein Dictionary zu iterieren:\n\n19.3.1 Iterieren durch Schlüssel\n\nfor key in person:\n    print(key)\n\nName\nAlter\n\n\n\n\n19.3.2 Iterieren durch Werte\n\nfor value in person.values():\n    print(value)\n\nAnna\n30\n\n\n\n\n19.3.3 Iterieren durch Schlüssel-Wert-Paare\n\nfor key, value in person.items():\n    print(f\"{key}: {value}\")\n\nName: Anna\nAlter: 30\n\n\n\n\n\n\n\n\nAusführliche Erklärung\n\n\n\n\n\n\nIterieren durch Schlüssel:\n\nfor key in person:\n    print(key)\nHier wird durch die Schlüssel des Dictionary person iteriert und jeder Schlüssel wird ausgegeben.\n\nIterieren durch Werte:\n\nfor value in person.values():\n    print(value)\nHier wird durch die Werte des Dictionary person iteriert und jeder Wert wird ausgegeben.\n\nIterieren durch Schlüssel-Wert-Paare:\n\nfor key, value in person.items():\n    print(f\"{key}: {value}\")\nHier wird durch die Schlüssel-Wert-Paare des Dictionary person iteriert und jedes Paar wird im Format Schlüssel: Wert ausgegeben.",
     "crumbs": [
-      "daten/index.qmd",
+      "Daten",
       "<span class='chapter-number'>19</span>  <span class='chapter-title'>Dictionaries</span>"
     ]
   },
@@ -872,7 +912,7 @@
     "section": "19.4 Anwendung von Dictionaries in der Datenanalyse",
     "text": "19.4 Anwendung von Dictionaries in der Datenanalyse\nDictionaries sind in der Datenanalyse besonders nützlich, wenn es darum geht, Daten zu strukturieren und darauf zuzugreifen. In Kombination mit Bibliotheken wie Pandas können Dictionaries verwendet werden, um DataFrames zu erstellen und zu manipulieren.\n\n19.4.1 Erstellung eines DataFrame aus einem Dictionary\n\nimport pandas as pd\n\ndaten = {\n    \"Name\": [\"Max\", \"Anna\", \"Tom\"],\n    \"Alter\": [24, 30, 22],\n    \"Stadt\": [\"Berlin\", \"Hamburg\", \"München\"]\n}\n\ndf = pd.DataFrame(daten)\nprint(df)\n\n   Name  Alter    Stadt\n0   Max     24   Berlin\n1  Anna     30  Hamburg\n2   Tom     22  München\n\n\nIn diesem Beispiel wird ein Dictionary daten erstellt, das Listen von Werten enthält. Diese Listen werden verwendet, um einen Pandas DataFrame zu erstellen. Der resultierende DataFrame df sieht wie folgt aus:\n   Name  Alter    Stadt\n0   Max     24   Berlin\n1  Anna     30  Hamburg\n2   Tom     22  München\nDer DataFrame enthält drei Spalten: “Name”, “Alter” und “Stadt”, entsprechend den Schlüsseln im Dictionary. Jede Zeile im DataFrame repräsentiert einen Datensatz (eine Person) und jede Spalte repräsentiert eine Eigenschaft dieser Datensätze.",
     "crumbs": [
-      "daten/index.qmd",
+      "Daten",
       "<span class='chapter-number'>19</span>  <span class='chapter-title'>Dictionaries</span>"
     ]
   },
@@ -883,7 +923,7 @@
     "section": "19.5 Zusammenfassung",
     "text": "19.5 Zusammenfassung\nDictionaries sind eine vielseitige und effiziente Datenstruktur in Python, die es ermöglicht, Daten in Form von Schlüssel-Wert-Paaren zu speichern und schnell darauf zuzugreifen. Sie sind besonders nützlich in der Datenanalyse, wenn es darum geht, strukturierte Daten zu organisieren und zu manipulieren. Durch die Kombination von Dictionaries mit leistungsstarken Bibliotheken wie Pandas können komplexe Datenanalysen und -manipulationen einfach und effizient durchgeführt werden.",
     "crumbs": [
-      "daten/index.qmd",
+      "Daten",
       "<span class='chapter-number'>19</span>  <span class='chapter-title'>Dictionaries</span>"
     ]
   },
@@ -894,7 +934,7 @@
     "section": "",
     "text": "20.1 Excel und Google Sheets\nExcel-Tabellen und Google Sheets können leicht in das CSV-Format überführt werden. Dies ist besonders nützlich, wenn Sie Daten in einem leicht zugänglichen und plattformunabhängigen Format speichern möchten.",
     "crumbs": [
-      "daten/index.qmd",
+      "Daten",
       "<span class='chapter-number'>20</span>  <span class='chapter-title'>CSV</span>"
     ]
   },
@@ -905,7 +945,7 @@
     "section": "",
     "text": "20.1.1 Excel-Tabellen in CSV konvertieren\nIn Microsoft Excel können Sie eine Tabelle als CSV-Datei speichern, indem Sie folgende Schritte ausführen:\n\nÖffnen Sie die Excel-Datei.\nKlicken Sie auf “Datei” und wählen Sie “Speichern unter”.\nWählen Sie den Speicherort und den Dateinamen.\nWählen Sie im Dropdown-Menü “Dateityp” die Option “CSV (Trennzeichen-getrennt) (*.csv)” aus.\nKlicken Sie auf “Speichern”.\n\nDiese Konvertierungen ermöglichen es Ihnen, Daten aus Excel-Tabellen einfach in Ihre Python-Projekte zu integrieren und weiterzuverarbeiten.\n\n\n20.1.2 Google Sheets in CSV konvertieren\nIn Google Sheets können Sie eine Tabelle als CSV-Datei exportieren, indem Sie folgende Schritte ausführen:\n\nÖffnen Sie das Google Sheet.\nKlicken Sie auf “Datei” in der oberen Menüleiste.\nWählen Sie “Download” und dann “Comma-separated values (.csv, aktuelles Blatt)”.\nDie CSV-Datei wird auf Ihren Computer heruntergeladen.\n\nDiese Konvertierungen ermöglichen es Ihnen, Daten aus Google Sheets einfach in Ihre Python-Projekte zu integrieren und weiterzuverarbeiten.",
     "crumbs": [
-      "daten/index.qmd",
+      "Daten",
       "<span class='chapter-number'>20</span>  <span class='chapter-title'>CSV</span>"
     ]
   },
@@ -916,7 +956,7 @@
     "section": "20.2 CSV in Python",
     "text": "20.2 CSV in Python\nWir verwenden die Bibliothek Pandas, um CSV-Daten in Python zu erstellen oder einzulesen.\n\n20.2.1 Erstellung\n\nimport pandas as pd\n\n# Daten erstellen\ndaten = {\n    \"Name\": [\"Max\", \"Anna\", \"Tom\"],\n    \"Alter\": [24, 30, 22],\n    \"Stadt\": [\"Berlin\", \"Hamburg\", \"München\"]\n}\n\ndf = pd.DataFrame(daten)\n\n# CSV-Datei speichern\ndf.to_csv('daten.csv', index=False)\n\nIn diesem Code-Snippet wird ein DataFrame in Pandas erstellt und anschließend als CSV-Datei gespeichert.\n\n\n\n\n\n\nAusführliche Erklärung\n\n\n\n\n\n\nImportieren der Pandas-Bibliothek\n\nimport pandas as pd\nDie pandas-Bibliothek wird importiert. Pandas ist eine leistungsstarke Bibliothek für die Datenmanipulation und -analyse in Python. Sie bietet Datenstrukturen wie DataFrames, die für die Arbeit mit tabellarischen Daten sehr nützlich sind.\n\nErstellen eines Daten-Dictionaries\n\ndaten = {\n    \"Name\": [\"Max\", \"Anna\", \"Tom\"],\n    \"Alter\": [24, 30, 22],\n    \"Stadt\": [\"Berlin\", \"Hamburg\", \"München\"]\n}\nHier wird ein Dictionary namens daten erstellt. Dieses Dictionary enthält drei Schlüssel: “Name”, “Alter” und “Stadt”. Jeder Schlüssel ist einer Liste von Werten zugeordnet:\n\n“Name”: Liste der Namen [“Max”, “Anna”, “Tom”]\n“Alter”: Liste der Alter [24, 30, 22]\n“Stadt”: Liste der Städte [“Berlin”, “Hamburg”, “München”]\n\nDieses Dictionary repräsentiert eine tabellarische Struktur, bei der jede Liste eine Spalte der Tabelle darstellt.\n\nErstellen eines DataFrame\n\ndf = pd.DataFrame(daten)\nDas Dictionary daten wird in einen Pandas DataFrame konvertiert. Ein DataFrame ist eine zweidimensionale, tabellarische Datenstruktur, die aus Zeilen und Spalten besteht. In diesem Fall enthält der DataFrame drei Spalten: “Name”, “Alter” und “Stadt”, entsprechend den Schlüsseln im Dictionary.\nDer resultierende DataFrame df sieht wie folgt aus:\n   Name  Alter     Stadt\n0   Max     24    Berlin\n1  Anna     30   Hamburg\n2   Tom     22   München\nJede Zeile im DataFrame repräsentiert einen Datensatz (eine Person) und jede Spalte repräsentiert eine Eigenschaft dieser Datensätze (Name, Alter, Stadt).\n\nSpeichern des DataFrame als CSV-Datei\n\ndf.to_csv('daten.csv', index=False)\nDer DataFrame df wird als CSV-Datei mit dem Namen daten.csv gespeichert. Der Parameter index=False stellt sicher, dass die Indizes der Zeilen (die automatisch generierten Nummern 0, 1, 2, …) nicht in die CSV-Datei geschrieben werden. Ohne diesen Parameter würde die CSV-Datei eine zusätzliche Spalte mit den Zeilenindizes enthalten.\nDie resultierende CSV-Datei daten.csv hat folgendes Format:\nName,Alter,Stadt\nMax,24,Berlin\nAnna,30,Hamburg\nTom,22,München\nJede Zeile der CSV-Datei entspricht einer Zeile im DataFrame, und jede Spalte entspricht einer Spalte im DataFrame. Die erste Zeile enthält die Spaltenüberschriften, die die Namen der Spalten im DataFrame repräsentieren.\n\n\n\nWenn Sie beim Speichern einer Datei keinen Pfad angeben, wird die Datei im aktuellen Arbeitsverzeichnis gespeichert. Das bedeutet, dass die Datei in dem Verzeichnis abgelegt wird, in dem das Python-Skript ausgeführt wird.\nIn unserem Beispiel df.to_csv('daten.csv', index=False) wird die Datei daten.csv im aktuellen Arbeitsverzeichnis gespeichert. Das aktuelle Arbeitsverzeichnis ist der Ordner, in dem das Python-Programm gestartet wurde. Der entsprechende Pfad kann mit os.getcwd() ermittelt werden:\nimport os\n\nprint(os.getcwd())\nDiese Funktion gibt das aktuelle Arbeitsverzeichnis aus, in welchem die Datei gespeichert wird.\n\n\n20.2.2 Einlesen\n\nimport pandas as pd\n\n# CSV-Datei lesen\ndf = pd.read_csv('daten.csv')\n\ndf\n\n\n\n\n\n\n\n\nName\nAlter\nStadt\n\n\n\n\n0\nMax\n24\nBerlin\n\n\n1\nAnna\n30\nHamburg\n\n\n2\nTom\n22\nMünchen\n\n\n\n\n\n\n\nIn diesem Code-Snippet wird eine CSV-Datei (die sich in dem aktuellen Arbeitsverzeichnis befindet) gelesen und in einen Pandas DataFrame konvertiert. Anschließend wird der DataFrame ausgegeben:\n\nImportieren der Pandas-Bibliothek.\nLesen der CSV-Datei daten.csv und Erstellen eines Pandas DataFrame aus den Daten.\nAusgeben des DataFrame.\n\n\n\n\n\n\n\nAusführliche Erklärung\n\n\n\n\n\n\nImportieren der Pandas-Bibliothek\n\nimport pandas as pd\nDie pandas-Bibliothek wird importiert.\n\nLesen einer CSV-Datei\n\ndf = pd.read_csv('daten.csv')\nDie Methode pd.read_csv('daten.csv') liest die CSV-Datei daten.csv und erstellt daraus einen Pandas DataFrame. Diese Methode nimmt den Dateinamen als Argument und lädt die Daten aus der CSV-Datei in einen DataFrame.\nAngenommen, die Datei daten.csv hat folgenden Inhalt:\nName,Alter,Stadt\nMax,24,Berlin\nAnna,30,Hamburg\nTom,22,München\nDiese Datei enthält drei Spalten: “Name”, “Alter” und “Stadt”. Die erste Zeile der Datei enthält die Spaltenüberschriften.\nDie Methode pd.read_csv interpretiert die erste Zeile als Spaltennamen und die nachfolgenden Zeilen als Daten. Der resultierende DataFrame df sieht wie folgt aus:\n   Name  Alter     Stadt\n0   Max     24    Berlin\n1  Anna     30   Hamburg\n2   Tom     22   München\nJede Zeile im DataFrame repräsentiert einen Datensatz (eine Person) und jede Spalte repräsentiert eine Eigenschaft dieser Datensätze (Name, Alter, Stadt).\n\nAusgeben des DataFrame\n\ndf\nDer DataFrame wird in einer tabellarischen Form angezeigt, die die Daten klar und übersichtlich darstellt.\nDie Ausgabe sieht wie folgt aus:\n   Name  Alter     Stadt\n0   Max     24    Berlin\n1  Anna     30   Hamburg\n2   Tom     22   München\nDiese Ausgabe zeigt alle Zeilen und Spalten des DataFrame an. Jede Zeile entspricht einem Datensatz aus der CSV-Datei, und jede Spalte entspricht einer Eigenschaft der Datensätze.\n\n\n\nHinweis zum Pfad der CSV-Datei:\nEs ist wichtig sicherzustellen, dass der Pfad zur CSV-Datei korrekt angegeben ist. Wenn sich die CSV-Datei nicht im aktuellen Arbeitsverzeichnis befindet, muss der vollständige Pfad zur Datei angegeben werden. Beispielsweise:\ndf = pd.read_csv('/pfad/zum/verzeichnis/daten.csv')\nStellen Sie sicher, dass der angegebene Pfad korrekt ist und die Datei daten.csv tatsächlich an diesem Ort existiert. Andernfalls wird ein FileNotFoundError ausgelöst. Sie können das aktuelle Arbeitsverzeichnis in Python überprüfen, um sicherzustellen, dass sich die CSV-Datei im richtigen Verzeichnis befindet:\nimport os\n\nprint(os.getcwd())\nDiese Funktion gibt das aktuelle Arbeitsverzeichnis aus. Stellen Sie sicher, dass Ihre CSV-Datei in diesem Verzeichnis oder im angegebenen Pfad vorhanden ist.",
     "crumbs": [
-      "daten/index.qmd",
+      "Daten",
       "<span class='chapter-number'>20</span>  <span class='chapter-title'>CSV</span>"
     ]
   },
@@ -927,7 +967,7 @@
     "section": "",
     "text": "21.1 Schreiben einer Excel-Datei\nDas Speichern von Daten in eine Excel-Datei ist mit der pandas-Bibliothek sehr einfach. Die Methode df.to_excel() ermöglicht das Speichern eines DataFrame in eine Excel-Datei:",
     "crumbs": [
-      "daten/index.qmd",
+      "Daten",
       "<span class='chapter-number'>21</span>  <span class='chapter-title'>Excel-Tabellen</span>"
     ]
   },
@@ -938,7 +978,7 @@
     "section": "",
     "text": "import pandas as pd\n\n# Daten erstellen\ndaten = {\n    \"Name\": [\"Max\", \"Anna\", \"Tom\"],\n    \"Alter\": [24, 30, 22],\n    \"Stadt\": [\"Berlin\", \"Hamburg\", \"München\"]\n}\n\ndf = pd.DataFrame(daten)\n\n# Excel-Datei speichern\ndf.to_excel('daten.xlsx', index=False)\n\n\n\n\n\n\nAusführliche Erklärung\n\n\n\n\n\n\nImportieren der Pandas-Bibliothek: python     import pandas as pd\nErstellen von Daten:\n\nDaten können in Form eines Dictionaries erstellt und anschließend in einen DataFrame konvertiert werden.\n\ndaten = {\n    \"Name\": [\"Max\", \"Anna\", \"Tom\"],\n    \"Alter\": [24, 30, 22],\n    \"Stadt\": [\"Berlin\", \"Hamburg\", \"München\"]\n}\n\ndf = pd.DataFrame(daten)\nSpeichern der Daten in eine Excel-Datei: python     # Excel-Datei speichern     df.to_excel('daten.xlsx', index=False)\n\nArgumente:\n\nDer erste Parameter ist der Dateiname ('daten.xlsx'). Wenn kein Pfad angegeben ist, wird die Datei im aktuellen Arbeitsverzeichnis gespeichert.\nindex=False stellt sicher, dass die Zeilenindizes nicht in die Excel-Datei geschrieben werden. Andernfalls würde eine zusätzliche Spalte mit den Indizes in der Excel-Datei erscheinen.",
     "crumbs": [
-      "daten/index.qmd",
+      "Daten",
       "<span class='chapter-number'>21</span>  <span class='chapter-title'>Excel-Tabellen</span>"
     ]
   },
@@ -949,7 +989,7 @@
     "section": "21.2 Lesen einer Excel-Datei",
     "text": "21.2 Lesen einer Excel-Datei\nDie Methode pd.read_excel() der Pandas Bibliothek ermöglicht das Einlesen von Daten aus Excel-Dateien in einen DataFrame:\nimport pandas as pd\n\n# Excel-Datei lesen\ndf = pd.read_excel('daten.xlsx')\n\ndf\n\n\n\n\n\n\nAusführliche Erklärung\n\n\n\n\n\n\nImportieren der Pandas-Bibliothek: python     import pandas as pd\nLesen der Excel-Datei: python     # Excel-Datei lesen     df = pd.read_excel('daten.xlsx')\n\nArgumente:\n\nDer erste Parameter ist der Pfad zur Excel-Datei ('daten.xlsx'). Wenn sich die Datei nicht im aktuellen Arbeitsverzeichnis befindet, muss der vollständige Pfad angegeben werden.\n\nBeispiel:\ndf = pd.read_excel('/pfad/zur/datei/daten.xlsx')\n\nAusgeben des DataFrame: python     df\n\nDies zeigt den Inhalt des DataFrame an, der die Daten aus der Excel-Datei enthält.",
     "crumbs": [
-      "daten/index.qmd",
+      "Daten",
       "<span class='chapter-number'>21</span>  <span class='chapter-title'>Excel-Tabellen</span>"
     ]
   },
@@ -960,7 +1000,7 @@
     "section": "21.3 Erweiterte Funktionen",
     "text": "21.3 Erweiterte Funktionen\nWenn eine Excel-Datei mehrere Blätter (Sheets) enthält, können Sie ein spezifisches Blatt einlesen, indem Sie den sheet_name Parameter verwenden.\ndf = pd.read_excel('daten.xlsx', sheet_name='Sheet1')\nSie können auch Daten auf ein spezifisches Blatt schreiben:\ndf.to_excel('daten.xlsx', sheet_name='Sheet1', index=False)\nMit ExcelWriter können Sie mehrere DataFrames in verschiedene Blätter derselben Excel-Datei schreiben:\nwith pd.ExcelWriter('mehrere_blaetter.xlsx') as writer:\n    df1.to_excel(writer, sheet_name='Blatt1')\n    df2.to_excel(writer, sheet_name='Blatt2')\nSie können das Format der geschriebenen Excel-Datei weiter anpassen, z.B. die Breite der Spalten einstellen oder Formatierungen hinzufügen, indem Sie die xlsxwriter-Engine in Pandas verwenden (anstelle des Standard-Moduls openpyxl). Dazu muss zunächst das Modul XlsxWriterinstalliert werden. Folgen Sie dazu diesen Hinweisen.\nwith pd.ExcelWriter('formatiert.xlsx', engine='xlsxwriter') as writer:\n    df.to_excel(writer, sheet_name='Sheet1')\n    workbook  = writer.book\n    worksheet = writer.sheets['Sheet1']\n    worksheet.set_column('A:A', 20)  # Setzt die Breite der Spalte A auf 20",
     "crumbs": [
-      "daten/index.qmd",
+      "Daten",
       "<span class='chapter-number'>21</span>  <span class='chapter-title'>Excel-Tabellen</span>"
     ]
   },
@@ -971,7 +1011,7 @@
     "section": "21.4 Zusammenfassung",
     "text": "21.4 Zusammenfassung\nIn diesem Kapitel haben wir gelernt, wie man Excel-Dateien in Python mit der pandas-Bibliothek liest und schreibt. Diese Fähigkeiten sind essenziell für die Arbeit mit tabellarischen Daten und ermöglichen es Ihnen, Excel-Dateien effizient in Ihre Datenanalyse-Workflows zu integrieren. Wir haben auch einige erweiterte Funktionen behandelt, die Ihnen helfen, komplexere Aufgaben mit Excel-Dateien zu bewältigen.",
     "crumbs": [
-      "daten/index.qmd",
+      "Daten",
       "<span class='chapter-number'>21</span>  <span class='chapter-title'>Excel-Tabellen</span>"
     ]
   },
@@ -982,7 +1022,7 @@
     "section": "",
     "text": "22.1 Schreiben einer JSON-Datei\nDas Speichern von Daten in eine JSON-Datei ist mit der json-Bibliothek sehr einfach. Die Methode json.dump() ermöglicht das Speichern eines Python Dictionaries in eine JSON-Datei.\nimport json\n\n# Daten erstellen\ndaten = {\n    \"Personen\": [\n        {\"Name\": \"Max\", \"Alter\": 24, \"Stadt\": \"Berlin\"},\n        {\"Name\": \"Anna\", \"Alter\": 30, \"Stadt\": \"Hamburg\"},\n        {\"Name\": \"Tom\", \"Alter\": 22, \"Stadt\": \"München\"}\n    ]\n}\n\n# JSON-Datei speichern\nwith open('daten.json', 'w') as jsonfile:\n    json.dump(daten, jsonfile, indent=4)",
     "crumbs": [
-      "daten/index.qmd",
+      "Daten",
       "<span class='chapter-number'>22</span>  <span class='chapter-title'>JSON</span>"
     ]
   },
@@ -993,7 +1033,7 @@
     "section": "",
     "text": "Ausführliche Erklärung\n\n\n\n\n\n\nImportieren der JSON-Bibliothek: python     import json\nErstellen von Daten:\n\nDaten können in Form eines Dictionaries erstellt werden.\n\ndaten = {\n    \"Personen\": [\n        {\"Name\": \"Max\", \"Alter\": 24, \"Stadt\": \"Berlin\"},\n        {\"Name\": \"Anna\", \"Alter\": 30, \"Stadt\": \"Hamburg\"},\n        {\"Name\": \"Tom\", \"Alter\": 22, \"Stadt\": \"München\"}\n    ]\n}\nSpeichern der Daten in eine JSON-Datei: python     with open('daten.json', 'w') as jsonfile:         json.dump(daten, jsonfile, indent=4)\n\nArgumente:\n\nWir verwenden den with-Befehl, um eine Datei im Schreibmodus zu öffnen. Der with-Befehl sorgt dafür, dass die Datei nach Abschluss der Operation automatisch geschlossen wird, auch wenn ein Fehler auftritt.\nDer erste Parameter ist der Dateiname ('daten.json'). Wenn kein Pfad angegeben ist, wird die Datei im aktuellen Arbeitsverzeichnis gespeichert.\nopen('daten.json', 'w') öffnet die Datei daten.json im Schreibmodus (w steht für write). Wenn die Datei nicht existiert, wird sie erstellt. Wenn sie bereits existiert, wird ihr Inhalt überschrieben.\nas jsonfile weist die geöffnete Datei dem Variablennamen jsonfile zu, der innerhalb des with-Blocks verwendet werden kann.\nindent=4 sorgt für eine formatierte Ausgabe mit Einrückungen, die die JSON-Datei besser lesbar macht.",
     "crumbs": [
-      "daten/index.qmd",
+      "Daten",
       "<span class='chapter-number'>22</span>  <span class='chapter-title'>JSON</span>"
     ]
   },
@@ -1004,7 +1044,7 @@
     "section": "22.2 Lesen einer JSON-Datei",
     "text": "22.2 Lesen einer JSON-Datei\nDas Lesen von JSON-Dateien in Python ist mit der json-Bibliothek ebenfalls sehr einfach. Die Methode json.load() ermöglicht das Einlesen von JSON-Daten aus einer Datei in ein Python Dictionary.\n\nimport json\n\n# JSON-Datei lesen\nwith open('daten.json', 'r') as jsonfile:\n    daten = json.load(jsonfile)\n\nprint(daten)\n\n{'Personen': [{'Name': 'Max', 'Alter': 24, 'Stadt': 'Berlin'}, {'Name': 'Anna', 'Alter': 30, 'Stadt': 'Hamburg'}, {'Name': 'Tom', 'Alter': 22, 'Stadt': 'München'}]}\n\n\n\n\n\n\n\n\nAusführliche Erklärung\n\n\n\n\n\n\nImportieren der JSON-Bibliothek: python     import json\n\nErklärung: Die JSON-Bibliothek ist eine eingebaute Python-Bibliothek, die es ermöglicht, JSON-Daten zu parsen (lesen) und zu generieren (schreiben). JSON (JavaScript Object Notation) ist ein weit verbreitetes Format zur Darstellung strukturierter Daten.\n\nLesen der JSON-Datei: python     with open('daten.json', 'r') as jsonfile:         daten = json.load(jsonfile)\n\nErklärung: Hier wird die JSON-Datei 'daten.json' geöffnet und ihr Inhalt in die Variable daten geladen.\nSchritt-für-Schritt:\n\nopen('daten.json', 'r'): Diese Funktion öffnet die Datei 'daten.json' im Lesemodus ('r').\nas jsonfile: Der open-Befehl wird im Kontext eines with-Statements verwendet, was sicherstellt, dass die Datei nach dem Lesen automatisch geschlossen wird.\njson.load(jsonfile): Diese Methode liest den Inhalt der Datei und wandelt ihn in ein Python-Objekt (üblicherweise ein Dictionary) um.\n\nArgumente:\n\nDer erste Parameter ist der Pfad zur JSON-Datei ('daten.json'). Wenn sich die Datei nicht im aktuellen Arbeitsverzeichnis befindet, muss der vollständige Pfad angegeben werden.\nDer Modus 'r' gibt an, dass die Datei nur gelesen werden soll.\n\n\nAusgeben der Daten: python     print(daten)\n\nErklärung: Diese Anweisung gibt den Inhalt des daten-Dictionaries auf der Konsole aus.\nDetails:\n\ndaten ist ein Dictionary, das die aus der JSON-Datei gelesenen Daten enthält. Durch das Drucken dieses Dictionaries können wir den strukturierten Inhalt der Datei anzeigen.\nEs ist eine gute Methode, die gelesenen Daten auszugeben, um sicherzustellen, dass sie korrekt eingelesen wurden und um zu verstehen, welche Struktur die Daten haben.\n\n\n\n\n\n\nDiese ausführliche Erklärung sollte dir helfen, den Prozess des Lesens einer JSON-Datei in Python besser zu verstehen. Von der Verwendung der Bibliothek bis hin zum Öffnen, Lesen und Anzeigen der Datei werden alle Schritte detailliert beschrieben.",
     "crumbs": [
-      "daten/index.qmd",
+      "Daten",
       "<span class='chapter-number'>22</span>  <span class='chapter-title'>JSON</span>"
     ]
   },
@@ -1015,7 +1055,7 @@
     "section": "22.3 Erweiterte Funktionen",
     "text": "22.3 Erweiterte Funktionen\nJSON kann leicht in Python-Datenstrukturen konvertiert werden und umgekehrt.\n\n22.3.1 JSON in Dictionary\nJSON in ein Python Dictionary konvertieren:\n\nimport json\n\njson_daten = '''\n{\n    \"Name\": \"Max\",\n    \"Alter\": 24,\n    \"Stadt\": \"Berlin\"\n}\n'''\n\ndaten = json.loads(json_daten)\nprint(daten)\n\n{'Name': 'Max', 'Alter': 24, 'Stadt': 'Berlin'}\n\n\n\n\n22.3.2 Dictionary zu JSON\nPython Dictionary in JSON konvertieren:\n\nimport json\n\ndaten = {\n    \"Name\": \"Max\",\n    \"Alter\": 24,\n    \"Stadt\": \"Berlin\"\n}\n\njson_daten = json.dumps(daten, indent=4)\nprint(json_daten)\n\n{\n    \"Name\": \"Max\",\n    \"Alter\": 24,\n    \"Stadt\": \"Berlin\"\n}\n\n\n\n\n22.3.3 Verschachtelte JSON-Daten\nJSON-Daten können verschachtelte Strukturen enthalten, wie Listen von Objekten oder Objekte innerhalb von Objekten. Python kann diese Strukturen direkt verarbeiten.\n\nimport json\n\njson_daten = '''\n{\n    \"Personen\": [\n        {\n            \"Name\": \"Max\",\n            \"Alter\": 24,\n            \"Stadt\": \"Berlin\",\n            \"Hobbys\": [\"Lesen\", \"Schwimmen\"]\n        },\n        {\n            \"Name\": \"Anna\",\n            \"Alter\": 30,\n            \"Stadt\": \"Hamburg\",\n            \"Hobbys\": [\"Radfahren\", \"Kochen\"]\n        }\n    ]\n}\n'''\n\ndaten = json.loads(json_daten)\n\n# Zugriff auf verschachtelte Daten\nfor person in daten[\"Personen\"]:\n    print(f\"Name: {person['Name']}, Hobbys: {', '.join(person['Hobbys'])}\")\n\nName: Max, Hobbys: Lesen, Schwimmen\nName: Anna, Hobbys: Radfahren, Kochen",
     "crumbs": [
-      "daten/index.qmd",
+      "Daten",
       "<span class='chapter-number'>22</span>  <span class='chapter-title'>JSON</span>"
     ]
   },
@@ -1026,7 +1066,7 @@
     "section": "22.4 Zusammenfassung",
     "text": "22.4 Zusammenfassung\nIn diesem Kapitel haben wir gelernt, wie man JSON-Dateien in Python mit der json-Bibliothek liest und schreibt.\nJSON ist ein flexibles und weit verbreitetes Format für den Datenaustausch und die Speicherung. Wir haben auch einige erweiterte Funktionen und Techniken behandelt, um mit JSON-Daten in Python effizient zu arbeiten. Diese Fähigkeiten sind essenziell für die Verarbeitung und Analyse von strukturierten und teilweise strukturierten Daten in verschiedenen Projekten der Datenwissenschaft.",
     "crumbs": [
-      "daten/index.qmd",
+      "Daten",
       "<span class='chapter-number'>22</span>  <span class='chapter-title'>JSON</span>"
     ]
   },
