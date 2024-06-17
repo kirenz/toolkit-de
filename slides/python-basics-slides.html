@@ -9,7 +9,7 @@
 <meta name="author" content="Jan Kirenz">
 <meta name="description" content="Programming Toolkit für Data Science, AI &amp; Analytics">
 
-<title>Data Science, AI &amp; Analytics Toolkit - 12&nbsp; Einrückung</title>
+<title>Data Science, AI &amp; Analytics Toolkit - 16&nbsp; Grundlagen</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -66,8 +66,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../python/python-funktionen.html" rel="next">
-<link href="../python/python-basics.html" rel="prev">
+<link href="../vscode/visual-studio-code.html" rel="next">
+<link href="../python/python-klassen.html" rel="prev">
 <link href="..//images/logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -118,7 +118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../python/python.html">Python</a></li><li class="breadcrumb-item"><a href="../python/python-einrueckung.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Einrückung</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../python/python.html">Python</a></li><li class="breadcrumb-item"><a href="../slides/python-basics-slides.html"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Grundlagen</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -229,7 +229,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../python/python-einrueckung.html" class="sidebar-item-text sidebar-link active">
+  <a href="../python/python-einrueckung.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Einrückung</span></span></a>
   </div>
 </li>
@@ -253,7 +253,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../slides/python-basics-slides.html" class="sidebar-item-text sidebar-link">
+  <a href="../slides/python-basics-slides.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Grundlagen</span></span></a>
   </div>
 </li>
@@ -502,23 +502,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-  <li><a href="#richtige-einrückung" id="toc-richtige-einrückung" class="nav-link active" data-scroll-target="#richtige-einrückung"><span class="header-section-number">12.1</span> Richtige Einrückung</a></li>
-  <li><a href="#falsche-einrückung" id="toc-falsche-einrückung" class="nav-link" data-scroll-target="#falsche-einrückung"><span class="header-section-number">12.2</span> Falsche Einrückung</a></li>
+  <li><a href="#bibliotheken-importieren" id="toc-bibliotheken-importieren" class="nav-link active" data-scroll-target="#bibliotheken-importieren"><span class="header-section-number">16.1</span> Bibliotheken importieren</a></li>
+  <li><a href="#kommentare-einfügen" id="toc-kommentare-einfügen" class="nav-link" data-scroll-target="#kommentare-einfügen"><span class="header-section-number">16.2</span> Kommentare einfügen</a></li>
+  <li><a href="#variablen-und-datentypen" id="toc-variablen-und-datentypen" class="nav-link" data-scroll-target="#variablen-und-datentypen"><span class="header-section-number">16.3</span> Variablen und Datentypen</a></li>
+  <li><a href="#grundlegende-operatoren-und-berechnungen" id="toc-grundlegende-operatoren-und-berechnungen" class="nav-link" data-scroll-target="#grundlegende-operatoren-und-berechnungen"><span class="header-section-number">16.4</span> Grundlegende Operatoren und Berechnungen</a></li>
+  <li><a href="#arbeiten-mit-dataframes" id="toc-arbeiten-mit-dataframes" class="nav-link" data-scroll-target="#arbeiten-mit-dataframes"><span class="header-section-number">16.5</span> Arbeiten mit DataFrames</a></li>
+  <li><a href="#methoden-verstehen" id="toc-methoden-verstehen" class="nav-link" data-scroll-target="#methoden-verstehen"><span class="header-section-number">16.6</span> Methoden verstehen</a></li>
+  <li><a href="#daten-visualisieren" id="toc-daten-visualisieren" class="nav-link" data-scroll-target="#daten-visualisieren"><span class="header-section-number">16.7</span> Daten visualisieren</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../python/python.html">Python</a></li><li class="breadcrumb-item"><a href="../python/python-einrueckung.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Einrückung</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../python/python.html">Python</a></li><li class="breadcrumb-item"><a href="../slides/python-basics-slides.html"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Grundlagen</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Einrückung</span></h1>
+<h1 class="title"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Grundlagen</span></h1>
+<p class="subtitle lead">Subtitle</p>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Autor:in</div>
+    <div class="quarto-title-meta-contents">
+             <p>Jan Kirenz </p>
+          </div>
+  </div>
     
   
     
@@ -529,68 +541,162 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p><a href="../code/python-einrueckung.ipynb" download="python-einrueckung.ipynb">⬇️ Jupyter Notebook herunterladen</a></p>
-<p>Bevor wir im nächsten Abschnitt Python-Funktionen erkunden, ist es wichtig, die Einrückungsregeln von Python zu verstehen, da diese grundlegend sind, um fehlerfreien Python-Code zu schreiben.</p>
-<p>Einrückung ist in Python nicht nur eine Stilfrage; sie hat eine syntaktische Bedeutung. Python verwendet Einrückungen, um Codeblöcke zu definieren. Die korrekte Verwendung von Einrückungen ist entscheidend, damit Ihr Code wie erwartet ausgeführt wird.</p>
-<p><strong>Wichtige Hinweise zur Einrückung:</strong></p>
+<p>Sie haben die Möglichkeit, den gesamten Inhalt dieses Kapitels als Notebook herunterzuladen. Nach dem Herunterladen können Sie es in Ihrem <code>code</code> Ordner speichern und das Notebook in Jupyter öffnen:</p>
+<p><a href="../code/python-basics.ipynb" download="python-basics.ipynb">⬇️ Juypter Notebook herunterladen</a></p>
+<section id="bibliotheken-importieren" class="level2" data-number="16.1">
+<h2 data-number="16.1" class="anchored" data-anchor-id="bibliotheken-importieren"><span class="header-section-number">16.1</span> Bibliotheken importieren</h2>
+<p>Das Importieren von Bibliotheken ist unerlässlich, um zusätzliche Python-Funktionen nutzen zu können. Wir importieren sie am Anfang der Datei, um Übersichtlichkeit und Effizienz zu gewährleisten. Ein Alias (ein kurzer Name) erleichtert die Referenzierung im gesamten Code.</p>
+<p>Fügen Sie den folgenden Code in eine neue Codezelle direkt unter Ihrem Titel ein und führen Sie ihn aus:</p>
+<div id="2dae7a8f" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Bibliotheken importieren (am Anfang)</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> altair <span class="im">as</span> alt</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="kommentare-einfügen" class="level2" data-number="16.2">
+<h2 data-number="16.2" class="anchored" data-anchor-id="kommentare-einfügen"><span class="header-section-number">16.2</span> Kommentare einfügen</h2>
+<p>In Python kann man Kommentare im Code schreiben, indem man das Zeichen <code>#</code> verwendet. Alles, was nach diesem Zeichen auf derselben Zeile steht, wird vom Python-Interpreter ignoriert. Kommentare sind nützlich, um den Code zu dokumentieren, Erklärungen hinzuzufügen oder vorübergehend Teile des Codes zu deaktivieren.</p>
+</section>
+<section id="variablen-und-datentypen" class="level2" data-number="16.3">
+<h2 data-number="16.3" class="anchored" data-anchor-id="variablen-und-datentypen"><span class="header-section-number">16.3</span> Variablen und Datentypen</h2>
+<p>Variablen werden verwendet, um verschiedene Arten von Daten in Python zu speichern. Datentypen definieren die Natur dieser Daten und beeinflussen, wie sie verwendet werden können.</p>
+<p>Fügen Sie eine neue Codezelle hinzu, kopieren Sie dann den unten angegebenen Code in diese Zelle und führen Sie die Zelle anschließend aus.</p>
+<p>Beispielcode:</p>
+<div id="0a8a0052" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Variablen zuweisen (mit beschreibenden Namen)</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="st">"Alice"</span>  <span class="co"># String für den Namen einer Person</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>age <span class="op">=</span> <span class="dv">30</span>  <span class="co"># Integer für das Alter</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>height <span class="op">=</span> <span class="fl">5.5</span>  <span class="co"># Float für die Größe in Fuß</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>numbers <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]  <span class="co"># Liste von ganzen Zahlen</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>person <span class="op">=</span> {<span class="st">"name"</span>: <span class="st">"Alice"</span>, <span class="st">"age"</span>: <span class="dv">30</span>}  <span class="co"># Wörterbuch für Personendaten</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Erklärung:</p>
 <ul>
-<li><strong>Konsistenz</strong>: Der Standard in Python ist die Verwendung von 4 Leerzeichen pro Einrückungsebene, (in einigen Entwicklungs-Umgebungen können Tabs so konfiguriert werden, dass sie automatisch in Leerzeichen umgewandelt werden).</li>
-<li><strong>Codeblöcke</strong>: Funktionen, Schleifen, Bedingungen und andere Steuerstrukturen verwenden Einrückungen, um anzugeben, welcher Code innerhalb des Blocks gehört.</li>
+<li><code>name</code> ist ein <strong>String</strong>, der eine Zeichenfolge speichert, die einen Namen darstellt.</li>
+<li><code>age</code> ist eine <strong>Integer</strong>-Variable, die eine ganze Zahl darstellt.</li>
+<li><code>height</code> ist ein <strong>Float</strong>, der eine Zahl mit einem Dezimalpunkt darstellt.</li>
+<li><code>numbers</code> ist eine <strong>Liste</strong>, die eine geordnete Sammlung von Elementen darstellt.</li>
+<li><code>person</code> ist ein <strong>Dictionary (Wörterbuch)</strong>, das aus Schlüssel-Wert-Paaren besteht und mehrere Attribute speichern kann.</li>
 </ul>
-<section id="richtige-einrückung" class="level2" data-number="12.1">
-<h2 data-number="12.1" class="anchored" data-anchor-id="richtige-einrückung"><span class="header-section-number">12.1</span> Richtige Einrückung</h2>
-<p>Beispielcode für die Erzeugung einer Funktion (wir behandeln Funktionen an einer <a href="../python/python-funktionen.html">anderen Stelle des Buches</a> im Detail):</p>
-<div id="e31de810" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Funktion wird erzeugt</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> compute_area(width, height):</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Dies ist der Anfang eines Funktionsblocks</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    area <span class="op">=</span> width <span class="op">*</span> height </span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> area </span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">#Aufrufen der Funktion</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(compute_area(<span class="dv">5</span>, <span class="dv">10</span>))  <span class="co"># Diese Zeile ist nicht eingerückt, was zeigt, dass sie nicht Teil der Funktion ist</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>50</code></pre>
+<p>Um die in diesen Variablen gespeicherten Werte zu überprüfen, können Sie die <code>print</code>-Funktion verwenden:</p>
+<div id="5fc07c69" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(name)  <span class="co"># Ausgabe: Alice</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(age)  <span class="co"># Ausgabe: 30</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(numbers)  <span class="co"># Ausgabe: [1, 2, 3]</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(person)  <span class="co"># Ausgabe: {'name': 'Alice', 'age': 30}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+</section>
+<section id="grundlegende-operatoren-und-berechnungen" class="level2" data-number="16.4">
+<h2 data-number="16.4" class="anchored" data-anchor-id="grundlegende-operatoren-und-berechnungen"><span class="header-section-number">16.4</span> Grundlegende Operatoren und Berechnungen</h2>
+<p>Operatoren ermöglichen Berechnungen, Vergleiche und logische Operationen.</p>
+<p>Beispielcode:</p>
+<div id="90e384ea" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Variablen erzeugen</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>length <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>width <span class="op">=</span> <span class="dv">5</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>Erläuterung:</p>
+<p>Berechnung der Fläche und des Umfangs:</p>
+<div id="dff8121b" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>area <span class="op">=</span> length <span class="op">*</span> width  <span class="co"># Multiplikation</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>perimeter <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> (length <span class="op">+</span> width)  <span class="co"># Addition und Multiplikation</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Umfang anzeigen</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>perimeter</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <ul>
-<li>Die Funktion <code>compute_area</code> beginnt mit einem Doppelpunkt (<code>:</code>) und der nachfolgende Code ist vier Leerzeichen eingerückt.</li>
-<li>Sowohl die Berechnung von <code>area</code> als auch die <code>return</code>-Anweisung sind aufgrund ihrer Einrückung Teil der Funktion.</li>
-<li>Die <code>print</code>-Anweisung ist relativ zur Funktionsdefinition nicht eingerückt, was zeigt, dass sie außerhalb der Funktion steht.</li>
+<li><code>length</code> und <code>width</code> werden multipliziert, um die <code>area</code> zu berechnen.</li>
+<li><code>perimeter</code> wird berechnet, indem <code>length</code> und <code>width</code> addiert und dann mit 2 multipliziert werden.</li>
+</ul>
+<p>Vergleichsoperationen:</p>
+<div id="7ebe1bdd" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>is_square <span class="op">=</span> length <span class="op">==</span> width  <span class="co"># Überprüfen, ob Länge und Breite gleich sind</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>is_square</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li><code>is_square</code> überprüft, ob die beiden Seiten gleich lang sind.</li>
+</ul>
+<p>Logische Operationen:</p>
+<div id="7ce0afac" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>is_large_rectangle <span class="op">=</span> (area <span class="op">&gt;</span> <span class="dv">20</span>) <span class="kw">and</span> (perimeter <span class="op">&gt;</span> <span class="dv">10</span>)  <span class="co"># Logisches UND</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>is_large_rectangle</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li><code>is_large_rectangle</code> verwendet logische Operatoren, um festzustellen, ob das Rechteck sowohl eine große Fläche als auch einen großen Umfang hat.</li>
 </ul>
 </section>
-<section id="falsche-einrückung" class="level2" data-number="12.2">
-<h2 data-number="12.2" class="anchored" data-anchor-id="falsche-einrückung"><span class="header-section-number">12.2</span> Falsche Einrückung</h2>
-<p>Beispielcode mit falscher Einrückung:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calculate_percentage(total, amount):</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> total <span class="op">&gt;</span> <span class="dv">0</span>:</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    percentage <span class="op">=</span> (amount <span class="op">/</span> total) <span class="op">*</span> <span class="dv">100</span> </span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> percentage  </span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="dv">0</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="pp">IndentationError</span>: expected an indented block after <span class="st">'if'</span> statement on line <span class="dv">3</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Erläuterung:</p>
-<ul>
-<li><strong>Fehler</strong>: Das obige Beispiel führt zu einem <code>IndentationError</code>, weil die Einrückungsebenen nicht konsistent sind.</li>
-<li><strong>Zeile 3</strong>: Die Zeile <code>percentage = (amount / total) * 100</code> soll ausgeführt werden, wenn die Bedingung <code>total &gt; 0</code> wahr ist. Sie ist jedoch nicht eingerückt, was unklar macht, ob sie innerhalb der <code>if</code>-Anweisung oder außerhalb ausgeführt werden soll.</li>
-<li><strong>Zeilen 4 und 5</strong>: Die <code>return percentage</code>-Anweisung sollte eingerückt werden, um unter die <code>if</code>-Bedingung zu fallen, was zeigt, dass sie Teil des <code>if</code>-Blocks ist. Die <code>else:</code>-Zeile ist ebenfalls nicht korrekt mit der <code>if</code>-Zeile ausgerichtet, was zu einem Syntaxfehler führt.</li>
-</ul>
-<p>Korrigierte Version:</p>
-<div id="f2a1f5d3" class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calculate_percentage(total, amount):</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> total <span class="op">&gt;</span> <span class="dv">0</span>:</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>        percentage <span class="op">=</span> (amount <span class="op">/</span> total) <span class="op">*</span> <span class="dv">100</span>  </span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> percentage  </span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="dv">0</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="arbeiten-mit-dataframes" class="level2" data-number="16.5">
+<h2 data-number="16.5" class="anchored" data-anchor-id="arbeiten-mit-dataframes"><span class="header-section-number">16.5</span> Arbeiten mit DataFrames</h2>
+<p>Ein DataFrame ist eine zweidimensionale tabellarische Datenstruktur, die von Pandas bereitgestellt wird. Es ermöglicht eine effiziente Datenmanipulation, ähnlich wie ein Tabellenblatt oder eine SQL-Tabelle.</p>
+<p>Hier ein Beispiel. Wir bereiten zunächst die Daten vor:</p>
+<div id="839df90b" class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> { </span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>         <span class="st">"Numbers"</span>: [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>], </span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>         <span class="st">"Squares"</span>: [<span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">9</span>, <span class="dv">16</span>, <span class="dv">25</span>]</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>Was dies korrigiert:</p>
 <ul>
-<li>Die Zeile <code>percentage = (amount / total) * 100</code> ist jetzt korrekt unter die <code>if</code>-Bedingung eingerückt, was klar anzeigt, dass sie zu dem Block gehört, der ausgeführt wird, wenn <code>total &gt; 0</code>.</li>
-<li>Die <code>return percentage</code>-Anweisung ist ebenfalls korrekt eingerückt, um zu zeigen, dass sie Teil der <code>if</code>-Bedingung ist. Der <code>else</code>-Block ist mit der <code>if</code>-Anweisung ausgerichtet, wodurch die Struktur konsistent bleibt.</li>
+<li>Das Wörterbuch <code>data</code> enthält zwei Listen: Zahlen und deren Quadrate.</li>
 </ul>
-<p>Dieses Beispiel zeigt, wie falsche Einrückung zu Syntaxfehlern und logischen Fehlern in Python führen kann. Es ist entscheidend, eine konsistente Einrückungsebene im gesamten Codeblock beizubehalten, um Klarheit und Funktionalität des Codes sicherzustellen. Indem Sie diese Praktiken einhalten, verhindern Sie Fehler und machen Ihren Code leichter lesbar.</p>
+<p>Erstellen eines DataFrame mit Pandas:</p>
+<div id="e01be041" class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(data)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>Der DataFrame <code>df</code> wird aus diesem Wörterbuch mit der Funktion <code>pd.DataFrame</code> erstellt, die die Daten in Zeilen und Spalten organisiert.</li>
+</ul>
+<p>Den DataFrame inspizieren (dafür verwenden wir nicht <code>print()</code>)</p>
+<div id="86f099a9" class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>Das Eingeben von <code>df</code> in eine Jupyter Notebook-Zelle zeigt den DataFrame in tabellarischer Form an.</li>
+</ul>
+</section>
+<section id="methoden-verstehen" class="level2" data-number="16.6">
+<h2 data-number="16.6" class="anchored" data-anchor-id="methoden-verstehen"><span class="header-section-number">16.6</span> Methoden verstehen</h2>
+<p>Eine Methode ist eine Funktion, die mit einem Objekt (wie einem DataFrame, einer Liste oder einem String) verknüpft ist und über die Punktnotation (<code>.</code>) aufgerufen wird. Dies erleichtert die Manipulation des Objekts und das Abrufen von Informationen.</p>
+<p>Beispielcode:</p>
+<p><code>df.head()</code> ist eine Methode, welche die ersten paar Zeilen eines DataFrames anzeigt, um die Daten zu zeigen:</p>
+<div id="c7528e26" class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>df.head() </span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><code>df.describe()</code> liefert zusammenfassende Statistiken wie Mittelwert, Anzahl und Standardabweichung. Zusätzlich verwenden wir die Methode <code>.round(2)</code>, um die Werte auf zwei Dezimalstellen zu runden:</p>
+<div id="c1ade5af" class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>df.describe().<span class="bu">round</span>(<span class="dv">2</span>) </span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Allgemeines Methodenkonzept:</p>
+<ul>
+<li><strong>Objekt:</strong> Eine Entität, die Daten und Funktionalität enthält (z.B. DataFrame, Liste oder String).</li>
+<li><strong>Methode:</strong> Eine Funktion, die mit einem Objekt verknüpft ist.</li>
+<li><strong>Punktnotation (<code>.</code>):</strong> Wird verwendet, um eine Methode auf einem Objekt aufzurufen.</li>
+</ul>
+</section>
+<section id="daten-visualisieren" class="level2" data-number="16.7">
+<h2 data-number="16.7" class="anchored" data-anchor-id="daten-visualisieren"><span class="header-section-number">16.7</span> Daten visualisieren</h2>
+<p>Nachdem Sie die Struktur eines DataFrames verstanden haben, können Sie dessen Daten mit Altair visualisieren.</p>
+<p>Beispielcode:</p>
+<div id="884d59f5" class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Das Diagramm erstellen</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>alt.Chart(df).mark_point().encode(</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span><span class="st">'Numbers'</span>,</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span><span class="st">'Squares'</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Erklärung:</p>
+<ul>
+<li><strong>Altair-Bibliothek</strong>: Eine deklarative Visualisierungsbibliothek, die den Prozess der Erstellung von Diagrammen und Grafiken vereinfacht.</li>
+<li><strong><code>alt.Chart(df)</code></strong>: Erstellt ein neues Diagrammobjekt aus dem DataFrame <code>df</code>.</li>
+<li><strong><code>mark_point()</code></strong>: Gibt den Diagrammtyp an (in diesem Fall ein Streudiagramm).</li>
+<li><strong><code>encode</code></strong>: Ordnet DataFrame-Spalten Diagrammattributen zu.
+<ul>
+<li><strong><code>x='Numbers'</code></strong>: Legt die horizontale Achse auf die Spalte <code>Numbers</code> fest.</li>
+<li><strong><code>y='Squares'</code></strong>: Legt die vertikale Achse auf die Spalte <code>Squares</code> fest.</li>
+</ul></li>
+</ul>
+<p>Diese prägnante Syntax ermöglicht die schnelle Erstellung und Anpassung von Visualisierungen.</p>
 
 
 </section>
@@ -1007,13 +1113,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../python/python-basics.html" class="pagination-link" aria-label="Grundlagen">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Grundlagen</span></span>
+      <a href="../python/python-klassen.html" class="pagination-link" aria-label="Klassen und Objekte">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Klassen und Objekte</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../python/python-funktionen.html" class="pagination-link" aria-label="Funktionen">
-        <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Funktionen</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../vscode/visual-studio-code.html" class="pagination-link" aria-label="Visual Studio Code">
+        <span class="nav-page-text">Visual Studio Code</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
