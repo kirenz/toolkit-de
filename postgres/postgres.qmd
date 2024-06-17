@@ -1,5 +1,0 @@
-# PostgreSQL
-
-*PostgreSQL*, oft ausgesprochen als "Post-gress-Q-L", ist ein  relationales Datenbankmanagementsystem (RDBMS), das für seine Robustheit und seine Fähigkeiten zur Verwaltung komplexer Datenoperationen bekannt ist.
-
-*pgAdmin4* ist das offizielle grafische Verwaltungstool für PostgreSQL und bietet eine benutzerfreundliche Oberfläche für die Datenbankverwaltung. Es wird als Teil der PostgreSQL-Installation installiert.
