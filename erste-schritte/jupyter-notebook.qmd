@@ -25,7 +25,7 @@ Im Gegensatz zum Python IDLE, das hauptsächlich als einfacher Editor fungiert, 
 
 ## Ihr erstes Notebook erstellen
 
-1. Navigieren Sie in der Web-Oberfläche von Jupyter zum `code`-Verzeichnis (siehe unsere Erklärung zur [Ordnerstruktur](project-environment.qmd)).
+1. Navigieren Sie in der Web-Oberfläche von Jupyter zum `code`-Verzeichnis (siehe unsere Erklärung zur [Ordnerstruktur](projektumgebung.qmd)).
 2. Klicken Sie oben rechts auf "New" und wählen Sie "Notebook", um ein neues Notebook zu erstellen.
 3. Nun öffnet sich ein Fenster in welchem Sie den Kernel (eine Python-Instanz) auswählen können. Wählen Sie bspw. die von Anaconda installierte `base`-Umgebung aus (die base-Umgebung ist die standardmäßige Python-Umgebung, die bei der Installation von Anaconda erstellt wird. Diese Umgebung enthält die grundlegenden Bibliotheken und Werkzeuge, die für viele Datenwissenschafts- und Maschinenlernaufgaben erforderlich sind).
 3. Eine neue Notebook-Seite öffnet sich mit einer leeren Code-Zelle.
