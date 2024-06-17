@@ -21,9 +21,9 @@ book:
   chapters:
     - index.qmd
 
-    - part: erste-schritte/first-steps.qmd
+    - part: erste-schritte/index.qmd
       chapters:
-        - erste-schritte/project-environment.qmd 
+        - erste-schritte/projektumgebung.qmd 
         - erste-schritte/python-installation.qmd
         - erste-schritte/python-idle.qmd
         - erste-schritte/anaconda-installation.qmd
