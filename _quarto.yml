@@ -42,6 +42,8 @@ book:
         - python/python-funktionen.qmd
         - python/python-control-flow.qmd
         - python/python-klassen.qmd
+        - slides/python-basics-slides.qmd
+
 
     - part: vscode/visual-studio-code.qmd
       chapters:
@@ -92,7 +94,8 @@ book:
         - github/github-setup.qmd
         - github/github-repo.qmd
         - github/github-organization.qmd
-        - github/github-projects.qmd        
+        - github/github-projects.qmd   
+           
 
 format:
   html:
