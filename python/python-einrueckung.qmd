@@ -1,6 +1,6 @@
 # Einrückung
 
-[⬇️ Jupyter Notebook herunterladen](../code/python-identation.ipynb){download="python-identation.ipynb"}
+[⬇️ Jupyter Notebook herunterladen](../code/python-einrueckung.ipynb){download="python-einrueckung.ipynb"}
 
 Bevor wir im nächsten Abschnitt Python-Funktionen erkunden, ist es wichtig, die Einrückungsregeln von Python zu verstehen, da diese grundlegend sind, um fehlerfreien Python-Code zu schreiben.
 
@@ -13,7 +13,7 @@ Einrückung ist in Python nicht nur eine Stilfrage; sie hat eine syntaktische Be
 
 ## Richtige Einrückung
 
-Beispielcode für die Erzeugung einer Funktion (wir behandeln Funktionen an einer [anderen Stelle des Buches](python-functions.qmd) im Detail):
+Beispielcode für die Erzeugung einer Funktion (wir behandeln Funktionen an einer [anderen Stelle des Buches](python-funktionen.qmd) im Detail):
 
 ```{python}
 # Funktion wird erzeugt
