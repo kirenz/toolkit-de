@@ -1,4 +1,4 @@
-# Einleitung
+# Willkommen {.unnumbered}
 
 Willkommen zum Einstieg in die Welt der Data Science, Künstlichen Intelligenz und Analytik! Dieses Buch ist speziell für Einsteiger/innen konzipiert und bietet eine schrittweise Einführung in die grundlegenden Werkzeuge und Konzepte, die für den Erfolg in diesen Bereichen notwendig sind.
 
