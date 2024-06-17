@@ -129,7 +129,9 @@ $$
 $$
 ```
 
+$$
 \frac{a}{b} + \sqrt{x}
+$$
 
 ### Horizontale Linien
 
