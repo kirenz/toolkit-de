@@ -14,7 +14,7 @@
     "href": "first-steps/first-steps.html",
     "title": "Erste Schritte",
     "section": "",
-    "text": "In diesem ersten Abschnitt werden wir eine grundlegende Arbeitsumgebung einrichten, die für jedes datenbezogene Vorhaben unerlässlich ist.\nSie lernen, wie Sie sich auf der Befehlszeile Ihres Computers zurechtfinden, Python zum ersten Mal einrichten und die Anaconda-Distribution (ein Data-Science-Softwarpaket) verwenden.\nZusätzlich zeigen wir Ihnen, wie Sie Jupyter Notebook, ein leistungsstarkes Werkzeug zur interaktiven Datenexploration, nutzen und bringen Ihnen die Grundlagen von Markdown bei, um Ihre Arbeit effektiv zu dokumentieren.",
+    "text": "In diesem ersten Abschnitt werden wir eine grundlegende Arbeitsumgebung einrichten, die für jedes datenbezogene Vorhaben unerlässlich ist.\nSie lernen, wie Sie:\n\nDie Befehlszeile Ihres Computers nutzen können.\nPython zum ersten Mal einrichten.\nDie Anaconda-Distribution (ein Data-Science-Softwarpaket) verwenden.\nJupyter Notebook, ein leistungsstarkes Werkzeug zur interaktiven Datenexploration, nutzen",
     "crumbs": [
       "Erste Schritte"
     ]
@@ -872,16 +872,6 @@
     ]
   },
   {
-    "objectID": "daten/daten.html#zusammenfassung",
-    "href": "daten/daten.html#zusammenfassung",
-    "title": "Daten",
-    "section": "Zusammenfassung",
-    "text": "Zusammenfassung\nDas Verständnis der verschiedenen Arten von Daten ist ein grundlegender Schritt in der Datenwissenschaft. Strukturierte Daten sind leicht zu verwalten und zu analysieren, während teilweise strukturierte und unstrukturierte Daten mehr Flexibilität bieten, aber komplexere Analysemethoden erfordern. In den folgenden Kapiteln werden wir uns eingehender mit diesen Datentypen beschäftigen und lernen, wie wir sie speichern, verarbeiten und analysieren können.",
-    "crumbs": [
-      "Daten"
-    ]
-  },
-  {
     "objectID": "daten/dictionary.html",
     "href": "daten/dictionary.html",
     "title": "19  Dictionaries",
@@ -1095,7 +1085,7 @@
     "href": "datenbanken/datenbanken.html",
     "title": "Datenbanken",
     "section": "",
-    "text": "Datenbanken bieten leistungsstarke Mittel zur Speicherung, Verwaltung und Abfrage großer Datenmengen, die für Analyse und Forschung genutzt werden können.\nDatenbanken bieten mehrere Vorteile gegenüber herkömmlichen Dateiformaten wie CSV oder Excel-Tabellen:\n\nEffizienz: Datenbanken sind darauf optimiert, große Mengen an Daten schnell und effizient zu verwalten und abzurufen.\nSkalierbarkeit: Datenbanken können mit dem Wachstum der Datenmenge skaliert werden, ohne die Leistung zu beeinträchtigen.\nSicherheit: Datenbanken bieten verschiedene Sicherheitsmechanismen zum Schutz sensibler Daten.\nMehrbenutzerzugriff: Datenbanken ermöglichen mehreren Benutzern gleichzeitig den Zugriff und die Bearbeitung von Daten, ohne dass es zu Konflikten kommt.\n\nEs gibt verschiedene Arten von Datenbanken, die je nach Anwendungsfall und Datenstruktur verwendet werden:\n\nRelationale Datenbanken (RDBMS): Diese verwenden Tabellen zur Speicherung von Daten und sind durch ihre Verwendung von SQL (Structured Query Language) bekannt. Beispiele sind MySQL, PostgreSQL und SQLite.\nNoSQL-Datenbanken: Diese sind für unstrukturierte Daten oder große Mengen an Daten ausgelegt, die nicht in das relationale Modell passen. Beispiele sind MongoDB, Cassandra und Redis.\n\nIn diesem Kapitel befassen wir uns mit den wichtigsten Grundlagen relationaler und NoSQL-Datenbanken.",
+    "text": "Datenbanken bieten leistungsstarke Mittel zur Speicherung, Verwaltung und Abfrage großer Datenmengen, die für Analyse und Forschung genutzt werden können.\nDatenbanken bieten mehrere Vorteile gegenüber herkömmlichen Dateiformaten wie CSV oder Excel-Tabellen:\n\nEffizienz: Datenbanken sind darauf optimiert, große Mengen an Daten schnell und effizient zu verwalten und abzurufen.\nSkalierbarkeit Datenbanken können mit dem Wachstum der Datenmenge skaliert werden, ohne die Leistung zu beeinträchtigen.\nSicherheit Datenbanken bieten verschiedene Sicherheitsmechanismen zum Schutz sensibler Daten.\nMehrbenutzerzugriff Datenbanken ermöglichen mehreren Benutzern gleichzeitig den Zugriff und die Bearbeitung von Daten, ohne dass es zu Konflikten kommt.\n\nEs gibt verschiedene Arten von Datenbanken, die je nach Anwendungsfall und Datenstruktur verwendet werden:\n\nRelationale Datenbanken (RDBMS): Diese verwenden Tabellen zur Speicherung von Daten und sind durch ihre Verwendung von SQL (Structured Query Language) bekannt. Beispiele sind MySQL, PostgreSQL und SQLite.\nNoSQL-Datenbanken: Diese sind für unstrukturierte Daten oder große Mengen an Daten ausgelegt, die nicht in das relationale Modell passen. Beispiele sind MongoDB, Cassandra und Redis.\n\nIn diesem Kapitel befassen wir uns mit den wichtigsten Grundlagen relationaler und NoSQL-Datenbanken.",
     "crumbs": [
       "Datenbanken"
     ]
@@ -1105,40 +1095,29 @@
     "href": "datenbanken/relational.html",
     "title": "23  Relationale Datenbanken",
     "section": "",
-    "text": "23.1 Grundkonzepte relationaler Datenbanken",
+    "text": "23.1 Tabellen\nIm Zentrum jeder relationalen Datenbank stehen Tabellen. Eine Tabelle ist eine strukturierte Sammlung von Daten, die in Zeilen und Spalten organisiert ist. Jede Tabelle repräsentiert eine Entität, und jede Zeile in der Tabelle stellt ein einzelnes Datensatz dieser Entität dar.\nBeispiel einer einfachen Tabelle “Kunden”:\nJede Spalte in einer Tabelle hat einen bestimmten Datentyp, der die Art der Daten definiert, die in dieser Spalte gespeichert werden können. Häufig verwendete Datentypen sind:\nEin Primärschlüssel ist eine Spalte oder eine Kombination von Spalten, die jeden Datensatz in einer Tabelle eindeutig identifiziert. Im obigen Beispiel ist die Spalte “KundenID” der Primärschlüssel der Tabelle “Kunden”.\nEin Fremdschlüssel ist eine Spalte, die eine Beziehung zwischen zwei Tabellen herstellt. Ein Fremdschlüssel in einer Tabelle verweist auf den Primärschlüssel einer anderen Tabelle. Diese Beziehungen sind das Herzstück des relationalen Modells, da sie es ermöglichen, Daten aus verschiedenen Tabellen zu verknüpfen und komplexe Abfragen zu erstellen.",
     "crumbs": [
       "Datenbanken",
       "<span class='chapter-number'>23</span>  <span class='chapter-title'>Relational</span>"
     ]
   },
   {
-    "objectID": "datenbanken/relational.html#grundkonzepte-relationaler-datenbanken",
-    "href": "datenbanken/relational.html#grundkonzepte-relationaler-datenbanken",
+    "objectID": "datenbanken/relational.html#tabellen",
+    "href": "datenbanken/relational.html#tabellen",
     "title": "23  Relationale Datenbanken",
     "section": "",
-    "text": "23.1.1 Tabellen\nIm Zentrum jeder relationalen Datenbank stehen Tabellen. Eine Tabelle ist eine strukturierte Sammlung von Daten, die in Zeilen und Spalten organisiert ist. Jede Tabelle repräsentiert eine Entität, und jede Zeile in der Tabelle stellt ein einzelnes Datensatz dieser Entität dar.\nBeispiel einer einfachen Tabelle “Kunden”:\n\n\n\nKundenID\nName\nEmail\nStadt\n\n\n\n\n1\nMax Müller\nmax.mueller@beispiel.de\nBerlin\n\n\n2\nAnna Schmidt\nanna.schmidt@beispiel.de\nHamburg\n\n\n3\nPeter Weber\npeter.weber@beispiel.de\nMünchen\n\n\n\n\n\n23.1.2 Spalten und Datentypen\nJede Spalte in einer Tabelle hat einen bestimmten Datentyp, der die Art der Daten definiert, die in dieser Spalte gespeichert werden können. Häufig verwendete Datentypen sind:\n\nINTEGER: Ganze Zahlen\nVARCHAR: Zeichenketten variabler Länge\nDATE: Datumsangaben\nBOOLEAN: Wahrheitswerte (true/false)\n\n\n\n23.1.3 Primärschlüssel\nEin Primärschlüssel ist eine Spalte oder eine Kombination von Spalten, die jeden Datensatz in einer Tabelle eindeutig identifiziert. Im obigen Beispiel ist die Spalte “KundenID” der Primärschlüssel der Tabelle “Kunden”.\n\n\n23.1.4 Fremdschlüssel\nEin Fremdschlüssel ist eine Spalte, die eine Beziehung zwischen zwei Tabellen herstellt. Ein Fremdschlüssel in einer Tabelle verweist auf den Primärschlüssel einer anderen Tabelle. Diese Beziehungen sind das Herzstück des relationalen Modells, da sie es ermöglichen, Daten aus verschiedenen Tabellen zu verknüpfen und komplexe Abfragen zu erstellen.\n\n\n23.1.5 Normalisierung\nNormalisierung ist ein Prozess zur Organisation von Daten in einer Datenbank, um Redundanz zu minimieren und Datenintegrität zu gewährleisten. Es gibt mehrere Normalformen (Normal Forms), die Regeln für die Strukturierung von Tabellen definieren.\n\n\n23.1.6 SQL (Structured Query Language)\nSQL ist die Standardsprache für die Verwaltung und Abfrage von Daten in einer relationalen Datenbank. Mit SQL können Sie Daten einfügen, aktualisieren, löschen und abfragen sowie Datenbankstrukturen wie Tabellen und Indizes erstellen und ändern.\nEin einfaches SQL-Abfragebeispiel:\nSELECT Name, Email\nFROM Kunden\nWHERE Stadt = 'Berlin';\nDiese Abfrage selektiert die Spalten “Name” und “Email” aus der Tabelle “Kunden”, wobei nur die Datensätze berücksichtigt werden, bei denen die Stadt “Berlin” ist.",
+    "text": "KundenID\nName\nEmail\nStadt\n\n\n\n\n1\nMax Müller\nmax.mueller@beispiel.de\nBerlin\n\n\n2\nAnna Schmidt\nanna.schmidt@beispiel.de\nHamburg\n\n\n3\nPeter Weber\npeter.weber@beispiel.de\nMünchen\n\n\n\n\n\nINTEGER Ganze Zahlen\nVARCHAR Zeichenketten variabler Länge\nDATE Datumsangaben\nBOOLEAN: Wahrheitswerte (true/false)",
     "crumbs": [
       "Datenbanken",
       "<span class='chapter-number'>23</span>  <span class='chapter-title'>Relational</span>"
     ]
   },
   {
-    "objectID": "datenbanken/relational.html#architektur-relationaler-datenbanken",
-    "href": "datenbanken/relational.html#architektur-relationaler-datenbanken",
+    "objectID": "datenbanken/relational.html#sql",
+    "href": "datenbanken/relational.html#sql",
     "title": "23  Relationale Datenbanken",
-    "section": "23.2 Architektur relationaler Datenbanken",
-    "text": "23.2 Architektur relationaler Datenbanken\n\n23.2.1 Datenbankmanagementsystem (DBMS)\nEin DBMS ist die Software, die die Erstellung, Verwaltung und Nutzung von Datenbanken ermöglicht. Ein relationales DBMS (RDBMS) bietet Funktionen wie Datenintegrität, Transaktionsverwaltung und Sicherheitsmechanismen. Bekannte RDBMS sind MySQL, PostgreSQL und SQLite.\n\n\n23.2.2 Client-Server-Modell\nIn einem typischen RDBMS werden Datenbankabfragen von einem Client (zum Beispiel eine Anwendung oder ein Benutzer) an den Server gesendet, der das DBMS hostet. Der Server verarbeitet die Abfrage und sendet die Ergebnisse an den Client zurück. Dieses Modell unterstützt mehrere gleichzeitige Benutzerzugriffe und eine zentrale Verwaltung der Datenbank.\n\n\n23.2.3 Transaktionen\nTransaktionen sind eine zentrale Komponente von RDBMS und gewährleisten, dass eine Gruppe von Operationen entweder vollständig oder gar nicht ausgeführt wird. Dies garantiert die Konsistenz der Datenbank, selbst bei Systemausfällen oder Fehlern.\n\n\n23.2.4 ACID-Eigenschaften\nDie ACID-Eigenschaften beschreiben die wichtigsten Anforderungen an Transaktionen in einer relationalen Datenbank:\n\nAtomicity (Atomarität): Eine Transaktion wird entweder vollständig ausgeführt oder gar nicht.\nConsistency (Konsistenz): Eine Transaktion bringt die Datenbank von einem konsistenten Zustand in einen anderen.\nIsolation (Isolation): Gleichzeitige Transaktionen beeinflussen sich nicht gegenseitig.\nDurability (Dauerhaftigkeit): Nach Abschluss einer Transaktion bleiben die Änderungen auch bei Systemausfällen erhalten.",
-    "crumbs": [
-      "Datenbanken",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Relational</span>"
-    ]
-  },
-  {
-    "objectID": "datenbanken/relational.html#vorteile-relationaler-datenbanken",
-    "href": "datenbanken/relational.html#vorteile-relationaler-datenbanken",
-    "title": "23  Relationale Datenbanken",
-    "section": "23.3 Vorteile relationaler Datenbanken",
-    "text": "23.3 Vorteile relationaler Datenbanken\n\nStrukturierte Daten: Relationale Datenbanken sind ideal für strukturierte Daten, die in klar definierten Tabellen organisiert werden können.\nFlexibilität: SQL ermöglicht komplexe Abfragen und Manipulationen der Daten.\nDatenintegrität: Durch Primär- und Fremdschlüssel sowie durch Normalisierung kann die Datenintegrität gewährleistet werden.\nSicherheit: RDBMS bieten umfassende Sicherheitsmechanismen, einschließlich Benutzerberechtigungen und Verschlüsselung.\nTransaktionsunterstützung: ACID-Eigenschaften gewährleisten die Zuverlässigkeit von Transaktionen.",
+    "section": "23.2 SQL",
+    "text": "23.2 SQL\nSQL (Structured Query Language) ist die Standardsprache für die Verwaltung und Abfrage von Daten in einer relationalen Datenbank. Mit SQL können Sie Daten einfügen, aktualisieren, löschen und abfragen sowie Datenbankstrukturen wie Tabellen und Indizes erstellen und ändern.\nEin einfaches SQL-Abfragebeispiel:\nSELECT Name, Email\nFROM Kunden\nWHERE Stadt = 'Berlin';\nDiese Abfrage selektiert die Spalten “Name” und “Email” aus der Tabelle “Kunden”, wobei nur die Datensätze berücksichtigt werden, bei denen die Stadt “Berlin” ist.",
     "crumbs": [
       "Datenbanken",
       "<span class='chapter-number'>23</span>  <span class='chapter-title'>Relational</span>"
@@ -1148,8 +1127,8 @@
     "objectID": "datenbanken/relational.html#anwendungsfälle",
     "href": "datenbanken/relational.html#anwendungsfälle",
     "title": "23  Relationale Datenbanken",
-    "section": "23.4 Anwendungsfälle",
-    "text": "23.4 Anwendungsfälle\nRelationale Datenbanken sind in vielen Bereichen weit verbreitet, darunter:\n\nFinanzwesen: Verwaltung von Kontodaten, Transaktionen und Finanzberichten.\nE-Commerce: Verwaltung von Produktkatalogen, Bestellungen und Kundeninformationen.\nGesundheitswesen: Verwaltung von Patientendaten, Terminen und medizinischen Aufzeichnungen.\nBildung: Verwaltung von Schülerdaten, Kursen und Noten.\n\nDurch ihre Struktur, Flexibilität und Zuverlässigkeit bleiben relationale Datenbanken ein zentrales Werkzeug in der Datenverwaltung und -analyse.\nIn den folgenden Kapiteln werden wir uns eingehender mit der Implementierung und Nutzung von MySQL und PostgreSQL befassen, zwei der beliebtesten relationalen Datenbankmanagementsysteme.",
+    "section": "23.3 Anwendungsfälle",
+    "text": "23.3 Anwendungsfälle\nRelationale Datenbanken sind in vielen Bereichen weit verbreitet, darunter:\n\nFinanzwesen: Verwaltung von Kontodaten, Transaktionen und Finanzberichten.\nE-Commerce Verwaltung von Produktkatalogen, Bestellungen und Kundeninformationen.\nGesundheitswesen Verwaltung von Patientendaten, Terminen und medizinischen Aufzeichnungen.\n\nDurch ihre Struktur, Flexibilität und Zuverlässigkeit bleiben relationale Datenbanken ein zentrales Werkzeug in der Datenverwaltung und -analyse.",
     "crumbs": [
       "Datenbanken",
       "<span class='chapter-number'>23</span>  <span class='chapter-title'>Relational</span>"
@@ -1178,22 +1157,11 @@
     ]
   },
   {
-    "objectID": "datenbanken/nosql.html#vorteile-von-nosql-datenbanken",
-    "href": "datenbanken/nosql.html#vorteile-von-nosql-datenbanken",
-    "title": "24  NoSQL Datenbanken",
-    "section": "24.2 Vorteile von NoSQL-Datenbanken",
-    "text": "24.2 Vorteile von NoSQL-Datenbanken\n\nFlexibilität: NoSQL-Datenbanken erlauben die Speicherung von unstrukturierten und halbstrukturierten Daten ohne vorher festgelegte Schemata.\nSkalierbarkeit: Sie ermöglichen eine horizontale Skalierung durch das Hinzufügen weiterer Server.\nLeistung: Optimiert für hohe Schreib- und Leseoperationen, insbesondere bei großen Datenmengen.\nVerfügbarkeit: Entworfen für hohe Verfügbarkeit und Fehlertoleranz, auch bei Ausfällen einzelner Knoten.",
-    "crumbs": [
-      "Datenbanken",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>NoSQL</span>"
-    ]
-  },
-  {
     "objectID": "datenbanken/nosql.html#anwendungsfälle",
     "href": "datenbanken/nosql.html#anwendungsfälle",
     "title": "24  NoSQL Datenbanken",
-    "section": "24.3 Anwendungsfälle",
-    "text": "24.3 Anwendungsfälle\nNoSQL-Datenbanken werden häufig in folgenden Bereichen eingesetzt:\n\nE-Commerce: Verwaltung von Produktkatalogen, Benutzerprofilen und Warenkörben.\nBig Data: Verarbeitung und Analyse großer Datenmengen in Echtzeit.\nContent Management: Speicherung und Verwaltung von Inhalten wie Dokumenten, Bildern und Videos.\nSocial Media: Verwaltung von Benutzerprofilen, Beziehungen und Aktivitäten in sozialen Netzwerken.\nIoT (Internet of Things): Speicherung und Analyse großer Mengen an Sensordaten.\n\nIn den folgenden Kapiteln werden wir uns genauer mit der Implementierung und Anwendungen der NoSQL-Datenbanken MongoDB befassen.",
+    "section": "24.2 Anwendungsfälle",
+    "text": "24.2 Anwendungsfälle\nNoSQL-Datenbanken werden häufig in folgenden Bereichen eingesetzt:\n\nE-Commerce: Verwaltung von Produktkatalogen, Benutzerprofilen und Warenkörben.\nBig Data: Verarbeitung und Analyse großer Datenmengen in Echtzeit.\nContent Management: Speicherung und Verwaltung von Inhalten wie Dokumenten, Bildern und Videos.\nSocial Media: Verwaltung von Benutzerprofilen, Beziehungen und Aktivitäten in sozialen Netzwerken.\nIoT (Internet of Things): Speicherung und Analyse großer Mengen an Sensordaten.\n\nVorteile von NoSQL-Datenbanken:\n\nFlexibilität: NoSQL-Datenbanken erlauben die Speicherung von unstrukturierten und halbstrukturierten Daten ohne vorher festgelegte Schemata.\nSkalierbarkeit: Sie ermöglichen eine horizontale Skalierung durch das Hinzufügen weiterer Server.\nLeistung: Optimiert für hohe Schreib- und Leseoperationen, insbesondere bei großen Datenmengen.\nVerfügbarkeit: Entworfen für hohe Verfügbarkeit und Fehlertoleranz, auch bei Ausfällen einzelner Knoten.",
     "crumbs": [
       "Datenbanken",
       "<span class='chapter-number'>24</span>  <span class='chapter-title'>NoSQL</span>"

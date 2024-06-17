@@ -496,24 +496,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-  <li><a href="#grundkonzepte-relationaler-datenbanken" id="toc-grundkonzepte-relationaler-datenbanken" class="nav-link active" data-scroll-target="#grundkonzepte-relationaler-datenbanken"><span class="header-section-number">23.1</span> Grundkonzepte relationaler Datenbanken</a>
-  <ul class="collapse">
-  <li><a href="#tabellen" id="toc-tabellen" class="nav-link" data-scroll-target="#tabellen"><span class="header-section-number">23.1.1</span> Tabellen</a></li>
-  <li><a href="#spalten-und-datentypen" id="toc-spalten-und-datentypen" class="nav-link" data-scroll-target="#spalten-und-datentypen"><span class="header-section-number">23.1.2</span> Spalten und Datentypen</a></li>
-  <li><a href="#primärschlüssel" id="toc-primärschlüssel" class="nav-link" data-scroll-target="#primärschlüssel"><span class="header-section-number">23.1.3</span> Primärschlüssel</a></li>
-  <li><a href="#fremdschlüssel" id="toc-fremdschlüssel" class="nav-link" data-scroll-target="#fremdschlüssel"><span class="header-section-number">23.1.4</span> Fremdschlüssel</a></li>
-  <li><a href="#normalisierung" id="toc-normalisierung" class="nav-link" data-scroll-target="#normalisierung"><span class="header-section-number">23.1.5</span> Normalisierung</a></li>
-  <li><a href="#sql-structured-query-language" id="toc-sql-structured-query-language" class="nav-link" data-scroll-target="#sql-structured-query-language"><span class="header-section-number">23.1.6</span> SQL (Structured Query Language)</a></li>
-  </ul></li>
-  <li><a href="#architektur-relationaler-datenbanken" id="toc-architektur-relationaler-datenbanken" class="nav-link" data-scroll-target="#architektur-relationaler-datenbanken"><span class="header-section-number">23.2</span> Architektur relationaler Datenbanken</a>
-  <ul class="collapse">
-  <li><a href="#datenbankmanagementsystem-dbms" id="toc-datenbankmanagementsystem-dbms" class="nav-link" data-scroll-target="#datenbankmanagementsystem-dbms"><span class="header-section-number">23.2.1</span> Datenbankmanagementsystem (DBMS)</a></li>
-  <li><a href="#client-server-modell" id="toc-client-server-modell" class="nav-link" data-scroll-target="#client-server-modell"><span class="header-section-number">23.2.2</span> Client-Server-Modell</a></li>
-  <li><a href="#transaktionen" id="toc-transaktionen" class="nav-link" data-scroll-target="#transaktionen"><span class="header-section-number">23.2.3</span> Transaktionen</a></li>
-  <li><a href="#acid-eigenschaften" id="toc-acid-eigenschaften" class="nav-link" data-scroll-target="#acid-eigenschaften"><span class="header-section-number">23.2.4</span> ACID-Eigenschaften</a></li>
-  </ul></li>
-  <li><a href="#vorteile-relationaler-datenbanken" id="toc-vorteile-relationaler-datenbanken" class="nav-link" data-scroll-target="#vorteile-relationaler-datenbanken"><span class="header-section-number">23.3</span> Vorteile relationaler Datenbanken</a></li>
-  <li><a href="#anwendungsfälle" id="toc-anwendungsfälle" class="nav-link" data-scroll-target="#anwendungsfälle"><span class="header-section-number">23.4</span> Anwendungsfälle</a></li>
+  <li><a href="#tabellen" id="toc-tabellen" class="nav-link active" data-scroll-target="#tabellen"><span class="header-section-number">23.1</span> Tabellen</a></li>
+  <li><a href="#sql" id="toc-sql" class="nav-link" data-scroll-target="#sql"><span class="header-section-number">23.2</span> SQL</a></li>
+  <li><a href="#anwendungsfälle" id="toc-anwendungsfälle" class="nav-link" data-scroll-target="#anwendungsfälle"><span class="header-section-number">23.3</span> Anwendungsfälle</a></li>
   </ul>
 </nav>
     </div>
@@ -539,11 +524,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Relationale Datenbanken sind das Rückgrat vieler moderner Datenbankanwendungen und werden durch ihre Fähigkeit, Daten in strukturierten Tabellen zu organisieren und zu verwalten, definiert. In diesem Kapitel werden wir die Grundkonzepte und Architektur relationaler Datenbanken beleuchten, einschließlich ihrer Komponenten, Vorteile und typischen Anwendungsfälle.</p>
-<section id="grundkonzepte-relationaler-datenbanken" class="level2" data-number="23.1">
-<h2 data-number="23.1" class="anchored" data-anchor-id="grundkonzepte-relationaler-datenbanken"><span class="header-section-number">23.1</span> Grundkonzepte relationaler Datenbanken</h2>
-<section id="tabellen" class="level3" data-number="23.1.1">
-<h3 data-number="23.1.1" class="anchored" data-anchor-id="tabellen"><span class="header-section-number">23.1.1</span> Tabellen</h3>
+<p>Relationale Datenbanken sind das Rückgrat vieler moderner Datenbankanwendungen und werden durch ihre Fähigkeit, Daten in strukturierten Tabellen zu organisieren und zu verwalten, definiert.</p>
+<p>Ein Datenbankmanagementsystem (DBMS) ist die Software, die die Erstellung, Verwaltung und Nutzung von Datenbanken ermöglicht. Ein relationales DBMS (RDBMS) bietet Funktionen wie Datenintegrität, Transaktionsverwaltung und Sicherheitsmechanismen. Bekannte RDBMS sind MySQL, PostgreSQL und SQLite.</p>
+<section id="tabellen" class="level2" data-number="23.1">
+<h2 data-number="23.1" class="anchored" data-anchor-id="tabellen"><span class="header-section-number">23.1</span> Tabellen</h2>
 <p>Im Zentrum jeder relationalen Datenbank stehen Tabellen. Eine Tabelle ist eine strukturierte Sammlung von Daten, die in Zeilen und Spalten organisiert ist. Jede Tabelle repräsentiert eine Entität, und jede Zeile in der Tabelle stellt ein einzelnes Datensatz dieser Entität dar.</p>
 <p>Beispiel einer einfachen Tabelle “Kunden”:</p>
 <table class="caption-top table">
@@ -576,85 +560,34 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 </tbody>
 </table>
-</section>
-<section id="spalten-und-datentypen" class="level3" data-number="23.1.2">
-<h3 data-number="23.1.2" class="anchored" data-anchor-id="spalten-und-datentypen"><span class="header-section-number">23.1.2</span> Spalten und Datentypen</h3>
 <p>Jede Spalte in einer Tabelle hat einen bestimmten Datentyp, der die Art der Daten definiert, die in dieser Spalte gespeichert werden können. Häufig verwendete Datentypen sind:</p>
 <ul>
-<li><strong>INTEGER:</strong> Ganze Zahlen</li>
-<li><strong>VARCHAR:</strong> Zeichenketten variabler Länge</li>
-<li><strong>DATE:</strong> Datumsangaben</li>
-<li><strong>BOOLEAN:</strong> Wahrheitswerte (true/false)</li>
+<li><em>INTEGER</em> Ganze Zahlen</li>
+<li><em>VARCHAR</em> Zeichenketten variabler Länge</li>
+<li><em>DATE</em> Datumsangaben</li>
+<li><em>BOOLEAN</em>: Wahrheitswerte (true/false)</li>
 </ul>
+<p>Ein <em>Primärschlüssel</em> ist eine Spalte oder eine Kombination von Spalten, die jeden Datensatz in einer Tabelle eindeutig identifiziert. Im obigen Beispiel ist die Spalte “KundenID” der Primärschlüssel der Tabelle “Kunden”.</p>
+<p>Ein <em>Fremdschlüssel</em> ist eine Spalte, die eine Beziehung zwischen zwei Tabellen herstellt. Ein Fremdschlüssel in einer Tabelle verweist auf den Primärschlüssel einer anderen Tabelle. Diese Beziehungen sind das Herzstück des relationalen Modells, da sie es ermöglichen, Daten aus verschiedenen Tabellen zu verknüpfen und komplexe Abfragen zu erstellen.</p>
 </section>
-<section id="primärschlüssel" class="level3" data-number="23.1.3">
-<h3 data-number="23.1.3" class="anchored" data-anchor-id="primärschlüssel"><span class="header-section-number">23.1.3</span> Primärschlüssel</h3>
-<p>Ein Primärschlüssel ist eine Spalte oder eine Kombination von Spalten, die jeden Datensatz in einer Tabelle eindeutig identifiziert. Im obigen Beispiel ist die Spalte “KundenID” der Primärschlüssel der Tabelle “Kunden”.</p>
-</section>
-<section id="fremdschlüssel" class="level3" data-number="23.1.4">
-<h3 data-number="23.1.4" class="anchored" data-anchor-id="fremdschlüssel"><span class="header-section-number">23.1.4</span> Fremdschlüssel</h3>
-<p>Ein Fremdschlüssel ist eine Spalte, die eine Beziehung zwischen zwei Tabellen herstellt. Ein Fremdschlüssel in einer Tabelle verweist auf den Primärschlüssel einer anderen Tabelle. Diese Beziehungen sind das Herzstück des relationalen Modells, da sie es ermöglichen, Daten aus verschiedenen Tabellen zu verknüpfen und komplexe Abfragen zu erstellen.</p>
-</section>
-<section id="normalisierung" class="level3" data-number="23.1.5">
-<h3 data-number="23.1.5" class="anchored" data-anchor-id="normalisierung"><span class="header-section-number">23.1.5</span> Normalisierung</h3>
-<p>Normalisierung ist ein Prozess zur Organisation von Daten in einer Datenbank, um Redundanz zu minimieren und Datenintegrität zu gewährleisten. Es gibt mehrere Normalformen (Normal Forms), die Regeln für die Strukturierung von Tabellen definieren.</p>
-</section>
-<section id="sql-structured-query-language" class="level3" data-number="23.1.6">
-<h3 data-number="23.1.6" class="anchored" data-anchor-id="sql-structured-query-language"><span class="header-section-number">23.1.6</span> SQL (Structured Query Language)</h3>
-<p>SQL ist die Standardsprache für die Verwaltung und Abfrage von Daten in einer relationalen Datenbank. Mit SQL können Sie Daten einfügen, aktualisieren, löschen und abfragen sowie Datenbankstrukturen wie Tabellen und Indizes erstellen und ändern.</p>
+<section id="sql" class="level2" data-number="23.2">
+<h2 data-number="23.2" class="anchored" data-anchor-id="sql"><span class="header-section-number">23.2</span> SQL</h2>
+<p>SQL (Structured Query Language) ist die Standardsprache für die Verwaltung und Abfrage von Daten in einer relationalen Datenbank. Mit SQL können Sie Daten einfügen, aktualisieren, löschen und abfragen sowie Datenbankstrukturen wie Tabellen und Indizes erstellen und ändern.</p>
 <p>Ein einfaches SQL-Abfragebeispiel:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> Name, Email</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> Kunden</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">WHERE</span> Stadt <span class="op">=</span> <span class="st">'Berlin'</span>;</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Diese Abfrage selektiert die Spalten “Name” und “Email” aus der Tabelle “Kunden”, wobei nur die Datensätze berücksichtigt werden, bei denen die Stadt “Berlin” ist.</p>
 </section>
-</section>
-<section id="architektur-relationaler-datenbanken" class="level2" data-number="23.2">
-<h2 data-number="23.2" class="anchored" data-anchor-id="architektur-relationaler-datenbanken"><span class="header-section-number">23.2</span> Architektur relationaler Datenbanken</h2>
-<section id="datenbankmanagementsystem-dbms" class="level3" data-number="23.2.1">
-<h3 data-number="23.2.1" class="anchored" data-anchor-id="datenbankmanagementsystem-dbms"><span class="header-section-number">23.2.1</span> Datenbankmanagementsystem (DBMS)</h3>
-<p>Ein DBMS ist die Software, die die Erstellung, Verwaltung und Nutzung von Datenbanken ermöglicht. Ein relationales DBMS (RDBMS) bietet Funktionen wie Datenintegrität, Transaktionsverwaltung und Sicherheitsmechanismen. Bekannte RDBMS sind MySQL, PostgreSQL und SQLite.</p>
-</section>
-<section id="client-server-modell" class="level3" data-number="23.2.2">
-<h3 data-number="23.2.2" class="anchored" data-anchor-id="client-server-modell"><span class="header-section-number">23.2.2</span> Client-Server-Modell</h3>
-<p>In einem typischen RDBMS werden Datenbankabfragen von einem Client (zum Beispiel eine Anwendung oder ein Benutzer) an den Server gesendet, der das DBMS hostet. Der Server verarbeitet die Abfrage und sendet die Ergebnisse an den Client zurück. Dieses Modell unterstützt mehrere gleichzeitige Benutzerzugriffe und eine zentrale Verwaltung der Datenbank.</p>
-</section>
-<section id="transaktionen" class="level3" data-number="23.2.3">
-<h3 data-number="23.2.3" class="anchored" data-anchor-id="transaktionen"><span class="header-section-number">23.2.3</span> Transaktionen</h3>
-<p>Transaktionen sind eine zentrale Komponente von RDBMS und gewährleisten, dass eine Gruppe von Operationen entweder vollständig oder gar nicht ausgeführt wird. Dies garantiert die Konsistenz der Datenbank, selbst bei Systemausfällen oder Fehlern.</p>
-</section>
-<section id="acid-eigenschaften" class="level3" data-number="23.2.4">
-<h3 data-number="23.2.4" class="anchored" data-anchor-id="acid-eigenschaften"><span class="header-section-number">23.2.4</span> ACID-Eigenschaften</h3>
-<p>Die ACID-Eigenschaften beschreiben die wichtigsten Anforderungen an Transaktionen in einer relationalen Datenbank:</p>
-<ul>
-<li><strong>Atomicity (Atomarität):</strong> Eine Transaktion wird entweder vollständig ausgeführt oder gar nicht.</li>
-<li><strong>Consistency (Konsistenz):</strong> Eine Transaktion bringt die Datenbank von einem konsistenten Zustand in einen anderen.</li>
-<li><strong>Isolation (Isolation):</strong> Gleichzeitige Transaktionen beeinflussen sich nicht gegenseitig.</li>
-<li><strong>Durability (Dauerhaftigkeit):</strong> Nach Abschluss einer Transaktion bleiben die Änderungen auch bei Systemausfällen erhalten.</li>
-</ul>
-</section>
-</section>
-<section id="vorteile-relationaler-datenbanken" class="level2" data-number="23.3">
-<h2 data-number="23.3" class="anchored" data-anchor-id="vorteile-relationaler-datenbanken"><span class="header-section-number">23.3</span> Vorteile relationaler Datenbanken</h2>
-<ul>
-<li><strong>Strukturierte Daten:</strong> Relationale Datenbanken sind ideal für strukturierte Daten, die in klar definierten Tabellen organisiert werden können.</li>
-<li><strong>Flexibilität:</strong> SQL ermöglicht komplexe Abfragen und Manipulationen der Daten.</li>
-<li><strong>Datenintegrität:</strong> Durch Primär- und Fremdschlüssel sowie durch Normalisierung kann die Datenintegrität gewährleistet werden.</li>
-<li><strong>Sicherheit:</strong> RDBMS bieten umfassende Sicherheitsmechanismen, einschließlich Benutzerberechtigungen und Verschlüsselung.</li>
-<li><strong>Transaktionsunterstützung:</strong> ACID-Eigenschaften gewährleisten die Zuverlässigkeit von Transaktionen.</li>
-</ul>
-</section>
-<section id="anwendungsfälle" class="level2" data-number="23.4">
-<h2 data-number="23.4" class="anchored" data-anchor-id="anwendungsfälle"><span class="header-section-number">23.4</span> Anwendungsfälle</h2>
+<section id="anwendungsfälle" class="level2" data-number="23.3">
+<h2 data-number="23.3" class="anchored" data-anchor-id="anwendungsfälle"><span class="header-section-number">23.3</span> Anwendungsfälle</h2>
 <p>Relationale Datenbanken sind in vielen Bereichen weit verbreitet, darunter:</p>
 <ul>
-<li><strong>Finanzwesen:</strong> Verwaltung von Kontodaten, Transaktionen und Finanzberichten.</li>
-<li><strong>E-Commerce:</strong> Verwaltung von Produktkatalogen, Bestellungen und Kundeninformationen.</li>
-<li><strong>Gesundheitswesen:</strong> Verwaltung von Patientendaten, Terminen und medizinischen Aufzeichnungen.</li>
-<li><strong>Bildung:</strong> Verwaltung von Schülerdaten, Kursen und Noten.</li>
+<li>Finanzwesen: Verwaltung von Kontodaten, Transaktionen und Finanzberichten.</li>
+<li>E-Commerce Verwaltung von Produktkatalogen, Bestellungen und Kundeninformationen.</li>
+<li>Gesundheitswesen Verwaltung von Patientendaten, Terminen und medizinischen Aufzeichnungen.</li>
 </ul>
 <p>Durch ihre Struktur, Flexibilität und Zuverlässigkeit bleiben relationale Datenbanken ein zentrales Werkzeug in der Datenverwaltung und -analyse.</p>
-<p>In den folgenden Kapiteln werden wir uns eingehender mit der Implementierung und Nutzung von MySQL und PostgreSQL befassen, zwei der beliebtesten relationalen Datenbankmanagementsysteme.</p>
 
 
 </section>
