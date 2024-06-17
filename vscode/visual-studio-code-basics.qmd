@@ -41,14 +41,14 @@ Visual Studio Code unterstützt Jupyter-Notebooks, sobald Sie die Jupyter-Erweit
 So richten Sie ein Jupyter-Notebook in VS Code ein und verwenden es:
 
 1. Öffnen Sie Visual Studio Code.
-2. Stellen Sie sicher, dass die Jupyter-Erweiterung [wie zuvor beschrieben](visual-studio-code-extensions.qmd) installiert ist.
+2. Stellen Sie sicher, dass die Jupyter-Erweiterung [wie zuvor beschrieben](visual-studio-code-erweiterungen.qmd) installiert ist.
 3. Verwenden Sie die Tastenkombination `Strg+Shift+P` (Windows) oder `Command+Shift+P` (Mac), um die Befehls-Palette zu öffnen.
 4. Geben Sie `Datei: Ordner öffnen...` ein und wählen Sie diesen Befehl aus. Navigieren Sie zu dem Ordner `toolkit-lab` und wählen Sie ihn als Ihr Arbeitsverzeichnis aus.
 5. Beim ersten Öffnen eines neuen Projektordners, wie `toolkit-lab`, werden Sie mit einer Anfrage zur Vertrauenswürdigkeit des Arbeitsbereichs konfrontiert. Es ist wichtig, **"Ja, ich vertraue den Autoren"** auszuwählen.
 6. Nachdem der Ordner geöffnet ist, verwenden Sie erneut die Befehls-Palette und geben Sie `Jupyter: Neues leeres Notebook erstellen` ein. Dies öffnet ein neues Notebook in VS Code.
 7. Speichern Sie das Notebook im Unterordner `code` innerhalb von `toolkit-lab`, indem Sie auf `Datei > Speichern unter` klicken und zum Unterordner `code` navigieren.
 8. Um Zellen zu Ihrem Notebook hinzuzufügen, klicken Sie auf das `+`-Symbol (Sie können entweder Code- oder Markdown-Zellen hinzufügen).
-9. Bevor Sie Code ausführen, müssen Sie einen **Kernel** auswählen, der der Python-Umgebung entspricht, die Sie verwenden möchten. Klicken Sie auf "Kernel auswählen" in der oberen rechten Ecke Ihres Notebooks, wählen Sie "Python-Umgebungen" und wählen Sie den Kernel `basics`, den wir [zuvor eingerichtet haben](../python/python-environment-basics.qmd).
+9. Bevor Sie Code ausführen, müssen Sie einen **Kernel** auswählen, der der Python-Umgebung entspricht, die Sie verwenden möchten. Klicken Sie auf "Kernel auswählen" in der oberen rechten Ecke Ihres Notebooks, wählen Sie "Python-Umgebungen" und wählen Sie den Kernel `basics`, den wir [zuvor eingerichtet haben](../python/python-arbeitsbereich.qmd).
 
 :::{.callout-note}
 Ein "Kernel" in einem Jupyter-Notebook ist ein Prozess, der den im Notebook-Dokument eingebetteten Code ausführt. Bei der Arbeit mit Python ist der Kernel eine Instanz der Python-Laufzeitumgebung auf Ihrem Computer.
