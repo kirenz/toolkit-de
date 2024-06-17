@@ -6,7 +6,7 @@ Dieses Tutorial führt Sie durch den Prozess des Übertragens von Daten aus eine
 
 Richten Sie zuerst eine isolierte Python-Umgebung mit Anaconda ein:
 
-1. Erstellen Sie eine neue Umgebung (wenn Sie detailliertere Erklärungen benötigen, lesen Sie dieses Kapitel über die [Erstellung von Umgebungen](../python/python-environment-basics.qmd)):
+1. Erstellen Sie eine neue Umgebung (wenn Sie detailliertere Erklärungen benötigen, lesen Sie dieses Kapitel über die [Erstellung von Umgebungen](../python/python-arbeitsbereich.qmd)):
 
 ```bash
 conda create -n postgres python=3.11 pip
@@ -151,4 +151,4 @@ Mit der eingerichteten Verbindung übertragen wir nun Daten von einem pandas Dat
    :::
 
 
-Sie sollten die Tabelle nun auch in PgAdmin4 sehen. Öffnen Sie dafür die Anwendung und navigieren Sie zu der Tabelle (siehe dazu [diese Hinweise](postgres-pgadmin4.qmd))
+Sie sollten die Tabelle nun auch in PgAdmin4 sehen. Öffnen Sie dafür die Anwendung und navigieren Sie zu der Tabelle.
