@@ -548,6 +548,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<p>Durch das Starten und Stoppen des MongoDB-Dienstes können Sie sicherstellen, dass die Datenbank ordnungsgemäß läuft oder heruntergefahren wird, je nach Ihren Anforderungen.</p>
 <section id="windows" class="level2" data-number="32.1">
 <h2 data-number="32.1" class="anchored" data-anchor-id="windows"><span class="header-section-number">32.1</span> Windows</h2>
 <section id="mongodb-starten" class="level3" data-number="32.1.1">
@@ -555,59 +556,58 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>MongoDB sollte als Dienst automatisch gestartet werden, wenn Sie die Option “Install MongoDB as a Service” während der Installation aktiviert haben. Sie müssen daher zunächst keine weiteren Schritte unternehmen und können zum nächsten Kaptitel übergehen.</p>
 <p>Führen Sie die folgenden Schritte nur dann aus, falls MongoDB nicht automatisch gestartet wurde oder falls Sie den Dienst neu starten möchten:</p>
 <ol type="1">
-<li><strong>Öffnen Sie die Dienstverwaltung</strong>:
+<li>Öffnen Sie die Dienstverwaltung:
 <ul>
 <li>Drücken Sie die <code>Windows-Taste</code> + <code>R</code>, um das Ausführen-Dialogfeld zu öffnen.</li>
 <li>Geben Sie <code>services.msc</code> ein und drücken Sie <code>Enter</code>.</li>
 </ul></li>
-<li><strong>Finden Sie den MongoDB-Dienst</strong>:
+<li>Finden Sie den MongoDB-Dienst:
 <ul>
 <li>Im Fenster “Dienste” scrollen Sie nach unten, bis Sie den Dienst namens <code>MongoDB</code> finden.</li>
 </ul></li>
-<li><strong>Starten Sie den Dienst</strong>:
+<li>Starten Sie den Dienst:
 <ul>
 <li>Klicken Sie mit der rechten Maustaste auf den <code>MongoDB</code>-Dienst und wählen Sie <code>Starten</code> aus dem Kontextmenü.</li>
 </ul></li>
 </ol>
 <p>Alternativ können Sie den MongoDB-Dienst auch über die Eingabeaufforderung starten:</p>
 <ol type="1">
-<li><p><strong>Öffnen Sie die Eingabeaufforderung als Administrator</strong>:</p>
+<li><p>Öffnen Sie die Eingabeaufforderung als Administrator:</p>
 <ul>
 <li>Drücken Sie die <code>Windows-Taste</code>, geben Sie <code>cmd</code> ein, klicken Sie mit der rechten Maustaste auf <code>Eingabeaufforderung</code> und wählen Sie <code>Als Administrator ausführen</code>.</li>
 </ul></li>
-<li><p><strong>Führen Sie den folgenden Befehl aus, um den MongoDB-Dienst zu starten</strong>:</p>
+<li><p>Führen Sie den folgenden Befehl aus, um den MongoDB-Dienst zu starten:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">net</span> start MongoDB</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 </ol>
 </section>
 <section id="mongodb-stoppen" class="level3" data-number="32.1.2">
 <h3 data-number="32.1.2" class="anchored" data-anchor-id="mongodb-stoppen"><span class="header-section-number">32.1.2</span> MongoDB stoppen</h3>
 <p>Um MongoDB zu stoppen, können Sie entweder die Dienstverwaltung verwenden oder einen Befehl in der Eingabeaufforderung ausführen.</p>
-<p><strong>So stoppen Sie den MongoDB-Dienst manuell:</strong></p>
+<p>So stoppen Sie den MongoDB-Dienst manuell:</p>
 <ol type="1">
-<li><strong>Öffnen Sie die Dienstverwaltung</strong>:
+<li>Öffnen Sie die Dienstverwaltung:
 <ul>
 <li>Drücken Sie die <code>Windows-Taste</code> + <code>R</code>, um das Ausführen-Dialogfeld zu öffnen.</li>
 <li>Geben Sie <code>services.msc</code> ein und drücken Sie <code>Enter</code>.</li>
 </ul></li>
-<li><strong>Finden Sie den MongoDB-Dienst</strong>:
+<li>Finden Sie den MongoDB-Dienst:
 <ul>
 <li>Im Fenster “Dienste” scrollen Sie nach unten, bis Sie den Dienst namens <code>MongoDB</code> finden.</li>
 </ul></li>
-<li><strong>Stoppen Sie den Dienst</strong>:
+<li>Stoppen Sie den Dienst:
 <ul>
 <li>Klicken Sie mit der rechten Maustaste auf den <code>MongoDB</code>-Dienst und wählen Sie <code>Beenden</code> aus dem Kontextmenü.</li>
 </ul></li>
 </ol>
 <p>Alternativ können Sie den MongoDB-Dienst auch über die Eingabeaufforderung stoppen:</p>
 <ol type="1">
-<li><p><strong>Öffnen Sie die Eingabeaufforderung als Administrator</strong>:</p>
+<li><p>Öffnen Sie die Eingabeaufforderung als Administrator:</p>
 <ul>
 <li>Drücken Sie die <code>Windows-Taste</code>, geben Sie <code>cmd</code> ein, klicken Sie mit der rechten Maustaste auf <code>Eingabeaufforderung</code> und wählen Sie <code>Als Administrator ausführen</code>.</li>
 </ul></li>
-<li><p><strong>Führen Sie den folgenden Befehl aus, um den MongoDB-Dienst zu stoppen</strong>:</p>
+<li><p>Führen Sie den folgenden Befehl aus, um den MongoDB-Dienst zu stoppen:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">net</span> stop MongoDB</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 </ol>
-<p>Durch das Starten und Stoppen des MongoDB-Dienstes können Sie sicherstellen, dass die Datenbank ordnungsgemäß läuft oder heruntergefahren wird, je nach Ihren Anforderungen.</p>
 </section>
 </section>
 <section id="macos" class="level2" data-number="32.2">
@@ -615,13 +615,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="mongodb-starten-1" class="level3" data-number="32.2.1">
 <h3 data-number="32.2.1" class="anchored" data-anchor-id="mongodb-starten-1"><span class="header-section-number">32.2.1</span> MongoDB starten</h3>
 <p>Nach der Installation von MongoDB können Sie den Datenbankdienst einfach mit Homebrew starten. Homebrew verwaltet Dienste wie MongoDB und ermöglicht es Ihnen, diese mit einfachen Befehlen zu starten und zu stoppen.</p>
-<p><strong>So starten Sie den MongoDB-Dienst:</strong></p>
+<p>So starten Sie den MongoDB-Dienst:</p>
 <ol type="1">
-<li><strong>Öffnen Sie das Terminal</strong>:
+<li>Öffnen Sie das Terminal:
 <ul>
 <li>Sie finden das Terminal im Ordner “Dienstprogramme” innerhalb des Ordners “Programme” oder indem Sie <code>cmd + Leertaste</code> drücken und “Terminal” eingeben.</li>
 </ul></li>
-<li><strong>Starten Sie den MongoDB-Dienst</strong>:
+<li>Starten Sie den MongoDB-Dienst:
 <ul>
 <li>Geben Sie den folgenden Befehl im Terminal ein und drücken Sie <code>Enter</code>:</li>
 </ul>
@@ -631,14 +631,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul></li>
 </ol>
 <p>Um sicherzustellen, dass MongoDB korrekt gestartet wurde und läuft, können Sie eine Liste aller von Homebrew verwalteten Dienste anzeigen.</p>
-<p><strong>So überprüfen Sie den Status von MongoDB:</strong></p>
+<p>So überprüfen Sie den Status von MongoDB:</p>
 <ol type="1">
-<li><p><strong>Geben Sie den folgenden Befehl im Terminal ein und drücken Sie <code>Enter</code></strong>:</p>
+<li><p>Geben Sie den folgenden Befehl im Terminal ein und drücken Sie <code>Enter</code>:</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> services list</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
 <li>Dieser Befehl zeigt eine Liste aller Dienste an, die von Homebrew verwaltet werden, sowie deren aktuellen Status.</li>
 </ul></li>
-<li><p><strong>Überprüfen Sie den Eintrag für <code>mongodb-community</code></strong>:</p>
+<li><p>Überprüfen Sie den Eintrag für <code>mongodb-community</code>:</p>
 <ul>
 <li>In der Liste sollten Sie <code>mongodb-community</code> sehen, gefolgt von der Versionsnummer und dem Status <code>started</code>. Dies zeigt an, dass MongoDB erfolgreich läuft.</li>
 </ul></li>
@@ -647,14 +647,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="mongodb-stoppen-1" class="level3" data-number="32.2.2">
 <h3 data-number="32.2.2" class="anchored" data-anchor-id="mongodb-stoppen-1"><span class="header-section-number">32.2.2</span> MongoDB stoppen</h3>
 <p>Wenn Sie MongoDB beenden möchten, können Sie dies ebenfalls mit einem einfachen Homebrew-Befehl tun.</p>
-<p><strong>So stoppen Sie den MongoDB-Dienst:</strong></p>
-<ol type="1">
-<li><p><strong>Geben Sie den folgenden Befehl im Terminal ein und drücken Sie <code>Enter</code></strong>:</p>
+<p>So stoppen Sie den MongoDB-Dienst:</p>
+<p>Geben Sie den folgenden Befehl im Terminal ein und drücken Sie <code>Enter</code>:</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> services stop mongodb-community@7.0</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ul>
-<li>Es sollte eine Bestätigungsmeldung erscheinen, dass der Dienst gestoppt wurde.</li>
-</ul></li>
-</ol>
+<p>Es sollte eine Bestätigungsmeldung erscheinen, dass der Dienst gestoppt wurde.</p>
 
 
 </section>

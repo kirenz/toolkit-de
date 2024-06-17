@@ -540,50 +540,51 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<p>In diesem Abschnitt wird die Installation der NoSQL-Datenbank <em>MongoDB</em> und der <em>MongoDB Shell</em> (<code>mongosh</code>) behandelt.</p>
 <section id="windows" class="level2" data-number="31.1">
 <h2 data-number="31.1" class="anchored" data-anchor-id="windows"><span class="header-section-number">31.1</span> Windows</h2>
 <ol type="1">
-<li><strong>MongoDB herunterladen</strong>:<br>
+<li>MongoDB herunterladen:<br>
 Besuchen Sie die <a href="https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-windows/#install-mongodb-community-edition">offizielle MongoDB-Download-Seite</a> und laden Sie die aktuelle (“current”) MongoDB Community Server-Version für Windows herunter.
 <ul>
 <li>Version: … (current).</li>
 <li>Platform: Windows x64</li>
 <li>Package: msi</li>
 </ul></li>
-<li><strong>Installation</strong>:
+<li>Installation:
 <ul>
 <li>Führen Sie das Installationsprogramm aus und folgen Sie den Anweisungen.</li>
 <li>Wählen Sie “Complete” als Setup-Typ.</li>
 <li>Aktivieren Sie die Option “Install MongoDB as a Service”.</li>
 </ul></li>
-<li><strong>MongoDB Shell (<code>mongosh</code>) herunterladen</strong>:<br>
+<li>MongoDB Shell (<code>mongosh</code>) herunterladen:<br>
 Besuchen Sie die <a href="https://www.mongodb.com/try/download/shell">MongoDB Shell Download-Seite</a> und laden Sie die aktuelle Version von MongoDB Shell herunter (wählen Sie als Plattform <em>Windows</em> und als Package <em>msi</em>).</li>
 </ol>
 <p>Um MongoDB von jeder Eingabeaufforderung aus zugänglich zu machen, setzen wir nun eine Umgebungsvariable. Dadurch können Sie <code>mongod</code> und <code>mongo</code> von jeder Eingabeaufforderung aus ohne Angabe des vollständigen Pfades ausführen.</p>
 <p>Hier ist eine detaillierte Anleitung, wie Sie die Umgebungsvariable unter Windows setzen können:</p>
 <ol start="4" type="1">
-<li><strong>Pfad zu <code>mongod.exe</code> und <code>mongosh.exe</code> ermitteln</strong>:
+<li>Pfad zu <code>mongod.exe</code> und <code>mongosh.exe</code> ermitteln:
 <ul>
 <li>Der Pfad ist in der Regel <code>C:\Program Files\MongoDB\Server\&lt;Version&gt;\bin</code>. Finden Sie den Pfad im Datei-Explorer und notieren Sie ihn.</li>
 </ul></li>
-<li><strong>Umgebungsvariablen öffnen</strong>:
+<li>Umgebungsvariablen öffnen:
 <ul>
 <li>Drücken Sie die Windows-Taste und geben Sie “Umgebungsvariablen” ein.</li>
 <li>Wählen Sie “Umgebungsvariablen für dieses Konto bearbeiten” oder “Systemumgebungsvariablen bearbeiten” aus.</li>
 </ul></li>
-<li><strong>Systemumgebungsvariablen bearbeiten</strong>:
+<li>Systemumgebungsvariablen bearbeiten:
 <ul>
 <li>Im Fenster “Systemeigenschaften” klicken Sie auf die Schaltfläche “Umgebungsvariablen”.</li>
 </ul></li>
-<li><strong>Pfad-Variable bearbeiten</strong>:
+<li>Pfad-Variable bearbeiten:
 <ul>
 <li>Im Abschnitt “Systemvariablen” suchen Sie die Variable “Path” und wählen Sie sie aus. Klicken Sie dann auf “Bearbeiten”.</li>
 </ul></li>
-<li><strong>Neuen Pfad hinzufügen</strong>:
+<li>Neuen Pfad hinzufügen:
 <ul>
 <li>Klicken Sie auf “Neu” und fügen Sie den Pfad zu <code>mongod.exe</code> hinzu (z.B. <code>C:\Program Files\MongoDB\Server\&lt;Version&gt;\bin</code>).</li>
 </ul></li>
-<li><strong>Änderungen speichern</strong>:
+<li>Änderungen speichern:
 <ul>
 <li>Klicken Sie auf “OK”, um alle Fenster zu schließen und die Änderungen zu speichern.</li>
 </ul></li>
@@ -597,7 +598,7 @@ Besuchen Sie die <a href="https://www.mongodb.com/try/download/shell">MongoDB Sh
 <h2 data-number="31.2" class="anchored" data-anchor-id="macos"><span class="header-section-number">31.2</span> macOS</h2>
 <p>Folgen Sie der Installationsanweisung der <a href="https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/#install-mongodb-community-edition">MongoDB-Dokumentation</a>:</p>
 <ol type="1">
-<li><p><strong>Xcode Command-Line Tools installieren</strong> (falls noch nicht installiert): Homebrew benötigt die Xcode Command-Line Tools von Apples Xcode.</p>
+<li><p>Xcode Command-Line Tools installieren (falls noch nicht installiert): Homebrew benötigt die Xcode Command-Line Tools von Apples Xcode.</p>
 <ul>
 <li>Prüfen Sie im Terminal, ob XCode installiert ist (wenn Xcode installiert ist, wird die Version angezeigt. Wenn nicht, wird eine entsprechende Fehlermeldung angezeigt und Sie müssen XCode installieren):</li>
 </ul>
@@ -606,12 +607,12 @@ Besuchen Sie die <a href="https://www.mongodb.com/try/download/shell">MongoDB Sh
 <li>Falls notwendig, installieren Sie die Xcode Command-Line Tools mit folgendem Befehl im macOS Terminal:</li>
 </ul>
 <div class="sourceCode" id="cb4"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">xcode-select</span> <span class="at">--install</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p><strong>Homebrew installieren</strong> (falls noch nicht installiert):</p>
+<li><p>Homebrew installieren (falls noch nicht installiert):</p>
 <ul>
 <li>Führen Sie diesen Befehl im Terminal aus, um den <a href="https://brew.sh/">Homebrew</a>-Paketmanager zu installieren:</li>
 </ul>
 <div class="sourceCode" id="cb5"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">/bin/bash</span> <span class="at">-c</span> <span class="st">"</span><span class="va">$(</span><span class="ex">curl</span> <span class="at">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="va">)</span><span class="st">"</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p><strong>MongoDB installieren</strong>:</p>
+<li><p>MongoDB installieren:</p>
 <ul>
 <li>Laden Sie das offizielle Homebrew-Formular für MongoDB und die Datenbank-Tools herunter, indem Sie folgenden Befehl im macOS Terminal ausführen:</li>
 </ul>
