@@ -1,0 +1,68 @@
+# Projektumgebung
+
+Das Organisieren Ihrer Dateien ist entscheidend für die Effizienz und Zugänglichkeit Ihrer Projekte. Zunächst erstellen wir daher einen Ordner namens `toolkit-lab` auf Ihrem Rechner und legen die Unterverzeichnisse `code` und `data` an, um Ihr Projekt strukturiert zu halten.
+
+Anstatt eine grafische Benutzeroberfläche (GUI) wie den Windows-Explorer oder den macOS Finder zu verwenden, werden wir die Befehlszeilenschnittstelle (CLI) nutzen, um dies zu erreichen.
+
+:::{.callout-note appearance="minimal"}
+Die Befehlszeile eröffnet eine neue Ebene der Interaktion mit Ihrem Computer. Wenn Sie sich daran gewöhnt haben, werden Sie feststellen, dass viele Aufgaben effizienter erledigt werden können als mit einer GUI.
+:::
+
+Die CLI, auch bekannt als cmd, Eingabeaufforderung, Konsole oder Terminal, ist ein leistungsstarkes Werkzeug zum Einrichten Ihrer Arbeitsumgebung. Sie arbeitet über ein Programm namens *Shell*, das eine direkte Kommunikation mit dem Betriebssystem über textbasierte Eingaben ermöglicht.
+
+## Windows
+
+Folgen Sie diesen Schritten, um das Hauptverzeichnis und die Unterverzeichnisse mit der Windows-Eingabeaufforderung zu erstellen:
+
+1. Drücken Sie gleichzeitig die Tasten `Windows + R`, um das Ausführen-Dialogfeld zu öffnen.
+2. Geben Sie `cmd` ein und drücken Sie `Enter`, um die Eingabeaufforderung zu öffnen.
+3. Erstellen Sie einen neuen Ordner namens `toolkit-lab` (kopieren Sie diesen Code und geben Sie ihn in Ihre Eingabeaufforderung ein):
+
+    ```bash
+    mkdir toolkit-lab
+    ```
+
+4. Verwenden Sie `cd` (change directory), um in das Verzeichnis `toolkit-lab` zu wechseln:
+
+    ```bash
+    cd toolkit-lab
+    ```
+
+5. Verwenden Sie `mkdir` (make directory), um die Unterverzeichnisse `code` und `data` zu erstellen:
+
+    ```bash
+    mkdir code data
+    ```
+
+Diese Befehle richten ein Hauptverzeichnis `toolkit-lab` mit zwei Unterverzeichnissen ein: `code` für Ihre Skripte und Anwendungen und `data` zum Speichern von Datensätzen und zugehörigen Dateien.
+
+## macOS/Linux
+
+Folgen Sie diesen Schritten, um das Hauptverzeichnis und die Unterverzeichnisse mit dem Terminal in macOS oder Linux zu erstellen:
+
+1. Um das Terminal in macOS zu öffnen, können Sie die Spotlight-Suche (`Cmd + Space`) verwenden und "Terminal" eingeben oder über `Programme -> Dienstprogramme -> Terminal` navigieren.
+2. Zuerst verwenden wir den Befehl pwd ("print working directory") und drücken die Eingabetaste, um den vollständigen Pfad des aktuellen Verzeichnisses anzuzeigen. Wenn Sie das Terminal gerade geöffnet haben, sollte das aktuelle Verzeichnis Ihr Home-Verzeichnis sein (in meinem Fall `/Users/jankirenz`, da mein Benutzerkonto jankirenz heißt):
+    
+    ```bash
+    pwd
+    ```
+
+2. Erstellen Sie nun einen neuen Ordner namens `toolkit-lab` in dem Home-Verzeichnis (kopieren Sie diesen Code und geben Sie ihn in Ihr Terminal ein):
+
+    ```bash
+    mkdir toolkit-lab
+    ```
+
+3. Verwenden Sie `cd` (change directory), um in das Verzeichnis `toolkit-lab` zu wechseln:
+
+    ```bash
+    cd toolkit-lab
+    ```
+
+4. Verwenden Sie `mkdir` (make directory), um die Unterverzeichnisse `code` und `data` zu erstellen:
+
+    ```bash
+    mkdir code data
+    ```
+
+Diese Befehle richten ein Hauptverzeichnis `toolkit-lab` mit zwei Unterverzeichnissen ein: `code` für Ihre Skripte und Anwendungen und `data` zum Speichern von Datensätzen und zugehörigen Dateien.
