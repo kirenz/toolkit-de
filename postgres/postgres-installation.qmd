@@ -1,71 +1,74 @@
 # Installation
 
+In den folgenden Schritten wird die Installation des relationalen Datenbankmanagementsystem (RDBMS) *PostgreSQL* und des grafischen Verwaltungstools *pgAdmin 4* behandelt.
+
+
 ## Windows 
 
-1. **PostgreSQL herunterladen und installieren**
+1. PostgreSQL herunterladen und installieren
     - Laden Sie PostgreSQL von [dieser Website](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads) herunter.
     - Wählen Sie das Installationsprogramm für Windows aus und starten Sie den Download.
     - Nach dem Download führen Sie das Installationsprogramm aus.
 
-2. **Standard-Installationsverzeichnis auswählen**
+2. Standard-Installationsverzeichnis auswählen
     - Klicken Sie im Installationsassistenten auf "Next".
     - Akzeptieren Sie das vorgeschlagene Standard-Installationsverzeichnis oder wählen Sie ein eigenes Verzeichnis und klicken Sie auf "Next".
 
-3. **Komponenten auswählen**
+3. Komponenten auswählen
     - Wählen Sie die folgenden Komponenten aus:
         - PostgreSQL Server
         - pgAdmin 4
         - Kommandozeilenwerkzeuge
     - Klicken Sie auf "Next".
 
-4. **Verzeichnis für die Dateninstallation auswählen**
+4. Verzeichnis für die Dateninstallation auswählen
     - Akzeptieren Sie das vorgeschlagene Datenverzeichnis oder wählen Sie ein eigenes Verzeichnis und klicken Sie auf "Next".
 
-5. **Passwort setzen**
+5. Passwort setzen
     - Geben Sie ein Passwort für den PostgreSQL Superuser (Postgres) ein und bestätigen Sie es.
     - Klicken Sie auf "Next".
 
-6. **Port akzeptieren**
+6. Port akzeptieren
     - Akzeptieren Sie den standardmäßig vorgeschlagenen Port (üblicherweise 5432) und klicken Sie auf "Next".
 
-7. **Gebietsschema setzen**
+7. Gebietsschema setzen
     - Setzen Sie das Gebietsschema auf das Standardgebietsschema und klicken Sie auf "Next".
 
-8. **Installation abschließen**
+8. Installation abschließen
     - Überprüfen Sie die Einstellungen und klicken Sie auf "Next", um die Installation zu starten.
     - Nach Abschluss der Installation klicken Sie auf "Finish".
 
-## Mac 
+## macOS 
 
-1. **PostgreSQL herunterladen und installieren**
+1. PostgreSQL herunterladen und installieren
     - Laden Sie PostgreSQL von [dieser Website](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads) herunter.
     - Wählen Sie das Installationsprogramm für MacOS aus und starten Sie den Download.
     - Nach dem Download öffnen Sie das Installationsprogramm (dmg-Datei).
 
-2. **Installationsprogramm starten**
+2. Installationsprogramm starten
     - Ziehen Sie das PostgreSQL-Symbol in den Anwendungsordner, um die Installation zu starten.
     - Öffnen Sie den Anwendungsordner und starten Sie das PostgreSQL-Installationsprogramm.
 
-3. **Komponenten auswählen**
+3. Komponenten auswählen
     - Wählen Sie die folgenden Komponenten aus:
         - PostgreSQL Server
         - pgAdmin 4
         - Kommandozeilenwerkzeuge
     - Klicken Sie auf "Next".
 
-4. **Verzeichnis für die Dateninstallation auswählen**
+4. Verzeichnis für die Dateninstallation auswählen
     - Akzeptieren Sie das vorgeschlagene Datenverzeichnis oder wählen Sie ein eigenes Verzeichnis und klicken Sie auf "Next".
 
-5. **Passwort setzen**
+5. Passwort setzen
     - Geben Sie ein Passwort für den PostgreSQL Superuser (Postgres) ein und bestätigen Sie es.
     - Klicken Sie auf "Next".
 
-6. **Port akzeptieren**
+6. Port akzeptieren
     - Akzeptieren Sie den standardmäßig vorgeschlagenen Port (üblicherweise 5432) und klicken Sie auf "Next".
 
-7. **Gebietsschema setzen**
+7. Gebietsschema setzen
     - Setzen Sie das Gebietsschema auf das Standardgebietsschema und klicken Sie auf "Next".
 
-8. **Installation abschließen**
+8. Installation abschließen
     - Überprüfen Sie die Einstellungen und klicken Sie auf "Next", um die Installation zu starten.
     - Nach Abschluss der Installation klicken Sie auf "Finish".
