@@ -30,19 +30,25 @@ Führen Sie die Zelle mit `Shift+Enter` aus, um den Markdown-Text zu rendern. De
 
 Listen organisieren Informationen klar und prägnant.
 
-- **Geordnete Listen**:
+**Geordnete Listen**:
 
-    ```markdown
-    1. Erster Punkt
-    2. Zweiter Punkt
-    ```
+```markdown
+1. Erster Punkt
+2. Zweiter Punkt
+```
 
-- **Ungeordnete Listen**:
+1. Erster Punkt
+2. Zweiter Punkt
 
-    ```markdown
-    - Aufzählungspunkt A
-    - Aufzählungspunkt B
-    ```
+**Ungeordnete Listen**:
+
+```markdown
+- Aufzählungspunkt A
+- Aufzählungspunkt B
+```
+
+- Aufzählungspunkt A
+- Aufzählungspunkt B
 
 ### Hervorhebungen
 
@@ -55,6 +61,11 @@ _Kursiv mit Unterstrichen_
 __Fett mit Unterstrichen__
 ```
 
+*Kursiv*  
+**Fett**  
+_Kursiv mit Unterstrichen_  
+__Fett mit Unterstrichen__
+
 ### Blockzitate
 
 Verwenden Sie Blockzitate, um Quellen oder wichtige Informationen zu zitieren.
@@ -62,6 +73,8 @@ Verwenden Sie Blockzitate, um Quellen oder wichtige Informationen zu zitieren.
 ```markdown
 > "Dies ist ein Blockzitat."
 ```
+
+> "Dies ist ein Blockzitat."
 
 ### Tabellen
 
@@ -73,6 +86,10 @@ Tabellen sind entscheidend für die effiziente Organisation von Daten.
 | Zeile 1  | Wert 1   |
 ```
 
+| Spalte 1 | Spalte 2 |
+|----------|----------|
+| Zeile 1  | Wert 1   |
+
 ### Links und Bilder
 
 Links und Bilder bereichern das Dokument und bieten zusätzlichen Kontext.
@@ -82,6 +99,9 @@ Links und Bilder bereichern das Dokument und bieten zusätzlichen Kontext.
 ```markdown
 [Python-Dokumentation](https://docs.python.org/)
 ```
+
+[Python-Dokumentation](https://docs.python.org/)
+
 
 **Bilder**:
 
@@ -99,6 +119,8 @@ LaTeX-Integration ermöglicht die Darstellung komplexer mathematischer Formeln.
 $E = mc^2$
 ```
 
+$E = mc^2$
+
 - **Block-Gleichung**:
 
 ```markdown
@@ -107,6 +129,8 @@ $$
 $$
 ```
 
+\frac{a}{b} + \sqrt{x}
+
 ### Horizontale Linien
 
 Verwenden Sie horizontale Linien, um Abschnitte visuell zu trennen.
@@ -114,6 +138,8 @@ Verwenden Sie horizontale Linien, um Abschnitte visuell zu trennen.
 ```markdown
 ---
 ```
+
+---
 
 ### Code-Blöcke
 
@@ -124,6 +150,10 @@ Präsentieren Sie Code-Snippets mit Syntax-Hervorhebung.
 print("Hallo, Python!")
 ```
 ````
+
+```python
+print("Hallo, Python!")
+```
 
 ## Weiterführendes Lernen
 
