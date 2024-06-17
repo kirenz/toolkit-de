@@ -21,16 +21,16 @@ book:
   chapters:
     - index.qmd
 
-    - part: first-steps/first-steps.qmd
+    - part: erste-schritte/first-steps.qmd
       chapters:
-        - first-steps/project-environment.qmd 
-        - first-steps/python-installation.qmd
-        - first-steps/python-idle.qmd
-        - first-steps/anaconda-installation.qmd
-        - first-steps/jupyter-notebook.qmd
-        - first-steps/markdown.qmd
+        - erste-schritte/project-environment.qmd 
+        - erste-schritte/python-installation.qmd
+        - erste-schritte/python-idle.qmd
+        - erste-schritte/anaconda-installation.qmd
+        - erste-schritte/jupyter-notebook.qmd
+        - erste-schritte/markdown.qmd
 
-    - part: python/python.qmd
+    - part: python/index.qmd
       chapters:
         - text: "Bibliotheken"
           href: python/python-bibliotheken.qmd
@@ -43,20 +43,20 @@ book:
         - python/python-control-flow.qmd
         - python/python-klassen.qmd
 
-    - part: vscode/visual-studio-code.qmd
+    - part: vscode/index.qmd
       chapters:
         - vscode/visual-studio-code-installation.qmd
         - vscode/visual-studio-code-erweiterungen.qmd
         - vscode/visual-studio-code-basics.qmd
 
-    - part: daten/daten.qmd
+    - part: daten/index.qmd
       chapters:
         - daten/dictionary.qmd
         - daten/csv.qmd
         - daten/excel.qmd
         - daten/json.qmd
 
-    - part: datenbanken/datenbanken.qmd
+    - part: datenbanken/index.qmd
       chapters:
         - text: "Relational"
           href: datenbanken/relational.qmd
@@ -65,20 +65,20 @@ book:
         
 
 
-    - part: mysql/mysql.qmd
+    - part: mysql/index.qmd
       chapters:
         - mysql/mysql-installation.qmd 
         - mysql/mysql-server.qmd
         - mysql/mysql-basics.qmd
 
-    - part: postgres/postgres.qmd
+    - part: postgres/index.qmd
       chapters:
         - postgres/postgres-installation.qmd
         - postgres/postgres-server.qmd
         - postgres/postgres-basics.qmd
         - postgres/postgres-python.qmd
 
-    - part: mongodb/mongodb.qmd
+    - part: mongodb/index.qmd
       chapters:
         - mongodb/mongodb-installation.qmd 
         - mongodb/mongodb-start-stop.qmd
@@ -86,7 +86,7 @@ book:
         - mongodb/mongodb-python.qmd  
         - mongodb/mongodb-python-bilder.qmd  
 
-    - part: github/github.qmd
+    - part: github/index.qmd
       chapters:
         - github/github-git.qmd
         - github/github-setup.qmd
