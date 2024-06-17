@@ -30,7 +30,7 @@ Führen Sie die Zelle mit `Shift+Enter` aus, um den Markdown-Text zu rendern. De
 
 Listen organisieren Informationen klar und prägnant.
 
-**Geordnete Listen**:
+Geordnete Listen:
 
 ```markdown
 1. Erster Punkt
@@ -40,7 +40,7 @@ Listen organisieren Informationen klar und prägnant.
 1. Erster Punkt
 2. Zweiter Punkt
 
-**Ungeordnete Listen**:
+Ungeordnete Listen:
 
 ```markdown
 - Aufzählungspunkt A
@@ -56,13 +56,13 @@ Betonen Sie Text, um wichtige Punkte hervorzuheben.
 
 ```markdown
 *Kursiv*  
-**Fett**  
+Fett  
 _Kursiv mit Unterstrichen_  
 __Fett mit Unterstrichen__
 ```
 
 *Kursiv*  
-**Fett**  
+Fett  
 _Kursiv mit Unterstrichen_  
 __Fett mit Unterstrichen__
 
@@ -94,7 +94,7 @@ Tabellen sind entscheidend für die effiziente Organisation von Daten.
 
 Links und Bilder bereichern das Dokument und bieten zusätzlichen Kontext.
 
-**Links**:
+Links:
 
 ```markdown
 [Python-Dokumentation](https://docs.python.org/)
@@ -103,7 +103,7 @@ Links und Bilder bereichern das Dokument und bieten zusätzlichen Kontext.
 [Python-Dokumentation](https://docs.python.org/)
 
 
-**Bilder**:
+Bilder:
 
 ```markdown
 ![Alt-Text](image_url_or_path)
@@ -113,7 +113,7 @@ Links und Bilder bereichern das Dokument und bieten zusätzlichen Kontext.
 
 LaTeX-Integration ermöglicht die Darstellung komplexer mathematischer Formeln.
 
-**Inline-Gleichung**:
+Inline-Gleichung:
 
 ```markdown
 $E = mc^2$
@@ -121,7 +121,7 @@ $E = mc^2$
 
 $E = mc^2$
 
-- **Block-Gleichung**:
+Block-Gleichung:
 
 ```markdown
 $$
