@@ -56,7 +56,3 @@ Merkmale unstrukturierter Daten:
 - Keine festgelegte Struktur oder Schema
 - Vielfältige Formate und Typen
 - Erfordert spezialisierte Techniken zur Analyse (z. B. Bild- und Spracherkennung)
-
-## Zusammenfassung
-
-Das Verständnis der verschiedenen Arten von Daten ist ein grundlegender Schritt in der Datenwissenschaft. Strukturierte Daten sind leicht zu verwalten und zu analysieren, während teilweise strukturierte und unstrukturierte Daten mehr Flexibilität bieten, aber komplexere Analysemethoden erfordern. In den folgenden Kapiteln werden wir uns eingehender mit diesen Datentypen beschäftigen und lernen, wie wir sie speichern, verarbeiten und analysieren können.
