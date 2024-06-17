@@ -31,7 +31,7 @@ Um eine Umgebung einzurichten, befolgen Sie diese Anweisungen basierend auf Ihre
    pip install pymongo gridfs pillow jupyter ipykernel pandas
    ```
 
-  :::{.callout-note collapse="true" title="Erklärung der Bibliotheken"}
+   :::{.callout-note collapse="true" title="Erklärung der Bibliotheken"}
    - **pymongo**: Bietet eine Python-Schnittstelle zu MongoDB, einer NoSQL-Datenbank.
    - **pillow**: Eine Bibliothek für die Bildverarbeitung in Python, die das Öffnen, Bearbeiten und Speichern von Bilddateien unterstützt.
    - **jupyter**: Eine interaktive Entwicklungsumgebung zur Erstellung und Ausführung von Jupyter-Notebooks.
