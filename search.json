@@ -1440,11 +1440,11 @@
     ]
   },
   {
-    "objectID": "mongodb/index.html#mongodb-shell-mongosh",
-    "href": "mongodb/index.html#mongodb-shell-mongosh",
+    "objectID": "mongodb/index.html#mongodb-shell",
+    "href": "mongodb/index.html#mongodb-shell",
     "title": "MongoDB",
-    "section": "MongoDB Shell (mongosh)",
-    "text": "MongoDB Shell (mongosh)\nFür die Arbeit mit der Datenbank nutzen wir die MongoDB Shell (mongosh). Diese bietet eine schnelle und intuitive Möglichkeit, sich mit MongoDB zu verbinden und zu arbeiten. Mit mongosh können wir Daten abfragen, Einstellungen konfigurieren und verschiedene Aktionen durchführen.\nDie Hauptfunktionen von mongosh umfassen:\n\nSyntaxhervorhebung: Der Shell unterstützt Syntaxhervorhebung, die den Code lesbarer macht und die Erkennung von Fehlern erleichtert.\nIntelligente Autovervollständigung: Diese Funktion hilft bei der Eingabe von Befehlen und Parametern, indem sie Vorschläge macht und somit die Produktivität erhöht.\nKontextbezogene Hilfe: mongosh bietet direkte Hilfe zu Befehlen und Optionen, was besonders nützlich für Einsteiger ist.\nFehlermeldungen: Klare und präzise Fehlermeldungen helfen dabei, Probleme schnell zu identifizieren und zu beheben.\n\nUm mit MongoDB zu beginnen, müssen wir zunächst den MongoDB-Dienst starten und dann die MongoDB Shell öffnen. Sobald die Shell geöffnet ist, können wir grundlegende Befehle ausführen, um Datenbanken und Sammlungen zu erstellen, Daten einzufügen und Abfragen auszuführen.",
+    "section": "MongoDB Shell",
+    "text": "MongoDB Shell\nFür die Arbeit mit der Datenbank nutzen wir die MongoDB Shell (mongosh). Diese bietet eine schnelle und intuitive Möglichkeit, sich mit MongoDB zu verbinden und zu arbeiten. Mit mongosh können wir Daten abfragen, Einstellungen konfigurieren und verschiedene Aktionen durchführen.\nDie Hauptfunktionen von mongosh umfassen:\n\nSyntaxhervorhebung: Der Shell unterstützt Syntaxhervorhebung, die den Code lesbarer macht und die Erkennung von Fehlern erleichtert.\nIntelligente Autovervollständigung: Diese Funktion hilft bei der Eingabe von Befehlen und Parametern, indem sie Vorschläge macht und somit die Produktivität erhöht.\nKontextbezogene Hilfe: mongosh bietet direkte Hilfe zu Befehlen und Optionen, was besonders nützlich für Einsteiger ist.\nFehlermeldungen: Klare und präzise Fehlermeldungen helfen dabei, Probleme schnell zu identifizieren und zu beheben.\n\nUm mit MongoDB zu beginnen, müssen wir zunächst den MongoDB-Dienst starten und dann die MongoDB Shell öffnen. Sobald die Shell geöffnet ist, können wir grundlegende Befehle ausführen, um Datenbanken und Sammlungen zu erstellen, Daten einzufügen und Abfragen auszuführen.",
     "crumbs": [
       "MongoDB"
     ]
