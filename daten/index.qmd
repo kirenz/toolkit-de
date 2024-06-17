@@ -1,0 +1,58 @@
+# Daten
+
+Daten sind das Herzstück der Datenwissenschaft. Sie ermöglichen es uns, Erkenntnisse zu gewinnen, Entscheidungen zu treffen und Vorhersagen zu treffen. Daten können in verschiedenen Formen vorliegen und werden in der Regel in drei Hauptkategorien eingeteilt: 
+
+- strukturierte, 
+- teilweise strukturierte und 
+- unstrukturierte Daten. 
+
+In diesem Kapitel werden wir diese Kategorien untersuchen und Beispiele für jede Art von Daten geben.
+
+## Strukturierte Daten
+
+Strukturierte Daten sind Daten, die in einem festen Format organisiert sind und leicht in Tabellenform dargestellt werden können. Diese Daten sind typischerweise in relationalen Datenbanken oder Tabellenkalkulationen gespeichert. Strukturierte Daten sind durch ihre klare Struktur leicht zu durchsuchen und zu analysieren.
+
+Beispiele für strukturierte Daten:
+
+- CSV-Dateien
+- Excel-Tabellen
+- Tabellen in relationalen Datenbanken (z. B. SQL-Datenbanken)
+
+Merkmale strukturierter Daten:
+
+- Feste Datenschemata (Spalten und Datentypen sind definiert)
+- Einfach zu durchsuchen und zu filtern
+- Eindeutige Datenbeziehungen (z. B. Fremdschlüssel in relationalen Datenbanken)
+
+## Teilweise strukturierte Daten
+
+Teilweise strukturierte Daten sind Daten, die nicht in ein festes Schema passen, aber dennoch eine gewisse Struktur aufweisen. Diese Daten sind flexibler als strukturierte Daten und können in Formaten wie JSON vorliegen. Teilweise strukturierte Daten werden häufig für den Datenaustausch zwischen Systemen verwendet.
+
+Beispiele für teilweise strukturierte Daten:
+
+- JSON-Dateien
+- Python Dictionary
+
+
+Merkmale teilweise strukturierter Daten:
+
+- Flexibles Schema (Felder und Strukturen können variieren)
+- Hierarchische oder baumartige Struktur
+- Leicht menschen- und maschinenlesbar
+
+## Unstrukturierte Daten
+
+Unstrukturierte Daten sind Daten, die keine feste Struktur oder kein definiertes Schema haben. Diese Daten können in verschiedenen Formaten vorliegen und umfassen oft Multimedia-Inhalte. Unstrukturierte Daten sind schwer zu analysieren, erfordern daher spezielle Techniken und Tools, um nützliche Informationen daraus zu gewinnen.
+
+Beispiele für unstrukturierte Daten:
+
+- Textdateien (z. B. E-Mails, Dokumente)
+- Bilder (z. B. JPEG, PNG)
+- Videos (z. B. MP4, AVI)
+- Audiodateien (z. B. MP3, WAV)
+
+Merkmale unstrukturierter Daten:
+
+- Keine festgelegte Struktur oder Schema
+- Vielfältige Formate und Typen
+- Erfordert spezialisierte Techniken zur Analyse (z. B. Bild- und Spracherkennung)
