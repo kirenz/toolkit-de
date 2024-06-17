@@ -118,7 +118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../python/index.html">Python</a></li><li class="breadcrumb-item"><a href="../python/python-control-flow.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Kontrollstrukturen</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../python/index.html">Python</a></li><li class="breadcrumb-item"><a href="../python/python-kontrollstrukturen.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Kontrollstrukturen</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -241,7 +241,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../python/python-control-flow.html" class="sidebar-item-text sidebar-link active">
+  <a href="../python/python-kontrollstrukturen.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Kontrollstrukturen</span></span></a>
   </div>
 </li>
@@ -526,7 +526,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../python/index.html">Python</a></li><li class="breadcrumb-item"><a href="../python/python-control-flow.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Kontrollstrukturen</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../python/index.html">Python</a></li><li class="breadcrumb-item"><a href="../python/python-kontrollstrukturen.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Kontrollstrukturen</span></a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Kontrollstrukturen</span></h1>
 </div>
@@ -556,7 +556,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 data-number="13.1" class="anchored" data-anchor-id="bedingte-anweisungen"><span class="header-section-number">13.1</span> Bedingte Anweisungen</h2>
 <p>Bedingte Anweisungen helfen dabei, Code nur auszuführen, wenn bestimmte Bedingungen erfüllt sind.</p>
 <p>Grundlegende If-Else-Anweisung:</p>
-<div id="4bcdc56b" class="cell" data-execution_count="1">
+<div id="b26b5be4" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Bestimmen, ob eine Zahl positiv, negativ oder null ist</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>number <span class="op">=</span> <span class="op">-</span><span class="dv">3</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -577,7 +577,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><code>else</code> fängt alle anderen Bedingungen ab (hier null) und gibt entsprechend aus.</li>
 </ul>
 <p>Verschachtelte Bedingungsanweisungen:</p>
-<div id="a6a4a353" class="cell" data-execution_count="2">
+<div id="20f918f4" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Ein Alter in verschiedene Lebensphasen einordnen</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>age <span class="op">=</span> <span class="dv">25</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -607,7 +607,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 data-number="13.2.1" class="anchored" data-anchor-id="for-schleifen"><span class="header-section-number">13.2.1</span> For-Schleifen</h3>
 <p>For-Schleifen iterieren über einen Bereich oder eine Sammlung.</p>
 <p>Schleife über einen Bereich (“range”):</p>
-<div id="79a744b5" class="cell" data-execution_count="3">
+<div id="f181310e" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Zahlen von 1 bis 5 ausgeben</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> num <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">6</span>):</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Nummer: </span><span class="sc">{</span>num<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -625,7 +625,7 @@ Nummer: 5</code></pre>
 <li>Jede Zahl wird mit einem f-String ausgegeben.</li>
 </ul>
 <p>Schleife über eine Liste:</p>
-<div id="77d6fb8a" class="cell" data-execution_count="4">
+<div id="f28f6cce" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Liste von Farben</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>colors <span class="op">=</span> [<span class="st">"rot"</span>, <span class="st">"grün"</span>, <span class="st">"blau"</span>]</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -648,7 +648,7 @@ Farbe: blau</code></pre>
 <h3 data-number="13.2.2" class="anchored" data-anchor-id="while-schleifen"><span class="header-section-number">13.2.2</span> While-Schleifen</h3>
 <p>Eine While-Schleife wird so lange ausgeführt, wie eine Bedingung <code>True</code> ist.</p>
 <p>Einfache While-Schleife:</p>
-<div id="9cd4ec4e" class="cell" data-execution_count="5">
+<div id="fb84b0d4" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Countdown von 5 bis 1</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>count <span class="op">=</span> <span class="dv">5</span></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -690,7 +690,7 @@ Countdown: 1</code></pre>
 <li><strong>try-Block</strong>: Hier kommt der Code, der möglicherweise fehlerhaft ist.</li>
 <li><strong>except-Block</strong>: Hier kommt der Code, der ausgeführt wird, wenn ein Fehler auftritt.</li>
 </ol>
-<div id="2bb9525a" class="cell" data-execution_count="6">
+<div id="b282a2c0" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Versuch, eine Zahl durch Null zu teilen, und Fehlerbehandlung</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>numerator <span class="op">=</span> <span class="dv">10</span></span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>denominator <span class="op">=</span> <span class="dv">0</span></span>

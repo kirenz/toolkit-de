@@ -580,8 +580,8 @@
     ]
   },
   {
-    "objectID": "python/python-control-flow.html",
-    "href": "python/python-control-flow.html",
+    "objectID": "python/python-kontrollstrukturen.html",
+    "href": "python/python-kontrollstrukturen.html",
     "title": "13  Kontrollstrukturen",
     "section": "",
     "text": "13.1 Bedingte Anweisungen\nBedingte Anweisungen helfen dabei, Code nur auszuführen, wenn bestimmte Bedingungen erfüllt sind.\nGrundlegende If-Else-Anweisung:\n# Bestimmen, ob eine Zahl positiv, negativ oder null ist\nnumber = -3\n\nif number &gt; 0:\n    print(f\"{number} ist eine positive Zahl.\")\nelif number &lt; 0:\n    print(f\"{number} ist eine negative Zahl.\")\nelse:\n    print(f\"{number} ist null.\")\n\n-3 ist eine negative Zahl.\nErläuterung:\nVerschachtelte Bedingungsanweisungen:\n# Ein Alter in verschiedene Lebensphasen einordnen\nage = 25\n\nif age &lt; 13:\n    print(\"Kind\")\nelif age &lt; 18:\n    print(\"Teenager\")\nelse:\n    if age &lt; 65:\n        print(\"Erwachsener\")\n    else:\n        print(\"Senior\")\n\nErwachsener\nErläuterung:",
@@ -591,8 +591,8 @@
     ]
   },
   {
-    "objectID": "python/python-control-flow.html#bedingte-anweisungen",
-    "href": "python/python-control-flow.html#bedingte-anweisungen",
+    "objectID": "python/python-kontrollstrukturen.html#bedingte-anweisungen",
+    "href": "python/python-kontrollstrukturen.html#bedingte-anweisungen",
     "title": "13  Kontrollstrukturen",
     "section": "",
     "text": "if prüft, ob number größer als 0 ist und gibt aus, dass sie positiv ist.\nelif (else if) prüft, ob number kleiner als 0 ist und gibt aus, dass sie negativ ist.\nelse fängt alle anderen Bedingungen ab (hier null) und gibt entsprechend aus.\n\n\n\n\n\nDas äußere if-elif-else prüft, ob age kleiner als 13 oder 18 ist und gibt “Kind” oder “Teenager” aus.\nFalls nicht, prüft ein verschachteltes if-else weiter, ob age kleiner als 65 ist oder größer, und gibt “Erwachsener” oder “Senior” aus.",
@@ -602,8 +602,8 @@
     ]
   },
   {
-    "objectID": "python/python-control-flow.html#schleifen",
-    "href": "python/python-control-flow.html#schleifen",
+    "objectID": "python/python-kontrollstrukturen.html#schleifen",
+    "href": "python/python-kontrollstrukturen.html#schleifen",
     "title": "13  Kontrollstrukturen",
     "section": "13.2 Schleifen",
     "text": "13.2 Schleifen\nSchleifen wiederholen einen Codeblock mehrere Male.\n\n13.2.1 For-Schleifen\nFor-Schleifen iterieren über einen Bereich oder eine Sammlung.\nSchleife über einen Bereich (“range”):\n\n# Zahlen von 1 bis 5 ausgeben\nfor num in range(1, 6):\n    print(f\"Nummer: {num}\")\n\nNummer: 1\nNummer: 2\nNummer: 3\nNummer: 4\nNummer: 5\n\n\nErläuterung:\n\nrange(1, 6) erzeugt Zahlen von 1 bis 5 (6 ist exklusiv).\nJede Zahl wird mit einem f-String ausgegeben.\n\nSchleife über eine Liste:\n\n# Liste von Farben\ncolors = [\"rot\", \"grün\", \"blau\"]\n\n# Durch jede Farbe in der Liste schleifen und ausgeben\nfor color in colors:\n    print(f\"Farbe: {color}\")\n\nFarbe: rot\nFarbe: grün\nFarbe: blau\n\n\nErläuterung:\n\nDie Liste colors enthält drei Zeichenketten.\nfor color in colors iteriert über jedes Element in der Liste, und jeder Wert wird ausgegeben.\n\n\n\n13.2.2 While-Schleifen\nEine While-Schleife wird so lange ausgeführt, wie eine Bedingung True ist.\nEinfache While-Schleife:\n\n# Countdown von 5 bis 1\ncount = 5\n\nwhile count &gt; 0:\n    print(f\"Countdown: {count}\")\n    count -= 1  # Zählt count um 1 herunter\n\nCountdown: 5\nCountdown: 4\nCountdown: 3\nCountdown: 2\nCountdown: 1\n\n\nErläuterung:\n\nAnfangswert der Variable: Die Variable count wird auf 5 gesetzt.\nBedingung der While-Schleife: Die while-Schleife läuft, solange die Bedingung count &gt; 0 True bleibt. Diese Bedingung wird vor jedem Schleifendurchlauf geprüft.\nInnerhalb der Schleife:\n\nDie Funktion print gibt den aktuellen Wert von count, vorangestellt mit “Countdown:”, mittels eines f-Strings aus.\nDie Anweisung count -= 1 verringert den Wert von count um 1. Diese Kurzschreibweise ist äquivalent zu count = count - 1.\nNach jedem Dekrement wird count näher an 0 herangeführt.\n\nVerlassen der Schleife:\n\nSobald count nicht mehr größer als 0 ist (also count 0 oder weniger ist), wird die while-Bedingung False und die Schleife wird beendet.\n\n\nDie Dekrement-Operation (count -= 1) stellt sicher, dass die Schleife nicht unendlich läuft und hilft, eine Countdown-Sequenz zu erstellen.\nKlar, ich kann das für Python-Anfänger einfacher und verständlicher formulieren.",
@@ -613,8 +613,8 @@
     ]
   },
   {
-    "objectID": "python/python-control-flow.html#ausnahmen",
-    "href": "python/python-control-flow.html#ausnahmen",
+    "objectID": "python/python-kontrollstrukturen.html#ausnahmen",
+    "href": "python/python-kontrollstrukturen.html#ausnahmen",
     "title": "13  Kontrollstrukturen",
     "section": "13.3 Ausnahmen",
     "text": "13.3 Ausnahmen\nAusnahmen helfen uns, Fehler zu behandeln, die während der Programmausführung auftreten, ohne dass das Programm abstürzt.\nHier ist ein einfaches Beispiel, wie man mit einer Division durch Null umgehen kann:\n\ntry-Block: Hier kommt der Code, der möglicherweise fehlerhaft ist.\nexcept-Block: Hier kommt der Code, der ausgeführt wird, wenn ein Fehler auftritt.\n\n\n# Versuch, eine Zahl durch Null zu teilen, und Fehlerbehandlung\nnumerator = 10\ndenominator = 0\n\ntry:\n    result = numerator / denominator\n    print(f\"Ergebnis: {result}\")\nexcept ZeroDivisionError:\n    print(\"Fehler: Division durch Null ist nicht erlaubt.\")\n\nFehler: Division durch Null ist nicht erlaubt.\n\n\n\nDer try-Block enthält den Code, der einen Fehler verursachen könnte (hier die Division durch Null).\nexcept ZeroDivisionError fängt diesen speziellen Fehler ab und gibt eine Fehlermeldung aus.\n\nDurch die Verwendung von Ausnahmen können wir sicherstellen, dass unser Programm auch bei Fehlern weiterläuft und sinnvolle Fehlermeldungen liefert.",
