@@ -93,7 +93,12 @@ book:
         - github/github-repo.qmd
         - github/github-organization.qmd
         - github/github-projects.qmd   
-           
+
+
+    - part: projekt/index.qmd
+      chapters:
+        - projekt/analytics.qmd
+
 
 format:
   html:
