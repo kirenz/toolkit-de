@@ -1,6 +1,6 @@
 # MongoDB
 
-**MongoDB** ist eine NoSQL-Datenbank, die für ihre Flexibilität und Skalierbarkeit bekannt ist. Sie speichert Daten in JSON-ähnlichen Dokumenten, was es einfach macht, komplexe Datenstrukturen zu handhaben. Diese Strukturierung ermöglicht es, hierarchische Beziehungen, Arrays und andere komplexe Datentypen ohne die Einschränkungen eines starren, tabellenbasierten Schemas darzustellen. Dadurch können Änderungen am Datenmodell schneller und effizienter umgesetzt werden.
+*MongoDB* ist eine NoSQL-Datenbank, die für ihre Flexibilität und Skalierbarkeit bekannt ist. Sie speichert Daten in JSON-ähnlichen Dokumenten, was es einfach macht, komplexe Datenstrukturen zu handhaben. Diese Strukturierung ermöglicht es, hierarchische Beziehungen, Arrays und andere komplexe Datentypen ohne die Einschränkungen eines starren, tabellenbasierten Schemas darzustellen. Dadurch können Änderungen am Datenmodell schneller und effizienter umgesetzt werden.
 
 ## Hauptmerkmale von MongoDB
 
@@ -12,9 +12,9 @@
 
 **Entwicklerfreundlich**: MongoDB bietet Treiber für eine Vielzahl von Programmiersprachen, darunter Python, JavaScript, Java, C#, und viele mehr. 
 
-## MongoDB Shell (mongosh)
+## MongoDB Shell
 
-Für die Arbeit mit der Datenbank nutzen wir die **MongoDB Shell** (`mongosh`). Diese bietet eine schnelle und intuitive Möglichkeit, sich mit MongoDB zu verbinden und zu arbeiten. Mit `mongosh` können wir Daten abfragen, Einstellungen konfigurieren und verschiedene Aktionen durchführen.
+Für die Arbeit mit der Datenbank nutzen wir die *MongoDB Shell* (`mongosh`). Diese bietet eine schnelle und intuitive Möglichkeit, sich mit MongoDB zu verbinden und zu arbeiten. Mit `mongosh` können wir Daten abfragen, Einstellungen konfigurieren und verschiedene Aktionen durchführen.
 
 Die Hauptfunktionen von mongosh umfassen:
 
