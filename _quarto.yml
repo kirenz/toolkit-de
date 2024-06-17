@@ -32,19 +32,21 @@ book:
 
     - part: python/python.qmd
       chapters:
-        - python/python-modules.qmd
-        - python/python-environment-basics.qmd
-        - python/python-workspace.qmd
+        - text: "Bibliotheken"
+          href: python/python-bibliotheken.qmd
+        - text: "Umgebungen"
+          href: python/python-umgebung.qmd
+        - python/python-arbeitsbereich.qmd
         - python/python-basics.qmd
-        - python/python-indentation.qmd
-        - python/python-functions.qmd
+        - python/python-einrueckung.qmd
+        - python/python-funktionen.qmd
         - python/python-control-flow.qmd
-        - python/python-classes.qmd
+        - python/python-klassen.qmd
 
     - part: vscode/visual-studio-code.qmd
       chapters:
         - vscode/visual-studio-code-installation.qmd
-        - vscode/visual-studio-code-extensions.qmd
+        - vscode/visual-studio-code-erweiterungen.qmd
         - vscode/visual-studio-code-basics.qmd
 
     - part: daten/daten.qmd
@@ -56,9 +58,11 @@ book:
 
     - part: datenbanken/datenbanken.qmd
       chapters:
-        - text: "Home"
+        - text: "Relational"
           href: datenbanken/relational.qmd
-        - datenbanken/nosql.qmd
+        - text: "NoSQL"
+          href: datenbanken/nosql.qmd          
+        
 
 
     - part: mysql/mysql.qmd
