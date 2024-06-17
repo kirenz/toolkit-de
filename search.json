@@ -1904,29 +1904,18 @@
     "href": "github/github-projects.html#projektboards-verwalten",
     "title": "41  Projects",
     "section": "41.2 Projektboards verwalten",
-    "text": "41.2 Projektboards verwalten\nSobald Ihr Projekt erstellt ist, können Sie beginnen, es durch Hinzufügen von Spalten und Karten zu verwalten.\n\n41.2.1 Spalten hinzufügen\nSpalten helfen, Aufgaben in Kategorien wie ‘To Do’, ‘In Progress’ und ‘Done’ zu organisieren.\n\nKlicken Sie auf ‘Add column’: Klicken Sie auf die Schaltfläche ‘Add column’ auf Ihrem Projektboard.\nBenennen Sie Ihre Spalte: Geben Sie der Spalte einen Namen, z.B. ‘To Do’.\nWiederholen Sie dies für zusätzliche Spalten: Erstellen Sie nach Bedarf zusätzliche Spalten für Ihren Workflow.\n\n\n\n41.2.2 Karten hinzufügen\nKarten repräsentieren Aufgaben und können Issues, Pull Requests oder Notizen sein.\n\nEin Issue oder einen Pull Request hinzufügen: Ziehen Sie ein vorhandenes Issue oder einen Pull Request von der Seitenleiste in eine Spalte.\nEine Notiz erstellen: Klicken Sie in einer Spalte auf ‘Add a note’, um eine benutzerdefinierte Aufgabe oder Notiz zu erstellen.",
+    "text": "41.2 Projektboards verwalten\nSobald Ihr Projekt erstellt ist, können Sie beginnen, es durch Hinzufügen von Spalten und Karten zu verwalten.\nSpalten helfen, Aufgaben in Kategorien wie ‘To Do’, ‘In Progress’ und ‘Done’ zu organisieren.\n\nKlicken Sie auf ‘Add column’: Klicken Sie auf die Schaltfläche ‘Add column’ auf Ihrem Projektboard.\nBenennen Sie Ihre Spalte: Geben Sie der Spalte einen Namen, z.B. ‘To Do’.\nWiederholen Sie dies für zusätzliche Spalten: Erstellen Sie nach Bedarf zusätzliche Spalten für Ihren Workflow.\n\nKarten repräsentieren Aufgaben und können Issues, Pull Requests oder Notizen sein.\n\nEin Issue oder einen Pull Request hinzufügen: Ziehen Sie ein vorhandenes Issue oder einen Pull Request von der Seitenleiste in eine Spalte.\nEine Notiz erstellen: Klicken Sie in einer Spalte auf ‘Add a note’, um eine benutzerdefinierte Aufgabe oder Notiz zu erstellen.",
     "crumbs": [
       "GitHub",
       "<span class='chapter-number'>41</span>  <span class='chapter-title'>Projects</span>"
     ]
   },
   {
-    "objectID": "github/github-projects.html#best-practices-für-die-verwendung-von-github-projects",
-    "href": "github/github-projects.html#best-practices-für-die-verwendung-von-github-projects",
+    "objectID": "github/github-projects.html#best-practices",
+    "href": "github/github-projects.html#best-practices",
     "title": "41  Projects",
-    "section": "41.3 Best Practices für die Verwendung von GitHub Projects",
-    "text": "41.3 Best Practices für die Verwendung von GitHub Projects\n\n41.3.1 Arbeit organisieren\n\nVerwenden Sie klare Spaltennamen: Nutzen Sie intuitive Namen für Spalten, die die Phasen des Workflows widerspiegeln.\nPriorisieren Sie Aufgaben: Ziehen Sie Karten, um Aufgaben innerhalb einer Spalte zu priorisieren.\n\n\n\n41.3.2 Zusammenarbeit\n\nKarten Teammitgliedern zuweisen: Weisen Sie Issues oder Pull Requests Teammitgliedern zu, um die Zuständigkeit zu klären.\nVerwenden Sie Labels: Wenden Sie Labels auf Karten an, um zusätzliche Kategorisierungen und Filterungen zu ermöglichen.\n\n\n\n41.3.3 Fortschritt verfolgen\n\nRegelmäßige Updates: Aktualisieren Sie den Status der Karten regelmäßig, um den aktuellen Fortschritt widerzuspiegeln.\nAbgeschlossene Karten schließen: Verschieben Sie abgeschlossene Aufgaben in die Spalte ‘Done’ und schließen Sie die entsprechenden Issues oder Pull Requests.",
-    "crumbs": [
-      "GitHub",
-      "<span class='chapter-number'>41</span>  <span class='chapter-title'>Projects</span>"
-    ]
-  },
-  {
-    "objectID": "github/github-projects.html#erweiterte-funktionen",
-    "href": "github/github-projects.html#erweiterte-funktionen",
-    "title": "41  Projects",
-    "section": "41.4 Erweiterte Funktionen",
-    "text": "41.4 Erweiterte Funktionen\n\n41.4.1 Automatisierung\nGitHub Projects ermöglicht die Automatisierung von Workflows mit Auslösern, die Karten basierend auf bestimmten Aktionen wie dem Schließen eines Issues oder dem Mergen eines Pull Requests in andere Spalten verschieben.\n\n\n41.4.2 Integrationen\nIntegrieren Sie GitHub Projects mit anderen Tools und Diensten mithilfe von GitHub Actions, Webhooks oder Drittanbieterdiensten, um Ihr Projektmanagement zu verbessern.",
+    "section": "41.3 Best Practices",
+    "text": "41.3 Best Practices\nArbeit organisieren:\n\nVerwenden Sie klare Spaltennamen: Nutzen Sie intuitive Namen für Spalten, die die Phasen des Workflows widerspiegeln.\nPriorisieren Sie Aufgaben: Ziehen Sie Karten, um Aufgaben innerhalb einer Spalte zu priorisieren.\n\nZusammenarbeit:\n\nKarten Teammitgliedern zuweisen: Weisen Sie Issues oder Pull Requests Teammitgliedern zu, um die Zuständigkeit zu klären.\nVerwenden Sie Labels: Wenden Sie Labels auf Karten an, um zusätzliche Kategorisierungen und Filterungen zu ermöglichen.\n\nFortschritt verfolgen:\n\nRegelmäßige Updates: Aktualisieren Sie den Status der Karten regelmäßig, um den aktuellen Fortschritt widerzuspiegeln.\nAbgeschlossene Karten schließen: Verschieben Sie abgeschlossene Aufgaben in die Spalte ‘Done’ und schließen Sie die entsprechenden Issues oder Pull Requests.\n\nGitHub Projects ermöglicht zudem die Automatisierung von Workflows mit Auslösern, die Karten basierend auf bestimmten Aktionen wie dem Schließen eines Issues oder dem Mergen eines Pull Requests in andere Spalten verschieben.",
     "crumbs": [
       "GitHub",
       "<span class='chapter-number'>41</span>  <span class='chapter-title'>Projects</span>"
