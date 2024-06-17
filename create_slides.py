@@ -10,19 +10,19 @@ if not os.path.exists(output_directory):
 # YAML front matter template
 yml_template = '''---
 title: {title}
-lang: en
+lang: de
 subtitle: Subtitle
 author: Jan Kirenz
 execute:
   eval: false
   echo: true
-highlight-style: github
+highlight-style: github-dark
 format:
   revealjs: 
     toc: false
     toc-depth: 1
     embed-resources: false
-    theme: [dark, ../custom.scss]  
+    theme: [default, custom.scss]
     incremental: true
     transition: slide
     background-transition: fade
@@ -33,10 +33,12 @@ format:
     scrollable: true
     slide-number: c
     preview-links: auto
+    css: style/index.css
     chalkboard: 
       buttons: false
    #logo: images/logo.png
     footer: Jan Kirenz
+jupyter: python3
 ---
 '''
 
