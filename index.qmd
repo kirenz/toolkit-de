@@ -1,14 +1,11 @@
 # Einleitung
 
-Willkommen zu Ihrem Einstige in die Welt der Datenwissenschaft, Künstlichen Intelligenz und Analytik! Dieses Buch ist für Einsteiger/innen konzipiert und führt Sie Schritt für Schritt durch die grundlegenden Werkzeuge und Konzepte, die Sie benötigen, um in diesen spannenden Bereichen erfolgreich zu sein.
+Willkommen zu Ihrem Einstig in die Welt der Datenwissenschaft, Künstlichen Intelligenz und Analytik! Dieses Buch ist für Einsteiger/innen konzipiert und führt Sie Schritt für Schritt durch die grundlegenden Werkzeuge und Konzepte, die Sie benötigen, um in diesen Bereichen erfolgreich zu sein.
 
-Datenwissenschaft und Analytik sind heute von zentraler Bedeutung für viele Branchen. Sie helfen Unternehmen, fundierte Entscheidungen zu treffen, indem sie Daten analysieren und interpretieren. Künstliche Intelligenz erweitert diese Möglichkeiten noch weiter, indem sie es ermöglicht, aus Daten zu lernen und komplexe Aufgaben zu automatisieren.
+Data Science und Analytik sind heute von zentraler Bedeutung für viele Branchen. Sie helfen Unternehmen, fundierte Entscheidungen zu treffen, indem sie Daten analysieren und interpretieren. Künstliche Intelligenz erweitert diese Möglichkeiten noch weiter, indem sie es ermöglicht, aus Daten zu lernen und komplexe Aufgaben zu automatisieren.
+
+![Themenüberblick](images/themen.png){#fig-themen}
+
+In diesem Buch werden die wichtigsten Werkzeuge und Umgebungen behandelt, die in der Datenwissenschaft und Analytik verwendet werden (siehe @fig-themen). Wir beginnen mit den Grundlagen der Projektumgebung und arbeiten uns zu fortgeschritteneren Themen wie Datenbanken und GitHub vor. Jeder Abschnitt enthält praktische Beispiele und Tipps, um Ihnen den Einstieg zu erleichtern und häufige Stolpersteine zu vermeiden.
 
 
-![](images/themen.png)
-
-In diesem Buch werden wir Ihnen die wichtigsten Werkzeuge und Umgebungen vorstellen, die in der Datenwissenschaft und Analytik verwendet werden. Wir beginnen mit den Grundlagen der Projektumgebung und arbeiten uns zu fortgeschritteneren Themen wie Datenbanken und GitHub vor. Jeder Abschnitt enthält praktische Beispiele und Tipps, um Ihnen den Einstieg zu erleichtern und häufige Stolpersteine zu vermeiden.
-
-Egal, ob Sie ein Student, ein Berufstätiger oder einfach jemand sind, der neugierig auf Datenwissenschaft und Künstliche Intelligenz ist – dieses Buch wird Ihnen die grundlegenden Fähigkeiten vermitteln, die Sie benötigen, um erfolgreich zu starten. Machen Sie sich bereit, die spannenden Möglichkeiten der Datenwelt zu entdecken!
-
-Viel Erfolg und Freude beim Lernen!
