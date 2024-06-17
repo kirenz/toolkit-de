@@ -42,8 +42,6 @@ book:
         - python/python-funktionen.qmd
         - python/python-control-flow.qmd
         - python/python-klassen.qmd
-        - slides/python-basics-slides.qmd
-
 
     - part: vscode/visual-studio-code.qmd
       chapters:

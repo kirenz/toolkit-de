@@ -2,7 +2,7 @@ import os
 import re
 
 # Directories
-input_directory = 'python'
+input_directory = 'first-steps'
 output_directory = 'slides'
 if not os.path.exists(output_directory):
     os.makedirs(output_directory)
@@ -22,7 +22,7 @@ format:
     toc: false
     toc-depth: 1
     embed-resources: false
-    theme: [default, custom.scss]
+    theme: [default, ../style/custom.scss]
     incremental: true
     transition: slide
     background-transition: fade
@@ -33,7 +33,7 @@ format:
     scrollable: true
     slide-number: c
     preview-links: auto
-    css: style/index.css
+    css: ../style/index.css
     chalkboard: 
       buttons: false
    #logo: images/logo.png
@@ -72,7 +72,7 @@ for file_name in os.listdir(input_directory):
         new_content = new_yml + '\n' + ''.join(updated_content)
 
         # Write the new content to the output directory
-        output_file_name = os.path.splitext(file_name)[0] + '-slides.qmd'
+        output_file_name = os.path.splitext(file_name)[0] + '.qmd'
         output_path = os.path.join(output_directory, output_file_name)
 
         with open(output_path, 'w', encoding='utf-8') as file:
