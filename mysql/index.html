@@ -9,7 +9,7 @@
 <meta name="author" content="Jan Kirenz">
 <meta name="description" content="Programming Toolkit für Data Science, AI &amp; Analytics">
 
-<title>Data Science, AI &amp; Analytics Toolkit - Daten</title>
+<title>Data Science, AI &amp; Analytics Toolkit - MySQL</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,8 +32,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../daten/dictionary.html" rel="next">
-<link href="../vscode/visual-studio-code-basics.html" rel="prev">
+<link href="../mysql/mysql-installation.html" rel="next">
+<link href="../datenbanken/nosql.html" rel="prev">
 <link href="..//images/logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -84,7 +84,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../daten/index.html">Daten</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../mysql/index.html">MySQL</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -250,7 +250,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../daten/index.html" class="sidebar-item-text sidebar-link active">
+            <a href="../daten/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Daten</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -308,7 +308,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../mysql/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../mysql/index.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">MySQL</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -475,22 +475,14 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Inhaltsverzeichnis</h2>
-   
-  <ul>
-  <li><a href="#strukturierte-daten" id="toc-strukturierte-daten" class="nav-link active" data-scroll-target="#strukturierte-daten">Strukturierte Daten</a></li>
-  <li><a href="#teilweise-strukturierte-daten" id="toc-teilweise-strukturierte-daten" class="nav-link" data-scroll-target="#teilweise-strukturierte-daten">Teilweise strukturierte Daten</a></li>
-  <li><a href="#unstrukturierte-daten" id="toc-unstrukturierte-daten" class="nav-link" data-scroll-target="#unstrukturierte-daten">Unstrukturierte Daten</a></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Daten</h1>
+<h1 class="title">MySQL</h1>
 </div>
 
 
@@ -507,63 +499,17 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Daten sind das Herzstück der Datenwissenschaft. Sie ermöglichen es uns, Erkenntnisse zu gewinnen, Entscheidungen zu treffen und Vorhersagen zu treffen. Daten können in verschiedenen Formen vorliegen und werden in der Regel in drei Hauptkategorien eingeteilt:</p>
+<p>MySQL, das sowohl als “My S-Q-L” als auch als “My Sequel” ausgesprochen wird, ist ein relationales Datenbankverwaltungssystem (RDBMS). Dieses System wird genutzt, um Daten in relationalen Datenbanken zu verwalten. Es verwendet die Structured Query Language (SQL) für verschiedene Aufgaben wie Datenverwaltung, Datenmanipulation und das Abfragen von Daten.</p>
+<p>MySQL Workbench bietet eine grafische Oberfläche für die Datenbankverwaltung und SQL-Entwicklung. Es integriert visuelle Werkzeuge für die Datenmodellierung, SQL-Entwicklung und umfassende Datenbankverwaltung.</p>
+<p>Die MySQL Workbench bietet verschiedene Werkzeuge zur Erleichterung der Datenbankverwaltung:</p>
 <ul>
-<li>strukturierte,</li>
-<li>teilweise strukturierte und</li>
-<li>unstrukturierte Daten.</li>
-</ul>
-<p>In diesem Kapitel werden wir diese Kategorien untersuchen und Beispiele für jede Art von Daten geben.</p>
-<section id="strukturierte-daten" class="level2">
-<h2 class="anchored" data-anchor-id="strukturierte-daten">Strukturierte Daten</h2>
-<p>Strukturierte Daten sind Daten, die in einem festen Format organisiert sind und leicht in Tabellenform dargestellt werden können. Diese Daten sind typischerweise in relationalen Datenbanken oder Tabellenkalkulationen gespeichert. Strukturierte Daten sind durch ihre klare Struktur leicht zu durchsuchen und zu analysieren.</p>
-<p>Beispiele für strukturierte Daten:</p>
-<ul>
-<li>CSV-Dateien</li>
-<li>Excel-Tabellen</li>
-<li>Tabellen in relationalen Datenbanken (z. B. SQL-Datenbanken)</li>
-</ul>
-<p>Merkmale strukturierter Daten:</p>
-<ul>
-<li>Feste Datenschemata (Spalten und Datentypen sind definiert)</li>
-<li>Einfach zu durchsuchen und zu filtern</li>
-<li>Eindeutige Datenbeziehungen (z. B. Fremdschlüssel in relationalen Datenbanken)</li>
-</ul>
-</section>
-<section id="teilweise-strukturierte-daten" class="level2">
-<h2 class="anchored" data-anchor-id="teilweise-strukturierte-daten">Teilweise strukturierte Daten</h2>
-<p>Teilweise strukturierte Daten sind Daten, die nicht in ein festes Schema passen, aber dennoch eine gewisse Struktur aufweisen. Diese Daten sind flexibler als strukturierte Daten und können in Formaten wie JSON vorliegen. Teilweise strukturierte Daten werden häufig für den Datenaustausch zwischen Systemen verwendet.</p>
-<p>Beispiele für teilweise strukturierte Daten:</p>
-<ul>
-<li>JSON-Dateien</li>
-<li>Python Dictionary</li>
-</ul>
-<p>Merkmale teilweise strukturierter Daten:</p>
-<ul>
-<li>Flexibles Schema (Felder und Strukturen können variieren)</li>
-<li>Hierarchische oder baumartige Struktur</li>
-<li>Leicht menschen- und maschinenlesbar</li>
-</ul>
-</section>
-<section id="unstrukturierte-daten" class="level2">
-<h2 class="anchored" data-anchor-id="unstrukturierte-daten">Unstrukturierte Daten</h2>
-<p>Unstrukturierte Daten sind Daten, die keine feste Struktur oder kein definiertes Schema haben. Diese Daten können in verschiedenen Formaten vorliegen und umfassen oft Multimedia-Inhalte. Unstrukturierte Daten sind schwer zu analysieren, erfordern daher spezielle Techniken und Tools, um nützliche Informationen daraus zu gewinnen.</p>
-<p>Beispiele für unstrukturierte Daten:</p>
-<ul>
-<li>Textdateien (z. B. E-Mails, Dokumente)</li>
-<li>Bilder (z. B. JPEG, PNG)</li>
-<li>Videos (z. B. MP4, AVI)</li>
-<li>Audiodateien (z. B. MP3, WAV)</li>
-</ul>
-<p>Merkmale unstrukturierter Daten:</p>
-<ul>
-<li>Keine festgelegte Struktur oder Schema</li>
-<li>Vielfältige Formate und Typen</li>
-<li>Erfordert spezialisierte Techniken zur Analyse (z. B. Bild- und Spracherkennung)</li>
+<li><strong>Toolbar</strong>: Oben finden Sie die Toolbar, die Schaltflächen wie das neue Abfrage-Tab, Abfrage ausführen und andere enthält.</li>
+<li><strong>Seitenleiste</strong>: Links bietet die Seitenleiste Zugriff auf Instanzverwaltung, Leistungsüberwachung und mehr.</li>
+<li><strong>Abfrage-Tab</strong>: Hier schreiben und führen Sie Ihre SQL-Abfragen aus. Sie können ein neues Abfrage-Tab öffnen, indem Sie auf das “+”-Symbol neben den vorhandenen Tabs klicken.</li>
+<li><strong>Ausgabebereich</strong>: Unterhalb des Abfrage-Editors zeigt dieser Bereich die Ergebnisse der ausgeführten Abfragen oder Nachrichten vom Datenbankserver an.</li>
 </ul>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -977,13 +923,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../vscode/visual-studio-code-basics.html" class="pagination-link" aria-label="Tipps">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Tipps</span></span>
+      <a href="../datenbanken/nosql.html" class="pagination-link" aria-label="NoSQL">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">NoSQL</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../daten/dictionary.html" class="pagination-link" aria-label="Dictionaries">
-        <span class="nav-page-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Dictionaries</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../mysql/mysql-installation.html" class="pagination-link" aria-label="Installation">
+        <span class="nav-page-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Installation</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -1168,13 +1168,23 @@
     ]
   },
   {
+    "objectID": "mysql/index.html",
+    "href": "mysql/index.html",
+    "title": "MySQL",
+    "section": "",
+    "text": "MySQL, das sowohl als “My S-Q-L” als auch als “My Sequel” ausgesprochen wird, ist ein relationales Datenbankverwaltungssystem (RDBMS). Dieses System wird genutzt, um Daten in relationalen Datenbanken zu verwalten. Es verwendet die Structured Query Language (SQL) für verschiedene Aufgaben wie Datenverwaltung, Datenmanipulation und das Abfragen von Daten.\nMySQL Workbench bietet eine grafische Oberfläche für die Datenbankverwaltung und SQL-Entwicklung. Es integriert visuelle Werkzeuge für die Datenmodellierung, SQL-Entwicklung und umfassende Datenbankverwaltung.\nDie MySQL Workbench bietet verschiedene Werkzeuge zur Erleichterung der Datenbankverwaltung:\n\nToolbar: Oben finden Sie die Toolbar, die Schaltflächen wie das neue Abfrage-Tab, Abfrage ausführen und andere enthält.\nSeitenleiste: Links bietet die Seitenleiste Zugriff auf Instanzverwaltung, Leistungsüberwachung und mehr.\nAbfrage-Tab: Hier schreiben und führen Sie Ihre SQL-Abfragen aus. Sie können ein neues Abfrage-Tab öffnen, indem Sie auf das “+”-Symbol neben den vorhandenen Tabs klicken.\nAusgabebereich: Unterhalb des Abfrage-Editors zeigt dieser Bereich die Ergebnisse der ausgeführten Abfragen oder Nachrichten vom Datenbankserver an.",
+    "crumbs": [
+      "MySQL"
+    ]
+  },
+  {
     "objectID": "mysql/mysql-installation.html",
     "href": "mysql/mysql-installation.html",
     "title": "24  Installation",
     "section": "",
     "text": "24.1 Windows",
     "crumbs": [
-      "mysql/index.qmd",
+      "MySQL",
       "<span class='chapter-number'>24</span>  <span class='chapter-title'>Installation</span>"
     ]
   },
@@ -1185,7 +1195,7 @@
     "section": "",
     "text": "Installer herunterladen\n\nGehen Sie zur MySQL Downloadseite.\nWählen Sie Windows als Plattform und laden Sie den MySQL-Installer für Windows in der Version 8.0.37. herunter.\n\nInstaller ausführen\n\nFühren Sie die heruntergeladene Datei aus. Wenn ein Sicherheitsdialog erscheint, klicken Sie auf “Ja”, um dem Installer die Erlaubnis zu erteilen, Änderungen an Ihrem System vorzunehmen.\n\nSetup-Typ auswählen\n\nWählen Sie bei Aufforderung “Custom” als Setup-Typ. Diese Option ermöglicht es Ihnen, spezifische Komponenten zur Installation auszuwählen, wie z.B. MySQL Server, MySQL Workbench und MySQL Shell.\n\nProdukte und Features auswählen\n\nWählen Sie ‘MySQL Server’ und ‘MySQL Workbench’ für die Installation aus.\n\nInstallation\n\nFolgen Sie den Anweisungen auf dem Bildschirm, um die gewählten Komponenten zu installieren.\n\nMySQL Server konfigurieren\n\nNach der Installation werden Sie durch eine Reihe von Konfigurationsschritten geführt, einschließlich der Einrichtung des Root-Passworts, der Erstellung von Benutzerkonten und der Konfiguration der Netzwerkoptionen und des Windows-Dienstes.\n\nInstallation abschließen\n\nBeenden Sie das Setup, um die Installation von MySQL auf Ihrem System abzuschließen.",
     "crumbs": [
-      "mysql/index.qmd",
+      "MySQL",
       "<span class='chapter-number'>24</span>  <span class='chapter-title'>Installation</span>"
     ]
   },
@@ -1194,9 +1204,9 @@
     "href": "mysql/mysql-installation.html#mac",
     "title": "24  Installation",
     "section": "24.2 Mac",
-    "text": "24.2 Mac\n\nDatei herunterladen\n\nBesuchen Sie die MySQL Downloadseite und wählen Sie macOS als Betriebssystem.\nLaden Sie die DMG-Datei für macOS herunter (in der Version 8.0.36.)\n\n\n2.** MySQL installieren** - Öffnen Sie die heruntergeladene DMG-Datei und folgen Sie den Installationsanweisungen auf dem Bildschirm.\nNun installieren Sie MySQL Workbench\n\nMySQL Workbench herunterladen\n\nGreifen Sie auf die MySQL Workbench Downloadseite zu.\nWählen Sie die passende Version für Ihr Betriebssystem und laden Sie diese herunter.\n\nAnwendung installieren und den Setup-Anweisungen folgen.",
+    "text": "24.2 Mac\n\nDatei herunterladen\n\nBesuchen Sie die MySQL Downloadseite und wählen Sie macOS als Betriebssystem.\nLaden Sie die DMG-Datei für macOS herunter (in der Version 8.0.36.)\n\nMySQL installieren\n\nÖffnen Sie die heruntergeladene DMG-Datei und folgen Sie den Installationsanweisungen auf dem Bildschirm.\n\n\nNun installieren Sie MySQL Workbench\n\nMySQL Workbench herunterladen\n\nGreifen Sie auf die MySQL Workbench Downloadseite zu.\nWählen Sie die passende Version für Ihr Betriebssystem und laden Sie diese herunter.\n\nAnwendung installieren und den Setup-Anweisungen folgen.",
     "crumbs": [
-      "mysql/index.qmd",
+      "MySQL",
       "<span class='chapter-number'>24</span>  <span class='chapter-title'>Installation</span>"
     ]
   },
@@ -1207,7 +1217,7 @@
     "section": "",
     "text": "Nach der Installation besteht der nächste Schritt darin, eine Verbindung zu Ihrem MySQL-Server über MySQL Workbench herzustellen, d.h. wir fügen einen Server hinzu:\n\nMySQL Workbench starten\n\nÖffnen Sie MySQL Workbench aus Ihrer Anwendungsübersicht. Beim Start der Anwendung sehen Sie die Hauptoberfläche.\n\n\n\n\n\n\n\nTipp für Windows-Nutzer\n\n\n\n\n\nFalls MySQL Workbench während der anfänglichen Einrichtung des MySQL Servers nicht enthalten war, kann es separat installiert werden:\n\nGreifen Sie auf die MySQL Workbench Downloadseite zu.\nWählen Sie die passende Version für Ihr Betriebssystem und laden Sie sie herunter.\n\n\n\n\nNeue Verbindung erstellen\n\nAuf dem Startbildschirm sehen Sie einen Bereich mit der Bezeichnung “MySQL Connections”. Klicken Sie auf das “+”-Symbol, um eine neue Verbindung zu erstellen.\nIm Setup-Dialog:\n\nVerbindungsname: Geben Sie Ihrer Verbindung einen erkennbaren Namen (nutzen Sie hierfür local-connection).\nHostname: Geben Sie localhost ein (wir verwenden diese Bezeichnung, da der Datenbankserver auf dem gleichen Rechner wie die Workbench läuft).\nPort: Der Standard-MySQL-Port ist 3306.\nBenutzername: Geben Sie den Benutzernamen ein, den Sie während der MySQL Server-Installation festgelegt haben (meist ‘root’).\nPasswort: Klicken Sie auf “Store in Vault” und geben Sie das Passwort für das Benutzerkonto ein.\n\nNachdem Sie diese Felder ausgefüllt haben, klicken Sie auf “Test Connection”, um sicherzustellen, dass alle Einstellungen korrekt sind und die Verbindung hergestellt werden kann.\n\nVerbindung speichern\n\nWenn der Verbindungstest erfolgreich ist, speichern Sie die Konfiguration, indem Sie auf “OK” klicken. Diese Verbindung wird nun auf dem MySQL Workbench-Startbildschirm für einen einfachen Zugriff angezeigt.",
     "crumbs": [
-      "mysql/index.qmd",
+      "MySQL",
       "<span class='chapter-number'>25</span>  <span class='chapter-title'>Server einrichten</span>"
     ]
   },
@@ -1218,7 +1228,7 @@
     "section": "",
     "text": "26.1 Datenbank erstellen",
     "crumbs": [
-      "mysql/index.qmd",
+      "MySQL",
       "<span class='chapter-number'>26</span>  <span class='chapter-title'>SQL basics</span>"
     ]
   },
@@ -1229,7 +1239,7 @@
     "section": "",
     "text": "Eine Datenbank erstellen\n\nVerbinden Sie sich mit Ihrer MySQL-Instanz über die eingerichtete Verbindung (local-connection).\n\nNeues Abfrage-Tab öffnen\n\nKlicken Sie auf das “+”-Symbol oben, um eine neue Abfrage zu starten.\n\nGeben Sie die folgenden SQL-Befehle ein:\nDROP DATABASE IF EXISTS `db_data`;\nCREATE DATABASE `db_data`;\nUSE `db_data`;\n\n\n\n\n\n\nErklärung der SQL-Befehle\n\n\n\n\n\nDer SQL-Code führt drei Operationen durch:\n\nDROP DATABASE IF EXISTS db_data;\n\nDieser Befehl löscht die Datenbank db_data, falls sie existiert. Dies ist nützlich, um sicherzustellen, dass Sie mit einer neuen Datenbank arbeiten, indem eine eventuell vorhandene Datenbank mit demselben Namen entfernt wird.\n\nCREATE DATABASE db_data;\n\nDieser Befehl erstellt eine neue Datenbank mit dem Namen db_data. Dies legt die Basis für eine neue Datenbank, in der Sie Tabellen und andere Datenbankobjekte erstellen können.\n\nUSE db_data;\n\nDieser Befehl setzt die neu erstellte Datenbank db_data als die aktuell verwendete Datenbank. Alle nachfolgenden SQL-Befehle werden auf dieser Datenbank ausgeführt.\n\n\n\n\n\nBefehl ausführen\n\nKlicken Sie auf das Blitzsymbol (⚡), um den Befehl auszuführen.\n\nSchema-Liste aktualisieren\n\nNachdem Sie die Befehle ausgeführt haben, aktualisieren Sie die Schema-Liste auf der linken Seite der Oberfläche, um Ihre neue Datenbank zu sehen.",
     "crumbs": [
-      "mysql/index.qmd",
+      "MySQL",
       "<span class='chapter-number'>26</span>  <span class='chapter-title'>SQL basics</span>"
     ]
   },
@@ -1240,7 +1250,7 @@
     "section": "26.2 Tabelle erstellen",
     "text": "26.2 Tabelle erstellen\nAls Beispieldaten erstellen wir eine Tabelle zu einer Marketingkampagne:\n\nNeues Abfrage-Tab öffnen\n\nKlicken Sie auf das “+”-Symbol oben, um eine neue Abfrage zu starten.\n\nTabelle definieren\n\nFühren Sie das folgende SQL aus, um Ihre Tabelle zu erstellen:\n\nCREATE TABLE campaigns (\n   id INT AUTO_INCREMENT PRIMARY KEY,\n   name VARCHAR(255) NOT NULL,\n   start_date DATE,\n   end_date DATE,\n   budget DECIMAL(10, 2),\n   channel VARCHAR(255)\n   );\n\n\n\n\n\n\nErklärung der Tabellendefinition\n\n\n\n\n\nDer obige SQL-Befehl erstellt eine neue Tabelle namens campaigns. Hier ist eine Aufschlüsselung jeder Spaltendefinition:\n\nid: Eine Spalte namens id, die den Datentyp INT (integer) verwendet und automatisch inkrementiert wird (d.h. 1, 2, 3, …), was sich gut als Primärschlüssel eignet.\nname: Eine Spalte zur Speicherung der Kampagnennamen als Text, um eine Zeichenkette von bis zu 255 Zeichen zu halten. Die NOT NULL-Einschränkung stellt sicher, dass jede Zeile einen Namen haben muss.\nstart_date und end_date: Diese Spalten speichern die Start- und Enddaten der Kampagnen mit dem Datentyp DATE.\nbudget: Eine Spalte für das Budget jeder Kampagne, die DECIMAL(10, 2) verwendet, um bis zu 10 Stellen mit 2 Dezimalstellen zu ermöglichen.\nchannel: Eine Spalte, um das verwendete Medium der Kampagne anzugeben, die Zeichenfolgen von bis zu 255 Zeichen speichern kann.\n\n\n\n\nBefehl ausführen\n\nKlicken Sie auf das Blitzsymbol (⚡), um den Befehl auszuführen. Überprüfen Sie die Schema-Ansicht, um die Erstellung der Tabelle zu bestätigen.",
     "crumbs": [
-      "mysql/index.qmd",
+      "MySQL",
       "<span class='chapter-number'>26</span>  <span class='chapter-title'>SQL basics</span>"
     ]
   },
@@ -1251,7 +1261,7 @@
     "section": "26.3 Werte einfügen",
     "text": "26.3 Werte einfügen\nGehen Sie wie folgt vor, um die Tabelle mit Daten zu füllen:\n\nDaten einfügen\n\nVerwenden Sie in einem neuen Abfrage-Tab diesen SQL-Befehl:\n\nINSERT INTO campaigns (name, start_date, end_date, budget, channel) VALUES\n('Winter Sale', '2023-12-01', '2023-12-31', 5000.00, 'Email'),\n('Summer Festival', '2023-06-01', '2023-06-15', 10000.00, 'Social Media'),\n('Back to School', '2023-08-01', '2023-08-20', 7500.00, 'TV');\n\n\n\n\n\n\nErklärung der Insert-Anweisung\n\n\n\n\n\nDieser SQL-Befehl fügt Daten in die campaigns-Tabelle ein. Jede Zeile von Werten entspricht einer anderen Marketingkampagne:\n\nErste Zeile: Fügt eine Kampagne namens “Winter Sale” ein, die vom 1. bis 31. Dezember 2023 läuft, mit einem Budget von $5000 und dem Kanal “Email”.\nZweite Zeile: Fügt “Summer Festival” ein, eine kürzere Kampagne vom 1. bis 15. Juni 2023, mit einem höheren Budget von $10000 und dem Kanal “Social Media”.\nDritte Zeile: Fügt die “Back to School”-Kampagne vom 1. bis 20. August 2023 hinzu, mit einem Budget von $7500, vermarktet über “TV”.\n\nJeder Satz von Werten ist in Klammern eingeschlossen und durch Kommas getrennt, um verschiedene Kampagnen zu unterscheiden.",
     "crumbs": [
-      "mysql/index.qmd",
+      "MySQL",
       "<span class='chapter-number'>26</span>  <span class='chapter-title'>SQL basics</span>"
     ]
   },
@@ -1262,7 +1272,7 @@
     "section": "26.4 Werte abrufen",
     "text": "26.4 Werte abrufen\nUm die Daten zu überprüfen:\n\nFühren Sie eine SELECT-Abfrage aus\n\nFühren Sie folgendes in einem neuen Abfrage-Tab aus:\n\nSELECT * FROM campaigns;\n\n\n\n\n\n\nErklärung der SELECT-Abfrage\n\n\n\n\n\nDer SQL-Befehl ruft alle Spalten aus allen Zeilen in der campaigns-Tabelle ab. Er ist nützlich, um alle eingegebenen Daten in der Tabelle anzuzeigen, sicherzustellen, dass die Einträge korrekt sind, und um weitere Datenanalysen oder Berichte zu ermöglichen.\n\n\n\n\nDie Abfrage sollte folgendes Ergebnis ausgeben:\n\n\n\nid\nname\nstart_date\nend_date\nbudget\nchannel\n\n\n\n\n1\nWinter Sale\n2023-12-01\n2023-12-31\n5000.00\nEmail\n\n\n2\nSummer Festival\n2023-06-01\n2023-06-15\n10000.00\nSocial Media\n\n\n3\nBack to School\n2023-08-01\n2023-08-20\n7500.00\nTV",
     "crumbs": [
-      "mysql/index.qmd",
+      "MySQL",
       "<span class='chapter-number'>26</span>  <span class='chapter-title'>SQL basics</span>"
     ]
   },
