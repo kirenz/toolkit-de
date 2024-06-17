@@ -12,7 +12,7 @@ Bevor Sie mit dem Programmieren in Python beginnen, stellen wir sicher, dass Sie
 
 ## Jupyter Notebook einrichten
 
-1. Navigieren Sie in der Web-Oberfläche von Jupyter zum `code`-Verzeichnis (siehe die Erklärung zur [Ordnerstruktur](../erste-schritte/project-environment.qmd)).
+1. Navigieren Sie in der Web-Oberfläche von Jupyter zum `code`-Verzeichnis (siehe die Erklärung zur [Ordnerstruktur](../erste-schritte/projektumgebung.qmd)).
 2. Klicken Sie oben rechts auf "New" und wählen Sie "Notebook", um ein neues Notebook zu erstellen.
 3. Nun öffnet sich ein Fenster in welchem Sie den Kernel (eine Python-Instanz) auswählen können. Wählen Sie die eben installierte `basics`-Umgebung aus (siehe [diese Anleitung](python-arbeitsbereich.qmd)).
 4. Erstellen Sie in diesem Notebook eine neue Markdown-Zelle, um dem Notebook einen Titel zu geben (z.B. Python basics):
@@ -21,5 +21,5 @@ Bevor Sie mit dem Programmieren in Python beginnen, stellen wir sicher, dass Sie
    # Python basics
    ```
 5. Speichern Sie das Notebook:
-   - Speichern Sie Ihr Notebook im `code` Ordner (siehe unsere [Ordnerstruktur](../erste-schritte/project-environment.qmd) Erklärung) mit einem aussagekräftigen Namen (z.B. `python-basics.ipynb`).
+   - Speichern Sie Ihr Notebook im `code` Ordner (siehe unsere [Ordnerstruktur](../erste-schritte/projektumgebung.qmd) Erklärung) mit einem aussagekräftigen Namen (z.B. `python-basics.ipynb`).
 
