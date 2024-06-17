@@ -2,15 +2,13 @@
 
 NoSQL steht für "Not only SQL" und bezeichnet eine Klasse von Datenbanksystemen, die sich von traditionellen, relationalen Datenbanken unterscheiden. Sie wurden entwickelt, um die Skalierbarkeit und Leistung zu verbessern und um flexibler mit den Daten umgehen zu können.
 
-Anstatt Tabellen normalisierter Daten zu verbinden, speichern NoSQL-Datenbanken unstrukturierte oder halbstrukturierte Daten, oft in Schlüssel-Wert-Paaren oder JSON-Dokumenten.
+Anstatt Tabellen zu verbinden, speichern NoSQL-Datenbanken unstrukturierte oder halbstrukturierte Daten, oft in Schlüssel-Wert-Paaren oder JSON-Dokumenten. NoSQL-Datenbanken umfassen mehrere verschiedene Modelle zum Zugriff und zur Verwaltung von Daten, die jeweils für spezifische Anwendungsfälle geeignet sind. Hier sind einige Hauptmerkmale und -modelle von NoSQL-Datenbanken:
 
-NoSQL-Datenbanken umfassen mehrere verschiedene Modelle zum Zugriff und zur Verwaltung von Daten, die jeweils für spezifische Anwendungsfälle geeignet sind. Hier sind einige Hauptmerkmale und -modelle von NoSQL-Datenbanken:
+- Schemaflexibilität: Im Gegensatz zu relationalen Datenbanken, bei denen das Schema festgelegt ist, bieten NoSQL-Datenbanken die Möglichkeit, Daten ohne vordefiniertes Schema zu speichern. Dies ermöglicht eine schnelle Anpassung an sich ändernde Datenanforderungen.
 
-- **Schemaflexibilität:** Im Gegensatz zu relationalen Datenbanken, bei denen das Schema festgelegt ist, bieten NoSQL-Datenbanken die Möglichkeit, Daten ohne vordefiniertes Schema zu speichern. Dies ermöglicht eine schnelle Anpassung an sich ändernde Datenanforderungen.
+- Horizontale Skalierbarkeit NoSQL-Datenbanken sind darauf ausgelegt, große Datenmengen auf vielen Servern zu verteilen. Sie unterstützen eine horizontale Skalierung, was bedeutet, dass sie durch Hinzufügen weiterer Server in ein Netzwerk skalierbar sind.
 
-- **Horizontale Skalierbarkeit:** NoSQL-Datenbanken sind darauf ausgelegt, große Datenmengen auf vielen Servern zu verteilen. Sie unterstützen eine horizontale Skalierung, was bedeutet, dass sie durch Hinzufügen weiterer Server in ein Netzwerk skalierbar sind.
-
-- **Hohe Verfügbarkeit und Fehlertoleranz:** NoSQL-Datenbanken sind so konzipiert, dass sie auch bei Ausfällen einzelner Knoten im Netzwerk weiterhin verfügbar sind.
+- Hohe Verfügbarkeit und Fehlertoleranz: NoSQL-Datenbanken sind so konzipiert, dass sie auch bei Ausfällen einzelner Knoten im Netzwerk weiterhin verfügbar sind.
 
 ## Datenmodelle
 
@@ -56,22 +54,21 @@ Graph-Datenbanken speichern Daten in Form von Graphen, bei denen Knoten die Date
 |-----------------|----------------------------------------------------------------------|------------------|
 | Graph-Speicher | Daten werden in einer Graphstruktur als Knoten, Kanten und Dateneigenschaften gespeichert. | Neo4j |
 
-## Vorteile von NoSQL-Datenbanken
-
-- **Flexibilität:** NoSQL-Datenbanken erlauben die Speicherung von unstrukturierten und halbstrukturierten Daten ohne vorher festgelegte Schemata.
-- **Skalierbarkeit:** Sie ermöglichen eine horizontale Skalierung durch das Hinzufügen weiterer Server.
-- **Leistung:** Optimiert für hohe Schreib- und Leseoperationen, insbesondere bei großen Datenmengen.
-- **Verfügbarkeit:** Entworfen für hohe Verfügbarkeit und Fehlertoleranz, auch bei Ausfällen einzelner Knoten.
 
 ## Anwendungsfälle
 
 NoSQL-Datenbanken werden häufig in folgenden Bereichen eingesetzt:
 
-- **E-Commerce:** Verwaltung von Produktkatalogen, Benutzerprofilen und Warenkörben.
-- **Big Data:** Verarbeitung und Analyse großer Datenmengen in Echtzeit.
-- **Content Management:** Speicherung und Verwaltung von Inhalten wie Dokumenten, Bildern und Videos.
-- **Social Media:** Verwaltung von Benutzerprofilen, Beziehungen und Aktivitäten in sozialen Netzwerken.
-- **IoT (Internet of Things):** Speicherung und Analyse großer Mengen an Sensordaten.
+- E-Commerce: Verwaltung von Produktkatalogen, Benutzerprofilen und Warenkörben.
+- Big Data: Verarbeitung und Analyse großer Datenmengen in Echtzeit.
+- Content Management: Speicherung und Verwaltung von Inhalten wie Dokumenten, Bildern und Videos.
+- Social Media: Verwaltung von Benutzerprofilen, Beziehungen und Aktivitäten in sozialen Netzwerken.
+- IoT (Internet of Things): Speicherung und Analyse großer Mengen an Sensordaten.
 
+Vorteile von NoSQL-Datenbanken:
 
-In den folgenden Kapiteln werden wir uns genauer mit der Implementierung und Anwendungen der NoSQL-Datenbanken MongoDB befassen.
+- Flexibilität: NoSQL-Datenbanken erlauben die Speicherung von unstrukturierten und halbstrukturierten Daten ohne vorher festgelegte Schemata.
+- Skalierbarkeit: Sie ermöglichen eine horizontale Skalierung durch das Hinzufügen weiterer Server.
+- Leistung: Optimiert für hohe Schreib- und Leseoperationen, insbesondere bei großen Datenmengen.
+- Verfügbarkeit: Entworfen für hohe Verfügbarkeit und Fehlertoleranz, auch bei Ausfällen einzelner Knoten.
+
