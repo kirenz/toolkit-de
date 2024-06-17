@@ -4,10 +4,10 @@ Datenbanken bieten leistungsstarke Mittel zur Speicherung, Verwaltung und Abfrag
 
 Datenbanken bieten mehrere Vorteile gegenüber herkömmlichen Dateiformaten wie CSV oder Excel-Tabellen:
 
-- **Effizienz:** Datenbanken sind darauf optimiert, große Mengen an Daten schnell und effizient zu verwalten und abzurufen.
-- **Skalierbarkeit:** Datenbanken können mit dem Wachstum der Datenmenge skaliert werden, ohne die Leistung zu beeinträchtigen.
-- **Sicherheit:** Datenbanken bieten verschiedene Sicherheitsmechanismen zum Schutz sensibler Daten.
-- **Mehrbenutzerzugriff:** Datenbanken ermöglichen mehreren Benutzern gleichzeitig den Zugriff und die Bearbeitung von Daten, ohne dass es zu Konflikten kommt.
+- Effizienz: Datenbanken sind darauf optimiert, große Mengen an Daten schnell und effizient zu verwalten und abzurufen.
+- Skalierbarkeit Datenbanken können mit dem Wachstum der Datenmenge skaliert werden, ohne die Leistung zu beeinträchtigen.
+- Sicherheit Datenbanken bieten verschiedene Sicherheitsmechanismen zum Schutz sensibler Daten.
+- Mehrbenutzerzugriff Datenbanken ermöglichen mehreren Benutzern gleichzeitig den Zugriff und die Bearbeitung von Daten, ohne dass es zu Konflikten kommt.
 
 Es gibt verschiedene Arten von Datenbanken, die je nach Anwendungsfall und Datenstruktur verwendet werden:
 
