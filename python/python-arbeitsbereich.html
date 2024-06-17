@@ -9,7 +9,7 @@
 <meta name="author" content="Jan Kirenz">
 <meta name="description" content="Programming Toolkit für Data Science, AI &amp; Analytics">
 
-<title>Data Science, AI &amp; Analytics Toolkit - 17&nbsp; Erweiterungen</title>
+<title>Data Science, AI &amp; Analytics Toolkit - 10&nbsp; Arbeitsbereich</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -32,8 +66,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../vscode/visual-studio-code-basics.html" rel="next">
-<link href="../vscode/visual-studio-code-installation.html" rel="prev">
+<link href="../python/python-basics.html" rel="next">
+<link href="../python/python-umgebung.html" rel="prev">
 <link href="..//images/logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -84,7 +118,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../vscode/visual-studio-code.html">Visual Studio Code</a></li><li class="breadcrumb-item"><a href="../vscode/visual-studio-code-extensions.html"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Erweiterungen</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../python/python.html">Python</a></li><li class="breadcrumb-item"><a href="../python/python-arbeitsbereich.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Arbeitsbereich</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -171,19 +205,19 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../python/python-modules.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Module, Pakete und Bibliotheken</span></span></a>
+  <a href="../python/python-bibliotheken.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Bibliotheken</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../python/python-environment-basics.html" class="sidebar-item-text sidebar-link">
+  <a href="../python/python-umgebung.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Umgebungen</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../python/python-workspace.html" class="sidebar-item-text sidebar-link">
+  <a href="../python/python-arbeitsbereich.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Arbeitsbereich</span></span></a>
   </div>
 </li>
@@ -195,13 +229,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../python/python-indentation.html" class="sidebar-item-text sidebar-link">
+  <a href="../python/python-einrueckung.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Einrückung</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../python/python-functions.html" class="sidebar-item-text sidebar-link">
+  <a href="../python/python-funktionen.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Funktionen</span></span></a>
   </div>
 </li>
@@ -213,7 +247,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../python/python-classes.html" class="sidebar-item-text sidebar-link">
+  <a href="../python/python-klassen.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Klassen und Objekte</span></span></a>
   </div>
 </li>
@@ -236,7 +270,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../vscode/visual-studio-code-extensions.html" class="sidebar-item-text sidebar-link active">
+  <a href="../vscode/visual-studio-code-erweiterungen.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Erweiterungen</span></span></a>
   </div>
 </li>
@@ -295,7 +329,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../datenbanken/relational.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Home</span></span></a>
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Relational</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -462,19 +496,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-  <li><a href="#python-erweiterung" id="toc-python-erweiterung" class="nav-link active" data-scroll-target="#python-erweiterung"><span class="header-section-number">17.1</span> Python-Erweiterung</a></li>
-  <li><a href="#jupyter-erweiterung" id="toc-jupyter-erweiterung" class="nav-link" data-scroll-target="#jupyter-erweiterung"><span class="header-section-number">17.2</span> Jupyter-Erweiterung</a></li>
-  <li><a href="#atom-one-dark-theme" id="toc-atom-one-dark-theme" class="nav-link" data-scroll-target="#atom-one-dark-theme"><span class="header-section-number">17.3</span> Atom One Dark Theme</a></li>
-  <li><a href="#vs-code-icons" id="toc-vs-code-icons" class="nav-link" data-scroll-target="#vs-code-icons"><span class="header-section-number">17.4</span> VS Code Icons</a></li>
+  <li><a href="#anaconda-navigator-starten" id="toc-anaconda-navigator-starten" class="nav-link active" data-scroll-target="#anaconda-navigator-starten"><span class="header-section-number">10.1</span> Anaconda Navigator starten</a></li>
+  <li><a href="#jupyter-notebook-einrichten" id="toc-jupyter-notebook-einrichten" class="nav-link" data-scroll-target="#jupyter-notebook-einrichten"><span class="header-section-number">10.2</span> Jupyter Notebook einrichten</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../vscode/visual-studio-code.html">Visual Studio Code</a></li><li class="breadcrumb-item"><a href="../vscode/visual-studio-code-extensions.html"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Erweiterungen</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../python/python.html">Python</a></li><li class="breadcrumb-item"><a href="../python/python-arbeitsbereich.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Arbeitsbereich</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Erweiterungen</span></h1>
+<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Arbeitsbereich</span></h1>
 </div>
 
 
@@ -491,56 +523,33 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Erweiterungen verbessern die Funktionalität von Visual Studio Code, indem sie zusätzliche Funktionalitäten bieten.</p>
-<p>Dieser Abschnitt führt Sie durch die Installation von einigen hilfreichen Erweiterungen.</p>
-<section id="python-erweiterung" class="level2" data-number="17.1">
-<h2 data-number="17.1" class="anchored" data-anchor-id="python-erweiterung"><span class="header-section-number">17.1</span> Python-Erweiterung</h2>
-<p>Die Python-Erweiterung von Microsoft bietet umfassende Unterstützung für das Python-Coding, einschließlich IntelliSense (automatische Code-Vervollständigungen).</p>
-<p>So installieren Sie die Erweiterung:</p>
+<p>Bevor Sie mit dem Programmieren in Python beginnen, stellen wir sicher, dass Sie einen ordnungsgemäß konfigurierten Arbeitsbereich haben.</p>
+<section id="anaconda-navigator-starten" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="anaconda-navigator-starten"><span class="header-section-number">10.1</span> Anaconda Navigator starten</h2>
 <ol type="1">
-<li>Öffnen Sie Visual Studio Code.</li>
-<li>Gehen Sie zur Ansicht Erweiterungen, indem Sie auf das Quadrat-Symbol in der Seitenleiste klicken oder <code>Ctrl+Shift+X</code> (Windows) bzw. <code>Command+Shift+X</code> (Mac) drücken.</li>
-<li>Geben Sie in der Suchleiste “Python” ein und suchen Sie nach der von Microsoft veröffentlichten Python-Erweiterung.</li>
-<li>Klicken Sie auf “Installieren”, um die Erweiterung zu Ihrem Editor hinzuzufügen.</li>
+<li>Anaconda Navigator starten:
+<ul>
+<li>Öffnen Sie den Anaconda Navigator aus dem Anwendungsordner auf macOS oder dem Startmenü auf Windows.</li>
+</ul></li>
+<li>Jupyter Notebook öffnen:
+<ul>
+<li>Finden Sie im Anaconda Navigator das Jupyter Notebook und klicken Sie auf ‘Launch’, um es in Ihrem Webbrowser zu öffnen.</li>
+</ul></li>
 </ol>
 </section>
-<section id="jupyter-erweiterung" class="level2" data-number="17.2">
-<h2 data-number="17.2" class="anchored" data-anchor-id="jupyter-erweiterung"><span class="header-section-number">17.2</span> Jupyter-Erweiterung</h2>
-<p>Die Jupyter-Erweiterung ermöglicht es Ihnen, Jupyter-Notebooks direkt in VS Code zu erstellen, zu bearbeiten und auszuführen.</p>
-<p>So installieren Sie die Erweiterung:</p>
+<section id="jupyter-notebook-einrichten" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="jupyter-notebook-einrichten"><span class="header-section-number">10.2</span> Jupyter Notebook einrichten</h2>
 <ol type="1">
-<li>Öffnen Sie die Ansicht Erweiterungen wie zuvor beschrieben.</li>
-<li>Suchen Sie nach “Jupyter”.</li>
-<li>Wählen Sie die von Microsoft bereitgestellte Jupyter-Erweiterung aus und klicken Sie auf “Installieren”.</li>
+<li><p>Navigieren Sie in der Web-Oberfläche von Jupyter zum <code>code</code>-Verzeichnis (siehe die Erklärung zur <a href="../first-steps/project-environment.html">Ordnerstruktur</a>).</p></li>
+<li><p>Klicken Sie oben rechts auf “New” und wählen Sie “Notebook”, um ein neues Notebook zu erstellen.</p></li>
+<li><p>Nun öffnet sich ein Fenster in welchem Sie den Kernel (eine Python-Instanz) auswählen können. Wählen Sie die eben installierte <code>basics</code>-Umgebung aus (siehe <a href="../python/python-arbeitsbereich.html">diese Anleitung</a>).</p></li>
+<li><p>Erstellen Sie in diesem Notebook eine neue Markdown-Zelle, um dem Notebook einen Titel zu geben (z.B. Python basics):</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Python basics</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Speichern Sie das Notebook:</p>
+<ul>
+<li>Speichern Sie Ihr Notebook im <code>code</code> Ordner (siehe unsere <a href="../first-steps/project-environment.html">Ordnerstruktur</a> Erklärung) mit einem aussagekräftigen Namen (z.B. <code>python-basics.ipynb</code>).</li>
+</ul></li>
 </ol>
-</section>
-<section id="atom-one-dark-theme" class="level2" data-number="17.3">
-<h2 data-number="17.3" class="anchored" data-anchor-id="atom-one-dark-theme"><span class="header-section-number">17.3</span> Atom One Dark Theme</h2>
-<p>Für diejenigen, die eine dunkle Entwicklungsumgebung bevorzugen, bietet das Atom One Dark Theme eine attraktiv gestaltete Benutzeroberfläche.</p>
-<p>So installieren Sie die Erweiterung:</p>
-<ol type="1">
-<li>Greifen Sie auf den Erweiterungsmarktplatz in VS Code zu.</li>
-<li>Suchen Sie nach “Atom One Dark Theme”.</li>
-<li>Klicken Sie auf “Installieren”, um das Theme auf Ihre Umgebung anzuwenden.</li>
-</ol>
-</section>
-<section id="vs-code-icons" class="level2" data-number="17.4">
-<h2 data-number="17.4" class="anchored" data-anchor-id="vs-code-icons"><span class="header-section-number">17.4</span> VS Code Icons</h2>
-<p>Die VS Code Icons-Erweiterung verbessert die visuelle Organisation Ihrer Projektdateien, indem sie für jeden Dateityp passende Symbole hinzufügt.</p>
-<p>So installieren Sie die Erweiterung:</p>
-<ol type="1">
-<li>Öffnen Sie die Ansicht Erweiterungen in VS Code.</li>
-<li>Geben Sie “VS Code Icons” in die Suchleiste ein.</li>
-<li>Klicken Sie auf “Installieren”.</li>
-</ol>
-<!-- ## GitHub Copilot
-
-GitHub Copilot ist ein KI-gestütztes Code-Vervollständigungstool, das ganze Zeilen oder Codeblöcke vorschlägt, während Sie tippen. Es ist wie ein Paarprogrammierungspartner, der Ihnen hilft, schneller zu codieren und neue APIs und Sprachen zu lernen.
-
-### So installieren Sie die Erweiterung:
-1. Navigieren Sie zur Ansicht Erweiterungen in VS Code.
-2. Suchen Sie nach "GitHub Copilot".
-3. Klicken Sie auf "Installieren", um den KI-Assistenten von GitHub zu nutzen. -->
 
 
 </section>
@@ -957,13 +966,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../vscode/visual-studio-code-installation.html" class="pagination-link" aria-label="Installation">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Installation</span></span>
+      <a href="../python/python-umgebung.html" class="pagination-link" aria-label="Umgebungen">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Umgebungen</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../vscode/visual-studio-code-basics.html" class="pagination-link" aria-label="Tipps">
-        <span class="nav-page-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Tipps</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../python/python-basics.html" class="pagination-link" aria-label="Grundlagen">
+        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Grundlagen</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

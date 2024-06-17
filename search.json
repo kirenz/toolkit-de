@@ -294,86 +294,86 @@
     ]
   },
   {
-    "objectID": "python/python-modules.html",
-    "href": "python/python-modules.html",
+    "objectID": "python/python-bibliotheken.html",
+    "href": "python/python-bibliotheken.html",
     "title": "8  Module, Pakete und Bibliotheken",
     "section": "",
     "text": "8.1 Module\nModule sind einzelne Python-Dateien, die Definitionen und Implementierungen von Funktionen und Variablen enthalten, die in verschiedenen Programmen wiederverwendet werden können.\nDiese Module helfen, den Code modular zu gestalten, was seine Wartbarkeit und Lesbarkeit verbessert.\nHier sind einige wichtige Standardmodule und deren häufige Anwendungen:",
     "crumbs": [
       "Python",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Module, Pakete und Bibliotheken</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Bibliotheken</span>"
     ]
   },
   {
-    "objectID": "python/python-modules.html#module",
-    "href": "python/python-modules.html#module",
+    "objectID": "python/python-bibliotheken.html#module",
+    "href": "python/python-bibliotheken.html#module",
     "title": "8  Module, Pakete und Bibliotheken",
     "section": "",
     "text": "Variablen: Dies sind benannte Speicherorte, die Daten im Speicher speichern. Zum Beispiel speichert x = 5 die Ganzzahl 5 in einer Variable namens x.\nFunktionen: Funktionen sind wiederverwendbare Codeabschnitte, die eine bestimmte Aktion ausführen.\n\n\n\n\n\n\n\n\nKüchen-Analogie für Module\n\n\n\n\n\nStellen Sie sich Python wie eine gut ausgestattete Küche vor, in der Sie verschiedene Gerichte zubereiten können. Beim Kochen werden spezifische Werkzeuge und Zutaten für bestimmte Aufgaben oder Rezepte ausgewählt. Ähnlich repräsentieren in Python diese Werkzeuge und Zutaten Module—Sammlungen vorgefertigter Funktionen (Rezepte), die Sie zur Durchführung allgemeiner Aufgaben verwenden können, wie Dateiverwaltung mit os und shutil oder Datumsmanipulationen mit datetime.\nIn dieser Analogie: - Die Küche ist Ihre Python-Umgebung. - Rezeptbücher sind Python-Module, die jeweils Sets von Rezepten (Funktionen) für spezifische Aufgaben enthalten. - Zutaten stellen Datentypen und Variablen dar. - Kochutensilien sind Methoden aus den Modulen, die Ihnen helfen, die Zutaten zu manipulieren.\n\n\n\n\n\nos: Bietet Funktionen zur Interaktion mit dem Betriebssystem.\ndatetime: Behandelt Datums- und Zeitoperationen.\nmath: Enthält mathematische Funktionen.",
     "crumbs": [
       "Python",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Module, Pakete und Bibliotheken</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Bibliotheken</span>"
     ]
   },
   {
-    "objectID": "python/python-modules.html#pakete",
-    "href": "python/python-modules.html#pakete",
+    "objectID": "python/python-bibliotheken.html#pakete",
+    "href": "python/python-bibliotheken.html#pakete",
     "title": "8  Module, Pakete und Bibliotheken",
     "section": "8.2 Pakete",
     "text": "8.2 Pakete\nPakete in Python sind Verzeichnisse von Python-Modulen mit einer speziellen Datei namens __init__.py. Sie ermöglichen es Entwicklern, mehrere Module zusammenzupacken, wodurch es einfacher wird, eine Sammlung von Modulen als eine Einheit zu verwalten und zu verteilen.\n\n\n\n\n\n\nKüchen-Analogie für Pakete\n\n\n\n\n\nWenn ein Modul einem Rezeptbuch ähnelt, ist ein Paket vergleichbar mit einer Sammlung von Rezeptbüchern, die möglicherweise eine komplette Küche oder eine umfassende Sammlung von Kochstilen darstellen. Jedes Buch (Modul) konzentriert sich auf einen bestimmten Bereich, aber zusammen bieten sie eine breite Palette kulinarischer Optionen.\n\n\n\nFür Datenwissenschaftler und Entwickler sind einige wesentliche Pakete:\n\nnumpy: Paket für numerische Berechnungen.\npandas: Datenmanipulation und -analyse.\nmatplotlib, seaborn und altair: Datenvisualisierung.\nscikit-learn: Implementiert eine breite Palette von Machine-Learning-Algorithmen.",
     "crumbs": [
       "Python",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Module, Pakete und Bibliotheken</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Bibliotheken</span>"
     ]
   },
   {
-    "objectID": "python/python-modules.html#bibliotheken",
-    "href": "python/python-modules.html#bibliotheken",
+    "objectID": "python/python-bibliotheken.html#bibliotheken",
+    "href": "python/python-bibliotheken.html#bibliotheken",
     "title": "8  Module, Pakete und Bibliotheken",
     "section": "8.3 Bibliotheken",
     "text": "8.3 Bibliotheken\nEine Bibliothek ist eine Sammlung von Paketen und Modulen, die zusammen eine umfangreiche Funktionalität bereitstellen. Bibliotheken bieten oft Lösungen für spezifische Problemfelder und können viele Module und Pakete umfassen.\n\n\n\n\n\n\nKüchen-Analogie für Bibliotheken\n\n\n\n\n\nIn unserer Küchenanalogie wäre eine Bibliothek eine komplette Küche, ausgestattet mit einer Vielzahl von Werkzeugen und Zutaten für verschiedene Kochstile und -techniken. Es ist eine umfassende Sammlung, die Ihnen ermöglicht, nahezu jedes Gericht zu kochen, das Sie sich vorstellen können.\n\n\n\nEinige bekannte Python-Bibliotheken umfassen:\n\nSciPy: Bietet wissenschaftliche und technische Berechnungen, baut auf numpy auf.\nTensorFlow und PyTorch: Bibliotheken für maschinelles Lernen und neuronale Netze.\nDjango und Flask: Web-Frameworks für die Entwicklung von Webanwendungen.",
     "crumbs": [
       "Python",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Module, Pakete und Bibliotheken</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Bibliotheken</span>"
     ]
   },
   {
-    "objectID": "python/python-modules.html#vorteile",
-    "href": "python/python-modules.html#vorteile",
+    "objectID": "python/python-bibliotheken.html#vorteile",
+    "href": "python/python-bibliotheken.html#vorteile",
     "title": "8  Module, Pakete und Bibliotheken",
     "section": "8.4 Vorteile",
     "text": "8.4 Vorteile\nVorteile der Verwendung von Modulen, Paketen und Bibliotheken:\n\nKomplexitätsreduktion: Durch Kapselung von Code machen Module und Pakete komplexe Systeme einfacher zu verwalten.\nErhöhte Wiederverwendbarkeit: Sie fördern die Wiederverwendung von Code, sodass Sie ihn einmal schreiben und überall verwenden können.\nVerbesserte Organisation: Sie helfen dabei, den Code logischer zu strukturieren, was die Wartung und das Verständnis erleichtert.",
     "crumbs": [
       "Python",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Module, Pakete und Bibliotheken</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Bibliotheken</span>"
     ]
   },
   {
-    "objectID": "python/python-modules.html#praktisches-beispiel",
-    "href": "python/python-modules.html#praktisches-beispiel",
+    "objectID": "python/python-bibliotheken.html#praktisches-beispiel",
+    "href": "python/python-bibliotheken.html#praktisches-beispiel",
     "title": "8  Module, Pakete und Bibliotheken",
     "section": "8.5 Praktisches Beispiel",
     "text": "8.5 Praktisches Beispiel\nHier sehen Sie, wie Sie ein Modul verwenden können, indem Sie es in Ihr Python-Skript importieren:\n\n# Das Modul wird importiert\nimport math\n\n# Verwendung der sqrt-Funktion aus dem math-Modul zur Berechnung der Quadratwurzel\n# Das Ergebnis wird in der Variablen result gespeichert\nresult = math.sqrt(16)\nprint(result)  # Ausgabe: 4.0\n\n4.0\n\n\nDiese Struktur der Verwendung von Modulen, Paketen und Bibliotheken hilft nicht nur dabei, Ihren Code sauber und verständlich zu halten, sondern verbessert auch die Zusammenarbeit, indem sie Teammitgliedern ermöglicht, ihre Arbeit einfach zu teilen und zu integrieren.",
     "crumbs": [
       "Python",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Module, Pakete und Bibliotheken</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Bibliotheken</span>"
     ]
   },
   {
-    "objectID": "python/python-environment-basics.html",
-    "href": "python/python-environment-basics.html",
-    "title": "9  Umgebungen",
+    "objectID": "python/python-umgebung.html",
+    "href": "python/python-umgebung.html",
+    "title": "9  Virtuelle Umgebungen",
     "section": "",
-    "text": "9.1 Umgebung erstellen\nUm eine Umgebung einzurichten, befolgen Sie diese Anweisungen basierend auf Ihrem Betriebssystem:\nDas Erstellen einer separaten Umgebung für Python-Grundlagen stellt sicher, dass Ihr Arbeitsbereich isoliert und stabil bleibt.",
+    "text": "9.1 Umgebung erstellen\nUm eine virtuelle Umgebung einzurichten, befolgen Sie diese Anweisungen basierend auf Ihrem Betriebssystem:\nDas Erstellen einer separaten Umgebung für Python-Grundlagen stellt sicher, dass Ihr Arbeitsbereich isoliert und stabil bleibt.",
     "crumbs": [
       "Python",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Umgebungen</span>"
     ]
   },
   {
-    "objectID": "python/python-environment-basics.html#umgebung-erstellen",
-    "href": "python/python-environment-basics.html#umgebung-erstellen",
-    "title": "9  Umgebungen",
+    "objectID": "python/python-umgebung.html#umgebung-erstellen",
+    "href": "python/python-umgebung.html#umgebung-erstellen",
+    "title": "9  Virtuelle Umgebungen",
     "section": "",
     "text": "Zugriff auf die Eingabeaufforderung oder das Terminal:\n\nWindows-Benutzer: Öffnen Sie die Anaconda-Eingabeaufforderung über das Startmenü.\nmacOS-Benutzer: Öffnen Sie das Terminal unter Programme &gt; Dienstprogramme oder durch die Suche nach “Terminal”.\n\nErstellen der Umgebung:\n\nVerwenden Sie den folgenden Befehl, um eine neue Conda-Umgebung namens basics mit Python 3.11 und pip zu erstellen:\n\nconda create --name basics python=3.11 pip\n\nGeben Sie bei Proceed ([y]/n)?ein y ein, um die Installtion zu starten.\n\n\n\n\n\n\n\npip ist ein Paketverwaltungstool für Python. Es steht für “Pip Installs Packages” oder “Pip Installs Python” und wird verwendet, um Python-Pakete aus dem Python Package Index (PyPI) zu installieren und zu verwalten. Mit pip kann man Pakete installieren, aktualisieren und deinstallieren.\n\n\n\nAktivieren der Umgebung:\n\nSobald die Umgebung erstellt ist, aktivieren Sie sie mit:\n\nconda activate basics\n\nDie Eingabeaufforderung ändert sich, um anzuzeigen, dass die Umgebung basics aktiv ist.\n\nInstallieren der benötigten Bibliotheken:\n\nMit aktivierter Umgebung installieren Sie die Bibliotheken:\n\npip install numpy pandas openpyxl matplotlib seaborn altair jupyter ipykernel\n\n\n\n\n\n\nErklärung der Pakete\n\n\n\n\n\n\nnumpy: Eine leistungsfähige Bibliothek für numerische Berechnungen.\npandas: Ein wichtiges Tool zur Datenmanipulation und -analyse.\nopenpyxl: Ermöglicht das Lesen und Schreiben von Excel-Dateien (.xlsx) und wird oft in Verbindung mit Pandas verwendet, um Excel-Daten zu bearbeiten.\nmatplotlib: Eine weitverbreitete Bibliothek zur Erstellung von Visualisierungen in Python.\nseaborn: Aufbauend auf matplotlib, bietet diese Bibliothek statistische Datenvisualisierungen.\naltair: Eine Visualisierungsbibliothek, die interaktive Grafiken erstellt.\njupyter: Ein Open-Source-Webanwendungs-Tool, das es ermöglicht, Dokumente zu erstellen und zu teilen, die Live-Code, Gleichungen, Visualisierungen und narrativen Text enthalten.\nipykernel: Ermöglicht die Integration von Jupyter Notebooks mit dem IPython-Kernel, was das Ausführen von Python-Code innerhalb der Jupyter-Umgebung unterstützt.\n\n\n\n\n\nDieser Befehl ruft alle Pakete von PyPI ab und installiert sie.\n\n\n\n\n\n\n\nObwohl Sie Pakete auch mit conda install installieren können, verwenden wir ausschließlich pip, um mögliche Konflikte zwischen Conda- und Pip-installierten Paketen zu vermeiden. Dieser Ansatz stellt eine konsistente und zuverlässige Verwaltung von Abhängigkeiten in Ihrer Python-Umgebung sicher.\n\n\n\nÜberprüfen der Paketinstallation:\n\nNach der Installation öffnen Sie ein Jupyter Notebook und überprüfen, ob die Pakete verfügbar sind, indem Sie sie in Python importieren.\n\n\n\n\n\n\n\nUm die Nutzung der Funktionen und Methoden der Bibliotheken in Ihrem Code zu erleichtern, importieren wir sie häufig mit kürzeren, standardisierten Aliasen (die Verwendung dieser Standard-Aliase verbessert die Lesbarkeit des Codes und reduziert den Schreibaufwand).\n\n\n\nimport numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport seaborn as sns\nimport altair as alt\n\nWenn keine Fehler auftreten, wurden die Bibliotheken korrekt installiert.\n\n\n\n\n\n\n\nErklärung der Pakete\n\n\n\n\n\nNumPy (np): Der Alias np wird weit verbreitet verwendet und ermöglicht einen prägnanten Zugriff auf NumPys Funktionen für numerische Berechnungen.\nPandas (pd): Der Alias pd bietet eine Kurzform für Pandas’ leistungsstarke Datenmanipulationstools.\nMatplotlib (plt): Der Alias plt vereinfacht das Aufrufen der Funktionen von Matplotlib zum Plotten, Erstellen von Abbildungen und Anpassen von Grafiken.\nSeaborn (sns): Der Alias sns erleichtert den Zugriff auf Seaborns statistische Datenvisualisierungstools, die nahtlos mit Matplotlib integriert sind.\nAltair (alt): Der Alias alt ermöglicht einen schnellen Zugriff auf Altairs Visualisierungssyntax für interaktives Plotten.\n\n\n\nDeaktivieren der Umgebung:\n\nWenn Sie fertig sind oder zur Basisumgebung zurückkehren möchten, deaktivieren Sie die aktuelle Umgebung:\n\nconda deactivate",
     "crumbs": [
@@ -382,8 +382,8 @@
     ]
   },
   {
-    "objectID": "python/python-workspace.html",
-    "href": "python/python-workspace.html",
+    "objectID": "python/python-arbeitsbereich.html",
+    "href": "python/python-arbeitsbereich.html",
     "title": "10  Arbeitsbereich",
     "section": "",
     "text": "10.1 Anaconda Navigator starten",
@@ -393,8 +393,8 @@
     ]
   },
   {
-    "objectID": "python/python-workspace.html#anaconda-navigator-starten",
-    "href": "python/python-workspace.html#anaconda-navigator-starten",
+    "objectID": "python/python-arbeitsbereich.html#anaconda-navigator-starten",
+    "href": "python/python-arbeitsbereich.html#anaconda-navigator-starten",
     "title": "10  Arbeitsbereich",
     "section": "",
     "text": "Anaconda Navigator starten:\n\nÖffnen Sie den Anaconda Navigator aus dem Anwendungsordner auf macOS oder dem Startmenü auf Windows.\n\nJupyter Notebook öffnen:\n\nFinden Sie im Anaconda Navigator das Jupyter Notebook und klicken Sie auf ‘Launch’, um es in Ihrem Webbrowser zu öffnen.",
@@ -404,8 +404,8 @@
     ]
   },
   {
-    "objectID": "python/python-workspace.html#jupyter-notebook-einrichten",
-    "href": "python/python-workspace.html#jupyter-notebook-einrichten",
+    "objectID": "python/python-arbeitsbereich.html#jupyter-notebook-einrichten",
+    "href": "python/python-arbeitsbereich.html#jupyter-notebook-einrichten",
     "title": "10  Arbeitsbereich",
     "section": "10.2 Jupyter Notebook einrichten",
     "text": "10.2 Jupyter Notebook einrichten\n\nNavigieren Sie in der Web-Oberfläche von Jupyter zum code-Verzeichnis (siehe die Erklärung zur Ordnerstruktur).\nKlicken Sie oben rechts auf “New” und wählen Sie “Notebook”, um ein neues Notebook zu erstellen.\nNun öffnet sich ein Fenster in welchem Sie den Kernel (eine Python-Instanz) auswählen können. Wählen Sie die eben installierte basics-Umgebung aus (siehe diese Anleitung).\nErstellen Sie in diesem Notebook eine neue Markdown-Zelle, um dem Notebook einen Titel zu geben (z.B. Python basics):\n# Python basics\nSpeichern Sie das Notebook:\n\nSpeichern Sie Ihr Notebook im code Ordner (siehe unsere Ordnerstruktur Erklärung) mit einem aussagekräftigen Namen (z.B. python-basics.ipynb).",
@@ -492,8 +492,8 @@
     ]
   },
   {
-    "objectID": "python/python-indentation.html",
-    "href": "python/python-indentation.html",
+    "objectID": "python/python-einrueckung.html",
+    "href": "python/python-einrueckung.html",
     "title": "12  Einrückung",
     "section": "",
     "text": "12.1 Richtige Einrückung\nBeispielcode für die Erzeugung einer Funktion (wir behandeln Funktionen an einer anderen Stelle des Buches im Detail):\n# Funktion wird erzeugt\ndef compute_area(width, height):\n    # Dies ist der Anfang eines Funktionsblocks\n    area = width * height \n    return area \n\n#Aufrufen der Funktion\nprint(compute_area(5, 10))  # Diese Zeile ist nicht eingerückt, was zeigt, dass sie nicht Teil der Funktion ist\n\n50\nErläuterung:",
@@ -503,8 +503,8 @@
     ]
   },
   {
-    "objectID": "python/python-indentation.html#richtige-einrückung",
-    "href": "python/python-indentation.html#richtige-einrückung",
+    "objectID": "python/python-einrueckung.html#richtige-einrückung",
+    "href": "python/python-einrueckung.html#richtige-einrückung",
     "title": "12  Einrückung",
     "section": "",
     "text": "Die Funktion compute_area beginnt mit einem Doppelpunkt (:) und der nachfolgende Code ist vier Leerzeichen eingerückt.\nSowohl die Berechnung von area als auch die return-Anweisung sind aufgrund ihrer Einrückung Teil der Funktion.\nDie print-Anweisung ist relativ zur Funktionsdefinition nicht eingerückt, was zeigt, dass sie außerhalb der Funktion steht.",
@@ -514,8 +514,8 @@
     ]
   },
   {
-    "objectID": "python/python-indentation.html#falsche-einrückung",
-    "href": "python/python-indentation.html#falsche-einrückung",
+    "objectID": "python/python-einrueckung.html#falsche-einrückung",
+    "href": "python/python-einrueckung.html#falsche-einrückung",
     "title": "12  Einrückung",
     "section": "12.2 Falsche Einrückung",
     "text": "12.2 Falsche Einrückung\nBeispielcode mit falscher Einrückung:\ndef calculate_percentage(total, amount):\n    if total &gt; 0:\n    percentage = (amount / total) * 100 \n    return percentage  \nelse:\n    return 0\nIndentationError: expected an indented block after 'if' statement on line 3\nErläuterung:\n\nFehler: Das obige Beispiel führt zu einem IndentationError, weil die Einrückungsebenen nicht konsistent sind.\nZeile 3: Die Zeile percentage = (amount / total) * 100 soll ausgeführt werden, wenn die Bedingung total &gt; 0 wahr ist. Sie ist jedoch nicht eingerückt, was unklar macht, ob sie innerhalb der if-Anweisung oder außerhalb ausgeführt werden soll.\nZeilen 4 und 5: Die return percentage-Anweisung sollte eingerückt werden, um unter die if-Bedingung zu fallen, was zeigt, dass sie Teil des if-Blocks ist. Die else:-Zeile ist ebenfalls nicht korrekt mit der if-Zeile ausgerichtet, was zu einem Syntaxfehler führt.\n\nKorrigierte Version:\n\ndef calculate_percentage(total, amount):\n    if total &gt; 0:\n        percentage = (amount / total) * 100  \n        return percentage  \n    else:\n        return 0\n\nWas dies korrigiert:\n\nDie Zeile percentage = (amount / total) * 100 ist jetzt korrekt unter die if-Bedingung eingerückt, was klar anzeigt, dass sie zu dem Block gehört, der ausgeführt wird, wenn total &gt; 0.\nDie return percentage-Anweisung ist ebenfalls korrekt eingerückt, um zu zeigen, dass sie Teil der if-Bedingung ist. Der else-Block ist mit der if-Anweisung ausgerichtet, wodurch die Struktur konsistent bleibt.\n\nDieses Beispiel zeigt, wie falsche Einrückung zu Syntaxfehlern und logischen Fehlern in Python führen kann. Es ist entscheidend, eine konsistente Einrückungsebene im gesamten Codeblock beizubehalten, um Klarheit und Funktionalität des Codes sicherzustellen. Indem Sie diese Praktiken einhalten, verhindern Sie Fehler und machen Ihren Code leichter lesbar.",
@@ -525,8 +525,8 @@
     ]
   },
   {
-    "objectID": "python/python-functions.html",
-    "href": "python/python-functions.html",
+    "objectID": "python/python-funktionen.html",
+    "href": "python/python-funktionen.html",
     "title": "13  Funktionen",
     "section": "",
     "text": "13.1 Einfache Funktion\nWir beginnen mit der Erstellung einer Funktion zur Berechnung des Quadrats einer Zahl.",
@@ -536,8 +536,8 @@
     ]
   },
   {
-    "objectID": "python/python-functions.html#einfache-funktion",
-    "href": "python/python-functions.html#einfache-funktion",
+    "objectID": "python/python-funktionen.html#einfache-funktion",
+    "href": "python/python-funktionen.html#einfache-funktion",
     "title": "13  Funktionen",
     "section": "",
     "text": "13.1.1 Funktion definieren\n\ndef square(num):\n    \"\"\"Berechnen und zurückgeben des Quadrats einer Zahl.\"\"\"\n    return num * num\n\nErläuterungen:\n\nFunktionsdefinition:\n\nDas Schlüsselwort def signalisiert den Beginn einer Funktionsdefinition.\nDer Name der Funktion folgt direkt danach. In diesem Fall ist der Funktionsname square.\nDie Klammern () enthalten die Parameterliste der Funktion. Hier gibt es einen Parameter, num, der eine Zahl repräsentiert, deren Quadrat berechnet werden soll.\n\nDocstring:\n\nEin Docstring ist ein kurzer beschreibender Text, der die Funktion erklärt. Er wird zwischen dreifachen Anführungszeichen \"\"\" geschrieben.\nDer Docstring dieser Funktion lautet: \"Berechnen und zurückgeben des Quadrats einer Zahl.\"\nDocstrings sind nützlich, um den Zweck der Funktion und ihre Funktionsweise zu dokumentieren. Sie sind besonders hilfreich für andere Programmierer/innen oder für Sie selbst, wenn Sie den Code später wieder verwenden oder ändern möchten.\n\nBerechnung des Quadrats:\n\nDie Funktion verwendet die Formel num * num, um das Quadrat der Zahl zu berechnen. Dies bedeutet, dass die Zahl num mit sich selbst multipliziert wird.\nBeispielsweise, wenn num gleich 3 ist, berechnet die Funktion 3 * 3, was 9 ergibt.\n\nRückgabe des Ergebnisses:\n\nDas Schlüsselwort return weist die Funktion an, das Ergebnis der Berechnung zurückzugeben.\nIn diesem Fall gibt return num * num das berechnete Quadrat der Zahl num zurück.\nWenn die Funktion aufgerufen wird, wird der zurückgegebene Wert an die Stelle des Funktionsaufrufs übergeben.\n\n\n\n\n13.1.2 Funktion verwenden\nBeispiel für die Verwendung der Funktion:\n\n# Aufruf der Funktion square mit dem Argument 4\nresult = square(4)\n\n\nWir rufen die Funktion square mit dem Argument 4 auf.\nDie Funktion berechnet das Quadrat von 4 und gibt 16 zurück.\nDer zurückgegebene Wert wird in der Variable result gespeichert.\n\n\n\n13.1.3 Ergebnis anzeigen\nEinfache Ausgabe des Ergebnisses mit Hilfe von print():\n\nprint(result)  # Dies wird 16 ausgeben, da 4 * 4 gleich 16 ist\n\n16\n\n\n\nIn diesem Code wird der Wert von result mit print ausgegeben, was 16 ist.\n\nAls Alternative dazu kann eine print-Funktion mit einem f-String verwendet werden. Dies ist eine formatierte Zeichenkette, die mit f vorangestellt ist und das Einfügen von Variablen innerhalb von {} geschweiften Klammern ermöglicht:\n\nprint(f\"Quadrat von 4: {result}\")\n\nQuadrat von 4: 16\n\n\nVorteile von f-Strings:\n\nSie bieten eine intuitive Möglichkeit, Variablen in Zeichenketten einzufügen.\nUnterstützung für Formatierungen ist eingebaut (z.B. Runden von Dezimalstellen).",
@@ -547,8 +547,8 @@
     ]
   },
   {
-    "objectID": "python/python-functions.html#funktion-mit-mehreren-parametern",
-    "href": "python/python-functions.html#funktion-mit-mehreren-parametern",
+    "objectID": "python/python-funktionen.html#funktion-mit-mehreren-parametern",
+    "href": "python/python-funktionen.html#funktion-mit-mehreren-parametern",
     "title": "13  Funktionen",
     "section": "13.2 Funktion mit mehreren Parametern",
     "text": "13.2 Funktion mit mehreren Parametern\nFunktionen können mehr als einen Parameter akzeptieren. Hier ist eine Funktion, die die Fläche eines Rechtecks berechnet:\n\n# Funktion zur Berechnung der Fläche eines Rechtecks\ndef calculate_rectangle_area(length, width):\n    \"\"\"Berechnen der Fläche eines Rechtecks anhand seiner Länge und Breite.\"\"\"\n    return length * width\n\nVerwendung der Funktion mit Beispielwerten:\n\nlength = 10\nwidth = 5\n\n\nlength und width sind Parameter, die die Funktion zur Berechnung der Fläche des Rechtecks verwendet.\n\nFunktion verwenden:\n\narea = calculate_rectangle_area(length, width)\n\n\ncalculate_rectangle_area wird mit bestimmten Werten aufgerufen.\n\nErgebnis anzeigen:\n\nprint(f\"Rechteck mit Länge {length} und Breite {width} hat eine Fläche von {area}\")\n\nRechteck mit Länge 10 und Breite 5 hat eine Fläche von 50\n\n\n\nDer f-String innerhalb der print-Anweisung liefert eine Ausgabe, die sowohl die Eingabewerte als auch das berechnete Ergebnis zeigt.",
@@ -558,8 +558,8 @@
     ]
   },
   {
-    "objectID": "python/python-functions.html#standardparameter",
-    "href": "python/python-functions.html#standardparameter",
+    "objectID": "python/python-funktionen.html#standardparameter",
+    "href": "python/python-funktionen.html#standardparameter",
     "title": "13  Funktionen",
     "section": "13.3 Standardparameter",
     "text": "13.3 Standardparameter\nStandardwerte für Parameter werden verwendet, wenn keine Argumente bereitgestellt werden.\n\n# Funktion mit einem Standardparameterwert\ndef greet(name=\"zusammen\"):\n    \"\"\"Begrüßen einer Person mit ihrem Namen oder mit 'Hallo zusammen' als Standard.\"\"\"\n    print(f\"Hallo {name}!\")\n\n\nDer Parameter name=\"zusammen\" liefert einen Standardwert.\n\nAufruf der Funktion mit einem bestimmten Namen:\n\ngreet(\"Alice\")\n\nHallo Alice!\n\n\n\nBeim Aufruf von greet(\"Alice\") wird “Hallo Alice!” ausgegeben.\n\nAufruf der Funktion ohne Argument (verwendet den Standardwert):\n\ngreet()\n\nHallo zusammen!\n\n\n\nDer Aufruf von greet() ohne Argumente verwendet den Standardwert “zusammen”.",
@@ -569,8 +569,8 @@
     ]
   },
   {
-    "objectID": "python/python-functions.html#lambda-funktionen",
-    "href": "python/python-functions.html#lambda-funktionen",
+    "objectID": "python/python-funktionen.html#lambda-funktionen",
+    "href": "python/python-funktionen.html#lambda-funktionen",
     "title": "13  Funktionen",
     "section": "13.4 Lambda-Funktionen",
     "text": "13.4 Lambda-Funktionen\nLambda-Funktionen sind kleine, anonyme Funktionen in Python, die besonders nützlich sind für kurze Operationen oder wenn Funktionen als Argumente an andere Funktionen übergeben werden sollen. Sie sind eine kompakte Art, Funktionen zu schreiben, ohne sie zwingend mit einem Namen zu versehen.\n\n\n\n\n\n\nLambda-Funktionen sind einfache Funktionen, die in einer einzigen Zeile definiert werden können. Sie werden mit dem Schlüsselwort lambda erstellt. Diese Funktionen können beliebig viele Argumente haben, aber nur einen Ausdruck, der ausgewertet und zurückgegeben wird.\n\n\n\n\n13.4.1 Beispiel-Funktion\nHier ist ein einfaches Beispiel für eine Lambda-Funktion, die zwei Zahlen addiert:\n\n# Lambda-Funktion zum Addieren zweier Zahlen\nadd = lambda x, y: x + y\n\n\nlambda x, y: definiert die Lambda-Funktion mit den Argumenten x und y.\nDer Ausdruck x + y wird berechnet und als Ergebnis zurückgegeben.\n\nNachdem wir die Lambda-Funktion definiert haben, können wir sie wie jede andere Funktion aufrufen. Hier ist ein Beispiel, wie man die oben definierte add Lambda-Funktion verwendet:\n\n# Aufrufen der Lambda-Funktion mit den Argumenten 3 und 5\nresult = add(3, 5)\n\nUm das Ergebnis zu sehen, können wir es ausdrucken:\n\n# Ausgabe des Ergebnisses\nprint(f\"Summe von 3 und 5: {result}\")\n\nSumme von 3 und 5: 8\n\n\n\n\n13.4.2 Lambda-Funktion mit map und filter\nLambda-Funktionen sind besonders nützlich, wenn Sie eine Funktion nur vorübergehend benötigen, zum Beispiel als Argument für eine andere Funktion wie map() und filter().\n\nDie map-Funktion wird verwendet, um eine gegebene Funktion auf alle Elemente einer Liste oder einer anderen iterierbaren Sequenz anzuwenden und ein neues Objekt mit den Ergebnissen zurückzugeben.\nDie filter-Funktion wird verwendet, um Elemente aus einer iterierbaren Sequenz herauszufiltern, die eine bestimmte Bedingung erfüllen. Die Bedingung wird durch eine Funktion bestimmt, die entweder True oder False zurückgibt.\n\nHier sind zwei Beispiele, in denen Lambda-Funktionen nützlich sein können:\n\nIn Kombination mit map():\n\n# Lambda-Funktion zum Quadrieren von Zahlen\nnumbers = [1, 2, 3, 4]\nsquared_numbers = list(map(lambda x: x ** 2, numbers))\nprint(squared_numbers)  # Ausgabe: [1, 4, 9, 16]\n\n[1, 4, 9, 16]\n\n\nIn Kombination mit filter():\n\n# Lambda-Funktion zum Filtern von geraden Zahlen\nnumbers = [1, 2, 3, 4, 5, 6]\neven_numbers = list(filter(lambda x: x % 2 == 0, numbers))\nprint(even_numbers)  # Ausgabe: [2, 4, 6]\n\n[2, 4, 6]\n\n\n\nLambda-Funktionen sind also eine flexible und effiziente Möglichkeit, kleine Funktionen schnell und unkompliziert zu definieren.\n\n\n13.4.3 Lambda-Funktionen mit DataFrames\nLambda-Funktionen sind auch dann hilfreich, wenn Sie eine benutzerdefinierte Transformation auf jede Zeile oder Spalte eines DataFrames anwenden möchten.\nZum Beispiel, wenn Sie Zahlen basierend auf bestimmten Bedingungen klassifizieren möchten, kann eine Lambda-Funktion helfen.\nBeispielcode:\n\n# Erstellen eines DataFrame und Verwendung einer Lambda-Funktion für eine benutzerdefinierte Klassifizierung\nimport pandas as pd\n\n# Beispiel-DataFrame\ndata = {\"Numbers\": [1, 2, 3, 4, 5, 15, 20, 25]}\ndf = pd.DataFrame(data)\n\n# Definieren einer benutzerdefinierten Funktion zur Klassifizierung von Zahlen\ndef classify_number(num):\n    if num &lt; 10:\n        return \"Einstellig\"\n    elif num &lt; 20:\n        return \"Teenager\"\n    else:\n        return \"Zwanzig oder mehr\"\n\n# Anwenden der benutzerdefinierten Funktion mit einer Lambda-Funktion zur Erstellung einer neuen Spalte\ndf[\"Klassifizierung\"] = df[\"Numbers\"].apply(lambda x: classify_number(x))\n\n# Anzeigen des DataFrame\ndf\n\n\n\n\n\n\n\n\nNumbers\nKlassifizierung\n\n\n\n\n0\n1\nEinstellig\n\n\n1\n2\nEinstellig\n\n\n2\n3\nEinstellig\n\n\n3\n4\nEinstellig\n\n\n4\n5\nEinstellig\n\n\n5\n15\nTeenager\n\n\n6\n20\nZwanzig oder mehr\n\n\n7\n25\nZwanzig oder mehr\n\n\n\n\n\n\n\nErläuterung:\n\nDer DataFrame df wird mit einer Spalte Numbers erstellt, die eine Reihe von Werten enthält.\nDie Funktion classify_number definiert benutzerdefinierte Klassifizierungskriterien:\n\nWeniger als 10 ist “Einstellig”.\nWeniger als 20, aber nicht unter 10 ist “Teenager”.\nWerte ab 20 sind “Zwanzig oder mehr.”\n\nDie Methode apply verwendet eine Lambda-Funktion, um jeden Wert von Numbers durch classify_number zu übergeben.\nDas Ergebnis ist eine neue Spalte Klassifizierung, die die kategorisierten Werte enthält.\n\nIn diesem Fall ist die Verwendung einer Lambda-Funktion mit apply vorteilhaft, um den DataFrame schnell zu transformieren, basierend auf einer Funktion, die sonst das Durchlaufen jedes Wertes einzeln erfordern würde.",
@@ -624,8 +624,8 @@
     ]
   },
   {
-    "objectID": "python/python-classes.html",
-    "href": "python/python-classes.html",
+    "objectID": "python/python-klassen.html",
+    "href": "python/python-klassen.html",
     "title": "15  Klassen und Objekte",
     "section": "",
     "text": "15.1 Einführung\nEine Klasse ist wie ein Bauplan oder eine Vorlage. Stellen Sie sich eine Klasse wie die Blaupause eines Hauses vor. Eine Blaupause beschreibt, wie das Haus aussehen soll – welche Räume es hat, wie groß sie sind, und so weiter. In ähnlicher Weise beschreibt eine Klasse, welche Daten (Eigenschaften) und Funktionen (Methoden) ein bestimmtes Objekt haben wird.\nEin Objekt ist eine konkrete Instanz einer Klasse. Wenn wir bei unserem Beispiel des Hauses bleiben, wäre ein Objekt ein tatsächliches Haus, das nach der Blaupause gebaut wurde. Jedes Haus, das nach derselben Blaupause gebaut wird, hat dieselben grundlegenden Eigenschaften, kann aber unterschiedliche Farben, Möbel oder Bewohner haben. In der Programmierung ist ein Objekt also ein spezifisches Exemplar einer Klasse mit eigenen, spezifischen Daten.\nWozu sind Klassen und Objekte nützlich:\nBetrachten wir eine einfache Klasse und ein Objekt, um das Konzept klarer zu machen:\n# Definiere eine einfache Klasse, die eine Person repräsentiert\nclass Person:\n    \"\"\"Eine Klasse, die eine Person mit Namen und Alter repräsentiert.\"\"\"\n\n    def __init__(self, name, age):\n        \"\"\"Initialisiere die Person mit Name und Alter.\"\"\"\n        self.name = name\n        self.age = age\n\n    def greet(self):\n        \"\"\"Gibt eine Begrüßung zurück.\"\"\"\n        return f\"Hallo, mein Name ist {self.name} und ich bin {self.age} Jahre alt.\"\n\n# Erstelle ein Objekt der Klasse Person\nperson1 = Person(\"Alice\", 30)\n\n# Verwende die Methode des Objekts\nprint(person1.greet())\n\nHallo, mein Name ist Alice und ich bin 30 Jahre alt.\nIn diesem Beispiel:",
@@ -635,8 +635,8 @@
     ]
   },
   {
-    "objectID": "python/python-classes.html#einführung",
-    "href": "python/python-classes.html#einführung",
+    "objectID": "python/python-klassen.html#einführung",
+    "href": "python/python-klassen.html#einführung",
     "title": "15  Klassen und Objekte",
     "section": "",
     "text": "Organisation: Sie helfen, den Code in überschaubare, wiederverwendbare Teile zu zerlegen.\nWiederverwendbarkeit: Einmal definierte Klassen können überall im Programm verwendet werden, um konsistente Objekte zu erstellen.\nErweiterbarkeit: Neue Funktionen und Eigenschaften können leicht zu bestehenden Klassen hinzugefügt werden, ohne den gesamten Code neu schreiben zu müssen.\nLesbarkeit: Der Code wird klarer und einfacher zu verstehen, weil die Struktur und das Verhalten der Daten klar definiert sind.\n\n\n\n\n\nKlasse Person: Dies ist die Blaupause. Sie beschreibt, dass jede Person einen Namen und ein Alter hat und sich vorstellen kann.\nObjekt person1: Dies ist ein spezifisches Exemplar der Klasse Person. Es repräsentiert eine konkrete Person namens Alice, die 30 Jahre alt ist.\nDocstring: Die Kommentare in dreifachen Anführungszeichen direkt unter der Klassendefinition und den Methoden beschreiben, was die Klasse und die Methoden machen.\nMethoden und Attribute: Das Objekt person1 verwendet die Methode greet(), um eine Begrüßung auszugeben, die auf den Attributen name und age basiert.",
@@ -646,8 +646,8 @@
     ]
   },
   {
-    "objectID": "python/python-classes.html#erstellung-einer-klasse",
-    "href": "python/python-classes.html#erstellung-einer-klasse",
+    "objectID": "python/python-klassen.html#erstellung-einer-klasse",
+    "href": "python/python-klassen.html#erstellung-einer-klasse",
     "title": "15  Klassen und Objekte",
     "section": "15.2 Erstellung einer Klasse",
     "text": "15.2 Erstellung einer Klasse\nIn diesem Beispiel behandeln wir ausführlich die Definition einer Klasse DataPoint, die eine einzelne Beobachtung in einem Datensatz darstellt.\n\n# Definiere eine einfache Klasse, die eine Datenbeobachtung repräsentiert\nclass DataPoint:\n    \"\"\"Eine Klasse, die eine Datenbeobachtung mit Merkmalen und Label repräsentiert.\"\"\"\n\n    def __init__(self, features, label):\n        \"\"\"Initialisiere den Datenpunkt mit Merkmalen und einem Label.\"\"\"\n        self.features = features\n        self.label = label\n\n    def describe(self):\n        \"\"\"Gibt einen formatierten String zurück, der den Datenpunkt beschreibt.\"\"\"\n        return f\"Merkmale: {self.features}, Label: {self.label}\"\n\n# Erstelle eine Instanz (Objekt) der DataPoint-Klasse\nsample_point = DataPoint([0.25, 0.75, 0.5], 'Positiv')\n\n# Zeige die Beschreibung des Datenpunkts an\nprint(sample_point.describe())\n\nMerkmale: [0.25, 0.75, 0.5], Label: Positiv\n\n\nDefinition der Klasse DataPoint:\n\nKlassenkopf:\nclass DataPoint:\nDies definiert eine neue Klasse namens DataPoint.\nDokumentations-String:\n\"\"\"Eine Klasse, die eine Datenbeobachtung mit Merkmalen und Label repräsentiert.\"\"\"\nDies ist eine kurze Beschreibung, was die Klasse macht. Es hilft anderen schnell zu verstehen, wofür diese Klasse gedacht ist.\n\nInitialisierungsmethode __init__\n\nKonstruktor-Methode:\ndef __init__(self, features, label):\n    \"\"\"Initialisiere den Datenpunkt mit Merkmalen und einem Label.\"\"\"\n    self.features = features\n    self.label = label\nDie __init__-Methode wird automatisch aufgerufen, wenn eine neue Instanz der Klasse erstellt wird. Sie initialisiert die Eigenschaften (Attribute) des Objekts. In diesem Fall nimmt sie zwei Argumente features und label und speichert sie in den Eigenschaften self.features und self.label des Objekts.\n\nself: Bezieht sich auf das aktuelle Objekt der Klasse und wird verwendet, um auf die Attribute und Methoden des Objekts zuzugreifen.\nfeatures: Ein Satz von Merkmalen, die den Datenpunkt beschreiben.\nlabel: Ein Etikett, das dem Datenpunkt zugewiesen ist, z.B. ‘Positiv’ oder ‘Negativ’.\n\n\nMethode describe\n\nBeschreibungsmethode:\ndef describe(self):\n    \"\"\"Gibt einen formatierten String zurück, der den Datenpunkt beschreibt.\"\"\"\n    return f\"Merkmale: {self.features}, Label: {self.label}\"\nDiese Methode gibt eine lesbare Beschreibung des Datenpunkts zurück, die die Merkmale und das Label des Datenpunkts enthält.\n\nErstellung einer Instanz und Nutzung der Methode\n\nErstellung einer Instanz:\nsample_point = DataPoint([0.25, 0.75, 0.5], 'Positiv')\nHier erstellen wir ein Objekt namens sample_point von der Klasse DataPoint. Die Merkmale werden als Liste [0.25, 0.75, 0.5] und das Label als 'Positiv' übergeben.\nAufruf der Methode describe:\nprint(sample_point.describe())\nDiese Zeile ruft die describe-Methode des sample_point-Objekts auf und druckt die zurückgegebene Beschreibung des Datenpunkts aus.\n\nIn unserem Beispiel haben wir also eine DataPoint-Klasse erstellt, die Merkmale und ein Label enthält, und eine Methode, um diese Daten in einem lesbaren Format anzuzeigen.",
@@ -657,8 +657,8 @@
     ]
   },
   {
-    "objectID": "python/python-classes.html#methoden-und-attribute",
-    "href": "python/python-classes.html#methoden-und-attribute",
+    "objectID": "python/python-klassen.html#methoden-und-attribute",
+    "href": "python/python-klassen.html#methoden-und-attribute",
     "title": "15  Klassen und Objekte",
     "section": "15.3 Methoden und Attribute",
     "text": "15.3 Methoden und Attribute\nDas Hinzufügen weiterer Funktionalität zu einer Klasse macht sie vielseitiger. Lassen Sie uns unsere Klasse erweitern, um eine Sammlung von Datenpunkten zu verwalten:\n\n# Definiere eine Klasse zur Verwaltung eines Datensatzes\nclass DataSet:\n    \"\"\"Eine Klasse, die eine Sammlung von Datenpunkten repräsentiert.\"\"\"\n\n    def __init__(self):\n        \"\"\"Initialisiere die leere Sammlung von Datenpunkten.\"\"\"\n        self.data_points = []\n\n    def add_data_point(self, data_point):\n        \"\"\"Füge einen Datenpunkt zur Sammlung hinzu.\"\"\"\n        self.data_points.append(data_point)\n\n    def display_data(self):\n        \"\"\"Zeige alle Datenpunkte in der Sammlung an.\"\"\"\n        for data_point in self.data_points:\n            print(data_point.describe())\n\n# Erstelle eine Instanz der DataSet-Klasse\nmy_data_set = DataSet()\n\n# Füge mehrere DataPoint-Objekte zum Datensatz hinzu\nmy_data_set.add_data_point(DataPoint([0.1, 0.2, 0.5], 'Negativ'))\nmy_data_set.add_data_point(DataPoint([0.8, 0.4, 0.3], 'Positiv'))\n\n# Zeige alle Datenpunkte im Datensatz an\nmy_data_set.display_data()\n\nMerkmale: [0.1, 0.2, 0.5], Label: Negativ\nMerkmale: [0.8, 0.4, 0.3], Label: Positiv\n\n\nErklärung:\n\nDie DataSet-Klasse speichert mehrere DataPoint-Objekte.\nMethoden wie add_data_point und display_data ermöglichen das Hinzufügen von Datenpunkten und das Anzeigen aller Punkte.",
@@ -668,8 +668,8 @@
     ]
   },
   {
-    "objectID": "python/python-classes.html#vererbung",
-    "href": "python/python-classes.html#vererbung",
+    "objectID": "python/python-klassen.html#vererbung",
+    "href": "python/python-klassen.html#vererbung",
     "title": "15  Klassen und Objekte",
     "section": "15.4 Vererbung",
     "text": "15.4 Vererbung\nVererbung ermöglicht es uns, bestehende Klassen zu erweitern, um spezialisiertere Versionen zu erstellen, ohne den Code zu wiederholen. Beispielsweise definieren wir einen TimeSeriesDataPoint, der DataPoint erweitert, indem ein Zeitstempel hinzugefügt wird:\n\n# Definiere eine Klasse, die einen Zeitreihendatenpunkt repräsentiert\nclass TimeSeriesDataPoint(DataPoint):\n    \"\"\"Eine Klasse, die DataPoint um einen Zeitstempel für Zeitreihendaten erweitert.\"\"\"\n\n    def __init__(self, features, label, timestamp):\n        \"\"\"Initialisiere die Attribute des TimeSeriesDataPoint.\"\"\"\n        super().__init__(features, label)\n        self.timestamp = timestamp\n\n    def describe(self):\n        \"\"\"Gibt einen formatierten String zurück, der den Zeitreihendatenpunkt beschreibt.\"\"\"\n        base_description = super().describe()\n        return f\"{base_description}, Zeitstempel: {self.timestamp}\"\n\n# Erstelle eine Instanz der TimeSeriesDataPoint-Klasse\ntime_series_point = TimeSeriesDataPoint([0.9, 0.1, 0.2], 'Negativ', '2024-09-05T12:00:00')\n\n# Zeige die Beschreibung des Zeitreihendatenpunkts an\nprint(time_series_point.describe())\n\nMerkmale: [0.9, 0.1, 0.2], Label: Negativ, Zeitstempel: 2024-09-05T12:00:00\n\n\nErklärung:\n\nTimeSeriesDataPoint erbt von DataPoint und fügt ein timestamp-Attribut hinzu.\nDie describe-Methode wird überschrieben, um die Zeitstempelinformationen einzuschließen.",
@@ -722,8 +722,8 @@
     ]
   },
   {
-    "objectID": "vscode/visual-studio-code-extensions.html",
-    "href": "vscode/visual-studio-code-extensions.html",
+    "objectID": "vscode/visual-studio-code-erweiterungen.html",
+    "href": "vscode/visual-studio-code-erweiterungen.html",
     "title": "17  Erweiterungen",
     "section": "",
     "text": "17.1 Python-Erweiterung\nDie Python-Erweiterung von Microsoft bietet umfassende Unterstützung für das Python-Coding, einschließlich IntelliSense (automatische Code-Vervollständigungen).\nSo installieren Sie die Erweiterung:",
@@ -733,8 +733,8 @@
     ]
   },
   {
-    "objectID": "vscode/visual-studio-code-extensions.html#python-erweiterung",
-    "href": "vscode/visual-studio-code-extensions.html#python-erweiterung",
+    "objectID": "vscode/visual-studio-code-erweiterungen.html#python-erweiterung",
+    "href": "vscode/visual-studio-code-erweiterungen.html#python-erweiterung",
     "title": "17  Erweiterungen",
     "section": "",
     "text": "Öffnen Sie Visual Studio Code.\nGehen Sie zur Ansicht Erweiterungen, indem Sie auf das Quadrat-Symbol in der Seitenleiste klicken oder Ctrl+Shift+X (Windows) bzw. Command+Shift+X (Mac) drücken.\nGeben Sie in der Suchleiste “Python” ein und suchen Sie nach der von Microsoft veröffentlichten Python-Erweiterung.\nKlicken Sie auf “Installieren”, um die Erweiterung zu Ihrem Editor hinzuzufügen.",
@@ -744,8 +744,8 @@
     ]
   },
   {
-    "objectID": "vscode/visual-studio-code-extensions.html#jupyter-erweiterung",
-    "href": "vscode/visual-studio-code-extensions.html#jupyter-erweiterung",
+    "objectID": "vscode/visual-studio-code-erweiterungen.html#jupyter-erweiterung",
+    "href": "vscode/visual-studio-code-erweiterungen.html#jupyter-erweiterung",
     "title": "17  Erweiterungen",
     "section": "17.2 Jupyter-Erweiterung",
     "text": "17.2 Jupyter-Erweiterung\nDie Jupyter-Erweiterung ermöglicht es Ihnen, Jupyter-Notebooks direkt in VS Code zu erstellen, zu bearbeiten und auszuführen.\nSo installieren Sie die Erweiterung:\n\nÖffnen Sie die Ansicht Erweiterungen wie zuvor beschrieben.\nSuchen Sie nach “Jupyter”.\nWählen Sie die von Microsoft bereitgestellte Jupyter-Erweiterung aus und klicken Sie auf “Installieren”.",
@@ -755,8 +755,8 @@
     ]
   },
   {
-    "objectID": "vscode/visual-studio-code-extensions.html#atom-one-dark-theme",
-    "href": "vscode/visual-studio-code-extensions.html#atom-one-dark-theme",
+    "objectID": "vscode/visual-studio-code-erweiterungen.html#atom-one-dark-theme",
+    "href": "vscode/visual-studio-code-erweiterungen.html#atom-one-dark-theme",
     "title": "17  Erweiterungen",
     "section": "17.3 Atom One Dark Theme",
     "text": "17.3 Atom One Dark Theme\nFür diejenigen, die eine dunkle Entwicklungsumgebung bevorzugen, bietet das Atom One Dark Theme eine attraktiv gestaltete Benutzeroberfläche.\nSo installieren Sie die Erweiterung:\n\nGreifen Sie auf den Erweiterungsmarktplatz in VS Code zu.\nSuchen Sie nach “Atom One Dark Theme”.\nKlicken Sie auf “Installieren”, um das Theme auf Ihre Umgebung anzuwenden.",
@@ -766,8 +766,8 @@
     ]
   },
   {
-    "objectID": "vscode/visual-studio-code-extensions.html#vs-code-icons",
-    "href": "vscode/visual-studio-code-extensions.html#vs-code-icons",
+    "objectID": "vscode/visual-studio-code-erweiterungen.html#vs-code-icons",
+    "href": "vscode/visual-studio-code-erweiterungen.html#vs-code-icons",
     "title": "17  Erweiterungen",
     "section": "17.4 VS Code Icons",
     "text": "17.4 VS Code Icons\nDie VS Code Icons-Erweiterung verbessert die visuelle Organisation Ihrer Projektdateien, indem sie für jeden Dateityp passende Symbole hinzufügt.\nSo installieren Sie die Erweiterung:\n\nÖffnen Sie die Ansicht Erweiterungen in VS Code.\nGeben Sie “VS Code Icons” in die Suchleiste ein.\nKlicken Sie auf “Installieren”.",
@@ -1103,62 +1103,62 @@
   {
     "objectID": "datenbanken/relational.html",
     "href": "datenbanken/relational.html",
-    "title": "23  Relational",
+    "title": "23  Relationale Datenbanken",
     "section": "",
     "text": "23.1 Grundkonzepte relationaler Datenbanken",
     "crumbs": [
       "Datenbanken",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Home</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Relational</span>"
     ]
   },
   {
     "objectID": "datenbanken/relational.html#grundkonzepte-relationaler-datenbanken",
     "href": "datenbanken/relational.html#grundkonzepte-relationaler-datenbanken",
-    "title": "23  Relational",
+    "title": "23  Relationale Datenbanken",
     "section": "",
     "text": "23.1.1 Tabellen\nIm Zentrum jeder relationalen Datenbank stehen Tabellen. Eine Tabelle ist eine strukturierte Sammlung von Daten, die in Zeilen und Spalten organisiert ist. Jede Tabelle repräsentiert eine Entität, und jede Zeile in der Tabelle stellt ein einzelnes Datensatz dieser Entität dar.\nBeispiel einer einfachen Tabelle “Kunden”:\n\n\n\nKundenID\nName\nEmail\nStadt\n\n\n\n\n1\nMax Müller\nmax.mueller@beispiel.de\nBerlin\n\n\n2\nAnna Schmidt\nanna.schmidt@beispiel.de\nHamburg\n\n\n3\nPeter Weber\npeter.weber@beispiel.de\nMünchen\n\n\n\n\n\n23.1.2 Spalten und Datentypen\nJede Spalte in einer Tabelle hat einen bestimmten Datentyp, der die Art der Daten definiert, die in dieser Spalte gespeichert werden können. Häufig verwendete Datentypen sind:\n\nINTEGER: Ganze Zahlen\nVARCHAR: Zeichenketten variabler Länge\nDATE: Datumsangaben\nBOOLEAN: Wahrheitswerte (true/false)\n\n\n\n23.1.3 Primärschlüssel\nEin Primärschlüssel ist eine Spalte oder eine Kombination von Spalten, die jeden Datensatz in einer Tabelle eindeutig identifiziert. Im obigen Beispiel ist die Spalte “KundenID” der Primärschlüssel der Tabelle “Kunden”.\n\n\n23.1.4 Fremdschlüssel\nEin Fremdschlüssel ist eine Spalte, die eine Beziehung zwischen zwei Tabellen herstellt. Ein Fremdschlüssel in einer Tabelle verweist auf den Primärschlüssel einer anderen Tabelle. Diese Beziehungen sind das Herzstück des relationalen Modells, da sie es ermöglichen, Daten aus verschiedenen Tabellen zu verknüpfen und komplexe Abfragen zu erstellen.\n\n\n23.1.5 Normalisierung\nNormalisierung ist ein Prozess zur Organisation von Daten in einer Datenbank, um Redundanz zu minimieren und Datenintegrität zu gewährleisten. Es gibt mehrere Normalformen (Normal Forms), die Regeln für die Strukturierung von Tabellen definieren.\n\n\n23.1.6 SQL (Structured Query Language)\nSQL ist die Standardsprache für die Verwaltung und Abfrage von Daten in einer relationalen Datenbank. Mit SQL können Sie Daten einfügen, aktualisieren, löschen und abfragen sowie Datenbankstrukturen wie Tabellen und Indizes erstellen und ändern.\nEin einfaches SQL-Abfragebeispiel:\nSELECT Name, Email\nFROM Kunden\nWHERE Stadt = 'Berlin';\nDiese Abfrage selektiert die Spalten “Name” und “Email” aus der Tabelle “Kunden”, wobei nur die Datensätze berücksichtigt werden, bei denen die Stadt “Berlin” ist.",
     "crumbs": [
       "Datenbanken",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Home</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Relational</span>"
     ]
   },
   {
     "objectID": "datenbanken/relational.html#architektur-relationaler-datenbanken",
     "href": "datenbanken/relational.html#architektur-relationaler-datenbanken",
-    "title": "23  Relational",
+    "title": "23  Relationale Datenbanken",
     "section": "23.2 Architektur relationaler Datenbanken",
     "text": "23.2 Architektur relationaler Datenbanken\n\n23.2.1 Datenbankmanagementsystem (DBMS)\nEin DBMS ist die Software, die die Erstellung, Verwaltung und Nutzung von Datenbanken ermöglicht. Ein relationales DBMS (RDBMS) bietet Funktionen wie Datenintegrität, Transaktionsverwaltung und Sicherheitsmechanismen. Bekannte RDBMS sind MySQL, PostgreSQL und SQLite.\n\n\n23.2.2 Client-Server-Modell\nIn einem typischen RDBMS werden Datenbankabfragen von einem Client (zum Beispiel eine Anwendung oder ein Benutzer) an den Server gesendet, der das DBMS hostet. Der Server verarbeitet die Abfrage und sendet die Ergebnisse an den Client zurück. Dieses Modell unterstützt mehrere gleichzeitige Benutzerzugriffe und eine zentrale Verwaltung der Datenbank.\n\n\n23.2.3 Transaktionen\nTransaktionen sind eine zentrale Komponente von RDBMS und gewährleisten, dass eine Gruppe von Operationen entweder vollständig oder gar nicht ausgeführt wird. Dies garantiert die Konsistenz der Datenbank, selbst bei Systemausfällen oder Fehlern.\n\n\n23.2.4 ACID-Eigenschaften\nDie ACID-Eigenschaften beschreiben die wichtigsten Anforderungen an Transaktionen in einer relationalen Datenbank:\n\nAtomicity (Atomarität): Eine Transaktion wird entweder vollständig ausgeführt oder gar nicht.\nConsistency (Konsistenz): Eine Transaktion bringt die Datenbank von einem konsistenten Zustand in einen anderen.\nIsolation (Isolation): Gleichzeitige Transaktionen beeinflussen sich nicht gegenseitig.\nDurability (Dauerhaftigkeit): Nach Abschluss einer Transaktion bleiben die Änderungen auch bei Systemausfällen erhalten.",
     "crumbs": [
       "Datenbanken",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Home</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Relational</span>"
     ]
   },
   {
     "objectID": "datenbanken/relational.html#vorteile-relationaler-datenbanken",
     "href": "datenbanken/relational.html#vorteile-relationaler-datenbanken",
-    "title": "23  Relational",
+    "title": "23  Relationale Datenbanken",
     "section": "23.3 Vorteile relationaler Datenbanken",
     "text": "23.3 Vorteile relationaler Datenbanken\n\nStrukturierte Daten: Relationale Datenbanken sind ideal für strukturierte Daten, die in klar definierten Tabellen organisiert werden können.\nFlexibilität: SQL ermöglicht komplexe Abfragen und Manipulationen der Daten.\nDatenintegrität: Durch Primär- und Fremdschlüssel sowie durch Normalisierung kann die Datenintegrität gewährleistet werden.\nSicherheit: RDBMS bieten umfassende Sicherheitsmechanismen, einschließlich Benutzerberechtigungen und Verschlüsselung.\nTransaktionsunterstützung: ACID-Eigenschaften gewährleisten die Zuverlässigkeit von Transaktionen.",
     "crumbs": [
       "Datenbanken",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Home</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Relational</span>"
     ]
   },
   {
     "objectID": "datenbanken/relational.html#anwendungsfälle",
     "href": "datenbanken/relational.html#anwendungsfälle",
-    "title": "23  Relational",
+    "title": "23  Relationale Datenbanken",
     "section": "23.4 Anwendungsfälle",
     "text": "23.4 Anwendungsfälle\nRelationale Datenbanken sind in vielen Bereichen weit verbreitet, darunter:\n\nFinanzwesen: Verwaltung von Kontodaten, Transaktionen und Finanzberichten.\nE-Commerce: Verwaltung von Produktkatalogen, Bestellungen und Kundeninformationen.\nGesundheitswesen: Verwaltung von Patientendaten, Terminen und medizinischen Aufzeichnungen.\nBildung: Verwaltung von Schülerdaten, Kursen und Noten.\n\nDurch ihre Struktur, Flexibilität und Zuverlässigkeit bleiben relationale Datenbanken ein zentrales Werkzeug in der Datenverwaltung und -analyse.\nIn den folgenden Kapiteln werden wir uns eingehender mit der Implementierung und Nutzung von MySQL und PostgreSQL befassen, zwei der beliebtesten relationalen Datenbankmanagementsysteme.",
     "crumbs": [
       "Datenbanken",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Home</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Relational</span>"
     ]
   },
   {
     "objectID": "datenbanken/nosql.html",
     "href": "datenbanken/nosql.html",
-    "title": "24  NoSQL",
+    "title": "24  NoSQL Datenbanken",
     "section": "",
     "text": "24.1 Datenmodelle\nNoSQL-Datenbanken bieten eine Vielzahl von Möglichkeiten, um verschiedene Arten von Daten effizient zu speichern und abzurufen. Sie sind besonders nützlich in Szenarien, in denen traditionelle relationale Datenbanken an ihre Grenzen stoßen.",
     "crumbs": [
@@ -1169,7 +1169,7 @@
   {
     "objectID": "datenbanken/nosql.html#datenmodelle",
     "href": "datenbanken/nosql.html#datenmodelle",
-    "title": "24  NoSQL",
+    "title": "24  NoSQL Datenbanken",
     "section": "",
     "text": "24.1.1 Dokumentenorientierter Speicher\nDokumentenorientierte Datenbanken speichern Daten in Form von Dokumenten, die meist auf JSON (JavaScript Object Notation) basieren. Diese Dokumente enthalten nicht nur die Daten, sondern auch die Struktur der Daten, was eine große Flexibilität bietet. Dokumentenorientierte Datenbanken sind ideal für Anwendungen, die mit unterschiedlichen und sich ändernden Datenstrukturen arbeiten müssen.\nBeispiele: MongoDB, CouchDB\n\n\n\n\n\n\n\n\nModell\nEigenschaften\nOpen Source\n\n\n\n\nDokumentenorientierter Speicher\nDaten und Metadaten werden hierarchisch in JSON-basierten Dokumenten innerhalb der Datenbank gespeichert.\nMongoDB, CouchDB\n\n\n\n\n\n24.1.2 Schlüssel-Wert-Speicher\nSchlüssel-Wert-Datenbanken speichern Daten als eine Sammlung von Schlüssel-Wert-Paaren. Jede Datenstruktur besteht aus einem eindeutigen Schlüssel und einem Wert, der jede Art von Daten enthalten kann. Diese Datenbanken sind besonders effizient für einfache Abfragen und schnelle Datenzugriffe.\nBeispiele: Redis\n\n\n\n\n\n\n\n\nModell\nEigenschaften\nOpen Source\n\n\n\n\nSchlüssel-Wert-Speicher\nDie einfachsten NoSQL-Datenbanken, Daten werden als eine Sammlung von Schlüssel-Wert-Paaren dargestellt.\nRedis\n\n\n\n\n\n24.1.3 Spaltenorientierter Speicher\nSpaltenorientierte Datenbanken speichern Daten in Tabellen, aber im Gegensatz zu relationalen Datenbanken sind die Daten in Spalten anstatt in Reihen organisiert. Dies ermöglicht eine effiziente Speicherung und Abfrage von großen Datenmengen, insbesondere bei analytischen Anwendungen, die nur auf bestimmte Spalten zugreifen müssen.\nBeispiele: HBase, Cassandra\n\n\n\n\n\n\n\n\nModell\nEigenschaften\nOpen Source\n\n\n\n\nSpaltenorientierter Speicher\nVerwandte Daten werden als eine Reihe von verschachtelten Schlüssel/Wert-Paaren innerhalb einer einzigen Spalte gespeichert.\nHBase, Cassandra\n\n\n\n\n\n24.1.4 Graph-Speicher\nGraph-Datenbanken speichern Daten in Form von Graphen, bei denen Knoten die Datenobjekte und Kanten die Beziehungen zwischen diesen Objekten darstellen. Dies ermöglicht komplexe Abfragen von Beziehungen und ist ideal für Anwendungen wie soziale Netzwerke, Empfehlungssysteme und andere Szenarien, bei denen Beziehungen zwischen Datenpunkten im Vordergrund stehen.\nBeispiele: Neo4j\n\n\n\n\n\n\n\n\nModell\nEigenschaften\nOpen Source\n\n\n\n\nGraph-Speicher\nDaten werden in einer Graphstruktur als Knoten, Kanten und Dateneigenschaften gespeichert.\nNeo4j",
     "crumbs": [
@@ -1180,7 +1180,7 @@
   {
     "objectID": "datenbanken/nosql.html#vorteile-von-nosql-datenbanken",
     "href": "datenbanken/nosql.html#vorteile-von-nosql-datenbanken",
-    "title": "24  NoSQL",
+    "title": "24  NoSQL Datenbanken",
     "section": "24.2 Vorteile von NoSQL-Datenbanken",
     "text": "24.2 Vorteile von NoSQL-Datenbanken\n\nFlexibilität: NoSQL-Datenbanken erlauben die Speicherung von unstrukturierten und halbstrukturierten Daten ohne vorher festgelegte Schemata.\nSkalierbarkeit: Sie ermöglichen eine horizontale Skalierung durch das Hinzufügen weiterer Server.\nLeistung: Optimiert für hohe Schreib- und Leseoperationen, insbesondere bei großen Datenmengen.\nVerfügbarkeit: Entworfen für hohe Verfügbarkeit und Fehlertoleranz, auch bei Ausfällen einzelner Knoten.",
     "crumbs": [
@@ -1191,7 +1191,7 @@
   {
     "objectID": "datenbanken/nosql.html#anwendungsfälle",
     "href": "datenbanken/nosql.html#anwendungsfälle",
-    "title": "24  NoSQL",
+    "title": "24  NoSQL Datenbanken",
     "section": "24.3 Anwendungsfälle",
     "text": "24.3 Anwendungsfälle\nNoSQL-Datenbanken werden häufig in folgenden Bereichen eingesetzt:\n\nE-Commerce: Verwaltung von Produktkatalogen, Benutzerprofilen und Warenkörben.\nBig Data: Verarbeitung und Analyse großer Datenmengen in Echtzeit.\nContent Management: Speicherung und Verwaltung von Inhalten wie Dokumenten, Bildern und Videos.\nSocial Media: Verwaltung von Benutzerprofilen, Beziehungen und Aktivitäten in sozialen Netzwerken.\nIoT (Internet of Things): Speicherung und Analyse großer Mengen an Sensordaten.\n\nIn den folgenden Kapiteln werden wir uns genauer mit der Implementierung und Anwendungen der NoSQL-Datenbanken MongoDB befassen.",
     "crumbs": [
@@ -1455,7 +1455,7 @@
     "href": "postgres/postgres-python.html#daten-in-postgresql-schreiben",
     "title": "31  Python-Integration",
     "section": "31.3 Daten in PostgreSQL schreiben",
-    "text": "31.3 Daten in PostgreSQL schreiben\nMit der eingerichteten Verbindung übertragen wir nun Daten von einem pandas DataFrame nach PostgreSQL:\n\nLaden Sie die Daten in einen DataFrame:\nimport pandas as pd\n\n# Laden der Daten aus einer CSV-Datei\ndf = pd.read_csv(\"https://raw.githubusercontent.com/kirenz/datasets/master/gapminder.csv\")\n\n\n\n\n\n\nErklärung des Codes\n\n\n\n\n\nDer Python-Code verwendet die Bibliothek pandas, um Daten aus einer CSV-Datei zu laden:\n\nImportieren der pandas-Bibliothek:\n\npandas ist eine weit verbreitete Bibliothek in Python, die leistungsstarke, benutzerfreundliche Datenstrukturen und Datenanalyse-Tools bietet.\nMit import pandas as pd importieren wir die Bibliothek und geben ihr das Alias pd, um den Code kürzer und lesbarer zu machen.\n\nLaden der Daten aus einer CSV-Datei:\n\npd.read_csv: Diese Methode wird verwendet, um eine CSV-Datei in einen pandas DataFrame zu laden.\nURL der CSV-Datei: \"https://raw.githubusercontent.com/kirenz/datasets/master/gapminder.csv\" ist die URL der CSV-Datei, die die Daten enthält. Die Methode kann Daten direkt von einer URL laden, ohne dass die Datei lokal gespeichert werden muss.\ndf: Der resultierende DataFrame wird in der Variablen df gespeichert. Ein DataFrame ist eine tabellarische Datenstruktur, die sowohl Zeilen- als auch Spaltenbeschriftungen hat, ähnlich wie eine Tabelle in einer Datenbank oder ein Datenblatt in Excel.\n\n\n\n\n\nSchreiben Sie den DataFrame nach PostgreSQL: Verwenden Sie die Methode to_sql, um die Daten in eine neue Tabelle namens gapminder zu schreiben.\ndf.to_sql('gapminder', engine, if_exists='replace')\n\n\n\n\n\n\nErklärung des Codes\n\n\n\n\n\nDer Python-Code verwendet die Methode to_sql von pandas, um einen DataFrame in eine SQL-Datenbank zu schreiben:\n\ndf.to_sql:\n\nDiese Methode schreibt den DataFrame df in eine SQL-Datenbank.\n\n'gapminder':\n\nDies ist der Name der Tabelle, in die die Daten geschrieben werden. In diesem Fall wird die Tabelle gapminder genannt.\n\nengine:\n\nDies ist die SQLAlchemy-Engine, die die Verbindung zur Datenbank darstellt. Die Engine enthält alle notwendigen Informationen, um sich mit der Datenbank zu verbinden und Befehle auszuführen.\n\nif_exists='replace':\n\nDiese Option gibt an, was geschehen soll, wenn die Tabelle gapminder bereits in der Datenbank existiert.\nreplace: Diese Option sorgt dafür, dass die vorhandene Tabelle gelöscht und durch die neue Tabelle ersetzt wird, die aus dem DataFrame df erstellt wird.\n\n\n\n\n\nDies sollte als Ergebnis 704 ausgeben (die Anzahl der Zeilen, die in die neue Tabelle geschrieben wurden.).\nÜberprüfen Sie die Tabelle in der Datenbank: Führen Sie eine Abfrage in der Datenbank aus, um zu bestätigen, dass die Tabelle existiert.\nwith engine.connect() as connection:\n      tables = connection.execute(sa.text(\"SELECT table_name FROM information_schema.tables WHERE table_schema='public'\"))\n      for table in tables:\n         print(table[0])\n\n\n\n\n\n\nErklärung des Codes\n\n\n\n\n\nDer Code öffnet eine Verbindung zu einer SQL-Datenbank mithilfe der SQLAlchemy-Engine.\n\nInnerhalb des with-Blocks wird sichergestellt, dass die Verbindung nach Abschluss des Blocks automatisch geschlossen wird.\nDer Befehl connection.execute führt eine SQL-Abfrage aus, die die Namen aller Tabellen im public-Schema der Datenbank aus der information_schema.tables-Tabelle abruft.\nDiese Abfrage gibt eine Liste der Tabellennamen zurück.\nDiese Liste wird in einer Schleife durchlaufen.\nInnerhalb der Schleife wird der Name jeder Tabelle mit print(table[0]) auf der Konsole ausgegeben.\n\n\n\n\nDies sollte ausgeben: gapminder (d.h. die Tabelle gapminder ist in der Datenbank enthalten)\nOptional: Entfernen Sie die Tabelle: Wenn Sie die Tabelle aus der Datenbank löschen möchten:\nsql = sa.text(\"DROP TABLE IF EXISTS gapminder\")\n\nwith engine.connect() as connection:\n      connection.execute(sql)\n\n\n\n\n\n\nErklärung des Codes\n\n\n\n\n\nDer Code definiert eine SQL-Abfrage, die überprüft, ob die Tabelle gapminder existiert, und sie löscht, falls sie vorhanden ist. Diese Abfrage wird in der Variablen sql gespeichert.\n\nEin with-Block wird verwendet, um eine Verbindung zur SQL-Datenbank mithilfe der SQLAlchemy-Engine zu öffnen. Der with-Block stellt sicher, dass die Verbindung nach Abschluss des Blocks automatisch geschlossen wird.\nInnerhalb des with-Blocks wird die SQL-Abfrage sql mit dem Befehl connection.execute(sql) ausgeführt.\nDiese Ausführung löscht die Tabelle gapminder, falls sie in der Datenbank existiert.\n\n\n\n\n\nSie sollten die Tabelle nun auch in PgAdmin4 sehen. Öffnen Sie dafür die Anwendung und navigieren Sie zu der Tabelle (siehe dazu diese Hinweise)",
+    "text": "31.3 Daten in PostgreSQL schreiben\nMit der eingerichteten Verbindung übertragen wir nun Daten von einem pandas DataFrame nach PostgreSQL:\n\nLaden Sie die Daten in einen DataFrame:\nimport pandas as pd\n\n# Laden der Daten aus einer CSV-Datei\ndf = pd.read_csv(\"https://raw.githubusercontent.com/kirenz/datasets/master/gapminder.csv\")\n\n\n\n\n\n\nErklärung des Codes\n\n\n\n\n\nDer Python-Code verwendet die Bibliothek pandas, um Daten aus einer CSV-Datei zu laden:\n\nImportieren der pandas-Bibliothek:\n\npandas ist eine weit verbreitete Bibliothek in Python, die leistungsstarke, benutzerfreundliche Datenstrukturen und Datenanalyse-Tools bietet.\nMit import pandas as pd importieren wir die Bibliothek und geben ihr das Alias pd, um den Code kürzer und lesbarer zu machen.\n\nLaden der Daten aus einer CSV-Datei:\n\npd.read_csv: Diese Methode wird verwendet, um eine CSV-Datei in einen pandas DataFrame zu laden.\nURL der CSV-Datei: \"https://raw.githubusercontent.com/kirenz/datasets/master/gapminder.csv\" ist die URL der CSV-Datei, die die Daten enthält. Die Methode kann Daten direkt von einer URL laden, ohne dass die Datei lokal gespeichert werden muss.\ndf: Der resultierende DataFrame wird in der Variablen df gespeichert. Ein DataFrame ist eine tabellarische Datenstruktur, die sowohl Zeilen- als auch Spaltenbeschriftungen hat, ähnlich wie eine Tabelle in einer Datenbank oder ein Datenblatt in Excel.\n\n\n\n\n\nSchreiben Sie den DataFrame nach PostgreSQL: Verwenden Sie die Methode to_sql, um die Daten in eine neue Tabelle namens gapminder zu schreiben.\ndf.to_sql('gapminder', engine, if_exists='replace')\n\n\n\n\n\n\nErklärung des Codes\n\n\n\n\n\nDer Python-Code verwendet die Methode to_sql von pandas, um einen DataFrame in eine SQL-Datenbank zu schreiben:\n\ndf.to_sql:\n\nDiese Methode schreibt den DataFrame df in eine SQL-Datenbank.\n\n'gapminder':\n\nDies ist der Name der Tabelle, in die die Daten geschrieben werden. In diesem Fall wird die Tabelle gapminder genannt.\n\nengine:\n\nDies ist die SQLAlchemy-Engine, die die Verbindung zur Datenbank darstellt. Die Engine enthält alle notwendigen Informationen, um sich mit der Datenbank zu verbinden und Befehle auszuführen.\n\nif_exists='replace':\n\nDiese Option gibt an, was geschehen soll, wenn die Tabelle gapminder bereits in der Datenbank existiert.\nreplace: Diese Option sorgt dafür, dass die vorhandene Tabelle gelöscht und durch die neue Tabelle ersetzt wird, die aus dem DataFrame df erstellt wird.\n\n\n\n\n\nDies sollte als Ergebnis 704 ausgeben (die Anzahl der Zeilen, die in die neue Tabelle geschrieben wurden.).\nÜberprüfen Sie die Tabelle in der Datenbank: Führen Sie eine Abfrage in der Datenbank aus, um zu bestätigen, dass die Tabelle existiert.\nwith engine.connect() as connection:\n      tables = connection.execute(sa.text(\"SELECT table_name FROM information_schema.tables WHERE table_schema='public'\"))\n      for table in tables:\n         print(table[0])\n\n\n\n\n\n\nErklärung des Codes\n\n\n\n\n\nDer Code öffnet eine Verbindung zu einer SQL-Datenbank mithilfe der SQLAlchemy-Engine.\n\nInnerhalb des with-Blocks wird sichergestellt, dass die Verbindung nach Abschluss des Blocks automatisch geschlossen wird.\nDer Befehl connection.execute führt eine SQL-Abfrage aus, die die Namen aller Tabellen im public-Schema der Datenbank aus der information_schema.tables-Tabelle abruft.\nDiese Abfrage gibt eine Liste der Tabellennamen zurück.\nDiese Liste wird in einer Schleife durchlaufen.\nInnerhalb der Schleife wird der Name jeder Tabelle mit print(table[0]) auf der Konsole ausgegeben.\n\n\n\n\nDies sollte ausgeben: gapminder (d.h. die Tabelle gapminder ist in der Datenbank enthalten)\nOptional: Entfernen Sie die Tabelle: Wenn Sie die Tabelle aus der Datenbank löschen möchten:\nsql = sa.text(\"DROP TABLE IF EXISTS gapminder\")\n\nwith engine.connect() as connection:\n      connection.execute(sql)\n\n\n\n\n\n\nErklärung des Codes\n\n\n\n\n\nDer Code definiert eine SQL-Abfrage, die überprüft, ob die Tabelle gapminder existiert, und sie löscht, falls sie vorhanden ist. Diese Abfrage wird in der Variablen sql gespeichert.\n\nEin with-Block wird verwendet, um eine Verbindung zur SQL-Datenbank mithilfe der SQLAlchemy-Engine zu öffnen. Der with-Block stellt sicher, dass die Verbindung nach Abschluss des Blocks automatisch geschlossen wird.\nInnerhalb des with-Blocks wird die SQL-Abfrage sql mit dem Befehl connection.execute(sql) ausgeführt.\nDiese Ausführung löscht die Tabelle gapminder, falls sie in der Datenbank existiert.\n\n\n\n\n\nSie sollten die Tabelle nun auch in PgAdmin4 sehen. Öffnen Sie dafür die Anwendung und navigieren Sie zu der Tabelle.",
     "crumbs": [
       "PostgreSQL",
       "<span class='chapter-number'>31</span>  <span class='chapter-title'>Python-Integration</span>"
