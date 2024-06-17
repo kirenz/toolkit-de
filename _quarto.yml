@@ -40,7 +40,7 @@ book:
         - python/python-basics.qmd
         - python/python-einrueckung.qmd
         - python/python-funktionen.qmd
-        - python/python-control-flow.qmd
+        - python/python-kontrollstrukturen.qmd
         - python/python-klassen.qmd
 
     - part: vscode/index.qmd
