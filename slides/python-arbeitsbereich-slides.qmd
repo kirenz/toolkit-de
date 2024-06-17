@@ -1,0 +1,55 @@
+---
+title: Arbeitsbereich
+lang: en
+subtitle: Subtitle
+author: Jan Kirenz
+execute:
+  eval: false
+  echo: true
+highlight-style: github
+format:
+  revealjs: 
+    toc: false
+    toc-depth: 1
+    embed-resources: false
+    theme: [dark, ../custom.scss]  
+    incremental: true
+    transition: slide
+    background-transition: fade
+    transition-speed: slow
+    code-copy: true
+    code-line-numbers: true
+    smaller: false
+    scrollable: true
+    slide-number: c
+    preview-links: auto
+    chalkboard: 
+      buttons: false
+   #logo: images/logo.png
+    footer: Jan Kirenz
+---
+
+
+Bevor Sie mit dem Programmieren in Python beginnen, stellen wir sicher, dass Sie einen ordnungsgemäß konfigurierten Arbeitsbereich haben.
+
+## Anaconda Navigator starten
+
+1. Anaconda Navigator starten:
+   - Öffnen Sie den Anaconda Navigator aus dem Anwendungsordner auf macOS oder dem Startmenü auf Windows.
+
+2. Jupyter Notebook öffnen:
+   - Finden Sie im Anaconda Navigator das Jupyter Notebook und klicken Sie auf 'Launch', um es in Ihrem Webbrowser zu öffnen.
+
+## Jupyter Notebook einrichten
+
+1. Navigieren Sie in der Web-Oberfläche von Jupyter zum `code`-Verzeichnis (siehe die Erklärung zur [Ordnerstruktur](../first-steps/project-environment.qmd)).
+2. Klicken Sie oben rechts auf "New" und wählen Sie "Notebook", um ein neues Notebook zu erstellen.
+3. Nun öffnet sich ein Fenster in welchem Sie den Kernel (eine Python-Instanz) auswählen können. Wählen Sie die eben installierte `basics`-Umgebung aus (siehe [diese Anleitung](python-arbeitsbereich.qmd)).
+4. Erstellen Sie in diesem Notebook eine neue Markdown-Zelle, um dem Notebook einen Titel zu geben (z.B. Python basics):
+
+   ```markdown
+   # Python basics
+   ```
+5. Speichern Sie das Notebook:
+   - Speichern Sie Ihr Notebook im `code` Ordner (siehe unsere [Ordnerstruktur](../first-steps/project-environment.qmd) Erklärung) mit einem aussagekräftigen Namen (z.B. `python-basics.ipynb`).
+
