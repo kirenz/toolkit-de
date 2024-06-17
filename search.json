@@ -1108,7 +1108,7 @@
     "text": "23.1 Grundkonzepte relationaler Datenbanken",
     "crumbs": [
       "Datenbanken",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Relational</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Home</span>"
     ]
   },
   {
@@ -1119,7 +1119,7 @@
     "text": "23.1.1 Tabellen\nIm Zentrum jeder relationalen Datenbank stehen Tabellen. Eine Tabelle ist eine strukturierte Sammlung von Daten, die in Zeilen und Spalten organisiert ist. Jede Tabelle repräsentiert eine Entität, und jede Zeile in der Tabelle stellt ein einzelnes Datensatz dieser Entität dar.\nBeispiel einer einfachen Tabelle “Kunden”:\n\n\n\nKundenID\nName\nEmail\nStadt\n\n\n\n\n1\nMax Müller\nmax.mueller@beispiel.de\nBerlin\n\n\n2\nAnna Schmidt\nanna.schmidt@beispiel.de\nHamburg\n\n\n3\nPeter Weber\npeter.weber@beispiel.de\nMünchen\n\n\n\n\n\n23.1.2 Spalten und Datentypen\nJede Spalte in einer Tabelle hat einen bestimmten Datentyp, der die Art der Daten definiert, die in dieser Spalte gespeichert werden können. Häufig verwendete Datentypen sind:\n\nINTEGER: Ganze Zahlen\nVARCHAR: Zeichenketten variabler Länge\nDATE: Datumsangaben\nBOOLEAN: Wahrheitswerte (true/false)\n\n\n\n23.1.3 Primärschlüssel\nEin Primärschlüssel ist eine Spalte oder eine Kombination von Spalten, die jeden Datensatz in einer Tabelle eindeutig identifiziert. Im obigen Beispiel ist die Spalte “KundenID” der Primärschlüssel der Tabelle “Kunden”.\n\n\n23.1.4 Fremdschlüssel\nEin Fremdschlüssel ist eine Spalte, die eine Beziehung zwischen zwei Tabellen herstellt. Ein Fremdschlüssel in einer Tabelle verweist auf den Primärschlüssel einer anderen Tabelle. Diese Beziehungen sind das Herzstück des relationalen Modells, da sie es ermöglichen, Daten aus verschiedenen Tabellen zu verknüpfen und komplexe Abfragen zu erstellen.\n\n\n23.1.5 Normalisierung\nNormalisierung ist ein Prozess zur Organisation von Daten in einer Datenbank, um Redundanz zu minimieren und Datenintegrität zu gewährleisten. Es gibt mehrere Normalformen (Normal Forms), die Regeln für die Strukturierung von Tabellen definieren.\n\n\n23.1.6 SQL (Structured Query Language)\nSQL ist die Standardsprache für die Verwaltung und Abfrage von Daten in einer relationalen Datenbank. Mit SQL können Sie Daten einfügen, aktualisieren, löschen und abfragen sowie Datenbankstrukturen wie Tabellen und Indizes erstellen und ändern.\nEin einfaches SQL-Abfragebeispiel:\nSELECT Name, Email\nFROM Kunden\nWHERE Stadt = 'Berlin';\nDiese Abfrage selektiert die Spalten “Name” und “Email” aus der Tabelle “Kunden”, wobei nur die Datensätze berücksichtigt werden, bei denen die Stadt “Berlin” ist.",
     "crumbs": [
       "Datenbanken",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Relational</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Home</span>"
     ]
   },
   {
@@ -1130,7 +1130,7 @@
     "text": "23.2 Architektur relationaler Datenbanken\n\n23.2.1 Datenbankmanagementsystem (DBMS)\nEin DBMS ist die Software, die die Erstellung, Verwaltung und Nutzung von Datenbanken ermöglicht. Ein relationales DBMS (RDBMS) bietet Funktionen wie Datenintegrität, Transaktionsverwaltung und Sicherheitsmechanismen. Bekannte RDBMS sind MySQL, PostgreSQL und SQLite.\n\n\n23.2.2 Client-Server-Modell\nIn einem typischen RDBMS werden Datenbankabfragen von einem Client (zum Beispiel eine Anwendung oder ein Benutzer) an den Server gesendet, der das DBMS hostet. Der Server verarbeitet die Abfrage und sendet die Ergebnisse an den Client zurück. Dieses Modell unterstützt mehrere gleichzeitige Benutzerzugriffe und eine zentrale Verwaltung der Datenbank.\n\n\n23.2.3 Transaktionen\nTransaktionen sind eine zentrale Komponente von RDBMS und gewährleisten, dass eine Gruppe von Operationen entweder vollständig oder gar nicht ausgeführt wird. Dies garantiert die Konsistenz der Datenbank, selbst bei Systemausfällen oder Fehlern.\n\n\n23.2.4 ACID-Eigenschaften\nDie ACID-Eigenschaften beschreiben die wichtigsten Anforderungen an Transaktionen in einer relationalen Datenbank:\n\nAtomicity (Atomarität): Eine Transaktion wird entweder vollständig ausgeführt oder gar nicht.\nConsistency (Konsistenz): Eine Transaktion bringt die Datenbank von einem konsistenten Zustand in einen anderen.\nIsolation (Isolation): Gleichzeitige Transaktionen beeinflussen sich nicht gegenseitig.\nDurability (Dauerhaftigkeit): Nach Abschluss einer Transaktion bleiben die Änderungen auch bei Systemausfällen erhalten.",
     "crumbs": [
       "Datenbanken",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Relational</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Home</span>"
     ]
   },
   {
@@ -1141,7 +1141,7 @@
     "text": "23.3 Vorteile relationaler Datenbanken\n\nStrukturierte Daten: Relationale Datenbanken sind ideal für strukturierte Daten, die in klar definierten Tabellen organisiert werden können.\nFlexibilität: SQL ermöglicht komplexe Abfragen und Manipulationen der Daten.\nDatenintegrität: Durch Primär- und Fremdschlüssel sowie durch Normalisierung kann die Datenintegrität gewährleistet werden.\nSicherheit: RDBMS bieten umfassende Sicherheitsmechanismen, einschließlich Benutzerberechtigungen und Verschlüsselung.\nTransaktionsunterstützung: ACID-Eigenschaften gewährleisten die Zuverlässigkeit von Transaktionen.",
     "crumbs": [
       "Datenbanken",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Relational</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Home</span>"
     ]
   },
   {
@@ -1152,7 +1152,7 @@
     "text": "23.4 Anwendungsfälle\nRelationale Datenbanken sind in vielen Bereichen weit verbreitet, darunter:\n\nFinanzwesen: Verwaltung von Kontodaten, Transaktionen und Finanzberichten.\nE-Commerce: Verwaltung von Produktkatalogen, Bestellungen und Kundeninformationen.\nGesundheitswesen: Verwaltung von Patientendaten, Terminen und medizinischen Aufzeichnungen.\nBildung: Verwaltung von Schülerdaten, Kursen und Noten.\n\nDurch ihre Struktur, Flexibilität und Zuverlässigkeit bleiben relationale Datenbanken ein zentrales Werkzeug in der Datenverwaltung und -analyse.\nIn den folgenden Kapiteln werden wir uns eingehender mit der Implementierung und Nutzung von MySQL und PostgreSQL befassen, zwei der beliebtesten relationalen Datenbankmanagementsysteme.",
     "crumbs": [
       "Datenbanken",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Relational</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Home</span>"
     ]
   },
   {
