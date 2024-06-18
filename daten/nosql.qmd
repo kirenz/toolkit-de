@@ -14,41 +14,35 @@ Anstatt Tabellen zu verbinden, speichern NoSQL-Datenbanken unstrukturierte oder 
 
 NoSQL-Datenbanken bieten eine Vielzahl von Möglichkeiten, um verschiedene Arten von Daten effizient zu speichern und abzurufen. Sie sind besonders nützlich in Szenarien, in denen traditionelle relationale Datenbanken an ihre Grenzen stoßen.
 
-### Dokumentenorientierter Speicher
+*Dokumentenorientierte Datenbanken* speichern Daten in Form von Dokumenten, die meist auf JSON (JavaScript Object Notation) basieren. Diese Dokumente enthalten nicht nur die Daten, sondern auch die Struktur der Daten, was eine große Flexibilität bietet. Dokumentenorientierte Datenbanken sind ideal für Anwendungen, die mit unterschiedlichen und sich ändernden Datenstrukturen arbeiten müssen.
 
-Dokumentenorientierte Datenbanken speichern Daten in Form von Dokumenten, die meist auf JSON (JavaScript Object Notation) basieren. Diese Dokumente enthalten nicht nur die Daten, sondern auch die Struktur der Daten, was eine große Flexibilität bietet. Dokumentenorientierte Datenbanken sind ideal für Anwendungen, die mit unterschiedlichen und sich ändernden Datenstrukturen arbeiten müssen.
-
-**Beispiele:** MongoDB, CouchDB
+Beispiele: MongoDB, CouchDB
 
 | Modell          | Eigenschaften                                                         | Open Source     |
 |-----------------|----------------------------------------------------------------------|------------------|
 | Dokumentenorientierter Speicher | Daten und Metadaten werden hierarchisch in JSON-basierten Dokumenten innerhalb der Datenbank gespeichert. | MongoDB, CouchDB |
 
-### Schlüssel-Wert-Speicher
 
-Schlüssel-Wert-Datenbanken speichern Daten als eine Sammlung von Schlüssel-Wert-Paaren. Jede Datenstruktur besteht aus einem eindeutigen Schlüssel und einem Wert, der jede Art von Daten enthalten kann. Diese Datenbanken sind besonders effizient für einfache Abfragen und schnelle Datenzugriffe.
+*Schlüssel-Wert-Datenbanken* speichern Daten als eine Sammlung von Schlüssel-Wert-Paaren. Jede Datenstruktur besteht aus einem eindeutigen Schlüssel und einem Wert, der jede Art von Daten enthalten kann. Diese Datenbanken sind besonders effizient für einfache Abfragen und schnelle Datenzugriffe.
 
-**Beispiele:** Redis
+Beispiele: Redis
 
 | Modell          | Eigenschaften                                                         | Open Source     |
 |-----------------|----------------------------------------------------------------------|------------------|
 | Schlüssel-Wert-Speicher | Die einfachsten NoSQL-Datenbanken, Daten werden als eine Sammlung von Schlüssel-Wert-Paaren dargestellt. | Redis |
 
-### Spaltenorientierter Speicher
+*Spaltenorientierte Datenbanken* speichern Daten in Tabellen, aber im Gegensatz zu relationalen Datenbanken sind die Daten in Spalten anstatt in Reihen organisiert. Dies ermöglicht eine effiziente Speicherung und Abfrage von großen Datenmengen, insbesondere bei analytischen Anwendungen, die nur auf bestimmte Spalten zugreifen müssen.
 
-Spaltenorientierte Datenbanken speichern Daten in Tabellen, aber im Gegensatz zu relationalen Datenbanken sind die Daten in Spalten anstatt in Reihen organisiert. Dies ermöglicht eine effiziente Speicherung und Abfrage von großen Datenmengen, insbesondere bei analytischen Anwendungen, die nur auf bestimmte Spalten zugreifen müssen.
-
-**Beispiele:** HBase, Cassandra
+Beispiele: HBase, Cassandra
 
 | Modell          | Eigenschaften                                                         | Open Source     |
 |-----------------|----------------------------------------------------------------------|------------------|
 | Spaltenorientierter Speicher | Verwandte Daten werden als eine Reihe von verschachtelten Schlüssel/Wert-Paaren innerhalb einer einzigen Spalte gespeichert. | HBase, Cassandra |
 
-### Graph-Speicher
 
-Graph-Datenbanken speichern Daten in Form von Graphen, bei denen Knoten die Datenobjekte und Kanten die Beziehungen zwischen diesen Objekten darstellen. Dies ermöglicht komplexe Abfragen von Beziehungen und ist ideal für Anwendungen wie soziale Netzwerke, Empfehlungssysteme und andere Szenarien, bei denen Beziehungen zwischen Datenpunkten im Vordergrund stehen.
+*Graph-Datenbanken* speichern Daten in Form von Graphen, bei denen Knoten die Datenobjekte und Kanten die Beziehungen zwischen diesen Objekten darstellen. Dies ermöglicht komplexe Abfragen von Beziehungen und ist ideal für Anwendungen wie soziale Netzwerke, Empfehlungssysteme und andere Szenarien, bei denen Beziehungen zwischen Datenpunkten im Vordergrund stehen.
 
-**Beispiele:** Neo4j
+Beispiele: Neo4j
 
 | Modell          | Eigenschaften                                                         | Open Source     |
 |-----------------|----------------------------------------------------------------------|------------------|
