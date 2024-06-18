@@ -64,11 +64,11 @@ book:
           href: daten/json.qmd   
         - text: "Relationale Datenbanken"
           href: daten/relational.qmd
-        - text: "MySQ Datenbanken"
+        - text: "MySQL"
           href: daten/mysql.qmd          
         - text: "PostgreSQL"
           href: daten/postgresql.qmd 
-        - text: "NoSQL"
+        - text: "NoSQL Datenbanken"
           href: daten/nosql.qmd
         - text: "MongoDB"
           href: daten/mongodb.qmd    
