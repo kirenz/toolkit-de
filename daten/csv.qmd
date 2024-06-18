@@ -1,4 +1,4 @@
-# CSV
+# CSV-Dateien
 
 CSV-Dateien (Comma-Separated Values) sind einfache Textdateien, die Tabellenkalkulationsdaten in einem lesbaren Format speichern. Jede Zeile einer CSV-Datei entspricht einer Zeile in der Tabelle, und die Spaltenwerte werden durch Kommas getrennt.
 
