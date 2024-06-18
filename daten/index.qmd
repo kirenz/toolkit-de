@@ -2,10 +2,10 @@
 
 Daten sind die Grundlage der Datenwissenschaft. Sie ermöglichen es uns, Erkenntnisse zu gewinnen, Entscheidungen zu treffen und Vorhersagen zu treffen. Daten können in verschiedenen Formen vorliegen und werden in der Regel in drei Hauptkategorien eingeteilt.
 
-1. Strukturierte Daten sind in einem festen Format organisiert und lassen sich leicht in Tabellenform darstellen (bspw. CSV-Dateien). Diese werden typischerweise in relationalen Datenbanken gespeichert, wie MySQL und PostgreSQL.
+1. **Strukturierte Daten** sind in einem festen Format organisiert und lassen sich leicht in Tabellenform darstellen (bspw. CSV-Dateien). Diese werden typischerweise in relationalen Datenbanken gespeichert, wie MySQL und PostgreSQL.
 
-2. Teilweise strukturierte Daten besitzen keine feste Struktur, weisen jedoch eine gewisse Organisation auf (bspw. JSON). 
+2. **Teilweise strukturierte Daten** besitzen keine feste Struktur, weisen jedoch eine gewisse Organisation auf (bspw. JSON). 
 
-3. Unstrukturierte Daten haben keine definierte Struktur und umfassen oft Multimedia-Inhalte (bspw. Textdateien, Bilder, Videos, Audiodateien). Sie können in verschiedenen Formaten vorliegen und erfordern spezielle Techniken zur Analyse. Diese Daten können in NoSQL-Datenbanken gespeichert werden, wie MongoDB.
+3. **Unstrukturierte Daten** haben keine definierte Struktur und umfassen oft Multimedia-Inhalte (bspw. Textdateien, Bilder, Videos, Audiodateien). Sie können in verschiedenen Formaten vorliegen und erfordern spezielle Techniken zur Analyse. Diese Daten können in NoSQL-Datenbanken gespeichert werden, wie MongoDB.
 
-Strukturierte Daten können in relationalen Datenbanken wie MySQL und PostgreSQL gespeichert, während unstrukturierte und teilweise strukturierte Daten häufig in NoSQL-Datenbanken wie MongoDB verwaltet werden. In den folgenden Kapiteln werden diese Themen im Detail behandelt.
+Strukturierte Daten können in **relationalen Datenbanken** wie MySQL und PostgreSQL gespeichert, während unstrukturierte und teilweise strukturierte Daten häufig in **NoSQL-Datenbanken** wie MongoDB verwaltet werden. In den folgenden Kapiteln werden diese Themen im Detail behandelt.
