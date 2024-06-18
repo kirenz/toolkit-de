@@ -9,7 +9,7 @@
 <meta name="author" content="Jan Kirenz">
 <meta name="description" content="Programming Toolkit für Data Science, AI &amp; Analytics">
 
-<title>Data Science, AI &amp; Analytics Toolkit - 14&nbsp; JSON</title>
+<title>Data Science, AI &amp; Analytics Toolkit - 14&nbsp; JSON-Dateien</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -390,7 +390,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../daten/index.html">Daten &amp; Datenbanken</a></li><li class="breadcrumb-item"><a href="../daten/json.html"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">JSON-Daten</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">JSON</span></h1>
+<h1 class="title"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">JSON-Dateien</span></h1>
 </div>
 
 
@@ -433,7 +433,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="schreiben-einer-json-datei" class="level2" data-number="14.1">
 <h2 data-number="14.1" class="anchored" data-anchor-id="schreiben-einer-json-datei"><span class="header-section-number">14.1</span> Schreiben einer JSON-Datei</h2>
 <p>Das Speichern von Daten in eine JSON-Datei ist mit der <code>json</code>-Bibliothek sehr einfach. Die Methode <code>json.dump()</code> ermöglicht das Speichern eines Python Dictionaries in eine JSON-Datei.</p>
-<div id="59b5db16" class="cell" data-execution_count="1">
+<div id="597ce346" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Daten erstellen</span></span>
@@ -493,7 +493,7 @@ Ausführliche Erklärung
 <section id="lesen-einer-json-datei" class="level2" data-number="14.2">
 <h2 data-number="14.2" class="anchored" data-anchor-id="lesen-einer-json-datei"><span class="header-section-number">14.2</span> Lesen einer JSON-Datei</h2>
 <p>Das Lesen von JSON-Dateien in Python ist mit der <code>json</code>-Bibliothek ebenfalls sehr einfach. Die Methode <code>json.load()</code> ermöglicht das Einlesen von JSON-Daten aus einer Datei in ein Python Dictionary.</p>
-<div id="1c425160" class="cell" data-execution_count="2">
+<div id="1d9ac8d7" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># JSON-Datei lesen</span></span>
@@ -558,7 +558,7 @@ Ausführliche Erklärung
 <section id="json-in-dictionary" class="level3" data-number="14.3.1">
 <h3 data-number="14.3.1" class="anchored" data-anchor-id="json-in-dictionary"><span class="header-section-number">14.3.1</span> JSON in Dictionary</h3>
 <p>JSON in ein Python Dictionary konvertieren:</p>
-<div id="ce3823e6" class="cell" data-execution_count="3">
+<div id="c028e5b6" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>json_daten <span class="op">=</span> <span class="st">'''</span></span>
@@ -579,7 +579,7 @@ Ausführliche Erklärung
 <section id="dictionary-zu-json" class="level3" data-number="14.3.2">
 <h3 data-number="14.3.2" class="anchored" data-anchor-id="dictionary-zu-json"><span class="header-section-number">14.3.2</span> Dictionary zu JSON</h3>
 <p>Python Dictionary in JSON konvertieren:</p>
-<div id="7362e17f" class="cell" data-execution_count="4">
+<div id="b04a5c9b" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>daten <span class="op">=</span> {</span>
@@ -602,7 +602,7 @@ Ausführliche Erklärung
 <section id="verschachtelte-json-daten" class="level3" data-number="14.3.3">
 <h3 data-number="14.3.3" class="anchored" data-anchor-id="verschachtelte-json-daten"><span class="header-section-number">14.3.3</span> Verschachtelte JSON-Daten</h3>
 <p>JSON-Daten können verschachtelte Strukturen enthalten, wie Listen von Objekten oder Objekte innerhalb von Objekten. Python kann diese Strukturen direkt verarbeiten.</p>
-<div id="6deb4c45" class="cell" data-execution_count="5">
+<div id="6e492e83" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>json_daten <span class="op">=</span> <span class="st">'''</span></span>
