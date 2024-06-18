@@ -288,13 +288,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../daten/relational.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Relational</span></span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Relationale Datenbanken</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../daten/mysql.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">MySQL</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">MySQ Datenbanken</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -392,6 +392,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </ul></li>
   <li><a href="#überprüfung-der-installation" id="toc-überprüfung-der-installation" class="nav-link" data-scroll-target="#überprüfung-der-installation"><span class="header-section-number">2.2</span> Überprüfung der Installation</a></li>
   <li><a href="#fehlerbehebung" id="toc-fehlerbehebung" class="nav-link" data-scroll-target="#fehlerbehebung"><span class="header-section-number">2.3</span> Fehlerbehebung</a></li>
+  <li><a href="#python-idle" id="toc-python-idle" class="nav-link" data-scroll-target="#python-idle"><span class="header-section-number">2.4</span> Python IDLE</a>
+  <ul class="collapse">
+  <li><a href="#python-idle-starten" id="toc-python-idle-starten" class="nav-link" data-scroll-target="#python-idle-starten"><span class="header-section-number">2.4.1</span> Python IDLE starten</a></li>
+  <li><a href="#einfache-berechnungen" id="toc-einfache-berechnungen" class="nav-link" data-scroll-target="#einfache-berechnungen"><span class="header-section-number">2.4.2</span> Einfache Berechnungen</a></li>
+  <li><a href="#python-skripte" id="toc-python-skripte" class="nav-link" data-scroll-target="#python-skripte"><span class="header-section-number">2.4.3</span> Python-Skripte</a></li>
+  <li><a href="#nächste-schritte" id="toc-nächste-schritte" class="nav-link" data-scroll-target="#nächste-schritte"><span class="header-section-number">2.4.4</span> Nächste Schritte</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -417,10 +424,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Python kann direkt von der offiziellen Python-Website oder über einen Paketmanager wie Anaconda installiert werden, der zusätzliche Tools bietet und das Paketmanagement vereinfacht.</p>
-<p>Dieses Kapitel konzentriert sich auf die Installation von Python direkt von der offiziellen Quelle.</p>
 <section id="installation" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="installation"><span class="header-section-number">2.1</span> Installation</h2>
+<p>Python kann direkt von der offiziellen Python-Website oder über einen Paketmanager wie Anaconda installiert werden, der zusätzliche Tools bietet und das Paketmanagement vereinfacht.</p>
+<p>Dieses Kapitel konzentriert sich auf die Installation von Python direkt von der offiziellen Quelle.</p>
 <section id="windows" class="level3" data-number="2.1.1">
 <h3 data-number="2.1.1" class="anchored" data-anchor-id="windows"><span class="header-section-number">2.1.1</span> Windows</h3>
 <ol type="1">
@@ -468,8 +475,45 @@ Unterschiedliche Python-Version
 <li><p><strong>Python nicht erkannt</strong>: Wenn die Kommandozeile den Befehl <code>python</code> nicht erkennt, liegt es möglicherweise daran, dass Python nicht zu Ihrem PATH hinzugefügt wurde. Überprüfen Sie die Installationsschritte noch einmal, um sicherzustellen, dass Sie die Option ausgewählt haben, Python zu Ihrem PATH hinzuzufügen.</p></li>
 <li><p><strong>Berechtigungsfehler während der Installation</strong>: Dies tritt normalerweise unter Windows auf und kann behoben werden, indem das Installationsprogramm als Administrator ausgeführt wird.</p></li>
 </ul>
+</section>
+<section id="python-idle" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="python-idle"><span class="header-section-number">2.4</span> Python IDLE</h2>
+<p>Python IDLE ist eine einfache IDE (Integrated Development Environment), die mit der Programmiersprache Python installiert wird. Sie ist darauf ausgelegt, das Schreiben und Ausführen von Python-Code effizient zu unterstützen.</p>
+<p><em>IDLE ist nach Eric Idle benannt, einem Mitglied der Monty Python Comedy-Gruppe, von der auch Python seinen Namen hat.</em></p>
+<section id="python-idle-starten" class="level3" data-number="2.4.1">
+<h3 data-number="2.4.1" class="anchored" data-anchor-id="python-idle-starten"><span class="header-section-number">2.4.1</span> Python IDLE starten</h3>
+<p>Nach der Installation von Python starten Sie IDLE über das Suchmenü Ihres Betriebssystems:</p>
+<ul>
+<li><strong>Windows</strong>: Öffnen Sie das Startmenü und geben Sie <code>IDLE</code> ein.</li>
+<li><strong>MacOS</strong>: Verwenden Sie die Spotlight-Suche (Cmd + Leertaste), geben Sie <code>IDLE</code> ein und drücken Sie Enter.</li>
+<li><strong>Linux</strong>: Finden Sie IDLE im Anwendungsmenü oder führen Sie <code>idle</code> im Terminal aus.</li>
+</ul>
+</section>
+<section id="einfache-berechnungen" class="level3" data-number="2.4.2">
+<h3 data-number="2.4.2" class="anchored" data-anchor-id="einfache-berechnungen"><span class="header-section-number">2.4.2</span> Einfache Berechnungen</h3>
+<p>Das IDLE-Shell-Fenster fungiert als interaktiver Interpreter, der jede Codezeile sofort ausführt, wenn Sie Enter drücken.</p>
+<p>Direkt in der IDLE-Shell können Sie arithmetische Ausdrücke wie <code>2 + 3</code> eingeben und Enter drücken, um sofort die Ergebnisse zu sehen.</p>
+<p>Diese Funktion macht IDLE ideal für schnelle Berechnungen und Experimente mit den mathematischen Fähigkeiten von Python, ohne dass ein Skript gespeichert oder ausgeführt werden muss.</p>
+</section>
+<section id="python-skripte" class="level3" data-number="2.4.3">
+<h3 data-number="2.4.3" class="anchored" data-anchor-id="python-skripte"><span class="header-section-number">2.4.3</span> Python-Skripte</h3>
+<p>Als nächstes erstellen und führen wir ein einfaches Python-Skript aus:</p>
+<ol type="1">
+<li><p><strong>Eine neue Datei öffnen</strong>: Navigieren Sie in IDLE zu <code>Datei</code> &gt; <code>Neue Datei</code>, um ein Editor-Fenster zu öffnen.</p></li>
+<li><p><strong>Geben Sie Ihren Code ein</strong>: Geben Sie Folgendes in das neue Editor-Fenster ein:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hallo, Python!"</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p><strong>Speichern Sie Ihr Skript</strong>: Speichern Sie die Datei über <code>Datei</code> &gt; <code>Speichern unter...</code> und benennen Sie sie <code>hello.py</code>. Idealerweise speichern Sie sie in Ihrem Verzeichnis <code>code</code> innerhalb Ihres <code>toolkit-labs</code>-Ordners (siehe dazu die Erklärung zur <a href="project-environment#projektumgebung.qmd">Ordnerstruktur</a>).</p></li>
+<li><p><strong>Führen Sie Ihr Skript aus</strong>: Drücken Sie <code>F5</code> oder gehen Sie zu <code>Ausführen</code> &gt; <code>Modul ausführen</code>, um Ihr Skript auszuführen. Die Ausgabe <code>Hallo, Python!</code> sollte in der IDLE-Shell erscheinen.</p></li>
+</ol>
+<p>Modifizieren Sie nun Ihr Skript mit verschiedenen Nachrichten. Sie können auch <code>help(print)</code> oder <code>help()</code> in die IDLE-Shell eingeben, um die umfangreiche Hilfedokumentation von Python zu erkunden und andere Funktionen kennenzulernen.</p>
+</section>
+<section id="nächste-schritte" class="level3" data-number="2.4.4">
+<h3 data-number="2.4.4" class="anchored" data-anchor-id="nächste-schritte"><span class="header-section-number">2.4.4</span> Nächste Schritte</h3>
+<p>Python IDLE bietet eine Einführung in die Programmierung mit Python und eine einfache Oberfläche für die Codeentwicklung und -ausführung. In einem der folgenden Abschnitte werden wir fortschrittlichere IDEs wie Visual Studio Code erkunden, die größere Projekte mit zusätzlichen Funktionen unterstützen.</p>
+<p>Im nächsten Kapitel wird die Installation und grundlegende Nutzung von Anaconda behandelt, einer beliebten Python-Distribution, die einen robusten Paketmanager und eine Suite von vorinstallierten Bibliotheken umfasst, die häufig in der Datenwissenschaft und im maschinellen Lernen verwendet werden.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
