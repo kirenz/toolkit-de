@@ -1,4 +1,4 @@
-# Python einrichten
+# Python 
 
 Python ist eine objektorientierte Programmiersprache, was bedeutet, dass es Daten als Objekte darstellt, die sowohl Informationen als auch Funktionalität enthalten.
 
