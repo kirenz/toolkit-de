@@ -9,7 +9,7 @@
 <meta name="author" content="Jan Kirenz">
 <meta name="description" content="Programming Toolkit für Data Science, AI &amp; Analytics">
 
-<title>Data Science, AI &amp; Analytics Toolkit - 13&nbsp; Kontrollstrukturen</title>
+<title>Data Science, AI &amp; Analytics Toolkit - 23&nbsp; NoSQL Datenbanken</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,40 +22,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -66,8 +32,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../python/python-klassen.html" rel="next">
-<link href="../python/python-funktionen.html" rel="prev">
+<link href="../daten/mongodb.html" rel="next">
+<link href="../daten/postgresql.html" rel="prev">
 <link href="..//images/logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -118,7 +84,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../python/index.html">Python</a></li><li class="breadcrumb-item"><a href="../python/python-kontrollstrukturen.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Kontrollstrukturen</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../daten/index.html">Daten</a></li><li class="breadcrumb-item"><a href="../daten/nosql.html"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">NoSQL</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -233,24 +199,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Einrückung</span></span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../python/python-funktionen.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Funktionen</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../python/python-kontrollstrukturen.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Kontrollstrukturen</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../python/python-klassen.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Klassen und Objekte</span></span></a>
-  </div>
-</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -265,19 +213,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../vscode/visual-studio-code-installation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Installation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Installation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../vscode/visual-studio-code-erweiterungen.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Erweiterungen</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Erweiterungen</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../vscode/visual-studio-code-basics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Tipps</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Tipps</span></span></a>
   </div>
 </li>
       </ul>
@@ -294,33 +242,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../daten/dictionary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Dictionaries</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Dictionaries</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../daten/csv.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">CSV</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">CSV</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../daten/excel.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Excel-Tabellen</span></span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Excel-Tabellen</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../daten/json.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">JSON</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">JSON</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../datenbanken/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Datenbanken</span></a>
+            <a href="../daten/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Daten</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -328,119 +276,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../datenbanken/relational.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Relational</span></span></a>
+  <a href="../daten/csv.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">CSV-Daten</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../datenbanken/nosql.html" class="sidebar-item-text sidebar-link">
+  <a href="../daten/relational.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Relational</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../daten/mysql.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">MySQL</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../daten/postgresql.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">PostgreSQL</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../daten/nosql.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">NoSQL</span></span></a>
   </div>
 </li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../mysql/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">MySQL</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true" aria-label="Abschnitt umschalten">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../mysql/mysql-installation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Installation</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../mysql/mysql-server.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Server einrichten</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../mysql/mysql-basics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">SQL basics</span></span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../postgres/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">PostgreSQL</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true" aria-label="Abschnitt umschalten">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../postgres/postgres-installation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Installation</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../postgres/postgres-server.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Server einrichten</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../postgres/postgres-basics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">SQL basics</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../postgres/postgres-python.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Python-Integration</span></span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../mongodb/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">MongoDB</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true" aria-label="Abschnitt umschalten">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../mongodb/mongodb-installation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Installation</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../mongodb/mongodb-start-stop.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Starten und stoppen</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../mongodb/mongodb-basics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Basics</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../mongodb/mongodb-python.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Python-Integration</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../mongodb/mongodb-python-bilder.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Bilder</span></span></a>
+  <a href="../daten/mongodb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">MongoDB</span></span></a>
   </div>
 </li>
       </ul>
@@ -449,39 +316,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="sidebar-item-container"> 
             <a href="../github/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">GitHub</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="true" aria-label="Abschnitt umschalten">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github/github-git.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Git</span></span></a>
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Git</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github/github-setup.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Setup</span></span></a>
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Setup</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github/github-repo.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Repositories</span></span></a>
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Repositories</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github/github-organization.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Organizations</span></span></a>
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Organizations</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github/github-projects.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Projects</span></span></a>
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Projects</span></span></a>
   </div>
 </li>
       </ul>
@@ -490,15 +357,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="sidebar-item-container"> 
             <a href="../projekt/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Projekt</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" aria-expanded="true" aria-label="Abschnitt umschalten">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../projekt/analytics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Analytics</span></span></a>
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Analytics</span></span></a>
   </div>
 </li>
       </ul>
@@ -513,22 +380,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-  <li><a href="#bedingte-anweisungen" id="toc-bedingte-anweisungen" class="nav-link active" data-scroll-target="#bedingte-anweisungen"><span class="header-section-number">13.1</span> Bedingte Anweisungen</a></li>
-  <li><a href="#schleifen" id="toc-schleifen" class="nav-link" data-scroll-target="#schleifen"><span class="header-section-number">13.2</span> Schleifen</a>
+  <li><a href="#datenmodelle" id="toc-datenmodelle" class="nav-link active" data-scroll-target="#datenmodelle"><span class="header-section-number">23.1</span> Datenmodelle</a>
   <ul class="collapse">
-  <li><a href="#for-schleifen" id="toc-for-schleifen" class="nav-link" data-scroll-target="#for-schleifen"><span class="header-section-number">13.2.1</span> For-Schleifen</a></li>
-  <li><a href="#while-schleifen" id="toc-while-schleifen" class="nav-link" data-scroll-target="#while-schleifen"><span class="header-section-number">13.2.2</span> While-Schleifen</a></li>
+  <li><a href="#dokumentenorientierter-speicher" id="toc-dokumentenorientierter-speicher" class="nav-link" data-scroll-target="#dokumentenorientierter-speicher"><span class="header-section-number">23.1.1</span> Dokumentenorientierter Speicher</a></li>
+  <li><a href="#schlüssel-wert-speicher" id="toc-schlüssel-wert-speicher" class="nav-link" data-scroll-target="#schlüssel-wert-speicher"><span class="header-section-number">23.1.2</span> Schlüssel-Wert-Speicher</a></li>
+  <li><a href="#spaltenorientierter-speicher" id="toc-spaltenorientierter-speicher" class="nav-link" data-scroll-target="#spaltenorientierter-speicher"><span class="header-section-number">23.1.3</span> Spaltenorientierter Speicher</a></li>
+  <li><a href="#graph-speicher" id="toc-graph-speicher" class="nav-link" data-scroll-target="#graph-speicher"><span class="header-section-number">23.1.4</span> Graph-Speicher</a></li>
   </ul></li>
-  <li><a href="#ausnahmen" id="toc-ausnahmen" class="nav-link" data-scroll-target="#ausnahmen"><span class="header-section-number">13.3</span> Ausnahmen</a></li>
+  <li><a href="#anwendungsfälle" id="toc-anwendungsfälle" class="nav-link" data-scroll-target="#anwendungsfälle"><span class="header-section-number">23.2</span> Anwendungsfälle</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../python/index.html">Python</a></li><li class="breadcrumb-item"><a href="../python/python-kontrollstrukturen.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Kontrollstrukturen</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../daten/index.html">Daten</a></li><li class="breadcrumb-item"><a href="../daten/nosql.html"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">NoSQL</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Kontrollstrukturen</span></h1>
+<h1 class="title"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">NoSQL Datenbanken</span></h1>
 </div>
 
 
@@ -545,170 +413,138 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p><a href="../code/python-control-flow.ipynb" download="python-control-flow.ipynb">⬇️ Jupyter Notebook herunterladen</a></p>
-<p>Kontrollstrukturen sind grundlegend in der Python-Programmierung. Wir werden drei wichtige Strukturen kennenlernen:</p>
-<ol type="1">
-<li><strong>Bedingte Anweisungen</strong>: Treffen von Entscheidungen basierend auf bestimmten Bedingungen.</li>
-<li><strong>Schleifen</strong>: Wiederholtes Ausführen eines Codeblocks.</li>
-<li><strong>Ausnahmen</strong>: Umgang mit Fehlern und deren Behandlung.</li>
-</ol>
-<section id="bedingte-anweisungen" class="level2" data-number="13.1">
-<h2 data-number="13.1" class="anchored" data-anchor-id="bedingte-anweisungen"><span class="header-section-number">13.1</span> Bedingte Anweisungen</h2>
-<p>Bedingte Anweisungen helfen dabei, Code nur auszuführen, wenn bestimmte Bedingungen erfüllt sind.</p>
-<p>Grundlegende If-Else-Anweisung:</p>
-<div id="b26b5be4" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Bestimmen, ob eine Zahl positiv, negativ oder null ist</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>number <span class="op">=</span> <span class="op">-</span><span class="dv">3</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> number <span class="op">&gt;</span> <span class="dv">0</span>:</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>number<span class="sc">}</span><span class="ss"> ist eine positive Zahl."</span>)</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> number <span class="op">&lt;</span> <span class="dv">0</span>:</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>number<span class="sc">}</span><span class="ss"> ist eine negative Zahl."</span>)</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>number<span class="sc">}</span><span class="ss"> ist null."</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>-3 ist eine negative Zahl.</code></pre>
-</div>
-</div>
-<p>Erläuterung:</p>
+<p>NoSQL steht für “Not only SQL” und bezeichnet eine Klasse von Datenbanksystemen, die sich von traditionellen, relationalen Datenbanken unterscheiden. Sie wurden entwickelt, um die Skalierbarkeit und Leistung zu verbessern und um flexibler mit den Daten umgehen zu können.</p>
+<p>Anstatt Tabellen zu verbinden, speichern NoSQL-Datenbanken unstrukturierte oder halbstrukturierte Daten, oft in Schlüssel-Wert-Paaren oder JSON-Dokumenten. NoSQL-Datenbanken umfassen mehrere verschiedene Modelle zum Zugriff und zur Verwaltung von Daten, die jeweils für spezifische Anwendungsfälle geeignet sind. Hier sind einige Hauptmerkmale und -modelle von NoSQL-Datenbanken:</p>
 <ul>
-<li><code>if</code> prüft, ob <code>number</code> größer als 0 ist und gibt aus, dass sie positiv ist.</li>
-<li><code>elif</code> (else if) prüft, ob <code>number</code> kleiner als 0 ist und gibt aus, dass sie negativ ist.</li>
-<li><code>else</code> fängt alle anderen Bedingungen ab (hier null) und gibt entsprechend aus.</li>
+<li><p>Schemaflexibilität: Im Gegensatz zu relationalen Datenbanken, bei denen das Schema festgelegt ist, bieten NoSQL-Datenbanken die Möglichkeit, Daten ohne vordefiniertes Schema zu speichern. Dies ermöglicht eine schnelle Anpassung an sich ändernde Datenanforderungen.</p></li>
+<li><p>Horizontale Skalierbarkeit NoSQL-Datenbanken sind darauf ausgelegt, große Datenmengen auf vielen Servern zu verteilen. Sie unterstützen eine horizontale Skalierung, was bedeutet, dass sie durch Hinzufügen weiterer Server in ein Netzwerk skalierbar sind.</p></li>
+<li><p>Hohe Verfügbarkeit und Fehlertoleranz: NoSQL-Datenbanken sind so konzipiert, dass sie auch bei Ausfällen einzelner Knoten im Netzwerk weiterhin verfügbar sind.</p></li>
 </ul>
-<p>Verschachtelte Bedingungsanweisungen:</p>
-<div id="20f918f4" class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Ein Alter in verschiedene Lebensphasen einordnen</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>age <span class="op">=</span> <span class="dv">25</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> age <span class="op">&lt;</span> <span class="dv">13</span>:</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Kind"</span>)</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> age <span class="op">&lt;</span> <span class="dv">18</span>:</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Teenager"</span>)</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> age <span class="op">&lt;</span> <span class="dv">65</span>:</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Erwachsener"</span>)</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Senior"</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Erwachsener</code></pre>
-</div>
-</div>
-<p>Erläuterung:</p>
-<ul>
-<li>Das äußere <code>if-elif-else</code> prüft, ob <code>age</code> kleiner als 13 oder 18 ist und gibt “Kind” oder “Teenager” aus.</li>
-<li>Falls nicht, prüft ein verschachteltes <code>if-else</code> weiter, ob <code>age</code> kleiner als 65 ist oder größer, und gibt “Erwachsener” oder “Senior” aus.</li>
-</ul>
+<section id="datenmodelle" class="level2" data-number="23.1">
+<h2 data-number="23.1" class="anchored" data-anchor-id="datenmodelle"><span class="header-section-number">23.1</span> Datenmodelle</h2>
+<p>NoSQL-Datenbanken bieten eine Vielzahl von Möglichkeiten, um verschiedene Arten von Daten effizient zu speichern und abzurufen. Sie sind besonders nützlich in Szenarien, in denen traditionelle relationale Datenbanken an ihre Grenzen stoßen.</p>
+<section id="dokumentenorientierter-speicher" class="level3" data-number="23.1.1">
+<h3 data-number="23.1.1" class="anchored" data-anchor-id="dokumentenorientierter-speicher"><span class="header-section-number">23.1.1</span> Dokumentenorientierter Speicher</h3>
+<p>Dokumentenorientierte Datenbanken speichern Daten in Form von Dokumenten, die meist auf JSON (JavaScript Object Notation) basieren. Diese Dokumente enthalten nicht nur die Daten, sondern auch die Struktur der Daten, was eine große Flexibilität bietet. Dokumentenorientierte Datenbanken sind ideal für Anwendungen, die mit unterschiedlichen und sich ändernden Datenstrukturen arbeiten müssen.</p>
+<p><strong>Beispiele:</strong> MongoDB, CouchDB</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 66%">
+<col style="width: 17%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Modell</th>
+<th>Eigenschaften</th>
+<th>Open Source</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dokumentenorientierter Speicher</td>
+<td>Daten und Metadaten werden hierarchisch in JSON-basierten Dokumenten innerhalb der Datenbank gespeichert.</td>
+<td>MongoDB, CouchDB</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="schleifen" class="level2" data-number="13.2">
-<h2 data-number="13.2" class="anchored" data-anchor-id="schleifen"><span class="header-section-number">13.2</span> Schleifen</h2>
-<p>Schleifen wiederholen einen Codeblock mehrere Male.</p>
-<section id="for-schleifen" class="level3" data-number="13.2.1">
-<h3 data-number="13.2.1" class="anchored" data-anchor-id="for-schleifen"><span class="header-section-number">13.2.1</span> For-Schleifen</h3>
-<p>For-Schleifen iterieren über einen Bereich oder eine Sammlung.</p>
-<p>Schleife über einen Bereich (“range”):</p>
-<div id="f181310e" class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Zahlen von 1 bis 5 ausgeben</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> num <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">6</span>):</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Nummer: </span><span class="sc">{</span>num<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Nummer: 1
-Nummer: 2
-Nummer: 3
-Nummer: 4
-Nummer: 5</code></pre>
-</div>
-</div>
-<p>Erläuterung:</p>
-<ul>
-<li><code>range(1, 6)</code> erzeugt Zahlen von 1 bis 5 (6 ist exklusiv).</li>
-<li>Jede Zahl wird mit einem f-String ausgegeben.</li>
-</ul>
-<p>Schleife über eine Liste:</p>
-<div id="f28f6cce" class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Liste von Farben</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>colors <span class="op">=</span> [<span class="st">"rot"</span>, <span class="st">"grün"</span>, <span class="st">"blau"</span>]</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Durch jede Farbe in der Liste schleifen und ausgeben</span></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> color <span class="kw">in</span> colors:</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Farbe: </span><span class="sc">{</span>color<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Farbe: rot
-Farbe: grün
-Farbe: blau</code></pre>
-</div>
-</div>
-<p>Erläuterung:</p>
-<ul>
-<li>Die Liste <code>colors</code> enthält drei Zeichenketten.</li>
-<li><code>for color in colors</code> iteriert über jedes Element in der Liste, und jeder Wert wird ausgegeben.</li>
-</ul>
+<section id="schlüssel-wert-speicher" class="level3" data-number="23.1.2">
+<h3 data-number="23.1.2" class="anchored" data-anchor-id="schlüssel-wert-speicher"><span class="header-section-number">23.1.2</span> Schlüssel-Wert-Speicher</h3>
+<p>Schlüssel-Wert-Datenbanken speichern Daten als eine Sammlung von Schlüssel-Wert-Paaren. Jede Datenstruktur besteht aus einem eindeutigen Schlüssel und einem Wert, der jede Art von Daten enthalten kann. Diese Datenbanken sind besonders effizient für einfache Abfragen und schnelle Datenzugriffe.</p>
+<p><strong>Beispiele:</strong> Redis</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 66%">
+<col style="width: 17%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Modell</th>
+<th>Eigenschaften</th>
+<th>Open Source</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Schlüssel-Wert-Speicher</td>
+<td>Die einfachsten NoSQL-Datenbanken, Daten werden als eine Sammlung von Schlüssel-Wert-Paaren dargestellt.</td>
+<td>Redis</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="while-schleifen" class="level3" data-number="13.2.2">
-<h3 data-number="13.2.2" class="anchored" data-anchor-id="while-schleifen"><span class="header-section-number">13.2.2</span> While-Schleifen</h3>
-<p>Eine While-Schleife wird so lange ausgeführt, wie eine Bedingung <code>True</code> ist.</p>
-<p>Einfache While-Schleife:</p>
-<div id="fb84b0d4" class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Countdown von 5 bis 1</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>count <span class="op">=</span> <span class="dv">5</span></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> count <span class="op">&gt;</span> <span class="dv">0</span>:</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Countdown: </span><span class="sc">{</span>count<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    count <span class="op">-=</span> <span class="dv">1</span>  <span class="co"># Zählt count um 1 herunter</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Countdown: 5
-Countdown: 4
-Countdown: 3
-Countdown: 2
-Countdown: 1</code></pre>
-</div>
-</div>
-<p>Erläuterung:</p>
-<ul>
-<li>Anfangswert der Variable: Die Variable <code>count</code> wird auf 5 gesetzt.</li>
-<li>Bedingung der While-Schleife: Die <code>while</code>-Schleife läuft, solange die Bedingung <code>count &gt; 0</code> <code>True</code> bleibt. Diese Bedingung wird vor jedem Schleifendurchlauf geprüft.</li>
-<li>Innerhalb der Schleife:
-<ul>
-<li>Die Funktion <code>print</code> gibt den aktuellen Wert von <code>count</code>, vorangestellt mit “Countdown:”, mittels eines f-Strings aus.</li>
-<li>Die Anweisung <code>count -= 1</code> verringert den Wert von <code>count</code> um 1. Diese Kurzschreibweise ist äquivalent zu <code>count = count - 1</code>.</li>
-<li>Nach jedem Dekrement wird <code>count</code> näher an 0 herangeführt.</li>
-</ul></li>
-<li>Verlassen der Schleife:
-<ul>
-<li>Sobald <code>count</code> nicht mehr größer als 0 ist (also <code>count</code> 0 oder weniger ist), wird die <code>while</code>-Bedingung <code>False</code> und die Schleife wird beendet.</li>
-</ul></li>
-</ul>
-<p>Die Dekrement-Operation (<code>count -= 1</code>) stellt sicher, dass die Schleife nicht unendlich läuft und hilft, eine Countdown-Sequenz zu erstellen.</p>
-<p>Klar, ich kann das für Python-Anfänger einfacher und verständlicher formulieren.</p>
+<section id="spaltenorientierter-speicher" class="level3" data-number="23.1.3">
+<h3 data-number="23.1.3" class="anchored" data-anchor-id="spaltenorientierter-speicher"><span class="header-section-number">23.1.3</span> Spaltenorientierter Speicher</h3>
+<p>Spaltenorientierte Datenbanken speichern Daten in Tabellen, aber im Gegensatz zu relationalen Datenbanken sind die Daten in Spalten anstatt in Reihen organisiert. Dies ermöglicht eine effiziente Speicherung und Abfrage von großen Datenmengen, insbesondere bei analytischen Anwendungen, die nur auf bestimmte Spalten zugreifen müssen.</p>
+<p><strong>Beispiele:</strong> HBase, Cassandra</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 66%">
+<col style="width: 17%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Modell</th>
+<th>Eigenschaften</th>
+<th>Open Source</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Spaltenorientierter Speicher</td>
+<td>Verwandte Daten werden als eine Reihe von verschachtelten Schlüssel/Wert-Paaren innerhalb einer einzigen Spalte gespeichert.</td>
+<td>HBase, Cassandra</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="graph-speicher" class="level3" data-number="23.1.4">
+<h3 data-number="23.1.4" class="anchored" data-anchor-id="graph-speicher"><span class="header-section-number">23.1.4</span> Graph-Speicher</h3>
+<p>Graph-Datenbanken speichern Daten in Form von Graphen, bei denen Knoten die Datenobjekte und Kanten die Beziehungen zwischen diesen Objekten darstellen. Dies ermöglicht komplexe Abfragen von Beziehungen und ist ideal für Anwendungen wie soziale Netzwerke, Empfehlungssysteme und andere Szenarien, bei denen Beziehungen zwischen Datenpunkten im Vordergrund stehen.</p>
+<p><strong>Beispiele:</strong> Neo4j</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 66%">
+<col style="width: 17%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Modell</th>
+<th>Eigenschaften</th>
+<th>Open Source</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Graph-Speicher</td>
+<td>Daten werden in einer Graphstruktur als Knoten, Kanten und Dateneigenschaften gespeichert.</td>
+<td>Neo4j</td>
+</tr>
+</tbody>
+</table>
 </section>
 </section>
-<section id="ausnahmen" class="level2" data-number="13.3">
-<h2 data-number="13.3" class="anchored" data-anchor-id="ausnahmen"><span class="header-section-number">13.3</span> Ausnahmen</h2>
-<p>Ausnahmen helfen uns, Fehler zu behandeln, die während der Programmausführung auftreten, ohne dass das Programm abstürzt.</p>
-<p>Hier ist ein einfaches Beispiel, wie man mit einer Division durch Null umgehen kann:</p>
-<ol type="1">
-<li><strong>try-Block</strong>: Hier kommt der Code, der möglicherweise fehlerhaft ist.</li>
-<li><strong>except-Block</strong>: Hier kommt der Code, der ausgeführt wird, wenn ein Fehler auftritt.</li>
-</ol>
-<div id="b282a2c0" class="cell" data-execution_count="6">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Versuch, eine Zahl durch Null zu teilen, und Fehlerbehandlung</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>numerator <span class="op">=</span> <span class="dv">10</span></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>denominator <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="cf">try</span>:</span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>    result <span class="op">=</span> numerator <span class="op">/</span> denominator</span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Ergebnis: </span><span class="sc">{</span>result<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a><span class="cf">except</span> <span class="pp">ZeroDivisionError</span>:</span>
-<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Fehler: Division durch Null ist nicht erlaubt."</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Fehler: Division durch Null ist nicht erlaubt.</code></pre>
-</div>
-</div>
+<section id="anwendungsfälle" class="level2" data-number="23.2">
+<h2 data-number="23.2" class="anchored" data-anchor-id="anwendungsfälle"><span class="header-section-number">23.2</span> Anwendungsfälle</h2>
+<p>NoSQL-Datenbanken werden häufig in folgenden Bereichen eingesetzt:</p>
 <ul>
-<li>Der <code>try</code>-Block enthält den Code, der einen Fehler verursachen könnte (hier die Division durch Null).</li>
-<li><code>except ZeroDivisionError</code> fängt diesen speziellen Fehler ab und gibt eine Fehlermeldung aus.</li>
+<li>E-Commerce: Verwaltung von Produktkatalogen, Benutzerprofilen und Warenkörben.</li>
+<li>Big Data: Verarbeitung und Analyse großer Datenmengen in Echtzeit.</li>
+<li>Content Management: Speicherung und Verwaltung von Inhalten wie Dokumenten, Bildern und Videos.</li>
+<li>Social Media: Verwaltung von Benutzerprofilen, Beziehungen und Aktivitäten in sozialen Netzwerken.</li>
+<li>IoT (Internet of Things): Speicherung und Analyse großer Mengen an Sensordaten.</li>
 </ul>
-<p>Durch die Verwendung von Ausnahmen können wir sicherstellen, dass unser Programm auch bei Fehlern weiterläuft und sinnvolle Fehlermeldungen liefert.</p>
+<p>Vorteile von NoSQL-Datenbanken:</p>
+<ul>
+<li>Flexibilität: NoSQL-Datenbanken erlauben die Speicherung von unstrukturierten und halbstrukturierten Daten ohne vorher festgelegte Schemata.</li>
+<li>Skalierbarkeit: Sie ermöglichen eine horizontale Skalierung durch das Hinzufügen weiterer Server.</li>
+<li>Leistung: Optimiert für hohe Schreib- und Leseoperationen, insbesondere bei großen Datenmengen.</li>
+<li>Verfügbarkeit: Entworfen für hohe Verfügbarkeit und Fehlertoleranz, auch bei Ausfällen einzelner Knoten.</li>
+</ul>
 
 
 </section>
@@ -1125,13 +961,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../python/python-funktionen.html" class="pagination-link" aria-label="Funktionen">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Funktionen</span></span>
+      <a href="../daten/postgresql.html" class="pagination-link" aria-label="PostgreSQL">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">PostgreSQL</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../python/python-klassen.html" class="pagination-link" aria-label="Klassen und Objekte">
-        <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Klassen und Objekte</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../daten/mongodb.html" class="pagination-link" aria-label="MongoDB">
+        <span class="nav-page-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">MongoDB</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -9,7 +9,7 @@
 <meta name="author" content="Jan Kirenz">
 <meta name="description" content="Programming Toolkit für Data Science, AI &amp; Analytics">
 
-<title>Data Science, AI &amp; Analytics Toolkit - 31&nbsp; Installation</title>
+<title>Data Science, AI &amp; Analytics Toolkit - 21&nbsp; MySQL</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -66,8 +66,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../mongodb/mongodb-start-stop.html" rel="next">
-<link href="../mongodb/index.html" rel="prev">
+<link href="../daten/postgresql.html" rel="next">
+<link href="../daten/relational.html" rel="prev">
 <link href="..//images/logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -118,7 +118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../mongodb/index.html">MongoDB</a></li><li class="breadcrumb-item"><a href="../mongodb/mongodb-installation.html"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Installation</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../daten/index.html">Daten</a></li><li class="breadcrumb-item"><a href="../daten/mysql.html"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">MySQL</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -233,24 +233,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Einrückung</span></span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../python/python-funktionen.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Funktionen</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../python/python-kontrollstrukturen.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Kontrollstrukturen</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../python/python-klassen.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Klassen und Objekte</span></span></a>
-  </div>
-</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -265,19 +247,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../vscode/visual-studio-code-installation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Installation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Installation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../vscode/visual-studio-code-erweiterungen.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Erweiterungen</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Erweiterungen</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../vscode/visual-studio-code-basics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Tipps</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Tipps</span></span></a>
   </div>
 </li>
       </ul>
@@ -294,33 +276,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../daten/dictionary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Dictionaries</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Dictionaries</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../daten/csv.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">CSV</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">CSV</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../daten/excel.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Excel-Tabellen</span></span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Excel-Tabellen</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../daten/json.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">JSON</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">JSON</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../datenbanken/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Datenbanken</span></a>
+            <a href="../daten/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Daten</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -328,119 +310,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../datenbanken/relational.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Relational</span></span></a>
+  <a href="../daten/csv.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">CSV-Daten</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../datenbanken/nosql.html" class="sidebar-item-text sidebar-link">
+  <a href="../daten/relational.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Relational</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../daten/mysql.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">MySQL</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../daten/postgresql.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">PostgreSQL</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../daten/nosql.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">NoSQL</span></span></a>
   </div>
 </li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../mysql/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">MySQL</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true" aria-label="Abschnitt umschalten">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../mysql/mysql-installation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Installation</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../mysql/mysql-server.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Server einrichten</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../mysql/mysql-basics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">SQL basics</span></span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../postgres/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">PostgreSQL</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true" aria-label="Abschnitt umschalten">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../postgres/postgres-installation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Installation</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../postgres/postgres-server.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Server einrichten</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../postgres/postgres-basics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">SQL basics</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../postgres/postgres-python.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Python-Integration</span></span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../mongodb/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">MongoDB</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true" aria-label="Abschnitt umschalten">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../mongodb/mongodb-installation.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Installation</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../mongodb/mongodb-start-stop.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Starten und stoppen</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../mongodb/mongodb-basics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Basics</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../mongodb/mongodb-python.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Python-Integration</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../mongodb/mongodb-python-bilder.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Bilder</span></span></a>
+  <a href="../daten/mongodb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">MongoDB</span></span></a>
   </div>
 </li>
       </ul>
@@ -449,39 +350,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="sidebar-item-container"> 
             <a href="../github/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">GitHub</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="true" aria-label="Abschnitt umschalten">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github/github-git.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Git</span></span></a>
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Git</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github/github-setup.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Setup</span></span></a>
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Setup</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github/github-repo.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Repositories</span></span></a>
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Repositories</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github/github-organization.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Organizations</span></span></a>
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Organizations</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github/github-projects.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Projects</span></span></a>
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Projects</span></span></a>
   </div>
 </li>
       </ul>
@@ -490,15 +391,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="sidebar-item-container"> 
             <a href="../projekt/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Projekt</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" aria-expanded="true" aria-label="Abschnitt umschalten">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../projekt/analytics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Analytics</span></span></a>
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Analytics</span></span></a>
   </div>
 </li>
       </ul>
@@ -513,17 +414,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-  <li><a href="#windows" id="toc-windows" class="nav-link active" data-scroll-target="#windows"><span class="header-section-number">31.1</span> Windows</a></li>
-  <li><a href="#macos" id="toc-macos" class="nav-link" data-scroll-target="#macos"><span class="header-section-number">31.2</span> macOS</a></li>
+  <li><a href="#installation" id="toc-installation" class="nav-link active" data-scroll-target="#installation"><span class="header-section-number">21.1</span> Installation</a>
+  <ul class="collapse">
+  <li><a href="#windows" id="toc-windows" class="nav-link" data-scroll-target="#windows"><span class="header-section-number">21.1.1</span> Windows</a></li>
+  <li><a href="#macos" id="toc-macos" class="nav-link" data-scroll-target="#macos"><span class="header-section-number">21.1.2</span> macOS</a></li>
+  </ul></li>
+  <li><a href="#server-einrichten" id="toc-server-einrichten" class="nav-link" data-scroll-target="#server-einrichten"><span class="header-section-number">21.2</span> Server einrichten</a></li>
+  <li><a href="#sql-basics" id="toc-sql-basics" class="nav-link" data-scroll-target="#sql-basics"><span class="header-section-number">21.3</span> SQL basics</a>
+  <ul class="collapse">
+  <li><a href="#datenbank-erstellen" id="toc-datenbank-erstellen" class="nav-link" data-scroll-target="#datenbank-erstellen"><span class="header-section-number">21.3.1</span> Datenbank erstellen</a></li>
+  <li><a href="#tabelle-erstellen" id="toc-tabelle-erstellen" class="nav-link" data-scroll-target="#tabelle-erstellen"><span class="header-section-number">21.3.2</span> Tabelle erstellen</a></li>
+  <li><a href="#werte-einfügen" id="toc-werte-einfügen" class="nav-link" data-scroll-target="#werte-einfügen"><span class="header-section-number">21.3.3</span> Werte einfügen</a></li>
+  <li><a href="#werte-abrufen" id="toc-werte-abrufen" class="nav-link" data-scroll-target="#werte-abrufen"><span class="header-section-number">21.3.4</span> Werte abrufen</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../mongodb/index.html">MongoDB</a></li><li class="breadcrumb-item"><a href="../mongodb/mongodb-installation.html"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Installation</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../daten/index.html">Daten</a></li><li class="breadcrumb-item"><a href="../daten/mysql.html"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">MySQL</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Installation</span></h1>
+<h1 class="title"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">MySQL</span></h1>
 </div>
 
 
@@ -540,100 +452,334 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>In diesem Abschnitt wird die Installation der NoSQL-Datenbank <em>MongoDB</em> und der <em>MongoDB Shell</em> (<code>mongosh</code>) behandelt.</p>
-<section id="windows" class="level2" data-number="31.1">
-<h2 data-number="31.1" class="anchored" data-anchor-id="windows"><span class="header-section-number">31.1</span> Windows</h2>
+<p>MySQL, das sowohl als “My S-Q-L” als auch als “My Sequel” ausgesprochen wird, ist ein relationales Datenbankverwaltungssystem (RDBMS). Dieses System wird genutzt, um Daten in relationalen Datenbanken zu verwalten. Es verwendet die Structured Query Language (SQL) für verschiedene Aufgaben wie Datenverwaltung, Datenmanipulation und das Abfragen von Daten.</p>
+<p>MySQL Workbench bietet eine grafische Oberfläche für die Datenbankverwaltung und SQL-Entwicklung. Es integriert visuelle Werkzeuge für die Datenmodellierung, SQL-Entwicklung und umfassende Datenbankverwaltung.</p>
+<p>Die MySQL Workbench bietet verschiedene Werkzeuge zur Erleichterung der Datenbankverwaltung:</p>
+<ul>
+<li><strong>Toolbar</strong>: Oben finden Sie die Toolbar, die Schaltflächen wie das neue Abfrage-Tab, Abfrage ausführen und andere enthält.</li>
+<li><strong>Seitenleiste</strong>: Links bietet die Seitenleiste Zugriff auf Instanzverwaltung, Leistungsüberwachung und mehr.</li>
+<li><strong>Abfrage-Tab</strong>: Hier schreiben und führen Sie Ihre SQL-Abfragen aus. Sie können ein neues Abfrage-Tab öffnen, indem Sie auf das “+”-Symbol neben den vorhandenen Tabs klicken.</li>
+<li><strong>Ausgabebereich</strong>: Unterhalb des Abfrage-Editors zeigt dieser Bereich die Ergebnisse der ausgeführten Abfragen oder Nachrichten vom Datenbankserver an.</li>
+</ul>
+<section id="installation" class="level2" data-number="21.1">
+<h2 data-number="21.1" class="anchored" data-anchor-id="installation"><span class="header-section-number">21.1</span> Installation</h2>
+<p>In den folgenden Schritten wird die Installation von MySQL und dem Tool MySQL Workbench behandelt.</p>
+<section id="windows" class="level3" data-number="21.1.1">
+<h3 data-number="21.1.1" class="anchored" data-anchor-id="windows"><span class="header-section-number">21.1.1</span> Windows</h3>
 <ol type="1">
-<li>MongoDB herunterladen:<br>
-Besuchen Sie die <a href="https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-windows/#install-mongodb-community-edition">offizielle MongoDB-Download-Seite</a> und laden Sie die aktuelle (“current”) MongoDB Community Server-Version für Windows herunter.
+<li>Installer herunterladen
 <ul>
-<li>Version: … (current).</li>
-<li>Platform: Windows x64</li>
-<li>Package: msi</li>
+<li>Gehen Sie zur <a href="https://dev.mysql.com/downloads/installer/">MySQL Downloadseite</a>.</li>
+<li>Wählen Sie Windows als Plattform und laden Sie den MySQL-Installer für Windows in der Version 8.0.37. herunter.</li>
 </ul></li>
-<li>Installation:
+<li>Installer ausführen
 <ul>
-<li>Führen Sie das Installationsprogramm aus und folgen Sie den Anweisungen.</li>
-<li>Wählen Sie “Complete” als Setup-Typ.</li>
-<li>Aktivieren Sie die Option “Install MongoDB as a Service”.</li>
+<li>Führen Sie die heruntergeladene Datei aus. Wenn ein Sicherheitsdialog erscheint, klicken Sie auf “Ja”, um dem Installer die Erlaubnis zu erteilen, Änderungen an Ihrem System vorzunehmen.</li>
 </ul></li>
-<li>MongoDB Shell (<code>mongosh</code>) herunterladen:<br>
-Besuchen Sie die <a href="https://www.mongodb.com/try/download/shell">MongoDB Shell Download-Seite</a> und laden Sie die aktuelle Version von MongoDB Shell herunter (wählen Sie als Plattform <em>Windows</em> und als Package <em>msi</em>).</li>
-</ol>
-<p>Um MongoDB von jeder Eingabeaufforderung aus zugänglich zu machen, setzen wir nun eine Umgebungsvariable. Dadurch können Sie <code>mongod</code> und <code>mongo</code> von jeder Eingabeaufforderung aus ohne Angabe des vollständigen Pfades ausführen.</p>
-<p>Hier ist eine detaillierte Anleitung, wie Sie die Umgebungsvariable unter Windows setzen können:</p>
-<ol start="4" type="1">
-<li>Pfad zu <code>mongod.exe</code> und <code>mongosh.exe</code> ermitteln:
+<li>Setup-Typ auswählen
 <ul>
-<li>Der Pfad ist in der Regel <code>C:\Program Files\MongoDB\Server\&lt;Version&gt;\bin</code>. Finden Sie den Pfad im Datei-Explorer und notieren Sie ihn.</li>
+<li>Wählen Sie bei Aufforderung “Custom” als Setup-Typ. Diese Option ermöglicht es Ihnen, spezifische Komponenten zur Installation auszuwählen, wie z.B. MySQL Server, MySQL Workbench und MySQL Shell.</li>
 </ul></li>
-<li>Umgebungsvariablen öffnen:
+<li>Produkte und Features auswählen
 <ul>
-<li>Drücken Sie die Windows-Taste und geben Sie “Umgebungsvariablen” ein.</li>
-<li>Wählen Sie “Umgebungsvariablen für dieses Konto bearbeiten” oder “Systemumgebungsvariablen bearbeiten” aus.</li>
+<li>Wählen Sie ‘MySQL Server’ und ‘MySQL Workbench’ für die Installation aus.</li>
 </ul></li>
-<li>Systemumgebungsvariablen bearbeiten:
+<li>Installation
 <ul>
-<li>Im Fenster “Systemeigenschaften” klicken Sie auf die Schaltfläche “Umgebungsvariablen”.</li>
+<li>Folgen Sie den Anweisungen auf dem Bildschirm, um die gewählten Komponenten zu installieren.</li>
 </ul></li>
-<li>Pfad-Variable bearbeiten:
+<li>MySQL Server konfigurieren
 <ul>
-<li>Im Abschnitt “Systemvariablen” suchen Sie die Variable “Path” und wählen Sie sie aus. Klicken Sie dann auf “Bearbeiten”.</li>
+<li>Nach der Installation werden Sie durch eine Reihe von Konfigurationsschritten geführt, einschließlich der Einrichtung des Root-Passworts, der Erstellung von Benutzerkonten und der Konfiguration der Netzwerkoptionen und des Windows-Dienstes.</li>
 </ul></li>
-<li>Neuen Pfad hinzufügen:
+<li>Installation abschließen
 <ul>
-<li>Klicken Sie auf “Neu” und fügen Sie den Pfad zu <code>mongod.exe</code> hinzu (z.B. <code>C:\Program Files\MongoDB\Server\&lt;Version&gt;\bin</code>).</li>
-</ul></li>
-<li>Änderungen speichern:
-<ul>
-<li>Klicken Sie auf “OK”, um alle Fenster zu schließen und die Änderungen zu speichern.</li>
+<li>Beenden Sie das Setup, um die Installation von MySQL auf Ihrem System abzuschließen.</li>
 </ul></li>
 </ol>
-<p>Um sicherzustellen, dass die Umgebungsvariablen korrekt gesetzt wurden, öffnen Sie eine neue Eingabeaufforderung und führen Sie die folgenden Befehle aus:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">mongod</span> <span class="at">--version</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb2"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">mongosh</span> <span class="at">--version</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Wenn beide Befehle die Versionsnummern von MongoDB und MongoDB Shell (mongosh) zurückgeben, wurde die Umgebungsvariable erfolgreich gesetzt</p>
 </section>
-<section id="macos" class="level2" data-number="31.2">
-<h2 data-number="31.2" class="anchored" data-anchor-id="macos"><span class="header-section-number">31.2</span> macOS</h2>
-<p>Folgen Sie der Installationsanweisung der <a href="https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/#install-mongodb-community-edition">MongoDB-Dokumentation</a>:</p>
+<section id="macos" class="level3" data-number="21.1.2">
+<h3 data-number="21.1.2" class="anchored" data-anchor-id="macos"><span class="header-section-number">21.1.2</span> macOS</h3>
 <ol type="1">
-<li><p>Xcode Command-Line Tools installieren (falls noch nicht installiert): Homebrew benötigt die Xcode Command-Line Tools von Apples Xcode.</p>
+<li>Datei herunterladen
 <ul>
-<li>Prüfen Sie im Terminal, ob XCode installiert ist (wenn Xcode installiert ist, wird die Version angezeigt. Wenn nicht, wird eine entsprechende Fehlermeldung angezeigt und Sie müssen XCode installieren):</li>
-</ul>
-<div class="sourceCode" id="cb3"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">xcode-select</span> <span class="at">--version</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<li>Besuchen Sie die <a href="https://dev.mysql.com/downloads/mysql/">MySQL Downloadseite</a> und wählen Sie macOS als Betriebssystem.</li>
+<li>Laden Sie die DMG-Datei für macOS herunter (in der Version 8.0.36.)</li>
+</ul></li>
+<li>MySQL installieren
 <ul>
-<li>Falls notwendig, installieren Sie die Xcode Command-Line Tools mit folgendem Befehl im macOS Terminal:</li>
-</ul>
-<div class="sourceCode" id="cb4"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">xcode-select</span> <span class="at">--install</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>Homebrew installieren (falls noch nicht installiert):</p>
-<ul>
-<li>Führen Sie diesen Befehl im Terminal aus, um den <a href="https://brew.sh/">Homebrew</a>-Paketmanager zu installieren:</li>
-</ul>
-<div class="sourceCode" id="cb5"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">/bin/bash</span> <span class="at">-c</span> <span class="st">"</span><span class="va">$(</span><span class="ex">curl</span> <span class="at">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="va">)</span><span class="st">"</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>MongoDB installieren:</p>
-<ul>
-<li>Laden Sie das offizielle Homebrew-Formular für MongoDB und die Datenbank-Tools herunter, indem Sie folgenden Befehl im macOS Terminal ausführen:</li>
-</ul>
-<div class="sourceCode" id="cb6"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> tap mongodb/brew</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ul>
-<li>Aktualisieren Sie Homebrew und alle vorhandenen Formeln:</li>
-</ul>
-<div class="sourceCode" id="cb7"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> update</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ul>
-<li>Um MongoDB zu installieren, führen Sie folgenden Befehl im macOS Terminal aus:</li>
-</ul>
-<div class="sourceCode" id="cb8"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install mongodb-community@7.0</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li>Öffnen Sie die heruntergeladene DMG-Datei und folgen Sie den Installationsanweisungen auf dem Bildschirm.</li>
+</ul></li>
 </ol>
-<p>Öffnen Sie -nachdem alles installiert wurde- eine neue Eingabeaufforderung und führen Sie die folgenden Befehle aus:</p>
-<p>Prüfung mongod-Server:</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">mongod</span> <span class="at">--version</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Die MongoDB Shell: mongosh</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">mongosh</span> <span class="at">--version</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Wenn bei beiden Befehlen eine Version angezeigt wird, war die Installation erfolgreich.</p>
+<p>Nun installieren Sie MySQL Workbench</p>
+<ol type="1">
+<li>MySQL Workbench herunterladen
+<ul>
+<li>Greifen Sie auf die <a href="https://dev.mysql.com/downloads/workbench/">MySQL Workbench Downloadseite</a> zu.</li>
+<li>Wählen Sie die passende Version für Ihr Betriebssystem und laden Sie diese herunter.</li>
+</ul></li>
+<li>Anwendung installieren und den Setup-Anweisungen folgen.</li>
+</ol>
+</section>
+</section>
+<section id="server-einrichten" class="level2" data-number="21.2">
+<h2 data-number="21.2" class="anchored" data-anchor-id="server-einrichten"><span class="header-section-number">21.2</span> Server einrichten</h2>
+<p>Nach der Installation besteht der nächste Schritt darin, eine Verbindung zu Ihrem MySQL-Server über MySQL Workbench herzustellen, d.h. wir fügen einen Server hinzu:</p>
+<ol type="1">
+<li><strong>MySQL Workbench starten</strong>
+<ul>
+<li>Öffnen Sie MySQL Workbench aus Ihrer Anwendungsübersicht. Beim Start der Anwendung sehen Sie die Hauptoberfläche.</li>
+</ul>
+<div class="callout callout-style-simple callout-tip callout-titled" title="Tipp für Windows-Nutzer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tipp für Windows-Nutzer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Falls MySQL Workbench während der anfänglichen Einrichtung des MySQL Servers nicht enthalten war, kann es separat installiert werden:</p>
+<ul>
+<li>Greifen Sie auf die <a href="https://dev.mysql.com/downloads/workbench/">MySQL Workbench Downloadseite</a> zu.</li>
+<li>Wählen Sie die passende Version für Ihr Betriebssystem und laden Sie sie herunter.</li>
+</ul>
+</div>
+</div>
+</div></li>
+<li><strong>Neue Verbindung erstellen</strong>
+<ul>
+<li>Auf dem Startbildschirm sehen Sie einen Bereich mit der Bezeichnung “MySQL Connections”. Klicken Sie auf das “+”-Symbol, um eine neue Verbindung zu erstellen.</li>
+<li>Im Setup-Dialog:
+<ul>
+<li>Verbindungsname: Geben Sie Ihrer Verbindung einen erkennbaren Namen (nutzen Sie hierfür <code>local-connection</code>).</li>
+<li>Hostname: Geben Sie <code>localhost</code> ein (wir verwenden diese Bezeichnung, da der Datenbankserver auf dem gleichen Rechner wie die Workbench läuft).</li>
+<li>Port: Der Standard-MySQL-Port ist <code>3306</code>.</li>
+<li>Benutzername: Geben Sie den Benutzernamen ein, den Sie während der MySQL Server-Installation festgelegt haben (meist ‘root’).</li>
+<li>Passwort: Klicken Sie auf “Store in Vault” und geben Sie das Passwort für das Benutzerkonto ein.</li>
+</ul></li>
+<li>Nachdem Sie diese Felder ausgefüllt haben, klicken Sie auf “Test Connection”, um sicherzustellen, dass alle Einstellungen korrekt sind und die Verbindung hergestellt werden kann.</li>
+</ul></li>
+<li><strong>Verbindung speichern</strong>
+<ul>
+<li>Wenn der Verbindungstest erfolgreich ist, speichern Sie die Konfiguration, indem Sie auf “OK” klicken. Diese Verbindung wird nun auf dem MySQL Workbench-Startbildschirm für einen einfachen Zugriff angezeigt.</li>
+</ul></li>
+</ol>
+</section>
+<section id="sql-basics" class="level2" data-number="21.3">
+<h2 data-number="21.3" class="anchored" data-anchor-id="sql-basics"><span class="header-section-number">21.3</span> SQL basics</h2>
+<p>Nachfolgend behandeln wir einige typische Aufgaben in MySQL Workbench, die bei der Arbeit mit Datenbanken anfallen.</p>
+<section id="datenbank-erstellen" class="level3" data-number="21.3.1">
+<h3 data-number="21.3.1" class="anchored" data-anchor-id="datenbank-erstellen"><span class="header-section-number">21.3.1</span> Datenbank erstellen</h3>
+<ol type="1">
+<li><p><strong>Eine Datenbank erstellen</strong></p>
+<ul>
+<li>Verbinden Sie sich mit Ihrer MySQL-Instanz über die eingerichtete Verbindung (<code>local-connection</code>).</li>
+</ul></li>
+<li><p><strong>Neues Abfrage-Tab öffnen</strong></p>
+<ul>
+<li>Klicken Sie auf das “+”-Symbol oben, um eine neue Abfrage zu starten.</li>
+</ul></li>
+<li><p>Geben Sie die folgenden SQL-Befehle ein:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">DROP</span> <span class="kw">DATABASE</span> <span class="cf">IF</span> <span class="kw">EXISTS</span> `db_data`;</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">CREATE</span> <span class="kw">DATABASE</span> `db_data`;</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">USE</span> `db_data`;</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout callout-style-simple callout-note callout-titled" title="Erklärung der SQL-Befehle">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Erklärung der SQL-Befehle
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Der SQL-Code führt drei Operationen durch:</p>
+<ol type="1">
+<li><strong>DROP DATABASE IF EXISTS <code>db_data</code>;</strong>
+<ul>
+<li>Dieser Befehl löscht die Datenbank <code>db_data</code>, falls sie existiert. Dies ist nützlich, um sicherzustellen, dass Sie mit einer neuen Datenbank arbeiten, indem eine eventuell vorhandene Datenbank mit demselben Namen entfernt wird.</li>
+</ul></li>
+<li><strong>CREATE DATABASE <code>db_data</code>;</strong>
+<ul>
+<li>Dieser Befehl erstellt eine neue Datenbank mit dem Namen <code>db_data</code>. Dies legt die Basis für eine neue Datenbank, in der Sie Tabellen und andere Datenbankobjekte erstellen können.</li>
+</ul></li>
+<li><strong>USE <code>db_data</code>;</strong>
+<ul>
+<li>Dieser Befehl setzt die neu erstellte Datenbank <code>db_data</code> als die aktuell verwendete Datenbank. Alle nachfolgenden SQL-Befehle werden auf dieser Datenbank ausgeführt.</li>
+</ul></li>
+</ol>
+</div>
+</div>
+</div></li>
+<li><p><strong>Befehl ausführen</strong></p>
+<ul>
+<li>Klicken Sie auf das Blitzsymbol (⚡), um den Befehl auszuführen.</li>
+</ul></li>
+<li><p><strong>Schema-Liste aktualisieren</strong></p>
+<ul>
+<li>Nachdem Sie die Befehle ausgeführt haben, aktualisieren Sie die Schema-Liste auf der linken Seite der Oberfläche, um Ihre neue Datenbank zu sehen.</li>
+</ul></li>
+</ol>
+</section>
+<section id="tabelle-erstellen" class="level3" data-number="21.3.2">
+<h3 data-number="21.3.2" class="anchored" data-anchor-id="tabelle-erstellen"><span class="header-section-number">21.3.2</span> Tabelle erstellen</h3>
+<p>Als Beispieldaten erstellen wir eine Tabelle zu einer Marketingkampagne:</p>
+<ol type="1">
+<li><strong>Neues Abfrage-Tab öffnen</strong>
+<ul>
+<li>Klicken Sie auf das “+”-Symbol oben, um eine neue Abfrage zu starten.</li>
+</ul></li>
+<li><strong>Tabelle definieren</strong>
+<ul>
+<li>Führen Sie das folgende SQL aus, um Ihre Tabelle zu erstellen:</li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">CREATE</span> <span class="kw">TABLE</span> campaigns (</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>   <span class="kw">id</span> <span class="dt">INT</span> AUTO_INCREMENT <span class="kw">PRIMARY</span> <span class="kw">KEY</span>,</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>   name <span class="dt">VARCHAR</span>(<span class="dv">255</span>) <span class="kw">NOT</span> <span class="kw">NULL</span>,</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>   start_date <span class="dt">DATE</span>,</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>   end_date <span class="dt">DATE</span>,</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>   budget <span class="dt">DECIMAL</span>(<span class="dv">10</span>, <span class="dv">2</span>),</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>   channel <span class="dt">VARCHAR</span>(<span class="dv">255</span>)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>   );</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout callout-style-simple callout-note callout-titled" title="Erklärung der Tabellendefinition">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Erklärung der Tabellendefinition
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Der obige SQL-Befehl erstellt eine neue Tabelle namens <code>campaigns</code>. Hier ist eine Aufschlüsselung jeder Spaltendefinition:</p>
+<ul>
+<li><strong>id</strong>: Eine Spalte namens <code>id</code>, die den Datentyp <code>INT</code> (integer) verwendet und automatisch inkrementiert wird (d.h. 1, 2, 3, …), was sich gut als Primärschlüssel eignet.</li>
+<li><strong>name</strong>: Eine Spalte zur Speicherung der Kampagnennamen als Text, um eine Zeichenkette von bis zu 255 Zeichen zu halten. Die <code>NOT NULL</code>-Einschränkung stellt sicher, dass jede Zeile einen Namen haben muss.</li>
+<li><strong>start_date</strong> und <strong>end_date</strong>: Diese Spalten speichern die Start- und Enddaten der Kampagnen mit dem Datentyp <code>DATE</code>.</li>
+<li><strong>budget</strong>: Eine Spalte für das Budget jeder Kampagne, die <code>DECIMAL(10, 2)</code> verwendet, um bis zu 10 Stellen mit 2 Dezimalstellen zu ermöglichen.</li>
+<li><strong>channel</strong>: Eine Spalte, um das verwendete Medium der Kampagne anzugeben, die Zeichenfolgen von bis zu 255 Zeichen speichern kann.</li>
+</ul>
+</div>
+</div>
+</div></li>
+<li><strong>Befehl ausführen</strong>
+<ul>
+<li>Klicken Sie auf das Blitzsymbol (⚡), um den Befehl auszuführen. Überprüfen Sie die Schema-Ansicht, um die Erstellung der Tabelle zu bestätigen.</li>
+</ul></li>
+</ol>
+</section>
+<section id="werte-einfügen" class="level3" data-number="21.3.3">
+<h3 data-number="21.3.3" class="anchored" data-anchor-id="werte-einfügen"><span class="header-section-number">21.3.3</span> Werte einfügen</h3>
+<p>Gehen Sie wie folgt vor, um die Tabelle mit Daten zu füllen:</p>
+<ol type="1">
+<li><strong>Daten einfügen</strong>
+<ul>
+<li>Verwenden Sie in einem neuen Abfrage-Tab diesen SQL-Befehl:</li>
+</ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">INSERT</span> <span class="kw">INTO</span> campaigns (name, start_date, end_date, budget, channel) <span class="kw">VALUES</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>(<span class="st">'Winter Sale'</span>, <span class="st">'2023-12-01'</span>, <span class="st">'2023-12-31'</span>, <span class="fl">5000.00</span>, <span class="st">'Email'</span>),</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>(<span class="st">'Summer Festival'</span>, <span class="st">'2023-06-01'</span>, <span class="st">'2023-06-15'</span>, <span class="fl">10000.00</span>, <span class="st">'Social Media'</span>),</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>(<span class="st">'Back to School'</span>, <span class="st">'2023-08-01'</span>, <span class="st">'2023-08-20'</span>, <span class="fl">7500.00</span>, <span class="st">'TV'</span>);</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout callout-style-simple callout-note callout-titled" title="Erklärung der Insert-Anweisung">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Erklärung der Insert-Anweisung
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Dieser SQL-Befehl fügt Daten in die <code>campaigns</code>-Tabelle ein. Jede Zeile von Werten entspricht einer anderen Marketingkampagne:</p>
+<ul>
+<li><strong>Erste Zeile</strong>: Fügt eine Kampagne namens “Winter Sale” ein, die vom 1. bis 31. Dezember 2023 läuft, mit einem Budget von $5000 und dem Kanal “Email”.</li>
+<li><strong>Zweite Zeile</strong>: Fügt “Summer Festival” ein, eine kürzere Kampagne vom 1. bis 15. Juni 2023, mit einem höheren Budget von $10000 und dem Kanal “Social Media”.</li>
+<li><strong>Dritte Zeile</strong>: Fügt die “Back to School”-Kampagne vom 1. bis 20. August 2023 hinzu, mit einem Budget von $7500, vermarktet über “TV”.</li>
+</ul>
+<p>Jeder Satz von Werten ist in Klammern eingeschlossen und durch Kommas getrennt, um verschiedene Kampagnen zu unterscheiden.</p>
+</div>
+</div>
+</div></li>
+</ol>
+</section>
+<section id="werte-abrufen" class="level3" data-number="21.3.4">
+<h3 data-number="21.3.4" class="anchored" data-anchor-id="werte-abrufen"><span class="header-section-number">21.3.4</span> Werte abrufen</h3>
+<p>Um die Daten zu überprüfen:</p>
+<ol type="1">
+<li><strong>Führen Sie eine SELECT-Abfrage aus</strong>
+<ul>
+<li>Führen Sie folgendes in einem neuen Abfrage-Tab aus:</li>
+</ul>
+<div class="sourceCode" id="cb4"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> <span class="op">*</span> <span class="kw">FROM</span> campaigns;</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout callout-style-simple callout-note callout-titled" title="Erklärung der SELECT-Abfrage">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Erklärung der SELECT-Abfrage
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Der SQL-Befehl ruft alle Spalten aus allen Zeilen in der <code>campaigns</code>-Tabelle ab. Er ist nützlich, um alle eingegebenen Daten in der Tabelle anzuzeigen, sicherzustellen, dass die Einträge korrekt sind, und um weitere Datenanalysen oder Berichte zu ermöglichen.</p>
+</div>
+</div>
+</div></li>
+</ol>
+<p>Die Abfrage sollte folgendes Ergebnis ausgeben:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>id</th>
+<th>name</th>
+<th>start_date</th>
+<th>end_date</th>
+<th>budget</th>
+<th>channel</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Winter Sale</td>
+<td>2023-12-01</td>
+<td>2023-12-31</td>
+<td>5000.00</td>
+<td>Email</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Summer Festival</td>
+<td>2023-06-01</td>
+<td>2023-06-15</td>
+<td>10000.00</td>
+<td>Social Media</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Back to School</td>
+<td>2023-08-01</td>
+<td>2023-08-20</td>
+<td>7500.00</td>
+<td>TV</td>
+</tr>
+</tbody>
+</table>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -1048,13 +1194,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../mongodb/index.html" class="pagination-link" aria-label="MongoDB">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">MongoDB</span>
+      <a href="../daten/relational.html" class="pagination-link" aria-label="Relational">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Relational</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../mongodb/mongodb-start-stop.html" class="pagination-link" aria-label="Starten und stoppen">
-        <span class="nav-page-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Starten und stoppen</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../daten/postgresql.html" class="pagination-link" aria-label="PostgreSQL">
+        <span class="nav-page-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">PostgreSQL</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
