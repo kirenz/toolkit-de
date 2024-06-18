@@ -1,10 +1,11 @@
 # Python 
 
+## Installation
+
 Python kann direkt von der offiziellen Python-Website oder über einen Paketmanager wie Anaconda installiert werden, der zusätzliche Tools bietet und das Paketmanagement vereinfacht.
 
 Dieses Kapitel konzentriert sich auf die Installation von Python direkt von der offiziellen Quelle.
 
-## Installation
 
 ### Windows
 
@@ -41,3 +42,47 @@ Dies ist eine gängige Situation und kein Grund zur Sorge. Wir werden dieses The
 - **Python nicht erkannt**: Wenn die Kommandozeile den Befehl `python` nicht erkennt, liegt es möglicherweise daran, dass Python nicht zu Ihrem PATH hinzugefügt wurde. Überprüfen Sie die Installationsschritte noch einmal, um sicherzustellen, dass Sie die Option ausgewählt haben, Python zu Ihrem PATH hinzuzufügen.
 
 - **Berechtigungsfehler während der Installation**: Dies tritt normalerweise unter Windows auf und kann behoben werden, indem das Installationsprogramm als Administrator ausgeführt wird.
+
+## Python IDLE
+
+Python IDLE ist eine einfache IDE (Integrated Development Environment), die mit der Programmiersprache Python installiert wird. Sie ist darauf ausgelegt, das Schreiben und Ausführen von Python-Code effizient zu unterstützen.
+
+*IDLE ist nach Eric Idle benannt, einem Mitglied der Monty Python Comedy-Gruppe, von der auch Python seinen Namen hat.*
+
+### Python IDLE starten
+
+Nach der Installation von Python starten Sie IDLE über das Suchmenü Ihres Betriebssystems:
+
+- **Windows**: Öffnen Sie das Startmenü und geben Sie `IDLE` ein.
+- **MacOS**: Verwenden Sie die Spotlight-Suche (Cmd + Leertaste), geben Sie `IDLE` ein und drücken Sie Enter.
+- **Linux**: Finden Sie IDLE im Anwendungsmenü oder führen Sie `idle` im Terminal aus.
+
+### Einfache Berechnungen
+
+Das IDLE-Shell-Fenster fungiert als interaktiver Interpreter, der jede Codezeile sofort ausführt, wenn Sie Enter drücken.
+
+Direkt in der IDLE-Shell können Sie arithmetische Ausdrücke wie `2 + 3` eingeben und Enter drücken, um sofort die Ergebnisse zu sehen.
+
+Diese Funktion macht IDLE ideal für schnelle Berechnungen und Experimente mit den mathematischen Fähigkeiten von Python, ohne dass ein Skript gespeichert oder ausgeführt werden muss.
+
+### Python-Skripte
+
+Als nächstes erstellen und führen wir ein einfaches Python-Skript aus:
+
+1. **Eine neue Datei öffnen**: Navigieren Sie in IDLE zu `Datei` > `Neue Datei`, um ein Editor-Fenster zu öffnen.
+2. **Geben Sie Ihren Code ein**: Geben Sie Folgendes in das neue Editor-Fenster ein:
+
+   ```python
+   print("Hallo, Python!")
+   ```
+
+3. **Speichern Sie Ihr Skript**: Speichern Sie die Datei über `Datei` > `Speichern unter...` und benennen Sie sie `hello.py`. Idealerweise speichern Sie sie in Ihrem Verzeichnis `code` innerhalb Ihres `toolkit-labs`-Ordners (siehe dazu die Erklärung zur [Ordnerstruktur](project-environment#projektumgebung.qmd)).
+4. **Führen Sie Ihr Skript aus**: Drücken Sie `F5` oder gehen Sie zu `Ausführen` > `Modul ausführen`, um Ihr Skript auszuführen. Die Ausgabe `Hallo, Python!` sollte in der IDLE-Shell erscheinen.
+
+Modifizieren Sie nun Ihr Skript mit verschiedenen Nachrichten. Sie können auch `help(print)` oder `help()` in die IDLE-Shell eingeben, um die umfangreiche Hilfedokumentation von Python zu erkunden und andere Funktionen kennenzulernen.
+
+### Nächste Schritte
+
+Python IDLE bietet eine Einführung in die Programmierung mit Python und eine einfache Oberfläche für die Codeentwicklung und -ausführung. In einem der folgenden Abschnitte werden wir fortschrittlichere IDEs wie Visual Studio Code erkunden, die größere Projekte mit zusätzlichen Funktionen unterstützen.
+
+Im nächsten Kapitel wird die Installation und grundlegende Nutzung von Anaconda behandelt, einer beliebten Python-Distribution, die einen robusten Paketmanager und eine Suite von vorinstallierten Bibliotheken umfasst, die häufig in der Datenwissenschaft und im maschinellen Lernen verwendet werden.
