@@ -682,27 +682,7 @@
     "href": "daten/index.html",
     "title": "Daten & Datenbanken",
     "section": "",
-    "text": "Datenbanksysteme",
-    "crumbs": [
-      "Daten & Datenbanken"
-    ]
-  },
-  {
-    "objectID": "daten/index.html#datenbanksysteme",
-    "href": "daten/index.html#datenbanksysteme",
-    "title": "Daten & Datenbanken",
-    "section": "",
-    "text": "Relationale Datenbanken\nRelationale Datenbanken verwenden Tabellen zur Organisation strukturierter Daten und nutzen SQL zur Datenmanipulation.\n\nBeispiele: MySQL, PostgreSQL\nMerkmale: Feste Schemata, Unterstützung von Transaktionen, Sicherstellung der Datenintegrität\n\n\n\nNoSQL-Datenbanken\nNoSQL-Datenbanken bieten flexible Schemata für die Speicherung unstrukturierter und teilweise strukturierter Daten. Sie sind skalierbar und anpassungsfähig.\n\nBeispiele: MongoDB\nMerkmale: Flexibles Schema, horizontale Skalierbarkeit, Unterstützung verschiedener Datenspeichermodelle",
-    "crumbs": [
-      "Daten & Datenbanken"
-    ]
-  },
-  {
-    "objectID": "daten/index.html#zusammenfassung",
-    "href": "daten/index.html#zusammenfassung",
-    "title": "Daten & Datenbanken",
-    "section": "Zusammenfassung",
-    "text": "Zusammenfassung\nDiese Einführung bietet einen Überblick über die verschiedenen Arten von Daten und die entsprechenden Datenbanksysteme. Strukturierte Daten werden in relationalen Datenbanken wie MySQL und PostgreSQL gespeichert, während unstrukturierte und teilweise strukturierte Daten häufig in NoSQL-Datenbanken wie MongoDB verwaltet werden. In den folgenden Kapiteln werden diese Themen im Detail behandelt.",
+    "text": "Daten sind die Grundlage der Datenwissenschaft. Sie ermöglichen es uns, Erkenntnisse zu gewinnen, Entscheidungen zu treffen und Vorhersagen zu treffen. Daten können in verschiedenen Formen vorliegen und werden in der Regel in drei Hauptkategorien eingeteilt.\n\nStrukturierte Daten sind in einem festen Format organisiert und lassen sich leicht in Tabellenform darstellen (bspw. CSV-Dateien). Diese werden typischerweise in relationalen Datenbanken gespeichert, wie MySQL und PostgreSQL.\nTeilweise strukturierte Daten besitzen keine feste Struktur, weisen jedoch eine gewisse Organisation auf (bspw. JSON).\nUnstrukturierte Daten haben keine definierte Struktur und umfassen oft Multimedia-Inhalte (bspw. Textdateien, Bilder, Videos, Audiodateien). Sie können in verschiedenen Formaten vorliegen und erfordern spezielle Techniken zur Analyse. Diese Daten können in NoSQL-Datenbanken gespeichert werden, wie MongoDB.\n\nStrukturierte Daten können in relationalen Datenbanken wie MySQL und PostgreSQL gespeichert, während unstrukturierte und teilweise strukturierte Daten häufig in NoSQL-Datenbanken wie MongoDB verwaltet werden. In den folgenden Kapiteln werden diese Themen im Detail behandelt.",
     "crumbs": [
       "Daten & Datenbanken"
     ]
