@@ -118,7 +118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../daten/index.html">Daten &amp; Datenbanken</a></li><li class="breadcrumb-item"><a href="../daten/json.html"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">JSON-Daten</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../daten/index.html">Daten &amp; Datenbanken</a></li><li class="breadcrumb-item"><a href="../daten/json.html"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">JSON</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -264,13 +264,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../daten/csv.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">CSV-Daten</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">CSV</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../daten/json.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">JSON-Daten</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">JSON</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -381,14 +381,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#dictionary-zu-json" id="toc-dictionary-zu-json" class="nav-link" data-scroll-target="#dictionary-zu-json"><span class="header-section-number">14.3.2</span> Dictionary zu JSON</a></li>
   <li><a href="#verschachtelte-json-daten" id="toc-verschachtelte-json-daten" class="nav-link" data-scroll-target="#verschachtelte-json-daten"><span class="header-section-number">14.3.3</span> Verschachtelte JSON-Daten</a></li>
   </ul></li>
-  <li><a href="#zusammenfassung" id="toc-zusammenfassung" class="nav-link" data-scroll-target="#zusammenfassung"><span class="header-section-number">14.4</span> Zusammenfassung</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../daten/index.html">Daten &amp; Datenbanken</a></li><li class="breadcrumb-item"><a href="../daten/json.html"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">JSON-Daten</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../daten/index.html">Daten &amp; Datenbanken</a></li><li class="breadcrumb-item"><a href="../daten/json.html"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">JSON</span></a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">JSON-Dateien</span></h1>
 </div>
@@ -433,7 +432,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="schreiben-einer-json-datei" class="level2" data-number="14.1">
 <h2 data-number="14.1" class="anchored" data-anchor-id="schreiben-einer-json-datei"><span class="header-section-number">14.1</span> Schreiben einer JSON-Datei</h2>
 <p>Das Speichern von Daten in eine JSON-Datei ist mit der <code>json</code>-Bibliothek sehr einfach. Die Methode <code>json.dump()</code> ermöglicht das Speichern eines Python Dictionaries in eine JSON-Datei.</p>
-<div id="597ce346" class="cell" data-execution_count="1">
+<div id="aeab02ec" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Daten erstellen</span></span>
@@ -493,7 +492,7 @@ Ausführliche Erklärung
 <section id="lesen-einer-json-datei" class="level2" data-number="14.2">
 <h2 data-number="14.2" class="anchored" data-anchor-id="lesen-einer-json-datei"><span class="header-section-number">14.2</span> Lesen einer JSON-Datei</h2>
 <p>Das Lesen von JSON-Dateien in Python ist mit der <code>json</code>-Bibliothek ebenfalls sehr einfach. Die Methode <code>json.load()</code> ermöglicht das Einlesen von JSON-Daten aus einer Datei in ein Python Dictionary.</p>
-<div id="1d9ac8d7" class="cell" data-execution_count="2">
+<div id="46f9a0ca" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># JSON-Datei lesen</span></span>
@@ -558,7 +557,7 @@ Ausführliche Erklärung
 <section id="json-in-dictionary" class="level3" data-number="14.3.1">
 <h3 data-number="14.3.1" class="anchored" data-anchor-id="json-in-dictionary"><span class="header-section-number">14.3.1</span> JSON in Dictionary</h3>
 <p>JSON in ein Python Dictionary konvertieren:</p>
-<div id="c028e5b6" class="cell" data-execution_count="3">
+<div id="9c4cc55d" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>json_daten <span class="op">=</span> <span class="st">'''</span></span>
@@ -579,7 +578,7 @@ Ausführliche Erklärung
 <section id="dictionary-zu-json" class="level3" data-number="14.3.2">
 <h3 data-number="14.3.2" class="anchored" data-anchor-id="dictionary-zu-json"><span class="header-section-number">14.3.2</span> Dictionary zu JSON</h3>
 <p>Python Dictionary in JSON konvertieren:</p>
-<div id="b04a5c9b" class="cell" data-execution_count="4">
+<div id="2f346204" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>daten <span class="op">=</span> {</span>
@@ -602,7 +601,7 @@ Ausführliche Erklärung
 <section id="verschachtelte-json-daten" class="level3" data-number="14.3.3">
 <h3 data-number="14.3.3" class="anchored" data-anchor-id="verschachtelte-json-daten"><span class="header-section-number">14.3.3</span> Verschachtelte JSON-Daten</h3>
 <p>JSON-Daten können verschachtelte Strukturen enthalten, wie Listen von Objekten oder Objekte innerhalb von Objekten. Python kann diese Strukturen direkt verarbeiten.</p>
-<div id="6e492e83" class="cell" data-execution_count="5">
+<div id="d8ec87f8" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>json_daten <span class="op">=</span> <span class="st">'''</span></span>
@@ -634,14 +633,9 @@ Ausführliche Erklärung
 Name: Anna, Hobbys: Radfahren, Kochen</code></pre>
 </div>
 </div>
-</section>
-</section>
-<section id="zusammenfassung" class="level2" data-number="14.4">
-<h2 data-number="14.4" class="anchored" data-anchor-id="zusammenfassung"><span class="header-section-number">14.4</span> Zusammenfassung</h2>
-<p>In diesem Kapitel haben wir gelernt, wie man JSON-Dateien in Python mit der <code>json</code>-Bibliothek liest und schreibt.</p>
-<p>JSON ist ein flexibles und weit verbreitetes Format für den Datenaustausch und die Speicherung. Wir haben auch einige erweiterte Funktionen und Techniken behandelt, um mit JSON-Daten in Python effizient zu arbeiten. Diese Fähigkeiten sind essenziell für die Verarbeitung und Analyse von strukturierten und teilweise strukturierten Daten in verschiedenen Projekten der Datenwissenschaft.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -1056,8 +1050,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../daten/csv.html" class="pagination-link" aria-label="CSV-Daten">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">CSV-Daten</span></span>
+      <a href="../daten/csv.html" class="pagination-link" aria-label="CSV">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">CSV</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
