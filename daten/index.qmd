@@ -1,58 +1,30 @@
-# Daten
+# Daten & Datenbanken
 
-Daten sind das Herzstück der Datenwissenschaft. Sie ermöglichen es uns, Erkenntnisse zu gewinnen, Entscheidungen zu treffen und Vorhersagen zu treffen. Daten können in verschiedenen Formen vorliegen und werden in der Regel in drei Hauptkategorien eingeteilt: 
+Daten sind die Grundlage der Datenwissenschaft. Sie ermöglichen es uns, Erkenntnisse zu gewinnen, Entscheidungen zu treffen und Vorhersagen zu treffen. Daten können in verschiedenen Formen vorliegen und werden in der Regel in drei Hauptkategorien eingeteilt.
 
-- strukturierte, 
-- teilweise strukturierte und 
-- unstrukturierte Daten. 
+1. Strukturierte Daten sind in einem festen Format organisiert und lassen sich leicht in Tabellenform darstellen (bspw. CSV-Dateien). Diese werden typischerweise in relationalen Datenbanken gespeichert, wie MySQL und PostgreSQL.
 
-In diesem Kapitel werden wir diese Kategorien untersuchen und Beispiele für jede Art von Daten geben.
+2. Teilweise strukturierte Daten besitzen keine feste Struktur, weisen jedoch eine gewisse Organisation auf (bspw. JSON). 
 
-## Strukturierte Daten
-
-Strukturierte Daten sind Daten, die in einem festen Format organisiert sind und leicht in Tabellenform dargestellt werden können. Diese Daten sind typischerweise in *relationalen Datenbanken* oder Tabellenkalkulationen gespeichert. Strukturierte Daten sind durch ihre klare Struktur leicht zu durchsuchen und zu analysieren.
-
-Beispiele für strukturierte Daten:
-
-- CSV-Dateien
-- Excel-Tabellen
-- Tabellen in relationalen Datenbanken (z. B. SQL-Datenbanken)
-
-Merkmale strukturierter Daten:
-
-- Feste Datenschemata (Spalten und Datentypen sind definiert)
-- Einfach zu durchsuchen und zu filtern
-- Eindeutige Datenbeziehungen (z. B. Fremdschlüssel in relationalen Datenbanken)
-
-## Teilweise strukturierte Daten
-
-Teilweise strukturierte Daten sind Daten, die nicht in ein festes Schema passen, aber dennoch eine gewisse Struktur aufweisen. Diese Daten sind flexibler als strukturierte Daten und können in Formaten wie JSON vorliegen. Teilweise strukturierte Daten werden häufig für den Datenaustausch zwischen Systemen verwendet und typischerweise in *NoSQL-Datenbanken* gespeichert.
-
-Beispiele für teilweise strukturierte Daten:
-
-- JSON-Dateien
-- Python Dictionary
+3. Unstrukturierte Daten haben keine definierte Struktur und umfassen oft Multimedia-Inhalte (bspw. Textdateien, Bilder, Videos, Audiodateien). Sie können in verschiedenen Formaten vorliegen und erfordern spezielle Techniken zur Analyse. Diese Daten können in *NoSQL-Datenbanken* gespeichert werden, wie MongoDB.
 
 
-Merkmale teilweise strukturierter Daten:
+## Datenbanksysteme
 
-- Flexibles Schema (Felder und Strukturen können variieren)
-- Hierarchische oder baumartige Struktur
-- Leicht menschen- und maschinenlesbar
+### Relationale Datenbanken
 
-## Unstrukturierte Daten
+Relationale Datenbanken verwenden Tabellen zur Organisation strukturierter Daten und nutzen SQL zur Datenmanipulation.
 
-Unstrukturierte Daten sind Daten, die keine feste Struktur oder kein definiertes Schema haben. Diese Daten können in verschiedenen Formaten vorliegen und umfassen oft Multimedia-Inhalte. Unstrukturierte Daten sind schwer zu analysieren, erfordern daher spezielle Techniken und Tools, um nützliche Informationen daraus zu gewinnen. Diese Daten können in *NoSQL-Datenbanken* gespeichert werden.
+- **Beispiele:** MySQL, PostgreSQL
+- **Merkmale:** Feste Schemata, Unterstützung von Transaktionen, Sicherstellung der Datenintegrität
 
-Beispiele für unstrukturierte Daten:
+### NoSQL-Datenbanken
 
-- Textdateien (z. B. E-Mails, Dokumente)
-- Bilder (z. B. JPEG, PNG)
-- Videos (z. B. MP4, AVI)
-- Audiodateien (z. B. MP3, WAV)
+NoSQL-Datenbanken bieten flexible Schemata für die Speicherung unstrukturierter und teilweise strukturierter Daten. Sie sind skalierbar und anpassungsfähig.
 
-Merkmale unstrukturierter Daten:
+- **Beispiele:** MongoDB
+- **Merkmale:** Flexibles Schema, horizontale Skalierbarkeit, Unterstützung verschiedener Datenspeichermodelle
 
-- Keine festgelegte Struktur oder Schema
-- Vielfältige Formate und Typen
-- Erfordert spezialisierte Techniken zur Analyse (z. B. Bild- und Spracherkennung)
+## Zusammenfassung
+
+Diese Einführung bietet einen Überblick über die verschiedenen Arten von Daten und die entsprechenden Datenbanksysteme. Strukturierte Daten werden in relationalen Datenbanken wie MySQL und PostgreSQL gespeichert, während unstrukturierte und teilweise strukturierte Daten häufig in NoSQL-Datenbanken wie MongoDB verwaltet werden. In den folgenden Kapiteln werden diese Themen im Detail behandelt.
