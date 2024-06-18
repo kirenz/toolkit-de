@@ -10,7 +10,7 @@ In diesem Kapitel werden wir diese Kategorien untersuchen und Beispiele für jed
 
 ## Strukturierte Daten
 
-Strukturierte Daten sind Daten, die in einem festen Format organisiert sind und leicht in Tabellenform dargestellt werden können. Diese Daten sind typischerweise in relationalen Datenbanken oder Tabellenkalkulationen gespeichert. Strukturierte Daten sind durch ihre klare Struktur leicht zu durchsuchen und zu analysieren.
+Strukturierte Daten sind Daten, die in einem festen Format organisiert sind und leicht in Tabellenform dargestellt werden können. Diese Daten sind typischerweise in *relationalen Datenbanken* oder Tabellenkalkulationen gespeichert. Strukturierte Daten sind durch ihre klare Struktur leicht zu durchsuchen und zu analysieren.
 
 Beispiele für strukturierte Daten:
 
@@ -26,7 +26,7 @@ Merkmale strukturierter Daten:
 
 ## Teilweise strukturierte Daten
 
-Teilweise strukturierte Daten sind Daten, die nicht in ein festes Schema passen, aber dennoch eine gewisse Struktur aufweisen. Diese Daten sind flexibler als strukturierte Daten und können in Formaten wie JSON vorliegen. Teilweise strukturierte Daten werden häufig für den Datenaustausch zwischen Systemen verwendet.
+Teilweise strukturierte Daten sind Daten, die nicht in ein festes Schema passen, aber dennoch eine gewisse Struktur aufweisen. Diese Daten sind flexibler als strukturierte Daten und können in Formaten wie JSON vorliegen. Teilweise strukturierte Daten werden häufig für den Datenaustausch zwischen Systemen verwendet und typischerweise in *NoSQL-Datenbanken* gespeichert.
 
 Beispiele für teilweise strukturierte Daten:
 
@@ -42,7 +42,7 @@ Merkmale teilweise strukturierter Daten:
 
 ## Unstrukturierte Daten
 
-Unstrukturierte Daten sind Daten, die keine feste Struktur oder kein definiertes Schema haben. Diese Daten können in verschiedenen Formaten vorliegen und umfassen oft Multimedia-Inhalte. Unstrukturierte Daten sind schwer zu analysieren, erfordern daher spezielle Techniken und Tools, um nützliche Informationen daraus zu gewinnen.
+Unstrukturierte Daten sind Daten, die keine feste Struktur oder kein definiertes Schema haben. Diese Daten können in verschiedenen Formaten vorliegen und umfassen oft Multimedia-Inhalte. Unstrukturierte Daten sind schwer zu analysieren, erfordern daher spezielle Techniken und Tools, um nützliche Informationen daraus zu gewinnen. Diese Daten können in *NoSQL-Datenbanken* gespeichert werden.
 
 Beispiele für unstrukturierte Daten:
 
