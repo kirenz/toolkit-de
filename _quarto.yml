@@ -39,9 +39,9 @@ book:
         - python/python-arbeitsbereich.qmd
         - python/python-basics.qmd
         - python/python-einrueckung.qmd
-        - python/python-funktionen.qmd
-        - python/python-kontrollstrukturen.qmd
-        - python/python-klassen.qmd
+       # - python/python-funktionen.qmd
+       # - python/python-kontrollstrukturen.qmd
+       # - python/python-klassen.qmd
 
     - part: vscode/index.qmd
       chapters:
@@ -56,35 +56,43 @@ book:
         - daten/excel.qmd
         - daten/json.qmd
 
-    - part: datenbanken/index.qmd
+    - part: daten/index.qmd
       chapters:
+        - text: "CSV-Daten"      
+          href: daten/csv.qmd 
         - text: "Relational"
-          href: datenbanken/relational.qmd
+          href: daten/relational.qmd
+        - text: "MySQL"
+          href: daten/mysql.qmd          
+        - text: "PostgreSQL"
+          href: daten/postgresql.qmd 
         - text: "NoSQL"
-          href: datenbanken/nosql.qmd          
+          href: daten/nosql.qmd
+        - text: "MongoDB"
+          href: daten/mongodb.qmd    
         
 
 
-    - part: mysql/index.qmd
-      chapters:
-        - mysql/mysql-installation.qmd 
-        - mysql/mysql-server.qmd
-        - mysql/mysql-basics.qmd
+    # - part: mysql/index.qmd
+    #   chapters:
+    #     - mysql/mysql-installation.qmd 
+    #     - mysql/mysql-server.qmd
+    #     - mysql/mysql-basics.qmd
 
-    - part: postgres/index.qmd
-      chapters:
-        - postgres/postgres-installation.qmd
-        - postgres/postgres-server.qmd
-        - postgres/postgres-basics.qmd
-        - postgres/postgres-python.qmd
+    # - part: postgres/index.qmd
+    #   chapters:
+    #     - postgres/postgres-installation.qmd
+    #     - postgres/postgres-server.qmd
+    #     - postgres/postgres-basics.qmd
+    #     - postgres/postgres-python.qmd
 
-    - part: mongodb/index.qmd
-      chapters:
-        - mongodb/mongodb-installation.qmd 
-        - mongodb/mongodb-start-stop.qmd
-        - mongodb/mongodb-basics.qmd  
-        - mongodb/mongodb-python.qmd  
-        - mongodb/mongodb-python-bilder.qmd  
+    # - part: mongodb/index.qmd
+    #   chapters:
+    #     - mongodb/mongodb-installation.qmd 
+    #     - mongodb/mongodb-start-stop.qmd
+    #     - mongodb/mongodb-basics.qmd  
+    #     - mongodb/mongodb-python.qmd  
+    #     - mongodb/mongodb-python-bilder.qmd  
 
     - part: github/index.qmd
       chapters:
