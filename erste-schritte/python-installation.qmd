@@ -37,7 +37,7 @@ Wenn Sie bereits Python oder eine Python-Distribution wie Anaconda installiert h
 Dies ist eine gängige Situation und kein Grund zur Sorge. Wir werden dieses Thema in einem späteren Kapitel erneut behandeln und besprechen, wie Sie mehrere Python-Versionen effektiv verwalten können, um sicherzustellen, dass Sie verschiedene Python-Umgebungen je nach Bedarf für Ihre Projekte auswählen und verwenden können.
 :::
 
-## Fehlerbehebung 
+Fehlerbehebung: 
 
 - **Python nicht erkannt**: Wenn die Kommandozeile den Befehl `python` nicht erkennt, liegt es möglicherweise daran, dass Python nicht zu Ihrem PATH hinzugefügt wurde. Überprüfen Sie die Installationsschritte noch einmal, um sicherzustellen, dass Sie die Option ausgewählt haben, Python zu Ihrem PATH hinzuzufügen.
 
