@@ -6,25 +6,6 @@ Daten sind die Grundlage der Datenwissenschaft. Sie ermöglichen es uns, Erkennt
 
 2. Teilweise strukturierte Daten besitzen keine feste Struktur, weisen jedoch eine gewisse Organisation auf (bspw. JSON). 
 
-3. Unstrukturierte Daten haben keine definierte Struktur und umfassen oft Multimedia-Inhalte (bspw. Textdateien, Bilder, Videos, Audiodateien). Sie können in verschiedenen Formaten vorliegen und erfordern spezielle Techniken zur Analyse. Diese Daten können in *NoSQL-Datenbanken* gespeichert werden, wie MongoDB.
+3. Unstrukturierte Daten haben keine definierte Struktur und umfassen oft Multimedia-Inhalte (bspw. Textdateien, Bilder, Videos, Audiodateien). Sie können in verschiedenen Formaten vorliegen und erfordern spezielle Techniken zur Analyse. Diese Daten können in NoSQL-Datenbanken gespeichert werden, wie MongoDB.
 
-
-## Datenbanksysteme
-
-### Relationale Datenbanken
-
-Relationale Datenbanken verwenden Tabellen zur Organisation strukturierter Daten und nutzen SQL zur Datenmanipulation.
-
-- **Beispiele:** MySQL, PostgreSQL
-- **Merkmale:** Feste Schemata, Unterstützung von Transaktionen, Sicherstellung der Datenintegrität
-
-### NoSQL-Datenbanken
-
-NoSQL-Datenbanken bieten flexible Schemata für die Speicherung unstrukturierter und teilweise strukturierter Daten. Sie sind skalierbar und anpassungsfähig.
-
-- **Beispiele:** MongoDB
-- **Merkmale:** Flexibles Schema, horizontale Skalierbarkeit, Unterstützung verschiedener Datenspeichermodelle
-
-## Zusammenfassung
-
-Diese Einführung bietet einen Überblick über die verschiedenen Arten von Daten und die entsprechenden Datenbanksysteme. Strukturierte Daten werden in relationalen Datenbanken wie MySQL und PostgreSQL gespeichert, während unstrukturierte und teilweise strukturierte Daten häufig in NoSQL-Datenbanken wie MongoDB verwaltet werden. In den folgenden Kapiteln werden diese Themen im Detail behandelt.
+Strukturierte Daten können in relationalen Datenbanken wie MySQL und PostgreSQL gespeichert, während unstrukturierte und teilweise strukturierte Daten häufig in NoSQL-Datenbanken wie MongoDB verwaltet werden. In den folgenden Kapiteln werden diese Themen im Detail behandelt.
