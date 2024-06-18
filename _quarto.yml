@@ -62,9 +62,9 @@ book:
           href: daten/csv.qmd
         - text: "JSON-Daten"           
           href: daten/json.qmd   
-        - text: "Relational"
+        - text: "Relationale Datenbanken"
           href: daten/relational.qmd
-        - text: "MySQL"
+        - text: "MySQ Datenbanken"
           href: daten/mysql.qmd          
         - text: "PostgreSQL"
           href: daten/postgresql.qmd 
