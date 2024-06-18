@@ -55,56 +55,56 @@
   {
     "objectID": "erste-schritte/python-installation.html",
     "href": "erste-schritte/python-installation.html",
-    "title": "2  Python",
+    "title": "2  Python installieren",
     "section": "",
     "text": "2.1 Installation\nPython kann direkt von der offiziellen Python-Website oder über einen Paketmanager wie Anaconda installiert werden, der zusätzliche Tools bietet und das Paketmanagement vereinfacht.\nDieses Kapitel konzentriert sich auf die Installation von Python direkt von der offiziellen Quelle.",
     "crumbs": [
       "Erste Schritte",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Python</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Python installieren</span>"
     ]
   },
   {
     "objectID": "erste-schritte/python-installation.html#installation",
     "href": "erste-schritte/python-installation.html#installation",
-    "title": "2  Python",
+    "title": "2  Python installieren",
     "section": "",
     "text": "2.1.1 Windows\n\nInstallationsprogramm herunterladen: Navigieren Sie zur Python-Website und laden Sie die neueste Version für Ihre Windows-Version herunter (normalerweise Windows-Installer 64-Bit).\nInstallationsprogramm ausführen: Klicken Sie mit der rechten Maustaste auf das heruntergeladene Installationsprogramm und wählen Sie “Als Administrator ausführen”. Stellen Sie sicher, dass Sie das Kästchen “Add Python 3.x to PATH” am unteren Rand des Installationsfensters markieren, um sicherzustellen, dass Python zu den Umgebungsvariablen Ihres Systems hinzugefügt wird (Dies ist entscheidend, damit Python von jedem Verzeichnis im System aus über die Kommandozeile aufgerufen werden kann. Ohne diese Einstellung müssten Sie den vollständigen Pfad zur Python-Installation angeben, um Python auszuführen, was unpraktisch und fehleranfällig ist).\nAnpassung der Installation (optional): Sie können die Installation anpassen, indem Sie auf “Customize installation” klicken. Dies ermöglicht es Ihnen, spezifische Funktionen wie Dokumentation, pip, Tests usw. auszuwählen.\nInstallation starten: Klicken Sie auf “Install Now”, um den Installationsvorgang zu starten.\n\n\n\n2.1.2 Mac\n\nInstallationsprogramm herunterladen: Navigieren Sie zur Python-Website und laden Sie die neueste Version herunter.\nPython installieren: Öffnen Sie die heruntergeladene .pkg-Datei und folgen Sie den Anweisungen zur Installation von Python. Der Installationsassistent führt Sie durch die notwendigen Schritte.",
     "crumbs": [
       "Erste Schritte",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Python</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Python installieren</span>"
     ]
   },
   {
     "objectID": "erste-schritte/python-installation.html#überprüfung-der-installation",
     "href": "erste-schritte/python-installation.html#überprüfung-der-installation",
-    "title": "2  Python",
+    "title": "2  Python installieren",
     "section": "2.2 Überprüfung der Installation",
     "text": "2.2 Überprüfung der Installation\nNach der Installation überprüfen Sie, ob Python korrekt installiert wurde, indem Sie eine Kommandozeile öffnen (Terminal auf macOS, Eingabeaufforderung oder PowerShell auf Windows) und eingeben:\npython --version\nDieser Befehl sollte die Version von Python anzeigen, die Sie installiert haben.\n\n\n\n\n\n\nUnterschiedliche Python-Version\n\n\n\n\n\nWenn Sie bereits Python oder eine Python-Distribution wie Anaconda installiert haben, kann das Ausführen von python --version in Ihrem Terminal eine andere Python-Version anzeigen als die, die Sie gerade installiert haben. Diese Abweichung tritt auf, weil Ihr System mehrere Python-Installationen gleichzeitig verwalten kann. Der Terminalbefehl wählt die Version, die zuerst in der PATH-Variable des Systems erscheint, was möglicherweise nicht die zuletzt installierte Version ist.\nDies ist eine gängige Situation und kein Grund zur Sorge. Wir werden dieses Thema in einem späteren Kapitel erneut behandeln und besprechen, wie Sie mehrere Python-Versionen effektiv verwalten können, um sicherzustellen, dass Sie verschiedene Python-Umgebungen je nach Bedarf für Ihre Projekte auswählen und verwenden können.",
     "crumbs": [
       "Erste Schritte",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Python</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Python installieren</span>"
     ]
   },
   {
     "objectID": "erste-schritte/python-installation.html#fehlerbehebung",
     "href": "erste-schritte/python-installation.html#fehlerbehebung",
-    "title": "2  Python",
+    "title": "2  Python installieren",
     "section": "2.3 Fehlerbehebung",
     "text": "2.3 Fehlerbehebung\n\nPython nicht erkannt: Wenn die Kommandozeile den Befehl python nicht erkennt, liegt es möglicherweise daran, dass Python nicht zu Ihrem PATH hinzugefügt wurde. Überprüfen Sie die Installationsschritte noch einmal, um sicherzustellen, dass Sie die Option ausgewählt haben, Python zu Ihrem PATH hinzuzufügen.\nBerechtigungsfehler während der Installation: Dies tritt normalerweise unter Windows auf und kann behoben werden, indem das Installationsprogramm als Administrator ausgeführt wird.",
     "crumbs": [
       "Erste Schritte",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Python</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Python installieren</span>"
     ]
   },
   {
     "objectID": "erste-schritte/python-installation.html#python-idle",
     "href": "erste-schritte/python-installation.html#python-idle",
-    "title": "2  Python",
+    "title": "2  Python installieren",
     "section": "2.4 Python IDLE",
     "text": "2.4 Python IDLE\nPython IDLE ist eine einfache IDE (Integrated Development Environment), die mit der Programmiersprache Python installiert wird. Sie ist darauf ausgelegt, das Schreiben und Ausführen von Python-Code effizient zu unterstützen.\nIDLE ist nach Eric Idle benannt, einem Mitglied der Monty Python Comedy-Gruppe, von der auch Python seinen Namen hat.\n\n2.4.1 Python IDLE starten\nNach der Installation von Python starten Sie IDLE über das Suchmenü Ihres Betriebssystems:\n\nWindows: Öffnen Sie das Startmenü und geben Sie IDLE ein.\nMacOS: Verwenden Sie die Spotlight-Suche (Cmd + Leertaste), geben Sie IDLE ein und drücken Sie Enter.\nLinux: Finden Sie IDLE im Anwendungsmenü oder führen Sie idle im Terminal aus.\n\n\n\n2.4.2 Einfache Berechnungen\nDas IDLE-Shell-Fenster fungiert als interaktiver Interpreter, der jede Codezeile sofort ausführt, wenn Sie Enter drücken.\nDirekt in der IDLE-Shell können Sie arithmetische Ausdrücke wie 2 + 3 eingeben und Enter drücken, um sofort die Ergebnisse zu sehen.\nDiese Funktion macht IDLE ideal für schnelle Berechnungen und Experimente mit den mathematischen Fähigkeiten von Python, ohne dass ein Skript gespeichert oder ausgeführt werden muss.\n\n\n2.4.3 Python-Skripte\nAls nächstes erstellen und führen wir ein einfaches Python-Skript aus:\n\nEine neue Datei öffnen: Navigieren Sie in IDLE zu Datei &gt; Neue Datei, um ein Editor-Fenster zu öffnen.\nGeben Sie Ihren Code ein: Geben Sie Folgendes in das neue Editor-Fenster ein:\nprint(\"Hallo, Python!\")\nSpeichern Sie Ihr Skript: Speichern Sie die Datei über Datei &gt; Speichern unter... und benennen Sie sie hello.py. Idealerweise speichern Sie sie in Ihrem Verzeichnis code innerhalb Ihres toolkit-labs-Ordners (siehe dazu die Erklärung zur Ordnerstruktur).\nFühren Sie Ihr Skript aus: Drücken Sie F5 oder gehen Sie zu Ausführen &gt; Modul ausführen, um Ihr Skript auszuführen. Die Ausgabe Hallo, Python! sollte in der IDLE-Shell erscheinen.\n\nModifizieren Sie nun Ihr Skript mit verschiedenen Nachrichten. Sie können auch help(print) oder help() in die IDLE-Shell eingeben, um die umfangreiche Hilfedokumentation von Python zu erkunden und andere Funktionen kennenzulernen.\n\n\n2.4.4 Nächste Schritte\nPython IDLE bietet eine Einführung in die Programmierung mit Python und eine einfache Oberfläche für die Codeentwicklung und -ausführung. In einem der folgenden Abschnitte werden wir fortschrittlichere IDEs wie Visual Studio Code erkunden, die größere Projekte mit zusätzlichen Funktionen unterstützen.\nIm nächsten Kapitel wird die Installation und grundlegende Nutzung von Anaconda behandelt, einer beliebten Python-Distribution, die einen robusten Paketmanager und eine Suite von vorinstallierten Bibliotheken umfasst, die häufig in der Datenwissenschaft und im maschinellen Lernen verwendet werden.",
     "crumbs": [
       "Erste Schritte",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Python</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Python installieren</span>"
     ]
   },
   {
@@ -242,11 +242,11 @@
   {
     "objectID": "python/index.html",
     "href": "python/index.html",
-    "title": "Python einrichten",
+    "title": "Python",
     "section": "",
     "text": "Python ist eine objektorientierte Programmiersprache, was bedeutet, dass es Daten als Objekte darstellt, die sowohl Informationen als auch Funktionalität enthalten.\nEin wichtiges Merkmal von Python ist, dass es interpretiert und nicht kompiliert wird. Der Interpreter führt den Code Zeile für Zeile aus, was besonders vorteilhaft für Aufgaben wie Datenanalyse und die Erstellung interaktiver, ausführbarer Dokumente wie Jupyter-Notebooks ist.\n\n\n\n\n\n\nPython ist eine interpretierte Sprache, bei der der Interpreter ein Programm durch die Ausführung einer Anweisung nach der anderen ausführt.\n\n\n\nÜber diese Kernfunktionalität hinaus bietet Python ein großes Ökosystem an Drittanbieter-Tools und -Modulen, wie das Jupyter-Notebook, die spezialisierte Funktionen für die Datenwissenschaft bereitstellen.",
     "crumbs": [
-      "Python einrichten"
+      "Python"
     ]
   },
   {
@@ -256,7 +256,7 @@
     "section": "",
     "text": "6.1 Module\nModule sind einzelne Python-Dateien, die Definitionen und Implementierungen von Funktionen und Variablen enthalten, die in verschiedenen Programmen wiederverwendet werden können.\nDiese Module helfen, den Code modular zu gestalten, was seine Wartbarkeit und Lesbarkeit verbessert.\nHier sind einige wichtige Standardmodule und deren häufige Anwendungen:",
     "crumbs": [
-      "Python einrichten",
+      "Python",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Bibliotheken</span>"
     ]
   },
@@ -267,7 +267,7 @@
     "section": "",
     "text": "Variablen: Dies sind benannte Speicherorte, die Daten im Speicher speichern. Zum Beispiel speichert x = 5 die Ganzzahl 5 in einer Variable namens x.\nFunktionen: Funktionen sind wiederverwendbare Codeabschnitte, die eine bestimmte Aktion ausführen.\n\n\n\n\n\n\n\n\nKüchen-Analogie für Module\n\n\n\n\n\nStellen Sie sich Python wie eine gut ausgestattete Küche vor, in der Sie verschiedene Gerichte zubereiten können. Beim Kochen werden spezifische Werkzeuge und Zutaten für bestimmte Aufgaben oder Rezepte ausgewählt. Ähnlich repräsentieren in Python diese Werkzeuge und Zutaten Module—Sammlungen vorgefertigter Funktionen (Rezepte), die Sie zur Durchführung allgemeiner Aufgaben verwenden können, wie Dateiverwaltung mit os und shutil oder Datumsmanipulationen mit datetime.\nIn dieser Analogie: - Die Küche ist Ihre Python-Umgebung. - Rezeptbücher sind Python-Module, die jeweils Sets von Rezepten (Funktionen) für spezifische Aufgaben enthalten. - Zutaten stellen Datentypen und Variablen dar. - Kochutensilien sind Methoden aus den Modulen, die Ihnen helfen, die Zutaten zu manipulieren.\n\n\n\n\n\nos: Bietet Funktionen zur Interaktion mit dem Betriebssystem.\ndatetime: Behandelt Datums- und Zeitoperationen.\nmath: Enthält mathematische Funktionen.",
     "crumbs": [
-      "Python einrichten",
+      "Python",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Bibliotheken</span>"
     ]
   },
@@ -278,7 +278,7 @@
     "section": "6.2 Pakete",
     "text": "6.2 Pakete\nPakete in Python sind Verzeichnisse von Python-Modulen mit einer speziellen Datei namens __init__.py. Sie ermöglichen es Entwicklern, mehrere Module zusammenzupacken, wodurch es einfacher wird, eine Sammlung von Modulen als eine Einheit zu verwalten und zu verteilen.\n\n\n\n\n\n\nKüchen-Analogie für Pakete\n\n\n\n\n\nWenn ein Modul einem Rezeptbuch ähnelt, ist ein Paket vergleichbar mit einer Sammlung von Rezeptbüchern, die möglicherweise eine komplette Küche oder eine umfassende Sammlung von Kochstilen darstellen. Jedes Buch (Modul) konzentriert sich auf einen bestimmten Bereich, aber zusammen bieten sie eine breite Palette kulinarischer Optionen.\n\n\n\nFür Datenwissenschaftler und Entwickler sind einige wesentliche Pakete:\n\nnumpy: Paket für numerische Berechnungen.\npandas: Datenmanipulation und -analyse.\nmatplotlib, seaborn und altair: Datenvisualisierung.\nscikit-learn: Implementiert eine breite Palette von Machine-Learning-Algorithmen.",
     "crumbs": [
-      "Python einrichten",
+      "Python",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Bibliotheken</span>"
     ]
   },
@@ -289,7 +289,7 @@
     "section": "6.3 Bibliotheken",
     "text": "6.3 Bibliotheken\nEine Bibliothek ist eine Sammlung von Paketen und Modulen, die zusammen eine umfangreiche Funktionalität bereitstellen. Bibliotheken bieten oft Lösungen für spezifische Problemfelder und können viele Module und Pakete umfassen.\n\n\n\n\n\n\nKüchen-Analogie für Bibliotheken\n\n\n\n\n\nIn unserer Küchenanalogie wäre eine Bibliothek eine komplette Küche, ausgestattet mit einer Vielzahl von Werkzeugen und Zutaten für verschiedene Kochstile und -techniken. Es ist eine umfassende Sammlung, die Ihnen ermöglicht, nahezu jedes Gericht zu kochen, das Sie sich vorstellen können.\n\n\n\nEinige bekannte Python-Bibliotheken umfassen:\n\nSciPy: Bietet wissenschaftliche und technische Berechnungen, baut auf numpy auf.\nTensorFlow und PyTorch: Bibliotheken für maschinelles Lernen und neuronale Netze.\nDjango und Flask: Web-Frameworks für die Entwicklung von Webanwendungen.",
     "crumbs": [
-      "Python einrichten",
+      "Python",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Bibliotheken</span>"
     ]
   },
@@ -300,7 +300,7 @@
     "section": "6.4 Vorteile",
     "text": "6.4 Vorteile\nVorteile der Verwendung von Modulen, Paketen und Bibliotheken:\n\nKomplexitätsreduktion: Durch Kapselung von Code machen Module und Pakete komplexe Systeme einfacher zu verwalten.\nErhöhte Wiederverwendbarkeit: Sie fördern die Wiederverwendung von Code, sodass Sie ihn einmal schreiben und überall verwenden können.\nVerbesserte Organisation: Sie helfen dabei, den Code logischer zu strukturieren, was die Wartung und das Verständnis erleichtert.",
     "crumbs": [
-      "Python einrichten",
+      "Python",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Bibliotheken</span>"
     ]
   },
@@ -311,7 +311,7 @@
     "section": "6.5 Praktisches Beispiel",
     "text": "6.5 Praktisches Beispiel\nHier sehen Sie, wie Sie ein Modul verwenden können, indem Sie es in Ihr Python-Skript importieren:\n\n# Das Modul wird importiert\nimport math\n\n# Verwendung der sqrt-Funktion aus dem math-Modul zur Berechnung der Quadratwurzel\n# Das Ergebnis wird in der Variablen result gespeichert\nresult = math.sqrt(16)\nprint(result)  # Ausgabe: 4.0\n\n4.0\n\n\nDiese Struktur der Verwendung von Modulen, Paketen und Bibliotheken hilft nicht nur dabei, Ihren Code sauber und verständlich zu halten, sondern verbessert auch die Zusammenarbeit, indem sie Teammitgliedern ermöglicht, ihre Arbeit einfach zu teilen und zu integrieren.",
     "crumbs": [
-      "Python einrichten",
+      "Python",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Bibliotheken</span>"
     ]
   },
@@ -322,7 +322,7 @@
     "section": "",
     "text": "7.1 Umgebung erstellen\nUm eine virtuelle Umgebung einzurichten, befolgen Sie diese Anweisungen basierend auf Ihrem Betriebssystem:\nDas Erstellen einer separaten Umgebung für Python-Grundlagen stellt sicher, dass Ihr Arbeitsbereich isoliert und stabil bleibt.",
     "crumbs": [
-      "Python einrichten",
+      "Python",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Umgebungen</span>"
     ]
   },
@@ -333,7 +333,7 @@
     "section": "",
     "text": "Zugriff auf die Eingabeaufforderung oder das Terminal:\n\nWindows-Benutzer: Öffnen Sie die Anaconda-Eingabeaufforderung über das Startmenü.\nmacOS-Benutzer: Öffnen Sie das Terminal unter Programme &gt; Dienstprogramme oder durch die Suche nach “Terminal”.\n\nErstellen der Umgebung:\n\nVerwenden Sie den folgenden Befehl, um eine neue Conda-Umgebung namens basics mit Python 3.11 und pip zu erstellen:\n\nconda create --name basics python=3.11 pip\n\nGeben Sie bei Proceed ([y]/n)?ein y ein, um die Installtion zu starten.\n\n\n\n\n\n\n\npip ist ein Paketverwaltungstool für Python. Es steht für “Pip Installs Packages” oder “Pip Installs Python” und wird verwendet, um Python-Pakete aus dem Python Package Index (PyPI) zu installieren und zu verwalten. Mit pip kann man Pakete installieren, aktualisieren und deinstallieren.\n\n\n\nAktivieren der Umgebung:\n\nSobald die Umgebung erstellt ist, aktivieren Sie sie mit:\n\nconda activate basics\n\nDie Eingabeaufforderung ändert sich, um anzuzeigen, dass die Umgebung basics aktiv ist.\n\nInstallieren der benötigten Bibliotheken:\n\nMit aktivierter Umgebung installieren Sie die Bibliotheken:\n\npip install numpy pandas openpyxl matplotlib seaborn altair jupyter ipykernel\n\n\n\n\n\n\nErklärung der Pakete\n\n\n\n\n\n\nnumpy: Eine leistungsfähige Bibliothek für numerische Berechnungen.\npandas: Ein wichtiges Tool zur Datenmanipulation und -analyse.\nopenpyxl: Ermöglicht das Lesen und Schreiben von Excel-Dateien (.xlsx) und wird oft in Verbindung mit Pandas verwendet, um Excel-Daten zu bearbeiten.\nmatplotlib: Eine weitverbreitete Bibliothek zur Erstellung von Visualisierungen in Python.\nseaborn: Aufbauend auf matplotlib, bietet diese Bibliothek statistische Datenvisualisierungen.\naltair: Eine Visualisierungsbibliothek, die interaktive Grafiken erstellt.\njupyter: Ein Open-Source-Webanwendungs-Tool, das es ermöglicht, Dokumente zu erstellen und zu teilen, die Live-Code, Gleichungen, Visualisierungen und narrativen Text enthalten.\nipykernel: Ermöglicht die Integration von Jupyter Notebooks mit dem IPython-Kernel, was das Ausführen von Python-Code innerhalb der Jupyter-Umgebung unterstützt.\n\n\n\n\n\nDieser Befehl ruft alle Pakete von PyPI ab und installiert sie.\n\n\n\n\n\n\n\nObwohl Sie Pakete auch mit conda install installieren können, verwenden wir ausschließlich pip, um mögliche Konflikte zwischen Conda- und Pip-installierten Paketen zu vermeiden. Dieser Ansatz stellt eine konsistente und zuverlässige Verwaltung von Abhängigkeiten in Ihrer Python-Umgebung sicher.\n\n\n\nÜberprüfen der Paketinstallation:\n\nNach der Installation öffnen Sie ein Jupyter Notebook und überprüfen, ob die Pakete verfügbar sind, indem Sie sie in Python importieren.\n\n\n\n\n\n\n\nUm die Nutzung der Funktionen und Methoden der Bibliotheken in Ihrem Code zu erleichtern, importieren wir sie häufig mit kürzeren, standardisierten Aliasen (die Verwendung dieser Standard-Aliase verbessert die Lesbarkeit des Codes und reduziert den Schreibaufwand).\n\n\n\nimport numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport seaborn as sns\nimport altair as alt\n\nWenn keine Fehler auftreten, wurden die Bibliotheken korrekt installiert.\n\n\n\n\n\n\n\nErklärung der Pakete\n\n\n\n\n\nNumPy (np): Der Alias np wird weit verbreitet verwendet und ermöglicht einen prägnanten Zugriff auf NumPys Funktionen für numerische Berechnungen.\nPandas (pd): Der Alias pd bietet eine Kurzform für Pandas’ leistungsstarke Datenmanipulationstools.\nMatplotlib (plt): Der Alias plt vereinfacht das Aufrufen der Funktionen von Matplotlib zum Plotten, Erstellen von Abbildungen und Anpassen von Grafiken.\nSeaborn (sns): Der Alias sns erleichtert den Zugriff auf Seaborns statistische Datenvisualisierungstools, die nahtlos mit Matplotlib integriert sind.\nAltair (alt): Der Alias alt ermöglicht einen schnellen Zugriff auf Altairs Visualisierungssyntax für interaktives Plotten.\n\n\n\nDeaktivieren der Umgebung:\n\nWenn Sie fertig sind oder zur Basisumgebung zurückkehren möchten, deaktivieren Sie die aktuelle Umgebung:\n\nconda deactivate",
     "crumbs": [
-      "Python einrichten",
+      "Python",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Umgebungen</span>"
     ]
   },
@@ -344,7 +344,7 @@
     "section": "",
     "text": "8.1 Anaconda Navigator starten",
     "crumbs": [
-      "Python einrichten",
+      "Python",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Arbeitsbereich</span>"
     ]
   },
@@ -355,7 +355,7 @@
     "section": "",
     "text": "Anaconda Navigator starten:\n\nÖffnen Sie den Anaconda Navigator aus dem Anwendungsordner auf macOS oder dem Startmenü auf Windows.\n\nJupyter Notebook öffnen:\n\nFinden Sie im Anaconda Navigator das Jupyter Notebook und klicken Sie auf ‘Launch’, um es in Ihrem Webbrowser zu öffnen.",
     "crumbs": [
-      "Python einrichten",
+      "Python",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Arbeitsbereich</span>"
     ]
   },
@@ -366,7 +366,7 @@
     "section": "8.2 Jupyter Notebook einrichten",
     "text": "8.2 Jupyter Notebook einrichten\n\nNavigieren Sie in der Web-Oberfläche von Jupyter zum code-Verzeichnis (siehe die Erklärung zur Ordnerstruktur).\nKlicken Sie oben rechts auf “New” und wählen Sie “Notebook”, um ein neues Notebook zu erstellen.\nNun öffnet sich ein Fenster in welchem Sie den Kernel (eine Python-Instanz) auswählen können. Wählen Sie die eben installierte basics-Umgebung aus (siehe diese Anleitung).\nErstellen Sie in diesem Notebook eine neue Markdown-Zelle, um dem Notebook einen Titel zu geben (z.B. Python basics):\n# Python basics\nSpeichern Sie das Notebook:\n\nSpeichern Sie Ihr Notebook im code Ordner (siehe unsere Ordnerstruktur Erklärung) mit einem aussagekräftigen Namen (z.B. python-basics.ipynb).",
     "crumbs": [
-      "Python einrichten",
+      "Python",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Arbeitsbereich</span>"
     ]
   },
@@ -377,7 +377,7 @@
     "section": "",
     "text": "9.1 Bibliotheken importieren\nDas Importieren von Bibliotheken ist unerlässlich, um zusätzliche Python-Funktionen nutzen zu können. Wir importieren sie am Anfang der Datei, um Übersichtlichkeit und Effizienz zu gewährleisten. Ein Alias (ein kurzer Name) erleichtert die Referenzierung im gesamten Code.\nFügen Sie den folgenden Code in eine neue Codezelle direkt unter Ihrem Titel ein und führen Sie ihn aus:\n# Bibliotheken importieren (am Anfang)\nimport numpy as np\nimport pandas as pd\nimport altair as alt",
     "crumbs": [
-      "Python einrichten",
+      "Python",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Grundlagen</span>"
     ]
   },
@@ -388,7 +388,7 @@
     "section": "9.2 Kommentare einfügen",
     "text": "9.2 Kommentare einfügen\nIn Python kann man Kommentare im Code schreiben, indem man das Zeichen # verwendet. Alles, was nach diesem Zeichen auf derselben Zeile steht, wird vom Python-Interpreter ignoriert. Kommentare sind nützlich, um den Code zu dokumentieren, Erklärungen hinzuzufügen oder vorübergehend Teile des Codes zu deaktivieren.",
     "crumbs": [
-      "Python einrichten",
+      "Python",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Grundlagen</span>"
     ]
   },
@@ -399,7 +399,7 @@
     "section": "9.3 Variablen und Datentypen",
     "text": "9.3 Variablen und Datentypen\nVariablen werden verwendet, um verschiedene Arten von Daten in Python zu speichern. Datentypen definieren die Natur dieser Daten und beeinflussen, wie sie verwendet werden können.\nFügen Sie eine neue Codezelle hinzu, kopieren Sie dann den unten angegebenen Code in diese Zelle und führen Sie die Zelle anschließend aus.\nBeispielcode:\n\n# Variablen zuweisen (mit beschreibenden Namen)\nname = \"Alice\"  # String für den Namen einer Person\nage = 30  # Integer für das Alter\nheight = 5.5  # Float für die Größe in Fuß\nnumbers = [1, 2, 3]  # Liste von ganzen Zahlen\nperson = {\"name\": \"Alice\", \"age\": 30}  # Wörterbuch für Personendaten\n\nErklärung:\n\nname ist ein String, der eine Zeichenfolge speichert, die einen Namen darstellt.\nage ist eine Integer-Variable, die eine ganze Zahl darstellt.\nheight ist ein Float, der eine Zahl mit einem Dezimalpunkt darstellt.\nnumbers ist eine Liste, die eine geordnete Sammlung von Elementen darstellt.\nperson ist ein Dictionary (Wörterbuch), das aus Schlüssel-Wert-Paaren besteht und mehrere Attribute speichern kann.\n\nUm die in diesen Variablen gespeicherten Werte zu überprüfen, können Sie die print-Funktion verwenden:\n\nprint(name)  # Ausgabe: Alice\nprint(age)  # Ausgabe: 30\nprint(numbers)  # Ausgabe: [1, 2, 3]\nprint(person)  # Ausgabe: {'name': 'Alice', 'age': 30}\n\nAlice\n30\n[1, 2, 3]\n{'name': 'Alice', 'age': 30}",
     "crumbs": [
-      "Python einrichten",
+      "Python",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Grundlagen</span>"
     ]
   },
@@ -410,7 +410,7 @@
     "section": "9.4 Grundlegende Operatoren und Berechnungen",
     "text": "9.4 Grundlegende Operatoren und Berechnungen\nOperatoren ermöglichen Berechnungen, Vergleiche und logische Operationen.\nBeispielcode:\n\n# Variablen erzeugen\nlength = 10\nwidth = 5\n\nBerechnung der Fläche und des Umfangs:\n\narea = length * width  # Multiplikation\nperimeter = 2 * (length + width)  # Addition und Multiplikation\n\n# Umfang anzeigen\nperimeter\n\n30\n\n\n\nlength und width werden multipliziert, um die area zu berechnen.\nperimeter wird berechnet, indem length und width addiert und dann mit 2 multipliziert werden.\n\nVergleichsoperationen:\n\nis_square = length == width  # Überprüfen, ob Länge und Breite gleich sind\n\nis_square\n\nFalse\n\n\n\nis_square überprüft, ob die beiden Seiten gleich lang sind.\n\nLogische Operationen:\n\nis_large_rectangle = (area &gt; 20) and (perimeter &gt; 10)  # Logisches UND\n\nis_large_rectangle\n\nTrue\n\n\n\nis_large_rectangle verwendet logische Operatoren, um festzustellen, ob das Rechteck sowohl eine große Fläche als auch einen großen Umfang hat.",
     "crumbs": [
-      "Python einrichten",
+      "Python",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Grundlagen</span>"
     ]
   },
@@ -421,7 +421,7 @@
     "section": "9.5 Arbeiten mit DataFrames",
     "text": "9.5 Arbeiten mit DataFrames\nEin DataFrame ist eine zweidimensionale tabellarische Datenstruktur, die von Pandas bereitgestellt wird. Es ermöglicht eine effiziente Datenmanipulation, ähnlich wie ein Tabellenblatt oder eine SQL-Tabelle.\nHier ein Beispiel. Wir bereiten zunächst die Daten vor:\n\ndata = { \n         \"Numbers\": [1, 2, 3, 4, 5], \n         \"Squares\": [1, 4, 9, 16, 25]\n}\n\n\nDas Wörterbuch data enthält zwei Listen: Zahlen und deren Quadrate.\n\nErstellen eines DataFrame mit Pandas:\n\ndf = pd.DataFrame(data)\n\n\nDer DataFrame df wird aus diesem Wörterbuch mit der Funktion pd.DataFrame erstellt, die die Daten in Zeilen und Spalten organisiert.\n\nDen DataFrame inspizieren (dafür verwenden wir nicht print())\n\ndf\n\n\n\n\n\n\n\n\nNumbers\nSquares\n\n\n\n\n0\n1\n1\n\n\n1\n2\n4\n\n\n2\n3\n9\n\n\n3\n4\n16\n\n\n4\n5\n25\n\n\n\n\n\n\n\n\nDas Eingeben von df in eine Jupyter Notebook-Zelle zeigt den DataFrame in tabellarischer Form an.",
     "crumbs": [
-      "Python einrichten",
+      "Python",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Grundlagen</span>"
     ]
   },
@@ -432,7 +432,7 @@
     "section": "9.6 Methoden verstehen",
     "text": "9.6 Methoden verstehen\nEine Methode ist eine Funktion, die mit einem Objekt (wie einem DataFrame, einer Liste oder einem String) verknüpft ist und über die Punktnotation (.) aufgerufen wird. Dies erleichtert die Manipulation des Objekts und das Abrufen von Informationen.\nBeispielcode:\ndf.head() ist eine Methode, welche die ersten paar Zeilen eines DataFrames anzeigt, um die Daten zu zeigen:\n\ndf.head() \n\n\n\n\n\n\n\n\nNumbers\nSquares\n\n\n\n\n0\n1\n1\n\n\n1\n2\n4\n\n\n2\n3\n9\n\n\n3\n4\n16\n\n\n4\n5\n25\n\n\n\n\n\n\n\ndf.describe() liefert zusammenfassende Statistiken wie Mittelwert, Anzahl und Standardabweichung. Zusätzlich verwenden wir die Methode .round(2), um die Werte auf zwei Dezimalstellen zu runden:\n\ndf.describe().round(2) \n\n\n\n\n\n\n\n\nNumbers\nSquares\n\n\n\n\ncount\n5.00\n5.00\n\n\nmean\n3.00\n11.00\n\n\nstd\n1.58\n9.67\n\n\nmin\n1.00\n1.00\n\n\n25%\n2.00\n4.00\n\n\n50%\n3.00\n9.00\n\n\n75%\n4.00\n16.00\n\n\nmax\n5.00\n25.00\n\n\n\n\n\n\n\nAllgemeines Methodenkonzept:\n\nObjekt: Eine Entität, die Daten und Funktionalität enthält (z.B. DataFrame, Liste oder String).\nMethode: Eine Funktion, die mit einem Objekt verknüpft ist.\nPunktnotation (.): Wird verwendet, um eine Methode auf einem Objekt aufzurufen.",
     "crumbs": [
-      "Python einrichten",
+      "Python",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Grundlagen</span>"
     ]
   },
@@ -443,7 +443,7 @@
     "section": "9.7 Daten visualisieren",
     "text": "9.7 Daten visualisieren\nNachdem Sie die Struktur eines DataFrames verstanden haben, können Sie dessen Daten mit Altair visualisieren.\nBeispielcode:\n\n# Das Diagramm erstellen\nalt.Chart(df).mark_point().encode(\n    x='Numbers',\n    y='Squares'\n)\n\n\n\n\n\n\n\nErklärung:\n\nAltair-Bibliothek: Eine deklarative Visualisierungsbibliothek, die den Prozess der Erstellung von Diagrammen und Grafiken vereinfacht.\nalt.Chart(df): Erstellt ein neues Diagrammobjekt aus dem DataFrame df.\nmark_point(): Gibt den Diagrammtyp an (in diesem Fall ein Streudiagramm).\nencode: Ordnet DataFrame-Spalten Diagrammattributen zu.\n\nx='Numbers': Legt die horizontale Achse auf die Spalte Numbers fest.\ny='Squares': Legt die vertikale Achse auf die Spalte Squares fest.\n\n\nDiese prägnante Syntax ermöglicht die schnelle Erstellung und Anpassung von Visualisierungen.",
     "crumbs": [
-      "Python einrichten",
+      "Python",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Grundlagen</span>"
     ]
   },
@@ -454,7 +454,7 @@
     "section": "",
     "text": "10.1 Richtige Einrückung\nBeispielcode für die Erzeugung einer Funktion (wir behandeln Funktionen an einer anderen Stelle des Buches im Detail):\n# Funktion wird erzeugt\ndef compute_area(width, height):\n    # Dies ist der Anfang eines Funktionsblocks\n    area = width * height \n    return area \n\n#Aufrufen der Funktion\nprint(compute_area(5, 10))  # Diese Zeile ist nicht eingerückt, was zeigt, dass sie nicht Teil der Funktion ist\n\n50\nErläuterung:",
     "crumbs": [
-      "Python einrichten",
+      "Python",
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>Einrückung</span>"
     ]
   },
@@ -465,7 +465,7 @@
     "section": "",
     "text": "Die Funktion compute_area beginnt mit einem Doppelpunkt (:) und der nachfolgende Code ist vier Leerzeichen eingerückt.\nSowohl die Berechnung von area als auch die return-Anweisung sind aufgrund ihrer Einrückung Teil der Funktion.\nDie print-Anweisung ist relativ zur Funktionsdefinition nicht eingerückt, was zeigt, dass sie außerhalb der Funktion steht.",
     "crumbs": [
-      "Python einrichten",
+      "Python",
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>Einrückung</span>"
     ]
   },
@@ -476,7 +476,7 @@
     "section": "10.2 Falsche Einrückung",
     "text": "10.2 Falsche Einrückung\nBeispielcode mit falscher Einrückung:\ndef calculate_percentage(total, amount):\n    if total &gt; 0:\n    percentage = (amount / total) * 100 \n    return percentage  \nelse:\n    return 0\nIndentationError: expected an indented block after 'if' statement on line 3\nErläuterung:\n\nFehler: Das obige Beispiel führt zu einem IndentationError, weil die Einrückungsebenen nicht konsistent sind.\nZeile 3: Die Zeile percentage = (amount / total) * 100 soll ausgeführt werden, wenn die Bedingung total &gt; 0 wahr ist. Sie ist jedoch nicht eingerückt, was unklar macht, ob sie innerhalb der if-Anweisung oder außerhalb ausgeführt werden soll.\nZeilen 4 und 5: Die return percentage-Anweisung sollte eingerückt werden, um unter die if-Bedingung zu fallen, was zeigt, dass sie Teil des if-Blocks ist. Die else:-Zeile ist ebenfalls nicht korrekt mit der if-Zeile ausgerichtet, was zu einem Syntaxfehler führt.\n\nKorrigierte Version:\n\ndef calculate_percentage(total, amount):\n    if total &gt; 0:\n        percentage = (amount / total) * 100  \n        return percentage  \n    else:\n        return 0\n\nWas dies korrigiert:\n\nDie Zeile percentage = (amount / total) * 100 ist jetzt korrekt unter die if-Bedingung eingerückt, was klar anzeigt, dass sie zu dem Block gehört, der ausgeführt wird, wenn total &gt; 0.\nDie return percentage-Anweisung ist ebenfalls korrekt eingerückt, um zu zeigen, dass sie Teil der if-Bedingung ist. Der else-Block ist mit der if-Anweisung ausgerichtet, wodurch die Struktur konsistent bleibt.\n\nDieses Beispiel zeigt, wie falsche Einrückung zu Syntaxfehlern und logischen Fehlern in Python führen kann. Es ist entscheidend, eine konsistente Einrückungsebene im gesamten Codeblock beizubehalten, um Klarheit und Funktionalität des Codes sicherzustellen. Indem Sie diese Praktiken einhalten, verhindern Sie Fehler und machen Ihren Code leichter lesbar.",
     "crumbs": [
-      "Python einrichten",
+      "Python",
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>Einrückung</span>"
     ]
   },
