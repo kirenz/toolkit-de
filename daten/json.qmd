@@ -1,4 +1,4 @@
-# JSON
+# JSON-Dateien
 
 JSON (JavaScript Object Notation) ist ein textbasiertes Datenformat, das einfach lesbar und schreibbar ist. JSON-Daten bestehen aus Schlüssel-Wert-Paaren und unterstützen verschiedene Datentypen wie Zeichenfolgen, Zahlen, Arrays (Listen) und Objekte (Dictionaries).
 
