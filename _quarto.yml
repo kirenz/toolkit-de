@@ -58,9 +58,9 @@ book:
 
     - part: daten/index.qmd
       chapters:
-        - text: "CSV-Daten"      
+        - text: "CSV"      
           href: daten/csv.qmd
-        - text: "JSON-Daten"           
+        - text: "JSON"           
           href: daten/json.qmd   
         - text: "Relationale Datenbanken"
           href: daten/relational.qmd
