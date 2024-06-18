@@ -49,17 +49,19 @@ book:
         - vscode/visual-studio-code-erweiterungen.qmd
         - vscode/visual-studio-code-basics.qmd
 
-    - part: daten/index.qmd
-      chapters:
-        - daten/dictionary.qmd
-        - daten/csv.qmd
-        - daten/excel.qmd
-        - daten/json.qmd
+    # - part: daten/index.qmd
+    #   chapters:
+    #     - daten/dictionary.qmd
+    #     - daten/csv.qmd
+    #     - daten/excel.qmd
+    #     - daten/json.qmd
 
     - part: daten/index.qmd
       chapters:
         - text: "CSV-Daten"      
-          href: daten/csv.qmd 
+          href: daten/csv.qmd
+        - text: "JSON-Daten"           
+          href: daten/json.qmd   
         - text: "Relational"
           href: daten/relational.qmd
         - text: "MySQL"
