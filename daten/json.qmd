@@ -214,9 +214,3 @@ daten = json.loads(json_daten)
 for person in daten["Personen"]:
     print(f"Name: {person['Name']}, Hobbys: {', '.join(person['Hobbys'])}")
 ```
-
-## Zusammenfassung
-
-In diesem Kapitel haben wir gelernt, wie man JSON-Dateien in Python mit der `json`-Bibliothek liest und schreibt. 
-
-JSON ist ein flexibles und weit verbreitetes Format für den Datenaustausch und die Speicherung. Wir haben auch einige erweiterte Funktionen und Techniken behandelt, um mit JSON-Daten in Python effizient zu arbeiten. Diese Fähigkeiten sind essenziell für die Verarbeitung und Analyse von strukturierten und teilweise strukturierten Daten in verschiedenen Projekten der Datenwissenschaft.
