@@ -12,7 +12,7 @@ Im Gegensatz zum Python IDLE, das hauptsächlich als einfacher Editor fungiert, 
 2. **Text und Code kombinieren:** Wechseln Sie einfach eine Zelle in den "Markdown"-Modus, um narrative Texte, formatierte Anweisungen oder sogar mathematische Gleichungen mit LaTeX zu integrieren.
 3. **Ergebnisse visualisieren:** Zeigen Sie Diagramme, Grafiken und andere Visualisierungen direkt im Notebook an, was sofortige Rückmeldungen ermöglicht und für explorative Datenanalysen von Vorteil ist.
 
-## Jupyter Notebook starten
+## Notebook erstellen
 
 1. Öffnen Sie Anaconda Navigator:
    - **Windows:** Öffnen Sie das Startmenü und suchen Sie nach "Anaconda Navigator". Klicken Sie, um es zu starten.
@@ -22,33 +22,21 @@ Im Gegensatz zum Python IDLE, das hauptsächlich als einfacher Editor fungiert, 
    ```
 2. Finden Sie im Anaconda Navigator die Jupyter Notebook-Anwendung.
 3. Klicken Sie auf die Schaltfläche "Launch". Dies öffnet Jupyter Notebook in Ihrem Standard-Webbrowser.
+4. Navigieren Sie in der Web-Oberfläche von Jupyter zum `code`-Verzeichnis (siehe unsere Erklärung zur [Ordnerstruktur](projektumgebung.qmd)).
+5. Klicken Sie oben rechts auf "New" und wählen Sie "Notebook", um ein neues Notebook zu erstellen.
+6. Nun öffnet sich ein Fenster in welchem Sie den Kernel (eine Python-Instanz) auswählen können. Wählen Sie bspw. die von Anaconda installierte `base`-Umgebung aus (die base-Umgebung ist die standardmäßige Python-Umgebung, die bei der Installation von Anaconda erstellt wird. Diese Umgebung enthält die grundlegenden Bibliotheken und Werkzeuge, die für viele Datenwissenschafts- und Maschinenlernaufgaben erforderlich sind).
+7. Eine neue Notebook-Seite öffnet sich mit einer leeren Code-Zelle.
 
-## Ihr erstes Notebook erstellen
+Code schreiben:
 
-1. Navigieren Sie in der Web-Oberfläche von Jupyter zum `code`-Verzeichnis (siehe unsere Erklärung zur [Ordnerstruktur](projektumgebung.qmd)).
-2. Klicken Sie oben rechts auf "New" und wählen Sie "Notebook", um ein neues Notebook zu erstellen.
-3. Nun öffnet sich ein Fenster in welchem Sie den Kernel (eine Python-Instanz) auswählen können. Wählen Sie bspw. die von Anaconda installierte `base`-Umgebung aus (die base-Umgebung ist die standardmäßige Python-Umgebung, die bei der Installation von Anaconda erstellt wird. Diese Umgebung enthält die grundlegenden Bibliotheken und Werkzeuge, die für viele Datenwissenschafts- und Maschinenlernaufgaben erforderlich sind).
-3. Eine neue Notebook-Seite öffnet sich mit einer leeren Code-Zelle.
+Geben Sie einen beliebigen Python-Code in die erste Zelle ein, zum Beispiel:
+```python
+print("Hello, Jupyter!")
+```
 
-### Code schreiben und ausführen
+Führen Sie den Code aus, indem Sie `Shift+Enter` drücken oder auf "Run" klicken. Die Ausgabe wird direkt unter der Zelle angezeigt.
 
-1. Geben Sie einen beliebigen Python-Code in die erste Zelle ein, zum Beispiel:
-   ```python
-   print("Hello, Jupyter!")
-   ```
-2. Führen Sie den Code aus, indem Sie `Shift+Enter` drücken oder auf "Run" klicken. Die Ausgabe wird direkt unter der Zelle angezeigt.
-
-### Markdown-Text hinzufügen
-
-1. Klicken Sie auf die Schaltfläche "+", um eine neue Zelle hinzuzufügen.
-2. Ändern Sie den Zellentyp von "Code" auf "Markdown" über das Dropdown-Menü.
-3. Schreiben Sie Ihren Text in Markdown, zum Beispiel:
-   ```markdown
-   Dies ist **fetter** Markdown-Text
-   ```
-4. Rendern Sie den Markdown-Text als formatierten Text, indem Sie `Shift+Enter` drücken (im Kontext von Markdown bezieht sich das Rendern auf den Prozess, bei dem der Markdown-Code in das formatierte Dokument umgewandelt wird, das in dem Webbrowser angezeigt wird.)
-
-### Das Notebook speichern
+## Notebook speichern
 
 1. Verwenden Sie das "File"-Menü, um das Notebook zu speichern.
 2. Benennen Sie die Datei `hello-jupyter.ipynb` und speichern Sie sie im `code`-Verzeichnis.
