@@ -1,6 +1,6 @@
 # Anaconda
 
-Anaconda bietet eine umfassende Plattform für datenbezogene Projekte, indem es Python und viele wichtige Datenwissenschaftsbibliotheken enthält.
+Anaconda bietet eine umfassende Plattform für datenbezogene Projekte, indem es Python und viele wichtige Data Science-Tools enthält.
 
 ## Installer herunterladen
 
@@ -48,6 +48,7 @@ Anaconda bietet eine umfassende Plattform für datenbezogene Projekte, indem es 
 Um zu bestätigen, dass Anaconda erfolgreich installiert wurde:
 1. Öffnen Sie ein Eingabeaufforderungsfenster (Windows) oder ein Terminal (macOS/Linux).
 2. Führen Sie diesen Befehl aus, um zu überprüfen, ob Anaconda erkannt wird:
+
    ```bash
    conda --version
    ```
@@ -56,9 +57,10 @@ Um zu bestätigen, dass Anaconda erfolgreich installiert wurde:
 ## Erste Aktualisierung
 
 1. Nach der Installation ist es eine gute Idee, alle Standardpakete zu aktualisieren:
+
    ```bash
    conda update --all
    ```
 2. Folgen Sie den Anweisungen, um die Aktualisierung abzuschließen.
 
-Mit der Installation von Anaconda sind Sie bereit, Umgebungen zu erstellen, Pakete zu verwalten und mit Daten zu arbeiten. 
+Mit der Installation von Anaconda sind Sie bereit, anstelle von IDLE mit der Lösung Jupyter Notebook, einer webbasierten Umgebung, Ihren Python-Code zu schreiben und auszuführen.
