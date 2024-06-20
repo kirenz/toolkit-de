@@ -6,5 +6,5 @@ Sie lernen, wie Sie:
 
 - Die Befehlszeile Ihres Computers nutzen können. 
 - Python zum ersten Mal einrichten. 
-- Die Anaconda-Distribution (ein Data-Science-Softwarpaket) verwenden.
-- Jupyter Notebook, ein leistungsstarkes Werkzeug zur interaktiven Datenexploration, nutzen 
+- Die Anaconda-Distribution (ein Data-Science-Softwarepaket) verwenden.
+- Jupyter Notebook, ein leistungsstarkes Werkzeug zur interaktiven Datenexploration, nutzen. 
