@@ -120,4 +120,3 @@ format:
     code-overflow: wrap
     author-meta: "Jan Kirenz"
     callout-appearance: simple
-    include-after-body: .assets/js/auth.js
