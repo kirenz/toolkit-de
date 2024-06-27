@@ -8,5 +8,3 @@ Data Science, KI und Analytik spielen heute eine zentrale Rolle in vielen Branch
 
 Dieses Buch soll Ihnen den Einstieg in die Welt der Programmierung erleichtern und Ihnen helfen, die notwendigen Fähigkeiten im Umgang mit zentralen Tools zu entwickeln, um in der Data Science, Künstlichen Intelligenz und Analytik erfolgreich zu sein. Jeder Abschnitt enthält ausführliche Installationsanleitungen und erste Anwendungsbeispiele, um den Einstieg zu erleichtern und häufige Stolpersteine zu vermeiden. Egal, ob Sie in betriebswirtschaftlichen Bereichen, der IT, der Produktion oder anderen Abteilungen tätig sind, die hier erlernten Fähigkeiten werden Ihnen hilfreiche Werkzeuge an die Hand geben, um Ihre beruflichen Ziele zu erreichen.
 
-<button id="login">Login</button>
-<button id="logout">Logout</button>
