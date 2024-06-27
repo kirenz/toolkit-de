@@ -120,3 +120,4 @@ format:
     code-overflow: wrap
     author-meta: "Jan Kirenz"
     callout-appearance: simple
+    include-after: includes/after-body.html
