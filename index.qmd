@@ -1,6 +1,6 @@
 # Willkommen {.unnumbered}
 
-Willkommen zum Einstieg in die faszinierende Welt der Data Science, Künstlichen Intelligenz (KI) und Analytik! Dieses Buch ist speziell für Einsteiger/innen konzipiert und bietet eine schrittweise Einführung in die grundlegenden Werkzeuge, die für den Erfolg in diesen Bereichen notwendig sind (siehe @fig-themen).
+Willkommen zum Einstieg in die Welt der Data Science, Künstlichen Intelligenz (KI) und Analytik. Dieses Buch ist speziell für Einsteiger/innen konzipiert und bietet eine schrittweise Einführung in die grundlegenden Werkzeuge, die für den Erfolg in diesen Bereichen notwendig sind (siehe @fig-themen).
 
 ![Themenüberblick](images/themen.png){#fig-themen}
 
