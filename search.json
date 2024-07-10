@@ -10,16 +10,6 @@
     ]
   },
   {
-    "objectID": "erste-schritte/index.html",
-    "href": "erste-schritte/index.html",
-    "title": "Erste Schritte",
-    "section": "",
-    "text": "In diesem ersten Abschnitt werden wir eine grundlegende Arbeitsumgebung einrichten, die für jedes datenbezogene Vorhaben unerlässlich ist.\nSie lernen, wie Sie:\n\nDie Befehlszeile Ihres Computers nutzen können.\nPython zum ersten Mal einrichten.\nDie Anaconda-Distribution (ein Data-Science-Softwarepaket) verwenden.\nJupyter Notebook, ein leistungsstarkes Werkzeug zur interaktiven Datenexploration, nutzen.",
-    "crumbs": [
-      "Erste Schritte"
-    ]
-  },
-  {
     "objectID": "erste-schritte/projektumgebung.html",
     "href": "erste-schritte/projektumgebung.html",
     "title": "1  Projektumgebung",
@@ -240,16 +230,6 @@
     ]
   },
   {
-    "objectID": "python/index.html",
-    "href": "python/index.html",
-    "title": "Python",
-    "section": "",
-    "text": "Python ist eine objektorientierte Programmiersprache, was bedeutet, dass es Daten als Objekte darstellt, die sowohl Informationen als auch Funktionalität enthalten.\nEin wichtiges Merkmal von Python ist, dass es interpretiert und nicht kompiliert wird. Der Interpreter führt den Code Zeile für Zeile aus, was besonders vorteilhaft für Aufgaben wie Datenanalyse und die Erstellung interaktiver, ausführbarer Dokumente wie Jupyter-Notebooks ist.\n\n\n\n\n\n\nPython ist eine interpretierte Sprache, bei der der Interpreter ein Programm durch die Ausführung einer Anweisung nach der anderen ausführt.\n\n\n\nÜber diese Kernfunktionalität hinaus bietet Python ein großes Ökosystem an Drittanbieter-Tools und -Modulen, wie das Jupyter-Notebook, die spezialisierte Funktionen für die Datenwissenschaft bereitstellen.",
-    "crumbs": [
-      "Python"
-    ]
-  },
-  {
     "objectID": "python/python-bibliotheken.html",
     "href": "python/python-bibliotheken.html",
     "title": "6  Module, Pakete und Bibliotheken",
@@ -448,16 +428,6 @@
     ]
   },
   {
-    "objectID": "vscode/index.html",
-    "href": "vscode/index.html",
-    "title": "Visual Studio Code",
-    "section": "",
-    "text": "Visual Studio Code (VS Code) ist ein Open-Source-Editor, der von Microsoft entwickelt wurde.\n\n\n\n\n\n\nObwohl VS Code nahezu jede Programmieraufgabe bewältigen kann, ist es besonders in der Python-Community aufgrund seiner umfangreichen Python-spezifischen Funktionen und Erweiterungen beliebt.\n\n\n\nDie Wahl der richtigen Entwicklungsumgebung kann die Produktivität und Effizienz des Workflows erheblich beeinflussen. In den folgenden Abschnitten werden wir behandeln, wie man Visual Studio Code installiert und konfiguriert, um Ihren Entwicklungsworkflow zu optimieren.",
-    "crumbs": [
-      "Visual Studio Code"
-    ]
-  },
-  {
     "objectID": "vscode/visual-studio-code-installation.html",
     "href": "vscode/visual-studio-code-installation.html",
     "title": "10  Installation",
@@ -598,16 +568,6 @@
     "crumbs": [
       "Visual Studio Code",
       "<span class='chapter-number'>12</span>  <span class='chapter-title'>Tipps</span>"
-    ]
-  },
-  {
-    "objectID": "daten/index.html",
-    "href": "daten/index.html",
-    "title": "Daten & Datenbanken",
-    "section": "",
-    "text": "Daten sind die Grundlage der Datenwissenschaft. Sie ermöglichen es uns, Erkenntnisse zu gewinnen, Entscheidungen zu treffen und Vorhersagen zu treffen. Daten können in verschiedenen Formen vorliegen und werden in der Regel in drei Hauptkategorien eingeteilt.\n\nStrukturierte Daten sind in einem festen Format organisiert und lassen sich leicht in Tabellenform darstellen (bspw. CSV-Dateien). Diese werden typischerweise in relationalen Datenbanken gespeichert, wie MySQL und PostgreSQL.\nTeilweise strukturierte Daten besitzen keine feste Struktur, weisen jedoch eine gewisse Organisation auf (bspw. JSON).\nUnstrukturierte Daten haben keine definierte Struktur und umfassen oft Multimedia-Inhalte (bspw. Textdateien, Bilder, Videos, Audiodateien). Sie können in verschiedenen Formaten vorliegen und erfordern spezielle Techniken zur Analyse. Diese Daten können in NoSQL-Datenbanken gespeichert werden, wie MongoDB.\n\nStrukturierte Daten können in relationalen Datenbanken wie MySQL und PostgreSQL gespeichert, während unstrukturierte und teilweise strukturierte Daten häufig in NoSQL-Datenbanken wie MongoDB verwaltet werden. In den folgenden Kapiteln werden diese Themen im Detail behandelt.",
-    "crumbs": [
-      "Daten & Datenbanken"
     ]
   },
   {
@@ -941,16 +901,6 @@
     ]
   },
   {
-    "objectID": "github/index.html",
-    "href": "github/index.html",
-    "title": "GitHub",
-    "section": "",
-    "text": "GitHub bietet Hosting für Softwareentwicklungsprojekte, die Git, ein Versionskontrollsystem, verwenden.\n\n\n\n\nGitHub ist wie ein kollaborativer Arbeitsbereich, in dem mehrere Entwickler ihre Projekte speichern, verwalten und Änderungen verfolgen können, ähnlich wie eine Online-Bibliothek digitaler Projekte.\nEs ist eine Plattform, die es Entwicklern ermöglicht, gemeinsam an Softwareprojekten zu arbeiten, indem sie Git, ein verteiltes Versionskontrollsystem, nutzen. Mit GitHub können mehrere Entwickler gleichzeitig an verschiedenen Teilen eines Projekts arbeiten, Änderungen verfolgen und den Projektverlauf verwalten. Dies macht die Zusammenarbeit effizienter und die Verwaltung von Codeänderungen transparenter.\nZusätzlich zu den grundlegenden Funktionen der Versionskontrolle bietet GitHub zahlreiche Tools und Features, die die Softwareentwicklung erleichtern. GitHub ist daher nicht nur ein Speicherort für Code, sondern ein umfassendes Werkzeug für die kollaborative Entwicklung und das Projektmanagement.",
-    "crumbs": [
-      "GitHub"
-    ]
-  },
-  {
     "objectID": "github/github-git.html",
     "href": "github/github-git.html",
     "title": "20  Git",
@@ -1146,6 +1096,56 @@
     "crumbs": [
       "GitHub",
       "<span class='chapter-number'>24</span>  <span class='chapter-title'>Projects</span>"
+    ]
+  },
+  {
+    "objectID": "erste-schritte/index.html",
+    "href": "erste-schritte/index.html",
+    "title": "Erste Schritte",
+    "section": "",
+    "text": "In diesem ersten Abschnitt werden wir eine grundlegende Arbeitsumgebung einrichten, die für jedes datenbezogene Vorhaben unerlässlich ist.\nSie lernen, wie Sie:\n\nDie Befehlszeile Ihres Computers nutzen können.\nPython zum ersten Mal einrichten.\nDie Anaconda-Distribution (ein Data-Science-Softwarepaket) verwenden.\nJupyter Notebook, ein leistungsstarkes Werkzeug zur interaktiven Datenexploration, nutzen.",
+    "crumbs": [
+      "Erste Schritte"
+    ]
+  },
+  {
+    "objectID": "python/index.html",
+    "href": "python/index.html",
+    "title": "Python",
+    "section": "",
+    "text": "Python ist eine objektorientierte Programmiersprache, was bedeutet, dass es Daten als Objekte darstellt, die sowohl Informationen als auch Funktionalität enthalten.\nEin wichtiges Merkmal von Python ist, dass es interpretiert und nicht kompiliert wird. Der Interpreter führt den Code Zeile für Zeile aus, was besonders vorteilhaft für Aufgaben wie Datenanalyse und die Erstellung interaktiver, ausführbarer Dokumente wie Jupyter-Notebooks ist.\n\n\n\n\n\n\nPython ist eine interpretierte Sprache, bei der der Interpreter ein Programm durch die Ausführung einer Anweisung nach der anderen ausführt.\n\n\n\nÜber diese Kernfunktionalität hinaus bietet Python ein großes Ökosystem an Drittanbieter-Tools und -Modulen, wie das Jupyter-Notebook, die spezialisierte Funktionen für die Datenwissenschaft bereitstellen.",
+    "crumbs": [
+      "Python"
+    ]
+  },
+  {
+    "objectID": "vscode/index.html",
+    "href": "vscode/index.html",
+    "title": "Visual Studio Code",
+    "section": "",
+    "text": "Visual Studio Code (VS Code) ist ein Open-Source-Editor, der von Microsoft entwickelt wurde.\n\n\n\n\n\n\nObwohl VS Code nahezu jede Programmieraufgabe bewältigen kann, ist es besonders in der Python-Community aufgrund seiner umfangreichen Python-spezifischen Funktionen und Erweiterungen beliebt.\n\n\n\nDie Wahl der richtigen Entwicklungsumgebung kann die Produktivität und Effizienz des Workflows erheblich beeinflussen. In den folgenden Abschnitten werden wir behandeln, wie man Visual Studio Code installiert und konfiguriert, um Ihren Entwicklungsworkflow zu optimieren.",
+    "crumbs": [
+      "Visual Studio Code"
+    ]
+  },
+  {
+    "objectID": "daten/index.html",
+    "href": "daten/index.html",
+    "title": "Daten & Datenbanken",
+    "section": "",
+    "text": "Daten sind die Grundlage der Datenwissenschaft. Sie ermöglichen es uns, Erkenntnisse zu gewinnen, Entscheidungen zu treffen und Vorhersagen zu treffen. Daten können in verschiedenen Formen vorliegen und werden in der Regel in drei Hauptkategorien eingeteilt.\n\nStrukturierte Daten sind in einem festen Format organisiert und lassen sich leicht in Tabellenform darstellen (bspw. CSV-Dateien). Diese werden typischerweise in relationalen Datenbanken gespeichert, wie MySQL und PostgreSQL.\nTeilweise strukturierte Daten besitzen keine feste Struktur, weisen jedoch eine gewisse Organisation auf (bspw. JSON).\nUnstrukturierte Daten haben keine definierte Struktur und umfassen oft Multimedia-Inhalte (bspw. Textdateien, Bilder, Videos, Audiodateien). Sie können in verschiedenen Formaten vorliegen und erfordern spezielle Techniken zur Analyse. Diese Daten können in NoSQL-Datenbanken gespeichert werden, wie MongoDB.\n\nStrukturierte Daten können in relationalen Datenbanken wie MySQL und PostgreSQL gespeichert, während unstrukturierte und teilweise strukturierte Daten häufig in NoSQL-Datenbanken wie MongoDB verwaltet werden. In den folgenden Kapiteln werden diese Themen im Detail behandelt.",
+    "crumbs": [
+      "Daten & Datenbanken"
+    ]
+  },
+  {
+    "objectID": "github/index.html",
+    "href": "github/index.html",
+    "title": "GitHub",
+    "section": "",
+    "text": "GitHub bietet Hosting für Softwareentwicklungsprojekte, die Git, ein Versionskontrollsystem, verwenden.\n\n\n\n\nGitHub ist wie ein kollaborativer Arbeitsbereich, in dem mehrere Entwickler ihre Projekte speichern, verwalten und Änderungen verfolgen können, ähnlich wie eine Online-Bibliothek digitaler Projekte.\nEs ist eine Plattform, die es Entwicklern ermöglicht, gemeinsam an Softwareprojekten zu arbeiten, indem sie Git, ein verteiltes Versionskontrollsystem, nutzen. Mit GitHub können mehrere Entwickler gleichzeitig an verschiedenen Teilen eines Projekts arbeiten, Änderungen verfolgen und den Projektverlauf verwalten. Dies macht die Zusammenarbeit effizienter und die Verwaltung von Codeänderungen transparenter.\nZusätzlich zu den grundlegenden Funktionen der Versionskontrolle bietet GitHub zahlreiche Tools und Features, die die Softwareentwicklung erleichtern. GitHub ist daher nicht nur ein Speicherort für Code, sondern ein umfassendes Werkzeug für die kollaborative Entwicklung und das Projektmanagement.",
+    "crumbs": [
+      "GitHub"
     ]
   }
 ]
