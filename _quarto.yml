@@ -105,9 +105,9 @@ book:
         - github/github-projects.qmd   
 
 
-    - part: projekt/index.qmd
-      chapters:
-        - projekt/analytics.qmd
+    # - part: projekt/index.qmd
+    #   chapters:
+    #     - projekt/analytics.qmd
 
 
 format:
