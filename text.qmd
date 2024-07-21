@@ -1,0 +1,56 @@
+# Data Science Grundlagen: Praxis-Workshop zur Einrichtung Ihrer Arbeitsumgebung
+
+Tauchen Sie ein in die Welt der Data Science mit unserem kostenlosen Einführungsworkshop an der Hochschule der Medien Stuttgart. Lernen Sie essentiellen Tools wie Python, Visual Studio Code, MySQL, PostgreSQL, MongoDB und GitHub kennen und richten Sie Ihre eigene professionelle Data Science-Arbeitsumgebung ein.
+
+## Was erwartet Sie?
+
+- **Hands-on Erfahrung**: Richten Sie Schritt für Schritt Ihre eigene Data Science-Umgebung ein.
+- **Tools kennenlernen**: Lernen Sie die wichtigsten Tools für erfolgreiche Data Scientists kennen.
+- **Praxisnaher Einstieg**: Ideal für Einsteigerinnen oder Einsteiger ohne Data-Science-Vorkenntnisse.
+
+## Kursinhalte
+
+1. **Python-Umgebung aufsetzen**
+   - Installation und Nutzung von Python (mit Anaconda)
+   - Kennenlernen verschiedener Code-Editoren (Python IDLE, Jupyter Notebook, Visual Studio Code)
+
+2. **Wichtige Python-Basics**
+   - Überblick über nützliche Python Grundlagen
+   - Einführung in essentielle Python Data Science-Bibliotheken
+
+3. **Datenbanken einrichten**
+   - Arbeiten mit strukturierten und unstrukturierten Daten
+   - Einblick in relationale (MySQL, PostgreSQL) und NoSQL-Datenbanken (MongoDB)
+
+4. **Versionskontrolle einrichten**
+   - Einführung in Git
+   - GitHub als Hosting-Plattform nutzen
+
+
+
+## Kursstruktur
+
+- **Auftakt**: 09.10., 17:30 - 19:30 Uhr (Online-Seminar per Zoom)
+- **Praxisphase**: Selbstständiges Einrichten und Erkunden mit Hilfe von Videos und Übungen
+- **Abschluss & Q&A**: 11.10., 17:30 - 19:30 Uhr (Online-Seminar per Zoom)
+
+## Für wen ist dieser Workshop geeignet?
+
+- Berufstätige aus verschiedenen Branchen, die Data Science-Skills aufbauen wollen
+- Studieninteressierte des HdM berufsbegleitenden Data-Science-Masterprogramms
+
+
+## Ihre Vorteile
+
+- **Praxisorientiert**: Starten Sie mit einer funktionsfähigen Data Science-Umgebung.
+- **Zukunftssicher**: Erwerben Sie Grundkenntnisse in gefragten Data Science-Tools.
+- **Flexibel**: Kombinieren Sie Live-Sessions mit selbstständigem Lernen.
+- **Kostenlos**: Nutzen Sie diese Chance zum Einstieg ohne finanzielles Risiko.
+
+## Sichern Sie sich Ihren Platz!
+
+Die Teilnehmerzahl ist begrenzt. Melden Sie sich jetzt an und legen Sie den Grundstein für Ihre Zukunft in der Data Science.
+
+[Anmeldelink einfügen]
+
+Entdecken Sie, wie Sie mit den richtigen Tools und Kenntnissen Ihre Data Science-Reise beginnen können. Wir freuen uns darauf, Sie in unserem Workshop begrüßen zu dürfen.
