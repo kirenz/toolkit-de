@@ -1,6 +1,6 @@
 # Kostenloser Data Science Grundlagen Kompakt-Workshop
 
-Starten Sie Ihre Data Science Karriere mit unserem **kostenlosen Data Science-Einführungsworkshop** an der Hochschule der Medien Stuttgart (HdM).
+Starten Sie Ihre Data Science Karriere mit dem **kostenfreien Data-Science-Einführungsworkshop** der Hochschule der Medien Stuttgart (HdM) und tauchen Sie ein in die faszinierende Welt der Datenanalyse.
 
 Lernen Sie essenzielle Data Science Tools wie Python, Visual Studio Code, MySQL, PostgreSQL, MongoDB und GitHub kennen. Richten Sie Ihre eigene professionelle Data Science Arbeitsumgebung ein und legen Sie den Grundstein für Ihren Erfolg in der Welt der Datenanalyse.
 
@@ -61,4 +61,4 @@ Entdecken Sie, wie Sie mit den richtigen Tools und Kenntnissen Ihre Karriere in 
 
 Prof. Dr. Jan Kirenz und das Team der Hochschule der Medien freuen sich darauf, Sie in unserem Workshop zu begrüßen und Ihnen den Weg in die faszinierende Welt der Data Science zu ebnen.
 
-Weitere Informationen über das berufsbegleitende Masterstudium erhalten Sie auf den [Seiten des HdM Weiterbildungszentrums](https://www.hdm-weiterbildung.de/berufsbegleitende-masterangebote/data-science) oder direkt von dem Leiter des Studiengangs, Prof. Dr.-Ing. Peter Lehmann (lehmann@hdm-stuttgart.de)
+Weitere Informationen über das berufsbegleitende Masterstudium erhalten Sie auf den [Seiten des HdM Weiterbildungszentrums](https://www.hdm-weiterbildung.de/berufsbegleitende-masterangebote/data-science) oder direkt von dem Leiter des Studiengangs, Prof. Dr.-Ing. Peter Lehmann (lehmann@hdm-stuttgart.de).
