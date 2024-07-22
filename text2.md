@@ -1,14 +1,14 @@
-# Kostenloser Data Science Grundlagen Kompakt-Workshop
+# Kostenfreier Data Science Einführungsworkshop 
 
-Starten Sie Ihre Data Science Karriere mit dem **kostenfreien Data-Science-Einführungsworkshop** der Hochschule der Medien Stuttgart (HdM) und tauchen Sie ein in die faszinierende Welt der Datenanalyse.
+Starten Sie Ihre Data Science Karriere mit dem **kostenfreien Data-Science-Einführungsworkshop** an der Hochschule der Medien Stuttgart (HdM) und tauchen Sie ein in die faszinierende Welt der Datenanalyse.
 
-Lernen Sie essenzielle Data Science Tools wie Python, Visual Studio Code, MySQL, PostgreSQL, MongoDB und GitHub kennen. Richten Sie Ihre eigene professionelle Data Science Arbeitsumgebung ein und legen Sie den Grundstein für Ihren Erfolg in der Welt der Datenanalyse.
+Lernen Sie essenzielle Data Science Tools wie Python, Jupyter Notebooks, Visual Studio Code, MySQL, PostgreSQL, MongoDB und GitHub kennen. Richten Sie Ihre eigene professionelle Data Science Arbeitsumgebung ein und legen Sie den Grundstein für Ihren Erfolg in der Welt der Datenanalyse.
 
 ## Warum dieser Data Science Workshop?
 
 - **Praxisorientiertes Lernen**: Setzen Sie Schritt für Schritt Ihre eigene Data Science Umgebung auf.
 - **Zukunftsrelevante Skills**: Erwerben Sie Grundkenntnisse in hochgefragten Data Science Tools und Technologien.
-- **Einsteigerfreundlich**: Perfekt für Anfänger ohne Vorkenntnisse in Data Science.
+- **Einsteigerfreundlich**: Perfekt für Anfängerinnen und Anfänger ohne Vorkenntnisse in Data Science.
 - **Flexibles Lernformat**: Kombinieren Sie Live-Online-Sessions mit selbstständigem Lernen.
 - **Kostenlos**: Nutzen Sie diese Gelegenheit zum Einstieg in Data Science ohne finanzielles Risiko.
 - **Fundiertes Fachwissen**: Lernen Sie von Prof. Dr. Jan Kirenz, der seine langjährige Erfahrung aus Praxis und Lehre im Bereich Data Science in den Kurs einbringt.
@@ -19,12 +19,16 @@ Lernen Sie essenzielle Data Science Tools wie Python, Visual Studio Code, MySQL,
    - Installation und Konfiguration von Python mit Anaconda
    - Einführung in Python IDLE, Jupyter Notebook und Visual Studio Code
    - Python Grundlagen für Data Science
-   - Überblick über wichtige Data Science Bibliotheken (z.B. Pandas)
+   - Überblick über wichtige Data Science Bibliotheken (z.B. Pandas)  
+
+
 
 2. **Datenbanken in Data Science**
    - Umgang mit strukturierten und unstrukturierten Daten
    - Einrichtung und Nutzung relationaler Datenbanken (MySQL, PostgreSQL)
-   - Einblick in NoSQL-Datenbanken mit MongoDB
+   - Einblick in NoSQL-Datenbanken mit MongoDB  
+
+
 
 3. **Versionskontrolle für Data Scientists**
    - Grundlagen von Git für effektives Projektmanagement
@@ -49,7 +53,7 @@ Lernen Sie essenzielle Data Science Tools wie Python, Visual Studio Code, MySQL,
 ✅ Erwerb von Grundkenntnissen in führenden Data Science Tools
 ✅ Flexible Lernmöglichkeiten durch Kombination von Live-Sessions und Selbststudium
 ✅ Kostenfreier Einstieg in die zukunftsträchtige Welt der Data Science
-✅ Direkte Verbindung zum HdM Data Science Masterprogramm
+✅ Direkte Verbindung zum [HdM Data Science Masterprogramm]((https://www.hdm-weiterbildung.de/berufsbegleitende-masterangebote/data-science))
 
 ## Jetzt anmelden und Ihre Data Science Reise beginnen!
 
