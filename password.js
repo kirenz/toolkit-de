@@ -4,11 +4,11 @@
 function protectContent() {
     // Check if the user has already entered the correct password
     if (!localStorage.getItem('accessGranted')) {
-        const password = prompt('Enter password to access this site:');
-        if (password === 'your_password') {
+        const password = prompt('Bitte Password eingeben:');
+        if (password === 'data-toolkit') {
             localStorage.setItem('accessGranted', true);
         } else {
-            document.body.innerHTML = 'Incorrect password. Access denied.';
+            document.body.innerHTML = 'Falsches Password';
         }
     }
 }
