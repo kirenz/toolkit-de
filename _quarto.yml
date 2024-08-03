@@ -120,4 +120,6 @@ format:
     code-overflow: wrap
     author-meta: "Jan Kirenz"
     callout-appearance: simple
-    include-after-body: password.js 
+    include-in-header:
+      - text: |
+          <script src="password.js"></script>
