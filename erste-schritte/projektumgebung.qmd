@@ -2,6 +2,10 @@
 
 Das Organisieren Ihrer Dateien ist entscheidend für die Effizienz und Zugänglichkeit Ihrer Projekte. Zunächst erstellen wir daher einen Ordner namens `toolkit-lab` auf Ihrem Rechner und legen die Unterverzeichnisse `code` und `data` an, um Ihr Projekt strukturiert zu halten.
 
+![Ordnerstruktur](../images/ordner.png){#fig-ordner fig-align="left" width=18%}
+
+Diese Ordnerstruktur kann auch schematisch wie folgt dargestellt werden:
+
 ```plaintext
 toolkit-lab/
 ├── code/
