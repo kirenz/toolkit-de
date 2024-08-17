@@ -1,0 +1,42 @@
+---
+title: Erste Schritte
+lang: de
+subtitle: Subtitle
+author: Jan Kirenz
+execute:
+  eval: false
+  echo: true
+highlight-style: github-dark
+format:
+  revealjs: 
+    toc: false
+    toc-depth: 1
+    embed-resources: false
+    theme: [default, ../style/custom.scss]
+    incremental: true
+    transition: slide
+    background-transition: fade
+    transition-speed: slow
+    code-copy: true
+    code-line-numbers: true
+    smaller: false
+    scrollable: true
+    slide-number: c
+    preview-links: auto
+    css: ../style/index.css
+    chalkboard: 
+      buttons: false
+   #logo: images/logo.png
+    footer: Jan Kirenz
+jupyter: python3
+---
+
+
+In diesem ersten Abschnitt werden wir eine grundlegende Arbeitsumgebung einrichten, die für jedes datenbezogene Vorhaben unerlässlich ist. 
+
+Sie lernen, wie Sie: 
+
+- Die Befehlszeile Ihres Computers nutzen können. 
+- Python zum ersten Mal einrichten. 
+- Die Anaconda-Distribution (ein Data-Science-Softwarepaket) verwenden.
+- Jupyter Notebook, ein leistungsstarkes Werkzeug zur interaktiven Datenexploration, nutzen. 
