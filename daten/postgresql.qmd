@@ -4,12 +4,10 @@
 
 *pgAdmin4* ist das offizielle grafische Verwaltungstool für PostgreSQL und bietet eine benutzerfreundliche Oberfläche für die Datenbankverwaltung. Es wird als Teil der PostgreSQL-Installation installiert.
 
-## Installation
+
+## PostgreSQL-Installation in Windows 
 
 In den folgenden Schritten wird die Installation des relationalen Datenbankmanagementsystem (RDBMS) *PostgreSQL* und des grafischen Verwaltungstools *pgAdmin 4* behandelt.
-
-
-### Windows 
 
 1. PostgreSQL herunterladen und installieren
     - Laden Sie PostgreSQL von [dieser Website](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads) herunter.
@@ -44,7 +42,9 @@ In den folgenden Schritten wird die Installation des relationalen Datenbankmanag
     - Überprüfen Sie die Einstellungen und klicken Sie auf "Next", um die Installation zu starten.
     - Nach Abschluss der Installation klicken Sie auf "Finish".
 
-### macOS 
+## PostgreSQL-Installation auf Mac 
+
+In den folgenden Schritten wird die Installation des relationalen Datenbankmanagementsystem (RDBMS) *PostgreSQL* und des grafischen Verwaltungstools *pgAdmin 4* behandelt.
 
 1. PostgreSQL herunterladen und installieren
     - Laden Sie PostgreSQL von [dieser Website](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads) herunter.
@@ -80,7 +80,7 @@ In den folgenden Schritten wird die Installation des relationalen Datenbankmanag
     - Nach Abschluss der Installation klicken Sie auf "Finish".
 
 
-## Server einrichten
+## Server in pgAdmin4 einrichten
 
 Um Datenbanken zu verwalten, verbinden Sie sich zunächst mit einer PostgreSQL-Instanz, indem Sie eine neue Serververbindung in pgAdmin4 einrichten:
 
@@ -95,7 +95,7 @@ Um Datenbanken zu verwalten, verbinden Sie sich zunächst mit einer PostgreSQL-I
 6. Dies wird die `local-connection` in der linken Seitenleiste anzeigen.
 
 
-## SQL basics
+## SQL-Basics in PostgreSQL
 
 Nachfolgend behandeln wir einige typische Aufgaben in PgAdmin4, die bei der Arbeit mit Datenbanken anfallen.
 
