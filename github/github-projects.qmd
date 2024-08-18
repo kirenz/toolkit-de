@@ -1,4 +1,4 @@
-# Projects
+# GitHub Projects
 
 GitHub-Projects ist eine leistungsstarke Funktion, die Ihnen hilft, die Arbeit an Ihren Repositories zu organisieren und zu verfolgen. Es bietet Kanban-Boards zur effizienten Verwaltung von Aufgaben und Workflows.
 
@@ -6,9 +6,8 @@ GitHub-Projects ist eine leistungsstarke Funktion, die Ihnen hilft, die Arbeit a
 
 Es ermöglicht Ihnen, die Arbeit zu planen und zu verwalten, indem Sie Projektboards erstellen. Diese Boards enthalten Issues, Pull Requests und Notizen, die als Karten in Spalten organisiert sind.
 
-## Ein GitHub-Projekt erstellen
+Ein GitHub-Projekt erstellen:
 
-Schritt-für-Schritt-Anleitung:
 
 1. Navigieren Sie zu Ihrem Repository oder Ihrer Organisation:
     Gehen Sie zu dem Repository oder der Organisation, in dem/der Sie ein Projekt erstellen möchten.
@@ -24,10 +23,9 @@ Schritt-für-Schritt-Anleitung:
     - Beschreibung: Fügen Sie eine Beschreibung hinzu, um den Zweck des Projekts zu erklären.
     - Vorlage: Wählen Sie eine Vorlage, falls verfügbar, oder beginnen Sie mit einem leeren Projekt.
 
-## Projektboards verwalten
+**Projektboards verwalten**:
 
 Sobald Ihr Projekt erstellt ist, können Sie beginnen, es durch Hinzufügen von Spalten und Karten zu verwalten.
-
 
 Spalten helfen, Aufgaben in Kategorien wie 'To Do', 'In Progress' und 'Done' zu organisieren.
 
@@ -49,7 +47,7 @@ Karten repräsentieren Aufgaben und können Issues, Pull Requests oder Notizen s
 2. Eine Notiz erstellen:
     Klicken Sie in einer Spalte auf 'Add a note', um eine benutzerdefinierte Aufgabe oder Notiz zu erstellen.
 
-## Best Practices
+**Best Practices**:
 
 Arbeit organisieren:
 
