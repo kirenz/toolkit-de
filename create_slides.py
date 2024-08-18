@@ -22,7 +22,7 @@ format:
     toc: false
     toc-depth: 1
     embed-resources: false
-    theme: [default, ../style/custom.scss]
+    theme: [default, /style/custom.scss]
     incremental: true
     transition: slide
     background-transition: fade
@@ -33,11 +33,11 @@ format:
     scrollable: true
     slide-number: c
     preview-links: auto
-    css: ../style/index.css
+    css: /style/index.css
     chalkboard: 
       buttons: false
-   #logo: images/logo.png
-    footer: Jan Kirenz
+    logo: images/logo.png
+    footer: {title} | Jan Kirenz
 jupyter: python3
 ---
 '''
