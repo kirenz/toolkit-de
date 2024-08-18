@@ -1,10 +1,10 @@
-# Repositories
+# GitHub Repositories
 
 Ein Repository (oft abgekürzt als "Repo") auf GitHub ist wie ein Speicherplatz, in dem alle Dateien und deren Versionsverlauf für Ihr Projekt gespeichert werden. 
 
 Repositories werden verwendet, um Ihre Arbeit zu organisieren, mit anderen zusammenzuarbeiten, Änderungen an Ihrem Code zu verfolgen und verschiedene Versionen Ihres Projekts zu verwalten.
 
-## Erstellung
+## Erstellung eines Repo
 
 Mit GitHub-Repositories können Sie Ihr Projekt mit wichtigen Dateien wie einer README, `.gitignore` und einer Lizenz initialisieren, um Struktur und Klarheit zu schaffen. 
 
@@ -34,7 +34,7 @@ Hier ist eine Anleitung, wie Sie dies tun können, einschließlich Erklärungen 
 6. Create repository
     - Klicken Sie auf die grüne Schaltfläche *Create repository*, um Ihr neues Repository auf GitHub zu erstellen.
 
-## Klonen
+## Klonen eines Repo
 
 Das Klonen eines Repositorys bedeutet, eine lokale Kopie eines Remote-Repositorys auf Ihrem Computer zu erstellen.
 
@@ -61,7 +61,7 @@ Dies ermöglicht es Ihnen, offline an den Projektdateien zu arbeiten, Änderunge
 4. Öffnen Sie das Repository in GitHub Desktop
     - Nach Abschluss des Klonvorgangs öffnet GitHub Desktop automatisch das `hello-github`-Repository.
 
-## Commit
+## Commits verwenden
 
 Nachdem Sie Ihr `hello-github`-Repository auf Ihren lokalen Rechner geklont haben, ist der nächste Schritt, an Ihren Projektdateien zu arbeiten. Wir verwenden Visual Studio Code (VS Code), um das Repository zu öffnen und Änderungen vorzunehmen.
 
@@ -83,16 +83,16 @@ Nachdem Sie Ihr `hello-github`-Repository auf Ihren lokalen Rechner geklont habe
 4. Änderungen in GitHub Desktop anzeigen
     - Nachdem Sie Änderungen in VS Code vorgenommen haben, wechseln Sie zurück zu GitHub Desktop. Sie sehen die Änderungen in der linken Seitenleiste.
 
-5. Änderungen abrufen
+5. Änderungen *abrufen*
     - Stellen Sie zunächst sicher, dass keine Änderungen im Remote-Repository `hello-github` vorliegen, die Sie nicht lokal haben. Sie können sie abrufen, indem Sie auf die Schaltfläche Fetch origin klicken und dann Pull, um Ihr lokales Repository mit den neuesten Änderungen zu aktualisieren.
 
-6. Änderungen stagen
+6. Änderungen *stagen*
     - Stagen bedeutet, auszuwählen, welche Änderungen Sie in Ihren nächsten Schnappschuss (Commit) des Repositorys aufnehmen möchten.
     - In GitHub Desktop sehen Sie eine Liste der geänderten Dateien. Um Änderungen zu stagen:
         - Aktivieren Sie die Kontrollkästchen neben den Dateien, die Sie in Ihren Commit aufnehmen möchten.
         - Wenn Sie alle Änderungen auf einmal stagen möchten, können Sie auf die Schaltfläche Stage All klicken.
 
-7. Änderungen committen
+7. Änderungen *committen*
     - Committen bedeutet, Ihre gestagten Änderungen mit einer beschreibenden Nachricht zu speichern, die erklärt, was Sie getan haben. Diese Nachricht hilft Ihnen und anderen zu verstehen, welche Änderungen vorgenommen wurden und warum.
     - Schreiben Sie eine kurze, aber beschreibende Commit-Nachricht in das Feld Zusammenfassung. Zum Beispiel: "Füge initiales Python-Skript hinzu".
     - Klicken Sie auf Commit to main, um die Änderungen in Ihrem lokalen Repository zu speichern.
@@ -100,8 +100,8 @@ Nachdem Sie Ihr `hello-github`-Repository auf Ihren lokalen Rechner geklont habe
 8. Änderungen pushen
     - Nach dem Committen der Änderungen klicken Sie auf die Schaltfläche Push origin oben, um Ihre Änderungen in das Remote-Repository `hello-github` auf GitHub hochzuladen.
 
-## Tipps
+<!-- ## Tipps
 
 - Oft committen: Machen Sie kleine, häufige Commits mit klaren Nachrichten. Dies erleichtert das Verfolgen von Änderungen und das Zurücksetzen, falls erforderlich.
 
-- README: Eine gut dokumentierte README-Datei ist entscheidend. Sie sollte einen Überblick über das Projekt, Installations- und Nutzungshinweise sowie weitere relevante Informationen bieten.
+- README: Eine gut dokumentierte README-Datei ist entscheidend. Sie sollte einen Überblick über das Projekt, Installations- und Nutzungshinweise sowie weitere relevante Informationen bieten. -->
