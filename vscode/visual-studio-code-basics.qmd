@@ -1,8 +1,8 @@
-# Tipps
+# Hinweise zu VS Code
 
 Dieser Abschnitt enthält einige Tipps, die Ihnen den Einstieg in VS Code erleichtern sollen.
 
-## Dateien vs. Ordner
+## Dateien und Ordner in VS Code
 
 Das Verständnis des Unterschieds zwischen dem Öffnen einer Datei und dem Öffnen eines Ordners in VS Code ist entscheidend für die Verwaltung Ihres Workflows.
 
@@ -34,14 +34,14 @@ Wenn Sie in einer vertrauenswürdigen Umgebung oder mit Code von bekannten Mitar
 - **Nein, ich vertraue den Autoren nicht**: Verwenden Sie diese Option nur, wenn Sie Bedenken hinsichtlich der Quelle der Dateien haben. Dadurch werden bestimmte Funktionen innerhalb von VS Code eingeschränkt, um unbefugte Codeausführung zu verhindern.
 
 
-## Jupyter Notebook
+## Jupyter Notebook in VS Code
 
 Visual Studio Code unterstützt Jupyter-Notebooks, sobald Sie die Jupyter-Erweiterung installiert haben, und bietet eine integrierte Umgebung, um Python-Code auszuführen, Daten zu visualisieren und Ihren Prozess Schritt für Schritt zu dokumentieren.
 
 So richten Sie ein Jupyter-Notebook in VS Code ein und verwenden es:
 
 1. Öffnen Sie Visual Studio Code.
-2. Stellen Sie sicher, dass die Jupyter-Erweiterung [wie zuvor beschrieben](visual-studio-code-erweiterungen.qmd) installiert ist.
+2. Stellen Sie sicher, dass die Jupyter-Erweiterung [wie zuvor beschrieben](visual-studio-code-installation#jupyter-erweiterung.qmd) installiert ist.
 3. Verwenden Sie die Tastenkombination `Strg+Shift+P` (Windows) oder `Command+Shift+P` (Mac), um die Befehls-Palette zu öffnen.
 4. Geben Sie `Datei: Ordner öffnen...` ein und wählen Sie diesen Befehl aus. Navigieren Sie zu dem Ordner `toolkit-lab` und wählen Sie ihn als Ihr Arbeitsverzeichnis aus.
 5. Beim ersten Öffnen eines neuen Projektordners, wie `toolkit-lab`, werden Sie mit einer Anfrage zur Vertrauenswürdigkeit des Arbeitsbereichs konfrontiert. Es ist wichtig, **"Ja, ich vertraue den Autoren"** auszuwählen.
@@ -54,10 +54,3 @@ So richten Sie ein Jupyter-Notebook in VS Code ein und verwenden es:
 Ein "Kernel" in einem Jupyter-Notebook ist ein Prozess, der den im Notebook-Dokument eingebetteten Code ausführt. Bei der Arbeit mit Python ist der Kernel eine Instanz der Python-Laufzeitumgebung auf Ihrem Computer.
 :::
 
-## Weitere Ressourcen
-
-Weitere Ressourcen, um sich mit VS Code vertraut zu machen:
-
-- [Sehen Sie sich die Einführungsvideos an](https://code.visualstudio.com/docs/getstarted/introvideos)
-- [Datenwissenschaft in VS Code Tutorial](https://code.visualstudio.com/docs/datascience/data-science-tutorial)
-- Pro-Tipps: [25 VS Code Productivity Tips and Speed Hacks](https://www.youtube.com/watch?v=ifTF3ags0XI)
