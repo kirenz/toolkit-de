@@ -1,8 +1,4 @@
-# Setup
-
-GitHub ist eine webbasierte Plattform, die Versionskontrolle und kollaborative Softwareentwicklung ermöglicht und Git als Kerntechnologie nutzt.
-
-## GitHub-Konto
+# GitHub-Konto erstellen
 
 So erstellen Sie ein GitHub-Konto:
 
@@ -14,7 +10,7 @@ So erstellen Sie ein GitHub-Konto:
 6. Optional: Bewerben Sie sich für das [GitHub Student Developer Pack](https://education.github.com/pack) für den Zugriff auf kostenlose Ressourcen (wie GitHub Copilot).
 7. Optional: Installieren Sie die [Visual Studio Code GitHub-Erweiterung](https://code.visualstudio.com/docs/editor/github).
 
-## GitHub Desktop
+# GitHub Desktop installieren
 
 GitHub Desktop bietet eine benutzerfreundliche grafische Oberfläche, um Ihre GitHub-Projekte zu verwalten, ohne Befehlszeilentools zu verwenden.
 
