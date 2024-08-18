@@ -8,9 +8,6 @@ Git ist vergleichbar mit der Funktion "Änderungen nachverfolgen" in Microsoft W
 
 Die Verwendung von Git erleichtert die Zusammenarbeit an Projekten, da es mehreren Personen ermöglicht, gleichzeitig an unterschiedlichen Teilen des Codes zu arbeiten, ohne dass ihre Änderungen in Konflikt geraten.
 
-Besuchen Sie die Seite ["Learn Git Branching"](https://learngitbranching.js.org/), um die Verwendung von Git interaktiv zu lernen.
-
-## Git-Version
 
 Um zu überprüfen, ob Git auf Ihrem System installiert ist, öffnen Sie Ihr Terminal (Mac) oder die Eingabeaufforderung (Windows) und geben Sie ein:
 
@@ -20,14 +17,19 @@ git --version
 
 Wenn Sie eine Versionsnummer sehen, ist Git bereits installiert. Wenn nicht, folgen Sie den unten stehenden Installationsanweisungen.
 
-## Installation
+Besuchen Sie die Seite ["Learn Git Branching"](https://learngitbranching.js.org/), um die Verwendung von Git interaktiv zu lernen.
 
-- **Für Mac-Benutzer**:
-  - **Option 1**: Installieren Sie [XCode](https://apps.apple.com/us/app/xcode/id497799835?mt=12), das Git enthält.
-  - **Option 2**: Alternativ installieren Sie [Homebrew](https://brew.sh/) (Homebrew ist ein Paketverwaltungssystem, das die Installation von Software auf macOS vereinfacht.) und verwenden Sie diesen Befehl:
-    ```bash
-    brew install git
-    ```
+## Git-Installation in Windows
 
-- **Für Windows-Benutzer**:
-  - Laden Sie Git von [Git SCM](https://git-scm.com/download/win) herunter und folgen Sie den Installationsanweisungen.
+Laden Sie Git von [Git SCM](https://git-scm.com/download/win) herunter und folgen Sie den Installationsanweisungen.
+
+
+## Git-Installation auf Mac
+
+**Option 1**: Installieren Sie zunächst [Homebrew](https://brew.sh/) (Homebrew ist ein Paketverwaltungssystem, das die Installation von Software auf macOS vereinfacht.) und verwenden Sie diesen Befehl, um Git zu installieren:
+
+```bash
+brew install git
+```
+
+**Option 2**: Installieren Sie [XCode](https://apps.apple.com/us/app/xcode/id497799835?mt=12), das Git enthält.
