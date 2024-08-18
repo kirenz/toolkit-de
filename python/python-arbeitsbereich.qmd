@@ -1,4 +1,4 @@
-# Arbeitsbereich 
+# Arbeitsbereich vorbereiten
 
 Bevor Sie mit dem Programmieren in Python beginnen, stellen wir sicher, dass Sie einen ordnungsgemäß konfigurierten Arbeitsbereich haben.
 
@@ -10,7 +10,7 @@ Bevor Sie mit dem Programmieren in Python beginnen, stellen wir sicher, dass Sie
 2. Jupyter Notebook öffnen:
    - Finden Sie im Anaconda Navigator das Jupyter Notebook und klicken Sie auf 'Launch', um es in Ihrem Webbrowser zu öffnen.
 
-## Jupyter Notebook einrichten
+## Jupyter Notebook starten
 
 1. Navigieren Sie in der Web-Oberfläche von Jupyter zum `code`-Verzeichnis (siehe die Erklärung zur [Ordnerstruktur](../erste-schritte/projektumgebung.qmd)).
 2. Klicken Sie oben rechts auf "New" und wählen Sie "Notebook", um ein neues Notebook zu erstellen.
