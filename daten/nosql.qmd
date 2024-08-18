@@ -10,7 +10,15 @@ Anstatt Tabellen zu verbinden, speichern NoSQL-Datenbanken unstrukturierte oder 
 
 - Hohe Verfügbarkeit und Fehlertoleranz: NoSQL-Datenbanken sind so konzipiert, dass sie auch bei Ausfällen einzelner Knoten im Netzwerk weiterhin verfügbar sind.
 
-## Datenmodelle
+NoSQL-Datenbanken werden häufig in folgenden Bereichen eingesetzt:
+
+- E-Commerce: Verwaltung von Produktkatalogen, Benutzerprofilen und Warenkörben.
+- Big Data: Verarbeitung und Analyse großer Datenmengen in Echtzeit.
+- Content Management: Speicherung und Verwaltung von Inhalten wie Dokumenten, Bildern und Videos.
+- Social Media: Verwaltung von Benutzerprofilen, Beziehungen und Aktivitäten in sozialen Netzwerken.
+- IoT (Internet of Things): Speicherung und Analyse großer Mengen an Sensordaten.
+
+## NoSQL-Datenmodelle
 
 NoSQL-Datenbanken bieten eine Vielzahl von Möglichkeiten, um verschiedene Arten von Daten effizient zu speichern und abzurufen. Sie sind besonders nützlich in Szenarien, in denen traditionelle relationale Datenbanken an ihre Grenzen stoßen.
 
@@ -49,20 +57,4 @@ Beispiele: Neo4j
 | Graph-Speicher | Daten werden in einer Graphstruktur als Knoten, Kanten und Dateneigenschaften gespeichert. | Neo4j |
 
 
-## Anwendungsfälle
-
-NoSQL-Datenbanken werden häufig in folgenden Bereichen eingesetzt:
-
-- E-Commerce: Verwaltung von Produktkatalogen, Benutzerprofilen und Warenkörben.
-- Big Data: Verarbeitung und Analyse großer Datenmengen in Echtzeit.
-- Content Management: Speicherung und Verwaltung von Inhalten wie Dokumenten, Bildern und Videos.
-- Social Media: Verwaltung von Benutzerprofilen, Beziehungen und Aktivitäten in sozialen Netzwerken.
-- IoT (Internet of Things): Speicherung und Analyse großer Mengen an Sensordaten.
-
-Vorteile von NoSQL-Datenbanken:
-
-- Flexibilität: NoSQL-Datenbanken erlauben die Speicherung von unstrukturierten und halbstrukturierten Daten ohne vorher festgelegte Schemata.
-- Skalierbarkeit: Sie ermöglichen eine horizontale Skalierung durch das Hinzufügen weiterer Server.
-- Leistung: Optimiert für hohe Schreib- und Leseoperationen, insbesondere bei großen Datenmengen.
-- Verfügbarkeit: Entworfen für hohe Verfügbarkeit und Fehlertoleranz, auch bei Ausfällen einzelner Knoten.
 
