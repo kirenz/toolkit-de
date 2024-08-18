@@ -2,7 +2,7 @@
 
 *MongoDB* ist eine NoSQL-Datenbank, die für ihre Flexibilität und Skalierbarkeit bekannt ist. Sie speichert Daten in JSON-ähnlichen Dokumenten, was es einfach macht, komplexe Datenstrukturen zu handhaben. Diese Strukturierung ermöglicht es, hierarchische Beziehungen, Arrays und andere komplexe Datentypen ohne die Einschränkungen eines starren, tabellenbasierten Schemas darzustellen. Dadurch können Änderungen am Datenmodell schneller und effizienter umgesetzt werden.
 
-## Hauptmerkmale von MongoDB
+Hauptmerkmale von MongoDB:
 
 **Flexibilität**: MongoDB verwendet ein dokumentenorientiertes Modell, bei dem die Daten in Dokumenten gespeichert werden, die ähnliche Strukturen wie JSON haben, technisch aber im BSON-Format (Binary JSON) gespeichert werden. Dies ermöglicht eine hohe Flexibilität bei der Strukturierung der Daten, da jedes Dokument unterschiedliche Felder und Datentypen enthalten kann.
 
@@ -12,7 +12,7 @@
 
 **Entwicklerfreundlich**: MongoDB bietet Treiber für eine Vielzahl von Programmiersprachen, darunter Python, JavaScript, Java, C#, und viele mehr. 
 
-## MongoDB Shell
+
 
 Für die Arbeit mit der Datenbank nutzen wir die *MongoDB Shell* (`mongosh`). Diese bietet eine schnelle und intuitive Möglichkeit, sich mit MongoDB zu verbinden und zu arbeiten. Mit `mongosh` können wir Daten abfragen, Einstellungen konfigurieren und verschiedene Aktionen durchführen.
 
@@ -25,11 +25,10 @@ Die Hauptfunktionen von mongosh umfassen:
 
 Um mit MongoDB zu beginnen, müssen wir zunächst den MongoDB-Dienst starten und dann die MongoDB Shell öffnen. Sobald die Shell geöffnet ist, können wir grundlegende Befehle ausführen, um Datenbanken und Sammlungen zu erstellen, Daten einzufügen und Abfragen auszuführen.
 
-## Installation
+## MongoDB-Installation in Windows
 
 In diesem Abschnitt wird die Installation der NoSQL-Datenbank *MongoDB* und der *MongoDB Shell* (`mongosh`) behandelt.
 
-### Windows
 
 1. MongoDB herunterladen:  
    Besuchen Sie die [offizielle MongoDB-Download-Seite](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-windows/#install-mongodb-community-edition) und laden Sie die aktuelle ("current") MongoDB Community Server-Version für Windows herunter.
@@ -80,7 +79,61 @@ mongosh --version
 
 Wenn beide Befehle die Versionsnummern von MongoDB und MongoDB Shell (mongosh) zurückgeben, wurde die Umgebungsvariable erfolgreich gesetzt
 
-### macOS
+
+## MongoDB starten und stoppen in Windows 
+
+MongoDB sollte als Dienst automatisch gestartet werden, wenn Sie die Option "Install MongoDB as a Service" während der Installation aktiviert haben. Sie müssen daher zunächst keine weiteren Schritte unternehmen und können zum nächsten Kaptitel übergehen. 
+
+Führen Sie die folgenden Schritte nur dann aus, falls MongoDB nicht automatisch gestartet wurde oder falls Sie den Dienst neu starten möchten:
+
+
+1. Öffnen Sie die Dienstverwaltung:
+   - Drücken Sie die `Windows-Taste` + `R`, um das Ausführen-Dialogfeld zu öffnen.
+   - Geben Sie `services.msc` ein und drücken Sie `Enter`.
+
+2. Finden Sie den MongoDB-Dienst:
+   - Im Fenster "Dienste" scrollen Sie nach unten, bis Sie den Dienst namens `MongoDB` finden.
+
+3. Starten Sie den Dienst:
+   - Klicken Sie mit der rechten Maustaste auf den `MongoDB`-Dienst und wählen Sie `Starten` aus dem Kontextmenü.
+
+Alternativ können Sie den MongoDB-Dienst auch über die Eingabeaufforderung starten:
+
+1. Öffnen Sie die Eingabeaufforderung als Administrator:
+   - Drücken Sie die `Windows-Taste`, geben Sie `cmd` ein, klicken Sie mit der rechten Maustaste auf `Eingabeaufforderung` und wählen Sie `Als Administrator ausführen`.
+
+2. Führen Sie den folgenden Befehl aus, um den MongoDB-Dienst zu starten:
+   ```sh
+   net start MongoDB
+   ```
+
+
+Um MongoDB zu stoppen, können Sie entweder die Dienstverwaltung verwenden oder einen Befehl in der Eingabeaufforderung ausführen.
+
+So stoppen Sie den MongoDB-Dienst manuell:
+
+1. Öffnen Sie die Dienstverwaltung:
+   - Drücken Sie die `Windows-Taste` + `R`, um das Ausführen-Dialogfeld zu öffnen.
+   - Geben Sie `services.msc` ein und drücken Sie `Enter`.
+
+2. Finden Sie den MongoDB-Dienst:
+   - Im Fenster "Dienste" scrollen Sie nach unten, bis Sie den Dienst namens `MongoDB` finden.
+
+3. Stoppen Sie den Dienst:
+   - Klicken Sie mit der rechten Maustaste auf den `MongoDB`-Dienst und wählen Sie `Beenden` aus dem Kontextmenü.
+
+Alternativ können Sie den MongoDB-Dienst auch über die Eingabeaufforderung stoppen:
+
+1. Öffnen Sie die Eingabeaufforderung als Administrator:
+   - Drücken Sie die `Windows-Taste`, geben Sie `cmd` ein, klicken Sie mit der rechten Maustaste auf `Eingabeaufforderung` und wählen Sie `Als Administrator ausführen`.
+
+2. Führen Sie den folgenden Befehl aus, um den MongoDB-Dienst zu stoppen:
+   ```sh
+   net stop MongoDB
+   ```
+
+
+## MongoDB-Installation auf Mac
 
 Folgen Sie der Installationsanweisung der [MongoDB-Dokumentation](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/#install-mongodb-community-edition):
 
@@ -143,69 +196,8 @@ mongosh --version
 Wenn bei beiden Befehlen eine Version angezeigt wird, war die Installation erfolgreich.
 
 
-## Starten und stoppen
 
-Durch das Starten und Stoppen des MongoDB-Dienstes können Sie sicherstellen, dass die Datenbank ordnungsgemäß läuft oder heruntergefahren wird, je nach Ihren Anforderungen.
-
-### Windows
-
-#### MongoDB starten
-
-MongoDB sollte als Dienst automatisch gestartet werden, wenn Sie die Option "Install MongoDB as a Service" während der Installation aktiviert haben. Sie müssen daher zunächst keine weiteren Schritte unternehmen und können zum nächsten Kaptitel übergehen. 
-
-Führen Sie die folgenden Schritte nur dann aus, falls MongoDB nicht automatisch gestartet wurde oder falls Sie den Dienst neu starten möchten:
-
-
-1. Öffnen Sie die Dienstverwaltung:
-   - Drücken Sie die `Windows-Taste` + `R`, um das Ausführen-Dialogfeld zu öffnen.
-   - Geben Sie `services.msc` ein und drücken Sie `Enter`.
-
-2. Finden Sie den MongoDB-Dienst:
-   - Im Fenster "Dienste" scrollen Sie nach unten, bis Sie den Dienst namens `MongoDB` finden.
-
-3. Starten Sie den Dienst:
-   - Klicken Sie mit der rechten Maustaste auf den `MongoDB`-Dienst und wählen Sie `Starten` aus dem Kontextmenü.
-
-Alternativ können Sie den MongoDB-Dienst auch über die Eingabeaufforderung starten:
-
-1. Öffnen Sie die Eingabeaufforderung als Administrator:
-   - Drücken Sie die `Windows-Taste`, geben Sie `cmd` ein, klicken Sie mit der rechten Maustaste auf `Eingabeaufforderung` und wählen Sie `Als Administrator ausführen`.
-
-2. Führen Sie den folgenden Befehl aus, um den MongoDB-Dienst zu starten:
-   ```sh
-   net start MongoDB
-   ```
-
-#### MongoDB stoppen
-
-Um MongoDB zu stoppen, können Sie entweder die Dienstverwaltung verwenden oder einen Befehl in der Eingabeaufforderung ausführen.
-
-So stoppen Sie den MongoDB-Dienst manuell:
-
-1. Öffnen Sie die Dienstverwaltung:
-   - Drücken Sie die `Windows-Taste` + `R`, um das Ausführen-Dialogfeld zu öffnen.
-   - Geben Sie `services.msc` ein und drücken Sie `Enter`.
-
-2. Finden Sie den MongoDB-Dienst:
-   - Im Fenster "Dienste" scrollen Sie nach unten, bis Sie den Dienst namens `MongoDB` finden.
-
-3. Stoppen Sie den Dienst:
-   - Klicken Sie mit der rechten Maustaste auf den `MongoDB`-Dienst und wählen Sie `Beenden` aus dem Kontextmenü.
-
-Alternativ können Sie den MongoDB-Dienst auch über die Eingabeaufforderung stoppen:
-
-1. Öffnen Sie die Eingabeaufforderung als Administrator:
-   - Drücken Sie die `Windows-Taste`, geben Sie `cmd` ein, klicken Sie mit der rechten Maustaste auf `Eingabeaufforderung` und wählen Sie `Als Administrator ausführen`.
-
-2. Führen Sie den folgenden Befehl aus, um den MongoDB-Dienst zu stoppen:
-   ```sh
-   net stop MongoDB
-   ```
-
-
-### macOS
-
-#### MongoDB starten
+## MongoDB starten und stoppen auf Mac 
 
 Nach der Installation von MongoDB können Sie den Datenbankdienst einfach mit Homebrew starten. Homebrew verwaltet Dienste wie MongoDB und ermöglicht es Ihnen, diese mit einfachen Befehlen zu starten und zu stoppen.
 
@@ -239,7 +231,6 @@ So überprüfen Sie den Status von MongoDB:
 2. Überprüfen Sie den Eintrag für `mongodb-community`:
    - In der Liste sollten Sie `mongodb-community` sehen, gefolgt von der Versionsnummer und dem Status `started`. Dies zeigt an, dass MongoDB erfolgreich läuft.
 
-#### MongoDB stoppen
 
 Wenn Sie MongoDB beenden möchten, können Sie dies ebenfalls mit einem einfachen Homebrew-Befehl tun.
 
@@ -253,7 +244,7 @@ brew services stop mongodb-community@7.0
 
 Es sollte eine Bestätigungsmeldung erscheinen, dass der Dienst gestoppt wurde.
 
-## Basics
+## MongoDB Basics
 
 In diesem Abschnitt lernen Sie die grundlegende Nutzung von MongoDB, einschließlich der Verbindung zur Datenbank, grundlegender Befehle und Datenbankmanipulation.
 
@@ -305,7 +296,7 @@ db.createCollection("mycollection")
 
 Dieser Befehl erstellt eine neue Sammlung namens `mycollection`.
 
-## Dokument einfügen
+### Dokument einfügen
 
 Um ein Dokument in eine Sammlung einzufügen, verwenden Sie den `insertOne`-Befehl:
 
@@ -315,7 +306,7 @@ db.mycollection.insertOne({name: "Jan", age: 44})
 
 Dieser Befehl fügt ein neues Dokument in die Sammlung `mycollection` ein.
 
-## Dokumente abfragen
+### Dokumente abfragen
 
 Um alle Dokumente in einer Sammlung abzufragen, verwenden Sie den `find`-Befehl:
 
@@ -345,7 +336,7 @@ Dieser Befehl gibt alle Dokumente in der Sammlung `mycollection` zurück.
   ```
   Dieser Befehl löscht das erste Dokument, das den angegebenen Kriterien entspricht.
 
-## Python-Integration
+## MongoDB Python-Integration
 
 ### Umgebung erstellen
 
