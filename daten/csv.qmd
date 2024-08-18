@@ -54,7 +54,7 @@ Diese Konvertierungen ermöglichen es Ihnen, Daten aus Google Sheets einfach in 
 
 Wir verwenden die Bibliothek Pandas, um CSV-Daten in Python zu erstellen oder einzulesen.
 
-### Erstellung
+### CSV Erstellen
 
 ```{python}
 import pandas as pd
@@ -157,7 +157,7 @@ print(os.getcwd())
 Diese Funktion gibt das aktuelle Arbeitsverzeichnis aus, in welchem die Datei gespeichert wird.
 
 
-### Einlesen
+### CSV Einlesen
 
 ```{python}
 import pandas as pd
