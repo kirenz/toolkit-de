@@ -11,7 +11,7 @@ Vorteile:
 - **Entwicklung benutzerdefinierter Module**: Wenn Sie Ihre eigenen Module erstellen, helfen Umgebungen dabei, diese in Ihre Projekte zu integrieren, ohne Ihre globale Python-Installation zu beeinträchtigen.
 
 
-## Umgebung erstellen
+## Virtuelle Umgebung erstellen
 
 Um eine virtuelle Umgebung einzurichten, befolgen Sie diese Anweisungen basierend auf Ihrem Betriebssystem:
 
