@@ -1,12 +1,10 @@
-# Organizations
+# GitHub Organizations
 
 GitHub-Organizations sind gemeinsame Konten, bei denen Unternehmen und Open-Source-Projekte über viele Projekte hinweg zusammenarbeiten können, mit ausgeklügelten Sicherheits- und Verwaltungsfunktionen.
 
 Ihr Team kann auf GitHub mithilfe eines Organisationskontos zusammenarbeiten, das als Container für Ihre gemeinsame Arbeit dient und der Arbeit einen einzigartigen Namen und eine Marke verleiht. Jede Person, die GitHub nutzt, meldet sich immer mit einem persönlichen Konto an, und mehrere persönliche Konten können an gemeinsamen Projekten zusammenarbeiten, indem sie demselben Organisationskonto beitreten.
 
-## Erstellen einer Organisation
-
-Schritt-für-Schritt-Anleitung:
+Erstellen einer Organisation:
 
 1. Navigieren Sie zu GitHub:
     Gehen Sie zu [GitHub Organizations](https://github.com/organizations/plan).
@@ -20,7 +18,6 @@ Schritt-für-Schritt-Anleitung:
 4. Laden Sie Ihr Team ein:
     Sobald Ihre Organisation erstellt ist, können Sie damit beginnen, Mitglieder einzuladen. Erfahren Sie im nächsten Abschnitt, wie Sie andere Teammitglieder zu einer Organisation einladen.
 
-## Mitglieder verwalten
 
 Nach der Erstellung Ihrer Organisation ist die Verwaltung der Mitglieder entscheidend für eine reibungslose Zusammenarbeit.
 
