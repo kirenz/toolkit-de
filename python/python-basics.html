@@ -9,7 +9,7 @@
 <meta name="author" content="Jan Kirenz">
 <meta name="description" content="Programming Toolkit für Data Science, AI &amp; Analytics">
 
-<title>9&nbsp; Grundlagen – Data Science, AI &amp; Analytics Toolkit</title>
+<title>9&nbsp; Python Grundlagen – Data Science, AI &amp; Analytics Toolkit</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -122,7 +122,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../python/index.html">Python</a></li><li class="breadcrumb-item"><a href="../python/python-basics.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Grundlagen</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../python/index.html">Python</a></li><li class="breadcrumb-item"><a href="../python/python-basics.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Python Grundlagen</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Suchen" onclick="window.quartoOpenSearch();">
@@ -163,19 +163,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../erste-schritte/projektumgebung.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Projektumgebung</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Projektumgebung einrichten</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../erste-schritte/python-installation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Python installieren</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Python und IDLE</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../erste-schritte/anaconda-installation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Anaconda</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Anaconda Distribution</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -216,13 +216,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../python/python-arbeitsbereich.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Arbeitsbereich</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Arbeitsbereich vorbereiten</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../python/python-basics.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Grundlagen</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Python Grundlagen</span></span></a>
   </div>
 </li>
       </ul>
@@ -239,19 +239,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../vscode/visual-studio-code-installation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Installation</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../vscode/visual-studio-code-erweiterungen.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Erweiterungen</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">VS Code Einführung</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../vscode/visual-studio-code-basics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Tipps</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Hinweise zu VS Code</span></span></a>
   </div>
 </li>
       </ul>
@@ -268,43 +262,43 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../daten/csv.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">CSV</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">CSV</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../daten/json.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">JSON</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">JSON</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../daten/relational.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Relationale Datenbanken</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Relationale Datenbanken</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../daten/mysql.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">MySQL</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">MySQL</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../daten/postgresql.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">PostgreSQL</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">PostgreSQL</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../daten/nosql.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">NoSQL Datenbanken</span></span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">NoSQL Datenbanken</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../daten/mongodb.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">MongoDB</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">MongoDB</span></span></a>
   </div>
 </li>
       </ul>
@@ -321,31 +315,31 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github/github-git.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Git</span></span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Git</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github/github-setup.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Setup</span></span></a>
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">GitHub-Konto erstellen</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github/github-repo.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Repositories</span></span></a>
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">GitHub Repositories</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github/github-organization.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Organizations</span></span></a>
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">GitHub Organizations</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github/github-projects.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Projects</span></span></a>
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">GitHub Projects</span></span></a>
   </div>
 </li>
       </ul>
@@ -363,19 +357,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#bibliotheken-importieren" id="toc-bibliotheken-importieren" class="nav-link active" data-scroll-target="#bibliotheken-importieren"><span class="header-section-number">9.1</span> Bibliotheken importieren</a></li>
   <li><a href="#kommentare-einfügen" id="toc-kommentare-einfügen" class="nav-link" data-scroll-target="#kommentare-einfügen"><span class="header-section-number">9.2</span> Kommentare einfügen</a></li>
   <li><a href="#variablen-und-datentypen" id="toc-variablen-und-datentypen" class="nav-link" data-scroll-target="#variablen-und-datentypen"><span class="header-section-number">9.3</span> Variablen und Datentypen</a></li>
-  <li><a href="#grundlegende-operatoren-und-berechnungen" id="toc-grundlegende-operatoren-und-berechnungen" class="nav-link" data-scroll-target="#grundlegende-operatoren-und-berechnungen"><span class="header-section-number">9.4</span> Grundlegende Operatoren und Berechnungen</a></li>
+  <li><a href="#operatoren-und-berechnungen" id="toc-operatoren-und-berechnungen" class="nav-link" data-scroll-target="#operatoren-und-berechnungen"><span class="header-section-number">9.4</span> Operatoren und Berechnungen</a></li>
   <li><a href="#arbeiten-mit-dataframes" id="toc-arbeiten-mit-dataframes" class="nav-link" data-scroll-target="#arbeiten-mit-dataframes"><span class="header-section-number">9.5</span> Arbeiten mit DataFrames</a></li>
   <li><a href="#methoden-verstehen" id="toc-methoden-verstehen" class="nav-link" data-scroll-target="#methoden-verstehen"><span class="header-section-number">9.6</span> Methoden verstehen</a></li>
-  <li><a href="#daten-visualisieren" id="toc-daten-visualisieren" class="nav-link" data-scroll-target="#daten-visualisieren"><span class="header-section-number">9.7</span> Daten visualisieren</a></li>
+  <li><a href="#daten-mit-altair-visualisieren" id="toc-daten-mit-altair-visualisieren" class="nav-link" data-scroll-target="#daten-mit-altair-visualisieren"><span class="header-section-number">9.7</span> Daten mit Altair visualisieren</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../python/index.html">Python</a></li><li class="breadcrumb-item"><a href="../python/python-basics.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Grundlagen</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../python/index.html">Python</a></li><li class="breadcrumb-item"><a href="../python/python-basics.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Python Grundlagen</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Grundlagen</span></h1>
+<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Python Grundlagen</span></h1>
 </div>
 
 
@@ -398,7 +392,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 data-number="9.1" class="anchored" data-anchor-id="bibliotheken-importieren"><span class="header-section-number">9.1</span> Bibliotheken importieren</h2>
 <p>Das Importieren von Bibliotheken ist unerlässlich, um zusätzliche Python-Funktionen nutzen zu können. Wir importieren sie am Anfang der Datei, um Übersichtlichkeit und Effizienz zu gewährleisten. Ein Alias (ein kurzer Name) erleichtert die Referenzierung im gesamten Code.</p>
 <p>Fügen Sie den folgenden Code in eine neue Codezelle direkt unter Ihrem Titel ein und führen Sie ihn aus:</p>
-<div id="5e8420d1" class="cell" data-execution_count="1">
+<div id="79291897" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Bibliotheken importieren (am Anfang)</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -414,7 +408,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Variablen werden verwendet, um verschiedene Arten von Daten in Python zu speichern. Datentypen definieren die Natur dieser Daten und beeinflussen, wie sie verwendet werden können.</p>
 <p>Fügen Sie eine neue Codezelle hinzu, kopieren Sie dann den unten angegebenen Code in diese Zelle und führen Sie die Zelle anschließend aus.</p>
 <p>Beispielcode:</p>
-<div id="c357d114" class="cell" data-execution_count="2">
+<div id="2f2339f6" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Variablen zuweisen (mit beschreibenden Namen)</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="st">"Alice"</span>  <span class="co"># String für den Namen einer Person</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>age <span class="op">=</span> <span class="dv">30</span>  <span class="co"># Integer für das Alter</span></span>
@@ -431,7 +425,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><code>person</code> ist ein <strong>Dictionary (Wörterbuch)</strong>, das aus Schlüssel-Wert-Paaren besteht und mehrere Attribute speichern kann.</li>
 </ul>
 <p>Um die in diesen Variablen gespeicherten Werte zu überprüfen, können Sie die <code>print</code>-Funktion verwenden:</p>
-<div id="bffc056c" class="cell" data-execution_count="3">
+<div id="2e379a6b" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(name)  <span class="co"># Ausgabe: Alice</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(age)  <span class="co"># Ausgabe: 30</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(numbers)  <span class="co"># Ausgabe: [1, 2, 3]</span></span>
@@ -444,17 +438,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="grundlegende-operatoren-und-berechnungen" class="level2" data-number="9.4">
-<h2 data-number="9.4" class="anchored" data-anchor-id="grundlegende-operatoren-und-berechnungen"><span class="header-section-number">9.4</span> Grundlegende Operatoren und Berechnungen</h2>
+<section id="operatoren-und-berechnungen" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="operatoren-und-berechnungen"><span class="header-section-number">9.4</span> Operatoren und Berechnungen</h2>
 <p>Operatoren ermöglichen Berechnungen, Vergleiche und logische Operationen.</p>
 <p>Beispielcode:</p>
-<div id="64d4c160" class="cell" data-execution_count="4">
+<div id="20ddb384" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Variablen erzeugen</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>length <span class="op">=</span> <span class="dv">10</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>width <span class="op">=</span> <span class="dv">5</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Berechnung der Fläche und des Umfangs:</p>
-<div id="6da63b5c" class="cell" data-execution_count="5">
+<div id="3c5bc275" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>area <span class="op">=</span> length <span class="op">*</span> width  <span class="co"># Multiplikation</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>perimeter <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> (length <span class="op">+</span> width)  <span class="co"># Addition und Multiplikation</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -469,7 +463,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><code>perimeter</code> wird berechnet, indem <code>length</code> und <code>width</code> addiert und dann mit 2 multipliziert werden.</li>
 </ul>
 <p>Vergleichsoperationen:</p>
-<div id="b1982d90" class="cell" data-execution_count="6">
+<div id="77f37a0e" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>is_square <span class="op">=</span> length <span class="op">==</span> width  <span class="co"># Überprüfen, ob Länge und Breite gleich sind</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>is_square</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -481,7 +475,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><code>is_square</code> überprüft, ob die beiden Seiten gleich lang sind.</li>
 </ul>
 <p>Logische Operationen:</p>
-<div id="a3160286" class="cell" data-execution_count="7">
+<div id="f5e18938" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>is_large_rectangle <span class="op">=</span> (area <span class="op">&gt;</span> <span class="dv">20</span>) <span class="kw">and</span> (perimeter <span class="op">&gt;</span> <span class="dv">10</span>)  <span class="co"># Logisches UND</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>is_large_rectangle</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -497,7 +491,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 data-number="9.5" class="anchored" data-anchor-id="arbeiten-mit-dataframes"><span class="header-section-number">9.5</span> Arbeiten mit DataFrames</h2>
 <p>Ein DataFrame ist eine zweidimensionale tabellarische Datenstruktur, die von Pandas bereitgestellt wird. Es ermöglicht eine effiziente Datenmanipulation, ähnlich wie ein Tabellenblatt oder eine SQL-Tabelle.</p>
 <p>Hier ein Beispiel. Wir bereiten zunächst die Daten vor:</p>
-<div id="b9245d10" class="cell" data-execution_count="8">
+<div id="0468d617" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> { </span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>         <span class="st">"Numbers"</span>: [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>], </span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>         <span class="st">"Squares"</span>: [<span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">9</span>, <span class="dv">16</span>, <span class="dv">25</span>]</span>
@@ -507,14 +501,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Das Wörterbuch <code>data</code> enthält zwei Listen: Zahlen und deren Quadrate.</li>
 </ul>
 <p>Erstellen eines DataFrame mit Pandas:</p>
-<div id="233a0b14" class="cell" data-execution_count="9">
+<div id="9bac8e0f" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(data)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>Der DataFrame <code>df</code> wird aus diesem Wörterbuch mit der Funktion <code>pd.DataFrame</code> erstellt, die die Daten in Zeilen und Spalten organisiert.</li>
 </ul>
 <p>Den DataFrame inspizieren (dafür verwenden wir nicht <code>print()</code>)</p>
-<div id="0cec4c0f" class="cell" data-execution_count="10">
+<div id="e6df0f80" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="10">
 <div>
@@ -569,7 +563,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Eine Methode ist eine Funktion, die mit einem Objekt (wie einem DataFrame, einer Liste oder einem String) verknüpft ist und über die Punktnotation (<code>.</code>) aufgerufen wird. Dies erleichtert die Manipulation des Objekts und das Abrufen von Informationen.</p>
 <p>Beispielcode:</p>
 <p><code>df.head()</code> ist eine Methode, welche die ersten paar Zeilen eines DataFrames anzeigt, um die Daten zu zeigen:</p>
-<div id="9204663b" class="cell" data-execution_count="11">
+<div id="1357179e" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>df.head() </span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="11">
 <div>
@@ -616,7 +610,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p><code>df.describe()</code> liefert zusammenfassende Statistiken wie Mittelwert, Anzahl und Standardabweichung. Zusätzlich verwenden wir die Methode <code>.round(2)</code>, um die Werte auf zwei Dezimalstellen zu runden:</p>
-<div id="78e3a901" class="cell" data-execution_count="12">
+<div id="afd1d96b" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>df.describe().<span class="bu">round</span>(<span class="dv">2</span>) </span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="12">
 <div>
@@ -684,11 +678,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><strong>Punktnotation (<code>.</code>):</strong> Wird verwendet, um eine Methode auf einem Objekt aufzurufen.</li>
 </ul>
 </section>
-<section id="daten-visualisieren" class="level2" data-number="9.7">
-<h2 data-number="9.7" class="anchored" data-anchor-id="daten-visualisieren"><span class="header-section-number">9.7</span> Daten visualisieren</h2>
+<section id="daten-mit-altair-visualisieren" class="level2" data-number="9.7">
+<h2 data-number="9.7" class="anchored" data-anchor-id="daten-mit-altair-visualisieren"><span class="header-section-number">9.7</span> Daten mit Altair visualisieren</h2>
 <p>Nachdem Sie die Struktur eines DataFrames verstanden haben, können Sie dessen Daten mit Altair visualisieren.</p>
 <p>Beispielcode:</p>
-<div id="0d65fcea" class="cell" data-execution_count="13">
+<div id="a875502d" class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Das Diagramm erstellen</span></span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>alt.Chart(df).mark_point().encode(</span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span><span class="st">'Numbers'</span>,</span>
@@ -697,23 +691,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output cell-output-display" data-execution_count="13">
 
 <style>
-  #altair-viz-58d3b9b2319e426c89fd8c35eb523bbc.vega-embed {
+  #altair-viz-3e7489d12465466f92cd36c7ceddde0a.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-58d3b9b2319e426c89fd8c35eb523bbc.vega-embed details,
-  #altair-viz-58d3b9b2319e426c89fd8c35eb523bbc.vega-embed details summary {
+  #altair-viz-3e7489d12465466f92cd36c7ceddde0a.vega-embed details,
+  #altair-viz-3e7489d12465466f92cd36c7ceddde0a.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-58d3b9b2319e426c89fd8c35eb523bbc"></div>
+<div id="altair-viz-3e7489d12465466f92cd36c7ceddde0a"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-58d3b9b2319e426c89fd8c35eb523bbc") {
-      outputDiv = document.getElementById("altair-viz-58d3b9b2319e426c89fd8c35eb523bbc");
+    if (outputDiv.id !== "altair-viz-3e7489d12465466f92cd36c7ceddde0a") {
+      outputDiv = document.getElementById("altair-viz-3e7489d12465466f92cd36c7ceddde0a");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -765,7 +759,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Erklärung:</p>
 <ul>
-<li><strong>Altair-Bibliothek</strong>: Eine deklarative Visualisierungsbibliothek, die den Prozess der Erstellung von Diagrammen und Grafiken vereinfacht.</li>
+<li><strong>Altair-Bibliothek</strong>: Eine Visualisierungsbibliothek, die den Prozess der Erstellung von Diagrammen und Grafiken vereinfacht.</li>
 <li><strong><code>alt.Chart(df)</code></strong>: Erstellt ein neues Diagrammobjekt aus dem DataFrame <code>df</code>.</li>
 <li><strong><code>mark_point()</code></strong>: Gibt den Diagrammtyp an (in diesem Fall ein Streudiagramm).</li>
 <li><strong><code>encode</code></strong>: Ordnet DataFrame-Spalten Diagrammattributen zu.
@@ -1202,8 +1196,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../python/python-arbeitsbereich.html" class="pagination-link" aria-label="Arbeitsbereich">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Arbeitsbereich</span></span>
+      <a href="../python/python-arbeitsbereich.html" class="pagination-link" aria-label="Arbeitsbereich vorbereiten">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Arbeitsbereich vorbereiten</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
