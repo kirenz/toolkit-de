@@ -1,4 +1,4 @@
-# Grundlagen
+# Python Grundlagen
 
 Sie haben die Möglichkeit, den gesamten Inhalt dieses Kapitels als Notebook herunterzuladen. Nach dem Herunterladen können Sie es in Ihrem `code` Ordner speichern und das Notebook in Jupyter öffnen:
 
@@ -56,7 +56,7 @@ print(numbers)  # Ausgabe: [1, 2, 3]
 print(person)  # Ausgabe: {'name': 'Alice', 'age': 30}
 ```
 
-## Grundlegende Operatoren und Berechnungen
+## Operatoren und Berechnungen
 
 Operatoren ermöglichen Berechnungen, Vergleiche und logische Operationen.
 
@@ -158,7 +158,7 @@ Allgemeines Methodenkonzept:
 - **Methode:** Eine Funktion, die mit einem Objekt verknüpft ist.
 - **Punktnotation (`.`):** Wird verwendet, um eine Methode auf einem Objekt aufzurufen.
 
-## Daten visualisieren
+## Daten mit Altair visualisieren
 
 Nachdem Sie die Struktur eines DataFrames verstanden haben, können Sie dessen Daten mit Altair visualisieren.
 
@@ -174,7 +174,7 @@ alt.Chart(df).mark_point().encode(
 
 Erklärung:
 
-- **Altair-Bibliothek**: Eine deklarative Visualisierungsbibliothek, die den Prozess der Erstellung von Diagrammen und Grafiken vereinfacht.
+- **Altair-Bibliothek**: Eine Visualisierungsbibliothek, die den Prozess der Erstellung von Diagrammen und Grafiken vereinfacht.
 - **`alt.Chart(df)`**: Erstellt ein neues Diagrammobjekt aus dem DataFrame `df`.
 - **`mark_point()`**: Gibt den Diagrammtyp an (in diesem Fall ein Streudiagramm).
 - **`encode`**: Ordnet DataFrame-Spalten Diagrammattributen zu.
