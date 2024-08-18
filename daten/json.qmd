@@ -30,7 +30,7 @@ Diese JSON-Datei enthält ein Objekt mit einem Schlüssel `Personen`, der eine L
 
 Im oben genannten Beispiel könnten wir nach dem Laden der JSON-Datei auf die Liste der Personen mit `daten["Personen"]` zugreifen und die Informationen jeder Person entsprechend verwenden.
 
-## Schreiben einer JSON-Datei
+## Schreiben und Lesen einer JSON-Datei
 
 Das Speichern von Daten in eine JSON-Datei ist mit der `json`-Bibliothek sehr einfach. Die Methode `json.dump()` ermöglicht das Speichern eines Python Dictionaries in eine JSON-Datei.
 
@@ -85,9 +85,10 @@ with open('daten.json', 'w') as jsonfile:
 
 :::
 
-## Lesen einer JSON-Datei
 
-Das Lesen von JSON-Dateien in Python ist mit der `json`-Bibliothek ebenfalls sehr einfach. Die Methode `json.load()` ermöglicht das Einlesen von JSON-Daten aus einer Datei in ein Python Dictionary.
+Lesen einer JSON-Datei:
+
+Das Lesen von JSON-Dateien in Python ist mit der `json`-Bibliothek ebenfalls leicht umzusetzen. Die Methode `json.load()` ermöglicht das Einlesen von JSON-Daten aus einer Datei in ein Python Dictionary.
 
 ```{python}
 import json
@@ -137,14 +138,11 @@ print(daten)
 
 :::
 
-Diese ausführliche Erklärung sollte dir helfen, den Prozess des Lesens einer JSON-Datei in Python besser zu verstehen. Von der Verwendung der Bibliothek bis hin zum Öffnen, Lesen und Anzeigen der Datei werden alle Schritte detailliert beschrieben.
 
-## Erweiterte Funktionen
 
+## JSON-Daten in Python bearbeiten
 
 JSON kann leicht in Python-Datenstrukturen konvertiert werden und umgekehrt.
-
-### JSON in Dictionary
 
 JSON in ein Python Dictionary konvertieren:
 
@@ -163,7 +161,6 @@ daten = json.loads(json_daten)
 print(daten)
 ```
 
-### Dictionary zu JSON
 
 Python Dictionary in JSON konvertieren:
 
@@ -181,10 +178,7 @@ print(json_daten)
 ```
 
 
-
-### Verschachtelte JSON-Daten
-
-JSON-Daten können verschachtelte Strukturen enthalten, wie Listen von Objekten oder Objekte innerhalb von Objekten. Python kann diese Strukturen direkt verarbeiten.
+JSON-Daten können auch verschachtelte Strukturen enthalten, wie Listen von Objekten oder Objekte innerhalb von Objekten. Python kann diese Strukturen direkt verarbeiten.
 
 ```{python}
 import json
