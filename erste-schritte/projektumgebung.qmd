@@ -1,4 +1,4 @@
-# Projektumgebung
+# Projektumgebung einrichten
 
 Das Organisieren Ihrer Dateien ist entscheidend für die Effizienz und Zugänglichkeit Ihrer Projekte. Zunächst erstellen wir daher einen Ordner namens `toolkit-lab` auf Ihrem Rechner und legen die Unterverzeichnisse `code` und `data` an, um Ihr Projekt strukturiert zu halten.
 
@@ -20,7 +20,7 @@ Die Befehlszeile eröffnet eine neue Ebene der Interaktion mit Ihrem Computer. W
 
 Die Befehlszeile ist ein leistungsstarkes Werkzeug zum Einrichten Ihrer Arbeitsumgebung. Sie arbeitet über ein Programm namens *Shell*, das eine direkte Kommunikation mit dem Betriebssystem über textbasierte Eingaben ermöglicht.
 
-## Windows
+## Projektumgebung in Windows
 
 Folgen Sie diesen Schritten, um das Hauptverzeichnis und die Unterverzeichnisse mit der Windows-Eingabeaufforderung ("Command Prompt" bzw. "cmd") zu erstellen:
 
@@ -46,9 +46,9 @@ Folgen Sie diesen Schritten, um das Hauptverzeichnis und die Unterverzeichnisse 
 
 Diese Befehle richten ein Hauptverzeichnis `toolkit-lab` mit zwei Unterverzeichnissen ein: `code` für Ihre Skripte und Anwendungen und `data` zum Speichern von Datensätzen und zugehörigen Dateien.
 
-## macOS/Linux
+## Projektumgebung auf Mac
 
-Folgen Sie diesen Schritten, um das Hauptverzeichnis und die Unterverzeichnisse mit dem Terminal (dies ist die Bezeichnung der Befehlszeile in macOS und Linux) in macOS oder Linux zu erstellen:
+Folgen Sie diesen Schritten, um das Hauptverzeichnis und die Unterverzeichnisse mit dem Terminal (dies ist die Bezeichnung der Befehlszeile in macOS und Linux) in macOS zu erstellen:
 
 1. Um das Terminal in macOS zu öffnen, können Sie die Spotlight-Suche (`Cmd + Space`) verwenden und "Terminal" eingeben oder über `Programme -> Dienstprogramme -> Terminal` navigieren.
 2. Zuerst verwenden wir den Befehl pwd ("print working directory") und drücken die Eingabetaste, um den vollständigen Pfad des aktuellen Verzeichnisses anzuzeigen. Wenn Sie das Terminal gerade geöffnet haben, sollte das aktuelle Verzeichnis Ihr Home-Verzeichnis sein (in meinem Fall `/Users/jankirenz`, da mein Benutzerkonto jankirenz heißt):
