@@ -1,49 +1,38 @@
-# Anaconda
+# Anaconda Distribution
 
-Anaconda bietet eine umfassende Plattform für datenbezogene Projekte, indem es Python und viele wichtige Data Science-Tools enthält.
+Das Softwarepaket Anaconda Distribution bietet eine umfassende Plattform für datenbezogene Projekte, indem es Python und viele wichtige Data Science-Tools enthält.
 
-## Installer herunterladen
+## Anaconda in Windows installieren
+
 
 1. Gehen Sie zur [Anaconda-Download-Seite](https://www.anaconda.com/download/success).
-2. Wählen Sie Ihr Betriebssystem aus (für macOS wählen Sie den entsprechenden grafischen Installer - wenn Ihr Gerät einen [Apple-Chip](https://support.apple.com/en-us/116943) hat, wählen Sie die passende Ausführung - Apple Silicon. Andernfalls den Intel chip).
+2. Wählen Sie Ihr Betriebssystem aus.
 3. Laden Sie den Installer herunter. Achten Sie darauf, den grafischen Installer herunterzuladen.
-
-## Installationsanleitung
-
-### Windows
-
-1. Klicken Sie mit der rechten Maustaste auf den heruntergeladenen Installer und wählen Sie "Als Administrator ausführen".
-2. Klicken Sie auf "Weiter", um durch die Setup-Bildschirme zu navigieren.
-3. Stimmen Sie den Geschäftsbedingungen zu.
-4. Wählen Sie den Installationstyp:
+4. Klicken Sie mit der rechten Maustaste auf den heruntergeladenen Installer und wählen Sie "Als Administrator ausführen".
+5. Klicken Sie auf "Weiter", um durch die Setup-Bildschirme zu navigieren.
+6. Stimmen Sie den Geschäftsbedingungen zu.
+7. Wählen Sie den Installationstyp:
    - "Nur für mich" (empfohlen) oder "Alle Benutzer".
-5. Wählen Sie den Zielordner für die Installation.
-6. Wichtiger Schritt: **Aktivieren Sie "Anaconda zu meiner PATH-Umgebungsvariablen hinzufügen"** (empfohlen).
-7. Aktivieren Sie "Anaconda als meine Standard-Python-Version registrieren" (empfohlen).
-8. Klicken Sie auf "Installieren" und warten Sie, bis die Installation abgeschlossen ist.
-9. Klicken Sie auf "Weiter" und dann auf "Fertig stellen", um die Installation abzuschließen.
+8. Wählen Sie den Zielordner für die Installation.
+9. Wichtiger Schritt: **Aktivieren Sie "Anaconda zu meiner PATH-Umgebungsvariablen hinzufügen"** (empfohlen).
+10. Aktivieren Sie "Anaconda als meine Standard-Python-Version registrieren" (empfohlen).
+11. Klicken Sie auf "Installieren" und warten Sie, bis die Installation abgeschlossen ist.
+12. Klicken Sie auf "Weiter" und dann auf "Fertig stellen", um die Installation abzuschließen.
 
-### macOS
+## Anaconda auf Mac installieren
 
-1. Suchen Sie die heruntergeladene `.pkg`-Datei und doppelklicken Sie darauf, um die Installation zu starten.
-2. Folgen Sie den Anweisungen, um die Installation abzuschließen:
+1. Gehen Sie zur [Anaconda-Download-Seite](https://www.anaconda.com/download/success).
+2. Wählen Sie Ihr macOS Betriebssystem aus (wählen Sie die passende Ausführung für Ihr Gerät. Falls Sie einen [Apple-Chip](https://support.apple.com/en-us/116943) haben, wählen Sie Apple Silicon. Andernfalls den Intel chip).
+3. Laden Sie den grafischen Installer herunter. 
+4. Suchen Sie die heruntergeladene `.pkg`-Datei und doppelklicken Sie darauf, um die Installation zu starten.
+5. Folgen Sie den Anweisungen, um die Installation abzuschließen:
    - Lesen und akzeptieren Sie die Lizenzvereinbarung.
    - Wählen Sie das Ziellaufwerk für die Installation aus (untere Option auswählen und zu Ihrem Ihrem Home-Verzeichnis navigieren - in meinem Fall `/Users/jankirenz`, da mein Benutzerkonto jankirenz heißt).
    - Klicken Sie auf "Installieren".
-3. Sobald die Installation abgeschlossen ist, schließen Sie den Installer.
+6. Sobald die Installation abgeschlossen ist, schließen Sie den Installer.
 
-### Linux
 
-1. Öffnen Sie ein Terminalfenster und navigieren Sie zu dem Verzeichnis, in dem der `.sh`-Installer heruntergeladen wurde.
-2. Führen Sie den Installer mit folgendem Befehl aus:
-   ```bash
-   bash Anaconda3-<ihre-version>-Linux-x86_64.sh
-   ```
-3. Folgen Sie den Anweisungen, um die Lizenzvereinbarung zu akzeptieren und den Installationsort auszuwählen.
-4. Der Installer wird fragen, ob Anaconda in Ihrer `.bashrc`-Datei initialisiert werden soll. Geben Sie "ja" ein.
-5. Schließen Sie das Terminal und öffnen Sie ein neues, um sicherzustellen, dass Anaconda richtig initialisiert ist.
-
-## Installation überprüfen
+## Anaconda überprüfen und aktualisieren
 
 Um zu bestätigen, dass Anaconda erfolgreich installiert wurde:
 1. Öffnen Sie ein Eingabeaufforderungsfenster (Windows) oder ein Terminal (macOS/Linux).
@@ -54,13 +43,13 @@ Um zu bestätigen, dass Anaconda erfolgreich installiert wurde:
    ```
 3. Wenn Anaconda korrekt installiert ist, wird die Version im Terminal angezeigt.
 
-## Erste Aktualisierung
 
-1. Nach der Installation ist es eine gute Idee, alle Standardpakete zu aktualisieren:
+Nach der Installation ist es eine gute Idee, alle Standardpakete zu aktualisieren:
 
    ```bash
    conda update --all
    ```
-2. Folgen Sie den Anweisungen, um die Aktualisierung abzuschließen.
+
+Folgen Sie den Anweisungen, um die Aktualisierung abzuschließen.
 
 Mit der Installation von Anaconda sind Sie bereit, anstelle von IDLE mit der Lösung Jupyter Notebook, einer webbasierten Umgebung, Ihren Python-Code zu schreiben und auszuführen.
