@@ -12,7 +12,7 @@ format:
     toc: false
     toc-depth: 1
     embed-resources: false
-    theme: [default, ../style/custom.scss]
+    theme: [default, /style/custom.scss]
     incremental: true
     transition: slide
     background-transition: fade
@@ -23,11 +23,11 @@ format:
     scrollable: true
     slide-number: c
     preview-links: auto
-    css: ../style/index.css
+    css: /style/index.css
     chalkboard: 
       buttons: false
-   #logo: images/logo.png
-    footer: Jan Kirenz
+    logo: images/logo.png
+    footer: Jupyter Notebook | Jan Kirenz
 jupyter: python3
 ---
 
@@ -44,7 +44,7 @@ Im Gegensatz zum Python IDLE, das hauptsächlich als einfacher Editor fungiert, 
 2. **Text und Code kombinieren:** Wechseln Sie einfach eine Zelle in den "Markdown"-Modus, um Texte, formatierte Anweisungen oder sogar mathematische Gleichungen mit LaTeX zu integrieren.
 3. **Ergebnisse visualisieren:** Zeigen Sie Diagramme, Grafiken und andere Visualisierungen direkt im Notebook an, was eine sofortige Rückmeldungen ermöglicht und für explorative Datenanalysen von Vorteil ist.
 
-## Notebook erstellen
+## Jupyter Notebook erstellen
 
 1. Öffnen Sie Anaconda Navigator:
    - **Windows:** Öffnen Sie das Startmenü und suchen Sie nach "Anaconda Navigator". Klicken Sie, um es zu starten.
@@ -68,7 +68,8 @@ print("Hello, Jupyter!")
 
 Führen Sie den Code aus, indem Sie `Shift+Enter` drücken oder auf "Run" klicken. Die Ausgabe wird direkt unter der Zelle angezeigt.
 
-## Notebook speichern
+**Jupyter Notebook speichern**: 
+
 
 1. Verwenden Sie das "File"-Menü, um das Notebook zu speichern.
 2. Benennen Sie die Datei `hello-jupyter.ipynb` und speichern Sie sie im `code`-Verzeichnis.
