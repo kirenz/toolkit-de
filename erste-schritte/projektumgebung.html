@@ -389,11 +389,21 @@ Abbildung&nbsp;1.1: Ordnerstruktur
 </figcaption>
 </figure>
 </div>
-<p>Diese Ordnerstruktur kann auch schematisch wie folgt dargestellt werden:</p>
+<p>Diese Ordnerstruktur kann auch wie folgt dargestellt werden:</p>
 <pre class="plaintext"><code>toolkit-lab/
 ├── code/
 └── data/</code></pre>
 <p>Anstatt eine grafische Benutzeroberfläche wie den Windows-Explorer oder den macOS Finder zu verwenden, werden wir die Befehlszeilenschnittstelle (“Command Line Interface” bzw. “CLI”) nutzen, um dies zu erreichen.</p>
+<div id="fig-terminal" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-terminal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/terminalicon2.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:15.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-terminal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;1.2: Command Line Interface (CLI)
+</figcaption>
+</figure>
+</div>
 <div class="callout callout-style-simple callout-note no-icon">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
@@ -404,7 +414,7 @@ Abbildung&nbsp;1.1: Ordnerstruktur
 </div>
 </div>
 </div>
-<p>Die Befehlszeile ist ein leistungsstarkes Werkzeug zum Einrichten Ihrer Arbeitsumgebung. Sie arbeitet über ein Programm namens <em>Shell</em>, das eine direkte Kommunikation mit dem Betriebssystem über textbasierte Eingaben ermöglicht.</p>
+<p>Die Befehlszeile ist ein leistungsstarkes Werkzeug zum Einrichten Ihrer Arbeitsumgebung. Sie ermöglicht eine Kommunikation mit dem Betriebssystem über textbasierte Eingaben.</p>
 <section id="projektumgebung-in-windows" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="projektumgebung-in-windows"><span class="header-section-number">1.1</span> Projektumgebung in Windows</h2>
 <p>Folgen Sie diesen Schritten, um das Hauptverzeichnis und die Unterverzeichnisse mit der Windows-Eingabeaufforderung (“Command Prompt” bzw. “cmd”) zu erstellen:</p>
@@ -424,7 +434,7 @@ Abbildung&nbsp;1.1: Ordnerstruktur
 <h2 data-number="1.2" class="anchored" data-anchor-id="projektumgebung-auf-mac"><span class="header-section-number">1.2</span> Projektumgebung auf Mac</h2>
 <p>Folgen Sie diesen Schritten, um das Hauptverzeichnis und die Unterverzeichnisse mit dem Terminal (dies ist die Bezeichnung der Befehlszeile in macOS und Linux) in macOS zu erstellen:</p>
 <ol type="1">
-<li><p>Um das Terminal in macOS zu öffnen, können Sie die Spotlight-Suche (<code>Cmd + Space</code>) verwenden und “Terminal” eingeben oder über <code>Programme -&gt; Dienstprogramme -&gt; Terminal</code> navigieren.</p></li>
+<li><p>Um das Terminal in macOS zu öffnen, können Sie die Spotlight-Suche (<code>Cmd + Leertaste</code>) verwenden und “Terminal” eingeben oder über <code>Programme -&gt; Dienstprogramme -&gt; Terminal</code> navigieren.</p></li>
 <li><p>Zuerst verwenden wir den Befehl pwd (“print working directory”) und drücken die Eingabetaste, um den vollständigen Pfad des aktuellen Verzeichnisses anzuzeigen. Wenn Sie das Terminal gerade geöffnet haben, sollte das aktuelle Verzeichnis Ihr Home-Verzeichnis sein (in meinem Fall <code>/Users/jankirenz</code>, da mein Benutzerkonto jankirenz heißt):</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">pwd</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li><p>Erstellen Sie nun einen neuen Ordner namens <code>toolkit-lab</code> in dem Home-Verzeichnis (kopieren Sie diesen Code und geben Sie ihn in Ihr Terminal ein):</p>
