@@ -4,6 +4,15 @@ Relationale Datenbanken sind das Rückgrat vieler moderner Datenbankanwendungen 
 
 Ein Datenbankmanagementsystem (DBMS) ist die Software, die die Erstellung, Verwaltung und Nutzung von Datenbanken ermöglicht. Ein relationales DBMS (RDBMS) bietet Funktionen wie Datenintegrität, Transaktionsverwaltung und Sicherheitsmechanismen. Bekannte RDBMS sind MySQL, PostgreSQL und SQLite.
 
+Relationale Datenbanken sind in vielen Bereichen weit verbreitet, darunter:
+
+- Finanzwesen: Verwaltung von Kontodaten, Transaktionen und Finanzberichten.
+- E-Commerce Verwaltung von Produktkatalogen, Bestellungen und Kundeninformationen.
+- Gesundheitswesen Verwaltung von Patientendaten, Terminen und medizinischen Aufzeichnungen.
+
+Durch ihre Struktur, Flexibilität und Zuverlässigkeit bleiben relationale Datenbanken ein zentrales Werkzeug in der Datenverwaltung und -analyse.
+
+
 
 ## Tabellen 
 
@@ -44,12 +53,4 @@ WHERE Stadt = 'Berlin';
 
 Diese Abfrage selektiert die Spalten "Name" und "Email" aus der Tabelle "Kunden", wobei nur die Datensätze berücksichtigt werden, bei denen die Stadt "Berlin" ist.
 
-## Anwendungsfälle
 
-Relationale Datenbanken sind in vielen Bereichen weit verbreitet, darunter:
-
-- Finanzwesen: Verwaltung von Kontodaten, Transaktionen und Finanzberichten.
-- E-Commerce Verwaltung von Produktkatalogen, Bestellungen und Kundeninformationen.
-- Gesundheitswesen Verwaltung von Patientendaten, Terminen und medizinischen Aufzeichnungen.
-
-Durch ihre Struktur, Flexibilität und Zuverlässigkeit bleiben relationale Datenbanken ein zentrales Werkzeug in der Datenverwaltung und -analyse.
