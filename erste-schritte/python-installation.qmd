@@ -1,4 +1,4 @@
-# Python installieren
+# Python und IDLE
 
 Python kann direkt von der offiziellen Python-Website oder über eine Software-Distribution wie Anaconda installiert werden, die zusätzliche Tools bietet.
 
@@ -7,23 +7,22 @@ Dieses Kapitel behandelt:
 - Die Installation von Python.
 - Erste Schritte mit Python in dem Python Code-Editor IDLE.
 
-## Installation
+## Python-Installation in Windows
 
-### Windows
 
 1. Installationsprogramm herunterladen: Navigieren Sie zur [Python-Website](https://www.python.org/downloads/) und laden Sie die neueste Version für Ihre Windows-Version herunter (normalerweise Windows-Installer 64-Bit).
 2. Installationsprogramm ausführen: Klicken Sie mit der rechten Maustaste auf das heruntergeladene Installationsprogramm und wählen Sie "*Als Administrator ausführen*". Stellen Sie sicher, dass Sie das Kästchen "*Add Python 3.x to PATH*" am unteren Rand des Installationsfensters markieren, um sicherzustellen, dass Python zu den Umgebungsvariablen Ihres Systems hinzugefügt wird (dies ist entscheidend, damit Python von jedem Verzeichnis im System aus über die Kommandozeile aufgerufen werden kann. Ohne diese Einstellung müssten Sie den vollständigen Pfad zur Python-Installation angeben, um Python auszuführen, was unpraktisch und fehleranfällig ist).
 3. Anpassung der Installation (optional): Sie können die Installation anpassen, indem Sie auf "Customize installation" klicken. Dies ermöglicht es Ihnen, spezifische Funktionen wie Dokumentation, pip, Tests usw. auszuwählen.
 4. Installation starten: Klicken Sie auf "*Install Now*", um den Installationsvorgang zu starten.
 
-### Mac
+## Python-Installation auf Mac
 
 1. Installationsprogramm herunterladen: Navigieren Sie zur [Python-Website](https://www.python.org/downloads/) und laden Sie die neueste Version herunter.
 2. Python installieren: Öffnen Sie die heruntergeladene `.pkg`-Datei und folgen Sie den Anweisungen zur Installation von Python. Der Installationsassistent führt Sie durch die notwendigen Schritte.
 
 <!-- 3. Python zum PATH hinzufügen: Der Installationsassistent sollte diesen Schritt erledigen, aber Sie können dies überprüfen, indem Sie ein Terminal öffnen und `echo $PATH` eingeben. Stellen Sie sicher, dass das Verzeichnis, in dem Python installiert ist, in der Ausgabe erscheint. -->
 
-## Überprüfung der Installation
+## Testen der Python-Installation
 
 Nach der Installation überprüfen Sie, ob Python korrekt installiert wurde, indem Sie eine Kommandozeile öffnen (Terminal auf macOS, Eingabeaufforderung auf Windows) und diesen Befehl eingeben:
 
@@ -51,15 +50,15 @@ Python IDLE ist eine einfache integrierte Entwicklungsumgebung ("Integrated Deve
 
 Obwohl IDLE offiziell für "Integrated DeveLopment Environment" steht, wurde der Name in Anspielung auf Eric Idle gewählt, ähnlich wie der Name der Programmiersprache Python selbst in Anspielung auf Monty Python gewählt wurde.
 
-### IDLE starten
+**IDLE starten**
 
 Nach der Installation von Python können Sie IDLE über das Suchmenü Ihres Betriebssystems starten:
 
 - Windows: Öffnen Sie das Startmenü und geben Sie `IDLE` ein.
 - MacOS: Verwenden Sie die Spotlight-Suche (Cmd + Leertaste), geben Sie `IDLE` ein und drücken Sie Enter.
-- Linux: Finden Sie IDLE im Anwendungsmenü oder führen Sie `idle` im Terminal aus.
 
-### IDLE verwenden
+
+**IDLE verwenden**
 
 Das IDLE-Shell-Fenster fungiert als interaktiver Interpreter, der jede Codezeile sofort ausführt, wenn Sie Enter drücken. 
 
@@ -79,8 +78,6 @@ Als nächstes erstellen und führen wir ein einfaches Python-Skript aus:
 
 Ändern Sie nun Ihr Skript mit verschiedenen Nachrichten. Sie können auch `help(print)` oder `help()` in die IDLE-Shell eingeben, um die umfangreiche Hilfedokumentation von Python zu erkunden und andere Funktionen kennenzulernen.
 
-## Nächste Schritte
 
 Python IDLE bietet eine recht einfache Oberfläche für die Codeentwicklung und -ausführung. In einem der folgenden Abschnitte werden wir fortschrittlichere Entwicklungsumgebungen wie Visual Studio Code erkunden, die größere Projekte mit zusätzlichen Funktionen unterstützen.
 
-Im nächsten Kapitel wird die Installation und grundlegende Nutzung von Anaconda behandelt, einer beliebten Python-Distribution, die eine Auswahl von vorinstallierten Python-Tools umfasst, die häufig in der Datenwissenschaft und im maschinellen Lernen verwendet werden.
