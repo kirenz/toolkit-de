@@ -4,7 +4,7 @@ Markdown ist eine einfache Markup-Sprache, die zur Umwandlung in HTML entwickelt
 
 In der Datenwissenschaft findet Markdown umfangreiche Anwendung nicht nur zur Dokumentation von Projekten, sondern auch zur Erstellung dynamischer Berichte, die nahtlos erzählenden Text mit den Ergebnissen von Datenanalysen integrieren, oft mithilfe von Tools wie Jupyter Notebooks.
 
-## Einrichtung
+## Markdown in Jupyter Notebook 
 
 Um loszulegen, erstellen Sie zuerst ein neues Jupyter-Notebook. Wenn Sie nicht sicher sind, wie das geht, können Sie diesen Leitfaden zu [Jupyter Notebooks](jupyter-notebook.qmd) durcharbeiten. Benennen Sie Ihr Notebook `hello-markdown.ipynb` und speichern Sie es im Ordner `code`:
 
@@ -14,7 +14,7 @@ Um loszulegen, erstellen Sie zuerst ein neues Jupyter-Notebook. Wenn Sie nicht s
 
 Führen Sie die Zelle mit `Shift+Enter` aus, um den Markdown-Text zu rendern. Denken Sie daran, Ihren Fortschritt regelmäßig zu speichern.
 
-## Markdown-Syntax
+## Markdown-Basics
 
 ### Überschriften
 
@@ -157,7 +157,7 @@ print("Hallo, Python!")
 print("Hallo, Python!")
 ```
 
-## Weiterführendes Lernen
+### Weiterführendes Lernen
 
 Erkunden Sie diese Ressourcen, um Ihr Verständnis von Markdown weiter zu vertiefen:
 
