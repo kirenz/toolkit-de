@@ -1,7 +1,7 @@
 ---
 title: Projektumgebung einrichten
 lang: de
-subtitle: Subtitle
+subtitle: Einführung
 author: Jan Kirenz
 execute:
   eval: false
@@ -31,7 +31,7 @@ format:
 jupyter: python3
 ---
 
-## 
+## Ordnerstruktur
 
 Das Organisieren Ihrer Dateien ist entscheidend für die Effizienz und Zugänglichkeit Ihrer Projekte. Zunächst erstellen wir daher einen Ordner namens `toolkit-lab` auf Ihrem Rechner und legen die Unterverzeichnisse `code` und `data` an, um Ihr Projekt strukturiert zu halten.
 
