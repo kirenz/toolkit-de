@@ -14,7 +14,14 @@ Darstellung der Ordnerstruktur
 
 :::
 
-Für die Darstellung der Ordnerstruktur verwenden wir typischerweise eine Baumstruktur, wie in @fig-ordner2 dargestellt.
+Für die Darstellung der Ordnerstruktur verwenden wir typischerweise eine Baumstruktur, wie in @fig-ordner2 dargestellt. Diese kann beispielsweise nach diesem Schema erzeugt werden:
+
+
+```plaintext
+toolkit-lab/
+├── code/
+└── data/
+```
 
 Anstatt eine grafische Benutzeroberfläche wie den Windows-Explorer oder den macOS Finder zu verwenden, werden wir die *Befehlszeile* verwenden, um die Ordner einzurichten. Die Befehlszeile ist ein leistungsstarkes Werkzeug zum Einrichten Ihrer Arbeitsumgebung. Sie ermöglicht eine  Kommunikation mit dem Betriebssystem über textbasierte Eingaben.
 
