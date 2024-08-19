@@ -78,6 +78,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -482,25 +485,38 @@ Abbildung&nbsp;1.2: Kommandozeilen
 <h2 data-number="1.2" class="anchored" data-anchor-id="projektumgebung-auf-mac"><span class="header-section-number">1.2</span> Projektumgebung auf Mac</h2>
 <p>Folgen Sie diesen Schritten, um das Hauptverzeichnis und die Unterverzeichnisse mit dem Terminal (dies ist die Bezeichnung der Befehlszeile in macOS und Linux) in macOS zu erstellen:</p>
 <ol type="1">
-<li>Um das Terminal in macOS zu öffnen, können Sie die Spotlight-Suche (<code>Cmd + Leertaste</code>) verwenden und “Terminal” eingeben oder über <code>Programme -&gt; Dienstprogramme -&gt; Terminal</code> navigieren.</li>
-</ol>
+<li><p>Um das Terminal in macOS zu öffnen, können Sie die Spotlight-Suche verwenden. Öffnen Sie diese mit der Tastenkombination <code>Cmd + Leertaste</code>.</p>
+<div id="fig-keyboard" class="lightbox quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-keyboard-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../images/keyboard.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Abbildung&nbsp;1.3: Tastenkombination für Spotlight-Suche"><img src="../images/keyboard.png" class="img-fluid figure-img" style="width:60.0%"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-keyboard-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;1.3: Tastenkombination für Spotlight-Suche
+</figcaption>
+</figure>
+</div></li>
+<li><p>Geben Sie in der Spotlight-Suche “Terminal” ein und wählen Sie das Programm aus. Sie sollten nun das Terminal sehen können.</p>
 <div id="fig-terminal2" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-terminal2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="../images/terminal.png" class="img-fluid figure-img" style="width:60.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-terminal2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Abbildung&nbsp;1.3: Terminal auf dem Mac
+Abbildung&nbsp;1.4: Terminal auf dem Mac
 </figcaption>
 </figure>
 </div>
-<p>Sie sollten nun das Terminal sehen können, welches die folgenden Angaben enthält:</p>
-<div class="callout callout-style-simple callout-note">
-<div class="callout-body d-flex">
+<div class="callout callout-style-simple callout-note callout-titled" title="Erklärung der Terminal-Inhalte">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-body-container">
+<div class="callout-title-container flex-fill">
+Erklärung der Terminal-Inhalte
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
 <li><em>Benutzername</em>: In diesem Fall <code>jankirenz</code>. Es zeigt an, welcher Benutzer aktuell am System angemeldet ist.</li>
 <li><em>Hostname</em>: Hier <code>kirenziMac</code>. Dies ist der Name des Computers, auf dem das Terminal läuft.</li>
@@ -508,9 +524,7 @@ Abbildung&nbsp;1.3: Terminal auf dem Mac
 <li><em>Prompt</em>: Das <code>%</code> Symbol am Ende der Zeile ist der sogenannte Prompt. Er signalisiert, dass das Terminal bereit ist, einen neuen Befehl entgegenzunehmen.</li>
 </ul>
 </div>
-</div>
-</div>
-<ol start="2" type="1">
+</div></li>
 <li><p>Zuerst verwenden wir den Befehl pwd (“print working directory”) und drücken die Eingabetaste, um den vollständigen Pfad des aktuellen Verzeichnisses anzuzeigen. Wenn Sie das Terminal gerade geöffnet haben, sollte das aktuelle Verzeichnis Ihr Home-Verzeichnis sein (in meinem Fall <code>/Users/jankirenz</code>, da mein Benutzerkonto jankirenz heißt):</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">pwd</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li><p>Erstellen Sie nun einen neuen Ordner namens <code>toolkit-lab</code> in dem Home-Verzeichnis (kopieren Sie diesen Code und geben Sie ihn in Ihr Terminal ein):</p>
@@ -972,6 +986,38 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","closeEffect":"zoom","selector":".lightbox","descPosition":"bottom","loop":false});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
