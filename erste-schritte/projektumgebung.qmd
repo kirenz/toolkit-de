@@ -67,20 +67,24 @@ Wir haben damit ein Hauptverzeichnis `toolkit-lab` mit zwei Unterverzeichnissen 
 
 Folgen Sie diesen Schritten, um das Hauptverzeichnis und die Unterverzeichnisse mit dem Terminal (dies ist die Bezeichnung der Befehlszeile in macOS und Linux) in macOS zu erstellen:
 
-1. Um das Terminal in macOS zu öffnen, können Sie die Spotlight-Suche (`Cmd + Leertaste`) verwenden und "Terminal" eingeben oder über `Programme -> Dienstprogramme -> Terminal` navigieren.
 
-![Terminal auf dem Mac](../images/terminal.png){#fig-terminal2 width="60%"}
+1. Um das Terminal in macOS zu öffnen, können Sie die Spotlight-Suche verwenden. Öffnen Sie diese mit der Tastenkombination `Cmd + Leertaste`.  
 
-Sie sollten nun das Terminal sehen können, welches die folgenden Angaben enthält: 
+    ![Tastenkombination für Spotlight-Suche](../images/keyboard.png){#fig-keyboard width="60%" .lightbox}
 
 
-:::{.callout-note}
+2. Geben Sie in der Spotlight-Suche "Terminal" ein und wählen Sie das Programm aus. Sie sollten nun das Terminal sehen können. 
 
-- *Benutzername*: In diesem Fall `jankirenz`. Es zeigt an, welcher Benutzer aktuell am System angemeldet ist.
-- *Hostname*: Hier `kirenziMac`. Dies ist der Name des Computers, auf dem das Terminal läuft.
-- *Aktuelles Verzeichnis (Pfad)*: Das `~` (Tilde) Symbol steht für das Home-Verzeichnis des aktuellen Benutzers. Der vollständige Pfad wäre also /Users/jankirenz. Es zeigt an, in welchem Verzeichnis Sie sich gerade befinden.
-- *Prompt*: Das `%` Symbol am Ende der Zeile ist der sogenannte Prompt. Er signalisiert, dass das Terminal bereit ist, einen neuen Befehl entgegenzunehmen.
-:::
+    ![Terminal auf dem Mac](../images/terminal.png){#fig-terminal2 width="60%"}
+
+
+   :::{.callout-note title="Erklärung der Terminal-Inhalte"}
+
+   - *Benutzername*: In diesem Fall `jankirenz`. Es zeigt an, welcher Benutzer aktuell am System angemeldet ist.
+   - *Hostname*: Hier `kirenziMac`. Dies ist der Name des Computers, auf dem das Terminal läuft.
+   - *Aktuelles Verzeichnis (Pfad)*: Das `~` (Tilde) Symbol steht für das Home-Verzeichnis des aktuellen Benutzers. Der vollständige Pfad wäre also /Users/jankirenz. Es zeigt an, in welchem Verzeichnis Sie sich gerade befinden.
+   - *Prompt*: Das `%` Symbol am Ende der Zeile ist der sogenannte Prompt. Er signalisiert, dass das Terminal bereit ist, einen neuen Befehl entgegenzunehmen.
+   :::
 
 2. Zuerst verwenden wir den Befehl pwd ("print working directory") und drücken die Eingabetaste, um den vollständigen Pfad des aktuellen Verzeichnisses anzuzeigen. Wenn Sie das Terminal gerade geöffnet haben, sollte das aktuelle Verzeichnis Ihr Home-Verzeichnis sein (in meinem Fall `/Users/jankirenz`, da mein Benutzerkonto jankirenz heißt):
     
