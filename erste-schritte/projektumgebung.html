@@ -379,31 +379,44 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p>Das Organisieren Ihrer Dateien ist entscheidend für die Effizienz und Zugänglichkeit Ihrer Projekte. Zunächst erstellen wir daher einen Ordner namens <code>toolkit-lab</code> auf Ihrem Rechner und legen die Unterverzeichnisse <code>code</code> und <code>data</code> an, um Ihr Projekt strukturiert zu halten.</p>
-<div id="fig-ordner" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left">
+<p>Diese Ordnerstruktur kann wie folgt dargestellt werden:</p>
+<div id="fig-ordnerstruktur" class="quarto-layout-panel">
 <figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ordnerstruktur-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row quarto-layout-valign-bottom">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-ordnerstruktur" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-ordner" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
 <div aria-describedby="fig-ordner-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../images/ordner.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:18.0%">
+<img src="../images/ordner.png" class="img-fluid figure-img" style="width:35.0%" data-ref-parent="fig-ordnerstruktur">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ordner-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Abbildung&nbsp;1.1: Ordnerstruktur
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-ordner-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Visuelle Darstellung
 </figcaption>
 </figure>
 </div>
-<p>Diese Ordnerstruktur kann auch wie folgt dargestellt werden:</p>
-<pre class="plaintext"><code>toolkit-lab/
-├── code/
-└── data/</code></pre>
-<p>Anstatt eine grafische Benutzeroberfläche wie den Windows-Explorer oder den macOS Finder zu verwenden, werden wir die Befehlszeilenschnittstelle (“Command Line Interface” bzw. “CLI”) nutzen, um dies zu erreichen.</p>
-<div id="fig-terminal" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-terminal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../images/terminalicon2.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:15.0%">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-terminal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Abbildung&nbsp;1.2: Command Line Interface (CLI)
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-ordnerstruktur" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-ordner2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-ordner2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/ordner2.png" class="img-fluid figure-img" style="width:45.0%" data-ref-parent="fig-ordnerstruktur">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-ordner2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) Baumstruktur
 </figcaption>
 </figure>
 </div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ordnerstruktur-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;1.1: Darstellung der Ordnerstruktur
+</figcaption>
+</figure>
+</div>
+<p>Für die Darstellung der Ordnerstruktur verwenden wir typischerweise eine Baumstruktur, wie in <a href="#fig-ordner2" class="quarto-xref">Abbildung&nbsp;<span>1.1 (b)</span></a> dargestellt.</p>
+<p>Anstatt eine grafische Benutzeroberfläche wie den Windows-Explorer oder den macOS Finder zu verwenden, werden wir die <em>Befehlszeile</em> verwenden, um die Ordner einzurichten. Die Befehlszeile ist ein leistungsstarkes Werkzeug zum Einrichten Ihrer Arbeitsumgebung. Sie ermöglicht eine Kommunikation mit dem Betriebssystem über textbasierte Eingaben.</p>
 <div class="callout callout-style-simple callout-note no-icon">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
@@ -414,37 +427,100 @@ Abbildung&nbsp;1.2: Command Line Interface (CLI)
 </div>
 </div>
 </div>
-<p>Die Befehlszeile ist ein leistungsstarkes Werkzeug zum Einrichten Ihrer Arbeitsumgebung. Sie ermöglicht eine Kommunikation mit dem Betriebssystem über textbasierte Eingaben.</p>
+<p>Weitere gängige Bezeichnung für die Befehlszeile sind Kommandozeile, Befehlszeilenschnittstelle, oder der englische Begriff “Command Line Interface”, oft abgekürzt mit “CLI”. In Windows ist die Bezeichnung für das entsprechende Programm <em>Eingabeaufforderung</em> (siehe <a href="#fig-eingabe" class="quarto-xref">Abbildung&nbsp;<span>1.2 (a)</span></a>), auf dem Mac heißt es <em>Terminal</em> (siehe <a href="#fig-terminal" class="quarto-xref">Abbildung&nbsp;<span>1.2 (b)</span></a>).</p>
+<div id="fig-cli" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cli-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row quarto-layout-valign-bottom">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-cli" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-eingabe" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-eingabe-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/eingabeaufforderung.png" class="img-fluid figure-img" data-ref-parent="fig-cli">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-eingabe-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Eingabeaufforderung in Windows
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-cli" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-terminal" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-terminal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/terminal.png" class="img-fluid figure-img" data-ref-parent="fig-cli">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-terminal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) Terminal auf dem Mac
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cli-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;1.2: Kommandozeilen
+</figcaption>
+</figure>
+</div>
+<p>In den nächsten Abschnitten wird erklärt, wie die Ordner mit Hilfe der Befehlszeile eingerichtet werden können.</p>
 <section id="projektumgebung-in-windows" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="projektumgebung-in-windows"><span class="header-section-number">1.1</span> Projektumgebung in Windows</h2>
 <p>Folgen Sie diesen Schritten, um das Hauptverzeichnis und die Unterverzeichnisse mit der Windows-Eingabeaufforderung (“Command Prompt” bzw. “cmd”) zu erstellen:</p>
 <ol type="1">
-<li><p>Drücken Sie gleichzeitig die Tasten <code>Windows + R</code>, um das Ausführen-Dialogfeld zu öffnen.</p></li>
-<li><p>Geben Sie <code>cmd</code> ein und drücken Sie <code>Enter</code>, um die Eingabeaufforderung zu öffnen.</p></li>
+<li><p>Geben Sie in dem Windows-Suchfenster <code>Eingabeaufforderung</code> oder <code>cmd</code> ein und drücken Sie <code>Enter</code>, um die Eingabeaufforderung zu öffnen.</p></li>
 <li><p>Erstellen Sie einen neuen Ordner namens <code>toolkit-lab</code> (kopieren Sie diesen Code und geben Sie ihn in Ihre Eingabeaufforderung ein):</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> toolkit-lab</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> toolkit-lab</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li><p>Verwenden Sie <code>cd</code> (change directory), um in das Verzeichnis <code>toolkit-lab</code> zu wechseln:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> toolkit-lab</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> toolkit-lab</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li><p>Verwenden Sie <code>mkdir</code> (make directory), um die Unterverzeichnisse <code>code</code> und <code>data</code> zu erstellen:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> code data</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> code data</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 </ol>
-<p>Diese Befehle richten ein Hauptverzeichnis <code>toolkit-lab</code> mit zwei Unterverzeichnissen ein: <code>code</code> für Ihre Skripte und Anwendungen und <code>data</code> zum Speichern von Datensätzen und zugehörigen Dateien.</p>
+<p>Wir haben damit ein Hauptverzeichnis <code>toolkit-lab</code> mit zwei Unterverzeichnissen eingerichtet: <code>code</code> für Ihre Skripte und <code>data</code> zum Speichern von Datensätzen.</p>
 </section>
 <section id="projektumgebung-auf-mac" class="level2" data-number="1.2">
 <h2 data-number="1.2" class="anchored" data-anchor-id="projektumgebung-auf-mac"><span class="header-section-number">1.2</span> Projektumgebung auf Mac</h2>
 <p>Folgen Sie diesen Schritten, um das Hauptverzeichnis und die Unterverzeichnisse mit dem Terminal (dies ist die Bezeichnung der Befehlszeile in macOS und Linux) in macOS zu erstellen:</p>
 <ol type="1">
-<li><p>Um das Terminal in macOS zu öffnen, können Sie die Spotlight-Suche (<code>Cmd + Leertaste</code>) verwenden und “Terminal” eingeben oder über <code>Programme -&gt; Dienstprogramme -&gt; Terminal</code> navigieren.</p></li>
-<li><p>Zuerst verwenden wir den Befehl pwd (“print working directory”) und drücken die Eingabetaste, um den vollständigen Pfad des aktuellen Verzeichnisses anzuzeigen. Wenn Sie das Terminal gerade geöffnet haben, sollte das aktuelle Verzeichnis Ihr Home-Verzeichnis sein (in meinem Fall <code>/Users/jankirenz</code>, da mein Benutzerkonto jankirenz heißt):</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">pwd</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>Erstellen Sie nun einen neuen Ordner namens <code>toolkit-lab</code> in dem Home-Verzeichnis (kopieren Sie diesen Code und geben Sie ihn in Ihr Terminal ein):</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> toolkit-lab</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>Verwenden Sie <code>cd</code> (change directory), um in das Verzeichnis <code>toolkit-lab</code> zu wechseln:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> toolkit-lab</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>Verwenden Sie <code>mkdir</code> (make directory), um die Unterverzeichnisse <code>code</code> und <code>data</code> zu erstellen:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> code data</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li>Um das Terminal in macOS zu öffnen, können Sie die Spotlight-Suche (<code>Cmd + Leertaste</code>) verwenden und “Terminal” eingeben oder über <code>Programme -&gt; Dienstprogramme -&gt; Terminal</code> navigieren.</li>
 </ol>
-<p>Diese Befehle richten ein Hauptverzeichnis <code>toolkit-lab</code> mit zwei Unterverzeichnissen ein: <code>code</code> für Ihre Skripte und Anwendungen und <code>data</code> zum Speichern von Datensätzen und zugehörigen Dateien.</p>
+<div id="fig-terminal2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-terminal2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/terminal.png" class="img-fluid figure-img" style="width:60.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-terminal2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;1.3: Terminal auf dem Mac
+</figcaption>
+</figure>
+</div>
+<p>Sie sollten nun das Terminal sehen können, welches die folgenden Angaben enthält:</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<ul>
+<li><em>Benutzername</em>: In diesem Fall <code>jankirenz</code>. Es zeigt an, welcher Benutzer aktuell am System angemeldet ist.</li>
+<li><em>Hostname</em>: Hier <code>kirenziMac</code>. Dies ist der Name des Computers, auf dem das Terminal läuft.</li>
+<li><em>Aktuelles Verzeichnis (Pfad)</em>: Das <code>~</code> (Tilde) Symbol steht für das Home-Verzeichnis des aktuellen Benutzers. Der vollständige Pfad wäre also /Users/jankirenz. Es zeigt an, in welchem Verzeichnis Sie sich gerade befinden.</li>
+<li><em>Prompt</em>: Das <code>%</code> Symbol am Ende der Zeile ist der sogenannte Prompt. Er signalisiert, dass das Terminal bereit ist, einen neuen Befehl entgegenzunehmen.</li>
+</ul>
+</div>
+</div>
+</div>
+<ol start="2" type="1">
+<li><p>Zuerst verwenden wir den Befehl pwd (“print working directory”) und drücken die Eingabetaste, um den vollständigen Pfad des aktuellen Verzeichnisses anzuzeigen. Wenn Sie das Terminal gerade geöffnet haben, sollte das aktuelle Verzeichnis Ihr Home-Verzeichnis sein (in meinem Fall <code>/Users/jankirenz</code>, da mein Benutzerkonto jankirenz heißt):</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">pwd</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Erstellen Sie nun einen neuen Ordner namens <code>toolkit-lab</code> in dem Home-Verzeichnis (kopieren Sie diesen Code und geben Sie ihn in Ihr Terminal ein):</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> toolkit-lab</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Verwenden Sie <code>cd</code> (change directory), um in das Verzeichnis <code>toolkit-lab</code> zu wechseln:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> toolkit-lab</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Verwenden Sie <code>mkdir</code> (make directory), um die Unterverzeichnisse <code>code</code> und <code>data</code> zu erstellen:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> code data</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ol>
+<p>Wir haben damit ein Hauptverzeichnis <code>toolkit-lab</code> mit zwei Unterverzeichnissen eingerichtet: <code>code</code> für Ihre Skripte und <code>data</code> zum Speichern von Datensätzen.</p>
 
 
 </section>
