@@ -21,7 +21,7 @@ format:
     code-line-numbers: true
     smaller: false
     scrollable: true
-    slide-number: c
+    slide-number: false
     preview-links: auto
     css: style/index.css
     chalkboard: 
@@ -30,6 +30,20 @@ format:
     footer: Projektumgebung einrichten | Jan Kirenz
 jupyter: python3
 ---
+
+
+## Zusammenfassung
+
+
+::: {#fig-ordnerstruktur layout-ncol=2 layout-valign="bottom"}
+
+![Visuelle Darstellung](../images/ordner.png){#fig-ordner width=35%}
+
+![Baumstruktur](../images/ordner2.png){#fig-ordner2 width=45%}
+
+Darstellung der Ordnerstruktur
+
+:::
 
 
 ## Spotlight Suche
@@ -89,6 +103,18 @@ jupyter: python3
     mkdir code data
     ```
 
-## Ende
+## Terminal
 
-Wir haben damit ein Hauptverzeichnis `toolkit-lab` mit zwei Unterverzeichnissen eingerichtet: `code` für Ihre Skripte und `data` zum Speichern von Datensätzen.
+
+
+
+## Zusammenfassung
+
+- Terminal und Terminalbefehle kennengelernt 
+  - `pwd`, `mkdir`, `cd`, `ls`
+
+- Ordner angelegt:
+
+. . .
+
+![](../images/ordner2.png){width=35% fig-align="center"}
