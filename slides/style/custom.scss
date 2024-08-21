@@ -1,16 +1,142 @@
-
 /*-- scss:defaults --*/
-// fonts
-// @import 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap';
-
-//$font-family: "Roboto Condensed";
-// $font-family-sans-serif: "Roboto Condensed", sans-serif;
-
-// fonts
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
-// set default font family
 $font-family-sans-serif: "Inter", sans-serif;
 
-
 /*-- scss:rules --*/
+
+@keyframes drawLine {
+    to {
+      stroke-dashoffset: 0;
+    }
+}
+  
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.reveal .slide-background-content {
+  background-color: #ffffff;
+  overflow: hidden;
+  position: relative;
+}
+
+.geometric-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.geo-line {
+  stroke-width: 1;
+  fill: none;
+}
+
+.reveal .slides section {
+  color: #333333;
+}
+
+.reveal h1, .reveal h2, .reveal h3 {
+  color: #333333;
+}
+
+.reveal p, .reveal li {
+  color: #333333;
+}
+
+.reveal a {
+  color: #1e88e5;
+}
+
+.reveal a:hover {
+  color: #64b5f6;
+}
+
+// Specific styles for the title slide
+#title-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  height: 100vh;
+  text-align: center;
+
+  .title {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 0.2em;
+  }
+  
+  .subtitle-container {
+    margin-bottom: 1.5em;
+  }
+
+  .subtitle-button {
+    background-color: #0071e3;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 1.5em;
+    text-decoration: none;
+    font-size: 0.8em;
+  }
+  
+  .author {
+    font-size: 0.8em;
+    color: #666;
+    margin-top: 2em;
+  }
+
+  .image-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+    img {
+      max-width: 20%;
+      max-height: 30vh;
+      object-fit: contain;
+    }
+  }
+
+  .geometric-background {
+    opacity: 0.8;
+  }
+}
+
+// Footer
+
+// Footer styles
+.reveal .slides > section:not(#title-slide)::after {
+  content: 'Jan Kirenz';
+  position: absolute;
+  bottom: 1px !important; // You can adjust this value
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  font-size: 0.3em;
+  color: #888;
+}
+
+// Hide footer on title slide
+#title-slide::after {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .reveal .slides > section:not(#title-slide)::after {
+    bottom: 20px; // Moves the footer up on smaller screens
+  }
+}
