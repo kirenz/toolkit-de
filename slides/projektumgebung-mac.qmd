@@ -1,5 +1,5 @@
 ---
-title: Projektumgebung einrichten
+title: Projektumgebung 
 lang: de
 subtitle: Einrichtung auf dem Mac
 author: Jan Kirenz
@@ -13,7 +13,7 @@ format:
     toc-depth: 1
     embed-resources: false
     theme: [default, style/custom.scss]
-    include-in-header: style/animated-geometric-background-2.html
+ #   include-in-header: style/geometric-background.html
     incremental: true
     transition: slide
     background-transition: fade
@@ -27,13 +27,31 @@ format:
     css: style/index.css
     chalkboard: 
       buttons: false
-    logo: images/logo.png
-    footer: Projektumgebung einrichten | Jan Kirenz
+    logo: images/code-blue.png
+    # footer: Projektumgebung einrichten | Jan Kirenz
+    template-partials:
+      - title-slide.html 
+title-slide-attributes:
+  data-background-color: "#ffffff"
+  # data-background-size: contain
+  # data-background-opacity: "1"
 jupyter: python3
 ---
 
 
-# Your Presentation Title {background-color=""}
+
+## Hello
+
+<div class="fragment">
+  <svg class="geometric-background" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice">
+    <path class="geo-line" stroke="#1e88e5" d="M0,700 L1000,700" style="stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: drawLine 10s linear forwards infinite, float 15s ease-in-out infinite;"/>
+    <path class="geo-line" stroke="#64b5f6" d="M200,1000 L200,0" style="stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: drawLine 15s linear forwards infinite, float 20s ease-in-out infinite;"/>
+    <path class="geo-line" stroke="#bbdefb" d="M0,300 L1000,300" style="stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: drawLine 12s linear forwards infinite, float 18s ease-in-out infinite;"/>
+    <path class="geo-line" stroke="#2196f3" d="M700,1000 L700,0" style="stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: drawLine 13s linear forwards infinite, float 22s ease-in-out infinite;"/>
+    <path class="geo-line" stroke="#90caf9" d="M0,0 L1000,1000" style="stroke-dasharray: 1414; stroke-dashoffset: 1414; animation: drawLine 20s linear forwards infinite, float 25s ease-in-out infinite;"/>
+    <path class="geo-line" stroke="#42a5f5" d="M1000,0 L0,1000" style="stroke-dasharray: 1414; stroke-dashoffset: 1414; animation: drawLine 18s linear forwards infinite, float 23s ease-in-out infinite;"/>
+  </svg>
+</div>
 
 ## Your Subtitle
 
