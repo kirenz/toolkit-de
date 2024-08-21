@@ -13,6 +13,7 @@ format:
     toc-depth: 1
     embed-resources: false
     theme: [default, style/custom.scss]
+    include-in-header: style/animated-geometric-background-2.html
     incremental: true
     transition: slide
     background-transition: fade
@@ -31,6 +32,12 @@ format:
 jupyter: python3
 ---
 
+
+# Your Presentation Title {background-color=""}
+
+## Your Subtitle
+
+Your Name
 
 ## Zusammenfassung
 
@@ -105,6 +112,40 @@ Darstellung der Ordnerstruktur
 
 ## Terminal
 
+
+<!-- Start of features -->
+:::: {.features}
+
+<!-- Feature one with fade-in -->
+::: {.feature .fragment .fade-in}
+:::{.feature-header}
+Clarity
+:::
+Be clear and precise
+:::
+
+<!-- Feature two with fade-up -->
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Context Provision
+:::
+Give enough background information
+:::
+
+
+::::
+
+## Terminal {.smaller}
+
+
+| Befehl | Beschreibung                                                            |
+|------------|------------------------------------------------------------------------|
+| `pwd`     | No transition (default, switch instantly)                              |
+| `cd`     | Cross fade                                                             |
+| `mkdir`    | Slide horizontally                                                     |
+| `ls`   | Slide at a convex angle                                                |
+| `concave`  | Slide at a concave angle                                               |
+| `zoom`     | Scale the incoming slide so it grows in from the center of the screen. |
 
 
 
