@@ -1,0 +1,69 @@
+<style>
+  .reveal .slide-background-content {
+    background-color: #0a2472;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .geometric-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .geo-line {
+    stroke-width: 1;
+    fill: none;
+  }
+  
+  @keyframes drawLine {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  .reveal .slides section {
+    color: #ffffff;
+  }
+  
+  .reveal h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .reveal h2, .reveal h3 {
+    color: #ffffff;
+    font-weight: normal;
+  }
+  
+  .reveal p, .reveal li {
+    color: #ffffff;
+    font-weight: 300;
+  }
+  
+  .reveal a {
+    color: #64d2ff;
+    text-decoration: none;
+  }
+  
+  .reveal a:hover {
+    text-decoration: underline;
+  }
+  </style>
+  
+  <svg class="geometric-background" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice">
+    <path class="geo-line" stroke="#1e88e5" d="M0,700 L1000,700" style="stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: drawLine 10s linear forwards infinite, float 15s ease-in-out infinite;"/>
+    <path class="geo-line" stroke="#64b5f6" d="M200,1000 L200,0" style="stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: drawLine 15s linear forwards infinite, float 20s ease-in-out infinite;"/>
+    <path class="geo-line" stroke="#bbdefb" d="M0,300 L1000,300" style="stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: drawLine 12s linear forwards infinite, float 18s ease-in-out infinite;"/>
+    <path class="geo-line" stroke="#2196f3" d="M700,1000 L700,0" style="stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: drawLine 13s linear forwards infinite, float 22s ease-in-out infinite;"/>
+    <path class="geo-line" stroke="#90caf9" d="M0,0 L1000,1000" style="stroke-dasharray: 1414; stroke-dashoffset: 1414; animation: drawLine 20s linear forwards infinite, float 25s ease-in-out infinite;"/>
+    <path class="geo-line" stroke="#42a5f5" d="M1000,0 L0,1000" style="stroke-dasharray: 1414; stroke-dashoffset: 1414; animation: drawLine 18s linear forwards infinite, float 23s ease-in-out infinite;"/>
+  </svg>
