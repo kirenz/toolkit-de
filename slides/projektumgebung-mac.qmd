@@ -2,7 +2,7 @@
 title: Projektumgebung 
 lang: de
 subtitle: Einrichtung auf dem Mac
-author: Jan Kirenz
+author: " " 
 execute:
   eval: false
   echo: true
@@ -13,9 +13,8 @@ format:
     toc-depth: 1
     embed-resources: false
     theme: [default, style/custom.scss]
- #   include-in-header: style/geometric-background.html
     incremental: true
-    transition: slide
+    transition: none
     background-transition: fade
     transition-speed: slow
     code-copy: true
@@ -28,108 +27,15 @@ format:
     chalkboard: 
       buttons: false
     logo: images/code-blue.png
-    # footer: Projektumgebung einrichten | Jan Kirenz
+    footer: Jan Kirenz
     template-partials:
       - title-slide.html 
 title-slide-attributes:
   data-background-color: "#ffffff"
-  # data-background-size: contain
-  # data-background-opacity: "1"
 jupyter: python3
 ---
 
-
-
-## Hello
-
-
-
-- Tihis is a test
-- hsd
-- jsadf
-- ksdf 
-
-
-
-## 2 Hello {background="animated"}
-
-Your slide content here
-
-Your Name
-
-## Zusammenfassung
-
-
-::: {#fig-ordnerstruktur layout-ncol=2 layout-valign="bottom"}
-
-![Visuelle Darstellung](../images/ordner.png){#fig-ordner width=35%}
-
-![Baumstruktur](../images/ordner2.png){#fig-ordner2 width=45%}
-
-Darstellung der Ordnerstruktur
-
-:::
-
-
-## Spotlight Suche
-
-
-1. Um das Terminal in macOS zu öffnen, können Sie die Spotlight-Suche verwenden. Öffnen Sie diese mit der Tastenkombination `Cmd + Leertaste`.  
-
-    ![Tastenkombination für Spotlight-Suche](../images/keyboard.png){#fig-keyboard width="60%" .lightbox}
-
-
-## Terminal
-
-2. Geben Sie in der Spotlight-Suche "Terminal" ein und wählen Sie das Programm aus. Sie sollten nun das Terminal sehen können. 
-
-![Terminal auf dem Mac](../images/terminal.png){#fig-terminal2 width="60%"}
-
-
-## Terminal Inhalte
-
-
-   - *Benutzername*: In diesem Fall `jankirenz`. Es zeigt an, welcher Benutzer aktuell am System angemeldet ist.
-   - *Hostname*: Hier `kirenziMac`. Dies ist der Name des Computers, auf dem das Terminal läuft.
-   - *Aktuelles Verzeichnis (Pfad)*: Das `~` (Tilde) Symbol steht für das Home-Verzeichnis des aktuellen Benutzers. Der vollständige Pfad wäre also /Users/jankirenz. Es zeigt an, in welchem Verzeichnis Sie sich gerade befinden.
-   - *Prompt*: Das `%` Symbol am Ende der Zeile ist der sogenannte Prompt. Er signalisiert, dass das Terminal bereit ist, einen neuen Befehl entgegenzunehmen.
-
-
-## pwd
-
-2. Zuerst verwenden wir den Befehl pwd ("print working directory") und drücken die Eingabetaste, um den vollständigen Pfad des aktuellen Verzeichnisses anzuzeigen. Wenn Sie das Terminal gerade geöffnet haben, sollte das aktuelle Verzeichnis Ihr Home-Verzeichnis sein (in meinem Fall `/Users/jankirenz`, da mein Benutzerkonto jankirenz heißt):
-    
-    ```bash
-    pwd
-    ```
-
-## toolkit-lab
-
-2. Erstellen Sie nun einen neuen Ordner namens `toolkit-lab` in dem Home-Verzeichnis (kopieren Sie diesen Code und geben Sie ihn in Ihr Terminal ein):
-
-    ```bash
-    mkdir toolkit-lab
-    ```
-
-## cd
-
-3. Verwenden Sie `cd` (change directory), um in das Verzeichnis `toolkit-lab` zu wechseln:
-
-    ```bash
-    cd toolkit-lab
-    ```
-
-
-## mkdir
-
-4. Verwenden Sie `mkdir` (make directory), um die Unterverzeichnisse `code` und `data` zu erstellen:
-
-    ```bash
-    mkdir code data
-    ```
-
-## Terminal
-
+## Inhalte des Tutorials
 
 <!-- Start of features -->
 :::: {.features}
@@ -137,51 +43,139 @@ Darstellung der Ordnerstruktur
 <!-- Feature one with fade-in -->
 ::: {.feature .fragment .fade-in}
 :::{.feature-header}
-Clarity
+Projektordner 
 :::
-Be clear and precise
+Ordnerstruktur für Projekte vorbereiten
 :::
 
 <!-- Feature two with fade-up -->
 ::: {.feature .fragment .fade-up}
 :::{.feature-header}
-Context Provision
+Terminal 
 :::
-Give enough background information
+Grundlegende Befehle kennenlernen
 :::
-
-
 ::::
+
+
+
+## Ordnerstruktur 
+
+<br>
+
+::: { layout-ncol=2 layout-valign="bottom"}
+
+![Visuelle Darstellung](../images/ordner.png){#fig-ordner width=35%}
+
+![Baumstruktur](../images/ordner2.png){#fig-ordner2 width=45%}
+
+
+:::
+
+
+## Terminal-Befehle {.smaller}
+
+. . .
+
+<br>
+
+
+| Befehl | Bedeutung | Beschreibung                                                            |
+|------------|--------------------------|------------------------------------------|
+| `pwd`     | print working directory | Zeigt den aktuellen Verzeichnispfad an           |
+| `cd`     | change directory | Wechselt in ein anderes Verzeichnis                     |
+| `mkdir`    | make directory | Erstellt ein neues Verzeichnis                           |
+| `ls`   | list | Listet Inhalt des Verzeichnisses auf                          |
+
+
+## Spotlight Suche 🔎
+
+- Spotlight-Suche mit der Tastenkombination `Command + Leertaste` öffnen.  
+
+. . .
+
+![](../images/keyboard.png){width="40%" fig-align="center"}
+
+- In der Spotlight-Suche "Terminal" eingeben und auswählen.
+
 
 ## Terminal {.smaller}
 
+<br>
 
-| Befehl | Beschreibung                                                            |
-|------------|------------------------------------------------------------------------|
-| `pwd`     | No transition (default, switch instantly)                              |
-| `cd`     | Cross fade                                                             |
-| `mkdir`    | Slide horizontally                                                     |
-| `ls`   | Slide at a convex angle                                                |
-| `concave`  | Slide at a concave angle                                               |
-| `zoom`     | Scale the incoming slide so it grows in from the center of the screen. |
+![](../images/terminal.png){width="20%" fig-align="center"}
 
 
+<br>
+
+| Element | Inhalt | Bedeutung |
+|---------|----------|-----------|
+| Benutzername | `jankirenz` | Angemeldeter Benutzer |
+| Hostname | `kirenziMac` | Name des Computers |
+| Aktuelles Verzeichnis | `~ `| Home-Verzeichnis (/Users/jankirenz) |
+| Prompt | `%`| Terminal bereit für Befehle |
+
+<br>
+
+
+## print working directory
+
+Pfad des aktuellen Verzeichnisses anzeigen:
+    
+```bash
+pwd
+```
+
+## make directory
+
+
+Ordner *toolkit-lab* erstellen:
+
+
+```bash
+mkdir toolkit-lab
+```
+
+## change directory
+
+Mit `cd` in das Verzeichnis `toolkit-lab` wechseln:
+
+```bash
+cd toolkit-lab
+```
+
+## make directory
+
+Mit `mkdir` die Verzeichnisse *code* und *data* erstellen:
+
+
+```bash
+mkdir code data
+```
+
+## list
+
+Mit `ls` die Verzeichnisse anzeigen lassen: 
+
+
+```bash
+mkdir code data
+```
 
 ## Zusammenfassung
 
 <div class="fragment">
   <svg class="geometric-background" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice">
-    <path class="geo-line" stroke="#1e88e5" d="M0,700 L1000,700" style="stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: drawLine 10s linear forwards infinite, float 15s ease-in-out infinite;"/>
-    <path class="geo-line" stroke="#64b5f6" d="M200,1000 L200,0" style="stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: drawLine 15s linear forwards infinite, float 20s ease-in-out infinite;"/>
-    <path class="geo-line" stroke="#bbdefb" d="M0,300 L1000,300" style="stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: drawLine 12s linear forwards infinite, float 18s ease-in-out infinite;"/>
-    <path class="geo-line" stroke="#2196f3" d="M700,1000 L700,0" style="stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: drawLine 13s linear forwards infinite, float 22s ease-in-out infinite;"/>
-    <path class="geo-line" stroke="#90caf9" d="M0,0 L1000,1000" style="stroke-dasharray: 1414; stroke-dashoffset: 1414; animation: drawLine 20s linear forwards infinite, float 25s ease-in-out infinite;"/>
-    <path class="geo-line" stroke="#42a5f5" d="M1000,0 L0,1000" style="stroke-dasharray: 1414; stroke-dashoffset: 1414; animation: drawLine 18s linear forwards infinite, float 23s ease-in-out infinite;"/>
+    <path class="geo-line" stroke="#e3f2fd" stroke-width="0.5" d="M0,700 L1000,700" style="stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: drawLine 20s linear forwards infinite, float 30s ease-in-out infinite;"/>
+    <path class="geo-line" stroke="#bbdefb" stroke-width="0.5" d="M200,1000 L200,0" style="stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: drawLine 25s linear forwards infinite, float 35s ease-in-out infinite;"/>
+    <path class="geo-line" stroke="#90caf9" stroke-width="0.5" d="M0,300 L1000,300" style="stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: drawLine 22s linear forwards infinite, float 33s ease-in-out infinite;"/>
+    <path class="geo-line" stroke="#64b5f6" stroke-width="0.5" d="M700,1000 L700,0" style="stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: drawLine 23s linear forwards infinite, float 37s ease-in-out infinite;"/>
+    <path class="geo-line" stroke="#42a5f5" stroke-width="0.5" d="M0,0 L1000,1000" style="stroke-dasharray: 1414; stroke-dashoffset: 1414; animation: drawLine 30s linear forwards infinite, float 40s ease-in-out infinite;"/>
+    <path class="geo-line" stroke="#2196f3" stroke-width="0.5" d="M1000,0 L0,1000" style="stroke-dasharray: 1414; stroke-dashoffset: 1414; animation: drawLine 28s linear forwards infinite, float 38s ease-in-out infinite;"/>
   </svg>
 </div>
 
-- Terminal und Terminalbefehle kennengelernt 
-  - `pwd`, `mkdir`, `cd`, `ls`
+- Terminalbefehle kennengelernt: `pwd`, `mkdir`, `cd`, `ls`
 
 - Ordner angelegt:
 
