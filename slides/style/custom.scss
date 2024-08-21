@@ -119,27 +119,6 @@ $font-family-sans-serif: "Inter", sans-serif;
 
 // Footer
 
-// Footer styles
-.reveal .slides > section:not(#title-slide)::after {
-  content: 'Jan Kirenz';
-  position: absolute;
-  bottom: 1px !important; // You can adjust this value
-  left: 50% !important;
-  transform: translateX(-50%) !important;
-  font-size: 0.3em;
-  color: #888;
-}
-
-// Hide footer on title slide
-#title-slide::after {
-  display: none;
-}
-
-@media (max-width: 600px) {
-  .reveal .slides > section:not(#title-slide)::after {
-    bottom: 20px; // Moves the footer up on smaller screens
-  }
-}
 
 // Animation 
 
