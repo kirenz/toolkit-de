@@ -12,34 +12,34 @@
   {
     "objectID": "erste-schritte/projektumgebung.html",
     "href": "erste-schritte/projektumgebung.html",
-    "title": "1  Projektumgebung einrichten",
+    "title": "1  Projektumgebung",
     "section": "",
     "text": "1.1 Projektumgebung in Windows\nFolgen Sie diesen Schritten, um das Hauptverzeichnis und die Unterverzeichnisse mit der Windows-Eingabeaufforderung (“Command Prompt” bzw. “cmd”) zu erstellen:\nWir haben damit ein Hauptverzeichnis toolkit-lab mit zwei Unterverzeichnissen eingerichtet: code für Ihre Skripte und data zum Speichern von Datensätzen.",
     "crumbs": [
       "Erste Schritte",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Projektumgebung einrichten</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Projektumgebung</span>"
     ]
   },
   {
     "objectID": "erste-schritte/projektumgebung.html#projektumgebung-in-windows",
     "href": "erste-schritte/projektumgebung.html#projektumgebung-in-windows",
-    "title": "1  Projektumgebung einrichten",
+    "title": "1  Projektumgebung",
     "section": "",
     "text": "Geben Sie in dem Windows-Suchfenster Eingabeaufforderung oder cmd ein und drücken Sie Enter, um die Eingabeaufforderung zu öffnen.\nErstellen Sie einen neuen Ordner namens toolkit-lab (kopieren Sie diesen Code und geben Sie ihn in Ihre Eingabeaufforderung ein):\nmkdir toolkit-lab\nVerwenden Sie cd (change directory), um in das Verzeichnis toolkit-lab zu wechseln:\ncd toolkit-lab\nVerwenden Sie mkdir (make directory), um die Unterverzeichnisse code und data zu erstellen:\nmkdir code data",
     "crumbs": [
       "Erste Schritte",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Projektumgebung einrichten</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Projektumgebung</span>"
     ]
   },
   {
     "objectID": "erste-schritte/projektumgebung.html#projektumgebung-auf-mac",
     "href": "erste-schritte/projektumgebung.html#projektumgebung-auf-mac",
-    "title": "1  Projektumgebung einrichten",
+    "title": "1  Projektumgebung",
     "section": "1.2 Projektumgebung auf Mac",
     "text": "1.2 Projektumgebung auf Mac\nFolgen Sie diesen Schritten, um das Hauptverzeichnis und die Unterverzeichnisse mit dem Terminal (dies ist die Bezeichnung der Befehlszeile in macOS und Linux) in macOS zu erstellen:\n\nUm das Terminal in macOS zu öffnen, können Sie die Spotlight-Suche verwenden. Öffnen Sie diese mit der Tastenkombination Cmd + Leertaste.\n\n\n\n\n\n\nAbbildung 1.3: Tastenkombination für Spotlight-Suche\n\n\n\nGeben Sie in der Spotlight-Suche “Terminal” ein und wählen Sie das Programm aus. Sie sollten nun das Terminal sehen können.\n\n\n\n\n\n\nAbbildung 1.4: Terminal auf dem Mac\n\n\n\n\n\n\n\n\n\nErklärung der Terminal-Inhalte\n\n\n\n\nBenutzername: In diesem Fall jankirenz. Es zeigt an, welcher Benutzer aktuell am System angemeldet ist.\nHostname: Hier kirenziMac. Dies ist der Name des Computers, auf dem das Terminal läuft.\nAktuelles Verzeichnis (Pfad): Das ~ (Tilde) Symbol steht für das Home-Verzeichnis des aktuellen Benutzers. Der vollständige Pfad wäre also /Users/jankirenz. Es zeigt an, in welchem Verzeichnis Sie sich gerade befinden.\nPrompt: Das % Symbol am Ende der Zeile ist der sogenannte Prompt. Er signalisiert, dass das Terminal bereit ist, einen neuen Befehl entgegenzunehmen.\n\n\n\nZuerst verwenden wir den Befehl pwd (“print working directory”) und drücken die Eingabetaste, um den vollständigen Pfad des aktuellen Verzeichnisses anzuzeigen. Wenn Sie das Terminal gerade geöffnet haben, sollte das aktuelle Verzeichnis Ihr Home-Verzeichnis sein (in meinem Fall /Users/jankirenz, da mein Benutzerkonto jankirenz heißt):\npwd\nErstellen Sie nun einen neuen Ordner namens toolkit-lab in dem Home-Verzeichnis (kopieren Sie diesen Code und geben Sie ihn in Ihr Terminal ein):\nmkdir toolkit-lab\nVerwenden Sie cd (change directory), um in das Verzeichnis toolkit-lab zu wechseln:\ncd toolkit-lab\nVerwenden Sie mkdir (make directory), um die Unterverzeichnisse code und data zu erstellen:\nmkdir code data\n\nWir haben damit ein Hauptverzeichnis toolkit-lab mit zwei Unterverzeichnissen eingerichtet: code für Ihre Skripte und data zum Speichern von Datensätzen.",
     "crumbs": [
       "Erste Schritte",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Projektumgebung einrichten</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Projektumgebung</span>"
     ]
   },
   {
