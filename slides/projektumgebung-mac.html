@@ -405,16 +405,54 @@
   <p class="author">Data Science, AI &amp; Analytics Toolkit</p>
 
   <svg class="geometric-background" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 1000" preserveaspectratio="xMidYMid slice">
-    <path class="geo-line" stroke="#1e88e5" d="M0,700 L1000,700" style="stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: drawLine 10s linear forwards infinite, float 15s ease-in-out infinite;"></path>
-    <path class="geo-line" stroke="#64b5f6" d="M200,1000 L200,0" style="stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: drawLine 15s linear forwards infinite, float 20s ease-in-out infinite;"></path>
-    <path class="geo-line" stroke="#bbdefb" d="M0,300 L1000,300" style="stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: drawLine 12s linear forwards infinite, float 18s ease-in-out infinite;"></path>
-    <path class="geo-line" stroke="#2196f3" d="M700,1000 L700,0" style="stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: drawLine 13s linear forwards infinite, float 22s ease-in-out infinite;"></path>
-    <path class="geo-line" stroke="#90caf9" d="M0,0 L1000,1000" style="stroke-dasharray: 1414; stroke-dashoffset: 1414; animation: drawLine 20s linear forwards infinite, float 25s ease-in-out infinite;"></path>
-    <path class="geo-line" stroke="#42a5f5" d="M1000,0 L0,1000" style="stroke-dasharray: 1414; stroke-dashoffset: 1414; animation: drawLine 18s linear forwards infinite, float 23s ease-in-out infinite;"></path>
+    <!-- Horizontale Linien -->
+    <path class="geo-line light" d="M0,125 L1000,125"></path>
+    <path class="geo-line light" d="M0,250 L1000,250"></path>
+    <path class="geo-line light" d="M0,375 L1000,375"></path>
+    <path class="geo-line light" d="M0,500 L1000,500"></path>
+    <path class="geo-line light" d="M0,625 L1000,625"></path>
+    <path class="geo-line light" d="M0,750 L1000,750"></path>
+    <path class="geo-line light" d="M0,875 L1000,875"></path>
+    
+    <!-- Vertikale Linien -->
+    <path class="geo-line light" d="M125,0 L125,1000"></path>
+    <path class="geo-line light" d="M250,0 L250,1000"></path>
+    <path class="geo-line light" d="M375,0 L375,1000"></path>
+    <path class="geo-line light" d="M500,0 L500,1000"></path>
+    <path class="geo-line light" d="M625,0 L625,1000"></path>
+    <path class="geo-line light" d="M750,0 L750,1000"></path>
+    <path class="geo-line light" d="M875,0 L875,1000"></path>
+    
+    <!-- Diagonale Linien, die sich in der Mitte treffen -->
+    <path class="geo-line dark" d="M0,0 L500,500"></path>
+    <path class="geo-line dark" d="M1000,0 L500,500"></path>
+    <path class="geo-line dark" d="M0,1000 L500,500"></path>
+    <path class="geo-line dark" d="M1000,1000 L500,500"></path>
   </svg>
+
+  <style>
+    .geometric-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    .geo-line {
+      fill: none;
+      stroke-width: 1;
+    }
+    .geo-line.light {
+      stroke: #bbdefb;
+      opacity: 0.5;
+    }
+    .geo-line.dark {
+      stroke: #2196f3;
+      opacity: 0.7;
+    }
+  </style>
 </section>
-
-
 <section id="inhalte-des-tutorials" class="slide level2">
 <h2>Inhalte des Tutorials</h2>
 <!-- Start of features -->
@@ -431,7 +469,7 @@
 <div class="feature-header">
 <p>Terminal</p>
 </div>
-<p>Terminal kennenlernen</p>
+<p>Terminal-Elemente kennenlernen</p>
 </div>
 <!-- Feature two with fade-up -->
 <div class="feature fragment fade-up">
@@ -444,7 +482,6 @@
 </section>
 <section id="projektordner" class="slide level2">
 <h2>Projektordner</h2>
-<p><br></p>
 <div>
 
 </div>
@@ -453,7 +490,7 @@
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-left">
 <figure>
-<p><img data-src="../images/ordner.png" style="width:35.0%"></p>
+<p><img data-src="../images/ordner.png" style="width:45.0%"></p>
 <figcaption>Visuelle Darstellung</figcaption>
 </figure>
 </div>
@@ -461,7 +498,7 @@
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-left">
 <figure>
-<p><img data-src="../images/ordner2.png" style="width:45.0%"></p>
+<p><img data-src="../images/ordner2.png" style="width:55.0%"></p>
 <figcaption>Baumstruktur</figcaption>
 </figure>
 </div>
@@ -476,15 +513,13 @@
 <img data-src="../images/keyboard.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"></section>
 <section id="terminal-öffnen" class="slide level2">
 <h2>Terminal öffnen</h2>
-<p><em>Terminal.app</em> in Spotlight Suche eingeben und Programm auswählen.</p>
+<p>Terminal.app in Spotlight Suche eingeben und Programm auswählen.</p>
 
-<img data-src="../images/spotlight-terminal.png" class="quarto-figure quarto-figure-center r-stretch" style="width:40.0%"></section>
-<section id="terminal" class="slide level2 smaller">
-<h2>Terminal</h2>
-<p><br></p>
+<img data-src="../images/spotlight-terminal.png" class="quarto-figure quarto-figure-center r-stretch" style="width:30.0%"></section>
+<section id="terminal-elemente" class="slide level2 smaller">
+<h2>Terminal-Elemente</h2>
 
-<img data-src="../images/terminal.png" class="quarto-figure quarto-figure-center r-stretch" style="width:20.0%"><p><br></p>
-<table class="caption-top">
+<img data-src="../images/terminal.png" class="quarto-figure quarto-figure-left r-stretch" style="width:30.0%"><table class="caption-top">
 <thead>
 <tr class="header">
 <th>Element</th>
@@ -519,8 +554,6 @@
 </section>
 <section id="terminal-befehle" class="slide level2 smaller">
 <h2>Terminal-Befehle</h2>
-<div class="fragment">
-<p><br></p>
 <table class="caption-top">
 <colgroup>
 <col style="width: 15%">
@@ -557,36 +590,34 @@
 </tr>
 </tbody>
 </table>
-</div>
 </section>
 <section id="print-working-directory" class="slide level2">
 <h2>print working directory</h2>
-<p>Pfad des aktuellen Verzeichnisses anzeigen:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href=""></a><span class="bu">pwd</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Mit <code>pwd</code> Pfad des aktuellen Verzeichnisses anzeigen:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="bu">pwd</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="make-directory" class="slide level2">
 <h2>make directory</h2>
-<p>Ordner <em>toolkit-lab</em> erstellen:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href=""></a><span class="fu">mkdir</span> toolkit-lab</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Mit <code>mkdir</code> Ordner <em>toolkit-lab</em> erstellen:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> toolkit-lab</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="change-directory" class="slide level2">
 <h2>change directory</h2>
-<p>Mit <code>cd</code> in das Verzeichnis <code>toolkit-lab</code> wechseln:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href=""></a><span class="bu">cd</span> toolkit-lab</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Mit <code>cd</code> in das Verzeichnis <em>toolkit-lab</em> wechseln:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> toolkit-lab</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="make-directory-1" class="slide level2">
 <h2>make directory</h2>
 <p>Mit <code>mkdir</code> die Verzeichnisse <em>code</em> und <em>data</em> erstellen:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href=""></a><span class="fu">mkdir</span> code data</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> code data</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="list" class="slide level2">
 <h2>list</h2>
 <p>Mit <code>ls</code> die Verzeichnisse anzeigen lassen:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href=""></a><span class="fu">mkdir</span> code data</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="ordner-im-finder-anzeigen" class="slide level2">
 <h2>Ordner im Finder anzeigen</h2>
-<p><br></p>
 <div>
 
 </div>
@@ -621,27 +652,40 @@
 </section>
 <section id="zusammenfassung" class="slide level2">
 <h2>Zusammenfassung</h2>
-<div class="fragment">
-<p><svg class="geometric-background" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 1000" preserveaspectratio="xMidYMid slice"> <path class="geo-line" stroke="#e3f2fd" stroke-width="0.5" d="M0,700 L1000,700" style="stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: drawLine 20s linear forwards infinite, float 30s ease-in-out infinite;"></path> <path class="geo-line" stroke="#bbdefb" stroke-width="0.5" d="M200,1000 L200,0" style="stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: drawLine 25s linear forwards infinite, float 35s ease-in-out infinite;"></path> <path class="geo-line" stroke="#90caf9" stroke-width="0.5" d="M0,300 L1000,300" style="stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: drawLine 22s linear forwards infinite, float 33s ease-in-out infinite;"></path> <path class="geo-line" stroke="#64b5f6" stroke-width="0.5" d="M700,1000 L700,0" style="stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: drawLine 23s linear forwards infinite, float 37s ease-in-out infinite;"></path> <path class="geo-line" stroke="#42a5f5" stroke-width="0.5" d="M0,0 L1000,1000" style="stroke-dasharray: 1414; stroke-dashoffset: 1414; animation: drawLine 30s linear forwards infinite, float 40s ease-in-out infinite;"></path> <path class="geo-line" stroke="#2196f3" stroke-width="0.5" d="M1000,0 L0,1000" style="stroke-dasharray: 1414; stroke-dashoffset: 1414; animation: drawLine 28s linear forwards infinite, float 38s ease-in-out infinite;"></path> </svg></p>
+<!-- Start of features -->
+<div class="features">
+<!-- Feature one with fade-in -->
+<div class="feature fragment fade-in">
+<div class="feature-header">
+<p>Projektordner</p>
 </div>
-<ul>
-<li class="fragment">Terminal &amp; Terminalbefehle kennengelernt:
-<ul>
-<li class="fragment"><code>pwd</code>, <code>mkdir</code>, <code>cd</code>, <code>ls</code></li>
-</ul></li>
-<li class="fragment">Ordner angelegt:</li>
-</ul>
-<div class="fragment">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="../images/ordner2.png" class="quarto-figure quarto-figure-center" style="width:30.0%"></p>
-</figure>
+<p>toolkit-lab/<br>
+- code/<br>
+- data/</p>
+</div>
+<!-- Feature two with fade-up -->
+<div class="feature fragment fade-up">
+<div class="feature-header">
+<p>Terminal</p>
+</div>
+<p>Benutzername<br>
+Hostname<br>
+Home-Verzeichnis</p>
+</div>
+<!-- Feature two with fade-up -->
+<div class="feature fragment fade-up">
+<div class="feature-header">
+<p>Terminal-Befehle</p>
+</div>
+<p>pwd<br>
+mkdir<br>
+cd, ls</p>
+</div>
 </div>
 <div class="quarto-auto-generated-content">
 <p><img src="images/code-blue.png" class="slide-logo"></p>
 <div class="footer footer-default">
 <p>Jan Kirenz</p>
-</div>
 </div>
 </div>
 </section>
