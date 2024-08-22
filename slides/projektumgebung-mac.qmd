@@ -18,7 +18,7 @@ format:
     background-transition: fade
     transition-speed: slow
     code-copy: true
-    code-line-numbers: true
+    code-line-numbers: false
     smaller: false
     scrollable: true
     slide-number: false
@@ -53,7 +53,7 @@ Ordner erstellen
 :::{.feature-header}
 Terminal 
 :::
-Terminal kennenlernen
+Terminal-Elemente kennenlernen
 :::
 
 
@@ -74,13 +74,13 @@ Grundlegende Befehle lernen
 
 ## Projektordner 
 
-<br>
+
 
 ::: { layout-ncol=2 layout-valign="bottom"}
 
-![Visuelle Darstellung](../images/ordner.png){ width=35% fig-align="left"}
+![Visuelle Darstellung](../images/ordner.png){ width=45% fig-align="left"}
 
-![Baumstruktur](../images/ordner2.png){ width=45% fig-align="left"}
+![Baumstruktur](../images/ordner2.png){ width=55% fig-align="left"}
 
 
 :::
@@ -88,8 +88,8 @@ Grundlegende Befehle lernen
 
 ## Spotlight Suche 🔎
 
-Spotlight-Suche mit der Tastenkombination `Command + Leertaste` öffnen.  
 
+Spotlight-Suche mit der Tastenkombination `Command + Leertaste` öffnen.  
 
 
 ![](../images/keyboard.png){width="80%" fig-align="center"}
@@ -98,20 +98,17 @@ Spotlight-Suche mit der Tastenkombination `Command + Leertaste` öffnen.
 
 ## Terminal öffnen
 
-*Terminal.app* in Spotlight Suche eingeben und Programm auswählen.
+Terminal.app in Spotlight Suche eingeben und Programm auswählen.
+
+![](../images/spotlight-terminal.png){width="30%" fig-align="center"}
 
 
-![](../images/spotlight-terminal.png){width="40%" fig-align="center"}
+## Terminal-Elemente {.smaller}
 
 
-## Terminal {.smaller}
-
-<br>
-
-![](../images/terminal.png){width="20%" fig-align="center"}
+![](../images/terminal.png){width="30%" fig-align="left"}
 
 
-<br>
 
 | Element | Inhalt | Bedeutung |
 |---------|----------|-----------|
@@ -125,9 +122,7 @@ Spotlight-Suche mit der Tastenkombination `Command + Leertaste` öffnen.
 
 ## Terminal-Befehle {.smaller}
 
-. . .
 
-<br>
 
 
 | Befehl | Bedeutung | Beschreibung                                                            |
@@ -140,7 +135,7 @@ Spotlight-Suche mit der Tastenkombination `Command + Leertaste` öffnen.
 
 ## print working directory
 
-Pfad des aktuellen Verzeichnisses anzeigen:
+Mit `pwd` Pfad des aktuellen Verzeichnisses anzeigen:
     
 ```bash
 pwd
@@ -149,7 +144,7 @@ pwd
 ## make directory
 
 
-Ordner *toolkit-lab* erstellen:
+Mit `mkdir` Ordner *toolkit-lab* erstellen:
 
 
 ```bash
@@ -158,7 +153,8 @@ mkdir toolkit-lab
 
 ## change directory
 
-Mit `cd` in das Verzeichnis `toolkit-lab` wechseln:
+Mit `cd` in das Verzeichnis *toolkit-lab* wechseln:
+
 
 ```bash
 cd toolkit-lab
@@ -179,12 +175,12 @@ Mit `ls` die Verzeichnisse anzeigen lassen:
 
 
 ```bash
-mkdir code data
+ls
 ```
 
 ## Ordner im Finder anzeigen
 
-<br>
+
 
 ::: { layout-ncol=3 layout-valign="bottom"}
 
@@ -197,24 +193,45 @@ mkdir code data
 :::
 
 
-## Zusammenfassung
+## Zusammenfassung 
 
-<div class="fragment">
-  <svg class="geometric-background" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice">
-    <path class="geo-line" stroke="#e3f2fd" stroke-width="0.5" d="M0,700 L1000,700" style="stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: drawLine 20s linear forwards infinite, float 30s ease-in-out infinite;"/>
-    <path class="geo-line" stroke="#bbdefb" stroke-width="0.5" d="M200,1000 L200,0" style="stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: drawLine 25s linear forwards infinite, float 35s ease-in-out infinite;"/>
-    <path class="geo-line" stroke="#90caf9" stroke-width="0.5" d="M0,300 L1000,300" style="stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: drawLine 22s linear forwards infinite, float 33s ease-in-out infinite;"/>
-    <path class="geo-line" stroke="#64b5f6" stroke-width="0.5" d="M700,1000 L700,0" style="stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: drawLine 23s linear forwards infinite, float 37s ease-in-out infinite;"/>
-    <path class="geo-line" stroke="#42a5f5" stroke-width="0.5" d="M0,0 L1000,1000" style="stroke-dasharray: 1414; stroke-dashoffset: 1414; animation: drawLine 30s linear forwards infinite, float 40s ease-in-out infinite;"/>
-    <path class="geo-line" stroke="#2196f3" stroke-width="0.5" d="M1000,0 L0,1000" style="stroke-dasharray: 1414; stroke-dashoffset: 1414; animation: drawLine 28s linear forwards infinite, float 38s ease-in-out infinite;"/>
-  </svg>
-</div>
 
-- Terminal & Terminalbefehle kennengelernt: 
-  - `pwd`, `mkdir`, `cd`, `ls`
+<!-- Start of features -->
+:::: {.features}
 
-- Ordner angelegt:
+<!-- Feature one with fade-in -->
+::: {.feature .fragment .fade-in}
+:::{.feature-header}
+Projektordner 
+:::
 
-. . .
+toolkit-lab/  
+    - code/  
+    - data/
 
-![](../images/ordner2.png){width=30% fig-align="center"}
+:::
+
+<!-- Feature two with fade-up -->
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Terminal 
+:::
+
+Benutzername   
+Hostname   
+Home-Verzeichnis  
+
+:::
+
+
+<!-- Feature two with fade-up -->
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Terminal-Befehle 
+:::
+pwd    
+mkdir    
+cd, ls
+:::
+
+::::
