@@ -2,7 +2,7 @@
 title: Projektumgebung 
 lang: de
 subtitle: Einrichtung auf dem Mac
-author: " " 
+author: Data Science, AI & Analytics Toolkit  
 execute:
   eval: false
   echo: true
@@ -45,7 +45,7 @@ jupyter: python3
 :::{.feature-header}
 Projektordner 
 :::
-Ordnerstruktur für Projekte vorbereiten
+Ordner erstellen
 :::
 
 <!-- Feature two with fade-up -->
@@ -53,50 +53,55 @@ Ordnerstruktur für Projekte vorbereiten
 :::{.feature-header}
 Terminal 
 :::
-Grundlegende Befehle kennenlernen
+Terminal kennenlernen
 :::
+
+
+<!-- Feature two with fade-up -->
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Terminal-Befehle 
+:::
+Grundlegende Befehle lernen
+:::
+
+
 ::::
 
 
 
-## Ordnerstruktur 
+
+
+## Projektordner 
 
 <br>
 
 ::: { layout-ncol=2 layout-valign="bottom"}
 
-![Visuelle Darstellung](../images/ordner.png){#fig-ordner width=35%}
+![Visuelle Darstellung](../images/ordner.png){ width=35% fig-align="left"}
 
-![Baumstruktur](../images/ordner2.png){#fig-ordner2 width=45%}
+![Baumstruktur](../images/ordner2.png){ width=45% fig-align="left"}
 
 
 :::
 
 
-## Terminal-Befehle {.smaller}
-
-. . .
-
-<br>
-
-
-| Befehl | Bedeutung | Beschreibung                                                            |
-|------------|--------------------------|------------------------------------------|
-| `pwd`     | print working directory | Zeigt den aktuellen Verzeichnispfad an           |
-| `cd`     | change directory | Wechselt in ein anderes Verzeichnis                     |
-| `mkdir`    | make directory | Erstellt ein neues Verzeichnis                           |
-| `ls`   | list | Listet Inhalt des Verzeichnisses auf                          |
-
-
 ## Spotlight Suche 🔎
 
-- Spotlight-Suche mit der Tastenkombination `Command + Leertaste` öffnen.  
+Spotlight-Suche mit der Tastenkombination `Command + Leertaste` öffnen.  
 
-. . .
 
-![](../images/keyboard.png){width="40%" fig-align="center"}
 
-- In der Spotlight-Suche "Terminal" eingeben und auswählen.
+![](../images/keyboard.png){width="80%" fig-align="center"}
+
+
+
+## Terminal öffnen
+
+*Terminal.app* in Spotlight Suche eingeben und Programm auswählen.
+
+
+![](../images/spotlight-terminal.png){width="40%" fig-align="center"}
 
 
 ## Terminal {.smaller}
@@ -116,6 +121,21 @@ Grundlegende Befehle kennenlernen
 | Prompt | `%`| Terminal bereit für Befehle |
 
 <br>
+
+
+## Terminal-Befehle {.smaller}
+
+. . .
+
+<br>
+
+
+| Befehl | Bedeutung | Beschreibung                                                            |
+|------------|--------------------------|------------------------------------------|
+| `pwd`     | print working directory | Zeigt den aktuellen Verzeichnispfad an           |
+| `cd`     | change directory | Wechselt in ein anderes Verzeichnis                     |
+| `mkdir`    | make directory | Erstellt ein neues Verzeichnis                           |
+| `ls`   | list | Listet Inhalt des Verzeichnisses auf                          |
 
 
 ## print working directory
@@ -162,6 +182,21 @@ Mit `ls` die Verzeichnisse anzeigen lassen:
 mkdir code data
 ```
 
+## Ordner im Finder anzeigen
+
+<br>
+
+::: { layout-ncol=3 layout-valign="bottom"}
+
+![Finder-Einstellungen](../images/finder-1.png){width=100%}
+
+![Finder-Seitenleiste](../images/finder-2.png){ width=80%}
+
+![Finder-Fenster](../images/finder-3.png){ width=100%}
+
+:::
+
+
 ## Zusammenfassung
 
 <div class="fragment">
@@ -175,10 +210,11 @@ mkdir code data
   </svg>
 </div>
 
-- Terminalbefehle kennengelernt: `pwd`, `mkdir`, `cd`, `ls`
+- Terminal & Terminalbefehle kennengelernt: 
+  - `pwd`, `mkdir`, `cd`, `ls`
 
 - Ordner angelegt:
 
 . . .
 
-![](../images/ordner2.png){width=35% fig-align="center"}
+![](../images/ordner2.png){width=30% fig-align="center"}
