@@ -1,0 +1,59 @@
+<style>
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .reveal .slide-background-content {
+    background: linear-gradient(
+      135deg,
+      #af3a7e 0%,
+      #8b2d8f 25%,
+      #5d2d8f 50%,
+      #4332a3 75%,
+      #3d4bb7 100%
+    );
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+  }
+  
+  .reveal .slides {
+    border-radius: 24px;
+    overflow: hidden;
+  }
+  
+  /* Ensure all text is white */
+  .reveal .slides section {
+    color: #ffffff;
+  }
+  
+  /* Style for the main title */
+  .reveal h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  /* Style for subtitles or secondary headers */
+  .reveal h2, .reveal h3 {
+    color: #ffffff;
+    font-weight: normal;
+  }
+  
+  /* Style for paragraphs and other text elements */
+  .reveal p, .reveal li {
+    color: #ffffff;
+    font-weight: 300;
+  }
+  
+  /* Style for links */
+  .reveal a {
+    color: #64d2ff;
+    text-decoration: none;
+  }
+  
+  .reveal a:hover {
+    text-decoration: underline;
+  }
+  </style>
