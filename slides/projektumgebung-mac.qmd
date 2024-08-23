@@ -178,20 +178,34 @@ Mit `ls` die Verzeichnisse anzeigen lassen:
 ls
 ```
 
-## Ordner im Finder anzeigen
+## Finder öffnen {.smaller}
+
+Spotlight-Suche mit der Tastenkombination `Command + Leertaste` öffnen   
+
+Finder in Spotlight Suche eingeben und Programm auswählen.
+
+![](../images/finder-spotlight.png){width=100% fig-align="center"}
 
 
+## Finder Einstellungen ändern
 
-::: { layout-ncol=3 layout-valign="bottom"}
+<br>
 
-![Finder-Einstellungen](../images/finder-1.png){width=100%}
+::: { layout-ncol=2 layout-valign="bottom"}
 
-![Finder-Seitenleiste](../images/finder-2.png){ width=80%}
+![](../images/finder-1.png){width=100%}
 
-![Finder-Fenster](../images/finder-3.png){ width=100%}
+![](../images/finder-2.png){ width=65%}
 
 :::
 
+## Ordner in Finder anzeigen
+
+<br>
+
+![](../images/finder-3.png){ width=40%}
+
+<br>
 
 ## Zusammenfassung 
 
