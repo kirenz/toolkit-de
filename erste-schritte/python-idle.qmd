@@ -1,35 +1,45 @@
 # Python IDLE
 
-Python IDLE ist eine einfache IDE (Integrated Development Environment), die mit der Programmiersprache Python installiert wird. Sie ist darauf ausgelegt, das Schreiben und Ausführen von Python-Code effizient zu unterstützen.
+Python IDLE ist eine einfache integrierte Entwicklungsumgebung (IDE), die standardmäßig mit Python installiert wird. Sie wurde speziell entwickelt, um das Schreiben und Ausführen von Python-Code zu erleichtern.
 
-*IDLE ist nach Eric Idle benannt, einem Mitglied der Monty Python Comedy-Gruppe, von der auch Python seinen Namen hat.*
+> Fun Fact: IDLE ist nach Eric Idle benannt, einem Mitglied der Monty Python Comedy-Gruppe, von der auch Python seinen Namen hat.
 
 ## Erste Schritte in IDLE 
 
-Nach der Installation von Python starten Sie IDLE über das Suchmenü Ihres Betriebssystems:
+Nach der Installation von Python können wir IDLE über das Suchmenü des Betriebssystems starten:
 
-- **Windows**: Öffnen Sie das Startmenü und geben Sie `IDLE` ein.
-- **MacOS**: Verwenden Sie die Spotlight-Suche (Cmd + Leertaste), geben Sie `IDLE` ein und drücken Sie Enter.
+- Unter Windows: Das Startmenü öffnen und 'IDLE' eingeben.
 
+- Unter MacOS: Die Spotlight-Suche (Cmd + Leertaste) verwenden, 'IDLE' eingeben und Enter drücken.
 
-Das IDLE-Shell-Fenster fungiert als interaktiver Interpreter, der jede Codezeile sofort ausführt, wenn Sie Enter drücken.
+Das IDLE-Shell-Fenster funktioniert als interaktiver Interpreter. Hier wird jede eingegebene Codezeile sofort ausgeführt, sobald wir Enter drücken.
 
-Direkt in der IDLE-Shell können Sie arithmetische Ausdrücke wie `2 + 3` eingeben und Enter drücken, um sofort die Ergebnisse zu sehen.
-
-Diese Funktion macht IDLE ideal für schnelle Berechnungen und Experimente mit den mathematischen Fähigkeiten von Python, ohne dass ein Skript gespeichert oder ausgeführt werden muss.
+In der IDLE-Shell können wir direkt arithmetische Ausdrücke wie `2 + 3` eingeben und erhalten sofort das Ergebnis. Diese Funktion macht IDLE besonders nützlich für schnelle Berechnungen und Experimente mit den mathematischen Fähigkeiten von Python, ohne dass wir ein separates Skript speichern oder ausführen müssen.
 
 ## Python-Skripte in IDLE
 
-Als nächstes erstellen und führen wir ein einfaches Python-Skript aus:
+Nun wollen wir ein einfaches Python-Skript erstellen und ausführen:
 
-1. **Eine neue Datei öffnen**: Navigieren Sie in IDLE zu `Datei` > `Neue Datei`, um ein Editor-Fenster zu öffnen.
-2. **Geben Sie Ihren Code ein**: Geben Sie Folgendes in das neue Editor-Fenster ein:
+1. **Eine neue Datei öffnen**: In IDLE navigieren wir zu `Datei` > `Neue Datei`, um ein Editor-Fenster zu öffnen.
+2. **Code eingeben**: Im neuen Editor-Fenster geben wir folgenden Code ein:
 
    ```python
    print("Hallo, Python!")
    ```
 
-3. **Speichern Sie Ihr Skript**: Speichern Sie die Datei über `Datei` > `Speichern unter...` und benennen Sie sie `hello.py`. Idealerweise speichern Sie sie in Ihrem Verzeichnis `code` innerhalb Ihres `toolkit-labs`-Ordners (siehe dazu die Erklärung zur [Ordnerstruktur](project-environment#projektumgebung.qmd)).
-4. **Führen Sie Ihr Skript aus**: Drücken Sie `F5` oder gehen Sie zu `Ausführen` > `Modul ausführen`, um Ihr Skript auszuführen. Die Ausgabe `Hallo, Python!` sollte in der IDLE-Shell erscheinen.
+3. **Skript speichern**: Wir speichern die Datei über `Datei` > `Speichern unter...` und nennen sie `hello.py`. Es empfiehlt sich, die Datei im Verzeichnis `code` innerhalb des `toolkit-labs`-Ordners zu speichern (weitere Informationen zur [Ordnerstruktur](project-environment#projektumgebung.qmd) finden sich im entsprechenden Kapitel).
+4. **Skript ausführen**: Mit `F5` oder über `Ausführen` > `Modul ausführen` können wir unser Skript starten. In der IDLE-Shell sollte nun die Ausgabe `Hallo, Python!` erscheinen.
 
-Modifizieren Sie nun Ihr Skript mit verschiedenen Nachrichten. Sie können auch `help(print)` oder `help()` in die IDLE-Shell eingeben, um die umfangreiche Hilfedokumentation von Python zu erkunden und andere Funktionen kennenzulernen.
+Um unser Verständnis zu vertiefen, können wir das Skript mit verschiedenen Nachrichten modifizieren. Zusätzlich bietet die IDLE-Shell die Möglichkeit, durch Eingabe von `help(print)` oder `help()` die umfangreiche Hilfedokumentation von Python zu erkunden und weitere Funktionen kennenzulernen.
+
+## Tipps für die Arbeit mit IDLE
+
+- **Code-Vervollständigung**: IDLE unterstützt die automatische Vervollständigung von Code. Wenn wir den Anfang eines Befehls oder einer Variablen eingeben und dann `Tab` drücken, schlägt IDLE mögliche Vervollständigungen vor.
+
+- **Farbkodierung**: IDLE verwendet verschiedene Farben, um unterschiedliche Elemente des Python-Codes hervorzuheben. Dies erleichtert das Lesen und Verstehen des Codes.
+
+- **Debugger**: IDLE verfügt über einen integrierten Debugger, den wir über `Debuggen` > `Debugger` aktivieren können. Dies ist besonders nützlich, wenn wir Fehler in unserem Code finden und beheben möchten.
+
+- **Shell-Verlauf**: Mit den Pfeiltasten können wir durch frühere Eingaben in der IDLE-Shell navigieren. Dies ist praktisch, um vorherige Befehle schnell wiederzuverwenden oder zu modifizieren.
+
+Durch die Nutzung dieser Funktionen können wir IDLE effektiv als Lernwerkzeug für unsere ersten Schritte in der Python-Programmierung einsetzen.
