@@ -1,8 +1,8 @@
 # Projektumgebung 
 
-Das Organisieren Ihrer Dateien ist entscheidend für die Effizienz und Zugänglichkeit Ihrer Projekte. Zunächst erstellen wir daher einen Ordner namens `toolkit-lab` auf Ihrem Rechner und legen die Unterverzeichnisse `code` und `data` an, um Ihr Projekt strukturiert zu halten.
+Das systematische Organisieren von Verzeichnissen und Dateien ist eine wichtige Grundlage für erfolgreiche Datenprojekte. Wir erstellen daher zuerst ein Verzeichnis namens `toolkit-lab` und legen die Unterverzeichnisse `code` und `data` an, um unser Projekt strukturiert zu halten.
 
-Diese Ordnerstruktur kann wie folgt dargestellt werden:
+Unsere Ordnerstruktur kann wie folgt dargestellt werden:
 
 ::: {#fig-ordnerstruktur layout-ncol=2 layout-valign="bottom"}
 
@@ -14,7 +14,7 @@ Darstellung der Ordnerstruktur
 
 :::
 
-Für die Darstellung der Ordnerstruktur verwenden wir typischerweise eine Baumstruktur, wie in @fig-ordner2 dargestellt. Diese kann beispielsweise nach diesem Schema erzeugt werden:
+Für die Darstellung der Ordnerstruktur verwenden wir typischerweise eine Baumstruktur, wie in @fig-ordner2 dargestellt. Diese kann beispielsweise wie folgt erzeugt werden: 
 
 
 ```plaintext
@@ -23,12 +23,17 @@ toolkit-lab/
 └── data/
 ```
 
-Anstatt eine grafische Benutzeroberfläche wie den Windows-Explorer oder den macOS Finder zu verwenden, werden wir die *Befehlszeile* verwenden, um die Ordner einzurichten. Die Befehlszeile ist ein leistungsstarkes Werkzeug zum Einrichten Ihrer Arbeitsumgebung. Sie ermöglicht eine  Kommunikation mit dem Betriebssystem über textbasierte Eingaben.
+```plaintext
+toolkit-lab/
+- code/
+- data/
+```
+
+Anstatt eine grafische Benutzeroberfläche wie den [Windows-Explorer](https://support.microsoft.com/de-de/windows/suchen-und-%C3%B6ffnen-von-explorer-ef370130-1cca-9dc5-e0df-2f7416fe1cb1) oder den [macOS Finder](https://support.apple.com/de-ch/guide/mac-help/mchlp2605/mac) zu verwenden, werden wir die *Befehlszeile* nutzen, um die Ordner einzurichten. Die Befehlszeile ist ein leistungsstarkes Werkzeug zum Einrichten unserer Arbeitsumgebung. Sie ermöglicht eine Kommunikation mit dem Betriebssystem über textbasierte Eingaben.
 
 :::{.callout-note appearance="minimal"}
-Die Befehlszeile eröffnet eine neue Ebene der Interaktion mit Ihrem Computer. Wenn Sie sich daran gewöhnt haben, werden Sie feststellen, dass viele Aufgaben effizienter erledigt werden können als mit einer grafischen Benutzeroberfläche.
+Die Befehlszeile eröffnet eine neue Ebene der Interaktion mit unserem Computer. Viele Aufgaben können damit effizienter erledigt werden als mit einer grafischen Benutzeroberfläche.
 :::
-
 
 Weitere gängige Bezeichnung für die Befehlszeile sind Kommandozeile, Befehlszeilenschnittstelle, oder der englische Begriff "Command Line Interface", oft abgekürzt mit "CLI". In Windows ist die Bezeichnung für das entsprechende Programm *Eingabeaufforderung* (siehe @fig-eingabe), auf dem Mac heißt es *Terminal* (siehe @fig-terminal).
 
@@ -42,79 +47,135 @@ Kommandozeilen
 
 :::
 
-In den nächsten Abschnitten wird erklärt, wie die Ordner mit Hilfe der Befehlszeile eingerichtet werden können. 
+
+Wenn wir von der Befehlszeile sprechen, ist es wichtig, auch das Konzept der "Shell" zu verstehen. Die Shell ist ein Programm, das als Vermittler zwischen uns und dem Betriebssystem fungiert. Sie interpretiert unsere Eingaben und übersetzt sie in Anweisungen, die das System ausführen kann.
+
+Die Kommandozeile, die wir sehen und in die wir Befehle eingeben, ist die Schnittstelle zur Shell. Sie ist sozusagen das "Blatt Papier", auf dem wir unsere Anweisungen schreiben, während die Shell der "Übersetzer" ist, der diese Anweisungen versteht und umsetzt.
+
+
+Auf Windows-Systemen:
+- Das Standard-Programm für die Kommandozeile heißt "Eingabeaufforderung" (Command Prompt).
+- Es verwendet standardmäßig die cmd.exe als Shell.
+- In neueren Windows-Versionen gibt es auch die leistungsfähigere PowerShell als Alternative.
+
+Auf Mac-Systemen:
+- Das Programm für die Kommandozeile heißt "Terminal".
+- Es verwendet Unix-basierte Shells.
+- In neueren macOS-Versionen ist die Standard-Shell "zsh" (Z Shell), früher war es "bash" (Bourne Again Shell).
+
+Trotz dieser Unterschiede ist das grundlegende Konzept auf beiden Systemen gleich: Wir geben Befehle ein, und die Shell interpretiert und führt sie aus.
+
+Die Verwendung der Kommandozeile und das Verständnis der Shell-Umgebung sind wichtige Fähigkeiten in der Datenanalyse und Softwareentwicklung. Sie ermöglichen uns eine präzisere Kontrolle über unser System und sind besonders nützlich für Aufgaben wie Automatisierung und Scripting.
+
+In den folgenden Abschnitten werden wir lernen, wie wir grundlegende Befehle nutzen können, um unsere Projektstruktur einzurichten und zu verwalten.
 
 
 ## Projektumgebung in Windows
 
-Folgen Sie diesen Schritten, um das Hauptverzeichnis und die Unterverzeichnisse mit der Windows-Eingabeaufforderung ("Command Prompt" bzw. "cmd") zu erstellen:
+Hier die Schritte, um die Ordner mit der Windows-Eingabeaufforderung ("Command Prompt" bzw. "cmd") zu erstellen:
 
-1. Geben Sie in dem Windows-Suchfenster `Eingabeaufforderung` oder `cmd` ein und drücken Sie `Enter`, um die Eingabeaufforderung zu öffnen.
-3. Erstellen Sie einen neuen Ordner namens `toolkit-lab` (kopieren Sie diesen Code und geben Sie ihn in Ihre Eingabeaufforderung ein):
+1. In dem Windows-Suchfenster `Eingabeaufforderung` oder `cmd` eingeben und `Enter` drücken, um die Eingabeaufforderung zu öffnen.
+2. Neuen Ordner namens `toolkit-lab` erstellen (Code kopieren und in Eingabeaufforderung eingeben):
 
-    ```bash
-    mkdir toolkit-lab
-    ```
+```bash
+mkdir toolkit-lab
+```
 
-4. Verwenden Sie `cd` (change directory), um in das Verzeichnis `toolkit-lab` zu wechseln:
+3. `cd` (change directory) verwenden, um in das Verzeichnis `toolkit-lab` zu navigieren:
 
-    ```bash
-    cd toolkit-lab
-    ```
+```bash
+cd toolkit-lab
+```
 
-5. Verwenden Sie `mkdir` (make directory), um die Unterverzeichnisse `code` und `data` zu erstellen:
+4. `mkdir` (make directory) eingeben, um die Unterverzeichnisse `code` und `data` zu erstellen:
 
-    ```bash
-    mkdir code data
-    ```
+```bash
+mkdir code data
+```
 
-Wir haben damit ein Hauptverzeichnis `toolkit-lab` mit zwei Unterverzeichnissen eingerichtet: `code` für Ihre Skripte und `data` zum Speichern von Datensätzen.
+Wir haben damit ein Hauptverzeichnis `toolkit-lab` mit zwei Unterverzeichnissen eingerichtet: `code` für unsere Skripte und `data` zum Speichern von Datensätzen.
 
 ## Projektumgebung auf Mac
 
-Folgen Sie diesen Schritten, um das Hauptverzeichnis und die Unterverzeichnisse mit dem Terminal (dies ist die Bezeichnung der Befehlszeile in macOS und Linux) in macOS zu erstellen:
+Hier die Schritte, um das Hauptverzeichnis und die Unterverzeichnisse mit dem Terminal (dies ist die Bezeichnung der Befehlszeile in macOS) in macOS zu erstellen:
+
+1. Um das Terminal in macOS zu öffnen, nutzen wir die Spotlight-Suche. Wir öffnen diese mit der Tastenkombination `Commandd + Leertaste` (erst `Command` gedrückt halten, und dann zusätzlich die `Leertaste` drücken).  
+
+![Tastenkombination für Spotlight-Suche](../images/keyboard.png){#fig-keyboard width="60%" .lightbox}
 
 
-1. Um das Terminal in macOS zu öffnen, können Sie die Spotlight-Suche verwenden. Öffnen Sie diese mit der Tastenkombination `Cmd + Leertaste`.  
+2. In der Spotlight-Suche "Terminal" eingeben und Terminal-app anklicken. Nun sollte das Terminal sichtbar sein. 
 
-    ![Tastenkombination für Spotlight-Suche](../images/keyboard.png){#fig-keyboard width="60%" .lightbox}
+![Terminal auf dem Mac](../images/terminal.png){#fig-terminal2 width="60%"}
 
-
-2. Geben Sie in der Spotlight-Suche "Terminal" ein und wählen Sie das Programm aus. Sie sollten nun das Terminal sehen können. 
-
-    ![Terminal auf dem Mac](../images/terminal.png){#fig-terminal2 width="60%"}
+3. Wir prüfen nun, welche Shell-Ausführung auf dem Gerät verwendet wird. Bis Oktober 2019 war bash (Bourne Again Shell) der Standard, danach hat Apple auf zsh umgestellt. 
 
 
-   :::{.callout-note title="Erklärung der Terminal-Inhalte"}
+```bash
+echo $SHELL
+```
 
-   - *Benutzername*: In diesem Fall `jankirenz`. Es zeigt an, welcher Benutzer aktuell am System angemeldet ist.
-   - *Hostname*: Hier `kirenziMac`. Dies ist der Name des Computers, auf dem das Terminal läuft.
-   - *Aktuelles Verzeichnis (Pfad)*: Das `~` (Tilde) Symbol steht für das Home-Verzeichnis des aktuellen Benutzers. Der vollständige Pfad wäre also /Users/jankirenz. Es zeigt an, in welchem Verzeichnis Sie sich gerade befinden.
-   - *Prompt*: Das `%` Symbol am Ende der Zeile ist der sogenannte Prompt. Er signalisiert, dass das Terminal bereit ist, einen neuen Befehl entgegenzunehmen.
-   :::
+Ist die Ausgabe "/bin/zsh", wird bereits zsh verwendet. Wenn das Ergebnis "/bin/bash" ist, verwendet das Gerät derzeit noch bash. 
 
-2. Zuerst verwenden wir den Befehl pwd ("print working directory") und drücken die Eingabetaste, um den vollständigen Pfad des aktuellen Verzeichnisses anzuzeigen. Wenn Sie das Terminal gerade geöffnet haben, sollte das aktuelle Verzeichnis Ihr Home-Verzeichnis sein (in meinem Fall `/Users/jankirenz`, da mein Benutzerkonto jankirenz heißt):
+Falls aktuell noch bash verwendet wird, sollte zunächst auf zsh umgesetllt werden:
+
+a) Zuerst überprüfen, ob zsh bereits installiert ist:
+
+```bash
+zsh --version
+```
+
+b) Falls zsh bereits installiert ist (was bei neueren macOS-Versionen der Fall sein sollte), kann direkt zu zsh gewechselt werden:
+
+```bash
+chsh -s /bin/zsh
+```
+
+Bei Bedarf Benutzerpasswort eingeben, wenn dazu aufgefordert wird. Dann Terminal schließen und neu starten.
+
+c) Falls zsh noch nicht installiert sein sollte, können die Apple Xcode Command Line Tools installiert werden, die zsh enthalten:
+
+
+```bash
+xcode-select --install
+```
+
+Dann Terminal schließen und wieder zurück zu Schritt a). Falls der Befehl nicht ausgeführt wreden kann, ist XCode auch [hier über den App-Store](https://apps.apple.com/de/app/xcode/id497799835?mt=12) erhältlich. 
+
+
+4. Hier eine Erklärung zu den unterschiedlichen Elementen im Terminal:
+
+:::{.callout-note title="Erklärung der Terminal-Inhalte"}
+
+- *Benutzername*: In diesem Fall `jankirenz`. Es zeigt an, welcher Benutzer aktuell am System angemeldet ist.  
+- *Hostname*: Hier `kirenziMac`. Dies ist der Name des Computers, auf dem das Terminal läuft.  
+- *Aktuelles Verzeichnis (Pfad)*: Das `~` (Tilde) Symbol steht für das Home-Verzeichnis des aktuellen Benutzers. Der vollständige Pfad wäre also /Users/jankirenz. Es zeigt an, in welchem Verzeichnis Sie sich gerade befinden.  
+- *Prompt*: Das `%` Symbol am Ende der Zeile ist der sogenannte Prompt. Er signalisiert, dass das Terminal bereit ist, einen neuen Befehl entgegenzunehmen.
+:::
+
+
+5. Zuerst verwenden wir den Befehl pwd ("print working directory") und drücken die Eingabetaste, um den vollständigen Pfad des aktuellen Verzeichnisses anzuzeigen. Wenn das Terminal gerade geöffnet wurde, sollte das aktuelle Verzeichnis das sogenannte Home-Verzeichnis sein (in meinem Fall `/Users/jankirenz`, da mein Benutzerkonto jankirenz heißt):
     
-    ```bash
-    pwd
-    ```
+```bash
+pwd
+```
 
 2. Erstellen Sie nun einen neuen Ordner namens `toolkit-lab` in dem Home-Verzeichnis (kopieren Sie diesen Code und geben Sie ihn in Ihr Terminal ein):
 
-    ```bash
-    mkdir toolkit-lab
-    ```
+```bash
+mkdir toolkit-lab
+```
 
 3. Verwenden Sie `cd` (change directory), um in das Verzeichnis `toolkit-lab` zu wechseln:
 
-    ```bash
-    cd toolkit-lab
-    ```
+```bash
+cd toolkit-lab
+```
 
 4. Verwenden Sie `mkdir` (make directory), um die Unterverzeichnisse `code` und `data` zu erstellen:
 
-    ```bash
-    mkdir code data
-    ```
+```bash
+mkdir code data
+```
 
 Wir haben damit ein Hauptverzeichnis `toolkit-lab` mit zwei Unterverzeichnissen eingerichtet: `code` für Ihre Skripte und `data` zum Speichern von Datensätzen.
