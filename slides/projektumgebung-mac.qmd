@@ -51,9 +51,9 @@ Ordner erstellen
 <!-- Feature two with fade-up -->
 ::: {.feature .fragment .fade-up}
 :::{.feature-header}
-Terminal 
+Terminal & Shell
 :::
-Terminal-Elemente kennenlernen
+Grundlagen kennenlernen
 :::
 
 
@@ -62,19 +62,13 @@ Terminal-Elemente kennenlernen
 :::{.feature-header}
 Terminal-Befehle 
 :::
-Grundlegende Befehle lernen
+Befehle lernen
 :::
-
 
 ::::
 
 
-
-
-
 ## Projektordner 
-
-
 
 ::: { layout-ncol=2 layout-valign="bottom"}
 
@@ -82,18 +76,14 @@ Grundlegende Befehle lernen
 
 ![Baumstruktur](../images/ordner2.png){ width=55% fig-align="left"}
 
-
 :::
 
-
 ## Spotlight Suche 🔎
-
 
 Spotlight-Suche mit der Tastenkombination `Command + Leertaste` öffnen.  
 
 
 ![](../images/keyboard.png){width="80%" fig-align="center"}
-
 
 
 ## Terminal öffnen
@@ -103,11 +93,65 @@ Terminal.app in Spotlight Suche eingeben und Programm auswählen.
 ![](../images/spotlight-terminal.png){width="30%" fig-align="center"}
 
 
-## Terminal-Elemente {.smaller}
+## Shell-Version prüfen
 
+Ausgabe der Shell-Ausführung:
+
+```bash
+echo $SHELL
+```
+
+-  `/bin/zsh`: ✅ Es wird bereits zsh verwendet. 
+
+-  `/bin/bash`: ❌ Es wird bash genutzt. 
+
+## Wenn bash genutzt wird
+
+Überprüfen, ob zsh installiert ist:
+
+```bash
+zsh --version
+```
+
+- Version angezeigt: ✅ zsh ist installiert. 
+
+- Keine Version: ❌ zsh ist nicht installiert 
+
+
+## Option 1: zsh über Terminal
+
+Apple Xcode Command Line Tools installieren:
+
+```bash
+xcode-select --install
+```
+
+- Terminal schließen
+
+
+## Option 2: zsh über App-Store
+
+
+XCode [über den App-Store](https://apps.apple.com/de/app/xcode/id497799835?mt=12) installieren. 
+
+
+![](../images/xcode.png){width="50%"}
+
+
+## Wechsel von bash zu zsh
+
+Wechsel von bash zu zsh
+
+```bash
+chsh -s /bin/zsh
+```
+
+- Terminal neu starten
+
+
+## Terminal-Elemente in zsh {.smaller}
 
 ![](../images/terminal.png){width="30%" fig-align="left"}
-
 
 
 | Element | Inhalt | Bedeutung |
@@ -121,9 +165,6 @@ Terminal.app in Spotlight Suche eingeben und Programm auswählen.
 
 
 ## Terminal-Befehle {.smaller}
-
-
-
 
 | Befehl | Bedeutung | Beschreibung                                                            |
 |------------|--------------------------|------------------------------------------|
@@ -189,7 +230,6 @@ Finder in Spotlight Suche eingeben und Programm auswählen.
 
 ## Finder Einstellungen ändern
 
-<br>
 
 ::: { layout-ncol=2 layout-valign="bottom"}
 
@@ -201,14 +241,10 @@ Finder in Spotlight Suche eingeben und Programm auswählen.
 
 ## Ordner in Finder anzeigen
 
-<br>
-
 ![](../images/finder-3.png){ width=40%}
 
-<br>
 
 ## Zusammenfassung 
-
 
 <!-- Start of features -->
 :::: {.features}
@@ -228,9 +264,10 @@ toolkit-lab/
 <!-- Feature two with fade-up -->
 ::: {.feature .fragment .fade-up}
 :::{.feature-header}
-Terminal 
+Terminal & Shell
 :::
 
+bash vs zsh
 Benutzername   
 Hostname   
 Home-Verzeichnis  
@@ -245,7 +282,8 @@ Terminal-Befehle
 :::
 pwd    
 mkdir    
-cd, ls
+cd  
+ls
 :::
 
 ::::
