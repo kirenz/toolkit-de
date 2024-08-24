@@ -354,8 +354,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-  <li><a href="#projektumgebung-in-windows" id="toc-projektumgebung-in-windows" class="nav-link active" data-scroll-target="#projektumgebung-in-windows"><span class="header-section-number">1.1</span> Projektumgebung in Windows</a></li>
-  <li><a href="#projektumgebung-auf-mac" id="toc-projektumgebung-auf-mac" class="nav-link" data-scroll-target="#projektumgebung-auf-mac"><span class="header-section-number">1.2</span> Projektumgebung auf Mac</a></li>
+  <li><a href="#projektumgebung-in-windows" id="toc-projektumgebung-in-windows" class="nav-link active" data-scroll-target="#projektumgebung-in-windows"><span class="header-section-number">1.1</span> Projektumgebung in Windows</a>
+  <ul class="collapse">
+  <li><a href="#eingabeaufforderung" id="toc-eingabeaufforderung" class="nav-link" data-scroll-target="#eingabeaufforderung"><span class="header-section-number">1.1.1</span> Eingabeaufforderung</a></li>
+  <li><a href="#explorer" id="toc-explorer" class="nav-link" data-scroll-target="#explorer"><span class="header-section-number">1.1.2</span> Explorer</a></li>
+  </ul></li>
+  <li><a href="#projektumgebung-auf-mac" id="toc-projektumgebung-auf-mac" class="nav-link" data-scroll-target="#projektumgebung-auf-mac"><span class="header-section-number">1.2</span> Projektumgebung auf Mac</a>
+  <ul class="collapse">
+  <li><a href="#terminal-öffnen" id="toc-terminal-öffnen" class="nav-link" data-scroll-target="#terminal-öffnen"><span class="header-section-number">1.2.1</span> Terminal öffnen</a></li>
+  <li><a href="#terminal-elemente" id="toc-terminal-elemente" class="nav-link" data-scroll-target="#terminal-elemente"><span class="header-section-number">1.2.2</span> Terminal-Elemente</a></li>
+  <li><a href="#terminal-befehle" id="toc-terminal-befehle" class="nav-link" data-scroll-target="#terminal-befehle"><span class="header-section-number">1.2.3</span> Terminal-Befehle</a></li>
+  <li><a href="#finder-nutzen" id="toc-finder-nutzen" class="nav-link" data-scroll-target="#finder-nutzen"><span class="header-section-number">1.2.4</span> Finder nutzen</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -381,7 +391,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Das systematische Organisieren von Verzeichnissen und Dateien ist eine wichtige Grundlage für erfolgreiche Datenprojekte. Wir erstellen daher zuerst ein Verzeichnis namens <code>toolkit-lab</code> und legen die Unterverzeichnisse <code>code</code> und <code>data</code> an, um unser Projekt strukturiert zu halten.</p>
+<p>Das systematische Anlegen von Verzeichnissen und Dateien ist eine wichtige Grundlage für erfolgreiche Datenprojekte. Wir erstellen daher zuerst einen Ordner namens “toolkit-lab” und legen darin die Unterordner “code” für unsere Code-Dateien und “data” zum Speichern von Datensätzen an, um unser Projekt strukturiert zu halten.</p>
 <p>Unsere Ordnerstruktur kann wie folgt dargestellt werden:</p>
 <div id="fig-ordnerstruktur" class="quarto-layout-panel">
 <figure class="quarto-float quarto-float-fig figure">
@@ -418,14 +428,11 @@ Abbildung&nbsp;1.1: Darstellung der Ordnerstruktur
 </figcaption>
 </figure>
 </div>
-<p>Für die Darstellung der Ordnerstruktur verwenden wir typischerweise eine Baumstruktur, wie in <a href="#fig-ordner2" class="quarto-xref">Abbildung&nbsp;<span>1.1 (b)</span></a> dargestellt. Diese kann beispielsweise wie folgt erzeugt werden:</p>
-<pre class="plaintext"><code>toolkit-lab/
-├── code/
-└── data/</code></pre>
+<p>Für die Darstellung der Ordnerstruktur verwenden wir typischerweise eine <strong>Baumstruktur</strong>, wie in <a href="#fig-ordner2" class="quarto-xref">Abbildung&nbsp;<span>1.1 (b)</span></a> dargestellt. Diese kann mit Hilfe unterschiedlicher Zeichen dargestellt und auch wie folgt erstellt werden:</p>
 <pre class="plaintext"><code>toolkit-lab/
 - code/
 - data/</code></pre>
-<p>Anstatt eine grafische Benutzeroberfläche wie den <a href="https://support.microsoft.com/de-de/windows/suchen-und-%C3%B6ffnen-von-explorer-ef370130-1cca-9dc5-e0df-2f7416fe1cb1">Windows-Explorer</a> oder den <a href="https://support.apple.com/de-ch/guide/mac-help/mchlp2605/mac">macOS Finder</a> zu verwenden, werden wir die <em>Befehlszeile</em> nutzen, um die Ordner einzurichten. Die Befehlszeile ist ein leistungsstarkes Werkzeug zum Einrichten unserer Arbeitsumgebung. Sie ermöglicht eine Kommunikation mit dem Betriebssystem über textbasierte Eingaben.</p>
+<p>Anstatt eine grafische Benutzeroberfläche wie den <a href="https://support.microsoft.com/de-de/windows/suchen-und-%C3%B6ffnen-von-explorer-ef370130-1cca-9dc5-e0df-2f7416fe1cb1">Windows-Explorer</a> oder den <a href="https://support.apple.com/de-ch/guide/mac-help/mchlp2605/mac">macOS Finder</a> zu verwenden, werden wir die <strong>Befehlszeile</strong> nutzen, um die Ordner einzurichten. Die Befehlszeile ist ein leistungsstarkes Werkzeug zum Einrichten unserer Arbeitsumgebung. Sie ermöglicht eine Kommunikation mit dem Betriebssystem über textbasierte Eingaben.</p>
 <div class="callout callout-style-simple callout-note no-icon">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
@@ -436,7 +443,13 @@ Abbildung&nbsp;1.1: Darstellung der Ordnerstruktur
 </div>
 </div>
 </div>
-<p>Weitere gängige Bezeichnung für die Befehlszeile sind Kommandozeile, Befehlszeilenschnittstelle, oder der englische Begriff “Command Line Interface”, oft abgekürzt mit “CLI”. In Windows ist die Bezeichnung für das entsprechende Programm <em>Eingabeaufforderung</em> (siehe <a href="#fig-eingabe" class="quarto-xref">Abbildung&nbsp;<span>1.2 (a)</span></a>), auf dem Mac heißt es <em>Terminal</em> (siehe <a href="#fig-terminal" class="quarto-xref">Abbildung&nbsp;<span>1.2 (b)</span></a>).</p>
+<p>Weitere gängige Bezeichnung für die Befehlszeile sind:</p>
+<ul>
+<li>Kommandozeile,</li>
+<li>Befehlszeilenschnittstelle,</li>
+<li>Command Line Interface (CLI).</li>
+</ul>
+<p>In Windows ist die Bezeichnung für das entsprechende Programm <em>Eingabeaufforderung</em> (siehe <a href="#fig-eingabe" class="quarto-xref">Abbildung&nbsp;<span>1.2 (a)</span></a>), auf dem Mac heißt es <em>Terminal</em> (siehe <a href="#fig-terminal" class="quarto-xref">Abbildung&nbsp;<span>1.2 (b)</span></a>).</p>
 <div id="fig-cli" class="quarto-layout-panel">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-cli-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -445,7 +458,7 @@ Abbildung&nbsp;1.1: Darstellung der Ordnerstruktur
 <div id="fig-eingabe" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-subfloat-fig figure">
 <div aria-describedby="fig-eingabe-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../images/eingabeaufforderung.png" class="img-fluid figure-img" data-ref-parent="fig-cli">
+<img src="../images/eingabe.png" class="img-fluid figure-img" style="width:70.0%" data-ref-parent="fig-cli">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-eingabe-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 (a) Eingabeaufforderung in Windows
@@ -457,7 +470,7 @@ Abbildung&nbsp;1.1: Darstellung der Ordnerstruktur
 <div id="fig-terminal" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-subfloat-fig figure">
 <div aria-describedby="fig-terminal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../images/terminal.png" class="img-fluid figure-img" data-ref-parent="fig-cli">
+<img src="../images/terminal.png" class="img-fluid figure-img" style="width:100.0%" data-ref-parent="fig-cli">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-terminal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 (b) Terminal auf dem Mac
@@ -472,123 +485,250 @@ Abbildung&nbsp;1.2: Kommandozeilen
 </figcaption>
 </figure>
 </div>
-<p>Wenn wir von der Befehlszeile sprechen, ist es wichtig, auch das Konzept der “Shell” zu verstehen. Die Shell ist ein Programm, das als Vermittler zwischen uns und dem Betriebssystem fungiert. Sie interpretiert unsere Eingaben und übersetzt sie in Anweisungen, die das System ausführen kann.</p>
+<p>Wenn wir von der Befehlszeile sprechen, ist es wichtig, auch das Konzept der “<strong>Shell</strong>” zu verstehen. Die Shell ist ein Programm, das als Vermittler zwischen uns und dem Betriebssystem fungiert. Sie interpretiert unsere Eingaben und übersetzt sie in Anweisungen, die das System ausführen kann.</p>
 <p>Die Kommandozeile, die wir sehen und in die wir Befehle eingeben, ist die Schnittstelle zur Shell. Sie ist sozusagen das “Blatt Papier”, auf dem wir unsere Anweisungen schreiben, während die Shell der “Übersetzer” ist, der diese Anweisungen versteht und umsetzt.</p>
-<p>Auf Windows-Systemen: - Das Standard-Programm für die Kommandozeile heißt “Eingabeaufforderung” (Command Prompt). - Es verwendet standardmäßig die cmd.exe als Shell. - In neueren Windows-Versionen gibt es auch die leistungsfähigere PowerShell als Alternative.</p>
-<p>Auf Mac-Systemen: - Das Programm für die Kommandozeile heißt “Terminal”. - Es verwendet Unix-basierte Shells. - In neueren macOS-Versionen ist die Standard-Shell “zsh” (Z Shell), früher war es “bash” (Bourne Again Shell).</p>
+<p>Auf Windows-Systemen:</p>
+<ul>
+<li>Das Standard-Programm für die Kommandozeile heißt “Eingabeaufforderung” (Command Prompt).</li>
+<li>Es verwendet standardmäßig die cmd.exe als Shell.</li>
+<li>In neueren Windows-Versionen gibt es auch die leistungsfähigere PowerShell als Alternative.</li>
+</ul>
+<p>Auf Mac-Systemen:</p>
+<ul>
+<li>Das Programm für die Kommandozeile heißt “Terminal”.</li>
+<li>In neueren macOS-Versionen ist die Standard-Shell “zsh” (Z Shell), vor September 2019 war es “bash” (Bourne Again Shell).</li>
+</ul>
 <p>Trotz dieser Unterschiede ist das grundlegende Konzept auf beiden Systemen gleich: Wir geben Befehle ein, und die Shell interpretiert und führt sie aus.</p>
-<p>Die Verwendung der Kommandozeile und das Verständnis der Shell-Umgebung sind wichtige Fähigkeiten in der Datenanalyse und Softwareentwicklung. Sie ermöglichen uns eine präzisere Kontrolle über unser System und sind besonders nützlich für Aufgaben wie Automatisierung und Scripting.</p>
+<p>Die Verwendung der Kommandozeile und das Verständnis der Shell-Umgebung sind wichtige Fähigkeiten in der Datenanalyse und Softwareentwicklung. Sie ermöglichen uns eine präzisere Kontrolle über unser System und sind besonders nützlich für Automatisierungen.</p>
 <p>In den folgenden Abschnitten werden wir lernen, wie wir grundlegende Befehle nutzen können, um unsere Projektstruktur einzurichten und zu verwalten.</p>
 <section id="projektumgebung-in-windows" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="projektumgebung-in-windows"><span class="header-section-number">1.1</span> Projektumgebung in Windows</h2>
-<p>Hier die Schritte, um die Ordner mit der Windows-Eingabeaufforderung (“Command Prompt” bzw. “cmd”) zu erstellen:</p>
+<section id="eingabeaufforderung" class="level3" data-number="1.1.1">
+<h3 data-number="1.1.1" class="anchored" data-anchor-id="eingabeaufforderung"><span class="header-section-number">1.1.1</span> Eingabeaufforderung</h3>
+<p>Hier die Schritte, um die Ordner mit der Windows-Eingabeaufforderung (“Command Prompt” bzw. “cmd”) zu erstellen.</p>
 <ol type="1">
-<li>In dem Windows-Suchfenster <code>Eingabeaufforderung</code> oder <code>cmd</code> eingeben und <code>Enter</code> drücken, um die Eingabeaufforderung zu öffnen.</li>
-<li>Neuen Ordner namens <code>toolkit-lab</code> erstellen (Code kopieren und in Eingabeaufforderung eingeben):</li>
-</ol>
+<li><p>In dem Windows-Suchfenster “Eingabeaufforderung” eingeben und dann mit rechtem Mausklick auf das Symbol des Eingabeaufforderungs-Programms klicken. “Als Adminsitrator ausführen” auswählen. Falls die Frage erscheint: “Möchten Sie zulassen, dass durch diese App Änderungen an Ihrem Gerät vorgenommen werden?” auf Ja klicken.</p></li>
+<li><p>Wenn die Eingabeaufforderung geöffnet wird, erscheint eventuell zunächst ein Windows-Verzeichnis wie bspw “C:\Windows\System32”. Wir müssen daher mit <code>cd</code> (change directory)zu unserem Benutzerkonto wechseln. Den Befehl unten eingeben und Eingabetaste drücken:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> %userprofile%</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>%userprofile% ist eine sogenannte Umgebungsvariable in Windows. Sie repräsentiert den Pfad zum Profilordner des aktuell angemeldeten Benutzers.</p></li>
+<li><p>Nun sollte das angezeigte Verzeichnis das Home-Verzeichnis sein. In meinem Fall lautet der Pfad “C:\Users\jankirenz”, da mein Benutzername jankirenz heißt.</p>
+<div id="fig-eingabe-2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-eingabe-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/eingabe.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-eingabe-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;1.3: Eingabeaufforderung in Windows
+</figcaption>
+</figure>
+</div></li>
+<li><p>Wir erstellen nun mit <code>mkdir</code> (make directory) einen neuen Ordner namens “toolkit-lab” in dem Home-Verzeichnis. Befehl eingeben und Eingabetaste drücken (falls hier der Hinweis erscheint, dass Sie dazu keine Berechtigung haben, haben Sie die Eingabeaufforderung in Schritt 1 eventuell nicht als Administrator gestartet):</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> toolkit-lab</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ol start="3" type="1">
-<li><code>cd</code> (change directory) verwenden, um in das Verzeichnis <code>toolkit-lab</code> zu navigieren:</li>
-</ol>
+<div id="fig-eingabe-mkdir-toolkit" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-eingabe-mkdir-toolkit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/eingabe-mkdir-toolkit-lab.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-eingabe-mkdir-toolkit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;1.4: Erstellung des Ordners toolkit-lab
+</figcaption>
+</figure>
+</div></li>
+<li><p>Damit wir in dem neuen Ordner “toolkit-lab” die beiden Unterordner anlegen können, müssen wir zuerst in den Ordner navigieren. Mit <code>cd</code> (change directory) können wir in das Verzeichnis “toolkit-lab” navigieren:</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> toolkit-lab</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ol start="4" type="1">
-<li><code>mkdir</code> (make directory) eingeben, um die Unterverzeichnisse <code>code</code> und <code>data</code> zu erstellen:</li>
-</ol>
+<div id="fig-eingabe-mkdir-toolkit" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-eingabe-mkdir-toolkit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/eingabe-cd-toolkit-lab.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-eingabe-mkdir-toolkit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;1.5: Wechseln in den Ordner toolkit-lab
+</figcaption>
+</figure>
+</div></li>
+<li><p>Wir verwenden nun nochmals <code>mkdir</code> (make directory), um die Ordner <code>code</code> und <code>data</code> zu erstellen.</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> code data</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Dieser Befehl erzeugt beide Ordner gleichzeitig.</p>
+<div id="fig-eingabe-mkdir-toolkit" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-eingabe-mkdir-toolkit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/eingabe-mkdir-code-data.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-eingabe-mkdir-toolkit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;1.6: Wechseln in den Ordner toolkit-lab
+</figcaption>
+</figure>
+</div></li>
+<li><p>Mit dem Befehl <code>dir</code> (directory) können wir die Verzeichnisse in dem aktuellen Pfad anzeigen lassen.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dir</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Da wir uns in dem Ordner “toolkit-lab” befinden, werden di Ordner “code” und “data” angezeigt.</p>
+<div id="fig-eingabe-mkdir-toolkit" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-eingabe-mkdir-toolkit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/eingabe-dir.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-eingabe-mkdir-toolkit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;1.7: Wechseln in den Ordner toolkit-lab
+</figcaption>
+</figure>
+</div></li>
+<li><p>Die Eingabeaufforderung kann nun geschlossen werden. <code>exit</code> eingegeben und Eingabetaste drücken.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="bu">exit</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ol>
 <p>Wir haben damit ein Hauptverzeichnis <code>toolkit-lab</code> mit zwei Unterverzeichnissen eingerichtet: <code>code</code> für unsere Skripte und <code>data</code> zum Speichern von Datensätzen.</p>
+</section>
+<section id="explorer" class="level3" data-number="1.1.2">
+<h3 data-number="1.1.2" class="anchored" data-anchor-id="explorer"><span class="header-section-number">1.1.2</span> Explorer</h3>
+<p>Damit wir die Ordner in dem Windows-Explorer anzeigen können, gehen wir wie folgt vor:</p>
+<ol type="1">
+<li><p>In dem Windows-Suchfenster Explorer eingeben und das Programm anklicken.</p></li>
+<li><p>In der linken Menüleiste im Explorer auf “Dieser PC” klicken.</p></li>
+<li><p>“Lokaler Datenträger (C:)” auswählen.</p></li>
+<li><p>Users anklicken.</p></li>
+<li><p>Den eigenen Benutzernamen auswählen.</p></li>
+<li><p>Hier sollte nun der Ordner toolkit-lab erscheinen.</p></li>
+</ol>
+</section>
 </section>
 <section id="projektumgebung-auf-mac" class="level2" data-number="1.2">
 <h2 data-number="1.2" class="anchored" data-anchor-id="projektumgebung-auf-mac"><span class="header-section-number">1.2</span> Projektumgebung auf Mac</h2>
-<p>Hier die Schritte, um das Hauptverzeichnis und die Unterverzeichnisse mit dem Terminal (dies ist die Bezeichnung der Befehlszeile in macOS) in macOS zu erstellen:</p>
+<p>Hier die Schritte, um das Hauptverzeichnis und die Unterverzeichnisse mit dem Terminal (dies ist die Bezeichnung der Befehlszeile in macOS) in macOS zu erstellen.</p>
+<section id="terminal-öffnen" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="terminal-öffnen"><span class="header-section-number">1.2.1</span> Terminal öffnen</h3>
 <ol type="1">
-<li>Um das Terminal in macOS zu öffnen, nutzen wir die Spotlight-Suche. Wir öffnen diese mit der Tastenkombination <code>Commandd + Leertaste</code> (erst <code>Command</code> gedrückt halten, und dann zusätzlich die <code>Leertaste</code> drücken).</li>
-</ol>
+<li><p>Um das Terminal in macOS zu öffnen, nutzen wir die Spotlight-Suche. Wir öffnen diese mit der Tastenkombination <code>Command + Leertaste</code> (erst <code>Command</code> gedrückt halten und dann zusätzlich die <code>Leertaste</code> drücken).</p>
 <div id="fig-keyboard" class="lightbox quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-keyboard-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="../images/keyboard.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Abbildung&nbsp;1.3: Tastenkombination für Spotlight-Suche"><img src="../images/keyboard.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="../images/keyboard.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Abbildung&nbsp;1.8: Tastenkombination für Spotlight-Suche"><img src="../images/keyboard.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-keyboard-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Abbildung&nbsp;1.3: Tastenkombination für Spotlight-Suche
+Abbildung&nbsp;1.8: Tastenkombination für Spotlight-Suche
 </figcaption>
 </figure>
-</div>
-<ol start="2" type="1">
-<li>In der Spotlight-Suche “Terminal” eingeben und Terminal-app anklicken. Nun sollte das Terminal sichtbar sein.</li>
-</ol>
-<div id="fig-terminal2" class="quarto-float quarto-figure quarto-figure-center anchored">
+</div></li>
+<li><p>In der Spotlight-Suche “Terminal” eingeben und Terminal-app anklicken. Nun sollte das Terminal sichtbar sein.</p>
+<div id="fig-terminal3" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-terminal2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-terminal3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="../images/terminal.png" class="img-fluid figure-img" style="width:60.0%">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-terminal2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Abbildung&nbsp;1.4: Terminal auf dem Mac
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-terminal3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;1.9: Terminal auf dem Mac
 </figcaption>
 </figure>
-</div>
-<ol start="3" type="1">
-<li>Wir prüfen nun, welche Shell-Ausführung auf dem Gerät verwendet wird. Bis Oktober 2019 war bash (Bourne Again Shell) der Standard, danach hat Apple auf zsh umgestellt.</li>
-</ol>
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="va">$SHELL</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+<li><p>Wir geben nun den Befehl <code>echo $SHELL</code> ein und bestätigen mit Eingabetaste um zu prüfen, welche Shell-Ausführung auf dem Gerät verwendet wird. Bis Oktober 2019 war bash (Bourne Again Shell) der Standard, danach hat Apple auf zsh umgestellt.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="va">$SHELL</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Ist die Ausgabe “/bin/zsh”, wird bereits zsh verwendet. Wenn das Ergebnis “/bin/bash” ist, verwendet das Gerät derzeit noch bash.</p>
 <p>Falls aktuell noch bash verwendet wird, sollte zunächst auf zsh umgesetllt werden:</p>
 <ol type="a">
-<li>Zuerst überprüfen, ob zsh bereits installiert ist:</li>
+<li><p>Zuerst überprüfen, ob zsh bereits installiert ist:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">zsh</span> <span class="at">--version</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Falls eine Version angezeigt wird, weiter mit c). Ansonsten zu Schritt b).</p></li>
+<li><p>Falls zsh noch nicht installiert sein sollte, können die Apple Xcode Command Line Tools installiert werden, die zsh enthalten:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">xcode-select</span> <span class="at">--install</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Falls der Befehl nicht ausgeführt werden kann, ist XCode auch <a href="https://apps.apple.com/de/app/xcode/id497799835?mt=12">über den App-Store</a> erhältlich.</p></li>
+<li><p>Wenn zsh installiert ist, kann mit diesem Befehl direkt zu zsh gewechselt werden:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">chsh</span> <span class="at">-s</span> /bin/zsh</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Bei Bedarf Benutzerpasswort eingeben, wenn dazu aufgefordert wird. Dann das Terminal schließen und nochmals mit der Spotlight-Suche öffnen.</p>
+<p>Hinweise zu dem Befehl: <code>chsh</code> ist der Befehl zum Ändern der Standard-Shell. Die Option <code>-s</code> bewirkt, dass die Shell für den aktuellen Benutzer geändert wird. Und /bin/zsh ist der Pfad zur Z-Shell (zsh).</p></li>
+</ol></li>
 </ol>
-<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">zsh</span> <span class="at">--version</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ol start="2" type="a">
-<li>Falls zsh bereits installiert ist (was bei neueren macOS-Versionen der Fall sein sollte), kann direkt zu zsh gewechselt werden:</li>
-</ol>
-<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">chsh</span> <span class="at">-s</span> /bin/zsh</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Bei Bedarf Benutzerpasswort eingeben, wenn dazu aufgefordert wird. Dann Terminal schließen und neu starten.</p>
-<ol start="3" type="a">
-<li>Falls zsh noch nicht installiert sein sollte, können die Apple Xcode Command Line Tools installiert werden, die zsh enthalten:</li>
-</ol>
-<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">xcode-select</span> <span class="at">--install</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Dann Terminal schließen und wieder zurück zu Schritt a). Falls der Befehl nicht ausgeführt wreden kann, ist XCode auch <a href="https://apps.apple.com/de/app/xcode/id497799835?mt=12">hier über den App-Store</a> erhältlich.</p>
-<ol start="4" type="1">
-<li>Hier eine Erklärung zu den unterschiedlichen Elementen im Terminal:</li>
-</ol>
-<div class="callout callout-style-simple callout-note callout-titled" title="Erklärung der Terminal-Inhalte">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+</section>
+<section id="terminal-elemente" class="level3" data-number="1.2.2">
+<h3 data-number="1.2.2" class="anchored" data-anchor-id="terminal-elemente"><span class="header-section-number">1.2.2</span> Terminal-Elemente</h3>
+<p>Hier eine Erklärung zu den unterschiedlichen Elementen im Terminal, die in der zsh-Shell angezeigt werden:</p>
+<div id="fig-terminal-zsh" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-terminal-zsh-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/terminal.png" class="img-fluid figure-img" style="width:60.0%">
 </div>
-<div class="callout-title-container flex-fill">
-Erklärung der Terminal-Inhalte
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-terminal-zsh-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;1.10: Terminal mit zsh-Shell auf dem Mac
+</figcaption>
+</figure>
 </div>
-</div>
-<div class="callout-body-container callout-body">
 <ul>
-<li><em>Benutzername</em>: In diesem Fall <code>jankirenz</code>. Es zeigt an, welcher Benutzer aktuell am System angemeldet ist.<br>
-</li>
-<li><em>Hostname</em>: Hier <code>kirenziMac</code>. Dies ist der Name des Computers, auf dem das Terminal läuft.<br>
-</li>
-<li><em>Aktuelles Verzeichnis (Pfad)</em>: Das <code>~</code> (Tilde) Symbol steht für das Home-Verzeichnis des aktuellen Benutzers. Der vollständige Pfad wäre also /Users/jankirenz. Es zeigt an, in welchem Verzeichnis Sie sich gerade befinden.<br>
-</li>
-<li><em>Prompt</em>: Das <code>%</code> Symbol am Ende der Zeile ist der sogenannte Prompt. Er signalisiert, dass das Terminal bereit ist, einen neuen Befehl entgegenzunehmen.</li>
+<li><p><em>Benutzername</em>: Dieser steht ganz links in der ersten Zeile. In diesem Fall <code>jankirenz</code>. Es zeigt an, welcher Benutzer aktuell am System angemeldet ist.</p></li>
+<li><p><em>Hostname</em>: Der Hostname wird nach dem @-Symbol aufgeführt. Hier <code>kirenziMac</code>. Dies ist der Name des Computers, auf dem das Terminal läuft.</p></li>
+<li><p><em>Aktuelles Verzeichnis (Pfad)</em>: Nach dem Hostnamen wird das Verzeichnis angezeigt, in welchem wir uns gerade befinden. In dem Bild isr das Tilde-Symbol <code>~</code> zu sehen. Dies ist ein Platzhalter und steht für das Home-Verzeichnis des aktuellen Benutzers. Der vollständige Pfad des Home-Verzeichnisses wäre in meinem Fall “/Users/jankirenz”. Es setzt sich beim Mac immer aus dem Ordner “Users” und einem Unterordner, der die Bezeichnung des Benutzernamens hat, zusammen.</p></li>
+<li><p><em>Prompt</em>: Das <code>%</code> Symbol am Ende der Zeile ist der sogenannte Prompt. Dieser signalisiert, dass das Terminal bereit ist, einen Befehl entgegenzunehmen.</p></li>
 </ul>
+</section>
+<section id="terminal-befehle" class="level3" data-number="1.2.3">
+<h3 data-number="1.2.3" class="anchored" data-anchor-id="terminal-befehle"><span class="header-section-number">1.2.3</span> Terminal-Befehle</h3>
+<p>Als nächstes behandeln wie einige Terminal-Befehle.</p>
+<ol type="1">
+<li><p>Zuerst verwenden wir den Befehl <code>pwd</code> (print working directory) und drücken die Eingabetaste, um den vollständigen Pfad des aktuellen Verzeichnisses anzuzeigen.</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="bu">pwd</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Wenn das Terminal gerade geöffnet wurde, sollte das aktuelle Verzeichnis das sogenannte Home-Verzeichnis sein (in meinem Fall lautet der Pfad “/Users/jankirenz”, da mein Benutzername jankirenz heißt).</p></li>
+<li><p>Wir erstellen nun mit <code>mkdir</code> (make directory) einen neuen Ordner namens “toolkit-lab” in dem Home-Verzeichnis:</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> toolkit-lab</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Damit wir in dem neuen Ordner “toolkit-lab” die beiden Unterordner anlegen können, müssen wir zuerst in den Ordner navigieren. Mit <code>cd</code> (change directory) können wir in das Verzeichnis “toolkit-lab” navigieren:</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> toolkit-lab</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Wir verwenden nun nochmals <code>mkdir</code> (make directory), um die Ordner <code>code</code> und <code>data</code> zu erstellen.</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> code data</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Dieser Befehl erzeigt beide Ordner gleichzeitig.</p></li>
+<li><p>Mit dem Befehl <code>ls</code> (list) können wir die Verzeichnisse in dem aktuellen Pfad anzeigen lassen.</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Da wir uns in dem Ordner “toolkit-lab” befinden, werden dir Ordner “code” und “data” angezeigt.</p></li>
+<li><p>Das Terminal kann nun geschlossen werden.</p></li>
+</ol>
+</section>
+<section id="finder-nutzen" class="level3" data-number="1.2.4">
+<h3 data-number="1.2.4" class="anchored" data-anchor-id="finder-nutzen"><span class="header-section-number">1.2.4</span> Finder nutzen</h3>
+<p>Um die Ordner auch im Finder anzeigen zu lassen, müssen wir zuerst eine Einstellung anpassen.</p>
+<ol type="1">
+<li><p>Wir öffnen die Spotlight-Suche mit der Tastenkombination <code>Command + Leertaste</code>, geben Finder ein und wählen das Programm aus.</p>
+<div id="fig-finder-spotlight" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-finder-spotlight-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/finder-spotlight.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%">
 </div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-finder-spotlight-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;1.11: Finder in Spotlight-Suche öffnen
+</figcaption>
+</figure>
+</div></li>
+<li><p>In der oberen Mac-Menüleiste auf “Finder” gehen und auf Einstellungen klicken. Finder Einstellungen ändern</p>
+<div id="fig-finder-einstellungen" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-finder-einstellungen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/finder-1.png" class="img-fluid figure-img" style="width:50.0%">
 </div>
-<ol start="5" type="1">
-<li>Zuerst verwenden wir den Befehl pwd (“print working directory”) und drücken die Eingabetaste, um den vollständigen Pfad des aktuellen Verzeichnisses anzuzeigen. Wenn das Terminal gerade geöffnet wurde, sollte das aktuelle Verzeichnis das sogenannte Home-Verzeichnis sein (in meinem Fall <code>/Users/jankirenz</code>, da mein Benutzerkonto jankirenz heißt):</li>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-finder-einstellungen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;1.12: Finder-Einstellungen
+</figcaption>
+</figure>
+</div></li>
+<li><p>In den Finder-Einstellungen auf “Seitenliste” klicken und den Benutzernamen auswählen. Damit wird dieser in der Seitenleiste des Finders angezeigt. Danach kann das Menü geschlossen werden (auf den roten Knopf oben links klicken).</p>
+<div id="fig-finder-seitenleiste" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-finder-seitenleiste-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/finder-2.png" class="img-fluid figure-img" style="width:50.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-finder-seitenleiste-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;1.13: Finder-Seitenleiste
+</figcaption>
+</figure>
+</div></li>
+<li><p>In dem Finder-Fenster sehen wir in der linken Seitenleiste den Benutzername (in meinem Fall jankirenz). Wenn wir darauf klicken, sollte in dem Fenster rechts danaben der Ordner “toolkit-lab” angezeigt werden. Damit die Ansicht wie in dem Bild unten erscheint, muss in der oberen Taskleiste die sogenannte “Spaltenansicht” (Symbol mit drei Spalten) ausgewählt sein.</p>
+<div id="fig-finder-fenster" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-finder-fenster-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/finder-3.png" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-finder-fenster-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;1.14: Finder-Fenster
+</figcaption>
+</figure>
+</div></li>
 </ol>
-<div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="bu">pwd</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ol start="2" type="1">
-<li>Erstellen Sie nun einen neuen Ordner namens <code>toolkit-lab</code> in dem Home-Verzeichnis (kopieren Sie diesen Code und geben Sie ihn in Ihr Terminal ein):</li>
-</ol>
-<div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> toolkit-lab</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ol start="3" type="1">
-<li>Verwenden Sie <code>cd</code> (change directory), um in das Verzeichnis <code>toolkit-lab</code> zu wechseln:</li>
-</ol>
-<div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> toolkit-lab</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ol start="4" type="1">
-<li>Verwenden Sie <code>mkdir</code> (make directory), um die Unterverzeichnisse <code>code</code> und <code>data</code> zu erstellen:</li>
-</ol>
-<div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> code data</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Wir haben damit ein Hauptverzeichnis <code>toolkit-lab</code> mit zwei Unterverzeichnissen eingerichtet: <code>code</code> für Ihre Skripte und <code>data</code> zum Speichern von Datensätzen.</p>
+<p>Geschafft! Wir ein Hauptverzeichnis “toolkit-lab” mit zwei Unterverzeichnissen eingerichtet: “code” für unsere Code-Dateien und “data” zum Speichern von Datensätzen.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -1038,7 +1178,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","openEffect":"zoom","selector":".lightbox","closeEffect":"zoom","loop":false});
+<script>var lightboxQuarto = GLightbox({"loop":false,"selector":".lightbox","closeEffect":"zoom","descPosition":"bottom","openEffect":"zoom"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {
