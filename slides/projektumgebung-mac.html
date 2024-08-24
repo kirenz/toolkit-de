@@ -467,16 +467,16 @@
 <!-- Feature two with fade-up -->
 <div class="feature fragment fade-up">
 <div class="feature-header">
-<p>Terminal</p>
+<p>Terminal &amp; Shell</p>
 </div>
-<p>Terminal-Elemente kennenlernen</p>
+<p>Grundlagen kennenlernen</p>
 </div>
 <!-- Feature two with fade-up -->
 <div class="feature fragment fade-up">
 <div class="feature-header">
 <p>Terminal-Befehle</p>
 </div>
-<p>Grundlegende Befehle lernen</p>
+<p>Befehle lernen</p>
 </div>
 </div>
 </section>
@@ -516,8 +516,47 @@
 <p>Terminal.app in Spotlight Suche eingeben und Programm auswählen.</p>
 
 <img data-src="../images/spotlight-terminal.png" class="quarto-figure quarto-figure-center r-stretch" style="width:30.0%"></section>
-<section id="terminal-elemente" class="slide level2 smaller">
-<h2>Terminal-Elemente</h2>
+<section id="shell-version-prüfen" class="slide level2">
+<h2>Shell-Version prüfen</h2>
+<p>Ausgabe der Shell-Ausführung:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="va">$SHELL</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li class="fragment"><p><code>/bin/zsh</code>: ✅ Es wird bereits zsh verwendet.</p></li>
+<li class="fragment"><p><code>/bin/bash</code>: ❌ Es wird bash genutzt.</p></li>
+</ul>
+</section>
+<section id="wenn-bash-genutzt-wird" class="slide level2">
+<h2>Wenn bash genutzt wird</h2>
+<p>Überprüfen, ob zsh installiert ist:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">zsh</span> <span class="at">--version</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li class="fragment"><p>Version angezeigt: ✅ zsh ist installiert.</p></li>
+<li class="fragment"><p>Keine Version: ❌ zsh ist nicht installiert</p></li>
+</ul>
+</section>
+<section id="option-1-zsh-über-terminal" class="slide level2">
+<h2>Option 1: zsh über Terminal</h2>
+<p>Apple Xcode Command Line Tools installieren:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">xcode-select</span> <span class="at">--install</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li class="fragment">Terminal schließen</li>
+</ul>
+</section>
+<section id="option-2-zsh-über-app-store" class="slide level2">
+<h2>Option 2: zsh über App-Store</h2>
+<p>XCode <a href="https://apps.apple.com/de/app/xcode/id497799835?mt=12">über den App-Store</a> installieren.</p>
+
+<img data-src="../images/xcode.png" style="width:50.0%" class="r-stretch"></section>
+<section id="wechsel-von-bash-zu-zsh" class="slide level2">
+<h2>Wechsel von bash zu zsh</h2>
+<p>Wechsel von bash zu zsh</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">chsh</span> <span class="at">-s</span> /bin/zsh</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li class="fragment">Terminal neu starten</li>
+</ul>
+</section>
+<section id="terminal-elemente-in-zsh" class="slide level2 smaller">
+<h2>Terminal-Elemente in zsh</h2>
 
 <img data-src="../images/terminal.png" class="quarto-figure quarto-figure-left r-stretch" style="width:30.0%"><table class="caption-top">
 <thead>
@@ -594,27 +633,27 @@
 <section id="print-working-directory" class="slide level2">
 <h2>print working directory</h2>
 <p>Mit <code>pwd</code> Pfad des aktuellen Verzeichnisses anzeigen:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="bu">pwd</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="bu">pwd</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="make-directory" class="slide level2">
 <h2>make directory</h2>
 <p>Mit <code>mkdir</code> Ordner <em>toolkit-lab</em> erstellen:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> toolkit-lab</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> toolkit-lab</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="change-directory" class="slide level2">
 <h2>change directory</h2>
 <p>Mit <code>cd</code> in das Verzeichnis <em>toolkit-lab</em> wechseln:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> toolkit-lab</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> toolkit-lab</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="make-directory-1" class="slide level2">
 <h2>make directory</h2>
 <p>Mit <code>mkdir</code> die Verzeichnisse <em>code</em> und <em>data</em> erstellen:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> code data</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> code data</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="list" class="slide level2">
 <h2>list</h2>
 <p>Mit <code>ls</code> die Verzeichnisse anzeigen lassen:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="finder-öffnen" class="slide level2 smaller">
 <h2>Finder öffnen</h2>
@@ -624,7 +663,6 @@
 <img data-src="../images/finder-spotlight.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
 <section id="finder-einstellungen-ändern" class="slide level2">
 <h2>Finder Einstellungen ändern</h2>
-<p><br></p>
 <div>
 
 </div>
@@ -641,10 +679,8 @@
 </section>
 <section id="ordner-in-finder-anzeigen" class="slide level2">
 <h2>Ordner in Finder anzeigen</h2>
-<p><br></p>
 
-<img data-src="../images/finder-3.png" style="width:40.0%" class="r-stretch"><p><br></p>
-</section>
+<img data-src="../images/finder-3.png" style="width:40.0%" class="r-stretch"></section>
 <section id="zusammenfassung" class="slide level2">
 <h2>Zusammenfassung</h2>
 <!-- Start of features -->
@@ -661,9 +697,9 @@
 <!-- Feature two with fade-up -->
 <div class="feature fragment fade-up">
 <div class="feature-header">
-<p>Terminal</p>
+<p>Terminal &amp; Shell</p>
 </div>
-<p>Benutzername<br>
+<p>bash vs zsh Benutzername<br>
 Hostname<br>
 Home-Verzeichnis</p>
 </div>
@@ -674,7 +710,8 @@ Home-Verzeichnis</p>
 </div>
 <p>pwd<br>
 mkdir<br>
-cd, ls</p>
+cd<br>
+ls</p>
 </div>
 </div>
 <div class="quarto-auto-generated-content">
