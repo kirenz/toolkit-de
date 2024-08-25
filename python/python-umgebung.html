@@ -351,7 +351,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-  <li><a href="#virtuelle-umgebung-erstellen" id="toc-virtuelle-umgebung-erstellen" class="nav-link active" data-scroll-target="#virtuelle-umgebung-erstellen"><span class="header-section-number">7.1</span> Virtuelle Umgebung erstellen</a></li>
+  <li><a href="#was-sind-virtuelle-umgebungen" id="toc-was-sind-virtuelle-umgebungen" class="nav-link active" data-scroll-target="#was-sind-virtuelle-umgebungen"><span class="header-section-number">7.0.1</span> Was sind virtuelle Umgebungen?</a></li>
+  <li><a href="#warum-sind-virtuelle-umgebungen-wichtig" id="toc-warum-sind-virtuelle-umgebungen-wichtig" class="nav-link" data-scroll-target="#warum-sind-virtuelle-umgebungen-wichtig"><span class="header-section-number">7.0.2</span> Warum sind virtuelle Umgebungen wichtig?</a></li>
+  <li><a href="#praktische-anwendung-in-data-science" id="toc-praktische-anwendung-in-data-science" class="nav-link" data-scroll-target="#praktische-anwendung-in-data-science"><span class="header-section-number">7.0.3</span> Praktische Anwendung in Data Science</a></li>
+  <li><a href="#virtuelle-umgebung-erstellen" id="toc-virtuelle-umgebung-erstellen" class="nav-link" data-scroll-target="#virtuelle-umgebung-erstellen"><span class="header-section-number">7.1</span> Virtuelle Umgebung erstellen</a></li>
   </ul>
 </nav>
     </div>
@@ -377,140 +380,180 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Virtuelle Umgebungen (“virtual environments”) sind isolierte Arbeitsbereiche, in denen Sie Python-Pakete separat für jedes Projekt installieren und verwalten können. Sie helfen Ihnen, verschiedene Abhängigkeiten für unterschiedliche Projekte zu verwalten, um Kompatibilität zu gewährleisten und Konflikte zu vermeiden.</p>
-<p>Vorteile:</p>
+<p>Virtuelle Umgebungen sind ein grundlegendes Konzept in der Softwareentwicklung und Data Science. Sie ermöglichen es, isolierte Arbeitsbereiche für verschiedene Projekte zu erstellen. In diesen Umgebungen können Python-Pakete oder -Bibliotheken und deren Abhängigkeiten separat installiert und verwaltet werden. Dies ist besonders wichtig für Data Science-Projekte, die oft spezifische Versionen von Bibliotheken benötigen.</p>
+<p>Um die folgenden Erläuterungen zu vereinfachen, werden wir nicht immer genau zwischen Bibliotheken und Paketen unterscheiden, sondern hauptsächlich den Begriff Python-Pakete verwenden.</p>
+<section id="was-sind-virtuelle-umgebungen" class="level3" data-number="7.0.1">
+<h3 data-number="7.0.1" class="anchored" data-anchor-id="was-sind-virtuelle-umgebungen"><span class="header-section-number">7.0.1</span> Was sind virtuelle Umgebungen?</h3>
+<p>Eine virtuelle Umgebung ist im Wesentlichen ein eigenständiger Ordner, der alle notwendigen ausführbaren Dateien enthält, um Python-Pakete zu verwenden. Jede virtuelle Umgebung hat ihre eigene Python-Installation, unabhängig von der globalen Python-Installation auf dem Computer.</p>
+</section>
+<section id="warum-sind-virtuelle-umgebungen-wichtig" class="level3" data-number="7.0.2">
+<h3 data-number="7.0.2" class="anchored" data-anchor-id="warum-sind-virtuelle-umgebungen-wichtig"><span class="header-section-number">7.0.2</span> Warum sind virtuelle Umgebungen wichtig?</h3>
+<p>Virtuelle Umgebungen bieten mehrere entscheidende Vorteile:</p>
+<ol type="1">
+<li><strong>Abhängigkeitsverwaltung</strong>:
 <ul>
-<li><p><strong>Abhängigkeitsverwaltung</strong>: Eine Umgebung stellt sicher, dass die richtige Version jedes Pakets für Ihr Projekt verfügbar ist, wodurch Fehler durch inkompatible Versionen vermieden werden.</p></li>
-<li><p><strong>Projekttrennung</strong>: Sie können verschiedene Projekte mit unterschiedlichen Paketanforderungen haben und so Konflikte vermeiden. Beispielsweise kann ein Data-Science-Projekt spezifische Versionen von Datenanalysebibliotheken erfordern, während ein Webentwicklungsprojekt andere Bedürfnisse haben könnte.</p></li>
-<li><p><strong>Entwicklung benutzerdefinierter Module</strong>: Wenn Sie Ihre eigenen Module erstellen, helfen Umgebungen dabei, diese in Ihre Projekte zu integrieren, ohne Ihre globale Python-Installation zu beeinträchtigen.</p></li>
-</ul>
+<li>Jedes Data Science-Projekt kann unterschiedliche Versionen von Bibliotheken erfordern.</li>
+<li>Virtuelle Umgebungen stellen sicher, dass die korrekten Versionen aller benötigten Pakete für jedes spezifische Projekt verfügbar sind.</li>
+<li>Dies verhindert Konflikte zwischen verschiedenen Projekten und gewährleistet Reproduzierbarkeit.</li>
+</ul></li>
+<li><strong>Projekttrennung</strong>:
+<ul>
+<li>Verschiedene Data Science-Projekte können unterschiedliche Anforderungen haben.</li>
+<li>Ein Projekt könnte beispielsweise TensorFlow für Deep Learning verwenden, während ein anderes scikit-learn für traditionelles Machine Learning einsetzt.</li>
+<li>Virtuelle Umgebungen ermöglichen es, diese Projekte sauber voneinander zu trennen.</li>
+</ul></li>
+<li><strong>Entwicklung benutzerdefinierter Module</strong>:
+<ul>
+<li>Beim Erstellen eigener Python-Module oder Pakete helfen virtuelle Umgebungen, diese in Projekte zu integrieren.</li>
+<li>Dies geschieht, ohne die globale Python-Installation zu beeinflussen, was besonders nützlich für experimentelle Entwicklungen ist.</li>
+</ul></li>
+<li><strong>Vermeidung von Versionskonflikten</strong>:
+<ul>
+<li>Manche Data Science-Bibliotheken können inkompatibel mit bestimmten Versionen anderer Bibliotheken sein.</li>
+<li>Virtuelle Umgebungen erlauben es, für jedes Projekt genau die Versionen zu installieren, die benötigt werden und miteinander funktionieren.</li>
+</ul></li>
+<li><strong>Einfache Weitergabe und Reproduzierbarkeit</strong>:
+<ul>
+<li>Die Spezifikationen einer virtuellen Umgebung können in einer Datei gespeichert werden.</li>
+<li>Dies erleichtert es anderen, die exakt gleiche Umgebung zu reproduzieren, was für die Zusammenarbeit in Data Science-Teams unerlässlich ist.</li>
+</ul></li>
+</ol>
+</section>
+<section id="praktische-anwendung-in-data-science" class="level3" data-number="7.0.3">
+<h3 data-number="7.0.3" class="anchored" data-anchor-id="praktische-anwendung-in-data-science"><span class="header-section-number">7.0.3</span> Praktische Anwendung in Data Science</h3>
+<p>In der Data Science-Praxis könnte man beispielsweise separate virtuelle Umgebungen für verschiedene Arten von Projekten erstellen: - Eine Umgebung für Datenanalyse mit Pandas und NumPy - Eine andere für Machine Learning mit scikit-learn - Eine dritte für Deep Learning-Projekte mit TensorFlow oder PyTorch</p>
+<p>Dies ermöglicht es, effizient zwischen verschiedenen Projekten zu wechseln, ohne sich um Paketkonflikte sorgen zu müssen.</p>
+</section>
 <section id="virtuelle-umgebung-erstellen" class="level2" data-number="7.1">
 <h2 data-number="7.1" class="anchored" data-anchor-id="virtuelle-umgebung-erstellen"><span class="header-section-number">7.1</span> Virtuelle Umgebung erstellen</h2>
-<p>Um eine virtuelle Umgebung einzurichten, befolgen Sie diese Anweisungen basierend auf Ihrem Betriebssystem:</p>
+<p>Das Erstellen einer virtuellen Umgebung ist ein wichtiger erster Schritt für jedes Data Science-Projekt. Hier wird der Prozess Schritt für Schritt erklärt:</p>
 <ol type="1">
-<li>Zugriff auf die Eingabeaufforderung oder das Terminal:
+<li><p>Zugriff auf die Anaconda-Eingabeaufforderung oder das Terminal</p>
 <ul>
-<li><strong>Windows-Benutzer</strong>: Öffnen Sie die Anaconda-Eingabeaufforderung über das Startmenü.</li>
-<li><strong>macOS-Benutzer</strong>: Öffnen Sie das Terminal unter Programme &gt; Dienstprogramme oder durch die Suche nach “Terminal”.</li>
+<li><strong>Windows</strong>: Öffnen der <em>Anaconda-Eingabeaufforderung</em> über das Startmenü. Dies ist eine spezielle Eingabeaufforderung, die bereits mit Anaconda konfiguriert ist.</li>
+<li><strong>macOS-Benutzer</strong>: Terminal öffnen.</li>
 </ul></li>
-<li>Erstellen der Umgebung:
+<li><p>Erstellen der Umgebung:</p>
 <ul>
-<li>Verwenden Sie den folgenden Befehl, um eine neue Conda-Umgebung namens <code>basics</code> mit Python 3.11 und pip zu erstellen:</li>
+<li>Diesen Befehl verwenden, um die virtuelle Umgebung zu erstellen:</li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> create <span class="at">--name</span> basics python=3.11 pip</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> create <span class="at">--name</span> basics python=3.12 pip</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Nach Eingabe des Befehls wird gefragt: <code>Proceed ([y]/n)?</code></p>
 <ul>
-<li>Geben Sie bei <code>Proceed ([y]/n)?</code>ein <code>y</code> ein, um die Installtion zu starten.</li>
+<li><code>y</code> eingeben und Enter drücken, um die Installation zu starten.</li>
 </ul>
-<div class="callout callout-style-simple callout-note">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>pip ist ein Paketverwaltungstool für Python. Es steht für “Pip Installs Packages” oder “Pip Installs Python” und wird verwendet, um Python-Pakete aus dem <a href="https://pypi.org/">Python Package Index (PyPI)</a> zu installieren und zu verwalten. Mit pip kann man Pakete installieren, aktualisieren und deinstallieren.</p>
-</div>
-</div>
-</div></li>
-<li>Aktivieren der Umgebung:
+<p>Erklärung des Befehls:</p>
 <ul>
-<li>Sobald die Umgebung erstellt ist, aktivieren Sie sie mit:</li>
+<li><code>conda create</code>: Dies ist der Befehl zum Erstellen einer neuen Conda-Umgebung.</li>
+<li><code>--name basics</code>: Dies legt den Namen der Umgebung fest. Hier wird sie “basics” genannt.</li>
+<li><code>python=3.12</code>: Dies spezifiziert die Python-Version, die in der Umgebung verwendet werden soll.</li>
+<li><code>pip</code>: Dies installiert pip in der neuen Umgebung, was für die spätere Paketinstallation wichtig ist.</li>
 </ul>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate basics</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ul>
-<li>Die Eingabeaufforderung ändert sich, um anzuzeigen, dass die Umgebung <code>basics</code> aktiv ist.</li>
-</ul></li>
-<li>Installieren der benötigten Bibliotheken:
-<ul>
-<li>Mit aktivierter Umgebung installieren Sie die Bibliotheken:</li>
-</ul>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install numpy pandas openpyxl matplotlib seaborn altair jupyter ipykernel</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout callout-style-simple callout-note callout-titled" title="Erklärung der Pakete">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Erklärung der Pakete
+Was ist pip?
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<ul>
-<li><strong>numpy</strong>: Eine leistungsfähige Bibliothek für numerische Berechnungen.</li>
-<li><strong>pandas</strong>: Ein wichtiges Tool zur Datenmanipulation und -analyse.</li>
-<li><strong>openpyxl</strong>: Ermöglicht das Lesen und Schreiben von Excel-Dateien (.xlsx) und wird oft in Verbindung mit Pandas verwendet, um Excel-Daten zu bearbeiten.</li>
-<li><strong>matplotlib</strong>: Eine weitverbreitete Bibliothek zur Erstellung von Visualisierungen in Python.</li>
-<li><strong>seaborn</strong>: Aufbauend auf matplotlib, bietet diese Bibliothek statistische Datenvisualisierungen.</li>
-<li><strong>altair</strong>: Eine Visualisierungsbibliothek, die interaktive Grafiken erstellt.</li>
-<li><strong>jupyter</strong>: Ein Open-Source-Webanwendungs-Tool, das es ermöglicht, Dokumente zu erstellen und zu teilen, die Live-Code, Gleichungen, Visualisierungen und narrativen Text enthalten.</li>
-<li><strong>ipykernel</strong>: Ermöglicht die Integration von Jupyter Notebooks mit dem IPython-Kernel, was das Ausführen von Python-Code innerhalb der Jupyter-Umgebung unterstützt.</li>
-</ul>
-</div>
-</div>
-</div>
-<ul>
-<li>Dieser Befehl ruft alle Pakete von PyPI ab und installiert sie.</li>
-</ul>
-<div class="callout callout-style-simple callout-note">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>Obwohl Sie Pakete auch mit <code>conda install</code> installieren können, verwenden wir ausschließlich <code>pip</code>, um mögliche Konflikte zwischen Conda- und Pip-installierten Paketen zu vermeiden. Dieser Ansatz stellt eine konsistente und zuverlässige Verwaltung von Abhängigkeiten in Ihrer Python-Umgebung sicher.</p>
-</div>
+<p>pip ist das Standard-Paketverwaltungssystem für Python. Es steht für “Pip Installs Packages” oder “Pip Installs Python”. Mit pip können Python-Pakete aus dem <a href="https://pypi.org/">Python Package Index (PyPI)</a>, dem offiziellen Repository für Python-Software von Drittanbietern, installiert, aktualisiert und entfernt werden.</p>
 </div>
 </div></li>
-<li>Überprüfen der Paketinstallation:
+<li><p>Aktivieren der Umgebung</p>
 <ul>
-<li>Nach der Installation öffnen Sie ein Jupyter Notebook und überprüfen, ob die Pakete verfügbar sind, indem Sie sie in Python importieren.</li>
+<li>Nach der Erstellung muss die Umgebung aktiviert werden:</li>
 </ul>
-<div class="callout callout-style-simple callout-note">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>Um die Nutzung der Funktionen und Methoden der Bibliotheken in Ihrem Code zu erleichtern, importieren wir sie häufig mit kürzeren, standardisierten Aliasen (die Verwendung dieser Standard-Aliase verbessert die Lesbarkeit des Codes und reduziert den Schreibaufwand).</p>
-</div>
-</div>
-</div>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> altair <span class="im">as</span> alt</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate basics</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
-<li>Wenn keine Fehler auftreten, wurden die Bibliotheken korrekt installiert.</li>
+<li>Nach der Aktivierung ändert sich die Eingabeaufforderung, um anzuzeigen, dass die Umgebung <code>basics</code> jetzt aktiv ist (und nicht mehr die <code>base</code>-Umgebung).</li>
+<li>Dies bedeutet, dass alle folgenden Python-Befehle und Paketinstallationen in dieser isolierten Umgebung ausgeführt werden.</li>
+</ul></li>
+<li><p>Installieren der benötigten Pakete</p>
+<ul>
+<li>Mit aktivierter Umgebung können nun die erforderlichen Pakete installieren:</li>
 </ul>
-<div class="callout callout-style-simple callout-tip callout-titled" title="Erklärung der Pakete">
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install numpy pandas openpyxl matplotlib seaborn altair jupyter ipykernel</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Dieser Befehl installiert eine Reihe von grundlegenden Data Science-Paketen:</p>
+<div class="callout callout-style-simple callout-note callout-titled" title="Detaillierte Erklärung der installierten Pakete">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Erklärung der Pakete
+Detaillierte Erklärung der installierten Pakete
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><strong>NumPy (<code>np</code>)</strong>: Der Alias <code>np</code> wird weit verbreitet verwendet und ermöglicht einen prägnanten Zugriff auf NumPys Funktionen für numerische Berechnungen.</p>
-<p><strong>Pandas (<code>pd</code>)</strong>: Der Alias <code>pd</code> bietet eine Kurzform für Pandas’ leistungsstarke Datenmanipulationstools.</p>
-<p><strong>Matplotlib (<code>plt</code>)</strong>: Der Alias <code>plt</code> vereinfacht das Aufrufen der Funktionen von Matplotlib zum Plotten, Erstellen von Abbildungen und Anpassen von Grafiken.</p>
-<p><strong>Seaborn (<code>sns</code>)</strong>: Der Alias <code>sns</code> erleichtert den Zugriff auf Seaborns statistische Datenvisualisierungstools, die nahtlos mit Matplotlib integriert sind.</p>
-<p><strong>Altair (<code>alt</code>)</strong>: Der Alias <code>alt</code> ermöglicht einen schnellen Zugriff auf Altairs Visualisierungssyntax für interaktives Plotten.</p>
+<ul>
+<li><strong>numpy</strong>: Eine Bibliothek für numerische Berechnungen in Python. Sie bildet die Basis für viele andere Data Science-Tools.</li>
+<li><strong>pandas</strong>: Ein leistungsfähiges Tool für Datenmanipulation und -analyse. Es bietet Datenstrukturen wie DataFrames, die besonders nützlich für tabellarische Daten sind.</li>
+<li><strong>openpyxl</strong>: Diese Bibliothek ermöglicht das Lesen und Schreiben von Excel-Dateien (.xlsx). Sie wird oft in Verbindung mit Pandas verwendet, um mit Excel-Daten zu arbeiten.</li>
+<li><strong>matplotlib</strong>: Eine weit verbreitete Bibliothek zur Erstellung von statischen, animierten und interaktiven Visualisierungen in Python.</li>
+<li><strong>seaborn</strong>: Baut auf matplotlib auf und bietet eine High-Level-Schnittstelle für die Erstellung attraktiver und informativer statistischer Grafiken.</li>
+<li><strong>altair</strong>: Eine statistische Visualisierungsbibliothek für Python, basierend auf Vega und Vega-Lite. Sie eignet sich besonders gut für die Erstellung interaktiver und komplexer Grafiken mit wenig Code.</li>
+<li><strong>jupyter</strong>: Ein wichtiges Tool für interaktives Computing und Datenanalyse. Es ermöglicht die Erstellung und Freigabe von Dokumenten, die Live-Code, Gleichungen, Visualisierungen und erklärenden Text enthalten.</li>
+<li><strong>ipykernel</strong>: Dies ist der IPython-Kernel für Jupyter. Er ermöglicht die Ausführung von Python-Code in Jupyter Notebooks.</li>
+</ul>
+</div>
+</div>
+</div>
+<p>Wir verwenden ausschließlich <code>pip</code> für die Paketinstallation und nicht die ebenfalls gängige Methode <code>conda install</code>, die von der Anaconda Distributuion bereitgestellt wird. Dies dient dazu, potenzielle Konflikte zwischen Conda- und Pip-installierten Paketen zu vermeiden und eine konsistente Paketverwaltung sicherzustellen.</p></li>
+<li><p>Überprüfen der Paketinstallation</p>
+<ul>
+<li>Nach der Installation ist es wichtig zu überprüfen, ob alle Pakete korrekt installiert wurden:</li>
+<li>Wie öffnen ein Jupyter Notebook in der aktivierten Umgebung, indem wir folgenden Befehl eingeben:</li>
+</ul>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">jupyter-notebook</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Nun einen neuen Notebook öffnen und diesen Code in einer Code-Zelle ausführen:</li>
+</ul>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> altair <span class="im">as</span> alt</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Wenn keine Fehlermeldungen auftreten, wurden die Pakete erfolgreich installiert.</li>
+</ul>
+<p>Die Verwendung von Aliasen (wie bspw. np für numpy) beim Import von Bibliotheken ist eine gängige Praxis in der Data Science-Community. Sie verbessert die Lesbarkeit des Codes und reduziert den Schreibaufwand.</p>
+<div class="callout callout-style-simple callout-tip callout-titled" title="Erklärung der Standard-Aliase">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Erklärung der Standard-Aliase
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>np</strong> für NumPy: Ermöglicht einen kurzen, prägnanten Zugriff auf NumPys umfangreiche Funktionen für numerische Operationen.</li>
+<li><strong>pd</strong> für Pandas: Bietet eine kompakte Schreibweise für Pandas’ leistungsstarke Datenmanipulationstools.</li>
+<li><strong>plt</strong> für Matplotlib: Vereinfacht das Aufrufen von Matplotlib-Funktionen zum Erstellen und Anpassen von Grafiken.</li>
+<li><strong>sns</strong> für Seaborn: Erleichtert den Zugriff auf Seaborns statistische Visualisierungstools, die nahtlos mit Matplotlib integriert sind.</li>
+<li><strong>alt</strong> für Altair: Ermöglicht einen schnellen Zugriff auf Altairs deklarative Visualisierungssyntax für interaktive Darstellungen.</li>
+</ul>
 </div>
 </div>
 </div></li>
-<li>Deaktivieren der Umgebung:
+<li><p>Deaktivieren der Umgebung</p>
 <ul>
-<li>Wenn Sie fertig sind oder zur Basisumgebung zurückkehren möchten, deaktivieren Sie die aktuelle Umgebung:</li>
+<li>Nach Abschluss der Arbeit in der virtuellen Umgebung ist es gute Praxis, diese zu deaktivieren:</li>
 </ul>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> deactivate</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> deactivate</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Dies bringt Sie zurück zur Basisumgebung.</li>
+<li>Es ist wichtig, die Umgebung zu deaktivieren, um versehentliche Änderungen an der falschen Umgebung zu vermeiden.</li>
+</ul></li>
 </ol>
-<p>Das Erstellen einer separaten Umgebung für Python-Grundlagen stellt sicher, dass Ihr Arbeitsbereich isoliert und stabil bleibt.</p>
+<p>Das Erstellen und Verwenden einer separaten virtuellen Umgebung für Python-Grundlagen und Data Science-Projekte gewährleistet, dass der Arbeitsbereich isoliert, stabil und reproduzierbar bleibt. Dies ist besonders wichtig für die Zusammenarbeit in Teams und die langfristige Wartbarkeit von Projekten.</p>
 
 
 </section>

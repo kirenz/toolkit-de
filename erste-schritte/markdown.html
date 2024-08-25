@@ -394,6 +394,7 @@ window.Quarto = {
   <li><a href="#code-blöcke" id="toc-code-blöcke" class="nav-link" data-scroll-target="#code-blöcke"><span class="header-section-number">5.2.9</span> Code-Blöcke</a></li>
   <li><a href="#weiterführendes-lernen" id="toc-weiterführendes-lernen" class="nav-link" data-scroll-target="#weiterführendes-lernen"><span class="header-section-number">5.2.10</span> Weiterführendes Lernen</a></li>
   </ul></li>
+  <li><a href="#praktische-übung" id="toc-praktische-übung" class="nav-link" data-scroll-target="#praktische-übung"><span class="header-section-number">5.3</span> Praktische Übung</a></li>
   </ul>
 </nav>
     </div>
@@ -419,30 +420,34 @@ window.Quarto = {
 </header>
 
 
-<p>Markdown ist eine einfache Markup-Sprache, die zur Umwandlung in HTML entwickelt wurde. Sie ist aufgrund ihrer Einfachheit und Vielseitigkeit weit verbreitet und ideal für Dokumentationen, Berichte und die Erfassung von Forschungsergebnissen.</p>
-<p>In der Datenwissenschaft findet Markdown umfangreiche Anwendung nicht nur zur Dokumentation von Projekten, sondern auch zur Erstellung dynamischer Berichte, die nahtlos erzählenden Text mit den Ergebnissen von Datenanalysen integrieren, oft mithilfe von Tools wie Jupyter Notebooks.</p>
+<p>Markdown ist eine einfache Auszeichnungssprache, die entwickelt wurde, um leicht in HTML umgewandelt zu werden. Aufgrund ihrer Einfachheit und Vielseitigkeit wird sie häufig verwendet und eignet sich hervorragend für Dokumentationen, Berichte und die Aufzeichnung von Forschungsergebnissen.</p>
+<p>In der Datenwissenschaft findet Markdown breite Anwendung. Wir nutzen es nicht nur zur Dokumentation von Projekten, sondern auch zur Erstellung dynamischer Berichte. Diese Berichte verbinden nahtlos erklärenden Text mit den Ergebnissen von Datenanalysen, oft mithilfe von Werkzeugen wie Jupyter Notebooks.</p>
 <section id="markdown-in-jupyter-notebook" class="level2" data-number="5.1">
 <h2 data-number="5.1" class="anchored" data-anchor-id="markdown-in-jupyter-notebook"><span class="header-section-number">5.1</span> Markdown in Jupyter Notebook</h2>
-<p>Um loszulegen, erstellen Sie zuerst ein neues Jupyter-Notebook. Wenn Sie nicht sicher sind, wie das geht, können Sie diesen Leitfaden zu <a href="../erste-schritte/jupyter-notebook.html">Jupyter Notebooks</a> durcharbeiten. Benennen Sie Ihr Notebook <code>hello-markdown.ipynb</code> und speichern Sie es im Ordner <code>code</code>:</p>
+<p>Um mit Markdown in Jupyter Notebook zu beginnen, folgen wir diesen Schritten:</p>
 <ol type="1">
-<li>Navigieren Sie zu “File &gt; Save As…” und geben Sie den Namen <code>hello-markdown</code> ein.</li>
-<li>Fügen Sie in dem Notebook eine neue Zelle hinzu, indem Sie auf die Schaltfläche “+” klicken.</li>
-<li>Ändern Sie den Zelltyp mithilfe des Dropdown-Menüs in der Symbolleiste auf “Markdown”.</li>
+<li>Wir erstellen ein neues Jupyter-Notebook, wie zuvor in diesem Leitfaden zu <a href="../erste-schritte/jupyter-notebook.html">Jupyter Notebooks</a>.</li>
+<li>Wir benennen unser Notebook <code>hello-markdown.ipynb</code> und speichern es im Ordner <code>code</code>:
+<ul>
+<li>Dazu navigieren wir zu “File &gt; Save As…” und geben den Namen <code>hello-markdown</code> ein.</li>
+</ul></li>
+<li>Im Notebook fügen wir eine neue Zelle hinzu, indem wir auf die Schaltfläche “+” klicken.</li>
+<li>Wir ändern den Zelltyp mithilfe des Dropdown-Menüs in der Symbolleiste auf “Markdown”.</li>
 </ol>
-<p>Führen Sie die Zelle mit <code>Shift+Enter</code> aus, um den Markdown-Text zu rendern. Denken Sie daran, Ihren Fortschritt regelmäßig zu speichern.</p>
+<p>Um den Markdown-Text zu rendern (d.h. auszuführen), führen wir die Zelle mit <code>Shift+Enter</code> aus.</p>
 </section>
 <section id="markdown-basics" class="level2" data-number="5.2">
 <h2 data-number="5.2" class="anchored" data-anchor-id="markdown-basics"><span class="header-section-number">5.2</span> Markdown-Basics</h2>
 <section id="überschriften" class="level3" data-number="5.2.1">
 <h3 data-number="5.2.1" class="anchored" data-anchor-id="überschriften"><span class="header-section-number">5.2.1</span> Überschriften</h3>
-<p>Überschriften strukturieren das Dokument und schaffen eine Hierarchie der Abschnitte.</p>
+<p>Mit Überschriften strukturieren wir unser Dokument und schaffen eine Hierarchie der Abschnitte.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Hauptüberschrift (H1)</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">## Unterüberschrift (H2)</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">### Kleinere Unterüberschrift (H3)</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="listen" class="level3" data-number="5.2.2">
 <h3 data-number="5.2.2" class="anchored" data-anchor-id="listen"><span class="header-section-number">5.2.2</span> Listen</h3>
-<p>Listen organisieren Informationen klar und prägnant.</p>
+<p>Listen helfen uns, Informationen klar und prägnant zu organisieren.</p>
 <p>Geordnete Listen:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Erster Punkt</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Zweiter Punkt</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -460,19 +465,19 @@ window.Quarto = {
 </section>
 <section id="hervorhebungen" class="level3" data-number="5.2.3">
 <h3 data-number="5.2.3" class="anchored" data-anchor-id="hervorhebungen"><span class="header-section-number">5.2.3</span> Hervorhebungen</h3>
-<p>Betonen Sie Text, um wichtige Punkte hervorzuheben.</p>
+<p>Durch Hervorhebungen können wir wichtige Punkte betonen.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>*Kursiv*  </span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>Fett  </span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>**Fett**  </span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>_Kursiv mit Unterstrichen_  </span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>__Fett mit Unterstrichen__</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><em>Kursiv</em><br>
-Fett<br>
+<strong>Fett</strong><br>
 <em>Kursiv mit Unterstrichen</em><br>
 <strong>Fett mit Unterstrichen</strong></p>
 </section>
 <section id="blockzitate" class="level3" data-number="5.2.4">
 <h3 data-number="5.2.4" class="anchored" data-anchor-id="blockzitate"><span class="header-section-number">5.2.4</span> Blockzitate</h3>
-<p>Verwenden Sie Blockzitate, um Quellen oder wichtige Informationen zu zitieren.</p>
+<p>Blockzitate verwenden wir, um Quellen oder wichtige Informationen zu zitieren.</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; "Dies ist ein Blockzitat."</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <blockquote class="blockquote">
 <p>“Dies ist ein Blockzitat.”</p>
@@ -501,7 +506,7 @@ Fett<br>
 </section>
 <section id="links-und-bilder" class="level3" data-number="5.2.6">
 <h3 data-number="5.2.6" class="anchored" data-anchor-id="links-und-bilder"><span class="header-section-number">5.2.6</span> Links und Bilder</h3>
-<p>Links und Bilder bereichern das Dokument und bieten zusätzlichen Kontext.</p>
+<p>Mit Links und Bildern bereichern wir unser Dokument und bieten zusätzlichen Kontext.</p>
 <p>Links:</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Python-Dokumentation</span><span class="co">](https://docs.python.org/)</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><a href="https://docs.python.org/">Python-Dokumentation</a></p>
@@ -510,7 +515,7 @@ Fett<br>
 </section>
 <section id="mathematische-ausdrücke" class="level3" data-number="5.2.7">
 <h3 data-number="5.2.7" class="anchored" data-anchor-id="mathematische-ausdrücke"><span class="header-section-number">5.2.7</span> Mathematische Ausdrücke</h3>
-<p>LaTeX-Integration ermöglicht die Darstellung komplexer mathematischer Formeln.</p>
+<p>Durch die Integration von LaTeX können wir komplexe mathematische Formeln darstellen.</p>
 <p>Inline-Gleichung:</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>$E = mc^2$</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><span class="math inline">\(E = mc^2\)</span></p>
@@ -524,13 +529,13 @@ Fett<br>
 </section>
 <section id="horizontale-linien" class="level3" data-number="5.2.8">
 <h3 data-number="5.2.8" class="anchored" data-anchor-id="horizontale-linien"><span class="header-section-number">5.2.8</span> Horizontale Linien</h3>
-<p>Verwenden Sie horizontale Linien, um Abschnitte visuell zu trennen.</p>
+<p>Horizontale Linien helfen uns, Abschnitte visuell zu trennen.</p>
 <div class="sourceCode" id="cb11"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <hr>
 </section>
 <section id="code-blöcke" class="level3" data-number="5.2.9">
 <h3 data-number="5.2.9" class="anchored" data-anchor-id="code-blöcke"><span class="header-section-number">5.2.9</span> Code-Blöcke</h3>
-<p>Präsentieren Sie Code-Snippets mit Syntax-Hervorhebung.</p>
+<p>Mit Code-Blöcken präsentieren wir Code-Snippets und nutzen dabei Syntax-Hervorhebung.</p>
 <div class="sourceCode" id="cb12"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hallo, Python!"</span>)</span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -538,15 +543,42 @@ Fett<br>
 </section>
 <section id="weiterführendes-lernen" class="level3" data-number="5.2.10">
 <h3 data-number="5.2.10" class="anchored" data-anchor-id="weiterführendes-lernen"><span class="header-section-number">5.2.10</span> Weiterführendes Lernen</h3>
-<p>Erkunden Sie diese Ressourcen, um Ihr Verständnis von Markdown weiter zu vertiefen:</p>
+<p>Um das Verständnis von Markdown weiter zu vertiefen, können diese Ressourcen genutzt werden:</p>
 <ul>
 <li><a href="https://commonmark.org/help/">Interaktives 10-minütiges Markdown-Tutorial</a><br>
 </li>
 <li><a href="https://guides.github.com/features/mastering-markdown/">Markdown meistern</a></li>
 </ul>
-
-
 </section>
+</section>
+<section id="praktische-übung" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="praktische-übung"><span class="header-section-number">5.3</span> Praktische Übung</h2>
+<p>Als nächstes werden wir das Gelernte in einer kleinen Übung anwenden:</p>
+<ol type="1">
+<li><p>Neues Jupyter Notebook öffnen.</p></li>
+<li><p>Markdown-Zelle erstellen folgenden Text einfügen:</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Mein erstes Markdown-Dokument</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>Hier ist eine Liste meiner Lieblings-Datenwissenschafts-Tools:</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Python</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Jupyter Notebooks</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Pandas</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>Hier ist ein **wichtiger** Punkt zu beachten:</span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Üben ist der Schlüssel zum Erfolg!</span></span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>Dies ist eine Python-Funktion:</span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> greet(name):</span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="ss">f"Hallo, </span><span class="sc">{</span>name<span class="sc">}</span><span class="ss">! Willkommen in der Welt der Datenwissenschaft!"</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>```</p></li>
+<li><p>Zelle ausführen.</p></li>
+</ol>
+
+
 </section>
 
 </main> <!-- /main -->

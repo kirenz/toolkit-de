@@ -380,80 +380,99 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Python kann direkt von der offiziellen Python-Website oder über eine Software-Distribution wie Anaconda installiert werden, die zusätzliche Tools bietet.</p>
-<p>Dieses Kapitel behandelt:</p>
+<p>In diesem Kapitel lernen wir die grundlegenden Schritte kennen, um mit Python zu beginnen. Wir werden uns anschauen, wie wir Python installieren und erste Schritte mit dem Python-Editor IDLE machen:</p>
 <ul>
-<li>Die Installation von Python.</li>
-<li>Erste Schritte mit Python in dem Python Code-Editor IDLE.</li>
+<li>Installation von Python auf verschiedenen Betriebssystemen</li>
+<li>Erste Schritte mit dem Python-Editor IDLE</li>
 </ul>
 <section id="python-installation-in-windows" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="python-installation-in-windows"><span class="header-section-number">2.1</span> Python-Installation in Windows</h2>
 <ol type="1">
-<li>Installationsprogramm herunterladen: Navigieren Sie zur <a href="https://www.python.org/downloads/">Python-Website</a> und laden Sie die neueste Version für Ihre Windows-Version herunter (normalerweise Windows-Installer 64-Bit).</li>
-<li>Installationsprogramm ausführen: Klicken Sie mit der rechten Maustaste auf das heruntergeladene Installationsprogramm und wählen Sie “<em>Als Administrator ausführen</em>”. Stellen Sie sicher, dass Sie das Kästchen “<em>Add Python 3.x to PATH</em>” am unteren Rand des Installationsfensters markieren, um sicherzustellen, dass Python zu den Umgebungsvariablen Ihres Systems hinzugefügt wird (dies ist entscheidend, damit Python von jedem Verzeichnis im System aus über die Kommandozeile aufgerufen werden kann. Ohne diese Einstellung müssten Sie den vollständigen Pfad zur Python-Installation angeben, um Python auszuführen, was unpraktisch und fehleranfällig ist).</li>
-<li>Anpassung der Installation (optional): Sie können die Installation anpassen, indem Sie auf “Customize installation” klicken. Dies ermöglicht es Ihnen, spezifische Funktionen wie Dokumentation, pip, Tests usw. auszuwählen.</li>
-<li>Installation starten: Klicken Sie auf “<em>Install Now</em>”, um den Installationsvorgang zu starten.</li>
+<li><strong>Download des Installationsprogramms</strong>:
+<ul>
+<li><a href="https://www.python.org/downloads/">Offizielle Python-Website</a> besuchen.</li>
+<li>Neueste Version für Windows herunterladen (in der Regel die 64-Bit-Version).</li>
+</ul></li>
+<li><strong>Ausführen des Installationsprogramms</strong>:
+<ul>
+<li>Wichtig: Programm als Administrator ausführen (Rechtsklick -&gt; “Als Administrator ausführen”).</li>
+<li>Das Kästchen “Add Python 3.x to PATH” am unteren Rand des Installationsfensters anzukreuzen. Dies ermöglicht es uns, Python von überall auf unserem System aus zu nutzen.</li>
+</ul></li>
+<li><strong>Anpassung der Installation (optional)</strong>:
+<ul>
+<li>Für Fortgeschrittene: Mit einem Klick auf “Customize installation” können wir zusätzliche Funktionen auswählen.</li>
+</ul></li>
+<li><strong>Start der Installation</strong>:
+<ul>
+<li>Ein Klick auf “Install Now” startet den Prozess.</li>
+</ul></li>
 </ol>
 </section>
 <section id="python-installation-auf-mac" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="python-installation-auf-mac"><span class="header-section-number">2.2</span> Python-Installation auf Mac</h2>
 <ol type="1">
-<li>Installationsprogramm herunterladen: Navigieren Sie zur <a href="https://www.python.org/downloads/">Python-Website</a> und laden Sie die neueste Version herunter.</li>
-<li>Python installieren: Öffnen Sie die heruntergeladene <code>.pkg</code>-Datei und folgen Sie den Anweisungen zur Installation von Python. Der Installationsassistent führt Sie durch die notwendigen Schritte.</li>
+<li><strong>Download des Installationsprogramms</strong>:
+<ul>
+<li><a href="https://www.python.org/downloads/">Offizielle Python-Website</a> besuchen.</li>
+<li>Neueste Mac-Version herunterladen.</li>
+</ul></li>
+<li><strong>Python installieren</strong>:
+<ul>
+<li>Öffnen der heruntergeladenen <code>.pkg</code>-Datei.</li>
+<li>Anweisungen des Installationsassistenten folgen.</li>
+</ul></li>
 </ol>
-<!-- 3. Python zum PATH hinzufügen: Der Installationsassistent sollte diesen Schritt erledigen, aber Sie können dies überprüfen, indem Sie ein Terminal öffnen und `echo $PATH` eingeben. Stellen Sie sicher, dass das Verzeichnis, in dem Python installiert ist, in der Ausgabe erscheint. -->
 </section>
 <section id="testen-der-python-installation" class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="testen-der-python-installation"><span class="header-section-number">2.3</span> Testen der Python-Installation</h2>
-<p>Nach der Installation überprüfen Sie, ob Python korrekt installiert wurde, indem Sie eine Kommandozeile öffnen (Terminal auf macOS, Eingabeaufforderung auf Windows) und diesen Befehl eingeben:</p>
+<p>Nach der Installation wollen wir sicherstellen, dass alles korrekt funktioniert:</p>
+<ol type="1">
+<li>Öffnen der Kommandozeile (Terminal auf Mac, Eingabeaufforderung auf Windows).</li>
+<li>Folgenden Befehl eingeben:</li>
+</ol>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> <span class="at">--version</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Dieser Befehl sollte die Version von Python anzeigen, die Sie installiert haben.</p>
-<div class="callout callout-style-simple callout-caution callout-titled" title="Unterschiedliche Python-Version">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<p>Wenn alles geklappt hat, sehen wir die Versionsnummer der installierten Python-Version.</p>
+<div class="callout callout-style-simple callout-note callout-titled" title="Hinweis zu verschiedenen Python-Versionen">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Unterschiedliche Python-Version
+Hinweis zu verschiedenen Python-Versionen
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Wenn Sie bereits Python oder eine Python-Distribution wie Anaconda installiert haben, kann das Ausführen von <code>python --version</code> in Ihrem Terminal eine andere Python-Version anzeigen als die, die Sie gerade installiert haben. Diese Abweichung tritt auf, weil Ihr System mehrere Python-Installationen gleichzeitig verwalten kann. Der Terminalbefehl wählt die Version, die zuerst in der PATH-Variable des Systems erscheint, was möglicherweise nicht die zuletzt installierte Version ist.</p>
-<p>Dies ist eine gängige Situation und kein Grund zur Sorge. Wir werden dieses Thema in einem späteren Kapitel erneut behandeln und besprechen, wie Sie mehrere Python-Versionen effektiv verwalten können, um sicherzustellen, dass Sie verschiedene Python-Umgebungen je nach Bedarf für Ihre Projekte auswählen und verwenden können.</p>
+<p>Es kann vorkommen, dass wir mehrere Python-Versionen auf unserem System haben. Das ist normal und kein Grund zur Sorge. Später im Kurs werden wir lernen, wie wir effektiv mit verschiedenen Python-Umgebungen arbeiten können.</p>
 </div>
 </div>
-</div>
-<p>Fehlerbehebung:</p>
-<ul>
-<li><p>Python nicht erkannt: Wenn die Kommandozeile den Befehl <code>python</code> nicht erkennt, liegt es möglicherweise daran, dass Python nicht zu Ihrem PATH hinzugefügt wurde. Überprüfen Sie die Installationsschritte noch einmal, um sicherzustellen, dass Sie die Option ausgewählt haben, Python zu Ihrem PATH hinzuzufügen.</p></li>
-<li><p>Berechtigungsfehler während der Installation: Dies tritt normalerweise unter Windows auf und kann behoben werden, indem das Installationsprogramm als Administrator ausgeführt wird.</p></li>
-</ul>
 </section>
 <section id="python-idle" class="level2" data-number="2.4">
 <h2 data-number="2.4" class="anchored" data-anchor-id="python-idle"><span class="header-section-number">2.4</span> Python IDLE</h2>
-<p>Python IDLE ist eine einfache integrierte Entwicklungsumgebung (“Integrated Development Environment” bzw. “IDE”), die mit der Programmiersprache Python installiert wird. Sie ist darauf ausgelegt, das Schreiben und Ausführen von Python-Code einfach zu unterstützen.</p>
-<p>Obwohl IDLE offiziell für “Integrated DeveLopment Environment” steht, wurde der Name in Anspielung auf Eric Idle gewählt, ähnlich wie der Name der Programmiersprache Python selbst in Anspielung auf Monty Python gewählt wurde.</p>
-<p><strong>IDLE starten</strong></p>
-<p>Nach der Installation von Python können Sie IDLE über das Suchmenü Ihres Betriebssystems starten:</p>
+<p>IDLE ist ein einfacher Python-Editor, der mit unserer Installation mitgeliefert wird. Er ist ideal für unsere ersten Schritte in der Python-Programmierung.</p>
+<p>IDLE starten:</p>
 <ul>
-<li>Windows: Öffnen Sie das Startmenü und geben Sie <code>IDLE</code> ein.</li>
-<li>MacOS: Verwenden Sie die Spotlight-Suche (Cmd + Leertaste), geben Sie <code>IDLE</code> ein und drücken Sie Enter.</li>
+<li><strong>Windows</strong>: Startmenü öffnen und nach “IDLE” suchen.</li>
+<li><strong>Mac</strong>: In Spotlight-Suche (Cmd + Leertaste) “IDLE” eingeben und auswählen.</li>
 </ul>
-<p><strong>IDLE verwenden</strong></p>
-<p>Das IDLE-Shell-Fenster fungiert als interaktiver Interpreter, der jede Codezeile sofort ausführt, wenn Sie Enter drücken.</p>
-<p>Direkt in der IDLE-Shell können Sie arithmetische Ausdrücke wie <code>2 + 3</code> eingeben und Enter drücken, um sofort die Ergebnisse zu sehen. Diese Funktion macht IDLE ideal für schnelle Berechnungen und Experimente mit den mathematischen Fähigkeiten von Python, ohne dass ein Skript gespeichert oder ausgeführt werden muss.</p>
-<p>Als nächstes erstellen und führen wir ein einfaches Python-Skript aus:</p>
+<p>Arbeiten mit IDLE:</p>
 <ol type="1">
-<li><p>Eine neue Datei öffnen: Navigieren Sie in IDLE zu <code>Datei</code> &gt; <code>Neue Datei</code>, um ein Editor-Fenster zu öffnen.</p></li>
-<li><p>Geben Sie Ihren Code ein: Geben Sie Folgendes in das neue Editor-Fenster ein:</p>
+<li><strong>IDLE-Shell</strong>:
+<ul>
+<li>Dies ist unser interaktiver Python-Interpreter.</li>
+<li>Hier können wir direkt Python-Code eingeben und ausführen.</li>
+<li>Probieren wir es aus: Geben wir <code>2 + 3</code> ein und drücken Enter. Wir sehen sofort das Ergebnis!</li>
+</ul></li>
+<li><strong>Unser erstes Python-Skript</strong>:
+<ul>
+<li><p>Öffnen wir eine neue Datei: <code>Datei</code> &gt; <code>Neue Datei</code></p></li>
+<li><p>Geben wir folgenden Code ein:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hallo, Python!"</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>Speichern Sie Ihr Skript: Speichern Sie die Datei über <code>Datei</code> &gt; <code>Speichern unter...</code> und benennen Sie sie <code>hello.py</code>. Idealerweise speichern Sie sie in Ihrem Verzeichnis <code>code</code> innerhalb Ihres <code>toolkit-labs</code>-Ordners (siehe dazu die Erklärung zur <a href="projektumgebung#projektumgebung.qmd">Ordnerstruktur</a>).</p></li>
-<li><p>Führen Sie Ihr Skript aus: Drücken Sie <code>F5</code> oder gehen Sie zu <code>Ausführen</code> &gt; <code>Modul ausführen</code>, um Ihr Skript auszuführen. Die Ausgabe <code>Hallo, Python!</code> sollte in der IDLE-Shell erscheinen.</p></li>
+<li><p>Die Datei als <code>hallo.py</code> in unserem <code>code</code>-Ordner speichern.</p></li>
+<li><p>Skript ausführen: F5 drücken oder <code>Ausführen</code> &gt; <code>Modul ausführen</code> wählen.</p></li>
+<li><p>In der IDLE-Shell sehen wir nun unsere Ausgabe!</p></li>
+</ul></li>
 </ol>
-<p>Ändern Sie nun Ihr Skript mit verschiedenen Nachrichten. Sie können auch <code>help(print)</code> oder <code>help()</code> in die IDLE-Shell eingeben, um die umfangreiche Hilfedokumentation von Python zu erkunden und andere Funktionen kennenzulernen.</p>
-<p>Python IDLE bietet eine recht einfache Oberfläche für die Codeentwicklung und -ausführung. In einem der folgenden Abschnitte werden wir fortschrittlichere Entwicklungsumgebungen wie Visual Studio Code erkunden, die größere Projekte mit zusätzlichen Funktionen unterstützen.</p>
+<p>Wie wir gesehen haben, bietet Python IDLE eine einfache Oberfläche für die Codeentwicklung und -ausführung. In einem der folgenden Abschnitte werden wir fortschrittlichere Entwicklungsumgebungen wie Visual Studio Code erkunden, die größere Projekte mit zusätzlichen Funktionen unterstützen.</p>
 
 
 </section>

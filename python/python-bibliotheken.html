@@ -380,16 +380,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p>Im Python-Entwicklungsprozess ist es entscheidend, die Rollen von Modulen, Paketen und Bibliotheken zu verstehen, um Projekte effektiv zu organisieren und zu verwalten.</p>
-<p>Die Verwendung von Modulen, Paketen und Bibliotheken hilft nicht nur dabei, Ihren Code sauber und verständlich zu halten, sondern verbessert auch die Zusammenarbeit, indem sie Teammitgliedern ermöglicht, ihre Arbeit einfach zu teilen und zu integrieren.</p>
-<p>Dieses Kapitel führt Sie durch diese Konzepte und verwendet Beispiele und Analogien, um deren Zwecke und Anwendungen zu verdeutlichen.</p>
+<p>Die Verwendung dieser Bausteine hilft nicht nur dabei, den Code sauber und verständlich zu halten, sondern verbessert auch die Zusammenarbeit in Teams. Sie ermöglicht es, Arbeit einfach zu teilen und zu integrieren.</p>
+<p>Dieses Kapitel führt durch diese Konzepte und verwendet Beispiele und Analogien, um deren Zwecke und Anwendungen zu verdeutlichen.</p>
 <section id="module-in-python" class="level2" data-number="6.1">
 <h2 data-number="6.1" class="anchored" data-anchor-id="module-in-python"><span class="header-section-number">6.1</span> Module in Python</h2>
-<p>Module sind einzelne Python-Dateien, die Definitionen und Implementierungen von <em>Funktionen</em> und <em>Variablen</em> enthalten, die in verschiedenen Programmen wiederverwendet werden können.</p>
+<p>Module sind einzelne Python-Dateien, die Definitionen und Implementierungen von <em>Funktionen</em> und <em>Variablen</em> enthalten, die in verschiedenen Programmen wiederverwendet werden können:</p>
 <ul>
-<li><strong>Variablen</strong>: Dies sind benannte Speicherorte, die Daten im Speicher speichern. Zum Beispiel speichert <code>x = 5</code> die Ganzzahl 5 in einer Variable namens <code>x</code>.</li>
-<li><strong>Funktionen</strong>: Funktionen sind wiederverwendbare Codeabschnitte, die eine bestimmte Aktion ausführen.</li>
+<li><strong>Variablen</strong>: Benannte Speicherorte, die Daten im Speicher halten. Beispiel: <code>x = 5</code> speichert die Ganzzahl 5 in einer Variable namens <code>x</code>.</li>
+<li><strong>Funktionen</strong>: Wiederverwendbare Codeabschnitte, die eine bestimmte Aktion ausführen.</li>
 </ul>
-<p>Diese Module helfen, den Code modular zu gestalten, was seine Wartbarkeit und Lesbarkeit verbessert.</p>
+<p>Module helfen, den Code modular zu gestalten, was seine Wartbarkeit und Lesbarkeit verbessert.</p>
 <div class="callout callout-style-simple callout-tip callout-titled" title="Küchen-Analogie für Module">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -402,34 +402,48 @@ Küchen-Analogie für Module
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Stellen Sie sich Python wie eine gut ausgestattete Küche vor, in der Sie verschiedene Gerichte zubereiten können. Beim Kochen werden spezifische Werkzeuge und Zutaten für bestimmte Aufgaben oder Rezepte ausgewählt. Ähnlich repräsentieren in Python diese Werkzeuge und Zutaten <em>Module</em>—Sammlungen vorgefertigter Funktionen (Rezepte), die Sie zur Durchführung allgemeiner Aufgaben verwenden können, wie Dateiverwaltung mit <code>os</code> und <code>shutil</code> oder Datumsmanipulationen mit <code>datetime</code>.</p>
-<p>In dieser Analogie: - <strong>Die Küche</strong> ist Ihre Python-Umgebung. - <strong>Rezeptbücher</strong> sind Python-Module, die jeweils Sets von Rezepten (Funktionen) für spezifische Aufgaben enthalten. - <strong>Zutaten</strong> stellen Datentypen und Variablen dar. - <strong>Kochutensilien</strong> sind Methoden aus den Modulen, die Ihnen helfen, die Zutaten zu manipulieren.</p>
-</div>
-</div>
-</div>
-<p>Hier sind einige wichtige Standardmodule und deren häufige Anwendungen:</p>
+<p>Wir können uns Python wie eine gut ausgestattete Küche vorstellen:</p>
 <ul>
-<li><code>os</code>: Bietet Funktionen zur Interaktion mit dem Betriebssystem.</li>
+<li><strong>Die Küche</strong> ist die Python-Umgebung.</li>
+<li><strong>Rezeptbücher</strong> sind Python-Module, die jeweils Sets von Rezepten (Funktionen) für spezifische Aufgaben enthalten.</li>
+<li><strong>Zutaten</strong> stellen Datentypen und Variablen dar.</li>
+<li><strong>Kochutensilien</strong> sind Methoden aus den Modulen, die helfen, die Zutaten zu manipulieren.</li>
+</ul>
+<p>Beim Kochen werden spezifische Werkzeuge und Zutaten für bestimmte Aufgaben oder Rezepte ausgewählt. Ähnlich repräsentieren in Python diese Werkzeuge und Zutaten <em>Module</em>—Sammlungen vorgefertigter Funktionen (Rezepte), die zur Durchführung allgemeiner Aufgaben verwendet werden können.</p>
+</div>
+</div>
+</div>
+<p>Einige bedeutende Standardmodule und deren häufige Anwendungen:</p>
+<ul>
+<li><code>os</code>: Funktionen zur Interaktion mit dem Betriebssystem.</li>
 <li><code>datetime</code>: Behandelt Datums- und Zeitoperationen.</li>
 <li><code>math</code>: Enthält mathematische Funktionen.</li>
+<li><code>random</code>: Generiert Zufallszahlen und führt zufällige Auswahlen durch.</li>
+<li><code>json</code>: Verarbeitet JSON-Daten.</li>
 </ul>
-<p>Hier sehen Sie, wie Sie ein Modul verwenden können, indem Sie es in Ihr Python-Skript importieren:</p>
-<div id="20d69b27" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Das Modul wird importiert</span></span>
+<p>Ein Beispiel zur Verwendung eines Moduls durch Import in ein Python-Skript:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import des Moduls</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Verwendung der sqrt-Funktion aus dem math-Modul zur Berechnung der Quadratwurzel</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Das Ergebnis wird in der Variablen result gespeichert</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> math.sqrt(<span class="dv">16</span>)</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result)  <span class="co"># Ausgabe: 4.0</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>4.0</code></pre>
-</div>
-</div>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Verwendung der sqrt-Funktion aus dem math-Modul</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> math.sqrt(<span class="dv">16</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result)  <span class="co"># Ausgabe: 4.0</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Alternative Importmethode</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> math <span class="im">import</span> pi</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(pi)  <span class="co"># Ausgabe: 3.141592653589793</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="pakete-in-python" class="level2" data-number="6.2">
 <h2 data-number="6.2" class="anchored" data-anchor-id="pakete-in-python"><span class="header-section-number">6.2</span> Pakete in Python</h2>
-<p>Pakete in Python sind Verzeichnisse von Python-Modulen mit einer speziellen Datei namens <code>__init__.py</code>. Sie ermöglichen es Entwicklern, mehrere Module zusammenzupacken, wodurch es einfacher wird, eine Sammlung von Modulen als eine Einheit zu verwalten und zu verteilen.</p>
+<p>Pakete in Python sind Verzeichnisse von Python-Modulen mit einer speziellen Datei namens <code>__init__.py</code>. Sie ermöglichen es, mehrere Module zusammenzupacken, wodurch es einfacher wird, eine Sammlung von Modulen als eine Einheit zu verwalten und zu verteilen.</p>
+<p>Ein typisches Paket könnte so strukturiert sein:</p>
+<pre><code>mein_paket/
+    __init__.py
+    modul1.py
+    modul2.py
+    unterpaket/
+        __init__.py
+        modul3.py</code></pre>
 <div class="callout callout-style-simple callout-tip callout-titled" title="Küchen-Analogie für Pakete">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -442,17 +456,31 @@ Küchen-Analogie für Pakete
 </div>
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Wenn ein Modul einem Rezeptbuch ähnelt, ist ein Paket vergleichbar mit einer Sammlung von Rezeptbüchern, die möglicherweise eine komplette Küche oder eine umfassende Sammlung von Kochstilen darstellen. Jedes Buch (Modul) konzentriert sich auf einen bestimmten Bereich, aber zusammen bieten sie eine breite Palette kulinarischer Optionen.</p>
+<p>Wenn ein Modul einem Rezeptbuch ähnelt, ist ein Paket vergleichbar mit einer Sammlung von Rezeptbüchern. Jedes Buch (Modul) konzentriert sich auf einen bestimmten Bereich, aber zusammen bieten sie eine breite Palette kulinarischer Optionen.</p>
 </div>
 </div>
 </div>
-<p>Für Datenwissenschaftler und Entwickler sind einige wesentliche Pakete:</p>
+<p>Für Data Science sind einige grundlegende Pakete:</p>
 <ul>
-<li><code>numpy</code>: Paket für numerische Berechnungen.</li>
-<li><code>pandas</code>: Datenmanipulation und -analyse.</li>
-<li><code>matplotlib</code>, <code>seaborn</code> und <code>altair</code>: Datenvisualisierung.</li>
+<li><code>numpy</code>: Paket für numerische Berechnungen und Arrayoperationen.</li>
+<li><code>pandas</code>: Datenmanipulation und -analyse mit DataFrames und Series.</li>
+<li><code>matplotlib</code>, <code>seaborn</code> und <code>altair</code>: Verschiedene Optionen für Datenvisualisierung.</li>
 <li><code>scikit-learn</code>: Implementiert eine breite Palette von Machine-Learning-Algorithmen.</li>
 </ul>
+<p>Beispiel zur Verwendung eines Pakets:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import des gesamten Pakets</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Erstellung eines Arrays</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>arr <span class="op">=</span> np.array([<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>])</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(np.mean(arr))  <span class="co"># Ausgabe: 3.0</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Import spezifischer Funktionen aus einem Paket</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pandas <span class="im">import</span> DataFrame</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Erstellung eines DataFrames</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> DataFrame({<span class="st">'A'</span>: [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>], <span class="st">'B'</span>: [<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>]})</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="bibliotheken-in-python" class="level2" data-number="6.3">
 <h2 data-number="6.3" class="anchored" data-anchor-id="bibliotheken-in-python"><span class="header-section-number">6.3</span> Bibliotheken in Python</h2>
@@ -469,23 +497,27 @@ Küchen-Analogie für Bibliotheken
 </div>
 <div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>In unserer Küchenanalogie wäre eine Bibliothek eine komplette Küche, ausgestattet mit einer Vielzahl von Werkzeugen und Zutaten für verschiedene Kochstile und -techniken. Es ist eine umfassende Sammlung, die Ihnen ermöglicht, nahezu jedes Gericht zu kochen, das Sie sich vorstellen können.</p>
+<p>In der Küchenanalogie wäre eine Bibliothek eine komplette Küche, ausgestattet mit einer Vielzahl von Werkzeugen und Zutaten für verschiedene Kochstile und -techniken. Es ist eine umfassende Sammlung, die ermöglicht, nahezu jedes Gericht zu kochen, das man sich vorstellen kann.</p>
 </div>
 </div>
 </div>
-<p>Einige bekannte Python-Bibliotheken umfassen:</p>
+<p>Einige wichtige Python-Bibliotheken umfassen:</p>
 <ul>
 <li><code>SciPy</code>: Bietet wissenschaftliche und technische Berechnungen, baut auf <code>numpy</code> auf.</li>
 <li><code>TensorFlow</code> und <code>PyTorch</code>: Bibliotheken für maschinelles Lernen und neuronale Netze.</li>
 <li><code>Django</code> und <code>Flask</code>: Web-Frameworks für die Entwicklung von Webanwendungen.</li>
+<li><code>requests</code>: Vereinfacht HTTP-Anfragen.</li>
+<li><code>Beautiful Soup</code>: Für das Parsen von HTML und XML-Dokumenten.</li>
 </ul>
-<!-- ## Vorteile
-
-Vorteile der Verwendung von Modulen, Paketen und Bibliotheken:
-
-1. **Komplexitätsreduktion**: Durch Kapselung von Code machen Module und Pakete komplexe Systeme einfacher zu verwalten.
-2. **Erhöhte Wiederverwendbarkeit**: Sie fördern die Wiederverwendung von Code, sodass Sie ihn einmal schreiben und überall verwenden können.
-3. **Verbesserte Organisation**: Sie helfen dabei, den Code logischer zu strukturieren, was die Wartung und das Verständnis erleichtert. -->
+<p>Beispiel zur Verwendung einer Bibliothek:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import der benötigten Funktion aus SciPy</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy <span class="im">import</span> special</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Berechnung der Fakultät von 5</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>ergebnis <span class="op">=</span> special.factorial(<span class="dv">5</span>)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Ausgabe des Ergebnisses</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Die Fakultät von 5 ist: </span><span class="sc">{</span>ergebnis<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section>
