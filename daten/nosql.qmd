@@ -1,60 +1,68 @@
 # NoSQL Datenbanken
 
-NoSQL steht für "Not only SQL" und bezeichnet eine Klasse von Datenbanksystemen, die sich von traditionellen, relationalen Datenbanken unterscheiden. Sie wurden entwickelt, um die Skalierbarkeit und Leistung zu verbessern und um flexibler mit den Daten umgehen zu können.
+NoSQL steht für "Not only SQL" und bezeichnet eine Klasse von Datenbanksystemen, die sich von traditionellen, relationalen Datenbanken unterscheiden. Diese Systeme wurden entwickelt, um die Skalierbarkeit und Leistung zu verbessern sowie flexibler mit Daten umzugehen.
 
-Anstatt Tabellen zu verbinden, speichern NoSQL-Datenbanken unstrukturierte oder halbstrukturierte Daten, oft in Schlüssel-Wert-Paaren oder JSON-Dokumenten. NoSQL-Datenbanken umfassen mehrere verschiedene Modelle zum Zugriff und zur Verwaltung von Daten, die jeweils für spezifische Anwendungsfälle geeignet sind. Hier sind einige Hauptmerkmale und -modelle von NoSQL-Datenbanken:
+::: {.callout-note}
+## Hauptmerkmale von NoSQL-Datenbanken
 
-- Schemaflexibilität: Im Gegensatz zu relationalen Datenbanken, bei denen das Schema festgelegt ist, bieten NoSQL-Datenbanken die Möglichkeit, Daten ohne vordefiniertes Schema zu speichern. Dies ermöglicht eine schnelle Anpassung an sich ändernde Datenanforderungen.
+- **Schemaflexibilität**: NoSQL-Datenbanken ermöglichen die Speicherung von Daten ohne vordefiniertes Schema, was eine schnelle Anpassung an sich ändernde Datenanforderungen erlaubt.
 
-- Horizontale Skalierbarkeit NoSQL-Datenbanken sind darauf ausgelegt, große Datenmengen auf vielen Servern zu verteilen. Sie unterstützen eine horizontale Skalierung, was bedeutet, dass sie durch Hinzufügen weiterer Server in ein Netzwerk skalierbar sind.
+- **Horizontale Skalierbarkeit**: Diese Datenbanken sind darauf ausgelegt, große Datenmengen auf vielen Servern zu verteilen. Sie unterstützen eine horizontale Skalierung durch Hinzufügen weiterer Server in ein Netzwerk.
 
-- Hohe Verfügbarkeit und Fehlertoleranz: NoSQL-Datenbanken sind so konzipiert, dass sie auch bei Ausfällen einzelner Knoten im Netzwerk weiterhin verfügbar sind.
+- **Hohe Verfügbarkeit und Fehlertoleranz**: NoSQL-Datenbanken sind so konzipiert, dass sie auch bei Ausfällen einzelner Knoten im Netzwerk weiterhin verfügbar bleiben.
+:::
 
-NoSQL-Datenbanken werden häufig in folgenden Bereichen eingesetzt:
+Anstatt Tabellen zu verbinden, speichern NoSQL-Datenbanken unstrukturierte oder halbstrukturierte Daten, oft in Schlüssel-Wert-Paaren oder JSON-Dokumenten. Sie umfassen mehrere verschiedene Modelle zum Zugriff und zur Verwaltung von Daten, die jeweils für spezifische Anwendungsfälle geeignet sind.
 
-- E-Commerce: Verwaltung von Produktkatalogen, Benutzerprofilen und Warenkörben.
-- Big Data: Verarbeitung und Analyse großer Datenmengen in Echtzeit.
-- Content Management: Speicherung und Verwaltung von Inhalten wie Dokumenten, Bildern und Videos.
-- Social Media: Verwaltung von Benutzerprofilen, Beziehungen und Aktivitäten in sozialen Netzwerken.
-- IoT (Internet of Things): Speicherung und Analyse großer Mengen an Sensordaten.
+NoSQL-Datenbanken finden in verschiedenen Bereichen Anwendung:
+
+1. E-Commerce: Verwaltung von Produktkatalogen, Benutzerprofilen und Warenkörben.
+2. Big Data: Verarbeitung und Analyse großer Datenmengen in Echtzeit.
+3. Content Management: Speicherung und Verwaltung von Inhalten wie Dokumenten, Bildern und Videos.
+4. Social Media: Verwaltung von Benutzerprofilen, Beziehungen und Aktivitäten in sozialen Netzwerken.
+5. IoT (Internet of Things): Speicherung und Analyse großer Mengen an Sensordaten.
 
 ## NoSQL-Datenmodelle
 
 NoSQL-Datenbanken bieten eine Vielzahl von Möglichkeiten, um verschiedene Arten von Daten effizient zu speichern und abzurufen. Sie sind besonders nützlich in Szenarien, in denen traditionelle relationale Datenbanken an ihre Grenzen stoßen.
 
-*Dokumentenorientierte Datenbanken* speichern Daten in Form von Dokumenten, die meist auf JSON (JavaScript Object Notation) basieren. Diese Dokumente enthalten nicht nur die Daten, sondern auch die Struktur der Daten, was eine große Flexibilität bietet. Dokumentenorientierte Datenbanken sind ideal für Anwendungen, die mit unterschiedlichen und sich ändernden Datenstrukturen arbeiten müssen.
+### Dokumentenorientierte Datenbanken
 
-Beispiele: MongoDB, CouchDB
+Dokumentenorientierte Datenbanken speichern Daten in Form von Dokumenten, die meist auf JSON (JavaScript Object Notation) basieren. Diese Dokumente enthalten nicht nur die Daten, sondern auch die Struktur der Daten, was eine große Flexibilität bietet. Sie sind ideal für Anwendungen, die mit unterschiedlichen und sich ändernden Datenstrukturen arbeiten müssen.
 
-| Modell          | Eigenschaften                                                         | Open Source     |
-|-----------------|----------------------------------------------------------------------|------------------|
+**Beispiele:** MongoDB, CouchDB
+
+
+### Schlüssel-Wert-Datenbanken
+
+Schlüssel-Wert-Datenbanken speichern Daten als eine Sammlung von Schlüssel-Wert-Paaren. Jede Datenstruktur besteht aus einem eindeutigen Schlüssel und einem Wert, der jede Art von Daten enthalten kann. Diese Datenbanken sind besonders effizient für einfache Abfragen und schnelle Datenzugriffe.
+
+**Beispiel:** Redis
+
+
+### Spaltenorientierte Datenbanken
+
+
+Spaltenorientierte Datenbanken speichern Daten in Tabellen, aber im Gegensatz zu relationalen Datenbanken sind die Daten in Spalten anstatt in Reihen organisiert. Dies ermöglicht eine effiziente Speicherung und Abfrage von großen Datenmengen, insbesondere bei analytischen Anwendungen, die nur auf bestimmte Spalten zugreifen müssen.
+
+**Beispiele:** HBase, Cassandra
+
+
+### Graph-Datenbanken
+
+
+Graph-Datenbanken speichern Daten in Form von Graphen, bei denen Knoten die Datenobjekte und Kanten die Beziehungen zwischen diesen Objekten darstellen. Dies ermöglicht komplexe Abfragen von Beziehungen und ist ideal für Anwendungen wie soziale Netzwerke, Empfehlungssysteme und andere Szenarien, bei denen Beziehungen zwischen Datenpunkten im Vordergrund stehen.
+
+**Beispiel:** Neo4j
+
+
+### Übersicht der NoSQL-Datenmodelle
+
+| Modell | Eigenschaften | Open Source Beispiele |
+|--------|---------------|------------------------|
 | Dokumentenorientierter Speicher | Daten und Metadaten werden hierarchisch in JSON-basierten Dokumenten innerhalb der Datenbank gespeichert. | MongoDB, CouchDB |
-
-
-*Schlüssel-Wert-Datenbanken* speichern Daten als eine Sammlung von Schlüssel-Wert-Paaren. Jede Datenstruktur besteht aus einem eindeutigen Schlüssel und einem Wert, der jede Art von Daten enthalten kann. Diese Datenbanken sind besonders effizient für einfache Abfragen und schnelle Datenzugriffe.
-
-Beispiele: Redis
-
-| Modell          | Eigenschaften                                                         | Open Source     |
-|-----------------|----------------------------------------------------------------------|------------------|
 | Schlüssel-Wert-Speicher | Die einfachsten NoSQL-Datenbanken, Daten werden als eine Sammlung von Schlüssel-Wert-Paaren dargestellt. | Redis |
-
-*Spaltenorientierte Datenbanken* speichern Daten in Tabellen, aber im Gegensatz zu relationalen Datenbanken sind die Daten in Spalten anstatt in Reihen organisiert. Dies ermöglicht eine effiziente Speicherung und Abfrage von großen Datenmengen, insbesondere bei analytischen Anwendungen, die nur auf bestimmte Spalten zugreifen müssen.
-
-Beispiele: HBase, Cassandra
-
-| Modell          | Eigenschaften                                                         | Open Source     |
-|-----------------|----------------------------------------------------------------------|------------------|
 | Spaltenorientierter Speicher | Verwandte Daten werden als eine Reihe von verschachtelten Schlüssel/Wert-Paaren innerhalb einer einzigen Spalte gespeichert. | HBase, Cassandra |
-
-
-*Graph-Datenbanken* speichern Daten in Form von Graphen, bei denen Knoten die Datenobjekte und Kanten die Beziehungen zwischen diesen Objekten darstellen. Dies ermöglicht komplexe Abfragen von Beziehungen und ist ideal für Anwendungen wie soziale Netzwerke, Empfehlungssysteme und andere Szenarien, bei denen Beziehungen zwischen Datenpunkten im Vordergrund stehen.
-
-Beispiele: Neo4j
-
-| Modell          | Eigenschaften                                                         | Open Source     |
-|-----------------|----------------------------------------------------------------------|------------------|
 | Graph-Speicher | Daten werden in einer Graphstruktur als Knoten, Kanten und Dateneigenschaften gespeichert. | Neo4j |
 
-
-
+Diese verschiedenen NoSQL-Datenmodelle bieten Flexibilität und Effizienz für unterschiedliche Anwendungsfälle und Datenstrukturen. Die Wahl des geeigneten Modells hängt von den spezifischen Anforderungen des jeweiligen Projekts ab.
