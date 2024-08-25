@@ -1,90 +1,80 @@
 # MySQL
 
-MySQL, das sowohl als "My S-Q-L" als auch als "My Sequel" ausgesprochen wird, ist ein relationales Datenbankverwaltungssystem (RDBMS). Dieses System wird genutzt, um Daten in relationalen Datenbanken zu verwalten. Es verwendet die Structured Query Language (SQL) für verschiedene Aufgaben wie Datenverwaltung, Datenmanipulation und das Abfragen von Daten.
+MySQL, das sowohl als "My S-Q-L" als auch als "My Sequel" ausgesprochen wird, ist ein relationales Datenbankverwaltungssystem (RDBMS), das zur Verwaltung von Daten in relationalen Datenbanken dient. Es verwendet die Structured Query Language (SQL) für verschiedene Aufgaben wie Datenverwaltung, -manipulation und -abfrage.
 
-MySQL Workbench bietet eine grafische Oberfläche für die Datenbankverwaltung und SQL-Entwicklung. Es integriert visuelle Werkzeuge für die Datenmodellierung, SQL-Entwicklung und umfassende Datenbankverwaltung.
+MySQL Workbench bietet eine grafische Oberfläche für Datenbankverwaltung und SQL-Entwicklung. Es integriert visuelle Werkzeuge für Datenmodellierung, SQL-Entwicklung und umfassende Datenbankverwaltung.
 
-Die MySQL Workbench bietet verschiedene Werkzeuge zur Erleichterung der Datenbankverwaltung:
+Hauptkomponenten der MySQL Workbench:
 
-- **Toolbar**: Oben finden Sie die Toolbar, die Schaltflächen wie das neue Abfrage-Tab, Abfrage ausführen und andere enthält.
-- **Seitenleiste**: Links bietet die Seitenleiste Zugriff auf Instanzverwaltung, Leistungsüberwachung und mehr.
-- **Abfrage-Tab**: Hier schreiben und führen Sie Ihre SQL-Abfragen aus. Sie können ein neues Abfrage-Tab öffnen, indem Sie auf das "+"-Symbol neben den vorhandenen Tabs klicken.
-- **Ausgabebereich**: Unterhalb des Abfrage-Editors zeigt dieser Bereich die Ergebnisse der ausgeführten Abfragen oder Nachrichten vom Datenbankserver an.
-
+- **Toolbar**: Oben befindliche Leiste mit Schaltflächen für häufige Aktionen wie neue Abfrage-Tabs oder Ausführen von Abfragen.
+- **Seitenleiste**: Links platzierte Leiste für Zugriff auf Instanzverwaltung, Leistungsüberwachung und weitere Funktionen.
+- **Abfrage-Tab**: Zentraler Bereich zum Schreiben und Ausführen von SQL-Abfragen.
+- **Ausgabebereich**: Unterhalb des Abfrage-Editors zur Anzeige von Abfrageergebnissen oder Servermeldungen.
 
 ## MySQL-Installation in Windows
 
-In den folgenden Schritten wird die Installation von MySQL und dem Tool MySQL Workbench behandelt.
-
+Folgende Schritte führen durch die Installation von MySQL und MySQL Workbench:
 
 1. Installer herunterladen
-   - Gehen Sie zur [MySQL Downloadseite](https://dev.mysql.com/downloads/installer/).
-   - Wählen Sie Windows als Plattform und laden Sie den MySQL-Installer für Windows in der Version 8.0.37. herunter.
+   - Auf der [MySQL Downloadseite](https://dev.mysql.com/downloads/installer/) Windows als Plattform wählen.
+   - MySQL-Installer für Windows in Version 8.0.37 herunterladen.
 
 2. Installer ausführen
-   - Führen Sie die heruntergeladene Datei aus. Wenn ein Sicherheitsdialog erscheint, klicken Sie auf "Ja", um dem Installer die Erlaubnis zu erteilen, Änderungen an Ihrem System vorzunehmen.
+   - Heruntergeladene Datei ausführen und bei Sicherheitsabfrage "Ja" wählen.
 
 3. Setup-Typ auswählen
-   - Wählen Sie bei Aufforderung "Custom" als Setup-Typ. Diese Option ermöglicht es Ihnen, spezifische Komponenten zur Installation auszuwählen, wie z.B. MySQL Server, MySQL Workbench und MySQL Shell.
+   - "Custom" als Setup-Typ wählen für spezifische Komponentenauswahl.
 
 4. Produkte und Features auswählen
-   - Wählen Sie 'MySQL Server' und 'MySQL Workbench' für die Installation aus.
+   - 'MySQL Server' und 'MySQL Workbench' zur Installation auswählen.
 
-5. Installation
-   - Folgen Sie den Anweisungen auf dem Bildschirm, um die gewählten Komponenten zu installieren. 
+5. Installation durchführen
+   - Bildschirmanweisungen zur Installation der gewählten Komponenten befolgen.
 
 6. MySQL Server konfigurieren
-   - Nach der Installation werden Sie durch eine Reihe von Konfigurationsschritten geführt, einschließlich der Einrichtung des Root-Passworts, der Erstellung von Benutzerkonten und der Konfiguration der Netzwerkoptionen und des Windows-Dienstes.
+   - Root-Passwort einrichten, Benutzerkonten erstellen, Netzwerkoptionen und Windows-Dienst konfigurieren.
 
 7. Installation abschließen
-   - Beenden Sie das Setup, um die Installation von MySQL auf Ihrem System abzuschließen.
+   - Setup beenden, um die MySQL-Installation abzuschließen.
 
 ## MySQL-Installation auf Mac
 
-In den folgenden Schritten wird die Installation von MySQL und dem Tool MySQL Workbench behandelt.
+Installationsschritte für MySQL und MySQL Workbench auf Mac:
 
-1. Datei herunterladen
-   - Besuchen Sie die [MySQL Downloadseite](https://dev.mysql.com/downloads/mysql/) und wählen Sie macOS als Betriebssystem.
-   - Laden Sie die DMG-Datei für macOS herunter (in der Version 8.0.36.)
+1. MySQL herunterladen und installieren
+   - [MySQL Downloadseite](https://dev.mysql.com/downloads/mysql/) besuchen, macOS wählen.
+   - DMG-Datei für macOS (Version 8.0.36) herunterladen und installieren.
 
-2. MySQL installieren
-   - Öffnen Sie die heruntergeladene DMG-Datei und folgen Sie den Installationsanweisungen auf dem Bildschirm.
-
-Nun installieren Sie MySQL Workbench
-
-1. MySQL Workbench herunterladen
-   - Greifen Sie auf die [MySQL Workbench Downloadseite](https://dev.mysql.com/downloads/workbench/) zu.
-   - Wählen Sie die passende Version für Ihr Betriebssystem und laden Sie diese herunter.
-
-2. Anwendung installieren und den Setup-Anweisungen folgen.
-
+2. MySQL Workbench installieren
+   - [MySQL Workbench Downloadseite](https://dev.mysql.com/downloads/workbench/) aufrufen.
+   - Passende Version für macOS herunterladen und installieren.
 
 ## Server einrichten
 
-Nach der Installation besteht der nächste Schritt darin, eine Verbindung zu Ihrem MySQL-Server über MySQL Workbench herzustellen, d.h. wir fügen einen Server hinzu:
+Nach der Installation erfolgt die Verbindung zum MySQL-Server über MySQL Workbench:
 
-1. **MySQL Workbench starten**
-   - Öffnen Sie MySQL Workbench aus Ihrer Anwendungsübersicht. Beim Start der Anwendung sehen Sie die Hauptoberfläche.
+1. MySQL Workbench starten
+   - Anwendung aus der Programmübersicht öffnen.
 
    :::{.callout-tip collapse="true" title="Tipp für Windows-Nutzer"}
    Falls MySQL Workbench während der anfänglichen Einrichtung des MySQL Servers nicht enthalten war, kann es separat installiert werden:
 
-   - Greifen Sie auf die [MySQL Workbench Downloadseite](https://dev.mysql.com/downloads/workbench/) zu.
-   - Wählen Sie die passende Version für Ihr Betriebssystem und laden Sie sie herunter.
+   [MySQL Workbench Downloadseite](https://dev.mysql.com/downloads/workbench/) öffnen und passende Version für das Betriebssystem auswählen.
    :::
 
-2. **Neue Verbindung erstellen**
-   - Auf dem Startbildschirm sehen Sie einen Bereich mit der Bezeichnung "MySQL Connections". Klicken Sie auf das "+"-Symbol, um eine neue Verbindung zu erstellen.
-   - Im Setup-Dialog:
-     - Verbindungsname: Geben Sie Ihrer Verbindung einen erkennbaren Namen (nutzen Sie hierfür `local-connection`).
-     - Hostname: Geben Sie `localhost` ein (wir verwenden diese Bezeichnung, da der Datenbankserver auf dem gleichen Rechner wie die Workbench läuft).
-     - Port: Der Standard-MySQL-Port ist `3306`.
-     - Benutzername: Geben Sie den Benutzernamen ein, den Sie während der MySQL Server-Installation festgelegt haben (meist 'root').
-     - Passwort: Klicken Sie auf "Store in Vault" und geben Sie das Passwort für das Benutzerkonto ein.
-   - Nachdem Sie diese Felder ausgefüllt haben, klicken Sie auf "Test Connection", um sicherzustellen, dass alle Einstellungen korrekt sind und die Verbindung hergestellt werden kann.
 
-3. **Verbindung speichern**
-   - Wenn der Verbindungstest erfolgreich ist, speichern Sie die Konfiguration, indem Sie auf "OK" klicken. Diese Verbindung wird nun auf dem MySQL Workbench-Startbildschirm für einen einfachen Zugriff angezeigt.
+2. Neue Verbindung erstellen
+   - Auf "+" im Bereich "MySQL Connections" klicken.
+   - Verbindungsdetails eingeben:
+     - Name: `local-connection`
+     - Hostname: `localhost`
+     - Port: `3306`
+     - Benutzername: Meist 'root'
+     - Passwort: "Store in Vault" wählen und Passwort eingeben, welches während der Installation vergeben wurde.
+   - "Test Connection" zur Überprüfung klicken.
+
+3. Verbindung speichern
+   - Bei erfolgreicher Verbindung auf "OK" klicken.
 
 ## SQL-Basics in MySQL
 
@@ -92,13 +82,9 @@ Nachfolgend behandeln wir einige typische Aufgaben in MySQL Workbench, die bei d
 
 ### Datenbank erstellen
 
-1. **Eine Datenbank erstellen**
-   - Verbinden Sie sich mit Ihrer MySQL-Instanz über die eingerichtete Verbindung (`local-connection`).
-
-2. **Neues Abfrage-Tab öffnen**
-   - Klicken Sie auf das "+"-Symbol oben, um eine neue Abfrage zu starten.
-
-3. Geben Sie die folgenden SQL-Befehle ein:
+1. Mit MySQL-Instanz verbinden (`local-connection`).
+2. Neues Abfrage-Tab öffnen (auf das "+"-Symbol oben klicken)
+3. SQL-Befehle eingeben und ausführen (auf das Blitzsymbol (⚡) klicken, um den Befehl auszuführen):
 
    ```sql
    DROP DATABASE IF EXISTS `db_data`;
@@ -106,35 +92,30 @@ Nachfolgend behandeln wir einige typische Aufgaben in MySQL Workbench, die bei d
    USE `db_data`;
    ```
 
+
    :::{.callout-note collapse="true" title="Erklärung der SQL-Befehle"}
    Der SQL-Code führt drei Operationen durch:
 
    1. **DROP DATABASE IF EXISTS `db_data`;**
-      - Dieser Befehl löscht die Datenbank `db_data`, falls sie existiert. Dies ist nützlich, um sicherzustellen, dass Sie mit einer neuen Datenbank arbeiten, indem eine eventuell vorhandene Datenbank mit demselben Namen entfernt wird.
+      - Dieser Befehl löscht die Datenbank `db_data`, falls sie existiert. Dies ist nützlich, um sicherzustellen, dass wir mit einer neuen Datenbank arbeiten, indem eine eventuell vorhandene Datenbank mit demselben Namen entfernt wird.
 
    2. **CREATE DATABASE `db_data`;**
-      - Dieser Befehl erstellt eine neue Datenbank mit dem Namen `db_data`. Dies legt die Basis für eine neue Datenbank, in der Sie Tabellen und andere Datenbankobjekte erstellen können.
+      - Dieser Befehl erstellt eine neue Datenbank mit dem Namen `db_data`. Dies legt die Basis für eine neue Datenbank, in der wir Tabellen und andere Datenbankobjekte erstellen können.
 
    3. **USE `db_data`;**
       - Dieser Befehl setzt die neu erstellte Datenbank `db_data` als die aktuell verwendete Datenbank. Alle nachfolgenden SQL-Befehle werden auf dieser Datenbank ausgeführt.
    :::
 
 
-4. **Befehl ausführen**
-   - Klicken Sie auf das Blitzsymbol (⚡), um den Befehl auszuführen. 
-
-5. **Schema-Liste aktualisieren**
-   - Nachdem Sie die Befehle ausgeführt haben, aktualisieren Sie die Schema-Liste auf der linken Seite der Oberfläche, um Ihre neue Datenbank zu sehen.
+4. Schema-Liste aktualisieren zur Anzeige der neuen Datenbank (Schema-Liste befindet sich auf der linken Seite der Benutzer-Oberfläche)
 
 ### Tabelle erstellen
 
 Als Beispieldaten erstellen wir eine Tabelle zu einer Marketingkampagne:
 
-1. **Neues Abfrage-Tab öffnen**
-   - Klicken Sie auf das "+"-Symbol oben, um eine neue Abfrage zu starten.
 
-2. **Tabelle definieren**
-   - Führen Sie das folgende SQL aus, um Ihre Tabelle zu erstellen:
+1. Neues Abfrage-Tab öffnen.
+2. SQL zur Tabellenerstellung ausführen:
 
    ```sql
    CREATE TABLE campaigns (
@@ -148,6 +129,7 @@ Als Beispieldaten erstellen wir eine Tabelle zu einer Marketingkampagne:
    ```
 
    :::{.callout-note collapse="true" title="Erklärung der Tabellendefinition"}
+   
    Der obige SQL-Befehl erstellt eine neue Tabelle namens `campaigns`. Hier ist eine Aufschlüsselung jeder Spaltendefinition:
 
    - **id**: Eine Spalte namens `id`, die den Datentyp `INT` (integer) verwendet und automatisch inkrementiert wird (d.h. 1, 2, 3, ...), was sich gut als Primärschlüssel eignet.
@@ -157,15 +139,15 @@ Als Beispieldaten erstellen wir eine Tabelle zu einer Marketingkampagne:
    - **channel**: Eine Spalte, um das verwendete Medium der Kampagne anzugeben, die Zeichenfolgen von bis zu 255 Zeichen speichern kann.
    :::
 
-3. **Befehl ausführen**
-   - Klicken Sie auf das Blitzsymbol (⚡), um den Befehl auszuführen. Überprüfen Sie die Schema-Ansicht, um die Erstellung der Tabelle zu bestätigen.
+
+3. Befehl ausführen und Schema-Ansicht überprüfen.
 
 ### Werte einfügen
 
-Gehen Sie wie folgt vor, um die Tabelle mit Daten zu füllen:
+Wir gehen wie folgt vor, um die Tabelle mit Daten zu füllen:
 
-1. **Daten einfügen**
-   - Verwenden Sie in einem neuen Abfrage-Tab diesen SQL-Befehl:
+
+1. In neuem Abfrage-Tab SQL-Befehl ausführen:
 
    ```sql
    INSERT INTO campaigns (name, start_date, end_date, budget, channel) VALUES
@@ -188,8 +170,7 @@ Gehen Sie wie folgt vor, um die Tabelle mit Daten zu füllen:
 
 Um die Daten zu überprüfen:
 
-1. **Führen Sie eine SELECT-Abfrage aus**
-   - Führen Sie folgendes in einem neuen Abfrage-Tab aus:
+1. SELECT-Abfrage in neuem Tab ausführen:
 
    ```sql
    SELECT * FROM campaigns;
@@ -199,10 +180,13 @@ Um die Daten zu überprüfen:
    Der SQL-Befehl ruft alle Spalten aus allen Zeilen in der `campaigns`-Tabelle ab. Er ist nützlich, um alle eingegebenen Daten in der Tabelle anzuzeigen, sicherzustellen, dass die Einträge korrekt sind, und um weitere Datenanalysen oder Berichte zu ermöglichen.
    :::
 
-Die Abfrage sollte folgendes Ergebnis ausgeben:
 
-|id |name              |start_date|end_date  |budget  |channel     |
-|---|------------------|----------|----------|--------|------------|
-|1  |Winter Sale       |2023-12-01|2023-12-31|5000.00 |Email       |
-|2  |Summer Festival   |2023-06-01|2023-06-15|10000.00|Social Media|
-|3  |Back to School    |2023-08-01|2023-08-20|7500.00 |TV          |
+Erwartetes Ergebnis:
+
+| id | name            | start_date | end_date   | budget   | channel      |
+|----|-----------------|------------|------------|----------|--------------|
+| 1  | Winter Sale     | 2023-12-01 | 2023-12-31 | 5000.00  | Email        |
+| 2  | Summer Festival | 2023-06-01 | 2023-06-15 | 10000.00 | Social Media |
+| 3  | Back to School  | 2023-08-01 | 2023-08-20 | 7500.00  | TV           |
+
+
