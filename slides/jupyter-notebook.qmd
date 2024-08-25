@@ -1,8 +1,8 @@
 ---
 title: Jupyter Notebook
 lang: de
-subtitle: Subtitle
-author: Jan Kirenz
+subtitle: Interaktive Entwicklungsumgebung für Data Science
+author: Data Science, AI & Analytics Toolkit  
 execute:
   eval: false
   echo: true
@@ -12,70 +12,152 @@ format:
     toc: false
     toc-depth: 1
     embed-resources: false
-    theme: [default, /style/custom.scss]
+    theme: [default, style/custom.scss]
     incremental: true
-    transition: slide
+    transition: none
     background-transition: fade
     transition-speed: slow
     code-copy: true
-    code-line-numbers: true
+    code-line-numbers: false
     smaller: false
     scrollable: true
-    slide-number: c
+    slide-number: false
     preview-links: auto
-    css: /style/index.css
+    css: style/index.css
     chalkboard: 
       buttons: false
-    logo: images/logo.png
-    footer: Jupyter Notebook | Jan Kirenz
+    logo: images/code-blue.png
+    footer: Jan Kirenz
+    template-partials:
+      - title-slide.html 
+title-slide-attributes:
+  data-background-color: "#ffffff"
 jupyter: python3
 ---
 
+## Inhalte des Tutorials
 
-Die Anaconda Distribution beinhaltet Jupyter Notebook, ein leistungsstarkes Werkzeug für interaktive Code-Entwicklung.
+:::: {.features}
 
-:::{.callout-note}
-Jupyter Notebook ist eine interaktive, webbasierte Umgebung, in der Sie Python-Code schreiben und ausführen, Texte mit Markdown integrieren und Ausgaben wie Diagramme direkt in der Web-Oberfläche anzeigen können.
+::: {.feature .fragment .fade-in}
+:::{.feature-header}
+Was ist Jupyter Notebook? 🤔
+:::
+Einführung und Vorteile
 :::
 
-Im Gegensatz zum Python IDLE, das hauptsächlich als einfacher Editor fungiert, verbessert Jupyter Notebook Ihre interaktive Erfahrung mit diesen Funktionen:
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Erstellung eines Notebooks 📝
+:::
+Schritt-für-Schritt-Anleitung
+:::
 
-1. **Code schreiben und ausführen:** Jede interaktive "Zelle" in einem Jupyter Notebook kann Python-Code enthalten, den Sie unabhängig voneinander ausführen können.
-2. **Text und Code kombinieren:** Wechseln Sie einfach eine Zelle in den "Markdown"-Modus, um Texte, formatierte Anweisungen oder sogar mathematische Gleichungen mit LaTeX zu integrieren.
-3. **Ergebnisse visualisieren:** Zeigen Sie Diagramme, Grafiken und andere Visualisierungen direkt im Notebook an, was eine sofortige Rückmeldungen ermöglicht und für explorative Datenanalysen von Vorteil ist.
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Arbeiten mit Notebooks 💻
+:::
+Code, Markdown und mehr
+:::
 
-## Jupyter Notebook erstellen
+::::
 
-1. Öffnen Sie Anaconda Navigator:
-   - **Windows:** Öffnen Sie das Startmenü und suchen Sie nach "Anaconda Navigator". Klicken Sie, um es zu starten.
-   - **macOS/Linux:** Suchen Sie in Ihren Anwendungen nach "Anaconda Navigator" oder öffnen Sie ein Terminal und geben Sie ein:
-   ```bash
-   anaconda-navigator
-   ```
-2. Finden Sie im Anaconda Navigator die Jupyter Notebook-Anwendung.
-3. Klicken Sie auf die Schaltfläche "Launch". Dies öffnet Jupyter Notebook in Ihrem Standard-Webbrowser.
-4. Navigieren Sie in der Web-Oberfläche von Jupyter zum `code`-Verzeichnis (siehe unsere Erklärung zur [Ordnerstruktur](projektumgebung.qmd)).
-5. Klicken Sie oben rechts auf "New" und wählen Sie "Notebook", um ein neues Notebook zu erstellen.
-6. Nun öffnet sich ein Fenster in welchem Sie den Kernel (eine Python-Instanz) auswählen können. Wählen Sie bspw. die von Anaconda installierte `base`-Umgebung aus (die base-Umgebung ist die standardmäßige Python-Umgebung, die bei der Installation von Anaconda erstellt wird. Diese Umgebung enthält die grundlegenden Bibliotheken und Werkzeuge, die für viele Datenwissenschafts- und Maschinenlernaufgaben erforderlich sind).
-7. Eine neue Notebook-Seite öffnet sich mit einer leeren Code-Zelle.
+## Was ist Jupyter Notebook? 🤔
 
-Code schreiben:
+::: {.fragment .fade-in}
+- Webbasierte, interaktive Entwicklungsumgebung
+- Teil der Anaconda-Distribution
+- Ermöglicht Kombination von Code, Text und Visualisierungen
+:::
 
-Geben Sie einen beliebigen Python-Code in die erste Zelle ein, zum Beispiel:
+::: {.fragment .fade-in}
+![](../images/jupyter-logo.png){width="30%" fig-align="center"}
+:::
+
+## Vorteile von Jupyter Notebook
+
+::: {.incremental}
+- Interaktive Code-Ausführung in Zellen
+- Nahtlose Integration von Code und Dokumentation
+- Sofortige Visualisierung von Ergebnissen
+- Fördert Reproduzierbarkeit
+- Unterstützt mehrere Programmiersprachen
+:::
+
+## Erstellung eines Jupyter Notebooks
+
+1. Anaconda Navigator starten
+2. Jupyter Notebook launchen
+3. Zum `code`-Verzeichnis navigieren
+4. Neues Notebook erstellen
+5. Kernel auswählen (z.B. `base`)
+
+::: {.fragment .fade-in}
+![](../images/anaconda-navigator.png){width="50%" fig-align="center"}
+:::
+
+## Arbeiten mit Notebooks
+
+::: {.incremental}
+- Code in Zellen eingeben und ausführen
+- Markdown für Dokumentation nutzen
+- Visualisierungen direkt im Notebook anzeigen
+- Regelmäßiges Speichern nicht vergessen!
+:::
+
+## Beispiel: Erste Schritte
+
+. . .
+
 ```python
 print("Hello, Jupyter!")
 ```
 
-Führen Sie den Code aus, indem Sie `Shift+Enter` drücken oder auf "Run" klicken. Die Ausgabe wird direkt unter der Zelle angezeigt.
-
-**Jupyter Notebook speichern**: 
-
-
-1. Verwenden Sie das "File"-Menü, um das Notebook zu speichern.
-2. Benennen Sie die Datei `hello-jupyter.ipynb` und speichern Sie sie im `code`-Verzeichnis.
-
-:::{.callout-note}
-`.ipynb`-Dateien sind Dokumente, die von Jupyter Notebook erstellt werden. Diese Dateien enthalten sowohl die Eingaben (Code, Markdown-Text) als auch die Ausgaben (Code-Ausführungsergebnisse, Visualisierungen) interaktiver Sitzungen. Dieses Format ermöglicht es Ihnen, einen vollständigen und reproduzierbaren Ablauf Ihres Rechenprozesses festzuhalten, was die Zusammenarbeit und das Teilen in Datenwissenschaftsprojekten verbessert.
+::: {.fragment .fade-in}
+Ausführen mit `Shift+Enter` oder den "Run"-Button
 :::
 
-Jede `.ipynb`-Datei ist als JSON-Dokument strukturiert und enthält eine geordnete Liste von "Zellen", die Code, Markdown oder reinen Text enthalten können. Diese Struktur ermöglicht es Ihnen, Code in Teilen auszuführen, frühere Ergebnisse erneut zu betrachten oder Änderungen vorzunehmen, ohne das gesamte Skript neu auszuführen, im Gegensatz zu traditionellen `.py`-Skripten, die sequentiell von Anfang bis Ende ausgeführt werden.
+## Struktur von Jupyter Notebooks
+
+- Dateiendung: `.ipynb`
+- JSON-Format
+- Enthält geordnete Liste von "Zellen"
+- Speichert Code, Ausgaben, Markdown und Visualisierungen
+
+## Vorteile der Notebook-Struktur
+
+::: {.incremental}
+- Selektive Ausführung von Code
+- Nicht-lineare Arbeitsweise
+- Einfache Überarbeitung
+- Integrierte Dokumentation
+:::
+
+## Zusammenfassung
+
+:::: {.features}
+
+::: {.feature .fragment .fade-in}
+:::{.feature-header}
+Jupyter Notebook 📊
+:::
+Leistungsstarke, interaktive Entwicklungsumgebung für Data Science
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Funktionen 🛠️
+:::
+Code-Ausführung, Dokumentation, Visualisierung in einem Tool
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Vorteile 🚀
+:::
+Flexibilität, Reproduzierbarkeit, verbesserte Zusammenarbeit
+:::
+
+::::
+
+

@@ -1,0 +1,230 @@
+---
+title: JSON-Dateien
+lang: de
+subtitle: Datenformat für den Austausch
+author: Data Science, AI & Analytics Toolkit  
+execute:
+  eval: false
+  echo: true
+highlight-style: github-dark
+format:
+  revealjs: 
+    toc: false
+    toc-depth: 1
+    embed-resources: false
+    theme: [default, style/custom.scss]
+    incremental: true
+    transition: none
+    background-transition: fade
+    transition-speed: slow
+    code-copy: true
+    code-line-numbers: false
+    smaller: false
+    scrollable: true
+    slide-number: false
+    preview-links: auto
+    css: style/index.css
+    chalkboard: 
+      buttons: false
+    logo: images/code-blue.png
+    footer: Jan Kirenz
+    template-partials:
+      - title-slide.html 
+title-slide-attributes:
+  data-background-color: "#ffffff"
+jupyter: python3
+---
+
+## Inhalte des Tutorials
+
+:::: {.features}
+
+::: {.feature .fragment .fade-in}
+:::{.feature-header}
+JSON Grundlagen 📊
+:::
+Struktur und Datentypen
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Schreiben & Lesen 💾
+:::
+JSON-Dateien verarbeiten
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Datenbearbeitung 🔧
+:::
+JSON in Python nutzen
+:::
+
+::::
+
+## Was ist JSON? 🤔
+
+- JavaScript Object Notation
+- Textbasiertes Datenformat
+- Einfach lesbar und schreibbar
+- Ideal für Datenaustausch zwischen Systemen
+
+## JSON Datentypen
+
+::: {.incremental}
+- Zeichenketten (Strings)
+- Zahlen
+- Boolesche Werte (true/false)
+- null
+- Arrays (Listen)
+- Objekte (ähnlich wie Dictionaries in Python)
+:::
+
+## JSON Beispiel
+
+```json
+{
+    "Personen": [
+        {
+            "Name": "Max",
+            "Alter": 24,
+            "Stadt": "Berlin"
+        },
+        {
+            "Name": "Anna",
+            "Alter": 30,
+            "Stadt": "Hamburg"
+        }
+    ]
+}
+```
+
+## JSON-Datei schreiben 📝
+
+. . .
+
+```python
+import json
+
+daten = {
+    "Personen": [
+        {"Name": "Max", "Alter": 24, "Stadt": "Berlin"},
+        {"Name": "Anna", "Alter": 30, "Stadt": "Hamburg"}
+    ]
+}
+
+with open('daten.json', 'w') as jsonfile:
+    json.dump(daten, jsonfile, indent=4)
+```
+
+## JSON-Datei lesen 📖
+
+. . .
+
+```python
+import json
+
+with open('daten.json', 'r') as jsonfile:
+    daten = json.load(jsonfile)
+
+print(daten)
+```
+
+## JSON in Python konvertieren 🔄
+
+. . .
+
+```python
+import json
+
+json_daten = '''
+{
+    "Name": "Max",
+    "Alter": 24,
+    "Stadt": "Berlin"
+}
+'''
+
+daten = json.loads(json_daten)
+print(daten)
+```
+
+## Python in JSON konvertieren 🔄
+
+. . .
+
+```python
+import json
+
+daten = {
+    "Name": "Max",
+    "Alter": 24,
+    "Stadt": "Berlin"
+}
+
+json_daten = json.dumps(daten, indent=4)
+print(json_daten)
+```
+
+## Komplexe JSON-Strukturen verarbeiten 🧩
+
+. . .
+
+```python
+import json
+
+json_daten = '''
+{
+    "Personen": [
+        {
+            "Name": "Max",
+            "Alter": 24,
+            "Stadt": "Berlin",
+            "Hobbys": ["Lesen", "Schwimmen"]
+        },
+        {
+            "Name": "Anna",
+            "Alter": 30,
+            "Stadt": "Hamburg",
+            "Hobbys": ["Radfahren", "Kochen"]
+        }
+    ]
+}
+'''
+
+daten = json.loads(json_daten)
+
+for person in daten["Personen"]:
+    print(f"Name: {person['Name']}, Hobbys: {', '.join(person['Hobbys'])}")
+```
+
+## Zusammenfassung
+
+:::: {.features}
+
+::: {.feature .fragment .fade-in}
+:::{.feature-header}
+JSON Grundlagen 📊
+:::
+Textbasiertes Format
+Einfache Struktur
+Vielseitige Datentypen
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Schreiben & Lesen 💾
+:::
+json.dump() zum Schreiben
+json.load() zum Lesen
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Datenbearbeitung 🔧
+:::
+json.loads() & json.dumps()
+Verschachtelte Strukturen
+:::
+
+::::

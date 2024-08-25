@@ -1,0 +1,374 @@
+---
+title: MongoDB
+lang: de
+subtitle: NoSQL-Datenbank für flexible Datenspeicherung
+author: Data Science, AI & Analytics Toolkit  
+execute:
+  eval: false
+  echo: true
+highlight-style: github-dark
+format:
+  revealjs: 
+    toc: false
+    toc-depth: 1
+    embed-resources: false
+    theme: [default, style/custom.scss]
+    incremental: true
+    transition: none
+    background-transition: fade
+    transition-speed: slow
+    code-copy: true
+    code-line-numbers: false
+    smaller: false
+    scrollable: true
+    slide-number: false
+    preview-links: auto
+    css: style/index.css
+    chalkboard: 
+      buttons: false
+    logo: images/code-blue.png
+    footer: Jan Kirenz
+    template-partials:
+      - title-slide.html 
+title-slide-attributes:
+  data-background-color: "#ffffff"
+jupyter: python3
+---
+
+## Inhalte des Tutorials
+
+:::: {.features}
+
+::: {.feature .fragment .fade-in}
+:::{.feature-header}
+MongoDB Grundlagen 🗃️
+:::
+Flexibilität & Skalierbarkeit
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Installation & Verwaltung 🛠️
+:::
+Windows & macOS Setup
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+MongoDB Basics 📚
+:::
+Verbindung & Grundbefehle
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Python-Integration 🐍
+:::
+pymongo & Datenbankinteraktion
+:::
+
+::::
+
+## Was ist MongoDB?
+
+- NoSQL-Datenbank für flexible Datenspeicherung
+- Dokumentenorientiertes Modell (JSON-ähnlich)
+- Speicherung in BSON-Format (Binary JSON)
+
+. . .
+
+Beispiel eines MongoDB-Dokuments:
+
+```json
+{
+  "_id": ObjectId("5f8a7b2b9d3b2c1f4c6d8e7a"),
+  "name": "Max Mustermann",
+  "age": 30,
+  "skills": ["Python", "Data Analysis", "Machine Learning"],
+  "address": {
+    "street": "Musterstraße 123",
+    "city": "Musterstadt",
+    "country": "Deutschland"
+  }
+}
+```
+
+## Hauptmerkmale von MongoDB
+
+::: {.incremental}
+- **Flexibilität**: Dokumentenorientiertes Modell
+- **Skalierbarkeit**: Horizontale Skalierung durch Sharding
+- **Leistungsfähigkeit**: Schnelle Schreib- und Leseoperationen
+- **Entwicklerfreundlich**: Treiber für viele Programmiersprachen
+:::
+
+## MongoDB Shell (mongosh)
+
+- Schnelle und intuitive Verbindung zu MongoDB
+- Hauptfunktionen:
+  - Syntaxhervorhebung
+  - Intelligente Autovervollständigung
+  - Kontextbezogene Hilfe
+  - Klare Fehlermeldungen
+
+## Installation: Windows
+
+1. MongoDB Community Server herunterladen
+2. Installationsprogramm ausführen
+3. MongoDB Shell (mongosh) herunterladen
+4. Umgebungsvariable setzen
+
+. . .
+
+Überprüfen der Installation:
+
+```sh
+mongod --version
+mongosh --version
+```
+
+## Installation: macOS
+
+1. Xcode Command-Line Tools installieren
+2. Homebrew installieren
+3. MongoDB installieren
+
+. . .
+
+```sh
+brew tap mongodb/brew
+brew update
+brew install mongodb-community@7.0
+```
+
+. . .
+
+Überprüfen der Installation:
+
+```sh
+mongod --version
+mongosh --version
+```
+
+## MongoDB starten und stoppen
+
+::: {.panel-tabset}
+
+### Windows
+
+Dienstverwaltung oder Eingabeaufforderung:
+
+```sh
+net start MongoDB
+net stop MongoDB
+```
+
+### macOS
+
+Terminal-Befehle mit Homebrew:
+
+```sh
+brew services start mongodb-community@7.0
+brew services stop mongodb-community@7.0
+```
+
+:::
+
+## MongoDB Basics: Verbindung & Befehle
+
+1. Verbindung zur MongoDB-Instanz:
+
+```sh
+mongosh
+```
+
+. . .
+
+2. Datenbanken anzeigen:
+
+```sh
+show dbs
+```
+
+. . .
+
+3. Datenbank auswählen oder erstellen:
+
+```sh
+use mydatabase
+```
+
+## MongoDB Basics: Sammlungen & Dokumente
+
+4. Sammlung (Collection) erstellen:
+
+```sh
+db.createCollection("mycollection")
+```
+
+. . .
+
+5. Dokument einfügen:
+
+```sh
+db.mycollection.insertOne({name: "Jan", age: 44})
+```
+
+. . .
+
+6. Dokumente abfragen:
+
+```sh
+db.mycollection.find()
+```
+
+## Weitere MongoDB-Befehle
+
+::: {.incremental}
+- Spezifisches Dokument abfragen:
+  ```sh
+  db.mycollection.findOne({name: "Jan"})
+  ```
+- Dokumente aktualisieren:
+  ```sh
+  db.mycollection.updateOne({name: "Jan"}, {$set: {age: 45}})
+  ```
+- Dokumente löschen:
+  ```sh
+  db.mycollection.deleteOne({name: "Jan"})
+  ```
+- Indizes erstellen:
+  ```sh
+  db.mycollection.createIndex([("name", 1)])
+  ```
+:::
+
+## Komplexere Abfragen
+
+::: {.incremental}
+- Mehrere Bedingungen:
+  ```sh
+  db.mycollection.find({age: {$gt: 30}, name: /^J/})
+  ```
+- Sortieren von Ergebnissen:
+  ```sh
+  db.mycollection.find().sort({age: -1})
+  ```
+- Aggregation Pipeline:
+  ```sh
+  db.mycollection.aggregate([
+    {$group: {_id: null, averageAge: {$avg: "$age"}}}
+  ])
+  ```
+:::
+
+## MongoDB Python-Integration
+
+1. Umgebung erstellen und aktivieren:
+
+```bash
+conda create --name mongodb python=3.11 pip
+conda activate mongodb
+```
+
+. . .
+
+2. Benötigte Bibliotheken installieren:
+
+```bash
+pip install pymongo gridfs pillow jupyter ipykernel pandas
+```
+
+## Verbindung zu MongoDB in Python
+
+```python
+import pymongo
+
+# Verbindung zur MongoDB herstellen
+client = pymongo.MongoClient("mongodb://localhost:27017/")
+
+# Datenbank auswählen
+db = client["mydatabase"]
+
+# Sammlung auswählen
+collection = db["mycollection"]
+```
+
+## Daten einfügen und abfragen
+
+```python
+# Dokument einfügen
+result = collection.insert_one({"name": "Alice", "age": 25})
+print(f"Eingefügtes Dokument ID: {result.inserted_id}")
+
+# Dokumente abfragen
+for doc in collection.find():
+    print(doc)
+```
+
+## Weitere Python-Funktionen
+
+::: {.incremental}
+- Dokument aktualisieren:
+  ```python
+  result = collection.update_one({"name": "Alice"}, {"$set": {"age": 26}})
+  ```
+- Dokument löschen:
+  ```python
+  result = collection.delete_one({"name": "Alice"})
+  ```
+- Index erstellen:
+  ```python
+  result = collection.create_index([("name", pymongo.ASCENDING)])
+  ```
+:::
+
+## Komplexere Python-Abfragen
+
+```python
+# Abfrage mit Bedingungen
+results = collection.find({"age": {"$gt": 25}})
+
+# Sortierte Abfrage
+results = collection.find().sort("age", pymongo.DESCENDING)
+
+# Aggregation
+pipeline = [
+    {"$group": {"_id": None, "avg_age": {"$avg": "$age"}}}
+]
+result = list(collection.aggregate(pipeline))
+```
+
+## Zusammenfassung
+
+:::: {.features}
+
+::: {.feature .fragment .fade-in}
+:::{.feature-header}
+MongoDB Grundlagen 🗃️
+:::
+Flexibles Datenbankmodell für komplexe Datenstrukturen
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Installation & Verwaltung 🛠️
+:::
+Einfache Einrichtung auf Windows und macOS
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+MongoDB Basics 📚
+:::
+Grundlegende Operationen für Datenbankmanipulation
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Python-Integration 🐍
+:::
+Nahtlose Verbindung zwischen MongoDB und Python
+:::
+
+::::

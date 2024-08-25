@@ -1,0 +1,185 @@
+---
+title: GitHub Projects
+lang: de
+subtitle: Effiziente Projektverwaltung
+author: Data Science, AI & Analytics Toolkit  
+execute:
+  eval: false
+  echo: true
+highlight-style: github-dark
+format:
+  revealjs: 
+    toc: false
+    toc-depth: 1
+    embed-resources: false
+    theme: [default, style/custom.scss]
+    incremental: true
+    transition: none
+    background-transition: fade
+    transition-speed: slow
+    code-copy: true
+    code-line-numbers: false
+    smaller: false
+    scrollable: true
+    slide-number: false
+    preview-links: auto
+    css: style/index.css
+    chalkboard: 
+      buttons: false
+    logo: images/code-blue.png
+    footer: Jan Kirenz
+    template-partials:
+      - title-slide.html 
+title-slide-attributes:
+  data-background-color: "#ffffff"
+jupyter: python3
+---
+
+## Inhalte des Tutorials
+
+:::: {.features}
+
+::: {.feature .fragment .fade-in}
+:::{.feature-header}
+GitHub Projects 🚀
+:::
+Einführung und Erstellung
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Projektboards 📊
+:::
+Verwaltung und Organisation
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Best Practices 🌟
+:::
+Effiziente Nutzung
+:::
+
+::::
+
+## Was ist GitHub Projects? 🤔
+
+- Leistungsstarke Funktion zur Organisation und Verfolgung der Arbeit an Repositories
+- Bietet Kanban-Boards zur effizienten Verwaltung von Aufgaben und Workflows
+- Ermöglicht Planung und Verwaltung durch Projektboards
+
+. . .
+
+```{.python code-line-numbers="false"}
+# Beispiel für ein einfaches Kanban-Board
+board = {
+    "To Do": ["Task 1", "Task 2"],
+    "In Progress": ["Task 3"],
+    "Done": ["Task 4", "Task 5"]
+}
+```
+
+## Ein GitHub-Projekt erstellen 🛠️
+
+1. Zum Repository oder zur Organisation navigieren
+2. Auf den Tab 'Projects' zugreifen
+3. 'New Project' auswählen
+4. Projekt einrichten:
+   - Name vergeben
+   - Beschreibung hinzufügen
+   - Vorlage wählen oder mit leerem Projekt beginnen
+
+## Projektboards verwalten 📋
+
+:::: {.columns}
+
+::: {.column width="50%"}
+### Spalten hinzufügen
+
+1. 'Add column' auswählen
+2. Spalte benennen (z.B. 'To Do')
+3. Vorgang für weitere Spalten wiederholen
+:::
+
+::: {.column width="50%"}
+### Karten hinzufügen
+
+1. Issue oder Pull Request hinzufügen
+2. Notiz erstellen
+:::
+
+::::
+
+## Visualisierung eines Projektboards 🖼️
+
+![Beispiel eines GitHub Projektboards](images/github-project-board.png)
+
+## Best Practices: Arbeit organisieren 🗂️
+
+- Klare Spaltennamen verwenden
+- Aufgaben priorisieren
+
+. . .
+
+```python
+# Beispiel für klare Spaltennamen
+board_columns = [
+    "Backlog",
+    "To Do This Week",
+    "In Progress",
+    "Review",
+    "Done"
+]
+```
+
+## Best Practices: Zusammenarbeit fördern 🤝
+
+- Karten Teammitgliedern zuweisen
+- Labels nutzen
+
+. . .
+
+```python
+# Beispiel für Aufgabenzuweisung und Labels
+task = {
+    "title": "Implement new feature",
+    "assigned_to": "Alice",
+    "labels": ["feature", "high-priority"]
+}
+```
+
+## Best Practices: Fortschritt verfolgen 📊
+
+- Regelmäßige Updates durchführen
+- Abgeschlossene Karten schließen
+
+::: {.callout-tip}
+GitHub Projects ermöglicht auch die Automatisierung von Workflows. Durch Auslöser können Karten basierend auf bestimmten Aktionen automatisch in andere Spalten verschoben werden.
+:::
+
+## Zusammenfassung
+
+:::: {.features}
+
+::: {.feature .fragment .fade-in}
+:::{.feature-header}
+GitHub Projects 🚀
+:::
+Effiziente Projektverwaltung mit Kanban-Boards
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Projektboards 📊
+:::
+Spalten und Karten für strukturierte Arbeit
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Best Practices 🌟
+:::
+Organisation, Zusammenarbeit und Fortschrittsverfolgung
+:::
+
+::::

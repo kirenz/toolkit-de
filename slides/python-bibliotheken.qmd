@@ -1,0 +1,233 @@
+---
+title: Bausteine der Python-Programmierung
+lang: de
+subtitle: Module, Pakete und Bibliotheken
+author: Data Science, AI & Analytics Toolkit  
+execute:
+  eval: false
+  echo: true
+highlight-style: github-dark
+format:
+  revealjs: 
+    toc: false
+    toc-depth: 1
+    embed-resources: false
+    theme: [default, style/custom.scss]
+    incremental: true
+    transition: none
+    background-transition: fade
+    transition-speed: slow
+    code-copy: true
+    code-line-numbers: false
+    smaller: false
+    scrollable: true
+    slide-number: false
+    preview-links: auto
+    css: style/index.css
+    chalkboard: 
+      buttons: false
+    logo: images/code-blue.png
+    footer: Jan Kirenz
+    template-partials:
+      - title-slide.html 
+title-slide-attributes:
+  data-background-color: "#ffffff"
+jupyter: python3
+---
+
+## Inhalte des Tutorials
+
+:::: {.features}
+
+::: {.feature .fragment .fade-in}
+:::{.feature-header}
+Module 📦
+:::
+Einzelne Python-Dateien
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Pakete 📚
+:::
+Verzeichnisse von Modulen
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Bibliotheken 🏛️
+:::
+Sammlungen von Paketen
+:::
+
+::::
+
+## Module in Python 📦
+
+- Einzelne Python-Dateien
+- Enthalten Definitionen und Implementierungen von:
+  - Funktionen
+  - Variablen
+- Ermöglichen Wiederverwendung in verschiedenen Programmen
+- Verbessern Modularität, Wartbarkeit und Lesbarkeit des Codes
+
+## Küchen-Analogie für Module 🍳
+
+::: {.fragment .fade-up}
+- Python-Umgebung = Küche
+- Module = Rezeptbücher
+- Funktionen = Rezepte
+- Datentypen und Variablen = Zutaten
+- Methoden = Kochutensilien
+:::
+
+## Wichtige Standardmodule
+
+::: {.fragment .fade-up}
+- `os`: Interaktion mit dem Betriebssystem
+- `datetime`: Datums- und Zeitoperationen
+- `math`: Mathematische Funktionen
+- `random`: Zufallszahlen und -auswahlen
+- `json`: JSON-Datenverarbeitung
+:::
+
+## Beispiel: Verwendung eines Moduls
+
+. . .
+
+```python
+# Import des Moduls
+import math
+
+# Verwendung der sqrt-Funktion aus dem math-Modul
+result = math.sqrt(16)
+print(result)  # Ausgabe: 4.0
+
+# Alternative Importmethode
+from math import pi
+print(pi)  # Ausgabe: 3.141592653589793
+```
+
+## Pakete in Python 📚
+
+- Verzeichnisse von Python-Modulen
+- Enthalten spezielle Datei `__init__.py`
+- Ermöglichen Verwaltung und Verteilung von Modulsammlungen als Einheit
+
+## Paketstruktur
+
+::: {.fragment .fade-up}
+```
+mein_paket/
+    __init__.py
+    modul1.py
+    modul2.py
+    unterpaket/
+        __init__.py
+        modul3.py
+```
+:::
+
+## Küchen-Analogie für Pakete 🍽️
+
+::: {.fragment .fade-up}
+- Paket = Sammlung von Rezeptbüchern
+- Jedes Buch (Modul) fokussiert auf einen bestimmten Bereich
+- Zusammen bieten sie eine breite Palette kulinarischer Optionen
+:::
+
+## Wichtige Data Science Pakete
+
+::: {.fragment .fade-up}
+- `numpy`: Numerische Berechnungen und Arrayoperationen
+- `pandas`: Datenmanipulation und -analyse
+- `matplotlib`, `seaborn`, `altair`: Datenvisualisierung
+- `scikit-learn`: Machine-Learning-Algorithmen
+:::
+
+## Beispiel: Verwendung eines Pakets
+
+. . .
+
+```python
+# Import des gesamten Pakets
+import numpy as np
+
+# Erstellung eines Arrays
+arr = np.array([1, 2, 3, 4, 5])
+print(np.mean(arr))  # Ausgabe: 3.0
+
+# Import spezifischer Funktionen aus einem Paket
+from pandas import DataFrame
+
+# Erstellung eines DataFrames
+df = DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})
+print(df)
+```
+
+## Bibliotheken in Python 🏛️
+
+- Sammlungen von Paketen und Modulen
+- Bieten umfangreiche Funktionalität
+- Lösungen für spezifische Problemfelder
+- Können viele Module und Pakete umfassen
+
+## Küchen-Analogie für Bibliotheken 👨‍🍳
+
+::: {.fragment .fade-up}
+- Bibliothek = Komplette Küche
+- Ausgestattet mit vielen Werkzeugen und Zutaten
+- Ermöglicht die Zubereitung verschiedenster Gerichte
+:::
+
+## Wichtige Python-Bibliotheken
+
+::: {.fragment .fade-up}
+- `SciPy`: Wissenschaftliche und technische Berechnungen
+- `TensorFlow`, `PyTorch`: Maschinelles Lernen und neuronale Netze
+- `Django`, `Flask`: Web-Frameworks
+- `requests`: HTTP-Anfragen
+- `Beautiful Soup`: HTML- und XML-Parsing
+:::
+
+## Beispiel: Verwendung einer Bibliothek
+
+. . .
+
+```python
+# Import der benötigten Funktion aus SciPy
+from scipy import special
+
+# Berechnung der Fakultät von 5
+ergebnis = special.factorial(5)
+
+# Ausgabe des Ergebnisses
+print(f"Die Fakultät von 5 ist: {ergebnis}")
+```
+
+## Zusammenfassung 
+
+:::: {.features}
+
+::: {.feature .fragment .fade-in}
+:::{.feature-header}
+Module 📦
+:::
+Einzelne Dateien mit Funktionen und Variablen
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Pakete 📚
+:::
+Verzeichnisse von Modulen mit `__init__.py`
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Bibliotheken 🏛️
+:::
+Umfangreiche Sammlungen von Paketen und Modulen
+:::
+
+::::

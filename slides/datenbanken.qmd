@@ -1,0 +1,174 @@
+---
+title: Datenbanken
+lang: de
+subtitle: Subtitle
+author: Jan Kirenz
+execute:
+  eval: false
+  echo: true
+highlight-style: github-dark
+format:
+  revealjs: 
+    toc: false
+    toc-depth: 1
+    embed-resources: false
+    theme: [default, /style/custom.scss]
+    incremental: true
+    transition: slide
+    background-transition: fade
+    transition-speed: slow
+    code-copy: true
+    code-line-numbers: true
+    smaller: false
+    scrollable: true
+    slide-number: c
+    preview-links: auto
+    css: /style/index.css
+    chalkboard: 
+      buttons: false
+    logo: images/logo.png
+    footer: Datenbanken | Jan Kirenz
+jupyter: python3
+---
+
+
+Datenbanken bieten leistungsstarke Mittel zur Speicherung, Verwaltung und Abfrage großer Datenmengen, die für Analyse und Forschung genutzt werden können.
+
+Datenbanken bieten mehrere Vorteile gegenüber herkömmlichen Dateiformaten wie CSV oder Excel-Tabellen:
+
+- Effizienz: Datenbanken sind darauf optimiert, große Mengen an Daten schnell und effizient zu verwalten und abzurufen.
+- Skalierbarkeit Datenbanken können mit dem Wachstum der Datenmenge skaliert werden, ohne die Leistung zu beeinträchtigen.
+- Sicherheit Datenbanken bieten verschiedene Sicherheitsmechanismen zum Schutz sensibler Daten.
+- Mehrbenutzerzugriff Datenbanken ermöglichen mehreren Benutzern gleichzeitig den Zugriff und die Bearbeitung von Daten, ohne dass es zu Konflikten kommt.
+
+Es gibt verschiedene Arten von Datenbanken, die je nach Anwendungsfall und Datenstruktur verwendet werden:
+
+- **Relationale Datenbanken (RDBMS):** Diese verwenden Tabellen zur Speicherung von Daten und sind durch ihre Verwendung von SQL (Structured Query Language) bekannt. Beispiele sind MySQL, PostgreSQL und SQLite.
+
+- **NoSQL-Datenbanken:** Diese sind für unstrukturierte Daten oder große Mengen an Daten ausgelegt, die nicht in das relationale Modell passen. Beispiele sind MongoDB, Cassandra und Redis.
+
+
+## Relationale Datenbanken
+
+Relationale Datenbanken sind das Rückgrat vieler moderner Datenbankanwendungen und werden durch ihre Fähigkeit, Daten in strukturierten Tabellen zu organisieren und zu verwalten, definiert. 
+
+Ein Datenbankmanagementsystem (DBMS) ist die Software, die die Erstellung, Verwaltung und Nutzung von Datenbanken ermöglicht. Ein relationales DBMS (RDBMS) bietet Funktionen wie Datenintegrität, Transaktionsverwaltung und Sicherheitsmechanismen. Bekannte RDBMS sind MySQL, PostgreSQL und SQLite.
+
+
+## Tabellen 
+
+Im Zentrum jeder relationalen Datenbank stehen Tabellen. Eine Tabelle ist eine strukturierte Sammlung von Daten, die in Zeilen und Spalten organisiert ist. Jede Tabelle repräsentiert eine Entität, und jede Zeile in der Tabelle stellt ein einzelnes Datensatz dieser Entität dar.
+
+Beispiel einer einfachen Tabelle "Kunden":
+
+| KundenID | Name        | Email                | Stadt      |
+|----------|-------------|----------------------|------------|
+| 1        | Max Müller  | max.mueller@beispiel.de | Berlin     |
+| 2        | Anna Schmidt| anna.schmidt@beispiel.de | Hamburg    |
+| 3        | Peter Weber | peter.weber@beispiel.de  | München    |
+
+
+Jede Spalte in einer Tabelle hat einen bestimmten Datentyp, der die Art der Daten definiert, die in dieser Spalte gespeichert werden können. Häufig verwendete Datentypen sind:
+
+- *INTEGER* Ganze Zahlen
+- *VARCHAR* Zeichenketten variabler Länge
+- *DATE* Datumsangaben
+- *BOOLEAN*: Wahrheitswerte (true/false)
+
+Ein *Primärschlüssel* ist eine Spalte oder eine Kombination von Spalten, die jeden Datensatz in einer Tabelle eindeutig identifiziert. Im obigen Beispiel ist die Spalte "KundenID" der Primärschlüssel der Tabelle "Kunden".
+
+Ein *Fremdschlüssel* ist eine Spalte, die eine Beziehung zwischen zwei Tabellen herstellt. Ein Fremdschlüssel in einer Tabelle verweist auf den Primärschlüssel einer anderen Tabelle. Diese Beziehungen sind das Herzstück des relationalen Modells, da sie es ermöglichen, Daten aus verschiedenen Tabellen zu verknüpfen und komplexe Abfragen zu erstellen.
+
+
+## SQL 
+
+SQL (Structured Query Language) ist die Standardsprache für die Verwaltung und Abfrage von Daten in einer relationalen Datenbank. Mit SQL können Sie Daten einfügen, aktualisieren, löschen und abfragen sowie Datenbankstrukturen wie Tabellen und Indizes erstellen und ändern.
+
+Ein einfaches SQL-Abfragebeispiel:
+
+```sql
+SELECT Name, Email
+FROM Kunden
+WHERE Stadt = 'Berlin';
+```
+
+Diese Abfrage selektiert die Spalten "Name" und "Email" aus der Tabelle "Kunden", wobei nur die Datensätze berücksichtigt werden, bei denen die Stadt "Berlin" ist.
+
+## Anwendungsfälle
+
+Relationale Datenbanken sind in vielen Bereichen weit verbreitet, darunter:
+
+- Finanzwesen: Verwaltung von Kontodaten, Transaktionen und Finanzberichten.
+- E-Commerce Verwaltung von Produktkatalogen, Bestellungen und Kundeninformationen.
+- Gesundheitswesen Verwaltung von Patientendaten, Terminen und medizinischen Aufzeichnungen.
+
+Durch ihre Struktur, Flexibilität und Zuverlässigkeit bleiben relationale Datenbanken ein zentrales Werkzeug in der Datenverwaltung und -analyse.
+
+# NoSQL Datenbanken
+
+NoSQL steht für "Not only SQL" und bezeichnet eine Klasse von Datenbanksystemen, die sich von traditionellen, relationalen Datenbanken unterscheiden. Sie wurden entwickelt, um die Skalierbarkeit und Leistung zu verbessern und um flexibler mit den Daten umgehen zu können.
+
+Anstatt Tabellen zu verbinden, speichern NoSQL-Datenbanken unstrukturierte oder halbstrukturierte Daten, oft in Schlüssel-Wert-Paaren oder JSON-Dokumenten. NoSQL-Datenbanken umfassen mehrere verschiedene Modelle zum Zugriff und zur Verwaltung von Daten, die jeweils für spezifische Anwendungsfälle geeignet sind. Hier sind einige Hauptmerkmale und -modelle von NoSQL-Datenbanken:
+
+- Schemaflexibilität: Im Gegensatz zu relationalen Datenbanken, bei denen das Schema festgelegt ist, bieten NoSQL-Datenbanken die Möglichkeit, Daten ohne vordefiniertes Schema zu speichern. Dies ermöglicht eine schnelle Anpassung an sich ändernde Datenanforderungen.
+
+- Horizontale Skalierbarkeit NoSQL-Datenbanken sind darauf ausgelegt, große Datenmengen auf vielen Servern zu verteilen. Sie unterstützen eine horizontale Skalierung, was bedeutet, dass sie durch Hinzufügen weiterer Server in ein Netzwerk skalierbar sind.
+
+- Hohe Verfügbarkeit und Fehlertoleranz: NoSQL-Datenbanken sind so konzipiert, dass sie auch bei Ausfällen einzelner Knoten im Netzwerk weiterhin verfügbar sind.
+
+## Datenmodelle
+
+NoSQL-Datenbanken bieten eine Vielzahl von Möglichkeiten, um verschiedene Arten von Daten effizient zu speichern und abzurufen. Sie sind besonders nützlich in Szenarien, in denen traditionelle relationale Datenbanken an ihre Grenzen stoßen.
+
+*Dokumentenorientierte Datenbanken* speichern Daten in Form von Dokumenten, die meist auf JSON (JavaScript Object Notation) basieren. Diese Dokumente enthalten nicht nur die Daten, sondern auch die Struktur der Daten, was eine große Flexibilität bietet. Dokumentenorientierte Datenbanken sind ideal für Anwendungen, die mit unterschiedlichen und sich ändernden Datenstrukturen arbeiten müssen.
+
+Beispiele: MongoDB, CouchDB
+
+| Modell          | Eigenschaften                                                         | Open Source     |
+|-----------------|----------------------------------------------------------------------|------------------|
+| Dokumentenorientierter Speicher | Daten und Metadaten werden hierarchisch in JSON-basierten Dokumenten innerhalb der Datenbank gespeichert. | MongoDB, CouchDB |
+
+
+*Schlüssel-Wert-Datenbanken* speichern Daten als eine Sammlung von Schlüssel-Wert-Paaren. Jede Datenstruktur besteht aus einem eindeutigen Schlüssel und einem Wert, der jede Art von Daten enthalten kann. Diese Datenbanken sind besonders effizient für einfache Abfragen und schnelle Datenzugriffe.
+
+Beispiele: Redis
+
+| Modell          | Eigenschaften                                                         | Open Source     |
+|-----------------|----------------------------------------------------------------------|------------------|
+| Schlüssel-Wert-Speicher | Die einfachsten NoSQL-Datenbanken, Daten werden als eine Sammlung von Schlüssel-Wert-Paaren dargestellt. | Redis |
+
+
+*Spaltenorientierte Datenbanken* speichern Daten in Tabellen, aber im Gegensatz zu relationalen Datenbanken sind die Daten in Spalten anstatt in Reihen organisiert. Dies ermöglicht eine effiziente Speicherung und Abfrage von großen Datenmengen, insbesondere bei analytischen Anwendungen, die nur auf bestimmte Spalten zugreifen müssen.
+
+Beispiele: HBase, Cassandra
+
+| Modell          | Eigenschaften                                                         | Open Source     |
+|-----------------|----------------------------------------------------------------------|------------------|
+| Spaltenorientierter Speicher | Verwandte Daten werden als eine Reihe von verschachtelten Schlüssel/Wert-Paaren innerhalb einer einzigen Spalte gespeichert. | HBase, Cassandra |
+
+*Graph-Datenbanken* speichern Daten in Form von Graphen, bei denen Knoten die Datenobjekte und Kanten die Beziehungen zwischen diesen Objekten darstellen. Dies ermöglicht komplexe Abfragen von Beziehungen und ist ideal für Anwendungen wie soziale Netzwerke, Empfehlungssysteme und andere Szenarien, bei denen Beziehungen zwischen Datenpunkten im Vordergrund stehen.
+
+Beispiele: Neo4j
+
+| Modell          | Eigenschaften                                                         | Open Source     |
+|-----------------|----------------------------------------------------------------------|------------------|
+| Graph-Speicher | Daten werden in einer Graphstruktur als Knoten, Kanten und Dateneigenschaften gespeichert. | Neo4j |
+
+
+## Anwendungsfälle
+
+NoSQL-Datenbanken werden häufig in folgenden Bereichen eingesetzt:
+
+- E-Commerce: Verwaltung von Produktkatalogen, Benutzerprofilen und Warenkörben.
+- Big Data: Verarbeitung und Analyse großer Datenmengen in Echtzeit.
+- Content Management: Speicherung und Verwaltung von Inhalten wie Dokumenten, Bildern und Videos.
+- Social Media: Verwaltung von Benutzerprofilen, Beziehungen und Aktivitäten in sozialen Netzwerken.
+- IoT (Internet of Things): Speicherung und Analyse großer Mengen an Sensordaten.
+
+Vorteile von NoSQL-Datenbanken:
+
+- Flexibilität: NoSQL-Datenbanken erlauben die Speicherung von unstrukturierten und halbstrukturierten Daten ohne vorher festgelegte Schemata.
+- Skalierbarkeit: Sie ermöglichen eine horizontale Skalierung durch das Hinzufügen weiterer Server.
+- Leistung: Optimiert für hohe Schreib- und Leseoperationen, insbesondere bei großen Datenmengen.
+- Verfügbarkeit: Entworfen für hohe Verfügbarkeit und Fehlertoleranz, auch bei Ausfällen einzelner Knoten.
+

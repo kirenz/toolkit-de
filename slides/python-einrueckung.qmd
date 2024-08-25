@@ -1,0 +1,106 @@
+---
+title: Einrückung
+lang: de
+subtitle: Subtitle
+author: Jan Kirenz
+execute:
+  eval: false
+  echo: true
+highlight-style: github-dark
+format:
+  revealjs: 
+    toc: false
+    toc-depth: 1
+    embed-resources: false
+    theme: [default, /style/custom.scss]
+    incremental: true
+    transition: slide
+    background-transition: fade
+    transition-speed: slow
+    code-copy: true
+    code-line-numbers: true
+    smaller: false
+    scrollable: true
+    slide-number: c
+    preview-links: auto
+    css: /style/index.css
+    chalkboard: 
+      buttons: false
+    logo: images/logo.png
+    footer: Einrückung | Jan Kirenz
+jupyter: python3
+---
+
+
+[⬇️ Jupyter Notebook herunterladen](../code/python-einrueckung.ipynb){download="python-einrueckung.ipynb"}
+
+Bevor wir im nächsten Abschnitt Python-Funktionen erkunden, ist es wichtig, die Einrückungsregeln von Python zu verstehen, da diese grundlegend sind, um fehlerfreien Python-Code zu schreiben.
+
+Einrückung ist in Python nicht nur eine Stilfrage; sie hat eine syntaktische Bedeutung. Python verwendet Einrückungen, um Codeblöcke zu definieren. Die korrekte Verwendung von Einrückungen ist entscheidend, damit Ihr Code wie erwartet ausgeführt wird.
+
+**Wichtige Hinweise zur Einrückung:**
+
+- **Konsistenz**: Der Standard in Python ist die Verwendung von 4 Leerzeichen pro Einrückungsebene, (in einigen Entwicklungs-Umgebungen können Tabs so konfiguriert werden, dass sie automatisch in Leerzeichen umgewandelt werden).
+- **Codeblöcke**: Funktionen, Schleifen, Bedingungen und andere Steuerstrukturen verwenden Einrückungen, um anzugeben, welcher Code innerhalb des Blocks gehört.
+
+## Richtige Einrückung
+
+Beispielcode für die Erzeugung einer Funktion (wir behandeln Funktionen an einer [anderen Stelle des Buches](python-funktionen.qmd) im Detail):
+
+```{python}
+# Funktion wird erzeugt
+def compute_area(width, height):
+    # Dies ist der Anfang eines Funktionsblocks
+    area = width * height 
+    return area 
+
+#Aufrufen der Funktion
+print(compute_area(5, 10))  # Diese Zeile ist nicht eingerückt, was zeigt, dass sie nicht Teil der Funktion ist
+```
+
+Erläuterung:
+
+- Die Funktion `compute_area` beginnt mit einem Doppelpunkt (`:`) und der nachfolgende Code ist vier Leerzeichen eingerückt.
+- Sowohl die Berechnung von `area` als auch die `return`-Anweisung sind aufgrund ihrer Einrückung Teil der Funktion.
+- Die `print`-Anweisung ist relativ zur Funktionsdefinition nicht eingerückt, was zeigt, dass sie außerhalb der Funktion steht.
+
+## Falsche Einrückung
+
+Beispielcode mit falscher Einrückung:
+
+```python
+def calculate_percentage(total, amount):
+    if total > 0:
+    percentage = (amount / total) * 100 
+    return percentage  
+else:
+    return 0
+```
+
+```python
+IndentationError: expected an indented block after 'if' statement on line 3
+```
+
+Erläuterung:
+
+- **Fehler**: Das obige Beispiel führt zu einem `IndentationError`, weil die Einrückungsebenen nicht konsistent sind.
+- **Zeile 3**: Die Zeile `percentage = (amount / total) * 100` soll ausgeführt werden, wenn die Bedingung `total > 0` wahr ist. Sie ist jedoch nicht eingerückt, was unklar macht, ob sie innerhalb der `if`-Anweisung oder außerhalb ausgeführt werden soll.
+- **Zeilen 4 und 5**: Die `return percentage`-Anweisung sollte eingerückt werden, um unter die `if`-Bedingung zu fallen, was zeigt, dass sie Teil des `if`-Blocks ist. Die `else:`-Zeile ist ebenfalls nicht korrekt mit der `if`-Zeile ausgerichtet, was zu einem Syntaxfehler führt.
+
+Korrigierte Version:
+
+```{python}
+def calculate_percentage(total, amount):
+    if total > 0:
+        percentage = (amount / total) * 100  
+        return percentage  
+    else:
+        return 0
+```
+
+Was dies korrigiert:
+
+- Die Zeile `percentage = (amount / total) * 100` ist jetzt korrekt unter die `if`-Bedingung eingerückt, was klar anzeigt, dass sie zu dem Block gehört, der ausgeführt wird, wenn `total > 0`.
+- Die `return percentage`-Anweisung ist ebenfalls korrekt eingerückt, um zu zeigen, dass sie Teil der `if`-Bedingung ist. Der `else`-Block ist mit der `if`-Anweisung ausgerichtet, wodurch die Struktur konsistent bleibt.
+
+Dieses Beispiel zeigt, wie falsche Einrückung zu Syntaxfehlern und logischen Fehlern in Python führen kann. Es ist entscheidend, eine konsistente Einrückungsebene im gesamten Codeblock beizubehalten, um Klarheit und Funktionalität des Codes sicherzustellen. Indem Sie diese Praktiken einhalten, verhindern Sie Fehler und machen Ihren Code leichter lesbar.

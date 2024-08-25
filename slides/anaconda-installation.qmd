@@ -1,8 +1,8 @@
 ---
 title: Anaconda Distribution
 lang: de
-subtitle: Subtitle
-author: Jan Kirenz
+subtitle: Installation und Überprüfung
+author: Data Science, AI & Analytics Toolkit
 execute:
   eval: false
   echo: true
@@ -12,76 +12,142 @@ format:
     toc: false
     toc-depth: 1
     embed-resources: false
-    theme: [default, /style/custom.scss]
+    theme: [default, style/custom.scss]
     incremental: true
-    transition: slide
+    transition: none
     background-transition: fade
     transition-speed: slow
     code-copy: true
-    code-line-numbers: true
+    code-line-numbers: false
     smaller: false
     scrollable: true
-    slide-number: c
+    slide-number: false
     preview-links: auto
-    css: /style/index.css
+    css: style/index.css
     chalkboard: 
       buttons: false
-    logo: images/logo.png
-    footer: Anaconda Distribution | Jan Kirenz
+    logo: images/code-blue.png
+    footer: Jan Kirenz
+    template-partials:
+      - title-slide.html 
+title-slide-attributes:
+  data-background-color: "#ffffff"
 jupyter: python3
 ---
 
+## Inhalte des Tutorials
 
-Das Softwarepaket Anaconda Distribution bietet eine umfassende Plattform für datenbezogene Projekte, indem es Python und viele wichtige Data Science-Tools enthält.
+:::: {.features}
 
-## Anaconda in Windows installieren
+::: {.feature .fragment .fade-in}
+:::{.feature-header}
+Was ist Anaconda? 
+:::
+Softwarepaket für Data Science
+:::
 
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Installation
+:::
+Windows und macOS
+:::
 
-1. Gehen Sie zur [Anaconda-Download-Seite](https://www.anaconda.com/download/success).
-2. Wählen Sie Ihr Betriebssystem aus.
-3. Laden Sie den Installer herunter. Achten Sie darauf, den grafischen Installer herunterzuladen.
-4. Klicken Sie mit der rechten Maustaste auf den heruntergeladenen Installer und wählen Sie "Als Administrator ausführen".
-5. Klicken Sie auf "Weiter", um durch die Setup-Bildschirme zu navigieren.
-6. Stimmen Sie den Geschäftsbedingungen zu.
-7. Wählen Sie den Installationstyp:
-   - "Nur für mich" (empfohlen) oder "Alle Benutzer".
-8. Wählen Sie den Zielordner für die Installation.
-9. Wichtiger Schritt: **Aktivieren Sie "Anaconda zu meiner PATH-Umgebungsvariablen hinzufügen"** (empfohlen).
-10. Aktivieren Sie "Anaconda als meine Standard-Python-Version registrieren" (empfohlen).
-11. Klicken Sie auf "Installieren" und warten Sie, bis die Installation abgeschlossen ist.
-12. Klicken Sie auf "Weiter" und dann auf "Fertig stellen", um die Installation abzuschließen.
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Überprüfung & Aktualisierung
+:::
+Sicherstellen der korrekten Installation
+:::
 
-## Anaconda auf Mac installieren
+::::
 
-1. Gehen Sie zur [Anaconda-Download-Seite](https://www.anaconda.com/download/success).
-2. Wählen Sie Ihr macOS Betriebssystem aus (wählen Sie die passende Ausführung für Ihr Gerät. Falls Sie einen [Apple-Chip](https://support.apple.com/en-us/116943) haben, wählen Sie Apple Silicon. Andernfalls den Intel chip).
-3. Laden Sie den grafischen Installer herunter. 
-4. Suchen Sie die heruntergeladene `.pkg`-Datei und doppelklicken Sie darauf, um die Installation zu starten.
-5. Folgen Sie den Anweisungen, um die Installation abzuschließen:
-   - Lesen und akzeptieren Sie die Lizenzvereinbarung.
-   - Wählen Sie das Ziellaufwerk für die Installation aus (untere Option auswählen und zu Ihrem Ihrem Home-Verzeichnis navigieren - in meinem Fall `/Users/jankirenz`, da mein Benutzerkonto jankirenz heißt).
-   - Klicken Sie auf "Installieren".
-6. Sobald die Installation abgeschlossen ist, schließen Sie den Installer.
+## Was ist Anaconda? 🐍
 
+::: {.fragment .fade-in}
+- Umfassendes Softwarepaket für Data Science
+- Enthält Python und zahlreiche wichtige Tools
+- Vereinfacht die Installation und Verwaltung von Paketen
+:::
 
-## Anaconda überprüfen und aktualisieren
+## Installation auf Windows 💻
 
-Um zu bestätigen, dass Anaconda erfolgreich installiert wurde:
-1. Öffnen Sie ein Eingabeaufforderungsfenster (Windows) oder ein Terminal (macOS/Linux).
-2. Führen Sie diesen Befehl aus, um zu überprüfen, ob Anaconda erkannt wird:
+::: {.incremental}
+1. [Anaconda-Download-Seite](https://www.anaconda.com/download/success) besuchen
+2. Windows-Version auswählen
+3. Grafischen Installer herunterladen
+4. Als Administrator ausführen
+5. Setup-Assistenten folgen
+6. Wichtige Optionen aktivieren:
+   - "Anaconda zu meiner PATH-Umgebungsvariablen hinzufügen"
+   - "Anaconda als meine Standard-Python-Version registrieren"
+:::
 
-   ```bash
-   conda --version
-   ```
-3. Wenn Anaconda korrekt installiert ist, wird die Version im Terminal angezeigt.
+## Installation auf macOS 🍎
 
+::: {.incremental}
+1. [Anaconda-Download-Seite](https://www.anaconda.com/download/success) öffnen
+2. Passende Version wählen:
+   - Apple Silicon für [Apple-Chip](https://support.apple.com/en-us/116943)
+   - Intel für ältere Geräte
+3. Grafischen Installer herunterladen
+4. `.pkg`-Datei doppelklicken
+5. Installationsassistenten folgen
+6. Home-Verzeichnis als Zielort wählen
+:::
 
-Nach der Installation ist es eine gute Idee, alle Standardpakete zu aktualisieren:
+## Anaconda überprüfen 🔍
 
-   ```bash
-   conda update --all
-   ```
+So stellen wir sicher, dass Anaconda korrekt installiert wurde:
 
-Folgen Sie den Anweisungen, um die Aktualisierung abzuschließen.
+. . .
 
-Mit der Installation von Anaconda sind Sie bereit, anstelle von IDLE mit der Lösung Jupyter Notebook, einer webbasierten Umgebung, Ihren Python-Code zu schreiben und auszuführen.
+```bash
+conda --version
+```
+
+::: {.fragment .fade-in}
+- Bei korrekter Installation wird die Versionsnummer angezeigt
+:::
+
+## Anaconda aktualisieren 🔄
+
+Empfehlung: Nach der Installation alle Standardpakete aktualisieren
+
+. . .
+
+```bash
+conda update --all
+```
+
+::: {.fragment .fade-in}
+- Den Anweisungen folgen, um die Aktualisierung abzuschließen
+:::
+
+## Zusammenfassung
+
+:::: {.features}
+
+::: {.feature .fragment .fade-in}
+:::{.feature-header}
+Anaconda Distribution
+:::
+Umfassendes Paket für Data Science mit Python
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Installation
+:::
+Spezifische Schritte für Windows und macOS
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Überprüfung & Aktualisierung
+:::
+Sicherstellung der korrekten Funktionsweise
+:::
+
+::::
+

@@ -1,8 +1,5 @@
-Hier ist die erstellte Quarto-Präsentation basierend auf dem gegebenen Kapitel über Markdown:
-
-```qmd
 ---
-title: Markdown in der Datenwissenschaft
+title: Markdown
 lang: de
 subtitle: Grundlagen und Anwendung
 author: Data Science, AI & Analytics Toolkit  
@@ -37,6 +34,7 @@ title-slide-attributes:
   data-background-color: "#ffffff"
 jupyter: python3
 ---
+
 
 ## Inhalte des Tutorials
 
@@ -259,6 +257,3 @@ Praktische Anwendung
 
 ::::
 
-```
-
-Diese Präsentation folgt den gegebenen Richtlinien und nutzt das Quarto Reveal.js Format. Sie enthält einen Titelslide, einen Inhaltsslide mit der 'features' Klasse, mehrere inhaltliche Slides, die den Hauptpunkten des Kapitels folgen, und einen Zusammenfassungsslide am Ende. Die Präsentation verwendet die inkrementelle Enthüllung von Inhalten und die 'fragment' Klasse für visuelle Effekte. Codeblöcke sind mit der '...' Notation versehen, um sie im Präsentationsmodus nicht sofort anzuzeigen.

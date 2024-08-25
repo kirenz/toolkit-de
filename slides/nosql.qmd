@@ -1,0 +1,217 @@
+---
+title: NoSQL Datenbanken
+lang: de
+subtitle: Flexible Datenbanksysteme für moderne Anforderungen
+author: Data Science, AI & Analytics Toolkit  
+execute:
+  eval: false
+  echo: true
+highlight-style: github-dark
+format:
+  revealjs: 
+    toc: false
+    toc-depth: 1
+    embed-resources: false
+    theme: [default, style/custom.scss]
+    incremental: true
+    transition: none
+    background-transition: fade
+    transition-speed: slow
+    code-copy: true
+    code-line-numbers: false
+    smaller: false
+    scrollable: true
+    slide-number: false
+    preview-links: auto
+    css: style/index.css
+    chalkboard: 
+      buttons: false
+    logo: images/code-blue.png
+    footer: Jan Kirenz
+    template-partials:
+      - title-slide.html 
+title-slide-attributes:
+  data-background-color: "#ffffff"
+jupyter: python3
+---
+
+## Inhalte des Tutorials
+
+:::: {.features}
+
+::: {.feature .fragment .fade-in}
+:::{.feature-header}
+NoSQL Grundlagen 🌟
+:::
+Konzepte und Merkmale
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Anwendungsbereiche 🚀
+:::
+Einsatzgebiete von NoSQL
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Datenmodelle 📊
+:::
+Verschiedene NoSQL-Typen
+:::
+
+::::
+
+## NoSQL Grundlagen
+
+- NoSQL = "Not only SQL" 🔄
+- Alternative zu traditionellen relationalen Datenbanken
+- Fokus auf Skalierbarkeit, Leistung und Flexibilität
+
+## Hauptmerkmale von NoSQL 🏆
+
+::: {.incremental}
+
+- Schemaflexibilität
+- Horizontale Skalierbarkeit
+- Hohe Verfügbarkeit und Fehlertoleranz
+
+:::
+
+## Datenspeicherung in NoSQL
+
+::: {.incremental}
+
+- Unstrukturierte oder halbstrukturierte Daten
+- Häufig als Schlüssel-Wert-Paare oder JSON-Dokumente
+- Keine Tabellenverbindungen wie in relationalen Datenbanken
+
+:::
+
+## Anwendungsbereiche von NoSQL 🌐
+
+::: {.incremental}
+
+1. E-Commerce
+2. Big Data
+3. Content Management
+4. Social Media
+5. IoT (Internet of Things)
+
+:::
+
+## NoSQL-Datenmodelle
+
+Vier Haupttypen von NoSQL-Datenbanken:
+
+::: {.incremental}
+
+1. Dokumentenorientierte Datenbanken 📄
+2. Schlüssel-Wert-Datenbanken 🔑
+3. Spaltenorientierte Datenbanken 📊
+4. Graph-Datenbanken 🕸️
+
+:::
+
+## Dokumentenorientierte Datenbanken 📄
+
+- Speichern Daten in Dokumenten (meist JSON-basiert)
+- Flexibel für unterschiedliche Datenstrukturen
+- Beispiele: MongoDB, CouchDB
+
+. . .
+
+```json
+{
+  "id": 1,
+  "name": "John Doe",
+  "email": "john@example.com",
+  "orders": [
+    {"id": 101, "product": "Laptop", "price": 999.99},
+    {"id": 102, "product": "Mouse", "price": 29.99}
+  ]
+}
+```
+
+## Schlüssel-Wert-Datenbanken 🔑
+
+- Speichern Daten als Schlüssel-Wert-Paare
+- Effizient für einfache Abfragen und schnelle Zugriffe
+- Beispiel: Redis
+
+. . .
+
+```python
+# Redis Beispiel
+redis_db.set("user:1", "John Doe")
+redis_db.set("user:2", "Jane Smith")
+```
+
+## Spaltenorientierte Datenbanken 📊
+
+- Speichern Daten in Spalten statt in Reihen
+- Effizient für analytische Abfragen
+- Beispiele: HBase, Cassandra
+
+. . .
+
+```
+ColumnFamily: Users
+  RowKey: user1
+    name: John Doe
+    email: john@example.com
+  RowKey: user2
+    name: Jane Smith
+    email: jane@example.com
+```
+
+## Graph-Datenbanken 🕸️
+
+- Speichern Daten als Knoten und Kanten
+- Ideal für komplexe Beziehungen
+- Beispiel: Neo4j
+
+. . .
+
+```cypher
+// Neo4j Beispiel
+CREATE (john:Person {name: 'John'})
+CREATE (jane:Person {name: 'Jane'})
+CREATE (john)-[:KNOWS]->(jane)
+```
+
+## Übersicht NoSQL-Datenmodelle
+
+| Modell | Eigenschaften | Beispiele |
+|--------|---------------|-----------|
+| Dokumentenorientiert | Hierarchische JSON-Dokumente | MongoDB, CouchDB |
+| Schlüssel-Wert | Einfache Schlüssel-Wert-Paare | Redis |
+| Spaltenorientiert | Verschachtelte Schlüssel-Wert-Paare in Spalten | HBase, Cassandra |
+| Graph | Knoten, Kanten und Eigenschaften | Neo4j |
+
+## Zusammenfassung
+
+:::: {.features}
+
+::: {.feature .fragment .fade-in}
+:::{.feature-header}
+NoSQL Grundlagen 🌟
+:::
+Flexibilität, Skalierbarkeit, Leistung
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Anwendungsbereiche 🚀
+:::
+E-Commerce, Big Data, Social Media, IoT
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Datenmodelle 📊
+:::
+Dokumente, Schlüssel-Wert, Spalten, Graphen
+:::
+
+::::
