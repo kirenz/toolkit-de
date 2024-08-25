@@ -1,0 +1,157 @@
+---
+title: Hinweise zu VS Code
+lang: de
+subtitle: Tipps für den Einstieg
+author: Data Science, AI & Analytics Toolkit  
+execute:
+  eval: false
+  echo: true
+highlight-style: github-dark
+format:
+  revealjs: 
+    toc: false
+    toc-depth: 1
+    embed-resources: false
+    theme: [default, style/custom.scss]
+    incremental: true
+    transition: none
+    background-transition: fade
+    transition-speed: slow
+    code-copy: true
+    code-line-numbers: false
+    smaller: false
+    scrollable: true
+    slide-number: false
+    preview-links: auto
+    css: style/index.css
+    chalkboard: 
+      buttons: false
+    logo: images/code-blue.png
+    footer: Jan Kirenz
+    template-partials:
+      - title-slide.html 
+title-slide-attributes:
+  data-background-color: "#ffffff"
+jupyter: python3
+---
+
+## Inhalte des Tutorials
+
+:::: {.features}
+
+::: {.feature .fragment .fade-in}
+:::{.feature-header}
+Dateien und Ordner 📁
+:::
+Unterschiede verstehen
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Vertrauenswürdigkeit 🔒
+:::
+Arbeitsbereich-Sicherheit
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Jupyter Notebooks 📓
+:::
+Einrichtung in VS Code
+:::
+
+::::
+
+## Dateien vs. Ordner in VS Code
+
+::: {.columns}
+::: {.column width="50%"}
+### Einzelne Datei 📄
+
+- Nur eine spezifische Datei geöffnet
+- Für schnelle Änderungen
+- `Datei > Datei öffnen...`
+:::
+
+::: {.column width="50%"}
+### Projektordner 📁
+
+- Vollständiger Arbeitsbereich
+- Gesamter Projektkontext
+- `Datei > Ordner öffnen...`
+:::
+:::
+
+::: {.fragment .fade-in}
+> Das Öffnen eines Ordners in VS Code entspricht dem Erstellen eines "Projekts" in anderen IDEs.
+:::
+
+## Vertrauenswürdigkeit des Arbeitsbereichs 🔒
+
+. . .
+
+Bei erstmaligem Öffnen eines Projektordners:
+
+::: {.columns}
+::: {.column width="50%"}
+### "Ja, ich vertraue den Autoren" ✅
+- Bekannte/vertrauenswürdige Quelle
+- Volle VS Code Funktionalität
+:::
+
+::: {.column width="50%"}
+### "Nein, ich vertraue den Autoren nicht" ⚠️
+- Zweifelhafte Quellen
+- Eingeschränkte Funktionen
+- Verhindert unbefugte Codeausführung
+:::
+:::
+
+. . .
+
+> In vertrauenswürdigen Umgebungen "Ja" wählen für optimale Nutzung.
+
+## Jupyter Notebook in VS Code 📓 {.smaller}
+
+1. VS Code öffnen
+2. Jupyter-Erweiterung installieren
+3. Befehls-Palette öffnen (`Strg+Shift+P` / `Command+Shift+P`)
+4. `Datei: Ordner öffnen...` → `toolkit-lab` auswählen
+5. "Ja, ich vertraue den Autoren" wählen
+6. Befehls-Palette: `Jupyter: Neues leeres Notebook erstellen`
+7. Im Unterordner `code` speichern
+8. Zellen hinzufügen (Code/Markdown)
+9. Kernel auswählen (z.B. `basics`)
+
+. . .
+
+::: {.callout-note}
+Ein "Kernel" ist ein Prozess, der den Notebook-Code ausführt.
+:::
+
+## Zusammenfassung
+
+:::: {.features}
+
+::: {.feature .fragment .fade-in}
+:::{.feature-header}
+Dateien und Ordner 📁
+:::
+Einzeldatei vs. Projektordner
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Vertrauenswürdigkeit 🔒
+:::
+Sicherheit vs. Funktionalität
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Jupyter Notebooks 📓
+:::
+Integrierte Entwicklung in VS Code
+:::
+
+::::
