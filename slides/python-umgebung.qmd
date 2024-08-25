@@ -1,0 +1,208 @@
+---
+title: Virtuelle Umgebungen
+lang: de
+subtitle: Grundlagen für Data Science Projekte
+author: Data Science, AI & Analytics Toolkit  
+execute:
+  eval: false
+  echo: true
+highlight-style: github-dark
+format:
+  revealjs: 
+    toc: false
+    toc-depth: 1
+    embed-resources: false
+    theme: [default, style/custom.scss]
+    incremental: true
+    transition: none
+    background-transition: fade
+    transition-speed: slow
+    code-copy: true
+    code-line-numbers: false
+    smaller: false
+    scrollable: true
+    slide-number: false
+    preview-links: auto
+    css: style/index.css
+    chalkboard: 
+      buttons: false
+    logo: images/code-blue.png
+    footer: Jan Kirenz
+    template-partials:
+      - title-slide.html 
+title-slide-attributes:
+  data-background-color: "#ffffff"
+jupyter: python3
+---
+
+## Inhalte des Tutorials
+
+:::: {.features}
+
+::: {.feature .fragment .fade-in}
+:::{.feature-header}
+Was sind virtuelle Umgebungen? 🤔
+:::
+Grundlagen und Bedeutung
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Vorteile virtueller Umgebungen 🚀
+:::
+Abhängigkeitsverwaltung und mehr
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Praktische Anwendung 💻
+:::
+Erstellung und Verwendung
+:::
+
+::::
+
+## Was sind virtuelle Umgebungen? 🤔
+
+::: {.incremental}
+- Eigenständige Ordner mit ausführbaren Dateien für Python-Pakete
+- Unabhängig von der globalen Python-Installation
+- Ermöglichen isolierte Arbeitsbereiche für verschiedene Projekte
+- Wichtig für Data Science-Projekte mit spezifischen Bibliotheksversionen
+:::
+
+## Warum sind virtuelle Umgebungen wichtig? 🚀 {.smaller}
+
+::: {.columns}
+::: {.column width="50%"}
+::: {.incremental}
+1. **Abhängigkeitsverwaltung**
+   - Korrekte Versionen für jedes Projekt
+   - Verhindert Konflikte
+   - Gewährleistet Reproduzierbarkeit
+
+2. **Projekttrennung**
+   - Unterschiedliche Anforderungen
+   - Saubere Trennung von Projekten
+:::
+:::
+
+::: {.column width="50%"}
+::: {.incremental}
+3. **Entwicklung benutzerdefinierter Module**
+   - Integration ohne globale Beeinflussung
+   - Nützlich für experimentelle Entwicklungen
+
+4. **Vermeidung von Versionskonflikten**
+   - Kompatible Versionen für jedes Projekt
+
+5. **Einfache Weitergabe und Reproduzierbarkeit**
+   - Spezifikationen in einer Datei speicherbar
+   - Erleichtert Zusammenarbeit
+:::
+:::
+:::
+
+## Praktische Anwendung in Data Science 💻
+
+Separate Umgebungen für verschiedene Projekttypen:
+
+::: {.incremental}
+- Datenanalyse: Pandas, NumPy
+- Machine Learning: scikit-learn
+- Deep Learning: TensorFlow, PyTorch
+:::
+
+Ermöglicht effizientes Wechseln zwischen Projekten ohne Paketkonflikte.
+
+## Virtuelle Umgebung erstellen (1/2)
+
+1. Anaconda-Eingabeaufforderung oder Terminal öffnen
+
+2. Umgebung erstellen:
+
+. . .
+
+```bash
+conda create --name basics python=3.12 pip
+```
+
+. . .
+
+3. Umgebung aktivieren:
+
+. . .
+
+```bash
+conda activate basics
+```
+
+## Virtuelle Umgebung erstellen (2/2)
+
+4. Pakete installieren:
+
+. . .
+
+```bash
+pip install numpy pandas openpyxl matplotlib seaborn altair jupyter ipykernel
+```
+
+. . .
+
+5. Installation überprüfen:
+
+. . .
+
+```python
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import altair as alt
+```
+
+## Deaktivieren der Umgebung
+
+Nach Abschluss der Arbeit:
+
+. . .
+
+```bash
+conda deactivate
+```
+
+::: {.incremental}
+- Bringt uns zurück zur Basisumgebung
+- Vermeidet versehentliche Änderungen an der falschen Umgebung
+:::
+
+## Zusammenfassung 
+
+:::: {.features}
+
+::: {.feature .fragment .fade-in}
+:::{.feature-header}
+Virtuelle Umgebungen 🤔
+:::
+Isolierte Arbeitsbereiche für Projekte
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Vorteile 🚀
+:::
+Abhängigkeitsverwaltung  
+Projekttrennung  
+Versionskonflikte vermeiden
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Praktische Anwendung 💻
+:::
+Erstellung mit conda  
+Paketinstallation mit pip  
+Aktivierung und Deaktivierung
+:::
+
+::::
