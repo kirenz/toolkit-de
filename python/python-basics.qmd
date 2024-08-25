@@ -1,69 +1,112 @@
 # Python Grundlagen
 
-Sie haben die Möglichkeit, den gesamten Inhalt dieses Kapitels als Notebook herunterzuladen. Nach dem Herunterladen können Sie es in Ihrem `code` Ordner speichern und das Notebook in Jupyter öffnen:
+Dieses Kapitel bietet eine Einführung in die grundlegenden Konzepte von Python, die für Data Science und KI essentiell sind. Für eine praktische Lernerfahrung kann das gesamte Kapitel als Jupyter Notebook heruntergeladen werden:
 
-[⬇️ Juypter Notebook herunterladen](../code/python-basics.ipynb){download="python-basics.ipynb"}
+[⬇️ Jupyter Notebook herunterladen](../code/python-basics.ipynb){download="python-basics.ipynb"}
+
+Nach dem Herunterladen kann das Notebook im `code` Ordner gespeichert und in Jupyter Notebook geöffnet werden.
 
 ## Bibliotheken importieren
 
-Das Importieren von Bibliotheken ist unerlässlich, um zusätzliche Python-Funktionen nutzen zu können. Wir importieren sie am Anfang der Datei, um Übersichtlichkeit und Effizienz zu gewährleisten. Ein Alias (ein kurzer Name) erleichtert die Referenzierung im gesamten Code.
+In Python erweitern Pakete und Bibliotheken die Funktionalität der Sprache. Sie werden am Anfang des Skripts importiert, um den Code übersichtlich und effizient zu gestalten. Oft werden Aliase (Kurzformen) verwendet, um die Bibliotheken im Code einfacher anzusprechen.
 
-Fügen Sie den folgenden Code in eine neue Codezelle direkt unter Ihrem Titel ein und führen Sie ihn aus:
+Folgender Code importiert wichtige Data Science-Bibliotheken:
 
 ```{python}
-# Bibliotheken importieren (am Anfang)
-import numpy as np
-import pandas as pd
-import altair as alt
+# Bibliotheken importieren
+import numpy as np      # Für numerische Operationen
+import pandas as pd     # Für Datenmanipulation und -analyse
+import altair as alt    # Für Datenvisualisierung
 ```
 
+Erklärung der importierten Bibliotheken:
+
+- **NumPy (np)**: Stellt Funktionen für komplexe mathematische Operationen bereit.
+- **Pandas (pd)**: Ermöglicht die effiziente Handhabung und Analyse von strukturierten Daten wie Tabellen.
+- **Altair (alt)**: Bietet eine intuitive Möglichkeit zur Erstellung von interaktiven Visualisierungen.
 
 ## Kommentare einfügen
 
-In Python kann man Kommentare im Code schreiben, indem man das Zeichen `#` verwendet. Alles, was nach diesem Zeichen auf derselben Zeile steht, wird vom Python-Interpreter ignoriert. Kommentare sind nützlich, um den Code zu dokumentieren, Erklärungen hinzuzufügen oder vorübergehend Teile des Codes zu deaktivieren. 
+Kommentare sind ein wichtiges Werkzeug zur Dokumentation des Codes. Sie helfen, den Code verständlicher zu machen und erleichtern die Zusammenarbeit mit anderen Entwicklerinnen und Entwicklern. In Python gibt es verschiedene Möglichkeiten, Kommentare zu schreiben.
+
+### Einzeilige Kommentare
+
+Einzeilige Kommentare beginnen mit dem `#`-Zeichen:
+
+```{python}
+# Dies ist ein einzeiliger Kommentar
+x = 5  # Kommentare können auch am Ende einer Codezeile stehen
+```
+
+### Mehrzeilige Kommentare und Docstrings
+
+Für mehrzeilige Kommentare werden oft dreifache Anführungszeichen verwendet. Diese Art von Kommentar wird auch als "Docstring" bezeichnet, wenn sie direkt nach der Definition einer Funktion, Klasse oder Modul steht:
+
+```{python}
+"""
+Dies ist ein 
+mehrzeiliger 
+Kommentar
+"""
+
+def example_function():
+    """
+    Dies ist ein Docstring für eine Funktion.
+    Er beschreibt, was die Funktion tut, welche Parameter sie akzeptiert
+    und was sie zurückgibt.
+    """
+    pass
+```
+
+Durch die Verwendung von Docstrings wird der Code nicht nur für Menschen lesbarer, sondern auch für automatisierte Tools zur Dokumentationserstellung zugänglicher. Dies ist besonders in größeren Projekten und bei der Entwicklung von Bibliotheken oder Frameworks von Vorteil.
+
+### Verwendung von Kommentaren und Docstrings
+
+- Erklärung komplexer Codeabschnitte
+- Dokumentation von Funktionen, Klassen und Modulen (mittels Docstrings)
+- Temporäre Deaktivierung von Code (auch als "auskommentieren" bekannt)
+- Hinzufügen von TODO-Notizen für zukünftige Änderungen
 
 ## Variablen und Datentypen
 
-Variablen werden verwendet, um verschiedene Arten von Daten in Python zu speichern. Datentypen definieren die Natur dieser Daten und beeinflussen, wie sie verwendet werden können.
-
-Fügen Sie eine neue Codezelle hinzu, kopieren Sie dann den unten angegebenen Code in diese Zelle und führen Sie die Zelle anschließend aus.
-
-Beispielcode:
+Variablen speichern Informationen im Arbeitsspeicher. Python ist eine dynamisch typisierte Sprache, was bedeutet, dass der Datentyp einer Variable automatisch erkannt wird.
 
 ```{python}
-# Variablen zuweisen (mit beschreibenden Namen)
-name = "Alice"  # String für den Namen einer Person
-age = 30  # Integer für das Alter
-height = 5.5  # Float für die Größe in Fuß
-numbers = [1, 2, 3]  # Liste von ganzen Zahlen
-person = {"name": "Alice", "age": 30}  # Wörterbuch für Personendaten
+# Verschiedene Datentypen in Variablen speichern
+name = "Alice"                      # String (Zeichenkette)
+age = 30                            # Integer (Ganzzahl)
+height = 5.5                        # Float (Gleitkommazahl)
+is_student = True                   # Boolean (Wahrheitswert)
+numbers = [1, 2, 3]                 # List (Liste)
+person = {"name": "Alice", "age": 30} # Dictionary (Wörterbuch)
 ```
 
-Erklärung:
+Erklärung der Datentypen:
 
-- `name` ist ein **String**, der eine Zeichenfolge speichert, die einen Namen darstellt.
-- `age` ist eine **Integer**-Variable, die eine ganze Zahl darstellt.
-- `height` ist ein **Float**, der eine Zahl mit einem Dezimalpunkt darstellt.
-- `numbers` ist eine **Liste**, die eine geordnete Sammlung von Elementen darstellt.
-- `person` ist ein **Dictionary (Wörterbuch)**, das aus Schlüssel-Wert-Paaren besteht und mehrere Attribute speichern kann.
+- **String**: Textdaten, in Anführungszeichen gesetzt
+- **Integer**: Ganze Zahlen ohne Dezimalstellen
+- **Float**: Zahlen mit Dezimalstellen
+- **Boolean**: Logische Werte (True oder False)
+- **List**: Geordnete Sammlung von Elementen, veränderbar
+- **Dictionary**: Sammlung von Schlüssel-Wert-Paaren
 
-Um die in diesen Variablen gespeicherten Werte zu überprüfen, können Sie die `print`-Funktion verwenden:
+Um den Inhalt von Variablen anzuzeigen, wird die `print()`-Funktion verwendet:
 
 ```{python}
-print(name)  # Ausgabe: Alice
-print(age)  # Ausgabe: 30
-print(numbers)  # Ausgabe: [1, 2, 3]
-print(person)  # Ausgabe: {'name': 'Alice', 'age': 30}
+print(name)        # Ausgabe: Alice
+print(age)         # Ausgabe: 30
+print(numbers)     # Ausgabe: [1, 2, 3]
+print(person)      # Ausgabe: {'name': 'Alice', 'age': 30}
 ```
 
 ## Operatoren und Berechnungen
 
-Operatoren ermöglichen Berechnungen, Vergleiche und logische Operationen.
+Operatoren ermöglichen mathematische und logische Operationen in Python.
 
-Beispielcode:
+### Arithmetische Operationen
 
 ```{python}
-# Variablen erzeugen
+# Arithmetische Operationen
 length = 10
 width = 5
 ```
@@ -71,67 +114,76 @@ width = 5
 Berechnung der Fläche und des Umfangs:
 
 ```{python}
-area = length * width  # Multiplikation
-perimeter = 2 * (length + width)  # Addition und Multiplikation
+area = length * width           # Multiplikation
+perimeter = 2 * (length + width) # Addition und Multiplikation
 
-# Umfang anzeigen
-perimeter
+print(perimeter) # Ausgabe der Variable
 ```
 
-- `length` und `width` werden multipliziert, um die `area` zu berechnen.
-- `perimeter` wird berechnet, indem `length` und `width` addiert und dann mit 2 multipliziert werden.
-
-Vergleichsoperationen:
+### Vergleichsoperationen
 
 ```{python}
-is_square = length == width  # Überprüfen, ob Länge und Breite gleich sind
+is_square = length == width     # Gleichheit überprüfen
 
-is_square
+print(f"Ist es ein Quadrat? {is_square}")  # Ausgabe: Ist es ein Quadrat? False
 ```
 
-- `is_square` überprüft, ob die beiden Seiten gleich lang sind.
+`is_square` überprüft, ob die beiden Seiten gleich lang sind.
 
-Logische Operationen:
+Wir nutzen in dem `print()`-Befehl einen sogenannten f-string (formatted string literal), mit dem wir Text und Python-Objekte kombiniert ausgeben können. Das Python-Objekt wird dabei in einer geschwungenen Klammer eingefügt.
+
+
+### Logische Operationen
 
 ```{python}
-is_large_rectangle = (area > 20) and (perimeter > 10)  # Logisches UND
+is_large_rectangle = (area > 20) and (perimeter > 10)
 
-is_large_rectangle
+print(f"Ist es ein großes Rechteck? {is_large_rectangle}")  # Ausgabe: Ist es ein großes Rechteck? True
 ```
 
-- `is_large_rectangle` verwendet logische Operatoren, um festzustellen, ob das Rechteck sowohl eine große Fläche als auch einen großen Umfang hat.
+`is_large_rectangle` verwendet logische Operatoren, um festzustellen, ob das Rechteck sowohl eine große Fläche als auch einen großen Umfang hat.
+
+### Arten von Operatoren:
+
+- **Arithmetische Operatoren**: +, -, *, /, // (Ganzzahldivision), % (Modulo), ** (Potenz)
+- **Vergleichsoperatoren**: ==, !=, <, >, <=, >=
+- **Logische Operatoren**: and, or, not
 
 ## Arbeiten mit DataFrames
 
-Ein DataFrame ist eine zweidimensionale tabellarische Datenstruktur, die von Pandas bereitgestellt wird. Es ermöglicht eine effiziente Datenmanipulation, ähnlich wie ein Tabellenblatt oder eine SQL-Tabelle.
-
-Hier ein Beispiel. Wir bereiten zunächst die Daten vor:
+DataFrames, bereitgestellt durch die Pandas-Paket, sind zentral für die Datenanalyse in Python. Sie organisieren Daten in Zeilen und Spalten, ähnlich einer Tabelle.
 
 ```{python}
-data = { 
-         "Numbers": [1, 2, 3, 4, 5], 
-         "Squares": [1, 4, 9, 16, 25]
+# Erstellen eines dictionarys
+data = {
+    "Numbers": [1, 2, 3, 4, 5],
+    "Squares": [1, 4, 9, 16, 25]
 }
+
+print(data)
 ```
 
-- Das Wörterbuch `data` enthält zwei Listen: Zahlen und deren Quadrate.
+Das Dictionary `data` enthält zwei Listen: Zahlen und deren Quadrate.
 
 Erstellen eines DataFrame mit Pandas:
 
 ```{python}
 df = pd.DataFrame(data)
+
 ```
 
-- Der DataFrame `df` wird aus diesem Wörterbuch mit der Funktion `pd.DataFrame` erstellt, die die Daten in Zeilen und Spalten organisiert.
+Wir nennen den DataFrame `df` (dies ist eine gängige Abkürzung für DataFrame). Unser DataFrame wird aus dem Wörterbuch `data` mit der Funktion `pd.DataFrame` erstellt, die die Daten in Zeilen und Spalten organisiert.
 
-Den DataFrame inspizieren (dafür verwenden wir nicht `print()`)
+Den DataFrame ausgeben (dafür verwenden wir nicht `print()`):
 
 ```{python}
+# DataFrame anzeigen
 df
 ```
 
+Das Eingeben von `df` in eine Jupyter Notebook-Zelle zeigt den DataFrame in tabellarischer Form an.
 
-- Das Eingeben von `df` in eine Jupyter Notebook-Zelle zeigt den DataFrame in tabellarischer Form an.
+
 
 ## Methoden verstehen
 
@@ -139,7 +191,7 @@ Eine Methode ist eine Funktion, die mit einem Objekt (wie einem DataFrame, einer
 
 Beispielcode:
 
-`df.head()` ist eine Methode, welche die ersten paar Zeilen eines DataFrames anzeigt, um die Daten zu zeigen:
+`df.head()` ist eine Methode, welche die ersten Zeilen eines DataFrames anzeigt:
 
 ```{python}
 df.head() 
@@ -158,27 +210,95 @@ Allgemeines Methodenkonzept:
 - **Methode:** Eine Funktion, die mit einem Objekt verknüpft ist.
 - **Punktnotation (`.`):** Wird verwendet, um eine Methode auf einem Objekt aufzurufen.
 
+
+
+
+
+
+### Nützliche DataFrame-Methoden:
+
+```python
+# Erste Zeilen anzeigen
+print(df.head())
+
+# Statistische Zusammenfassung
+print(df.describe().round(2))
+
+# Spezifische Spalte auswählen
+print(df['Numbers'])
+
+# Filtern von Daten
+print(df[df['Numbers'] > 3])
+```
+
+
+
+
+
+
+
+
+Methoden sind Funktionen, die zu einem bestimmten Objekt gehören und mit der Punktnotation aufgerufen werden.
+
+```python
+# String-Methode
+text = "hello, world"
+print(text.upper())  # Ausgabe: HELLO, WORLD
+
+# List-Methode
+numbers = [3, 1, 4, 1, 5, 9]
+numbers.sort()
+print(numbers)  # Ausgabe: [1, 1, 3, 4, 5, 9]
+
+# DataFrame-Methode
+mean_value = df['Numbers'].mean()
+print(f"Durchschnitt der Numbers: {mean_value}")
+```
+
+### Vorteile von Methoden:
+
+- Organisieren Funktionalität in logischen Gruppen
+- Ermöglichen objektorientierte Programmierung
+- Verbessern die Lesbarkeit und Wartbarkeit des Codes
+
 ## Daten mit Altair visualisieren
 
-Nachdem Sie die Struktur eines DataFrames verstanden haben, können Sie dessen Daten mit Altair visualisieren.
+Altair ist eine deklarative Visualisierungsbibliothek, die auf Vega und Vega-Lite basiert. Sie ermöglicht die einfache Erstellung interaktiver und ansprechender Diagramme.
 
-Beispielcode:
-
-```{python}
-# Das Diagramm erstellen
-alt.Chart(df).mark_point().encode(
+```python
+# Einfaches Streudiagramm erstellen
+chart = alt.Chart(df).mark_point().encode(
     x='Numbers',
     y='Squares'
 )
+
+# Diagramm anzeigen
+chart
 ```
 
-Erklärung:
+### Komponenten des Altair-Diagramms:
 
-- **Altair-Bibliothek**: Eine Visualisierungsbibliothek, die den Prozess der Erstellung von Diagrammen und Grafiken vereinfacht.
-- **`alt.Chart(df)`**: Erstellt ein neues Diagrammobjekt aus dem DataFrame `df`.
-- **`mark_point()`**: Gibt den Diagrammtyp an (in diesem Fall ein Streudiagramm).
-- **`encode`**: Ordnet DataFrame-Spalten Diagrammattributen zu.
-  - **`x='Numbers'`**: Legt die horizontale Achse auf die Spalte `Numbers` fest.
-  - **`y='Squares'`**: Legt die vertikale Achse auf die Spalte `Squares` fest.
+- **Chart**: Grundlegendes Objekt für die Visualisierung
+- **mark_point()**: Legt den Diagrammtyp fest (hier: Streudiagramm)
+- **encode()**: Ordnet Daten den visuellen Eigenschaften zu
 
-Diese prägnante Syntax ermöglicht die schnelle Erstellung und Anpassung von Visualisierungen.
+### Anpassung des Diagramms:
+
+```python
+enhanced_chart = alt.Chart(df).mark_circle(size=60).encode(
+    x='Numbers',
+    y='Squares',
+    color='Numbers',
+    tooltip=['Numbers', 'Squares']
+).properties(
+    title='Quadratzahlen',
+    width=300,
+    height=200
+)
+
+enhanced_chart
+```
+
+Diese erweiterte Version fügt Farbe, Tooltips und Titel hinzu, um die Visualisierung informativer zu gestalten.
+
+Durch die Kombination dieser Grundlagen können komplexe Datenanalysen und Visualisierungen erstellt werden, die wesentlich für Data Science und KI-Anwendungen sind.
