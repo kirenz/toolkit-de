@@ -2,7 +2,7 @@ import os
 import re
 
 # Directories
-input_directory = 'erste-schritte'
+input_directory = 'github'
 output_directory = 'slides'
 if not os.path.exists(output_directory):
     os.makedirs(output_directory)
