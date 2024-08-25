@@ -1,0 +1,243 @@
+---
+title: Klassen und Objekte
+lang: de
+subtitle: Subtitle
+author: Jan Kirenz
+execute:
+  eval: false
+  echo: true
+highlight-style: github-dark
+format:
+  revealjs: 
+    toc: false
+    toc-depth: 1
+    embed-resources: false
+    theme: [default, /style/custom.scss]
+    incremental: true
+    transition: slide
+    background-transition: fade
+    transition-speed: slow
+    code-copy: true
+    code-line-numbers: true
+    smaller: false
+    scrollable: true
+    slide-number: c
+    preview-links: auto
+    css: /style/index.css
+    chalkboard: 
+      buttons: false
+    logo: images/logo.png
+    footer: Klassen und Objekte | Jan Kirenz
+jupyter: python3
+---
+
+
+[⬇️ Jupyter Notebook herunterladen](../code/python-klassen.ipynb){download="python-klassen.ipynb"}
+
+
+Die objektorientierte Programmierung (OOP) ist ein wichtiges Konzept in der Softwareentwicklung. Es hilft besonders dabei, große Codebasen für komplexe Data-Science-Projekte zu organisieren und zu verwalten. 
+
+In diesem Abschnitt lernen wir:
+
+- Wie man Klassen und Objekte erstellt
+- Wie man Methoden und Attribute hinzufügt
+- Wie man Vererbung verwendet, um die Funktionalität zu erweitern
+
+
+## Einführung 
+
+Eine **Klasse** ist wie ein Bauplan oder eine Vorlage. Stellen Sie sich eine Klasse wie die Blaupause eines Hauses vor. Eine Blaupause beschreibt, wie das Haus aussehen soll – welche Räume es hat, wie groß sie sind, und so weiter. In ähnlicher Weise beschreibt eine Klasse, welche Daten (Eigenschaften) und Funktionen (Methoden) ein bestimmtes Objekt haben wird.
+
+Ein **Objekt** ist eine konkrete Instanz einer Klasse. Wenn wir bei unserem Beispiel des Hauses bleiben, wäre ein Objekt ein tatsächliches Haus, das nach der Blaupause gebaut wurde. Jedes Haus, das nach derselben Blaupause gebaut wird, hat dieselben grundlegenden Eigenschaften, kann aber unterschiedliche Farben, Möbel oder Bewohner haben. In der Programmierung ist ein Objekt also ein spezifisches Exemplar einer Klasse mit eigenen, spezifischen Daten.
+
+Wozu sind Klassen und Objekte nützlich:
+
+- **Organisation**: Sie helfen, den Code in überschaubare, wiederverwendbare Teile zu zerlegen.
+- **Wiederverwendbarkeit**: Einmal definierte Klassen können überall im Programm verwendet werden, um konsistente Objekte zu erstellen.
+- **Erweiterbarkeit**: Neue Funktionen und Eigenschaften können leicht zu bestehenden Klassen hinzugefügt werden, ohne den gesamten Code neu schreiben zu müssen.
+- **Lesbarkeit**: Der Code wird klarer und einfacher zu verstehen, weil die Struktur und das Verhalten der Daten klar definiert sind.
+
+
+Betrachten wir eine einfache Klasse und ein Objekt, um das Konzept klarer zu machen:
+
+```{python}
+# Definiere eine einfache Klasse, die eine Person repräsentiert
+class Person:
+    """Eine Klasse, die eine Person mit Namen und Alter repräsentiert."""
+
+    def __init__(self, name, age):
+        """Initialisiere die Person mit Name und Alter."""
+        self.name = name
+        self.age = age
+
+    def greet(self):
+        """Gibt eine Begrüßung zurück."""
+        return f"Hallo, mein Name ist {self.name} und ich bin {self.age} Jahre alt."
+
+# Erstelle ein Objekt der Klasse Person
+person1 = Person("Alice", 30)
+
+# Verwende die Methode des Objekts
+print(person1.greet())
+```
+
+In diesem Beispiel:
+
+1. **Klasse `Person`**: Dies ist die Blaupause. Sie beschreibt, dass jede Person einen Namen und ein Alter hat und sich vorstellen kann.
+2. **Objekt `person1`**: Dies ist ein spezifisches Exemplar der Klasse `Person`. Es repräsentiert eine konkrete Person namens Alice, die 30 Jahre alt ist.
+3. **Docstring**: Die Kommentare in dreifachen Anführungszeichen direkt unter der Klassendefinition und den Methoden beschreiben, was die Klasse und die Methoden machen.
+4. **Methoden und Attribute**: Das Objekt `person1` verwendet die Methode `greet()`, um eine Begrüßung auszugeben, die auf den Attributen `name` und `age` basiert.
+
+
+
+## Erstellung einer Klasse
+
+In diesem Beispiel behandeln wir ausführlich die Definition einer Klasse `DataPoint`, die eine einzelne Beobachtung in einem Datensatz darstellt. 
+
+```{python}
+# Definiere eine einfache Klasse, die eine Datenbeobachtung repräsentiert
+class DataPoint:
+    """Eine Klasse, die eine Datenbeobachtung mit Merkmalen und Label repräsentiert."""
+
+    def __init__(self, features, label):
+        """Initialisiere den Datenpunkt mit Merkmalen und einem Label."""
+        self.features = features
+        self.label = label
+
+    def describe(self):
+        """Gibt einen formatierten String zurück, der den Datenpunkt beschreibt."""
+        return f"Merkmale: {self.features}, Label: {self.label}"
+
+# Erstelle eine Instanz (Objekt) der DataPoint-Klasse
+sample_point = DataPoint([0.25, 0.75, 0.5], 'Positiv')
+
+# Zeige die Beschreibung des Datenpunkts an
+print(sample_point.describe())
+```
+
+
+**Definition der Klasse `DataPoint`**:
+
+1. **Klassenkopf**: 
+   ```python
+   class DataPoint:
+   ```
+   Dies definiert eine neue Klasse namens `DataPoint`. 
+
+2. **Dokumentations-String**:
+   ```python
+   """Eine Klasse, die eine Datenbeobachtung mit Merkmalen und Label repräsentiert."""
+   ```
+   Dies ist eine kurze Beschreibung, was die Klasse macht. Es hilft anderen schnell zu verstehen, wofür diese Klasse gedacht ist.
+
+**Initialisierungsmethode `__init__`**
+
+3. **Konstruktor-Methode**:
+   ```python
+   def __init__(self, features, label):
+       """Initialisiere den Datenpunkt mit Merkmalen und einem Label."""
+       self.features = features
+       self.label = label
+   ```
+
+   Die `__init__`-Methode wird automatisch aufgerufen, wenn eine neue Instanz der Klasse erstellt wird. Sie initialisiert die Eigenschaften (Attribute) des Objekts. In diesem Fall nimmt sie zwei Argumente `features` und `label` und speichert sie in den Eigenschaften `self.features` und `self.label` des Objekts.
+
+   - `self`: Bezieht sich auf das aktuelle Objekt der Klasse und wird verwendet, um auf die Attribute und Methoden des Objekts zuzugreifen.
+   - `features`: Ein Satz von Merkmalen, die den Datenpunkt beschreiben.
+   - `label`: Ein Etikett, das dem Datenpunkt zugewiesen ist, z.B. 'Positiv' oder 'Negativ'.
+
+**Methode `describe`**
+
+4. **Beschreibungsmethode**:
+   ```python
+   def describe(self):
+       """Gibt einen formatierten String zurück, der den Datenpunkt beschreibt."""
+       return f"Merkmale: {self.features}, Label: {self.label}"
+   ```
+   Diese Methode gibt eine lesbare Beschreibung des Datenpunkts zurück, die die Merkmale und das Label des Datenpunkts enthält.
+
+**Erstellung einer Instanz und Nutzung der Methode**
+
+5. **Erstellung einer Instanz**:
+   ```python
+   sample_point = DataPoint([0.25, 0.75, 0.5], 'Positiv')
+   ```
+   Hier erstellen wir ein Objekt namens `sample_point` von der Klasse `DataPoint`. Die Merkmale werden als Liste `[0.25, 0.75, 0.5]` und das Label als `'Positiv'` übergeben.
+
+6. **Aufruf der Methode `describe`**:
+   ```python
+   print(sample_point.describe())
+   ```
+   Diese Zeile ruft die `describe`-Methode des `sample_point`-Objekts auf und druckt die zurückgegebene Beschreibung des Datenpunkts aus.
+
+
+In unserem Beispiel haben wir also eine `DataPoint`-Klasse erstellt, die Merkmale und ein Label enthält, und eine Methode, um diese Daten in einem lesbaren Format anzuzeigen.
+
+## Methoden und Attribute
+
+Das Hinzufügen weiterer Funktionalität zu einer Klasse macht sie vielseitiger. Lassen Sie uns unsere Klasse erweitern, um eine Sammlung von Datenpunkten zu verwalten:
+
+```{python}
+# Definiere eine Klasse zur Verwaltung eines Datensatzes
+class DataSet:
+    """Eine Klasse, die eine Sammlung von Datenpunkten repräsentiert."""
+
+    def __init__(self):
+        """Initialisiere die leere Sammlung von Datenpunkten."""
+        self.data_points = []
+
+    def add_data_point(self, data_point):
+        """Füge einen Datenpunkt zur Sammlung hinzu."""
+        self.data_points.append(data_point)
+
+    def display_data(self):
+        """Zeige alle Datenpunkte in der Sammlung an."""
+        for data_point in self.data_points:
+            print(data_point.describe())
+
+# Erstelle eine Instanz der DataSet-Klasse
+my_data_set = DataSet()
+
+# Füge mehrere DataPoint-Objekte zum Datensatz hinzu
+my_data_set.add_data_point(DataPoint([0.1, 0.2, 0.5], 'Negativ'))
+my_data_set.add_data_point(DataPoint([0.8, 0.4, 0.3], 'Positiv'))
+
+# Zeige alle Datenpunkte im Datensatz an
+my_data_set.display_data()
+```
+
+**Erklärung**:
+
+- Die `DataSet`-Klasse speichert mehrere `DataPoint`-Objekte.
+- Methoden wie `add_data_point` und `display_data` ermöglichen das Hinzufügen von Datenpunkten und das Anzeigen aller Punkte.
+
+## Vererbung
+
+Vererbung ermöglicht es uns, bestehende Klassen zu erweitern, um spezialisiertere Versionen zu erstellen, ohne den Code zu wiederholen. Beispielsweise definieren wir einen `TimeSeriesDataPoint`, der `DataPoint` erweitert, indem ein Zeitstempel hinzugefügt wird:
+
+```{python}
+# Definiere eine Klasse, die einen Zeitreihendatenpunkt repräsentiert
+class TimeSeriesDataPoint(DataPoint):
+    """Eine Klasse, die DataPoint um einen Zeitstempel für Zeitreihendaten erweitert."""
+
+    def __init__(self, features, label, timestamp):
+        """Initialisiere die Attribute des TimeSeriesDataPoint."""
+        super().__init__(features, label)
+        self.timestamp = timestamp
+
+    def describe(self):
+        """Gibt einen formatierten String zurück, der den Zeitreihendatenpunkt beschreibt."""
+        base_description = super().describe()
+        return f"{base_description}, Zeitstempel: {self.timestamp}"
+
+# Erstelle eine Instanz der TimeSeriesDataPoint-Klasse
+time_series_point = TimeSeriesDataPoint([0.9, 0.1, 0.2], 'Negativ', '2024-09-05T12:00:00')
+
+# Zeige die Beschreibung des Zeitreihendatenpunkts an
+print(time_series_point.describe())
+```
+
+**Erklärung**:
+
+- `TimeSeriesDataPoint` erbt von `DataPoint` und fügt ein `timestamp`-Attribut hinzu.
+- Die `describe`-Methode wird überschrieben, um die Zeitstempelinformationen einzuschließen.
