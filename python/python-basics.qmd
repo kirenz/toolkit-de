@@ -60,7 +60,7 @@ def example_function():
 
 Durch die Verwendung von Docstrings wird der Code nicht nur für Menschen lesbarer, sondern auch für automatisierte Tools zur Dokumentationserstellung zugänglicher. Dies ist besonders in größeren Projekten und bei der Entwicklung von Bibliotheken oder Frameworks von Vorteil.
 
-### Verwendung von Kommentaren und Docstrings
+Verwendung von Kommentaren und Docstrings:
 
 - Erklärung komplexer Codeabschnitte
 - Dokumentation von Funktionen, Klassen und Modulen (mittels Docstrings)
@@ -184,88 +184,71 @@ df
 Das Eingeben von `df` in eine Jupyter Notebook-Zelle zeigt den DataFrame in tabellarischer Form an.
 
 
-
 ## Methoden verstehen
 
 Eine Methode ist eine Funktion, die mit einem Objekt (wie einem DataFrame, einer Liste oder einem String) verknüpft ist und über die Punktnotation (`.`) aufgerufen wird. Dies erleichtert die Manipulation des Objekts und das Abrufen von Informationen.
 
-Beispielcode:
+Hier ein Beispiel der String-Methode `.upper()`, mit welcher Text in Großbuchstaben ausgegeben werden kann:
 
-`df.head()` ist eine Methode, welche die ersten Zeilen eines DataFrames anzeigt:
+```{python}
+# String-Methode
+text = "hello, world"
+print(text.upper())  # Ausgabe: HELLO, WORLD
+```
+
+Mit der Methode `.sort()` können Werte in einer Liste sortiert werden:
+
+```{python}
+# List-Methode
+numbers = [3, 1, 4, 1, 5, 9]
+numbers.sort()
+print(numbers)  # Ausgabe: [1, 1, 3, 4, 5, 9]
+```
+
+Die folgenden Beispiele sind DataFrame-Methoden des Pakets Pandas, die häufig in Datenprojekten zum Einsatz kommen. Beispielsweise ist `.head()` eine Methode, welche die ersten Zeilen eines DataFrames anzeigt:
 
 ```{python}
 df.head() 
 ```
 
 
-`df.describe()` liefert zusammenfassende Statistiken wie Mittelwert, Anzahl und Standardabweichung. Zusätzlich verwenden wir die Methode `.round(2)`, um die Werte auf zwei Dezimalstellen zu runden:
+Die Methode `.describe()` liefert zusammenfassende Statistiken wie Mittelwert, Anzahl und Standardabweichung. Zusätzlich verwenden wir hier die Methode `.round(2)`, um die Werte auf die zweite Dezimalstelle zu runden:
 
 ```{python}
 df.describe().round(2) 
 ```
 
-Allgemeines Methodenkonzept:
+
+Zuletzt noch ein Beispiel, wie der Mittlwert mit Hilfe der Methode `.mean()` berechnet werden kann. Wir erzeugen dafür ein neues Objekt mit der Bezeichnung `mean_value` und geben dieses dann mit einem f-String aus:
+
+```{python}
+mean_value = df['Numbers'].mean()
+
+print(f"Durchschnitt der Numbers: {mean_value}")
+```
+
+
+Hier nochmals eine Zusammenfassung der wichtigsten Punkte zu Methoden:
 
 - **Objekt:** Eine Entität, die Daten und Funktionalität enthält (z.B. DataFrame, Liste oder String).
 - **Methode:** Eine Funktion, die mit einem Objekt verknüpft ist.
 - **Punktnotation (`.`):** Wird verwendet, um eine Methode auf einem Objekt aufzurufen.
 
-
-
-
-
-
-### Nützliche DataFrame-Methoden:
-
-```python
-# Erste Zeilen anzeigen
-print(df.head())
-
-# Statistische Zusammenfassung
-print(df.describe().round(2))
-
-# Spezifische Spalte auswählen
-print(df['Numbers'])
-
-# Filtern von Daten
-print(df[df['Numbers'] > 3])
-```
-
-
-
-
-
-
-
-
-Methoden sind Funktionen, die zu einem bestimmten Objekt gehören und mit der Punktnotation aufgerufen werden.
-
-```python
-# String-Methode
-text = "hello, world"
-print(text.upper())  # Ausgabe: HELLO, WORLD
-
-# List-Methode
-numbers = [3, 1, 4, 1, 5, 9]
-numbers.sort()
-print(numbers)  # Ausgabe: [1, 1, 3, 4, 5, 9]
-
-# DataFrame-Methode
-mean_value = df['Numbers'].mean()
-print(f"Durchschnitt der Numbers: {mean_value}")
-```
-
-### Vorteile von Methoden:
+Vorteile von Methoden:
 
 - Organisieren Funktionalität in logischen Gruppen
 - Ermöglichen objektorientierte Programmierung
 - Verbessern die Lesbarkeit und Wartbarkeit des Codes
 
+
 ## Daten mit Altair visualisieren
 
-Altair ist eine deklarative Visualisierungsbibliothek, die auf Vega und Vega-Lite basiert. Sie ermöglicht die einfache Erstellung interaktiver und ansprechender Diagramme.
+Nachdem wir die Struktur eines DataFrames verstanden haben, können wir die Daten mit Hilfe von Altair visualisieren.
 
-```python
+Altair ist ein Visualisierungspaket, das auf Vega und Vega-Lite basiert. Es ermöglicht die einfache Erstellung interaktiver und ansprechender Diagramme.
+
+
+```{python}
 # Einfaches Streudiagramm erstellen
 chart = alt.Chart(df).mark_point().encode(
     x='Numbers',
@@ -276,29 +259,13 @@ chart = alt.Chart(df).mark_point().encode(
 chart
 ```
 
-### Komponenten des Altair-Diagramms:
+Komponenten des Altair-Diagramms:
 
-- **Chart**: Grundlegendes Objekt für die Visualisierung
-- **mark_point()**: Legt den Diagrammtyp fest (hier: Streudiagramm)
-- **encode()**: Ordnet Daten den visuellen Eigenschaften zu
+- **`alt.Chart(df)`**: Erstellt ein neues Diagrammobjekt aus dem DataFrame `df`.
+- **`mark_point()`**: Gibt den Diagrammtyp an (in diesem Fall ein Streudiagramm).
+- **`encode`**: Ordnet DataFrame-Spalten Diagrammattributen zu.
+  - **`x='Numbers'`**: Legt die horizontale Achse auf die Spalte `Numbers` fest.
+  - **`y='Squares'`**: Legt die vertikale Achse auf die Spalte `Squares` fest.
 
-### Anpassung des Diagramms:
 
-```python
-enhanced_chart = alt.Chart(df).mark_circle(size=60).encode(
-    x='Numbers',
-    y='Squares',
-    color='Numbers',
-    tooltip=['Numbers', 'Squares']
-).properties(
-    title='Quadratzahlen',
-    width=300,
-    height=200
-)
-
-enhanced_chart
-```
-
-Diese erweiterte Version fügt Farbe, Tooltips und Titel hinzu, um die Visualisierung informativer zu gestalten.
-
-Durch die Kombination dieser Grundlagen können komplexe Datenanalysen und Visualisierungen erstellt werden, die wesentlich für Data Science und KI-Anwendungen sind.
+Diese prägnante Syntax ermöglicht die schnelle Erstellung und Anpassung von Visualisierungen.
