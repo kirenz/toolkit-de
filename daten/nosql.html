@@ -317,7 +317,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-  <li><a href="#nosql-datenmodelle" id="toc-nosql-datenmodelle" class="nav-link active" data-scroll-target="#nosql-datenmodelle"><span class="header-section-number">17.1</span> NoSQL-Datenmodelle</a></li>
+  <li><a href="#nosql-datenmodelle" id="toc-nosql-datenmodelle" class="nav-link active" data-scroll-target="#nosql-datenmodelle"><span class="header-section-number">17.1</span> NoSQL-Datenmodelle</a>
+  <ul class="collapse">
+  <li><a href="#dokumentenorientierte-datenbanken" id="toc-dokumentenorientierte-datenbanken" class="nav-link" data-scroll-target="#dokumentenorientierte-datenbanken"><span class="header-section-number">17.1.1</span> Dokumentenorientierte Datenbanken</a></li>
+  <li><a href="#schlüssel-wert-datenbanken" id="toc-schlüssel-wert-datenbanken" class="nav-link" data-scroll-target="#schlüssel-wert-datenbanken"><span class="header-section-number">17.1.2</span> Schlüssel-Wert-Datenbanken</a></li>
+  <li><a href="#spaltenorientierte-datenbanken" id="toc-spaltenorientierte-datenbanken" class="nav-link" data-scroll-target="#spaltenorientierte-datenbanken"><span class="header-section-number">17.1.3</span> Spaltenorientierte Datenbanken</a></li>
+  <li><a href="#graph-datenbanken" id="toc-graph-datenbanken" class="nav-link" data-scroll-target="#graph-datenbanken"><span class="header-section-number">17.1.4</span> Graph-Datenbanken</a></li>
+  <li><a href="#übersicht-der-nosql-datenmodelle" id="toc-übersicht-der-nosql-datenmodelle" class="nav-link" data-scroll-target="#übersicht-der-nosql-datenmodelle"><span class="header-section-number">17.1.5</span> Übersicht der NoSQL-Datenmodelle</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -343,37 +350,69 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>NoSQL steht für “Not only SQL” und bezeichnet eine Klasse von Datenbanksystemen, die sich von traditionellen, relationalen Datenbanken unterscheiden. Sie wurden entwickelt, um die Skalierbarkeit und Leistung zu verbessern und um flexibler mit den Daten umgehen zu können.</p>
-<p>Anstatt Tabellen zu verbinden, speichern NoSQL-Datenbanken unstrukturierte oder halbstrukturierte Daten, oft in Schlüssel-Wert-Paaren oder JSON-Dokumenten. NoSQL-Datenbanken umfassen mehrere verschiedene Modelle zum Zugriff und zur Verwaltung von Daten, die jeweils für spezifische Anwendungsfälle geeignet sind. Hier sind einige Hauptmerkmale und -modelle von NoSQL-Datenbanken:</p>
+<p>NoSQL steht für “Not only SQL” und bezeichnet eine Klasse von Datenbanksystemen, die sich von traditionellen, relationalen Datenbanken unterscheiden. Diese Systeme wurden entwickelt, um die Skalierbarkeit und Leistung zu verbessern sowie flexibler mit Daten umzugehen.</p>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hauptmerkmale von NoSQL-Datenbanken
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
-<li><p>Schemaflexibilität: Im Gegensatz zu relationalen Datenbanken, bei denen das Schema festgelegt ist, bieten NoSQL-Datenbanken die Möglichkeit, Daten ohne vordefiniertes Schema zu speichern. Dies ermöglicht eine schnelle Anpassung an sich ändernde Datenanforderungen.</p></li>
-<li><p>Horizontale Skalierbarkeit NoSQL-Datenbanken sind darauf ausgelegt, große Datenmengen auf vielen Servern zu verteilen. Sie unterstützen eine horizontale Skalierung, was bedeutet, dass sie durch Hinzufügen weiterer Server in ein Netzwerk skalierbar sind.</p></li>
-<li><p>Hohe Verfügbarkeit und Fehlertoleranz: NoSQL-Datenbanken sind so konzipiert, dass sie auch bei Ausfällen einzelner Knoten im Netzwerk weiterhin verfügbar sind.</p></li>
+<li><p><strong>Schemaflexibilität</strong>: NoSQL-Datenbanken ermöglichen die Speicherung von Daten ohne vordefiniertes Schema, was eine schnelle Anpassung an sich ändernde Datenanforderungen erlaubt.</p></li>
+<li><p><strong>Horizontale Skalierbarkeit</strong>: Diese Datenbanken sind darauf ausgelegt, große Datenmengen auf vielen Servern zu verteilen. Sie unterstützen eine horizontale Skalierung durch Hinzufügen weiterer Server in ein Netzwerk.</p></li>
+<li><p><strong>Hohe Verfügbarkeit und Fehlertoleranz</strong>: NoSQL-Datenbanken sind so konzipiert, dass sie auch bei Ausfällen einzelner Knoten im Netzwerk weiterhin verfügbar bleiben.</p></li>
 </ul>
-<p>NoSQL-Datenbanken werden häufig in folgenden Bereichen eingesetzt:</p>
-<ul>
+</div>
+</div>
+<p>Anstatt Tabellen zu verbinden, speichern NoSQL-Datenbanken unstrukturierte oder halbstrukturierte Daten, oft in Schlüssel-Wert-Paaren oder JSON-Dokumenten. Sie umfassen mehrere verschiedene Modelle zum Zugriff und zur Verwaltung von Daten, die jeweils für spezifische Anwendungsfälle geeignet sind.</p>
+<p>NoSQL-Datenbanken finden in verschiedenen Bereichen Anwendung:</p>
+<ol type="1">
 <li>E-Commerce: Verwaltung von Produktkatalogen, Benutzerprofilen und Warenkörben.</li>
 <li>Big Data: Verarbeitung und Analyse großer Datenmengen in Echtzeit.</li>
 <li>Content Management: Speicherung und Verwaltung von Inhalten wie Dokumenten, Bildern und Videos.</li>
 <li>Social Media: Verwaltung von Benutzerprofilen, Beziehungen und Aktivitäten in sozialen Netzwerken.</li>
 <li>IoT (Internet of Things): Speicherung und Analyse großer Mengen an Sensordaten.</li>
-</ul>
+</ol>
 <section id="nosql-datenmodelle" class="level2" data-number="17.1">
 <h2 data-number="17.1" class="anchored" data-anchor-id="nosql-datenmodelle"><span class="header-section-number">17.1</span> NoSQL-Datenmodelle</h2>
 <p>NoSQL-Datenbanken bieten eine Vielzahl von Möglichkeiten, um verschiedene Arten von Daten effizient zu speichern und abzurufen. Sie sind besonders nützlich in Szenarien, in denen traditionelle relationale Datenbanken an ihre Grenzen stoßen.</p>
-<p><em>Dokumentenorientierte Datenbanken</em> speichern Daten in Form von Dokumenten, die meist auf JSON (JavaScript Object Notation) basieren. Diese Dokumente enthalten nicht nur die Daten, sondern auch die Struktur der Daten, was eine große Flexibilität bietet. Dokumentenorientierte Datenbanken sind ideal für Anwendungen, die mit unterschiedlichen und sich ändernden Datenstrukturen arbeiten müssen.</p>
-<p>Beispiele: MongoDB, CouchDB</p>
+<section id="dokumentenorientierte-datenbanken" class="level3" data-number="17.1.1">
+<h3 data-number="17.1.1" class="anchored" data-anchor-id="dokumentenorientierte-datenbanken"><span class="header-section-number">17.1.1</span> Dokumentenorientierte Datenbanken</h3>
+<p>Dokumentenorientierte Datenbanken speichern Daten in Form von Dokumenten, die meist auf JSON (JavaScript Object Notation) basieren. Diese Dokumente enthalten nicht nur die Daten, sondern auch die Struktur der Daten, was eine große Flexibilität bietet. Sie sind ideal für Anwendungen, die mit unterschiedlichen und sich ändernden Datenstrukturen arbeiten müssen.</p>
+<p><strong>Beispiele:</strong> MongoDB, CouchDB</p>
+</section>
+<section id="schlüssel-wert-datenbanken" class="level3" data-number="17.1.2">
+<h3 data-number="17.1.2" class="anchored" data-anchor-id="schlüssel-wert-datenbanken"><span class="header-section-number">17.1.2</span> Schlüssel-Wert-Datenbanken</h3>
+<p>Schlüssel-Wert-Datenbanken speichern Daten als eine Sammlung von Schlüssel-Wert-Paaren. Jede Datenstruktur besteht aus einem eindeutigen Schlüssel und einem Wert, der jede Art von Daten enthalten kann. Diese Datenbanken sind besonders effizient für einfache Abfragen und schnelle Datenzugriffe.</p>
+<p><strong>Beispiel:</strong> Redis</p>
+</section>
+<section id="spaltenorientierte-datenbanken" class="level3" data-number="17.1.3">
+<h3 data-number="17.1.3" class="anchored" data-anchor-id="spaltenorientierte-datenbanken"><span class="header-section-number">17.1.3</span> Spaltenorientierte Datenbanken</h3>
+<p>Spaltenorientierte Datenbanken speichern Daten in Tabellen, aber im Gegensatz zu relationalen Datenbanken sind die Daten in Spalten anstatt in Reihen organisiert. Dies ermöglicht eine effiziente Speicherung und Abfrage von großen Datenmengen, insbesondere bei analytischen Anwendungen, die nur auf bestimmte Spalten zugreifen müssen.</p>
+<p><strong>Beispiele:</strong> HBase, Cassandra</p>
+</section>
+<section id="graph-datenbanken" class="level3" data-number="17.1.4">
+<h3 data-number="17.1.4" class="anchored" data-anchor-id="graph-datenbanken"><span class="header-section-number">17.1.4</span> Graph-Datenbanken</h3>
+<p>Graph-Datenbanken speichern Daten in Form von Graphen, bei denen Knoten die Datenobjekte und Kanten die Beziehungen zwischen diesen Objekten darstellen. Dies ermöglicht komplexe Abfragen von Beziehungen und ist ideal für Anwendungen wie soziale Netzwerke, Empfehlungssysteme und andere Szenarien, bei denen Beziehungen zwischen Datenpunkten im Vordergrund stehen.</p>
+<p><strong>Beispiel:</strong> Neo4j</p>
+</section>
+<section id="übersicht-der-nosql-datenmodelle" class="level3" data-number="17.1.5">
+<h3 data-number="17.1.5" class="anchored" data-anchor-id="übersicht-der-nosql-datenmodelle"><span class="header-section-number">17.1.5</span> Übersicht der NoSQL-Datenmodelle</h3>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 16%">
-<col style="width: 66%">
 <col style="width: 17%">
+<col style="width: 31%">
+<col style="width: 51%">
 </colgroup>
 <thead>
 <tr class="header">
 <th>Modell</th>
 <th>Eigenschaften</th>
-<th>Open Source</th>
+<th>Open Source Beispiele</th>
 </tr>
 </thead>
 <tbody>
@@ -382,79 +421,27 @@ ul.task-list li input[type="checkbox"] {
 <td>Daten und Metadaten werden hierarchisch in JSON-basierten Dokumenten innerhalb der Datenbank gespeichert.</td>
 <td>MongoDB, CouchDB</td>
 </tr>
-</tbody>
-</table>
-<p><em>Schlüssel-Wert-Datenbanken</em> speichern Daten als eine Sammlung von Schlüssel-Wert-Paaren. Jede Datenstruktur besteht aus einem eindeutigen Schlüssel und einem Wert, der jede Art von Daten enthalten kann. Diese Datenbanken sind besonders effizient für einfache Abfragen und schnelle Datenzugriffe.</p>
-<p>Beispiele: Redis</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 16%">
-<col style="width: 66%">
-<col style="width: 17%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Modell</th>
-<th>Eigenschaften</th>
-<th>Open Source</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
+<tr class="even">
 <td>Schlüssel-Wert-Speicher</td>
 <td>Die einfachsten NoSQL-Datenbanken, Daten werden als eine Sammlung von Schlüssel-Wert-Paaren dargestellt.</td>
 <td>Redis</td>
 </tr>
-</tbody>
-</table>
-<p><em>Spaltenorientierte Datenbanken</em> speichern Daten in Tabellen, aber im Gegensatz zu relationalen Datenbanken sind die Daten in Spalten anstatt in Reihen organisiert. Dies ermöglicht eine effiziente Speicherung und Abfrage von großen Datenmengen, insbesondere bei analytischen Anwendungen, die nur auf bestimmte Spalten zugreifen müssen.</p>
-<p>Beispiele: HBase, Cassandra</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 16%">
-<col style="width: 66%">
-<col style="width: 17%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Modell</th>
-<th>Eigenschaften</th>
-<th>Open Source</th>
-</tr>
-</thead>
-<tbody>
 <tr class="odd">
 <td>Spaltenorientierter Speicher</td>
 <td>Verwandte Daten werden als eine Reihe von verschachtelten Schlüssel/Wert-Paaren innerhalb einer einzigen Spalte gespeichert.</td>
 <td>HBase, Cassandra</td>
 </tr>
-</tbody>
-</table>
-<p><em>Graph-Datenbanken</em> speichern Daten in Form von Graphen, bei denen Knoten die Datenobjekte und Kanten die Beziehungen zwischen diesen Objekten darstellen. Dies ermöglicht komplexe Abfragen von Beziehungen und ist ideal für Anwendungen wie soziale Netzwerke, Empfehlungssysteme und andere Szenarien, bei denen Beziehungen zwischen Datenpunkten im Vordergrund stehen.</p>
-<p>Beispiele: Neo4j</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 16%">
-<col style="width: 66%">
-<col style="width: 17%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Modell</th>
-<th>Eigenschaften</th>
-<th>Open Source</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
+<tr class="even">
 <td>Graph-Speicher</td>
 <td>Daten werden in einer Graphstruktur als Knoten, Kanten und Dateneigenschaften gespeichert.</td>
 <td>Neo4j</td>
 </tr>
 </tbody>
 </table>
+<p>Diese verschiedenen NoSQL-Datenmodelle bieten Flexibilität und Effizienz für unterschiedliche Anwendungsfälle und Datenstrukturen. Die Wahl des geeigneten Modells hängt von den spezifischen Anforderungen des jeweiligen Projekts ab.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

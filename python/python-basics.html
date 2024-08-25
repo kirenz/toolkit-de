@@ -355,9 +355,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#bibliotheken-importieren" id="toc-bibliotheken-importieren" class="nav-link active" data-scroll-target="#bibliotheken-importieren"><span class="header-section-number">9.1</span> Bibliotheken importieren</a></li>
-  <li><a href="#kommentare-einfügen" id="toc-kommentare-einfügen" class="nav-link" data-scroll-target="#kommentare-einfügen"><span class="header-section-number">9.2</span> Kommentare einfügen</a></li>
+  <li><a href="#kommentare-einfügen" id="toc-kommentare-einfügen" class="nav-link" data-scroll-target="#kommentare-einfügen"><span class="header-section-number">9.2</span> Kommentare einfügen</a>
+  <ul class="collapse">
+  <li><a href="#einzeilige-kommentare" id="toc-einzeilige-kommentare" class="nav-link" data-scroll-target="#einzeilige-kommentare"><span class="header-section-number">9.2.1</span> Einzeilige Kommentare</a></li>
+  <li><a href="#mehrzeilige-kommentare-und-docstrings" id="toc-mehrzeilige-kommentare-und-docstrings" class="nav-link" data-scroll-target="#mehrzeilige-kommentare-und-docstrings"><span class="header-section-number">9.2.2</span> Mehrzeilige Kommentare und Docstrings</a></li>
+  </ul></li>
   <li><a href="#variablen-und-datentypen" id="toc-variablen-und-datentypen" class="nav-link" data-scroll-target="#variablen-und-datentypen"><span class="header-section-number">9.3</span> Variablen und Datentypen</a></li>
-  <li><a href="#operatoren-und-berechnungen" id="toc-operatoren-und-berechnungen" class="nav-link" data-scroll-target="#operatoren-und-berechnungen"><span class="header-section-number">9.4</span> Operatoren und Berechnungen</a></li>
+  <li><a href="#operatoren-und-berechnungen" id="toc-operatoren-und-berechnungen" class="nav-link" data-scroll-target="#operatoren-und-berechnungen"><span class="header-section-number">9.4</span> Operatoren und Berechnungen</a>
+  <ul class="collapse">
+  <li><a href="#arithmetische-operationen" id="toc-arithmetische-operationen" class="nav-link" data-scroll-target="#arithmetische-operationen"><span class="header-section-number">9.4.1</span> Arithmetische Operationen</a></li>
+  <li><a href="#vergleichsoperationen" id="toc-vergleichsoperationen" class="nav-link" data-scroll-target="#vergleichsoperationen"><span class="header-section-number">9.4.2</span> Vergleichsoperationen</a></li>
+  <li><a href="#logische-operationen" id="toc-logische-operationen" class="nav-link" data-scroll-target="#logische-operationen"><span class="header-section-number">9.4.3</span> Logische Operationen</a></li>
+  <li><a href="#arten-von-operatoren" id="toc-arten-von-operatoren" class="nav-link" data-scroll-target="#arten-von-operatoren"><span class="header-section-number">9.4.4</span> Arten von Operatoren:</a></li>
+  </ul></li>
   <li><a href="#arbeiten-mit-dataframes" id="toc-arbeiten-mit-dataframes" class="nav-link" data-scroll-target="#arbeiten-mit-dataframes"><span class="header-section-number">9.5</span> Arbeiten mit DataFrames</a></li>
   <li><a href="#methoden-verstehen" id="toc-methoden-verstehen" class="nav-link" data-scroll-target="#methoden-verstehen"><span class="header-section-number">9.6</span> Methoden verstehen</a></li>
   <li><a href="#daten-mit-altair-visualisieren" id="toc-daten-mit-altair-visualisieren" class="nav-link" data-scroll-target="#daten-mit-altair-visualisieren"><span class="header-section-number">9.7</span> Daten mit Altair visualisieren</a></li>
@@ -386,50 +396,92 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Sie haben die Möglichkeit, den gesamten Inhalt dieses Kapitels als Notebook herunterzuladen. Nach dem Herunterladen können Sie es in Ihrem <code>code</code> Ordner speichern und das Notebook in Jupyter öffnen:</p>
-<p><a href="../code/python-basics.ipynb" download="python-basics.ipynb">⬇️ Juypter Notebook herunterladen</a></p>
+<p>Dieses Kapitel bietet eine Einführung in die grundlegenden Konzepte von Python, die für Data Science und KI essentiell sind. Für eine praktische Lernerfahrung kann das gesamte Kapitel als Jupyter Notebook heruntergeladen werden:</p>
+<p><a href="../code/python-basics.ipynb" download="python-basics.ipynb">⬇️ Jupyter Notebook herunterladen</a></p>
+<p>Nach dem Herunterladen kann das Notebook im <code>code</code> Ordner gespeichert und in Jupyter Notebook geöffnet werden.</p>
 <section id="bibliotheken-importieren" class="level2" data-number="9.1">
 <h2 data-number="9.1" class="anchored" data-anchor-id="bibliotheken-importieren"><span class="header-section-number">9.1</span> Bibliotheken importieren</h2>
-<p>Das Importieren von Bibliotheken ist unerlässlich, um zusätzliche Python-Funktionen nutzen zu können. Wir importieren sie am Anfang der Datei, um Übersichtlichkeit und Effizienz zu gewährleisten. Ein Alias (ein kurzer Name) erleichtert die Referenzierung im gesamten Code.</p>
-<p>Fügen Sie den folgenden Code in eine neue Codezelle direkt unter Ihrem Titel ein und führen Sie ihn aus:</p>
-<div id="79291897" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Bibliotheken importieren (am Anfang)</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> altair <span class="im">as</span> alt</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>In Python erweitern Pakete und Bibliotheken die Funktionalität der Sprache. Sie werden am Anfang des Skripts importiert, um den Code übersichtlich und effizient zu gestalten. Oft werden Aliase (Kurzformen) verwendet, um die Bibliotheken im Code einfacher anzusprechen.</p>
+<p>Folgender Code importiert wichtige Data Science-Bibliotheken:</p>
+<div id="7db8f461" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Bibliotheken importieren</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np      <span class="co"># Für numerische Operationen</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd     <span class="co"># Für Datenmanipulation und -analyse</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> altair <span class="im">as</span> alt    <span class="co"># Für Datenvisualisierung</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<p>Erklärung der importierten Bibliotheken:</p>
+<ul>
+<li><strong>NumPy (np)</strong>: Stellt Funktionen für komplexe mathematische Operationen bereit.</li>
+<li><strong>Pandas (pd)</strong>: Ermöglicht die effiziente Handhabung und Analyse von strukturierten Daten wie Tabellen.</li>
+<li><strong>Altair (alt)</strong>: Bietet eine intuitive Möglichkeit zur Erstellung von interaktiven Visualisierungen.</li>
+</ul>
 </section>
 <section id="kommentare-einfügen" class="level2" data-number="9.2">
 <h2 data-number="9.2" class="anchored" data-anchor-id="kommentare-einfügen"><span class="header-section-number">9.2</span> Kommentare einfügen</h2>
-<p>In Python kann man Kommentare im Code schreiben, indem man das Zeichen <code>#</code> verwendet. Alles, was nach diesem Zeichen auf derselben Zeile steht, wird vom Python-Interpreter ignoriert. Kommentare sind nützlich, um den Code zu dokumentieren, Erklärungen hinzuzufügen oder vorübergehend Teile des Codes zu deaktivieren.</p>
+<p>Kommentare sind ein wichtiges Werkzeug zur Dokumentation des Codes. Sie helfen, den Code verständlicher zu machen und erleichtern die Zusammenarbeit mit anderen Entwicklerinnen und Entwicklern. In Python gibt es verschiedene Möglichkeiten, Kommentare zu schreiben.</p>
+<section id="einzeilige-kommentare" class="level3" data-number="9.2.1">
+<h3 data-number="9.2.1" class="anchored" data-anchor-id="einzeilige-kommentare"><span class="header-section-number">9.2.1</span> Einzeilige Kommentare</h3>
+<p>Einzeilige Kommentare beginnen mit dem <code>#</code>-Zeichen:</p>
+<div id="834975f8" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Dies ist ein einzeiliger Kommentar</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">5</span>  <span class="co"># Kommentare können auch am Ende einer Codezeile stehen</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="mehrzeilige-kommentare-und-docstrings" class="level3" data-number="9.2.2">
+<h3 data-number="9.2.2" class="anchored" data-anchor-id="mehrzeilige-kommentare-und-docstrings"><span class="header-section-number">9.2.2</span> Mehrzeilige Kommentare und Docstrings</h3>
+<p>Für mehrzeilige Kommentare werden oft dreifache Anführungszeichen verwendet. Diese Art von Kommentar wird auch als “Docstring” bezeichnet, wenn sie direkt nach der Definition einer Funktion, Klasse oder Modul steht:</p>
+<div id="be4ad921" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">"""</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co">Dies ist ein </span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co">mehrzeiliger </span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co">Kommentar</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co">"""</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> example_function():</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co">    Dies ist ein Docstring für eine Funktion.</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co">    Er beschreibt, was die Funktion tut, welche Parameter sie akzeptiert</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="co">    und was sie zurückgibt.</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">pass</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Durch die Verwendung von Docstrings wird der Code nicht nur für Menschen lesbarer, sondern auch für automatisierte Tools zur Dokumentationserstellung zugänglicher. Dies ist besonders in größeren Projekten und bei der Entwicklung von Bibliotheken oder Frameworks von Vorteil.</p>
+<p>Verwendung von Kommentaren und Docstrings:</p>
+<ul>
+<li>Erklärung komplexer Codeabschnitte</li>
+<li>Dokumentation von Funktionen, Klassen und Modulen (mittels Docstrings)</li>
+<li>Temporäre Deaktivierung von Code (auch als “auskommentieren” bekannt)</li>
+<li>Hinzufügen von TODO-Notizen für zukünftige Änderungen</li>
+</ul>
+</section>
 </section>
 <section id="variablen-und-datentypen" class="level2" data-number="9.3">
 <h2 data-number="9.3" class="anchored" data-anchor-id="variablen-und-datentypen"><span class="header-section-number">9.3</span> Variablen und Datentypen</h2>
-<p>Variablen werden verwendet, um verschiedene Arten von Daten in Python zu speichern. Datentypen definieren die Natur dieser Daten und beeinflussen, wie sie verwendet werden können.</p>
-<p>Fügen Sie eine neue Codezelle hinzu, kopieren Sie dann den unten angegebenen Code in diese Zelle und führen Sie die Zelle anschließend aus.</p>
-<p>Beispielcode:</p>
-<div id="2f2339f6" class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Variablen zuweisen (mit beschreibenden Namen)</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="st">"Alice"</span>  <span class="co"># String für den Namen einer Person</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>age <span class="op">=</span> <span class="dv">30</span>  <span class="co"># Integer für das Alter</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>height <span class="op">=</span> <span class="fl">5.5</span>  <span class="co"># Float für die Größe in Fuß</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>numbers <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]  <span class="co"># Liste von ganzen Zahlen</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>person <span class="op">=</span> {<span class="st">"name"</span>: <span class="st">"Alice"</span>, <span class="st">"age"</span>: <span class="dv">30</span>}  <span class="co"># Wörterbuch für Personendaten</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Variablen speichern Informationen im Arbeitsspeicher. Python ist eine dynamisch typisierte Sprache, was bedeutet, dass der Datentyp einer Variable automatisch erkannt wird.</p>
+<div id="d872497c" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Verschiedene Datentypen in Variablen speichern</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="st">"Alice"</span>                      <span class="co"># String (Zeichenkette)</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>age <span class="op">=</span> <span class="dv">30</span>                            <span class="co"># Integer (Ganzzahl)</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>height <span class="op">=</span> <span class="fl">5.5</span>                        <span class="co"># Float (Gleitkommazahl)</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>is_student <span class="op">=</span> <span class="va">True</span>                   <span class="co"># Boolean (Wahrheitswert)</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>numbers <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]                 <span class="co"># List (Liste)</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>person <span class="op">=</span> {<span class="st">"name"</span>: <span class="st">"Alice"</span>, <span class="st">"age"</span>: <span class="dv">30</span>} <span class="co"># Dictionary (Wörterbuch)</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>Erklärung:</p>
+<p>Erklärung der Datentypen:</p>
 <ul>
-<li><code>name</code> ist ein <strong>String</strong>, der eine Zeichenfolge speichert, die einen Namen darstellt.</li>
-<li><code>age</code> ist eine <strong>Integer</strong>-Variable, die eine ganze Zahl darstellt.</li>
-<li><code>height</code> ist ein <strong>Float</strong>, der eine Zahl mit einem Dezimalpunkt darstellt.</li>
-<li><code>numbers</code> ist eine <strong>Liste</strong>, die eine geordnete Sammlung von Elementen darstellt.</li>
-<li><code>person</code> ist ein <strong>Dictionary (Wörterbuch)</strong>, das aus Schlüssel-Wert-Paaren besteht und mehrere Attribute speichern kann.</li>
+<li><strong>String</strong>: Textdaten, in Anführungszeichen gesetzt</li>
+<li><strong>Integer</strong>: Ganze Zahlen ohne Dezimalstellen</li>
+<li><strong>Float</strong>: Zahlen mit Dezimalstellen</li>
+<li><strong>Boolean</strong>: Logische Werte (True oder False)</li>
+<li><strong>List</strong>: Geordnete Sammlung von Elementen, veränderbar</li>
+<li><strong>Dictionary</strong>: Sammlung von Schlüssel-Wert-Paaren</li>
 </ul>
-<p>Um die in diesen Variablen gespeicherten Werte zu überprüfen, können Sie die <code>print</code>-Funktion verwenden:</p>
-<div id="2e379a6b" class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(name)  <span class="co"># Ausgabe: Alice</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(age)  <span class="co"># Ausgabe: 30</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(numbers)  <span class="co"># Ausgabe: [1, 2, 3]</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(person)  <span class="co"># Ausgabe: {'name': 'Alice', 'age': 30}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Um den Inhalt von Variablen anzuzeigen, wird die <code>print()</code>-Funktion verwendet:</p>
+<div id="e9f8bd88" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(name)        <span class="co"># Ausgabe: Alice</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(age)         <span class="co"># Ausgabe: 30</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(numbers)     <span class="co"># Ausgabe: [1, 2, 3]</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(person)      <span class="co"># Ausgabe: {'name': 'Alice', 'age': 30}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Alice
 30
@@ -440,77 +492,85 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="operatoren-und-berechnungen" class="level2" data-number="9.4">
 <h2 data-number="9.4" class="anchored" data-anchor-id="operatoren-und-berechnungen"><span class="header-section-number">9.4</span> Operatoren und Berechnungen</h2>
-<p>Operatoren ermöglichen Berechnungen, Vergleiche und logische Operationen.</p>
-<p>Beispielcode:</p>
-<div id="20ddb384" class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Variablen erzeugen</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>length <span class="op">=</span> <span class="dv">10</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>width <span class="op">=</span> <span class="dv">5</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Operatoren ermöglichen mathematische und logische Operationen in Python.</p>
+<section id="arithmetische-operationen" class="level3" data-number="9.4.1">
+<h3 data-number="9.4.1" class="anchored" data-anchor-id="arithmetische-operationen"><span class="header-section-number">9.4.1</span> Arithmetische Operationen</h3>
+<div id="22cdf968" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Arithmetische Operationen</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>length <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>width <span class="op">=</span> <span class="dv">5</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Berechnung der Fläche und des Umfangs:</p>
-<div id="3c5bc275" class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>area <span class="op">=</span> length <span class="op">*</span> width  <span class="co"># Multiplikation</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>perimeter <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> (length <span class="op">+</span> width)  <span class="co"># Addition und Multiplikation</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Umfang anzeigen</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>perimeter</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="5">
+<div id="082b22b1" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>area <span class="op">=</span> length <span class="op">*</span> width           <span class="co"># Multiplikation</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>perimeter <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> (length <span class="op">+</span> width) <span class="co"># Addition und Multiplikation</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(perimeter) <span class="co"># Ausgabe der Variable</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
 <pre><code>30</code></pre>
 </div>
 </div>
-<ul>
-<li><code>length</code> und <code>width</code> werden multipliziert, um die <code>area</code> zu berechnen.</li>
-<li><code>perimeter</code> wird berechnet, indem <code>length</code> und <code>width</code> addiert und dann mit 2 multipliziert werden.</li>
-</ul>
-<p>Vergleichsoperationen:</p>
-<div id="77f37a0e" class="cell" data-execution_count="6">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>is_square <span class="op">=</span> length <span class="op">==</span> width  <span class="co"># Überprüfen, ob Länge und Breite gleich sind</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>is_square</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="6">
-<pre><code>False</code></pre>
-</div>
-</div>
-<ul>
-<li><code>is_square</code> überprüft, ob die beiden Seiten gleich lang sind.</li>
-</ul>
-<p>Logische Operationen:</p>
-<div id="f5e18938" class="cell" data-execution_count="7">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>is_large_rectangle <span class="op">=</span> (area <span class="op">&gt;</span> <span class="dv">20</span>) <span class="kw">and</span> (perimeter <span class="op">&gt;</span> <span class="dv">10</span>)  <span class="co"># Logisches UND</span></span>
+</section>
+<section id="vergleichsoperationen" class="level3" data-number="9.4.2">
+<h3 data-number="9.4.2" class="anchored" data-anchor-id="vergleichsoperationen"><span class="header-section-number">9.4.2</span> Vergleichsoperationen</h3>
+<div id="1c7541ab" class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>is_square <span class="op">=</span> length <span class="op">==</span> width     <span class="co"># Gleichheit überprüfen</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>is_large_rectangle</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="7">
-<pre><code>True</code></pre>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Ist es ein Quadrat? </span><span class="sc">{</span>is_square<span class="sc">}</span><span class="ss">"</span>)  <span class="co"># Ausgabe: Ist es ein Quadrat? False</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Ist es ein Quadrat? False</code></pre>
 </div>
 </div>
+<p><code>is_square</code> überprüft, ob die beiden Seiten gleich lang sind.</p>
+<p>Wir nutzen in dem <code>print()</code>-Befehl einen sogenannten f-string (formatted string literal), mit dem wir Text und Python-Objekte kombiniert ausgeben können. Das Python-Objekt wird dabei in einer geschwungenen Klammer eingefügt.</p>
+</section>
+<section id="logische-operationen" class="level3" data-number="9.4.3">
+<h3 data-number="9.4.3" class="anchored" data-anchor-id="logische-operationen"><span class="header-section-number">9.4.3</span> Logische Operationen</h3>
+<div id="3c1c8795" class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>is_large_rectangle <span class="op">=</span> (area <span class="op">&gt;</span> <span class="dv">20</span>) <span class="kw">and</span> (perimeter <span class="op">&gt;</span> <span class="dv">10</span>)</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Ist es ein großes Rechteck? </span><span class="sc">{</span>is_large_rectangle<span class="sc">}</span><span class="ss">"</span>)  <span class="co"># Ausgabe: Ist es ein großes Rechteck? True</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Ist es ein großes Rechteck? True</code></pre>
+</div>
+</div>
+<p><code>is_large_rectangle</code> verwendet logische Operatoren, um festzustellen, ob das Rechteck sowohl eine große Fläche als auch einen großen Umfang hat.</p>
+</section>
+<section id="arten-von-operatoren" class="level3" data-number="9.4.4">
+<h3 data-number="9.4.4" class="anchored" data-anchor-id="arten-von-operatoren"><span class="header-section-number">9.4.4</span> Arten von Operatoren:</h3>
 <ul>
-<li><code>is_large_rectangle</code> verwendet logische Operatoren, um festzustellen, ob das Rechteck sowohl eine große Fläche als auch einen großen Umfang hat.</li>
+<li><strong>Arithmetische Operatoren</strong>: +, -, *, /, // (Ganzzahldivision), % (Modulo), ** (Potenz)</li>
+<li><strong>Vergleichsoperatoren</strong>: ==, !=, &lt;, &gt;, &lt;=, &gt;=</li>
+<li><strong>Logische Operatoren</strong>: and, or, not</li>
 </ul>
+</section>
 </section>
 <section id="arbeiten-mit-dataframes" class="level2" data-number="9.5">
 <h2 data-number="9.5" class="anchored" data-anchor-id="arbeiten-mit-dataframes"><span class="header-section-number">9.5</span> Arbeiten mit DataFrames</h2>
-<p>Ein DataFrame ist eine zweidimensionale tabellarische Datenstruktur, die von Pandas bereitgestellt wird. Es ermöglicht eine effiziente Datenmanipulation, ähnlich wie ein Tabellenblatt oder eine SQL-Tabelle.</p>
-<p>Hier ein Beispiel. Wir bereiten zunächst die Daten vor:</p>
-<div id="0468d617" class="cell" data-execution_count="8">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> { </span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>         <span class="st">"Numbers"</span>: [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>], </span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>         <span class="st">"Squares"</span>: [<span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">9</span>, <span class="dv">16</span>, <span class="dv">25</span>]</span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>DataFrames, bereitgestellt durch die Pandas-Paket, sind zentral für die Datenanalyse in Python. Sie organisieren Daten in Zeilen und Spalten, ähnlich einer Tabelle.</p>
+<div id="f6ec36c2" class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Erstellen eines dictionarys</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> {</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Numbers"</span>: [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>],</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Squares"</span>: [<span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">9</span>, <span class="dv">16</span>, <span class="dv">25</span>]</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(data)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>{'Numbers': [1, 2, 3, 4, 5], 'Squares': [1, 4, 9, 16, 25]}</code></pre>
 </div>
-<ul>
-<li>Das Wörterbuch <code>data</code> enthält zwei Listen: Zahlen und deren Quadrate.</li>
-</ul>
+</div>
+<p>Das Dictionary <code>data</code> enthält zwei Listen: Zahlen und deren Quadrate.</p>
 <p>Erstellen eines DataFrame mit Pandas:</p>
-<div id="9bac8e0f" class="cell" data-execution_count="9">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(data)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="e16aca32" class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(data)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<ul>
-<li>Der DataFrame <code>df</code> wird aus diesem Wörterbuch mit der Funktion <code>pd.DataFrame</code> erstellt, die die Daten in Zeilen und Spalten organisiert.</li>
-</ul>
-<p>Den DataFrame inspizieren (dafür verwenden wir nicht <code>print()</code>)</p>
-<div id="e6df0f80" class="cell" data-execution_count="10">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="10">
+<p>Wir nennen den DataFrame <code>df</code> (dies ist eine gängige Abkürzung für DataFrame). Unser DataFrame wird aus dem Wörterbuch <code>data</code> mit der Funktion <code>pd.DataFrame</code> erstellt, die die Daten in Zeilen und Spalten organisiert.</p>
+<p>Den DataFrame ausgeben (dafür verwenden wir nicht <code>print()</code>):</p>
+<div id="e51057ac" class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># DataFrame anzeigen</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="12">
 <div>
 
 
@@ -554,18 +614,34 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<ul>
-<li>Das Eingeben von <code>df</code> in eine Jupyter Notebook-Zelle zeigt den DataFrame in tabellarischer Form an.</li>
-</ul>
+<p>Das Eingeben von <code>df</code> in eine Jupyter Notebook-Zelle zeigt den DataFrame in tabellarischer Form an.</p>
 </section>
 <section id="methoden-verstehen" class="level2" data-number="9.6">
 <h2 data-number="9.6" class="anchored" data-anchor-id="methoden-verstehen"><span class="header-section-number">9.6</span> Methoden verstehen</h2>
 <p>Eine Methode ist eine Funktion, die mit einem Objekt (wie einem DataFrame, einer Liste oder einem String) verknüpft ist und über die Punktnotation (<code>.</code>) aufgerufen wird. Dies erleichtert die Manipulation des Objekts und das Abrufen von Informationen.</p>
-<p>Beispielcode:</p>
-<p><code>df.head()</code> ist eine Methode, welche die ersten paar Zeilen eines DataFrames anzeigt, um die Daten zu zeigen:</p>
-<div id="1357179e" class="cell" data-execution_count="11">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>df.head() </span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="11">
+<p>Hier ein Beispiel der String-Methode <code>.upper()</code>, mit welcher Text in Großbuchstaben ausgegeben werden kann:</p>
+<div id="51f62b93" class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># String-Methode</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>text <span class="op">=</span> <span class="st">"hello, world"</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(text.upper())  <span class="co"># Ausgabe: HELLO, WORLD</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>HELLO, WORLD</code></pre>
+</div>
+</div>
+<p>Mit der Methode <code>.sort()</code> können Werte in einer Liste sortiert werden:</p>
+<div id="550f8cf0" class="cell" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># List-Methode</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>numbers <span class="op">=</span> [<span class="dv">3</span>, <span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">1</span>, <span class="dv">5</span>, <span class="dv">9</span>]</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>numbers.sort()</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(numbers)  <span class="co"># Ausgabe: [1, 1, 3, 4, 5, 9]</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1, 1, 3, 4, 5, 9]</code></pre>
+</div>
+</div>
+<p>Die folgenden Beispiele sind DataFrame-Methoden des Pakets Pandas, die häufig in Datenprojekten zum Einsatz kommen. Beispielsweise ist <code>.head()</code> eine Methode, welche die ersten Zeilen eines DataFrames anzeigt:</p>
+<div id="7db3e533" class="cell" data-execution_count="15">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>df.head() </span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="15">
 <div>
 
 
@@ -609,10 +685,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p><code>df.describe()</code> liefert zusammenfassende Statistiken wie Mittelwert, Anzahl und Standardabweichung. Zusätzlich verwenden wir die Methode <code>.round(2)</code>, um die Werte auf zwei Dezimalstellen zu runden:</p>
-<div id="afd1d96b" class="cell" data-execution_count="12">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>df.describe().<span class="bu">round</span>(<span class="dv">2</span>) </span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="12">
+<p>Die Methode <code>.describe()</code> liefert zusammenfassende Statistiken wie Mittelwert, Anzahl und Standardabweichung. Zusätzlich verwenden wir hier die Methode <code>.round(2)</code>, um die Werte auf die zweite Dezimalstelle zu runden:</p>
+<div id="770172d7" class="cell" data-execution_count="16">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>df.describe().<span class="bu">round</span>(<span class="dv">2</span>) </span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="16">
 <div>
 
 
@@ -671,43 +747,61 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>Allgemeines Methodenkonzept:</p>
+<p>Zuletzt noch ein Beispiel, wie der Mittlwert mit Hilfe der Methode <code>.mean()</code> berechnet werden kann. Wir erzeugen dafür ein neues Objekt mit der Bezeichnung <code>mean_value</code> und geben dieses dann mit einem f-String aus:</p>
+<div id="3159bffd" class="cell" data-execution_count="17">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>mean_value <span class="op">=</span> df[<span class="st">'Numbers'</span>].mean()</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Durchschnitt der Numbers: </span><span class="sc">{</span>mean_value<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Durchschnitt der Numbers: 3.0</code></pre>
+</div>
+</div>
+<p>Hier nochmals eine Zusammenfassung der wichtigsten Punkte zu Methoden:</p>
 <ul>
 <li><strong>Objekt:</strong> Eine Entität, die Daten und Funktionalität enthält (z.B. DataFrame, Liste oder String).</li>
 <li><strong>Methode:</strong> Eine Funktion, die mit einem Objekt verknüpft ist.</li>
 <li><strong>Punktnotation (<code>.</code>):</strong> Wird verwendet, um eine Methode auf einem Objekt aufzurufen.</li>
 </ul>
+<p>Vorteile von Methoden:</p>
+<ul>
+<li>Organisieren Funktionalität in logischen Gruppen</li>
+<li>Ermöglichen objektorientierte Programmierung</li>
+<li>Verbessern die Lesbarkeit und Wartbarkeit des Codes</li>
+</ul>
 </section>
 <section id="daten-mit-altair-visualisieren" class="level2" data-number="9.7">
 <h2 data-number="9.7" class="anchored" data-anchor-id="daten-mit-altair-visualisieren"><span class="header-section-number">9.7</span> Daten mit Altair visualisieren</h2>
-<p>Nachdem Sie die Struktur eines DataFrames verstanden haben, können Sie dessen Daten mit Altair visualisieren.</p>
-<p>Beispielcode:</p>
-<div id="a875502d" class="cell" data-execution_count="13">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Das Diagramm erstellen</span></span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>alt.Chart(df).mark_point().encode(</span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span><span class="st">'Numbers'</span>,</span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span><span class="st">'Squares'</span></span>
-<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="13">
+<p>Nachdem wir die Struktur eines DataFrames verstanden haben, können wir die Daten mit Hilfe von Altair visualisieren.</p>
+<p>Altair ist ein Visualisierungspaket, das auf Vega und Vega-Lite basiert. Es ermöglicht die einfache Erstellung interaktiver und ansprechender Diagramme.</p>
+<div id="5e946989" class="cell" data-execution_count="18">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Einfaches Streudiagramm erstellen</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>chart <span class="op">=</span> alt.Chart(df).mark_point().encode(</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span><span class="st">'Numbers'</span>,</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span><span class="st">'Squares'</span></span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Diagramm anzeigen</span></span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>chart</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="18">
 
 <style>
-  #altair-viz-3e7489d12465466f92cd36c7ceddde0a.vega-embed {
+  #altair-viz-063b0933c6674fae8bd7e009fb06a870.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-3e7489d12465466f92cd36c7ceddde0a.vega-embed details,
-  #altair-viz-3e7489d12465466f92cd36c7ceddde0a.vega-embed details summary {
+  #altair-viz-063b0933c6674fae8bd7e009fb06a870.vega-embed details,
+  #altair-viz-063b0933c6674fae8bd7e009fb06a870.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-3e7489d12465466f92cd36c7ceddde0a"></div>
+<div id="altair-viz-063b0933c6674fae8bd7e009fb06a870"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-3e7489d12465466f92cd36c7ceddde0a") {
-      outputDiv = document.getElementById("altair-viz-3e7489d12465466f92cd36c7ceddde0a");
+    if (outputDiv.id !== "altair-viz-063b0933c6674fae8bd7e009fb06a870") {
+      outputDiv = document.getElementById("altair-viz-063b0933c6674fae8bd7e009fb06a870");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -757,9 +851,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </script>
 </div>
 </div>
-<p>Erklärung:</p>
+<p>Komponenten des Altair-Diagramms:</p>
 <ul>
-<li><strong>Altair-Bibliothek</strong>: Eine Visualisierungsbibliothek, die den Prozess der Erstellung von Diagrammen und Grafiken vereinfacht.</li>
 <li><strong><code>alt.Chart(df)</code></strong>: Erstellt ein neues Diagrammobjekt aus dem DataFrame <code>df</code>.</li>
 <li><strong><code>mark_point()</code></strong>: Gibt den Diagrammtyp an (in diesem Fall ein Streudiagramm).</li>
 <li><strong><code>encode</code></strong>: Ordnet DataFrame-Spalten Diagrammattributen zu.

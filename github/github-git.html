@@ -378,31 +378,61 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Git ist ein verteiltes Versionskontrollsystem, das von Linus Torvalds, dem Schöpfer von Linux, entwickelt wurde. Es ermöglicht, den Verlauf von Änderungen im Code zu verfolgen, verschiedene Entwicklungszweige zu erstellen und zusammenzuführen sowie frühere Versionen von Projekten wiederherzustellen.</p>
+<p>Git ist ein verteiltes Versionskontrollsystem, entwickelt von Linus Torvalds, dem Schöpfer von Linux. Es ermöglicht die Verfolgung von Codeänderungen, die Erstellung und Zusammenführung verschiedener Entwicklungszweige sowie die Wiederherstellung früherer Projektversionen.</p>
 <div class="callout callout-style-simple callout-note">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>Git ist vergleichbar mit der Funktion “Änderungen nachverfolgen” in Microsoft Word, aber wesentlich leistungsfähiger und speziell auf die Nachverfolgung von Codeänderungen zugeschnitten.</p>
+<p>Git lässt sich mit der “Änderungen nachverfolgen”-Funktion in Microsoft Word vergleichen, ist jedoch deutlich leistungsfähiger und speziell für die Nachverfolgung von Codeänderungen konzipiert.</p>
 </div>
 </div>
 </div>
-<p>Die Verwendung von Git erleichtert die Zusammenarbeit an Projekten, da es mehreren Personen ermöglicht, gleichzeitig an unterschiedlichen Teilen des Codes zu arbeiten, ohne dass ihre Änderungen in Konflikt geraten.</p>
-<p>Um zu überprüfen, ob Git auf Ihrem System installiert ist, öffnen Sie Ihr Terminal (Mac) oder die Eingabeaufforderung (Windows) und geben Sie ein:</p>
+<p>Der Einsatz von Git erleichtert die Projektzusammenarbeit erheblich. Es ermöglicht mehreren Personen, simultan an verschiedenen Codebereichen zu arbeiten, ohne dass ihre Änderungen miteinander in Konflikt geraten.</p>
+<p>Für ein interaktives Lernerlebnis zur Verwendung von Git bietet sich die Webseite <a href="https://learngitbranching.js.org/">“Learn Git Branching”</a> an.</p>
+<p>Um zu prüfen, ob Git bereits auf dem System installiert ist, kann folgender Befehl im Terminal (Mac) oder der Eingabeaufforderung (Windows) eingegeben werden:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> <span class="at">--version</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Wenn Sie eine Versionsnummer sehen, ist Git bereits installiert. Wenn nicht, folgen Sie den unten stehenden Installationsanweisungen.</p>
-<p>Besuchen Sie die Seite <a href="https://learngitbranching.js.org/">“Learn Git Branching”</a>, um die Verwendung von Git interaktiv zu lernen.</p>
+<p>Erscheint eine Versionsnummer, ist Git bereits installiert. Andernfalls sind die nachfolgenden Installationsanweisungen zu befolgen.</p>
 <section id="git-installation-in-windows" class="level2" data-number="19.1">
 <h2 data-number="19.1" class="anchored" data-anchor-id="git-installation-in-windows"><span class="header-section-number">19.1</span> Git-Installation in Windows</h2>
-<p>Laden Sie Git von <a href="https://git-scm.com/download/win">Git SCM</a> herunter und folgen Sie den Installationsanweisungen.</p>
+<p>Für die Installation von Git unter Windows sind folgende Schritte durchzuführen:</p>
+<ol type="1">
+<li>Git von <a href="https://git-scm.com/download/win">Git SCM</a> herunterladen.</li>
+<li>Die heruntergeladene Datei ausführen.</li>
+<li>Den Installationsanweisungen folgen, wobei die Standardeinstellungen in den meisten Fällen ausreichen.</li>
+<li>Nach Abschluss der Installation das System neu starten, um sicherzustellen, dass alle Änderungen wirksam werden.</li>
+</ol>
+<p>Nach erfolgreicher Installation kann mit dem Befehl <code>git --version</code> überprüft werden, ob Git korrekt installiert wurde und welche Version nun auf dem System verfügbar ist.</p>
 </section>
 <section id="git-installation-auf-mac" class="level2" data-number="19.2">
 <h2 data-number="19.2" class="anchored" data-anchor-id="git-installation-auf-mac"><span class="header-section-number">19.2</span> Git-Installation auf Mac</h2>
-<p><strong>Option 1</strong>: Installieren Sie zunächst <a href="https://brew.sh/">Homebrew</a> (Homebrew ist ein Paketverwaltungssystem, das die Installation von Software auf macOS vereinfacht.) und verwenden Sie diesen Befehl, um Git zu installieren:</p>
+<p>Für Mac-Nutzer stehen zwei Optionen zur Verfügung:</p>
+<p>Option 1: Installation via Homebrew</p>
+<p>Homebrew ist ein Paketverwaltungssystem, das die Softwareinstallation auf macOS vereinfacht.</p>
+<ol type="1">
+<li>Zunächst <a href="https://brew.sh/">Homebrew</a> installieren, falls noch nicht vorhanden.</li>
+<li>Anschließend folgenden Befehl im Terminal ausführen, um Git zu installieren:</li>
+</ol>
 <div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install git</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><strong>Option 2</strong>: Installieren Sie <a href="https://apps.apple.com/us/app/xcode/id497799835?mt=12">XCode</a>, das Git enthält.</p>
+<p>Option 2: Installation via XCode</p>
+<p>Eine alternative Methode ist die Installation von <a href="https://apps.apple.com/us/app/xcode/id497799835?mt=12">XCode</a> aus dem App Store, das Git bereits enthält.</p>
+<ol type="1">
+<li>XCode aus dem App Store herunterladen und installieren.</li>
+<li>Nach der Installation von XCode die Xcode Command Line Tools installieren, indem folgender Befehl im Terminal ausgeführt wird:</li>
+</ol>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">xcode-select</span> <span class="at">--install</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Die Installation über Homebrew (Option 1) wird für die meisten Anwender empfohlen, da sie schneller und ressourcenschonender ist. Die XCode-Installation (Option 2) bietet sich an, wenn ohnehin eine umfassende Entwicklungsumgebung für Mac benötigt wird.</p>
+</div>
+</div>
+</div>
+<p>Nach erfolgreicher Installation kann mit dem Befehl <code>git --version</code> überprüft werden, ob Git korrekt installiert wurde und welche Version nun auf dem System verfügbar ist.</p>
 
 
 </section>

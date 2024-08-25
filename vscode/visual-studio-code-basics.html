@@ -317,7 +317,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-  <li><a href="#dateien-und-ordner-in-vs-code" id="toc-dateien-und-ordner-in-vs-code" class="nav-link active" data-scroll-target="#dateien-und-ordner-in-vs-code"><span class="header-section-number">11.1</span> Dateien und Ordner in VS Code</a></li>
+  <li><a href="#dateien-und-ordner-in-vs-code" id="toc-dateien-und-ordner-in-vs-code" class="nav-link active" data-scroll-target="#dateien-und-ordner-in-vs-code"><span class="header-section-number">11.1</span> Dateien und Ordner in VS Code</a>
+  <ul class="collapse">
+  <li><a href="#einzelne-datei-öffnen" id="toc-einzelne-datei-öffnen" class="nav-link" data-scroll-target="#einzelne-datei-öffnen"><span class="header-section-number">11.1.1</span> Einzelne Datei öffnen</a></li>
+  <li><a href="#projektordner-öffnen" id="toc-projektordner-öffnen" class="nav-link" data-scroll-target="#projektordner-öffnen"><span class="header-section-number">11.1.2</span> Projektordner öffnen</a></li>
+  </ul></li>
   <li><a href="#vertrauenswürdigkeit-des-arbeitsbereichs" id="toc-vertrauenswürdigkeit-des-arbeitsbereichs" class="nav-link" data-scroll-target="#vertrauenswürdigkeit-des-arbeitsbereichs"><span class="header-section-number">11.2</span> Vertrauenswürdigkeit des Arbeitsbereichs</a></li>
   <li><a href="#jupyter-notebook-in-vs-code" id="toc-jupyter-notebook-in-vs-code" class="nav-link" data-scroll-target="#jupyter-notebook-in-vs-code"><span class="header-section-number">11.3</span> Jupyter Notebook in VS Code</a></li>
   </ul>
@@ -345,18 +349,27 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Dieser Abschnitt enthält einige Tipps, die Ihnen den Einstieg in VS Code erleichtern sollen.</p>
+<p>Dieser Abschnitt enthält einige Tipps, die den Einstieg in VS Code erleichtern sollen.</p>
 <section id="dateien-und-ordner-in-vs-code" class="level2" data-number="11.1">
 <h2 data-number="11.1" class="anchored" data-anchor-id="dateien-und-ordner-in-vs-code"><span class="header-section-number">11.1</span> Dateien und Ordner in VS Code</h2>
-<p>Das Verständnis des Unterschieds zwischen dem Öffnen einer Datei und dem Öffnen eines Ordners in VS Code ist entscheidend für die Verwaltung Ihres Workflows.</p>
-<p>Wenn Sie eine <em>Datei</em> in VS Code öffnen, bearbeiten Sie nur diese eine Datei. Dies eignet sich für schnelle Bearbeitungen.</p>
+<p>Für die effektive Nutzung von VS Code ist es wichtig, den Unterschied zwischen dem Öffnen einer Datei und dem Öffnen eines Ordners zu verstehen.</p>
+<section id="einzelne-datei-öffnen" class="level3" data-number="11.1.1">
+<h3 data-number="11.1.1" class="anchored" data-anchor-id="einzelne-datei-öffnen"><span class="header-section-number">11.1.1</span> Einzelne Datei öffnen</h3>
+<p>Beim Öffnen einer einzelnen <em>Datei</em> in VS Code:</p>
 <ul>
-<li>Verwenden Sie <code>Datei &gt; Datei öffnen...</code> und wählen Sie die Datei aus, die Sie bearbeiten möchten.</li>
+<li>Es wird nur diese spezifische Datei zur Bearbeitung geöffnet.</li>
+<li>Dies eignet sich für schnelle Änderungen an einzelnen Dokumenten.</li>
+<li>Vorgehensweise: Im Menü <code>Datei &gt; Datei öffnen...</code> auswählen und die gewünschte Datei auswählen.</li>
 </ul>
-<p>Das Öffnen eines <em>Ordners</em> (wie unser Ordner <code>toolkit-lab</code>) setzt dieses Verzeichnis als Ihren “Arbeitsbereich” fest. Dies ist für die Projektverwaltung unerlässlich, da es VS Code ermöglicht, erweiterte Funktionen bereitzustellen.</p>
+</section>
+<section id="projektordner-öffnen" class="level3" data-number="11.1.2">
+<h3 data-number="11.1.2" class="anchored" data-anchor-id="projektordner-öffnen"><span class="header-section-number">11.1.2</span> Projektordner öffnen</h3>
+<p>Das Öffnen eines <em>Ordners</em> (wie des <code>toolkit-lab</code> Ordners) bietet erweiterte Möglichkeiten:</p>
 <ul>
-<li>Verwenden Sie <code>Datei &gt; Ordner öffnen...</code>, um den gesamten Ordner als Ihren Arbeitsbereich zu öffnen.</li>
-<li>Dieser Ansatz wird empfohlen, wenn Sie an einem Projekt mit mehreren Dateien arbeiten, da VS Code so den Kontext Ihres Projekts besser verwalten und verstehen kann.</li>
+<li>Der ausgewählte Ordner wird als “Arbeitsbereich” festgelegt.</li>
+<li>VS Code kann den gesamten Projektkontext verstehen und verwalten.</li>
+<li>Dies ist besonders nützlich bei Projekten mit mehreren zusammenhängenden Dateien.</li>
+<li>Vorgehensweise: Im Menü <code>Datei &gt; Ordner öffnen...</code> wählen und den gewünschten Projektordner auswählen.</li>
 </ul>
 <div class="callout callout-style-simple callout-note">
 <div class="callout-body d-flex">
@@ -364,45 +377,63 @@ ul.task-list li input[type="checkbox"] {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>Das Öffnen eines Ordners in VS Code ist vergleichbar mit dem Einrichten eines “Projekts” in anderen Entwicklungsumgebungen. Es ermöglicht VS Code, alle Dateien und Unterverzeichnisse darin als Teil einer einzigen, zusammenhängenden Einheit zu behandeln.</p>
+<p>Das Öffnen eines Ordners in VS Code entspricht dem Erstellen eines “Projekts” in anderen Entwicklungsumgebungen. Es ermöglicht VS Code, alle enthaltenen Dateien und Unterverzeichnisse als eine zusammenhängende Einheit zu behandeln.</p>
 </div>
 </div>
 </div>
 </section>
+</section>
 <section id="vertrauenswürdigkeit-des-arbeitsbereichs" class="level2" data-number="11.2">
 <h2 data-number="11.2" class="anchored" data-anchor-id="vertrauenswürdigkeit-des-arbeitsbereichs"><span class="header-section-number">11.2</span> Vertrauenswürdigkeit des Arbeitsbereichs</h2>
-<p>Beim Öffnen eines neuen Projektordners in Visual Studio Code wird Ihnen eine Aufforderung angezeigt, ob Sie den Autoren der Dateien vertrauen (<a href="https://code.visualstudio.com/docs/editor/workspace-trust">Workspace Trust</a>):</p>
+<p>Beim erstmaligen Öffnen eines Projektordners in VS Code erscheint eine Abfrage zur Vertrauenswürdigkeit des Arbeitsbereichs (<a href="https://code.visualstudio.com/docs/editor/workspace-trust">Workspace Trust</a>):</p>
+<ol type="1">
+<li><strong>“Ja, ich vertraue den Autoren” (empfohlen):</strong>
 <ul>
-<li><strong>Ja, ich vertraue den Autoren</strong> (empfohlen): Wählen Sie diese Option standardmäßig, wenn Sie die Quelle kennen oder wenn das Projekt aus einer zuverlässigen Quelle stammt. Diese Auswahl ermöglicht die volle Funktionalität von Visual Studio Code, sodass alle Funktionen und Erweiterungen verwendet werden können.</li>
-</ul>
+<li>Wählen, wenn die Quelle des Projekts bekannt oder vertrauenswürdig ist.</li>
+<li>Ermöglicht die volle Funktionalität von VS Code.</li>
+<li>Alle Funktionen und Erweiterungen können genutzt werden.</li>
+</ul></li>
+<li><strong>“Nein, ich vertraue den Autoren nicht”:</strong>
+<ul>
+<li>Nur wählen, wenn Zweifel an der Quelle der Dateien bestehen.</li>
+<li>Schränkt bestimmte Funktionen in VS Code ein.</li>
+<li>Verhindert unbefugte Codeausführung.</li>
+</ul></li>
+</ol>
 <div class="callout callout-style-simple callout-tip">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>Wenn Sie in einer vertrauenswürdigen Umgebung oder mit Code von bekannten Mitarbeitern arbeiten, ist es wichtig, <strong>“Ja, ich vertraue den Autoren”</strong> auszuwählen, um die vollen Fähigkeiten von Visual Studio Code zu nutzen.</p>
+<p>In einer vertrauenswürdigen Umgebung oder bei der Arbeit mit Code von bekannten Quellen ist es wichtig, “Ja, ich vertraue den Autoren” zu wählen, um VS Code optimal nutzen zu können.</p>
 </div>
 </div>
 </div>
-<ul>
-<li><strong>Nein, ich vertraue den Autoren nicht</strong>: Verwenden Sie diese Option nur, wenn Sie Bedenken hinsichtlich der Quelle der Dateien haben. Dadurch werden bestimmte Funktionen innerhalb von VS Code eingeschränkt, um unbefugte Codeausführung zu verhindern.</li>
-</ul>
 </section>
 <section id="jupyter-notebook-in-vs-code" class="level2" data-number="11.3">
 <h2 data-number="11.3" class="anchored" data-anchor-id="jupyter-notebook-in-vs-code"><span class="header-section-number">11.3</span> Jupyter Notebook in VS Code</h2>
-<p>Visual Studio Code unterstützt Jupyter-Notebooks, sobald Sie die Jupyter-Erweiterung installiert haben, und bietet eine integrierte Umgebung, um Python-Code auszuführen, Daten zu visualisieren und Ihren Prozess Schritt für Schritt zu dokumentieren.</p>
-<p>So richten Sie ein Jupyter-Notebook in VS Code ein und verwenden es:</p>
+<p>VS Code unterstützt Jupyter Notebooks, sobald die Jupyter-Erweiterung installiert ist. Dies bietet eine integrierte Umgebung zum Ausführen von Python-Code, zur Datenvisualisierung und zur schrittweisen Dokumentation des Arbeitsprozesses.</p>
+<p>Anleitung zur Einrichtung und Verwendung eines Jupyter Notebooks in VS Code:</p>
 <ol type="1">
-<li>Öffnen Sie Visual Studio Code.</li>
-<li>Stellen Sie sicher, dass die Jupyter-Erweiterung <a href="visual-studio-code-installation#jupyter-erweiterung.qmd">wie zuvor beschrieben</a> installiert ist.</li>
-<li>Verwenden Sie die Tastenkombination <code>Strg+Shift+P</code> (Windows) oder <code>Command+Shift+P</code> (Mac), um die Befehls-Palette zu öffnen.</li>
-<li>Geben Sie <code>Datei: Ordner öffnen...</code> ein und wählen Sie diesen Befehl aus. Navigieren Sie zu dem Ordner <code>toolkit-lab</code> und wählen Sie ihn als Ihr Arbeitsverzeichnis aus.</li>
-<li>Beim ersten Öffnen eines neuen Projektordners, wie <code>toolkit-lab</code>, werden Sie mit einer Anfrage zur Vertrauenswürdigkeit des Arbeitsbereichs konfrontiert. Es ist wichtig, <strong>“Ja, ich vertraue den Autoren”</strong> auszuwählen.</li>
-<li>Nachdem der Ordner geöffnet ist, verwenden Sie erneut die Befehls-Palette und geben Sie <code>Jupyter: Neues leeres Notebook erstellen</code> ein. Dies öffnet ein neues Notebook in VS Code.</li>
-<li>Speichern Sie das Notebook im Unterordner <code>code</code> innerhalb von <code>toolkit-lab</code>, indem Sie auf <code>Datei &gt; Speichern unter</code> klicken und zum Unterordner <code>code</code> navigieren.</li>
-<li>Um Zellen zu Ihrem Notebook hinzuzufügen, klicken Sie auf das <code>+</code>-Symbol (Sie können entweder Code- oder Markdown-Zellen hinzufügen).</li>
-<li>Bevor Sie Code ausführen, müssen Sie einen <strong>Kernel</strong> auswählen, der der Python-Umgebung entspricht, die Sie verwenden möchten. Klicken Sie auf “Kernel auswählen” in der oberen rechten Ecke Ihres Notebooks, wählen Sie “Python-Umgebungen” und wählen Sie den Kernel <code>basics</code>, den wir <a href="../python/python-arbeitsbereich.html">zuvor eingerichtet haben</a>.</li>
+<li>VS Code öffnen.</li>
+<li>Sicherstellen, dass die Jupyter-Erweiterung installiert ist (siehe <a href="visual-studio-code-installation#jupyter-erweiterung.qmd">vorherige Anleitung</a>).</li>
+<li>Befehls-Palette öffnen:
+<ul>
+<li>Windows: <code>Strg+Shift+P</code></li>
+<li>Mac: <code>Command+Shift+P</code></li>
+</ul></li>
+<li><code>Datei: Ordner öffnen...</code> eingeben und auswählen (falls die Englische Version genutzt wird: <code>File: Open Folder ... eingeben)</code>). Zum Ordner <code>toolkit-lab</code> navigieren und als Arbeitsverzeichnis auswählen.</li>
+<li>Bei der Abfrage zur Vertrauenswürdigkeit des Arbeitsbereichs “Ja, ich vertraue den Autoren” wählen.</li>
+<li>Erneut die Befehls-Palette öffnen und <code>Jupyter: Neues leeres Notebook erstellen</code> eingeben (in der Englischen Version: Jupyter Create New Notebook). Dies öffnet ein neues Notebook.</li>
+<li>Das Notebook im Unterordner <code>code</code> innerhalb von <code>toolkit-lab</code> speichern: <code>Datei &gt; Speichern unter</code> und zum Unterordner <code>code</code> navigieren.</li>
+<li>Zum Hinzufügen von Zellen in dem Notebook auf das <code>+</code>-Symbol klicken (Code- oder Markdown-Zellen möglich).</li>
+<li>Vor der Code-Ausführung einen <strong>Kernel</strong> auswählen:
+<ul>
+<li>In der oberen rechten Ecke des Notebooks auf “Kernel auswählen” klicken.</li>
+<li>“Python-Umgebungen” wählen.</li>
+<li>Den zuvor eingerichteten Kernel <code>basics</code> auswählen (siehe <a href="../python/python-arbeitsbereich.html">vorherige Anleitung</a>).</li>
+</ul></li>
 </ol>
 <div class="callout callout-style-simple callout-note">
 <div class="callout-body d-flex">
@@ -410,7 +441,7 @@ ul.task-list li input[type="checkbox"] {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>Ein “Kernel” in einem Jupyter-Notebook ist ein Prozess, der den im Notebook-Dokument eingebetteten Code ausführt. Bei der Arbeit mit Python ist der Kernel eine Instanz der Python-Laufzeitumgebung auf Ihrem Computer.</p>
+<p>Ein “<strong>Kernel</strong>” in einem Jupyter Notebook ist ein Prozess, der den im Notebook-Dokument enthaltenen Code ausführt. Bei der Arbeit mit Python ist der Kernel eine Instanz der Python-Laufzeitumgebung auf dem Computer.</p>
 </div>
 </div>
 </div>

@@ -378,19 +378,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Relationale Datenbanken sind das Rückgrat vieler moderner Datenbankanwendungen und werden durch ihre Fähigkeit, Daten in strukturierten Tabellen zu organisieren und zu verwalten, definiert.</p>
-<p>Ein Datenbankmanagementsystem (DBMS) ist die Software, die die Erstellung, Verwaltung und Nutzung von Datenbanken ermöglicht. Ein relationales DBMS (RDBMS) bietet Funktionen wie Datenintegrität, Transaktionsverwaltung und Sicherheitsmechanismen. Bekannte RDBMS sind MySQL, PostgreSQL und SQLite.</p>
-<p>Relationale Datenbanken sind in vielen Bereichen weit verbreitet, darunter:</p>
-<ul>
-<li>Finanzwesen: Verwaltung von Kontodaten, Transaktionen und Finanzberichten.</li>
-<li>E-Commerce Verwaltung von Produktkatalogen, Bestellungen und Kundeninformationen.</li>
-<li>Gesundheitswesen Verwaltung von Patientendaten, Terminen und medizinischen Aufzeichnungen.</li>
-</ul>
-<p>Durch ihre Struktur, Flexibilität und Zuverlässigkeit bleiben relationale Datenbanken ein zentrales Werkzeug in der Datenverwaltung und -analyse.</p>
+<p>Hier ist eine optimierte Version der qmd-Datei:</p>
+<p>Relationale Datenbanken bilden das Fundament vieler moderner Datenbankanwendungen. Ihre Stärke liegt in der Fähigkeit, Daten in strukturierten Tabellen zu organisieren und effizient zu verwalten.</p>
+<p>Ein Datenbankmanagementsystem (DBMS) ist die Software, die die Erstellung, Verwaltung und Nutzung von Datenbanken ermöglicht. Ein relationales DBMS (RDBMS) bietet zusätzliche Funktionen wie:</p>
+<ol type="1">
+<li>Datenintegrität</li>
+<li>Transaktionsverwaltung</li>
+<li>Sicherheitsmechanismen</li>
+</ol>
+<p>Zu den bekannten RDBMS gehören MySQL, PostgreSQL und SQLite.</p>
+<p>Einsatzgebiete relationaler Datenbanken sind vielfältig:</p>
+<ol type="1">
+<li>Finanzwesen: Verwaltung von Kontodaten, Transaktionen und Finanzberichten</li>
+<li>E-Commerce: Organisation von Produktkatalogen, Bestellungen und Kundeninformationen</li>
+<li>Gesundheitswesen: Verwaltung von Patientendaten, Terminen und medizinischen Aufzeichnungen</li>
+</ol>
+<p>Die Struktur, Flexibilität und Zuverlässigkeit relationaler Datenbanken machen sie zu einem unverzichtbaren Werkzeug in der modernen Datenverwaltung und -analyse.</p>
 <section id="tabellen" class="level2" data-number="14.1">
 <h2 data-number="14.1" class="anchored" data-anchor-id="tabellen"><span class="header-section-number">14.1</span> Tabellen</h2>
-<p>Im Zentrum jeder relationalen Datenbank stehen Tabellen. Eine Tabelle ist eine strukturierte Sammlung von Daten, die in Zeilen und Spalten organisiert ist. Jede Tabelle repräsentiert eine Entität, und jede Zeile in der Tabelle stellt ein einzelnes Datensatz dieser Entität dar.</p>
-<p>Beispiel einer einfachen Tabelle “Kunden”:</p>
+<p>Tabellen stehen im Mittelpunkt jeder relationalen Datenbank. Eine Tabelle ist eine strukturierte Sammlung von Daten, organisiert in Zeilen und Spalten. Jede Tabelle repräsentiert eine Entität, wobei jede Zeile einen einzelnen Datensatz dieser Entität darstellt.</p>
+<p>Betrachten wir ein Beispiel einer einfachen Tabelle “Kunden”:</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -421,24 +428,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 </tbody>
 </table>
-<p>Jede Spalte in einer Tabelle hat einen bestimmten Datentyp, der die Art der Daten definiert, die in dieser Spalte gespeichert werden können. Häufig verwendete Datentypen sind:</p>
-<ul>
-<li><em>INTEGER</em> Ganze Zahlen</li>
-<li><em>VARCHAR</em> Zeichenketten variabler Länge</li>
-<li><em>DATE</em> Datumsangaben</li>
+<p>Jede Spalte in einer Tabelle besitzt einen spezifischen Datentyp, der die Art der zu speichernden Daten definiert. Häufig verwendete Datentypen sind:</p>
+<ol type="1">
+<li><em>INTEGER</em>: Ganze Zahlen</li>
+<li><em>VARCHAR</em>: Zeichenketten variabler Länge</li>
+<li><em>DATE</em>: Datumsangaben</li>
 <li><em>BOOLEAN</em>: Wahrheitswerte (true/false)</li>
-</ul>
-<p>Ein <em>Primärschlüssel</em> ist eine Spalte oder eine Kombination von Spalten, die jeden Datensatz in einer Tabelle eindeutig identifiziert. Im obigen Beispiel ist die Spalte “KundenID” der Primärschlüssel der Tabelle “Kunden”.</p>
-<p>Ein <em>Fremdschlüssel</em> ist eine Spalte, die eine Beziehung zwischen zwei Tabellen herstellt. Ein Fremdschlüssel in einer Tabelle verweist auf den Primärschlüssel einer anderen Tabelle. Diese Beziehungen sind das Herzstück des relationalen Modells, da sie es ermöglichen, Daten aus verschiedenen Tabellen zu verknüpfen und komplexe Abfragen zu erstellen.</p>
+</ol>
+<p>Zwei wichtige Konzepte in relationalen Datenbanken sind:</p>
+<ol type="1">
+<li><p><em>Primärschlüssel</em>: Eine Spalte oder Spaltenkombination, die jeden Datensatz in einer Tabelle eindeutig identifiziert. Im obigen Beispiel fungiert die Spalte “KundenID” als Primärschlüssel der Tabelle “Kunden”.</p></li>
+<li><p><em>Fremdschlüssel</em>: Eine Spalte, die eine Beziehung zwischen zwei Tabellen herstellt. Ein Fremdschlüssel in einer Tabelle verweist auf den Primärschlüssel einer anderen Tabelle. Diese Beziehungen bilden das Herzstück des relationalen Modells, da sie die Verknüpfung von Daten aus verschiedenen Tabellen und die Erstellung komplexer Abfragen ermöglichen.</p></li>
+</ol>
 </section>
 <section id="sql" class="level2" data-number="14.2">
 <h2 data-number="14.2" class="anchored" data-anchor-id="sql"><span class="header-section-number">14.2</span> SQL</h2>
-<p>SQL (Structured Query Language) ist die Standardsprache für die Verwaltung und Abfrage von Daten in einer relationalen Datenbank. Mit SQL können Sie Daten einfügen, aktualisieren, löschen und abfragen sowie Datenbankstrukturen wie Tabellen und Indizes erstellen und ändern.</p>
-<p>Ein einfaches SQL-Abfragebeispiel:</p>
+<p>SQL (Structured Query Language) ist die Standardsprache für die Verwaltung und Abfrage von Daten in einer relationalen Datenbank. Mit SQL lassen sich vielfältige Operationen durchführen:</p>
+<ol type="1">
+<li>Daten einfügen</li>
+<li>Daten aktualisieren</li>
+<li>Daten löschen</li>
+<li>Daten abfragen</li>
+<li>Datenbankstrukturen wie Tabellen und Indizes erstellen und ändern</li>
+</ol>
+<p>Ein einfaches SQL-Abfragebeispiel verdeutlicht die Funktionsweise:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> Name, Email</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> Kunden</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">WHERE</span> Stadt <span class="op">=</span> <span class="st">'Berlin'</span>;</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Diese Abfrage selektiert die Spalten “Name” und “Email” aus der Tabelle “Kunden”, wobei nur die Datensätze berücksichtigt werden, bei denen die Stadt “Berlin” ist.</p>
+<p>Diese Abfrage selektiert die Spalten “Name” und “Email” aus der Tabelle “Kunden”. Dabei werden nur die Datensätze berücksichtigt, bei denen die Stadt “Berlin” ist.</p>
+<p>Durch die Verwendung von SQL können komplexe Datenoperationen effizient und präzise durchgeführt werden, was die Arbeit mit relationalen Datenbanken erheblich erleichtert.</p>
 
 
 </section>

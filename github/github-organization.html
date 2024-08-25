@@ -312,8 +312,19 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Inhaltsverzeichnis</h2>
+   
+  <ul>
+  <li><a href="#grundlagen-von-github-organizations" id="toc-grundlagen-von-github-organizations" class="nav-link active" data-scroll-target="#grundlagen-von-github-organizations"><span class="header-section-number">22.1</span> Grundlagen von GitHub-Organizations</a></li>
+  <li><a href="#erstellung-einer-github-organization" id="toc-erstellung-einer-github-organization" class="nav-link" data-scroll-target="#erstellung-einer-github-organization"><span class="header-section-number">22.2</span> Erstellung einer GitHub-Organization</a></li>
+  <li><a href="#verwaltung-von-mitgliedern" id="toc-verwaltung-von-mitgliedern" class="nav-link" data-scroll-target="#verwaltung-von-mitgliedern"><span class="header-section-number">22.3</span> Verwaltung von Mitgliedern</a>
+  <ul class="collapse">
+  <li><a href="#prozess-der-mitgliedereinladung" id="toc-prozess-der-mitgliedereinladung" class="nav-link" data-scroll-target="#prozess-der-mitgliedereinladung"><span class="header-section-number">22.3.1</span> Prozess der Mitgliedereinladung</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -337,25 +348,124 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>GitHub-Organizations sind gemeinsame Konten, bei denen Unternehmen und Open-Source-Projekte über viele Projekte hinweg zusammenarbeiten können, mit ausgeklügelten Sicherheits- und Verwaltungsfunktionen.</p>
-<p>Ihr Team kann auf GitHub mithilfe eines Organisationskontos zusammenarbeiten, das als Container für Ihre gemeinsame Arbeit dient und der Arbeit einen einzigartigen Namen und eine Marke verleiht. Jede Person, die GitHub nutzt, meldet sich immer mit einem persönlichen Konto an, und mehrere persönliche Konten können an gemeinsamen Projekten zusammenarbeiten, indem sie demselben Organisationskonto beitreten.</p>
-<p>Erstellen einer Organisation:</p>
+<p>GitHub-Organizations sind gemeinsame Konten, die es Unternehmen und Open-Source-Projekten ermöglichen, über mehrere Projekte hinweg zusammenzuarbeiten. Sie bieten fortschrittliche Sicherheits- und Verwaltungsfunktionen für eine effiziente Teamarbeit.</p>
+<section id="grundlagen-von-github-organizations" class="level2" data-number="22.1">
+<h2 data-number="22.1" class="anchored" data-anchor-id="grundlagen-von-github-organizations"><span class="header-section-number">22.1</span> Grundlagen von GitHub-Organizations</h2>
+<p>Eine GitHub-Organization dient als zentraler Knotenpunkt für die Zusammenarbeit von Teams. Sie fungiert als Container für gemeinsame Arbeit und verleiht den Projekten einen einzigartigen Namen sowie eine eigene Marke.</p>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Wichtig zu wissen
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Jede Person nutzt GitHub mit einem persönlichen Konto.</li>
+<li>Mehrere persönliche Konten können einer Organization beitreten.</li>
+<li>Organizations ermöglichen die Zusammenarbeit an gemeinsamen Projekten.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="erstellung-einer-github-organization" class="level2" data-number="22.2">
+<h2 data-number="22.2" class="anchored" data-anchor-id="erstellung-einer-github-organization"><span class="header-section-number">22.2</span> Erstellung einer GitHub-Organization</h2>
+<p>Die Einrichtung einer GitHub-Organization erfolgt in wenigen Schritten:</p>
 <ol type="1">
-<li><p>Navigieren Sie zu GitHub: Gehen Sie zu <a href="https://github.com/organizations/plan">GitHub Organizations</a>.</p></li>
-<li><p>Klicken Sie auf ‘Neue Organisation’: Sie werden aufgefordert, einen Plan auszuwählen. Wählen Sie zunächst den kostenlosen Plan.</p></li>
-<li><p>Füllen Sie die Organisationsdetails aus: Geben Sie einen eindeutigen Namen für Ihre Organisation und eine E-Mail-Adresse für Benachrichtigungen an.</p></li>
-<li><p>Laden Sie Ihr Team ein: Sobald Ihre Organisation erstellt ist, können Sie damit beginnen, Mitglieder einzuladen. Erfahren Sie im nächsten Abschnitt, wie Sie andere Teammitglieder zu einer Organisation einladen.</p></li>
+<li><strong>Zugang zur GitHub-Organizations-Seite</strong>
+<ul>
+<li><a href="https://github.com/organizations/plan">GitHub Organizations</a> in einem Webbrowser öffnen.</li>
+</ul></li>
+<li><strong>Auswahl “Neue Organization”</strong>
+<ul>
+<li>Auf die Option “Neue Organization” klicken.</li>
+<li>Für den Einstieg den kostenlosen Plan wählen.</li>
+</ul></li>
+<li><strong>Eingabe der Organisationsdetails</strong>
+<ul>
+<li>Eindeutigen Namen für die Organization vergeben.</li>
+<li>E-Mail-Adresse für Benachrichtigungen hinterlegen.</li>
+</ul></li>
+<li><strong>Teameinladungen</strong>
+<ul>
+<li>Nach erfolgreicher Erstellung Teammitglieder einladen.</li>
+</ul></li>
 </ol>
-<p>Nach der Erstellung Ihrer Organisation ist die Verwaltung der Mitglieder entscheidend für eine reibungslose Zusammenarbeit.</p>
-<p>Mitglieder einladen:</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Praxistipp
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Aussagekräftigen und leicht merkbaren Namen für die Organization wählen. Dies erleichtert anderen Nutzern das Auffinden und Identifizieren der Organization.</p>
+</div>
+</div>
+</section>
+<section id="verwaltung-von-mitgliedern" class="level2" data-number="22.3">
+<h2 data-number="22.3" class="anchored" data-anchor-id="verwaltung-von-mitgliedern"><span class="header-section-number">22.3</span> Verwaltung von Mitgliedern</h2>
+<p>Eine effektive Mitgliederverwaltung ist entscheidend für eine reibungslose Zusammenarbeit innerhalb der Organization.</p>
+<section id="prozess-der-mitgliedereinladung" class="level3" data-number="22.3.1">
+<h3 data-number="22.3.1" class="anchored" data-anchor-id="prozess-der-mitgliedereinladung"><span class="header-section-number">22.3.1</span> Prozess der Mitgliedereinladung</h3>
 <ol type="1">
-<li><p>Gehen Sie zu Ihrer Organisationsseite: Klicken Sie auf Ihr Profilbild oben rechts, dann auf Ihre Organisationen und wählen Sie Ihre neue Organisation aus.</p></li>
-<li><p>Navigieren Sie zum Tab ‘Personen’: Klicken Sie auf ‘Mitglied einladen’ und geben Sie den Benutzernamen oder die E-Mail-Adresse der Person ein, die Sie einladen möchten.</p></li>
-<li><p>Rollen und Berechtigungen festlegen: Weisen Sie Rollen wie Eigentümer, Mitglied oder Abrechnungsmanager zu, um Zugriffsebenen zu steuern.</p></li>
+<li><strong>Zugriff auf die Organisationsseite</strong>
+<ul>
+<li>Auf eigenes Profilbild (oben rechts) klicken.</li>
+<li>“Ihre Organizations” auswählen.</li>
+<li>Gewünschte Organization selektieren.</li>
+</ul></li>
+<li><strong>Navigation zum Bereich “Personen”</strong>
+<ul>
+<li>Tab “Personen” anklicken.</li>
+<li>“Mitglied einladen” wählen.</li>
+<li>Benutzername oder E-Mail-Adresse der einzuladenden Person eingeben.</li>
+</ul></li>
+<li><strong>Festlegung von Rollen und Berechtigungen</strong>
+<ul>
+<li>Spezifische Rollen zuweisen:
+<ul>
+<li>Eigentümer: Volle Kontrolle über die Organization</li>
+<li>Mitglied: Standardzugriff auf Repositories</li>
+<li>Abrechnungsmanager: Verwaltung von Zahlungen und Abonnements</li>
+</ul></li>
+</ul></li>
 </ol>
-<p>Erfahren Sie mehr über das <a href="https://docs.github.com/en/organizations/managing-membership-in-your-organization">Verwalten von Mitgliedern und Teams</a> in Ihrer Organisation.</p>
+<div class="callout callout-style-simple callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Sicherheitshinweis
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Sorgfältige Zuweisung von Rollen und Berechtigungen ist essentiell für die Sicherheit der Organization. Anzahl der Personen mit Eigentümer-Rechten begrenzen und regelmäßig Zugriffsberechtigungen überprüfen.</p>
+</div>
+</div>
+<p>Für eine detaillierte Anleitung zur Verwaltung von Mitgliedern und Teams in einer GitHub-Organization die offizielle <a href="https://docs.github.com/en/organizations/managing-membership-in-your-organization">GitHub-Dokumentation zum Thema Mitgliederverwaltung</a> konsultieren.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Empfehlung für effiziente Teamstrukturierung
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Für größere Organizations Teams bilden. Teams ermöglichen eine granularere Kontrolle über Zugriffsrechte und erleichtern die Kommunikation innerhalb spezifischer Projektgruppen.</p>
+</div>
+</div>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

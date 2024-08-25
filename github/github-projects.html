@@ -311,8 +311,20 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Inhaltsverzeichnis</h2>
+   
+  <ul>
+  <li><a href="#ein-github-projekt-erstellen" id="toc-ein-github-projekt-erstellen" class="nav-link active" data-scroll-target="#ein-github-projekt-erstellen"><span class="header-section-number">23.1</span> Ein GitHub-Projekt erstellen</a></li>
+  <li><a href="#projektboards-verwalten" id="toc-projektboards-verwalten" class="nav-link" data-scroll-target="#projektboards-verwalten"><span class="header-section-number">23.2</span> Projektboards verwalten</a>
+  <ul class="collapse">
+  <li><a href="#spalten-hinzufügen" id="toc-spalten-hinzufügen" class="nav-link" data-scroll-target="#spalten-hinzufügen"><span class="header-section-number">23.2.1</span> Spalten hinzufügen</a></li>
+  <li><a href="#karten-hinzufügen" id="toc-karten-hinzufügen" class="nav-link" data-scroll-target="#karten-hinzufügen"><span class="header-section-number">23.2.2</span> Karten hinzufügen</a></li>
+  </ul></li>
+  <li><a href="#best-practices" id="toc-best-practices" class="nav-link" data-scroll-target="#best-practices"><span class="header-section-number">23.3</span> Best Practices</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -336,54 +348,75 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>GitHub-Projects ist eine leistungsstarke Funktion, die Ihnen hilft, die Arbeit an Ihren Repositories zu organisieren und zu verfolgen. Es bietet Kanban-Boards zur effizienten Verwaltung von Aufgaben und Workflows.</p>
+<p>GitHub-Projects ist eine leistungsstarke Funktion zur Organisation und Verfolgung der Arbeit an Repositories. Es bietet Kanban-Boards zur effizienten Verwaltung von Aufgaben und Workflows.</p>
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/yFQ-p6wMS_Y?si=vYu5dBCHN4XfyPk3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="">
 </iframe>
-<p>Es ermöglicht Ihnen, die Arbeit zu planen und zu verwalten, indem Sie Projektboards erstellen. Diese Boards enthalten Issues, Pull Requests und Notizen, die als Karten in Spalten organisiert sind.</p>
-<p>Ein GitHub-Projekt erstellen:</p>
+<p>Mit GitHub-Projects lässt sich die Arbeit durch die Erstellung von Projektboards planen und verwalten. Diese Boards enthalten Issues, Pull Requests und Notizen, die als Karten in Spalten organisiert werden.</p>
+<section id="ein-github-projekt-erstellen" class="level2" data-number="23.1">
+<h2 data-number="23.1" class="anchored" data-anchor-id="ein-github-projekt-erstellen"><span class="header-section-number">23.1</span> Ein GitHub-Projekt erstellen</h2>
 <ol type="1">
-<li><p>Navigieren Sie zu Ihrem Repository oder Ihrer Organisation: Gehen Sie zu dem Repository oder der Organisation, in dem/der Sie ein Projekt erstellen möchten.</p></li>
-<li><p>Zugriff auf den Tab ‘Projects’: Klicken Sie auf der Hauptseite Ihres Repositorys oder Ihrer Organisation auf den Tab ‘Projects’.</p></li>
-<li><p>Klicken Sie auf ‘New Project’: Klicken Sie auf die Schaltfläche ‘New project’, um ein neues Projekt zu erstellen.</p></li>
-<li><p>Richten Sie Ihr Projekt ein:</p>
+<li><p>Zum Repository oder zur Organisation navigieren: Zunächst gelangt man zum gewünschten Repository oder zur Organisation, in dem das Projekt erstellt werden soll.</p></li>
+<li><p>Auf den Tab ‘Projects’ zugreifen: Auf der Hauptseite des Repositorys oder der Organisation findet sich der Tab ‘Projects’.</p></li>
+<li><p>‘New Project’ auswählen: Um ein neues Projekt zu erstellen, wird die Schaltfläche ‘New project’ angeklickt.</p></li>
+<li><p>Projekt einrichten:</p>
 <ul>
-<li>Name: Geben Sie Ihrem Projekt einen aussagekräftigen Namen.</li>
-<li>Beschreibung: Fügen Sie eine Beschreibung hinzu, um den Zweck des Projekts zu erklären.</li>
-<li>Vorlage: Wählen Sie eine Vorlage, falls verfügbar, oder beginnen Sie mit einem leeren Projekt.</li>
+<li>Name: Hier vergibt man einen aussagekräftigen Namen für das Projekt.</li>
+<li>Beschreibung: Eine Beschreibung erklärt den Zweck des Projekts.</li>
+<li>Vorlage: Es besteht die Möglichkeit, eine Vorlage zu wählen oder mit einem leeren Projekt zu beginnen.</li>
 </ul></li>
 </ol>
-<p><strong>Projektboards verwalten</strong>:</p>
-<p>Sobald Ihr Projekt erstellt ist, können Sie beginnen, es durch Hinzufügen von Spalten und Karten zu verwalten.</p>
-<p>Spalten helfen, Aufgaben in Kategorien wie ‘To Do’, ‘In Progress’ und ‘Done’ zu organisieren.</p>
+</section>
+<section id="projektboards-verwalten" class="level2" data-number="23.2">
+<h2 data-number="23.2" class="anchored" data-anchor-id="projektboards-verwalten"><span class="header-section-number">23.2</span> Projektboards verwalten</h2>
+<p>Nach der Erstellung des Projekts beginnt die Verwaltung durch das Hinzufügen von Spalten und Karten.</p>
+<section id="spalten-hinzufügen" class="level3" data-number="23.2.1">
+<h3 data-number="23.2.1" class="anchored" data-anchor-id="spalten-hinzufügen"><span class="header-section-number">23.2.1</span> Spalten hinzufügen</h3>
+<p>Spalten helfen bei der Organisation von Aufgaben in Kategorien wie ‘To Do’, ‘In Progress’ und ‘Done’.</p>
 <ol type="1">
-<li><p>Klicken Sie auf ‘Add column’: Klicken Sie auf die Schaltfläche ‘Add column’ auf Ihrem Projektboard.</p></li>
-<li><p>Benennen Sie Ihre Spalte: Geben Sie der Spalte einen Namen, z.B. ‘To Do’.</p></li>
-<li><p>Wiederholen Sie dies für zusätzliche Spalten: Erstellen Sie nach Bedarf zusätzliche Spalten für Ihren Workflow.</p></li>
+<li><p>‘Add column’ auswählen: Auf dem Projektboard findet sich die Schaltfläche ‘Add column’.</p></li>
+<li><p>Spalte benennen: Der Spalte wird ein passender Name gegeben, beispielsweise ‘To Do’.</p></li>
+<li><p>Vorgang für weitere Spalten wiederholen: Je nach Bedarf werden zusätzliche Spalten für den Workflow erstellt.</p></li>
 </ol>
+</section>
+<section id="karten-hinzufügen" class="level3" data-number="23.2.2">
+<h3 data-number="23.2.2" class="anchored" data-anchor-id="karten-hinzufügen"><span class="header-section-number">23.2.2</span> Karten hinzufügen</h3>
 <p>Karten repräsentieren Aufgaben und können Issues, Pull Requests oder Notizen sein.</p>
 <ol type="1">
-<li><p>Ein Issue oder einen Pull Request hinzufügen: Ziehen Sie ein vorhandenes Issue oder einen Pull Request von der Seitenleiste in eine Spalte.</p></li>
-<li><p>Eine Notiz erstellen: Klicken Sie in einer Spalte auf ‘Add a note’, um eine benutzerdefinierte Aufgabe oder Notiz zu erstellen.</p></li>
+<li><p>Issue oder Pull Request hinzufügen: Ein vorhandenes Issue oder ein Pull Request lässt sich aus der Seitenleiste in eine Spalte ziehen.</p></li>
+<li><p>Notiz erstellen: In einer Spalte kann durch Klicken auf ‘Add a note’ eine benutzerdefinierte Aufgabe oder Notiz erstellt werden.</p></li>
 </ol>
-<p><strong>Best Practices</strong>:</p>
+</section>
+</section>
+<section id="best-practices" class="level2" data-number="23.3">
+<h2 data-number="23.3" class="anchored" data-anchor-id="best-practices"><span class="header-section-number">23.3</span> Best Practices</h2>
 <p>Arbeit organisieren:</p>
 <ul>
-<li>Verwenden Sie klare Spaltennamen: Nutzen Sie intuitive Namen für Spalten, die die Phasen des Workflows widerspiegeln.</li>
-<li>Priorisieren Sie Aufgaben: Ziehen Sie Karten, um Aufgaben innerhalb einer Spalte zu priorisieren.</li>
+<li><p>Klare Spaltennamen verwenden: Intuitive Namen für Spalten spiegeln die Phasen des Workflows wider.</p></li>
+<li><p>Aufgaben priorisieren: Durch Ziehen der Karten lassen sich Aufgaben innerhalb einer Spalte priorisieren.</p></li>
 </ul>
-<p>Zusammenarbeit:</p>
+<p>Zusammenarbeit fördern:</p>
 <ul>
-<li>Karten Teammitgliedern zuweisen: Weisen Sie Issues oder Pull Requests Teammitgliedern zu, um die Zuständigkeit zu klären.</li>
-<li>Verwenden Sie Labels: Wenden Sie Labels auf Karten an, um zusätzliche Kategorisierungen und Filterungen zu ermöglichen.</li>
+<li><p>Karten Teammitgliedern zuweisen: Um die Zuständigkeit zu klären, werden Issues oder Pull Requests Teammitgliedern zugewiesen.</p></li>
+<li><p>Labels nutzen: Labels auf Karten ermöglichen zusätzliche Kategorisierungen und Filterungen.</p></li>
 </ul>
 <p>Fortschritt verfolgen:</p>
 <ul>
-<li>Regelmäßige Updates: Aktualisieren Sie den Status der Karten regelmäßig, um den aktuellen Fortschritt widerzuspiegeln.</li>
-<li>Abgeschlossene Karten schließen: Verschieben Sie abgeschlossene Aufgaben in die Spalte ‘Done’ und schließen Sie die entsprechenden Issues oder Pull Requests.</li>
+<li><p>Regelmäßige Updates durchführen: Der Status der Karten wird regelmäßig aktualisiert, um den aktuellen Fortschritt widerzuspiegeln.</p></li>
+<li><p>Abgeschlossene Karten schließen: Abgeschlossene Aufgaben werden in die Spalte ‘Done’ verschoben und die entsprechenden Issues oder Pull Requests geschlossen.</p></li>
 </ul>
-<p>GitHub Projects ermöglicht zudem die Automatisierung von Workflows mit Auslösern, die Karten basierend auf bestimmten Aktionen wie dem Schließen eines Issues oder dem Mergen eines Pull Requests in andere Spalten verschieben.</p>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>GitHub Projects ermöglicht auch die Automatisierung von Workflows. Durch Auslöser können Karten basierend auf bestimmten Aktionen, wie dem Schließen eines Issues oder dem Mergen eines Pull Requests, automatisch in andere Spalten verschoben werden.</p>
+</div>
+</div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -386,81 +386,73 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>MySQL, das sowohl als “My S-Q-L” als auch als “My Sequel” ausgesprochen wird, ist ein relationales Datenbankverwaltungssystem (RDBMS). Dieses System wird genutzt, um Daten in relationalen Datenbanken zu verwalten. Es verwendet die Structured Query Language (SQL) für verschiedene Aufgaben wie Datenverwaltung, Datenmanipulation und das Abfragen von Daten.</p>
-<p>MySQL Workbench bietet eine grafische Oberfläche für die Datenbankverwaltung und SQL-Entwicklung. Es integriert visuelle Werkzeuge für die Datenmodellierung, SQL-Entwicklung und umfassende Datenbankverwaltung.</p>
-<p>Die MySQL Workbench bietet verschiedene Werkzeuge zur Erleichterung der Datenbankverwaltung:</p>
+<p>MySQL, das sowohl als “My S-Q-L” als auch als “My Sequel” ausgesprochen wird, ist ein relationales Datenbankverwaltungssystem (RDBMS), das zur Verwaltung von Daten in relationalen Datenbanken dient. Es verwendet die Structured Query Language (SQL) für verschiedene Aufgaben wie Datenverwaltung, -manipulation und -abfrage.</p>
+<p>MySQL Workbench bietet eine grafische Oberfläche für Datenbankverwaltung und SQL-Entwicklung. Es integriert visuelle Werkzeuge für Datenmodellierung, SQL-Entwicklung und umfassende Datenbankverwaltung.</p>
+<p>Hauptkomponenten der MySQL Workbench:</p>
 <ul>
-<li><strong>Toolbar</strong>: Oben finden Sie die Toolbar, die Schaltflächen wie das neue Abfrage-Tab, Abfrage ausführen und andere enthält.</li>
-<li><strong>Seitenleiste</strong>: Links bietet die Seitenleiste Zugriff auf Instanzverwaltung, Leistungsüberwachung und mehr.</li>
-<li><strong>Abfrage-Tab</strong>: Hier schreiben und führen Sie Ihre SQL-Abfragen aus. Sie können ein neues Abfrage-Tab öffnen, indem Sie auf das “+”-Symbol neben den vorhandenen Tabs klicken.</li>
-<li><strong>Ausgabebereich</strong>: Unterhalb des Abfrage-Editors zeigt dieser Bereich die Ergebnisse der ausgeführten Abfragen oder Nachrichten vom Datenbankserver an.</li>
+<li><strong>Toolbar</strong>: Oben befindliche Leiste mit Schaltflächen für häufige Aktionen wie neue Abfrage-Tabs oder Ausführen von Abfragen.</li>
+<li><strong>Seitenleiste</strong>: Links platzierte Leiste für Zugriff auf Instanzverwaltung, Leistungsüberwachung und weitere Funktionen.</li>
+<li><strong>Abfrage-Tab</strong>: Zentraler Bereich zum Schreiben und Ausführen von SQL-Abfragen.</li>
+<li><strong>Ausgabebereich</strong>: Unterhalb des Abfrage-Editors zur Anzeige von Abfrageergebnissen oder Servermeldungen.</li>
 </ul>
 <section id="mysql-installation-in-windows" class="level2" data-number="15.1">
 <h2 data-number="15.1" class="anchored" data-anchor-id="mysql-installation-in-windows"><span class="header-section-number">15.1</span> MySQL-Installation in Windows</h2>
-<p>In den folgenden Schritten wird die Installation von MySQL und dem Tool MySQL Workbench behandelt.</p>
+<p>Folgende Schritte führen durch die Installation von MySQL und MySQL Workbench:</p>
 <ol type="1">
 <li>Installer herunterladen
 <ul>
-<li>Gehen Sie zur <a href="https://dev.mysql.com/downloads/installer/">MySQL Downloadseite</a>.</li>
-<li>Wählen Sie Windows als Plattform und laden Sie den MySQL-Installer für Windows in der Version 8.0.37. herunter.</li>
+<li>Auf der <a href="https://dev.mysql.com/downloads/installer/">MySQL Downloadseite</a> Windows als Plattform wählen.</li>
+<li>MySQL-Installer für Windows in Version 8.0.37 herunterladen.</li>
 </ul></li>
 <li>Installer ausführen
 <ul>
-<li>Führen Sie die heruntergeladene Datei aus. Wenn ein Sicherheitsdialog erscheint, klicken Sie auf “Ja”, um dem Installer die Erlaubnis zu erteilen, Änderungen an Ihrem System vorzunehmen.</li>
+<li>Heruntergeladene Datei ausführen und bei Sicherheitsabfrage “Ja” wählen.</li>
 </ul></li>
 <li>Setup-Typ auswählen
 <ul>
-<li>Wählen Sie bei Aufforderung “Custom” als Setup-Typ. Diese Option ermöglicht es Ihnen, spezifische Komponenten zur Installation auszuwählen, wie z.B. MySQL Server, MySQL Workbench und MySQL Shell.</li>
+<li>“Custom” als Setup-Typ wählen für spezifische Komponentenauswahl.</li>
 </ul></li>
 <li>Produkte und Features auswählen
 <ul>
-<li>Wählen Sie ‘MySQL Server’ und ‘MySQL Workbench’ für die Installation aus.</li>
+<li>‘MySQL Server’ und ‘MySQL Workbench’ zur Installation auswählen.</li>
 </ul></li>
-<li>Installation
+<li>Installation durchführen
 <ul>
-<li>Folgen Sie den Anweisungen auf dem Bildschirm, um die gewählten Komponenten zu installieren.</li>
+<li>Bildschirmanweisungen zur Installation der gewählten Komponenten befolgen.</li>
 </ul></li>
 <li>MySQL Server konfigurieren
 <ul>
-<li>Nach der Installation werden Sie durch eine Reihe von Konfigurationsschritten geführt, einschließlich der Einrichtung des Root-Passworts, der Erstellung von Benutzerkonten und der Konfiguration der Netzwerkoptionen und des Windows-Dienstes.</li>
+<li>Root-Passwort einrichten, Benutzerkonten erstellen, Netzwerkoptionen und Windows-Dienst konfigurieren.</li>
 </ul></li>
 <li>Installation abschließen
 <ul>
-<li>Beenden Sie das Setup, um die Installation von MySQL auf Ihrem System abzuschließen.</li>
+<li>Setup beenden, um die MySQL-Installation abzuschließen.</li>
 </ul></li>
 </ol>
 </section>
 <section id="mysql-installation-auf-mac" class="level2" data-number="15.2">
 <h2 data-number="15.2" class="anchored" data-anchor-id="mysql-installation-auf-mac"><span class="header-section-number">15.2</span> MySQL-Installation auf Mac</h2>
-<p>In den folgenden Schritten wird die Installation von MySQL und dem Tool MySQL Workbench behandelt.</p>
+<p>Installationsschritte für MySQL und MySQL Workbench auf Mac:</p>
 <ol type="1">
-<li>Datei herunterladen
+<li>MySQL herunterladen und installieren
 <ul>
-<li>Besuchen Sie die <a href="https://dev.mysql.com/downloads/mysql/">MySQL Downloadseite</a> und wählen Sie macOS als Betriebssystem.</li>
-<li>Laden Sie die DMG-Datei für macOS herunter (in der Version 8.0.36.)</li>
+<li><a href="https://dev.mysql.com/downloads/mysql/">MySQL Downloadseite</a> besuchen, macOS wählen.</li>
+<li>DMG-Datei für macOS (Version 8.0.36) herunterladen und installieren.</li>
 </ul></li>
-<li>MySQL installieren
+<li>MySQL Workbench installieren
 <ul>
-<li>Öffnen Sie die heruntergeladene DMG-Datei und folgen Sie den Installationsanweisungen auf dem Bildschirm.</li>
+<li><a href="https://dev.mysql.com/downloads/workbench/">MySQL Workbench Downloadseite</a> aufrufen.</li>
+<li>Passende Version für macOS herunterladen und installieren.</li>
 </ul></li>
-</ol>
-<p>Nun installieren Sie MySQL Workbench</p>
-<ol type="1">
-<li>MySQL Workbench herunterladen
-<ul>
-<li>Greifen Sie auf die <a href="https://dev.mysql.com/downloads/workbench/">MySQL Workbench Downloadseite</a> zu.</li>
-<li>Wählen Sie die passende Version für Ihr Betriebssystem und laden Sie diese herunter.</li>
-</ul></li>
-<li>Anwendung installieren und den Setup-Anweisungen folgen.</li>
 </ol>
 </section>
 <section id="server-einrichten" class="level2" data-number="15.3">
 <h2 data-number="15.3" class="anchored" data-anchor-id="server-einrichten"><span class="header-section-number">15.3</span> Server einrichten</h2>
-<p>Nach der Installation besteht der nächste Schritt darin, eine Verbindung zu Ihrem MySQL-Server über MySQL Workbench herzustellen, d.h. wir fügen einen Server hinzu:</p>
+<p>Nach der Installation erfolgt die Verbindung zum MySQL-Server über MySQL Workbench:</p>
 <ol type="1">
-<li><strong>MySQL Workbench starten</strong>
+<li>MySQL Workbench starten
 <ul>
-<li>Öffnen Sie MySQL Workbench aus Ihrer Anwendungsübersicht. Beim Start der Anwendung sehen Sie die Hauptoberfläche.</li>
+<li>Anwendung aus der Programmübersicht öffnen.</li>
 </ul>
 <div class="callout callout-style-simple callout-tip callout-titled" title="Tipp für Windows-Nutzer">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
@@ -475,29 +467,26 @@ Tipp für Windows-Nutzer
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Falls MySQL Workbench während der anfänglichen Einrichtung des MySQL Servers nicht enthalten war, kann es separat installiert werden:</p>
-<ul>
-<li>Greifen Sie auf die <a href="https://dev.mysql.com/downloads/workbench/">MySQL Workbench Downloadseite</a> zu.</li>
-<li>Wählen Sie die passende Version für Ihr Betriebssystem und laden Sie sie herunter.</li>
-</ul>
+<p><a href="https://dev.mysql.com/downloads/workbench/">MySQL Workbench Downloadseite</a> öffnen und passende Version für das Betriebssystem auswählen.</p>
 </div>
 </div>
 </div></li>
-<li><strong>Neue Verbindung erstellen</strong>
+<li>Neue Verbindung erstellen
 <ul>
-<li>Auf dem Startbildschirm sehen Sie einen Bereich mit der Bezeichnung “MySQL Connections”. Klicken Sie auf das “+”-Symbol, um eine neue Verbindung zu erstellen.</li>
-<li>Im Setup-Dialog:
+<li>Auf “+” im Bereich “MySQL Connections” klicken.</li>
+<li>Verbindungsdetails eingeben:
 <ul>
-<li>Verbindungsname: Geben Sie Ihrer Verbindung einen erkennbaren Namen (nutzen Sie hierfür <code>local-connection</code>).</li>
-<li>Hostname: Geben Sie <code>localhost</code> ein (wir verwenden diese Bezeichnung, da der Datenbankserver auf dem gleichen Rechner wie die Workbench läuft).</li>
-<li>Port: Der Standard-MySQL-Port ist <code>3306</code>.</li>
-<li>Benutzername: Geben Sie den Benutzernamen ein, den Sie während der MySQL Server-Installation festgelegt haben (meist ‘root’).</li>
-<li>Passwort: Klicken Sie auf “Store in Vault” und geben Sie das Passwort für das Benutzerkonto ein.</li>
+<li>Name: <code>local-connection</code></li>
+<li>Hostname: <code>localhost</code></li>
+<li>Port: <code>3306</code></li>
+<li>Benutzername: Meist ‘root’</li>
+<li>Passwort: “Store in Vault” wählen und Passwort eingeben, welches während der Installation vergeben wurde.</li>
 </ul></li>
-<li>Nachdem Sie diese Felder ausgefüllt haben, klicken Sie auf “Test Connection”, um sicherzustellen, dass alle Einstellungen korrekt sind und die Verbindung hergestellt werden kann.</li>
+<li>“Test Connection” zur Überprüfung klicken.</li>
 </ul></li>
-<li><strong>Verbindung speichern</strong>
+<li>Verbindung speichern
 <ul>
-<li>Wenn der Verbindungstest erfolgreich ist, speichern Sie die Konfiguration, indem Sie auf “OK” klicken. Diese Verbindung wird nun auf dem MySQL Workbench-Startbildschirm für einen einfachen Zugriff angezeigt.</li>
+<li>Bei erfolgreicher Verbindung auf “OK” klicken.</li>
 </ul></li>
 </ol>
 </section>
@@ -507,15 +496,9 @@ Tipp für Windows-Nutzer
 <section id="datenbank-erstellen" class="level3" data-number="15.4.1">
 <h3 data-number="15.4.1" class="anchored" data-anchor-id="datenbank-erstellen"><span class="header-section-number">15.4.1</span> Datenbank erstellen</h3>
 <ol type="1">
-<li><p><strong>Eine Datenbank erstellen</strong></p>
-<ul>
-<li>Verbinden Sie sich mit Ihrer MySQL-Instanz über die eingerichtete Verbindung (<code>local-connection</code>).</li>
-</ul></li>
-<li><p><strong>Neues Abfrage-Tab öffnen</strong></p>
-<ul>
-<li>Klicken Sie auf das “+”-Symbol oben, um eine neue Abfrage zu starten.</li>
-</ul></li>
-<li><p>Geben Sie die folgenden SQL-Befehle ein:</p>
+<li><p>Mit MySQL-Instanz verbinden (<code>local-connection</code>).</p></li>
+<li><p>Neues Abfrage-Tab öffnen (auf das “+”-Symbol oben klicken)</p></li>
+<li><p>SQL-Befehle eingeben und ausführen (auf das Blitzsymbol (⚡) klicken, um den Befehl auszuführen):</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">DROP</span> <span class="kw">DATABASE</span> <span class="cf">IF</span> <span class="kw">EXISTS</span> `db_data`;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">CREATE</span> <span class="kw">DATABASE</span> `db_data`;</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">USE</span> `db_data`;</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -535,11 +518,11 @@ Erklärung der SQL-Befehle
 <ol type="1">
 <li><strong>DROP DATABASE IF EXISTS <code>db_data</code>;</strong>
 <ul>
-<li>Dieser Befehl löscht die Datenbank <code>db_data</code>, falls sie existiert. Dies ist nützlich, um sicherzustellen, dass Sie mit einer neuen Datenbank arbeiten, indem eine eventuell vorhandene Datenbank mit demselben Namen entfernt wird.</li>
+<li>Dieser Befehl löscht die Datenbank <code>db_data</code>, falls sie existiert. Dies ist nützlich, um sicherzustellen, dass wir mit einer neuen Datenbank arbeiten, indem eine eventuell vorhandene Datenbank mit demselben Namen entfernt wird.</li>
 </ul></li>
 <li><strong>CREATE DATABASE <code>db_data</code>;</strong>
 <ul>
-<li>Dieser Befehl erstellt eine neue Datenbank mit dem Namen <code>db_data</code>. Dies legt die Basis für eine neue Datenbank, in der Sie Tabellen und andere Datenbankobjekte erstellen können.</li>
+<li>Dieser Befehl erstellt eine neue Datenbank mit dem Namen <code>db_data</code>. Dies legt die Basis für eine neue Datenbank, in der wir Tabellen und andere Datenbankobjekte erstellen können.</li>
 </ul></li>
 <li><strong>USE <code>db_data</code>;</strong>
 <ul>
@@ -549,28 +532,15 @@ Erklärung der SQL-Befehle
 </div>
 </div>
 </div></li>
-<li><p><strong>Befehl ausführen</strong></p>
-<ul>
-<li>Klicken Sie auf das Blitzsymbol (⚡), um den Befehl auszuführen.</li>
-</ul></li>
-<li><p><strong>Schema-Liste aktualisieren</strong></p>
-<ul>
-<li>Nachdem Sie die Befehle ausgeführt haben, aktualisieren Sie die Schema-Liste auf der linken Seite der Oberfläche, um Ihre neue Datenbank zu sehen.</li>
-</ul></li>
+<li><p>Schema-Liste aktualisieren zur Anzeige der neuen Datenbank (Schema-Liste befindet sich auf der linken Seite der Benutzer-Oberfläche)</p></li>
 </ol>
 </section>
 <section id="tabelle-erstellen" class="level3" data-number="15.4.2">
 <h3 data-number="15.4.2" class="anchored" data-anchor-id="tabelle-erstellen"><span class="header-section-number">15.4.2</span> Tabelle erstellen</h3>
 <p>Als Beispieldaten erstellen wir eine Tabelle zu einer Marketingkampagne:</p>
 <ol type="1">
-<li><strong>Neues Abfrage-Tab öffnen</strong>
-<ul>
-<li>Klicken Sie auf das “+”-Symbol oben, um eine neue Abfrage zu starten.</li>
-</ul></li>
-<li><strong>Tabelle definieren</strong>
-<ul>
-<li>Führen Sie das folgende SQL aus, um Ihre Tabelle zu erstellen:</li>
-</ul>
+<li><p>Neues Abfrage-Tab öffnen.</p></li>
+<li><p>SQL zur Tabellenerstellung ausführen:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">CREATE</span> <span class="kw">TABLE</span> campaigns (</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>   <span class="kw">id</span> <span class="dt">INT</span> AUTO_INCREMENT <span class="kw">PRIMARY</span> <span class="kw">KEY</span>,</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>   name <span class="dt">VARCHAR</span>(<span class="dv">255</span>) <span class="kw">NOT</span> <span class="kw">NULL</span>,</span>
@@ -602,20 +572,14 @@ Erklärung der Tabellendefinition
 </div>
 </div>
 </div></li>
-<li><strong>Befehl ausführen</strong>
-<ul>
-<li>Klicken Sie auf das Blitzsymbol (⚡), um den Befehl auszuführen. Überprüfen Sie die Schema-Ansicht, um die Erstellung der Tabelle zu bestätigen.</li>
-</ul></li>
+<li><p>Befehl ausführen und Schema-Ansicht überprüfen.</p></li>
 </ol>
 </section>
 <section id="werte-einfügen" class="level3" data-number="15.4.3">
 <h3 data-number="15.4.3" class="anchored" data-anchor-id="werte-einfügen"><span class="header-section-number">15.4.3</span> Werte einfügen</h3>
-<p>Gehen Sie wie folgt vor, um die Tabelle mit Daten zu füllen:</p>
+<p>Wir gehen wie folgt vor, um die Tabelle mit Daten zu füllen:</p>
 <ol type="1">
-<li><strong>Daten einfügen</strong>
-<ul>
-<li>Verwenden Sie in einem neuen Abfrage-Tab diesen SQL-Befehl:</li>
-</ul>
+<li><p>In neuem Abfrage-Tab SQL-Befehl ausführen:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">INSERT</span> <span class="kw">INTO</span> campaigns (name, start_date, end_date, budget, channel) <span class="kw">VALUES</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>(<span class="st">'Winter Sale'</span>, <span class="st">'2023-12-01'</span>, <span class="st">'2023-12-31'</span>, <span class="fl">5000.00</span>, <span class="st">'Email'</span>),</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>(<span class="st">'Summer Festival'</span>, <span class="st">'2023-06-01'</span>, <span class="st">'2023-06-15'</span>, <span class="fl">10000.00</span>, <span class="st">'Social Media'</span>),</span>
@@ -648,10 +612,7 @@ Erklärung der Insert-Anweisung
 <h3 data-number="15.4.4" class="anchored" data-anchor-id="werte-abrufen"><span class="header-section-number">15.4.4</span> Werte abrufen</h3>
 <p>Um die Daten zu überprüfen:</p>
 <ol type="1">
-<li><strong>Führen Sie eine SELECT-Abfrage aus</strong>
-<ul>
-<li>Führen Sie folgendes in einem neuen Abfrage-Tab aus:</li>
-</ul>
+<li><p>SELECT-Abfrage in neuem Tab ausführen:</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> <span class="op">*</span> <span class="kw">FROM</span> campaigns;</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="callout callout-style-simple callout-note callout-titled" title="Erklärung der SELECT-Abfrage">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
@@ -670,8 +631,16 @@ Erklärung der SELECT-Abfrage
 </div>
 </div></li>
 </ol>
-<p>Die Abfrage sollte folgendes Ergebnis ausgeben:</p>
+<p>Erwartetes Ergebnis:</p>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 24%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 14%">
+<col style="width: 20%">
+</colgroup>
 <thead>
 <tr class="header">
 <th>id</th>

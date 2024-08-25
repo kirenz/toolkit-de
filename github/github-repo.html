@@ -345,70 +345,75 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Ein Repository (oft abgekürzt als “Repo”) auf GitHub ist wie ein Speicherplatz, in dem alle Dateien und deren Versionsverlauf für Ihr Projekt gespeichert werden.</p>
-<p>Repositories werden verwendet, um Ihre Arbeit zu organisieren, mit anderen zusammenzuarbeiten, Änderungen an Ihrem Code zu verfolgen und verschiedene Versionen Ihres Projekts zu verwalten.</p>
+<p>Ein Repository (oft abgekürzt als “Repo”) auf GitHub dient als zentraler Speicherort für alle Dateien eines Projekts und deren Versionsverlauf.</p>
+<p>Repositories ermöglichen die Organisation von Arbeit, Zusammenarbeit mit anderen, Verfolgung von Codeänderungen und Verwaltung verschiedener Projektversionen.</p>
 <section id="erstellung-eines-repo" class="level2" data-number="21.1">
 <h2 data-number="21.1" class="anchored" data-anchor-id="erstellung-eines-repo"><span class="header-section-number">21.1</span> Erstellung eines Repo</h2>
-<p>Mit GitHub-Repositories können Sie Ihr Projekt mit wichtigen Dateien wie einer README, <code>.gitignore</code> und einer Lizenz initialisieren, um Struktur und Klarheit zu schaffen.</p>
-<p>Hier ist eine Anleitung, wie Sie dies tun können, einschließlich Erklärungen zu den einzelnen Komponenten.</p>
+<p>GitHub-Repositories können mit essentiellen Dateien wie README, <code>.gitignore</code> und einer Lizenz initialisiert werden, um dem Projekt von Anfang an Struktur und Klarheit zu verleihen.</p>
+<p>Folgende Schritte führen durch den Prozess der Repository-Erstellung:</p>
 <ol type="1">
-<li>Anmelden bei GitHub
+<li><p>Anmelden bei GitHub</p>
 <ul>
-<li>Öffnen Sie <a href="https://github.com">GitHub</a> in Ihrem Webbrowser.</li>
-<li>Melden Sie sich bei Ihrem GitHub-Konto an. Wenn Sie noch kein Konto haben, müssen Sie eines erstellen (siehe <a href="../github/github-setup.html">GitHub Setup</a>).</li>
+<li>Die <a href="https://github.com">GitHub-Website</a> im Webbrowser öffnen.</li>
+<li>Mit dem GitHub-Konto anmelden. Falls noch kein Konto vorhanden ist, muss zunächst eines erstellt werden (siehe <a href="../github/github-setup.html">GitHub Setup</a>).</li>
 </ul></li>
-<li>Navigieren Sie zu Ihrem Dashboard
+<li><p>Zum Dashboard navigieren</p>
 <ul>
-<li>Nach dem Anmelden gelangen Sie zu Ihrem GitHub-Dashboard.</li>
+<li>Nach erfolgreicher Anmeldung wird das persönliche GitHub-Dashboard angezeigt.</li>
 </ul></li>
-<li>Ein neues Repository starten
+<li><p>Neues Repository erstellen</p>
 <ul>
-<li>Klicken Sie auf das +-Symbol in der oberen rechten Ecke der Seite und wählen Sie New Repository aus dem Dropdown-Menü.</li>
+<li>Auf das +-Symbol in der oberen rechten Ecke klicken und “New Repository” aus dem Dropdown-Menü wählen.</li>
 </ul></li>
-<li>Repository-Details ausfüllen
+<li><p>Repository-Details eingeben</p>
 <ul>
-<li>Repository template: Wir verwenden “<em>No template</em>”.</li>
-<li>Repository name: Geben Sie dem Repository den Namen <code>hello-github</code> (Namen sollten immer prägnant und beschreibend sein).</li>
-<li>Description: <em>Wir verzichten hier auf eine Beschreibung</em>. Dieses Feld hilft anderen zu verstehen, worum es bei Ihrem Projekt geht.</li>
-<li>Public or Private: Wählen Sie <em>Public</em>. Hier können Sie entscheiden, ob Ihr Repository öffentlich (für jeden sichtbar) oder privat (nur für Sie und Personen, denen Sie explizit Zugriff gewähren) sein soll.</li>
-</ul></li>
-<li>Das Repository initialisieren (Initialize this repository with:)
+<li>Repository template: “No template” auswählen.</li>
+<li>Repository name: Den Namen <code>hello-github</code> eingeben.</li>
+<li>Description: <em>Wir verzichten hier auf eine Beschreibung</em>. Dieses Feld hilft anderen zu verstehen, worum es bei dem Projekt geht.</li>
+<li>Public or Private: Wir wählen <em>Public</em>. Hier können wir entscheiden, ob das Repository öffentlich (für jeden sichtbar) oder privat (nur für uns und Personen, denen wir explizit Zugriff gewähren) sein soll.</li>
+</ul>
+<p>:::{.callout-tip} Repository-Namen sollten prägnant und beschreibend sein, um den Inhalt oder Zweck des Projekts auf den ersten Blick zu vermitteln. :::</p></li>
+<li><p>Repository initialisieren</p>
 <ul>
-<li>Add a README file: <em>Aktivieren Sie das Kontrollkästchen</em> “Initialize this repository with a README”, um diese Datei automatisch zu erstellen. Eine README-Datei ist eine Markdown-Datei (README.md), die als Startseite Ihres Projekts dient.</li>
-<li>.gitignore: wählen Sie die <em>Python</em>-Vorlage. Eine <code>.gitignore</code>-Datei gibt an, welche Dateien und Verzeichnisse von Git ignoriert werden sollen. Dies ist nützlich, um Dateien auszuschließen, deren Änderungen nicht verfolgt werden sollen.</li>
-<li>Lizenz: Wählen Sie <em>MIT License</em>. Eine Lizenzdatei legt die Bedingungen fest, unter denen Ihr Projekt verwendet, modifiziert und von anderen geteilt werden kann. Durch die Auswahl einer Lizenz stellen Sie sicher, dass andere Ihr Projekt legal verwenden und dazu beitragen können. GitHub bietet verschiedene Lizenzen zur Auswahl an, wie z.B. MIT, Apache, GPL usw. Wir verwenden die MIT-Lizenz, die es jedem erlaubt, Ihren Code zu verwenden, solange der ursprüngliche Urheberrechts- und Lizenzhinweis enthalten ist.</li>
-</ul></li>
-<li>Create repository
+<li><p>README file: Das Kontrollkästchen “Add a README file” aktivieren. Eine README-Datei dient als Einstiegspunkt und Übersicht für das Projekt. Sie sollte eine kurze Beschreibung, Installationsanweisungen und Nutzungshinweise enthalten.</p></li>
+<li><p>.gitignore: Die Python-Vorlage wählen.</p></li>
+</ul>
+<p>:::{.callout-note} Eine .gitignore-Datei definiert, welche Dateien und Verzeichnisse von der Versionskontrolle ausgeschlossen werden sollen, z.B. temporäre Dateien oder vertrauliche Informationen. :::</p>
 <ul>
-<li>Klicken Sie auf die grüne Schaltfläche <em>Create repository</em>, um Ihr neues Repository auf GitHub zu erstellen.</li>
+<li>License: Die MIT License auswählen.</li>
+</ul>
+<p>:::{.callout-tip} Die Wahl einer Lizenz legt fest, wie andere Ihr Projekt nutzen, modifizieren und teilen dürfen. Die MIT-Lizenz ist besonders permissiv und erlaubt eine breite Nutzung, solange der ursprüngliche Copyright-Hinweis beibehalten wird. :::</p></li>
+<li><p>Repository erstellen</p>
+<ul>
+<li>Auf die grüne Schaltfläche “Create repository” klicken, um das neue Repository auf GitHub zu generieren.</li>
 </ul></li>
 </ol>
 </section>
 <section id="klonen-eines-repo" class="level2" data-number="21.2">
 <h2 data-number="21.2" class="anchored" data-anchor-id="klonen-eines-repo"><span class="header-section-number">21.2</span> Klonen eines Repo</h2>
-<p>Das Klonen eines Repositorys bedeutet, eine lokale Kopie eines Remote-Repositorys auf Ihrem Computer zu erstellen.</p>
-<p>Dies ermöglicht es Ihnen, offline an den Projektdateien zu arbeiten, Änderungen vorzunehmen und diese Änderungen dann mit dem Remote-Repository auf GitHub zu synchronisieren.</p>
+<p>Das Klonen eines Repositorys erzeugt eine lokale Kopie eines Remote-Repositorys auf dem eigenen Computer. Dies ermöglicht offline Arbeit an den Projektdateien, lokale Änderungen und anschließende Synchronisation mit dem Remote-Repository auf GitHub.</p>
+<p>Schritte zum Klonen eines Repositorys:</p>
 <ol type="1">
-<li><p>Öffnen Sie GitHub</p>
+<li><p>GitHub öffnen</p>
 <ul>
-<li>Öffnen Sie <a href="https://github.com">GitHub</a> in Ihrem Webbrowser und navigieren Sie zu Ihrem <code>hello-github</code>-Repository.</li>
-<li>Auf der Hauptseite des <code>hello-github</code>-Repositorys klicken Sie auf die grüne Schaltfläche <em>Code</em>.</li>
+<li><a href="https://github.com">GitHub</a> im Webbrowser öffnen und zum <code>hello-github</code>-Repository navigieren.</li>
+<li>Auf der Hauptseite des Repositorys die grüne Schaltfläche “Code” anklicken.</li>
 </ul></li>
 <li><p>Klon-Option auswählen</p>
 <ul>
-<li>Im Dropdown-Menü klicken Sie auf <em>Open with GitHub Desktop</em>. Dies wird GitHub Desktop dazu veranlassen, sich zu öffnen und den Klonvorgang zu starten.</li>
-<li>Wenn Ihr Browser Sie dazu auffordert, GitHub Desktop zu öffnen, bestätigen Sie die Aktion.</li>
+<li>Im Dropdown-Menü “Open with GitHub Desktop” wählen. Dies startet GitHub Desktop und initiiert den Klonvorgang.</li>
+<li>Bei Aufforderung durch den Browser die Öffnung von GitHub Desktop bestätigen.</li>
 </ul></li>
-<li><p>Klonen mit GitHub Desktop</p>
+<li><p>Mit GitHub Desktop klonen</p>
 <ul>
-<li>GitHub Desktop öffnet sich und zeigt ein Dialogfeld an, um den lokalen Pfad für das Repository zu bestätigen.</li>
-<li>Wählen Sie das Verzeichnis <code>toolkit-lab</code> auf Ihrem lokalen Rechner, in dem wir das <code>hello-github</code>-Repository klonen möchten. Dies erstellt einen Ordner namens <code>hello-github</code> im Verzeichnis <code>toolkit-lab</code>.</li>
+<li>In GitHub Desktop öffnet sich ein Dialogfeld zur Bestätigung des lokalen Pfads für das Repository.</li>
+<li>Das Verzeichnis <code>toolkit-lab</code> auf dem lokalen Rechner als Zielort für das <code>hello-github</code>-Repository auswählen.</li>
 </ul>
-<p>:::{.callout-note collapse=“true” title=“Hinweis zum Klonen von Verzeichnissen”} Stellen Sie immer sicher, dass das Verzeichnis nicht mit Cloud-Speicherdiensten wie iCloud, OneDrive oder Google Drive synchronisiert wird. Die Synchronisierung mit diesen Diensten kann zu Konflikten und Problemen mit Ihrem Git-Repository führen. :::</p>
+<p>:::{.callout-warning} Es ist wichtig sicherzustellen, dass das gewählte Verzeichnis nicht mit Cloud-Speicherdiensten wie iCloud, OneDrive oder Google Drive synchronisiert wird. Eine Synchronisierung mit diesen Diensten kann zu Konflikten und Problemen mit dem Git-Repository führen. :::</p>
 <ul>
-<li>Klicken Sie auf Klonen, um das <code>hello-github</code>-Repository auf Ihren lokalen Rechner herunterzuladen.</li>
+<li>Auf “Clone” klicken, um das <code>hello-github</code>-Repository auf den lokalen Rechner herunterzuladen.</li>
 </ul></li>
-<li><p>Öffnen Sie das Repository in GitHub Desktop</p>
+<li><p>Repository in GitHub Desktop öffnen</p>
 <ul>
 <li>Nach Abschluss des Klonvorgangs öffnet GitHub Desktop automatisch das <code>hello-github</code>-Repository.</li>
 </ul></li>
@@ -416,60 +421,72 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="commits-verwenden" class="level2" data-number="21.3">
 <h2 data-number="21.3" class="anchored" data-anchor-id="commits-verwenden"><span class="header-section-number">21.3</span> Commits verwenden</h2>
-<p>Nachdem Sie Ihr <code>hello-github</code>-Repository auf Ihren lokalen Rechner geklont haben, ist der nächste Schritt, an Ihren Projektdateien zu arbeiten. Wir verwenden Visual Studio Code (VS Code), um das Repository zu öffnen und Änderungen vorzunehmen.</p>
-<p>Öffnen des <code>hello-github</code>-Repositorys in VS Code</p>
+<p>Nach dem Klonen des <code>hello-github</code>-Repositorys auf den lokalen Rechner folgt die Arbeit an den Projektdateien. Visual Studio Code (VS Code) wird verwendet, um das Repository zu öffnen und Änderungen vorzunehmen.</p>
+<p>Schritte zum Öffnen und Bearbeiten des <code>hello-github</code>-Repositorys in VS Code:</p>
 <ol type="1">
-<li>Öffnen Sie VS Code
+<li>VS Code öffnen
 <ul>
-<li>Starten Sie Visual Studio Code auf Ihrem Computer.</li>
+<li>Visual Studio Code auf dem Computer starten.</li>
 </ul></li>
-<li>Öffnen Sie das geklonte Repository
+<li>Geklontes Repository öffnen
 <ul>
-<li>Klicken Sie in VS Code auf Datei &gt; Ordner öffnen….</li>
-<li>Navigieren Sie zum Verzeichnis <code>toolkit-lab/hello-github</code>, in dem Sie Ihr Repository geklont haben, und wählen Sie den Ordner <code>hello-github</code>.</li>
-<li>Klicken Sie auf Ordner auswählen, um das Repository in VS Code zu öffnen.</li>
+<li>In VS Code “Datei &gt; Ordner öffnen…” wählen.</li>
+<li>Zum Verzeichnis <code>toolkit-lab/hello-github</code> navigieren und den Ordner <code>hello-github</code> auswählen.</li>
+<li>“Ordner auswählen” klicken, um das Repository in VS Code zu öffnen.</li>
 </ul></li>
 <li>Dateien erstellen oder ändern
 <ul>
-<li>Sie können nun neue Dateien erstellen oder bestehende Dateien direkt in VS Code ändern. Zum Beispiel, um eine neue Python-Datei zu erstellen:
+<li>In VS Code können nun neue Dateien erstellt oder bestehende Dateien bearbeitet werden. Beispiel für das Erstellen einer neuen Python-Datei:
 <ul>
-<li>Klicken Sie mit der rechten Maustaste im Explorer-Panel (linke Seitenleiste) und wählen Sie Neue Datei.</li>
-<li>Nennen Sie die Datei <code>script.py</code> und fügen Sie etwas Python-Code hinzu. Speichern Sie Ihre Änderungen.</li>
+<li>Im Explorer-Panel (linke Seitenleiste) Rechtsklick und “Neue Datei” wählen.</li>
+<li>Die Datei <code>script.py</code> nennen und Python-Code hinzufügen. Änderungen speichern.</li>
 </ul></li>
 </ul></li>
 <li>Änderungen in GitHub Desktop anzeigen
 <ul>
-<li>Nachdem Sie Änderungen in VS Code vorgenommen haben, wechseln Sie zurück zu GitHub Desktop. Sie sehen die Änderungen in der linken Seitenleiste.</li>
+<li>Nach Vornahme von Änderungen in VS Code zu GitHub Desktop wechseln. Die Änderungen werden in der linken Seitenleiste angezeigt.</li>
 </ul></li>
-<li>Änderungen <em>abrufen</em>
+<li>Änderungen abrufen (Fetch)
 <ul>
-<li>Stellen Sie zunächst sicher, dass keine Änderungen im Remote-Repository <code>hello-github</code> vorliegen, die Sie nicht lokal haben. Sie können sie abrufen, indem Sie auf die Schaltfläche Fetch origin klicken und dann Pull, um Ihr lokales Repository mit den neuesten Änderungen zu aktualisieren.</li>
+<li>Zunächst sicherstellen, dass keine Änderungen im Remote-Repository <code>hello-github</code> vorliegen, die lokal noch nicht vorhanden sind. Dazu auf “Fetch origin” klicken und anschließend “Pull”, um das lokale Repository mit den neuesten Änderungen zu aktualisieren.</li>
 </ul></li>
-<li>Änderungen <em>stagen</em>
+<li>Änderungen stagen
 <ul>
-<li>Stagen bedeutet, auszuwählen, welche Änderungen Sie in Ihren nächsten Schnappschuss (Commit) des Repositorys aufnehmen möchten.</li>
-<li>In GitHub Desktop sehen Sie eine Liste der geänderten Dateien. Um Änderungen zu stagen:
+<li>Das Stagen bezeichnet die Auswahl der Änderungen, die in den nächsten Commit aufgenommen werden sollen.</li>
+<li>In GitHub Desktop eine Liste der geänderten Dateien anzeigen lassen. Zum Stagen von Änderungen:
 <ul>
-<li>Aktivieren Sie die Kontrollkästchen neben den Dateien, die Sie in Ihren Commit aufnehmen möchten.</li>
-<li>Wenn Sie alle Änderungen auf einmal stagen möchten, können Sie auf die Schaltfläche Stage All klicken.</li>
+<li>Kontrollkästchen neben den Dateien aktivieren, die in den Commit aufgenommen werden sollen.</li>
+<li>Alternativ “Stage All” klicken, um alle Änderungen auf einmal zu stagen.</li>
 </ul></li>
 </ul></li>
-<li>Änderungen <em>committen</em>
+<li>Änderungen committen
 <ul>
-<li>Committen bedeutet, Ihre gestagten Änderungen mit einer beschreibenden Nachricht zu speichern, die erklärt, was Sie getan haben. Diese Nachricht hilft Ihnen und anderen zu verstehen, welche Änderungen vorgenommen wurden und warum.</li>
-<li>Schreiben Sie eine kurze, aber beschreibende Commit-Nachricht in das Feld Zusammenfassung. Zum Beispiel: “Füge initiales Python-Skript hinzu”.</li>
-<li>Klicken Sie auf Commit to main, um die Änderungen in Ihrem lokalen Repository zu speichern.</li>
+<li>Ein Commit speichert die gestagten Änderungen mit einer beschreibenden Nachricht, die die vorgenommenen Änderungen erklärt.</li>
+<li>Eine kurze, aber aussagekräftige Commit-Nachricht in das Feld “Summary” eingeben. Beispiel: “Füge initiales Python-Skript hinzu”.</li>
+<li>“Commit to main” klicken, um die Änderungen im lokalen Repository zu speichern.</li>
 </ul></li>
 <li>Änderungen pushen
 <ul>
-<li>Nach dem Committen der Änderungen klicken Sie auf die Schaltfläche Push origin oben, um Ihre Änderungen in das Remote-Repository <code>hello-github</code> auf GitHub hochzuladen.</li>
+<li>Nach dem Committen der Änderungen auf “Push origin” oben klicken, um die Änderungen in das Remote-Repository <code>hello-github</code> auf GitHub hochzuladen.</li>
 </ul></li>
 </ol>
-<!-- ## Tipps
-
-- Oft committen: Machen Sie kleine, häufige Commits mit klaren Nachrichten. Dies erleichtert das Verfolgen von Änderungen und das Zurücksetzen, falls erforderlich.
-
-- README: Eine gut dokumentierte README-Datei ist entscheidend. Sie sollte einen Überblick über das Projekt, Installations- und Nutzungshinweise sowie weitere relevante Informationen bieten. -->
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Beste Praktiken für Commits
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Häufige, kleine Commits durchführen: Dies erleichtert das Nachverfolgen von Änderungen und ermöglicht bei Bedarf einfacheres Zurücksetzen.</li>
+<li>Klare Commit-Nachrichten verfassen: Eine präzise Beschreibung der vorgenommenen Änderungen hilft bei der späteren Nachvollziehbarkeit.</li>
+<li>Regelmäßig pushen: Durch regelmäßiges Pushen der Commits zum Remote-Repository wird sichergestellt, dass die Arbeit gesichert ist und andere Teammitglieder Zugriff auf die neuesten Änderungen haben.</li>
+</ul>
+</div>
+</div>
 
 
 </section>
