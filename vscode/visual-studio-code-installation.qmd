@@ -1,109 +1,111 @@
 # VS Code Einführung
 
-Visual Studio Code (VS Code) ist ein Open-Source-Editor, der von Microsoft entwickelt wurde.
+Visual Studio Code (VS Code) ist ein leistungsfähiger, Open-Source-Editor - d.h., dass der Quellcode, also die grundlegenden Anweisungen, die das Programm steuern, öffentlich zugänglich und frei verfügbar sind -, der von Microsoft entwickelt wurde. Er bietet eine Vielzahl von Funktionen, die ihn zu einem idealen Werkzeug für Data Science und KI-Einsteiger machen.
+
 
 :::{.callout-note}
-Obwohl VS Code nahezu jede Programmieraufgabe bewältigen kann, ist es besonders in der Python-Community aufgrund seiner umfangreichen Python-spezifischen Funktionen und Erweiterungen beliebt.
+VS Code ist besonders in der Python-Community beliebt, da es umfangreiche Python-spezifische Funktionen und Erweiterungen bietet. Diese Eigenschaften machen es zu einer ausgezeichneten Wahl für Data Science Projekte.
 :::
 
-Hilfreiche Ressourcen, um sich mit VS Code vertraut zu machen:
+Der Hauptunterschied eines Open-Source-Editors zu herkömmlicher Software liegt darin, 
 
-- [Sehen Sie sich die Einführungsvideos an](https://code.visualstudio.com/docs/getstarted/introvideos)
+Für einen tieferen Einblick in die Funktionsweise von VS Code sind folgende Ressourcen empfehlenswert:
+
+- [Einführungsvideos zu VS Code](https://code.visualstudio.com/docs/getstarted/introvideos)
 - [Datenwissenschaft in VS Code Tutorial](https://code.visualstudio.com/docs/datascience/data-science-tutorial)
-- Pro-Tipps: [25 VS Code Productivity Tips and Speed Hacks](https://www.youtube.com/watch?v=ifTF3ags0XI)
-
+- [25 VS Code Produktivitätstipps und Geschwindigkeits-Hacks](https://www.youtube.com/watch?v=ifTF3ags0XI)
 
 # VS Code Installation in Windows
 
-1. Downloaden Sie den Installer:
-   - Besuchen Sie die [Visual Studio Code Download-Seite](https://code.visualstudio.com/Download).
-   - Klicken Sie auf die Windows-Version, um den `.exe` Installer herunterzuladen.
+Die Installation von VS Code unter Windows ist ein unkomplizierter Prozess, der in wenigen Schritten durchgeführt werden kann:
 
-2. Führen Sie den Installer aus:
-   - Nachdem der Download abgeschlossen ist, suchen Sie die `.exe` Datei und doppelklicken Sie darauf, um den Installationsprozess zu starten.
-   - Folgen Sie den Anweisungen im Setup-Assistenten. Achten Sie darauf, die Kästchen zu aktivieren, um VS Code zum PATH hinzuzufügen und ein Desktop-Symbol zu erstellen.
+1. Herunterladen des Installers
+   - Die [Visual Studio Code Download-Seite](https://code.visualstudio.com/Download) aufrufen.
+   - Die Windows-Version auswählen, um den `.exe` Installer herunterzuladen.
 
-:::{.callout-tip}
-Das Hinzufügen von VS Code zu Ihrem PATH ermöglicht es Ihnen, den Editor über die Eingabeaufforderung oder das Terminal zu starten, indem Sie einfach `code` eingeben.
-:::
-
-3. Starten Sie Visual Studio Code:
-   - Nach der Installation können Sie VS Code entweder über das Desktop-Symbol oder über das Startmenü starten.
-   - Beim ersten Start öffnet VS Code eine Willkommensseite, auf der Sie Ihre Umgebung anpassen, Erweiterungen installieren oder ein Projekt öffnen können.
-
-Beim Starten von Visual Studio Code wird Ihnen möglicherweise eine Aufforderung angezeigt, ob Sie den Autoren der Dateien vertrauen ([Workspace Trust](https://code.visualstudio.com/docs/editor/workspace-trust)). Wählen Sie "**Ja, ich vertraue den Autoren**" (diese Auswahl ermöglicht die volle Funktionalität von Visual Studio Code, sodass alle Funktionen und Erweiterungen verwendet werden können).
-
-
-# VS Code Installation auf Mac 
-
-1. Downloaden Sie den Installer:
-   - Navigieren Sie zur [Visual Studio Code Download-Seite](https://code.visualstudio.com/Download).
-   - Klicken Sie auf die macOS-Version, um die `.zip` Datei herunterzuladen.
-
-2. Installieren Sie die Anwendung:
-   - Nach dem Download öffnen Sie den `.zip` Ordner und extrahieren die Visual Studio Code Anwendung.
-   - Ziehen Sie die Visual Studio Code Anwendung in Ihren "Programme"-Ordner.
-
-3. Starten Sie Visual Studio Code:
-   - Öffnen Sie Ihren "Programme"-Ordner und doppelklicken Sie auf Visual Studio Code, um es zu starten.
-   - Der erste Start öffnet eine Willkommensseite, die Sie durch die erste Einrichtung, einschließlich der Installation beliebter Erweiterungen, führt.
-
-4. Zum PATH hinzufügen:
-   - Das Hinzufügen von VS Code zu Ihrem PATH ermöglicht es Ihnen, es vom Terminal aus zu starten. Öffnen Sie dazu die Befehlspalette (`Cmd+Shift+P`), geben Sie 'Shell Command: Install `code` command in PATH' ein und drücken Sie Enter.
+2. Ausführen des Installers
+   - Nach Abschluss des Downloads die `.exe` Datei durch Doppelklick starten.
+   - Den Anweisungen des Setup-Assistenten folgen.
+   - Wichtig: Die Optionen "VS Code zum PATH hinzufügen" und "Desktop-Symbol erstellen" aktivieren.
 
 :::{.callout-tip}
-Die Installation des `code` Befehls in Ihrem PATH ermöglicht es Ihnen, VS Code aus dem Terminal zu öffnen, indem Sie `code .` in einem beliebigen Verzeichnis eingeben, was es schnell und einfach macht, Projekte zu öffnen.
+Das Hinzufügen von VS Code zum PATH ermöglicht es, den Editor über die Eingabeaufforderung zu starten, indem einfach `code` eingegeben wird. 
 :::
 
-Beim Starten von Visual Studio Code wird Ihnen möglicherweise eine Aufforderung angezeigt, ob Sie den Autoren der Dateien vertrauen ([Workspace Trust](https://code.visualstudio.com/docs/editor/workspace-trust)). Wählen Sie "**Ja, ich vertraue den Autoren**" (diese Auswahl ermöglicht die volle Funktionalität von Visual Studio Code, sodass alle Funktionen und Erweiterungen verwendet werden können).
+3. Erster Start von Visual Studio Code
+   - Nach der Installation VS Code über das Desktop-Symbol oder das Startmenü öffnen.
+   - Beim ersten Start wird eine Willkommensseite angezeigt, die Optionen zur Anpassung der Umgebung, Installation von Erweiterungen oder Öffnen eines Projekts bietet.
+
+4. Workspace Trust
+   Bei der ersten Nutzung von VS Code erscheint möglicherweise eine Abfrage zum [Workspace Trust](https://code.visualstudio.com/docs/editor/workspace-trust). Es wird empfohlen, "**Ja, ich vertraue den Autoren**" zu wählen, um alle Funktionen und Erweiterungen vollständig nutzen zu können.
+
+# VS Code Installation auf Mac
+
+Hier die Schritte der Installation von VS Code auf einem Mac :
+
+1. Herunterladen des Installers
+   - Die [Visual Studio Code Download-Seite](https://code.visualstudio.com/Download) besuchen.
+   - Die macOS-Version auswählen, um die `.zip` Datei herunterzuladen.
+
+2. Installation der Anwendung
+   - Nach dem Download den `.zip` Ordner im Finder extrahieren.
+   - Die Visual Studio Code Anwendung im Finder in den "Programme"-Ordner ziehen.
+
+3. Erster Start von Visual Studio Code
+   - Den "Programme"-Ordner öffnen und Visual Studio Code durch Doppelklick starten.
+   - Die Willkommensseite führt durch die erste Einrichtung, einschließlich der Installation beliebter Erweiterungen.
+
+4. Hinzufügen zum PATH
+   Um VS Code vom Terminal aus starten zu können, sollte es zum PATH hinzugefügt werden:
+   - In VS Code die Befehlspalette mit dieser Tastenkombination öffnen: `Command+Shift+P` (erst Command, dann Shift und dann P gleichzeitig gedrückt halten).
+   - 'Shell Command: Install `code` command in PATH' eingeben und Enter drücken.
+
+:::{.callout-tip}
+Nach der Installation des `code` Befehls im PATH kann VS Code aus dem Terminal geöffnet werden, indem `code .` in einem beliebigen Verzeichnis eingegeben wird. Dies ermöglicht uns einen schnellen und einfachen Zugriff auf Projekte.
+:::
+
+5. Workspace Trust
+   Beim ersten Start wird möglicherweise eine Abfrage zum [Workspace Trust](https://code.visualstudio.com/docs/editor/workspace-trust) angezeigt. Es wird empfohlen, "**Ja, ich vertraue den Autoren**" zu wählen, um alle Funktionen und Erweiterungen vollständig nutzen zu können.
 
 # VS Code Erweiterungen
 
-Erweiterungen (Extensions) verbessern die Funktionalität von Visual Studio Code, indem sie zusätzliche Funktionalitäten bieten.
+Erweiterungen (Extensions) sind ein zentrales Feature von VS Code, das die Funktionalität des Editors erheblich erweitert. Sie ermöglichen es, den Editor an spezifische Bedürfnisse anzupassen und die Produktivität zu steigern.
 
-Dieser Abschnitt führt Sie durch die Installation von einigen hilfreichen Erweiterungen.
+Microsoft bietet einen [digitalen Marktplatz für VS Code Erweiterungen](https://marketplace.visualstudio.com/), auf welchem man sich auch eine Übersicht über die empfohlenen  [Erweiterungen für Data Science](https://marketplace.visualstudio.com/search?target=VSCode&category=Data%20Science&sortBy=Installs) verschaffen kann.
 
-### Python-Erweiterung
+Die folgenden Erweiterungen sollten in jedem Fall installiert werden (auf der jeweiligen Seite auf Install klicken und den Anweisungen im Browser folgen. Alternativ kann auch der unten beschriebene Installationsprozess in VS Code gewählt werden): 
 
-Die Python-Erweiterung von Microsoft bietet umfassende Unterstützung für das Python-Coding, einschließlich IntelliSense (automatische Code-Vervollständigungen).
+- **[Python-Erweiterung](https://marketplace.visualstudio.com/items?itemName=ms-python.python)**
+  Die Python-Erweiterung von Microsoft ist unverzichtbar für Python-Entwickler/innen. Sie bietet unter anderem:
+  - IntelliSense (automatische Code-Vervollständigungen)
+  - Linting (Codequalitätsprüfung)
+  - Code-Navigation
+  - Formatierung
 
-So installieren Sie die Erweiterung:
+- **[Jupyter-Erweiterung](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)**
+  Die Jupyter-Erweiterung ermöglicht es, Jupyter-Notebooks direkt in VS Code zu erstellen, zu bearbeiten und auszuführen. 
 
-1. Öffnen Sie Visual Studio Code.
-2. Gehen Sie zur Ansicht Erweiterungen, indem Sie auf das Quadrat-Symbol in der Seitenleiste klicken oder `Ctrl+Shift+X` (Windows) bzw. `Command+Shift+X` (Mac) drücken.
-3. Geben Sie in der Suchleiste "Python" ein und suchen Sie nach der von Microsoft veröffentlichten Python-Erweiterung.
-4. Klicken Sie auf "Installieren", um die Erweiterung zu Ihrem Editor hinzuzufügen.
+- **[VS Code Icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)**
+  Diese Erweiterung verbessert die visuelle Organisation von Projektdateien:
+  - Fügt für jeden Dateityp passende Symbole hinzu
+  - Erleichtert die schnelle Identifizierung verschiedener Dateitypen im Projekt-Explorer
 
-### Jupyter-Erweiterung
+Optional kann auch die visuelle Darstellung von VS Code angepasst werden:
 
-Die Jupyter-Erweiterung ermöglicht es Ihnen, Jupyter-Notebooks direkt in VS Code zu erstellen, zu bearbeiten und auszuführen. 
+- **[Atom One Dark Theme](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark)**
+  Für eine angenehme visuelle Erfahrung, insbesondere bei längeren Coding-Sessions:
+  - Dunkles Farbschema, das die Augenbelastung reduziert
+  - Verbesserte Lesbarkeit des Codes durch sorgfältig ausgewählte Farben
 
-So installieren Sie die Erweiterung:
+Hier noch der allgemeine Installationsprozess für Erweiterungen direkt in VS Code:
 
-1. Öffnen Sie die Ansicht Erweiterungen wie zuvor beschrieben.
-2. Suchen Sie nach "Jupyter".
-3. Wählen Sie die von Microsoft bereitgestellte Jupyter-Erweiterung aus und klicken Sie auf "Installieren".
+1. VS Code öffnen.
+2. Die Ansicht Erweiterungen aufrufen:
+   - Über das Quadrat-Symbol in der Seitenleiste oder
+   - Durch Drücken von `Ctrl+Shift+X` (Windows) bzw. `Command+Shift+X` (Mac).
+3. In der Suchleiste nach der gewünschten Erweiterung suchen.
+4. Auf "Installieren" klicken, um die Erweiterung hinzuzufügen.
 
-
-### Atom One Dark Theme
-
-Für diejenigen, die eine dunkle Entwicklungsumgebung bevorzugen, bietet das Atom One Dark Theme eine attraktiv gestaltete Benutzeroberfläche.
-
-So installieren Sie die Erweiterung:
-
-1. Greifen Sie auf den Erweiterungsmarktplatz in VS Code zu.
-2. Suchen Sie nach "Atom One Dark Theme".
-3. Klicken Sie auf "Installieren", um das Theme auf Ihre Umgebung anzuwenden.
-
-### VS Code Icons
-
-Die VS Code Icons-Erweiterung verbessert die visuelle Organisation Ihrer Projektdateien, indem sie für jeden Dateityp passende Symbole hinzufügt.
-
-So installieren Sie die Erweiterung:
-
-1. Öffnen Sie die Ansicht Erweiterungen in VS Code.
-2. Geben Sie "VS Code Icons" in die Suchleiste ein.
-3. Klicken Sie auf "Installieren".
 
 
 
