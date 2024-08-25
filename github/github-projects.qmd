@@ -1,68 +1,80 @@
 # GitHub Projects
 
-GitHub-Projects ist eine leistungsstarke Funktion, die Ihnen hilft, die Arbeit an Ihren Repositories zu organisieren und zu verfolgen. Es bietet Kanban-Boards zur effizienten Verwaltung von Aufgaben und Workflows.
+GitHub-Projects ist eine leistungsstarke Funktion zur Organisation und Verfolgung der Arbeit an Repositories. Es bietet Kanban-Boards zur effizienten Verwaltung von Aufgaben und Workflows.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/yFQ-p6wMS_Y?si=vYu5dBCHN4XfyPk3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Es ermöglicht Ihnen, die Arbeit zu planen und zu verwalten, indem Sie Projektboards erstellen. Diese Boards enthalten Issues, Pull Requests und Notizen, die als Karten in Spalten organisiert sind.
+Mit GitHub-Projects lässt sich die Arbeit durch die Erstellung von Projektboards planen und verwalten. Diese Boards enthalten Issues, Pull Requests und Notizen, die als Karten in Spalten organisiert werden.
 
-Ein GitHub-Projekt erstellen:
+## Ein GitHub-Projekt erstellen
 
+1. Zum Repository oder zur Organisation navigieren:
+   Zunächst gelangt man zum gewünschten Repository oder zur Organisation, in dem das Projekt erstellt werden soll.
 
-1. Navigieren Sie zu Ihrem Repository oder Ihrer Organisation:
-    Gehen Sie zu dem Repository oder der Organisation, in dem/der Sie ein Projekt erstellen möchten.
+2. Auf den Tab 'Projects' zugreifen:
+   Auf der Hauptseite des Repositorys oder der Organisation findet sich der Tab 'Projects'.
 
-2. Zugriff auf den Tab 'Projects':
-    Klicken Sie auf der Hauptseite Ihres Repositorys oder Ihrer Organisation auf den Tab 'Projects'.
+3. 'New Project' auswählen:
+   Um ein neues Projekt zu erstellen, wird die Schaltfläche 'New project' angeklickt.
 
-3. Klicken Sie auf 'New Project':
-    Klicken Sie auf die Schaltfläche 'New project', um ein neues Projekt zu erstellen.
+4. Projekt einrichten:
+   - Name: Hier vergibt man einen aussagekräftigen Namen für das Projekt.
+   - Beschreibung: Eine Beschreibung erklärt den Zweck des Projekts.
+   - Vorlage: Es besteht die Möglichkeit, eine Vorlage zu wählen oder mit einem leeren Projekt zu beginnen.
 
-4. Richten Sie Ihr Projekt ein:
-    - Name: Geben Sie Ihrem Projekt einen aussagekräftigen Namen.
-    - Beschreibung: Fügen Sie eine Beschreibung hinzu, um den Zweck des Projekts zu erklären.
-    - Vorlage: Wählen Sie eine Vorlage, falls verfügbar, oder beginnen Sie mit einem leeren Projekt.
+## Projektboards verwalten
 
-**Projektboards verwalten**:
+Nach der Erstellung des Projekts beginnt die Verwaltung durch das Hinzufügen von Spalten und Karten.
 
-Sobald Ihr Projekt erstellt ist, können Sie beginnen, es durch Hinzufügen von Spalten und Karten zu verwalten.
+### Spalten hinzufügen
 
-Spalten helfen, Aufgaben in Kategorien wie 'To Do', 'In Progress' und 'Done' zu organisieren.
+Spalten helfen bei der Organisation von Aufgaben in Kategorien wie 'To Do', 'In Progress' und 'Done'.
 
-1. Klicken Sie auf 'Add column':
-    Klicken Sie auf die Schaltfläche 'Add column' auf Ihrem Projektboard.
+1. 'Add column' auswählen:
+   Auf dem Projektboard findet sich die Schaltfläche 'Add column'.
 
-2. Benennen Sie Ihre Spalte:
-    Geben Sie der Spalte einen Namen, z.B. 'To Do'.
+2. Spalte benennen:
+   Der Spalte wird ein passender Name gegeben, beispielsweise 'To Do'.
 
-3. Wiederholen Sie dies für zusätzliche Spalten:
-    Erstellen Sie nach Bedarf zusätzliche Spalten für Ihren Workflow.
+3. Vorgang für weitere Spalten wiederholen:
+   Je nach Bedarf werden zusätzliche Spalten für den Workflow erstellt.
 
+### Karten hinzufügen
 
 Karten repräsentieren Aufgaben und können Issues, Pull Requests oder Notizen sein.
 
-1. Ein Issue oder einen Pull Request hinzufügen:
-    Ziehen Sie ein vorhandenes Issue oder einen Pull Request von der Seitenleiste in eine Spalte.
+1. Issue oder Pull Request hinzufügen:
+   Ein vorhandenes Issue oder ein Pull Request lässt sich aus der Seitenleiste in eine Spalte ziehen.
 
-2. Eine Notiz erstellen:
-    Klicken Sie in einer Spalte auf 'Add a note', um eine benutzerdefinierte Aufgabe oder Notiz zu erstellen.
+2. Notiz erstellen:
+   In einer Spalte kann durch Klicken auf 'Add a note' eine benutzerdefinierte Aufgabe oder Notiz erstellt werden.
 
-**Best Practices**:
+## Best Practices
 
 Arbeit organisieren:
 
-- Verwenden Sie klare Spaltennamen: Nutzen Sie intuitive Namen für Spalten, die die Phasen des Workflows widerspiegeln.
-- Priorisieren Sie Aufgaben: Ziehen Sie Karten, um Aufgaben innerhalb einer Spalte zu priorisieren.
+- Klare Spaltennamen verwenden:
+  Intuitive Namen für Spalten spiegeln die Phasen des Workflows wider.
 
-Zusammenarbeit:
+- Aufgaben priorisieren:
+  Durch Ziehen der Karten lassen sich Aufgaben innerhalb einer Spalte priorisieren.
 
-- Karten Teammitgliedern zuweisen: Weisen Sie Issues oder Pull Requests Teammitgliedern zu, um die Zuständigkeit zu klären.
-- Verwenden Sie Labels: Wenden Sie Labels auf Karten an, um zusätzliche Kategorisierungen und Filterungen zu ermöglichen.
+Zusammenarbeit fördern:
+
+- Karten Teammitgliedern zuweisen:
+  Um die Zuständigkeit zu klären, werden Issues oder Pull Requests Teammitgliedern zugewiesen.
+
+- Labels nutzen:
+  Labels auf Karten ermöglichen zusätzliche Kategorisierungen und Filterungen.
 
 Fortschritt verfolgen:
 
-- Regelmäßige Updates: Aktualisieren Sie den Status der Karten regelmäßig, um den aktuellen Fortschritt widerzuspiegeln.
-- Abgeschlossene Karten schließen: Verschieben Sie abgeschlossene Aufgaben in die Spalte 'Done' und schließen Sie die entsprechenden Issues oder Pull Requests.
+- Regelmäßige Updates durchführen:
+  Der Status der Karten wird regelmäßig aktualisiert, um den aktuellen Fortschritt widerzuspiegeln.
 
-GitHub Projects ermöglicht zudem die Automatisierung von Workflows mit Auslösern, die Karten basierend auf bestimmten Aktionen wie dem Schließen eines Issues oder dem Mergen eines Pull Requests in andere Spalten verschieben.
+- Abgeschlossene Karten schließen:
+  Abgeschlossene Aufgaben werden in die Spalte 'Done' verschoben und die entsprechenden Issues oder Pull Requests geschlossen.
 
+::: {.callout-tip}
+GitHub Projects ermöglicht auch die Automatisierung von Workflows. Durch Auslöser können Karten basierend auf bestimmten Aktionen, wie dem Schließen eines Issues oder dem Mergen eines Pull Requests, automatisch in andere Spalten verschoben werden.
+:::
