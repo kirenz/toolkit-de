@@ -1,24 +1,26 @@
 # Markdown 
 
-Markdown ist eine einfache Markup-Sprache, die zur Umwandlung in HTML entwickelt wurde. Sie ist aufgrund ihrer Einfachheit und Vielseitigkeit weit verbreitet und ideal für Dokumentationen, Berichte und die Erfassung von Forschungsergebnissen.
+Markdown ist eine einfache Auszeichnungssprache, die entwickelt wurde, um leicht in HTML umgewandelt zu werden. Aufgrund ihrer Einfachheit und Vielseitigkeit wird sie häufig verwendet und eignet sich hervorragend für Dokumentationen, Berichte und die Aufzeichnung von Forschungsergebnissen.
 
-In der Datenwissenschaft findet Markdown umfangreiche Anwendung nicht nur zur Dokumentation von Projekten, sondern auch zur Erstellung dynamischer Berichte, die nahtlos erzählenden Text mit den Ergebnissen von Datenanalysen integrieren, oft mithilfe von Tools wie Jupyter Notebooks.
+In der Datenwissenschaft findet Markdown breite Anwendung. Wir nutzen es nicht nur zur Dokumentation von Projekten, sondern auch zur Erstellung dynamischer Berichte. Diese Berichte verbinden nahtlos erklärenden Text mit den Ergebnissen von Datenanalysen, oft mithilfe von Werkzeugen wie Jupyter Notebooks.
 
 ## Markdown in Jupyter Notebook 
 
-Um loszulegen, erstellen Sie zuerst ein neues Jupyter-Notebook. Wenn Sie nicht sicher sind, wie das geht, können Sie diesen Leitfaden zu [Jupyter Notebooks](jupyter-notebook.qmd) durcharbeiten. Benennen Sie Ihr Notebook `hello-markdown.ipynb` und speichern Sie es im Ordner `code`:
+Um mit Markdown in Jupyter Notebook zu beginnen, folgen wir diesen Schritten:
 
-1. Navigieren Sie zu "File > Save As..." und geben Sie den Namen `hello-markdown` ein.
-2. Fügen Sie in dem Notebook eine neue Zelle hinzu, indem Sie auf die Schaltfläche "+" klicken.
-3. Ändern Sie den Zelltyp mithilfe des Dropdown-Menüs in der Symbolleiste auf "Markdown".
+1. Wir erstellen ein neues Jupyter-Notebook, wie zuvor in  diesem Leitfaden zu [Jupyter Notebooks](jupyter-notebook.qmd).
+2. Wir benennen unser Notebook `hello-markdown.ipynb` und speichern es im Ordner `code`:
+   - Dazu navigieren wir zu "File > Save As..." und geben den Namen `hello-markdown` ein.
+3. Im Notebook fügen wir eine neue Zelle hinzu, indem wir auf die Schaltfläche "+" klicken.
+4. Wir ändern den Zelltyp mithilfe des Dropdown-Menüs in der Symbolleiste auf "Markdown".
 
-Führen Sie die Zelle mit `Shift+Enter` aus, um den Markdown-Text zu rendern. Denken Sie daran, Ihren Fortschritt regelmäßig zu speichern.
+Um den Markdown-Text zu rendern (d.h. auszuführen), führen wir die Zelle mit `Shift+Enter` aus. 
 
 ## Markdown-Basics
 
 ### Überschriften
 
-Überschriften strukturieren das Dokument und schaffen eine Hierarchie der Abschnitte.
+Mit Überschriften strukturieren wir unser Dokument und schaffen eine Hierarchie der Abschnitte.
 
 ```markdown
 # Hauptüberschrift (H1)
@@ -28,7 +30,7 @@ Führen Sie die Zelle mit `Shift+Enter` aus, um den Markdown-Text zu rendern. De
 
 ### Listen
 
-Listen organisieren Informationen klar und prägnant.
+Listen helfen uns, Informationen klar und prägnant zu organisieren.
 
 Geordnete Listen:
 
@@ -52,23 +54,23 @@ Ungeordnete Listen:
 
 ### Hervorhebungen
 
-Betonen Sie Text, um wichtige Punkte hervorzuheben.
+Durch Hervorhebungen können wir wichtige Punkte betonen.
 
 ```markdown
 *Kursiv*  
-Fett  
+**Fett**  
 _Kursiv mit Unterstrichen_  
 __Fett mit Unterstrichen__
 ```
 
 *Kursiv*  
-Fett  
+**Fett**  
 _Kursiv mit Unterstrichen_  
 __Fett mit Unterstrichen__
 
 ### Blockzitate
 
-Verwenden Sie Blockzitate, um Quellen oder wichtige Informationen zu zitieren.
+Blockzitate verwenden wir, um Quellen oder wichtige Informationen zu zitieren.
 
 ```markdown
 > "Dies ist ein Blockzitat."
@@ -92,7 +94,7 @@ Tabellen sind entscheidend für die effiziente Organisation von Daten.
 
 ### Links und Bilder
 
-Links und Bilder bereichern das Dokument und bieten zusätzlichen Kontext.
+Mit Links und Bildern bereichern wir unser Dokument und bieten zusätzlichen Kontext.
 
 Links:
 
@@ -102,7 +104,6 @@ Links:
 
 [Python-Dokumentation](https://docs.python.org/)
 
-
 Bilder:
 
 ```markdown
@@ -111,7 +112,7 @@ Bilder:
 
 ### Mathematische Ausdrücke
 
-LaTeX-Integration ermöglicht die Darstellung komplexer mathematischer Formeln.
+Durch die Integration von LaTeX können wir komplexe mathematische Formeln darstellen.
 
 Inline-Gleichung:
 
@@ -135,7 +136,7 @@ $$
 
 ### Horizontale Linien
 
-Verwenden Sie horizontale Linien, um Abschnitte visuell zu trennen.
+Horizontale Linien helfen uns, Abschnitte visuell zu trennen.
 
 ```markdown
 ---
@@ -145,7 +146,7 @@ Verwenden Sie horizontale Linien, um Abschnitte visuell zu trennen.
 
 ### Code-Blöcke
 
-Präsentieren Sie Code-Snippets mit Syntax-Hervorhebung.
+Mit Code-Blöcken präsentieren wir Code-Snippets und nutzen dabei Syntax-Hervorhebung.
 
 ````markdown
 ```python
@@ -159,7 +160,40 @@ print("Hallo, Python!")
 
 ### Weiterführendes Lernen
 
-Erkunden Sie diese Ressourcen, um Ihr Verständnis von Markdown weiter zu vertiefen:
+Um das Verständnis von Markdown weiter zu vertiefen, können diese Ressourcen genutzt werden:
 
 - [Interaktives 10-minütiges Markdown-Tutorial](https://commonmark.org/help/)  
 - [Markdown meistern](https://guides.github.com/features/mastering-markdown/)
+
+
+## Praktische Übung
+
+Als nächstes werden wir das Gelernte in einer kleinen Übung anwenden:
+
+1. Neues Jupyter Notebook öffnen.
+2. Markdown-Zelle erstellen folgenden Text einfügen:
+
+   ```markdown
+   # Mein erstes Markdown-Dokument
+   
+   Hier ist eine Liste meiner Lieblings-Datenwissenschafts-Tools:
+   
+   1. Python
+   2. Jupyter Notebooks
+   3. Pandas
+   
+   Hier ist ein **wichtiger** Punkt zu beachten:
+   
+   > Üben ist der Schlüssel zum Erfolg!
+   
+   Dies ist eine Python-Funktion:
+   
+   ```python
+   def greet(name):
+       return f"Hallo, {name}! Willkommen in der Welt der Datenwissenschaft!"
+   ```
+   ```
+
+3. Zelle ausführen.
+
+
