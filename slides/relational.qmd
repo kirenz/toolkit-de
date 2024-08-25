@@ -1,0 +1,185 @@
+---
+title: Relationale Datenbanken
+lang: de
+subtitle: Grundlagen und SQL
+author: Data Science, AI & Analytics Toolkit  
+execute:
+  eval: false
+  echo: true
+highlight-style: github-dark
+format:
+  revealjs: 
+    toc: false
+    toc-depth: 1
+    embed-resources: false
+    theme: [default, style/custom.scss]
+    incremental: true
+    transition: none
+    background-transition: fade
+    transition-speed: slow
+    code-copy: true
+    code-line-numbers: false
+    smaller: false
+    scrollable: true
+    slide-number: false
+    preview-links: auto
+    css: style/index.css
+    chalkboard: 
+      buttons: false
+    logo: images/code-blue.png
+    footer: Jan Kirenz
+    template-partials:
+      - title-slide.html 
+title-slide-attributes:
+  data-background-color: "#ffffff"
+jupyter: python3
+---
+
+## Inhalte des Tutorials
+
+:::: {.features}
+
+::: {.feature .fragment .fade-in}
+:::{.feature-header}
+Grundlagen 📊
+:::
+RDBMS & Einsatzgebiete
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Tabellen 🗃️
+:::
+Struktur & Schlüsselkonzepte
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+SQL 💻
+:::
+Abfragen & Operationen
+:::
+
+::::
+
+## Relationale Datenbanken - Grundlagen
+
+::: {.incremental}
+- Fundament moderner Datenbankanwendungen
+- Organisieren Daten in strukturierten Tabellen
+- Datenbankmanagementsystem (DBMS) verwaltet Datenbanken
+- Relationales DBMS (RDBMS) bietet zusätzliche Funktionen
+:::
+
+## RDBMS Funktionen
+
+::: {.incremental}
+- Datenintegrität
+- Transaktionsverwaltung
+- Sicherheitsmechanismen
+:::
+
+## Bekannte RDBMS
+
+::: {.incremental}
+- MySQL 🐬
+- PostgreSQL 🐘
+- SQLite 🗃️
+:::
+
+## Einsatzgebiete
+
+::: {.incremental}
+- Finanzwesen 💰
+  - Kontodaten, Transaktionen, Finanzberichte
+- E-Commerce 🛒
+  - Produktkataloge, Bestellungen, Kundeninformationen
+- Gesundheitswesen 🏥
+  - Patientendaten, Termine, medizinische Aufzeichnungen
+:::
+
+## Tabellen - Das Herzstück
+
+- Strukturierte Sammlung von Daten
+- Organisiert in Zeilen und Spalten
+- Jede Tabelle repräsentiert eine Entität
+- Jede Zeile ist ein einzelner Datensatz
+
+## Beispiel: Kunden-Tabelle
+
+| KundenID | Name        | Email                   | Stadt   |
+|----------|-------------|-------------------------|---------|
+| 1        | Max Müller  | max.mueller@beispiel.de | Berlin  |
+| 2        | Anna Schmidt| anna.schmidt@beispiel.de| Hamburg |
+| 3        | Peter Weber | peter.weber@beispiel.de | München |
+
+## Datentypen
+
+::: {.incremental}
+- INTEGER: Ganze Zahlen
+- VARCHAR: Zeichenketten variabler Länge
+- DATE: Datumsangaben
+- BOOLEAN: Wahrheitswerte (true/false)
+:::
+
+## Schlüsselkonzepte
+
+::: {.incremental}
+- Primärschlüssel 🔑
+  - Eindeutige Identifikation jedes Datensatzes
+- Fremdschlüssel 🔗
+  - Stellt Beziehung zwischen Tabellen her
+:::
+
+## SQL - Die Datenbanksprache
+
+SQL ermöglicht:
+
+::: {.incremental}
+- Daten einfügen ➕
+- Daten aktualisieren 🔄
+- Daten löschen ➖
+- Daten abfragen 🔍
+- Datenbankstrukturen erstellen und ändern 🏗️
+:::
+
+## SQL-Abfragebeispiel
+
+. . .
+
+```sql
+SELECT Name, Email
+FROM Kunden
+WHERE Stadt = 'Berlin';
+```
+
+- Selektiert Name und Email
+- Aus der Tabelle Kunden
+- Nur für Kunden aus Berlin
+
+## Zusammenfassung
+
+:::: {.features}
+
+::: {.feature .fragment .fade-in}
+:::{.feature-header}
+Grundlagen 📊
+:::
+RDBMS, Einsatzgebiete
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Tabellen 🗃️
+:::
+Struktur, Datentypen, Schlüsselkonzepte
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+SQL 💻
+:::
+Abfragen, Datenoperationen
+:::
+
+::::
