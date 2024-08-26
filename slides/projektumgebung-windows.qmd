@@ -1,0 +1,197 @@
+---
+title: Projektumgebung in Windows
+lang: de
+subtitle: Einrichtung mit der Eingabeaufforderung
+author: Data Science, AI & Analytics Toolkit  
+execute:
+  eval: false
+  echo: true
+highlight-style: github-dark
+format:
+  revealjs: 
+    toc: false
+    toc-depth: 1
+    embed-resources: false
+    theme: [default, style/custom.scss]
+    incremental: true
+    transition: none
+    background-transition: fade
+    transition-speed: slow
+    code-copy: true
+    code-line-numbers: false
+    smaller: false
+    scrollable: true
+    slide-number: false
+    preview-links: auto
+    css: style/index.css
+    chalkboard: 
+      buttons: false
+    logo: images/code-blue.png
+    footer: Jan Kirenz
+    template-partials:
+      - title-slide.html 
+title-slide-attributes:
+  data-background-color: "#ffffff"
+jupyter: python3
+---
+
+## Inhalte des Tutorials
+
+:::: {.features}
+
+::: {.feature .fragment .fade-in}
+:::{.feature-header}
+Eingabeaufforderung 🖥️
+:::
+Windows Command Prompt öffnen und nutzen
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Projektordner 📁
+:::
+Ordnerstruktur erstellen
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Windows Explorer 🗂️
+:::
+Ordner im Explorer anzeigen
+:::
+
+::::
+
+
+## Projektordner 
+
+::: { layout-ncol=2 layout-valign="bottom"}
+
+![Visuelle Darstellung](../images/ordner.png){ width=45% fig-align="left"}
+
+![Baumstruktur](../images/ordner2.png){ width=55% fig-align="left"}
+
+:::
+
+
+## Eingabeaufforderung öffnen 🖥️
+
+1. Windows-Suchfenster öffnen
+2. "Eingabeaufforderung" eingeben
+3. Rechtsklick auf das Symbol
+4. "Als Administrator ausführen" wählen
+5. Berechtigung erteilen
+
+![](../images/eingabe.png){width="60%" fig-align="center"}
+
+## Zum Benutzerverzeichnis wechseln
+
+Mit `cd` zum Benutzerverzeichnis wechseln:
+
+. . .
+
+```bash
+cd %userprofile%
+```
+
+- `%userprofile%`: Umgebungsvariable für den Profilordner des angemeldeten Benutzers
+- Beispiel: C:\\Users\\jankirenz
+
+## Projektordner erstellen 📁
+
+Mit `mkdir` den Hauptordner "toolkit-lab" erstellen:
+
+. . .
+
+```bash
+mkdir toolkit-lab
+```
+
+![](../images/eingabe-mkdir-toolkit-lab.png){width="80%" fig-align="center"}
+
+## In den Projektordner wechseln
+
+Mit `cd` in das Verzeichnis "toolkit-lab" navigieren:
+
+. . .
+
+```bash
+cd toolkit-lab
+```
+
+![](../images/eingabe-cd-toolkit-lab.png){width="80%" fig-align="center"}
+
+## Unterordner erstellen
+
+Mit `mkdir` die Unterordner `code` und `data` erstellen:
+
+. . .
+
+```bash
+mkdir code data
+```
+
+![](../images/eingabe-mkdir-code-data.png){width="80%" fig-align="center"}
+
+## Verzeichnisinhalt anzeigen
+
+Mit `dir` die erstellten Verzeichnisse anzeigen:
+
+. . .
+
+```bash
+dir
+```
+
+![](../images/eingabe-dir.png){width="80%" fig-align="center"}
+
+## Eingabeaufforderung schließen
+
+Eingabeaufforderung mit `exit` schließen:
+
+. . .
+
+```bash
+exit
+```
+
+## Windows Explorer 🗂️
+
+Schritte zum Anzeigen der Ordner im Windows Explorer:
+
+1. Windows-Suchfenster: "Explorer" eingeben
+2. Im Explorer: "Dieser PC" auswählen
+3. "Lokaler Datenträger (C:)" öffnen
+4. "Users" Ordner öffnen
+5. Eigenen Benutzernamen auswählen
+6. "toolkit-lab" Ordner sollte sichtbar sein
+
+## Zusammenfassung 
+
+:::: {.features}
+
+::: {.feature .fragment .fade-in}
+:::{.feature-header}
+Eingabeaufforderung 🖥️
+:::
+Als Administrator öffnen
+cd, mkdir, dir, exit
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Projektordner 📁
+:::
+toolkit-lab/
+    - code/
+    - data/
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Windows Explorer 🗂️
+:::
+Ordnerstruktur im Explorer anzeigen
+:::
+
+::::
