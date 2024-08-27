@@ -2,7 +2,7 @@
 title: PostgreSQL
 lang: de
 subtitle: Installation und Grundlagen
-author: Data Science, AI & Analytics Toolkit  
+author: 🛠️ Toolkit  
 execute:
   eval: false
   echo: true

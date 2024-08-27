@@ -2,7 +2,7 @@
 title: Projektumgebung
 lang: de
 subtitle: Einrichtung und Grundlagen
-author: Data Science, AI & Analytics Toolkit
+author: 🛠️ Toolkit
 execute:
   eval: false
   echo: true
@@ -48,7 +48,7 @@ Ordnerstruktur anlegen
 
 ::: {.feature .fragment .fade-up}
 :::{.feature-header}
-Befehlszeile & Shell 💻
+Befehlszeile 💻
 :::
 Grundlagen verstehen
 :::
@@ -72,23 +72,18 @@ Windows vs. macOS
 
 :::
 
-## Baumstruktur
+
+## GUI vs Befehlszeile  
+
+- **GUI**: Grafische Benutzeroberfläche (z.B. Windows Explorer, macOS Finder)
+
+- **Befehlszeile**: Textbasierte Interaktion mit dem Betriebssystem
+
 
 . . .
 
-```plaintext
-toolkit-lab/
-- code/
-- data/
-```
-
-## Befehlszeile vs. GUI
-
-- Befehlszeile: Textbasierte Interaktion mit dem Betriebssystem
-- GUI: Grafische Benutzeroberfläche (z.B. Windows Explorer, macOS Finder)
-
 ::: {.callout-note appearance="minimal"}
-Die Befehlszeile ermöglicht effizientere Aufgabenausführung als eine GUI.
+Befehlszeile: effizientere Aufgabenausführung als eine GUI.
 :::
 
 ## Bezeichnungen der Befehlszeile
@@ -97,23 +92,31 @@ Die Befehlszeile ermöglicht effizientere Aufgabenausführung als eine GUI.
 - Befehlszeilenschnittstelle
 - Command Line Interface (CLI)
 
-::: {.fragment .fade-in}
-Windows: Eingabeaufforderung
-:::
+. . .
 
-::: {.fragment .fade-in}
-macOS: Terminal
-:::
+::: {.callout-tip appearance="minimal"}
 
-## Befehlszeile in verschiedenen Betriebssystemen
-
-::: {layout-ncol=2 layout-valign="bottom"}
-
-![Windows Eingabeaufforderung](../images/eingabe.png){width=70% fig-align="center"}
-
-![macOS Terminal](../images/terminal.png){width=100% fig-align="center"}
+- Windows: Eingabeaufforderung und PowerShell
+- macOS: Terminal
 
 :::
+
+
+
+## Windows Eingabeaufforderung
+
+<br>
+
+
+![](../images/eingabe.png){width=100% fig-align="left"}
+
+
+## MacOS Terminal
+
+<br>
+
+![](../images/terminal.png){width=100% fig-align="left"}
+
 
 ## Shell-Konzept
 
@@ -182,3 +185,8 @@ macOS: Terminal
 :::
 
 ::::
+
+# {.n-class}
+
+- [Thank]{.pink}
+- you
