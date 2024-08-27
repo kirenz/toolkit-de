@@ -353,8 +353,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#python-installation-in-windows" id="toc-python-installation-in-windows" class="nav-link active" data-scroll-target="#python-installation-in-windows"><span class="header-section-number">2.1</span> Python-Installation in Windows</a></li>
   <li><a href="#python-installation-auf-mac" id="toc-python-installation-auf-mac" class="nav-link" data-scroll-target="#python-installation-auf-mac"><span class="header-section-number">2.2</span> Python-Installation auf Mac</a></li>
-  <li><a href="#testen-der-python-installation" id="toc-testen-der-python-installation" class="nav-link" data-scroll-target="#testen-der-python-installation"><span class="header-section-number">2.3</span> Testen der Python-Installation</a></li>
-  <li><a href="#python-idle" id="toc-python-idle" class="nav-link" data-scroll-target="#python-idle"><span class="header-section-number">2.4</span> Python IDLE</a></li>
+  <li><a href="#python-idle" id="toc-python-idle" class="nav-link" data-scroll-target="#python-idle"><span class="header-section-number">2.3</span> Python IDLE</a></li>
   </ul>
 </nav>
     </div>
@@ -407,27 +406,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Ein Klick auf “Install Now” startet den Prozess.</li>
 </ul></li>
 </ol>
-</section>
-<section id="python-installation-auf-mac" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="python-installation-auf-mac"><span class="header-section-number">2.2</span> Python-Installation auf Mac</h2>
-<ol type="1">
-<li><strong>Download des Installationsprogramms</strong>:
-<ul>
-<li><a href="https://www.python.org/downloads/">Offizielle Python-Website</a> besuchen.</li>
-<li>Neueste Mac-Version herunterladen.</li>
-</ul></li>
-<li><strong>Python installieren</strong>:
-<ul>
-<li>Öffnen der heruntergeladenen <code>.pkg</code>-Datei.</li>
-<li>Anweisungen des Installationsassistenten folgen.</li>
-</ul></li>
-</ol>
-</section>
-<section id="testen-der-python-installation" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="testen-der-python-installation"><span class="header-section-number">2.3</span> Testen der Python-Installation</h2>
 <p>Nach der Installation wollen wir sicherstellen, dass alles korrekt funktioniert:</p>
 <ol type="1">
-<li>Öffnen der Kommandozeile (Terminal auf Mac, Eingabeaufforderung auf Windows).</li>
+<li>Öffnen der Eingabeaufforderung.</li>
 <li>Folgenden Befehl eingeben:</li>
 </ol>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> <span class="at">--version</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -446,9 +427,54 @@ Hinweis zu verschiedenen Python-Versionen
 </div>
 </div>
 </section>
-<section id="python-idle" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="python-idle"><span class="header-section-number">2.4</span> Python IDLE</h2>
+<section id="python-installation-auf-mac" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="python-installation-auf-mac"><span class="header-section-number">2.2</span> Python-Installation auf Mac</h2>
+<ol type="1">
+<li><strong>Download des Installationsprogramms</strong>:
+<ul>
+<li><a href="https://www.python.org/downloads/">Offizielle Python-Website</a> besuchen.</li>
+<li>Neueste Mac-Version herunterladen.</li>
+</ul></li>
+<li><strong>Python installieren</strong>:
+<ul>
+<li>Öffnen der heruntergeladenen <code>.pkg</code>-Datei.</li>
+<li>Anweisungen des Installationsassistenten folgen.</li>
+</ul></li>
+</ol>
+<p>Nach der Installation wollen wir sicherstellen, dass alles korrekt funktioniert:</p>
+<ol type="1">
+<li>Öffnen des Terminals</li>
+<li>Folgenden Befehl eingeben:</li>
+</ol>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> <span class="at">--version</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Wenn alles geklappt hat, sehen wir die Versionsnummer der installierten Python-Version.</p>
+<div class="callout callout-style-simple callout-note callout-titled" title="Hinweis zu verschiedenen Python-Versionen">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hinweis zu verschiedenen Python-Versionen
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Es kann vorkommen, dass wir mehrere Python-Versionen auf unserem System haben. Das ist normal und kein Grund zur Sorge. Später im Kurs werden wir lernen, wie wir effektiv mit verschiedenen Python-Umgebungen arbeiten können.</p>
+</div>
+</div>
+</section>
+<section id="python-idle" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="python-idle"><span class="header-section-number">2.3</span> Python IDLE</h2>
 <p>IDLE ist ein einfacher Python-Editor, der mit unserer Installation mitgeliefert wird. Er ist ideal für unsere ersten Schritte in der Python-Programmierung.</p>
+<div id="fig-idle" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-idle-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/idle.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-idle-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;2.1: IDLE Shell
+</figcaption>
+</figure>
+</div>
 <p>IDLE starten:</p>
 <ul>
 <li><strong>Windows</strong>: Startmenü öffnen und nach “IDLE” suchen.</li>
@@ -466,11 +492,46 @@ Hinweis zu verschiedenen Python-Versionen
 <ul>
 <li><p>Öffnen wir eine neue Datei: <code>Datei</code> &gt; <code>Neue Datei</code></p></li>
 <li><p>Geben wir folgenden Code ein:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hallo, Python!"</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>Die Datei als <code>hallo.py</code> in unserem <code>code</code>-Ordner speichern.</p></li>
-<li><p>Skript ausführen: F5 drücken oder <code>Ausführen</code> &gt; <code>Modul ausführen</code> wählen.</p></li>
-<li><p>In der IDLE-Shell sehen wir nun unsere Ausgabe!</p></li>
-</ul></li>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hallo, Python!"</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ul>
+<div id="fig-idle-hello" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-idle-hello-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/idle-hello.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-idle-hello-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;2.2: IDLE Skript
+</figcaption>
+</figure>
+</div>
+<ul>
+<li>Die Datei als <code>hallo.py</code> in unserem <code>code</code>-Ordner speichern.</li>
+<li>Skript ausführen: F5 drücken (Mac: fn + F5) oder <code>Ausführen</code> &gt; <code>Modul ausführen</code> wählen.</li>
+<li>In der IDLE-Shell sehen wir nun unsere Ausgabe.</li>
+</ul>
+<div id="fig-idle-script-shell" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-idle-script-shell-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/idle-script-shell.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-idle-script-shell-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;2.3: IDLE Skript und Shell
+</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-simple callout-note callout-titled" title="Hinweis zu .py-Datei">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hinweis zu .py-Datei
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Eine .py-Datei ist eine Datei, die Quellcode in der Programmiersprache Python enthält. Das bedeutet, sie beinhaltet eine Reihe von Anweisungen und Befehlen, die ein Computer verstehen und ausführen kann, um bestimmte Aufgaben zu erledigen.</p>
+</div>
+</div></li>
 </ol>
 <p>Wie wir gesehen haben, bietet Python IDLE eine einfache Oberfläche für die Codeentwicklung und -ausführung. In einem der folgenden Abschnitte werden wir fortschrittlichere Entwicklungsumgebungen wie Visual Studio Code erkunden, die größere Projekte mit zusätzlichen Funktionen unterstützen.</p>
 
