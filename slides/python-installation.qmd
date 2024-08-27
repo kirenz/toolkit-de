@@ -1,8 +1,8 @@
 ---
-title: Python und IDLE
+title: Python IDLE
 lang: de
-subtitle: Grundlagen der Python-Installation und erste Schritte
-author: Data Science, AI & Analytics Toolkit
+subtitle: Erste Schritte
+author: 🛠️ Toolkit
 execute:
   eval: false
   echo: true
@@ -39,116 +39,85 @@ jupyter: python3
 
 :::: {.features}
 
-::: {.feature .fragment .fade-in}
+::: {.feature .fragment .fade-up}
 :::{.feature-header}
-Python-Installation
+IDLE Shell
 :::
-Windows und Mac
+Grundlagen verstehen
 :::
 
 ::: {.feature .fragment .fade-up}
 :::{.feature-header}
-Testen der Installation
+Python-Skript 
 :::
-Kommandozeile nutzen
-:::
-
-::: {.feature .fragment .fade-up}
-:::{.feature-header}
-Python IDLE
-:::
-Erste Schritte
+Erstellen und ausführen
 :::
 
 ::::
 
-## Python-Installation in Windows
 
-::: {.incremental}
-1. [Offizielle Python-Website](https://www.python.org/downloads/) besuchen
-2. Neueste Version für Windows herunterladen (64-Bit)
-3. Installationsprogramm als Administrator ausführen
-4. "Add Python 3.x to PATH" ankreuzen
-5. Optional: Installation anpassen
-6. "Install Now" klicken
-:::
+## IDLE starten
 
-## Python-Installation auf Mac
+- Windows: Startmenü öffnen und nach "IDLE" suchen
+- Mac: In Spotlight-Suche (Command + Leertaste) "IDLE" eingeben und auswählen
 
-::: {.incremental}
-1. [Offizielle Python-Website](https://www.python.org/downloads/) besuchen
-2. Neueste Mac-Version herunterladen
-3. `.pkg`-Datei öffnen
-4. Anweisungen des Installationsassistenten folgen
-:::
+## IDLE-Shell
 
-## Testen der Python-Installation
+![](../images/idle.png){width="100%" }
 
-Kommandozeile öffnen und eingeben:
-
-```bash
-python --version
-```
-
-::: {.callout-note}
-# Hinweis zu verschiedenen Python-Versionen
-Mehrere Python-Versionen auf einem System sind normal. Später lernen wir den Umgang mit verschiedenen Python-Umgebungen.
-:::
-
-## Python IDLE starten
-
-::: {.incremental}
-- **Windows**: Startmenü öffnen und nach "IDLE" suchen
-- **Mac**: In Spotlight-Suche (Cmd + Leertaste) "IDLE" eingeben und auswählen
-:::
-
-## Arbeiten mit IDLE: IDLE-Shell
-
-::: {.incremental}
 - Interaktiver Python-Interpreter
 - Direkte Eingabe und Ausführung von Python-Code
 - Beispiel: `2 + 3` eingeben und Enter drücken
-:::
 
-## Unser erstes Python-Skript
+## Erstes Python-Skript
 
-1. Neue Datei öffnen: `Datei` > `Neue Datei`
-2. Code eingeben:
+- Neue Datei öffnen: `Datei` > `Neue Datei`
+- Code eingeben:
+
+. . .
 
 ```python
 print("Hallo, Python!")
 ```
 
-::: {.incremental}
-3. Als `hallo.py` im `code`-Ordner speichern
-4. Ausführen: F5 oder `Ausführen` > `Modul ausführen`
-5. Ausgabe in der IDLE-Shell betrachten
-:::
+## Python-Skript in IDLE
+
+![](../images/idle-hello.png){ width="100%" fig-align="left" }
+
+
+## Python-Skript speichern
+
+- Als `hallo.py` im `code`-Ordner speichern
+- Ausführen: F5 oder `Ausführen` > `Modul ausführen`
+- Ausgabe in der IDLE-Shell betrachten
+
+
+## Python Skript und Ausgabe
+
+![](../images/idle-script-shell.png){ width="100%" }
+
 
 ## Zusammenfassung
 
 :::: {.features}
 
-::: {.feature .fragment .fade-in}
+
+::: {.feature .fragment .fade-up}
 :::{.feature-header}
-Python-Installation
+IDLE Shell
 :::
-Windows und Mac Versionen
+Interaktiver Python-Interpreter
 :::
 
 ::: {.feature .fragment .fade-up}
 :::{.feature-header}
-Installation testen
+Python-Skript 
 :::
-`python --version`
+.py-Datei  
+Ausführung mit F5
+Ausgabe in IDLE-Shell
 :::
 
-::: {.feature .fragment .fade-up}
-:::{.feature-header}
-Python IDLE
-:::
-IDLE-Shell und erstes Skript
-:::
 
 ::::
 

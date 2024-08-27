@@ -1,8 +1,8 @@
 ---
-title: Projektumgebung in Windows
+title: Projektumgebung
 lang: de
-subtitle: Einrichtung mit der Eingabeaufforderung
-author: Data Science, AI & Analytics Toolkit  
+subtitle: Einrichtung in Windows
+author: 🛠️ Toolkit  
 execute:
   eval: false
   echo: true
@@ -39,23 +39,26 @@ jupyter: python3
 
 :::: {.features}
 
-::: {.feature .fragment .fade-in}
-:::{.feature-header}
-Eingabeaufforderung 🖥️
-:::
-Windows Command Prompt öffnen und nutzen
-:::
-
 ::: {.feature .fragment .fade-up}
 :::{.feature-header}
-Projektordner 📁
+Projektordner 
 :::
 Ordnerstruktur erstellen
 :::
 
+
+::: {.feature .fragment .fade-in}
+:::{.feature-header}
+Eingabeaufforderung 
+:::
+Windows Command Prompt nutzen
+:::
+
+
+
 ::: {.feature .fragment .fade-up}
 :::{.feature-header}
-Windows Explorer 🗂️
+Windows Explorer 
 :::
 Ordner im Explorer anzeigen
 :::
@@ -74,19 +77,32 @@ Ordner im Explorer anzeigen
 :::
 
 
-## Eingabeaufforderung öffnen 🖥️
+## Eingabeaufforderung öffnen 
 
 1. Windows-Suchfenster öffnen
 2. "Eingabeaufforderung" eingeben
 3. Rechtsklick auf das Symbol
-4. "Als Administrator ausführen" wählen
+4. "*Als Administrator ausführen*" wählen
 5. Berechtigung erteilen
 
-![](../images/eingabe.png){width="60%" fig-align="center"}
+## Eingabeaufforderung 
+
+
+![](../images/eingabe.png){width="100%" fig-align="left"}
+
+
+## Befehle {.smaller}
+
+| Befehl | Bedeutung | Beschreibung                                                            |
+|------------|--------------------------|------------------------------------------|
+| `cd`     | change directory | Wechselt in ein anderes Verzeichnis                     |
+| `mkdir`    | make directory | Erstellt ein neues Verzeichnis                           |
+| `dir`     | directory | Zeigt den aktuellen Verzeichnispfad an 
+| `exit`     | exit | Schließt das Terminal
 
 ## Zum Benutzerverzeichnis wechseln
 
-Mit `cd` zum Benutzerverzeichnis wechseln:
+Mit `cd` zum Benutzerverzeichnis (Home-Verzeichnis) wechseln:
 
 . . .
 
@@ -97,9 +113,9 @@ cd %userprofile%
 - `%userprofile%`: Umgebungsvariable für den Profilordner des angemeldeten Benutzers
 - Beispiel: C:\\Users\\jankirenz
 
-## Projektordner erstellen 📁
+## make directory toolkit-lab
 
-Mit `mkdir` den Hauptordner "toolkit-lab" erstellen:
+Mit `mkdir` den Ordner "toolkit-lab" erstellen:
 
 . . .
 
@@ -107,9 +123,11 @@ Mit `mkdir` den Hauptordner "toolkit-lab" erstellen:
 mkdir toolkit-lab
 ```
 
-![](../images/eingabe-mkdir-toolkit-lab.png){width="80%" fig-align="center"}
+. . .
 
-## In den Projektordner wechseln
+![](../images/eingabe-mkdir-toolkit-lab.png){width="80%" fig-align="left"}
+
+## change directory 
 
 Mit `cd` in das Verzeichnis "toolkit-lab" navigieren:
 
@@ -119,9 +137,11 @@ Mit `cd` in das Verzeichnis "toolkit-lab" navigieren:
 cd toolkit-lab
 ```
 
-![](../images/eingabe-cd-toolkit-lab.png){width="80%" fig-align="center"}
+. . .
 
-## Unterordner erstellen
+![](../images/eingabe-cd-toolkit-lab.png){width="80%" fig-align="left"}
+
+## mkdir code & data
 
 Mit `mkdir` die Unterordner `code` und `data` erstellen:
 
@@ -131,9 +151,11 @@ Mit `mkdir` die Unterordner `code` und `data` erstellen:
 mkdir code data
 ```
 
-![](../images/eingabe-mkdir-code-data.png){width="80%" fig-align="center"}
+. . .
 
-## Verzeichnisinhalt anzeigen
+![](../images/eingabe-mkdir-code-data.png){width="80%" fig-align="left"}
+
+## directory
 
 Mit `dir` die erstellten Verzeichnisse anzeigen:
 
@@ -143,7 +165,9 @@ Mit `dir` die erstellten Verzeichnisse anzeigen:
 dir
 ```
 
-![](../images/eingabe-dir.png){width="80%" fig-align="center"}
+. . .
+
+![](../images/eingabe-dir.png){width="80%" fig-align="left"}
 
 ## Eingabeaufforderung schließen
 
@@ -155,7 +179,7 @@ Eingabeaufforderung mit `exit` schließen:
 exit
 ```
 
-## Windows Explorer 🗂️
+## Windows Explorer 
 
 Schritte zum Anzeigen der Ordner im Windows Explorer:
 
@@ -170,28 +194,34 @@ Schritte zum Anzeigen der Ordner im Windows Explorer:
 
 :::: {.features}
 
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Projektordner
+:::
+toolkit-lab/  
+    - code/  
+    - data/  
+:::
+
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Eingabeaufforderung 
+:::
+Benutzername  
+Home-Verzeichnis  
+:::
+
 ::: {.feature .fragment .fade-in}
 :::{.feature-header}
-Eingabeaufforderung 🖥️
+Befehle 
 :::
-Als Administrator öffnen
-cd, mkdir, dir, exit
-:::
-
-::: {.feature .fragment .fade-up}
-:::{.feature-header}
-Projektordner 📁
-:::
-toolkit-lab/
-    - code/
-    - data/
+cd  
+mkdir  
+dir  
+exit  
 :::
 
-::: {.feature .fragment .fade-up}
-:::{.feature-header}
-Windows Explorer 🗂️
-:::
-Ordnerstruktur im Explorer anzeigen
-:::
+
 
 ::::

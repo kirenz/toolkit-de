@@ -1,0 +1,103 @@
+---
+title: Python und IDLE
+lang: de
+subtitle: Erste Schritte für Mac
+author: 🛠️ Toolkit
+execute:
+  eval: false
+  echo: true
+highlight-style: github-dark
+format:
+  revealjs: 
+    toc: false
+    toc-depth: 1
+    embed-resources: false
+    theme: [default, style/custom.scss]
+    incremental: true
+    transition: none
+    background-transition: fade
+    transition-speed: slow
+    code-copy: true
+    code-line-numbers: false
+    smaller: false
+    scrollable: true
+    slide-number: false
+    preview-links: auto
+    css: style/index.css
+    chalkboard: 
+      buttons: false
+    logo: images/code-blue.png
+    footer: Jan Kirenz
+    template-partials:
+      - title-slide.html 
+title-slide-attributes:
+  data-background-color: "#ffffff"
+jupyter: python3
+---
+
+## Inhalte des Tutorials
+
+:::: {.features}
+
+::: {.feature .fragment .fade-in}
+:::{.feature-header}
+Python-Installation
+:::
+ Mac
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Testen der Installation
+:::
+Kommandozeile nutzen
+:::
+
+
+
+::::
+
+## Python-Installation auf Mac
+
+1. [Offizielle Python-Website](https://www.python.org/downloads/) besuchen
+2. Neueste Mac-Version herunterladen
+3. `.pkg`-Datei öffnen
+4. Anweisungen des Installationsassistenten folgen
+
+
+## Testen der Python-Installation
+
+Terminal öffnen und eingeben:
+
+```bash
+python --version
+```
+
+::: {.callout-note}
+# Hinweis zu verschiedenen Python-Versionen
+Mehrere Python-Versionen auf einem System sind normal. Später lernen wir den Umgang mit verschiedenen Python-Umgebungen.
+:::
+
+
+## Zusammenfassung
+
+:::: {.features}
+
+::: {.feature .fragment .fade-in}
+:::{.feature-header}
+Python-Installation
+:::
+ Mac Versionen
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Installation testen
+:::
+`python --version`
+:::
+
+
+::::
+
+

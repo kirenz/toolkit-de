@@ -8,10 +8,10 @@
 <link href="python-installation_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="python-installation_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="python-installation_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.5.56">
+  <meta name="generator" content="quarto-1.4.554">
 
-  <meta name="author" content="Data Science, AI &amp; Analytics Toolkit">
-  <title>Python und IDLE</title>
+  <meta name="author" content="🛠️ Toolkit">
+  <title>Python IDLE</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -42,7 +42,7 @@
     }
     @media print {
     pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
     }
     pre.numberSource code
       { counter-reset: source-line 0; }
@@ -395,14 +395,14 @@
     <div class="slides">
 
 <section id="title-slide" data-background-color="#ffffff" class="center">
-  <h1 class="title">Python und IDLE</h1>
+  <h1 class="title">Python IDLE</h1>
   <div class="subtitle-container">
-    <span class="subtitle-button">Grundlagen der Python-Installation und erste Schritte</span>
+    <span class="subtitle-button">Erste Schritte</span>
   </div>
   <div class="image-container">
     <img src="images/logo.png" alt="Logo">
   </div>
-  <p class="author">Data Science, AI &amp; Analytics Toolkit</p>
+  <p class="author">🛠️ Toolkit</p>
 
   <svg class="geometric-background" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 1000" preserveaspectratio="xMidYMid slice">
     <!-- Horizontale Linien -->
@@ -456,122 +456,77 @@
 <section id="inhalte-des-tutorials" class="slide level2">
 <h2>Inhalte des Tutorials</h2>
 <div class="features">
-<div class="feature fragment fade-in">
+<div class="feature fragment fade-up">
 <div class="feature-header">
-<p>Python-Installation</p>
+<p>IDLE Shell</p>
 </div>
-<p>Windows und Mac</p>
+<p>Grundlagen verstehen</p>
 </div>
 <div class="feature fragment fade-up">
 <div class="feature-header">
-<p>Testen der Installation</p>
+<p>Python-Skript</p>
 </div>
-<p>Kommandozeile nutzen</p>
-</div>
-<div class="feature fragment fade-up">
-<div class="feature-header">
-<p>Python IDLE</p>
-</div>
-<p>Erste Schritte</p>
+<p>Erstellen und ausführen</p>
 </div>
 </div>
 </section>
-<section id="python-installation-in-windows" class="slide level2 scrollable">
-<h2>Python-Installation in Windows</h2>
-<div>
-<ol type="1">
-<li class="fragment"><a href="https://www.python.org/downloads/">Offizielle Python-Website</a> besuchen</li>
-<li class="fragment">Neueste Version für Windows herunterladen (64-Bit)</li>
-<li class="fragment">Installationsprogramm als Administrator ausführen</li>
-<li class="fragment">“Add Python 3.x to PATH” ankreuzen</li>
-<li class="fragment">Optional: Installation anpassen</li>
-<li class="fragment">“Install Now” klicken</li>
-</ol>
-</div>
-</section>
-<section id="python-installation-auf-mac" class="slide level2 scrollable">
-<h2>Python-Installation auf Mac</h2>
-<div>
-<ol type="1">
-<li class="fragment"><a href="https://www.python.org/downloads/">Offizielle Python-Website</a> besuchen</li>
-<li class="fragment">Neueste Mac-Version herunterladen</li>
-<li class="fragment"><code>.pkg</code>-Datei öffnen</li>
-<li class="fragment">Anweisungen des Installationsassistenten folgen</li>
-</ol>
-</div>
-</section>
-<section id="testen-der-python-installation" class="slide level2">
-<h2>Testen der Python-Installation</h2>
-<p>Kommandozeile öffnen und eingeben:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> <span class="at">--version</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Hinweis zu verschiedenen Python-Versionen</strong></p>
-</div>
-<div class="callout-content">
-<p>Mehrere Python-Versionen auf einem System sind normal. Später lernen wir den Umgang mit verschiedenen Python-Umgebungen.</p>
-</div>
-</div>
-</div>
-</section>
-<section id="python-idle-starten" class="slide level2">
-<h2>Python IDLE starten</h2>
-<div>
+<section id="idle-starten" class="slide level2">
+<h2>IDLE starten</h2>
 <ul>
-<li class="fragment"><strong>Windows</strong>: Startmenü öffnen und nach “IDLE” suchen</li>
-<li class="fragment"><strong>Mac</strong>: In Spotlight-Suche (Cmd + Leertaste) “IDLE” eingeben und auswählen</li>
+<li class="fragment">Windows: Startmenü öffnen und nach “IDLE” suchen</li>
+<li class="fragment">Mac: In Spotlight-Suche (Command + Leertaste) “IDLE” eingeben und auswählen</li>
 </ul>
-</div>
 </section>
-<section id="arbeiten-mit-idle-idle-shell" class="slide level2">
-<h2>Arbeiten mit IDLE: IDLE-Shell</h2>
-<div>
-<ul>
+<section id="idle-shell" class="slide level2">
+<h2>IDLE-Shell</h2>
+
+<img data-src="../images/idle.png" style="width:100.0%" class="r-stretch"><ul>
 <li class="fragment">Interaktiver Python-Interpreter</li>
 <li class="fragment">Direkte Eingabe und Ausführung von Python-Code</li>
 <li class="fragment">Beispiel: <code>2 + 3</code> eingeben und Enter drücken</li>
 </ul>
-</div>
 </section>
-<section id="unser-erstes-python-skript" class="slide level2 scrollable">
-<h2>Unser erstes Python-Skript</h2>
-<ol type="1">
+<section id="erstes-python-skript" class="slide level2">
+<h2>Erstes Python-Skript</h2>
+<ul>
 <li class="fragment">Neue Datei öffnen: <code>Datei</code> &gt; <code>Neue Datei</code></li>
 <li class="fragment">Code eingeben:</li>
-</ol>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hallo, Python!"</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div>
-<ol start="3" type="1">
+</ul>
+<div class="fragment">
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hallo, Python!"</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="python-skript-in-idle" class="slide level2">
+<h2>Python-Skript in IDLE</h2>
+
+<img data-src="../images/idle-hello.png" class="quarto-figure quarto-figure-left r-stretch" style="width:100.0%"></section>
+<section id="python-skript-speichern" class="slide level2">
+<h2>Python-Skript speichern</h2>
+<ul>
 <li class="fragment">Als <code>hallo.py</code> im <code>code</code>-Ordner speichern</li>
 <li class="fragment">Ausführen: F5 oder <code>Ausführen</code> &gt; <code>Modul ausführen</code></li>
 <li class="fragment">Ausgabe in der IDLE-Shell betrachten</li>
-</ol>
-</div>
+</ul>
 </section>
+<section id="python-skript-und-ausgabe" class="slide level2">
+<h2>Python Skript und Ausgabe</h2>
+
+<img data-src="../images/idle-script-shell.png" style="width:100.0%" class="r-stretch"></section>
 <section id="zusammenfassung" class="slide level2">
 <h2>Zusammenfassung</h2>
 <div class="features">
-<div class="feature fragment fade-in">
+<div class="feature fragment fade-up">
 <div class="feature-header">
-<p>Python-Installation</p>
+<p>IDLE Shell</p>
 </div>
-<p>Windows und Mac Versionen</p>
+<p>Interaktiver Python-Interpreter</p>
 </div>
 <div class="feature fragment fade-up">
 <div class="feature-header">
-<p>Installation testen</p>
+<p>Python-Skript</p>
 </div>
-<p><code>python --version</code></p>
-</div>
-<div class="feature fragment fade-up">
-<div class="feature-header">
-<p>Python IDLE</p>
-</div>
-<p>IDLE-Shell und erstes Skript</p>
+<p>.py-Datei<br>
+Ausführung mit F5 Ausgabe in IDLE-Shell</p>
 </div>
 </div>
 <div class="quarto-auto-generated-content">
@@ -825,7 +780,18 @@
         }
         return false;
       }
-      const onCopySuccess = function(e) {
+      const clipboard = new window.ClipboardJS('.code-copy-button', {
+        text: function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+      });
+      clipboard.on('success', function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -857,29 +823,7 @@
         }, 1000);
         // clear code selection
         e.clearSelection();
-      }
-      const getTextToCopy = function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-      }
-      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-        text: getTextToCopy
       });
-      clipboard.on('success', onCopySuccess);
-      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-        // For code content inside modals, clipBoardJS needs to be initialized with a container option
-        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-          text: getTextToCopy,
-          container: window.document.getElementById('quarto-embedded-source-code-modal')
-        });
-        clipboardModal.on('success', onCopySuccess);
-      }
         var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
         var mailtoRegex = new RegExp(/^mailto:/);
           var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -887,7 +831,7 @@
             return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
         }
         // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
         for (var i=0; i<links.length; i++) {
           const link = links[i];
           if (!isInternal(link.href)) {

@@ -393,19 +393,19 @@
 <div class="features">
 <div class="feature fragment fade-in">
 <div class="feature-header">
-<p>Projektstruktur 🗂️</p>
+<p>Projektstruktur</p>
 </div>
 <p>Ordnerstruktur anlegen</p>
 </div>
 <div class="feature fragment fade-up">
 <div class="feature-header">
-<p>Befehlszeile 💻</p>
+<p>Befehlszeile</p>
 </div>
 <p>Grundlagen verstehen</p>
 </div>
 <div class="feature fragment fade-up">
 <div class="feature-header">
-<p>Betriebssysteme 🖥️</p>
+<p>Betriebssysteme</p>
 </div>
 <p>Windows vs.&nbsp;macOS</p>
 </div>
@@ -441,8 +441,11 @@
 <li class="fragment"><p><strong>Befehlszeile</strong>: Textbasierte Interaktion mit dem Betriebssystem</p></li>
 </ul>
 <div class="fragment">
-<div class="callout callout-note no-icon callout-style-simple">
+<div class="callout callout-tip callout-style-simple">
 <div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
 <div class="callout-content">
 <p>Befehlszeile: effizientere Aufgabenausführung als eine GUI.</p>
 </div>
@@ -458,17 +461,28 @@
 <li class="fragment">Command Line Interface (CLI)</li>
 </ul>
 <div class="fragment">
-<div class="callout callout-tip no-icon callout-style-simple">
+<div class="callout callout-tip callout-style-simple">
 <div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
 <div class="callout-content">
 <ul>
 <li class="fragment">Windows: Eingabeaufforderung und PowerShell</li>
-<li class="fragment">macOS: Terminal</li>
+<li class="fragment">macOS: Terminal oder iTerm2</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
+</section>
+<section id="bedeutung-der-befehlszeile" class="slide level2">
+<h2>Bedeutung der Befehlszeile</h2>
+<ul>
+<li class="fragment">Wichtige Fähigkeit in Datenanalyse und Softwareentwicklung</li>
+<li class="fragment">Ermöglicht präzise Kontrolle über das System</li>
+<li class="fragment">Nützlich für Automatisierungen</li>
+</ul>
 </section>
 <section id="windows-eingabeaufforderung" class="slide level2">
 <h2>Windows Eingabeaufforderung</h2>
@@ -486,41 +500,34 @@
 <li class="fragment">Shell: Vermittler zwischen Benutzer und Betriebssystem</li>
 <li class="fragment">Interpretiert Eingaben und übersetzt sie in Systemanweisungen</li>
 </ul>
-<div class="fragment fade-in">
-<p>Befehlszeile = “Blatt Papier” für Anweisungen</p>
+<div class="fragment">
+<div class="callout callout-tip callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<div class="fragment fade-in">
-<p>Shell = “Übersetzer” der Anweisungen</p>
-</div>
-</section>
-<section id="shells-in-verschiedenen-betriebssystemen" class="slide level2">
-<h2>Shells in verschiedenen Betriebssystemen</h2>
-<div class="panel-tabset">
-<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Windows</a></li><li><a href="#tabset-1-2">macOS</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1">
+<div class="callout-content">
 <ul>
-<li class="fragment">Standardprogramm: Eingabeaufforderung (Command Prompt)</li>
-<li class="fragment">Standardshell: cmd.exe</li>
-<li class="fragment">Alternative: PowerShell (leistungsfähiger)</li>
+<li class="fragment">Befehlszeile = “Blatt Papier” für Anweisungen</li>
+<li class="fragment">Shell = “Übersetzer” der Anweisungen</li>
 </ul>
 </div>
-<div id="tabset-1-2">
+</div>
+</div>
+</div>
+</section>
+<section id="shells-in-windows" class="slide level2">
+<h2>Shells in Windows</h2>
 <ul>
-<li class="fragment">Programm: Terminal</li>
+<li class="fragment">Eingabeaufforderung (Command Prompt, cmd)</li>
+<li class="fragment">PowerShell</li>
+</ul>
+</section>
+<section id="shells-in-macos" class="slide level2">
+<h2>Shells in macOS</h2>
+<ul>
 <li class="fragment">Aktuelle Standardshell: zsh (Z Shell)</li>
-<li class="fragment">Frühere Standardshell (vor Sept.&nbsp;2019): bash (Bourne Again Shell)</li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<section id="bedeutung-der-befehlszeile" class="slide level2">
-<h2>Bedeutung der Befehlszeile</h2>
-<ul>
-<li class="fragment">Wichtige Fähigkeit in Datenanalyse und Softwareentwicklung</li>
-<li class="fragment">Ermöglicht präzise Kontrolle über das System</li>
-<li class="fragment">Nützlich für Automatisierungen</li>
+<li class="fragment">Frühere Standardshell: bash (Bourne Again Shell)</li>
 </ul>
 </section>
 <section id="zusammenfassung" class="slide level2">
@@ -528,30 +535,30 @@
 <div class="features">
 <div class="feature fragment fade-in">
 <div class="feature-header">
-<p>Projektstruktur 🗂️</p>
+<p>Projektstruktur</p>
 </div>
-<p>toolkit-lab/ - code/ - data/</p>
-</div>
-<div class="feature fragment fade-up">
-<div class="feature-header">
-<p>Befehlszeile &amp; Shell 💻</p>
-</div>
-<p>Textbasierte Interaktion Effizienz &amp; Kontrolle</p>
+<p>toolkit-lab/<br>
+- code/<br>
+- data/</p>
 </div>
 <div class="feature fragment fade-up">
 <div class="feature-header">
-<p>Betriebssysteme 🖥️</p>
+<p>Befehlszeile &amp; Shell</p>
+</div>
+<p>Textbasierte Interaktion<br>
+Effizienz &amp; Kontrolle</p>
+</div>
+<div class="feature fragment fade-up">
+<div class="feature-header">
+<p>Betriebssysteme</p>
 </div>
 <p>Windows: Eingabeaufforderung macOS: Terminal</p>
 </div>
 </div>
-</section>
-<section id="section" class="title-slide slide level1 n-class center">
-<h1></h1>
-<ul>
-<li class="fragment"><span class="pink">Thank</span></li>
-<li class="fragment">you</li>
-</ul>
+<!-- # {.n-class}
+
+- [Thank]{.pink}
+- you -->
 <div class="quarto-auto-generated-content">
 <p><img src="images/code-blue.png" class="slide-logo"></p>
 <div class="footer footer-default">

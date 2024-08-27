@@ -41,21 +41,21 @@ jupyter: python3
 
 ::: {.feature .fragment .fade-in}
 :::{.feature-header}
-Projektstruktur 🗂️
+Projektstruktur
 :::
 Ordnerstruktur anlegen
 :::
 
 ::: {.feature .fragment .fade-up}
 :::{.feature-header}
-Befehlszeile 💻
+Befehlszeile
 :::
 Grundlagen verstehen
 :::
 
 ::: {.feature .fragment .fade-up}
 :::{.feature-header}
-Betriebssysteme 🖥️
+Betriebssysteme
 :::
 Windows vs. macOS
 :::
@@ -82,7 +82,7 @@ Windows vs. macOS
 
 . . .
 
-::: {.callout-note appearance="minimal"}
+::: {.callout-tip appearance="simple"}
 Befehlszeile: effizientere Aufgabenausführung als eine GUI.
 :::
 
@@ -94,14 +94,18 @@ Befehlszeile: effizientere Aufgabenausführung als eine GUI.
 
 . . .
 
-::: {.callout-tip appearance="minimal"}
+::: {.callout-tip appearance="simple"}
 
 - Windows: Eingabeaufforderung und PowerShell
-- macOS: Terminal
+- macOS: Terminal oder iTerm2
 
 :::
 
+## Bedeutung der Befehlszeile
 
+- Wichtige Fähigkeit in Datenanalyse und Softwareentwicklung
+- Ermöglicht präzise Kontrolle über das System
+- Nützlich für Automatisierungen
 
 ## Windows Eingabeaufforderung
 
@@ -118,42 +122,30 @@ Befehlszeile: effizientere Aufgabenausführung als eine GUI.
 ![](../images/terminal.png){width=100% fig-align="left"}
 
 
+
 ## Shell-Konzept
 
 - Shell: Vermittler zwischen Benutzer und Betriebssystem
 - Interpretiert Eingaben und übersetzt sie in Systemanweisungen
 
-::: {.fragment .fade-in}
-Befehlszeile = "Blatt Papier" für Anweisungen
+
+. . .
+
+::: {.callout-tip appearance="simple"}
+- Befehlszeile = "Blatt Papier" für Anweisungen
+- Shell = "Übersetzer" der Anweisungen
 :::
 
-::: {.fragment .fade-in}
-Shell = "Übersetzer" der Anweisungen
-:::
+## Shells in Windows
 
-## Shells in verschiedenen Betriebssystemen
+- Eingabeaufforderung (Command Prompt, cmd)
+- PowerShell
 
-::: {.panel-tabset}
+## Shells in macOS
 
-### Windows
-
-- Standardprogramm: Eingabeaufforderung (Command Prompt)
-- Standardshell: cmd.exe
-- Alternative: PowerShell (leistungsfähiger)
-
-### macOS
-
-- Programm: Terminal
 - Aktuelle Standardshell: zsh (Z Shell)
-- Frühere Standardshell (vor Sept. 2019): bash (Bourne Again Shell)
+- Frühere Standardshell: bash (Bourne Again Shell)
 
-:::
-
-## Bedeutung der Befehlszeile
-
-- Wichtige Fähigkeit in Datenanalyse und Softwareentwicklung
-- Ermöglicht präzise Kontrolle über das System
-- Nützlich für Automatisierungen
 
 ## Zusammenfassung
 
@@ -161,24 +153,24 @@ Shell = "Übersetzer" der Anweisungen
 
 ::: {.feature .fragment .fade-in}
 :::{.feature-header}
-Projektstruktur 🗂️
+Projektstruktur 
 :::
-toolkit-lab/
-  - code/
-  - data/
-:::
-
-::: {.feature .fragment .fade-up}
-:::{.feature-header}
-Befehlszeile & Shell 💻
-:::
-Textbasierte Interaktion
-Effizienz & Kontrolle
+toolkit-lab/  
+  - code/  
+  - data/  
 :::
 
 ::: {.feature .fragment .fade-up}
 :::{.feature-header}
-Betriebssysteme 🖥️
+Befehlszeile & Shell 
+:::
+Textbasierte Interaktion  
+Effizienz & Kontrolle  
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Betriebssysteme 
 :::
 Windows: Eingabeaufforderung
 macOS: Terminal
@@ -186,7 +178,7 @@ macOS: Terminal
 
 ::::
 
-# {.n-class}
+<!-- # {.n-class}
 
 - [Thank]{.pink}
-- you
+- you -->
