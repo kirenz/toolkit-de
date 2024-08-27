@@ -61,6 +61,7 @@ Auf Windows-Systemen:
 Auf Mac-Systemen:
 
 - Das Programm für die Kommandozeile heißt "Terminal".
+- Eine Alternative zum Terminal ist die Open-Source-Software [iTerm2](https://iterm2.com/)
 - In neueren macOS-Versionen ist die Standard-Shell "zsh" (Z Shell), vor September 2019 war es "bash" (Bourne Again Shell).
 
 Trotz dieser Unterschiede ist das grundlegende Konzept auf beiden Systemen gleich: Wir geben Befehle ein, und die Shell interpretiert und führt sie aus.
@@ -182,9 +183,17 @@ Hier die Schritte, um das Hauptverzeichnis und die Unterverzeichnisse mit dem Te
     echo $SHELL
     ```
 
+   :::{.callout-tip collapse="true" title="Erklärung der Befehle"}
+    - `echo`: Befehl, der Text auf der Konsole ausgibt.
+    - `$`: signalisiert der Shell, dass auf den Wert einer Variable zugegriffen werden soll. Der Name der entsprechenden Variable folgt direkt auf das `$`.
+    - SHELL: Dies ist eine Umgebungsvariable, die den Pfad zur aktuell verwendeten Shell speichert (z.B. /bin/bash, /bin/zsh).
+   :::
+
+    Wenn wir also $SHELL schreiben, sagt das der Shell: "Gib mir den Wert der Variable namens SHELL".
+
     Ist die Ausgabe "/bin/zsh", wird bereits zsh verwendet. Wenn das Ergebnis "/bin/bash" ist, verwendet das Gerät derzeit noch bash. 
 
-    Falls aktuell noch bash verwendet wird, sollte zunächst auf zsh umgesetllt werden:
+    Falls aktuell noch bash verwendet wird, sollte zunächst auf zsh umgestellt werden:
 
     a) Zuerst überprüfen, ob zsh bereits installiert ist:
 
