@@ -7,7 +7,6 @@ In diesem Kapitel lernen wir die grundlegenden Schritte kennen, um mit Python zu
 
 ## Python-Installation in Windows
 
-
 1. **Download des Installationsprogramms**: 
    - [Offizielle Python-Website](https://www.python.org/downloads/) besuchen.
    - Neueste Version für Windows herunterladen (in der Regel die 64-Bit-Version).
@@ -22,21 +21,10 @@ In diesem Kapitel lernen wir die grundlegenden Schritte kennen, um mit Python zu
 4. **Start der Installation**: 
    - Ein Klick auf "Install Now" startet den Prozess.
 
-## Python-Installation auf Mac
-
-1. **Download des Installationsprogramms**: 
-   - [Offizielle Python-Website](https://www.python.org/downloads/) besuchen.
-   - Neueste Mac-Version herunterladen.
-
-2. **Python installieren**: 
-   - Öffnen der heruntergeladenen `.pkg`-Datei.
-   - Anweisungen des Installationsassistenten folgen.
-
-## Testen der Python-Installation
 
 Nach der Installation wollen wir sicherstellen, dass alles korrekt funktioniert:
 
-1. Öffnen der Kommandozeile (Terminal auf Mac, Eingabeaufforderung auf Windows).
+1. Öffnen der Eingabeaufforderung.
 2. Folgenden Befehl eingeben:
 
 ```bash
@@ -49,9 +37,37 @@ Wenn alles geklappt hat, sehen wir die Versionsnummer der installierten Python-V
 Es kann vorkommen, dass wir mehrere Python-Versionen auf unserem System haben. Das ist normal und kein Grund zur Sorge. Später im Kurs werden wir lernen, wie wir effektiv mit verschiedenen Python-Umgebungen arbeiten können.
 :::
 
+## Python-Installation auf Mac
+
+1. **Download des Installationsprogramms**: 
+   - [Offizielle Python-Website](https://www.python.org/downloads/) besuchen.
+   - Neueste Mac-Version herunterladen.
+
+2. **Python installieren**: 
+   - Öffnen der heruntergeladenen `.pkg`-Datei.
+   - Anweisungen des Installationsassistenten folgen.
+
+Nach der Installation wollen wir sicherstellen, dass alles korrekt funktioniert:
+
+1. Öffnen des Terminals
+2. Folgenden Befehl eingeben:
+
+```bash
+python --version
+```
+
+Wenn alles geklappt hat, sehen wir die Versionsnummer der installierten Python-Version.
+
+::: {.callout-note title="Hinweis zu verschiedenen Python-Versionen"}
+Es kann vorkommen, dass wir mehrere Python-Versionen auf unserem System haben. Das ist normal und kein Grund zur Sorge. Später im Kurs werden wir lernen, wie wir effektiv mit verschiedenen Python-Umgebungen arbeiten können.
+:::
+
+
 ## Python IDLE
 
 IDLE ist ein einfacher Python-Editor, der mit unserer Installation mitgeliefert wird. Er ist ideal für unsere ersten Schritte in der Python-Programmierung.
+
+![IDLE Shell](../images/idle.png){#fig-idle width="100%" }
 
 IDLE starten:
 
@@ -71,9 +87,19 @@ Arbeiten mit IDLE:
      ```python
      print("Hallo, Python!")
      ```
-   - Die Datei als `hallo.py` in unserem `code`-Ordner speichern.
-   - Skript ausführen: F5 drücken oder `Ausführen` > `Modul ausführen` wählen.
-   - In der IDLE-Shell sehen wir nun unsere Ausgabe!
 
+   ![IDLE Skript](../images/idle-hello.png){#fig-idle-hello width="100%" }
+
+
+   - Die Datei als `hallo.py` in unserem `code`-Ordner speichern.
+   - Skript ausführen: F5 drücken (Mac: fn + F5) oder `Ausführen` > `Modul ausführen` wählen.
+   - In der IDLE-Shell sehen wir nun unsere Ausgabe.
+
+   ![IDLE Skript und Shell](../images/idle-script-shell.png){#fig-idle-script-shell width="100%" }
+
+
+   ::: {.callout-note title="Hinweis zu .py-Datei"}
+   Eine .py-Datei ist eine Datei, die Quellcode in der Programmiersprache Python enthält. Das bedeutet, sie beinhaltet eine Reihe von Anweisungen und Befehlen, die ein Computer verstehen und ausführen kann, um bestimmte Aufgaben zu erledigen.
+   :::
 
 Wie wir gesehen haben, bietet Python IDLE eine  einfache Oberfläche für die Codeentwicklung und -ausführung. In einem der folgenden Abschnitte werden wir fortschrittlichere Entwicklungsumgebungen wie Visual Studio Code erkunden, die größere Projekte mit zusätzlichen Funktionen unterstützen.
