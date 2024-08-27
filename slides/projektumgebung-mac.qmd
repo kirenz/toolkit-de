@@ -2,7 +2,7 @@
 title: Projektumgebung 
 lang: de
 subtitle: Einrichtung auf dem Mac
-author: Data Science, AI & Analytics Toolkit  
+author: 🛠️ Toolkit  
 execute:
   eval: false
   echo: true
@@ -101,9 +101,17 @@ Ausgabe der Shell-Ausführung:
 echo $SHELL
 ```
 
--  `/bin/zsh`: ✅ Es wird bereits zsh verwendet. 
 
--  `/bin/bash`: ❌ Es wird bash genutzt. 
+. . .
+
+
+::: {.callout-important appearance="simple"}
+
+-  `/bin/bash`: Es wird bash genutzt.  
+- `/bin/zsh`: Es wird bereits zsh verwendet. 
+
+:::
+
 
 ## Wenn bash genutzt wird
 
@@ -113,10 +121,13 @@ echo $SHELL
 zsh --version
 ```
 
-- Version angezeigt: ✅ zsh ist installiert. 
 
-- Keine Version: ❌ zsh ist nicht installiert 
+::: {.callout-important appearance="simple"}
 
+- Keine Version: zsh ist nicht installiert 
+- Version angezeigt: zsh ist installiert. 
+
+:::
 
 ## Option 1: zsh über Terminal
 
@@ -182,7 +193,7 @@ Mit `pwd` Pfad des aktuellen Verzeichnisses anzeigen:
 pwd
 ```
 
-## make directory
+## make directory toolkit-lab
 
 
 Mit `mkdir` Ordner *toolkit-lab* erstellen:
@@ -201,7 +212,7 @@ Mit `cd` in das Verzeichnis *toolkit-lab* wechseln:
 cd toolkit-lab
 ```
 
-## make directory
+## make directory code & data
 
 Mit `mkdir` die Verzeichnisse *code* und *data* erstellen:
 
