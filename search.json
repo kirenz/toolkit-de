@@ -120,11 +120,11 @@
     ]
   },
   {
-    "objectID": "erste-schritte/anaconda-installation.html#anaconda-überprüfen-und-aktualisieren",
-    "href": "erste-schritte/anaconda-installation.html#anaconda-überprüfen-und-aktualisieren",
+    "objectID": "erste-schritte/anaconda-installation.html#anaconda-aktualisieren",
+    "href": "erste-schritte/anaconda-installation.html#anaconda-aktualisieren",
     "title": "3  Anaconda Distribution",
-    "section": "3.3 Anaconda überprüfen und aktualisieren",
-    "text": "3.3 Anaconda überprüfen und aktualisieren\nUm sicherzustellen, dass Anaconda korrekt installiert wurde:\n\nWir öffnen ein Eingabeaufforderungsfenster (Windows) oder Terminal (macOS/Linux).\nHier geben wir folgenden Befehl ein:\nconda --version\nWenn Anaconda korrekt installiert ist, sehen wir die Versionsnummer im Terminal.\n\nEs ist ratsam, nach der Installation alle Standardpakete zu aktualisieren:\nconda update --all\nWir folgen den Anweisungen, um die Aktualisierung abzuschließen.\nMit der erfolgreichen Installation von Anaconda haben wir nun Zugriff auf Jupyter Notebook, eine webbasierte Umgebung zum Schreiben und Ausführen von Python-Code. Diese Umgebung wird uns in unseren Data Science-Projekten begleiten und bietet mehr Möglichkeiten als die einfache IDLE-Umgebung.\nIn den nächsten Kapiteln werden wir lernen, wie wir Jupyter Notebook effektiv für unsere Data Science-Aufgaben nutzen können.",
+    "section": "3.3 Anaconda aktualisieren",
+    "text": "3.3 Anaconda aktualisieren\nUm sicherzustellen, dass Anaconda korrekt installiert wurde:\n\nWir öffnen ein Eingabeaufforderungsfenster (Windows) oder Terminal (macOS/Linux).\nHier geben wir folgenden Befehl ein:\nconda --version\nWenn Anaconda korrekt installiert ist, sehen wir die Versionsnummer im Terminal.\n\nEs ist ratsam, nach der Installation alle Standardpakete zu aktualisieren:\nconda update --all\nWir folgen den Anweisungen, um die Aktualisierung abzuschließen.\nMit der erfolgreichen Installation von Anaconda haben wir nun Zugriff auf Jupyter Notebook, eine webbasierte Umgebung zum Schreiben und Ausführen von Python-Code. Diese Umgebung wird uns in unseren Data Science-Projekten begleiten und bietet mehr Möglichkeiten als die einfache IDLE-Umgebung.\nIn den nächsten Kapiteln werden wir lernen, wie wir Jupyter Notebook effektiv für unsere Data Science-Aufgaben nutzen können.",
     "crumbs": [
       "Erste Schritte",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Anaconda Distribution</span>"
