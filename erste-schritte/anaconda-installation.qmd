@@ -31,7 +31,7 @@ Die Anaconda Distribution ist ein Softwarepaket, das Python und zahlreiche wicht
 6. Mit einem Klick auf "Installieren" starten wir den Prozess.
 7. Nach Abschluss schließen wir den Installer.
 
-## Anaconda überprüfen und aktualisieren
+## Anaconda aktualisieren
 
 Um sicherzustellen, dass Anaconda korrekt installiert wurde:
 
