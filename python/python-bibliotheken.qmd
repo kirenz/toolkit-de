@@ -1,9 +1,8 @@
 # Bausteine der Python-Programmierung
 
-Im Python-Entwicklungsprozess ist es entscheidend, die Rollen von Modulen, Paketen und Bibliotheken zu verstehen, um Projekte effektiv zu organisieren und zu verwalten.
+Im Python-Entwicklungsprozess ist es hilfreich, die Rollen von Modulen, Paketen und Bibliotheken zu verstehen, um Projekte effektiv zu organisieren und zu verwalten.
 
 Die Verwendung dieser Bausteine hilft nicht nur dabei, den Code sauber und verständlich zu halten, sondern verbessert auch die Zusammenarbeit in Teams. Sie ermöglicht es, Arbeit einfach zu teilen und zu integrieren.
-
 
 Dieses Kapitel führt durch diese Konzepte und verwendet Beispiele und Analogien, um deren Zwecke und Anwendungen zu verdeutlichen.
 
@@ -131,3 +130,6 @@ ergebnis = special.factorial(5)
 print(f"Die Fakultät von 5 ist: {ergebnis}")
 ```
 
+:::{.callout-note}
+Um die nachfolgenden Anleitungen zu vereinfachen, werden wir nicht immer streng zwischen Bibliotheken und Paketen unterscheiden, sondern hauptsächlich den Begriff Python-Pakete verwenden, wenn wir Python-Software importieren (auch wenn es sich dabei teilweise um eine Bibliothek handelt).
+:::
