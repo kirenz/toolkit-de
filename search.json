@@ -190,7 +190,7 @@
     "href": "erste-schritte/markdown.html#praktische-übung",
     "title": "5  Markdown",
     "section": "5.3 Praktische Übung",
-    "text": "5.3 Praktische Übung\nAls nächstes werden wir das Gelernte in einer kleinen Übung anwenden:\n\nNeues Jupyter Notebook öffnen.\nMarkdown-Zelle erstellen folgenden Text einfügen:\n# Mein erstes Markdown-Dokument\n\nHier ist eine Liste meiner Lieblings-Datenwissenschafts-Tools:\n\n1. Python\n2. Jupyter Notebooks\n3. Pandas\n\nHier ist ein **wichtiger** Punkt zu beachten:\n\n&gt; Üben ist der Schlüssel zum Erfolg!\n\nDies ist eine Python-Funktion:\n\n```python\ndef greet(name):\n    return f\"Hallo, {name}! Willkommen in der Welt der Datenwissenschaft!\"\n```\nZelle ausführen.",
+    "text": "5.3 Praktische Übung\nAls nächstes werden wir das Gelernte in einer kleinen Übung anwenden:\n\nNeues Jupyter Notebook öffnen.\nMarkdown-Zelle erstellen folgenden Text einfügen:\n# Mein erstes Markdown-Dokument\n\nHier ist eine Liste meiner Lieblings-Datenwissenschafts-Tools:\n\n1. Python\n2. Jupyter Notebooks\n3. Pandas\n\nHier ist ein **wichtiger** Punkt zu beachten:\n\n&gt; Üben ist der Schlüssel zum Erfolg!\n\nDies ist als Python-Code formatierter Text innerhalb einer Markdown-Zelle (und kann deswegen nicht ausgeführt werden):\n\n```python\nprint(\"Hallo, Python!\")\n```\nZelle ausführen.",
     "crumbs": [
       "Erste Schritte",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Markdown</span>"
@@ -201,7 +201,7 @@
     "href": "python/python-bibliotheken.html",
     "title": "6  Bausteine der Python-Programmierung",
     "section": "",
-    "text": "6.1 Module in Python\nModule sind einzelne Python-Dateien, die Definitionen und Implementierungen von Funktionen und Variablen enthalten, die in verschiedenen Programmen wiederverwendet werden können:\nModule helfen, den Code modular zu gestalten, was seine Wartbarkeit und Lesbarkeit verbessert.\nEinige bedeutende Standardmodule und deren häufige Anwendungen:\nEin Beispiel zur Verwendung eines Moduls durch Import in ein Python-Skript:",
+    "text": "6.1 Module in Python\nModule sind einzelne Python-Dateien, die Definitionen und Implementierungen von Variablen und Funktionen enthalten, die in verschiedenen Programmen wiederverwendet werden können:\nModule helfen, den Code modular zu gestalten, was seine Wartbarkeit und Lesbarkeit verbessert.\nEinige bedeutende Standardmodule und deren häufige Anwendungen:\nEin Beispiel zur Verwendung eines Moduls durch Import in ein Python-Skript:",
     "crumbs": [
       "Python",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Bibliotheken</span>"
