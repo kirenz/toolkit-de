@@ -52,10 +52,12 @@ Kommentar
 def example_function():
     """
     Dies ist ein Docstring für eine Funktion.
-    Er beschreibt, was die Funktion tut, welche Parameter sie akzeptiert
-    und was sie zurückgibt.
+    Er beschreibt, was die Funktion tut,  
+    welche Parameter sie akzeptiert  
+    und was sie zurückgibt.  
     """
     pass
+
 ```
 
 Durch die Verwendung von Docstrings wird der Code nicht nur für Menschen lesbarer, sondern auch für automatisierte Tools zur Dokumentationserstellung zugänglicher. Dies ist besonders in größeren Projekten und bei der Entwicklung von Bibliotheken oder Frameworks von Vorteil.
