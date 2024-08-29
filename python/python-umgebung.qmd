@@ -2,7 +2,10 @@
 
 Virtuelle Umgebungen sind ein grundlegendes Konzept in der Softwareentwicklung und Data Science. Sie ermöglichen es, isolierte Arbeitsbereiche für verschiedene Projekte zu erstellen. In diesen Umgebungen können Python-Pakete oder -Bibliotheken und deren Abhängigkeiten separat installiert und verwaltet werden. Dies ist besonders wichtig für Data Science-Projekte, die oft spezifische Versionen von Bibliotheken benötigen.
 
-Um die folgenden Erläuterungen zu vereinfachen, werden wir nicht immer genau zwischen Bibliotheken und Paketen unterscheiden, sondern hauptsächlich den Begriff Python-Pakete verwenden.
+:::{.callout-note}
+Um die folgenden Erläuterungen zu vereinfachen, werden wir nicht immer streng zwischen Bibliotheken und Paketen unterscheiden, sondern hauptsächlich den Begriff Python-Pakete verwenden, wenn wir Python-Software importieren.
+:::
+
 
 ### Was sind virtuelle Umgebungen?
 
