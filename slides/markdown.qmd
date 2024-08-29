@@ -2,9 +2,9 @@
 title: Markdown
 lang: de
 subtitle: Grundlagen und Anwendung
-author: Data Science, AI & Analytics Toolkit  
+author: 🛠️ Toolkit  
 execute:
-  eval: false
+  eval: true
   echo: true
 highlight-style: github-dark
 format:
@@ -44,7 +44,7 @@ jupyter: python3
 :::{.feature-header}
 Was ist Markdown?
 :::
-Einfache Auszeichnungssprache
+Einführung
 :::
 
 ::: {.feature .fragment .fade-up}
@@ -72,11 +72,13 @@ Anwendung des Gelernten
 
 ## Was ist Markdown?
 
-::: {.incremental}
 - Einfache Auszeichnungssprache
 - Leicht in HTML umwandelbar
 - Ideal für Dokumentationen und Berichte
-- Weit verbreitet in der Datenwissenschaft
+
+. . .
+
+::: {.callout-tip appearance="simple"}
 - Ermöglicht dynamische Berichterstellung
 :::
 
@@ -86,16 +88,15 @@ Anwendung des Gelernten
 2. Als `hello-markdown.ipynb` im `code`-Ordner speichern
 3. Neue Zelle hinzufügen
 4. Zelltyp auf "Markdown" ändern
+5. Zelle ausführen mit Shift+Enter
 
-. . .
 
-```python
-# Zelle ausführen mit Shift+Enter
-```
+## Demo Markdown 
 
-## Markdown-Grundlagen: Überschriften
 
-. . .
+# Markdown-Grundlagen
+
+## Überschriften
 
 ```markdown
 # Hauptüberschrift (H1)
@@ -103,50 +104,60 @@ Anwendung des Gelernten
 ### Kleinere Unterüberschrift (H3)
 ```
 
-## Markdown-Grundlagen: Listen
-
-Geordnete Listen:
-
-. . .
+## Geordnete Listen
 
 ```markdown
 1. Erster Punkt
 2. Zweiter Punkt
 ```
 
-Ungeordnete Listen:
+1. Erster Punkt
+2. Zweiter Punkt
 
-. . .
+## Ungeordnete Listen
+
 
 ```markdown
 - Aufzählungspunkt A
 - Aufzählungspunkt B
 ```
 
-## Markdown-Grundlagen: Hervorhebungen
 
-. . .
+- Aufzählungspunkt A
+- Aufzählungspunkt B
+
+## Hervorhebungen
+
 
 ```markdown
 *Kursiv*  
 **Fett**  
+
 _Kursiv mit Unterstrichen_  
 __Fett mit Unterstrichen__
 ```
 
-## Markdown-Grundlagen: Blockzitate und Tabellen
-
-Blockzitat:
-
 . . .
+
+*Kursiv*  
+**Fett**  
+
+_Kursiv mit Unterstrichen_  
+__Fett mit Unterstrichen__
+
+## Blockzitate
 
 ```markdown
 > "Dies ist ein Blockzitat."
 ```
 
-Tabelle:
-
 . . .
+
+> "Dies ist ein Blockzitat."
+
+
+## Tabellen 
+
 
 ```markdown
 | Spalte 1 | Spalte 2 |
@@ -154,27 +165,36 @@ Tabelle:
 | Zeile 1  | Wert 1   |
 ```
 
-## Markdown-Grundlagen: Links und Bilder
 
-Links:
+<br>
 
 . . .
+
+| Spalte 1 | Spalte 2 |
+|----------|----------|
+| Zeile 1  | Wert 1   |
+
+## Links
 
 ```markdown
 [Python-Dokumentation](https://docs.python.org/)
 ```
-
-Bilder:
-
 . . .
 
+[Python-Dokumentation](https://docs.python.org/)
+
+## Bilder
+
 ```markdown
-![Alt-Text](image_url_or_path)
+![Alt-Text](images/code.png)
 ```
 
-## Markdown-Grundlagen: Mathematische Ausdrücke
+![Alt-Text](images/code.png)
 
-Inline-Gleichung:
+
+## Mathematische Ausdrücke
+
+- Inline-Gleichung:
 
 . . .
 
@@ -182,7 +202,11 @@ Inline-Gleichung:
 $E = mc^2$
 ```
 
-Block-Gleichung:
+. . .
+
+$E = mc^2$
+
+- Block-Gleichung:
 
 . . .
 
@@ -192,9 +216,14 @@ $$
 $$
 ```
 
-## Markdown-Grundlagen: Code-Blöcke
-
 . . .
+
+$$
+\frac{a}{b} + \sqrt{x}
+$$
+
+## Code-Blöcke
+
 
 ````markdown
 ```python
@@ -202,14 +231,22 @@ print("Hallo, Python!")
 ```
 ````
 
-## Praktische Übung
-
-1. Neues Jupyter Notebook öffnen
-2. Markdown-Zelle erstellen und folgenden Text einfügen:
+<br>
 
 . . .
 
-```markdown
+```python
+print("Hallo, Python!")
+```
+
+## Praktische Übung
+
+1. Neues Jupyter Notebook öffnen
+2. Markdown-Zelle erstellen und Text einfügen:
+
+. . .
+
+````markdown
 # Mein erstes Markdown-Dokument
 
 Hier ist eine Liste meiner Lieblings-Datenwissenschafts-Tools:
@@ -222,30 +259,32 @@ Hier ist ein **wichtiger** Punkt zu beachten:
 
 > Üben ist der Schlüssel zum Erfolg!
 
-Dies ist eine Python-Funktion:
-
+Dies ist als Python-Code formatierter Text: 
+   
 ```python
-def greet(name):
-    return f"Hallo, {name}! Willkommen in der Welt der Datenwissenschaft!"
+print("Hallo, Python!")
 ```
-```
+
+````
 
 ## Zusammenfassung
 
 :::: {.features}
 
-::: {.feature .fragment .fade-in}
-:::{.feature-header}
-Markdown-Grundlagen
-:::
-Überschriften, Listen, Hervorhebungen, Blockzitate, Tabellen, Links, Bilder, Mathematik, Code-Blöcke
-:::
+
 
 ::: {.feature .fragment .fade-up}
 :::{.feature-header}
 Jupyter Integration
 :::
 Markdown in Jupyter Notebooks verwenden
+:::
+
+::: {.feature .fragment .fade-in}
+:::{.feature-header}
+Markdown-Grundlagen
+:::
+Überschriften, Listen, Hervorhebungen, Blockzitate, Tabellen, Links, Bilder, Mathematik, Code-Blöcke
 :::
 
 ::: {.feature .fragment .fade-up}

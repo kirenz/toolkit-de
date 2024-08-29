@@ -2,9 +2,9 @@
 title: Bausteine der Python-Programmierung
 lang: de
 subtitle: Module, Pakete und Bibliotheken
-author: Data Science, AI & Analytics Toolkit  
+author: 🛠️ Toolkit  
 execute:
-  eval: false
+  eval: true
   echo: true
 highlight-style: github-dark
 format:
@@ -41,74 +41,84 @@ jupyter: python3
 
 ::: {.feature .fragment .fade-in}
 :::{.feature-header}
-Module 📦
+Module 
 :::
 Einzelne Python-Dateien
 :::
 
 ::: {.feature .fragment .fade-up}
 :::{.feature-header}
-Pakete 📚
+Pakete 
 :::
 Verzeichnisse von Modulen
 :::
 
 ::: {.feature .fragment .fade-up}
 :::{.feature-header}
-Bibliotheken 🏛️
+Bibliotheken 
 :::
 Sammlungen von Paketen
 :::
 
 ::::
 
-## Module in Python 📦
+# Module in Pythone
+
+## Grundlagen 
 
 - Einzelne Python-Dateien
 - Enthalten Definitionen und Implementierungen von:
-  - Funktionen
   - Variablen
-- Ermöglichen Wiederverwendung in verschiedenen Programmen
-- Verbessern Modularität, Wartbarkeit und Lesbarkeit des Codes
-
-## Küchen-Analogie für Module 🍳
-
-::: {.fragment .fade-up}
-- Python-Umgebung = Küche
-- Module = Rezeptbücher
-- Funktionen = Rezepte
-- Datentypen und Variablen = Zutaten
-- Methoden = Kochutensilien
-:::
-
-## Wichtige Standardmodule
-
-::: {.fragment .fade-up}
-- `os`: Interaktion mit dem Betriebssystem
-- `datetime`: Datums- und Zeitoperationen
-- `math`: Mathematische Funktionen
-- `random`: Zufallszahlen und -auswahlen
-- `json`: JSON-Datenverarbeitung
-:::
-
-## Beispiel: Verwendung eines Moduls
+  - Funktionen
 
 . . .
 
-```python
+:::{.callout-tip appearance="simple"}
+- **Variablen**: Benannte Speicherorte, die Daten im Speicher halten. `x = 5` speichert die Ganzzahl 5 in einer Variable namens `x`.
+- **Funktionen**: Wiederverwendbare Codeabschnitte, die eine bestimmte Aktion ausführen.
+:::
+
+## Vorteile von Modulen
+
+- Ermöglichen Wiederverwendung in verschiedenen Programmen
+
+- Verbessern Modularität, Wartbarkeit und Lesbarkeit des Codes
+
+## Wichtige Standardmodule
+
+- `os`: Interaktion mit dem Betriebssystem
+- `datetime`: Datums- und Zeitoperationen
+- `math`: Mathematische Funktionen
+- `json`: JSON-Datenverarbeitung
+
+
+## Verwendung eines Moduls
+
+. . .
+
+```{python}
+#| output-location: fragment
 # Import des Moduls
 import math
 
 # Verwendung der sqrt-Funktion aus dem math-Modul
 result = math.sqrt(16)
-print(result)  # Ausgabe: 4.0
-
-# Alternative Importmethode
-from math import pi
-print(pi)  # Ausgabe: 3.141592653589793
+print(result) 
 ```
 
-## Pakete in Python 📚
+## Alternative Importmethode
+
+```{python}
+#| output-location: fragment
+# Alternative Importmethode
+from math import pi
+print(pi)  
+```
+
+
+# Pakete in Python
+
+## Grundlagen
 
 - Verzeichnisse von Python-Modulen
 - Enthalten spezielle Datei `__init__.py`
@@ -116,7 +126,6 @@ print(pi)  # Ausgabe: 3.141592653589793
 
 ## Paketstruktur
 
-::: {.fragment .fade-up}
 ```
 mein_paket/
     __init__.py
@@ -126,37 +135,32 @@ mein_paket/
         __init__.py
         modul3.py
 ```
-:::
 
-## Küchen-Analogie für Pakete 🍽️
-
-::: {.fragment .fade-up}
-- Paket = Sammlung von Rezeptbüchern
-- Jedes Buch (Modul) fokussiert auf einen bestimmten Bereich
-- Zusammen bieten sie eine breite Palette kulinarischer Optionen
-:::
 
 ## Wichtige Data Science Pakete
 
-::: {.fragment .fade-up}
 - `numpy`: Numerische Berechnungen und Arrayoperationen
 - `pandas`: Datenmanipulation und -analyse
 - `matplotlib`, `seaborn`, `altair`: Datenvisualisierung
 - `scikit-learn`: Machine-Learning-Algorithmen
-:::
 
-## Beispiel: Verwendung eines Pakets
 
-. . .
+## Verwendung eines Pakets
 
-```python
+```{python}
+#| output-location: fragment
 # Import des gesamten Pakets
 import numpy as np
 
 # Erstellung eines Arrays
 arr = np.array([1, 2, 3, 4, 5])
 print(np.mean(arr))  # Ausgabe: 3.0
+```
 
+## Alternative Importmethode
+
+```{python}
+#| output-location: fragment
 # Import spezifischer Funktionen aus einem Paket
 from pandas import DataFrame
 

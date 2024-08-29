@@ -186,11 +186,11 @@ Als nächstes werden wir das Gelernte in einer kleinen Übung anwenden:
    
    > Üben ist der Schlüssel zum Erfolg!
    
-   Dies ist eine Python-Funktion:
-   
+   Dies ist als Python-Code formatierter Text innerhalb einer Markdown-Zelle (und kann deswegen nicht ausgeführt werden):
+
    ```python
-   def greet(name):
-       return f"Hallo, {name}! Willkommen in der Welt der Datenwissenschaft!"
+   print("Hallo, Python!")
+
    ```
    ```
 

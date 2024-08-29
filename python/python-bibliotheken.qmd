@@ -9,7 +9,7 @@ Dieses Kapitel führt durch diese Konzepte und verwendet Beispiele und Analogien
 
 ## Module in Python
 
-Module sind einzelne Python-Dateien, die Definitionen und Implementierungen von *Funktionen* und *Variablen* enthalten, die in verschiedenen Programmen wiederverwendet werden können:
+Module sind einzelne Python-Dateien, die Definitionen und Implementierungen von *Variablen* und *Funktionen* enthalten, die in verschiedenen Programmen wiederverwendet werden können:
 
 - **Variablen**: Benannte Speicherorte, die Daten im Speicher halten. Beispiel: `x = 5` speichert die Ganzzahl 5 in einer Variable namens `x`.
 - **Funktionen**: Wiederverwendbare Codeabschnitte, die eine bestimmte Aktion ausführen.

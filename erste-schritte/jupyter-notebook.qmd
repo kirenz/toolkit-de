@@ -6,6 +6,9 @@ In der Welt der Data Science und künstlichen Intelligenz ist Jupyter Notebook e
 Jupyter Notebook ist mehr als nur ein einfacher Code-Editor. Es ist eine webbasierte, interaktive Umgebung, die es uns ermöglicht, Python-Code zu schreiben und auszuführen, erklärende Texte mit Markdown zu integrieren und die Ergebnisse unserer Analysen direkt in der Web-Oberfläche zu visualisieren.
 :::
 
+
+![Jupyter Notebook](../images/jupyter.png){#fig-jupyter width="50%" }
+
 Im Vergleich zum eher einfachen Python IDLE bietet Jupyter Notebook eine Reihe von Vorteilen, die unsere Arbeit erheblich erleichtern:
 
 1. **Interaktive Code-Ausführung:** In Jupyter Notebook arbeiten wir mit sogenannten "Zellen". Jede Zelle kann Python-Code enthalten, den wir unabhängig voneinander ausführen können. Dies ermöglicht uns, unseren Code schrittweise zu entwickeln und zu testen, was besonders bei komplexen Datenanalysen von Vorteil ist.

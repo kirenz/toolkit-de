@@ -1,8 +1,8 @@
 ---
 title: Jupyter Notebook
 lang: de
-subtitle: Interaktive Entwicklungsumgebung für Data Science
-author: Data Science, AI & Analytics Toolkit  
+subtitle: Interaktive Entwicklungsumgebung
+author: 🛠️ Toolkit  
 execute:
   eval: false
   echo: true
@@ -41,48 +41,56 @@ jupyter: python3
 
 ::: {.feature .fragment .fade-in}
 :::{.feature-header}
-Was ist Jupyter Notebook? 🤔
+Was ist Jupyter Notebook? 
 :::
 Einführung und Vorteile
 :::
 
 ::: {.feature .fragment .fade-up}
 :::{.feature-header}
-Erstellung eines Notebooks 📝
+Erstellung eines Notebooks 
 :::
 Schritt-für-Schritt-Anleitung
 :::
 
 ::: {.feature .fragment .fade-up}
 :::{.feature-header}
-Arbeiten mit Notebooks 💻
+Arbeiten mit Notebooks 
 :::
 Code, Markdown und mehr
 :::
 
 ::::
 
-## Was ist Jupyter Notebook? 🤔
+## Was ist Jupyter Notebook? 
 
-::: {.fragment .fade-in}
 - Webbasierte, interaktive Entwicklungsumgebung
-- Teil der Anaconda-Distribution
 - Ermöglicht Kombination von Code, Text und Visualisierungen
-:::
 
-::: {.fragment .fade-in}
-![](../images/jupyter-logo.png){width="30%" fig-align="center"}
-:::
+. . .
 
-## Vorteile von Jupyter Notebook
+![](../images/jupyter.png){width="30%" fig-align="center"}
 
-::: {.incremental}
-- Interaktive Code-Ausführung in Zellen
+
+## Code-Ausführung in Zellen
+
+![](../images/jupyter.png){width="30%" fig-align="center"}
+
+
+## Vorteile
+
 - Nahtlose Integration von Code und Dokumentation
+- Selektive Ausführung von Code
 - Sofortige Visualisierung von Ergebnissen
-- Fördert Reproduzierbarkeit
+
+
+![](../images/jupyter.png){width="30%" fig-align="center"}
+
+
+
 - Unterstützt mehrere Programmiersprachen
-:::
+- In Anaconda-Distribution enthalten
+
 
 ## Erstellung eines Jupyter Notebooks
 
@@ -96,14 +104,17 @@ Code, Markdown und mehr
 ![](../images/anaconda-navigator.png){width="50%" fig-align="center"}
 :::
 
+## Demo Erstellung Jupyter Notebook
+
+
+
 ## Arbeiten mit Notebooks
 
-::: {.incremental}
 - Code in Zellen eingeben und ausführen
 - Markdown für Dokumentation nutzen
 - Visualisierungen direkt im Notebook anzeigen
 - Regelmäßiges Speichern nicht vergessen!
-:::
+
 
 ## Beispiel: Erste Schritte
 
@@ -113,9 +124,7 @@ Code, Markdown und mehr
 print("Hello, Jupyter!")
 ```
 
-::: {.fragment .fade-in}
-Ausführen mit `Shift+Enter` oder den "Run"-Button
-:::
+- Ausführen mit `Shift+Enter` oder den "Run"-Button
 
 ## Struktur von Jupyter Notebooks
 
@@ -124,14 +133,6 @@ Ausführen mit `Shift+Enter` oder den "Run"-Button
 - Enthält geordnete Liste von "Zellen"
 - Speichert Code, Ausgaben, Markdown und Visualisierungen
 
-## Vorteile der Notebook-Struktur
-
-::: {.incremental}
-- Selektive Ausführung von Code
-- Nicht-lineare Arbeitsweise
-- Einfache Überarbeitung
-- Integrierte Dokumentation
-:::
 
 ## Zusammenfassung
 
@@ -139,23 +140,27 @@ Ausführen mit `Shift+Enter` oder den "Run"-Button
 
 ::: {.feature .fragment .fade-in}
 :::{.feature-header}
-Jupyter Notebook 📊
+Jupyter Notebook 
 :::
-Leistungsstarke, interaktive Entwicklungsumgebung für Data Science
-:::
-
-::: {.feature .fragment .fade-up}
-:::{.feature-header}
-Funktionen 🛠️
-:::
-Code-Ausführung, Dokumentation, Visualisierung in einem Tool
+Leistungsstarke, interaktive Entwicklungsumgebung
 :::
 
 ::: {.feature .fragment .fade-up}
 :::{.feature-header}
-Vorteile 🚀
+Funktionen 
 :::
-Flexibilität, Reproduzierbarkeit, verbesserte Zusammenarbeit
+Code-Ausführung  
+Dokumentation  
+Visualisierung in einem Tool  
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Vorteile 
+:::
+Flexibilität  
+Reproduzierbarkeit   
+verbesserte Zusammenarbeit  
 :::
 
 ::::
