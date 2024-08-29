@@ -1,8 +1,8 @@
 ---
-title: Python Grundlagen 🐍
+title: Python Basics
 lang: de
 subtitle: Einführung in essentielle Konzepte
-author: Data Science, AI & Analytics Toolkit  
+author: 🛠️ Toolkit  
 execute:
   eval: false
   echo: true
@@ -41,21 +41,21 @@ jupyter: python3
 
 ::: {.feature .fragment .fade-in}
 :::{.feature-header}
-Bibliotheken 📚
+Bibliotheken 
 :::
 Import wichtiger Pakete
 :::
 
 ::: {.feature .fragment .fade-up}
 :::{.feature-header}
-Kommentare 💬
+Kommentare 
 :::
 Code dokumentieren
 :::
 
 ::: {.feature .fragment .fade-up}
 :::{.feature-header}
-Variablen & Datentypen 🔢
+Variablen & Datentypen 
 :::
 Grundlegende Datenstrukturen
 :::
@@ -69,58 +69,79 @@ Mathematische Operationen
 
 ::: {.feature .fragment .fade-up}
 :::{.feature-header}
-DataFrames 📊
+DataFrames 
 :::
 Datenmanipulation mit Pandas
 :::
 
 ::: {.feature .fragment .fade-up}
 :::{.feature-header}
-Methoden 🛠️
+Methoden 
 :::
 Funktionen für Objekte
 :::
 
 ::: {.feature .fragment .fade-up}
 :::{.feature-header}
-Visualisierung 📈
+Visualisierung 
 :::
 Daten mit Altair darstellen
 :::
 
 ::::
 
-## Bibliotheken importieren
+## Pakete & Bibliotheken 
 
+## Ein Paket importieren
+
+
+```python
+import numpy as np      # Für numerische Operationen
+```
 . . .
+
+::: {.callout-tip appearance="simple"}
+- **NumPy (np)**: Komplexe mathematische Operationen
+:::
+
+## Mehrere Pakete importieren
 
 ```python
 # Bibliotheken importieren
-import numpy as np      # Für numerische Operationen
 import pandas as pd     # Für Datenmanipulation und -analyse
 import altair as alt    # Für Datenvisualisierung
 ```
 
-::: {.fragment}
-- **NumPy (np)**: Komplexe mathematische Operationen
+. . .
+
+::: {.callout-tip appearance="simple"}
 - **Pandas (pd)**: Effiziente Handhabung strukturierter Daten
 - **Altair (alt)**: Intuitive, interaktive Visualisierungen
 :::
 
-## Kommentare einfügen
+# Kommentare 
 
-. . .
+## Einzeilige Kommentare 
+
 
 ```python
 # Dies ist ein einzeiliger Kommentar
 x = 5  # Kommentare können auch am Ende einer Codezeile stehen
+```
 
+## Mehrzeilige Kommentare 
+
+```python
 """
 Dies ist ein 
 mehrzeiliger 
 Kommentar
 """
+```
 
+## Docstrings
+
+```python
 def example_function():
     """
     Dies ist ein Docstring für eine Funktion.
@@ -130,11 +151,16 @@ def example_function():
     pass
 ```
 
-## Variablen und Datentypen
+::: {.callout-tip appearance="simple"}
+- Dokumentation von Funktionen, Klassen und Modulen
+:::
 
-. . .
 
-```python
+# Variablen und Datentypen
+
+## Übersicht
+
+```{python}
 name = "Alice"                      # String (Zeichenkette)
 age = 30                            # Integer (Ganzzahl)
 height = 5.5                        # Float (Gleitkommazahl)
@@ -143,26 +169,48 @@ numbers = [1, 2, 3]                 # List (Liste)
 person = {"name": "Alice", "age": 30} # Dictionary (Wörterbuch)
 ```
 
-::: {.fragment}
+::: {.callout-tip appearance="simple"}
+- Variablen speichern Informationen im Arbeitsspeicher.
+:::
+
+## Datentypen
+
 - **String**: Textdaten
 - **Integer**: Ganze Zahlen
 - **Float**: Zahlen mit Dezimalstellen
 - **Boolean**: Logische Werte (True/False)
 - **List**: Geordnete, veränderbare Sammlung
 - **Dictionary**: Schlüssel-Wert-Paare
-:::
 
-## Operatoren und Berechnungen
 
-. . .
+## Mit print Datnetypen anzeigen
 
-```python
-# Arithmetische Operationen
+```{python}
+#| output-location: fragment
+print(name)        # Ausgabe: Alice
+print(age)         # Ausgabe: 30
+print(numbers)     # Ausgabe: [1, 2, 3]
+print(person)      # Ausgabe: {'name': 'Alice', 'age': 30}
+```
+
+
+# Operatoren und Berechnungen
+
+## Arithmetische Operationen
+
+
+```{python}
+#| output-location: fragment
 length = 10
 width = 5
 
 area = length * width           # Multiplikation
 perimeter = 2 * (length + width) # Addition und Multiplikation
+print(perimeter)
+```
+
+
+# Vergleichsoperationen
 
 # Vergleichsoperationen
 is_square = length == width     # Gleichheit überprüfen
