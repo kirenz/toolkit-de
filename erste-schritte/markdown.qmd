@@ -174,9 +174,9 @@ Als nächstes werden wir das Gelernte in einer kleinen Übung anwenden:
 2. Markdown-Zelle erstellen folgenden Text einfügen:
 
    ````markdown
-   # Mein erstes Markdown-Dokument
+   # Markdown-Dokument
    
-   Hier ist eine Liste meiner Lieblings-Datenwissenschafts-Tools:
+   Hier ist eine Liste meiner Datenwissenschafts-Tools:
    
    1. Python
    2. Jupyter Notebooks
