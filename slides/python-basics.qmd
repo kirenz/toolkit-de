@@ -1,7 +1,7 @@
 ---
 title: Python Basics
 lang: de
-subtitle: Einführung in essentielle Konzepte
+subtitle: Wichtige Grundlagen
 author: 🛠️ Toolkit  
 execute:
   eval: false
@@ -62,7 +62,7 @@ Grundlegende Datenstrukturen
 
 ::: {.feature .fragment .fade-up}
 :::{.feature-header}
-Operatoren & Berechnungen 🧮
+Operatoren & Berechnungen 
 :::
 Mathematische Operationen
 :::
@@ -90,12 +90,12 @@ Daten mit Altair darstellen
 
 ::::
 
-## Pakete & Bibliotheken 
+# Pakete & Bibliotheken 
 
 ## Ein Paket importieren
 
 
-```python
+```{python}
 import numpy as np      # Für numerische Operationen
 ```
 . . .
@@ -106,7 +106,7 @@ import numpy as np      # Für numerische Operationen
 
 ## Mehrere Pakete importieren
 
-```python
+```{python}
 # Bibliotheken importieren
 import pandas as pd     # Für Datenmanipulation und -analyse
 import altair as alt    # Für Datenvisualisierung
@@ -124,7 +124,7 @@ import altair as alt    # Für Datenvisualisierung
 ## Einzeilige Kommentare 
 
 
-```python
+```{python}
 # Dies ist ein einzeiliger Kommentar
 x = 5  # Kommentare können auch am Ende einer Codezeile stehen
 ```
@@ -141,7 +141,7 @@ Kommentar
 
 ## Docstrings
 
-```python
+```{python}
 def example_function():
     """
     Dies ist ein Docstring für eine Funktion.
