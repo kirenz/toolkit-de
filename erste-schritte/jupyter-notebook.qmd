@@ -7,7 +7,7 @@ Jupyter Notebook ist mehr als nur ein einfacher Code-Editor. Es ist eine webbasi
 :::
 
 
-![Jupyter Notebook](../images/jupyter.png){#fig-jupyter width="50%" }
+![Jupyter Notebook](../images/jupyter.png){#fig-jupyter width="100%" }
 
 Im Vergleich zum eher einfachen Python IDLE bietet Jupyter Notebook eine Reihe von Vorteilen, die unsere Arbeit erheblich erleichtern:
 
