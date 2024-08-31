@@ -1,7 +1,7 @@
 ---
-title: Projektumgebung
+title: Projektumgebung einrichten
 lang: de
-subtitle: Einrichtung und Grundlagen
+subtitle: Grundlagen
 author: 🛠️ Toolkit
 execute:
   eval: false
@@ -66,9 +66,9 @@ Windows vs. macOS
 
 ::: {layout-ncol=2 layout-valign="bottom"}
 
-![Visuelle Darstellung](../images/ordner.png){width=45% fig-align="left"}
+![Visuelle Darstellung](images/ordner.png){width=45% fig-align="left"}
 
-![Baumstruktur](../images/ordner2.png){width=55% fig-align="left"}
+![Baumstruktur](images/ordner2.png){width=55% fig-align="left"}
 
 :::
 
@@ -112,14 +112,14 @@ Befehlszeile: effizientere Aufgabenausführung als eine GUI.
 <br>
 
 
-![](../images/eingabe.png){width=100% fig-align="left"}
+![](images/eingabe.png){width=100% fig-align="left"}
 
 
 ## MacOS Terminal
 
 <br>
 
-![](../images/terminal.png){width=100% fig-align="left"}
+![](images/terminal.png){width=100% fig-align="left"}
 
 
 
