@@ -67,7 +67,7 @@ Es kann vorkommen, dass wir mehrere Python-Versionen auf unserem System haben. D
 
 IDLE ist ein einfacher Python-Editor, der mit unserer Installation mitgeliefert wird. Er ist ideal für unsere ersten Schritte in der Python-Programmierung.
 
-![IDLE Shell](../images/idle.png){#fig-idle width="100%" }
+![IDLE Shell](../images/idle.png){#fig-idle width="50%" }
 
 IDLE starten:
 
@@ -88,18 +88,21 @@ Arbeiten mit IDLE:
      print("Hallo, Python!")
      ```
 
-   ![IDLE Skript](../images/idle-hello.png){#fig-idle-hello width="100%" }
+   ![IDLE Skript](../images/idle-hello.png){#fig-idle-hello width="50%" }
 
 
    - Die Datei als `hallo.py` in unserem `code`-Ordner speichern.
-   - Skript ausführen: F5 drücken (Mac: fn + F5) oder `Ausführen` > `Modul ausführen` wählen.
-   - In der IDLE-Shell sehen wir nun unsere Ausgabe.
-
-   ![IDLE Skript und Shell](../images/idle-script-shell.png){#fig-idle-script-shell width="100%" }
-
 
    ::: {.callout-note title="Hinweis zu .py-Datei"}
    Eine .py-Datei ist eine Datei, die Quellcode in der Programmiersprache Python enthält. Das bedeutet, sie beinhaltet eine Reihe von Anweisungen und Befehlen, die ein Computer verstehen und ausführen kann, um bestimmte Aufgaben zu erledigen.
    :::
+
+   - Skript ausführen: F5 drücken (Mac: fn + F5) oder `Ausführen` > `Modul ausführen` wählen.
+   - In der IDLE-Shell sehen wir nun unsere Ausgabe.  
+
+
+   ![IDLE Skript und Shell](../images/idle-script-shell.png){#fig-idle-script-shell width="80%" }
+
+
 
 Wie wir gesehen haben, bietet Python IDLE eine  einfache Oberfläche für die Codeentwicklung und -ausführung. In einem der folgenden Abschnitte werden wir fortschrittlichere Entwicklungsumgebungen wie Visual Studio Code erkunden, die größere Projekte mit zusätzlichen Funktionen unterstützen.
