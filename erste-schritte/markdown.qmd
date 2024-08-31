@@ -173,7 +173,7 @@ Als nächstes werden wir das Gelernte in einer kleinen Übung anwenden:
 1. Neues Jupyter Notebook öffnen.
 2. Markdown-Zelle erstellen folgenden Text einfügen:
 
-   ```markdown
+   ````markdown
    # Mein erstes Markdown-Dokument
    
    Hier ist eine Liste meiner Lieblings-Datenwissenschafts-Tools:
@@ -190,9 +190,8 @@ Als nächstes werden wir das Gelernte in einer kleinen Übung anwenden:
 
    ```python
    print("Hallo, Python!")
-
    ```
-   ```
+   ````
 
 3. Zelle ausführen.
 
