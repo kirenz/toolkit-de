@@ -130,6 +130,4 @@ ergebnis = special.factorial(5)
 print(f"Die Fakultät von 5 ist: {ergebnis}")
 ```
 
-:::{.callout-note}
-Um die nachfolgenden Anleitungen zu vereinfachen, werden wir nicht immer streng zwischen Bibliotheken und Paketen unterscheiden, sondern hauptsächlich den Begriff Python-Pakete verwenden, wenn wir Python-Software importieren (auch wenn es sich dabei teilweise um eine Bibliothek handelt).
-:::
+Um die nachfolgenden Anleitungen zu vereinfachen, werden wir nicht immer streng zwischen Bibliotheken und Paketen unterscheiden, sondern hauptsächlich den Begriff Python-Pakete verwenden, wenn wir Python-Software importieren (auch wenn es sich dabei um eine Bibliothek handelt).
