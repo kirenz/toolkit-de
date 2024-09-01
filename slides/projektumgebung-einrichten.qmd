@@ -73,7 +73,9 @@ Windows vs. macOS
 :::
 
 
-## GUI vs Befehlszeile  
+# GUI vs Befehlszeile  
+
+## Überblick
 
 - **GUI**: Grafische Benutzeroberfläche (z.B. Windows Explorer, macOS Finder)
 
@@ -97,7 +99,7 @@ Befehlszeile: effizientere Aufgabenausführung als eine GUI.
 ::: {.callout-tip appearance="simple"}
 
 - Windows: Eingabeaufforderung und PowerShell
-- macOS: Terminal oder iTerm2
+- macOS: Terminal oder [iTerm2](https://iterm2.com/)
 
 :::
 
@@ -122,6 +124,8 @@ Befehlszeile: effizientere Aufgabenausführung als eine GUI.
 ![](images/terminal.png){width=100% fig-align="left"}
 
 
+# Shells {.custom-gradient}
+
 
 ## Shell-Konzept
 
@@ -136,8 +140,6 @@ Befehlszeile: effizientere Aufgabenausführung als eine GUI.
 - Shell = "Übersetzer" der Anweisungen
 :::
 
-# Shells
-
 ## Shells in Windows
 
 - Eingabeaufforderung (Command Prompt, cmd)
@@ -149,7 +151,7 @@ Befehlszeile: effizientere Aufgabenausführung als eine GUI.
 - Frühere Standardshell: bash (Bourne Again Shell)
 
 
-## Zusammenfassung
+# Zusammenfassung
 
 :::: {.features}
 
