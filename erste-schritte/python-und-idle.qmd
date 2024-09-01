@@ -104,7 +104,7 @@ In @fig-idle ist die interaktive IDLE-Shell mit der Python-Version 3.12.1 zu seh
 
 ![IDLE Shell](../images/idle.png){#fig-idle width="80%" }
 
-## Python Interpreter
+### Python Interpreter
 
 Der Python-Interpreter ist das Kernstück der Python-Programmierumgebung. Er hat folgende Hauptfunktionen:
 
@@ -115,7 +115,7 @@ Der Python-Interpreter ist das Kernstück der Python-Programmierumgebung. Er hat
 IDLE nutzt den Python-Interpreter, um Code auszuführen. In der Python Shell arbeiten wir direkt mit dem Interpreter im interaktiven Modus, während der Datei-Editor es uns ermöglicht, längere Skripte zu schreiben, die dann vom Interpreter ausgeführt werden können.
 
 
-## Python-Skript
+### Python-Skript
 
 Ein Python-Skript ist eine Textdatei mit der Endung `.py`, die eine Reihe von Python-Anweisungen enthält. Diese Anweisungen dienen dazu, eine spezifische Aufgabe auszuführen oder ein Problem zu lösen.
 
