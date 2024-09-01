@@ -58,8 +58,9 @@ Erstellen und ausführen
 
 ## IDLE starten
 
-- Windows: Startmenü öffnen und nach "IDLE" suchen
-- Mac: In Spotlight-Suche (Command + Leertaste) "IDLE" eingeben und auswählen
+- **Windows**: Startmenü öffnen und nach "IDLE" suchen
+
+- **Mac**: In Spotlight-Suche (Command + Leertaste) "IDLE" eingeben und auswählen
 
 ## IDLE-Shell
 
@@ -80,21 +81,27 @@ Erstellen und ausführen
 print("Hallo, Python!")
 ```
 
-## Python-Skript in IDLE
-
 ![](../images/idle-hello.png){ width="100%" fig-align="left" }
 
 
 ## Python-Skript speichern
 
 - Als `hallo.py` im `code`-Ordner speichern
-- Ausführen: F5 oder `Ausführen` > `Modul ausführen`
-- Ausgabe in der IDLE-Shell betrachten
+
+. . .
+
+:::{.callout-tip appearance="simple"}
+.py-Datei: Enthält Code in der Programmiersprache Python.
+:::
 
 
+- Ausführen: F5 (Mac: fn + F5) oder `Ausführen` > `Modul ausführen`
 ## Python Skript und Ausgabe
 
 ![](../images/idle-script-shell.png){ width="100%" }
+
+
+Ausgabe in der IDLE-Shell betrachten
 
 
 ## Zusammenfassung
