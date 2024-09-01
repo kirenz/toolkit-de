@@ -1,0 +1,149 @@
+---
+title: Anaconda Distribution
+lang: de
+subtitle: Umfassende Plattform für Data Science
+author: Data Science, AI & Analytics Toolkit  
+execute:
+  eval: false
+  echo: true
+highlight-style: github-dark
+format:
+  revealjs: 
+    toc: false
+    toc-depth: 1
+    embed-resources: false
+    theme: [default, style/custom.scss]
+    incremental: true
+    transition: none
+    background-transition: fade
+    transition-speed: slow
+    code-copy: true
+    code-line-numbers: false
+    smaller: false
+    scrollable: true
+    slide-number: false
+    preview-links: auto
+    css: style/index.css
+    chalkboard: 
+      buttons: false
+    logo: images/code-blue.png
+    footer: Jan Kirenz
+    template-partials:
+      - title-slide.html 
+title-slide-attributes:
+  data-background-color: "#ffffff"
+jupyter: python3
+---
+
+## Inhalte des Tutorials
+
+:::: {.features}
+
+::: {.feature .fragment .fade-in}
+:::{.feature-header}
+Anaconda Distribution 
+:::
+Überblick und Komponenten
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Hauptkomponenten 
+:::
+Python, Conda, Pakete, Navigator
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Vorteile 
+:::
+Einfacher Einstieg in Data Science
+:::
+
+::::
+
+## Anaconda Distribution 
+
+- Umfangreiches Softwarepaket für Data Science
+- Zentrale Plattform für die Arbeit mit Daten
+- Erleichtert den Einstieg in Data Science erheblich
+
+## Hauptkomponenten 
+
+
+- Python: Vielseitige Programmiersprache für Data Science
+- Conda: Leistungsfähiges Paket- und Umgebungsmanagement-System
+- Über 250 vorinstallierte Pakete für Data Science und KI
+- Anaconda Navigator: Grafische Benutzeroberfläche
+
+
+## Conda Paketmanager 📦
+
+- Verwaltet Pakete und Umgebungen
+- Ermöglicht reproduzierbare Arbeitsumgebungen
+- Unterstützt verschiedene Programmiersprachen
+
+
+## Vorinstallierte Pakete 
+
+- Über 250 essentielle Data Science-Pakete
+- Inklusive NumPy, Pandas, Scikit-learn, Matplotlib
+- Sofort einsatzbereit ohne manuelle Installation
+
+## Anaconda Navigator 🧭
+
+![Anaconda Navigator](../images/anaconda-navigator.png){width="70%"}
+
+## Vorteile der Anaconda Distribution 🚀
+
+:::: {.features}
+
+::: {.feature .fragment .fade-in}
+:::{.feature-header}
+Einfacher Start 🏁
+:::
+Schneller Einstieg in Data Science-Projekte
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Umfassend 📚
+:::
+Alle wichtigen Tools vorinstalliert
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Benutzerfreundlich 👥
+:::
+Grafische Oberfläche für einfache Verwaltung
+:::
+
+::::
+
+## Zusammenfassung
+
+:::: {.features}
+
+::: {.feature .fragment .fade-in}
+:::{.feature-header}
+Anaconda Distribution 🐍
+:::
+Umfassende Plattform für Data Science
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Hauptkomponenten 🧰
+:::
+Python, Conda, Pakete, Navigator
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Vorteile 🚀
+:::
+Einfacher Einstieg, umfassend, benutzerfreundlich
+:::
+
+::::
