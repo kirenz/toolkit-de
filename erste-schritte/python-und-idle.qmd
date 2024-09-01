@@ -1,0 +1,129 @@
+# Python und IDLE
+
+In diesem Kapitel lernen wir die grundlegenden Schritte kennen, um mit Python zu beginnen. 
+
+Python hat sich zu einer der beliebtesten Programmiersprachen in den Bereichen Data Science und KI entwickelt, und das aus gutem Grund. Hier sind einige der Hauptvorteile von Python:
+
+1. Einfach zu erlernen: Python wurde mit dem Ziel entwickelt, leicht lesbar und verständlich zu sein. Seine klare und übersichtliche Syntax macht es ideal für Einsteiger/innen.
+
+2. Vielseitig einsetzbar: Von Web-Entwicklung über Datenanalyse bis hin zu künstlicher Intelligenz - Python kann in vielen Bereichen eingesetzt werden.
+
+3. Große Community: Die Python-Community ist riesig und sehr aktiv. Das bedeutet, dass es eine Fülle von Ressourcen, Tutorials und Hilfe gibt, wenn man sie braucht.
+
+4. Umfangreiche Software-Pakete: Python verfügt über eine breite Palette an Paketen, die komplexe Aufgaben vereinfachen.
+
+5. Lesbare und klare Syntax: Python legt großen Wert auf Code-Lesbarkeit, was die Zusammenarbeit und Wartung von Projekten erleichtert.
+
+**Was ist IDLE?**
+
+IDLE (Integrated Development and Learning Environment) ist eine integrierte Entwicklungsumgebung für Python, die mit jeder Standard-Python-Installation mitgeliefert wird. Sie ist besonders nützlich für Anfänger/innen und für kleine Projekte.
+
+IDLE besteht aus zwei Hauptkomponenten:
+
+1. Python Shell: Ein interaktiver Interpreter, in dem wir Python-Code direkt eingeben und ausführen können.
+2. Datei-Editor: Ein einfacher Texteditor zum Schreiben und Bearbeiten von Python-Skripten.
+
+
+Als nächstes werden wir Python installieren und erste Schritte mit dem Python-Editor IDLE machen.
+
+## Python-Installation in Windows
+
+1. **Download des Installationsprogramms**: 
+   - [Offizielle Python-Website](https://www.python.org/downloads/) besuchen.
+   - Neueste Version für Windows herunterladen (in der Regel die 64-Bit-Version).
+
+2. **Ausführen des Installationsprogramms**: 
+   - Wichtig: Programm als Administrator ausführen (Rechtsklick -> "Als Administrator ausführen").
+   - Das Kästchen "Add Python 3.x to PATH" am unteren Rand des Installationsfensters anzukreuzen. Dies ermöglicht es uns, Python von überall auf unserem System aus zu nutzen.
+
+3. **Anpassung der Installation (optional)**: 
+   - Für Fortgeschrittene: Mit einem Klick auf "Customize installation" können wir zusätzliche Funktionen auswählen.
+
+4. **Start der Installation**: 
+   - Ein Klick auf "Install Now" startet den Prozess.
+
+
+Nach der Installation wollen wir sicherstellen, dass alles korrekt funktioniert:
+
+1. Öffnen der Eingabeaufforderung.
+2. Folgenden Befehl eingeben:
+
+```bash
+python --version
+```
+
+Wenn alles geklappt hat, sehen wir die Versionsnummer der installierten Python-Version.
+
+::: {.callout-note title="Hinweis zu verschiedenen Python-Versionen"}
+Es kann vorkommen, dass wir mehrere Python-Versionen auf unserem System haben. Das ist normal und kein Grund zur Sorge. Später im Kurs werden wir lernen, wie wir effektiv mit verschiedenen Python-Umgebungen arbeiten können.
+:::
+
+## Python-Installation auf Mac
+
+1. **Download des Installationsprogramms**: 
+   - [Offizielle Python-Website](https://www.python.org/downloads/) besuchen.
+   - Neueste Mac-Version herunterladen.
+
+2. **Python installieren**: 
+   - Öffnen der heruntergeladenen `.pkg`-Datei.
+   - Anweisungen des Installationsassistenten folgen.
+
+Nach der Installation wollen wir sicherstellen, dass alles korrekt funktioniert:
+
+1. Öffnen des Terminals
+2. Folgenden Befehl eingeben:
+
+```bash
+python --version
+```
+
+Wenn alles geklappt hat, sehen wir die Versionsnummer der installierten Python-Version.
+
+::: {.callout-note title="Hinweis zu verschiedenen Python-Versionen"}
+Es kann vorkommen, dass wir mehrere Python-Versionen auf unserem System haben. Das ist normal und kein Grund zur Sorge. Später im Kurs werden wir lernen, wie wir effektiv mit verschiedenen Python-Umgebungen arbeiten können.
+:::
+
+
+## Python IDLE
+
+IDLE ist ein einfacher Python-Editor, der mit unserer Installation mitgeliefert wird. Er ist ideal für unsere ersten Schritte in der Python-Programmierung.
+
+![IDLE Shell](../images/idle.png){#fig-idle width="50%" }
+
+IDLE starten:
+
+- **Windows**: Startmenü öffnen und nach "IDLE" suchen.
+- **Mac**: In Spotlight-Suche (Cmd + Leertaste)  "IDLE" eingeben und auswählen.
+
+Arbeiten mit IDLE:
+
+1. **IDLE-Shell**: 
+   - Dies ist unser interaktiver Python-Interpreter.
+   - Hier können wir direkt Python-Code eingeben und ausführen.
+   - Probieren wir es aus: Geben wir `2 + 3` ein und drücken Enter. Wir sehen sofort das Ergebnis!
+
+2. **Unser erstes Python-Skript**:
+   - Öffnen wir eine neue Datei: `Datei` > `Neue Datei`
+   - Geben wir folgenden Code ein:
+     ```python
+     print("Hallo, Python!")
+     ```
+
+   ![IDLE Skript](../images/idle-hello.png){#fig-idle-hello width="50%" }
+
+
+   - Die Datei als `hallo.py` in unserem `code`-Ordner speichern.
+
+   ::: {.callout-note title="Hinweis zu .py-Datei"}
+   Eine .py-Datei ist eine Datei, die Quellcode in der Programmiersprache Python enthält. Das bedeutet, sie beinhaltet eine Reihe von Anweisungen und Befehlen, die ein Computer verstehen und ausführen kann, um bestimmte Aufgaben zu erledigen.
+   :::
+
+   - Skript ausführen: F5 drücken (Mac: fn + F5) oder `Ausführen` > `Modul ausführen` wählen.
+   - In der IDLE-Shell sehen wir nun unsere Ausgabe.  
+
+
+   ![IDLE Skript und Shell](../images/idle-script-shell.png){#fig-idle-script-shell width="80%" }
+
+
+
+Wie wir gesehen haben, bietet Python IDLE eine  einfache Oberfläche für die Codeentwicklung und -ausführung. In einem der folgenden Abschnitte werden wir fortschrittlichere Entwicklungsumgebungen wie Visual Studio Code erkunden, die größere Projekte mit zusätzlichen Funktionen unterstützen.
