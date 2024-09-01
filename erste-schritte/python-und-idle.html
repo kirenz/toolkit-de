@@ -351,8 +351,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-  <li><a href="#python-installation-in-windows" id="toc-python-installation-in-windows" class="nav-link active" data-scroll-target="#python-installation-in-windows"><span class="header-section-number">2.1</span> Python-Installation in Windows</a></li>
-  <li><a href="#python-installation-auf-mac" id="toc-python-installation-auf-mac" class="nav-link" data-scroll-target="#python-installation-auf-mac"><span class="header-section-number">2.2</span> Python-Installation auf Mac</a></li>
+  <li><a href="#python-installation-windows" id="toc-python-installation-windows" class="nav-link active" data-scroll-target="#python-installation-windows"><span class="header-section-number">2.1</span> Python-Installation Windows</a></li>
+  <li><a href="#python-installation-mac" id="toc-python-installation-mac" class="nav-link" data-scroll-target="#python-installation-mac"><span class="header-section-number">2.2</span> Python-Installation Mac</a></li>
   <li><a href="#python-idle" id="toc-python-idle" class="nav-link" data-scroll-target="#python-idle"><span class="header-section-number">2.3</span> Python IDLE</a></li>
   </ul>
 </nav>
@@ -382,27 +382,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>In diesem Kapitel lernen wir die grundlegenden Schritte kennen, um mit Python zu beginnen.</p>
 <p>Python hat sich zu einer der beliebtesten Programmiersprachen in den Bereichen Data Science und KI entwickelt, und das aus gutem Grund. Hier sind einige der Hauptvorteile von Python:</p>
 <ol type="1">
-<li><p>Einfach zu erlernen: Python wurde mit dem Ziel entwickelt, leicht lesbar und verständlich zu sein. Seine klare und übersichtliche Syntax macht es ideal für Einsteiger/innen.</p></li>
-<li><p>Vielseitig einsetzbar: Von Web-Entwicklung über Datenanalyse bis hin zu künstlicher Intelligenz - Python kann in vielen Bereichen eingesetzt werden.</p></li>
-<li><p>Große Community: Die Python-Community ist riesig und sehr aktiv. Das bedeutet, dass es eine Fülle von Ressourcen, Tutorials und Hilfe gibt, wenn man sie braucht.</p></li>
-<li><p>Umfangreiche Software-Pakete: Python verfügt über eine breite Palette an Paketen, die komplexe Aufgaben vereinfachen.</p></li>
-<li><p>Lesbare und klare Syntax: Python legt großen Wert auf Code-Lesbarkeit, was die Zusammenarbeit und Wartung von Projekten erleichtert.</p></li>
+<li><p><em>Einfach zu erlernen</em>: Python wurde mit dem Ziel entwickelt, leicht lesbar und verständlich zu sein. Seine klare und übersichtliche Syntax macht es ideal für Einsteiger/innen.</p></li>
+<li><p><em>Vielseitig einsetzbar</em>: Von Analytics und Statistik über Data Science bis hin zu künstlicher Intelligenz - Python kann in vielen Bereichen eingesetzt werden.</p></li>
+<li><p><em>Umfangreiche Software-Pakete</em>: Python verfügt über eine breite Palette an Erweiterungen für verschiedene Anwendungsbereiche (bspw. spezialisierte Werkzeuge für Datenanalyse und -verarbeitung).</p></li>
+<li><p><em>Große Community und KI-Unterstützung</em>: Die Python-Community ist riesig und sehr aktiv. Das bedeutet, dass es eine Fülle von <a href="https://www.python.org/doc/">Dokumentationen</a>, Tutorials und Hilfe (bspw. in dem Forum <a href="https://stackoverflow.com/">stack overflow</a>) gibt, wenn man sie braucht. Zusätzlich können auch generative KI-Modelle wie <a href="https://chatgpt.com/">ChatGPT</a>, <a href="https://claude.ai/">Claude</a> oder <a href="https://gemini.google.com/app">Gemini</a> Python-Code verstehen und bei Fragen oder Problemen Hilfestellung geben.</p></li>
 </ol>
-<p><strong>Was ist IDLE?</strong></p>
-<p>IDLE (Integrated Development and Learning Environment) ist eine integrierte Entwicklungsumgebung für Python, die mit jeder Standard-Python-Installation mitgeliefert wird. Sie ist besonders nützlich für Anfänger/innen und für kleine Projekte.</p>
+<p>Größere Python-Aktualisierungen werden in der Regel einmal pro Jahr veröffentlicht. Dieser regelmäßige Release-Zyklus sorgt dafür, dass neue Funktionen, Verbesserungen und Fehlerbehebungen kontinuierlich in die Sprache einfließen und Python auf dem neuesten Stand bleibt. Im September 2024 war die aktuelle Python-Version <code>3.12.5</code>.</p>
+<p>Die <strong>Versionsnummer</strong> setzt sich wie folgt zusammen:</p>
+<ul>
+<li><code>3</code>: Zeigt die dritte Hauptversion von Python an. Diese Zahl ändert sich nur selten und kennzeichnet grundlegende Veränderungen in der Sprache.</li>
+<li><code>12</code>: Steht für die zwölfte größere Aktualisierung innerhalb der Python 3-Serie. Diese Zahl erhöht sich üblicherweise einmal jedes Jahr und bringt neue Funktionen und Verbesserungen.</li>
+<li><code>5</code>: Bezeichnet die fünfte kleinere Verbesserung oder Fehlerbehebung in der Version 3.12. Diese Zahl ändert sich häufiger und steht für Bugfixes und kleinere Optimierungen.</li>
+</ul>
+<p>Diese Struktur der Versionsnummern hilft, die Art und Bedeutung der Änderungen in jeder neuen Python-Version zu verstehen. Ähnlich wie bei Software-Updates auf einem Smartphone oder Computer zeigen diese Zahlen an, dass Python kontinuierlich verbessert und aktualisiert wird, wobei größere Änderungen seltener sind als kleinere Anpassungen und Fehlerbehebungen.</p>
+<p>Um mit Python zu arbeiten, benötigt man eine Entwicklungsumgebung. Eine der einfachsten und am leichtesten zugänglichen Optionen ist <strong>IDLE</strong> (Integrated Development and Learning Environment). IDLE ist eine integrierte Entwicklungsumgebung, die speziell für Python entwickelt wurde und mit jeder Standard-Python-Installation mitgeliefert wird. Sie ist besonders nützlich für Anfänger/innen und für kleine Projekte.</p>
 <p>IDLE besteht aus zwei Hauptkomponenten:</p>
 <ol type="1">
 <li>Python Shell: Ein interaktiver Interpreter, in dem wir Python-Code direkt eingeben und ausführen können.</li>
 <li>Datei-Editor: Ein einfacher Texteditor zum Schreiben und Bearbeiten von Python-Skripten.</li>
 </ol>
 <p>Als nächstes werden wir Python installieren und erste Schritte mit dem Python-Editor IDLE machen.</p>
-<section id="python-installation-in-windows" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="python-installation-in-windows"><span class="header-section-number">2.1</span> Python-Installation in Windows</h2>
+<section id="python-installation-windows" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="python-installation-windows"><span class="header-section-number">2.1</span> Python-Installation Windows</h2>
 <ol type="1">
 <li><strong>Download des Installationsprogramms</strong>:
 <ul>
 <li><a href="https://www.python.org/downloads/">Offizielle Python-Website</a> besuchen.</li>
-<li>Neueste Version für Windows herunterladen (in der Regel die 64-Bit-Version).</li>
+<li>Neueste Version für Windows herunterladen (in der Regel die 64-Bit-Version: “Windows installer (64-bit)”“).</li>
 </ul></li>
 <li><strong>Ausführen des Installationsprogramms</strong>:
 <ul>
@@ -439,8 +445,8 @@ Hinweis zu verschiedenen Python-Versionen
 </div>
 </div>
 </section>
-<section id="python-installation-auf-mac" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="python-installation-auf-mac"><span class="header-section-number">2.2</span> Python-Installation auf Mac</h2>
+<section id="python-installation-mac" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="python-installation-mac"><span class="header-section-number">2.2</span> Python-Installation Mac</h2>
 <ol type="1">
 <li><strong>Download des Installationsprogramms</strong>:
 <ul>
@@ -451,7 +457,17 @@ Hinweis zu verschiedenen Python-Versionen
 <ul>
 <li>Öffnen der heruntergeladenen <code>.pkg</code>-Datei.</li>
 <li>Anweisungen des Installationsassistenten folgen.</li>
-</ul></li>
+</ul>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Auf dem Mac ist eine .pkg-Datei ein Installationspaket, das verwendet wird, um Software oder andere Dateien auf dem System zu installieren.</p>
+</div>
+</div>
+</div></li>
 </ol>
 <p>Nach der Installation wollen wir sicherstellen, dass alles korrekt funktioniert:</p>
 <ol type="1">

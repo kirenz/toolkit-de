@@ -47,29 +47,29 @@
     "href": "erste-schritte/python-und-idle.html",
     "title": "2  Python und IDLE",
     "section": "",
-    "text": "2.1 Python-Installation in Windows\nNach der Installation wollen wir sicherstellen, dass alles korrekt funktioniert:\nWenn alles geklappt hat, sehen wir die Versionsnummer der installierten Python-Version.",
+    "text": "2.1 Python-Installation Windows\nNach der Installation wollen wir sicherstellen, dass alles korrekt funktioniert:\nWenn alles geklappt hat, sehen wir die Versionsnummer der installierten Python-Version.",
     "crumbs": [
       "Erste Schritte",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Python und IDLE</span>"
     ]
   },
   {
-    "objectID": "erste-schritte/python-und-idle.html#python-installation-in-windows",
-    "href": "erste-schritte/python-und-idle.html#python-installation-in-windows",
+    "objectID": "erste-schritte/python-und-idle.html#python-installation-windows",
+    "href": "erste-schritte/python-und-idle.html#python-installation-windows",
     "title": "2  Python und IDLE",
     "section": "",
-    "text": "Download des Installationsprogramms:\n\nOffizielle Python-Website besuchen.\nNeueste Version für Windows herunterladen (in der Regel die 64-Bit-Version).\n\nAusführen des Installationsprogramms:\n\nWichtig: Programm als Administrator ausführen (Rechtsklick -&gt; “Als Administrator ausführen”).\nDas Kästchen “Add Python 3.x to PATH” am unteren Rand des Installationsfensters anzukreuzen. Dies ermöglicht es uns, Python von überall auf unserem System aus zu nutzen.\n\nAnpassung der Installation (optional):\n\nFür Fortgeschrittene: Mit einem Klick auf “Customize installation” können wir zusätzliche Funktionen auswählen.\n\nStart der Installation:\n\nEin Klick auf “Install Now” startet den Prozess.\n\n\n\n\nÖffnen der Eingabeaufforderung.\nFolgenden Befehl eingeben:\n\npython --version\n\n\n\n\n\n\n\nHinweis zu verschiedenen Python-Versionen\n\n\n\nEs kann vorkommen, dass wir mehrere Python-Versionen auf unserem System haben. Das ist normal und kein Grund zur Sorge. Später im Kurs werden wir lernen, wie wir effektiv mit verschiedenen Python-Umgebungen arbeiten können.",
+    "text": "Download des Installationsprogramms:\n\nOffizielle Python-Website besuchen.\nNeueste Version für Windows herunterladen (in der Regel die 64-Bit-Version: “Windows installer (64-bit)”“).\n\nAusführen des Installationsprogramms:\n\nWichtig: Programm als Administrator ausführen (Rechtsklick -&gt; “Als Administrator ausführen”).\nDas Kästchen “Add Python 3.x to PATH” am unteren Rand des Installationsfensters anzukreuzen. Dies ermöglicht es uns, Python von überall auf unserem System aus zu nutzen.\n\nAnpassung der Installation (optional):\n\nFür Fortgeschrittene: Mit einem Klick auf “Customize installation” können wir zusätzliche Funktionen auswählen.\n\nStart der Installation:\n\nEin Klick auf “Install Now” startet den Prozess.\n\n\n\n\nÖffnen der Eingabeaufforderung.\nFolgenden Befehl eingeben:\n\npython --version\n\n\n\n\n\n\n\nHinweis zu verschiedenen Python-Versionen\n\n\n\nEs kann vorkommen, dass wir mehrere Python-Versionen auf unserem System haben. Das ist normal und kein Grund zur Sorge. Später im Kurs werden wir lernen, wie wir effektiv mit verschiedenen Python-Umgebungen arbeiten können.",
     "crumbs": [
       "Erste Schritte",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Python und IDLE</span>"
     ]
   },
   {
-    "objectID": "erste-schritte/python-und-idle.html#python-installation-auf-mac",
-    "href": "erste-schritte/python-und-idle.html#python-installation-auf-mac",
+    "objectID": "erste-schritte/python-und-idle.html#python-installation-mac",
+    "href": "erste-schritte/python-und-idle.html#python-installation-mac",
     "title": "2  Python und IDLE",
-    "section": "2.2 Python-Installation auf Mac",
-    "text": "2.2 Python-Installation auf Mac\n\nDownload des Installationsprogramms:\n\nOffizielle Python-Website besuchen.\nNeueste Mac-Version herunterladen.\n\nPython installieren:\n\nÖffnen der heruntergeladenen .pkg-Datei.\nAnweisungen des Installationsassistenten folgen.\n\n\nNach der Installation wollen wir sicherstellen, dass alles korrekt funktioniert:\n\nÖffnen des Terminals\nFolgenden Befehl eingeben:\n\npython --version\nWenn alles geklappt hat, sehen wir die Versionsnummer der installierten Python-Version.\n\n\n\n\n\n\nHinweis zu verschiedenen Python-Versionen\n\n\n\nEs kann vorkommen, dass wir mehrere Python-Versionen auf unserem System haben. Das ist normal und kein Grund zur Sorge. Später im Kurs werden wir lernen, wie wir effektiv mit verschiedenen Python-Umgebungen arbeiten können.",
+    "section": "2.2 Python-Installation Mac",
+    "text": "2.2 Python-Installation Mac\n\nDownload des Installationsprogramms:\n\nOffizielle Python-Website besuchen.\nNeueste Mac-Version herunterladen.\n\nPython installieren:\n\nÖffnen der heruntergeladenen .pkg-Datei.\nAnweisungen des Installationsassistenten folgen.\n\n\n\n\n\n\n\nAuf dem Mac ist eine .pkg-Datei ein Installationspaket, das verwendet wird, um Software oder andere Dateien auf dem System zu installieren.\n\n\n\n\nNach der Installation wollen wir sicherstellen, dass alles korrekt funktioniert:\n\nÖffnen des Terminals\nFolgenden Befehl eingeben:\n\npython --version\nWenn alles geklappt hat, sehen wir die Versionsnummer der installierten Python-Version.\n\n\n\n\n\n\nHinweis zu verschiedenen Python-Versionen\n\n\n\nEs kann vorkommen, dass wir mehrere Python-Versionen auf unserem System haben. Das ist normal und kein Grund zur Sorge. Später im Kurs werden wir lernen, wie wir effektiv mit verschiedenen Python-Umgebungen arbeiten können.",
     "crumbs": [
       "Erste Schritte",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Python und IDLE</span>"
