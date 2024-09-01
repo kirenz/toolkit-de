@@ -98,9 +98,11 @@ Es kann vorkommen, dass wir mehrere Python-Versionen auf unserem System haben. D
 
 ## Python IDLE
 
-IDLE ist ein einfacher Python-Editor, der mit unserer Installation mitgeliefert wird. Er ist ideal für unsere ersten Schritte in der Python-Programmierung.
+IDLE ist ein einfacher Python-Editor, der mit unserer Installation mitgeliefert wird. Er ist ideal für unsere ersten Schritte in der Python-Programmierung. In @fig-idle ist die IDLE-shell mit der Python-Version 3.12.1. zu sehen.
 
-![IDLE Shell](../images/idle.png){#fig-idle width="50%" }
+
+![IDLE Shell](../images/idle.png){#fig-idle width="80%" }
+
 
 IDLE starten:
 
@@ -115,26 +117,33 @@ Arbeiten mit IDLE:
    - Probieren wir es aus: Geben wir `2 + 3` ein und drücken Enter. Wir sehen sofort das Ergebnis!
 
 2. **Unser erstes Python-Skript**:
-   - Öffnen wir eine neue Datei: `Datei` > `Neue Datei`
-   - Geben wir folgenden Code ein:
+   - Wir öffnen eine neue Datei mit: `Datei` > `Neue Datei`
+   - Folgenden Code eingeben:
+
      ```python
      print("Hallo, Python!")
      ```
 
-   ![IDLE Skript](../images/idle-hello.png){#fig-idle-hello width="50%" }
+   In @fig-idle-hello sehen wir den Code in der Datei.
 
 
-   - Die Datei als `hallo.py` in unserem `code`-Ordner speichern.
+
+   ![IDLE Skript](../images/idle-hello.png){#fig-idle-hello width="80%" }
+
+
+
+   - Die Datei nun als `hallo.py` in unserem `code`-Ordner speichern.
 
    ::: {.callout-note title="Hinweis zu .py-Datei"}
    Eine .py-Datei ist eine Datei, die Quellcode in der Programmiersprache Python enthält. Das bedeutet, sie beinhaltet eine Reihe von Anweisungen und Befehlen, die ein Computer verstehen und ausführen kann, um bestimmte Aufgaben zu erledigen.
    :::
 
    - Skript ausführen: F5 drücken (Mac: fn + F5) oder `Ausführen` > `Modul ausführen` wählen.
-   - In der IDLE-Shell sehen wir nun unsere Ausgabe.  
+   - Wir sehen nun unterhalb des Skripts unsere Ausgabe in der IDLE-Shell (siehe @fig-idle-script-shell).  
 
 
-   ![IDLE Skript und Shell](../images/idle-script-shell.png){#fig-idle-script-shell width="80%" }
+
+   ![IDLE Skript und darunter die Ausgabe in der Shell](../images/idle-script-shell.png){#fig-idle-script-shell width="80%" }
 
 
 
