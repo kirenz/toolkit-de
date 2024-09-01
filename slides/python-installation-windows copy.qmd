@@ -1,0 +1,150 @@
+---
+title: Python Installation
+lang: de
+subtitle: Windows
+author: 🛠️ Toolkit
+execute:
+  eval: false
+  echo: true
+highlight-style: github-dark
+format:
+  revealjs: 
+    toc: false
+    toc-depth: 1
+    embed-resources: false
+    theme: [default, style/custom.scss]
+    incremental: true
+    transition: none
+    background-transition: fade
+    transition-speed: slow
+    code-copy: true
+    code-line-numbers: false
+    smaller: false
+    scrollable: true
+    slide-number: false
+    preview-links: auto
+    css: style/index.css
+    chalkboard: 
+      buttons: false
+    logo: images/code-blue.png
+    footer: Jan Kirenz
+    template-partials:
+      - title-slide.html 
+title-slide-attributes:
+  data-background-color: "#ffffff"
+jupyter: python3
+---
+
+## Inhalte des Tutorials
+
+:::: {.features}
+
+::: {.feature .fragment .fade-in}
+:::{.feature-header}
+Python-Installation
+:::
+Windows
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Testen der Installation
+:::
+Kommandozeile nutzen
+:::
+
+
+
+::::
+
+## Python-Installation in Windows
+
+::: {.incremental}
+1. [Offizielle Python-Website](https://www.python.org/downloads/) besuchen
+2. Neueste Version für Windows herunterladen (64-Bit)
+3. Installationsprogramm als Administrator ausführen
+4. "Add Python 3.x to PATH" ankreuzen
+5. Optional: Installation anpassen
+6. "Install Now" klicken
+:::
+
+## Python-Installation auf Mac
+
+::: {.incremental}
+1. [Offizielle Python-Website](https://www.python.org/downloads/) besuchen
+2. Neueste Mac-Version herunterladen
+3. `.pkg`-Datei öffnen
+4. Anweisungen des Installationsassistenten folgen
+:::
+
+## Testen der Python-Installation
+
+Kommandozeile öffnen und eingeben:
+
+```bash
+python --version
+```
+
+::: {.callout-note}
+# Hinweis zu verschiedenen Python-Versionen
+Mehrere Python-Versionen auf einem System sind normal. Später lernen wir den Umgang mit verschiedenen Python-Umgebungen.
+:::
+
+## Python IDLE starten
+
+::: {.incremental}
+- **Windows**: Startmenü öffnen und nach "IDLE" suchen
+- **Mac**: In Spotlight-Suche (Cmd + Leertaste) "IDLE" eingeben und auswählen
+:::
+
+## Arbeiten mit IDLE: IDLE-Shell
+
+::: {.incremental}
+- Interaktiver Python-Interpreter
+- Direkte Eingabe und Ausführung von Python-Code
+- Beispiel: `2 + 3` eingeben und Enter drücken
+:::
+
+## Unser erstes Python-Skript
+
+1. Neue Datei öffnen: `Datei` > `Neue Datei`
+2. Code eingeben:
+
+```python
+print("Hallo, Python!")
+```
+
+::: {.incremental}
+3. Als `hallo.py` im `code`-Ordner speichern
+4. Ausführen: F5 oder `Ausführen` > `Modul ausführen`
+5. Ausgabe in der IDLE-Shell betrachten
+:::
+
+## Zusammenfassung
+
+:::: {.features}
+
+::: {.feature .fragment .fade-in}
+:::{.feature-header}
+Python-Installation
+:::
+Windows und Mac Versionen
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Installation testen
+:::
+`python --version`
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Python IDLE
+:::
+IDLE-Shell und erstes Skript
+:::
+
+::::
+
+
