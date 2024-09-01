@@ -78,6 +78,9 @@ Befehle lernen
 
 :::
 
+
+
+
 ## Spotlight Suche 🔎
 
 Spotlight-Suche mit der Tastenkombination `Command + Leertaste` öffnen.  
@@ -113,7 +116,12 @@ echo $SHELL
 :::
 
 
-## Wenn bash genutzt wird
+- Die Folien zu "Von bash zu zsh" sind nur relevant, falls die Ausgabe `/bin/zsh` war.
+
+# Von bash zu zsh {.custom-gradient}
+
+
+## zsh prüfen
 
 Überprüfen, ob zsh installiert ist:
 
@@ -159,10 +167,12 @@ chsh -s /bin/zsh
 
 - Terminal neu starten
 
+# Terminal-Elemente {.custom-gradient}
 
 ## Terminal-Elemente in zsh {.smaller}
 
-![](../images/terminal.png){width="30%" fig-align="left"}
+![Terminal-Elemente in der zsh-Shell
+](../images/terminal.png){width="30%" fig-align="left"}
 
 
 | Element | Inhalt | Bedeutung |
@@ -172,10 +182,11 @@ chsh -s /bin/zsh
 | Aktuelles Verzeichnis | `~ `| Home-Verzeichnis (/Users/jankirenz) |
 | Prompt | `%`| Terminal bereit für Befehle |
 
-<br>
 
 
-## Terminal-Befehle {.smaller}
+# Terminal-Befehle {.custom-gradient} 
+
+## Übersicht {.smaller}
 
 | Befehl | Bedeutung | Beschreibung                                                            |
 |------------|--------------------------|------------------------------------------|
@@ -230,6 +241,8 @@ Mit `ls` die Verzeichnisse anzeigen lassen:
 ls
 ```
 
+# macOS Finder {.custom-gradient}
+
 ## Finder öffnen {.smaller}
 
 Spotlight-Suche mit der Tastenkombination `Command + Leertaste` öffnen   
@@ -255,7 +268,7 @@ Finder in Spotlight Suche eingeben und Programm auswählen.
 ![](../images/finder-3.png){ width=40%}
 
 
-## Zusammenfassung 
+# Zusammenfassung 
 
 <!-- Start of features -->
 :::: {.features}
