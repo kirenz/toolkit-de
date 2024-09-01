@@ -169,4 +169,4 @@ Eigenschaften von Python-Skripten:
    ![IDLE Skript und darunter die Ausgabe in der Shell](../images/idle-script-shell.png){#fig-idle-script-shell width="80%" }
  
 
-Wie wir gesehen haben, bietet Python IDLE eine  einfache Oberfläche für die Codeentwicklung und -ausführung. In einem der folgenden Abschnitte werden wir fortschrittlichere Entwicklungsumgebungen wie Visual Studio Code erkunden, die größere Projekte mit zusätzlichen Funktionen unterstützen.
+Wie wir gesehen haben, bietet Python IDLE eine einfache Oberfläche für die Codeentwicklung und -ausführung. In einem der folgenden Abschnitte werden wir fortschrittlichere Entwicklungsumgebungen wie Visual Studio Code kennenlernen, die größere Projekte mit zusätzlichen Funktionen unterstützen.
