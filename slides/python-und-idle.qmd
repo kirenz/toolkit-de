@@ -35,90 +35,179 @@ title-slide-attributes:
 jupyter: python3
 ---
 
+
 ## Inhalte des Tutorials
 
 :::: {.features}
 
-::: {.feature .fragment .fade-up}
+::: {.feature .fragment .fade-in}
 :::{.feature-header}
-IDLE Shell
+Python 🐍
 :::
-Grundlagen verstehen
+Grundlagen und Bedeutung
 :::
 
 ::: {.feature .fragment .fade-up}
 :::{.feature-header}
-Python-Skript 
+IDLE 
 :::
-Erstellen und ausführen
+Erste Entwicklungsumgebung
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Installation 
+:::
+Schritte für Windows und Mac
 :::
 
 ::::
 
+## Warum Python? 🐍
 
-## IDLE starten
+:::: {.columns}
 
-- Windows: Startmenü öffnen und nach "IDLE" suchen
-- Mac: In Spotlight-Suche (Command + Leertaste) "IDLE" eingeben und auswählen
+::: {.column width="50%"}
+- Einfach zu erlernen
+- Vielseitig einsetzbar
+- Große Community
+- Umfangreiche Bibliotheken
+- Lesbare und klare Syntax
+:::
 
-## IDLE-Shell
+::: {.column width="50%"}
+- Ideal für:
+  - Data Science
+  - Maschinelles Lernen
+  - Web-Entwicklung
+  - Automatisierung
+  - Wissenschaftliches Rechnen
+:::
 
-![](../images/idle.png){width="100%" }
+::::
 
-- Interaktiver Python-Interpreter
-- Direkte Eingabe und Ausführung von Python-Code
-- Beispiel: `2 + 3` eingeben und Enter drücken
+## Python in der Praxis 📊
 
-## Erstes Python-Skript
+:::: {.columns}
 
-- Neue Datei öffnen: `Datei` > `Neue Datei`
-- Code eingeben:
+::: {.column width="50%"}
+- Datenanalyse mit Pandas
+- Visualisierung mit Matplotlib
+- Machine Learning mit Scikit-learn
+- Web-Frameworks wie Django
+:::
+
+::: {.column width="50%"}
+- Beispiel-Code:
 
 . . .
 
 ```python
-print("Hallo, Python!")
+import pandas as pd
+
+data = pd.read_csv("daten.csv")
+print(data.head())
 ```
 
-## Python-Skript in IDLE
+:::
 
-![](../images/idle-hello.png){ width="100%" fig-align="left" }
+::::
 
+## Was ist IDLE? 🖥️
 
-## Python-Skript speichern
+:::: {.columns}
 
-- Als `hallo.py` im `code`-Ordner speichern
-- Ausführen: F5 oder `Ausführen` > `Modul ausführen`
-- Ausgabe in der IDLE-Shell betrachten
+::: {.column width="50%"}
+- Integrierte Entwicklungsumgebung für Python
+- Wird mit Python mitgeliefert
+- Besteht aus zwei Hauptkomponenten:
+  - Python Shell
+  - Datei-Editor
+:::
 
+::: {.column width="50%"}
+- Vorteile:
+  - Einfach zu bedienen
+  - Ideal für Anfänger
+  - Ermöglicht interaktives Programmieren
+  - Gut für kleine Projekte und Lernzwecke
+:::
 
-## Python Skript und Ausgabe
+::::
 
-![](../images/idle-script-shell.png){ width="100%" }
+::: {.notes}
+IDLE steht für "Integrated Development and Learning Environment"
+:::
 
+## IDLE in Aktion 🚀
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- Python Shell:
+  - Interaktive Eingabe
+  - Sofortige Ausführung
+- Datei-Editor:
+  - Skripte schreiben
+  - Syntax-Highlighting
+:::
+
+::: {.column width="50%"}
+![IDLE Interface](../images/idle.png)
+:::
+
+::::
+
+## Installation: Windows 🪟
+
+1. Python-Website besuchen
+2. Installer herunterladen
+3. Als Administrator ausführen
+4. "Add Python to PATH" aktivieren
+5. Installation starten
+
+. . .
+
+```bash
+python --version
+```
+
+## Installation: Mac 🍎
+
+1. Python-Website besuchen
+2. Mac-Version herunterladen
+3. .pkg-Datei öffnen
+4. Installationsassistent folgen
+
+. . .
+
+```bash
+python --version
+```
 
 ## Zusammenfassung
 
 :::: {.features}
 
+::: {.feature .fragment .fade-in}
+:::{.feature-header}
+Python 🐍
+:::
+Vielseitige Programmiersprache für diverse Anwendungen
+:::
 
 ::: {.feature .fragment .fade-up}
 :::{.feature-header}
-IDLE Shell
+IDLE 🖥️
 :::
-Interaktiver Python-Interpreter
+Einfache Entwicklungsumgebung für den Einstieg
 :::
 
 ::: {.feature .fragment .fade-up}
 :::{.feature-header}
-Python-Skript 
+Installation 💻
 :::
-.py-Datei  
-Ausführung mit F5
-Ausgabe in IDLE-Shell
+Unkompliziert auf Windows und Mac
 :::
-
 
 ::::
-
-
