@@ -4,19 +4,26 @@ In diesem Kapitel lernen wir die grundlegenden Schritte kennen, um mit Python zu
 
 Python hat sich zu einer der beliebtesten Programmiersprachen in den Bereichen Data Science und KI entwickelt, und das aus gutem Grund. Hier sind einige der Hauptvorteile von Python:
 
-1. Einfach zu erlernen: Python wurde mit dem Ziel entwickelt, leicht lesbar und verständlich zu sein. Seine klare und übersichtliche Syntax macht es ideal für Einsteiger/innen.
+1. *Einfach zu erlernen*: Python wurde mit dem Ziel entwickelt, leicht lesbar und verständlich zu sein. Seine klare und übersichtliche Syntax macht es ideal für Einsteiger/innen.
 
-2. Vielseitig einsetzbar: Von Web-Entwicklung über Datenanalyse bis hin zu künstlicher Intelligenz - Python kann in vielen Bereichen eingesetzt werden.
+2. *Vielseitig einsetzbar*: Von Analytics und Statistik über Data Science bis hin zu künstlicher Intelligenz - Python kann in vielen Bereichen eingesetzt werden.
 
-3. Große Community: Die Python-Community ist riesig und sehr aktiv. Das bedeutet, dass es eine Fülle von Ressourcen, Tutorials und Hilfe gibt, wenn man sie braucht.
+3. *Umfangreiche Software-Pakete*: Python verfügt über eine breite Palette an Erweiterungen für verschiedene Anwendungsbereiche (bspw. spezialisierte Werkzeuge für Datenanalyse und -verarbeitung).
 
-4. Umfangreiche Software-Pakete: Python verfügt über eine breite Palette an Paketen, die komplexe Aufgaben vereinfachen.
+4. *Große Community und KI-Unterstützung*: Die Python-Community ist riesig und sehr aktiv. Das bedeutet, dass es eine Fülle von [Dokumentationen](https://www.python.org/doc/), Tutorials und Hilfe (bspw. in dem Forum [stack overflow](https://stackoverflow.com/)) gibt, wenn man sie braucht. Zusätzlich können auch generative KI-Modelle wie [ChatGPT](https://chatgpt.com/), [Claude](https://claude.ai/) oder [Gemini](https://gemini.google.com/app) Python-Code verstehen und bei Fragen oder Problemen Hilfestellung geben. 
 
-5. Lesbare und klare Syntax: Python legt großen Wert auf Code-Lesbarkeit, was die Zusammenarbeit und Wartung von Projekten erleichtert.
+Größere Python-Aktualisierungen werden in der Regel einmal pro Jahr veröffentlicht. Dieser regelmäßige Release-Zyklus sorgt dafür, dass neue Funktionen, Verbesserungen und Fehlerbehebungen kontinuierlich in die Sprache einfließen und Python auf dem neuesten Stand bleibt. Im September 2024 war die aktuelle Python-Version `3.12.5`. 
 
-**Was ist IDLE?**
 
-IDLE (Integrated Development and Learning Environment) ist eine integrierte Entwicklungsumgebung für Python, die mit jeder Standard-Python-Installation mitgeliefert wird. Sie ist besonders nützlich für Anfänger/innen und für kleine Projekte.
+Die **Versionsnummer** setzt sich wie folgt zusammen:
+
+- `3`: Zeigt die dritte Hauptversion von Python an. Diese Zahl ändert sich nur selten und kennzeichnet grundlegende Veränderungen in der Sprache.
+- `12`: Steht für die zwölfte größere Aktualisierung innerhalb der Python 3-Serie. Diese Zahl erhöht sich üblicherweise einmal jedes Jahr und bringt neue Funktionen und Verbesserungen.
+- `5`: Bezeichnet die fünfte kleinere Verbesserung oder Fehlerbehebung in der Version 3.12. Diese Zahl ändert sich häufiger und steht für Bugfixes und kleinere Optimierungen.
+
+Diese Struktur der Versionsnummern hilft, die Art und Bedeutung der Änderungen in jeder neuen Python-Version zu verstehen. Ähnlich wie bei Software-Updates auf einem Smartphone oder Computer zeigen diese Zahlen an, dass Python kontinuierlich verbessert und aktualisiert wird, wobei größere Änderungen seltener sind als kleinere Anpassungen und Fehlerbehebungen.
+
+Um mit Python zu arbeiten, benötigt man eine Entwicklungsumgebung. Eine der einfachsten und am leichtesten zugänglichen Optionen ist **IDLE** (Integrated Development and Learning Environment). IDLE ist eine integrierte Entwicklungsumgebung, die speziell für Python entwickelt wurde und mit jeder Standard-Python-Installation mitgeliefert wird. Sie ist besonders nützlich für Anfänger/innen und für kleine Projekte.
 
 IDLE besteht aus zwei Hauptkomponenten:
 
@@ -26,11 +33,11 @@ IDLE besteht aus zwei Hauptkomponenten:
 
 Als nächstes werden wir Python installieren und erste Schritte mit dem Python-Editor IDLE machen.
 
-## Python-Installation in Windows
+## Python-Installation Windows
 
 1. **Download des Installationsprogramms**: 
    - [Offizielle Python-Website](https://www.python.org/downloads/) besuchen.
-   - Neueste Version für Windows herunterladen (in der Regel die 64-Bit-Version).
+   - Neueste Version für Windows herunterladen (in der Regel die 64-Bit-Version: "Windows installer (64-bit)"").
 
 2. **Ausführen des Installationsprogramms**: 
    - Wichtig: Programm als Administrator ausführen (Rechtsklick -> "Als Administrator ausführen").
@@ -58,7 +65,7 @@ Wenn alles geklappt hat, sehen wir die Versionsnummer der installierten Python-V
 Es kann vorkommen, dass wir mehrere Python-Versionen auf unserem System haben. Das ist normal und kein Grund zur Sorge. Später im Kurs werden wir lernen, wie wir effektiv mit verschiedenen Python-Umgebungen arbeiten können.
 :::
 
-## Python-Installation auf Mac
+## Python-Installation Mac
 
 1. **Download des Installationsprogramms**: 
    - [Offizielle Python-Website](https://www.python.org/downloads/) besuchen.
@@ -67,6 +74,11 @@ Es kann vorkommen, dass wir mehrere Python-Versionen auf unserem System haben. D
 2. **Python installieren**: 
    - Öffnen der heruntergeladenen `.pkg`-Datei.
    - Anweisungen des Installationsassistenten folgen.
+
+   :::{.callout-note}
+   Auf dem Mac ist eine .pkg-Datei ein Installationspaket, das verwendet wird, um Software oder andere Dateien auf dem System zu installieren.
+   :::
+
 
 Nach der Installation wollen wir sicherstellen, dass alles korrekt funktioniert:
 
