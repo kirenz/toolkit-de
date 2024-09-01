@@ -41,9 +41,16 @@ jupyter: python3
 
 ::: {.feature .fragment .fade-up}
 :::{.feature-header}
-IDLE Shell
+IDLE Grundlagen 
 :::
-Grundlagen verstehen
+Shell und Skript-Editor
+:::
+
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+Python Interpreter 
+:::
+Funktionen verstehen
 :::
 
 ::: {.feature .fragment .fade-up}
@@ -55,20 +62,67 @@ Erstellen und ausführen
 
 ::::
 
+## Was ist IDLE? 
+
+- IDLE = Integrated Development and Learning Environment
+- Speziell für Python entwickelt
+- Teil jeder Standard-Python-Installation
+- Nützlich für:
+  - Anfänger/innen
+  - Kleine Projekte
+
+## IDLE Hauptmodi
+
+1. **Shell**: 
+   - Interaktive Schnittstelle zum Python-Interpreter
+   - Direkte Eingabe und Ausführung von Code
+
+2. **Skript-Editor**:
+   - Für längere Python-Programme
+   - Schreiben, Bearbeiten und Speichern von Skripten
+
+
+## Python Interpreter 
+
+Der Python-Interpreter ist das Kernstück der Python-Umgebung:
+
+- **Ausführung**: Übersetzt Python-Code in Computeranweisungen
+- **Interaktivität**: Ermöglicht direkte Befehlseingabe
+- **Fehlerprüfung**: Erkennt und meldet Fehler
+
+## Python-Skript Eigenschaften 
+
+- Textdatei mit `.py`-Endung
+- Enthält Python-Anweisungen
+- Eigenschaften:
+  - Direkte Ausführung durch Interpreter
+  - Lesbar mit jedem Texteditor
+  - Hilft bei Codeorganisation
+
+## Vorteile von Skripten
+
+- **Wiederverwendbarkeit**: Mehrfache Ausführung möglich
+- **Automatisierung**: Ideal für wiederholende Aufgaben
+- **Schnelle Entwicklung**: Einfache Änderungen und Tests
+- **Dokumentation**: Nachvollziehbare Befehlsabfolge
 
 ## IDLE starten
 
 - **Windows**: Startmenü öffnen und nach "IDLE" suchen
-
 - **Mac**: In Spotlight-Suche (Command + Leertaste) "IDLE" eingeben und auswählen
 
 ## IDLE-Shell
 
-![](../images/idle.png){width="100%" }
+![](../images/idle.png){width="100%"}
 
-- Interaktiver Python-Interpreter
+- Interaktive Schnittstelle zum Python-Interpreter
 - Direkte Eingabe und Ausführung von Python-Code
 - Beispiel: `2 + 3` eingeben und Enter drücken
+
+
+
+
+
 
 ## Datei öffnen
 
@@ -81,11 +135,7 @@ Erstellen und ausführen
 print("Hallo, Python!")
 ```
 
-
-
-
 ![](../images/idle-hello.png){ width="100%" fig-align="left" }
-
 
 ## Python-Skript speichern
 
@@ -97,38 +147,40 @@ print("Hallo, Python!")
 .py-Datei: Enthält Code in der Programmiersprache Python.
 :::
 
-
 - Ausführen: F5 (Mac: fn + F5) oder `Ausführen` > `Modul ausführen`
+
 ## Python Skript und Ausgabe
 
 ![](../images/idle-script-shell.png){ width="100%" }
 
-
 Ausgabe in der IDLE-Shell betrachten
-
 
 ## Zusammenfassung
 
 :::: {.features}
 
+::: {.feature .fragment .fade-up}
+:::{.feature-header}
+IDLE Grundlagen 💻
+:::
+Shell: Interaktiver Interpreter
+Skript-Editor: Für längere Programme
+:::
 
 ::: {.feature .fragment .fade-up}
 :::{.feature-header}
-IDLE Shell
+Python Interpreter 🔍
 :::
-Interaktiver Python-Interpreter
+Ausführung, Interaktivität, Fehlerprüfung
 :::
 
 ::: {.feature .fragment .fade-up}
 :::{.feature-header}
-Python-Skript 
+Python-Skript 📝
 :::
-.py-Datei  
+.py-Datei
 Ausführung mit F5
 Ausgabe in IDLE-Shell
 :::
 
-
 ::::
-
-
