@@ -1,7 +1,7 @@
 ---
-title: Python und IDLE
+title: Python Installation
 lang: de
-subtitle: Erste Schritte in Windows
+subtitle: Windows
 author: 🛠️ Toolkit
 execute:
   eval: false
@@ -41,9 +41,9 @@ jupyter: python3
 
 ::: {.feature .fragment .fade-in}
 :::{.feature-header}
-Python-Installation
+Python-Installation für Windows
 :::
-Windows
+Neuste Version installieren
 :::
 
 ::: {.feature .fragment .fade-up}
@@ -57,27 +57,19 @@ Kommandozeile nutzen
 
 ::::
 
-## Python-Installation in Windows
+## Python-Installation
 
-::: {.incremental}
 1. [Offizielle Python-Website](https://www.python.org/downloads/) besuchen
-2. Neueste Version für Windows herunterladen (64-Bit)
-3. Installationsprogramm als Administrator ausführen
+2. Neueste Version für Windows herunterladen ("Windows installer (64-bit)")
+3. Installationsprogramm als Administrator ausführen (rechter Mausklick auf Installationsdatei)
 4. "Add Python 3.x to PATH" ankreuzen
 5. Optional: Installation anpassen
 6. "Install Now" klicken
-:::
 
-## Python-Installation auf Mac
 
-::: {.incremental}
-1. [Offizielle Python-Website](https://www.python.org/downloads/) besuchen
-2. Neueste Mac-Version herunterladen
-3. `.pkg`-Datei öffnen
-4. Anweisungen des Installationsassistenten folgen
-:::
 
 ## Testen der Python-Installation
+
 
 Kommandozeile öffnen und eingeben:
 
@@ -85,65 +77,35 @@ Kommandozeile öffnen und eingeben:
 python --version
 ```
 
+- Es sollte die eben installierte Python-Version angezeigt werden
+
+. . .
+
 ::: {.callout-note}
 # Hinweis zu verschiedenen Python-Versionen
 Mehrere Python-Versionen auf einem System sind normal. Später lernen wir den Umgang mit verschiedenen Python-Umgebungen.
 :::
 
-## Python IDLE starten
 
-::: {.incremental}
-- **Windows**: Startmenü öffnen und nach "IDLE" suchen
-- **Mac**: In Spotlight-Suche (Cmd + Leertaste) "IDLE" eingeben und auswählen
-:::
 
-## Arbeiten mit IDLE: IDLE-Shell
-
-::: {.incremental}
-- Interaktiver Python-Interpreter
-- Direkte Eingabe und Ausführung von Python-Code
-- Beispiel: `2 + 3` eingeben und Enter drücken
-:::
-
-## Unser erstes Python-Skript
-
-1. Neue Datei öffnen: `Datei` > `Neue Datei`
-2. Code eingeben:
-
-```python
-print("Hallo, Python!")
-```
-
-::: {.incremental}
-3. Als `hallo.py` im `code`-Ordner speichern
-4. Ausführen: F5 oder `Ausführen` > `Modul ausführen`
-5. Ausgabe in der IDLE-Shell betrachten
-:::
-
-## Zusammenfassung
+# Zusammenfassung
 
 :::: {.features}
 
 ::: {.feature .fragment .fade-in}
 :::{.feature-header}
-Python-Installation
+Python-Installation für Windows
 :::
-Windows und Mac Versionen
+Windows
 :::
 
 ::: {.feature .fragment .fade-up}
 :::{.feature-header}
 Installation testen
 :::
-`python --version`
+python \--version
 :::
 
-::: {.feature .fragment .fade-up}
-:::{.feature-header}
-Python IDLE
-:::
-IDLE-Shell und erstes Skript
-:::
 
 ::::
 
