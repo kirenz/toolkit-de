@@ -91,7 +91,9 @@ Ordner im Explorer anzeigen
 ![](../images/eingabe.png){width="100%" fig-align="left"}
 
 
-## Befehle {.smaller}
+# Befehle {.custom-gradient}
+
+## Übersicht {.smaller}
 
 | Befehl | Bedeutung | Beschreibung                                                            |
 |------------|--------------------------|------------------------------------------|
@@ -179,7 +181,9 @@ Eingabeaufforderung mit `exit` schließen:
 exit
 ```
 
-## Windows Explorer 
+# Windows Explorer 🔎
+
+## Ordner anzeigen
 
 Schritte zum Anzeigen der Ordner im Windows Explorer:
 
@@ -190,7 +194,7 @@ Schritte zum Anzeigen der Ordner im Windows Explorer:
 5. Eigenen Benutzernamen auswählen
 6. "toolkit-lab" Ordner sollte sichtbar sein
 
-## Zusammenfassung 
+# Zusammenfassung 
 
 :::: {.features}
 
