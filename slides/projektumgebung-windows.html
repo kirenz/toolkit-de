@@ -8,9 +8,9 @@
 <link href="projektumgebung-windows_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="projektumgebung-windows_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="projektumgebung-windows_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.554">
+  <meta name="generator" content="quarto-1.5.56">
 
-  <meta name="author" content="⚒️ Toolkit">
+  <meta name="author" content="🛠️ Toolkit">
   <title>Projektumgebung</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -42,7 +42,7 @@
     }
     @media print {
     pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
     }
     pre.numberSource code
       { counter-reset: source-line 0; }
@@ -402,7 +402,7 @@
   <div class="image-container">
     <img src="images/logo.png" alt="Logo">
   </div>
-  <p class="author">⚒️ Toolkit</p>
+  <p class="author">🛠️ Toolkit</p>
 
   <svg class="geometric-background" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 1000" preserveaspectratio="xMidYMid slice">
     <!-- Horizontale Linien -->
@@ -478,6 +478,9 @@
 </section>
 <section id="projektordner" class="slide level2">
 <h2>Projektordner</h2>
+<div>
+
+</div>
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row quarto-layout-valign-bottom">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
@@ -513,9 +516,14 @@
 <h2>Eingabeaufforderung</h2>
 
 <img data-src="../images/eingabe.png" class="quarto-figure quarto-figure-left r-stretch" style="width:100.0%"></section>
-<section id="befehle" class="slide level2 smaller">
-<h2>Befehle</h2>
-<table>
+<section>
+<section id="befehle" class="title-slide slide level1 custom-gradient center">
+<h1>Befehle</h1>
+
+</section>
+<section id="übersicht" class="slide level2 smaller">
+<h2>Übersicht</h2>
+<table class="caption-top">
 <colgroup>
 <col style="width: 15%">
 <col style="width: 32%">
@@ -554,7 +562,7 @@
 </section>
 <section id="zum-benutzerverzeichnis-wechseln" class="slide level2">
 <h2>Zum Benutzerverzeichnis wechseln</h2>
-<p>Mit <code>cd</code> zum Benutzerverzeichnis wechseln:</p>
+<p>Mit <code>cd</code> zum Benutzerverzeichnis (Home-Verzeichnis) wechseln:</p>
 <div class="fragment">
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> %userprofile%</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
@@ -625,9 +633,14 @@
 <div class="fragment">
 <div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="bu">exit</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+</section></section>
+<section>
+<section id="windows-explorer" class="title-slide slide level1 center">
+<h1>Windows Explorer 🔎</h1>
+
 </section>
-<section id="windows-explorer" class="slide level2 scrollable">
-<h2>Windows Explorer</h2>
+<section id="ordner-anzeigen" class="slide level2 scrollable">
+<h2>Ordner anzeigen</h2>
 <p>Schritte zum Anzeigen der Ordner im Windows Explorer:</p>
 <ol type="1">
 <li class="fragment">Windows-Suchfenster: “Explorer” eingeben</li>
@@ -637,9 +650,9 @@
 <li class="fragment">Eigenen Benutzernamen auswählen</li>
 <li class="fragment">“toolkit-lab” Ordner sollte sichtbar sein</li>
 </ol>
-</section>
-<section id="zusammenfassung" class="slide level2">
-<h2>Zusammenfassung</h2>
+</section></section>
+<section id="zusammenfassung" class="title-slide slide level1 center">
+<h1>Zusammenfassung</h1>
 <div class="features">
 <div class="feature fragment fade-up">
 <div class="feature-header">
@@ -649,20 +662,21 @@
 - code/<br>
 - data/</p>
 </div>
-<div class="feature fragment fade-in">
+<div class="feature fragment fade-up">
 <div class="feature-header">
 <p>Eingabeaufforderung</p>
+</div>
+<p>Benutzername<br>
+Home-Verzeichnis</p>
+</div>
+<div class="feature fragment fade-in">
+<div class="feature-header">
+<p>Befehle</p>
 </div>
 <p>cd<br>
 mkdir<br>
 dir<br>
 exit</p>
-</div>
-<div class="feature fragment fade-up">
-<div class="feature-header">
-<p>Windows Explorer</p>
-</div>
-<p>Ordnerstruktur im Explorer anzeigen</p>
 </div>
 </div>
 <div class="quarto-auto-generated-content">
@@ -916,18 +930,7 @@ exit</p>
         }
         return false;
       }
-      const clipboard = new window.ClipboardJS('.code-copy-button', {
-        text: function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-      });
-      clipboard.on('success', function(e) {
+      const onCopySuccess = function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -959,7 +962,29 @@ exit</p>
         }, 1000);
         // clear code selection
         e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
       });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
         var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
         var mailtoRegex = new RegExp(/^mailto:/);
           var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -967,7 +992,7 @@ exit</p>
             return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
         }
         // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
         for (var i=0; i<links.length; i++) {
           const link = links[i];
           if (!isInternal(link.href)) {
