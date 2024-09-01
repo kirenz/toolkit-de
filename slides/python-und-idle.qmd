@@ -1,7 +1,7 @@
 ---
 title: Python und IDLE
 lang: de
-subtitle: Erste Schritte
+subtitle: Einführung
 author: 🛠️ Toolkit
 execute:
   eval: false
@@ -44,170 +44,146 @@ jupyter: python3
 :::{.feature-header}
 Python 🐍
 :::
-Grundlagen und Bedeutung
+Vorteile und Versionen
 :::
 
 ::: {.feature .fragment .fade-up}
 :::{.feature-header}
 IDLE 
 :::
-Erste Entwicklungsumgebung
+Entwicklungsumgebung
 :::
 
-::: {.feature .fragment .fade-up}
-:::{.feature-header}
-Installation 
-:::
-Schritte für Windows und Mac
-:::
 
 ::::
 
-## Warum Python? 🐍
+# Python Vorteile {.custom-gradient}
 
-:::: {.columns}
 
-::: {.column width="50%"}
-- Einfach zu erlernen
-- Vielseitig einsetzbar
-- Große Community
-- Umfangreiche Bibliotheken
-- Lesbare und klare Syntax
-:::
+## Einfach zu erlernen
 
-::: {.column width="50%"}
-- Ideal für:
-  - Data Science
-  - Maschinelles Lernen
-  - Web-Entwicklung
-  - Automatisierung
-  - Wissenschaftliches Rechnen
-:::
-
-::::
-
-## Python in der Praxis 📊
-
-:::: {.columns}
-
-::: {.column width="50%"}
-- Datenanalyse mit Pandas
-- Visualisierung mit Matplotlib
-- Machine Learning mit Scikit-learn
-- Web-Frameworks wie Django
-:::
-
-::: {.column width="50%"}
-- Beispiel-Code:
+- Klare und lesbare Syntax 
 
 . . .
 
 ```python
-import pandas as pd
-
-data = pd.read_csv("daten.csv")
-print(data.head())
+print("Hallo, Python!")
 ```
 
+- Ideal für Einsteiger/innen
+
+## Vielseitig einsetzbar
+
+- Analytics
+- Statistik
+- Data Science 
+- Künstliche Intelligenz 
+
+
+## Umfangreiche Pakete
+
+:::{.callout-note appearance="simple"}
+Pakete sind Erweiterungen für verschiedene Anwendungsbereiche 
 :::
 
-::::
+- Spezialisierte Software-Lösungen für 
+  - Datenanalyse und -verarbeitung 
+  - Künstliche Intelligenz 
+  - ...
 
-## Was ist IDLE? 🖥️
 
-:::: {.columns}
+## Große Community und KI-Unterstützung
 
-::: {.column width="50%"}
-- Integrierte Entwicklungsumgebung für Python
-- Wird mit Python mitgeliefert
-- Besteht aus zwei Hauptkomponenten:
-  - Python Shell
-  - Datei-Editor
-:::
+- Fülle von [Dokumentationen](https://www.python.org/doc/)
+- Aktive Foren für Problemlösungen (bspw. [stack overflow](https://stackoverflow.com/)) 
+- Generative KI-Modelle wie [ChatGPT](https://chatgpt.com/), [Claude](https://claude.ai/) oder [Gemini](https://gemini.google.com/app) verstehen Python-Code und können Hilfestellung geben
 
-::: {.column width="50%"}
-- Vorteile:
-  - Einfach zu bedienen
-  - Ideal für Anfänger
-  - Ermöglicht interaktives Programmieren
-  - Gut für kleine Projekte und Lernzwecke
-:::
 
-::::
+# Python-Versionen 
 
-::: {.notes}
+## Kontinuierliche Verbesserung
+
+- Kontinuierliche Integration von:
+  - Neuen Funktionen 
+  - Verbesserungen 
+  - Fehlerbehebungen 
+
+- Aktuelle Version (September 2024): `3.12.5`
+
+  
+## Versionsnummer erklärt 
+
+`Python 3.12.5`
+
+- **3**: Dritte Hauptversion
+  - Grundlegende Veränderungen
+  - Ändert sich selten
+
+- **12**: Zwölfte größere Aktualisierung in Python 3
+  - Neue Funktionen und Verbesserungen
+  - Üblicherlich jährliche Erhöhung
+
+- **5**: Fünfte kleinere Verbesserung in 3.12
+  - Bugfixes und kleinere Optimierungen
+  - Ändert sich häufiger
+
+## Bedeutung der Versionsnummern 
+
+- Hilft, Art und Bedeutung der Änderungen zu verstehen
+- Ähnlich wie Software-Updates auf Smartphones oder Computern
+- Zeigt kontinuierliche Verbesserung und Aktualisierung von Python
+
+
+# IDLE
+
+## Was ist IDLE?
+
+::: {.callout-note appearance="simple"}
 IDLE steht für "Integrated Development and Learning Environment"
 :::
 
-## IDLE in Aktion 🚀
+- Integrierte Entwicklungsumgebung für Python
+- Wird mit Python mitgeliefert
 
-:::: {.columns}
+## IDLE Shell
 
-::: {.column width="50%"}
-- Python Shell:
-  - Interaktive Eingabe
-  - Sofortige Ausführung
-- Datei-Editor:
-  - Skripte schreiben
-  - Syntax-Highlighting
-:::
+![](../images/idle.png){width="100%" }
 
-::: {.column width="50%"}
-![IDLE Interface](../images/idle.png)
-:::
 
-::::
+- Interaktiver Interpreter, in dem wir Python-Code direkt eingeben und ausführen können.
 
-## Installation: Windows 🪟
+## Datei-Editor
 
-1. Python-Website besuchen
-2. Installer herunterladen
-3. Als Administrator ausführen
-4. "Add Python to PATH" aktivieren
-5. Installation starten
 
-. . .
+![](../images/idle-hello.png){ width="100%" fig-align="left" }
 
-```bash
-python --version
-```
+- Datei-Editor: Ein einfacher Texteditor zum Schreiben und Bearbeiten von Python-Skripten.
 
-## Installation: Mac 🍎
 
-1. Python-Website besuchen
-2. Mac-Version herunterladen
-3. .pkg-Datei öffnen
-4. Installationsassistent folgen
+## Vorteile
 
-. . .
+- Einfach zu bedienen
+- Ermöglicht interaktives Programmieren
+- Gut für kleine Projekte und Lernzwecke
 
-```bash
-python --version
-```
 
-## Zusammenfassung
+# Zusammenfassung
 
 :::: {.features}
 
 ::: {.feature .fragment .fade-in}
 :::{.feature-header}
-Python 🐍
+Python 
 :::
-Vielseitige Programmiersprache für diverse Anwendungen
+Vielseitige Programmiersprache, die ständig verbessert wird
 :::
 
 ::: {.feature .fragment .fade-up}
 :::{.feature-header}
-IDLE 🖥️
+IDLE 
 :::
 Einfache Entwicklungsumgebung für den Einstieg
 :::
 
-::: {.feature .fragment .fade-up}
-:::{.feature-header}
-Installation 💻
-:::
-Unkompliziert auf Windows und Mac
-:::
 
 ::::
