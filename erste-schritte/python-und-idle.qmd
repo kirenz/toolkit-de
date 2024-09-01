@@ -14,7 +14,6 @@ Python hat sich zu einer der beliebtesten Programmiersprachen in den Bereichen D
 
 Größere Python-Aktualisierungen werden in der Regel einmal pro Jahr veröffentlicht. Dieser regelmäßige Release-Zyklus sorgt dafür, dass neue Funktionen, Verbesserungen und Fehlerbehebungen kontinuierlich in die Sprache einfließen und Python auf dem neuesten Stand bleibt. Im September 2024 war die aktuelle Python-Version `3.12.5`. 
 
-
 Die **Versionsnummer** setzt sich wie folgt zusammen:
 
 - `3`: Zeigt die dritte Hauptversion von Python an. Diese Zahl ändert sich nur selten und kennzeichnet grundlegende Veränderungen in der Sprache.
@@ -23,25 +22,7 @@ Die **Versionsnummer** setzt sich wie folgt zusammen:
 
 Diese Struktur der Versionsnummern hilft, die Art und Bedeutung der Änderungen in jeder neuen Python-Version zu verstehen. Ähnlich wie bei Software-Updates auf einem Smartphone oder Computer zeigen diese Zahlen an, dass Python kontinuierlich verbessert und aktualisiert wird, wobei größere Änderungen seltener sind als kleinere Anpassungen und Fehlerbehebungen.
 
-Um mit Python zu arbeiten, benötigt man eine Entwicklungsumgebung. Eine der einfachsten und am leichtesten zugänglichen Optionen ist **IDLE** (Integrated Development and Learning Environment). IDLE ist eine integrierte Entwicklungsumgebung, die speziell für Python entwickelt wurde und mit jeder Standard-Python-Installation mitgeliefert wird. Sie ist besonders nützlich für Anfänger/innen und für kleine Projekte.
-
-IDLE besteht aus zwei Hauptkomponenten:
-
-1. Python Shell: Eine interaktive Schnittstelle zum Python-Interpreter, in dem wir Python-Code direkt eingeben und ausführen können.
-2. Datei-Editor: Ein einfacher Texteditor zum Schreiben und Bearbeiten von Python-Skripten.
-
-
-::: {.callout-tip}
-## Python Interpreter
-Der Python-Interpreter ist das Kernstück der Python-Programmierumgebung. Er hat folgende Hauptfunktionen:
-
-- Ausführung: Liest und führt Python-Code aus, indem er ihn in für den Computer verständliche Anweisungen übersetzt.
-- Interaktivität: Ermöglicht die direkte Eingabe und Ausführung von Python-Befehlen.
-- Fehlerprüfung: Erkennt Fehler und gibt entsprechende Fehlermeldungen aus.
-
-IDLE nutzt den Python-Interpreter, um Code auszuführen. In der Python Shell arbeiten wir direkt mit dem Interpreter im interaktiven Modus, während der Datei-Editor es uns ermöglicht, längere Skripte zu schreiben, die dann vom Interpreter ausgeführt werden können.
-:::
-
+Um mit Python zu arbeiten, benötigt man eine Entwicklungsumgebung. Eine der einfachsten und am leichtesten zugänglichen Optionen ist **IDLE** (Integrated Development and Learning Environment). 
 
 Als nächstes werden wir Python installieren und erste Schritte mit dem Python-Editor IDLE machen.
 
@@ -108,82 +89,56 @@ Es kann vorkommen, dass wir mehrere Python-Versionen auf unserem System haben. D
 :::
 
 
-## Python IDLE
+## Python & IDLE
 
-IDLE (Integrated Development and Learning Environment) ist ein einfacher Python-Editor, der mit der Python-Installation mitgeliefert wird. Er eignet sich gut für die ersten Schritte in der Python-Programmierung. In @fig-idle ist die interaktive IDLE-Shell mit der Python-Version 3.12.1 zu sehen.
-
-![IDLE Shell](../images/idle.png){#fig-idle width="80%" }
+IDLE (Integrated Development and Learning Environment) ist eine integrierte Entwicklungsumgebung, die speziell für Python entwickelt wurde und mit jeder Standard-Python-Installation mitgeliefert wird. Sie ist besonders nützlich für Anfänger/innen und für kleine Projekte.
 
 IDLE bietet zwei Hauptmodi für die Arbeit mit Python:
 
-1. Die **interaktive Shell**: Hier können einzelne Python-Befehle direkt eingegeben und ausgeführt werden. Dies ist nützlich für schnelle Experimente und das Testen von Codezeilen.
+1. Die **Shell**: Eine interaktive Schnittstelle zum Python-Interpreter, in dem wir Python-Code direkt eingeben und ausführen können. Dies ist nützlich für schnelle Experimente und das Testen von Codezeilen.
 
-2. Der **Skript-Editor**: Hier können längere Python-Programme (Skripte) geschrieben, bearbeitet und gespeichert werden.
-
-Ein Skript ist eine eigenständige Datei, die eine Reihe von Python-Anweisungen enthält, um eine spezifische Aufgabe auszuführen. Skripte werden direkt vom Python-Interpreter ausgeführt, ohne dass sie vorher in Maschinencode übersetzt ("kompiliert") werden müssen. Der Python-Interpreter liest und führt den Code zur Laufzeit Zeile für Zeile aus. Der Begriff "Skript" wird oft verwendet, um kleinere, einfachere Programme zu beschreiben, die möglicherweise nicht Teil eines umfangreicheren Softwareprojekts sind, obwohl auch komplexe Anwendungen als Skripte geschrieben werden können.
+2. Der **Skript-Editor**: Hier können längere Python-Programme (Skripte) geschrieben, bearbeitet und als Textdateien gespeichert werden.
 
 
-### Arbeiten mit Skripten in IDLE
+In @fig-idle ist die interaktive IDLE-Shell mit der Python-Version 3.12.1 zu sehen.
+
+![IDLE Shell](../images/idle.png){#fig-idle width="80%" }
+
+## Python Interpreter
+
+Der Python-Interpreter ist das Kernstück der Python-Programmierumgebung. Er hat folgende Hauptfunktionen:
+
+- Ausführung: Liest und führt Python-Code aus, indem er ihn in für den Computer verständliche Anweisungen übersetzt.
+- Interaktivität: Ermöglicht die direkte Eingabe und Ausführung von Python-Befehlen.
+- Fehlerprüfung: Erkennt Fehler und gibt entsprechende Fehlermeldungen aus.
+
+IDLE nutzt den Python-Interpreter, um Code auszuführen. In der Python Shell arbeiten wir direkt mit dem Interpreter im interaktiven Modus, während der Datei-Editor es uns ermöglicht, längere Skripte zu schreiben, die dann vom Interpreter ausgeführt werden können.
 
 
-Um ein neues Skript in IDLE zu erstellen:
+## Python-Skript
 
-1. Öffnen Sie IDLE
-2. Klicken Sie auf "File" > "New File" oder drücken Sie Strg+N
-3. Es öffnet sich ein neues Fenster, in dem das Skript geschrieben werden kann
-4. Speichern Sie die Datei mit der Endung ".py" (z.B. "mein_erstes_skript.py")
+Ein Python-Skript ist eine Textdatei mit der Endung `.py`, die eine Reihe von Python-Anweisungen enthält. Diese Anweisungen dienen dazu, eine spezifische Aufgabe auszuführen oder ein Problem zu lösen.
 
-### Ein einfaches Beispielskript
+Eigenschaften von Python-Skripten:
 
-Hier ist ein Beispiel für ein einfaches Python-Skript:
+- Ausführung: Skripte werden direkt vom Python-Interpreter Zeile für Zeile ausgeführt, ohne vorherige Übersetzung ("Kompilierung") in Maschinencode.
+- Lesbarkeit: Der Code kann mit jedem Texteditor geöffnet und bearbeitet werden.
+- Organisation: Skripte helfen, Python-Programme zu strukturieren und zu organisieren.
 
-```python
-# Dies ist ein einfaches Python-Skript
-
-# Eine Funktion definieren
-def begruessung(name):
-    return f"Hallo, {name}! Willkommen zur Python-Programmierung."
-
-# Die Funktion aufrufen und das Ergebnis ausgeben
-print(begruessung("Data Science Einsteiger"))
-
-# Eine Schleife verwenden
-for i in range(3):
-    print(f"Python ist toll! (Wiederholung {i+1})")
-```
-
-Um dieses Skript in IDLE auszuführen:
-
-1. Speichern Sie es in einer Datei (z.B. "begruessung.py")
-2. Drücken Sie F5 oder wählen Sie "Run" > "Run Module" aus dem Menü
-
-Das Skript wird ausgeführt und die Ausgabe erscheint in der IDLE-Shell.
 
 ::: {.callout-note}
 ## Vorteile von Skripten
 - Wiederverwendbarkeit: Einmal geschrieben, kann ein Skript immer wieder ausgeführt werden.
 - Automatisierung: Skripte eignen sich hervorragend, um wiederholende Aufgaben zu automatisieren.
+- Schnelle Entwicklung: Änderungen können schnell vorgenommen und getestet werden.
 - Dokumentation: Skripte dienen als dokumentierte Abfolge von Befehlen, die leicht geteilt und verstanden werden können.
 :::
 
-Durch die Arbeit mit Skripten lernen Einsteiger, wie man strukturierten Code schreibt, Funktionen definiert und grundlegende Programmierkonzepte wie Schleifen und Bedingungen anwendet. Dies bildet eine solide Grundlage für fortgeschrittenere Python-Programmierung und Data Science-Anwendungen.
 
-IDLE (Integrated Development and Learning Environment) ist ein einfacher Python-Editor, der mit unserer Installation mitgeliefert wird. Er ist ideal für unsere ersten Schritte in der Python-Programmierung. In @fig-idle ist die IDLE-shell mit der Python-Version 3.12.1. zu sehen.
-
-
-![IDLE Shell](../images/idle.png){#fig-idle width="80%" }
-
-Ein Skript wird oft als eine eigenständige Datei betrachtet, die eine Reihe von Anweisungen enthält, um eine spezifische Aufgabe zu erledigen.
-Skripte werden häufig direkt ausgeführt, ohne dass sie zu einem größeren Programm kompiliert werden müssen.
-Der Begriff "Skript" wird manchmal verwendet, um kleinere, einfachere Programme zu beschreiben, die möglicherweise nicht Teil eines größeren Softwareprojekts sind.
-
-
-IDLE starten:
+### Arbeiten mit IDLE
 
 - **Windows**: Startmenü öffnen und nach "IDLE" suchen.
 - **Mac**: In Spotlight-Suche (Cmd + Leertaste)  "IDLE" eingeben und auswählen.
-
-Arbeiten mit IDLE:
 
 1. **IDLE-Shell**: 
    - Ist eine interaktive Schnittstelle zum Python-Interpreter.
@@ -206,43 +161,12 @@ Arbeiten mit IDLE:
    ![IDLE Skript](../images/idle-hello.png){#fig-idle-hello width="80%" }
 
 
-
    - Die Datei nun als `hallo.py` speichern (idealerweise in unserem `code`-Ordner).
-
-   ::: {.callout-note title="Hinweis zu .py-Datei"}
-   Eine .py-Datei ist eine Textdatei, die Quellcode in der Programmiersprache Python enthält. Wichtige Punkte:
-
-   1. Inhalt: Sie beinhaltet eine Reihe von Anweisungen und Befehlen in Python-Syntax.
-   2. Ausführung: Der Python-Interpreter kann diese Datei lesen und die Anweisungen ausführen.
-   3. Erweiterung: Die Endung ".py" kennzeichnet die Datei als Python-Skript.
-   4. Lesbarkeit: Der Code kann mit jedem Texteditor geöffnet und bearbeitet werden.
-   5. Funktion: Diese Dateien dienen dazu, Python-Programme zu speichern und zu organisieren.
-   :::
-
-
-Ja, der Inhalt passt grundsätzlich gut. Hier ist eine leicht optimierte Version mit einer erweiterten Erklärung in der Callout-Box:
-
-- Die Datei nun als `hallo.py` speichern (idealerweise in unserem `code`-Ordner).
-
-::: {.callout-note title="Hinweis zu .py-Datei"}
-Eine .py-Datei ist eine Textdatei, die Quellcode in der Programmiersprache Python enthält. Wichtige Punkte:
-
-1. Inhalt: Sie beinhaltet eine Reihe von Anweisungen und Befehlen in Python-Syntax.
-2. Ausführung: Der Python-Interpreter kann diese Datei lesen und die Anweisungen ausführen.
-3. Erweiterung: Die Endung ".py" kennzeichnet die Datei als Python-Skript.
-4. Lesbarkeit: Der Code kann mit jedem Texteditor geöffnet und bearbeitet werden.
-5. Funktion: Diese Dateien dienen dazu, Python-Programme zu speichern und zu organisieren.
-:::
-
-Diese erweiterte Erklärung gibt den Lernenden ein umfassenderes Verständnis davon, was eine .py-Datei ist und wie sie im Kontext der Python-Programmierung verwendet wird.
-
    - Skript ausführen: F5 drücken (Mac: fn + F5) oder `Ausführen` > `Modul ausführen` wählen.
    - Wir sehen nun unterhalb des Skripts unsere Ausgabe in der IDLE-Shell (siehe @fig-idle-script-shell).  
 
 
-
    ![IDLE Skript und darunter die Ausgabe in der Shell](../images/idle-script-shell.png){#fig-idle-script-shell width="80%" }
-
-
+ 
 
 Wie wir gesehen haben, bietet Python IDLE eine  einfache Oberfläche für die Codeentwicklung und -ausführung. In einem der folgenden Abschnitte werden wir fortschrittlichere Entwicklungsumgebungen wie Visual Studio Code erkunden, die größere Projekte mit zusätzlichen Funktionen unterstützen.
