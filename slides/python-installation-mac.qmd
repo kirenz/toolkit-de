@@ -1,7 +1,7 @@
 ---
-title: Python und IDLE
+title: Python Installation
 lang: de
-subtitle: Erste Schritte für Mac
+subtitle: Mac
 author: 🛠️ Toolkit
 execute:
   eval: false
@@ -41,9 +41,9 @@ jupyter: python3
 
 ::: {.feature .fragment .fade-in}
 :::{.feature-header}
-Python-Installation
+Python-Installation für Mac
 :::
- Mac
+Neuste Version intsallieren
 :::
 
 ::: {.feature .fragment .fade-up}
@@ -57,11 +57,11 @@ Kommandozeile nutzen
 
 ::::
 
-## Python-Installation auf Mac
+## Python-Installation
 
 1. [Offizielle Python-Website](https://www.python.org/downloads/) besuchen
 2. Neueste Mac-Version herunterladen
-3. `.pkg`-Datei öffnen
+3. `.pkg`-Datei (Installationspaket) öffnen
 4. Anweisungen des Installationsassistenten folgen
 
 
@@ -72,6 +72,11 @@ Terminal öffnen und eingeben:
 ```bash
 python --version
 ```
+
+- Es sollte die eben installierte Python-Version angezeigt werden
+
+
+. . .
 
 ::: {.callout-note}
 # Hinweis zu verschiedenen Python-Versionen
@@ -87,14 +92,14 @@ Mehrere Python-Versionen auf einem System sind normal. Später lernen wir den Um
 :::{.feature-header}
 Python-Installation
 :::
- Mac Versionen
+Mac 
 :::
 
 ::: {.feature .fragment .fade-up}
 :::{.feature-header}
 Installation testen
 :::
-`python --version`
+python \--version
 :::
 
 
