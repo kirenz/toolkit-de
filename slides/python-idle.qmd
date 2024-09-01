@@ -70,7 +70,7 @@ Erstellen und ausführen
 - Direkte Eingabe und Ausführung von Python-Code
 - Beispiel: `2 + 3` eingeben und Enter drücken
 
-## Erstes Python-Skript
+## Datei öffnen
 
 - Neue Datei öffnen: `Datei` > `Neue Datei`
 - Code eingeben:
@@ -80,6 +80,9 @@ Erstellen und ausführen
 ```python
 print("Hallo, Python!")
 ```
+
+
+
 
 ![](../images/idle-hello.png){ width="100%" fig-align="left" }
 
