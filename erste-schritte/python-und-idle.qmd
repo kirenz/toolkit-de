@@ -89,7 +89,7 @@ Es kann vorkommen, dass wir mehrere Python-Versionen auf unserem System haben. D
 :::
 
 
-## Python & IDLE
+## Python IDLE
 
 IDLE (Integrated Development and Learning Environment) ist eine integrierte Entwicklungsumgebung, die speziell für Python entwickelt wurde und mit jeder Standard-Python-Installation mitgeliefert wird. Sie ist besonders nützlich für Anfänger/innen und für kleine Projekte.
 
