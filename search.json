@@ -43,8 +43,8 @@
     ]
   },
   {
-    "objectID": "erste-schritte/python-installation.html",
-    "href": "erste-schritte/python-installation.html",
+    "objectID": "erste-schritte/python-und-idle.html",
+    "href": "erste-schritte/python-und-idle.html",
     "title": "2  Python und IDLE",
     "section": "",
     "text": "2.1 Python-Installation in Windows\nNach der Installation wollen wir sicherstellen, dass alles korrekt funktioniert:\nWenn alles geklappt hat, sehen wir die Versionsnummer der installierten Python-Version.",
@@ -54,8 +54,8 @@
     ]
   },
   {
-    "objectID": "erste-schritte/python-installation.html#python-installation-in-windows",
-    "href": "erste-schritte/python-installation.html#python-installation-in-windows",
+    "objectID": "erste-schritte/python-und-idle.html#python-installation-in-windows",
+    "href": "erste-schritte/python-und-idle.html#python-installation-in-windows",
     "title": "2  Python und IDLE",
     "section": "",
     "text": "Download des Installationsprogramms:\n\nOffizielle Python-Website besuchen.\nNeueste Version für Windows herunterladen (in der Regel die 64-Bit-Version).\n\nAusführen des Installationsprogramms:\n\nWichtig: Programm als Administrator ausführen (Rechtsklick -&gt; “Als Administrator ausführen”).\nDas Kästchen “Add Python 3.x to PATH” am unteren Rand des Installationsfensters anzukreuzen. Dies ermöglicht es uns, Python von überall auf unserem System aus zu nutzen.\n\nAnpassung der Installation (optional):\n\nFür Fortgeschrittene: Mit einem Klick auf “Customize installation” können wir zusätzliche Funktionen auswählen.\n\nStart der Installation:\n\nEin Klick auf “Install Now” startet den Prozess.\n\n\n\n\nÖffnen der Eingabeaufforderung.\nFolgenden Befehl eingeben:\n\npython --version\n\n\n\n\n\n\n\nHinweis zu verschiedenen Python-Versionen\n\n\n\nEs kann vorkommen, dass wir mehrere Python-Versionen auf unserem System haben. Das ist normal und kein Grund zur Sorge. Später im Kurs werden wir lernen, wie wir effektiv mit verschiedenen Python-Umgebungen arbeiten können.",
@@ -65,8 +65,8 @@
     ]
   },
   {
-    "objectID": "erste-schritte/python-installation.html#python-installation-auf-mac",
-    "href": "erste-schritte/python-installation.html#python-installation-auf-mac",
+    "objectID": "erste-schritte/python-und-idle.html#python-installation-auf-mac",
+    "href": "erste-schritte/python-und-idle.html#python-installation-auf-mac",
     "title": "2  Python und IDLE",
     "section": "2.2 Python-Installation auf Mac",
     "text": "2.2 Python-Installation auf Mac\n\nDownload des Installationsprogramms:\n\nOffizielle Python-Website besuchen.\nNeueste Mac-Version herunterladen.\n\nPython installieren:\n\nÖffnen der heruntergeladenen .pkg-Datei.\nAnweisungen des Installationsassistenten folgen.\n\n\nNach der Installation wollen wir sicherstellen, dass alles korrekt funktioniert:\n\nÖffnen des Terminals\nFolgenden Befehl eingeben:\n\npython --version\nWenn alles geklappt hat, sehen wir die Versionsnummer der installierten Python-Version.\n\n\n\n\n\n\nHinweis zu verschiedenen Python-Versionen\n\n\n\nEs kann vorkommen, dass wir mehrere Python-Versionen auf unserem System haben. Das ist normal und kein Grund zur Sorge. Später im Kurs werden wir lernen, wie wir effektiv mit verschiedenen Python-Umgebungen arbeiten können.",
@@ -76,8 +76,8 @@
     ]
   },
   {
-    "objectID": "erste-schritte/python-installation.html#python-idle",
-    "href": "erste-schritte/python-installation.html#python-idle",
+    "objectID": "erste-schritte/python-und-idle.html#python-idle",
+    "href": "erste-schritte/python-und-idle.html#python-idle",
     "title": "2  Python und IDLE",
     "section": "2.3 Python IDLE",
     "text": "2.3 Python IDLE\nIDLE ist ein einfacher Python-Editor, der mit unserer Installation mitgeliefert wird. Er ist ideal für unsere ersten Schritte in der Python-Programmierung.\n\n\n\n\n\n\nAbbildung 2.1: IDLE Shell\n\n\n\nIDLE starten:\n\nWindows: Startmenü öffnen und nach “IDLE” suchen.\nMac: In Spotlight-Suche (Cmd + Leertaste) “IDLE” eingeben und auswählen.\n\nArbeiten mit IDLE:\n\nIDLE-Shell:\n\nDies ist unser interaktiver Python-Interpreter.\nHier können wir direkt Python-Code eingeben und ausführen.\nProbieren wir es aus: Geben wir 2 + 3 ein und drücken Enter. Wir sehen sofort das Ergebnis!\n\nUnser erstes Python-Skript:\n\nÖffnen wir eine neue Datei: Datei &gt; Neue Datei\nGeben wir folgenden Code ein:\nprint(\"Hallo, Python!\")\n\n\n\n\n\n\n\nAbbildung 2.2: IDLE Skript\n\n\n\n\nDie Datei als hallo.py in unserem code-Ordner speichern.\n\n\n\n\n\n\n\nHinweis zu .py-Datei\n\n\n\nEine .py-Datei ist eine Datei, die Quellcode in der Programmiersprache Python enthält. Das bedeutet, sie beinhaltet eine Reihe von Anweisungen und Befehlen, die ein Computer verstehen und ausführen kann, um bestimmte Aufgaben zu erledigen.\n\n\n\nSkript ausführen: F5 drücken (Mac: fn + F5) oder Ausführen &gt; Modul ausführen wählen.\nIn der IDLE-Shell sehen wir nun unsere Ausgabe.\n\n\n\n\n\n\n\nAbbildung 2.3: IDLE Skript und Shell\n\n\n\n\nWie wir gesehen haben, bietet Python IDLE eine einfache Oberfläche für die Codeentwicklung und -ausführung. In einem der folgenden Abschnitte werden wir fortschrittlichere Entwicklungsumgebungen wie Visual Studio Code erkunden, die größere Projekte mit zusätzlichen Funktionen unterstützen.",
