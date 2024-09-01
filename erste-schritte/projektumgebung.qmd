@@ -186,7 +186,7 @@ Hier die Schritte, um das Hauptverzeichnis und die Unterverzeichnisse mit dem Te
    :::{.callout-tip collapse="true" title="Erklärung der Befehle"}
     - `echo`: Befehl, der Text auf der Konsole ausgibt.
     - `$`: signalisiert der Shell, dass auf den Wert einer Variable zugegriffen werden soll. Der Name der entsprechenden Variable folgt direkt auf das `$`.
-    - SHELL: Dies ist eine Umgebungsvariable, die den Pfad zur aktuell verwendeten Shell speichert (z.B. /bin/bash, /bin/zsh).
+    - `SHELL`: Dies ist eine Umgebungsvariable, die den Pfad zur aktuell verwendeten Shell speichert (z.B. /bin/bash, /bin/zsh).
    :::
 
     Wenn wir also $SHELL schreiben, sagt das der Shell: "Gib mir den Wert der Variable namens SHELL".
@@ -227,7 +227,7 @@ Hier die Schritte, um das Hauptverzeichnis und die Unterverzeichnisse mit dem Te
 
 Hier eine Erklärung zu den unterschiedlichen Elementen im Terminal, die in der zsh-Shell angezeigt werden:
 
-![Terminal mit zsh-Shell auf dem Mac](../images/terminal.png){#fig-terminal-zsh width="60%"}
+![Terminal mit zsh-Shell auf dem Mac](../images/terminal.png){#fig-terminal-zsh width="80%"}
 
 
 - *Benutzername*: Dieser steht ganz links in der ersten Zeile. In diesem Fall `jankirenz`. Es zeigt an, welcher Benutzer aktuell am System angemeldet ist.
