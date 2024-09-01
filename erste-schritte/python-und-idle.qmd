@@ -27,8 +27,20 @@ Um mit Python zu arbeiten, benötigt man eine Entwicklungsumgebung. Eine der ein
 
 IDLE besteht aus zwei Hauptkomponenten:
 
-1. Python Shell: Ein interaktiver Interpreter, in dem wir Python-Code direkt eingeben und ausführen können.
+1. Python Shell: Eine interaktive Schnittstelle zum Python-Interpreter, in dem wir Python-Code direkt eingeben und ausführen können.
 2. Datei-Editor: Ein einfacher Texteditor zum Schreiben und Bearbeiten von Python-Skripten.
+
+
+::: {.callout-tip}
+## Python Interpreter
+Der Python-Interpreter ist das Kernstück der Python-Programmierumgebung. Er hat folgende Hauptfunktionen:
+
+- Ausführung: Liest und führt Python-Code aus, indem er ihn in für den Computer verständliche Anweisungen übersetzt.
+- Interaktivität: Ermöglicht die direkte Eingabe und Ausführung von Python-Befehlen.
+- Fehlerprüfung: Erkennt Fehler und gibt entsprechende Fehlermeldungen aus.
+
+IDLE nutzt den Python-Interpreter, um Code auszuführen. In der Python Shell arbeiten wir direkt mit dem Interpreter im interaktiven Modus, während der Datei-Editor es uns ermöglicht, längere Skripte zu schreiben, die dann vom Interpreter ausgeführt werden können.
+:::
 
 
 Als nächstes werden wir Python installieren und erste Schritte mit dem Python-Editor IDLE machen.
@@ -98,10 +110,72 @@ Es kann vorkommen, dass wir mehrere Python-Versionen auf unserem System haben. D
 
 ## Python IDLE
 
-IDLE ist ein einfacher Python-Editor, der mit unserer Installation mitgeliefert wird. Er ist ideal für unsere ersten Schritte in der Python-Programmierung. In @fig-idle ist die IDLE-shell mit der Python-Version 3.12.1. zu sehen.
+IDLE (Integrated Development and Learning Environment) ist ein einfacher Python-Editor, der mit der Python-Installation mitgeliefert wird. Er eignet sich gut für die ersten Schritte in der Python-Programmierung. In @fig-idle ist die interaktive IDLE-Shell mit der Python-Version 3.12.1 zu sehen.
+
+![IDLE Shell](../images/idle.png){#fig-idle width="80%" }
+
+IDLE bietet zwei Hauptmodi für die Arbeit mit Python:
+
+1. Die **interaktive Shell**: Hier können einzelne Python-Befehle direkt eingegeben und ausgeführt werden. Dies ist nützlich für schnelle Experimente und das Testen von Codezeilen.
+
+2. Der **Skript-Editor**: Hier können längere Python-Programme (Skripte) geschrieben, bearbeitet und gespeichert werden.
+
+Ein Skript ist eine eigenständige Datei, die eine Reihe von Python-Anweisungen enthält, um eine spezifische Aufgabe auszuführen. Skripte werden direkt vom Python-Interpreter ausgeführt, ohne dass sie vorher in Maschinencode übersetzt ("kompiliert") werden müssen. Der Python-Interpreter liest und führt den Code zur Laufzeit Zeile für Zeile aus. Der Begriff "Skript" wird oft verwendet, um kleinere, einfachere Programme zu beschreiben, die möglicherweise nicht Teil eines umfangreicheren Softwareprojekts sind, obwohl auch komplexe Anwendungen als Skripte geschrieben werden können.
+
+
+### Arbeiten mit Skripten in IDLE
+
+
+Um ein neues Skript in IDLE zu erstellen:
+
+1. Öffnen Sie IDLE
+2. Klicken Sie auf "File" > "New File" oder drücken Sie Strg+N
+3. Es öffnet sich ein neues Fenster, in dem das Skript geschrieben werden kann
+4. Speichern Sie die Datei mit der Endung ".py" (z.B. "mein_erstes_skript.py")
+
+### Ein einfaches Beispielskript
+
+Hier ist ein Beispiel für ein einfaches Python-Skript:
+
+```python
+# Dies ist ein einfaches Python-Skript
+
+# Eine Funktion definieren
+def begruessung(name):
+    return f"Hallo, {name}! Willkommen zur Python-Programmierung."
+
+# Die Funktion aufrufen und das Ergebnis ausgeben
+print(begruessung("Data Science Einsteiger"))
+
+# Eine Schleife verwenden
+for i in range(3):
+    print(f"Python ist toll! (Wiederholung {i+1})")
+```
+
+Um dieses Skript in IDLE auszuführen:
+
+1. Speichern Sie es in einer Datei (z.B. "begruessung.py")
+2. Drücken Sie F5 oder wählen Sie "Run" > "Run Module" aus dem Menü
+
+Das Skript wird ausgeführt und die Ausgabe erscheint in der IDLE-Shell.
+
+::: {.callout-note}
+## Vorteile von Skripten
+- Wiederverwendbarkeit: Einmal geschrieben, kann ein Skript immer wieder ausgeführt werden.
+- Automatisierung: Skripte eignen sich hervorragend, um wiederholende Aufgaben zu automatisieren.
+- Dokumentation: Skripte dienen als dokumentierte Abfolge von Befehlen, die leicht geteilt und verstanden werden können.
+:::
+
+Durch die Arbeit mit Skripten lernen Einsteiger, wie man strukturierten Code schreibt, Funktionen definiert und grundlegende Programmierkonzepte wie Schleifen und Bedingungen anwendet. Dies bildet eine solide Grundlage für fortgeschrittenere Python-Programmierung und Data Science-Anwendungen.
+
+IDLE (Integrated Development and Learning Environment) ist ein einfacher Python-Editor, der mit unserer Installation mitgeliefert wird. Er ist ideal für unsere ersten Schritte in der Python-Programmierung. In @fig-idle ist die IDLE-shell mit der Python-Version 3.12.1. zu sehen.
 
 
 ![IDLE Shell](../images/idle.png){#fig-idle width="80%" }
+
+Ein Skript wird oft als eine eigenständige Datei betrachtet, die eine Reihe von Anweisungen enthält, um eine spezifische Aufgabe zu erledigen.
+Skripte werden häufig direkt ausgeführt, ohne dass sie zu einem größeren Programm kompiliert werden müssen.
+Der Begriff "Skript" wird manchmal verwendet, um kleinere, einfachere Programme zu beschreiben, die möglicherweise nicht Teil eines größeren Softwareprojekts sind.
 
 
 IDLE starten:
@@ -112,12 +186,13 @@ IDLE starten:
 Arbeiten mit IDLE:
 
 1. **IDLE-Shell**: 
-   - Dies ist unser interaktiver Python-Interpreter.
+   - Ist eine interaktive Schnittstelle zum Python-Interpreter.
    - Hier können wir direkt Python-Code eingeben und ausführen.
    - Probieren wir es aus: Geben wir `2 + 3` ein und drücken Enter. Wir sehen sofort das Ergebnis!
 
 2. **Unser erstes Python-Skript**:
    - Wir öffnen eine neue Datei mit: `Datei` > `Neue Datei`
+   - Es öffnet sich ein neues Fenster, in dem das Skript geschrieben werden kann
    - Folgenden Code eingeben:
 
      ```python
@@ -132,11 +207,34 @@ Arbeiten mit IDLE:
 
 
 
-   - Die Datei nun als `hallo.py` in unserem `code`-Ordner speichern.
+   - Die Datei nun als `hallo.py` speichern (idealerweise in unserem `code`-Ordner).
 
    ::: {.callout-note title="Hinweis zu .py-Datei"}
-   Eine .py-Datei ist eine Datei, die Quellcode in der Programmiersprache Python enthält. Das bedeutet, sie beinhaltet eine Reihe von Anweisungen und Befehlen, die ein Computer verstehen und ausführen kann, um bestimmte Aufgaben zu erledigen.
+   Eine .py-Datei ist eine Textdatei, die Quellcode in der Programmiersprache Python enthält. Wichtige Punkte:
+
+   1. Inhalt: Sie beinhaltet eine Reihe von Anweisungen und Befehlen in Python-Syntax.
+   2. Ausführung: Der Python-Interpreter kann diese Datei lesen und die Anweisungen ausführen.
+   3. Erweiterung: Die Endung ".py" kennzeichnet die Datei als Python-Skript.
+   4. Lesbarkeit: Der Code kann mit jedem Texteditor geöffnet und bearbeitet werden.
+   5. Funktion: Diese Dateien dienen dazu, Python-Programme zu speichern und zu organisieren.
    :::
+
+
+Ja, der Inhalt passt grundsätzlich gut. Hier ist eine leicht optimierte Version mit einer erweiterten Erklärung in der Callout-Box:
+
+- Die Datei nun als `hallo.py` speichern (idealerweise in unserem `code`-Ordner).
+
+::: {.callout-note title="Hinweis zu .py-Datei"}
+Eine .py-Datei ist eine Textdatei, die Quellcode in der Programmiersprache Python enthält. Wichtige Punkte:
+
+1. Inhalt: Sie beinhaltet eine Reihe von Anweisungen und Befehlen in Python-Syntax.
+2. Ausführung: Der Python-Interpreter kann diese Datei lesen und die Anweisungen ausführen.
+3. Erweiterung: Die Endung ".py" kennzeichnet die Datei als Python-Skript.
+4. Lesbarkeit: Der Code kann mit jedem Texteditor geöffnet und bearbeitet werden.
+5. Funktion: Diese Dateien dienen dazu, Python-Programme zu speichern und zu organisieren.
+:::
+
+Diese erweiterte Erklärung gibt den Lernenden ein umfassenderes Verständnis davon, was eine .py-Datei ist und wie sie im Kontext der Python-Programmierung verwendet wird.
 
    - Skript ausführen: F5 drücken (Mac: fn + F5) oder `Ausführen` > `Modul ausführen` wählen.
    - Wir sehen nun unterhalb des Skripts unsere Ausgabe in der IDLE-Shell (siehe @fig-idle-script-shell).  
