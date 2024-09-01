@@ -74,15 +74,17 @@ Erstellen und ausführen
 ## IDLE Hauptmodi
 
 1. **Shell**: 
-   - Interaktive Schnittstelle zum Python-Interpreter
+   - Interaktive Schnittstelle zum *Python-Interpreter*
    - Direkte Eingabe und Ausführung von Code
 
 2. **Skript-Editor**:
-   - Für längere Python-Programme
+   - Für längere *Python-Skripte* (Programme)
    - Schreiben, Bearbeiten und Speichern von Skripten
 
 
-## Python Interpreter 
+# Python-Interpreter {.custom-gradient}
+
+## Eigenschaften
 
 Der Python-Interpreter ist das Kernstück der Python-Umgebung:
 
@@ -90,7 +92,10 @@ Der Python-Interpreter ist das Kernstück der Python-Umgebung:
 - **Interaktivität**: Ermöglicht direkte Befehlseingabe
 - **Fehlerprüfung**: Erkennt und meldet Fehler
 
-## Python-Skript Eigenschaften 
+
+# Python-Skripte {.custom-gradient}
+
+## Eigenschaften 
 
 - Textdatei mit `.py`-Endung
 - Enthält Python-Anweisungen
@@ -99,12 +104,15 @@ Der Python-Interpreter ist das Kernstück der Python-Umgebung:
   - Lesbar mit jedem Texteditor
   - Hilft bei Codeorganisation
 
-## Vorteile von Skripten
+## Vorteile
 
 - **Wiederverwendbarkeit**: Mehrfache Ausführung möglich
 - **Automatisierung**: Ideal für wiederholende Aufgaben
 - **Schnelle Entwicklung**: Einfache Änderungen und Tests
 - **Dokumentation**: Nachvollziehbare Befehlsabfolge
+
+# Arbeiten mit IDLE {.custom-gradient}
+
 
 ## IDLE starten
 
@@ -119,12 +127,7 @@ Der Python-Interpreter ist das Kernstück der Python-Umgebung:
 - Direkte Eingabe und Ausführung von Python-Code
 - Beispiel: `2 + 3` eingeben und Enter drücken
 
-
-
-
-
-
-## Datei öffnen
+## Datei öffnen 
 
 - Neue Datei öffnen: `Datei` > `Neue Datei`
 - Code eingeben:
@@ -135,52 +138,47 @@ Der Python-Interpreter ist das Kernstück der Python-Umgebung:
 print("Hallo, Python!")
 ```
 
-![](../images/idle-hello.png){ width="100%" fig-align="left" }
-
-## Python-Skript speichern
-
-- Als `hallo.py` im `code`-Ordner speichern
-
 . . .
 
-:::{.callout-tip appearance="simple"}
-.py-Datei: Enthält Code in der Programmiersprache Python.
-:::
+![](../images/idle-hello.png){ width="50%" fig-align="left" }
 
+## Python-Skript speichern und ausführen
+
+- Als `hallo.py` im `code`-Ordner speichern
 - Ausführen: F5 (Mac: fn + F5) oder `Ausführen` > `Modul ausführen`
 
 ## Python Skript und Ausgabe
 
 ![](../images/idle-script-shell.png){ width="100%" }
 
-Ausgabe in der IDLE-Shell betrachten
+Ausgabe in der unteren IDLE-Shell betrachten
 
-## Zusammenfassung
+# Zusammenfassung
 
 :::: {.features}
 
 ::: {.feature .fragment .fade-up}
 :::{.feature-header}
-IDLE Grundlagen 💻
+IDLE Grundlagen 
 :::
-Shell: Interaktiver Interpreter
+Shell: Interaktiver Interpreter  
 Skript-Editor: Für längere Programme
 :::
 
 ::: {.feature .fragment .fade-up}
 :::{.feature-header}
-Python Interpreter 🔍
+Python Interpreter 
 :::
 Ausführung, Interaktivität, Fehlerprüfung
 :::
 
 ::: {.feature .fragment .fade-up}
 :::{.feature-header}
-Python-Skript 📝
+Python-Skript 
 :::
-.py-Datei
-Ausführung mit F5
-Ausgabe in IDLE-Shell
+.py-Datei  
+Ausführung mit F5  
+Ausgabe in IDLE-Shell  
 :::
 
 ::::
