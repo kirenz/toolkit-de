@@ -255,3 +255,13 @@ span.animated-title {
 }
 
 
+/* Custom Background */
+
+.reveal .slides section.custom-gradient {
+  background: linear-gradient(to bottom right, #FFD700, #FFA500);
+}
+
+/* .reveal .slides section.custom-gradient .slide-background-content {
+  background: linear-gradient(to bottom right, #FFD700, #FFA500);
+} */
+
