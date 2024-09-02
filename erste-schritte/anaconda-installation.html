@@ -351,9 +351,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-  <li><a href="#anaconda-in-windows-installieren" id="toc-anaconda-in-windows-installieren" class="nav-link active" data-scroll-target="#anaconda-in-windows-installieren"><span class="header-section-number">3.1</span> Anaconda in Windows installieren</a></li>
+  <li><a href="#anaconda-in-windows-installieren" id="toc-anaconda-in-windows-installieren" class="nav-link active" data-scroll-target="#anaconda-in-windows-installieren"><span class="header-section-number">3.1</span> Anaconda in Windows installieren</a>
+  <ul class="collapse">
+  <li><a href="#anaconda-command-prompt" id="toc-anaconda-command-prompt" class="nav-link" data-scroll-target="#anaconda-command-prompt"><span class="header-section-number">3.1.1</span> Anaconda Command Prompt</a></li>
+  <li><a href="#zugriff-auf-anaconda-command-prompt" id="toc-zugriff-auf-anaconda-command-prompt" class="nav-link" data-scroll-target="#zugriff-auf-anaconda-command-prompt"><span class="header-section-number">3.1.2</span> Zugriff auf Anaconda Command Prompt</a></li>
+  </ul></li>
   <li><a href="#anaconda-auf-mac-installieren" id="toc-anaconda-auf-mac-installieren" class="nav-link" data-scroll-target="#anaconda-auf-mac-installieren"><span class="header-section-number">3.2</span> Anaconda auf Mac installieren</a></li>
-  <li><a href="#anaconda-überprüfen-und-aktualisieren" id="toc-anaconda-überprüfen-und-aktualisieren" class="nav-link" data-scroll-target="#anaconda-überprüfen-und-aktualisieren"><span class="header-section-number">3.3</span> Anaconda überprüfen und aktualisieren</a></li>
+  <li><a href="#anaconda-überprüfen-und-aktualisieren" id="toc-anaconda-überprüfen-und-aktualisieren" class="nav-link" data-scroll-target="#anaconda-überprüfen-und-aktualisieren"><span class="header-section-number">3.3</span> Anaconda überprüfen und aktualisieren</a>
+  <ul class="collapse">
+  <li><a href="#kommandozeile-öffnen" id="toc-kommandozeile-öffnen" class="nav-link" data-scroll-target="#kommandozeile-öffnen"><span class="header-section-number">3.3.1</span> Kommandozeile öffnen</a></li>
+  <li><a href="#version-prüfen" id="toc-version-prüfen" class="nav-link" data-scroll-target="#version-prüfen"><span class="header-section-number">3.3.2</span> Version prüfen</a></li>
+  <li><a href="#informationen-anzeigen" id="toc-informationen-anzeigen" class="nav-link" data-scroll-target="#informationen-anzeigen"><span class="header-section-number">3.3.3</span> Informationen anzeigen</a></li>
+  <li><a href="#installierte-pakete-anzeigen" id="toc-installierte-pakete-anzeigen" class="nav-link" data-scroll-target="#installierte-pakete-anzeigen"><span class="header-section-number">3.3.4</span> Installierte Pakete anzeigen</a></li>
+  <li><a href="#conda-aktualisieren" id="toc-conda-aktualisieren" class="nav-link" data-scroll-target="#conda-aktualisieren"><span class="header-section-number">3.3.5</span> conda aktualisieren</a></li>
+  </ul></li>
+  <li><a href="#nächste-schritte" id="toc-nächste-schritte" class="nav-link" data-scroll-target="#nächste-schritte"><span class="header-section-number">3.4</span> Nächste Schritte</a></li>
   </ul>
 </nav>
     </div>
@@ -413,7 +425,7 @@ Abbildung&nbsp;3.1: Anaconda Navigator
 <ol type="1">
 <li>Zunächst besuchen wir die <a href="https://www.anaconda.com/download/success">Anaconda-Download-Seite</a>.</li>
 <li>Hier wählen wir die Windows-Version aus.</li>
-<li>Wir laden den grafischen Installer herunter.</li>
+<li>Grafischen Installer herunterladen.</li>
 <li>Nach dem Download klicken wir mit der rechten Maustaste auf den Installer und wählen “Als Administrator ausführen”.</li>
 <li>Im Setup-Assistenten klicken wir uns durch die verschiedenen Bildschirme:
 <ul>
@@ -426,6 +438,33 @@ Abbildung&nbsp;3.1: Anaconda Navigator
 <li>Mit einem Klick auf “Installieren” starten wir den Installationsprozess.</li>
 <li>Nach Abschluss der Installation klicken wir auf “Fertig stellen”.</li>
 </ol>
+<section id="anaconda-command-prompt" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="anaconda-command-prompt"><span class="header-section-number">3.1.1</span> Anaconda Command Prompt</h3>
+<p>Anaconda Command Prompt ist ein spezielles Kommandozeilentool, das mit der Anaconda-Distribution für Windows installiert wird. Es bietet eine Umgebung, in der Python und verschiedene Data-Science-Werkzeuge direkt über die Kommandozeile genutzt werden können.</p>
+<p>Das Pogramm ist im Wesentlichen eine angepasste Version der Windows-Eingabeaufforderung. Der Hauptunterschied besteht darin, dass sie automatisch die notwendigen Umgebungsvariablen setzt, um auf die in Anaconda installierten Python-Pakete und -Tools zuzugreifen.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Anaconda Command Prompt ermöglicht es, Python-Skripte auszuführen, Pakete zu installieren oder zu aktualisieren und verschiedene Conda-Befehle zu verwenden, ohne dass zusätzliche Konfigurationen vorgenommen werden müssen.</p>
+</div>
+</div>
+</div>
+<p>Es ist wichtig zu beachten, dass Befehle, die in Anaconda Command Prompt funktionieren, möglicherweise nicht in der normalen Windows-Eingabeaufforderung verfügbar sind, es sei denn, die Umgebungsvariablen wurden manuell konfiguriert.</p>
+</section>
+<section id="zugriff-auf-anaconda-command-prompt" class="level3" data-number="3.1.2">
+<h3 data-number="3.1.2" class="anchored" data-anchor-id="zugriff-auf-anaconda-command-prompt"><span class="header-section-number">3.1.2</span> Zugriff auf Anaconda Command Prompt</h3>
+<p>Um Anaconda Command Prompt in Windows zu öffnen, können folgende Schritte durchgeführt werden:</p>
+<ol type="1">
+<li>Das Windows-Startmenü öffnen</li>
+<li>Nach “Anaconda” suchen</li>
+<li>“Anaconda Prompt” auswählen</li>
+</ol>
+<p>Alternativ kann auch der folgende Pfad genutzt werden:</p>
+<pre><code>Start &gt; Alle Programme &gt; Anaconda3 &gt; Anaconda Prompt</code></pre>
+</section>
 </section>
 <section id="anaconda-auf-mac-installieren" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="anaconda-auf-mac-installieren"><span class="header-section-number">3.2</span> Anaconda auf Mac installieren</h2>
@@ -449,16 +488,59 @@ Abbildung&nbsp;3.1: Anaconda Navigator
 </section>
 <section id="anaconda-überprüfen-und-aktualisieren" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="anaconda-überprüfen-und-aktualisieren"><span class="header-section-number">3.3</span> Anaconda überprüfen und aktualisieren</h2>
-<p>Um sicherzustellen, dass Anaconda korrekt installiert wurde:</p>
+<p>In diesem Abschnitt wollen wir sicherzustellen, dass Conda korrekt installiert wurde und einige conda-Befehle kennenleren.</p>
+<section id="kommandozeile-öffnen" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="kommandozeile-öffnen"><span class="header-section-number">3.3.1</span> Kommandozeile öffnen</h3>
+<p>Zunächst öffnen wir die Kommandozeile:</p>
+<ul>
+<li><strong>Windows</strong>: Anaconda Command Prompt (Achtung: nicht die reguläre Eingabeaufforderung öffnen)</li>
+<li><strong>Mac</strong>: Terminal</li>
+</ul>
+<p>In der Kommandozeile sollte das Wort <code>base</code> sichtbar sein. Die <code>base</code>-Umgebung ist die Standardumgebung, die bei der Installation von Anaconda erstellt wird. Sie enthält eine Vielzahl vorinstallierter Pakete.</p>
+</section>
+<section id="version-prüfen" class="level3" data-number="3.3.2">
+<h3 data-number="3.3.2" class="anchored" data-anchor-id="version-prüfen"><span class="header-section-number">3.3.2</span> Version prüfen</h3>
+<p>Um sicherzustellen, dass Conda korrekt installiert ist und um die aktuelle Version zu überprüfen, kann folgender Befehl in der Kommandozeile eingegeben werden:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> <span class="at">--version</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Bei korrekter Installation wird die Versionsnummer angezeigt. Dies ist nützlich, um zu überprüfen, ob Conda auf dem System verfügbar ist und welche Version verwendet wird. Die Versionsnummer kann wichtig sein, um Kompatibilitätsprobleme zu vermeiden und zu entscheiden, ob ein Update erforderlich ist.</p>
+</section>
+<section id="informationen-anzeigen" class="level3" data-number="3.3.3">
+<h3 data-number="3.3.3" class="anchored" data-anchor-id="informationen-anzeigen"><span class="header-section-number">3.3.3</span> Informationen anzeigen</h3>
+<p>Um detaillierte Informationen über die Conda-Installation zu erhalten, kann folgender Befehl verwendet werden:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> info</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Dieser Befehl liefert umfassende Informationen zur Anaconda-Software. Die Ausgabe enthält wichtige Details wie:</p>
 <ol type="1">
-<li><p>Wir öffnen ein Eingabeaufforderungsfenster (Windows) oder Terminal (macOS/Linux).</p></li>
-<li><p>Hier geben wir folgenden Befehl ein:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> <span class="at">--version</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>Wenn Anaconda korrekt installiert ist, sehen wir die Versionsnummer im Terminal.</p></li>
+<li>Den Pfad zur Conda-Installation</li>
+<li>Die aktuelle aktive Umgebung</li>
+<li>Die Kanäle, aus denen Pakete bezogen werden</li>
+<li>Die Plattform und das Betriebssystem</li>
+<li>Die Python-Version in der Basis-Umgebung</li>
 </ol>
+<p>Diese Informationen sind besonders nützlich bei der Fehlersuche oder wenn spezifische Konfigurationsdetails benötigt werden.</p>
+</section>
+<section id="installierte-pakete-anzeigen" class="level3" data-number="3.3.4">
+<h3 data-number="3.3.4" class="anchored" data-anchor-id="installierte-pakete-anzeigen"><span class="header-section-number">3.3.4</span> Installierte Pakete anzeigen</h3>
+<p>Um eine Übersicht aller installierten Pakete in der aktuellen Conda-Umgebung (in unserem Fall ist dies die <code>base</code>-Umgebung) zu erhalten, kann folgender Befehl verwendet werden:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> list</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Dieser Befehl zeigt Informationen zu allen installierten Paketen in der aktiven Conda-Umgebung an. Die Ausgabe enthält typischerweise:</p>
+<ol type="1">
+<li>Den Namen jedes Pakets</li>
+<li>Die installierte Version</li>
+<li>Den Build-String (enthält zusätzliche Details zur spezifischen Version eines Pakets)</li>
+<li>Den Kanal, aus dem das Paket installiert wurde (Ein Kanal ist eine Quelle, aus der Pakete bezogen werden können)</li>
+</ol>
+<p>Diese Informationen sind besonders wertvoll, um: - Zu überprüfen, ob bestimmte Pakete installiert sind - Die Versionen der installierten Pakete zu kontrollieren</p>
+<p>Es ist zu beachten, dass die Ausgabe die Pakete in der aktuell aktiven Umgebung anzeigt. Wenn wir uns also in der <code>base</code>-Umgebung befinden, werden die dort installierten Pakete aufgelistet. Um Pakete in anderen Umgebungen anzuzeigen, muss zuerst in diese Umgebung gewechselt werden. Dieses Thema behandeln wir in Kapitel <a href="../python/python-umgebung.html"></a>.</p>
+</section>
+<section id="conda-aktualisieren" class="level3" data-number="3.3.5">
+<h3 data-number="3.3.5" class="anchored" data-anchor-id="conda-aktualisieren"><span class="header-section-number">3.3.5</span> conda aktualisieren</h3>
 <p>Es ist ratsam, nach der Installation alle Standardpakete zu aktualisieren:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> update <span class="at">--all</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Wir folgen den Anweisungen, um die Aktualisierung abzuschließen.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> update <span class="at">--all</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Wir folgen den Anweisungen, um die Aktualisierung abzuschließen (d.h. <code>y</code> für “yes” eingeben und Eingabetaste drücken).</p>
+</section>
+</section>
+<section id="nächste-schritte" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="nächste-schritte"><span class="header-section-number">3.4</span> Nächste Schritte</h2>
 <p>Mit der erfolgreichen Installation von Anaconda haben wir nun Zugriff auf Jupyter Notebook, eine webbasierte Umgebung zum Schreiben und Ausführen von Python-Code. Diese Umgebung wird uns in unseren Data Science-Projekten begleiten und bietet mehr Möglichkeiten als die einfache IDLE-Umgebung.</p>
 <p>In den nächsten Kapiteln werden wir lernen, wie wir Jupyter Notebook effektiv für unsere Data Science-Aufgaben nutzen können.</p>
 
