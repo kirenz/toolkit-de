@@ -388,21 +388,41 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<div id="fig-jupyter" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-jupyter-notebook" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-jupyter-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../images/jupyter.png" class="img-fluid figure-img" style="width:100.0%">
+<div aria-describedby="fig-jupyter-notebook-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/jupyter-notebook.png" class="img-fluid figure-img" style="width:50.0%">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-jupyter-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-jupyter-notebook-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;4.1: Jupyter Notebook
 </figcaption>
 </figure>
 </div>
 <p>Im Vergleich zum eher einfachen Python IDLE bietet Jupyter Notebook eine Reihe von Vorteilen, die unsere Arbeit erheblich erleichtern:</p>
 <ol type="1">
-<li><p><strong>Interaktive Code-Ausführung:</strong> In Jupyter Notebook arbeiten wir mit sogenannten “Zellen”. Jede Zelle kann Python-Code enthalten, den wir unabhängig voneinander ausführen können. Dies ermöglicht uns, unseren Code schrittweise zu entwickeln und zu testen, was besonders bei komplexen Datenanalysen von Vorteil ist.</p></li>
-<li><p><strong>Nahtlose Integration von Code und Dokumentation:</strong> Mit Jupyter Notebook können wir problemlos zwischen Code und Erklärungen wechseln. Durch die Umstellung einer Zelle in den “Markdown”-Modus können wir ausführliche Erläuterungen, formatierte Anweisungen oder sogar mathematische Gleichungen mit LaTeX direkt neben unserem Code platzieren. Dies hilft uns, unsere Gedankengänge und Analyseansätze klar zu dokumentieren.</p></li>
-<li><p><strong>Sofortige Visualisierung von Ergebnissen:</strong> Eines der besonderen Merkmale von Jupyter Notebook ist die Möglichkeit, Diagramme, Grafiken und andere Visualisierungen direkt im Notebook anzuzeigen. Dies gibt uns unmittelbares visuelles Feedback zu unseren Analysen und ist besonders wertvoll für explorative Datenanalysen.</p></li>
+<li><p><strong>Interaktive Code-Ausführung:</strong> In Jupyter Notebook arbeiten wir mit sogenannten “Zellen”. Jede Zelle kann Python-Code enthalten, den wir unabhängig voneinander ausführen können. Dies ermöglicht uns, unseren Code schrittweise zu entwickeln und zu testen, was besonders bei komplexen Datenanalysen von Vorteil ist.</p>
+<div id="fig-jupyter-notebook-mathe-1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-jupyter-notebook-mathe-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/jupyter-notebook-mathe-1.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-jupyter-notebook-mathe-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;4.2: Jupyter Notebook-Zelle
+</figcaption>
+</figure>
+</div></li>
+<li><p><strong>Nahtlose Integration von Code und Dokumentation:</strong> Mit Jupyter Notebook können wir problemlos zwischen Code und Erklärungen wechseln. Durch die Umstellung einer Zelle in den “Markdown”-Modus (eine Auszeichnungssprache) können wir ausführliche Erläuterungen, formatierte Anweisungen oder sogar mathematische Gleichungen mit LaTeX direkt neben unserem Code platzieren. Dies hilft uns, unsere Gedankengänge und Analyseansätze klar zu dokumentieren.</p></li>
+<li><p><strong>Sofortige Visualisierung von Ergebnissen:</strong> Eines der besonderen Merkmale von Jupyter Notebook ist die Möglichkeit, Diagramme, Grafiken und andere Visualisierungen direkt im Notebook anzuzeigen. Dies gibt uns unmittelbares visuelles Feedback zu unseren Analysen und ist besonders wertvoll für explorative Datenanalysen.</p>
+<div id="fig-jupyter-notebook-mathe" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-jupyter-notebook-mathe-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/jupyter-notebook-mathe.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-jupyter-notebook-mathe-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;4.3: Jupyter Notebook-Zelle
+</figcaption>
+</figure>
+</div></li>
 <li><p><strong>Reproduzierbarkeit:</strong> Jupyter Notebooks speichern nicht nur unseren Code, sondern auch die Ausgaben. Dies bedeutet, dass wir unsere gesamte Analyse, einschließlich der Ergebnisse, in einer einzigen Datei speichern und mit anderen teilen können. Dies fördert die Reproduzierbarkeit unserer Arbeit und erleichtert die Zusammenarbeit im Team.</p></li>
 <li><p><strong>Flexibilität:</strong> Obwohl wir uns hier auf Python konzentrieren, unterstützt Jupyter Notebook auch viele andere Programmiersprachen. Dies gibt uns die Flexibilität, bei Bedarf zwischen verschiedenen Sprachen zu wechseln.</p></li>
 </ol>
@@ -416,10 +436,40 @@ Abbildung&nbsp;4.1: Jupyter Notebook
 <li><p>Für macOS/Linux-Nutzer: Wir können entweder in unseren Anwendungen nach “Anaconda Navigator” suchen oder ein Terminal öffnen und folgenden Befehl eingeben:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">anaconda-navigator</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 </ul></li>
-<li><p><strong>Jupyter Notebook starten:</strong> Im Anaconda Navigator finden wir die Kachel für Jupyter Notebook. Ein Klick auf “Launch” öffnet Jupyter Notebook in unserem Standard-Webbrowser.</p></li>
-<li><p><strong>Navigation zum richtigen Verzeichnis:</strong> In der Web-Oberfläche von Jupyter navigieren wir zum <code>code</code>-Verzeichnis. Dieses Verzeichnis ist Teil unserer <a href="../erste-schritte/projektumgebung.html">eingerichteten Ordnerstruktur</a>, die uns hilft, unsere Projekte übersichtlich zu organisieren.</p></li>
-<li><p><strong>Erstellung eines neuen Notebooks:</strong> Oben rechts klicken wir auf “New” und wählen “Notebook” aus der Drop-down-Liste. Dies erstellt ein neues, leeres Notebook.</p></li>
-<li><p><strong>Auswahl des Kernels:</strong> Nun öffnet sich ein Fenster, in dem wir den Kernel (eine Python-Instanz) auswählen können. Für den Anfang wählen wir die von Anaconda installierte <code>base</code>-Umgebung aus. Diese Umgebung ist die Standardumgebung von Anaconda und enthält bereits viele nützliche Bibliotheken für Data Science und maschinelles Lernen.</p></li>
+<li><p><strong>Jupyter Notebook starten:</strong> Im Anaconda Navigator finden wir die Kachel für Jupyter Notebook. Ein Klick auf “Launch” öffnet Jupyter Notebook in unserem Standard-Webbrowser.</p>
+<div id="fig-anaconda-navigator-jupyter" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-anaconda-navigator-jupyter-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/anaconda-navigator-jupyter.png" class="img-fluid figure-img" style="width:50.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-anaconda-navigator-jupyter-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;4.4: Jupyter in Anconda Navigator
+</figcaption>
+</figure>
+</div></li>
+<li><p><strong>Navigation zum richtigen Verzeichnis:</strong> In der Web-Oberfläche von Jupyter navigieren wir zum <code>code</code>-Verzeichnis. Dieses Verzeichnis ist Teil unserer <a href="../erste-schritte/projektumgebung.html">eingerichteten Ordnerstruktur</a>, die uns hilft, unsere Projekte übersichtlich zu organisieren. Zunächst den Ordner “toolkit-lab” öffnen und dann den Unterornder “code”.</p>
+<div id="fig-jupyter-toolkit-lab-code" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-jupyter-toolkit-lab-code-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/jupyter-toolkit-lab-code.png" class="img-fluid figure-img" style="width:50.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-jupyter-toolkit-lab-code-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;4.5: Ordner code in Jupyter Notebook
+</figcaption>
+</figure>
+</div></li>
+<li><p><strong>Erstellung eines neuen Notebooks:</strong> Oben rechts klicken wir auf “New” und wählen “Notebook” aus der Drop-down-Liste. Dies erstellt ein neues, leeres Notebook.</p>
+<div id="fig-jupyter-notebook-new-notebook" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-jupyter-notebook-new-notebook-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/jupyter-notebook-new-notebook.png" class="img-fluid figure-img" style="width:50.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-jupyter-notebook-new-notebook-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;4.6: Neuer Jupyter Notebook
+</figcaption>
+</figure>
+</div></li>
+<li><p><strong>Auswahl des Kernels:</strong> Nun öffnet sich ein Fenster, in dem wir den Kernel (eine Python-Instanz) auswählen können. Für den Anfang wählen wir die von Anaconda installierte <code>base</code>-Umgebung aus. Alternativ dazu kann auch Python 3 (ipykernel) ausgewählt werden.</p></li>
 <li><p><strong>Unser erstes Notebook ist bereit:</strong> Eine neue Notebook-Seite öffnet sich mit einer leeren Code-Zelle, bereit für unseren ersten Python-Code.</p></li>
 </ol>
 <p>Jetzt, wo unser Notebook geöffnet ist, können wir mit dem Schreiben von Code beginnen:</p>
