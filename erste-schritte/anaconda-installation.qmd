@@ -28,7 +28,7 @@ Die Anaconda Distribution ermöglicht es, schnell und unkompliziert mit Data Sci
 
 1. Zunächst besuchen wir die [Anaconda-Download-Seite](https://www.anaconda.com/download/success).
 2. Hier wählen wir die Windows-Version aus.
-3. Wir laden den grafischen Installer herunter.
+3. Grafischen Installer herunterladen.
 4. Nach dem Download klicken wir mit der rechten Maustaste auf den Installer und wählen "Als Administrator ausführen".
 5. Im Setup-Assistenten klicken wir uns durch die verschiedenen Bildschirme:
    - Wir stimmen den Geschäftsbedingungen zu.
@@ -38,6 +38,34 @@ Die Anaconda Distribution ermöglicht es, schnell und unkompliziert mit Data Sci
    - Ebenso aktivieren wir "Anaconda als meine Standard-Python-Version registrieren".
 6. Mit einem Klick auf "Installieren" starten wir den Installationsprozess.
 7. Nach Abschluss der Installation klicken wir auf "Fertig stellen".
+
+
+### Anaconda Command Prompt 
+
+Anaconda Command Prompt ist ein spezielles Kommandozeilentool, das mit der Anaconda-Distribution für Windows installiert wird. Es bietet eine Umgebung, in der Python und verschiedene Data-Science-Werkzeuge direkt über die Kommandozeile genutzt werden können.
+
+Das Pogramm ist im Wesentlichen eine angepasste Version der Windows-Eingabeaufforderung. Der Hauptunterschied besteht darin, dass sie automatisch die notwendigen Umgebungsvariablen setzt, um auf die in Anaconda installierten Python-Pakete und -Tools zuzugreifen.
+
+::: {.callout-note}
+Anaconda Command Prompt ermöglicht es, Python-Skripte auszuführen, Pakete zu installieren oder zu aktualisieren und verschiedene Conda-Befehle zu verwenden, ohne dass zusätzliche Konfigurationen vorgenommen werden müssen.
+:::
+
+Es ist wichtig zu beachten, dass Befehle, die in Anaconda Command Prompt funktionieren, möglicherweise nicht in der normalen Windows-Eingabeaufforderung verfügbar sind, es sei denn, die Umgebungsvariablen wurden manuell konfiguriert.
+
+### Zugriff auf Anaconda Command Prompt
+
+Um Anaconda Command Prompt in Windows zu öffnen, können folgende Schritte durchgeführt werden:
+
+1. Das Windows-Startmenü öffnen
+2. Nach "Anaconda" suchen
+3. "Anaconda Prompt" auswählen
+
+Alternativ kann auch der folgende Pfad genutzt werden:
+
+```
+Start > Alle Programme > Anaconda3 > Anaconda Prompt
+```
+
 
 ## Anaconda auf Mac installieren
 
@@ -55,25 +83,83 @@ Die Anaconda Distribution ermöglicht es, schnell und unkompliziert mit Data Sci
 
 ## Anaconda überprüfen und aktualisieren
 
-Um sicherzustellen, dass Anaconda korrekt installiert wurde:
+In diesem Abschnitt wollen wir sicherzustellen, dass Conda korrekt installiert wurde und einige conda-Befehle kennenleren.
 
-1. Wir öffnen ein Eingabeaufforderungsfenster (Windows) oder Terminal (macOS/Linux).
-2. Hier geben wir folgenden Befehl ein:
 
-   ```bash
-   conda --version
-   ```
+### Kommandozeile öffnen
 
-3. Wenn Anaconda korrekt installiert ist, sehen wir die Versionsnummer im Terminal.
+Zunächst öffnen wir die Kommandozeile:
+
+- **Windows**: Anaconda Command Prompt (Achtung: nicht die reguläre Eingabeaufforderung öffnen)
+- **Mac**: Terminal
+
+In der Kommandozeile sollte das Wort `base` sichtbar sein. Die `base`-Umgebung ist die Standardumgebung, die bei der Installation von Anaconda erstellt wird. Sie enthält eine Vielzahl vorinstallierter Pakete.
+
+### Version prüfen
+
+Um sicherzustellen, dass Conda korrekt installiert ist und um die aktuelle Version zu überprüfen, kann folgender Befehl in der Kommandozeile eingegeben werden:
+
+```bash
+conda --version
+```
+
+
+Bei korrekter Installation wird die Versionsnummer angezeigt. Dies ist nützlich, um zu überprüfen, ob Conda auf dem System verfügbar ist und welche Version verwendet wird. Die Versionsnummer kann wichtig sein, um Kompatibilitätsprobleme zu vermeiden und zu entscheiden, ob ein Update erforderlich ist.
+
+
+### Informationen anzeigen
+
+Um detaillierte Informationen über die Conda-Installation zu erhalten, kann folgender Befehl verwendet werden:
+
+```bash
+conda info
+```
+
+Dieser Befehl liefert umfassende Informationen zur Anaconda-Software. Die Ausgabe enthält wichtige Details wie:
+
+1. Den Pfad zur Conda-Installation
+2. Die aktuelle aktive Umgebung
+3. Die Kanäle, aus denen Pakete bezogen werden
+4. Die Plattform und das Betriebssystem
+5. Die Python-Version in der Basis-Umgebung
+
+Diese Informationen sind besonders nützlich bei der Fehlersuche oder wenn spezifische Konfigurationsdetails benötigt werden.
+
+
+### Installierte Pakete anzeigen
+
+Um eine Übersicht aller installierten Pakete in der aktuellen Conda-Umgebung (in unserem Fall ist dies die `base`-Umgebung) zu erhalten, kann folgender Befehl verwendet werden:
+
+```bash
+conda list
+```
+
+Dieser Befehl zeigt Informationen zu allen installierten Paketen in der aktiven Conda-Umgebung an. Die Ausgabe enthält typischerweise:
+
+1. Den Namen jedes Pakets
+2. Die installierte Version
+3. Den Build-String (enthält zusätzliche Details zur spezifischen Version eines Pakets)
+4. Den Kanal, aus dem das Paket installiert wurde (Ein Kanal ist eine Quelle, aus der Pakete bezogen werden können)
+
+Diese Informationen sind besonders wertvoll, um:
+- Zu überprüfen, ob bestimmte Pakete installiert sind
+- Die Versionen der installierten Pakete zu kontrollieren
+
+Es ist zu beachten, dass die Ausgabe die Pakete in der aktuell aktiven Umgebung anzeigt. Wenn wir uns also in der `base`-Umgebung befinden, werden die dort installierten Pakete aufgelistet. Um Pakete in anderen Umgebungen anzuzeigen, muss zuerst in diese Umgebung gewechselt werden. Dieses Thema behandeln wir in Kapitel [](../python/python-umgebung.qmd).
+
+
+### conda aktualisieren
 
 Es ist ratsam, nach der Installation alle Standardpakete zu aktualisieren:
 
-   ```bash
-   conda update --all
-   ```
+```bash
+conda update --all
+```
 
-Wir folgen den Anweisungen, um die Aktualisierung abzuschließen.
+Wir folgen den Anweisungen, um die Aktualisierung abzuschließen (d.h. `y` für "yes" eingeben und Eingabetaste drücken).
 
+
+## Nächste Schritte
 
 Mit der erfolgreichen Installation von Anaconda haben wir nun Zugriff auf Jupyter Notebook, eine webbasierte Umgebung zum Schreiben und Ausführen von Python-Code. Diese Umgebung wird uns in unseren Data Science-Projekten begleiten und bietet mehr Möglichkeiten als die einfache IDLE-Umgebung.
 
