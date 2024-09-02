@@ -2,9 +2,11 @@
 
 Die Anaconda Distribution ist ein umfangreiches Softwarepaket, das Python und eine Vielzahl wichtiger Data Science-Tools beinhaltet. Sie stellt eine zentrale Plattform für die Arbeit mit Daten dar und erleichtert den Einstieg in die Welt der Data Science erheblich.
 
+Anaconda, Inc. ist das Unternehmen hinter der Anaconda Distribution. Mit der kostenfreien Bereitstellung der Anaconda Distribution hat das Unternehmen einen bedeutenden Beitrag zur Data Science-Community geleistet.
+
 Die Anaconda Distribution umfasst die folgende Hauptkomponenten:
 
-1. *Python*: Eine leistungsstarke und vielseitige Programmiersprache, die sich besonders gut für Data Science eignet.
+1. *Programmiersprachen*: Unterstützt Python und R, zwei leistungsstarke und vielseitige Programmiersprachen, die sich besonders gut für Data Science eignen.
 
 2. *Conda*: Ein leistungsfähiges Paket- und Umgebungsmanagement-System.
 
@@ -13,11 +15,13 @@ Die Anaconda Distribution umfasst die folgende Hauptkomponenten:
 4. *Anaconda Navigator*: Eine grafische Benutzeroberfläche zur einfachen Verwaltung von Umgebungen und Paketen. Außerdem bietet es Zugriff auf verschiedene Data Science-Tools (bspw. Jupyter Notebook).
 
 
+![Anaconda Navigator](../images/anaconda-navigator.png){#fig-anaconda-navigator width="70%" }
+
+
 ::: {.callout-note}
 Die Anaconda Distribution ermöglicht es, schnell und unkompliziert mit Data Science-Projekten zu beginnen, ohne sich um die Installation und Konfiguration einzelner Pakete kümmern zu müssen. Dies ist besonders wertvoll für Einsteiger/innen, da es den Einstieg in die Data Science erheblich erleichtert.
 :::
 
-Anaconda, Inc. ist das Unternehmen hinter der Anaconda Distribution. Es wurde 2012 gegründet, ursprünglich unter dem Namen Continuum Analytics. Das Unternehmen hat sich zum Ziel gesetzt, die Arbeit mit Daten zu demokratisieren und Data Science für ein breites Spektrum an Personen zugänglich zu machen. Mit der Entwicklung der Anaconda Distribution hat das Unternehmen einen bedeutenden Beitrag zur Data Science-Community geleistet.
 
 
 ## Anaconda in Windows installieren
