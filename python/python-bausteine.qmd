@@ -94,9 +94,9 @@ In Python gibt es verschiedene Möglichkeiten, Module zu importieren und deren F
 ```{python}
 # Import des gesamten Moduls
 import math
-
 # Verwendung einer Funktion aus dem Modul
 result = math.sqrt(2)
+# Ausgabe der Variable
 print(result) 
 ```
 
@@ -106,18 +106,21 @@ In diesem Beispiel wird das gesamte `math`-Modul importiert. Um auf Funktionen d
 2. Selektiver Import spezifischer Elemente
 
 ```{python}
-# Selektiver Import einer bestimmten Konstante
-from math import pi
-print(pi)  
+# Selektive Importmethode
+from math import sqrt
+# Verwendung der Funktion 
+result = sqrt(2)
+# Ausgabe der Variable
+print(result)  
 ```
 
-Diese Methode importiert nur das spezifische Element `pi` aus dem `math`-Modul. Der Vorteil hierbei ist, dass `pi` direkt ohne Voranstellung des Modulnamens verwendet werden kann. Dies kann den Code lesbarer machen, besonders wenn das importierte Element häufig verwendet wird.
+Diese Methode importiert nur die spezische Methode `sqrt` aus dem `math`-Modul. Der Vorteil hierbei ist, dass `sqrt` direkt ohne Voranstellung des Modulnamens verwendet werden kann. Dies kann den Code lesbarer machen, besonders wenn das importierte Element häufig verwendet wird.
 
 ::: {.callout-note}
 ## Unterschiede zwischen den Importmethoden
 - Bei `import math` wird das gesamte Modul importiert. Alle Funktionen und Konstanten sind verfügbar, müssen aber mit `math.` aufgerufen werden.
 
-- Bei `from math import pi` wird nur die Konstante `pi` importiert. Sie kann direkt verwendet werden, aber andere Elemente des `math`-Moduls sind nicht verfügbar, es sei denn, sie werden ebenfalls explizit importiert.
+- Bei `from math import sqrt` wird nur die Methode `sqrt` importiert. Sie kann direkt verwendet werden, aber andere Elemente des `math`-Moduls sind nicht verfügbar, es sei denn, sie werden ebenfalls explizit importiert.
 :::
 
 Die Wahl der Importmethode hängt von verschiedenen Faktoren ab:
