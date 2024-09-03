@@ -162,12 +162,27 @@ Wenn ein Modul einem Rezeptbuch ähnelt, ist ein Paket vergleichbar mit einer Sa
 
 ### Verwendung von Paketen
 
-Für Data Science sind einige grundlegende Pakete:
+Für Data Science sind einige grundlegende Pakete, einschließlich ihrer Importanweisungen mit den gängigen Bezeichungen (Aliase): 
 
-- `numpy`: Paket für numerische Berechnungen und Arrayoperationen.
-- `pandas`: Datenmanipulation und -analyse mit DataFrames und Series.
-- `matplotlib`, `seaborn` und `altair`: Verschiedene Optionen für Datenvisualisierung.
-- `scikit-learn`: Implementiert eine breite Palette von Machine-Learning-Algorithmen.
+| Paket | Funktion | Import |
+|-------|----------|--------|
+| numpy | Numerische Berechnungen und Arrayoperationen | `import numpy as np` |
+| pandas | Datenmanipulation und -analyse | `import pandas as pd` |
+| matplotlib | Datenvisualisierung | `import matplotlib.pyplot as plt` |
+| seaborn | Datenvisualisierung | `import seaborn as sns` |
+| altair | Datenvisualisierung | `import altair as alt` |
+| scikit-learn | Machine-Learning-Algorithmen | `from sklearn import ...` |
+
+
+Ein **Alias** ist ein alternativer Name, der beim Importieren eines Moduls verwendet wird. Diese Aliase sind Konventionen in der Data-Science-Community. Sie ermöglichen es, die Pakete mit kürzeren Namen zu referenzieren, was den Code lesbarer und einfacher zu schreiben macht. Zum Beispiel können wir nach dem Import von `import numpy as np` den Code  `np.array()` statt `numpy.array()` schreiben.
+
+:::{.callout-note appearance="simple" collapse="true" title="Hinweis zu scikit-learn"}
+Bei scikit-learn (sklearn) steht `from sklearn import ...`, weil:
+
+1. Scikit-learn ist ein umfangreiches Paket mit vielen Untermodulen.
+2. Üblicherweise importiert man nur die spezifischen Funktionen, die man benötigt.
+3. Die genaue Importanweisung hängt vom jeweiligen Anwendungsfall ab.
+:::
 
 Beispiel zur Verwendung eines Pakets:
 
