@@ -351,8 +351,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-  <li><a href="#module-in-python" id="toc-module-in-python" class="nav-link active" data-scroll-target="#module-in-python"><span class="header-section-number">6.1</span> Module in Python</a></li>
-  <li><a href="#pakete-in-python" id="toc-pakete-in-python" class="nav-link" data-scroll-target="#pakete-in-python"><span class="header-section-number">6.2</span> Pakete in Python</a></li>
+  <li><a href="#module-in-python" id="toc-module-in-python" class="nav-link active" data-scroll-target="#module-in-python"><span class="header-section-number">6.1</span> Module in Python</a>
+  <ul class="collapse">
+  <li><a href="#variablen" id="toc-variablen" class="nav-link" data-scroll-target="#variablen"><span class="header-section-number">6.1.1</span> Variablen</a></li>
+  <li><a href="#funktionen" id="toc-funktionen" class="nav-link" data-scroll-target="#funktionen"><span class="header-section-number">6.1.2</span> Funktionen</a></li>
+  <li><a href="#import-von-modulen" id="toc-import-von-modulen" class="nav-link" data-scroll-target="#import-von-modulen"><span class="header-section-number">6.1.3</span> Import von Modulen</a></li>
+  </ul></li>
+  <li><a href="#pakete-in-python" id="toc-pakete-in-python" class="nav-link" data-scroll-target="#pakete-in-python"><span class="header-section-number">6.2</span> Pakete in Python</a>
+  <ul class="collapse">
+  <li><a href="#verwendung-von-paketen" id="toc-verwendung-von-paketen" class="nav-link" data-scroll-target="#verwendung-von-paketen"><span class="header-section-number">6.2.1</span> Verwendung von Paketen</a></li>
+  </ul></li>
   <li><a href="#bibliotheken-in-python" id="toc-bibliotheken-in-python" class="nav-link" data-scroll-target="#bibliotheken-in-python"><span class="header-section-number">6.3</span> Bibliotheken in Python</a></li>
   </ul>
 </nav>
@@ -381,13 +389,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <p>Im Python-Entwicklungsprozess ist es hilfreich, die Rollen von Modulen, Paketen und Bibliotheken zu verstehen, um Projekte effektiv zu organisieren und zu verwalten.</p>
 <p>Die Verwendung dieser Bausteine hilft nicht nur dabei, den Code sauber und verständlich zu halten, sondern verbessert auch die Zusammenarbeit in Teams. Sie ermöglicht es, Arbeit einfach zu teilen und zu integrieren.</p>
-<p>Dieses Kapitel führt durch diese Konzepte und verwendet Beispiele und Analogien, um deren Zwecke und Anwendungen zu verdeutlichen.</p>
 <section id="module-in-python" class="level2" data-number="6.1">
 <h2 data-number="6.1" class="anchored" data-anchor-id="module-in-python"><span class="header-section-number">6.1</span> Module in Python</h2>
-<p>Module sind einzelne Python-Dateien, die Definitionen und Implementierungen von <em>Variablen</em> und <em>Funktionen</em> enthalten, die in verschiedenen Programmen wiederverwendet werden können:</p>
+<p>Module sind einzelne Python-Dateien, die Definitionen und Implementierungen von <em>Variablen</em> und <em>Funktionen</em> enthalten, die in verschiedenen Programmen wiederverwendet werden können.</p>
+<p>Einige wichtige Standardmodule sind:</p>
 <ul>
-<li><strong>Variablen</strong>: Benannte Speicherorte, die Daten im Speicher halten. Beispiel: <code>x = 5</code> speichert die Ganzzahl 5 in einer Variable namens <code>x</code>.</li>
-<li><strong>Funktionen</strong>: Wiederverwendbare Codeabschnitte, die eine bestimmte Aktion ausführen.</li>
+<li><code>os</code>: Funktionen zur Interaktion mit dem Betriebssystem.</li>
+<li><code>datetime</code>: Behandelt Datums- und Zeitoperationen.</li>
+<li><code>math</code>: Enthält mathematische Funktionen.</li>
+<li><code>json</code>: Verarbeitet JSON-Daten.</li>
 </ul>
 <p>Module helfen, den Code modular zu gestalten, was seine Wartbarkeit und Lesbarkeit verbessert.</p>
 <div class="callout callout-style-simple callout-tip callout-titled" title="Küchen-Analogie für Module">
@@ -413,25 +423,154 @@ Küchen-Analogie für Module
 </div>
 </div>
 </div>
-<p>Einige bedeutende Standardmodule und deren häufige Anwendungen:</p>
+<section id="variablen" class="level3" data-number="6.1.1">
+<h3 data-number="6.1.1" class="anchored" data-anchor-id="variablen"><span class="header-section-number">6.1.1</span> Variablen</h3>
+<p>Variablen sind Benannte Speicherorte, die Daten im Speicher halten. Beispielsweise können wir mit dem Befehl <code>x = 5</code> der Variable <code>x</code> den Wert 5 zuweisen:</p>
+<div id="44d0a03a" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">5</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Wenn wir die Variable mit dem Befehl <code>print()</code> ausgeben, können wir den zugewiesenen Wert sehen:</p>
+<div id="251c04e4" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>5</code></pre>
+</div>
+</div>
+</section>
+<section id="funktionen" class="level3" data-number="6.1.2">
+<h3 data-number="6.1.2" class="anchored" data-anchor-id="funktionen"><span class="header-section-number">6.1.2</span> Funktionen</h3>
+<p>Funktionen sind wiederverwendbare Codeabschnitte, die eine bestimmte Aktion ausführen. Wir können bspw. eine Funktion zur Berechnung des Quadrats einer Zahl erstellen. Der <em>Parameter</em> <code>zahl</code> ist einfach ein Platzhalter, der eine Zahl repräsentiert, deren Quadrat berechnet werden soll:</p>
+<div id="4d6dafc9" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> quadrat(zahl):</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Berechnen und zurückgeben des Quadrats einer Zahl."""</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> zahl <span class="op">*</span> zahl</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="callout callout-style-simple callout-note callout-titled" title="Erklärung der Funktion">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Erklärung der Funktion
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><code>def quadrat(zahl):</code>
 <ul>
-<li><code>os</code>: Funktionen zur Interaktion mit dem Betriebssystem.</li>
-<li><code>datetime</code>: Behandelt Datums- und Zeitoperationen.</li>
-<li><code>math</code>: Enthält mathematische Funktionen.</li>
-<li><code>random</code>: Generiert Zufallszahlen und führt zufällige Auswahlen durch.</li>
-<li><code>json</code>: Verarbeitet JSON-Daten.</li>
+<li><code>def</code> ist ein Schlüsselwort in Python, das verwendet wird, um eine Funktion zu definieren.</li>
+<li><code>quadrat</code> ist der Name der Funktion.</li>
+<li><code>(zahl)</code> sind die Klammern, die den Parameter der Funktion enthalten. In diesem Fall gibt es einen Parameter namens <code>zahl</code>. Dies ist lediglich ein Platzhalter und teilt der Funktion mit, dass ein Wert eingegeben muss.</li>
+</ul></li>
+<li><code>"""Berechnen und zurückgeben des Quadrats einer Zahl."""</code>
+<ul>
+<li>Dies ist ein Docstring (Dokumentations-String). Er beschreibt, was die Funktion tut.</li>
+<li>Docstrings werden in dreifachen Anführungszeichen eingeschlossen und dienen zur Dokumentation der Funktion.</li>
+</ul></li>
+<li><code>return zahl * zahl</code>
+<ul>
+<li><code>return</code> ist ein Schlüsselwort, das angibt, was die Funktion zurückgeben soll.</li>
+<li><code>zahl * zahl</code> berechnet das Quadrat der Eingabezahl, indem die Zahl mit sich selbst multipliziert wird.</li>
+<li>Das Ergebnis dieser Berechnung wird von der Funktion zurückgegeben.</li>
+</ul></li>
+</ol>
+</div>
+</div>
+</div>
+<p>Damit die Funktion definiert werden kann, muss die Einrückung korrekt vorgenommen werden. Der Standard in Python ist die Verwendung von 4 Leerzeichen pro Einrückungsebene. Funktionen und andere Steuerstrukturen verwenden Einrückungen, um anzugeben, welcher Code innerhalb des Blocks gehört.</p>
+<div class="callout callout-style-simple callout-important callout-titled" title="Einrückung in Python">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Einrückung in Python
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Einrückung ist in Python nicht nur eine Stilfrage; sie hat eine syntaktische Bedeutung. Python verwendet Einrückungen, um Codeblöcke zu definieren. Die korrekte Verwendung von Einrückungen ist entscheidend, damit der Code wie erwartet ausgeführt wird.</p>
+</div>
+</div>
+<p>Die Funktion kann nun mit dem definierten <em>Funktionsnamen</em> (hier <code>quadrat</code>) in unserem Code verwendet werden:</p>
+<div id="d2a091ef" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>quadrat(<span class="dv">2</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="4">
+<pre><code>4</code></pre>
+</div>
+</div>
+</section>
+<section id="import-von-modulen" class="level3" data-number="6.1.3">
+<h3 data-number="6.1.3" class="anchored" data-anchor-id="import-von-modulen"><span class="header-section-number">6.1.3</span> Import von Modulen</h3>
+<p>In Python gibt es verschiedene Möglichkeiten, Module zu importieren und deren Funktionalitäten und Konstanten zu nutzen. Hier zwei gängige Methoden:</p>
+<ol type="1">
+<li>Import des gesamten Moduls</li>
+</ol>
+<div id="5817216a" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import des gesamten Moduls</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Verwendung einer Funktion aus dem Modul</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> math.sqrt(<span class="dv">2</span>)</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Ausgabe der Variable</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result) </span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>1.4142135623730951</code></pre>
+</div>
+</div>
+<p>In diesem Beispiel wird das gesamte <code>math</code>-Modul importiert. Um auf Funktionen des Moduls zuzugreifen, wird die Punktnotation verwendet: <code>math.funktionsname()</code>. Hier wird die Quadratwurzelfunktion <code>sqrt()</code> des <code>math</code>-Moduls aufgerufen, um die Quadratwurzel von 2 zu berechnen.</p>
+<ol start="2" type="1">
+<li>Selektiver Import spezifischer Elemente</li>
+</ol>
+<div id="c91794d3" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Selektive Importmethode</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> math <span class="im">import</span> sqrt</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Verwendung der Funktion </span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> sqrt(<span class="dv">2</span>)</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Ausgabe der Variable</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result)  </span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>1.4142135623730951</code></pre>
+</div>
+</div>
+<p>Diese Methode importiert nur die spezische Methode <code>sqrt</code> aus dem <code>math</code>-Modul. Der Vorteil hierbei ist, dass <code>sqrt</code> direkt ohne Voranstellung des Modulnamens verwendet werden kann. Dies kann den Code lesbarer machen, besonders wenn das importierte Element häufig verwendet wird.</p>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Unterschiede zwischen den Importmethoden
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>Bei <code>import math</code> wird das gesamte Modul importiert. Alle Funktionen und Konstanten sind verfügbar, müssen aber mit <code>math.</code> aufgerufen werden.</p></li>
+<li><p>Bei <code>from math import sqrt</code> wird nur die Methode <code>sqrt</code> importiert. Sie kann direkt verwendet werden, aber andere Elemente des <code>math</code>-Moduls sind nicht verfügbar, es sei denn, sie werden ebenfalls explizit importiert.</p></li>
 </ul>
-<p>Ein Beispiel zur Verwendung eines Moduls durch Import in ein Python-Skript:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import des Moduls</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Verwendung der sqrt-Funktion aus dem math-Modul</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> math.sqrt(<span class="dv">16</span>)</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result)  <span class="co"># Ausgabe: 4.0</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Alternative Importmethode</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> math <span class="im">import</span> pi</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(pi)  <span class="co"># Ausgabe: 3.141592653589793</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<p>Die Wahl der Importmethode hängt von verschiedenen Faktoren ab:</p>
+<ol type="1">
+<li><p>Häufigkeit der Verwendung: Wenn nur wenige Funktionen eines Moduls benötigt werden, kann der selektive Import sinnvoll sein.</p></li>
+<li><p>Namenskonflikte: Der Import des gesamten Moduls mit <code>import math</code> vermeidet potenzielle Namenskonflikte mit anderen Variablen oder Funktionen im Code.</p></li>
+<li><p>Codeklarheit: In manchen Fällen kann die explizite Verwendung des Modulnamens (z.B. <code>math.sqrt()</code>) die Herkunft einer Funktion deutlicher machen.</p></li>
+</ol>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Bewährte Praxis
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Es ist generell empfehlenswert, Importe am Anfang einer Python-Datei zu platzieren. Dies verbessert die Übersichtlichkeit und macht auf einen Blick ersichtlich, welche externen Module und Funktionen im Code verwendet werden.</p>
+</div>
+</div>
+<p>Durch die Verwendung von Modulen können komplexe Berechnungen und Operationen mit wenigen Zeilen Code durchgeführt werden, was die Effizienz und Lesbarkeit des Programms erheblich verbessert.</p>
+</section>
 </section>
 <section id="pakete-in-python" class="level2" data-number="6.2">
 <h2 data-number="6.2" class="anchored" data-anchor-id="pakete-in-python"><span class="header-section-number">6.2</span> Pakete in Python</h2>
@@ -445,7 +584,7 @@ Küchen-Analogie für Module
         __init__.py
         modul3.py</code></pre>
 <div class="callout callout-style-simple callout-tip callout-titled" title="Küchen-Analogie für Pakete">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -454,39 +593,125 @@ Küchen-Analogie für Pakete
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Wenn ein Modul einem Rezeptbuch ähnelt, ist ein Paket vergleichbar mit einer Sammlung von Rezeptbüchern. Jedes Buch (Modul) konzentriert sich auf einen bestimmten Bereich, aber zusammen bieten sie eine breite Palette kulinarischer Optionen.</p>
 </div>
 </div>
 </div>
-<p>Für Data Science sind einige grundlegende Pakete:</p>
-<ul>
-<li><code>numpy</code>: Paket für numerische Berechnungen und Arrayoperationen.</li>
-<li><code>pandas</code>: Datenmanipulation und -analyse mit DataFrames und Series.</li>
-<li><code>matplotlib</code>, <code>seaborn</code> und <code>altair</code>: Verschiedene Optionen für Datenvisualisierung.</li>
-<li><code>scikit-learn</code>: Implementiert eine breite Palette von Machine-Learning-Algorithmen.</li>
-</ul>
+<section id="verwendung-von-paketen" class="level3" data-number="6.2.1">
+<h3 data-number="6.2.1" class="anchored" data-anchor-id="verwendung-von-paketen"><span class="header-section-number">6.2.1</span> Verwendung von Paketen</h3>
+<p>Für Data Science sind einige grundlegende Pakete, einschließlich ihrer Importanweisungen mit den gängigen Bezeichungen (Aliase):</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 28%">
+<col style="width: 40%">
+<col style="width: 32%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Paket</th>
+<th>Funktion</th>
+<th>Import</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>numpy</td>
+<td>Numerische Berechnungen und Arrayoperationen</td>
+<td><code>import numpy as np</code></td>
+</tr>
+<tr class="even">
+<td>pandas</td>
+<td>Datenmanipulation und -analyse</td>
+<td><code>import pandas as pd</code></td>
+</tr>
+<tr class="odd">
+<td>matplotlib</td>
+<td>Datenvisualisierung</td>
+<td><code>import matplotlib.pyplot as plt</code></td>
+</tr>
+<tr class="even">
+<td>seaborn</td>
+<td>Datenvisualisierung</td>
+<td><code>import seaborn as sns</code></td>
+</tr>
+<tr class="odd">
+<td>altair</td>
+<td>Datenvisualisierung</td>
+<td><code>import altair as alt</code></td>
+</tr>
+<tr class="even">
+<td>scikit-learn</td>
+<td>Machine-Learning-Algorithmen</td>
+<td><code>from sklearn import ...</code></td>
+</tr>
+</tbody>
+</table>
+<p>Ein <strong>Alias</strong> ist ein alternativer Name, der beim Importieren eines Moduls verwendet wird. Diese Aliase sind Konventionen in der Data-Science-Community. Sie ermöglichen es, die Pakete mit kürzeren Namen zu referenzieren, was den Code lesbarer und einfacher zu schreiben macht. Zum Beispiel können wir nach dem Import von <code>import numpy as np</code> den Code <code>np.array()</code> statt <code>numpy.array()</code> schreiben.</p>
+<div class="callout callout-style-simple callout-note callout-titled" title="Hinweis zu scikit-learn">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hinweis zu scikit-learn
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Bei scikit-learn (sklearn) steht <code>from sklearn import ...</code>, weil:</p>
+<ol type="1">
+<li>Scikit-learn ist ein umfangreiches Paket mit vielen Untermodulen.</li>
+<li>Üblicherweise importiert man nur die spezifischen Funktionen, die man benötigt.</li>
+<li>Die genaue Importanweisung hängt vom jeweiligen Anwendungsfall ab.</li>
+</ol>
+</div>
+</div>
+</div>
 <p>Beispiel zur Verwendung eines Pakets:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import des gesamten Pakets</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Erstellung eines Arrays</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>arr <span class="op">=</span> np.array([<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>])</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(np.mean(arr))  <span class="co"># Ausgabe: 3.0</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Import spezifischer Funktionen aus einem Paket</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pandas <span class="im">import</span> DataFrame</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Erstellung eines DataFrames</span></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> DataFrame({<span class="st">'A'</span>: [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>], <span class="st">'B'</span>: [<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>]})</span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="89aa48dd" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import des gesamten Pakets</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Erstellung eines Arrays</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>daten <span class="op">=</span> np.array([<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>])</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Berechnung des Mittelwerts</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>daten_mittelwert <span class="op">=</span> np.mean(daten)</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Ausgabe des Mittelwerts</span></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(daten_mittelwert)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>3.0</code></pre>
+</div>
+</div>
+<div class="callout callout-style-simple callout-tip callout-titled" title="Erklärung des Codes">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Erklärung des Codes
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p><code>import numpy as np</code>: Diese Zeile importiert das gesamte NumPy-Paket und weist ihm das Alias ‘np’ zu. NumPy ist eine grundlegende Bibliothek für numerische Berechnungen in Python.</p></li>
+<li><p><code>daten = np.array([1, 2, 3, 4, 5])</code>: Hier wird ein NumPy-Array erstellt und als <code>daten</code> gespeichert. Die Funktion <code>np.array()</code> konvertiert die übergebene Python-Liste <code>[1, 2, 3, 4, 5]</code> in ein NumPy-Array. NumPy-Arrays sind effizienter für numerische Operationen als normale Python-Listen.</p></li>
+<li><p><code>daten_mittelwert = np.mean(daten):    Diese Zeile berechnet den Mittelwert des zuvor erstellten Arrays mithilfe der NumPy-Funktion</code>mean()<code>. Der Mittelwert wird dann der Variablen</code>daten_mittelwert`zugewiesen.</p></li>
+<li><p><code>print(daten_mittelwert)</code>: Diese Zeile gibt den Wert der Variable <code>daten_mittelwert</code> aus.</p></li>
+</ol>
+</div>
+</div>
+</div>
+</section>
 </section>
 <section id="bibliotheken-in-python" class="level2" data-number="6.3">
 <h2 data-number="6.3" class="anchored" data-anchor-id="bibliotheken-in-python"><span class="header-section-number">6.3</span> Bibliotheken in Python</h2>
 <p>Eine Bibliothek ist eine Sammlung von Paketen und Modulen, die zusammen eine umfangreiche Funktionalität bereitstellen. Bibliotheken bieten oft Lösungen für spezifische Problemfelder und können viele Module und Pakete umfassen.</p>
 <div class="callout callout-style-simple callout-tip callout-titled" title="Küchen-Analogie für Bibliotheken">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -495,7 +720,7 @@ Küchen-Analogie für Bibliotheken
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>In der Küchenanalogie wäre eine Bibliothek eine komplette Küche, ausgestattet mit einer Vielzahl von Werkzeugen und Zutaten für verschiedene Kochstile und -techniken. Es ist eine umfassende Sammlung, die ermöglicht, nahezu jedes Gericht zu kochen, das man sich vorstellen kann.</p>
 </div>
@@ -505,19 +730,16 @@ Küchen-Analogie für Bibliotheken
 <ul>
 <li><code>SciPy</code>: Bietet wissenschaftliche und technische Berechnungen, baut auf <code>numpy</code> auf.</li>
 <li><code>TensorFlow</code> und <code>PyTorch</code>: Bibliotheken für maschinelles Lernen und neuronale Netze.</li>
-<li><code>Django</code> und <code>Flask</code>: Web-Frameworks für die Entwicklung von Webanwendungen.</li>
-<li><code>requests</code>: Vereinfacht HTTP-Anfragen.</li>
-<li><code>Beautiful Soup</code>: Für das Parsen von HTML und XML-Dokumenten.</li>
 </ul>
 <p>Beispiel zur Verwendung einer Bibliothek:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import der benötigten Funktion aus SciPy</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy <span class="im">import</span> special</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Berechnung der Fakultät von 5</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>ergebnis <span class="op">=</span> special.factorial(<span class="dv">5</span>)</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Ausgabe des Ergebnisses</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Die Fakultät von 5 ist: </span><span class="sc">{</span>ergebnis<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import der benötigten Funktion aus SciPy</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy <span class="im">import</span> special</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Berechnung der Fakultät von 5</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>ergebnis <span class="op">=</span> special.factorial(<span class="dv">5</span>)</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Ausgabe des Ergebnisses</span></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Die Fakultät von 5 ist: </span><span class="sc">{</span>ergebnis<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Um die nachfolgenden Anleitungen zu vereinfachen, werden wir nicht immer streng zwischen Bibliotheken und Paketen unterscheiden, sondern hauptsächlich den Begriff Python-Pakete verwenden, wenn wir Python-Software importieren (auch wenn es sich dabei um eine Bibliothek handelt).</p>
 
 
