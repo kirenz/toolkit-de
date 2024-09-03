@@ -158,6 +158,8 @@ mein_paket/
 Wenn ein Modul einem Rezeptbuch ähnelt, ist ein Paket vergleichbar mit einer Sammlung von Rezeptbüchern. Jedes Buch (Modul) konzentriert sich auf einen bestimmten Bereich, aber zusammen bieten sie eine breite Palette kulinarischer Optionen.
 :::
 
+### Verwendung von Paketen
+
 Für Data Science sind einige grundlegende Pakete:
 
 - `numpy`: Paket für numerische Berechnungen und Arrayoperationen.
@@ -165,29 +167,37 @@ Für Data Science sind einige grundlegende Pakete:
 - `matplotlib`, `seaborn` und `altair`: Verschiedene Optionen für Datenvisualisierung.
 - `scikit-learn`: Implementiert eine breite Palette von Machine-Learning-Algorithmen.
 
-
 Beispiel zur Verwendung eines Pakets:
 
-```python
+```{python}
 # Import des gesamten Pakets
 import numpy as np
-
 # Erstellung eines Arrays
-arr = np.array([1, 2, 3, 4, 5])
-print(np.mean(arr))  # Ausgabe: 3.0
-
-# Import spezifischer Funktionen aus einem Paket
-from pandas import DataFrame
-
-# Erstellung eines DataFrames
-df = DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})
-print(df)
+daten = np.array([1, 2, 3, 4, 5])
+# Berechnung des Mittelwerts
+daten_mittelwert = np.mean(daten)
+# Ausgabe des Mittelwerts
+print(daten_mittelwert)
 ```
+
+::: {.callout-tip title="Erklärung des Codes" collapse="true" }
+1. `import numpy as np`:
+   Diese Zeile importiert das gesamte NumPy-Paket und weist ihm das Alias 'np' zu. NumPy ist eine grundlegende Bibliothek für numerische Berechnungen in Python.
+
+2. `daten = np.array([1, 2, 3, 4, 5])`:
+   Hier wird ein NumPy-Array erstellt und als `daten` gespeichert. Die Funktion `np.array()` konvertiert die übergebene Python-Liste `[1, 2, 3, 4, 5]` in ein NumPy-Array. NumPy-Arrays sind effizienter für numerische Operationen als normale Python-Listen.
+
+3. `daten_mittelwert = np.mean(daten):
+   Diese Zeile berechnet den Mittelwert des zuvor erstellten Arrays mithilfe der NumPy-Funktion `mean()`. Der Mittelwert wird dann der Variablen `daten_mittelwert`zugewiesen. 
+
+4. `print(daten_mittelwert)`:
+   Diese Zeile gibt den Wert der Variable `daten_mittelwert` aus.
+:::
+
 
 ## Bibliotheken in Python
 
 Eine Bibliothek ist eine Sammlung von Paketen und Modulen, die zusammen eine umfangreiche Funktionalität bereitstellen. Bibliotheken bieten oft Lösungen für spezifische Problemfelder und können viele Module und Pakete umfassen.
-
 
 ::: {.callout-tip title="Küchen-Analogie für Bibliotheken" collapse="true" }
 In der Küchenanalogie wäre eine Bibliothek eine komplette Küche, ausgestattet mit einer Vielzahl von Werkzeugen und Zutaten für verschiedene Kochstile und -techniken. Es ist eine umfassende Sammlung, die ermöglicht, nahezu jedes Gericht zu kochen, das man sich vorstellen kann.
@@ -198,9 +208,6 @@ Einige wichtige Python-Bibliotheken umfassen:
 
 - `SciPy`: Bietet wissenschaftliche und technische Berechnungen, baut auf `numpy` auf.
 - `TensorFlow` und `PyTorch`: Bibliotheken für maschinelles Lernen und neuronale Netze.
-- `Django` und `Flask`: Web-Frameworks für die Entwicklung von Webanwendungen.
-- `requests`: Vereinfacht HTTP-Anfragen.
-- `Beautiful Soup`: Für das Parsen von HTML und XML-Dokumenten.
 
 
 Beispiel zur Verwendung einer Bibliothek:
