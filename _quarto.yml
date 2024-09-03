@@ -32,8 +32,8 @@ book:
 
     - part: python/index.qmd
       chapters:
-        - text: "Programmierung"
-          href: python/python-programmierung.qmd
+        - text: "Bausteine"
+          href: python/python-bausteine.qmd
         - text: "Umgebungen"
           href: python/python-umgebung.qmd
         - python/python-arbeitsbereich.qmd
