@@ -9,9 +9,10 @@ Jupyter Notebook ist mehr als nur ein einfacher Code-Editor. Es ist eine webbasi
 
 ![Jupyter Notebook](../images/jupyter-notebook.png){#fig-jupyter-notebook width="50%" }
 
+
 Im Vergleich zum eher einfachen Python IDLE bietet Jupyter Notebook eine Reihe von Vorteilen, die unsere Arbeit erheblich erleichtern:
 
-1. **Interaktive Code-Ausführung:** In Jupyter Notebook arbeiten wir mit sogenannten "Zellen". Jede Zelle kann Python-Code enthalten, den wir unabhängig voneinander ausführen können. Dies ermöglicht uns, unseren Code schrittweise zu entwickeln und zu testen, was besonders bei komplexen Datenanalysen von Vorteil ist. 
+1. **Selektive Code-Ausführung:** In Jupyter Notebook arbeiten wir mit sogenannten "Zellen". Jede Zelle kann Python-Code enthalten, den wir unabhängig voneinander ausführen können. Dies ermöglicht uns, unseren Code schrittweise zu entwickeln und zu testen, was besonders bei komplexen Datenanalysen von Vorteil ist. 
 
    ![Jupyter Notebook-Zelle](../images/jupyter-notebook-mathe-1.png){#fig-jupyter-notebook-mathe-1 width="100%" }
 
@@ -21,25 +22,27 @@ Im Vergleich zum eher einfachen Python IDLE bietet Jupyter Notebook eine Reihe v
    ![Jupyter Notebook-Zelle und Ergbnisausgabe](../images/jupyter-notebook-mathe.png){#fig-jupyter-notebook-mathe width="100%" }
 
 
-3. **Nahtlose Integration von Code und Dokumentation:** Mit Jupyter Notebook können wir durch die Umstellung einer Zelle in den "Markdown"-Modus (mehr dazu in dem Kapitel über [Markdown](/markdown.qmd))  problemlos zwischen Code und Erklärungen wechseln. Dies hilft uns, unsere Gedankengänge und Analyseansätze klar zu dokumentieren.
+3. **Nahtlose Integration von Code und Text:** Mit Jupyter Notebook können wir durch die Umstellung einer Zelle in den "Markdown"-Modus (mehr dazu in dem Kapitel über [Markdown](/markdown.qmd)) problemlos zwischen Code und Erklärungen wechseln. Dies hilft uns, unsere Gedankengänge und Analyseansätze klar zu dokumentieren.
 
    ![Jupyter Notebook-Zelle mit Text](../images/jupyter-notebook-text.png){#fig-jupyter-notebook-text width="100%" }
 
 4. **Sofortige Visualisierung von Ergebnissen:** Eines der besonderen Merkmale von Jupyter Notebook ist die Möglichkeit, Diagramme, Grafiken und andere Visualisierungen direkt im Notebook anzuzeigen. Dies gibt uns unmittelbares visuelles Feedback zu unseren Analysen und ist besonders wertvoll für explorative Datenanalysen.
 
-   ![Jupyter Notebook-Zelle mit Ergbnisausgabe](../images/jupyter-notebook-altair.png){#fig-jupyter-notebook-altair width="100%" }
+   ![Ausgabe einer Visualisierung](../images/jupyter-notebook-altair.png){#fig-jupyter-notebook-altair width="100%" }
 
 
 5. **Flexibilität:** Neben Python unterstützt Jupyter Notebook auch viele andere Programmiersprachen. Dies gibt uns die Flexibilität, bei Bedarf zwischen verschiedenen Sprachen zu wechseln.
 
-   ![Einige unterstützte Programmiersprachen](../images/jupyter-notebook-kernels.png){#fig-jupyter-notebook-mathe width="100%" }
+   ![Einige unterstützte Programmiersprachen](../images/jupyter-notebook-kernels.png){#fig-jupyter-notebook-kernels width="100%" }
 
 
 Im nächsten Abschnitt erstellen wir einen Jupyter Notebook.
 
 ## Jupyter Notebook erstellen
 
-Hier der Prozess zur Erstellung eines Jupyter Notebooks:
+Hier der Prozess zur Erstellung eines Jupyter Notebooks.
+
+### Notebook starten
 
 1. **Starten des Anaconda Navigators:**
    - Für Windows-Nutzer: Startmenü öffnen und nach "Anaconda Navigator" suchen. Ein Klick darauf startet die Anwendung.
@@ -58,12 +61,11 @@ Hier der Prozess zur Erstellung eines Jupyter Notebooks:
    In der Web-Oberfläche von Jupyter navigieren wir zum `code`-Verzeichnis. Dieses Verzeichnis ist Teil unserer [eingerichteten Ordnerstruktur](projektumgebung.qmd), die uns hilft, unsere Projekte übersichtlich zu organisieren. Zunächst den Ordner "toolkit-lab" öffnen und dann den Unterornder "code".
 
 
-   ![Ordner code in Jupyter Notebook](../images/jupyter-toolkit-lab-code.png){#fig-jupyter-toolkit-lab-code width="100%" }
+   ![Ordner toolkit-lab/code in Jupyter Notebook](../images/jupyter-toolkit-lab-code.png){#fig-jupyter-toolkit-lab-code width="100%" }
 
 
 4. **Erstellung eines neuen Notebooks:**
-   Oben rechts klicken wir auf "New" und wählen "Notebook" aus der Drop-down-Liste. Dies erstellt ein neues, leeres Notebook.
-
+   Oben rechts klicken wir auf "New" und wählen "Notebook" aus der Drop-down-Liste. 
 
    ![Neuer Jupyter Notebook](../images/jupyter-notebook-new-notebook.png){#fig-jupyter-notebook-new-notebook width="100%" }
 
@@ -73,8 +75,13 @@ Hier der Prozess zur Erstellung eines Jupyter Notebooks:
 6. **Unser erstes Notebook ist bereit:**
    Eine neue Notebook-Seite öffnet sich mit einer leeren Code-Zelle, bereit für unseren ersten Python-Code.
 
+   ![Jupyter Notebook-Seite](../images/jupyter-notebook-zelle.png){#fig-jupyter-notebook-zelle width="100%" }
 
-Jetzt, wo unser Notebook geöffnet ist, können wir mit dem Schreiben von Code beginnen:
+
+
+### Notebook bearbeiten
+
+Jetzt, da unser Notebook geöffnet ist, können wir mit dem Schreiben von Code beginnen:
 
 1. In die erste Zelle geben wir einen einfachen Python-Code ein, zum Beispiel:
    ```python
@@ -83,8 +90,13 @@ Jetzt, wo unser Notebook geöffnet ist, können wir mit dem Schreiben von Code b
 
 2. Um diesen Code auszuführen, drücken wir `Shift+Enter` oder klicken auf den "Run"-Button in der Toolbar. Die Ausgabe erscheint direkt unter der Zelle.
 
-3. Jupyter Notebook erstellt automatisch eine neue Zelle unter der ausgeführten Zelle. Hier können wir weiteren Code eingeben oder die Zelle in eine Markdown-Zelle umwandeln, um erklärenden Text hinzuzufügen.
+   ![Run-Button in der Toolbar](../images/jupyter-notebook-hello.png){#fig-jupyter-notebook-hello width="100%" }
 
+
+3. Jupyter Notebook erstellt automatisch eine neue Zelle unter der ausgeführten Zelle. Wir können auch selbst eine neue Zelle hinzufügen, indem wir oben in der Toolbar auf die Schaltfläche "+" klicken.
+
+
+### Notebook speichern
 
 Es ist wichtig, unsere Arbeit regelmäßig zu speichern:
 
@@ -98,11 +110,11 @@ Die Dateierweiterung `.ipynb` steht für "IPython Notebook". Diese Dateien entha
 
 Jede `.ipynb`-Datei ist im [JSON-Format](../daten/json.qmd) strukturiert und enthält eine geordnete Liste von "Zellen". Diese Struktur bietet uns mehrere Vorteile:
 
-1. **Selektive Ausführung:** Wir können einzelne Codeabschnitte ausführen, ohne das gesamte Skript neu starten zu müssen. Dies ist besonders nützlich bei zeitaufwändigen Berechnungen oder beim Testen verschiedener Ansätze.
+1. **Selektive Ausführung:** Wie bereits erwähnt können wir einzelne Codeabschnitte ausführen, ohne das gesamte Skript neu starten zu müssen. Dies ist besonders nützlich bei zeitaufwändigen Berechnungen oder beim Testen verschiedener Ansätze.
 
 2. **Nicht-lineare Arbeitsweise:** Im Gegensatz zu traditionellen Python `.py`-Skripten, die von Anfang bis Ende ausgeführt werden, können wir in einem Jupyter Notebook Zellen in beliebiger Reihenfolge ausführen. Dies unterstützt einen explorativen Ansatz in der Datenanalyse.
 
 3. **Einfache Überarbeitung:** Wir können jederzeit zu früheren Zellen zurückkehren, den Code ändern und neu ausführen, ohne den gesamten Arbeitsablauf zu stören.
 
-4. **Integrierte Dokumentation:** Durch die Kombination von Code- und Markdown-Zellen können wir unsere Analysen direkt im Notebook ausführlich dokumentieren. Dies fördert die Reproduzierbarkeit und macht es einfacher, unsere Arbeit mit anderen zu teilen oder zu einem späteren Zeitpunkt nachzuvollziehen.
+
 
