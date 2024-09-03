@@ -57,7 +57,6 @@ def quadrat(zahl):
 
 
 :::{.callout-note collapse="true" title="Erklärung der Funktion"}
-
 1. `def quadrat(zahl):`
     - `def` ist ein Schlüsselwort in Python, das verwendet wird, um eine Funktion zu definieren.
     - `quadrat` ist der Name der Funktion.
@@ -71,7 +70,7 @@ def quadrat(zahl):
     - `return` ist ein Schlüsselwort, das angibt, was die Funktion zurückgeben soll.
     - `zahl * zahl` berechnet das Quadrat der Eingabezahl, indem die Zahl mit sich selbst multipliziert wird.
     - Das Ergebnis dieser Berechnung wird von der Funktion zurückgegeben.
-    :::
+:::
 
 Damit die Funktion definiert werden kann, muss die Einrückung korrekt vorgenommen werden. Der Standard in Python ist die Verwendung von 4 Leerzeichen pro Einrückungsebene. Funktionen und andere Steuerstrukturen verwenden Einrückungen, um anzugeben, welcher Code innerhalb des Blocks gehört.
 
