@@ -1,6 +1,6 @@
 # Markdown 
 
-Markdown ist eine einfache Auszeichnungssprache, die entwickelt wurde, um leicht in HTML umgewandelt zu werden. Aufgrund ihrer Einfachheit und Vielseitigkeit wird sie häufig verwendet und eignet sich hervorragend für Dokumentationen, Berichte und die Aufzeichnung von Forschungsergebnissen.
+Markdown ist eine einfache Auszeichnungssprache (d.h. ein System zur Formatierung von Text), die entwickelt wurde, um leicht in HTML umgewandelt zu werden. Aufgrund ihrer Einfachheit und Vielseitigkeit wird sie häufig verwendet und eignet sich sehr gut für Dokumentationen, Berichte und die Aufzeichnung von Forschungsergebnissen.
 
 In der Datenwissenschaft findet Markdown breite Anwendung. Wir nutzen es nicht nur zur Dokumentation von Projekten, sondern auch zur Erstellung dynamischer Berichte. Diese Berichte verbinden nahtlos erklärenden Text mit den Ergebnissen von Datenanalysen, oft mithilfe von Werkzeugen wie Jupyter Notebooks.
 
@@ -8,13 +8,34 @@ In der Datenwissenschaft findet Markdown breite Anwendung. Wir nutzen es nicht n
 
 Um mit Markdown in Jupyter Notebook zu beginnen, folgen wir diesen Schritten:
 
-1. Wir erstellen ein neues Jupyter-Notebook, wie zuvor in  diesem Leitfaden zu [Jupyter Notebooks](jupyter-notebook.qmd).
+1. Wir erstellen ein neues Jupyter-Notebook, wie zuvor in diesem Leitfaden zu [Jupyter Notebook starten](jupyter-notebook#jupyter-notebook-erstellen.qmd).
 2. Wir benennen unser Notebook `hello-markdown.ipynb` und speichern es im Ordner `code`:
    - Dazu navigieren wir zu "File > Save As..." und geben den Namen `hello-markdown` ein.
-3. Im Notebook fügen wir eine neue Zelle hinzu, indem wir auf die Schaltfläche "+" klicken.
-4. Wir ändern den Zelltyp mithilfe des Dropdown-Menüs in der Symbolleiste auf "Markdown".
+3. Auf die erste Zelle klicken, so dass diese am linken Rand blau markiert erscheint.
 
-Um den Markdown-Text zu rendern (d.h. auszuführen), führen wir die Zelle mit `Shift+Enter` aus. 
+   ![Markierte Zelle in Jupyter Notebook](../images/jupyter-notebook-markiert.png){#fig-jupyter-notebook-markiert width="100%" }
+
+3. Wir ändern den Zelltyp der ersten Zelle mithilfe des Dropdown-Menüs in der Symbolleiste auf "Markdown".
+
+
+   ![Markdown in Dropdown-Menü auswählen](../images/jupyter-notebook-markiert-markdown.png){#fig-jupyter-notebook-markiert-markdown width="100%" }
+
+
+4. Nun kann Text in diese Zelle eingegeben werden. In diesem Beispiel fügen wir eine Überschrift in die Zelle ein. Dies wird in Markdown mit der Auszeichnung `#` erzielt.
+
+   ```markdown
+   # Dies ist eine Überschrift
+   ```
+
+   ![Markdown-Überschrift in Jupyter Notebook](../images/jupyter-notebook-h1.png){#fig-jupyter-notebook-h1 width="100%" }
+
+
+5. Um den Markdown-Text zu rendern (d.h. in HTML umzuwandeln), führen wir die markierte Zelle mit `Shift+Eingabetaste` aus oder nutzen den Run-Button (die Zelle muss dafür blau markiert sein). Dies überführt den "rohen" Markdown-Text in eine HTML-Ausgabe:
+
+   ![Markdown-Überschrift als HTML-Ausgabe in Jupyter Notebook](../images/jupyter-notebook-h1-rendered.png){#fig-jupyter-notebook-h1-rendered width="100%" }
+
+In dem folgenden Abschnitt behandelen wir einige nützliche Markdown-Formatierungsoptionen. 
+
 
 ## Markdown-Basics
 
@@ -54,17 +75,19 @@ Ungeordnete Listen:
 
 ### Hervorhebungen
 
-Durch Hervorhebungen können wir wichtige Punkte betonen.
+Durch Hervorhebungen können wir wichtige Punkte betonen. Dafür können wir die Auszeichnung mit dem Symbol `*` oder alternativ mit `_` vornehmen.
 
 ```markdown
 *Kursiv*  
 **Fett**  
+
 _Kursiv mit Unterstrichen_  
 __Fett mit Unterstrichen__
 ```
 
 *Kursiv*  
 **Fett**  
+
 _Kursiv mit Unterstrichen_  
 __Fett mit Unterstrichen__
 
@@ -91,6 +114,10 @@ Tabellen sind entscheidend für die effiziente Organisation von Daten.
 | Spalte 1 | Spalte 2 |
 |----------|----------|
 | Zeile 1  | Wert 1   |
+
+
+Im Internet finden sich zahlreiche Tools, um einfach Markdown-Tabellen erstellen zu können (bspw. [Table to Markdown](https://tabletomarkdown.com/generate-markdown-table/))
+
 
 ### Links und Bilder
 
@@ -163,6 +190,7 @@ print("Hallo, Python!")
 Um das Verständnis von Markdown weiter zu vertiefen, können diese Ressourcen genutzt werden:
 
 - [Interaktives 10-minütiges Markdown-Tutorial](https://commonmark.org/help/)  
+
 - [Markdown meistern](https://guides.github.com/features/mastering-markdown/)
 
 
