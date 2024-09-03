@@ -32,8 +32,8 @@ book:
 
     - part: python/index.qmd
       chapters:
-        - text: "Bibliotheken"
-          href: python/python-bibliotheken.qmd
+        - text: "Programmierung"
+          href: python/python-programmierung.qmd
         - text: "Umgebungen"
           href: python/python-umgebung.qmd
         - python/python-arbeitsbereich.qmd
