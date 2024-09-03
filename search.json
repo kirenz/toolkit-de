@@ -208,47 +208,47 @@
     ]
   },
   {
-    "objectID": "python/python-bibliotheken.html",
-    "href": "python/python-bibliotheken.html",
+    "objectID": "python/python-programmierung.html",
+    "href": "python/python-programmierung.html",
     "title": "6  Bausteine der Python-Programmierung",
     "section": "",
     "text": "6.1 Module in Python\nModule sind einzelne Python-Dateien, die Definitionen und Implementierungen von Variablen und Funktionen enthalten, die in verschiedenen Programmen wiederverwendet werden können:\nModule helfen, den Code modular zu gestalten, was seine Wartbarkeit und Lesbarkeit verbessert.\nEinige bedeutende Standardmodule und deren häufige Anwendungen:\nEin Beispiel zur Verwendung eines Moduls durch Import in ein Python-Skript:",
     "crumbs": [
       "Python",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Bibliotheken</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Programmierung</span>"
     ]
   },
   {
-    "objectID": "python/python-bibliotheken.html#module-in-python",
-    "href": "python/python-bibliotheken.html#module-in-python",
+    "objectID": "python/python-programmierung.html#module-in-python",
+    "href": "python/python-programmierung.html#module-in-python",
     "title": "6  Bausteine der Python-Programmierung",
     "section": "",
     "text": "Variablen: Benannte Speicherorte, die Daten im Speicher halten. Beispiel: x = 5 speichert die Ganzzahl 5 in einer Variable namens x.\nFunktionen: Wiederverwendbare Codeabschnitte, die eine bestimmte Aktion ausführen.\n\n\n\n\n\n\n\n\nKüchen-Analogie für Module\n\n\n\n\n\nWir können uns Python wie eine gut ausgestattete Küche vorstellen:\n\nDie Küche ist die Python-Umgebung.\nRezeptbücher sind Python-Module, die jeweils Sets von Rezepten (Funktionen) für spezifische Aufgaben enthalten.\nZutaten stellen Datentypen und Variablen dar.\nKochutensilien sind Methoden aus den Modulen, die helfen, die Zutaten zu manipulieren.\n\nBeim Kochen werden spezifische Werkzeuge und Zutaten für bestimmte Aufgaben oder Rezepte ausgewählt. Ähnlich repräsentieren in Python diese Werkzeuge und Zutaten Module—Sammlungen vorgefertigter Funktionen (Rezepte), die zur Durchführung allgemeiner Aufgaben verwendet werden können.\n\n\n\n\n\nos: Funktionen zur Interaktion mit dem Betriebssystem.\ndatetime: Behandelt Datums- und Zeitoperationen.\nmath: Enthält mathematische Funktionen.\nrandom: Generiert Zufallszahlen und führt zufällige Auswahlen durch.\njson: Verarbeitet JSON-Daten.\n\n\n# Import des Moduls\nimport math\n\n# Verwendung der sqrt-Funktion aus dem math-Modul\nresult = math.sqrt(16)\nprint(result)  # Ausgabe: 4.0\n\n# Alternative Importmethode\nfrom math import pi\nprint(pi)  # Ausgabe: 3.141592653589793",
     "crumbs": [
       "Python",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Bibliotheken</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Programmierung</span>"
     ]
   },
   {
-    "objectID": "python/python-bibliotheken.html#pakete-in-python",
-    "href": "python/python-bibliotheken.html#pakete-in-python",
+    "objectID": "python/python-programmierung.html#pakete-in-python",
+    "href": "python/python-programmierung.html#pakete-in-python",
     "title": "6  Bausteine der Python-Programmierung",
     "section": "6.2 Pakete in Python",
     "text": "6.2 Pakete in Python\nPakete in Python sind Verzeichnisse von Python-Modulen mit einer speziellen Datei namens __init__.py. Sie ermöglichen es, mehrere Module zusammenzupacken, wodurch es einfacher wird, eine Sammlung von Modulen als eine Einheit zu verwalten und zu verteilen.\nEin typisches Paket könnte so strukturiert sein:\nmein_paket/\n    __init__.py\n    modul1.py\n    modul2.py\n    unterpaket/\n        __init__.py\n        modul3.py\n\n\n\n\n\n\nKüchen-Analogie für Pakete\n\n\n\n\n\nWenn ein Modul einem Rezeptbuch ähnelt, ist ein Paket vergleichbar mit einer Sammlung von Rezeptbüchern. Jedes Buch (Modul) konzentriert sich auf einen bestimmten Bereich, aber zusammen bieten sie eine breite Palette kulinarischer Optionen.\n\n\n\nFür Data Science sind einige grundlegende Pakete:\n\nnumpy: Paket für numerische Berechnungen und Arrayoperationen.\npandas: Datenmanipulation und -analyse mit DataFrames und Series.\nmatplotlib, seaborn und altair: Verschiedene Optionen für Datenvisualisierung.\nscikit-learn: Implementiert eine breite Palette von Machine-Learning-Algorithmen.\n\nBeispiel zur Verwendung eines Pakets:\n# Import des gesamten Pakets\nimport numpy as np\n\n# Erstellung eines Arrays\narr = np.array([1, 2, 3, 4, 5])\nprint(np.mean(arr))  # Ausgabe: 3.0\n\n# Import spezifischer Funktionen aus einem Paket\nfrom pandas import DataFrame\n\n# Erstellung eines DataFrames\ndf = DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})\nprint(df)",
     "crumbs": [
       "Python",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Bibliotheken</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Programmierung</span>"
     ]
   },
   {
-    "objectID": "python/python-bibliotheken.html#bibliotheken-in-python",
-    "href": "python/python-bibliotheken.html#bibliotheken-in-python",
+    "objectID": "python/python-programmierung.html#bibliotheken-in-python",
+    "href": "python/python-programmierung.html#bibliotheken-in-python",
     "title": "6  Bausteine der Python-Programmierung",
     "section": "6.3 Bibliotheken in Python",
     "text": "6.3 Bibliotheken in Python\nEine Bibliothek ist eine Sammlung von Paketen und Modulen, die zusammen eine umfangreiche Funktionalität bereitstellen. Bibliotheken bieten oft Lösungen für spezifische Problemfelder und können viele Module und Pakete umfassen.\n\n\n\n\n\n\nKüchen-Analogie für Bibliotheken\n\n\n\n\n\nIn der Küchenanalogie wäre eine Bibliothek eine komplette Küche, ausgestattet mit einer Vielzahl von Werkzeugen und Zutaten für verschiedene Kochstile und -techniken. Es ist eine umfassende Sammlung, die ermöglicht, nahezu jedes Gericht zu kochen, das man sich vorstellen kann.\n\n\n\nEinige wichtige Python-Bibliotheken umfassen:\n\nSciPy: Bietet wissenschaftliche und technische Berechnungen, baut auf numpy auf.\nTensorFlow und PyTorch: Bibliotheken für maschinelles Lernen und neuronale Netze.\nDjango und Flask: Web-Frameworks für die Entwicklung von Webanwendungen.\nrequests: Vereinfacht HTTP-Anfragen.\nBeautiful Soup: Für das Parsen von HTML und XML-Dokumenten.\n\nBeispiel zur Verwendung einer Bibliothek:\n# Import der benötigten Funktion aus SciPy\nfrom scipy import special\n\n# Berechnung der Fakultät von 5\nergebnis = special.factorial(5)\n\n# Ausgabe des Ergebnisses\nprint(f\"Die Fakultät von 5 ist: {ergebnis}\")\nUm die nachfolgenden Anleitungen zu vereinfachen, werden wir nicht immer streng zwischen Bibliotheken und Paketen unterscheiden, sondern hauptsächlich den Begriff Python-Pakete verwenden, wenn wir Python-Software importieren (auch wenn es sich dabei um eine Bibliothek handelt).",
     "crumbs": [
       "Python",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Bibliotheken</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Programmierung</span>"
     ]
   },
   {
