@@ -6,11 +6,11 @@ Relationale Datenbanken bilden das Fundament vieler moderner Datenbankanwendunge
 
 Ein Datenbankmanagementsystem (DBMS) ist die Software, die die Erstellung, Verwaltung und Nutzung von Datenbanken ermöglicht. Ein relationales DBMS (RDBMS) bietet zusätzliche Funktionen wie:
 
-1. Datenintegrität
-2. Transaktionsverwaltung
-3. Sicherheitsmechanismen
+1. Datenintegrität (Gewährleistung der Richtigkeit und Konsistenz von Daten)
+2. Transaktionsverwaltung (Koordinierung und Überwachung von Datenbankoperationen)
+3. Sicherheitsmechanismen (Schutz vor unbefugtem Zugriff und Datenverlust)
 
-Zu den bekannten RDBMS gehören MySQL, PostgreSQL und SQLite.
+Zu den bekannten RDBMS gehören *MySQL*, *PostgreSQL* und *SQLite*.
 
 Einsatzgebiete relationaler Datenbanken sind vielfältig:
 
@@ -20,9 +20,12 @@ Einsatzgebiete relationaler Datenbanken sind vielfältig:
 
 Die Struktur, Flexibilität und Zuverlässigkeit relationaler Datenbanken machen sie zu einem unverzichtbaren Werkzeug in der modernen Datenverwaltung und -analyse.
 
-## Tabellen 
+
+## Tabellen
 
 Tabellen stehen im Mittelpunkt jeder relationalen Datenbank. Eine Tabelle ist eine strukturierte Sammlung von Daten, organisiert in Zeilen und Spalten. Jede Tabelle repräsentiert eine Entität, wobei jede Zeile einen einzelnen Datensatz dieser Entität darstellt.
+
+### Grundstruktur einer Tabelle
 
 Betrachten wir ein Beispiel einer einfachen Tabelle "Kunden":
 
@@ -32,19 +35,37 @@ Betrachten wir ein Beispiel einer einfachen Tabelle "Kunden":
 | 2        | Anna Schmidt| anna.schmidt@beispiel.de| Hamburg |
 | 3        | Peter Weber | peter.weber@beispiel.de | München |
 
+Jede Spalte in einer Tabelle besitzt einen spezifischen **Datentyp**, der die Art der zu speichernden Daten definiert. Häufig verwendete Datentypen sind:
 
-Jede Spalte in einer Tabelle besitzt einen spezifischen Datentyp, der die Art der zu speichernden Daten definiert. Häufig verwendete Datentypen sind:
+1. INTEGER: Ganze Zahlen
+2. VARCHAR: Zeichenketten variabler Länge
+3. DATE: Datumsangaben
+4. BOOLEAN: Wahrheitswerte (true/false)
 
-1. *INTEGER*: Ganze Zahlen
-2. *VARCHAR*: Zeichenketten variabler Länge
-3. *DATE*: Datumsangaben
-4. *BOOLEAN*: Wahrheitswerte (true/false)
+### Schlüsselkonzepte
 
 Zwei wichtige Konzepte in relationalen Datenbanken sind:
 
-1. *Primärschlüssel*: Eine Spalte oder Spaltenkombination, die jeden Datensatz in einer Tabelle eindeutig identifiziert. Im obigen Beispiel fungiert die Spalte "KundenID" als Primärschlüssel der Tabelle "Kunden".
+1. **Primärschlüssel**: Eine Spalte oder Spaltenkombination, die jeden Datensatz in einer Tabelle eindeutig identifiziert. Im obigen Beispiel fungiert die Spalte "KundenID" als Primärschlüssel der Tabelle "Kunden".
 
-2. *Fremdschlüssel*: Eine Spalte, die eine Beziehung zwischen zwei Tabellen herstellt. Ein Fremdschlüssel in einer Tabelle verweist auf den Primärschlüssel einer anderen Tabelle. Diese Beziehungen bilden das Herzstück des relationalen Modells, da sie die Verknüpfung von Daten aus verschiedenen Tabellen und die Erstellung komplexer Abfragen ermöglichen.
+2. **Fremdschlüssel**: Eine Spalte, die eine Beziehung zwischen zwei Tabellen herstellt. Ein Fremdschlüssel in einer Tabelle verweist auf den Primärschlüssel einer anderen Tabelle.
+
+### Beziehungen zwischen Tabellen
+
+Um die Verwendung von Fremdschlüsseln zu veranschaulichen, betrachten wir eine zweite Tabelle "Bestellungen":
+
+| BestellID | KundenID | Produkt      | Menge | Bestelldatum |
+|-----------|----------|--------------|-------|--------------|
+| 1         | 2        | Laptop       | 1     | 2024-03-15   |
+| 2         | 1        | Smartphone   | 2     | 2024-03-16   |
+| 3         | 3        | Tablet       | 1     | 2024-03-17   |
+| 4         | 2        | Kopfhörer    | 1     | 2024-03-18   |
+
+
+In dieser Tabelle fungiert die Spalte "KundenID" als Fremdschlüssel, der auf den Primärschlüssel der Tabelle "Kunden" verweist. Diese Beziehung ermöglicht es, Informationen aus beiden Tabellen zu verknüpfen.
+
+
+Durch die Verwendung von Tabellen und deren Beziehungen zueinander können komplexe Datenstrukturen abgebildet und effizient verwaltet werden. Dies ist eine der Kernstärken relationaler Datenbanken und ein wesentlicher Grund für ihre weite Verbreitung in der Datenverwaltung.
 
 ## SQL 
 
