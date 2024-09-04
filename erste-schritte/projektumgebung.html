@@ -645,17 +645,21 @@ Erklärung der Befehle
 <p>Ist die Ausgabe “/bin/zsh”, wird bereits zsh verwendet. Wenn das Ergebnis “/bin/bash” ist, verwendet das Gerät derzeit noch bash.</p>
 <p>Falls aktuell noch bash verwendet wird, sollte zunächst auf zsh umgestellt werden:</p>
 <ol type="a">
-<li><p>Zuerst überprüfen, ob zsh bereits installiert ist:</p>
+<li>Zuerst überprüfen, ob zsh bereits installiert ist:</li>
+</ol>
 <div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">zsh</span> <span class="at">--version</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Falls eine Version angezeigt wird, weiter mit c). Ansonsten zu Schritt b).</p></li>
-<li><p>Falls zsh noch nicht installiert sein sollte, können die Apple Xcode Command Line Tools installiert werden, die zsh enthalten:</p>
+<p>Falls eine Version angezeigt wird, weiter mit c). Ansonsten zu Schritt b).</p>
+<ol start="2" type="a">
+<li>Falls zsh noch nicht installiert sein sollte, können die Apple Xcode Command Line Tools installiert werden, die zsh enthalten:</li>
+</ol>
 <div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">xcode-select</span> <span class="at">--install</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Falls der Befehl nicht ausgeführt werden kann, ist XCode auch <a href="https://apps.apple.com/de/app/xcode/id497799835?mt=12">über den App-Store</a> erhältlich.</p></li>
-<li><p>Wenn zsh installiert ist, kann mit diesem Befehl direkt zu zsh gewechselt werden:</p>
+<p><!-- Falls der Befehl nicht ausgeführt werden kann, ist XCode auch [über den App-Store](https://apps.apple.com/de/app/xcode/id497799835?mt=12) erhältlich.  --></p>
+<ol start="3" type="a">
+<li>Wenn zsh installiert ist, kann mit diesem Befehl direkt zu zsh gewechselt werden:</li>
+</ol>
 <div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">chsh</span> <span class="at">-s</span> /bin/zsh</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Bei Bedarf Benutzerpasswort eingeben, wenn dazu aufgefordert wird. Dann das Terminal schließen und nochmals mit der Spotlight-Suche öffnen.</p>
 <p>Hinweise zu dem Befehl: <code>chsh</code> ist der Befehl zum Ändern der Standard-Shell. Die Option <code>-s</code> bewirkt, dass die Shell für den aktuellen Benutzer geändert wird. Und /bin/zsh ist der Pfad zur Z-Shell (zsh).</p></li>
-</ol></li>
 </ol>
 </section>
 <section id="terminal-elemente" class="level3" data-number="1.2.2">
@@ -1200,7 +1204,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"loop":false,"openEffect":"zoom","selector":".lightbox","descPosition":"bottom","closeEffect":"zoom"});
+<script>var lightboxQuarto = GLightbox({"loop":false,"descPosition":"bottom","selector":".lightbox","openEffect":"zoom","closeEffect":"zoom"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {

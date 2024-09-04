@@ -359,7 +359,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </ul></li>
   <li><a href="#pakete-in-python" id="toc-pakete-in-python" class="nav-link" data-scroll-target="#pakete-in-python"><span class="header-section-number">6.2</span> Pakete in Python</a>
   <ul class="collapse">
-  <li><a href="#verwendung-von-paketen" id="toc-verwendung-von-paketen" class="nav-link" data-scroll-target="#verwendung-von-paketen"><span class="header-section-number">6.2.1</span> Verwendung von Paketen</a></li>
+  <li><a href="#import-von-paketen" id="toc-import-von-paketen" class="nav-link" data-scroll-target="#import-von-paketen"><span class="header-section-number">6.2.1</span> Import von Paketen</a></li>
   </ul></li>
   <li><a href="#bibliotheken-in-python" id="toc-bibliotheken-in-python" class="nav-link" data-scroll-target="#bibliotheken-in-python"><span class="header-section-number">6.3</span> Bibliotheken in Python</a></li>
   </ul>
@@ -426,11 +426,11 @@ Küchen-Analogie für Module
 <section id="variablen" class="level3" data-number="6.1.1">
 <h3 data-number="6.1.1" class="anchored" data-anchor-id="variablen"><span class="header-section-number">6.1.1</span> Variablen</h3>
 <p>Variablen sind Benannte Speicherorte, die Daten im Speicher halten. Beispielsweise können wir mit dem Befehl <code>x = 5</code> der Variable <code>x</code> den Wert 5 zuweisen:</p>
-<div id="44d0a03a" class="cell" data-execution_count="1">
+<div id="063da5d8" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">5</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Wenn wir die Variable mit dem Befehl <code>print()</code> ausgeben, können wir den zugewiesenen Wert sehen:</p>
-<div id="251c04e4" class="cell" data-execution_count="2">
+<div id="0b299bf8" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>5</code></pre>
@@ -440,7 +440,7 @@ Küchen-Analogie für Module
 <section id="funktionen" class="level3" data-number="6.1.2">
 <h3 data-number="6.1.2" class="anchored" data-anchor-id="funktionen"><span class="header-section-number">6.1.2</span> Funktionen</h3>
 <p>Funktionen sind wiederverwendbare Codeabschnitte, die eine bestimmte Aktion ausführen. Wir können bspw. eine Funktion zur Berechnung des Quadrats einer Zahl erstellen. Der <em>Parameter</em> <code>zahl</code> ist einfach ein Platzhalter, der eine Zahl repräsentiert, deren Quadrat berechnet werden soll:</p>
-<div id="4d6dafc9" class="cell" data-execution_count="3">
+<div id="6b2ea53d" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> quadrat(zahl):</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Berechnen und zurückgeben des Quadrats einer Zahl."""</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> zahl <span class="op">*</span> zahl</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -494,7 +494,7 @@ Einrückung in Python
 </div>
 </div>
 <p>Die Funktion kann nun mit dem definierten <em>Funktionsnamen</em> (hier <code>quadrat</code>) in unserem Code verwendet werden:</p>
-<div id="d2a091ef" class="cell" data-execution_count="4">
+<div id="c59a9576" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>quadrat(<span class="dv">2</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="4">
 <pre><code>4</code></pre>
@@ -507,7 +507,7 @@ Einrückung in Python
 <ol type="1">
 <li>Import des gesamten Moduls</li>
 </ol>
-<div id="5817216a" class="cell" data-execution_count="5">
+<div id="0fce7570" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import des gesamten Moduls</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Verwendung einer Funktion aus dem Modul</span></span>
@@ -522,7 +522,7 @@ Einrückung in Python
 <ol start="2" type="1">
 <li>Selektiver Import spezifischer Elemente</li>
 </ol>
-<div id="c91794d3" class="cell" data-execution_count="6">
+<div id="47a4baf8" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Selektive Importmethode</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> math <span class="im">import</span> sqrt</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Verwendung der Funktion </span></span>
@@ -599,8 +599,8 @@ Küchen-Analogie für Pakete
 </div>
 </div>
 </div>
-<section id="verwendung-von-paketen" class="level3" data-number="6.2.1">
-<h3 data-number="6.2.1" class="anchored" data-anchor-id="verwendung-von-paketen"><span class="header-section-number">6.2.1</span> Verwendung von Paketen</h3>
+<section id="import-von-paketen" class="level3" data-number="6.2.1">
+<h3 data-number="6.2.1" class="anchored" data-anchor-id="import-von-paketen"><span class="header-section-number">6.2.1</span> Import von Paketen</h3>
 <p>Für Data Science sind einige grundlegende Pakete, einschließlich ihrer Importanweisungen mit den gängigen Bezeichungen (Aliase):</p>
 <table class="caption-top table">
 <colgroup>
@@ -671,7 +671,7 @@ Hinweis zu scikit-learn
 </div>
 </div>
 <p>Beispiel zur Verwendung eines Pakets:</p>
-<div id="89aa48dd" class="cell" data-execution_count="7">
+<div id="7687683d" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import des gesamten Pakets</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Erstellung eines Arrays</span></span>

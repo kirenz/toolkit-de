@@ -352,8 +352,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#was-sind-virtuelle-umgebungen" id="toc-was-sind-virtuelle-umgebungen" class="nav-link active" data-scroll-target="#was-sind-virtuelle-umgebungen"><span class="header-section-number">7.0.1</span> Was sind virtuelle Umgebungen?</a></li>
-  <li><a href="#warum-sind-virtuelle-umgebungen-wichtig" id="toc-warum-sind-virtuelle-umgebungen-wichtig" class="nav-link" data-scroll-target="#warum-sind-virtuelle-umgebungen-wichtig"><span class="header-section-number">7.0.2</span> Warum sind virtuelle Umgebungen wichtig?</a></li>
-  <li><a href="#praktische-anwendung-in-data-science" id="toc-praktische-anwendung-in-data-science" class="nav-link" data-scroll-target="#praktische-anwendung-in-data-science"><span class="header-section-number">7.0.3</span> Praktische Anwendung in Data Science</a></li>
   <li><a href="#virtuelle-umgebung-erstellen" id="toc-virtuelle-umgebung-erstellen" class="nav-link" data-scroll-target="#virtuelle-umgebung-erstellen"><span class="header-section-number">7.1</span> Virtuelle Umgebung erstellen</a></li>
   </ul>
 </nav>
@@ -394,32 +392,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="was-sind-virtuelle-umgebungen" class="level3" data-number="7.0.1">
 <h3 data-number="7.0.1" class="anchored" data-anchor-id="was-sind-virtuelle-umgebungen"><span class="header-section-number">7.0.1</span> Was sind virtuelle Umgebungen?</h3>
 <p>Eine virtuelle Umgebung ist im Wesentlichen ein eigenständiger Ordner, der alle notwendigen ausführbaren Dateien enthält, um Python-Pakete zu verwenden. Jede virtuelle Umgebung hat ihre eigene Python-Installation, unabhängig von der globalen Python-Installation auf dem Computer.</p>
-</section>
-<section id="warum-sind-virtuelle-umgebungen-wichtig" class="level3" data-number="7.0.2">
-<h3 data-number="7.0.2" class="anchored" data-anchor-id="warum-sind-virtuelle-umgebungen-wichtig"><span class="header-section-number">7.0.2</span> Warum sind virtuelle Umgebungen wichtig?</h3>
 <p>Virtuelle Umgebungen bieten mehrere entscheidende Vorteile:</p>
 <ol type="1">
-<li><strong>Abhängigkeitsverwaltung</strong>:
-<ul>
-<li>Jedes Data Science-Projekt kann unterschiedliche Versionen von Bibliotheken erfordern.</li>
-<li>Virtuelle Umgebungen stellen sicher, dass die korrekten Versionen aller benötigten Pakete für jedes spezifische Projekt verfügbar sind.</li>
-<li>Dies verhindert Konflikte zwischen verschiedenen Projekten und gewährleistet Reproduzierbarkeit.</li>
-</ul></li>
 <li><strong>Projekttrennung</strong>:
 <ul>
 <li>Verschiedene Data Science-Projekte können unterschiedliche Anforderungen haben.</li>
 <li>Ein Projekt könnte beispielsweise TensorFlow für Deep Learning verwenden, während ein anderes scikit-learn für traditionelles Machine Learning einsetzt.</li>
 <li>Virtuelle Umgebungen ermöglichen es, diese Projekte sauber voneinander zu trennen.</li>
 </ul></li>
-<li><strong>Entwicklung benutzerdefinierter Module</strong>:
+<li><strong>Abhängigkeitsverwaltung</strong>:
 <ul>
-<li>Beim Erstellen eigener Python-Module oder Pakete helfen virtuelle Umgebungen, diese in Projekte zu integrieren.</li>
-<li>Dies geschieht, ohne die globale Python-Installation zu beeinflussen, was besonders nützlich für experimentelle Entwicklungen ist.</li>
-</ul></li>
-<li><strong>Vermeidung von Versionskonflikten</strong>:
-<ul>
-<li>Manche Data Science-Bibliotheken können inkompatibel mit bestimmten Versionen anderer Bibliotheken sein.</li>
-<li>Virtuelle Umgebungen erlauben es, für jedes Projekt genau die Versionen zu installieren, die benötigt werden und miteinander funktionieren.</li>
+<li>Jedes Data Science-Projekt kann unterschiedliche Versionen von Bibliotheken erfordern.</li>
+<li>Virtuelle Umgebungen stellen sicher, dass die korrekten Versionen aller benötigten Pakete für jedes spezifische Projekt verfügbar sind.</li>
+<li>Dies verhindert Konflikte zwischen verschiedenen Paketen und gewährleistet Reproduzierbarkeit.</li>
 </ul></li>
 <li><strong>Einfache Weitergabe und Reproduzierbarkeit</strong>:
 <ul>
@@ -428,16 +413,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul></li>
 </ol>
 </section>
-<section id="praktische-anwendung-in-data-science" class="level3" data-number="7.0.3">
-<h3 data-number="7.0.3" class="anchored" data-anchor-id="praktische-anwendung-in-data-science"><span class="header-section-number">7.0.3</span> Praktische Anwendung in Data Science</h3>
-<p>In der Data Science-Praxis könnte man beispielsweise separate virtuelle Umgebungen für verschiedene Arten von Projekten erstellen: - Eine Umgebung für Datenanalyse mit Pandas und NumPy - Eine andere für Machine Learning mit scikit-learn - Eine dritte für Deep Learning-Projekte mit TensorFlow oder PyTorch</p>
-<p>Dies ermöglicht es, effizient zwischen verschiedenen Projekten zu wechseln, ohne sich um Paketkonflikte sorgen zu müssen.</p>
-</section>
 <section id="virtuelle-umgebung-erstellen" class="level2" data-number="7.1">
 <h2 data-number="7.1" class="anchored" data-anchor-id="virtuelle-umgebung-erstellen"><span class="header-section-number">7.1</span> Virtuelle Umgebung erstellen</h2>
 <p>Das Erstellen einer virtuellen Umgebung ist ein wichtiger erster Schritt für jedes Data Science-Projekt. Hier wird der Prozess Schritt für Schritt erklärt:</p>
 <ol type="1">
-<li><p>Zugriff auf die Anaconda-Eingabeaufforderung oder das Terminal</p>
+<li><p>Zugriff auf die Anaconda-Eingabeaufforderung oder das Terminal:</p>
 <ul>
 <li><strong>Windows</strong>: Öffnen der <em>Anaconda-Eingabeaufforderung</em> über das Startmenü. Dies ist eine spezielle Eingabeaufforderung, die bereits mit Anaconda konfiguriert ist.</li>
 <li><strong>macOS-Benutzer</strong>: Terminal öffnen.</li>
@@ -499,14 +479,14 @@ Detaillierte Erklärung der installierten Pakete
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
-<li><strong>numpy</strong>: Eine Bibliothek für numerische Berechnungen in Python. Sie bildet die Basis für viele andere Data Science-Tools.</li>
+<li><strong>numpy</strong>: Für numerische Berechnungen in Python.</li>
 <li><strong>pandas</strong>: Ein leistungsfähiges Tool für Datenmanipulation und -analyse. Es bietet Datenstrukturen wie DataFrames, die besonders nützlich für tabellarische Daten sind.</li>
-<li><strong>openpyxl</strong>: Diese Bibliothek ermöglicht das Lesen und Schreiben von Excel-Dateien (.xlsx). Sie wird oft in Verbindung mit Pandas verwendet, um mit Excel-Daten zu arbeiten.</li>
-<li><strong>matplotlib</strong>: Eine weit verbreitete Bibliothek zur Erstellung von statischen, animierten und interaktiven Visualisierungen in Python.</li>
-<li><strong>seaborn</strong>: Baut auf matplotlib auf und bietet eine High-Level-Schnittstelle für die Erstellung attraktiver und informativer statistischer Grafiken.</li>
-<li><strong>altair</strong>: Eine statistische Visualisierungsbibliothek für Python, basierend auf Vega und Vega-Lite. Sie eignet sich besonders gut für die Erstellung interaktiver und komplexer Grafiken mit wenig Code.</li>
-<li><strong>jupyter</strong>: Ein wichtiges Tool für interaktives Computing und Datenanalyse. Es ermöglicht die Erstellung und Freigabe von Dokumenten, die Live-Code, Gleichungen, Visualisierungen und erklärenden Text enthalten.</li>
-<li><strong>ipykernel</strong>: Dies ist der IPython-Kernel für Jupyter. Er ermöglicht die Ausführung von Python-Code in Jupyter Notebooks.</li>
+<li><strong>openpyxl</strong>: Lesen und Schreiben von Excel-Dateien (.xlsx). Wird oft in Verbindung mit Pandas verwendet, um mit Excel-Daten zu arbeiten.</li>
+<li><strong>matplotlib</strong>: Erstellung von Visualisierungen in Python.</li>
+<li><strong>seaborn</strong>: Erstellung statistischer Grafiken.</li>
+<li><strong>altair</strong>: Eignet sich besonders gut für die Erstellung interaktiver und komplexer Grafiken mit wenig Code.</li>
+<li><strong>jupyter</strong>: Ein wichtiges Tool für interaktives Computing und Datenanalyse.</li>
+<li><strong>ipykernel</strong>: Ermöglicht die Ausführung von Python-Code in Jupyter Notebooks.</li>
 </ul>
 </div>
 </div>

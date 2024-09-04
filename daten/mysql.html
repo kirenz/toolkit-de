@@ -453,7 +453,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>MySQL Workbench starten
 <ul>
 <li>Anwendung aus der Programmübersicht öffnen.</li>
-</ul>
+</ul></li>
+</ol>
 <div class="callout callout-style-simple callout-tip callout-titled" title="Tipp für Windows-Nutzer">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -470,16 +471,17 @@ Tipp für Windows-Nutzer
 <p><a href="https://dev.mysql.com/downloads/workbench/">MySQL Workbench Downloadseite</a> öffnen und passende Version für das Betriebssystem auswählen.</p>
 </div>
 </div>
-</div></li>
+</div>
+<ol start="2" type="1">
 <li>Neue Verbindung erstellen
 <ul>
 <li>Auf “+” im Bereich “MySQL Connections” klicken.</li>
 <li>Verbindungsdetails eingeben:
 <ul>
-<li>Name: <code>local-connection</code></li>
-<li>Hostname: <code>localhost</code></li>
-<li>Port: <code>3306</code></li>
-<li>Benutzername: Meist ‘root’</li>
+<li>Name: <em>local-connection</em></li>
+<li>Hostname: <em>localhost</em></li>
+<li>Port: <em>3306</em></li>
+<li>Benutzername: Meist <em>root</em></li>
 <li>Passwort: “Store in Vault” wählen und Passwort eingeben, welches während der Installation vergeben wurde.</li>
 </ul></li>
 <li>“Test Connection” zur Überprüfung klicken.</li>
@@ -496,9 +498,10 @@ Tipp für Windows-Nutzer
 <section id="datenbank-erstellen" class="level3" data-number="15.4.1">
 <h3 data-number="15.4.1" class="anchored" data-anchor-id="datenbank-erstellen"><span class="header-section-number">15.4.1</span> Datenbank erstellen</h3>
 <ol type="1">
-<li><p>Mit MySQL-Instanz verbinden (<code>local-connection</code>).</p></li>
+<li><p>Mit MySQL-Instanz verbinden (<em>local-connection</em>).</p></li>
 <li><p>Neues Abfrage-Tab öffnen (auf das “+”-Symbol oben klicken)</p></li>
-<li><p>SQL-Befehle eingeben und ausführen (auf das Blitzsymbol (⚡) klicken, um den Befehl auszuführen):</p>
+<li><p>SQL-Befehle eingeben und ausführen (auf das Blitzsymbol (⚡) klicken, um den Befehl auszuführen):</p></li>
+</ol>
 <div class="sourceCode" id="cb1"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">DROP</span> <span class="kw">DATABASE</span> <span class="cf">IF</span> <span class="kw">EXISTS</span> `db_data`;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">CREATE</span> <span class="kw">DATABASE</span> `db_data`;</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">USE</span> `db_data`;</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -531,8 +534,9 @@ Erklärung der SQL-Befehle
 </ol>
 </div>
 </div>
-</div></li>
-<li><p>Schema-Liste aktualisieren zur Anzeige der neuen Datenbank (Schema-Liste befindet sich auf der linken Seite der Benutzer-Oberfläche)</p></li>
+</div>
+<ol start="4" type="1">
+<li>Schema-Liste aktualisieren zur Anzeige der neuen Datenbank (Schema-Liste befindet sich auf der linken Seite der Benutzer-Oberfläche)</li>
 </ol>
 </section>
 <section id="tabelle-erstellen" class="level3" data-number="15.4.2">
@@ -540,7 +544,8 @@ Erklärung der SQL-Befehle
 <p>Als Beispieldaten erstellen wir eine Tabelle zu einer Marketingkampagne:</p>
 <ol type="1">
 <li><p>Neues Abfrage-Tab öffnen.</p></li>
-<li><p>SQL zur Tabellenerstellung ausführen:</p>
+<li><p>SQL zur Tabellenerstellung ausführen:</p></li>
+</ol>
 <div class="sourceCode" id="cb2"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">CREATE</span> <span class="kw">TABLE</span> campaigns (</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>   <span class="kw">id</span> <span class="dt">INT</span> AUTO_INCREMENT <span class="kw">PRIMARY</span> <span class="kw">KEY</span>,</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>   name <span class="dt">VARCHAR</span>(<span class="dv">255</span>) <span class="kw">NOT</span> <span class="kw">NULL</span>,</span>
@@ -548,7 +553,7 @@ Erklärung der SQL-Befehle
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>   end_date <span class="dt">DATE</span>,</span>
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>   budget <span class="dt">DECIMAL</span>(<span class="dv">10</span>, <span class="dv">2</span>),</span>
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>   channel <span class="dt">VARCHAR</span>(<span class="dv">255</span>)</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>   );</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>);</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="callout callout-style-simple callout-note callout-titled" title="Erklärung der Tabellendefinition">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -561,25 +566,26 @@ Erklärung der Tabellendefinition
 </div>
 <div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Der obige SQL-Befehl erstellt eine neue Tabelle namens <code>campaigns</code>. Hier ist eine Aufschlüsselung jeder Spaltendefinition:</p>
 <ul>
-<li><strong>id</strong>: Eine Spalte namens <code>id</code>, die den Datentyp <code>INT</code> (integer) verwendet und automatisch inkrementiert wird (d.h. 1, 2, 3, …), was sich gut als Primärschlüssel eignet.</li>
-<li><strong>name</strong>: Eine Spalte zur Speicherung der Kampagnennamen als Text, um eine Zeichenkette von bis zu 255 Zeichen zu halten. Die <code>NOT NULL</code>-Einschränkung stellt sicher, dass jede Zeile einen Namen haben muss.</li>
-<li><strong>start_date</strong> und <strong>end_date</strong>: Diese Spalten speichern die Start- und Enddaten der Kampagnen mit dem Datentyp <code>DATE</code>.</li>
-<li><strong>budget</strong>: Eine Spalte für das Budget jeder Kampagne, die <code>DECIMAL(10, 2)</code> verwendet, um bis zu 10 Stellen mit 2 Dezimalstellen zu ermöglichen.</li>
-<li><strong>channel</strong>: Eine Spalte, um das verwendete Medium der Kampagne anzugeben, die Zeichenfolgen von bis zu 255 Zeichen speichern kann.</li>
+<li><p><strong>id</strong>: Eine Spalte namens <code>id</code>, die den Datentyp <code>INT</code> (integer) verwendet und automatisch inkrementiert wird (d.h. 1, 2, 3, …), was sich gut als Primärschlüssel eignet.</p></li>
+<li><p><strong>name</strong>: Eine Spalte zur Speicherung der Kampagnennamen als Text, um eine Zeichenkette von bis zu 255 Zeichen zu halten. Die <code>NOT NULL</code>-Einschränkung stellt sicher, dass jede Zeile einen Namen haben muss.</p></li>
+<li><p><strong>start_date</strong> und <strong>end_date</strong>: Diese Spalten speichern die Start- und Enddaten der Kampagnen mit dem Datentyp <code>DATE</code>.</p></li>
+<li><p><strong>budget</strong>: Eine Spalte für das Budget jeder Kampagne, die <code>DECIMAL(10, 2)</code> verwendet, um bis zu 10 Stellen mit 2 Dezimalstellen zu ermöglichen.</p></li>
+<li><p><strong>channel</strong>: Eine Spalte, um das verwendete Medium der Kampagne anzugeben, die Zeichenfolgen von bis zu 255 Zeichen speichern kann.</p></li>
 </ul>
 </div>
 </div>
-</div></li>
-<li><p>Befehl ausführen und Schema-Ansicht überprüfen.</p></li>
+</div>
+<ol start="3" type="1">
+<li>Befehl ausführen und Schema-Ansicht überprüfen.</li>
 </ol>
 </section>
 <section id="werte-einfügen" class="level3" data-number="15.4.3">
 <h3 data-number="15.4.3" class="anchored" data-anchor-id="werte-einfügen"><span class="header-section-number">15.4.3</span> Werte einfügen</h3>
 <p>Wir gehen wie folgt vor, um die Tabelle mit Daten zu füllen:</p>
 <ol type="1">
-<li><p>In neuem Abfrage-Tab SQL-Befehl ausführen:</p>
+<li>In neuem Abfrage-Tab SQL-Befehl ausführen:</li>
+</ol>
 <div class="sourceCode" id="cb3"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">INSERT</span> <span class="kw">INTO</span> campaigns (name, start_date, end_date, budget, channel) <span class="kw">VALUES</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>(<span class="st">'Winter Sale'</span>, <span class="st">'2023-12-01'</span>, <span class="st">'2023-12-31'</span>, <span class="fl">5000.00</span>, <span class="st">'Email'</span>),</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>(<span class="st">'Summer Festival'</span>, <span class="st">'2023-06-01'</span>, <span class="st">'2023-06-15'</span>, <span class="fl">10000.00</span>, <span class="st">'Social Media'</span>),</span>
@@ -598,21 +604,21 @@ Erklärung der Insert-Anweisung
 <div class="callout-body-container callout-body">
 <p>Dieser SQL-Befehl fügt Daten in die <code>campaigns</code>-Tabelle ein. Jede Zeile von Werten entspricht einer anderen Marketingkampagne:</p>
 <ul>
-<li><strong>Erste Zeile</strong>: Fügt eine Kampagne namens “Winter Sale” ein, die vom 1. bis 31. Dezember 2023 läuft, mit einem Budget von $5000 und dem Kanal “Email”.</li>
-<li><strong>Zweite Zeile</strong>: Fügt “Summer Festival” ein, eine kürzere Kampagne vom 1. bis 15. Juni 2023, mit einem höheren Budget von $10000 und dem Kanal “Social Media”.</li>
-<li><strong>Dritte Zeile</strong>: Fügt die “Back to School”-Kampagne vom 1. bis 20. August 2023 hinzu, mit einem Budget von $7500, vermarktet über “TV”.</li>
+<li><p><strong>Erste Zeile</strong>: Fügt eine Kampagne namens “Winter Sale” ein, die vom 1. bis 31. Dezember 2023 läuft, mit einem Budget von $5000 und dem Kanal “Email”.</p></li>
+<li><p><strong>Zweite Zeile</strong>: Fügt “Summer Festival” ein, eine kürzere Kampagne vom 1. bis 15. Juni 2023, mit einem höheren Budget von $10000 und dem Kanal “Social Media”.</p></li>
+<li><p><strong>Dritte Zeile</strong>: Fügt die “Back to School”-Kampagne vom 1. bis 20. August 2023 hinzu, mit einem Budget von $7500, vermarktet über “TV”.</p></li>
 </ul>
 <p>Jeder Satz von Werten ist in Klammern eingeschlossen und durch Kommas getrennt, um verschiedene Kampagnen zu unterscheiden.</p>
 </div>
 </div>
-</div></li>
-</ol>
+</div>
 </section>
 <section id="werte-abrufen" class="level3" data-number="15.4.4">
 <h3 data-number="15.4.4" class="anchored" data-anchor-id="werte-abrufen"><span class="header-section-number">15.4.4</span> Werte abrufen</h3>
 <p>Um die Daten zu überprüfen:</p>
 <ol type="1">
-<li><p>SELECT-Abfrage in neuem Tab ausführen:</p>
+<li>SELECT-Abfrage in neuem Tab ausführen:</li>
+</ol>
 <div class="sourceCode" id="cb4"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> <span class="op">*</span> <span class="kw">FROM</span> campaigns;</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="callout callout-style-simple callout-note callout-titled" title="Erklärung der SELECT-Abfrage">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
@@ -629,8 +635,7 @@ Erklärung der SELECT-Abfrage
 <p>Der SQL-Befehl ruft alle Spalten aus allen Zeilen in der <code>campaigns</code>-Tabelle ab. Er ist nützlich, um alle eingegebenen Daten in der Tabelle anzuzeigen, sicherzustellen, dass die Einträge korrekt sind, und um weitere Datenanalysen oder Berichte zu ermöglichen.</p>
 </div>
 </div>
-</div></li>
-</ol>
+</div>
 <p>Erwartetes Ergebnis:</p>
 <table class="caption-top table">
 <colgroup>

@@ -352,7 +352,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#schreiben-und-lesen-einer-json-datei" id="toc-schreiben-und-lesen-einer-json-datei" class="nav-link active" data-scroll-target="#schreiben-und-lesen-einer-json-datei"><span class="header-section-number">13.1</span> Schreiben und Lesen einer JSON-Datei</a></li>
-  <li><a href="#json-daten-in-python-bearbeiten" id="toc-json-daten-in-python-bearbeiten" class="nav-link" data-scroll-target="#json-daten-in-python-bearbeiten"><span class="header-section-number">13.2</span> JSON-Daten in Python bearbeiten</a></li>
+  <li><a href="#json-daten-in-python-bearbeiten" id="toc-json-daten-in-python-bearbeiten" class="nav-link" data-scroll-target="#json-daten-in-python-bearbeiten"><span class="header-section-number">13.2</span> JSON-Daten in Python bearbeiten</a>
+  <ul class="collapse">
+  <li><a href="#json-zu-dictionary" id="toc-json-zu-dictionary" class="nav-link" data-scroll-target="#json-zu-dictionary"><span class="header-section-number">13.2.1</span> JSON zu Dictionary</a></li>
+  <li><a href="#dictionary-zu-json" id="toc-dictionary-zu-json" class="nav-link" data-scroll-target="#dictionary-zu-json"><span class="header-section-number">13.2.2</span> Dictionary zu JSON</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -412,21 +416,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="schreiben-und-lesen-einer-json-datei" class="level2" data-number="13.1">
 <h2 data-number="13.1" class="anchored" data-anchor-id="schreiben-und-lesen-einer-json-datei"><span class="header-section-number">13.1</span> Schreiben und Lesen einer JSON-Datei</h2>
 <p>Das Speichern von Daten in eine JSON-Datei erfolgt mithilfe der <code>json</code>-Bibliothek. Die Methode <code>json.dump()</code> ermöglicht das Speichern eines Python-Dictionaries in eine JSON-Datei.</p>
-<div id="282a96cb" class="cell" data-execution_count="1">
+<div id="25b02bcf" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Daten erstellen</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>daten <span class="op">=</span> {</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Personen"</span>: [</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>        {<span class="st">"Name"</span>: <span class="st">"Max"</span>, <span class="st">"Alter"</span>: <span class="dv">24</span>, <span class="st">"Stadt"</span>: <span class="st">"Berlin"</span>},</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>        {<span class="st">"Name"</span>: <span class="st">"Anna"</span>, <span class="st">"Alter"</span>: <span class="dv">30</span>, <span class="st">"Stadt"</span>: <span class="st">"Hamburg"</span>},</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>        {<span class="st">"Name"</span>: <span class="st">"Tom"</span>, <span class="st">"Alter"</span>: <span class="dv">22</span>, <span class="st">"Stadt"</span>: <span class="st">"München"</span>}</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    ]</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co"># JSON-Datei speichern</span></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'daten.json'</span>, <span class="st">'w'</span>) <span class="im">as</span> jsonfile:</span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    json.dump(daten, jsonfile, indent<span class="op">=</span><span class="dv">4</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Daten erstellen</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>daten <span class="op">=</span> {</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Personen"</span>: [</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>        {<span class="st">"Name"</span>: <span class="st">"Max"</span>, <span class="st">"Alter"</span>: <span class="dv">24</span>, <span class="st">"Stadt"</span>: <span class="st">"Berlin"</span>},</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>        {<span class="st">"Name"</span>: <span class="st">"Anna"</span>, <span class="st">"Alter"</span>: <span class="dv">30</span>, <span class="st">"Stadt"</span>: <span class="st">"Hamburg"</span>},</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>        {<span class="st">"Name"</span>: <span class="st">"Tom"</span>, <span class="st">"Alter"</span>: <span class="dv">22</span>, <span class="st">"Stadt"</span>: <span class="st">"München"</span>}</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    ]</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co"># JSON-Datei speichern</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'daten.json'</span>, <span class="st">'w'</span>) <span class="im">as</span> jsonfile:</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    json.dump(daten, jsonfile, indent<span class="op">=</span><span class="dv">4</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="callout callout-style-simple callout-note callout-titled" title="Detaillierte Erklärung">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
@@ -460,7 +462,7 @@ Detaillierte Erklärung
 </div>
 </div>
 <p>Das <strong>Einlesen</strong> von JSON-Dateien in Python erfolgt ebenfalls mit der <code>json</code>-Bibliothek. Die Methode <code>json.load()</code> wandelt den Inhalt einer JSON-Datei in ein Python-Dictionary um.</p>
-<div id="4c7f1bab" class="cell" data-execution_count="2">
+<div id="3729f547" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co"># JSON-Datei lesen</span></span>
@@ -504,8 +506,10 @@ Detaillierte Erklärung
 <section id="json-daten-in-python-bearbeiten" class="level2" data-number="13.2">
 <h2 data-number="13.2" class="anchored" data-anchor-id="json-daten-in-python-bearbeiten"><span class="header-section-number">13.2</span> JSON-Daten in Python bearbeiten</h2>
 <p>JSON lässt sich einfach in Python-Datenstrukturen umwandeln und umgekehrt.</p>
+<section id="json-zu-dictionary" class="level3" data-number="13.2.1">
+<h3 data-number="13.2.1" class="anchored" data-anchor-id="json-zu-dictionary"><span class="header-section-number">13.2.1</span> JSON zu Dictionary</h3>
 <p>JSON in ein Python Dictionary konvertieren:</p>
-<div id="83c02a90" class="cell" data-execution_count="3">
+<div id="9cb2fa87" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>json_daten <span class="op">=</span> <span class="st">'''</span></span>
@@ -522,8 +526,11 @@ Detaillierte Erklärung
 <pre><code>{'Name': 'Max', 'Alter': 24, 'Stadt': 'Berlin'}</code></pre>
 </div>
 </div>
+</section>
+<section id="dictionary-zu-json" class="level3" data-number="13.2.2">
+<h3 data-number="13.2.2" class="anchored" data-anchor-id="dictionary-zu-json"><span class="header-section-number">13.2.2</span> Dictionary zu JSON</h3>
 <p>Python-Dictionary in JSON konvertieren:</p>
-<div id="2077f210" class="cell" data-execution_count="4">
+<div id="274274b1" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>daten <span class="op">=</span> {</span>
@@ -542,42 +549,52 @@ Detaillierte Erklärung
 }</code></pre>
 </div>
 </div>
-<p>JSON-Daten können komplexe, verschachtelte Strukturen enthalten, wie Listen von Objekten oder Objekte innerhalb von Objekten. Python ermöglicht eine direkte Verarbeitung dieser Strukturen.</p>
-<div id="20f9a96d" class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>json_daten <span class="op">=</span> <span class="st">'''</span></span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="st">{</span></span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="st">    "Personen": [</span></span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="st">        {</span></span>
-<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="st">            "Name": "Max",</span></span>
-<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a><span class="st">            "Alter": 24,</span></span>
-<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a><span class="st">            "Stadt": "Berlin",</span></span>
-<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a><span class="st">            "Hobbys": ["Lesen", "Schwimmen"]</span></span>
-<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a><span class="st">        },</span></span>
-<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a><span class="st">        {</span></span>
-<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a><span class="st">            "Name": "Anna",</span></span>
-<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a><span class="st">            "Alter": 30,</span></span>
-<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a><span class="st">            "Stadt": "Hamburg",</span></span>
-<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a><span class="st">            "Hobbys": ["Radfahren", "Kochen"]</span></span>
-<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a><span class="st">        }</span></span>
-<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a><span class="st">    ]</span></span>
-<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a><span class="st">}</span></span>
-<span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a><span class="st">'''</span></span>
-<span id="cb13-21"><a href="#cb13-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-22"><a href="#cb13-22" aria-hidden="true" tabindex="-1"></a>daten <span class="op">=</span> json.loads(json_daten)</span>
-<span id="cb13-23"><a href="#cb13-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-24"><a href="#cb13-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Zugriff auf verschachtelte Daten</span></span>
-<span id="cb13-25"><a href="#cb13-25" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> person <span class="kw">in</span> daten[<span class="st">"Personen"</span>]:</span>
-<span id="cb13-26"><a href="#cb13-26" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Name: </span><span class="sc">{</span>person[<span class="st">'Name'</span>]<span class="sc">}</span><span class="ss">, Hobbys: </span><span class="sc">{</span><span class="st">', '</span><span class="sc">.</span>join(person[<span class="st">'Hobbys'</span>])<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Name: Max, Hobbys: Lesen, Schwimmen
-Name: Anna, Hobbys: Radfahren, Kochen</code></pre>
-</div>
-</div>
-<p>Dieses Beispiel demonstriert, wie auf verschachtelte Datenstrukturen in JSON zugegriffen und wie diese verarbeitet werden können.</p>
+<!-- 
+JSON-Daten können komplexe, verschachtelte Strukturen enthalten, wie Listen von Objekten oder Objekte innerhalb von Objekten. Python ermöglicht eine direkte Verarbeitung dieser Strukturen.
+
+::: {#6173f799 .cell execution_count=5}
+``` {.python .cell-code}
+import json
+
+json_daten = '''
+{
+    "Personen": [
+        {
+            "Name": "Max",
+            "Alter": 24,
+            "Stadt": "Berlin",
+            "Hobbys": ["Lesen", "Schwimmen"]
+        },
+        {
+            "Name": "Anna",
+            "Alter": 30,
+            "Stadt": "Hamburg",
+            "Hobbys": ["Radfahren", "Kochen"]
+        }
+    ]
+}
+'''
+
+daten = json.loads(json_daten)
+
+# Zugriff auf verschachtelte Daten
+for person in daten["Personen"]:
+    print(f"Name: {person['Name']}, Hobbys: {', '.join(person['Hobbys'])}")
+```
+
+::: {.cell-output .cell-output-stdout}
+```
+Name: Max, Hobbys: Lesen, Schwimmen
+Name: Anna, Hobbys: Radfahren, Kochen
+```
+:::
+:::
 
 
+Dieses Beispiel demonstriert, wie auf verschachtelte Datenstrukturen in JSON zugegriffen und wie diese verarbeitet werden können. -->
+
+
+</section>
 </section>
 
 </main> <!-- /main -->

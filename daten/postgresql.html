@@ -490,17 +490,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 data-number="16.3" class="anchored" data-anchor-id="server-in-pgadmin4-einrichten"><span class="header-section-number">16.3</span> Server in pgAdmin4 einrichten</h2>
 <p>Um Datenbanken zu verwalten, ist es notwendig, sich zunächst mit einer PostgreSQL-Instanz zu verbinden. Dies geschieht durch das Einrichten einer neuen Serververbindung in pgAdmin4:</p>
 <ol type="1">
-<li>pgAdmin4 öffnen.</li>
-<li>Unter “Quick Links” auf <code>Add New Server</code> klicken.</li>
-<li>Als Namen <code>local-connection</code> eingeben.</li>
-<li>Zum Reiter <code>Connection</code> wechseln:
+<li><p>pgAdmin4 öffnen.</p></li>
+<li><p>Unter “Quick Links” auf “<em>Add New Server</em>” klicken.</p></li>
+<li><p>Als Namen <em>local-connection</em> eingeben.</p></li>
+<li><p>Zum Reiter “<em>Connection</em>” wechseln:</p>
 <ul>
-<li>Hostname/Adresse: <code>localhost</code> eingeben.</li>
+<li>Hostname/Adresse: “localhost” eingeben.</li>
 <li>Sicherstellen, dass der Port derselbe ist wie bei der Installation (üblicherweise 5432).</li>
 <li>Passwort: Das während der Installation gesetzte Passwort eingeben und “Save password” wählen.</li>
 </ul></li>
-<li>Die Einrichtung durch Klicken auf <code>Save</code> bestätigen.</li>
-<li>Die <code>local-connection</code> wird nun in der linken Seitenleiste angezeigt.</li>
+<li><p>Die Einrichtung durch Klicken auf <em>Save</em> bestätigen.</p></li>
+<li><p>Die <em>local-connection</em> wird nun in der linken Seitenleiste angezeigt.</p></li>
 </ol>
 </section>
 <section id="sql-basics-in-postgresql" class="level2" data-number="16.4">
@@ -521,20 +521,20 @@ Standard PostgreSQL Datenbank
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Bei der Installation von PostgreSQL wird automatisch eine Standarddatenbank namens <code>postgres</code> erstellt. Diese Datenbank wird typischerweise für administrative Zwecke und Tests verwendet. Es ist immer ratsam, neue Datenbanken für anwendungsspezifische Daten zu erstellen, um zu vermeiden, dass die Standarddatenbank mit Anwendungsdaten überladen wird.</p>
+<p>Bei der Installation von PostgreSQL wird automatisch eine Standarddatenbank namens “postgres” erstellt. Diese Datenbank wird typischerweise für administrative Zwecke und Tests verwendet. Es ist immer ratsam, neue Datenbanken für anwendungsspezifische Daten zu erstellen, um zu vermeiden, dass die Standarddatenbank mit Anwendungsdaten überladen wird.</p>
 </div>
 </div>
 </div>
 <ol type="1">
-<li>In pgAdmin4 mit der rechten Maustaste auf den <code>local-connection</code> Server in der linken Seitenleiste klicken.</li>
-<li>Zu Create &gt; Database navigieren.</li>
-<li>Im Reiter “General” <code>db_data</code> als Datenbanknamen eingeben.</li>
-<li>Auf <code>Save</code> klicken, um die Datenbank zu erstellen.</li>
+<li><p>In pgAdmin4 mit der rechten Maustaste auf den “<em>local-connection</em>” Server in der linken Seitenleiste klicken.</p></li>
+<li><p>Zu Create &gt; Database navigieren.</p></li>
+<li><p>Im Reiter “General” <em>db_data</em> als Datenbanknamen eingeben.</p></li>
+<li><p>Auf <em>Save</em> klicken, um die Datenbank zu erstellen.</p></li>
 </ol>
 </section>
 <section id="tabelle-erstellen" class="level3" data-number="16.4.2">
 <h3 data-number="16.4.2" class="anchored" data-anchor-id="tabelle-erstellen"><span class="header-section-number">16.4.2</span> Tabelle erstellen</h3>
-<p>Nun wird eine Tabelle erstellt, um Daten zu Marketingkampagnen zu speichern.</p>
+<p>Nun wird eine Tabelle erstellt. Wir nutzen als Beispiel die Daten einer Marketingkampagne.</p>
 <div class="callout callout-style-simple callout-note callout-titled" title="Tabellendefinition">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -547,30 +547,56 @@ Tabellendefinition
 </div>
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Spalten in der Marketingkampagnen-Tabelle: - id: Eine eindeutige Kennung für jede Kampagne, automatisch inkrementiert. - name: Der Name der Marketingkampagne. - start_date &amp; end_date: Der Zeitraum der Kampagne. - budget: Das der Kampagne zugewiesene Budget. - channel: Der für die Kampagne verwendete Kanal (z.B. “E-Mail”, “Soziale Medien”, “TV”).</p>
+<ul>
+<li>id: Eine eindeutige Kennung für jede Kampagne, automatisch inkrementiert.<br>
+</li>
+<li>name: Der Name der Marketingkampagne.<br>
+</li>
+<li>start_date &amp; end_date: Der Zeitraum der Kampagne.<br>
+</li>
+<li>budget: Das der Kampagne zugewiesene Budget.<br>
+</li>
+<li>channel: Der für die Kampagne verwendete Kanal (z.B. “E-Mail”, “Soziale Medien”, “TV”).</li>
+</ul>
 </div>
 </div>
 </div>
 <ol type="1">
-<li><p>Zur <code>db_data</code> Datenbank navigieren.</p></li>
+<li><p>Zur <em>db_data</em> Datenbank navigieren.</p></li>
 <li><p>Das Abfragewerkzeug unter Tools &gt; Query Tool öffnen.</p></li>
-<li><p>Den folgenden SQL-Befehl eingeben, um die <code>campaigns</code> Tabelle zu erstellen:</p>
+<li><p>Den folgenden SQL-Befehl eingeben, um die <em>campaigns</em> Tabelle zu erstellen:</p></li>
+</ol>
 <div class="sourceCode" id="cb1"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">CREATE</span> <span class="kw">TABLE</span> campaigns (</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">id</span> BIGSERIAL <span class="kw">PRIMARY</span> <span class="kw">KEY</span>,</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    name <span class="dt">VARCHAR</span>(<span class="dv">255</span>) <span class="kw">NOT</span> <span class="kw">NULL</span>,</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    start_date <span class="dt">DATE</span>,</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    end_date <span class="dt">DATE</span>,</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    budget <span class="dt">DECIMAL</span>(<span class="dv">10</span>, <span class="dv">2</span>),</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    channel <span class="dt">VARCHAR</span>(<span class="dv">255</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">id</span> BIGSERIAL <span class="kw">PRIMARY</span> <span class="kw">KEY</span>,</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  name <span class="dt">VARCHAR</span>(<span class="dv">255</span>) <span class="kw">NOT</span> <span class="kw">NULL</span>,</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  start_date <span class="dt">DATE</span>,</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  end_date <span class="dt">DATE</span>,</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  budget <span class="dt">DECIMAL</span>(<span class="dv">10</span>, <span class="dv">2</span>),</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  channel <span class="dt">VARCHAR</span>(<span class="dv">255</span>)</span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>);</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>:::{.callout-note collapse=“true” title=“Tabellendefinition Erklärung”} Der obige SQL-Befehl erstellt eine neue Tabelle namens <code>campaigns</code>. Hier ist eine Aufschlüsselung der einzelnen Spaltendefinitionen:</p>
+<div class="callout callout-style-simple callout-note callout-titled" title="Tabellendefinition Erklärung">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tabellendefinition Erklärung
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <ul>
-<li><strong>id</strong>: Eine Spalte namens <code>id</code>, die den Datentyp <code>BIGSERIAL</code> verwendet, was ein automatisch inkrementierender Integer ist und sich für einen Primärschlüssel eignet.</li>
-<li><strong>name</strong>: Eine Spalte zur Speicherung von Kampagnennamen als Text, definiert, um eine Zeichenfolge von bis zu 255 Zeichen zu halten. Die <code>NOT NULL</code>-Einschränkung stellt sicher, dass jede Zeile einen Namen haben muss.</li>
-<li><strong>start_date</strong> und <strong>end_date</strong>: Diese Spalten speichern die Start- und Enddaten der Kampagnen jeweils im <code>DATE</code>-Datentyp.</li>
-<li><strong>budget</strong>: Eine Spalte für das mit jeder Kampagne verbundene Budget, die <code>DECIMAL(10, 2)</code> verwendet, um bis zu 10 Ziffern mit 2 Dezimalstellen zu ermöglichen.</li>
-<li><strong>channel</strong>: Eine Spalte, um das für die Kampagne verwendete Medium anzugeben, die Zeichenfolgen von bis zu 255 Zeichen speichern kann. :::</li>
-</ul></li>
+<li><p><strong>id</strong>: Eine Spalte namens <code>id</code>, die den Datentyp <code>BIGSERIAL</code> verwendet, was ein automatisch inkrementierender Integer ist und sich für einen Primärschlüssel eignet.</p></li>
+<li><p><strong>name</strong>: Eine Spalte zur Speicherung von Kampagnennamen als Text, definiert, um eine Zeichenfolge von bis zu 255 Zeichen zu halten. Die <code>NOT NULL</code>-Einschränkung stellt sicher, dass jede Zeile einen Namen haben muss.</p></li>
+<li><p><strong>start_date</strong> und <strong>end_date</strong>: Diese Spalten speichern die Start- und Enddaten der Kampagnen jeweils im <code>DATE</code>-Datentyp.</p></li>
+<li><p><strong>budget</strong>: Eine Spalte für das mit jeder Kampagne verbundene Budget, die <code>DECIMAL(10, 2)</code> verwendet, um bis zu 10 Ziffern mit 2 Dezimalstellen zu ermöglichen.</p></li>
+<li><p><strong>channel</strong>: Eine Spalte, um das für die Kampagne verwendete Medium anzugeben, die Zeichenfolgen von bis zu 255 Zeichen speichern kann.</p></li>
+</ul>
+</div>
+</div>
+</div>
+<ol start="4" type="1">
 <li><p>Das Skript ausführen, indem auf die ▶️ Schaltfläche geklickt wird (oder F5 gedrückt wird).</p></li>
 <li><p>Um die Tabelle zu überprüfen, “Schemas” &gt; “Tables” &gt; “campaigns” &gt; “Columns” in der Datenbank <code>db_data</code> erweitern.</p></li>
 </ol>
@@ -603,7 +629,7 @@ Tabellendefinition
 <div class="sourceCode" id="cb3"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> <span class="op">*</span> </span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> campaigns;</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="callout callout-style-simple callout-note callout-titled" title="SELECT Abfrage Erklärung">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -612,7 +638,7 @@ SELECT Abfrage Erklärung
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Dieser SQL-Befehl ruft alle Spalten aus allen Zeilen der <code>campaigns</code> Tabelle ab. Er ist nützlich, um alle Daten zu sehen, die in die Tabelle eingegeben wurden, um sicherzustellen, dass die Einträge korrekt sind, und um weitere Datenanalysen oder Berichte zu erleichtern.</p>
 </div>

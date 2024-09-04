@@ -397,10 +397,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>MongoDB ist eine NoSQL-Datenbank, die für ihre Flexibilität und Skalierbarkeit bekannt ist. Sie speichert Daten in JSON-ähnlichen Dokumenten, was es einfach macht, komplexe Datenstrukturen zu handhaben. Diese Strukturierung ermöglicht es, hierarchische Beziehungen, Arrays und andere komplexe Datentypen ohne die Einschränkungen eines starren, tabellenbasierten Schemas darzustellen. Dadurch können Änderungen am Datenmodell schneller und effizienter umgesetzt werden.</p>
+<p>MongoDB ist eine NoSQL-Datenbank, die für ihre Flexibilität und Skalierbarkeit bekannt ist. Sie speichert Daten in JSON-ähnlichen Dokumenten, was es einfach macht, komplexe Datenstrukturen zu handhaben. Diese Strukturierung ermöglicht es, hierarchische Beziehungen und andere komplexe Datentypen ohne die Einschränkungen eines starren, tabellenbasierten Schemas darzustellen. Dadurch können Änderungen am Datenmodell schneller und effizienter umgesetzt werden.</p>
 <p>Hauptmerkmale von MongoDB:</p>
 <ol type="1">
-<li><p><strong>Flexibilität</strong>: MongoDB verwendet ein dokumentenorientiertes Modell, bei dem die Daten in Dokumenten gespeichert werden, die ähnliche Strukturen wie JSON haben, technisch aber im BSON-Format (Binary JSON) gespeichert werden. Dies ermöglicht eine hohe Flexibilität bei der Strukturierung der Daten, da jedes Dokument unterschiedliche Felder und Datentypen enthalten kann.</p>
+<li><p><strong>Flexibilität</strong>: MongoDB verwendet ein dokumentenorientiertes Modell, bei dem die Daten in Dokumenten gespeichert werden, die ähnliche Strukturen wie JSON haben. Dies ermöglicht eine hohe Flexibilität bei der Strukturierung der Daten, da jedes Dokument unterschiedliche Felder und Datentypen enthalten kann.</p>
 <p>Beispiel eines MongoDB-Dokuments:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"_id"</span><span class="fu">:</span> <span class="er">ObjectId(</span><span class="st">"5f8a7b2b9d3b2c1f4c6d8e7a"</span><span class="er">)</span><span class="fu">,</span></span>
@@ -413,22 +413,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"country"</span><span class="fu">:</span> <span class="st">"Deutschland"</span></span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">}</span></span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p><strong>Skalierbarkeit</strong>: MongoDB ist darauf ausgelegt, horizontal zu skalieren, was bedeutet, dass die Datenbank einfach auf mehrere Server verteilt werden kann. Dies wird durch Sharding erreicht, eine Methode zur Verteilung von Daten über mehrere Maschinen, um sowohl die Speicherkapazität als auch die Verarbeitungsgeschwindigkeit zu erhöhen. MongoDB unterstützt auch Replikation, wodurch Daten über mehrere Server repliziert werden, um Ausfallsicherheit und hohe Verfügbarkeit sicherzustellen.</p></li>
-<li><p><strong>Leistungsfähigkeit</strong>: Durch den Verzicht auf JOIN-Operationen und die Möglichkeit, Daten in einem einzigen Dokument zu speichern, kann MongoDB oft schnellere Schreib- und Leseoperationen durchführen als relationale Datenbanken. Zudem ermöglicht die Indexierung auf Felder innerhalb von Dokumenten eine effiziente Suche und Abfrage der Daten.</p></li>
-<li><p><strong>Entwicklerfreundlich</strong>: MongoDB bietet Treiber für eine Vielzahl von Programmiersprachen, darunter Python, JavaScript, Java, C#, und viele mehr.</p></li>
+<li><p><strong>Skalierbarkeit</strong>: MongoDB ist darauf ausgelegt, horizontal zu skalieren, was bedeutet, dass die Datenbank einfach auf mehrere Server verteilt werden kann. Dies wird durch <em>Sharding</em> erreicht, eine Methode zur Verteilung von Daten über mehrere Maschinen, um sowohl die Speicherkapazität als auch die Verarbeitungsgeschwindigkeit zu erhöhen.</p></li>
+<li><p><strong>Leistungsfähigkeit</strong>: Durch die Möglichkeit, Daten in einem einzigen Dokument zu speichern, kann MongoDB oft schnellere Schreib- und Leseoperationen durchführen als relationale Datenbanken.</p></li>
 </ol>
-<p>Für die Arbeit mit der Datenbank wird die MongoDB Shell (<code>mongosh</code>) genutzt. Diese bietet eine schnelle und intuitive Möglichkeit, sich mit MongoDB zu verbinden und zu arbeiten. Mit <code>mongosh</code> können Daten abgefragt, Einstellungen konfiguriert und verschiedene Aktionen durchgeführt werden.</p>
-<p>Die Hauptfunktionen von mongosh umfassen:</p>
-<ul>
-<li><strong>Syntaxhervorhebung</strong>: Die Shell unterstützt Syntaxhervorhebung, die den Code lesbarer macht und die Erkennung von Fehlern erleichtert.</li>
-<li><strong>Intelligente Autovervollständigung</strong>: Diese Funktion hilft bei der Eingabe von Befehlen und Parametern, indem sie Vorschläge macht und somit die Produktivität erhöht.</li>
-<li><strong>Kontextbezogene Hilfe</strong>: <code>mongosh</code> bietet direkte Hilfe zu Befehlen und Optionen, was besonders nützlich für Einsteiger ist.</li>
-<li><strong>Fehlermeldungen</strong>: Klare und präzise Fehlermeldungen helfen dabei, Probleme schnell zu identifizieren und zu beheben.</li>
-</ul>
+<!-- Die Hauptfunktionen von mongosh umfassen:
+
+- **Syntaxhervorhebung**: Die Shell unterstützt Syntaxhervorhebung, die den Code lesbarer macht und die Erkennung von Fehlern erleichtert.
+- **Intelligente Autovervollständigung**: Diese Funktion hilft bei der Eingabe von Befehlen und Parametern, indem sie Vorschläge macht und somit die Produktivität erhöht.
+- **Kontextbezogene Hilfe**: mongosh bietet direkte Hilfe zu Befehlen und Optionen, was besonders nützlich für Einsteiger ist.
+- **Fehlermeldungen**: Klare und präzise Fehlermeldungen helfen dabei, Probleme schnell zu identifizieren und zu beheben. -->
 <p>Um mit MongoDB zu beginnen, muss zunächst der MongoDB-Dienst gestartet und dann die MongoDB Shell geöffnet werden. Sobald die Shell geöffnet ist, können grundlegende Befehle ausgeführt werden, um Datenbanken und Sammlungen zu erstellen, Daten einzufügen und Abfragen auszuführen.</p>
 <section id="mongodb-installation-in-windows" class="level2" data-number="18.1">
 <h2 data-number="18.1" class="anchored" data-anchor-id="mongodb-installation-in-windows"><span class="header-section-number">18.1</span> MongoDB-Installation in Windows</h2>
-<p>In diesem Abschnitt wird die Installation der NoSQL-Datenbank MongoDB und der MongoDB Shell (<code>mongosh</code>) behandelt.</p>
+<p>In diesem Abschnitt wird die Installation der NoSQL-Datenbank MongoDB und der MongoDB Shell (mongosh) behandelt.</p>
 <ol type="1">
 <li>MongoDB herunterladen:<br>
 Die <a href="https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-windows/#install-mongodb-community-edition">offizielle MongoDB-Download-Seite</a> besuchen und die aktuelle (“current”) MongoDB Community Server-Version für Windows herunterladen.
@@ -443,7 +440,7 @@ Die <a href="https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-win
 <li>“Complete” als Setup-Typ wählen.</li>
 <li>Die Option “Install MongoDB as a Service” aktivieren.</li>
 </ul></li>
-<li>MongoDB Shell (<code>mongosh</code>) herunterladen:<br>
+<li>MongoDB Shell (mongosh) herunterladen:<br>
 Die <a href="https://www.mongodb.com/try/download/shell">MongoDB Shell Download-Seite</a> besuchen und die aktuelle Version von MongoDB Shell herunterladen (als Plattform <em>Windows</em> und als Package <em>msi</em> wählen).</li>
 </ol>
 <p>Um MongoDB von jeder Eingabeaufforderung aus zugänglich zu machen, wird nun eine Umgebungsvariable gesetzt. Dadurch können <code>mongod</code> und <code>mongo</code> von jeder Eingabeaufforderung aus ohne Angabe des vollständigen Pfades ausgeführt werden.</p>
@@ -539,7 +536,7 @@ Die <a href="https://www.mongodb.com/try/download/shell">MongoDB Shell Download-
 <h2 data-number="18.3" class="anchored" data-anchor-id="mongodb-installation-auf-mac"><span class="header-section-number">18.3</span> MongoDB-Installation auf Mac</h2>
 <p>Wir folgen der Installationsanweisung der <a href="https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/#install-mongodb-community-edition">MongoDB-Dokumentation</a>:</p>
 <ol type="1">
-<li><p>Xcode Command-Line Tools installieren (falls noch nicht installiert): Wir benötigen die Xcode Command-Line Tools von Apples Xcode.</p>
+<li><p>Xcode Command-Line Tools von Apple installieren (falls noch nicht installiert):</p>
 <ul>
 <li>Im Terminal prüfen, ob XCode installiert ist (wenn Xcode installiert ist, wird die Version angezeigt. Wenn nicht, wird eine entsprechende Fehlermeldung angezeigt und XCode muss installiert werden):</li>
 </ul>
@@ -547,9 +544,8 @@ Die <a href="https://www.mongodb.com/try/download/shell">MongoDB Shell Download-
 <ul>
 <li>Falls notwendig, die Xcode Command-Line Tools mit folgendem Befehl im macOS Terminal installieren:</li>
 </ul>
-<div class="sourceCode" id="cb7"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">xcode-select</span> <span class="at">--install</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Falls der Befehl nicht ausgeführt werden kann, ist XCode auch <a href="https://apps.apple.com/de/app/xcode/id497799835?mt=12">über den App-Store</a> erhältlich.</p></li>
-<li><p>Homebrew installieren. Homebrew ist ein beliebter Paketmanager für macOS, der die Installation von Software und Entwickler-Tools erheblich vereinfacht. Damit lassen sich viele nützliche Programme über die Kommandozeile installieren, die sonst möglicherweise kompliziert zu installieren wären.:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">xcode-select</span> <span class="at">--install</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p><em>Homebrew</em> installieren. Homebrew ist ein beliebter Paketmanager für macOS, der die Installation von Software und Entwickler-Tools erheblich vereinfacht. Damit lassen sich viele nützliche Programme über die Kommandozeile installieren, die sonst möglicherweise kompliziert zu installieren wären.:</p>
 <ul>
 <li>Diesen Befehl im Terminal ausführen, um den <a href="https://brew.sh/">Homebrew</a>-Paketmanager zu installieren:</li>
 </ul>

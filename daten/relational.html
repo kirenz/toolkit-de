@@ -351,7 +351,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-  <li><a href="#tabellen" id="toc-tabellen" class="nav-link active" data-scroll-target="#tabellen"><span class="header-section-number">14.1</span> Tabellen</a></li>
+  <li><a href="#tabellen" id="toc-tabellen" class="nav-link active" data-scroll-target="#tabellen"><span class="header-section-number">14.1</span> Tabellen</a>
+  <ul class="collapse">
+  <li><a href="#grundstruktur-einer-tabelle" id="toc-grundstruktur-einer-tabelle" class="nav-link" data-scroll-target="#grundstruktur-einer-tabelle"><span class="header-section-number">14.1.1</span> Grundstruktur einer Tabelle</a></li>
+  <li><a href="#schlüsselkonzepte" id="toc-schlüsselkonzepte" class="nav-link" data-scroll-target="#schlüsselkonzepte"><span class="header-section-number">14.1.2</span> Schlüsselkonzepte</a></li>
+  <li><a href="#beziehungen-zwischen-tabellen" id="toc-beziehungen-zwischen-tabellen" class="nav-link" data-scroll-target="#beziehungen-zwischen-tabellen"><span class="header-section-number">14.1.3</span> Beziehungen zwischen Tabellen</a></li>
+  </ul></li>
   <li><a href="#sql" id="toc-sql" class="nav-link" data-scroll-target="#sql"><span class="header-section-number">14.2</span> SQL</a></li>
   </ul>
 </nav>
@@ -382,11 +387,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Relationale Datenbanken bilden das Fundament vieler moderner Datenbankanwendungen. Ihre Stärke liegt in der Fähigkeit, Daten in strukturierten Tabellen zu organisieren und effizient zu verwalten.</p>
 <p>Ein Datenbankmanagementsystem (DBMS) ist die Software, die die Erstellung, Verwaltung und Nutzung von Datenbanken ermöglicht. Ein relationales DBMS (RDBMS) bietet zusätzliche Funktionen wie:</p>
 <ol type="1">
-<li>Datenintegrität</li>
-<li>Transaktionsverwaltung</li>
-<li>Sicherheitsmechanismen</li>
+<li>Datenintegrität (Gewährleistung der Richtigkeit und Konsistenz von Daten)</li>
+<li>Transaktionsverwaltung (Koordinierung und Überwachung von Datenbankoperationen)</li>
+<li>Sicherheitsmechanismen (Schutz vor unbefugtem Zugriff und Datenverlust)</li>
 </ol>
-<p>Zu den bekannten RDBMS gehören MySQL, PostgreSQL und SQLite.</p>
+<p>Zu den bekannten RDBMS gehören <em>MySQL</em>, <em>PostgreSQL</em> und <em>SQLite</em>.</p>
 <p>Einsatzgebiete relationaler Datenbanken sind vielfältig:</p>
 <ol type="1">
 <li>Finanzwesen: Verwaltung von Kontodaten, Transaktionen und Finanzberichten</li>
@@ -397,6 +402,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="tabellen" class="level2" data-number="14.1">
 <h2 data-number="14.1" class="anchored" data-anchor-id="tabellen"><span class="header-section-number">14.1</span> Tabellen</h2>
 <p>Tabellen stehen im Mittelpunkt jeder relationalen Datenbank. Eine Tabelle ist eine strukturierte Sammlung von Daten, organisiert in Zeilen und Spalten. Jede Tabelle repräsentiert eine Entität, wobei jede Zeile einen einzelnen Datensatz dieser Entität darstellt.</p>
+<section id="grundstruktur-einer-tabelle" class="level3" data-number="14.1.1">
+<h3 data-number="14.1.1" class="anchored" data-anchor-id="grundstruktur-einer-tabelle"><span class="header-section-number">14.1.1</span> Grundstruktur einer Tabelle</h3>
 <p>Betrachten wir ein Beispiel einer einfachen Tabelle “Kunden”:</p>
 <table class="caption-top table">
 <thead>
@@ -428,18 +435,69 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 </tbody>
 </table>
-<p>Jede Spalte in einer Tabelle besitzt einen spezifischen Datentyp, der die Art der zu speichernden Daten definiert. Häufig verwendete Datentypen sind:</p>
+<p>Jede Spalte in einer Tabelle besitzt einen spezifischen <strong>Datentyp</strong>, der die Art der zu speichernden Daten definiert. Häufig verwendete Datentypen sind:</p>
 <ol type="1">
-<li><em>INTEGER</em>: Ganze Zahlen</li>
-<li><em>VARCHAR</em>: Zeichenketten variabler Länge</li>
-<li><em>DATE</em>: Datumsangaben</li>
-<li><em>BOOLEAN</em>: Wahrheitswerte (true/false)</li>
+<li>INTEGER: Ganze Zahlen</li>
+<li>VARCHAR: Zeichenketten variabler Länge</li>
+<li>DATE: Datumsangaben</li>
+<li>BOOLEAN: Wahrheitswerte (true/false)</li>
 </ol>
+</section>
+<section id="schlüsselkonzepte" class="level3" data-number="14.1.2">
+<h3 data-number="14.1.2" class="anchored" data-anchor-id="schlüsselkonzepte"><span class="header-section-number">14.1.2</span> Schlüsselkonzepte</h3>
 <p>Zwei wichtige Konzepte in relationalen Datenbanken sind:</p>
 <ol type="1">
-<li><p><em>Primärschlüssel</em>: Eine Spalte oder Spaltenkombination, die jeden Datensatz in einer Tabelle eindeutig identifiziert. Im obigen Beispiel fungiert die Spalte “KundenID” als Primärschlüssel der Tabelle “Kunden”.</p></li>
-<li><p><em>Fremdschlüssel</em>: Eine Spalte, die eine Beziehung zwischen zwei Tabellen herstellt. Ein Fremdschlüssel in einer Tabelle verweist auf den Primärschlüssel einer anderen Tabelle. Diese Beziehungen bilden das Herzstück des relationalen Modells, da sie die Verknüpfung von Daten aus verschiedenen Tabellen und die Erstellung komplexer Abfragen ermöglichen.</p></li>
+<li><p><strong>Primärschlüssel</strong>: Eine Spalte oder Spaltenkombination, die jeden Datensatz in einer Tabelle eindeutig identifiziert. Im obigen Beispiel fungiert die Spalte “KundenID” als Primärschlüssel der Tabelle “Kunden”.</p></li>
+<li><p><strong>Fremdschlüssel</strong>: Eine Spalte, die eine Beziehung zwischen zwei Tabellen herstellt. Ein Fremdschlüssel in einer Tabelle verweist auf den Primärschlüssel einer anderen Tabelle.</p></li>
 </ol>
+</section>
+<section id="beziehungen-zwischen-tabellen" class="level3" data-number="14.1.3">
+<h3 data-number="14.1.3" class="anchored" data-anchor-id="beziehungen-zwischen-tabellen"><span class="header-section-number">14.1.3</span> Beziehungen zwischen Tabellen</h3>
+<p>Um die Verwendung von Fremdschlüsseln zu veranschaulichen, betrachten wir eine zweite Tabelle “Bestellungen”:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>BestellID</th>
+<th>KundenID</th>
+<th>Produkt</th>
+<th>Menge</th>
+<th>Bestelldatum</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>2</td>
+<td>Laptop</td>
+<td>1</td>
+<td>2024-03-15</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>1</td>
+<td>Smartphone</td>
+<td>2</td>
+<td>2024-03-16</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>3</td>
+<td>Tablet</td>
+<td>1</td>
+<td>2024-03-17</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>2</td>
+<td>Kopfhörer</td>
+<td>1</td>
+<td>2024-03-18</td>
+</tr>
+</tbody>
+</table>
+<p>In dieser Tabelle fungiert die Spalte “KundenID” als Fremdschlüssel, der auf den Primärschlüssel der Tabelle “Kunden” verweist. Diese Beziehung ermöglicht es, Informationen aus beiden Tabellen zu verknüpfen.</p>
+<p>Durch die Verwendung von Tabellen und deren Beziehungen zueinander können komplexe Datenstrukturen abgebildet und effizient verwaltet werden. Dies ist eine der Kernstärken relationaler Datenbanken und ein wesentlicher Grund für ihre weite Verbreitung in der Datenverwaltung.</p>
+</section>
 </section>
 <section id="sql" class="level2" data-number="14.2">
 <h2 data-number="14.2" class="anchored" data-anchor-id="sql"><span class="header-section-number">14.2</span> SQL</h2>

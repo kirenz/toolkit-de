@@ -317,9 +317,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-  <li><a href="#vs-code-installation-in-windows" id="toc-vs-code-installation-in-windows" class="nav-link active" data-scroll-target="#vs-code-installation-in-windows"><span class="header-section-number">11</span> VS Code Installation in Windows</a></li>
-  <li><a href="#vs-code-installation-auf-mac" id="toc-vs-code-installation-auf-mac" class="nav-link" data-scroll-target="#vs-code-installation-auf-mac"><span class="header-section-number">12</span> VS Code Installation auf Mac</a></li>
-  <li><a href="#vs-code-erweiterungen" id="toc-vs-code-erweiterungen" class="nav-link" data-scroll-target="#vs-code-erweiterungen"><span class="header-section-number">13</span> VS Code Erweiterungen</a></li>
+  <li><a href="#vs-code-installation-in-windows" id="toc-vs-code-installation-in-windows" class="nav-link active" data-scroll-target="#vs-code-installation-in-windows"><span class="header-section-number">10.1</span> VS Code Installation in Windows</a></li>
+  <li><a href="#vs-code-installation-auf-mac" id="toc-vs-code-installation-auf-mac" class="nav-link" data-scroll-target="#vs-code-installation-auf-mac"><span class="header-section-number">10.2</span> VS Code Installation auf Mac</a></li>
+  <li><a href="#vs-code-erweiterungen" id="toc-vs-code-erweiterungen" class="nav-link" data-scroll-target="#vs-code-erweiterungen"><span class="header-section-number">10.3</span> VS Code Erweiterungen</a>
+  <ul class="collapse">
+  <li><a href="#installation-über-marktplatz" id="toc-installation-über-marktplatz" class="nav-link" data-scroll-target="#installation-über-marktplatz"><span class="header-section-number">10.3.1</span> Installation über Marktplatz</a></li>
+  <li><a href="#installation-in-vs-code" id="toc-installation-in-vs-code" class="nav-link" data-scroll-target="#installation-in-vs-code"><span class="header-section-number">10.3.2</span> Installation in VS Code</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -356,15 +360,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<p>Der Hauptunterschied eines Open-Source-Editors zu herkömmlicher Software liegt darin,</p>
-<p>Für einen tieferen Einblick in die Funktionsweise von VS Code sind folgende Ressourcen empfehlenswert:</p>
-<ul>
-<li><a href="https://code.visualstudio.com/docs/getstarted/introvideos">Einführungsvideos zu VS Code</a></li>
-<li><a href="https://code.visualstudio.com/docs/datascience/data-science-tutorial">Datenwissenschaft in VS Code Tutorial</a></li>
-<li><a href="https://www.youtube.com/watch?v=ifTF3ags0XI">25 VS Code Produktivitätstipps und Geschwindigkeits-Hacks</a></li>
-</ul>
-<section id="vs-code-installation-in-windows" class="level1" data-number="11">
-<h1 data-number="11"><span class="header-section-number">11</span> VS Code Installation in Windows</h1>
+<section id="vs-code-installation-in-windows" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="vs-code-installation-in-windows"><span class="header-section-number">10.1</span> VS Code Installation in Windows</h2>
 <p>Die Installation von VS Code unter Windows ist ein unkomplizierter Prozess, der in wenigen Schritten durchgeführt werden kann:</p>
 <ol type="1">
 <li>Herunterladen des Installers
@@ -398,8 +395,8 @@ ul.task-list li input[type="checkbox"] {
 <li>Workspace Trust Bei der ersten Nutzung von VS Code erscheint möglicherweise eine Abfrage zum <a href="https://code.visualstudio.com/docs/editor/workspace-trust">Workspace Trust</a>. Es wird empfohlen, “<strong>Ja, ich vertraue den Autoren</strong>” zu wählen, um alle Funktionen und Erweiterungen vollständig nutzen zu können.</li>
 </ol>
 </section>
-<section id="vs-code-installation-auf-mac" class="level1" data-number="12">
-<h1 data-number="12"><span class="header-section-number">12</span> VS Code Installation auf Mac</h1>
+<section id="vs-code-installation-auf-mac" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="vs-code-installation-auf-mac"><span class="header-section-number">10.2</span> VS Code Installation auf Mac</h2>
 <p>Hier die Schritte der Installation von VS Code auf einem Mac :</p>
 <ol type="1">
 <li>Herunterladen des Installers
@@ -417,55 +414,46 @@ ul.task-list li input[type="checkbox"] {
 <li>Den “Programme”-Ordner öffnen und Visual Studio Code durch Doppelklick starten.</li>
 <li>Die Willkommensseite führt durch die erste Einrichtung, einschließlich der Installation beliebter Erweiterungen.</li>
 </ul></li>
-<li>Hinzufügen zum PATH Um VS Code vom Terminal aus starten zu können, sollte es zum PATH hinzugefügt werden:
-<ul>
-<li>In VS Code die Befehlspalette mit dieser Tastenkombination öffnen: <code>Command+Shift+P</code> (erst Command, dann Shift und dann P gleichzeitig gedrückt halten).</li>
-<li>‘Shell Command: Install <code>code</code> command in PATH’ eingeben und Enter drücken.</li>
-</ul></li>
 </ol>
-<div class="callout callout-style-simple callout-tip">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>Nach der Installation des <code>code</code> Befehls im PATH kann VS Code aus dem Terminal geöffnet werden, indem <code>code .</code> in einem beliebigen Verzeichnis eingegeben wird. Dies ermöglicht uns einen schnellen und einfachen Zugriff auf Projekte.</p>
-</div>
-</div>
-</div>
-<ol start="5" type="1">
+<!-- 4. Hinzufügen zum PATH
+   Um VS Code vom Terminal aus starten zu können, sollte es zum PATH hinzugefügt werden:
+   - In VS Code die Befehlspalette mit dieser Tastenkombination öffnen: `Command+Shift+P` (erst Command, dann Shift und dann P gleichzeitig gedrückt halten).
+   - 'Shell Command: Install `code` command in PATH' eingeben und Enter drücken.
+
+:::{.callout-tip}
+Nach der Installation des `code` Befehls im PATH kann VS Code aus dem Terminal geöffnet werden, indem `code .` in einem beliebigen Verzeichnis eingegeben wird. Dies ermöglicht uns einen schnellen und einfachen Zugriff auf Projekte.
+::: -->
+<ol start="4" type="1">
 <li>Workspace Trust Beim ersten Start wird möglicherweise eine Abfrage zum <a href="https://code.visualstudio.com/docs/editor/workspace-trust">Workspace Trust</a> angezeigt. Es wird empfohlen, “<strong>Ja, ich vertraue den Autoren</strong>” zu wählen, um alle Funktionen und Erweiterungen vollständig nutzen zu können.</li>
 </ol>
 </section>
-<section id="vs-code-erweiterungen" class="level1" data-number="13">
-<h1 data-number="13"><span class="header-section-number">13</span> VS Code Erweiterungen</h1>
+<section id="vs-code-erweiterungen" class="level2" data-number="10.3">
+<h2 data-number="10.3" class="anchored" data-anchor-id="vs-code-erweiterungen"><span class="header-section-number">10.3</span> VS Code Erweiterungen</h2>
 <p>Erweiterungen (Extensions) sind ein zentrales Feature von VS Code, das die Funktionalität des Editors erheblich erweitert. Sie ermöglichen es, den Editor an spezifische Bedürfnisse anzupassen und die Produktivität zu steigern.</p>
+<section id="installation-über-marktplatz" class="level3" data-number="10.3.1">
+<h3 data-number="10.3.1" class="anchored" data-anchor-id="installation-über-marktplatz"><span class="header-section-number">10.3.1</span> Installation über Marktplatz</h3>
 <p>Microsoft bietet einen <a href="https://marketplace.visualstudio.com/">digitalen Marktplatz für VS Code Erweiterungen</a>, auf welchem man sich auch eine Übersicht über die empfohlenen <a href="https://marketplace.visualstudio.com/search?target=VSCode&amp;category=Data%20Science&amp;sortBy=Installs">Erweiterungen für Data Science</a> verschaffen kann.</p>
 <p>Die folgenden Erweiterungen sollten in jedem Fall installiert werden (auf der jeweiligen Seite auf Install klicken und den Anweisungen im Browser folgen. Alternativ kann auch der unten beschriebene Installationsprozess in VS Code gewählt werden):</p>
 <ul>
-<li><p><strong><a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">Python-Erweiterung</a></strong> Die Python-Erweiterung von Microsoft ist unverzichtbar für Python-Entwickler/innen. Sie bietet unter anderem:</p>
+<li><p><strong><a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">Python-Erweiterung</a></strong>: Die Python-Erweiterung von Microsoft ist unverzichtbar für Python-Entwickler/innen. Sie bietet unter anderem:</p>
 <ul>
 <li>IntelliSense (automatische Code-Vervollständigungen)</li>
 <li>Linting (Codequalitätsprüfung)</li>
-<li>Code-Navigation</li>
-<li>Formatierung</li>
 </ul></li>
-<li><p><strong><a href="https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter">Jupyter-Erweiterung</a></strong> Die Jupyter-Erweiterung ermöglicht es, Jupyter-Notebooks direkt in VS Code zu erstellen, zu bearbeiten und auszuführen.</p></li>
-<li><p><strong><a href="https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons">VS Code Icons</a></strong> Diese Erweiterung verbessert die visuelle Organisation von Projektdateien:</p>
+<li><p><strong><a href="https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter">Jupyter-Erweiterung</a></strong>: Die Jupyter-Erweiterung ermöglicht es, Jupyter-Notebooks direkt in VS Code zu erstellen, zu bearbeiten und auszuführen.</p></li>
+<li><p><strong><a href="https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons">VS Code Icons</a></strong>: Diese Erweiterung verbessert die visuelle Organisation von Projektdateien:</p>
 <ul>
 <li>Fügt für jeden Dateityp passende Symbole hinzu</li>
-<li>Erleichtert die schnelle Identifizierung verschiedener Dateitypen im Projekt-Explorer</li>
 </ul></li>
 </ul>
 <p>Optional kann auch die visuelle Darstellung von VS Code angepasst werden:</p>
 <ul>
-<li><strong><a href="https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark">Atom One Dark Theme</a></strong> Für eine angenehme visuelle Erfahrung, insbesondere bei längeren Coding-Sessions:
-<ul>
-<li>Dunkles Farbschema, das die Augenbelastung reduziert</li>
-<li>Verbesserte Lesbarkeit des Codes durch sorgfältig ausgewählte Farben</li>
-</ul></li>
+<li><strong><a href="https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark">Atom One Dark Theme</a></strong>: Für eine angenehme visuelle Erfahrung, insbesondere bei längeren Coding-Sessions: Dunkles Farbschema, das die Augenbelastung reduziert und eine verbesserte Lesbarkeit des Codes durch sorgfältig ausgewählte Farben.</li>
 </ul>
-<p>Hier noch der allgemeine Installationsprozess für Erweiterungen direkt in VS Code:</p>
+</section>
+<section id="installation-in-vs-code" class="level3" data-number="10.3.2">
+<h3 data-number="10.3.2" class="anchored" data-anchor-id="installation-in-vs-code"><span class="header-section-number">10.3.2</span> Installation in VS Code</h3>
+<p>Alternativ zu der Installation über den Marktplatz können Erweiterungen auch direkt in VS Code installiert werden. Hier der Installationsprozess:</p>
 <ol type="1">
 <li>VS Code öffnen.</li>
 <li>Die Ansicht Erweiterungen aufrufen:
@@ -476,6 +464,13 @@ ul.task-list li input[type="checkbox"] {
 <li>In der Suchleiste nach der gewünschten Erweiterung suchen.</li>
 <li>Auf “Installieren” klicken, um die Erweiterung hinzuzufügen.</li>
 </ol>
+<!-- Weitere Ressourcen
+
+Für einen tieferen Einblick in die Funktionsweise von VS Code sind folgende Ressourcen empfehlenswert:
+
+- [Einführungsvideos zu VS Code](https://code.visualstudio.com/docs/getstarted/introvideos)
+- [Datenwissenschaft in VS Code Tutorial](https://code.visualstudio.com/docs/datascience/data-science-tutorial)
+- [25 VS Code Produktivitätstipps und Geschwindigkeits-Hacks](https://www.youtube.com/watch?v=ifTF3ags0XI) -->
 <!-- ## GitHub Copilot
 
 GitHub Copilot ist ein KI-gestütztes Code-Vervollständigungstool, das ganze Zeilen oder Codeblöcke vorschlägt, während Sie tippen. Es ist wie ein Paarprogrammierungspartner, der Ihnen hilft, schneller zu codieren und neue APIs und Sprachen zu lernen.
@@ -486,6 +481,7 @@ GitHub Copilot ist ein KI-gestütztes Code-Vervollständigungstool, das ganze Ze
 3. Klicken Sie auf "Installieren", um den KI-Assistenten von GitHub zu nutzen. -->
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

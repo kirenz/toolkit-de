@@ -392,22 +392,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p>CSV-Dateien (Comma-Separated Values) sind ein weit verbreitetes Format zur Speicherung tabellarischer Daten. Sie zeichnen sich durch ihre Einfachheit und Plattformunabhängigkeit aus, was sie zu einem beliebten Austauschformat für Daten macht.</p>
-<div class="callout callout-style-simple callout-note">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>Struktur einer CSV-Datei: - Jede Zeile entspricht einem Datensatz - Werte innerhalb einer Zeile werden durch Kommas getrennt - Die erste Zeile enthält üblicherweise die Spaltenüberschriften</p>
-</div>
-</div>
-</div>
+<p>Struktur einer CSV-Datei:</p>
+<ul>
+<li>Jede Zeile entspricht einem Datensatz<br>
+</li>
+<li>Werte innerhalb einer Zeile werden durch Kommas getrennt<br>
+</li>
+<li>Die erste Zeile enthält üblicherweise die Spaltenüberschriften</li>
+</ul>
 <p>Beispiel einer CSV-Datei:</p>
 <pre class="plaintext"><code>Name,Alter,Stadt
 Max,24,Berlin
 Anna,30,Hamburg
 Tom,22,München</code></pre>
-<p>In diesem Beispiel: - Spalten: Name, Alter, Stadt - Jede nachfolgende Zeile repräsentiert einen Datensatz - Werte sind durch Kommas getrennt</p>
+<p>In diesem Beispiel:</p>
+<ul>
+<li>Spalten: Name, Alter, Stadt<br>
+</li>
+<li>Jede nachfolgende Zeile repräsentiert einen Datensatz<br>
+</li>
+<li>Werte sind durch Kommas getrennt</li>
+</ul>
 <p>Diese einfache Struktur ermöglicht es, Daten leicht zu organisieren und in verschiedenen Anwendungen zu verwenden, von Tabellenkalkulationen bis hin zu Datenanalyse-Tools.</p>
 <section id="excel-und-google-sheets" class="level2" data-number="12.1">
 <h2 data-number="12.1" class="anchored" data-anchor-id="excel-und-google-sheets"><span class="header-section-number">12.1</span> Excel und Google Sheets</h2>
@@ -440,21 +445,18 @@ Tom,22,München</code></pre>
 <p>Die Bibliothek Pandas ist ein leistungsstarkes Werkzeug für die Verarbeitung von CSV-Daten in Python. Sie ermöglicht sowohl das Erstellen als auch das Einlesen von CSV-Dateien mit wenigen Zeilen Code.</p>
 <section id="csv-erstellen" class="level3" data-number="12.2.1">
 <h3 data-number="12.2.1" class="anchored" data-anchor-id="csv-erstellen"><span class="header-section-number">12.2.1</span> CSV Erstellen</h3>
-<div id="597b87dd" class="cell" data-execution_count="1">
+<div id="6443aa9f" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Daten definieren</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>daten <span class="op">=</span> {</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Name"</span>: [<span class="st">"Max"</span>, <span class="st">"Anna"</span>, <span class="st">"Tom"</span>],</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Alter"</span>: [<span class="dv">24</span>, <span class="dv">30</span>, <span class="dv">22</span>],</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Stadt"</span>: [<span class="st">"Berlin"</span>, <span class="st">"Hamburg"</span>, <span class="st">"München"</span>]</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co"># DataFrame erstellen</span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(daten)</span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Als CSV-Datei speichern</span></span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>df.to_csv(<span class="st">'daten.csv'</span>, index<span class="op">=</span><span class="va">False</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Daten definieren</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>daten <span class="op">=</span> {</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Name"</span>: [<span class="st">"Max"</span>, <span class="st">"Anna"</span>, <span class="st">"Tom"</span>],</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Alter"</span>: [<span class="dv">24</span>, <span class="dv">30</span>, <span class="dv">22</span>],</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Stadt"</span>: [<span class="st">"Berlin"</span>, <span class="st">"Hamburg"</span>, <span class="st">"München"</span>]</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co"># DataFrame erstellen</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(daten)</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Als CSV-Datei speichern</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>df.to_csv(<span class="st">'daten.csv'</span>, index<span class="op">=</span><span class="va">False</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Dieser Code erstellt einen Pandas DataFrame aus einem Python-Dictionary und speichert ihn als CSV-Datei.</p>
 <div class="callout callout-style-simple callout-note callout-titled" title="Detaillierte Erklärung">
@@ -475,18 +477,6 @@ Detaillierte Erklärung
 <li><p><strong>DataFrame erstellen</strong>: <code>pd.DataFrame(daten)</code> konvertiert das Dictionary in einen Pandas DataFrame.</p></li>
 <li><p><strong>CSV speichern</strong>: <code>df.to_csv('daten.csv', index=False)</code> speichert den DataFrame als CSV-Datei. <code>index=False</code> verhindert, dass die Zeilenindizes in die Datei geschrieben werden.</p></li>
 </ol>
-<p>Der resultierende DataFrame sieht so aus:</p>
-<pre><code>   Name  Alter     Stadt
-0   Max     24    Berlin
-1  Anna     30   Hamburg
-2   Tom     22   München</code></pre>
-<p>Jede Zeile im DataFrame repräsentiert einen Datensatz (eine Person) und jede Spalte repräsentiert eine Eigenschaft dieser Datensätze (Name, Alter, Stadt).</p>
-<p>Die gespeicherte CSV-Datei hat folgendes Format:</p>
-<pre><code>Name,Alter,Stadt
-Max,24,Berlin
-Anna,30,Hamburg
-Tom,22,München</code></pre>
-<p>Jede Zeile der CSV-Datei entspricht einer Zeile im DataFrame, und jede Spalte entspricht einer Spalte im DataFrame. Die erste Zeile enthält die Spaltenüberschriften, welche die Namen der Spalten im DataFrame repräsentieren.</p>
 </div>
 </div>
 </div>
@@ -494,22 +484,22 @@ Tom,22,München</code></pre>
 <section id="speicherort-der-csv-datei" class="level3" data-number="12.2.2">
 <h3 data-number="12.2.2" class="anchored" data-anchor-id="speicherort-der-csv-datei"><span class="header-section-number">12.2.2</span> Speicherort der CSV-Datei</h3>
 <p>Wenn kein spezifischer Pfad angegeben wird, speichert Python die CSV-Datei im aktuellen Arbeitsverzeichnis. Um das aktuelle Arbeitsverzeichnis zu ermitteln, kann dieser Code genutzt werden:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(os.getcwd())</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(os.getcwd())</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Diese Funktion gibt den Pfad des aktuellen Arbeitsverzeichnisses aus.</p>
 </section>
 <section id="csv-einlesen" class="level3" data-number="12.2.3">
 <h3 data-number="12.2.3" class="anchored" data-anchor-id="csv-einlesen"><span class="header-section-number">12.2.3</span> CSV Einlesen</h3>
 <p>Dieser Code liest eine CSV-Datei ein und konvertiert sie in einen Pandas DataFrame:</p>
-<div id="f0366c3b" class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co"># CSV-Datei lesen</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">'daten.csv'</span>)</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="co"># DataFrame anzeigen</span></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="99a2c2a6" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># CSV-Datei lesen</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">'daten.csv'</span>)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="co"># DataFrame anzeigen</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="2">
 <div>
 
@@ -569,12 +559,12 @@ Detaillierte Erklärung
 <ol type="1">
 <li>Importieren der Pandas-Bibliothek</li>
 </ol>
-<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Die <code>pandas</code>-Bibliothek wird importiert.</p>
 <ol start="2" type="1">
 <li>Lesen einer CSV-Datei</li>
 </ol>
-<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">'daten.csv'</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">'daten.csv'</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Die Methode <code>pd.read_csv('daten.csv')</code> liest die CSV-Datei <code>daten.csv</code> und erstellt daraus einen Pandas DataFrame. Diese Methode nimmt den Dateinamen als Argument und lädt die Daten aus der CSV-Datei in einen DataFrame.</p>
 <p>Angenommen, die Datei <code>daten.csv</code> hat folgenden Inhalt:</p>
 <pre class="plaintext"><code>Name,Alter,Stadt
@@ -612,11 +602,11 @@ df</code></pre>
 <li>Befindet sich die Datei im aktuellen Arbeitsverzeichnis, reicht der Dateiname aus.</li>
 <li>Für Dateien in anderen Verzeichnissen muss der vollständige Pfad angegeben werden:</li>
 </ul>
-<div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">'/pfad/zum/verzeichnis/daten.csv'</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">'/pfad/zum/verzeichnis/daten.csv'</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Um Fehler zu vermeiden, sollte sichergestellt werden, dass der angegebene Pfad korrekt ist und die Datei existiert. Bei Problemen kann das aktuelle Arbeitsverzeichnis überprüft werden:</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(os.getcwd())</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(os.getcwd())</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Dies hilft, den korrekten Pfad zur CSV-Datei zu bestimmen und FileNotFoundErrors zu vermeiden.</p>
 
 
