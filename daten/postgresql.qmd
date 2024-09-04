@@ -168,22 +168,25 @@ Die Tabelle wird nun mit Beispieldaten gefüllt:
 
 1. Erneut das Abfragewerkzeug verwenden, um die folgende Einfügeanweisung auszuführen:
 
-    ```sql
-    INSERT INTO campaigns (name, start_date, end_date, budget, channel) VALUES
-    ('Winter Sale', '2023-12-01', '2023-12-31', 5000.00, 'Email'),
-    ('Summer Festival', '2023-06-01', '2023-06-15', 10000.00, 'Social Media'),
-    ('Back to School', '2023-08-01', '2023-08-20', 7500.00, 'TV');
-    ```
+```sql
+INSERT INTO campaigns (name, start_date, end_date, budget, channel) VALUES
+('Winter Sale', '2023-12-01', '2023-12-31', 5000.00, 'Email'),
+('Summer Festival', '2023-06-01', '2023-06-15', 10000.00, 'Social Media'),
+('Back to School', '2023-08-01', '2023-08-20', 7500.00, 'TV');
+```
 
-    :::{.callout-note collapse="true" title="Insert Statement Erklärung"}
-    Dieser SQL-Befehl fügt Daten in die `campaigns` Tabelle ein. Jede Zeile von Werten entspricht einer anderen Marketingkampagne:
 
-    - **Erste Zeile**: Fügt eine Kampagne namens "Winter Sale" ein, die vom 1. bis 31. Dezember 2023 läuft, mit einem Budget von 5000 Dollar und dem Kanal "Email".
-    - **Zweite Zeile**: Fügt "Summer Festival" ein, eine kürzere Kampagne vom 1. bis 15. Juni 2023, mit einem höheren Budget von 10000 Dollar und nutzt "Social Media".
-    - **Dritte Zeile**: Fügt die "Back to School"-Kampagne vom 1. bis 20. August 2023 hinzu, mit einem Budget von 7500 Dollar, vermarktet durch "TV".
+ :::{.callout-note collapse="true" title="Insert Statement Erklärung"}
+Dieser SQL-Befehl fügt Daten in die `campaigns` Tabelle ein. Jede Zeile von Werten entspricht einer anderen Marketingkampagne:
 
-    Jeder Satz von Werten ist in Klammern eingeschlossen und durch Kommata getrennt, um verschiedene Kampagnen zu unterscheiden.
-    :::
+ - **Erste Zeile**: Fügt eine Kampagne namens "Winter Sale" ein, die vom 1. bis 31. Dezember 2023 läuft, mit einem Budget von 5000 Dollar und dem Kanal "Email".
+
+- **Zweite Zeile**: Fügt "Summer Festival" ein, eine kürzere Kampagne vom 1. bis 15. Juni 2023, mit einem höheren Budget von 10000 Dollar und nutzt "Social Media".
+
+- **Dritte Zeile**: Fügt die "Back to School"-Kampagne vom 1. bis 20. August 2023 hinzu, mit einem Budget von 7500 Dollar, vermarktet durch "TV".
+
+Jeder Satz von Werten ist in Klammern eingeschlossen und durch Kommata getrennt, um verschiedene Kampagnen zu unterscheiden.
+:::
 
 2. Das Skript ausführen, indem auf die ▶️ Schaltfläche geklickt wird.
 
