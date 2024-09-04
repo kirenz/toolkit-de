@@ -1,4 +1,4 @@
-# Arbeitsbereich vorbereiten
+# Arbeitsbereich 
 
 Bevor wir mit dem Programmieren in Python beginnen, stellen wir sicher, dass wir einen ordnungsgemäß konfigurierten Arbeitsbereich haben:
 
