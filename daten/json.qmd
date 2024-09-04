@@ -40,12 +40,10 @@ In diesem Beispiel enthält die JSON-Datei ein Objekt mit dem Schlüssel "Person
 
 ## Schreiben und Lesen einer JSON-Datei
 
-
 Das Speichern von Daten in eine JSON-Datei erfolgt mithilfe der `json`-Bibliothek. Die Methode `json.dump()` ermöglicht das Speichern eines Python-Dictionaries in eine JSON-Datei.
 
 ```{python}
 import json
-
 # Daten erstellen
 daten = {
     "Personen": [
@@ -54,7 +52,6 @@ daten = {
         {"Name": "Tom", "Alter": 22, "Stadt": "München"}
     ]
 }
-
 # JSON-Datei speichern
 with open('daten.json', 'w') as jsonfile:
     json.dump(daten, jsonfile, indent=4)
@@ -83,7 +80,6 @@ with open('daten.json', 'w') as jsonfile:
    - `indent=4` sorgt für eine formatierte, leicht lesbare Ausgabe mit Einrückungen.
 
 :::
-
 
 Das **Einlesen** von JSON-Dateien in Python erfolgt ebenfalls mit der `json`-Bibliothek. Die Methode `json.load()` wandelt den Inhalt einer JSON-Datei in ein Python-Dictionary um.
 
@@ -120,8 +116,9 @@ print(daten)
 
 JSON lässt sich einfach in Python-Datenstrukturen umwandeln und umgekehrt.
 
-JSON in ein Python Dictionary konvertieren:
+### JSON zu Dictionary
 
+JSON in ein Python Dictionary konvertieren:
 
 ```{python}
 import json
@@ -137,6 +134,8 @@ json_daten = '''
 daten = json.loads(json_daten)
 print(daten)
 ```
+
+### Dictionary zu JSON
 
 Python-Dictionary in JSON konvertieren:
 
@@ -154,6 +153,9 @@ print(json_daten)
 ```
 
 
+
+
+<!-- 
 JSON-Daten können komplexe, verschachtelte Strukturen enthalten, wie Listen von Objekten oder Objekte innerhalb von Objekten. Python ermöglicht eine direkte Verarbeitung dieser Strukturen.
 
 ```{python}
@@ -185,4 +187,4 @@ for person in daten["Personen"]:
     print(f"Name: {person['Name']}, Hobbys: {', '.join(person['Hobbys'])}")
 ```
 
-Dieses Beispiel demonstriert, wie auf verschachtelte Datenstrukturen in JSON zugegriffen und wie diese verarbeitet werden können.
+Dieses Beispiel demonstriert, wie auf verschachtelte Datenstrukturen in JSON zugegriffen und wie diese verarbeitet werden können. -->
