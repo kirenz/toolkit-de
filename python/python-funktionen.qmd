@@ -2,7 +2,7 @@
 
 [⬇️ Jupyter Notebook herunterladen](../code/python-funktionen.ipynb){download="python-funktionen.ipynb"}
 
-Funktionen helfen Ihnen, modulare, wiederverwendbare Codeblöcke zu schreiben. In diesem Abschnitt wird das Definieren, Aufrufen und Dokumentieren von Funktionen demonstriert.
+Funktionen helfen, modulare, wiederverwendbare Codeblöcke zu schreiben. In diesem Abschnitt wird das Definieren, Aufrufen und Dokumentieren von Funktionen demonstriert.
 
 ## Einfache Funktion
 
