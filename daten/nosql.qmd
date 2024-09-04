@@ -2,15 +2,14 @@
 
 NoSQL steht für "Not only SQL" und bezeichnet eine Klasse von Datenbanksystemen, die sich von traditionellen, relationalen Datenbanken unterscheiden. Diese Systeme wurden entwickelt, um die Skalierbarkeit und Leistung zu verbessern sowie flexibler mit Daten umzugehen.
 
-::: {.callout-note}
-## Hauptmerkmale von NoSQL-Datenbanken
+Hauptmerkmale von NoSQL-Datenbanken
 
 - **Schemaflexibilität**: NoSQL-Datenbanken ermöglichen die Speicherung von Daten ohne vordefiniertes Schema, was eine schnelle Anpassung an sich ändernde Datenanforderungen erlaubt.
 
 - **Horizontale Skalierbarkeit**: Diese Datenbanken sind darauf ausgelegt, große Datenmengen auf vielen Servern zu verteilen. Sie unterstützen eine horizontale Skalierung durch Hinzufügen weiterer Server in ein Netzwerk.
 
 - **Hohe Verfügbarkeit und Fehlertoleranz**: NoSQL-Datenbanken sind so konzipiert, dass sie auch bei Ausfällen einzelner Knoten im Netzwerk weiterhin verfügbar bleiben.
-:::
+
 
 Anstatt Tabellen zu verbinden, speichern NoSQL-Datenbanken unstrukturierte oder halbstrukturierte Daten, oft in Schlüssel-Wert-Paaren oder JSON-Dokumenten. Sie umfassen mehrere verschiedene Modelle zum Zugriff und zur Verwaltung von Daten, die jeweils für spezifische Anwendungsfälle geeignet sind.
 
@@ -22,6 +21,8 @@ NoSQL-Datenbanken finden in verschiedenen Bereichen Anwendung:
 4. Social Media: Verwaltung von Benutzerprofilen, Beziehungen und Aktivitäten in sozialen Netzwerken.
 5. IoT (Internet of Things): Speicherung und Analyse großer Mengen an Sensordaten.
 
+
+<!-- 
 ## NoSQL-Datenmodelle
 
 NoSQL-Datenbanken bieten eine Vielzahl von Möglichkeiten, um verschiedene Arten von Daten effizient zu speichern und abzurufen. Sie sind besonders nützlich in Szenarien, in denen traditionelle relationale Datenbanken an ihre Grenzen stoßen.
@@ -65,4 +66,4 @@ Graph-Datenbanken speichern Daten in Form von Graphen, bei denen Knoten die Date
 | Spaltenorientierter Speicher | Verwandte Daten werden als eine Reihe von verschachtelten Schlüssel/Wert-Paaren innerhalb einer einzigen Spalte gespeichert. | HBase, Cassandra |
 | Graph-Speicher | Daten werden in einer Graphstruktur als Knoten, Kanten und Dateneigenschaften gespeichert. | Neo4j |
 
-Diese verschiedenen NoSQL-Datenmodelle bieten Flexibilität und Effizienz für unterschiedliche Anwendungsfälle und Datenstrukturen. Die Wahl des geeigneten Modells hängt von den spezifischen Anforderungen des jeweiligen Projekts ab.
+Diese verschiedenen NoSQL-Datenmodelle bieten Flexibilität und Effizienz für unterschiedliche Anwendungsfälle und Datenstrukturen. Die Wahl des geeigneten Modells hängt von den spezifischen Anforderungen des jeweiligen Projekts ab. -->
