@@ -1,8 +1,7 @@
 # Arbeitsbereich vorbereiten
 
-Bevor wir mit dem Programmieren in Python beginnen, stellen wir sicher, dass wir einen ordnungsgemäß konfigurierten Arbeitsbereich haben.
+Bevor wir mit dem Programmieren in Python beginnen, stellen wir sicher, dass wir einen ordnungsgemäß konfigurierten Arbeitsbereich haben:
 
-## Anaconda Navigator starten
 
 1. Anaconda Navigator starten:
    - Anaconda Navigator aus dem Anwendungsordner auf macOS oder dem Startmenü auf Windows öfnnen.
@@ -15,24 +14,23 @@ Bevor wir mit dem Programmieren in Python beginnen, stellen wir sicher, dass wir
 
    ![Jupyter Notebook starten](../images/anaconda-navigator-jupyter.png){#fig-anaconda-navigator-jupyter-2 width="100%"}
 
-## Jupyter Notebook starten
 
-1. In der Web-Oberfläche von Jupyter zum *code*-Verzeichnis (siehe die Erklärung zur [Ordnerstruktur](../erste-schritte/projektumgebung.qmd)) navigieren.
+3. In der Web-Oberfläche von Jupyter zum *code*-Verzeichnis (siehe die Erklärung zur [Ordnerstruktur](../erste-schritte/projektumgebung.qmd)) navigieren.
 
    ![Ordner toolkit-lab/code in Jupyter Notebook](../images/jupyter-toolkit-lab-code.png){#fig-jupyter-toolkit-lab-code-2 width="100%" }
 
 
-2. Oben rechts auf "New" klicken und "Notebook" auswählen, um ein neues Notebook zu erstellen.
+4. Oben rechts auf "New" klicken und "Notebook" auswählen, um ein neues Notebook zu erstellen.
 
    ![Neuer Jupyter Notebook](../images/jupyter-notebook-new-notebook.png){#fig-jupyter-notebook-new-notebook-2 width="100%" }
 
-3. Nun öffnet sich ein Fenster in welchem wir den Kernel (eine Python-Instanz) auswählen können. Wir wählen die eben installierte `basics`-Umgebung aus (siehe [diese Anleitung](python-arbeitsbereich.qmd)).
+5. Nun öffnet sich ein Fenster in welchem wir den Kernel (eine Python-Instanz) auswählen können. Wir wählen die eben installierte `basics`-Umgebung aus (siehe [diese Anleitung](python-arbeitsbereich.qmd)).
 
-4. In dem Notebook eine neue Markdown-Zelle erstellen, um dem Notebook einen Titel zu geben (z.B. Python basics):
+6. In dem Notebook eine neue Markdown-Zelle erstellen, um dem Notebook einen Titel zu geben (z.B. Python basics):
 
    ```markdown
    # Python basics
    ```
 
-5. Notebook speichern:
+7. Notebook speichern:
    - Notebook im `code` Ordner mit einem aussagekräftigen Namen (z.B. *python-basics.ipynb*) speichern.
