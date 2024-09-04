@@ -37,7 +37,7 @@ book:
         - text: "Umgebungen"
           href: python/python-umgebung.qmd
         - python/python-arbeitsbereich.qmd
-        - python/python-basics.qmd
+        - python/python-grundlagen.qmd
         # - python/python-einrueckung.qmd
        # - python/python-funktionen.qmd
        # - python/python-kontrollstrukturen.qmd
