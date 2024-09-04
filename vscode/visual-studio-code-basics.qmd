@@ -28,6 +28,9 @@ Das Öffnen eines *Ordners* (wie des `toolkit-lab` Ordners) bietet erweiterte M�
 Das Öffnen eines Ordners in VS Code entspricht dem Erstellen eines "Projekts" in anderen Entwicklungsumgebungen. Es ermöglicht VS Code, alle enthaltenen Dateien und Unterverzeichnisse als eine zusammenhängende Einheit zu behandeln.
 :::
 
+
+
+
 ## Vertrauenswürdigkeit des Arbeitsbereichs
 
 Beim erstmaligen Öffnen eines Projektordners in VS Code erscheint eine Abfrage zur Vertrauenswürdigkeit des Arbeitsbereichs ([Workspace Trust](https://code.visualstudio.com/docs/editor/workspace-trust)):
@@ -58,7 +61,7 @@ Anleitung zur Einrichtung und Verwendung eines Jupyter Notebooks in VS Code:
 3. Befehls-Palette öffnen:
    - Windows: `Strg+Shift+P`
    - Mac: `Command+Shift+P`
-4. `Datei: Ordner öffnen...` eingeben und auswählen (falls die Englische Version genutzt wird: `File: Open Folder ... eingeben) `). Zum Ordner `toolkit-lab` navigieren und als Arbeitsverzeichnis auswählen.
+4. `Datei: Ordner öffnen...` eingeben und auswählen (falls die Englische Version genutzt wird: `File: Open Folder ...` eingeben). Zum Ordner `toolkit-lab` navigieren und als Arbeitsverzeichnis auswählen.
 5. Bei der Abfrage zur Vertrauenswürdigkeit des Arbeitsbereichs "Ja, ich vertraue den Autoren" wählen.
 6. Erneut die Befehls-Palette öffnen und `Jupyter: Neues leeres Notebook erstellen` eingeben (in der Englischen Version: Jupyter Create New Notebook). Dies öffnet ein neues Notebook.
 7. Das Notebook im Unterordner `code` innerhalb von `toolkit-lab` speichern: `Datei > Speichern unter` und zum Unterordner `code` navigieren.
