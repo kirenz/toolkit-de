@@ -160,7 +160,7 @@ mein_paket/
 Wenn ein Modul einem Rezeptbuch ähnelt, ist ein Paket vergleichbar mit einer Sammlung von Rezeptbüchern. Jedes Buch (Modul) konzentriert sich auf einen bestimmten Bereich, aber zusammen bieten sie eine breite Palette kulinarischer Optionen.
 :::
 
-### Verwendung von Paketen
+### Import von Paketen
 
 Für Data Science sind einige grundlegende Pakete, einschließlich ihrer Importanweisungen mit den gängigen Bezeichungen (Aliase): 
 
