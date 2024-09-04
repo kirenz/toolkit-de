@@ -30,7 +30,6 @@ Das Öffnen eines Ordners in VS Code entspricht dem Erstellen eines "Projekts" i
 
 
 
-
 ## Vertrauenswürdigkeit des Arbeitsbereichs
 
 Beim erstmaligen Öffnen eines Projektordners in VS Code erscheint eine Abfrage zur Vertrauenswürdigkeit des Arbeitsbereichs ([Workspace Trust](https://code.visualstudio.com/docs/editor/workspace-trust)):
@@ -57,15 +56,23 @@ VS Code unterstützt Jupyter Notebooks, sobald die Jupyter-Erweiterung installie
 Anleitung zur Einrichtung und Verwendung eines Jupyter Notebooks in VS Code:
 
 1. VS Code öffnen.
+
 2. Sicherstellen, dass die Jupyter-Erweiterung installiert ist (siehe [vorherige Anleitung](visual-studio-code-installation#jupyter-erweiterung.qmd)).
+
 3. Befehls-Palette öffnen:
    - Windows: `Strg+Shift+P`
    - Mac: `Command+Shift+P`
+
 4. `Datei: Ordner öffnen...` eingeben und auswählen (falls die Englische Version genutzt wird: `File: Open Folder ...` eingeben). Zum Ordner `toolkit-lab` navigieren und als Arbeitsverzeichnis auswählen.
+
 5. Bei der Abfrage zur Vertrauenswürdigkeit des Arbeitsbereichs "Ja, ich vertraue den Autoren" wählen.
+
 6. Erneut die Befehls-Palette öffnen und `Jupyter: Neues leeres Notebook erstellen` eingeben (in der Englischen Version: Jupyter Create New Notebook). Dies öffnet ein neues Notebook.
+
 7. Das Notebook im Unterordner `code` innerhalb von `toolkit-lab` speichern: `Datei > Speichern unter` und zum Unterordner `code` navigieren.
+
 8. Zum Hinzufügen von Zellen in dem Notebook auf das `+`-Symbol klicken (Code- oder Markdown-Zellen möglich).
+
 9. Vor der Code-Ausführung einen **Kernel** auswählen:
    - In der oberen rechten Ecke des Notebooks auf "Kernel auswählen" klicken.
    - "Python-Umgebungen" wählen.
