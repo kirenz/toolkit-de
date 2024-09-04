@@ -2,12 +2,12 @@
 
 CSV-Dateien (Comma-Separated Values) sind ein weit verbreitetes Format zur Speicherung tabellarischer Daten. Sie zeichnen sich durch ihre Einfachheit und Plattformunabhängigkeit aus, was sie zu einem beliebten Austauschformat für Daten macht.
 
-:::{.callout-note}
-Struktur einer CSV-Datei:
-- Jede Zeile entspricht einem Datensatz
-- Werte innerhalb einer Zeile werden durch Kommas getrennt
+Struktur einer CSV-Datei:  
+
+- Jede Zeile entspricht einem Datensatz  
+- Werte innerhalb einer Zeile werden durch Kommas getrennt  
 - Die erste Zeile enthält üblicherweise die Spaltenüberschriften
-:::
+
 
 Beispiel einer CSV-Datei:
 
@@ -19,8 +19,9 @@ Tom,22,München
 ```
 
 In diesem Beispiel:
-- Spalten: Name, Alter, Stadt
-- Jede nachfolgende Zeile repräsentiert einen Datensatz
+
+- Spalten: Name, Alter, Stadt  
+- Jede nachfolgende Zeile repräsentiert einen Datensatz  
 - Werte sind durch Kommas getrennt
 
 Diese einfache Struktur ermöglicht es, Daten leicht zu organisieren und in verschiedenen Anwendungen zu verwenden, von Tabellenkalkulationen bis hin zu Datenanalyse-Tools.
@@ -59,17 +60,14 @@ Die Bibliothek Pandas ist ein leistungsstarkes Werkzeug für die Verarbeitung vo
 
 ```{python}
 import pandas as pd
-
 # Daten definieren
 daten = {
     "Name": ["Max", "Anna", "Tom"],
     "Alter": [24, 30, 22],
     "Stadt": ["Berlin", "Hamburg", "München"]
 }
-
 # DataFrame erstellen
 df = pd.DataFrame(daten)
-
 # Als CSV-Datei speichern
 df.to_csv('daten.csv', index=False)
 ```
@@ -86,25 +84,6 @@ Dieser Code erstellt einen Pandas DataFrame aus einem Python-Dictionary und spei
 
 4. **CSV speichern**: `df.to_csv('daten.csv', index=False)` speichert den DataFrame als CSV-Datei. `index=False` verhindert, dass die Zeilenindizes in die Datei geschrieben werden.
 
-Der resultierende DataFrame sieht so aus:
-```
-   Name  Alter     Stadt
-0   Max     24    Berlin
-1  Anna     30   Hamburg
-2   Tom     22   München
-```
-
-Jede Zeile im DataFrame repräsentiert einen Datensatz (eine Person) und jede Spalte repräsentiert eine Eigenschaft dieser Datensätze (Name, Alter, Stadt).
-
-Die gespeicherte CSV-Datei hat folgendes Format:
-```
-Name,Alter,Stadt
-Max,24,Berlin
-Anna,30,Hamburg
-Tom,22,München
-```
-
-Jede Zeile der CSV-Datei entspricht einer Zeile im DataFrame, und jede Spalte entspricht einer Spalte im DataFrame. Die erste Zeile enthält die Spaltenüberschriften, welche die Namen der Spalten im DataFrame repräsentieren.
 :::
 
 ### Speicherort der CSV-Datei
