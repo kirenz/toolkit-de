@@ -221,10 +221,9 @@ print(f"Ist es ein großes Rechteck? {ist_grosses_rechteck}")
 ```
 
 
-
 ### Arten von Operatoren
 
-Hier ist eine Übersicht einiger wichtiger Operatoren:
+Hier eine Übersicht einiger wichtiger Operatoren:
 
 | Kategorie | Operatoren | Beschreibung |
 |-----------|------------|--------------|
@@ -237,27 +236,27 @@ Hier ist eine Übersicht einiger wichtiger Operatoren:
 
 ## Arbeiten mit DataFrames
 
-DataFrames, bereitgestellt durch die Pandas-Paket, sind zentral für die Datenanalyse in Python. Sie organisieren Daten in Zeilen und Spalten, ähnlich einer Tabelle.
+DataFrames, bereitgestellt durch das [Pandas-Paket](https://pandas.pydata.org/docs/index.html), sind zentral für die Datenanalyse in Python. Sie organisieren Daten in Zeilen und Spalten, ähnlich einer Tabelle.
 
 ```{python}
 # Erstellen eines dictionarys
-data = {
-    "Numbers": [1, 2, 3, 4, 5],
-    "Squares": [1, 4, 9, 16, 25]
+daten = {
+    "Zahlen": [1, 2, 3, 4, 5],
+    "Quadrate": [1, 4, 9, 16, 25]
 }
 # Ausgabe
-print(data)
+print(daten)
 ```
 
-Das Dictionary `data` enthält zwei Listen: Zahlen und deren Quadrate.
+Das Dictionary `daten` enthält zwei Listen: Zahlen und deren Quadrate.
 
 Erstellen eines DataFrame mit Pandas:
 
 ```{python}
-df = pd.DataFrame(data)
+df = pd.DataFrame(daten)
 ```
 
-Wir nennen den DataFrame `df` (dies ist eine gängige Abkürzung für DataFrame). Unser DataFrame wird aus dem Wörterbuch `data` mit der Funktion `pd.DataFrame` erstellt, die die Daten in Zeilen und Spalten organisiert.
+Wir nennen den DataFrame `df` (dies ist eine gängige Abkürzung für DataFrame). Unser DataFrame wird aus dem Wörterbuch `daten` mit der Funktion `pd.DataFrame` erstellt, welche die Daten in Zeilen und Spalten organisiert.
 
 Den DataFrame ausgeben (dafür verwenden wir nicht `print()`):
 
