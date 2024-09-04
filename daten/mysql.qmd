@@ -148,10 +148,7 @@ CREATE TABLE campaigns (
 
 ### Werte einfügen
 
-Wir gehen wie folgt vor, um die Tabelle mit Daten zu füllen:
-
-
-1. In neuem Abfrage-Tab SQL-Befehl ausführen:
+Wir gehen wie folgt vor, um die Tabelle mit Daten zu füllen. In neuem Abfrage-Tab SQL-Befehl ausführen:
 
 ```sql
 INSERT INTO campaigns (name, start_date, end_date, budget, channel) VALUES
@@ -176,7 +173,7 @@ Jeder Satz von Werten ist in Klammern eingeschlossen und durch Kommas getrennt, 
 
 Um die Daten zu überprüfen:
 
-1. SELECT-Abfrage in neuem Tab ausführen:
+SELECT-Abfrage in neuem Tab ausführen:
 
 ```sql
 SELECT * FROM campaigns;
