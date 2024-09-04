@@ -61,7 +61,7 @@ book:
           href: daten/csv.qmd
         - text: "JSON"           
           href: daten/json.qmd 
-         - text: "Datenbanken"
+        - text: "Datenbanken"
           href: daten/datenbanken.qmd          
         # - text: "Relationale Datenbanken"
         #   href: daten/relational.qmd
