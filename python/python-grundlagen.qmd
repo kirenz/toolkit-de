@@ -85,87 +85,146 @@ Kommentare können auch zur temporären Deaktivierung von Code (auch als "auskom
 
 ## Variablen und Datentypen
 
-Variablen speichern Informationen im Arbeitsspeicher. Python ist eine dynamisch typisierte Sprache, was bedeutet, dass der Datentyp einer Variable automatisch erkannt wird.
+In der Programmierung spielen Variablen und Datentypen eine zentrale Rolle. Sie bilden das Fundament, auf dem komplexe Analysen und Algorithmen aufbauen.
+
+### Variablen
+
+Variablen sind benannte Speicherorte im Arbeitsspeicher eines Computers. Sie dienen dazu, Daten zu speichern und zu manipulieren.
+
+Bei der Benennung von Variablen in Python gibt es einige wichtige Konventionen zu beachten:
+
+1. **Snake Case**: Wir verwenden Kleinbuchstaben und trennen Wörter durch Unterstriche.
+   Beispiel: `benutzer_name`, `gesamtpreis_mit_rabatt`
+
+2. **Beschreibende Namen**: Aussagekräftige Namen nutzen, die den Zweck der Variable verdeutlichen (Variablennamen müssen mit einem Buchstaben oder Unterstrich beginnen, nicht mit Zahlen).
+   Gut: `alter_in_jahren`, `gesamtpreis`
+   Schlecht: `a`, `x1`
+
+3. **Keine reservierten Wörter**: Keine Python-Schlüsselwörter wie `if`, `for`, `class` verwenden.
+
+
+Durch Einhaltung dieser Konventionen wird der Code lesbarer und wartbarer, was besonders in größeren Projekten und bei der Zusammenarbeit in Teams  wichtig ist.
+
+Beispielsweise können wir eine Variable mit dem Namen `alter` erstellen und ihr der Wert 25 zugewiesen.
 
 ```{python}
-# Verschiedene Datentypen in Variablen speichern
-name = "Alice"                      # String (Zeichenkette)
-age = 30                            # Integer (Ganzzahl)
-height = 5.5                        # Float (Gleitkommazahl)
-is_student = True                   # Boolean (Wahrheitswert)
-numbers = [1, 2, 3]                 # List (Liste)
-person = {"name": "Alice", "age": 30} # Dictionary (Wörterbuch)
+alter = 25
 ```
 
-Erklärung der Datentypen:
 
-- **String**: Textdaten, in Anführungszeichen gesetzt
-- **Integer**: Ganze Zahlen ohne Dezimalstellen
-- **Float**: Zahlen mit Dezimalstellen
-- **Boolean**: Logische Werte (True oder False)
-- **List**: Geordnete Sammlung von Elementen, veränderbar
-- **Dictionary**: Sammlung von Schlüssel-Wert-Paaren
+In Python können den Variablen ganz unterschiedliche Werte zugewiesen werden:
+
+```{python}
+# Verschiedene Variablen speichern
+name = "Alice" 
+studiert = True
+zahlen = [1, 2, 3]
+person = {"name": "Alice", "alter": 30}
+```
 
 Um den Inhalt von Variablen anzuzeigen, wird die `print()`-Funktion verwendet:
 
 ```{python}
-print(name)
-print(age)
-print(numbers)
-print(person)
+print(alter)
 ```
+
+Eine Variable kann man sich wie eine beschriftete Box vorstellen, in der Informationen aufbewahrt werden. Der Name der Variable ist die Beschriftung auf der Box, und der Inhalt der Box repräsentiert den Wert der Variable. Dieser Wert kann im Laufe des Programms verändert werden, daher der Name "Variable".
+
+```{python}
+alter = 60
+print(alter)
+```
+
+### Datentypen
+
+Datentypen bestimmen die Art der Daten, die in einer Variable gespeichert werden können. Sie definieren auch, welche Operationen mit diesen Daten durchgeführt werden können. Python ist eine dynamisch typisierte Sprache, was bedeutet, dass der Datentyp einer Variable automatisch erkannt wird.
+
+Jeder Datentyp hat seine eigenen Eigenschaften und Verwendungszwecke. Zum Beispiel verwendet man "Strings" für Text, "Integer" für ganze Zahlen und "Floats" für Dezimalzahlen. "Listen" und "Dictionaries" sind komplexere Datentypen, die mehrere Werte oder Schlüssel-Wert-Paare speichern können.:
+
+
+| Datentyp   | Beschreibung                                   | Beispiel                              | Verwendung                                             |
+|------------|------------------------------------------------|---------------------------------------|--------------------------------------------------------|
+| String     | Textdaten, in Anführungszeichen gesetzt        | `"Hallo Welt"`                        | Für Namen, Texte, Sätze                                |
+| Integer    | Ganze Zahlen ohne Dezimalstellen               | `42`, `-10`                           | Für Zählungen, Indizes, ganze Mengen                   |
+| Float      | Zahlen mit Dezimalstellen                      | `3.14`, `-0.5`                        | Für Messwerte, Berechnungen mit Dezimalstellen         |
+| Boolean    | Logische Werte (True oder False)               | `True`, `False`                       | Für Bedingungen, Flags, Zustandsabfragen               |
+| List       | Geordnete Sammlung von Elementen, veränderbar  | `[1, 2, 3]`, `['a', 'b', 'c']`        | Für Sequenzen von Daten, geordnete Sammlungen          |
+| Dictionary | Sammlung von Schlüssel-Wert-Paaren             | `{'name': 'Max', 'alter': 30}`        | Für strukturierte Daten, Zuordnungen, Konfigurationen  |
+
+
+Anzeigen des Datentyps in Python:
+
+```{python}
+# Verwendung der type() Funktion
+zahl = 42
+text = "Hallo Welt"
+dezimal = 3.14
+logisch = True
+liste = [1, 2, 3]
+wörterbuch = {"name": "Max", "alter": 30}
+
+print(type(zahl))
+print(type(text)) 
+print(type(dezimal))
+print(type(logisch))
+print(type(liste))
+print(type(wörterbuch))
+```
+
 
 ## Operatoren und Berechnungen
 
 Operatoren ermöglichen mathematische und logische Operationen in Python.
 
-### Arithmetische Operationen
+### Arithmetische Operatoren
+
+Für die folgenden Operationen erzeugen wir zunächst zwei numerische Variablen:
 
 ```{python}
-# Arithmetische Operationen
-length = 10
-width = 5
+laenge = 10
+breite = 5
 ```
 
 Berechnung der Fläche und des Umfangs:
 
 ```{python}
  # Multiplikation
-area = length * width
+flaeche = laenge * breite
 # Addition und Multiplikation
-perimeter = 2 * (length + width) 
+umfang = 2 * (laenge + breite) 
 # Ausgabe der Variable
-print(perimeter) 
+print(umfang) 
 ```
 
-### Vergleichsoperationen
+### Vergleichsoperatoren
+
+`ist_quadratisch` überprüft, ob die beiden Seiten gleich lang sind:
 
 ```{python}
 # Gleichheit überprüfen
-is_square = length == width
+ist_quadratisch = laenge == breite
 # Ausgabe: Ist es ein Quadrat? 
-print(f"Ist es ein Quadrat? {is_square}")
+print(f"Ist es ein Quadrat? {ist_quadratisch}")
 ```
-
-`is_square` überprüft, ob die beiden Seiten gleich lang sind.
 
 Wir nutzen in dem `print()`-Befehl einen sogenannten **f-string** (formatted string literal), mit dem wir Text und Python-Objekte kombiniert ausgeben können. Das Python-Objekt wird dabei in einer geschwungenen Klammer eingefügt.
 
 
-### Logische Operationen
+### Logische Operatoren
+
+`ist_grosses_rechteck` verwendet logische Operatoren, um festzustellen, ob das Rechteck sowohl eine große Fläche als auch einen großen Umfang hat (mit Werten, die wir festgelegt haben).
 
 ```{python}
-is_large_rectangle = (area > 20) and (perimeter > 10)
+ist_grosses_rechteck = (flaeche > 20) and (umfang > 10)
 # Ausgabe
-print(f"Ist es ein großes Rechteck? {is_large_rectangle}")  
+print(f"Ist es ein großes Rechteck? {ist_grosses_rechteck}")  
 ```
 
-`is_large_rectangle` verwendet logische Operatoren, um festzustellen, ob das Rechteck sowohl eine große Fläche als auch einen großen Umfang hat.
+
 
 ### Arten von Operatoren
 
-Hier ist eine Übersicht der Operatoren:
-
+Hier ist eine Übersicht einiger wichtiger Operatoren:
 
 | Kategorie | Operatoren | Beschreibung |
 |-----------|------------|--------------|
