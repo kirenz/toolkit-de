@@ -4,13 +4,13 @@ Datenbanken bieten leistungsstarke Mittel zur Speicherung, Verwaltung und Abfrag
 
 Sie bieten mehrere Vorteile gegenüber herkömmlichen Dateiformaten wie CSV oder Excel-Tabellen:
 
-- Effizienz: Datenbanken sind darauf optimiert, große Mengen an Daten schnell und effizient zu verwalten und abzurufen.
+- *Effizienz*: Datenbanken sind darauf optimiert, große Mengen an Daten schnell und effizient zu verwalten und abzurufen.
 
-- Skalierbarkeit Datenbanken können mit dem Wachstum der Datenmenge skaliert werden, ohne die Leistung zu beeinträchtigen.
+- *Skalierbarkeit*: Datenbanken können mit dem Wachstum der Datenmenge skaliert werden, ohne die Leistung zu beeinträchtigen.
 
-- Sicherheit Datenbanken bieten verschiedene Sicherheitsmechanismen zum Schutz sensibler Daten.
+- *Sicherheit*: Datenbanken bieten verschiedene Sicherheitsmechanismen zum Schutz sensibler Daten.
 
-- Mehrbenutzerzugriff Datenbanken ermöglichen mehreren Benutzern gleichzeitig den Zugriff und die Bearbeitung von Daten, ohne dass es zu Konflikten kommt.
+- *Mehrbenutzerzugriff*: Datenbanken ermöglichen mehreren Benutzern gleichzeitig den Zugriff und die Bearbeitung von Daten, ohne dass es zu Konflikten kommt.
 
 Es gibt verschiedene Arten von Datenbanken, die je nach Anwendungsfall und Datenstruktur verwendet werden:
 
@@ -18,7 +18,7 @@ Es gibt verschiedene Arten von Datenbanken, die je nach Anwendungsfall und Daten
 
 - **NoSQL-Datenbanken:** Diese sind für unstrukturierte Daten oder große Mengen an Daten ausgelegt, die nicht in das relationale Modell passen. Beispiele sind MongoDB, Cassandra und Redis.
 
-
+## Relationale Datenbanken
 
 Relationale Datenbanken bilden das Fundament vieler moderner Datenbankanwendungen. Ihre Stärke liegt in der Fähigkeit, Daten in strukturierten Tabellen zu organisieren und effizient zu verwalten.
 
@@ -39,11 +39,9 @@ Einsatzgebiete relationaler Datenbanken sind vielfältig:
 Die Struktur, Flexibilität und Zuverlässigkeit relationaler Datenbanken machen sie zu einem unverzichtbaren Werkzeug in der modernen Datenverwaltung und -analyse.
 
 
-## Tabellen
+### Tabellen
 
 Tabellen stehen im Mittelpunkt jeder relationalen Datenbank. Eine Tabelle ist eine strukturierte Sammlung von Daten, organisiert in Zeilen und Spalten. Jede Tabelle repräsentiert eine Entität, wobei jede Zeile einen einzelnen Datensatz dieser Entität darstellt.
-
-### Grundstruktur einer Tabelle
 
 Betrachten wir ein Beispiel einer einfachen Tabelle "Kunden":
 
@@ -60,15 +58,12 @@ Jede Spalte in einer Tabelle besitzt einen spezifischen **Datentyp**, der die Ar
 3. DATE: Datumsangaben
 4. BOOLEAN: Wahrheitswerte (true/false)
 
-### Schlüsselkonzepte
 
 Zwei wichtige Konzepte in relationalen Datenbanken sind:
 
 1. **Primärschlüssel**: Eine Spalte oder Spaltenkombination, die jeden Datensatz in einer Tabelle eindeutig identifiziert. Im obigen Beispiel fungiert die Spalte "KundenID" als Primärschlüssel der Tabelle "Kunden".
 
 2. **Fremdschlüssel**: Eine Spalte, die eine Beziehung zwischen zwei Tabellen herstellt. Ein Fremdschlüssel in einer Tabelle verweist auf den Primärschlüssel einer anderen Tabelle.
-
-### Beziehungen zwischen Tabellen
 
 Um die Verwendung von Fremdschlüsseln zu veranschaulichen, betrachten wir eine zweite Tabelle "Bestellungen":
 
@@ -82,10 +77,9 @@ Um die Verwendung von Fremdschlüsseln zu veranschaulichen, betrachten wir eine 
 
 In dieser Tabelle fungiert die Spalte "KundenID" als Fremdschlüssel, der auf den Primärschlüssel der Tabelle "Kunden" verweist. Diese Beziehung ermöglicht es, Informationen aus beiden Tabellen zu verknüpfen.
 
-
 Durch die Verwendung von Tabellen und deren Beziehungen zueinander können komplexe Datenstrukturen abgebildet und effizient verwaltet werden. Dies ist eine der Kernstärken relationaler Datenbanken und ein wesentlicher Grund für ihre weite Verbreitung in der Datenverwaltung.
 
-## SQL 
+### SQL 
 
 SQL (Structured Query Language) ist die Standardsprache für die Verwaltung und Abfrage von Daten in einer relationalen Datenbank. Mit SQL lassen sich vielfältige Operationen durchführen:
 
