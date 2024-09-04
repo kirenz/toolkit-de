@@ -220,24 +220,21 @@ Eine Bibliothek ist eine Sammlung von Paketen und Modulen, die zusammen eine umf
 In der Küchenanalogie wäre eine Bibliothek eine komplette Küche, ausgestattet mit einer Vielzahl von Werkzeugen und Zutaten für verschiedene Kochstile und -techniken. Es ist eine umfassende Sammlung, die ermöglicht, nahezu jedes Gericht zu kochen, das man sich vorstellen kann.
 :::
 
-
-Einige wichtige Python-Bibliotheken umfassen:
+Einige wichtige Python-Bibliotheken:
 
 - `SciPy`: Bietet wissenschaftliche und technische Berechnungen, baut auf `numpy` auf.
-- `TensorFlow` und `PyTorch`: Bibliotheken für maschinelles Lernen und neuronale Netze.
 
+- `TensorFlow` und `PyTorch`: Bibliotheken für maschinelles Lernen und neuronale Netze.
 
 Beispiel zur Verwendung einer Bibliothek:
 
-```python
+```{python}
 # Import der benötigten Funktion aus SciPy
 from scipy import special
-
 # Berechnung der Fakultät von 5
 ergebnis = special.factorial(5)
-
 # Ausgabe des Ergebnisses
-print(f"Die Fakultät von 5 ist: {ergebnis}")
+print(ergebnis)
 ```
 
 Um die nachfolgenden Anleitungen zu vereinfachen, werden wir nicht immer streng zwischen Bibliotheken und Paketen unterscheiden, sondern hauptsächlich den Begriff Python-Pakete verwenden, wenn wir Python-Software importieren (auch wenn es sich dabei um eine Bibliothek handelt).
