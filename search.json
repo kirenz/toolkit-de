@@ -278,29 +278,7 @@
     "href": "python/python-arbeitsbereich.html",
     "title": "8  Arbeitsbereich vorbereiten",
     "section": "",
-    "text": "8.1 Anaconda Navigator starten",
-    "crumbs": [
-      "Python",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Arbeitsbereich vorbereiten</span>"
-    ]
-  },
-  {
-    "objectID": "python/python-arbeitsbereich.html#anaconda-navigator-starten",
-    "href": "python/python-arbeitsbereich.html#anaconda-navigator-starten",
-    "title": "8  Arbeitsbereich vorbereiten",
-    "section": "",
-    "text": "Anaconda Navigator starten:\n\nAnaconda Navigator aus dem Anwendungsordner auf macOS oder dem Startmenü auf Windows öfnnen.\n\n\n\n\n\n\n\nAbbildung 8.1: Anaconda Navigator starten\n\n\n\nJupyter Notebook öffnen:\n\nIm Anaconda Navigator bei Jupyter Notebook auf ‘Launch’ klicken, um die Anwendung im Webbrowser zu öffnen.\n\n\n\n\n\n\n\nAbbildung 8.2: Jupyter Notebook starten",
-    "crumbs": [
-      "Python",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Arbeitsbereich vorbereiten</span>"
-    ]
-  },
-  {
-    "objectID": "python/python-arbeitsbereich.html#jupyter-notebook-starten",
-    "href": "python/python-arbeitsbereich.html#jupyter-notebook-starten",
-    "title": "8  Arbeitsbereich vorbereiten",
-    "section": "8.2 Jupyter Notebook starten",
-    "text": "8.2 Jupyter Notebook starten\n\nIn der Web-Oberfläche von Jupyter zum code-Verzeichnis (siehe die Erklärung zur Ordnerstruktur) navigieren.\n\n\n\n\n\n\nAbbildung 8.3: Ordner toolkit-lab/code in Jupyter Notebook\n\n\n\nOben rechts auf “New” klicken und “Notebook” auswählen, um ein neues Notebook zu erstellen.\n\n\n\n\n\n\nAbbildung 8.4: Neuer Jupyter Notebook\n\n\n\nNun öffnet sich ein Fenster in welchem wir den Kernel (eine Python-Instanz) auswählen können. Wir wählen die eben installierte basics-Umgebung aus (siehe diese Anleitung).\nIn dem Notebook eine neue Markdown-Zelle erstellen, um dem Notebook einen Titel zu geben (z.B. Python basics):\n# Python basics\nNotebook speichern:\n\nNotebook im code Ordner mit einem aussagekräftigen Namen (z.B. python-basics.ipynb) speichern.",
+    "text": "Bevor wir mit dem Programmieren in Python beginnen, stellen wir sicher, dass wir einen ordnungsgemäß konfigurierten Arbeitsbereich haben:\n\nAnaconda Navigator starten:\n\nAnaconda Navigator aus dem Anwendungsordner auf macOS oder dem Startmenü auf Windows öfnnen.\n\n\n\n\n\n\n\nAbbildung 8.1: Anaconda Navigator starten\n\n\n\nJupyter Notebook öffnen:\n\nIm Anaconda Navigator bei Jupyter Notebook auf ‘Launch’ klicken, um die Anwendung im Webbrowser zu öffnen.\n\n\n\n\n\n\n\nAbbildung 8.2: Jupyter Notebook starten\n\n\n\nIn der Web-Oberfläche von Jupyter zum code-Verzeichnis (siehe die Erklärung zur Ordnerstruktur) navigieren.\n\n\n\n\n\n\nAbbildung 8.3: Ordner toolkit-lab/code in Jupyter Notebook\n\n\n\nOben rechts auf “New” klicken und “Notebook” auswählen, um ein neues Notebook zu erstellen.\n\n\n\n\n\n\nAbbildung 8.4: Neuer Jupyter Notebook\n\n\n\nNun öffnet sich ein Fenster in welchem wir den Kernel (eine Python-Instanz) auswählen können. Wir wählen die eben installierte basics-Umgebung aus (siehe diese Anleitung).\nIn dem Notebook eine neue Markdown-Zelle erstellen, um dem Notebook einen Titel zu geben (z.B. Python basics):\n# Python basics\nNotebook speichern:\n\nNotebook im code Ordner mit einem aussagekräftigen Namen (z.B. python-basics.ipynb) speichern.",
     "crumbs": [
       "Python",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Arbeitsbereich vorbereiten</span>"
