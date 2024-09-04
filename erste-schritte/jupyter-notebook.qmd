@@ -22,7 +22,7 @@ Im Vergleich zum eher einfachen Python IDLE bietet Jupyter Notebook eine Reihe v
    ![Jupyter Notebook-Zelle und Ergbnisausgabe](../images/jupyter-notebook-mathe.png){#fig-jupyter-notebook-mathe width="100%" }
 
 
-3. **Nahtlose Integration von Code und Text:** Mit Jupyter Notebook können wir durch die Umstellung einer Zelle in den "Markdown"-Modus (mehr dazu in dem Kapitel über [Markdown](/markdown.qmd)) problemlos zwischen Code und Erklärungen wechseln. Dies hilft uns, unsere Gedankengänge und Analyseansätze klar zu dokumentieren.
+3. **Nahtlose Integration von Code und Text:** Mit Jupyter Notebook können wir durch die Umstellung einer Zelle in den "Markdown"-Modus (mehr dazu in dem Kapitel über [Markdown](markdown.qmd)) problemlos zwischen Code und Erklärungen wechseln. Dies hilft uns, unsere Gedankengänge und Analyseansätze klar zu dokumentieren.
 
    ![Jupyter Notebook-Zelle mit Text](../images/jupyter-notebook-text.png){#fig-jupyter-notebook-text width="100%" }
 
