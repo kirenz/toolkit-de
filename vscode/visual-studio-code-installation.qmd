@@ -7,15 +7,10 @@ Visual Studio Code (VS Code) ist ein leistungsfähiger, Open-Source-Editor - d.h
 VS Code ist besonders in der Python-Community beliebt, da es umfangreiche Python-spezifische Funktionen und Erweiterungen bietet. Diese Eigenschaften machen es zu einer ausgezeichneten Wahl für Data Science Projekte.
 :::
 
-Der Hauptunterschied eines Open-Source-Editors zu herkömmlicher Software liegt darin, 
 
-Für einen tieferen Einblick in die Funktionsweise von VS Code sind folgende Ressourcen empfehlenswert:
 
-- [Einführungsvideos zu VS Code](https://code.visualstudio.com/docs/getstarted/introvideos)
-- [Datenwissenschaft in VS Code Tutorial](https://code.visualstudio.com/docs/datascience/data-science-tutorial)
-- [25 VS Code Produktivitätstipps und Geschwindigkeits-Hacks](https://www.youtube.com/watch?v=ifTF3ags0XI)
 
-# VS Code Installation in Windows
+## VS Code Installation in Windows
 
 Die Installation von VS Code unter Windows ist ein unkomplizierter Prozess, der in wenigen Schritten durchgeführt werden kann:
 
@@ -39,7 +34,7 @@ Das Hinzufügen von VS Code zum PATH ermöglicht es, den Editor über die Eingab
 4. Workspace Trust
    Bei der ersten Nutzung von VS Code erscheint möglicherweise eine Abfrage zum [Workspace Trust](https://code.visualstudio.com/docs/editor/workspace-trust). Es wird empfohlen, "**Ja, ich vertraue den Autoren**" zu wählen, um alle Funktionen und Erweiterungen vollständig nutzen zu können.
 
-# VS Code Installation auf Mac
+## VS Code Installation auf Mac
 
 Hier die Schritte der Installation von VS Code auf einem Mac :
 
@@ -55,49 +50,50 @@ Hier die Schritte der Installation von VS Code auf einem Mac :
    - Den "Programme"-Ordner öffnen und Visual Studio Code durch Doppelklick starten.
    - Die Willkommensseite führt durch die erste Einrichtung, einschließlich der Installation beliebter Erweiterungen.
 
-4. Hinzufügen zum PATH
+<!-- 4. Hinzufügen zum PATH
    Um VS Code vom Terminal aus starten zu können, sollte es zum PATH hinzugefügt werden:
    - In VS Code die Befehlspalette mit dieser Tastenkombination öffnen: `Command+Shift+P` (erst Command, dann Shift und dann P gleichzeitig gedrückt halten).
    - 'Shell Command: Install `code` command in PATH' eingeben und Enter drücken.
 
 :::{.callout-tip}
 Nach der Installation des `code` Befehls im PATH kann VS Code aus dem Terminal geöffnet werden, indem `code .` in einem beliebigen Verzeichnis eingegeben wird. Dies ermöglicht uns einen schnellen und einfachen Zugriff auf Projekte.
-:::
+::: -->
 
-5. Workspace Trust
+4. Workspace Trust
    Beim ersten Start wird möglicherweise eine Abfrage zum [Workspace Trust](https://code.visualstudio.com/docs/editor/workspace-trust) angezeigt. Es wird empfohlen, "**Ja, ich vertraue den Autoren**" zu wählen, um alle Funktionen und Erweiterungen vollständig nutzen zu können.
 
-# VS Code Erweiterungen
+## VS Code Erweiterungen
 
 Erweiterungen (Extensions) sind ein zentrales Feature von VS Code, das die Funktionalität des Editors erheblich erweitert. Sie ermöglichen es, den Editor an spezifische Bedürfnisse anzupassen und die Produktivität zu steigern.
+
+### Installation über Marktplatz
 
 Microsoft bietet einen [digitalen Marktplatz für VS Code Erweiterungen](https://marketplace.visualstudio.com/), auf welchem man sich auch eine Übersicht über die empfohlenen  [Erweiterungen für Data Science](https://marketplace.visualstudio.com/search?target=VSCode&category=Data%20Science&sortBy=Installs) verschaffen kann.
 
 Die folgenden Erweiterungen sollten in jedem Fall installiert werden (auf der jeweiligen Seite auf Install klicken und den Anweisungen im Browser folgen. Alternativ kann auch der unten beschriebene Installationsprozess in VS Code gewählt werden): 
 
-- **[Python-Erweiterung](https://marketplace.visualstudio.com/items?itemName=ms-python.python)**
+- **[Python-Erweiterung](https://marketplace.visualstudio.com/items?itemName=ms-python.python)**:
   Die Python-Erweiterung von Microsoft ist unverzichtbar für Python-Entwickler/innen. Sie bietet unter anderem:
   - IntelliSense (automatische Code-Vervollständigungen)
   - Linting (Codequalitätsprüfung)
-  - Code-Navigation
-  - Formatierung
 
-- **[Jupyter-Erweiterung](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)**
+- **[Jupyter-Erweiterung](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)**:
   Die Jupyter-Erweiterung ermöglicht es, Jupyter-Notebooks direkt in VS Code zu erstellen, zu bearbeiten und auszuführen. 
 
-- **[VS Code Icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)**
+- **[VS Code Icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)**:
   Diese Erweiterung verbessert die visuelle Organisation von Projektdateien:
   - Fügt für jeden Dateityp passende Symbole hinzu
-  - Erleichtert die schnelle Identifizierung verschiedener Dateitypen im Projekt-Explorer
+
 
 Optional kann auch die visuelle Darstellung von VS Code angepasst werden:
 
-- **[Atom One Dark Theme](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark)**
-  Für eine angenehme visuelle Erfahrung, insbesondere bei längeren Coding-Sessions:
-  - Dunkles Farbschema, das die Augenbelastung reduziert
-  - Verbesserte Lesbarkeit des Codes durch sorgfältig ausgewählte Farben
+- **[Atom One Dark Theme](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark)**:
+  Für eine angenehme visuelle Erfahrung, insbesondere bei längeren Coding-Sessions: Dunkles Farbschema, das die Augenbelastung reduziert und eine verbesserte Lesbarkeit des Codes durch sorgfältig ausgewählte Farben.
 
-Hier noch der allgemeine Installationsprozess für Erweiterungen direkt in VS Code:
+
+### Installation in VS Code
+
+Alternativ zu der Installation über den Marktplatz können Erweiterungen auch direkt in VS Code installiert werden. Hier der Installationsprozess:
 
 1. VS Code öffnen.
 2. Die Ansicht Erweiterungen aufrufen:
@@ -107,7 +103,13 @@ Hier noch der allgemeine Installationsprozess für Erweiterungen direkt in VS Co
 4. Auf "Installieren" klicken, um die Erweiterung hinzuzufügen.
 
 
+<!-- Weitere Ressourcen
 
+Für einen tieferen Einblick in die Funktionsweise von VS Code sind folgende Ressourcen empfehlenswert:
+
+- [Einführungsvideos zu VS Code](https://code.visualstudio.com/docs/getstarted/introvideos)
+- [Datenwissenschaft in VS Code Tutorial](https://code.visualstudio.com/docs/datascience/data-science-tutorial)
+- [25 VS Code Produktivitätstipps und Geschwindigkeits-Hacks](https://www.youtube.com/watch?v=ifTF3ags0XI) -->
 
 <!-- ## GitHub Copilot
 
@@ -117,3 +119,4 @@ GitHub Copilot ist ein KI-gestütztes Code-Vervollständigungstool, das ganze Ze
 1. Navigieren Sie zur Ansicht Erweiterungen in VS Code.
 2. Suchen Sie nach "GitHub Copilot".
 3. Klicken Sie auf "Installieren", um den KI-Assistenten von GitHub zu nutzen. -->
+
