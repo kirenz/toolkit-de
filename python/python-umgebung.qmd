@@ -6,51 +6,32 @@ Virtuelle Umgebungen sind ein grundlegendes Konzept in der Softwareentwicklung u
 Um die folgenden Erläuterungen zu vereinfachen, werden wir nicht immer streng zwischen Bibliotheken und Paketen unterscheiden, sondern hauptsächlich den Begriff Python-Pakete verwenden, wenn wir Python-Software importieren.
 :::
 
-
 ### Was sind virtuelle Umgebungen?
 
 Eine virtuelle Umgebung ist im Wesentlichen ein eigenständiger Ordner, der alle notwendigen ausführbaren Dateien enthält, um Python-Pakete zu verwenden. Jede virtuelle Umgebung hat ihre eigene Python-Installation, unabhängig von der globalen Python-Installation auf dem Computer.
 
-### Warum sind virtuelle Umgebungen wichtig?
-
 Virtuelle Umgebungen bieten mehrere entscheidende Vorteile:
 
-1. **Abhängigkeitsverwaltung**: 
-   - Jedes Data Science-Projekt kann unterschiedliche Versionen von Bibliotheken erfordern. 
-   - Virtuelle Umgebungen stellen sicher, dass die korrekten Versionen aller benötigten Pakete für jedes spezifische Projekt verfügbar sind.
-   - Dies verhindert Konflikte zwischen verschiedenen Projekten und gewährleistet Reproduzierbarkeit.
-
-2. **Projekttrennung**: 
+1. **Projekttrennung**: 
    - Verschiedene Data Science-Projekte können unterschiedliche Anforderungen haben. 
    - Ein Projekt könnte beispielsweise TensorFlow für Deep Learning verwenden, während ein anderes scikit-learn für traditionelles Machine Learning einsetzt.
    - Virtuelle Umgebungen ermöglichen es, diese Projekte sauber voneinander zu trennen.
 
-3. **Entwicklung benutzerdefinierter Module**: 
-   - Beim Erstellen eigener Python-Module oder Pakete helfen virtuelle Umgebungen, diese in Projekte zu integrieren.
-   - Dies geschieht, ohne die globale Python-Installation zu beeinflussen, was besonders nützlich für experimentelle Entwicklungen ist.
+2. **Abhängigkeitsverwaltung**: 
+   - Jedes Data Science-Projekt kann unterschiedliche Versionen von Bibliotheken erfordern. 
+   - Virtuelle Umgebungen stellen sicher, dass die korrekten Versionen aller benötigten Pakete für jedes spezifische Projekt verfügbar sind.
+   - Dies verhindert Konflikte zwischen verschiedenen Paketen und gewährleistet Reproduzierbarkeit.
 
-4. **Vermeidung von Versionskonflikten**: 
-   - Manche Data Science-Bibliotheken können inkompatibel mit bestimmten Versionen anderer Bibliotheken sein.
-   - Virtuelle Umgebungen erlauben es, für jedes Projekt genau die Versionen zu installieren, die benötigt werden und miteinander funktionieren.
-
-5. **Einfache Weitergabe und Reproduzierbarkeit**: 
+3. **Einfache Weitergabe und Reproduzierbarkeit**: 
    - Die Spezifikationen einer virtuellen Umgebung können in einer Datei gespeichert werden.
    - Dies erleichtert es anderen, die exakt gleiche Umgebung zu reproduzieren, was für die Zusammenarbeit in Data Science-Teams unerlässlich ist.
 
-### Praktische Anwendung in Data Science
-
-In der Data Science-Praxis könnte man beispielsweise separate virtuelle Umgebungen für verschiedene Arten von Projekten erstellen:
-- Eine Umgebung für Datenanalyse mit Pandas und NumPy
-- Eine andere für Machine Learning mit scikit-learn
-- Eine dritte für Deep Learning-Projekte mit TensorFlow oder PyTorch
-
-Dies ermöglicht es, effizient zwischen verschiedenen Projekten zu wechseln, ohne sich um Paketkonflikte sorgen zu müssen.
 
 ## Virtuelle Umgebung erstellen
 
 Das Erstellen einer virtuellen Umgebung ist ein wichtiger erster Schritt für jedes Data Science-Projekt. Hier wird der Prozess Schritt für Schritt erklärt:
 
-1. Zugriff auf die Anaconda-Eingabeaufforderung oder das Terminal
+1. Zugriff auf die Anaconda-Eingabeaufforderung oder das Terminal:
    - **Windows**: Öffnen der *Anaconda-Eingabeaufforderung* über das Startmenü. Dies ist eine spezielle Eingabeaufforderung, die bereits mit Anaconda konfiguriert ist.
    - **macOS-Benutzer**: Terminal öffnen.
 
@@ -70,7 +51,6 @@ Das Erstellen einer virtuellen Umgebung ist ein wichtiger erster Schritt für je
    - `--name basics`: Dies legt den Namen der Umgebung fest. Hier wird sie "basics" genannt.
    - `python=3.12`: Dies spezifiziert die Python-Version, die in der Umgebung verwendet werden soll.
    - `pip`: Dies installiert pip in der neuen Umgebung, was für die spätere Paketinstallation wichtig ist.
-
 
 
    ::: {.callout-note}
@@ -98,16 +78,15 @@ Das Erstellen einer virtuellen Umgebung ist ein wichtiger erster Schritt für je
    Dieser Befehl installiert eine Reihe von grundlegenden Data Science-Paketen:
 
    :::{.callout-note collapse="true" title="Detaillierte Erklärung der installierten Pakete"}
-   - **numpy**: Eine Bibliothek für numerische Berechnungen in Python. Sie bildet die Basis für viele andere Data Science-Tools.
+   - **numpy**: Für numerische Berechnungen in Python. 
    - **pandas**: Ein leistungsfähiges Tool für Datenmanipulation und -analyse. Es bietet Datenstrukturen wie DataFrames, die besonders nützlich für tabellarische Daten sind.
-   - **openpyxl**: Diese Bibliothek ermöglicht das Lesen und Schreiben von Excel-Dateien (.xlsx). Sie wird oft in Verbindung mit Pandas verwendet, um mit Excel-Daten zu arbeiten.
-   - **matplotlib**: Eine weit verbreitete Bibliothek zur Erstellung von statischen, animierten und interaktiven Visualisierungen in Python.
-   - **seaborn**: Baut auf matplotlib auf und bietet eine High-Level-Schnittstelle für die Erstellung attraktiver und informativer statistischer Grafiken.
-   - **altair**: Eine statistische Visualisierungsbibliothek für Python, basierend auf Vega und Vega-Lite. Sie eignet sich besonders gut für die Erstellung interaktiver und komplexer Grafiken mit wenig Code.
-   - **jupyter**: Ein wichtiges Tool für interaktives Computing und Datenanalyse. Es ermöglicht die Erstellung und Freigabe von Dokumenten, die Live-Code, Gleichungen, Visualisierungen und erklärenden Text enthalten.
-   - **ipykernel**: Dies ist der IPython-Kernel für Jupyter. Er ermöglicht die Ausführung von Python-Code in Jupyter Notebooks.
+   - **openpyxl**: Lesen und Schreiben von Excel-Dateien (.xlsx). Wird oft in Verbindung mit Pandas verwendet, um mit Excel-Daten zu arbeiten.
+   - **matplotlib**: Erstellung von Visualisierungen in Python.
+   - **seaborn**: Erstellung statistischer Grafiken.
+   - **altair**: Eignet sich besonders gut für die Erstellung interaktiver und komplexer Grafiken mit wenig Code.
+   - **jupyter**: Ein wichtiges Tool für interaktives Computing und Datenanalyse. 
+   - **ipykernel**: Ermöglicht die Ausführung von Python-Code in Jupyter Notebooks.
    :::
-
 
    Wir verwenden ausschließlich `pip` für die Paketinstallation und nicht die ebenfalls gängige Methode `conda install`, die von der Anaconda Distributuion bereitgestellt wird. Dies dient dazu, potenzielle Konflikte zwischen Conda- und Pip-installierten Paketen zu vermeiden und eine konsistente Paketverwaltung sicherzustellen.
 
