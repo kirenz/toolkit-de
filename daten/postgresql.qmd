@@ -83,14 +83,19 @@ Die folgenden Schritte beschreiben die Installation des relationalen Datenbankma
 Um Datenbanken zu verwalten, ist es notwendig, sich zunächst mit einer PostgreSQL-Instanz zu verbinden. Dies geschieht durch das Einrichten einer neuen Serververbindung in pgAdmin4:
 
 1. pgAdmin4 öffnen.
-2. Unter "Quick Links" auf `Add New Server` klicken.
-3. Als Namen `local-connection` eingeben.
-4. Zum Reiter `Connection` wechseln:
-   - Hostname/Adresse: `localhost` eingeben.
+
+2. Unter "Quick Links" auf "*Add New Server*" klicken.
+
+3. Als Namen *local-connection* eingeben.
+
+4. Zum Reiter "*Connection*" wechseln:
+   - Hostname/Adresse: "localhost" eingeben.
    - Sicherstellen, dass der Port derselbe ist wie bei der Installation (üblicherweise 5432).
    - Passwort: Das während der Installation gesetzte Passwort eingeben und "Save password" wählen.
-5. Die Einrichtung durch Klicken auf `Save` bestätigen.
-6. Die `local-connection` wird nun in der linken Seitenleiste angezeigt.
+
+5. Die Einrichtung durch Klicken auf *Save* bestätigen.
+
+6. Die *local-connection* wird nun in der linken Seitenleiste angezeigt.
 
 ## SQL-Basics in PostgreSQL
 
@@ -101,53 +106,60 @@ Im Folgenden werden einige typische Aufgaben in PgAdmin4 behandelt, die bei der 
 Der nächste Schritt ist die Erstellung einer neuen Datenbank zur Datenspeicherung:
 
 :::{.callout-note collapse="true" title="Standard PostgreSQL Datenbank"}
-Bei der Installation von PostgreSQL wird automatisch eine Standarddatenbank namens `postgres` erstellt. Diese Datenbank wird typischerweise für administrative Zwecke und Tests verwendet. Es ist immer ratsam, neue Datenbanken für anwendungsspezifische Daten zu erstellen, um zu vermeiden, dass die Standarddatenbank mit Anwendungsdaten überladen wird.
+Bei der Installation von PostgreSQL wird automatisch eine Standarddatenbank namens "postgres" erstellt. Diese Datenbank wird typischerweise für administrative Zwecke und Tests verwendet. Es ist immer ratsam, neue Datenbanken für anwendungsspezifische Daten zu erstellen, um zu vermeiden, dass die Standarddatenbank mit Anwendungsdaten überladen wird.
 :::
 
-1. In pgAdmin4 mit der rechten Maustaste auf den `local-connection` Server in der linken Seitenleiste klicken.
+1. In pgAdmin4 mit der rechten Maustaste auf den "*local-connection*" Server in der linken Seitenleiste klicken.
+
 2. Zu Create > Database navigieren.
-3. Im Reiter "General" `db_data` als Datenbanknamen eingeben.
-4. Auf `Save` klicken, um die Datenbank zu erstellen.
+
+3. Im Reiter "General" *db_data* als Datenbanknamen eingeben.
+
+4. Auf *Save* klicken, um die Datenbank zu erstellen.
 
 ### Tabelle erstellen
 
-Nun wird eine Tabelle erstellt, um Daten zu Marketingkampagnen zu speichern.
+Nun wird eine Tabelle erstellt. Wir nutzen als Beispiel die Daten einer Marketingkampagne.
 
 :::{.callout-note collapse="true" title="Tabellendefinition"}
-Spalten in der Marketingkampagnen-Tabelle:
-- id: Eine eindeutige Kennung für jede Kampagne, automatisch inkrementiert.
-- name: Der Name der Marketingkampagne.
-- start_date & end_date: Der Zeitraum der Kampagne.
-- budget: Das der Kampagne zugewiesene Budget.
+- id: Eine eindeutige Kennung für jede Kampagne, automatisch inkrementiert.  
+- name: Der Name der Marketingkampagne.  
+- start_date & end_date: Der Zeitraum der Kampagne.  
+- budget: Das der Kampagne zugewiesene Budget.  
 - channel: Der für die Kampagne verwendete Kanal (z.B. "E-Mail", "Soziale Medien", "TV").
 :::
 
-1. Zur `db_data` Datenbank navigieren.
+1. Zur *db_data* Datenbank navigieren.
+
 2. Das Abfragewerkzeug unter Tools > Query Tool öffnen.
-3. Den folgenden SQL-Befehl eingeben, um die `campaigns` Tabelle zu erstellen:
 
-    ```sql
-    CREATE TABLE campaigns (
-        id BIGSERIAL PRIMARY KEY,
-        name VARCHAR(255) NOT NULL,
-        start_date DATE,
-        end_date DATE,
-        budget DECIMAL(10, 2),
-        channel VARCHAR(255)
-    );
-    ```
+3. Den folgenden SQL-Befehl eingeben, um die *campaigns* Tabelle zu erstellen:
 
-    :::{.callout-note collapse="true" title="Tabellendefinition Erklärung"}
-    Der obige SQL-Befehl erstellt eine neue Tabelle namens `campaigns`. Hier ist eine Aufschlüsselung der einzelnen Spaltendefinitionen:
+```sql
+CREATE TABLE campaigns (
+  id BIGSERIAL PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  start_date DATE,
+  end_date DATE,
+  budget DECIMAL(10, 2),
+  channel VARCHAR(255)
+);
+```
 
-    - **id**: Eine Spalte namens `id`, die den Datentyp `BIGSERIAL` verwendet, was ein automatisch inkrementierender Integer ist und sich für einen Primärschlüssel eignet.
-    - **name**: Eine Spalte zur Speicherung von Kampagnennamen als Text, definiert, um eine Zeichenfolge von bis zu 255 Zeichen zu halten. Die `NOT NULL`-Einschränkung stellt sicher, dass jede Zeile einen Namen haben muss.
-    - **start_date** und **end_date**: Diese Spalten speichern die Start- und Enddaten der Kampagnen jeweils im `DATE`-Datentyp.
-    - **budget**: Eine Spalte für das mit jeder Kampagne verbundene Budget, die `DECIMAL(10, 2)` verwendet, um bis zu 10 Ziffern mit 2 Dezimalstellen zu ermöglichen.
-    - **channel**: Eine Spalte, um das für die Kampagne verwendete Medium anzugeben, die Zeichenfolgen von bis zu 255 Zeichen speichern kann.
-    :::
+:::{.callout-note collapse="true" title="Tabellendefinition Erklärung"}
+- **id**: Eine Spalte namens `id`, die den Datentyp `BIGSERIAL` verwendet, was ein automatisch inkrementierender Integer ist und sich für einen Primärschlüssel eignet.
+
+- **name**: Eine Spalte zur Speicherung von Kampagnennamen als Text, definiert, um eine Zeichenfolge von bis zu 255 Zeichen zu halten. Die `NOT NULL`-Einschränkung stellt sicher, dass jede Zeile einen Namen haben muss.
+
+- **start_date** und **end_date**: Diese Spalten speichern die Start- und Enddaten der Kampagnen jeweils im `DATE`-Datentyp.
+
+- **budget**: Eine Spalte für das mit jeder Kampagne verbundene Budget, die `DECIMAL(10, 2)` verwendet, um bis zu 10 Ziffern mit 2 Dezimalstellen zu ermöglichen.
+
+- **channel**: Eine Spalte, um das für die Kampagne verwendete Medium anzugeben, die Zeichenfolgen von bis zu 255 Zeichen speichern kann.
+:::
 
 4. Das Skript ausführen, indem auf die ▶️ Schaltfläche geklickt wird (oder F5 gedrückt wird).
+
 5. Um die Tabelle zu überprüfen, "Schemas" > "Tables" > "campaigns" > "Columns" in der Datenbank `db_data` erweitern.
 
 ### Werte einfügen
