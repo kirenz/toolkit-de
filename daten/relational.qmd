@@ -1,5 +1,3 @@
-Hier ist eine optimierte Version der qmd-Datei:
-
 # Relationale Datenbanken
 
 Relationale Datenbanken bilden das Fundament vieler moderner Datenbankanwendungen. Ihre Stärke liegt in der Fähigkeit, Daten in strukturierten Tabellen zu organisieren und effizient zu verwalten.
