@@ -111,8 +111,6 @@ Hier die Schritte, um die Ordner mit der Windows-Eingabeaufforderung ("Command P
     ![Wechseln in den Ordner toolkit-lab](../images/eingabe-cd-toolkit-lab.png){#fig-eingabe-mkdir-toolkit width="100%" }
 
 
-
-
 4. Wir verwenden nun nochmals `mkdir` (make directory), um die Ordner `code` und `data` zu erstellen. 
 
     ```bash
@@ -197,30 +195,30 @@ Hier die Schritte, um das Hauptverzeichnis und die Unterverzeichnisse mit dem Te
 
     a) Zuerst überprüfen, ob zsh bereits installiert ist:
 
-        ```bash
-        zsh --version
-        ```
+     ```bash
+    zsh --version
+     ```
 
-        Falls eine Version angezeigt wird, weiter mit c). Ansonsten zu Schritt b).
+    Falls eine Version angezeigt wird, weiter mit c). Ansonsten zu Schritt b).
 
     b) Falls zsh noch nicht installiert sein sollte, können die Apple Xcode Command Line Tools installiert werden, die zsh enthalten:
 
 
-        ```bash
-        xcode-select --install
-        ```
+    ```bash
+    xcode-select --install
+     ```
 
-        Falls der Befehl nicht ausgeführt werden kann, ist XCode auch [über den App-Store](https://apps.apple.com/de/app/xcode/id497799835?mt=12) erhältlich. 
+    <!-- Falls der Befehl nicht ausgeführt werden kann, ist XCode auch [über den App-Store](https://apps.apple.com/de/app/xcode/id497799835?mt=12) erhältlich.  -->
 
     c) Wenn zsh installiert ist, kann mit diesem Befehl direkt zu zsh gewechselt werden:
 
-        ```bash
-        chsh -s /bin/zsh
-        ```
+    ```bash
+    chsh -s /bin/zsh
+    ```
 
-        Bei Bedarf Benutzerpasswort eingeben, wenn dazu aufgefordert wird. Dann das Terminal schließen und nochmals mit der Spotlight-Suche öffnen.
+    Bei Bedarf Benutzerpasswort eingeben, wenn dazu aufgefordert wird. Dann das Terminal schließen und nochmals mit der Spotlight-Suche öffnen.
 
-        Hinweise zu dem Befehl: `chsh` ist der Befehl zum Ändern der Standard-Shell. Die Option `-s` bewirkt, dass die Shell für den aktuellen Benutzer geändert wird. Und /bin/zsh  ist der Pfad zur Z-Shell (zsh).
+    Hinweise zu dem Befehl: `chsh` ist der Befehl zum Ändern der Standard-Shell. Die Option `-s` bewirkt, dass die Shell für den aktuellen Benutzer geändert wird. Und /bin/zsh  ist der Pfad zur Z-Shell (zsh).
 
 
 ### Terminal-Elemente
@@ -302,9 +300,7 @@ Um die Ordner auch im Finder anzeigen zu lassen, müssen wir zuerst eine Einstel
     ![Finder-Seitenleiste](../images/finder-2.png){#fig-finder-seitenleiste width=50%}
 
 
-
 4. In dem Finder-Fenster sehen wir in der linken Seitenleiste den Benutzername (in meinem Fall jankirenz). Wenn wir darauf klicken, sollte in dem Fenster rechts danaben der Ordner "toolkit-lab" angezeigt werden. Damit die Ansicht wie in dem Bild unten erscheint, muss in der oberen Taskleiste die sogenannte "Spaltenansicht" (Symbol mit drei Spalten) ausgewählt sein.  
-
 
     ![Finder-Fenster](../images/finder-3.png){#fig-finder-fenster width=80%}
 
