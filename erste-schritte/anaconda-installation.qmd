@@ -74,10 +74,10 @@ Start > Alle Programme > Anaconda3 > Anaconda Prompt
    - Für Geräte mit Apple-Chip wählen wir "Apple Silicon".
    - Für ältere Geräte wählen wir die Intel-Version.
 3. Wir laden den grafischen Installer herunter.
-4. Nach dem Download auf die heruntergeladene `.pkg`-Datei doppelklicken.
+4. Nach dem Download auf die heruntergeladene *.pkg*-Datei doppelklicken.
 5. Im Installationsassistenten folgen wir den Anweisungen:
    - Lizenzvereinbarung lesen und akzeptieren.
-   - Als Zielort wählen wir unser Home-Verzeichnis (z.B. `/Users/benutzername`).
+   - Als Zielort wählen wir unser Home-Verzeichnis (z.B. */Users/benutzername*).
 6. Mit einem Klick auf "Installieren" starten wir den Prozess.
 7. Nach Abschluss schließen wir den Installer.
 
