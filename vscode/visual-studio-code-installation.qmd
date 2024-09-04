@@ -8,17 +8,15 @@ VS Code ist besonders in der Python-Community beliebt, da es umfangreiche Python
 :::
 
 
-
-
 ## VS Code Installation in Windows
 
 Die Installation von VS Code unter Windows ist ein unkomplizierter Prozess, der in wenigen Schritten durchgeführt werden kann:
 
-1. Herunterladen des Installers
+1. Herunterladen des Installers: 
    - Die [Visual Studio Code Download-Seite](https://code.visualstudio.com/Download) aufrufen.
    - Die Windows-Version auswählen, um den `.exe` Installer herunterzuladen.
 
-2. Ausführen des Installers
+2. Ausführen des Installers: 
    - Nach Abschluss des Downloads die `.exe` Datei durch Doppelklick starten.
    - Den Anweisungen des Setup-Assistenten folgen.
    - Wichtig: Die Optionen "VS Code zum PATH hinzufügen" und "Desktop-Symbol erstellen" aktivieren.
@@ -27,26 +25,26 @@ Die Installation von VS Code unter Windows ist ein unkomplizierter Prozess, der 
 Das Hinzufügen von VS Code zum PATH ermöglicht es, den Editor über die Eingabeaufforderung zu starten, indem einfach `code` eingegeben wird. 
 :::
 
-3. Erster Start von Visual Studio Code
+3. Erster Start von Visual Studio Code: 
    - Nach der Installation VS Code über das Desktop-Symbol oder das Startmenü öffnen.
    - Beim ersten Start wird eine Willkommensseite angezeigt, die Optionen zur Anpassung der Umgebung, Installation von Erweiterungen oder Öffnen eines Projekts bietet.
 
-4. Workspace Trust
+4. Workspace Trust: 
    Bei der ersten Nutzung von VS Code erscheint möglicherweise eine Abfrage zum [Workspace Trust](https://code.visualstudio.com/docs/editor/workspace-trust). Es wird empfohlen, "**Ja, ich vertraue den Autoren**" zu wählen, um alle Funktionen und Erweiterungen vollständig nutzen zu können.
 
 ## VS Code Installation auf Mac
 
 Hier die Schritte der Installation von VS Code auf einem Mac :
 
-1. Herunterladen des Installers
+1. Herunterladen des Installers: 
    - Die [Visual Studio Code Download-Seite](https://code.visualstudio.com/Download) besuchen.
    - Die macOS-Version auswählen, um die `.zip` Datei herunterzuladen.
 
-2. Installation der Anwendung
+2. Installation der Anwendung: 
    - Nach dem Download den `.zip` Ordner im Finder extrahieren.
    - Die Visual Studio Code Anwendung im Finder in den "Programme"-Ordner ziehen.
 
-3. Erster Start von Visual Studio Code
+3. Erster Start von Visual Studio Code: 
    - Den "Programme"-Ordner öffnen und Visual Studio Code durch Doppelklick starten.
    - Die Willkommensseite führt durch die erste Einrichtung, einschließlich der Installation beliebter Erweiterungen.
 
@@ -59,7 +57,7 @@ Hier die Schritte der Installation von VS Code auf einem Mac :
 Nach der Installation des `code` Befehls im PATH kann VS Code aus dem Terminal geöffnet werden, indem `code .` in einem beliebigen Verzeichnis eingegeben wird. Dies ermöglicht uns einen schnellen und einfachen Zugriff auf Projekte.
 ::: -->
 
-4. Workspace Trust
+4. Workspace Trust: 
    Beim ersten Start wird möglicherweise eine Abfrage zum [Workspace Trust](https://code.visualstudio.com/docs/editor/workspace-trust) angezeigt. Es wird empfohlen, "**Ja, ich vertraue den Autoren**" zu wählen, um alle Funktionen und Erweiterungen vollständig nutzen zu können.
 
 ## VS Code Erweiterungen
@@ -96,10 +94,13 @@ Optional kann auch die visuelle Darstellung von VS Code angepasst werden:
 Alternativ zu der Installation über den Marktplatz können Erweiterungen auch direkt in VS Code installiert werden. Hier der Installationsprozess:
 
 1. VS Code öffnen.
+
 2. Die Ansicht Erweiterungen aufrufen:
    - Über das Quadrat-Symbol in der Seitenleiste oder
    - Durch Drücken von `Ctrl+Shift+X` (Windows) bzw. `Command+Shift+X` (Mac).
+
 3. In der Suchleiste nach der gewünschten Erweiterung suchen.
+
 4. Auf "Installieren" klicken, um die Erweiterung hinzuzufügen.
 
 
