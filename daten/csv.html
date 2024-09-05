@@ -303,13 +303,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github/github-setup.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">GitHub-Konto erstellen</span></span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">GitHub-Konto</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../github/github-repo.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">GitHub Repositories</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">GitHub Repos</span></span></a>
   </div>
 </li>
       </ul>
@@ -362,15 +362,41 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p>CSV-Dateien (Comma-Separated Values) sind ein weit verbreitetes Format zur Speicherung tabellarischer Daten. Sie zeichnen sich durch ihre Einfachheit und Plattformunabhängigkeit aus, was sie zu einem beliebten Austauschformat für Daten macht.</p>
+<p>Beispiel einer Tabelle:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Alter</th>
+<th>Stadt</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Max</td>
+<td>24</td>
+<td>Berlin</td>
+</tr>
+<tr class="even">
+<td>Anna</td>
+<td>30</td>
+<td>Hamburg</td>
+</tr>
+<tr class="odd">
+<td>Tom</td>
+<td>22</td>
+<td>München</td>
+</tr>
+</tbody>
+</table>
 <p>Struktur einer CSV-Datei:</p>
 <ul>
-<li>Jede Zeile entspricht einem Datensatz<br>
-</li>
-<li>Werte innerhalb einer Zeile werden durch Kommas getrennt<br>
-</li>
 <li>Die erste Zeile enthält üblicherweise die Spaltenüberschriften</li>
+<li>Jede Zeile darunter entspricht einem Datensatz<br>
+</li>
+<li>Werte innerhalb einer Zeile werden durch Kommas getrennt</li>
 </ul>
-<p>Beispiel einer CSV-Datei:</p>
+<p>Hier die tabellarischen Beispieldaten als CSV-Datei:</p>
 <pre class="plaintext"><code>Name,Alter,Stadt
 Max,24,Berlin
 Anna,30,Hamburg
@@ -415,7 +441,7 @@ Tom,22,München</code></pre>
 <p>Die Bibliothek Pandas ist ein leistungsstarkes Werkzeug für die Verarbeitung von CSV-Daten in Python. Sie ermöglicht sowohl das Erstellen als auch das Einlesen von CSV-Dateien mit wenigen Zeilen Code.</p>
 <section id="csv-erstellen" class="level3" data-number="11.2.1">
 <h3 data-number="11.2.1" class="anchored" data-anchor-id="csv-erstellen"><span class="header-section-number">11.2.1</span> CSV Erstellen</h3>
-<div id="6443aa9f" class="cell" data-execution_count="1">
+<div id="ebe2a8c5" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Daten definieren</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>daten <span class="op">=</span> {</span>
@@ -462,7 +488,7 @@ Detaillierte Erklärung
 <section id="csv-einlesen" class="level3" data-number="11.2.3">
 <h3 data-number="11.2.3" class="anchored" data-anchor-id="csv-einlesen"><span class="header-section-number">11.2.3</span> CSV Einlesen</h3>
 <p>Dieser Code liest eine CSV-Datei ein und konvertiert sie in einen Pandas DataFrame:</p>
-<div id="99a2c2a6" class="cell" data-execution_count="2">
+<div id="e29bee48" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># CSV-Datei lesen</span></span>
