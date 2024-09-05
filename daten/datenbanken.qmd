@@ -17,7 +17,7 @@ Es gibt verschiedene Arten von Datenbanken, die je nach Anwendungsfall und Daten
 
 | Datenstruktur | Beschreibung | Beispiele | Typische Datenbanken |
 |---------------|--------------|-----------|----------------------|
-| Strukturiert | Festes Schema, klar definierte Felder | <br>- Relationale Datenbanken | - MySQL<br>- PostgreSQL<br>- SQLite |
+| Strukturiert | Festes Schema, klar definierte Felder | <br>- Tabellen | - MySQL<br>- PostgreSQL<br>- SQLite |
 | Teilstrukturiert | Flexibles Schema, einige strukturierte Elemente | - JSON<br>- XML<br>- E-Mails | - MongoDB<br>- Couchbase<br>- Elasticsearch |
 | Unstrukturiert | Kein vordefiniertes Datenmodell | - Textdokumente<br>- Bilder<br>- Videos | - MongoDB<br>- Amazon S3<br>- Apache Cassandra |
 
