@@ -29,14 +29,6 @@ Hauptmerkmale von MongoDB:
 
 3. Leistungsfähigkeit: Durch die Möglichkeit, Daten in einem einzigen Dokument zu speichern, kann MongoDB oft schnellere Schreib- und Leseoperationen durchführen als relationale Datenbanken. 
 
-
-<!-- Die Hauptfunktionen von mongosh umfassen:
-
-- **Syntaxhervorhebung**: Die Shell unterstützt Syntaxhervorhebung, die den Code lesbarer macht und die Erkennung von Fehlern erleichtert.
-- **Intelligente Autovervollständigung**: Diese Funktion hilft bei der Eingabe von Befehlen und Parametern, indem sie Vorschläge macht und somit die Produktivität erhöht.
-- **Kontextbezogene Hilfe**: mongosh bietet direkte Hilfe zu Befehlen und Optionen, was besonders nützlich für Einsteiger ist.
-- **Fehlermeldungen**: Klare und präzise Fehlermeldungen helfen dabei, Probleme schnell zu identifizieren und zu beheben. -->
-
 Um mit MongoDB zu beginnen, muss zunächst der MongoDB-Dienst gestartet und dann die MongoDB Shell geöffnet werden. Sobald die Shell geöffnet ist, können grundlegende Befehle ausgeführt werden, um Datenbanken und Sammlungen zu erstellen, Daten einzufügen und Abfragen auszuführen.
 
 ## MongoDB-Installation in Windows
