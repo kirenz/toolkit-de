@@ -112,10 +112,8 @@ Dieser Code liest eine CSV-Datei ein und konvertiert sie in einen Pandas DataFra
 
 ```{python}
 import pandas as pd
-
 # CSV-Datei lesen
 df = pd.read_csv('daten.csv')
-
 # DataFrame anzeigen
 df
 ```
