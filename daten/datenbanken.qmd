@@ -128,8 +128,24 @@ Hauptmerkmale von NoSQL-Datenbanken
 
 - **Hohe Verfügbarkeit und Fehlertoleranz**: NoSQL-Datenbanken sind so konzipiert, dass sie auch bei Ausfällen einzelner Knoten im Netzwerk weiterhin verfügbar bleiben.
 
-
 Anstatt Tabellen zu verbinden, speichern NoSQL-Datenbanken unstrukturierte oder halbstrukturierte Daten, oft in Schlüssel-Wert-Paaren oder JSON-Dokumenten. Sie umfassen mehrere verschiedene Modelle zum Zugriff und zur Verwaltung von Daten, die jeweils für spezifische Anwendungsfälle geeignet sind.
+
+
+
+### NoSQL-Datenmodelle
+
+Die verschiedenen NoSQL-Datenmodelle bieten Flexibilität und Effizienz für unterschiedliche Anwendungsfälle und Datenstrukturen. Die Wahl des geeigneten Modells hängt von den spezifischen Anforderungen des jeweiligen Projekts ab.
+
+
+| Modell | Eigenschaften | Open Source Beispiele |
+|--------|---------------|------------------------|
+| Dokumentenorientierter Speicher | Daten und Metadaten werden hierarchisch in JSON-basierten Dokumenten innerhalb der Datenbank gespeichert. | MongoDB, CouchDB |
+| Schlüssel-Wert-Speicher | Die einfachsten NoSQL-Datenbanken, Daten werden als eine Sammlung von Schlüssel-Wert-Paaren dargestellt. | Redis |
+| Spaltenorientierter Speicher | Verwandte Daten werden als eine Reihe von verschachtelten Schlüssel/Wert-Paaren innerhalb einer einzigen Spalte gespeichert. | HBase, Cassandra |
+| Graph-Speicher | Daten werden in einer Graphstruktur als Knoten, Kanten und Dateneigenschaften gespeichert. | Neo4j |
+
+
+### Anwendungsbereiche
 
 NoSQL-Datenbanken finden in verschiedenen Bereichen Anwendung:
 
