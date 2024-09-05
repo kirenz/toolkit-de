@@ -14,7 +14,7 @@ Beispiel einer Tabelle:
 Struktur einer CSV-Datei:  
 
 - Die erste Zeile enthält üblicherweise die Spaltenüberschriften
-- Jede Zeile entspricht einem Datensatz  
+- Jede Zeile darunter entspricht einem Datensatz  
 - Werte innerhalb einer Zeile werden durch Kommas getrennt  
 
 Hier die tabellarischen Beispieldaten als CSV-Datei:
