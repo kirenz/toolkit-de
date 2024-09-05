@@ -1,4 +1,4 @@
-# GitHub-Konto erstellen
+# GitHub-Konto
 
 Die Erstellung eines GitHub-Kontos ist der erste Schritt zur Nutzung dieser leistungsstarken Plattform für Versionskontrolle und Zusammenarbeit. 
 
