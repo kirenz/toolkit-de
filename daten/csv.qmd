@@ -2,14 +2,22 @@
 
 CSV-Dateien (Comma-Separated Values) sind ein weit verbreitetes Format zur Speicherung tabellarischer Daten. Sie zeichnen sich durch ihre Einfachheit und Plattformunabhängigkeit aus, was sie zu einem beliebten Austauschformat für Daten macht.
 
+
+Beispiel einer Tabelle:
+
+| Name | Alter | Stadt |
+|---|---|---|
+| Max | 24 | Berlin |
+| Anna | 30 | Hamburg |
+| Tom | 22 | München |
+
 Struktur einer CSV-Datei:  
 
+- Die erste Zeile enthält üblicherweise die Spaltenüberschriften
 - Jede Zeile entspricht einem Datensatz  
 - Werte innerhalb einer Zeile werden durch Kommas getrennt  
-- Die erste Zeile enthält üblicherweise die Spaltenüberschriften
 
-
-Beispiel einer CSV-Datei:
+Hier die tabellarischen Beispieldaten als CSV-Datei:
 
 ```plaintext
 Name,Alter,Stadt
