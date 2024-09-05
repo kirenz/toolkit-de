@@ -43,7 +43,7 @@ Um mit MongoDB zu beginnen, muss zunächst der MongoDB-Dienst gestartet und dann
 
 In diesem Abschnitt wird die Installation der NoSQL-Datenbank MongoDB und der MongoDB Shell (mongosh) behandelt.
 
-### Instalationsprozess
+### Installationsprozess
 
 1. MongoDB herunterladen:  
    Die [offizielle MongoDB-Download-Seite](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-windows/#install-mongodb-community-edition) besuchen und die aktuelle ("current") MongoDB Community Server-Version für Windows herunterladen.
