@@ -13,9 +13,11 @@ Die folgenden Schritte beschreiben die Installation des relationalen Datenbankma
    - Das Installationsprogramm für Windows auswählen und den Download starten.
    - Nach dem Download das Installationsprogramm ausführen.
 
+
 2. Standard-Installationsverzeichnis auswählen
    - Im Installationsassistenten auf "Next" klicken.
    - Das vorgeschlagene Standard-Installationsverzeichnis akzeptieren oder ein eigenes Verzeichnis wählen und auf "Next" klicken.
+
 
 3. Komponenten auswählen
    - Folgende Komponenten auswählen:
@@ -23,6 +25,7 @@ Die folgenden Schritte beschreiben die Installation des relationalen Datenbankma
      - pgAdmin 4
      - Kommandozeilenwerkzeuge
    - Auf "Next" klicken.
+
 
 4. Verzeichnis für die Dateninstallation auswählen
    - Das vorgeschlagene Datenverzeichnis akzeptieren oder ein eigenes Verzeichnis wählen und auf "Next" klicken.
