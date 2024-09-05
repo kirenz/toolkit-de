@@ -30,7 +30,7 @@ Das Öffnen eines Ordners in VS Code entspricht dem Erstellen eines "Projekts" i
 
 
 
-## Vertrauenswürdigkeit des Arbeitsbereichs
+### Vertrauenswürdigkeit des Arbeitsbereichs
 
 Beim erstmaligen Öffnen eines Projektordners in VS Code erscheint eine Abfrage zur Vertrauenswürdigkeit des Arbeitsbereichs ([Workspace Trust](https://code.visualstudio.com/docs/editor/workspace-trust)):
 
