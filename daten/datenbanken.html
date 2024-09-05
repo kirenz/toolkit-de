@@ -361,8 +361,54 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p><em>Mehrbenutzerzugriff</em>: Datenbanken ermöglichen mehreren Benutzern gleichzeitig den Zugriff und die Bearbeitung von Daten, ohne dass es zu Konflikten kommt.</p></li>
 </ul>
 <p>Es gibt verschiedene Arten von Datenbanken, die je nach Anwendungsfall und Datenstruktur verwendet werden:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 24%">
+<col style="width: 22%">
+<col style="width: 17%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Datenstruktur</th>
+<th>Beschreibung</th>
+<th>Beispiele</th>
+<th>Typische Datenbanken</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Strukturiert</td>
+<td>Festes Schema, klar definierte Felder</td>
+<td>- Tabellenkalkulationen<br>- Relationale Datenbanken</td>
+<td>- MySQL<br>- PostgreSQL<br>- Oracle</td>
+</tr>
+<tr class="even">
+<td>Teilstrukturiert</td>
+<td>Flexibles Schema, einige strukturierte Elemente</td>
+<td>- JSON<br>- XML<br>- E-Mails</td>
+<td>- MongoDB<br>- Couchbase<br>- Elasticsearch</td>
+</tr>
+<tr class="odd">
+<td>Unstrukturiert</td>
+<td>Kein vordefiniertes Datenmodell</td>
+<td>- Textdokumente<br>- Bilder<br>- Videos</td>
+<td>- Hadoop HDFS<br>- Amazon S3<br>- Apache Cassandra</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Die Wahl der richtigen Datenbank hängt oft von der Struktur der zu verarbeitenden Daten ab. In Data Science Projekten ist es nicht ungewöhnlich, mit allen drei Arten von Datenstrukturen zu arbeiten.</p>
+</div>
+</div>
+</div>
 <ul>
-<li><p><strong>Relationale Datenbanken (RDBMS):</strong> Diese verwenden Tabellen zur Speicherung von Daten und sind durch ihre Verwendung von SQL (Structured Query Language) bekannt. Beispiele sind MySQL, PostgreSQL und SQLite.</p></li>
+<li><p><strong>Relationale Datenbanken:</strong> Diese verwenden Tabellen zur Speicherung von Daten und sind durch ihre Verwendung von SQL (Structured Query Language) bekannt. Beispiele sind MySQL, PostgreSQL und SQLite.</p></li>
 <li><p><strong>NoSQL-Datenbanken:</strong> Diese sind für unstrukturierte Daten oder große Mengen an Daten ausgelegt, die nicht in das relationale Modell passen. Beispiele sind MongoDB, Cassandra und Redis.</p></li>
 </ul>
 <section id="relationale-datenbanken" class="level2" data-number="13.1">
