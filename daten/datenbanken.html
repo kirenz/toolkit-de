@@ -326,7 +326,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#tabellen" id="toc-tabellen" class="nav-link" data-scroll-target="#tabellen"><span class="header-section-number">13.1.1</span> Tabellen</a></li>
   <li><a href="#sql" id="toc-sql" class="nav-link" data-scroll-target="#sql"><span class="header-section-number">13.1.2</span> SQL</a></li>
   </ul></li>
-  <li><a href="#nosql-datenbanken" id="toc-nosql-datenbanken" class="nav-link" data-scroll-target="#nosql-datenbanken"><span class="header-section-number">13.2</span> NoSQL Datenbanken</a></li>
+  <li><a href="#nosql-datenbanken" id="toc-nosql-datenbanken" class="nav-link" data-scroll-target="#nosql-datenbanken"><span class="header-section-number">13.2</span> NoSQL Datenbanken</a>
+  <ul class="collapse">
+  <li><a href="#nosql-datenmodelle" id="toc-nosql-datenmodelle" class="nav-link" data-scroll-target="#nosql-datenmodelle"><span class="header-section-number">13.2.1</span> NoSQL-Datenmodelle</a></li>
+  <li><a href="#anwendungsbereiche" id="toc-anwendungsbereiche" class="nav-link" data-scroll-target="#anwendungsbereiche"><span class="header-section-number">13.2.2</span> Anwendungsbereiche</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -547,6 +551,48 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p><strong>Hohe Verfügbarkeit und Fehlertoleranz</strong>: NoSQL-Datenbanken sind so konzipiert, dass sie auch bei Ausfällen einzelner Knoten im Netzwerk weiterhin verfügbar bleiben.</p></li>
 </ul>
 <p>Anstatt Tabellen zu verbinden, speichern NoSQL-Datenbanken unstrukturierte oder halbstrukturierte Daten, oft in Schlüssel-Wert-Paaren oder JSON-Dokumenten. Sie umfassen mehrere verschiedene Modelle zum Zugriff und zur Verwaltung von Daten, die jeweils für spezifische Anwendungsfälle geeignet sind.</p>
+<section id="nosql-datenmodelle" class="level3" data-number="13.2.1">
+<h3 data-number="13.2.1" class="anchored" data-anchor-id="nosql-datenmodelle"><span class="header-section-number">13.2.1</span> NoSQL-Datenmodelle</h3>
+<p>Die verschiedenen NoSQL-Datenmodelle bieten Flexibilität und Effizienz für unterschiedliche Anwendungsfälle und Datenstrukturen. Die Wahl des geeigneten Modells hängt von den spezifischen Anforderungen des jeweiligen Projekts ab.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 31%">
+<col style="width: 51%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Modell</th>
+<th>Eigenschaften</th>
+<th>Open Source Beispiele</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dokumentenorientierter Speicher</td>
+<td>Daten und Metadaten werden hierarchisch in JSON-basierten Dokumenten innerhalb der Datenbank gespeichert.</td>
+<td>MongoDB, CouchDB</td>
+</tr>
+<tr class="even">
+<td>Schlüssel-Wert-Speicher</td>
+<td>Die einfachsten NoSQL-Datenbanken, Daten werden als eine Sammlung von Schlüssel-Wert-Paaren dargestellt.</td>
+<td>Redis</td>
+</tr>
+<tr class="odd">
+<td>Spaltenorientierter Speicher</td>
+<td>Verwandte Daten werden als eine Reihe von verschachtelten Schlüssel/Wert-Paaren innerhalb einer einzigen Spalte gespeichert.</td>
+<td>HBase, Cassandra</td>
+</tr>
+<tr class="even">
+<td>Graph-Speicher</td>
+<td>Daten werden in einer Graphstruktur als Knoten, Kanten und Dateneigenschaften gespeichert.</td>
+<td>Neo4j</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="anwendungsbereiche" class="level3" data-number="13.2.2">
+<h3 data-number="13.2.2" class="anchored" data-anchor-id="anwendungsbereiche"><span class="header-section-number">13.2.2</span> Anwendungsbereiche</h3>
 <p>NoSQL-Datenbanken finden in verschiedenen Bereichen Anwendung:</p>
 <ol type="1">
 <li>E-Commerce: Verwaltung von Produktkatalogen, Benutzerprofilen und Warenkörben.</li>
@@ -557,6 +603,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ol>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
