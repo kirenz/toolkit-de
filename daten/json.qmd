@@ -40,7 +40,13 @@ In diesem Beispiel enthält die JSON-Datei ein Objekt mit dem Schlüssel "Person
 
 ## Schreiben und Lesen einer JSON-Datei
 
-Das Speichern von Daten in eine JSON-Datei erfolgt mithilfe der `json`-Bibliothek. Die Methode `json.dump()` ermöglicht das Speichern eines Python-Dictionaries in eine JSON-Datei.
+Das Bearbeiten von Daten im JSON-Format erfolgt mithilfe der `json`-Bibliothek. 
+
+### JSON schreiben
+
+Die Methode `json.dump()` ermöglicht das Speichern eines Python-Dictionaries in eine JSON-Datei. 
+
+Zuerst erstellen wir daher ein Python-Dictionary namens `daten`. Dieses Dictionary enthält einen Schlüssel `Personen`, dem eine Liste von Dictionaries zugeordnet ist. Jedes innere Dictionary repräsentiert eine Person mit `Name`, `Alter` und `Stadt`.
 
 ```{python}
 import json
@@ -81,7 +87,10 @@ with open('daten.json', 'w') as jsonfile:
 
 :::
 
-Das **Einlesen** von JSON-Dateien in Python erfolgt ebenfalls mit der `json`-Bibliothek. Die Methode `json.load()` wandelt den Inhalt einer JSON-Datei in ein Python-Dictionary um.
+
+### JSON einlesen
+
+Das Einlesen von JSON-Dateien in Python erfolgt ebenfalls mit der `json`-Bibliothek. Die Methode `json.load()` wandelt den Inhalt einer JSON-Datei in ein Python-Dictionary um.
 
 ```{python}
 import json
@@ -111,6 +120,7 @@ print(daten)
    Dies zeigt den Inhalt des eingelesenen Dictionaries an und ermöglicht eine Überprüfung der korrekten Datenstruktur.
 
 :::
+<!-- 
 
 ## JSON-Daten in Python bearbeiten
 
@@ -151,7 +161,7 @@ daten = {
 json_daten = json.dumps(daten, indent=4)
 print(json_daten)
 ```
-
+ -->
 
 
 
