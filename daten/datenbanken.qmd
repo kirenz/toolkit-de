@@ -26,8 +26,6 @@ Es gibt verschiedene Arten von Datenbanken, die je nach Anwendungsfall und Daten
 Die Wahl der richtigen Datenbank hängt oft von der Struktur der zu verarbeitenden Daten ab. In Data Science Projekten ist es nicht ungewöhnlich, mit allen drei Arten von Datenstrukturen zu arbeiten.
 :::
 
-
-
 - **Relationale Datenbanken:** Diese verwenden Tabellen zur Speicherung von Daten und sind durch ihre Verwendung von SQL (Structured Query Language) bekannt. Beispiele sind MySQL, PostgreSQL und SQLite.
 
 - **NoSQL-Datenbanken:** Diese sind für unstrukturierte Daten oder große Mengen an Daten ausgelegt, die nicht in das relationale Modell passen. Beispiele sind MongoDB, Cassandra und Redis.
@@ -51,6 +49,10 @@ Einsatzgebiete relationaler Datenbanken sind vielfältig:
 3. Gesundheitswesen: Verwaltung von Patientendaten, Terminen und medizinischen Aufzeichnungen
 
 Die Struktur, Flexibilität und Zuverlässigkeit relationaler Datenbanken machen sie zu einem unverzichtbaren Werkzeug in der modernen Datenverwaltung und -analyse.
+
+
+
+
 
 
 ### Tabellen
