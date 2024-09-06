@@ -102,8 +102,8 @@ book:
         - github/github-git.qmd
         - github/github-setup.qmd
         - github/github-repo.qmd
-      #  - github/github-organization.qmd
-      #  - github/github-projects.qmd   
+        - github/github-organization.qmd
+        - github/github-projects.qmd   
 
 
     # - part: projekt/index.qmd
