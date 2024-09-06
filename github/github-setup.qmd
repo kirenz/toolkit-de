@@ -1,4 +1,6 @@
-# GitHub-Konto
+# GitHub-Setup
+
+## GitHub-Konto
 
 Die Erstellung eines GitHub-Kontos ist der erste Schritt zur Nutzung dieser leistungsstarken Plattform für Versionskontrolle und Zusammenarbeit. 
 
@@ -39,7 +41,7 @@ Im Folgenden eine detaillierte Anleitung zur Kontoerstellung:
    - Diese Erweiterung ermöglicht die direkte Verwaltung von GitHub-Repositories innerhalb von Visual Studio Code, was den Workflow erheblich vereinfachen kann.
    :::
 
-# GitHub Desktop installieren
+## GitHub Desktop installieren
 
 GitHub Desktop ist eine benutzerfreundliche Anwendung, die eine grafische Oberfläche für die Verwaltung von GitHub-Projekten bietet. Sie eignet sich besonders für Anfänger, die noch nicht mit Befehlszeilentools vertraut sind.
 
