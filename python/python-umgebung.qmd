@@ -6,8 +6,6 @@ Virtuelle Umgebungen sind ein grundlegendes Konzept in der Softwareentwicklung u
 Um die folgenden Erläuterungen zu vereinfachen, werden wir nicht immer streng zwischen Bibliotheken und Paketen unterscheiden, sondern hauptsächlich den Begriff Python-Pakete verwenden, wenn wir Python-Software importieren.
 :::
 
-### Was sind virtuelle Umgebungen?
-
 Eine virtuelle Umgebung ist im Wesentlichen ein eigenständiger Ordner, der alle notwendigen ausführbaren Dateien enthält, um Python-Pakete zu verwenden. Jede virtuelle Umgebung hat ihre eigene Python-Installation, unabhängig von der globalen Python-Installation auf dem Computer.
 
 Virtuelle Umgebungen bieten mehrere entscheidende Vorteile:
