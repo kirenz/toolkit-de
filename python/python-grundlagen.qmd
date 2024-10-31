@@ -309,7 +309,7 @@ df.describe().round(2)
 Zuletzt noch ein Beispiel, wie der Mittlwert mit Hilfe der Methode `.mean()` berechnet werden kann. Wir erzeugen dafür ein neues Objekt mit der Bezeichnung `mean_value` und geben dieses dann mit einem f-String aus:
 
 ```{python}
-mean_value = df['Numbers'].mean()
+mean_value = df['Zahlen'].mean()
 # Ergebnis ausgeben
 print(f"Mittelwert: {mean_value}")
 ```
@@ -329,8 +329,8 @@ Nachdem wir die Struktur eines DataFrames verstanden haben, können wir die Date
 ```{python}
 # Einfaches Streudiagramm erstellen
 chart = alt.Chart(df).mark_point().encode(
-    x='Numbers',
-    y='Squares'
+    x='Zahlen',
+    y='Quadrate'
 )
 # Diagramm anzeigen
 chart
