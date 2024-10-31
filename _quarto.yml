@@ -37,23 +37,16 @@ book:
         - text: "Umgebungen"
           href: python/python-umgebung.qmd
         - python/python-arbeitsbereich.qmd
-        - python/python-grundlagen.qmd
-        - python/python-einrueckung.qmd
-        - python/python-funktionen.qmd
-        - python/python-kontrollstrukturen.qmd
-        - python/python-klassen.qmd
+        - python/python-grundlagen.qmd #neu
+        - python/python-einrueckung.qmd #neu
+        - python/python-funktionen.qmd #neu
+        - python/python-kontrollstrukturen.qmd #neu
+        - python/python-klassen.qmd #neu
 
     - part: vscode/index.qmd
       chapters:
         - vscode/visual-studio-code-installation.qmd
         - vscode/visual-studio-code-basics.qmd
-
-    # - part: daten/index.qmd
-    #   chapters:
-    #     - daten/dictionary.qmd
-    #     - daten/csv.qmd
-    #     - daten/excel.qmd
-    #     - daten/json.qmd
 
     - part: daten/index.qmd
       chapters:
@@ -62,40 +55,13 @@ book:
         - text: "JSON"           
           href: daten/json.qmd 
         - text: "Datenbanken"
-          href: daten/datenbanken.qmd          
-        # - text: "Relationale Datenbanken"
-        #   href: daten/relational.qmd
-     #   - text: "MySQL"
-    #      href: daten/mysql.qmd          
+          href: daten/datenbanken.qmd              
         - text: "PostgreSQL"
           href: daten/postgresql.qmd 
-        # - text: "NoSQL Datenbanken"
-        #   href: daten/nosql.qmd
         - text: "MongoDB"
           href: daten/mongodb.qmd    
-        
+      
 
-
-    # - part: mysql/index.qmd
-    #   chapters:
-    #     - mysql/mysql-installation.qmd 
-    #     - mysql/mysql-server.qmd
-    #     - mysql/mysql-basics.qmd
-
-    # - part: postgres/index.qmd
-    #   chapters:
-    #     - postgres/postgres-installation.qmd
-    #     - postgres/postgres-server.qmd
-    #     - postgres/postgres-basics.qmd
-    #     - postgres/postgres-python.qmd
-
-    # - part: mongodb/index.qmd
-    #   chapters:
-    #     - mongodb/mongodb-installation.qmd 
-    #     - mongodb/mongodb-start-stop.qmd
-    #     - mongodb/mongodb-basics.qmd  
-    #     - mongodb/mongodb-python.qmd  
-    #     - mongodb/mongodb-python-bilder.qmd  
 
     - part: github/index.qmd
       chapters:
@@ -104,11 +70,6 @@ book:
         - github/github-repo.qmd
         - github/github-organization.qmd
         - github/github-projects.qmd   
-
-
-    # - part: projekt/index.qmd
-    #   chapters:
-    #     - projekt/analytics.qmd
 
 
 format:
@@ -127,7 +88,7 @@ format:
 
   # pdf:
   #   toc: true
-  #   toc-depth: 3
+  #   toc-depth: 2
   #   number-sections: true
   #   papersize: a4
   #   documentclass: book
