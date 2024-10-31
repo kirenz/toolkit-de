@@ -37,11 +37,11 @@ book:
         - text: "Umgebungen"
           href: python/python-umgebung.qmd
         - python/python-arbeitsbereich.qmd
-     #   - python/python-grundlagen.qmd
-        # - python/python-einrueckung.qmd
-       # - python/python-funktionen.qmd
-       # - python/python-kontrollstrukturen.qmd
-       # - python/python-klassen.qmd
+        - python/python-grundlagen.qmd
+        - python/python-einrueckung.qmd
+        - python/python-funktionen.qmd
+        - python/python-kontrollstrukturen.qmd
+        - python/python-klassen.qmd
 
     - part: vscode/index.qmd
       chapters:
