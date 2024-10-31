@@ -9,7 +9,7 @@
 <meta name="author" content="Jan Kirenz">
 <meta name="description" content="Programming Toolkit für Data Science, AI &amp; Analytics">
 
-<title>22&nbsp; Git – Data Science, AI &amp; Analytics Toolkit</title>
+<title>12&nbsp; Funktionen – Data Science, AI &amp; Analytics Toolkit</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -59,15 +59,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../github/github-setup.html" rel="next">
-<link href="../github/index.html" rel="prev">
+<link href="../python/python-kontrollstrukturen.html" rel="next">
+<link href="../python/python-einrueckung.html" rel="prev">
 <link href="..//images/logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -104,6 +104,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Suchen"
   }
 }</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 <script src="password.js"></script>
 
 
@@ -119,7 +122,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../github/index.html">GitHub</a></li><li class="breadcrumb-item"><a href="../github/github-git.html"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Git</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../python/index.html">Python</a></li><li class="breadcrumb-item"><a href="../python/python-funktionen.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Funktionen</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Suchen" onclick="window.quartoOpenSearch();">
@@ -236,7 +239,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../python/python-funktionen.html" class="sidebar-item-text sidebar-link">
+  <a href="../python/python-funktionen.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Funktionen</span></span></a>
   </div>
 </li>
@@ -329,7 +332,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../github/github-git.html" class="sidebar-item-text sidebar-link active">
+  <a href="../github/github-git.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Git</span></span></a>
   </div>
 </li>
@@ -369,17 +372,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-  <li><a href="#git-installation-in-windows" id="toc-git-installation-in-windows" class="nav-link active" data-scroll-target="#git-installation-in-windows"><span class="header-section-number">22.1</span> Git-Installation in Windows</a></li>
-  <li><a href="#git-installation-auf-mac" id="toc-git-installation-auf-mac" class="nav-link" data-scroll-target="#git-installation-auf-mac"><span class="header-section-number">22.2</span> Git-Installation auf Mac</a></li>
+  <li><a href="#einfache-funktion" id="toc-einfache-funktion" class="nav-link active" data-scroll-target="#einfache-funktion"><span class="header-section-number">12.1</span> Einfache Funktion</a>
+  <ul class="collapse">
+  <li><a href="#funktion-definieren" id="toc-funktion-definieren" class="nav-link" data-scroll-target="#funktion-definieren"><span class="header-section-number">12.1.1</span> Funktion definieren</a></li>
+  <li><a href="#funktion-verwenden" id="toc-funktion-verwenden" class="nav-link" data-scroll-target="#funktion-verwenden"><span class="header-section-number">12.1.2</span> Funktion verwenden</a></li>
+  <li><a href="#ergebnis-anzeigen" id="toc-ergebnis-anzeigen" class="nav-link" data-scroll-target="#ergebnis-anzeigen"><span class="header-section-number">12.1.3</span> Ergebnis anzeigen</a></li>
+  </ul></li>
+  <li><a href="#funktion-mit-mehreren-parametern" id="toc-funktion-mit-mehreren-parametern" class="nav-link" data-scroll-target="#funktion-mit-mehreren-parametern"><span class="header-section-number">12.2</span> Funktion mit mehreren Parametern</a></li>
+  <li><a href="#standardparameter" id="toc-standardparameter" class="nav-link" data-scroll-target="#standardparameter"><span class="header-section-number">12.3</span> Standardparameter</a></li>
+  <li><a href="#lambda-funktionen" id="toc-lambda-funktionen" class="nav-link" data-scroll-target="#lambda-funktionen"><span class="header-section-number">12.4</span> Lambda-Funktionen</a>
+  <ul class="collapse">
+  <li><a href="#beispiel-funktion" id="toc-beispiel-funktion" class="nav-link" data-scroll-target="#beispiel-funktion"><span class="header-section-number">12.4.1</span> Beispiel-Funktion</a></li>
+  <li><a href="#lambda-funktion-mit-map-und-filter" id="toc-lambda-funktion-mit-map-und-filter" class="nav-link" data-scroll-target="#lambda-funktion-mit-map-und-filter"><span class="header-section-number">12.4.2</span> Lambda-Funktion mit map und filter</a></li>
+  <li><a href="#lambda-funktionen-mit-dataframes" id="toc-lambda-funktionen-mit-dataframes" class="nav-link" data-scroll-target="#lambda-funktionen-mit-dataframes"><span class="header-section-number">12.4.3</span> Lambda-Funktionen mit DataFrames</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../github/index.html">GitHub</a></li><li class="breadcrumb-item"><a href="../github/github-git.html"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Git</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../python/index.html">Python</a></li><li class="breadcrumb-item"><a href="../python/python-funktionen.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Funktionen</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Git</span></h1>
+<h1 class="title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Funktionen</span></h1>
 </div>
 
 
@@ -396,63 +411,324 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Git ist ein verteiltes Versionskontrollsystem, entwickelt von Linus Torvalds, dem Schöpfer von Linux. Es ermöglicht die Verfolgung von Codeänderungen, die Erstellung und Zusammenführung verschiedener Entwicklungszweige sowie die Wiederherstellung früherer Projektversionen.</p>
+<p><a href="../code/python-funktionen.ipynb" download="python-funktionen.ipynb">⬇️ Jupyter Notebook herunterladen</a></p>
+<p>Funktionen helfen, modulare, wiederverwendbare Codeblöcke zu schreiben. In diesem Abschnitt wird das Definieren, Aufrufen und Dokumentieren von Funktionen demonstriert.</p>
+<section id="einfache-funktion" class="level2" data-number="12.1">
+<h2 data-number="12.1" class="anchored" data-anchor-id="einfache-funktion"><span class="header-section-number">12.1</span> Einfache Funktion</h2>
+<p>Wir beginnen mit der Erstellung einer Funktion zur Berechnung des Quadrats einer Zahl.</p>
+<section id="funktion-definieren" class="level3" data-number="12.1.1">
+<h3 data-number="12.1.1" class="anchored" data-anchor-id="funktion-definieren"><span class="header-section-number">12.1.1</span> Funktion definieren</h3>
+<div id="f9707330" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> square(num):</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Berechnen und zurückgeben des Quadrats einer Zahl."""</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> num <span class="op">*</span> num</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Erläuterungen:</p>
+<ol type="1">
+<li><strong>Funktionsdefinition</strong>:
+<ul>
+<li>Das Schlüsselwort <code>def</code> signalisiert den Beginn einer Funktionsdefinition.</li>
+<li>Der Name der Funktion folgt direkt danach. In diesem Fall ist der Funktionsname <code>square</code>.</li>
+<li>Die Klammern <code>()</code> enthalten die Parameterliste der Funktion. Hier gibt es einen Parameter, <code>num</code>, der eine Zahl repräsentiert, deren Quadrat berechnet werden soll.</li>
+</ul></li>
+<li><strong>Docstring</strong>:
+<ul>
+<li>Ein Docstring ist ein kurzer beschreibender Text, der die Funktion erklärt. Er wird zwischen dreifachen Anführungszeichen <code>"""</code> geschrieben.</li>
+<li>Der Docstring dieser Funktion lautet: <code>"Berechnen und zurückgeben des Quadrats einer Zahl."</code></li>
+<li>Docstrings sind nützlich, um den Zweck der Funktion und ihre Funktionsweise zu dokumentieren. Sie sind besonders hilfreich für andere Programmierer/innen oder für Sie selbst, wenn Sie den Code später wieder verwenden oder ändern möchten.</li>
+</ul></li>
+<li><strong>Berechnung des Quadrats</strong>:
+<ul>
+<li>Die Funktion verwendet die Formel <code>num * num</code>, um das Quadrat der Zahl zu berechnen. Dies bedeutet, dass die Zahl <code>num</code> mit sich selbst multipliziert wird.</li>
+<li>Beispielsweise, wenn <code>num</code> gleich 3 ist, berechnet die Funktion <code>3 * 3</code>, was 9 ergibt.</li>
+</ul></li>
+<li><strong>Rückgabe des Ergebnisses</strong>:
+<ul>
+<li>Das Schlüsselwort <code>return</code> weist die Funktion an, das Ergebnis der Berechnung zurückzugeben.</li>
+<li>In diesem Fall gibt <code>return num * num</code> das berechnete Quadrat der Zahl <code>num</code> zurück.</li>
+<li>Wenn die Funktion aufgerufen wird, wird der zurückgegebene Wert an die Stelle des Funktionsaufrufs übergeben.</li>
+</ul></li>
+</ol>
+</section>
+<section id="funktion-verwenden" class="level3" data-number="12.1.2">
+<h3 data-number="12.1.2" class="anchored" data-anchor-id="funktion-verwenden"><span class="header-section-number">12.1.2</span> Funktion verwenden</h3>
+<p>Beispiel für die Verwendung der Funktion:</p>
+<div id="9cd6c15e" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Aufruf der Funktion square mit dem Argument 4</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> square(<span class="dv">4</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>Wir rufen die Funktion <code>square</code> mit dem Argument <code>4</code> auf.</li>
+<li>Die Funktion berechnet das Quadrat von 4 und gibt 16 zurück.</li>
+<li>Der zurückgegebene Wert wird in der Variable <code>result</code> gespeichert.</li>
+</ul>
+</section>
+<section id="ergebnis-anzeigen" class="level3" data-number="12.1.3">
+<h3 data-number="12.1.3" class="anchored" data-anchor-id="ergebnis-anzeigen"><span class="header-section-number">12.1.3</span> Ergebnis anzeigen</h3>
+<p>Einfache Ausgabe des Ergebnisses mit Hilfe von <code>print()</code>:</p>
+<div id="015dd30f" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result)  <span class="co"># Dies wird 16 ausgeben, da 4 * 4 gleich 16 ist</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>16</code></pre>
+</div>
+</div>
+<ul>
+<li>In diesem Code wird der Wert von <code>result</code> mit <code>print</code> ausgegeben, was 16 ist.</li>
+</ul>
+<p>Als Alternative dazu kann eine <code>print</code>-Funktion mit einem <em>f-String</em> verwendet werden. Dies ist eine formatierte Zeichenkette, die mit <code>f</code> vorangestellt ist und das Einfügen von Variablen innerhalb von <code>{}</code> geschweiften Klammern ermöglicht:</p>
+<div id="1c91b3c3" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Quadrat von 4: </span><span class="sc">{</span>result<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Quadrat von 4: 16</code></pre>
+</div>
+</div>
+<p>Vorteile von f-Strings:</p>
+<ul>
+<li>Sie bieten eine intuitive Möglichkeit, Variablen in Zeichenketten einzufügen.</li>
+<li>Unterstützung für Formatierungen ist eingebaut (z.B. Runden von Dezimalstellen).</li>
+</ul>
+</section>
+</section>
+<section id="funktion-mit-mehreren-parametern" class="level2" data-number="12.2">
+<h2 data-number="12.2" class="anchored" data-anchor-id="funktion-mit-mehreren-parametern"><span class="header-section-number">12.2</span> Funktion mit mehreren Parametern</h2>
+<p>Funktionen können mehr als einen Parameter akzeptieren. Hier ist eine Funktion, die die Fläche eines Rechtecks berechnet:</p>
+<div id="57e52252" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Funktion zur Berechnung der Fläche eines Rechtecks</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calculate_rectangle_area(length, width):</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Berechnen der Fläche eines Rechtecks anhand seiner Länge und Breite."""</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> length <span class="op">*</span> width</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Verwendung der Funktion mit Beispielwerten:</p>
+<div id="905db277" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>length <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>width <span class="op">=</span> <span class="dv">5</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li><code>length</code> und <code>width</code> sind Parameter, die die Funktion zur Berechnung der Fläche des Rechtecks verwendet.</li>
+</ul>
+<p>Funktion verwenden:</p>
+<div id="54ac1d6a" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>area <span class="op">=</span> calculate_rectangle_area(length, width)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li><code>calculate_rectangle_area</code> wird mit bestimmten Werten aufgerufen.</li>
+</ul>
+<p>Ergebnis anzeigen:</p>
+<div id="2641bb8f" class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Rechteck mit Länge </span><span class="sc">{</span>length<span class="sc">}</span><span class="ss"> und Breite </span><span class="sc">{</span>width<span class="sc">}</span><span class="ss"> hat eine Fläche von </span><span class="sc">{</span>area<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rechteck mit Länge 10 und Breite 5 hat eine Fläche von 50</code></pre>
+</div>
+</div>
+<ul>
+<li>Der f-String innerhalb der <code>print</code>-Anweisung liefert eine Ausgabe, die sowohl die Eingabewerte als auch das berechnete Ergebnis zeigt.</li>
+</ul>
+</section>
+<section id="standardparameter" class="level2" data-number="12.3">
+<h2 data-number="12.3" class="anchored" data-anchor-id="standardparameter"><span class="header-section-number">12.3</span> Standardparameter</h2>
+<p>Standardwerte für Parameter werden verwendet, wenn keine Argumente bereitgestellt werden.</p>
+<div id="616c6098" class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Funktion mit einem Standardparameterwert</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> greet(name<span class="op">=</span><span class="st">"zusammen"</span>):</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Begrüßen einer Person mit ihrem Namen oder mit 'Hallo zusammen' als Standard."""</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Hallo </span><span class="sc">{</span>name<span class="sc">}</span><span class="ss">!"</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>Der Parameter <code>name="zusammen"</code> liefert einen Standardwert.</li>
+</ul>
+<p>Aufruf der Funktion mit einem bestimmten Namen:</p>
+<div id="b2ff1f7e" class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>greet(<span class="st">"Alice"</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Hallo Alice!</code></pre>
+</div>
+</div>
+<ul>
+<li>Beim Aufruf von <code>greet("Alice")</code> wird “Hallo Alice!” ausgegeben.</li>
+</ul>
+<p>Aufruf der Funktion ohne Argument (verwendet den Standardwert):</p>
+<div id="aaa7a9f5" class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>greet()</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Hallo zusammen!</code></pre>
+</div>
+</div>
+<ul>
+<li>Der Aufruf von <code>greet()</code> ohne Argumente verwendet den Standardwert “zusammen”.</li>
+</ul>
+</section>
+<section id="lambda-funktionen" class="level2" data-number="12.4">
+<h2 data-number="12.4" class="anchored" data-anchor-id="lambda-funktionen"><span class="header-section-number">12.4</span> Lambda-Funktionen</h2>
+<p>Lambda-Funktionen sind kleine, anonyme Funktionen in Python, die besonders nützlich sind für kurze Operationen oder wenn Funktionen als Argumente an andere Funktionen übergeben werden sollen. Sie sind eine kompakte Art, Funktionen zu schreiben, ohne sie zwingend mit einem Namen zu versehen.</p>
 <div class="callout callout-style-simple callout-note">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>Git lässt sich mit der “Änderungen nachverfolgen”-Funktion in Microsoft Word vergleichen, ist jedoch deutlich leistungsfähiger und speziell für die Nachverfolgung von Codeänderungen konzipiert.</p>
+<p>Lambda-Funktionen sind einfache Funktionen, die in einer einzigen Zeile definiert werden können. Sie werden mit dem Schlüsselwort <code>lambda</code> erstellt. Diese Funktionen können beliebig viele Argumente haben, aber nur einen Ausdruck, der ausgewertet und zurückgegeben wird.</p>
 </div>
 </div>
 </div>
-<p>Der Einsatz von Git erleichtert die Projektzusammenarbeit erheblich. Es ermöglicht mehreren Personen, simultan an verschiedenen Codebereichen zu arbeiten, ohne dass ihre Änderungen miteinander in Konflikt geraten.</p>
-<p>Für ein interaktives Lernerlebnis zur Verwendung von Git bietet sich die Webseite <a href="https://learngitbranching.js.org/">“Learn Git Branching”</a> an.</p>
-<p>Um zu prüfen, ob Git bereits auf dem System installiert ist, kann folgender Befehl im Terminal (Mac) oder der Eingabeaufforderung (Windows) eingegeben werden:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> <span class="at">--version</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Erscheint eine Versionsnummer, ist Git bereits installiert. Andernfalls sind die nachfolgenden Installationsanweisungen zu befolgen.</p>
-<section id="git-installation-in-windows" class="level2" data-number="22.1">
-<h2 data-number="22.1" class="anchored" data-anchor-id="git-installation-in-windows"><span class="header-section-number">22.1</span> Git-Installation in Windows</h2>
-<p>Für die Installation von Git unter Windows sind folgende Schritte durchzuführen:</p>
-<ol type="1">
-<li>Git von <a href="https://git-scm.com/download/win">Git SCM</a> herunterladen.</li>
-<li>Die heruntergeladene Datei ausführen.</li>
-<li>Den Installationsanweisungen folgen, wobei die Standardeinstellungen in den meisten Fällen ausreichen.</li>
-<li>Nach Abschluss der Installation das System neu starten, um sicherzustellen, dass alle Änderungen wirksam werden.</li>
-</ol>
-<p>Nach erfolgreicher Installation kann mit dem Befehl <code>git --version</code> überprüft werden, ob Git korrekt installiert wurde und welche Version nun auf dem System verfügbar ist.</p>
+<section id="beispiel-funktion" class="level3" data-number="12.4.1">
+<h3 data-number="12.4.1" class="anchored" data-anchor-id="beispiel-funktion"><span class="header-section-number">12.4.1</span> Beispiel-Funktion</h3>
+<p>Hier ist ein einfaches Beispiel für eine Lambda-Funktion, die zwei Zahlen addiert:</p>
+<div id="2b686a99" class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Lambda-Funktion zum Addieren zweier Zahlen</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>add <span class="op">=</span> <span class="kw">lambda</span> x, y: x <span class="op">+</span> y</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li><code>lambda x, y:</code> definiert die Lambda-Funktion mit den Argumenten <code>x</code> und <code>y</code>.</li>
+<li>Der Ausdruck <code>x + y</code> wird berechnet und als Ergebnis zurückgegeben.</li>
+</ul>
+<p>Nachdem wir die Lambda-Funktion definiert haben, können wir sie wie jede andere Funktion aufrufen. Hier ist ein Beispiel, wie man die oben definierte <code>add</code> Lambda-Funktion verwendet:</p>
+<div id="99271949" class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Aufrufen der Lambda-Funktion mit den Argumenten 3 und 5</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> add(<span class="dv">3</span>, <span class="dv">5</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Um das Ergebnis zu sehen, können wir es ausdrucken:</p>
+<div id="6aa8ab79" class="cell" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Ausgabe des Ergebnisses</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Summe von 3 und 5: </span><span class="sc">{</span>result<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Summe von 3 und 5: 8</code></pre>
+</div>
+</div>
 </section>
-<section id="git-installation-auf-mac" class="level2" data-number="22.2">
-<h2 data-number="22.2" class="anchored" data-anchor-id="git-installation-auf-mac"><span class="header-section-number">22.2</span> Git-Installation auf Mac</h2>
-<p>Für Mac-Nutzer stehen zwei Optionen zur Verfügung:</p>
-<p>Option 1: Installation via Homebrew</p>
-<p>Homebrew ist ein Paketverwaltungssystem, das die Softwareinstallation auf macOS vereinfacht.</p>
+<section id="lambda-funktion-mit-map-und-filter" class="level3" data-number="12.4.2">
+<h3 data-number="12.4.2" class="anchored" data-anchor-id="lambda-funktion-mit-map-und-filter"><span class="header-section-number">12.4.2</span> Lambda-Funktion mit map und filter</h3>
+<p>Lambda-Funktionen sind besonders nützlich, wenn Sie eine Funktion nur vorübergehend benötigen, zum Beispiel als Argument für eine andere Funktion wie <code>map()</code> und <code>filter()</code>.</p>
+<ul>
+<li><p>Die <code>map</code>-Funktion wird verwendet, um eine gegebene Funktion auf alle Elemente einer Liste oder einer anderen iterierbaren Sequenz anzuwenden und ein neues Objekt mit den Ergebnissen zurückzugeben.</p></li>
+<li><p>Die <code>filter</code>-Funktion wird verwendet, um Elemente aus einer iterierbaren Sequenz herauszufiltern, die eine bestimmte Bedingung erfüllen. Die Bedingung wird durch eine Funktion bestimmt, die entweder True oder False zurückgibt.</p></li>
+</ul>
+<p>Hier sind zwei Beispiele, in denen Lambda-Funktionen nützlich sein können:</p>
 <ol type="1">
-<li>Zunächst <a href="https://brew.sh/">Homebrew</a> installieren, falls noch nicht vorhanden.</li>
-<li>Anschließend folgenden Befehl im Terminal ausführen, um Git zu installieren:</li>
+<li><p><strong>In Kombination mit map()</strong>:</p>
+<div id="c8e5b93c" class="cell" data-execution_count="15">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Lambda-Funktion zum Quadrieren von Zahlen</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>numbers <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>]</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>squared_numbers <span class="op">=</span> <span class="bu">list</span>(<span class="bu">map</span>(<span class="kw">lambda</span> x: x <span class="op">**</span> <span class="dv">2</span>, numbers))</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(squared_numbers)  <span class="co"># Ausgabe: [1, 4, 9, 16]</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1, 4, 9, 16]</code></pre>
+</div>
+</div></li>
+<li><p><strong>In Kombination mit filter()</strong>:</p>
+<div id="0b7a48be" class="cell" data-execution_count="16">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Lambda-Funktion zum Filtern von geraden Zahlen</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>numbers <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>]</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>even_numbers <span class="op">=</span> <span class="bu">list</span>(<span class="bu">filter</span>(<span class="kw">lambda</span> x: x <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span>, numbers))</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(even_numbers)  <span class="co"># Ausgabe: [2, 4, 6]</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[2, 4, 6]</code></pre>
+</div>
+</div></li>
 </ol>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install git</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Option 2: Installation via XCode</p>
-<p>Eine alternative Methode ist die Installation von <a href="https://apps.apple.com/us/app/xcode/id497799835?mt=12">XCode</a> aus dem App Store, das Git bereits enthält.</p>
-<ol type="1">
-<li>XCode aus dem App Store herunterladen und installieren.</li>
-<li>Nach der Installation von XCode die Xcode Command Line Tools installieren, indem folgender Befehl im Terminal ausgeführt wird:</li>
-</ol>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">xcode-select</span> <span class="at">--install</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout callout-style-simple callout-tip">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>Die Installation über Homebrew (Option 1) wird für die meisten Anwender empfohlen, da sie schneller und ressourcenschonender ist. Die XCode-Installation (Option 2) bietet sich an, wenn ohnehin eine umfassende Entwicklungsumgebung für Mac benötigt wird.</p>
-</div>
-</div>
-</div>
-<p>Nach erfolgreicher Installation kann mit dem Befehl <code>git --version</code> überprüft werden, ob Git korrekt installiert wurde und welche Version nun auf dem System verfügbar ist.</p>
+<p>Lambda-Funktionen sind also eine flexible und effiziente Möglichkeit, kleine Funktionen schnell und unkompliziert zu definieren.</p>
+</section>
+<section id="lambda-funktionen-mit-dataframes" class="level3" data-number="12.4.3">
+<h3 data-number="12.4.3" class="anchored" data-anchor-id="lambda-funktionen-mit-dataframes"><span class="header-section-number">12.4.3</span> Lambda-Funktionen mit DataFrames</h3>
+<p>Lambda-Funktionen sind auch dann hilfreich, wenn Sie eine benutzerdefinierte Transformation auf jede Zeile oder Spalte eines DataFrames anwenden möchten.</p>
+<p>Zum Beispiel, wenn Sie Zahlen basierend auf bestimmten Bedingungen klassifizieren möchten, kann eine Lambda-Funktion helfen.</p>
+<p>Beispielcode:</p>
+<div id="324d33dd" class="cell" data-execution_count="17">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Erstellen eines DataFrame und Verwendung einer Lambda-Funktion für eine benutzerdefinierte Klassifizierung</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Beispiel-DataFrame</span></span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> {<span class="st">"Numbers"</span>: [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">15</span>, <span class="dv">20</span>, <span class="dv">25</span>]}</span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(data)</span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Definieren einer benutzerdefinierten Funktion zur Klassifizierung von Zahlen</span></span>
+<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> classify_number(num):</span>
+<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> num <span class="op">&lt;</span> <span class="dv">10</span>:</span>
+<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"Einstellig"</span></span>
+<span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> num <span class="op">&lt;</span> <span class="dv">20</span>:</span>
+<span id="cb25-13"><a href="#cb25-13" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"Teenager"</span></span>
+<span id="cb25-14"><a href="#cb25-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb25-15"><a href="#cb25-15" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"Zwanzig oder mehr"</span></span>
+<span id="cb25-16"><a href="#cb25-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-17"><a href="#cb25-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Anwenden der benutzerdefinierten Funktion mit einer Lambda-Funktion zur Erstellung einer neuen Spalte</span></span>
+<span id="cb25-18"><a href="#cb25-18" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"Klassifizierung"</span>] <span class="op">=</span> df[<span class="st">"Numbers"</span>].<span class="bu">apply</span>(<span class="kw">lambda</span> x: classify_number(x))</span>
+<span id="cb25-19"><a href="#cb25-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-20"><a href="#cb25-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Anzeigen des DataFrame</span></span>
+<span id="cb25-21"><a href="#cb25-21" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="17">
+<div>
 
 
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Numbers</th>
+<th data-quarto-table-cell-role="th">Klassifizierung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>1</td>
+<td>Einstellig</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>2</td>
+<td>Einstellig</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>3</td>
+<td>Einstellig</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>4</td>
+<td>Einstellig</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>5</td>
+<td>Einstellig</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">5</td>
+<td>15</td>
+<td>Teenager</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">6</td>
+<td>20</td>
+<td>Zwanzig oder mehr</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">7</td>
+<td>25</td>
+<td>Zwanzig oder mehr</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<p>Erläuterung:</p>
+<ul>
+<li>Der DataFrame <code>df</code> wird mit einer Spalte <code>Numbers</code> erstellt, die eine Reihe von Werten enthält.</li>
+<li>Die Funktion <code>classify_number</code> definiert benutzerdefinierte Klassifizierungskriterien:
+<ul>
+<li>Weniger als 10 ist “Einstellig”.</li>
+<li>Weniger als 20, aber nicht unter 10 ist “Teenager”.</li>
+<li>Werte ab 20 sind “Zwanzig oder mehr.”</li>
+</ul></li>
+<li>Die Methode <code>apply</code> verwendet eine Lambda-Funktion, um jeden Wert von <code>Numbers</code> durch <code>classify_number</code> zu übergeben.</li>
+<li>Das Ergebnis ist eine neue Spalte <code>Klassifizierung</code>, die die kategorisierten Werte enthält.</li>
+</ul>
+<p>In diesem Fall ist die Verwendung einer Lambda-Funktion mit <code>apply</code> vorteilhaft, um den DataFrame schnell zu transformieren, basierend auf einer Funktion, die sonst das Durchlaufen jedes Wertes einzeln erfordern würde.</p>
+
+
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -878,13 +1154,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../github/index.html" class="pagination-link" aria-label="GitHub">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">GitHub</span>
+      <a href="../python/python-einrueckung.html" class="pagination-link" aria-label="Einrückung">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Einrückung</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../github/github-setup.html" class="pagination-link" aria-label="GitHub-Setup">
-        <span class="nav-page-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">GitHub-Setup</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../python/python-kontrollstrukturen.html" class="pagination-link" aria-label="Kontrollstrukturen">
+        <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Kontrollstrukturen</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

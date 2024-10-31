@@ -9,7 +9,7 @@
 <meta name="author" content="Jan Kirenz">
 <meta name="description" content="Programming Toolkit für Data Science, AI &amp; Analytics">
 
-<title>Erste Schritte – Data Science, AI &amp; Analytics Toolkit</title>
+<title>14&nbsp; Klassen und Objekte – Data Science, AI &amp; Analytics Toolkit</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -32,8 +66,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../erste-schritte/projektumgebung.html" rel="next">
-<link href="../index.html" rel="prev">
+<link href="../vscode/index.html" rel="next">
+<link href="../python/python-kontrollstrukturen.html" rel="prev">
 <link href="..//images/logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -85,7 +119,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../erste-schritte/index.html">Erste Schritte</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../python/index.html">Python</a></li><li class="breadcrumb-item"><a href="../python/python-klassen.html"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Klassen und Objekte</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Suchen" onclick="window.quartoOpenSearch();">
@@ -116,7 +150,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../erste-schritte/index.html" class="sidebar-item-text sidebar-link active">
+            <a href="../erste-schritte/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Erste Schritte</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -214,7 +248,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../python/python-klassen.html" class="sidebar-item-text sidebar-link">
+  <a href="../python/python-klassen.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Klassen und Objekte</span></span></a>
   </div>
 </li>
@@ -330,15 +364,24 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Inhaltsverzeichnis</h2>
+   
+  <ul>
+  <li><a href="#einführung" id="toc-einführung" class="nav-link active" data-scroll-target="#einführung"><span class="header-section-number">14.1</span> Einführung</a></li>
+  <li><a href="#erstellung-einer-klasse" id="toc-erstellung-einer-klasse" class="nav-link" data-scroll-target="#erstellung-einer-klasse"><span class="header-section-number">14.2</span> Erstellung einer Klasse</a></li>
+  <li><a href="#methoden-und-attribute" id="toc-methoden-und-attribute" class="nav-link" data-scroll-target="#methoden-und-attribute"><span class="header-section-number">14.3</span> Methoden und Attribute</a></li>
+  <li><a href="#vererbung" id="toc-vererbung" class="nav-link" data-scroll-target="#vererbung"><span class="header-section-number">14.4</span> Vererbung</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../python/index.html">Python</a></li><li class="breadcrumb-item"><a href="../python/python-klassen.html"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Klassen und Objekte</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Erste Schritte</h1>
+<h1 class="title"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Klassen und Objekte</span></h1>
 </div>
 
 
@@ -355,16 +398,201 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>In diesem ersten Abschnitt werden wir eine grundlegende Arbeitsumgebung einrichten, die für jedes datenbezogene Vorhaben unerlässlich ist.</p>
-<p>Wir werden:</p>
+<p><a href="../code/python-klassen.ipynb" download="python-klassen.ipynb">⬇️ Jupyter Notebook herunterladen</a></p>
+<p>Die objektorientierte Programmierung (OOP) ist ein wichtiges Konzept in der Softwareentwicklung. Es hilft besonders dabei, große Codebasen für komplexe Data-Science-Projekte zu organisieren und zu verwalten.</p>
+<p>In diesem Abschnitt lernen wir:</p>
 <ul>
-<li>Die Befehlszeile des Computers nutzen.</li>
-<li>Python zum ersten Mal einrichten.</li>
-<li>Die Anaconda-Distribution (ein Data-Science-Softwarepaket) verwenden.</li>
-<li>Jupyter Notebook, ein leistungsstarkes Werkzeug zur interaktiven Datenexploration, nutzen.</li>
+<li>Wie man Klassen und Objekte erstellt</li>
+<li>Wie man Methoden und Attribute hinzufügt</li>
+<li>Wie man Vererbung verwendet, um die Funktionalität zu erweitern</li>
+</ul>
+<section id="einführung" class="level2" data-number="14.1">
+<h2 data-number="14.1" class="anchored" data-anchor-id="einführung"><span class="header-section-number">14.1</span> Einführung</h2>
+<p>Eine <strong>Klasse</strong> ist wie ein Bauplan oder eine Vorlage. Stellen Sie sich eine Klasse wie die Blaupause eines Hauses vor. Eine Blaupause beschreibt, wie das Haus aussehen soll – welche Räume es hat, wie groß sie sind, und so weiter. In ähnlicher Weise beschreibt eine Klasse, welche Daten (Eigenschaften) und Funktionen (Methoden) ein bestimmtes Objekt haben wird.</p>
+<p>Ein <strong>Objekt</strong> ist eine konkrete Instanz einer Klasse. Wenn wir bei unserem Beispiel des Hauses bleiben, wäre ein Objekt ein tatsächliches Haus, das nach der Blaupause gebaut wurde. Jedes Haus, das nach derselben Blaupause gebaut wird, hat dieselben grundlegenden Eigenschaften, kann aber unterschiedliche Farben, Möbel oder Bewohner haben. In der Programmierung ist ein Objekt also ein spezifisches Exemplar einer Klasse mit eigenen, spezifischen Daten.</p>
+<p>Wozu sind Klassen und Objekte nützlich:</p>
+<ul>
+<li><strong>Organisation</strong>: Sie helfen, den Code in überschaubare, wiederverwendbare Teile zu zerlegen.</li>
+<li><strong>Wiederverwendbarkeit</strong>: Einmal definierte Klassen können überall im Programm verwendet werden, um konsistente Objekte zu erstellen.</li>
+<li><strong>Erweiterbarkeit</strong>: Neue Funktionen und Eigenschaften können leicht zu bestehenden Klassen hinzugefügt werden, ohne den gesamten Code neu schreiben zu müssen.</li>
+<li><strong>Lesbarkeit</strong>: Der Code wird klarer und einfacher zu verstehen, weil die Struktur und das Verhalten der Daten klar definiert sind.</li>
+</ul>
+<p>Betrachten wir eine einfache Klasse und ein Objekt, um das Konzept klarer zu machen:</p>
+<div id="0373b40b" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Definiere eine einfache Klasse, die eine Person repräsentiert</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Person:</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Eine Klasse, die eine Person mit Namen und Alter repräsentiert."""</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, name, age):</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>        <span class="co">"""Initialisiere die Person mit Name und Alter."""</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.name <span class="op">=</span> name</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.age <span class="op">=</span> age</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> greet(<span class="va">self</span>):</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>        <span class="co">"""Gibt eine Begrüßung zurück."""</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="ss">f"Hallo, mein Name ist </span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>name<span class="sc">}</span><span class="ss"> und ich bin </span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>age<span class="sc">}</span><span class="ss"> Jahre alt."</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Erstelle ein Objekt der Klasse Person</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>person1 <span class="op">=</span> Person(<span class="st">"Alice"</span>, <span class="dv">30</span>)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Verwende die Methode des Objekts</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(person1.greet())</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Hallo, mein Name ist Alice und ich bin 30 Jahre alt.</code></pre>
+</div>
+</div>
+<p>In diesem Beispiel:</p>
+<ol type="1">
+<li><strong>Klasse <code>Person</code></strong>: Dies ist die Blaupause. Sie beschreibt, dass jede Person einen Namen und ein Alter hat und sich vorstellen kann.</li>
+<li><strong>Objekt <code>person1</code></strong>: Dies ist ein spezifisches Exemplar der Klasse <code>Person</code>. Es repräsentiert eine konkrete Person namens Alice, die 30 Jahre alt ist.</li>
+<li><strong>Docstring</strong>: Die Kommentare in dreifachen Anführungszeichen direkt unter der Klassendefinition und den Methoden beschreiben, was die Klasse und die Methoden machen.</li>
+<li><strong>Methoden und Attribute</strong>: Das Objekt <code>person1</code> verwendet die Methode <code>greet()</code>, um eine Begrüßung auszugeben, die auf den Attributen <code>name</code> und <code>age</code> basiert.</li>
+</ol>
+</section>
+<section id="erstellung-einer-klasse" class="level2" data-number="14.2">
+<h2 data-number="14.2" class="anchored" data-anchor-id="erstellung-einer-klasse"><span class="header-section-number">14.2</span> Erstellung einer Klasse</h2>
+<p>In diesem Beispiel behandeln wir ausführlich die Definition einer Klasse <code>DataPoint</code>, die eine einzelne Beobachtung in einem Datensatz darstellt.</p>
+<div id="01c7e74e" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Definiere eine einfache Klasse, die eine Datenbeobachtung repräsentiert</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> DataPoint:</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Eine Klasse, die eine Datenbeobachtung mit Merkmalen und Label repräsentiert."""</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, features, label):</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>        <span class="co">"""Initialisiere den Datenpunkt mit Merkmalen und einem Label."""</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.features <span class="op">=</span> features</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.label <span class="op">=</span> label</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> describe(<span class="va">self</span>):</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>        <span class="co">"""Gibt einen formatierten String zurück, der den Datenpunkt beschreibt."""</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="ss">f"Merkmale: </span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>features<span class="sc">}</span><span class="ss">, Label: </span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>label<span class="sc">}</span><span class="ss">"</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Erstelle eine Instanz (Objekt) der DataPoint-Klasse</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>sample_point <span class="op">=</span> DataPoint([<span class="fl">0.25</span>, <span class="fl">0.75</span>, <span class="fl">0.5</span>], <span class="st">'Positiv'</span>)</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Zeige die Beschreibung des Datenpunkts an</span></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(sample_point.describe())</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Merkmale: [0.25, 0.75, 0.5], Label: Positiv</code></pre>
+</div>
+</div>
+<p><strong>Definition der Klasse <code>DataPoint</code></strong>:</p>
+<ol type="1">
+<li><p><strong>Klassenkopf</strong>:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> DataPoint:</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Dies definiert eine neue Klasse namens <code>DataPoint</code>.</p></li>
+<li><p><strong>Dokumentations-String</strong>:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">"""Eine Klasse, die eine Datenbeobachtung mit Merkmalen und Label repräsentiert."""</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Dies ist eine kurze Beschreibung, was die Klasse macht. Es hilft anderen schnell zu verstehen, wofür diese Klasse gedacht ist.</p></li>
+</ol>
+<p><strong>Initialisierungsmethode <code>__init__</code></strong></p>
+<ol start="3" type="1">
+<li><p><strong>Konstruktor-Methode</strong>:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, features, label):</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Initialisiere den Datenpunkt mit Merkmalen und einem Label."""</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="va">self</span>.features <span class="op">=</span> features</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    <span class="va">self</span>.label <span class="op">=</span> label</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Die <code>__init__</code>-Methode wird automatisch aufgerufen, wenn eine neue Instanz der Klasse erstellt wird. Sie initialisiert die Eigenschaften (Attribute) des Objekts. In diesem Fall nimmt sie zwei Argumente <code>features</code> und <code>label</code> und speichert sie in den Eigenschaften <code>self.features</code> und <code>self.label</code> des Objekts.</p>
+<ul>
+<li><code>self</code>: Bezieht sich auf das aktuelle Objekt der Klasse und wird verwendet, um auf die Attribute und Methoden des Objekts zuzugreifen.</li>
+<li><code>features</code>: Ein Satz von Merkmalen, die den Datenpunkt beschreiben.</li>
+<li><code>label</code>: Ein Etikett, das dem Datenpunkt zugewiesen ist, z.B. ‘Positiv’ oder ‘Negativ’.</li>
+</ul></li>
+</ol>
+<p><strong>Methode <code>describe</code></strong></p>
+<ol start="4" type="1">
+<li><p><strong>Beschreibungsmethode</strong>:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> describe(<span class="va">self</span>):</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Gibt einen formatierten String zurück, der den Datenpunkt beschreibt."""</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="ss">f"Merkmale: </span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>features<span class="sc">}</span><span class="ss">, Label: </span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>label<span class="sc">}</span><span class="ss">"</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Diese Methode gibt eine lesbare Beschreibung des Datenpunkts zurück, die die Merkmale und das Label des Datenpunkts enthält.</p></li>
+</ol>
+<p><strong>Erstellung einer Instanz und Nutzung der Methode</strong></p>
+<ol start="5" type="1">
+<li><p><strong>Erstellung einer Instanz</strong>:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>sample_point <span class="op">=</span> DataPoint([<span class="fl">0.25</span>, <span class="fl">0.75</span>, <span class="fl">0.5</span>], <span class="st">'Positiv'</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Hier erstellen wir ein Objekt namens <code>sample_point</code> von der Klasse <code>DataPoint</code>. Die Merkmale werden als Liste <code>[0.25, 0.75, 0.5]</code> und das Label als <code>'Positiv'</code> übergeben.</p></li>
+<li><p><strong>Aufruf der Methode <code>describe</code></strong>:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(sample_point.describe())</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Diese Zeile ruft die <code>describe</code>-Methode des <code>sample_point</code>-Objekts auf und druckt die zurückgegebene Beschreibung des Datenpunkts aus.</p></li>
+</ol>
+<p>In unserem Beispiel haben wir also eine <code>DataPoint</code>-Klasse erstellt, die Merkmale und ein Label enthält, und eine Methode, um diese Daten in einem lesbaren Format anzuzeigen.</p>
+</section>
+<section id="methoden-und-attribute" class="level2" data-number="14.3">
+<h2 data-number="14.3" class="anchored" data-anchor-id="methoden-und-attribute"><span class="header-section-number">14.3</span> Methoden und Attribute</h2>
+<p>Das Hinzufügen weiterer Funktionalität zu einer Klasse macht sie vielseitiger. Lassen Sie uns unsere Klasse erweitern, um eine Sammlung von Datenpunkten zu verwalten:</p>
+<div id="282bfd90" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Definiere eine Klasse zur Verwaltung eines Datensatzes</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> DataSet:</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Eine Klasse, die eine Sammlung von Datenpunkten repräsentiert."""</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>):</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>        <span class="co">"""Initialisiere die leere Sammlung von Datenpunkten."""</span></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.data_points <span class="op">=</span> []</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> add_data_point(<span class="va">self</span>, data_point):</span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>        <span class="co">"""Füge einen Datenpunkt zur Sammlung hinzu."""</span></span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.data_points.append(data_point)</span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> display_data(<span class="va">self</span>):</span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>        <span class="co">"""Zeige alle Datenpunkte in der Sammlung an."""</span></span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> data_point <span class="kw">in</span> <span class="va">self</span>.data_points:</span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(data_point.describe())</span>
+<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Erstelle eine Instanz der DataSet-Klasse</span></span>
+<span id="cb11-19"><a href="#cb11-19" aria-hidden="true" tabindex="-1"></a>my_data_set <span class="op">=</span> DataSet()</span>
+<span id="cb11-20"><a href="#cb11-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-21"><a href="#cb11-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Füge mehrere DataPoint-Objekte zum Datensatz hinzu</span></span>
+<span id="cb11-22"><a href="#cb11-22" aria-hidden="true" tabindex="-1"></a>my_data_set.add_data_point(DataPoint([<span class="fl">0.1</span>, <span class="fl">0.2</span>, <span class="fl">0.5</span>], <span class="st">'Negativ'</span>))</span>
+<span id="cb11-23"><a href="#cb11-23" aria-hidden="true" tabindex="-1"></a>my_data_set.add_data_point(DataPoint([<span class="fl">0.8</span>, <span class="fl">0.4</span>, <span class="fl">0.3</span>], <span class="st">'Positiv'</span>))</span>
+<span id="cb11-24"><a href="#cb11-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-25"><a href="#cb11-25" aria-hidden="true" tabindex="-1"></a><span class="co"># Zeige alle Datenpunkte im Datensatz an</span></span>
+<span id="cb11-26"><a href="#cb11-26" aria-hidden="true" tabindex="-1"></a>my_data_set.display_data()</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Merkmale: [0.1, 0.2, 0.5], Label: Negativ
+Merkmale: [0.8, 0.4, 0.3], Label: Positiv</code></pre>
+</div>
+</div>
+<p><strong>Erklärung</strong>:</p>
+<ul>
+<li>Die <code>DataSet</code>-Klasse speichert mehrere <code>DataPoint</code>-Objekte.</li>
+<li>Methoden wie <code>add_data_point</code> und <code>display_data</code> ermöglichen das Hinzufügen von Datenpunkten und das Anzeigen aller Punkte.</li>
+</ul>
+</section>
+<section id="vererbung" class="level2" data-number="14.4">
+<h2 data-number="14.4" class="anchored" data-anchor-id="vererbung"><span class="header-section-number">14.4</span> Vererbung</h2>
+<p>Vererbung ermöglicht es uns, bestehende Klassen zu erweitern, um spezialisiertere Versionen zu erstellen, ohne den Code zu wiederholen. Beispielsweise definieren wir einen <code>TimeSeriesDataPoint</code>, der <code>DataPoint</code> erweitert, indem ein Zeitstempel hinzugefügt wird:</p>
+<div id="5facd865" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Definiere eine Klasse, die einen Zeitreihendatenpunkt repräsentiert</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> TimeSeriesDataPoint(DataPoint):</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Eine Klasse, die DataPoint um einen Zeitstempel für Zeitreihendaten erweitert."""</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, features, label, timestamp):</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>        <span class="co">"""Initialisiere die Attribute des TimeSeriesDataPoint."""</span></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>        <span class="bu">super</span>().<span class="fu">__init__</span>(features, label)</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.timestamp <span class="op">=</span> timestamp</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> describe(<span class="va">self</span>):</span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>        <span class="co">"""Gibt einen formatierten String zurück, der den Zeitreihendatenpunkt beschreibt."""</span></span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>        base_description <span class="op">=</span> <span class="bu">super</span>().describe()</span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="ss">f"</span><span class="sc">{</span>base_description<span class="sc">}</span><span class="ss">, Zeitstempel: </span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>timestamp<span class="sc">}</span><span class="ss">"</span></span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Erstelle eine Instanz der TimeSeriesDataPoint-Klasse</span></span>
+<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a>time_series_point <span class="op">=</span> TimeSeriesDataPoint([<span class="fl">0.9</span>, <span class="fl">0.1</span>, <span class="fl">0.2</span>], <span class="st">'Negativ'</span>, <span class="st">'2024-09-05T12:00:00'</span>)</span>
+<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Zeige die Beschreibung des Zeitreihendatenpunkts an</span></span>
+<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(time_series_point.describe())</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Merkmale: [0.9, 0.1, 0.2], Label: Negativ, Zeitstempel: 2024-09-05T12:00:00</code></pre>
+</div>
+</div>
+<p><strong>Erklärung</strong>:</p>
+<ul>
+<li><code>TimeSeriesDataPoint</code> erbt von <code>DataPoint</code> und fügt ein <code>timestamp</code>-Attribut hinzu.</li>
+<li>Die <code>describe</code>-Methode wird überschrieben, um die Zeitstempelinformationen einzuschließen.</li>
 </ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -789,13 +1017,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../index.html" class="pagination-link" aria-label="Willkommen">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Willkommen</span>
+      <a href="../python/python-kontrollstrukturen.html" class="pagination-link" aria-label="Kontrollstrukturen">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Kontrollstrukturen</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../erste-schritte/projektumgebung.html" class="pagination-link" aria-label="Projektumgebung">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Projektumgebung</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../vscode/index.html" class="pagination-link" aria-label="Visual Studio Code">
+        <span class="nav-page-text">Visual Studio Code</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
