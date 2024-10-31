@@ -331,89 +331,89 @@
   {
     "objectID": "python/python-grundlagen.html",
     "href": "python/python-grundlagen.html",
-    "title": "10  Python Grundlagen",
+    "title": "10  Grundlagen",
     "section": "",
     "text": "10.1 Bibliotheken importieren\nIn Python erweitern Pakete und Bibliotheken die Funktionalität der Sprache. Sie werden am Anfang des Skripts importiert, üblicherweise als erster Code-Block unterhalb der ersten Markdown-Zelle. Dies hilft, den Code übersichtlich und effizient zu gestalten. Oft werden Aliase (Kurzformen) verwendet, um die Bibliotheken im Code einfacher anzusprechen.\nFolgender Code importiert wichtige Data Science-Bibliotheken:\n# Bibliotheken importieren\nimport numpy as np      # Für numerische Operationen\nimport pandas as pd     # Für Datenmanipulation und -analyse\nimport altair as alt    # Für Datenvisualisierung\nErklärung der importierten Bibliotheken:",
     "crumbs": [
       "Python",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Python Grundlagen</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Grundlagen</span>"
     ]
   },
   {
     "objectID": "python/python-grundlagen.html#bibliotheken-importieren",
     "href": "python/python-grundlagen.html#bibliotheken-importieren",
-    "title": "10  Python Grundlagen",
+    "title": "10  Grundlagen",
     "section": "",
     "text": "NumPy (np): Stellt Funktionen für komplexe mathematische Operationen bereit.\nPandas (pd): Ermöglicht die effiziente Handhabung und Analyse von strukturierten Daten wie Tabellen.\nAltair (alt): Bietet eine intuitive Möglichkeit zur Erstellung von interaktiven Visualisierungen.",
     "crumbs": [
       "Python",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Python Grundlagen</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Grundlagen</span>"
     ]
   },
   {
     "objectID": "python/python-grundlagen.html#kommentare-einfügen",
     "href": "python/python-grundlagen.html#kommentare-einfügen",
-    "title": "10  Python Grundlagen",
+    "title": "10  Grundlagen",
     "section": "10.2 Kommentare einfügen",
     "text": "10.2 Kommentare einfügen\nKommentare sind ein wichtiges Werkzeug zur Dokumentation des Codes. Sie helfen, den Code verständlicher zu machen und erleichtern die Zusammenarbeit mit anderen Entwicklerinnen und Entwicklern. In Python gibt es verschiedene Möglichkeiten, Kommentare zu nutzen.\n\n10.2.1 Einzeilige Kommentare\nEinzeilige Kommentare beginnen mit dem #-Zeichen:\n\n# Dies ist ein einzeiliger Kommentar\nx = 5  # Kommentare können auch am Ende einer Codezeile stehen\n\n\n\n10.2.2 Mehrzeilige Kommentare\nFür mehrzeilige Kommentare werden oft dreifache Anführungszeichen verwendet.\n\n\"\"\"\nDies ist ein \nmehrzeiliger \nKommentar\n\"\"\"\n\n'\\nDies ist ein \\nmehrzeiliger \\nKommentar\\n'\n\n\n\n\n10.2.3 Docstrings\nMehrzeilige Kommentare werden auch als “Docstring” (Documentation-String) bezeichnet, wenn sie bspw. direkt nach der Definition einer Funktion stehen:\n\ndef example_function():\n    \"\"\"\n    Dies ist ein Docstring für eine Funktion.\n    Er beschreibt, was die Funktion tut,  \n    welche Parameter sie akzeptiert  \n    und was sie zurückgibt.  \n    \"\"\"\n    pass\n\nDurch die Verwendung von Docstrings wird der Code nicht nur für Menschen lesbarer, sondern auch für automatisierte Tools zur Dokumentationserstellung zugänglicher. Dies ist besonders in größeren Projekten und bei der Entwicklung von Bibliotheken oder Frameworks von Vorteil.\n\n\n10.2.4 Code auskommentieren\nKommentare können auch zur temporären Deaktivierung von Code (auch als “auskommentieren” bekannt) genutzt werden.\n\n# Auskommentieren\n# x = 5",
     "crumbs": [
       "Python",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Python Grundlagen</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Grundlagen</span>"
     ]
   },
   {
     "objectID": "python/python-grundlagen.html#variablen-und-datentypen",
     "href": "python/python-grundlagen.html#variablen-und-datentypen",
-    "title": "10  Python Grundlagen",
+    "title": "10  Grundlagen",
     "section": "10.3 Variablen und Datentypen",
     "text": "10.3 Variablen und Datentypen\nIn der Programmierung spielen Variablen und Datentypen eine zentrale Rolle. Sie bilden das Fundament, auf dem komplexe Analysen und Algorithmen aufbauen.\n\n10.3.1 Variablen\nVariablen sind benannte Speicherorte im Arbeitsspeicher eines Computers. Sie dienen dazu, Daten zu speichern und zu manipulieren.\nBei der Benennung von Variablen in Python gibt es einige wichtige Konventionen zu beachten:\n\nSnake Case: Wir verwenden Kleinbuchstaben und trennen Wörter durch Unterstriche. Beispiel: benutzer_name, gesamtpreis_mit_rabatt\nBeschreibende Namen: Aussagekräftige Namen nutzen, die den Zweck der Variable verdeutlichen (Variablennamen müssen mit einem Buchstaben oder Unterstrich beginnen, nicht mit Zahlen). Gut: alter_in_jahren, gesamtpreis Schlecht: a, x1\nKeine reservierten Wörter: Keine Python-Schlüsselwörter wie if, for, class verwenden.\n\nDurch Einhaltung dieser Konventionen wird der Code lesbarer und wartbarer, was besonders in größeren Projekten und bei der Zusammenarbeit in Teams wichtig ist.\nBeispielsweise können wir eine Variable mit dem Namen alter erstellen und ihr der Wert 25 zugewiesen.\n\nalter = 25\n\nIn Python können den Variablen ganz unterschiedliche Werte zugewiesen werden:\n\n# Verschiedene Variablen speichern\nname = \"Alice\" \nstudiert = True\nzahlen = [1, 2, 3]\nperson = {\"name\": \"Alice\", \"alter\": 30}\n\nUm den Inhalt von Variablen anzuzeigen, wird die print()-Funktion verwendet:\n\nprint(alter)\n\n25\n\n\nEine Variable kann man sich wie eine beschriftete Box vorstellen, in der Informationen aufbewahrt werden. Der Name der Variable ist die Beschriftung auf der Box, und der Inhalt der Box repräsentiert den Wert der Variable. Dieser Wert kann im Laufe des Programms verändert werden, daher der Name “Variable”.\n\nalter = 60\nprint(alter)\n\n60\n\n\n\n\n10.3.2 Datentypen\nDatentypen bestimmen die Art der Daten, die in einer Variable gespeichert werden können. Sie definieren auch, welche Operationen mit diesen Daten durchgeführt werden können. Python ist eine dynamisch typisierte Sprache, was bedeutet, dass der Datentyp einer Variable automatisch erkannt wird.\nJeder Datentyp hat seine eigenen Eigenschaften und Verwendungszwecke. Zum Beispiel verwendet man “Strings” für Text, “Integer” für ganze Zahlen und “Floats” für Dezimalzahlen. “Listen” und “Dictionaries” sind komplexere Datentypen, die mehrere Werte oder Schlüssel-Wert-Paare speichern können.:\n\n\n\n\n\n\n\n\n\nDatentyp\nBeschreibung\nBeispiel\nVerwendung\n\n\n\n\nString\nTextdaten, in Anführungszeichen gesetzt\n\"Hallo Welt\"\nFür Namen, Texte, Sätze\n\n\nInteger\nGanze Zahlen ohne Dezimalstellen\n42, -10\nFür Zählungen, Indizes, ganze Mengen\n\n\nFloat\nZahlen mit Dezimalstellen\n3.14, -0.5\nFür Messwerte, Berechnungen mit Dezimalstellen\n\n\nBoolean\nLogische Werte (True oder False)\nTrue, False\nFür Bedingungen, Flags, Zustandsabfragen\n\n\nList\nGeordnete Sammlung von Elementen, veränderbar\n[1, 2, 3], ['a', 'b', 'c']\nFür Sequenzen von Daten, geordnete Sammlungen\n\n\nDictionary\nSammlung von Schlüssel-Wert-Paaren\n{'name': 'Max', 'alter': 30}\nFür strukturierte Daten, Zuordnungen, Konfigurationen\n\n\n\nAnzeigen des Datentyps in Python:\n\n# Verwendung der type() Funktion\nzahl = 42\ntext = \"Hallo Welt\"\ndezimal = 3.14\nlogisch = True\nliste = [1, 2, 3]\nwörterbuch = {\"name\": \"Max\", \"alter\": 30}\n\nprint(type(zahl))\nprint(type(text)) \nprint(type(dezimal))\nprint(type(logisch))\nprint(type(liste))\nprint(type(wörterbuch))\n\n&lt;class 'int'&gt;\n&lt;class 'str'&gt;\n&lt;class 'float'&gt;\n&lt;class 'bool'&gt;\n&lt;class 'list'&gt;\n&lt;class 'dict'&gt;",
     "crumbs": [
       "Python",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Python Grundlagen</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Grundlagen</span>"
     ]
   },
   {
     "objectID": "python/python-grundlagen.html#operatoren-und-berechnungen",
     "href": "python/python-grundlagen.html#operatoren-und-berechnungen",
-    "title": "10  Python Grundlagen",
+    "title": "10  Grundlagen",
     "section": "10.4 Operatoren und Berechnungen",
     "text": "10.4 Operatoren und Berechnungen\nOperatoren ermöglichen mathematische und logische Operationen in Python.\n\n10.4.1 Arithmetische Operatoren\nFür die folgenden Operationen erzeugen wir zunächst zwei numerische Variablen:\n\nlaenge = 10\nbreite = 5\n\nBerechnung der Fläche und des Umfangs:\n\n # Multiplikation\nflaeche = laenge * breite\n# Addition und Multiplikation\numfang = 2 * (laenge + breite) \n# Ausgabe der Variable\nprint(umfang) \n\n30\n\n\n\n\n10.4.2 Vergleichsoperatoren\nist_quadratisch überprüft, ob die beiden Seiten gleich lang sind:\n\n# Gleichheit überprüfen\nist_quadratisch = laenge == breite\n# Ausgabe: Ist es ein Quadrat? \nprint(f\"Ist es ein Quadrat? {ist_quadratisch}\")\n\nIst es ein Quadrat? False\n\n\nWir nutzen in dem print()-Befehl einen sogenannten f-string (formatted string literal), mit dem wir Text und Python-Objekte kombiniert ausgeben können. Das Python-Objekt wird dabei in einer geschwungenen Klammer eingefügt.\n\n\n10.4.3 Logische Operatoren\nist_grosses_rechteck verwendet logische Operatoren, um festzustellen, ob das Rechteck sowohl eine große Fläche als auch einen großen Umfang hat (mit Werten, die wir festgelegt haben).\n\nist_grosses_rechteck = (flaeche &gt; 20) and (umfang &gt; 10)\n# Ausgabe\nprint(f\"Ist es ein großes Rechteck? {ist_grosses_rechteck}\")  \n\nIst es ein großes Rechteck? True\n\n\n\n\n10.4.4 Arten von Operatoren\nHier eine Übersicht einiger wichtiger Operatoren:\n\n\n\n\n\n\n\n\nKategorie\nOperatoren\nBeschreibung\n\n\n\n\nArithmetische Operatoren\n+, -, *, /, //\nAddition, Subtraktion, Multiplikation, Division, Ganzzahldivision\n\n\n\n%, **\nModulo (Rest), Potenz\n\n\nVergleichsoperatoren\n==, !=\nGleichheit, Ungleichheit\n\n\n\n&lt;, &gt;, &lt;=, &gt;=\nKleiner als, Größer als, Kleiner oder gleich, Größer oder gleich\n\n\nLogische Operatoren\nand, or, not\nLogisches UND, ODER, NICHT",
     "crumbs": [
       "Python",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Python Grundlagen</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Grundlagen</span>"
     ]
   },
   {
     "objectID": "python/python-grundlagen.html#arbeiten-mit-dataframes",
     "href": "python/python-grundlagen.html#arbeiten-mit-dataframes",
-    "title": "10  Python Grundlagen",
+    "title": "10  Grundlagen",
     "section": "10.5 Arbeiten mit DataFrames",
     "text": "10.5 Arbeiten mit DataFrames\nDataFrames, bereitgestellt durch das Pandas-Paket, sind zentral für die Datenanalyse in Python. Sie organisieren Daten in Zeilen und Spalten, ähnlich einer Tabelle.\n\n# Erstellen eines dictionarys\ndaten = {\n    \"Zahlen\": [1, 2, 3, 4, 5],\n    \"Quadrate\": [1, 4, 9, 16, 25]\n}\n# Ausgabe\nprint(daten)\n\n{'Zahlen': [1, 2, 3, 4, 5], 'Quadrate': [1, 4, 9, 16, 25]}\n\n\nDas Dictionary daten enthält zwei Listen: Zahlen und deren Quadrate.\nErstellen eines DataFrame mit Pandas:\n\ndf = pd.DataFrame(daten)\n\nWir nennen den DataFrame df (dies ist eine gängige Abkürzung für DataFrame). Unser DataFrame wird aus dem Wörterbuch daten mit der Funktion pd.DataFrame erstellt, welche die Daten in Zeilen und Spalten organisiert.\nDen DataFrame ausgeben (dafür verwenden wir nicht print()):\n\n# DataFrame anzeigen\ndf\n\n\n\n\n\n\n\n\nZahlen\nQuadrate\n\n\n\n\n0\n1\n1\n\n\n1\n2\n4\n\n\n2\n3\n9\n\n\n3\n4\n16\n\n\n4\n5\n25\n\n\n\n\n\n\n\nDas Eingeben von df in eine Jupyter Notebook-Zelle zeigt den DataFrame in tabellarischer Form an.",
     "crumbs": [
       "Python",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Python Grundlagen</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Grundlagen</span>"
     ]
   },
   {
     "objectID": "python/python-grundlagen.html#methoden-verstehen",
     "href": "python/python-grundlagen.html#methoden-verstehen",
-    "title": "10  Python Grundlagen",
+    "title": "10  Grundlagen",
     "section": "10.6 Methoden verstehen",
     "text": "10.6 Methoden verstehen\nEine Methode ist eine Funktion, die mit einem Objekt (wie einem DataFrame, einer Liste oder einem String) verknüpft ist und über die Punktnotation (.) aufgerufen wird. Dies erleichtert die Manipulation des Objekts und das Abrufen von Informationen.\nHier ein Beispiel der String-Methode .upper(), mit welcher Text in Großbuchstaben ausgegeben werden kann:\n\n# String-Methode\ntext = \"hello, world\"\n# Ausgabe\nprint(text.upper())  \n\nHELLO, WORLD\n\n\nMit der Methode .sort() können Werte in einer Liste sortiert werden:\n\n# Liste erstellen\nnumbers = [3, 1, 4, 1, 5, 9]\n# Liste sortieren\nnumbers.sort()\n# Liste ausgeben\nprint(numbers)  \n\n[1, 1, 3, 4, 5, 9]\n\n\nDie folgenden Beispiele sind DataFrame-Methoden des Pakets Pandas, die häufig in Datenprojekten zum Einsatz kommen. Beispielsweise ist .head() eine Methode, welche die ersten Zeilen eines DataFrames anzeigt:\n\ndf.head() \n\n\n\n\n\n\n\n\nZahlen\nQuadrate\n\n\n\n\n0\n1\n1\n\n\n1\n2\n4\n\n\n2\n3\n9\n\n\n3\n4\n16\n\n\n4\n5\n25\n\n\n\n\n\n\n\nDie Methode .describe() liefert zusammenfassende Statistiken wie Mittelwert, Anzahl und Standardabweichung. Zusätzlich verwenden wir hier die Methode .round(2), um die Werte auf die zweite Dezimalstelle zu runden:\n\ndf.describe().round(2) \n\n\n\n\n\n\n\n\nZahlen\nQuadrate\n\n\n\n\ncount\n5.00\n5.00\n\n\nmean\n3.00\n11.00\n\n\nstd\n1.58\n9.67\n\n\nmin\n1.00\n1.00\n\n\n25%\n2.00\n4.00\n\n\n50%\n3.00\n9.00\n\n\n75%\n4.00\n16.00\n\n\nmax\n5.00\n25.00\n\n\n\n\n\n\n\nZuletzt noch ein Beispiel, wie der Mittlwert mit Hilfe der Methode .mean() berechnet werden kann. Wir erzeugen dafür ein neues Objekt mit der Bezeichnung mean_value und geben dieses dann mit einem f-String aus:\n\nmean_value = df['Zahlen'].mean()\n# Ergebnis ausgeben\nprint(f\"Mittelwert: {mean_value}\")\n\nMittelwert: 3.0\n\n\nHier nochmals eine Zusammenfassung der wichtigsten Punkte zu Methoden:\n\nObjekt: Eine Entität, die Daten und Funktionalität enthält (z.B. DataFrame, Liste oder String).\nMethode: Eine Funktion, die mit einem Objekt verknüpft ist.\nPunktnotation (.): Wird verwendet, um eine Methode auf einem Objekt aufzurufen.",
     "crumbs": [
       "Python",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Python Grundlagen</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Grundlagen</span>"
     ]
   },
   {
     "objectID": "python/python-grundlagen.html#daten-mit-altair-visualisieren",
     "href": "python/python-grundlagen.html#daten-mit-altair-visualisieren",
-    "title": "10  Python Grundlagen",
+    "title": "10  Grundlagen",
     "section": "10.7 Daten mit Altair visualisieren",
     "text": "10.7 Daten mit Altair visualisieren\nNachdem wir die Struktur eines DataFrames verstanden haben, können wir die Daten mit Hilfe von Altair visualisieren:\n\n# Einfaches Streudiagramm erstellen\nchart = alt.Chart(df).mark_point().encode(\n    x='Zahlen',\n    y='Quadrate'\n)\n# Diagramm anzeigen\nchart\n\n\n\n\n\n\n\nKomponenten des Altair-Diagramms:\n\nalt.Chart(df): Erstellt ein neues Diagrammobjekt aus dem DataFrame df.\nmark_point(): Gibt den Diagrammtyp an (in diesem Fall ein Streudiagramm).\nencode: Ordnet DataFrame-Spalten Diagrammattributen zu.\n\nx='Numbers': Legt die horizontale Achse auf die Spalte Numbers fest.\ny='Squares': Legt die vertikale Achse auf die Spalte Squares fest.\n\n\nDiese prägnante Syntax ermöglicht die schnelle Erstellung und Anpassung von Visualisierungen.",
     "crumbs": [
       "Python",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Python Grundlagen</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Grundlagen</span>"
     ]
   },
   {
