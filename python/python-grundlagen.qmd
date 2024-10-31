@@ -1,4 +1,4 @@
-# Python Grundlagen
+# Grundlagen
 
 Dieses Kapitel bietet eine Einführung in die grundlegenden Konzepte von Python, die für Data Science und KI essentiell sind. Für eine praktische Lernerfahrung kann das gesamte Kapitel als Jupyter Notebook heruntergeladen werden:
 
