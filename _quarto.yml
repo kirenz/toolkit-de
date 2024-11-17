@@ -58,6 +58,8 @@ book:
           href: daten/datenbanken.qmd              
         - text: "PostgreSQL"
           href: daten/postgresql.qmd 
+        - text: "MySQL"
+          href: daten/mysql.qmd           
         - text: "MongoDB"
           href: daten/mongodb.qmd    
       
