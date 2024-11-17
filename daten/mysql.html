@@ -9,7 +9,7 @@
 <meta name="author" content="Jan Kirenz">
 <meta name="description" content="Programming Toolkit für Data Science, AI &amp; Analytics">
 
-<title>Visual Studio Code – Data Science, AI &amp; Analytics Toolkit</title>
+<title>21&nbsp; MySQL – Data Science, AI &amp; Analytics Toolkit</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -32,8 +66,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../vscode/visual-studio-code-installation.html" rel="next">
-<link href="../python/python-klassen.html" rel="prev">
+<link href="../daten/mongodb.html" rel="next">
+<link href="../daten/postgresql.html" rel="prev">
 <link href="..//images/logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -85,7 +119,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../vscode/index.html">Visual Studio Code</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../daten/index.html">Daten &amp; Datenbanken</a></li><li class="breadcrumb-item"><a href="../daten/mysql.html"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">MySQL</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Suchen" onclick="window.quartoOpenSearch();">
@@ -222,7 +256,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../vscode/index.html" class="sidebar-item-text sidebar-link active">
+            <a href="../vscode/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Visual Studio Code</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -278,7 +312,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../daten/mysql.html" class="sidebar-item-text sidebar-link">
+  <a href="../daten/mysql.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">MySQL</span></span></a>
   </div>
 </li>
@@ -336,15 +370,30 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Inhaltsverzeichnis</h2>
+   
+  <ul>
+  <li><a href="#mysql-installation-in-windows" id="toc-mysql-installation-in-windows" class="nav-link active" data-scroll-target="#mysql-installation-in-windows"><span class="header-section-number">21.1</span> MySQL-Installation in Windows</a></li>
+  <li><a href="#mysql-installation-auf-mac" id="toc-mysql-installation-auf-mac" class="nav-link" data-scroll-target="#mysql-installation-auf-mac"><span class="header-section-number">21.2</span> MySQL-Installation auf Mac</a></li>
+  <li><a href="#server-einrichten" id="toc-server-einrichten" class="nav-link" data-scroll-target="#server-einrichten"><span class="header-section-number">21.3</span> Server einrichten</a></li>
+  <li><a href="#sql-basics-in-mysql" id="toc-sql-basics-in-mysql" class="nav-link" data-scroll-target="#sql-basics-in-mysql"><span class="header-section-number">21.4</span> SQL-Basics in MySQL</a>
+  <ul class="collapse">
+  <li><a href="#datenbank-erstellen" id="toc-datenbank-erstellen" class="nav-link" data-scroll-target="#datenbank-erstellen"><span class="header-section-number">21.4.1</span> Datenbank erstellen</a></li>
+  <li><a href="#tabelle-erstellen" id="toc-tabelle-erstellen" class="nav-link" data-scroll-target="#tabelle-erstellen"><span class="header-section-number">21.4.2</span> Tabelle erstellen</a></li>
+  <li><a href="#werte-einfügen" id="toc-werte-einfügen" class="nav-link" data-scroll-target="#werte-einfügen"><span class="header-section-number">21.4.3</span> Werte einfügen</a></li>
+  <li><a href="#werte-abrufen" id="toc-werte-abrufen" class="nav-link" data-scroll-target="#werte-abrufen"><span class="header-section-number">21.4.4</span> Werte abrufen</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../daten/index.html">Daten &amp; Datenbanken</a></li><li class="breadcrumb-item"><a href="../daten/mysql.html"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">MySQL</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span id="sec-vscode" class="quarto-section-identifier">Visual Studio Code</span></h1>
+<h1 class="title"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">MySQL</span></h1>
 </div>
 
 
@@ -361,20 +410,302 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Visual Studio Code (VS Code) ist ein Open-Source-Editor, der von Microsoft entwickelt wurde.</p>
-<div class="callout callout-style-simple callout-note">
-<div class="callout-body d-flex">
+<p>MySQL, das sowohl als “My S-Q-L” als auch als “My Sequel” ausgesprochen wird, ist ein relationales Datenbankverwaltungssystem (RDBMS), das zur Verwaltung von Daten in relationalen Datenbanken dient. Es verwendet die Structured Query Language (SQL) für verschiedene Aufgaben wie Datenverwaltung, -manipulation und -abfrage.</p>
+<p>MySQL Workbench bietet eine grafische Oberfläche für Datenbankverwaltung und SQL-Entwicklung. Es integriert visuelle Werkzeuge für Datenmodellierung, SQL-Entwicklung und umfassende Datenbankverwaltung.</p>
+<p>Hauptkomponenten der MySQL Workbench:</p>
+<ul>
+<li><strong>Toolbar</strong>: Oben befindliche Leiste mit Schaltflächen für häufige Aktionen wie neue Abfrage-Tabs oder Ausführen von Abfragen.</li>
+<li><strong>Seitenleiste</strong>: Links platzierte Leiste für Zugriff auf Instanzverwaltung, Leistungsüberwachung und weitere Funktionen.</li>
+<li><strong>Abfrage-Tab</strong>: Zentraler Bereich zum Schreiben und Ausführen von SQL-Abfragen.</li>
+<li><strong>Ausgabebereich</strong>: Unterhalb des Abfrage-Editors zur Anzeige von Abfrageergebnissen oder Servermeldungen.</li>
+</ul>
+<section id="mysql-installation-in-windows" class="level2" data-number="21.1">
+<h2 data-number="21.1" class="anchored" data-anchor-id="mysql-installation-in-windows"><span class="header-section-number">21.1</span> MySQL-Installation in Windows</h2>
+<p>Folgende Schritte führen durch die Installation von MySQL und MySQL Workbench:</p>
+<ol type="1">
+<li>Installer herunterladen
+<ul>
+<li>Auf der <a href="https://dev.mysql.com/downloads/installer/">MySQL Downloadseite</a> Windows als Plattform wählen.</li>
+<li>MySQL-Installer für Windows in Version 8.0.37 herunterladen.</li>
+</ul></li>
+<li>Installer ausführen
+<ul>
+<li>Heruntergeladene Datei ausführen und bei Sicherheitsabfrage “Ja” wählen.</li>
+</ul></li>
+<li>Setup-Typ auswählen
+<ul>
+<li>“Custom” als Setup-Typ wählen für spezifische Komponentenauswahl.</li>
+</ul></li>
+<li>Produkte und Features auswählen
+<ul>
+<li>‘MySQL Server’ und ‘MySQL Workbench’ zur Installation auswählen.</li>
+</ul></li>
+<li>Installation durchführen
+<ul>
+<li>Bildschirmanweisungen zur Installation der gewählten Komponenten befolgen.</li>
+</ul></li>
+<li>MySQL Server konfigurieren
+<ul>
+<li>Root-Passwort einrichten, Benutzerkonten erstellen, Netzwerkoptionen und Windows-Dienst konfigurieren.</li>
+</ul></li>
+<li>Installation abschließen
+<ul>
+<li>Setup beenden, um die MySQL-Installation abzuschließen.</li>
+</ul></li>
+</ol>
+</section>
+<section id="mysql-installation-auf-mac" class="level2" data-number="21.2">
+<h2 data-number="21.2" class="anchored" data-anchor-id="mysql-installation-auf-mac"><span class="header-section-number">21.2</span> MySQL-Installation auf Mac</h2>
+<p>Installationsschritte für MySQL und MySQL Workbench auf Mac:</p>
+<ol type="1">
+<li>MySQL herunterladen und installieren
+<ul>
+<li><a href="https://dev.mysql.com/downloads/mysql/">MySQL Downloadseite</a> besuchen, macOS wählen.</li>
+<li>DMG-Datei für macOS (Version 8.0.36) herunterladen und installieren.</li>
+</ul></li>
+<li>MySQL Workbench installieren
+<ul>
+<li><a href="https://dev.mysql.com/downloads/workbench/">MySQL Workbench Downloadseite</a> aufrufen.</li>
+<li>Passende Version für macOS herunterladen und installieren.</li>
+</ul></li>
+</ol>
+</section>
+<section id="server-einrichten" class="level2" data-number="21.3">
+<h2 data-number="21.3" class="anchored" data-anchor-id="server-einrichten"><span class="header-section-number">21.3</span> Server einrichten</h2>
+<p>Nach der Installation erfolgt die Verbindung zum MySQL-Server über MySQL Workbench:</p>
+<ol type="1">
+<li>MySQL Workbench starten
+<ul>
+<li>Anwendung aus der Programmübersicht öffnen.</li>
+</ul></li>
+</ol>
+<div class="callout callout-style-simple callout-tip callout-titled" title="Tipp für Windows-Nutzer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-body-container">
-<p>Obwohl VS Code nahezu jede Programmieraufgabe bewältigen kann, ist es besonders in der Python-Community aufgrund seiner umfangreichen Python-spezifischen Funktionen und Erweiterungen beliebt.</p>
+<div class="callout-title-container flex-fill">
+Tipp für Windows-Nutzer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Falls MySQL Workbench während der anfänglichen Einrichtung des MySQL Servers nicht enthalten war, kann es separat installiert werden:</p>
+<p><a href="https://dev.mysql.com/downloads/workbench/">MySQL Workbench Downloadseite</a> öffnen und passende Version für das Betriebssystem auswählen.</p>
 </div>
 </div>
 </div>
-<p>Die Wahl der richtigen Entwicklungsumgebung kann die Produktivität und Effizienz des Workflows erheblich beeinflussen. In den folgenden Abschnitten werden wir behandeln, wie man Visual Studio Code installiert und konfiguriert, um Ihren Entwicklungsworkflow zu optimieren.</p>
+<ol start="2" type="1">
+<li>Neue Verbindung erstellen
+<ul>
+<li>Auf “+” im Bereich “MySQL Connections” klicken.</li>
+<li>Verbindungsdetails eingeben:
+<ul>
+<li>Name: <em>local-connection</em></li>
+<li>Hostname: <em>localhost</em></li>
+<li>Port: <em>3306</em></li>
+<li>Benutzername: Meist <em>root</em></li>
+<li>Passwort: “Store in Vault” wählen und Passwort eingeben, welches während der Installation vergeben wurde.</li>
+</ul></li>
+<li>“Test Connection” zur Überprüfung klicken.</li>
+</ul></li>
+<li>Verbindung speichern
+<ul>
+<li>Bei erfolgreicher Verbindung auf “OK” klicken.</li>
+</ul></li>
+</ol>
+</section>
+<section id="sql-basics-in-mysql" class="level2" data-number="21.4">
+<h2 data-number="21.4" class="anchored" data-anchor-id="sql-basics-in-mysql"><span class="header-section-number">21.4</span> SQL-Basics in MySQL</h2>
+<p>Nachfolgend behandeln wir einige typische Aufgaben in MySQL Workbench, die bei der Arbeit mit Datenbanken anfallen.</p>
+<section id="datenbank-erstellen" class="level3" data-number="21.4.1">
+<h3 data-number="21.4.1" class="anchored" data-anchor-id="datenbank-erstellen"><span class="header-section-number">21.4.1</span> Datenbank erstellen</h3>
+<ol type="1">
+<li><p>Mit MySQL-Instanz verbinden (<em>local-connection</em>).</p></li>
+<li><p>Neues Abfrage-Tab öffnen (auf das “+”-Symbol oben klicken)</p></li>
+<li><p>SQL-Befehle eingeben und ausführen (auf das Blitzsymbol (⚡) klicken, um den Befehl auszuführen):</p></li>
+</ol>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">DROP</span> <span class="kw">DATABASE</span> <span class="cf">IF</span> <span class="kw">EXISTS</span> `db_data`;</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">CREATE</span> <span class="kw">DATABASE</span> `db_data`;</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">USE</span> `db_data`;</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout callout-style-simple callout-note callout-titled" title="Erklärung der SQL-Befehle">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Erklärung der SQL-Befehle
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Der SQL-Code führt drei Operationen durch:</p>
+<ol type="1">
+<li><strong>DROP DATABASE IF EXISTS <code>db_data</code>;</strong>
+<ul>
+<li>Dieser Befehl löscht die Datenbank <code>db_data</code>, falls sie existiert. Dies ist nützlich, um sicherzustellen, dass wir mit einer neuen Datenbank arbeiten, indem eine eventuell vorhandene Datenbank mit demselben Namen entfernt wird.</li>
+</ul></li>
+<li><strong>CREATE DATABASE <code>db_data</code>;</strong>
+<ul>
+<li>Dieser Befehl erstellt eine neue Datenbank mit dem Namen <code>db_data</code>. Dies legt die Basis für eine neue Datenbank, in der wir Tabellen und andere Datenbankobjekte erstellen können.</li>
+</ul></li>
+<li><strong>USE <code>db_data</code>;</strong>
+<ul>
+<li>Dieser Befehl setzt die neu erstellte Datenbank <code>db_data</code> als die aktuell verwendete Datenbank. Alle nachfolgenden SQL-Befehle werden auf dieser Datenbank ausgeführt.</li>
+</ul></li>
+</ol>
+</div>
+</div>
+</div>
+<ol start="4" type="1">
+<li>Schema-Liste aktualisieren zur Anzeige der neuen Datenbank (Schema-Liste befindet sich auf der linken Seite der Benutzer-Oberfläche)</li>
+</ol>
+</section>
+<section id="tabelle-erstellen" class="level3" data-number="21.4.2">
+<h3 data-number="21.4.2" class="anchored" data-anchor-id="tabelle-erstellen"><span class="header-section-number">21.4.2</span> Tabelle erstellen</h3>
+<p>Als Beispieldaten erstellen wir eine Tabelle zu einer Marketingkampagne:</p>
+<ol type="1">
+<li><p>Neues Abfrage-Tab öffnen.</p></li>
+<li><p>SQL zur Tabellenerstellung ausführen:</p></li>
+</ol>
+<div class="sourceCode" id="cb2"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">CREATE</span> <span class="kw">TABLE</span> campaigns (</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>   <span class="kw">id</span> <span class="dt">INT</span> AUTO_INCREMENT <span class="kw">PRIMARY</span> <span class="kw">KEY</span>,</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>   name <span class="dt">VARCHAR</span>(<span class="dv">255</span>) <span class="kw">NOT</span> <span class="kw">NULL</span>,</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>   start_date <span class="dt">DATE</span>,</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>   end_date <span class="dt">DATE</span>,</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>   budget <span class="dt">DECIMAL</span>(<span class="dv">10</span>, <span class="dv">2</span>),</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>   channel <span class="dt">VARCHAR</span>(<span class="dv">255</span>)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>);</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout callout-style-simple callout-note callout-titled" title="Erklärung der Tabellendefinition">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Erklärung der Tabellendefinition
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><p><strong>id</strong>: Eine Spalte namens <code>id</code>, die den Datentyp <code>INT</code> (integer) verwendet und automatisch inkrementiert wird (d.h. 1, 2, 3, …), was sich gut als Primärschlüssel eignet.</p></li>
+<li><p><strong>name</strong>: Eine Spalte zur Speicherung der Kampagnennamen als Text, um eine Zeichenkette von bis zu 255 Zeichen zu halten. Die <code>NOT NULL</code>-Einschränkung stellt sicher, dass jede Zeile einen Namen haben muss.</p></li>
+<li><p><strong>start_date</strong> und <strong>end_date</strong>: Diese Spalten speichern die Start- und Enddaten der Kampagnen mit dem Datentyp <code>DATE</code>.</p></li>
+<li><p><strong>budget</strong>: Eine Spalte für das Budget jeder Kampagne, die <code>DECIMAL(10, 2)</code> verwendet, um bis zu 10 Stellen mit 2 Dezimalstellen zu ermöglichen.</p></li>
+<li><p><strong>channel</strong>: Eine Spalte, um das verwendete Medium der Kampagne anzugeben, die Zeichenfolgen von bis zu 255 Zeichen speichern kann.</p></li>
+</ul>
+</div>
+</div>
+</div>
+<ol start="3" type="1">
+<li>Befehl ausführen und Schema-Ansicht überprüfen.</li>
+</ol>
+</section>
+<section id="werte-einfügen" class="level3" data-number="21.4.3">
+<h3 data-number="21.4.3" class="anchored" data-anchor-id="werte-einfügen"><span class="header-section-number">21.4.3</span> Werte einfügen</h3>
+<p>Wir gehen wie folgt vor, um die Tabelle mit Daten zu füllen. In neuem Abfrage-Tab SQL-Befehl ausführen:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">INSERT</span> <span class="kw">INTO</span> campaigns (name, start_date, end_date, budget, channel) <span class="kw">VALUES</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>(<span class="st">'Winter Sale'</span>, <span class="st">'2023-12-01'</span>, <span class="st">'2023-12-31'</span>, <span class="fl">5000.00</span>, <span class="st">'Email'</span>),</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>(<span class="st">'Summer Festival'</span>, <span class="st">'2023-06-01'</span>, <span class="st">'2023-06-15'</span>, <span class="fl">10000.00</span>, <span class="st">'Social Media'</span>),</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>(<span class="st">'Back to School'</span>, <span class="st">'2023-08-01'</span>, <span class="st">'2023-08-20'</span>, <span class="fl">7500.00</span>, <span class="st">'TV'</span>);</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout callout-style-simple callout-note callout-titled" title="Erklärung der Insert-Anweisung">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Erklärung der Insert-Anweisung
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Dieser SQL-Befehl fügt Daten in die <code>campaigns</code>-Tabelle ein. Jede Zeile von Werten entspricht einer anderen Marketingkampagne:</p>
+<ul>
+<li><p><strong>Erste Zeile</strong>: Fügt eine Kampagne namens “Winter Sale” ein, die vom 1. bis 31. Dezember 2023 läuft, mit einem Budget von $5000 und dem Kanal “Email”.</p></li>
+<li><p><strong>Zweite Zeile</strong>: Fügt “Summer Festival” ein, eine kürzere Kampagne vom 1. bis 15. Juni 2023, mit einem höheren Budget von $10000 und dem Kanal “Social Media”.</p></li>
+<li><p><strong>Dritte Zeile</strong>: Fügt die “Back to School”-Kampagne vom 1. bis 20. August 2023 hinzu, mit einem Budget von $7500, vermarktet über “TV”.</p></li>
+</ul>
+<p>Jeder Satz von Werten ist in Klammern eingeschlossen und durch Kommas getrennt, um verschiedene Kampagnen zu unterscheiden.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="werte-abrufen" class="level3" data-number="21.4.4">
+<h3 data-number="21.4.4" class="anchored" data-anchor-id="werte-abrufen"><span class="header-section-number">21.4.4</span> Werte abrufen</h3>
+<p>Um die Daten zu überprüfen:</p>
+<p>SELECT-Abfrage in neuem Tab ausführen:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> <span class="op">*</span> <span class="kw">FROM</span> campaigns;</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout callout-style-simple callout-note callout-titled" title="Erklärung der SELECT-Abfrage">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Erklärung der SELECT-Abfrage
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Der SQL-Befehl ruft alle Spalten aus allen Zeilen in der <code>campaigns</code>-Tabelle ab. Er ist nützlich, um alle eingegebenen Daten in der Tabelle anzuzeigen, sicherzustellen, dass die Einträge korrekt sind, und um weitere Datenanalysen oder Berichte zu ermöglichen.</p>
+</div>
+</div>
+</div>
+<p>Erwartetes Ergebnis:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 24%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 14%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>id</th>
+<th>name</th>
+<th>start_date</th>
+<th>end_date</th>
+<th>budget</th>
+<th>channel</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Winter Sale</td>
+<td>2023-12-01</td>
+<td>2023-12-31</td>
+<td>5000.00</td>
+<td>Email</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Summer Festival</td>
+<td>2023-06-01</td>
+<td>2023-06-15</td>
+<td>10000.00</td>
+<td>Social Media</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Back to School</td>
+<td>2023-08-01</td>
+<td>2023-08-20</td>
+<td>7500.00</td>
+<td>TV</td>
+</tr>
+</tbody>
+</table>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -799,13 +1130,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../python/python-klassen.html" class="pagination-link" aria-label="Klassen und Objekte">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Klassen und Objekte</span></span>
+      <a href="../daten/postgresql.html" class="pagination-link" aria-label="PostgreSQL">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">PostgreSQL</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../vscode/visual-studio-code-installation.html" class="pagination-link" aria-label="VS Code Einführung">
-        <span class="nav-page-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">VS Code Einführung</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../daten/mongodb.html" class="pagination-link" aria-label="MongoDB">
+        <span class="nav-page-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">MongoDB</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
