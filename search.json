@@ -10,11 +10,21 @@
     ]
   },
   {
+    "objectID": "erste-schritte/index.html",
+    "href": "erste-schritte/index.html",
+    "title": "Erste Schritte",
+    "section": "",
+    "text": "In diesem ersten Abschnitt werden wir eine grundlegende Arbeitsumgebung einrichten, die für jedes datenbezogene Vorhaben unerlässlich ist.\nWir werden:\n\nDie Befehlszeile des Computers nutzen.\nPython zum ersten Mal einrichten.\nDie Anaconda-Distribution (ein Data-Science-Softwarepaket) verwenden.\nJupyter Notebook, ein leistungsstarkes Werkzeug zur interaktiven Datenexploration, nutzen.",
+    "crumbs": [
+      "Erste Schritte"
+    ]
+  },
+  {
     "objectID": "erste-schritte/projektumgebung.html",
     "href": "erste-schritte/projektumgebung.html",
     "title": "1  Projektumgebung",
     "section": "",
-    "text": "1.1 Projektumgebung in Windows",
+    "text": "1.1 Projektumgebung in Windows\nDas systematische Anlegen von Verzeichnissen und Dateien ist eine wichtige Grundlage für erfolgreiche Datenprojekte. Wir erstellen daher zuerst einen Ordner namens “toolkit-lab” und legen darin die Unterordner “code” für unsere Code-Dateien und “data” zum Speichern von Datensätzen an, um unser Projekt strukturiert zu halten.\nUnsere Ordnerstruktur kann wie folgt dargestellt werden:\nFür die Darstellung der Ordnerstruktur verwenden wir typischerweise eine Baumstruktur, wie in Abbildung 1.1 (b) dargestellt. Diese kann mit Hilfe unterschiedlicher Zeichen dargestellt und auch wie folgt erstellt werden:\nAnstatt eine grafische Benutzeroberfläche wie den Windows-Explorer oder den macOS Finder zu verwenden, werden wir die Befehlszeile nutzen, um die Ordner einzurichten. Die Befehlszeile ist ein leistungsstarkes Werkzeug zum Einrichten unserer Arbeitsumgebung. Sie ermöglicht eine Kommunikation mit dem Betriebssystem über textbasierte Eingaben.\nWeitere gängige Bezeichnung für die Befehlszeile sind:\nIn Windows ist die Bezeichnung für das entsprechende Programm Eingabeaufforderung (siehe Abbildung 1.2 (a)), auf dem Mac heißt es Terminal (siehe Abbildung 1.2 (b)).\nWenn wir von der Befehlszeile sprechen, ist es wichtig, auch das Konzept der “Shell” zu verstehen. Die Shell ist ein Programm, das als Vermittler zwischen uns und dem Betriebssystem fungiert. Sie interpretiert unsere Eingaben und übersetzt sie in Anweisungen, die das System ausführen kann.\nDie Kommandozeile, die wir sehen und in die wir Befehle eingeben, ist die Schnittstelle zur Shell. Sie ist sozusagen das “Blatt Papier”, auf dem wir unsere Anweisungen schreiben, während die Shell der “Übersetzer” ist, der diese Anweisungen versteht und umsetzt.\nAuf Windows-Systemen:\nAuf Mac-Systemen:\nTrotz dieser Unterschiede ist das grundlegende Konzept auf beiden Systemen gleich: Wir geben Befehle ein, und die Shell interpretiert und führt sie aus.\nDie Verwendung der Kommandozeile und das Verständnis der Shell-Umgebung sind wichtige Fähigkeiten in der Datenanalyse und Softwareentwicklung. Sie ermöglichen uns eine präzisere Kontrolle über unser System und sind besonders nützlich für Automatisierungen.\nIn den folgenden Abschnitten werden wir lernen, wie wir grundlegende Befehle nutzen können, um unsere Projektstruktur einzurichten und zu verwalten.",
     "crumbs": [
       "Erste Schritte",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Projektumgebung</span>"
@@ -47,7 +57,7 @@
     "href": "erste-schritte/python-und-idle.html",
     "title": "2  Python und IDLE",
     "section": "",
-    "text": "2.1 Python-Installation Windows\nNach der Installation wollen wir sicherstellen, dass alles korrekt funktioniert:\nWenn alles geklappt hat, sehen wir die Versionsnummer der installierten Python-Version.",
+    "text": "2.1 Python-Installation Windows\nIn diesem Kapitel lernen wir die grundlegenden Schritte kennen, um mit Python zu beginnen.\nPython hat sich zu einer der beliebtesten Programmiersprachen in den Bereichen Data Science und KI entwickelt, und das aus gutem Grund. Hier sind einige der Hauptvorteile von Python:\nGrößere Python-Aktualisierungen werden in der Regel einmal pro Jahr veröffentlicht. Dieser regelmäßige Release-Zyklus sorgt dafür, dass neue Funktionen, Verbesserungen und Fehlerbehebungen kontinuierlich in die Sprache einfließen und Python auf dem neuesten Stand bleibt. Im September 2024 war die aktuelle Python-Version 3.12.5.\nDie Versionsnummer setzt sich wie folgt zusammen:\nDiese Struktur der Versionsnummern hilft, die Art und Bedeutung der Änderungen in jeder neuen Python-Version zu verstehen. Ähnlich wie bei Software-Updates auf einem Smartphone oder Computer zeigen diese Zahlen an, dass Python kontinuierlich verbessert und aktualisiert wird, wobei größere Änderungen seltener sind als kleinere Anpassungen und Fehlerbehebungen.\nUm mit Python zu arbeiten, benötigt man eine Entwicklungsumgebung. Eine der einfachsten und am leichtesten zugänglichen Optionen ist IDLE (Integrated Development and Learning Environment).\nAls nächstes werden wir Python installieren und erste Schritte mit dem Python-Editor IDLE machen.\nNach der Installation wollen wir sicherstellen, dass alles korrekt funktioniert:\nWenn alles geklappt hat, sehen wir die Versionsnummer der installierten Python-Version.",
     "crumbs": [
       "Erste Schritte",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Python und IDLE</span>"
@@ -91,7 +101,7 @@
     "href": "erste-schritte/python-idle.html",
     "title": "3  Python IDLE",
     "section": "",
-    "text": "3.1 Erste Schritte in IDLE\nNach der Installation von Python können wir IDLE über das Suchmenü des Betriebssystems starten:\nDas IDLE-Shell-Fenster funktioniert als interaktiver Interpreter. Hier wird jede eingegebene Codezeile sofort ausgeführt, sobald wir Enter drücken.\nIn der IDLE-Shell können wir direkt arithmetische Ausdrücke wie 2 + 3 eingeben und erhalten sofort das Ergebnis. Diese Funktion macht IDLE besonders nützlich für schnelle Berechnungen und Experimente mit den mathematischen Fähigkeiten von Python, ohne dass wir ein separates Skript speichern oder ausführen müssen.",
+    "text": "3.1 Erste Schritte in IDLE\nPython IDLE ist eine einfache integrierte Entwicklungsumgebung (IDE), die standardmäßig mit Python installiert wird. Sie wurde speziell entwickelt, um das Schreiben und Ausführen von Python-Code zu erleichtern.\nNach der Installation von Python können wir IDLE über das Suchmenü des Betriebssystems starten:\nDas IDLE-Shell-Fenster funktioniert als interaktiver Interpreter. Hier wird jede eingegebene Codezeile sofort ausgeführt, sobald wir Enter drücken.\nIn der IDLE-Shell können wir direkt arithmetische Ausdrücke wie 2 + 3 eingeben und erhalten sofort das Ergebnis. Diese Funktion macht IDLE besonders nützlich für schnelle Berechnungen und Experimente mit den mathematischen Fähigkeiten von Python, ohne dass wir ein separates Skript speichern oder ausführen müssen.",
     "crumbs": [
       "Erste Schritte",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Python IDLE</span>"
@@ -135,7 +145,7 @@
     "href": "erste-schritte/anaconda-installation.html",
     "title": "4  Anaconda Distribution",
     "section": "",
-    "text": "4.1 Anaconda in Windows installieren",
+    "text": "4.1 Anaconda in Windows installieren\nDie Anaconda Distribution ist ein umfangreiches Softwarepaket, das Python und eine Vielzahl wichtiger Data Science-Tools beinhaltet. Sie stellt eine zentrale Plattform für die Arbeit mit Daten dar und erleichtert den Einstieg in die Welt der Data Science erheblich.\nAnaconda, Inc. ist das Unternehmen hinter der Anaconda Distribution. Mit der kostenfreien Bereitstellung der Anaconda Distribution hat das Unternehmen einen bedeutenden Beitrag zur Data Science-Community geleistet.\nDie Anaconda Distribution umfasst die folgende Hauptkomponenten:",
     "crumbs": [
       "Erste Schritte",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Anaconda Distribution</span>"
@@ -190,7 +200,7 @@
     "href": "erste-schritte/jupyter-notebook.html",
     "title": "5  Jupyter Notebook",
     "section": "",
-    "text": "5.1 Jupyter Notebook erstellen\nHier der Prozess zur Erstellung eines Jupyter Notebooks.",
+    "text": "5.1 Jupyter Notebook erstellen\nIn der Welt der Data Science und künstlichen Intelligenz ist Jupyter Notebook ein wichtiges Werkzeug. Es ist in der Anaconda-Distribution enthalten und bietet eine leistungsstarke Umgebung für interaktive Code-Entwicklung und Datenanalyse.\nIm Vergleich zum eher einfachen Python IDLE bietet Jupyter Notebook eine Reihe von Vorteilen, die unsere Arbeit erheblich erleichtern:\nIm nächsten Abschnitt erstellen wir einen Jupyter Notebook.\nHier der Prozess zur Erstellung eines Jupyter Notebooks.",
     "crumbs": [
       "Erste Schritte",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Jupyter Notebook</span>"
@@ -212,7 +222,7 @@
     "href": "erste-schritte/markdown.html",
     "title": "6  Markdown",
     "section": "",
-    "text": "6.1 Markdown in Jupyter Notebook\nUm mit Markdown in Jupyter Notebook zu beginnen, folgen wir diesen Schritten:\nIn dem folgenden Abschnitt behandelen wir einige nützliche Markdown-Formatierungsoptionen.",
+    "text": "6.1 Markdown in Jupyter Notebook\nMarkdown ist eine einfache Auszeichnungssprache (d.h. ein System zur Formatierung von Text), die entwickelt wurde, um leicht in HTML umgewandelt zu werden. Aufgrund ihrer Einfachheit und Vielseitigkeit wird sie häufig verwendet und eignet sich sehr gut für Dokumentationen, Berichte und die Aufzeichnung von Forschungsergebnissen.\nIn der Datenwissenschaft findet Markdown breite Anwendung. Wir nutzen es nicht nur zur Dokumentation von Projekten, sondern auch zur Erstellung dynamischer Berichte. Diese Berichte verbinden nahtlos erklärenden Text mit den Ergebnissen von Datenanalysen, oft mithilfe von Werkzeugen wie Jupyter Notebooks.\nUm mit Markdown in Jupyter Notebook zu beginnen, folgen wir diesen Schritten:\nIn dem folgenden Abschnitt behandelen wir einige nützliche Markdown-Formatierungsoptionen.",
     "crumbs": [
       "Erste Schritte",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Markdown</span>"
@@ -252,11 +262,21 @@
     ]
   },
   {
+    "objectID": "python/index.html",
+    "href": "python/index.html",
+    "title": "Python",
+    "section": "",
+    "text": "Python ist eine objektorientierte Programmiersprache, was bedeutet, dass es Daten als Objekte darstellt, die sowohl Informationen als auch Funktionalität enthalten.\nEin wichtiges Merkmal von Python ist, dass es interpretiert und nicht kompiliert wird. Der Interpreter führt den Code Zeile für Zeile aus, was besonders vorteilhaft für Aufgaben wie Datenanalyse und die Erstellung interaktiver, ausführbarer Dokumente wie Jupyter-Notebooks ist.\n\n\n\n\n\n\nPython ist eine interpretierte Sprache, bei der der Interpreter ein Programm durch die Ausführung einer Anweisung nach der anderen ausführt.\n\n\n\nÜber diese Kernfunktionalität hinaus bietet Python ein großes Ökosystem an Drittanbieter-Tools und -Modulen, wie das Jupyter-Notebook, die spezialisierte Funktionen für die Datenwissenschaft bereitstellen.",
+    "crumbs": [
+      "Python"
+    ]
+  },
+  {
     "objectID": "python/python-bausteine.html",
     "href": "python/python-bausteine.html",
     "title": "7  Python-Bausteine",
     "section": "",
-    "text": "7.1 Module in Python\nModule sind einzelne Python-Dateien, die Definitionen und Implementierungen von Variablen und Funktionen enthalten, die in verschiedenen Programmen wiederverwendet werden können.\nEinige wichtige Standardmodule sind:\nModule helfen, den Code modular zu gestalten, was seine Wartbarkeit und Lesbarkeit verbessert.",
+    "text": "7.1 Module in Python\nIm Python-Entwicklungsprozess ist es hilfreich, die Rollen von Modulen, Paketen und Bibliotheken zu verstehen, um Projekte effektiv zu organisieren und zu verwalten.\nDie Verwendung dieser Bausteine hilft nicht nur dabei, den Code sauber und verständlich zu halten, sondern verbessert auch die Zusammenarbeit in Teams. Sie ermöglicht es, Arbeit einfach zu teilen und zu integrieren.\nModule sind einzelne Python-Dateien, die Definitionen und Implementierungen von Variablen und Funktionen enthalten, die in verschiedenen Programmen wiederverwendet werden können.\nEinige wichtige Standardmodule sind:\nModule helfen, den Code modular zu gestalten, was seine Wartbarkeit und Lesbarkeit verbessert.",
     "crumbs": [
       "Python",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Bausteine</span>"
@@ -300,7 +320,7 @@
     "href": "python/python-umgebung.html",
     "title": "8  Virtuelle Umgebungen",
     "section": "",
-    "text": "8.1 Virtuelle Umgebung erstellen\nDas Erstellen einer virtuellen Umgebung ist ein wichtiger erster Schritt für jedes Data Science-Projekt. Hier wird der Prozess Schritt für Schritt erklärt:\nDas Erstellen und Verwenden einer separaten virtuellen Umgebung gewährleistet, dass der Arbeitsbereich isoliert, stabil und reproduzierbar bleibt. Dies ist besonders wichtig für die Zusammenarbeit in Teams und die langfristige Wartbarkeit von Projekten.",
+    "text": "8.1 Virtuelle Umgebung erstellen\nVirtuelle Umgebungen sind ein grundlegendes Konzept in der Softwareentwicklung und Data Science. Sie ermöglichen es, isolierte Arbeitsbereiche für verschiedene Projekte zu erstellen. In diesen Umgebungen können Python-Pakete oder -Bibliotheken und deren Abhängigkeiten separat installiert und verwaltet werden. Dies ist besonders wichtig für Data Science-Projekte, die oft spezifische Versionen von Bibliotheken benötigen.\nEine virtuelle Umgebung ist im Wesentlichen ein eigenständiger Ordner, der alle notwendigen ausführbaren Dateien enthält, um Python-Pakete zu verwenden. Jede virtuelle Umgebung hat ihre eigene Python-Installation, unabhängig von der globalen Python-Installation auf dem Computer.\nVirtuelle Umgebungen bieten mehrere entscheidende Vorteile:\nDas Erstellen einer virtuellen Umgebung ist ein wichtiger erster Schritt für jedes Data Science-Projekt. Hier wird der Prozess Schritt für Schritt erklärt:\nDas Erstellen und Verwenden einer separaten virtuellen Umgebung gewährleistet, dass der Arbeitsbereich isoliert, stabil und reproduzierbar bleibt. Dies ist besonders wichtig für die Zusammenarbeit in Teams und die langfristige Wartbarkeit von Projekten.",
     "crumbs": [
       "Python",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Umgebungen</span>"
@@ -333,7 +353,7 @@
     "href": "python/python-grundlagen.html",
     "title": "10  Grundlagen",
     "section": "",
-    "text": "10.1 Bibliotheken importieren\nIn Python erweitern Pakete und Bibliotheken die Funktionalität der Sprache. Sie werden am Anfang des Skripts importiert, üblicherweise als erster Code-Block unterhalb der ersten Markdown-Zelle. Dies hilft, den Code übersichtlich und effizient zu gestalten. Oft werden Aliase (Kurzformen) verwendet, um die Bibliotheken im Code einfacher anzusprechen.\nFolgender Code importiert wichtige Data Science-Bibliotheken:\n# Bibliotheken importieren\nimport numpy as np      # Für numerische Operationen\nimport pandas as pd     # Für Datenmanipulation und -analyse\nimport altair as alt    # Für Datenvisualisierung\nErklärung der importierten Bibliotheken:",
+    "text": "10.1 Bibliotheken importieren\nDieses Kapitel bietet eine Einführung in die grundlegenden Konzepte von Python, die für Data Science und KI essentiell sind. Für eine praktische Lernerfahrung kann das gesamte Kapitel als Jupyter Notebook heruntergeladen werden:\n⬇️ Jupyter Notebook herunterladen\nNach dem Herunterladen kann das Notebook im code Ordner gespeichert und in Jupyter Notebook geöffnet werden.\nIn Python erweitern Pakete und Bibliotheken die Funktionalität der Sprache. Sie werden am Anfang des Skripts importiert, üblicherweise als erster Code-Block unterhalb der ersten Markdown-Zelle. Dies hilft, den Code übersichtlich und effizient zu gestalten. Oft werden Aliase (Kurzformen) verwendet, um die Bibliotheken im Code einfacher anzusprechen.\nFolgender Code importiert wichtige Data Science-Bibliotheken:\n# Bibliotheken importieren\nimport numpy as np      # Für numerische Operationen\nimport pandas as pd     # Für Datenmanipulation und -analyse\nimport altair as alt    # Für Datenvisualisierung\nErklärung der importierten Bibliotheken:",
     "crumbs": [
       "Python",
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>Grundlagen</span>"
@@ -421,7 +441,7 @@
     "href": "python/python-einrueckung.html",
     "title": "11  Einrückung",
     "section": "",
-    "text": "11.1 Richtige Einrückung\nBeispielcode für die Erzeugung einer Funktion (wir behandeln Funktionen an einer anderen Stelle des Buches im Detail):\n# Funktion wird erzeugt\ndef compute_area(width, height):\n    # Dies ist der Anfang eines Funktionsblocks\n    area = width * height \n    return area \n\n#Aufrufen der Funktion\nprint(compute_area(5, 10))  # Diese Zeile ist nicht eingerückt, was zeigt, dass sie nicht Teil der Funktion ist\n\n50\nErläuterung:",
+    "text": "11.1 Richtige Einrückung\n⬇️ Jupyter Notebook herunterladen\nBevor wir im nächsten Abschnitt Python-Funktionen erkunden, ist es wichtig, die Einrückungsregeln von Python zu verstehen, da diese grundlegend sind, um fehlerfreien Python-Code zu schreiben.\nEinrückung ist in Python nicht nur eine Stilfrage; sie hat eine syntaktische Bedeutung. Python verwendet Einrückungen, um Codeblöcke zu definieren. Die korrekte Verwendung von Einrückungen ist entscheidend, damit Ihr Code wie erwartet ausgeführt wird.\nWichtige Hinweise zur Einrückung:\nBeispielcode für die Erzeugung einer Funktion (wir behandeln Funktionen an einer anderen Stelle des Buches im Detail):\n# Funktion wird erzeugt\ndef compute_area(width, height):\n    # Dies ist der Anfang eines Funktionsblocks\n    area = width * height \n    return area \n\n#Aufrufen der Funktion\nprint(compute_area(5, 10))  # Diese Zeile ist nicht eingerückt, was zeigt, dass sie nicht Teil der Funktion ist\n\n50\nErläuterung:",
     "crumbs": [
       "Python",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Einrückung</span>"
@@ -454,7 +474,7 @@
     "href": "python/python-funktionen.html",
     "title": "12  Funktionen",
     "section": "",
-    "text": "12.1 Einfache Funktion\nWir beginnen mit der Erstellung einer Funktion zur Berechnung des Quadrats einer Zahl.",
+    "text": "12.1 Einfache Funktion\n⬇️ Jupyter Notebook herunterladen\nFunktionen helfen, modulare, wiederverwendbare Codeblöcke zu schreiben. In diesem Abschnitt wird das Definieren, Aufrufen und Dokumentieren von Funktionen demonstriert.\nWir beginnen mit der Erstellung einer Funktion zur Berechnung des Quadrats einer Zahl.",
     "crumbs": [
       "Python",
       "<span class='chapter-number'>12</span>  <span class='chapter-title'>Funktionen</span>"
@@ -509,7 +529,7 @@
     "href": "python/python-kontrollstrukturen.html",
     "title": "13  Kontrollstrukturen",
     "section": "",
-    "text": "13.1 Bedingte Anweisungen\nBedingte Anweisungen helfen dabei, Code nur auszuführen, wenn bestimmte Bedingungen erfüllt sind.\nGrundlegende If-Else-Anweisung:\n# Bestimmen, ob eine Zahl positiv, negativ oder null ist\nnumber = -3\n\nif number &gt; 0:\n    print(f\"{number} ist eine positive Zahl.\")\nelif number &lt; 0:\n    print(f\"{number} ist eine negative Zahl.\")\nelse:\n    print(f\"{number} ist null.\")\n\n-3 ist eine negative Zahl.\nErläuterung:\nVerschachtelte Bedingungsanweisungen:\n# Ein Alter in verschiedene Lebensphasen einordnen\nage = 25\n\nif age &lt; 13:\n    print(\"Kind\")\nelif age &lt; 18:\n    print(\"Teenager\")\nelse:\n    if age &lt; 65:\n        print(\"Erwachsener\")\n    else:\n        print(\"Senior\")\n\nErwachsener\nErläuterung:",
+    "text": "13.1 Bedingte Anweisungen\n⬇️ Jupyter Notebook herunterladen\nKontrollstrukturen sind grundlegend in der Python-Programmierung. Wir werden drei wichtige Strukturen kennenlernen:\nBedingte Anweisungen helfen dabei, Code nur auszuführen, wenn bestimmte Bedingungen erfüllt sind.\nGrundlegende If-Else-Anweisung:\n# Bestimmen, ob eine Zahl positiv, negativ oder null ist\nnumber = -3\n\nif number &gt; 0:\n    print(f\"{number} ist eine positive Zahl.\")\nelif number &lt; 0:\n    print(f\"{number} ist eine negative Zahl.\")\nelse:\n    print(f\"{number} ist null.\")\n\n-3 ist eine negative Zahl.\nErläuterung:\nVerschachtelte Bedingungsanweisungen:\n# Ein Alter in verschiedene Lebensphasen einordnen\nage = 25\n\nif age &lt; 13:\n    print(\"Kind\")\nelif age &lt; 18:\n    print(\"Teenager\")\nelse:\n    if age &lt; 65:\n        print(\"Erwachsener\")\n    else:\n        print(\"Senior\")\n\nErwachsener\nErläuterung:",
     "crumbs": [
       "Python",
       "<span class='chapter-number'>13</span>  <span class='chapter-title'>Kontrollstrukturen</span>"
@@ -553,7 +573,7 @@
     "href": "python/python-klassen.html",
     "title": "14  Klassen und Objekte",
     "section": "",
-    "text": "14.1 Einführung\nEine Klasse ist wie ein Bauplan oder eine Vorlage. Stellen Sie sich eine Klasse wie die Blaupause eines Hauses vor. Eine Blaupause beschreibt, wie das Haus aussehen soll – welche Räume es hat, wie groß sie sind, und so weiter. In ähnlicher Weise beschreibt eine Klasse, welche Daten (Eigenschaften) und Funktionen (Methoden) ein bestimmtes Objekt haben wird.\nEin Objekt ist eine konkrete Instanz einer Klasse. Wenn wir bei unserem Beispiel des Hauses bleiben, wäre ein Objekt ein tatsächliches Haus, das nach der Blaupause gebaut wurde. Jedes Haus, das nach derselben Blaupause gebaut wird, hat dieselben grundlegenden Eigenschaften, kann aber unterschiedliche Farben, Möbel oder Bewohner haben. In der Programmierung ist ein Objekt also ein spezifisches Exemplar einer Klasse mit eigenen, spezifischen Daten.\nWozu sind Klassen und Objekte nützlich:\nBetrachten wir eine einfache Klasse und ein Objekt, um das Konzept klarer zu machen:\n# Definiere eine einfache Klasse, die eine Person repräsentiert\nclass Person:\n    \"\"\"Eine Klasse, die eine Person mit Namen und Alter repräsentiert.\"\"\"\n\n    def __init__(self, name, age):\n        \"\"\"Initialisiere die Person mit Name und Alter.\"\"\"\n        self.name = name\n        self.age = age\n\n    def greet(self):\n        \"\"\"Gibt eine Begrüßung zurück.\"\"\"\n        return f\"Hallo, mein Name ist {self.name} und ich bin {self.age} Jahre alt.\"\n\n# Erstelle ein Objekt der Klasse Person\nperson1 = Person(\"Alice\", 30)\n\n# Verwende die Methode des Objekts\nprint(person1.greet())\n\nHallo, mein Name ist Alice und ich bin 30 Jahre alt.\nIn diesem Beispiel:",
+    "text": "14.1 Einführung\n⬇️ Jupyter Notebook herunterladen\nDie objektorientierte Programmierung (OOP) ist ein wichtiges Konzept in der Softwareentwicklung. Es hilft besonders dabei, große Codebasen für komplexe Data-Science-Projekte zu organisieren und zu verwalten.\nIn diesem Abschnitt lernen wir:\nEine Klasse ist wie ein Bauplan oder eine Vorlage. Stellen Sie sich eine Klasse wie die Blaupause eines Hauses vor. Eine Blaupause beschreibt, wie das Haus aussehen soll – welche Räume es hat, wie groß sie sind, und so weiter. In ähnlicher Weise beschreibt eine Klasse, welche Daten (Eigenschaften) und Funktionen (Methoden) ein bestimmtes Objekt haben wird.\nEin Objekt ist eine konkrete Instanz einer Klasse. Wenn wir bei unserem Beispiel des Hauses bleiben, wäre ein Objekt ein tatsächliches Haus, das nach der Blaupause gebaut wurde. Jedes Haus, das nach derselben Blaupause gebaut wird, hat dieselben grundlegenden Eigenschaften, kann aber unterschiedliche Farben, Möbel oder Bewohner haben. In der Programmierung ist ein Objekt also ein spezifisches Exemplar einer Klasse mit eigenen, spezifischen Daten.\nWozu sind Klassen und Objekte nützlich:\nBetrachten wir eine einfache Klasse und ein Objekt, um das Konzept klarer zu machen:\n# Definiere eine einfache Klasse, die eine Person repräsentiert\nclass Person:\n    \"\"\"Eine Klasse, die eine Person mit Namen und Alter repräsentiert.\"\"\"\n\n    def __init__(self, name, age):\n        \"\"\"Initialisiere die Person mit Name und Alter.\"\"\"\n        self.name = name\n        self.age = age\n\n    def greet(self):\n        \"\"\"Gibt eine Begrüßung zurück.\"\"\"\n        return f\"Hallo, mein Name ist {self.name} und ich bin {self.age} Jahre alt.\"\n\n# Erstelle ein Objekt der Klasse Person\nperson1 = Person(\"Alice\", 30)\n\n# Verwende die Methode des Objekts\nprint(person1.greet())\n\nHallo, mein Name ist Alice und ich bin 30 Jahre alt.\nIn diesem Beispiel:",
     "crumbs": [
       "Python",
       "<span class='chapter-number'>14</span>  <span class='chapter-title'>Klassen und Objekte</span>"
@@ -604,11 +624,21 @@
     ]
   },
   {
+    "objectID": "vscode/index.html",
+    "href": "vscode/index.html",
+    "title": "Visual Studio Code",
+    "section": "",
+    "text": "Visual Studio Code (VS Code) ist ein Open-Source-Editor, der von Microsoft entwickelt wurde.\n\n\n\n\n\n\nObwohl VS Code nahezu jede Programmieraufgabe bewältigen kann, ist es besonders in der Python-Community aufgrund seiner umfangreichen Python-spezifischen Funktionen und Erweiterungen beliebt.\n\n\n\nDie Wahl der richtigen Entwicklungsumgebung kann die Produktivität und Effizienz des Workflows erheblich beeinflussen. In den folgenden Abschnitten werden wir behandeln, wie man Visual Studio Code installiert und konfiguriert, um Ihren Entwicklungsworkflow zu optimieren.",
+    "crumbs": [
+      "Visual Studio Code"
+    ]
+  },
+  {
     "objectID": "vscode/visual-studio-code-installation.html",
     "href": "vscode/visual-studio-code-installation.html",
     "title": "15  VS Code Einführung",
     "section": "",
-    "text": "15.1 VS Code Installation in Windows\nDie Installation von VS Code unter Windows ist ein unkomplizierter Prozess, der in wenigen Schritten durchgeführt werden kann:",
+    "text": "15.1 VS Code Installation in Windows\nVisual Studio Code (VS Code) ist ein leistungsfähiger, Open-Source-Editor - d.h., dass der Quellcode, also die grundlegenden Anweisungen, die das Programm steuern, öffentlich zugänglich und frei verfügbar sind -, der von Microsoft entwickelt wurde. Er bietet eine Vielzahl von Funktionen, die ihn zu einem idealen Werkzeug für Data Science und KI-Einsteiger machen.\nDie Installation von VS Code unter Windows ist ein unkomplizierter Prozess, der in wenigen Schritten durchgeführt werden kann:",
     "crumbs": [
       "Visual Studio Code",
       "<span class='chapter-number'>15</span>  <span class='chapter-title'>VS Code Einführung</span>"
@@ -652,7 +682,7 @@
     "href": "vscode/visual-studio-code-basics.html",
     "title": "16  Hinweise zu VS Code",
     "section": "",
-    "text": "16.1 Dateien und Ordner in VS Code\nFür die effektive Nutzung von VS Code ist es wichtig, den Unterschied zwischen dem Öffnen einer Datei und dem Öffnen eines Ordners zu verstehen.",
+    "text": "16.1 Dateien und Ordner in VS Code\nDieser Abschnitt enthält einige Tipps, die den Einstieg in VS Code erleichtern sollen.\nFür die effektive Nutzung von VS Code ist es wichtig, den Unterschied zwischen dem Öffnen einer Datei und dem Öffnen eines Ordners zu verstehen.",
     "crumbs": [
       "Visual Studio Code",
       "<span class='chapter-number'>16</span>  <span class='chapter-title'>Hinweise zu VS Code</span>"
@@ -681,11 +711,21 @@
     ]
   },
   {
+    "objectID": "daten/index.html",
+    "href": "daten/index.html",
+    "title": "Daten & Datenbanken",
+    "section": "",
+    "text": "Daten sind die Grundlage der Datenwissenschaft. Sie ermöglichen es uns, Erkenntnisse zu gewinnen, Entscheidungen zu treffen und Vorhersagen zu treffen. Daten können in verschiedenen Formen vorliegen und werden in der Regel in drei Hauptkategorien eingeteilt.\n\nStrukturierte Daten sind in einem festen Format organisiert und lassen sich leicht in Tabellenform darstellen (bspw. CSV-Dateien).\nTeilweise strukturierte Daten besitzen keine feste Struktur, weisen jedoch eine gewisse Organisation auf (bspw. JSON).\nUnstrukturierte Daten haben keine definierte Struktur und umfassen oft Multimedia-Inhalte (bspw. Textdateien, Bilder, Videos, Audiodateien). Sie können in verschiedenen Formaten vorliegen und erfordern spezielle Techniken zur Analyse.\n\nStrukturierte Daten können in relationalen Datenbanken wie MySQL und PostgreSQL gespeichert, während unstrukturierte und teilweise strukturierte Daten häufig in NoSQL-Datenbanken wie MongoDB verwaltet werden. In den folgenden Kapiteln werden diese Themen im Detail behandelt.",
+    "crumbs": [
+      "Daten & Datenbanken"
+    ]
+  },
+  {
     "objectID": "daten/csv.html",
     "href": "daten/csv.html",
     "title": "17  CSV-Dateien",
     "section": "",
-    "text": "17.1 Excel und Google Sheets\nSowohl Microsoft Excel als auch Google Sheets bieten Funktionen zum Exportieren von Daten in das CSV-Format.\nDiese Konvertierungen ermöglichen eine nahtlose Integration von Daten aus Tabellenkalkulationen in verschiedene Datenanalyse-Workflows, insbesondere in Python-basierte Projekte.",
+    "text": "17.1 Excel und Google Sheets\nCSV-Dateien (Comma-Separated Values) sind ein weit verbreitetes Format zur Speicherung tabellarischer Daten. Sie zeichnen sich durch ihre Einfachheit und Plattformunabhängigkeit aus, was sie zu einem beliebten Austauschformat für Daten macht.\nBeispiel einer Tabelle:\nStruktur einer CSV-Datei:\nHier die tabellarischen Beispieldaten als CSV-Datei:\nIn diesem Beispiel:\nDiese einfache Struktur ermöglicht es, Daten leicht zu organisieren und in verschiedenen Anwendungen zu verwenden, von Tabellenkalkulationen bis hin zu Datenanalyse-Tools.\nSowohl Microsoft Excel als auch Google Sheets bieten Funktionen zum Exportieren von Daten in das CSV-Format.\nDiese Konvertierungen ermöglichen eine nahtlose Integration von Daten aus Tabellenkalkulationen in verschiedene Datenanalyse-Workflows, insbesondere in Python-basierte Projekte.",
     "crumbs": [
       "Daten & Datenbanken",
       "<span class='chapter-number'>17</span>  <span class='chapter-title'>CSV</span>"
@@ -718,7 +758,7 @@
     "href": "daten/json.html",
     "title": "18  JSON-Dateien",
     "section": "",
-    "text": "18.1 Schreiben und Lesen einer JSON-Datei\nDas Bearbeiten von Daten im JSON-Format erfolgt mithilfe der json-Bibliothek.",
+    "text": "18.1 Schreiben und Lesen einer JSON-Datei\nJSON (JavaScript Object Notation) ist ein weit verbreitetes, textbasiertes Datenformat, das sich durch seine einfache Lesbarkeit und Schreibbarkeit auszeichnet. Es eignet sich hervorragend für den Datenaustausch zwischen verschiedenen Systemen und Programmiersprachen.\nJSON-Daten bestehen aus Schlüssel-Wert-Paaren und unterstützen folgende Datentypen:\nBeispiel einer JSON-Datei:\nIn diesem Beispiel enthält die JSON-Datei ein Objekt mit dem Schlüssel “Personen”, der eine Liste von Objekten speichert. Jedes dieser Objekte repräsentiert eine Person mit den Attributen “Name”, “Alter” und “Stadt”.\nDas Bearbeiten von Daten im JSON-Format erfolgt mithilfe der json-Bibliothek.",
     "crumbs": [
       "Daten & Datenbanken",
       "<span class='chapter-number'>18</span>  <span class='chapter-title'>JSON</span>"
@@ -740,7 +780,7 @@
     "href": "daten/datenbanken.html",
     "title": "19  Datenbanken",
     "section": "",
-    "text": "19.1 Relationale Datenbanken\nRelationale Datenbanken bilden das Fundament vieler moderner Datenbankanwendungen. Ihre Stärke liegt in der Fähigkeit, Daten in strukturierten Tabellen zu organisieren und effizient zu verwalten.\nEin Datenbankmanagementsystem (DBMS) ist die Software, die die Erstellung, Verwaltung und Nutzung von Datenbanken ermöglicht. Ein relationales DBMS (RDBMS) bietet zusätzliche Funktionen wie:\nZu den bekannten RDBMS gehören MySQL, PostgreSQL und SQLite.\nEinsatzgebiete relationaler Datenbanken sind vielfältig:\nDie Struktur, Flexibilität und Zuverlässigkeit relationaler Datenbanken machen sie zu einem unverzichtbaren Werkzeug in der modernen Datenverwaltung und -analyse.",
+    "text": "19.1 Relationale Datenbanken\nDatenbanken bieten leistungsstarke Mittel zur Speicherung, Verwaltung und Abfrage großer Datenmengen, die für Analyse und Forschung genutzt werden können.\nSie bieten mehrere Vorteile gegenüber herkömmlichen Dateiformaten wie CSV oder Excel-Tabellen:\nEs gibt verschiedene Arten von Datenbanken, die je nach Anwendungsfall und Datenstruktur verwendet werden:\nRelationale Datenbanken bilden das Fundament vieler moderner Datenbankanwendungen. Ihre Stärke liegt in der Fähigkeit, Daten in strukturierten Tabellen zu organisieren und effizient zu verwalten.\nEin Datenbankmanagementsystem (DBMS) ist die Software, die die Erstellung, Verwaltung und Nutzung von Datenbanken ermöglicht. Ein relationales DBMS (RDBMS) bietet zusätzliche Funktionen wie:\nZu den bekannten RDBMS gehören MySQL, PostgreSQL und SQLite.\nEinsatzgebiete relationaler Datenbanken sind vielfältig:\nDie Struktur, Flexibilität und Zuverlässigkeit relationaler Datenbanken machen sie zu einem unverzichtbaren Werkzeug in der modernen Datenverwaltung und -analyse.",
     "crumbs": [
       "Daten & Datenbanken",
       "<span class='chapter-number'>19</span>  <span class='chapter-title'>Datenbanken</span>"
@@ -773,7 +813,7 @@
     "href": "daten/postgresql.html",
     "title": "20  PostgreSQL",
     "section": "",
-    "text": "20.1 PostgreSQL-Installation in Windows\nDie folgenden Schritte beschreiben die Installation des relationalen Datenbankmanagementsystems (RDBMS) PostgreSQL und des grafischen Verwaltungstools pgAdmin 4:",
+    "text": "20.1 PostgreSQL-Installation in Windows\nPostgreSQL, oft ausgesprochen als “Post-gress-Q-L”, ist ein relationales Datenbankmanagementsystem (RDBMS), das für seine Robustheit und seine Fähigkeiten zur Verwaltung komplexer Datenoperationen bekannt ist.\npgAdmin4 ist das offizielle grafische Verwaltungstool für PostgreSQL und bietet eine benutzerfreundliche Oberfläche für die Datenbankverwaltung. Es wird als Teil der PostgreSQL-Installation installiert.\nDie folgenden Schritte beschreiben die Installation des relationalen Datenbankmanagementsystems (RDBMS) PostgreSQL und des grafischen Verwaltungstools pgAdmin 4:",
     "crumbs": [
       "Daten & Datenbanken",
       "<span class='chapter-number'>20</span>  <span class='chapter-title'>PostgreSQL</span>"
@@ -828,7 +868,7 @@
     "href": "daten/mysql.html",
     "title": "21  MySQL",
     "section": "",
-    "text": "21.1 MySQL-Installation in Windows\nFolgende Schritte führen durch die Installation von MySQL und MySQL Workbench:",
+    "text": "21.1 MySQL-Installation in Windows\nMySQL, das sowohl als “My S-Q-L” als auch als “My Sequel” ausgesprochen wird, ist ein relationales Datenbankverwaltungssystem (RDBMS), das zur Verwaltung von Daten in relationalen Datenbanken dient. Es verwendet die Structured Query Language (SQL) für verschiedene Aufgaben wie Datenverwaltung, -manipulation und -abfrage.\nMySQL Workbench bietet eine grafische Oberfläche für Datenbankverwaltung und SQL-Entwicklung. Es integriert visuelle Werkzeuge für Datenmodellierung, SQL-Entwicklung und umfassende Datenbankverwaltung.\nHauptkomponenten der MySQL Workbench:\nFolgende Schritte führen durch die Installation von MySQL und MySQL Workbench:",
     "crumbs": [
       "Daten & Datenbanken",
       "<span class='chapter-number'>21</span>  <span class='chapter-title'>MySQL</span>"
@@ -883,7 +923,7 @@
     "href": "daten/mongodb.html",
     "title": "22  MongoDB",
     "section": "",
-    "text": "22.1 MongoDB-Installation in Windows\nIn diesem Abschnitt wird die Installation der NoSQL-Datenbank MongoDB und der MongoDB Shell (mongosh) behandelt.",
+    "text": "22.1 MongoDB-Installation in Windows\nMongoDB ist eine NoSQL-Datenbank, die für ihre Flexibilität und Skalierbarkeit bekannt ist. Sie speichert Daten in JSON-ähnlichen Dokumenten, was es einfach macht, komplexe Datenstrukturen zu handhaben.\nBeispiel eines MongoDB-Dokuments:\nDiese Strukturierung ermöglicht es, hierarchische Beziehungen und andere komplexe Datentypen ohne die Einschränkungen eines starren, tabellenbasierten Schemas darzustellen. Dadurch können Änderungen am Datenmodell schneller und effizienter umgesetzt werden.\nHauptmerkmale von MongoDB:\nUm mit MongoDB zu beginnen, muss zunächst der MongoDB-Dienst gestartet und dann die MongoDB Shell geöffnet werden. Sobald die Shell geöffnet ist, können grundlegende Befehle ausgeführt werden, um Datenbanken und Sammlungen zu erstellen, Daten einzufügen und Abfragen auszuführen.\nIn diesem Abschnitt wird die Installation der NoSQL-Datenbank MongoDB und der MongoDB Shell (mongosh) behandelt.",
     "crumbs": [
       "Daten & Datenbanken",
       "<span class='chapter-number'>22</span>  <span class='chapter-title'>MongoDB</span>"
@@ -956,11 +996,21 @@
     ]
   },
   {
+    "objectID": "github/index.html",
+    "href": "github/index.html",
+    "title": "GitHub",
+    "section": "",
+    "text": "GitHub bietet Hosting für Softwareentwicklungsprojekte, die Git, ein Versionskontrollsystem, verwenden.\n\n\n\n\nGitHub ist wie ein kollaborativer Arbeitsbereich, in dem mehrere Entwickler ihre Projekte speichern, verwalten und Änderungen verfolgen können, ähnlich wie eine Online-Bibliothek digitaler Projekte.\nEs ist eine Plattform, die es Entwicklern ermöglicht, gemeinsam an Softwareprojekten zu arbeiten, indem sie Git, ein verteiltes Versionskontrollsystem, nutzen. Mit GitHub können mehrere Entwickler gleichzeitig an verschiedenen Teilen eines Projekts arbeiten, Änderungen verfolgen und den Projektverlauf verwalten. Dies macht die Zusammenarbeit effizienter und die Verwaltung von Codeänderungen transparenter.\nZusätzlich zu den grundlegenden Funktionen der Versionskontrolle bietet GitHub zahlreiche Tools und Features, die die Softwareentwicklung erleichtern. GitHub ist daher nicht nur ein Speicherort für Code, sondern ein umfassendes Werkzeug für die kollaborative Entwicklung und das Projektmanagement.",
+    "crumbs": [
+      "GitHub"
+    ]
+  },
+  {
     "objectID": "github/github-git.html",
     "href": "github/github-git.html",
     "title": "23  Git",
     "section": "",
-    "text": "23.1 Git-Installation in Windows\nFür die Installation von Git unter Windows sind folgende Schritte durchzuführen:\nNach erfolgreicher Installation kann mit dem Befehl git --version überprüft werden, ob Git korrekt installiert wurde und welche Version nun auf dem System verfügbar ist.",
+    "text": "23.1 Git-Installation in Windows\nGit ist ein verteiltes Versionskontrollsystem, entwickelt von Linus Torvalds, dem Schöpfer von Linux. Es ermöglicht die Verfolgung von Codeänderungen, die Erstellung und Zusammenführung verschiedener Entwicklungszweige sowie die Wiederherstellung früherer Projektversionen.\nDer Einsatz von Git erleichtert die Projektzusammenarbeit erheblich. Es ermöglicht mehreren Personen, simultan an verschiedenen Codebereichen zu arbeiten, ohne dass ihre Änderungen miteinander in Konflikt geraten.\nFür ein interaktives Lernerlebnis zur Verwendung von Git bietet sich die Webseite “Learn Git Branching” an.\nUm zu prüfen, ob Git bereits auf dem System installiert ist, kann folgender Befehl im Terminal (Mac) oder der Eingabeaufforderung (Windows) eingegeben werden:\nErscheint eine Versionsnummer, ist Git bereits installiert. Andernfalls sind die nachfolgenden Installationsanweisungen zu befolgen.\nFür die Installation von Git unter Windows sind folgende Schritte durchzuführen:\nNach erfolgreicher Installation kann mit dem Befehl git --version überprüft werden, ob Git korrekt installiert wurde und welche Version nun auf dem System verfügbar ist.",
     "crumbs": [
       "GitHub",
       "<span class='chapter-number'>23</span>  <span class='chapter-title'>Git</span>"
@@ -1026,7 +1076,7 @@
     "href": "github/github-repo.html",
     "title": "25  GitHub Repos",
     "section": "",
-    "text": "25.1 Erstellung eines Repo\nGitHub-Repositories können mit essentiellen Dateien wie README, .gitignore und einer Lizenz initialisiert werden, um dem Projekt von Anfang an Struktur und Klarheit zu verleihen.\nFolgende Schritte führen durch den Prozess der Repository-Erstellung:",
+    "text": "25.1 Erstellung eines Repo\nEin Repository (oft abgekürzt als “Repo”) auf GitHub dient als zentraler Speicherort für alle Dateien eines Projekts und deren Versionsverlauf.\nRepositories ermöglichen die Organisation von Arbeit, Zusammenarbeit mit anderen, Verfolgung von Codeänderungen und Verwaltung verschiedener Projektversionen.\nBei der Arbeit mit GitHub gibt es zwei Hauptarten von Repositories:\nEin gut strukturiertes Repository erleichtert die Navigation, das Verständnis und die Zusammenarbeit im Projekt. Hier sind die wichtigsten Elemente:\nGitHub-Repositories können mit essentiellen Dateien wie README, .gitignore und einer Lizenz initialisiert werden, um dem Projekt von Anfang an Struktur und Klarheit zu verleihen.\nFolgende Schritte führen durch den Prozess der Repository-Erstellung:",
     "crumbs": [
       "GitHub",
       "<span class='chapter-number'>25</span>  <span class='chapter-title'>GitHub Repos</span>"
@@ -1070,7 +1120,7 @@
     "href": "github/github-organization.html",
     "title": "26  GitHub Organizations",
     "section": "",
-    "text": "26.1 Grundlagen von GitHub-Organizations\nEine GitHub-Organization dient als zentraler Knotenpunkt für die Zusammenarbeit von Teams. Sie fungiert als Container für gemeinsame Arbeit und verleiht den Projekten einen einzigartigen Namen sowie eine eigene Marke.",
+    "text": "26.1 Grundlagen von GitHub-Organizations\nGitHub-Organizations sind gemeinsame Konten, die es Unternehmen und Open-Source-Projekten ermöglichen, über mehrere Projekte hinweg zusammenzuarbeiten. Sie bieten fortschrittliche Sicherheits- und Verwaltungsfunktionen für eine effiziente Teamarbeit.\nEine GitHub-Organization dient als zentraler Knotenpunkt für die Zusammenarbeit von Teams. Sie fungiert als Container für gemeinsame Arbeit und verleiht den Projekten einen einzigartigen Namen sowie eine eigene Marke.",
     "crumbs": [
       "GitHub",
       "<span class='chapter-number'>26</span>  <span class='chapter-title'>GitHub Organizations</span>"
@@ -1114,7 +1164,7 @@
     "href": "github/github-projects.html",
     "title": "27  GitHub Projects",
     "section": "",
-    "text": "27.1 Ein GitHub-Projekt erstellen",
+    "text": "27.1 Ein GitHub-Projekt erstellen\nGitHub-Projects ist eine leistungsstarke Funktion zur Organisation und Verfolgung der Arbeit an Repositories. Es bietet Kanban-Boards zur effizienten Verwaltung von Aufgaben und Workflows.\nMit GitHub-Projects lässt sich die Arbeit durch die Erstellung von Projektboards planen und verwalten. Diese Boards enthalten Issues, Pull Requests und Notizen, die als Karten in Spalten organisiert werden.",
     "crumbs": [
       "GitHub",
       "<span class='chapter-number'>27</span>  <span class='chapter-title'>GitHub Projects</span>"
@@ -1151,56 +1201,6 @@
     "crumbs": [
       "GitHub",
       "<span class='chapter-number'>27</span>  <span class='chapter-title'>GitHub Projects</span>"
-    ]
-  },
-  {
-    "objectID": "erste-schritte/index.html",
-    "href": "erste-schritte/index.html",
-    "title": "Erste Schritte",
-    "section": "",
-    "text": "In diesem ersten Abschnitt werden wir eine grundlegende Arbeitsumgebung einrichten, die für jedes datenbezogene Vorhaben unerlässlich ist.\nWir werden:\n\nDie Befehlszeile des Computers nutzen.\nPython zum ersten Mal einrichten.\nDie Anaconda-Distribution (ein Data-Science-Softwarepaket) verwenden.\nJupyter Notebook, ein leistungsstarkes Werkzeug zur interaktiven Datenexploration, nutzen.",
-    "crumbs": [
-      "Erste Schritte"
-    ]
-  },
-  {
-    "objectID": "python/index.html",
-    "href": "python/index.html",
-    "title": "Python",
-    "section": "",
-    "text": "Python ist eine objektorientierte Programmiersprache, was bedeutet, dass es Daten als Objekte darstellt, die sowohl Informationen als auch Funktionalität enthalten.\nEin wichtiges Merkmal von Python ist, dass es interpretiert und nicht kompiliert wird. Der Interpreter führt den Code Zeile für Zeile aus, was besonders vorteilhaft für Aufgaben wie Datenanalyse und die Erstellung interaktiver, ausführbarer Dokumente wie Jupyter-Notebooks ist.\n\n\n\n\n\n\nPython ist eine interpretierte Sprache, bei der der Interpreter ein Programm durch die Ausführung einer Anweisung nach der anderen ausführt.\n\n\n\nÜber diese Kernfunktionalität hinaus bietet Python ein großes Ökosystem an Drittanbieter-Tools und -Modulen, wie das Jupyter-Notebook, die spezialisierte Funktionen für die Datenwissenschaft bereitstellen.",
-    "crumbs": [
-      "Python"
-    ]
-  },
-  {
-    "objectID": "vscode/index.html",
-    "href": "vscode/index.html",
-    "title": "Visual Studio Code",
-    "section": "",
-    "text": "Visual Studio Code (VS Code) ist ein Open-Source-Editor, der von Microsoft entwickelt wurde.\n\n\n\n\n\n\nObwohl VS Code nahezu jede Programmieraufgabe bewältigen kann, ist es besonders in der Python-Community aufgrund seiner umfangreichen Python-spezifischen Funktionen und Erweiterungen beliebt.\n\n\n\nDie Wahl der richtigen Entwicklungsumgebung kann die Produktivität und Effizienz des Workflows erheblich beeinflussen. In den folgenden Abschnitten werden wir behandeln, wie man Visual Studio Code installiert und konfiguriert, um Ihren Entwicklungsworkflow zu optimieren.",
-    "crumbs": [
-      "Visual Studio Code"
-    ]
-  },
-  {
-    "objectID": "daten/index.html",
-    "href": "daten/index.html",
-    "title": "Daten & Datenbanken",
-    "section": "",
-    "text": "Daten sind die Grundlage der Datenwissenschaft. Sie ermöglichen es uns, Erkenntnisse zu gewinnen, Entscheidungen zu treffen und Vorhersagen zu treffen. Daten können in verschiedenen Formen vorliegen und werden in der Regel in drei Hauptkategorien eingeteilt.\n\nStrukturierte Daten sind in einem festen Format organisiert und lassen sich leicht in Tabellenform darstellen (bspw. CSV-Dateien).\nTeilweise strukturierte Daten besitzen keine feste Struktur, weisen jedoch eine gewisse Organisation auf (bspw. JSON).\nUnstrukturierte Daten haben keine definierte Struktur und umfassen oft Multimedia-Inhalte (bspw. Textdateien, Bilder, Videos, Audiodateien). Sie können in verschiedenen Formaten vorliegen und erfordern spezielle Techniken zur Analyse.\n\nStrukturierte Daten können in relationalen Datenbanken wie MySQL und PostgreSQL gespeichert, während unstrukturierte und teilweise strukturierte Daten häufig in NoSQL-Datenbanken wie MongoDB verwaltet werden. In den folgenden Kapiteln werden diese Themen im Detail behandelt.",
-    "crumbs": [
-      "Daten & Datenbanken"
-    ]
-  },
-  {
-    "objectID": "github/index.html",
-    "href": "github/index.html",
-    "title": "GitHub",
-    "section": "",
-    "text": "GitHub bietet Hosting für Softwareentwicklungsprojekte, die Git, ein Versionskontrollsystem, verwenden.\n\n\n\n\nGitHub ist wie ein kollaborativer Arbeitsbereich, in dem mehrere Entwickler ihre Projekte speichern, verwalten und Änderungen verfolgen können, ähnlich wie eine Online-Bibliothek digitaler Projekte.\nEs ist eine Plattform, die es Entwicklern ermöglicht, gemeinsam an Softwareprojekten zu arbeiten, indem sie Git, ein verteiltes Versionskontrollsystem, nutzen. Mit GitHub können mehrere Entwickler gleichzeitig an verschiedenen Teilen eines Projekts arbeiten, Änderungen verfolgen und den Projektverlauf verwalten. Dies macht die Zusammenarbeit effizienter und die Verwaltung von Codeänderungen transparenter.\nZusätzlich zu den grundlegenden Funktionen der Versionskontrolle bietet GitHub zahlreiche Tools und Features, die die Softwareentwicklung erleichtern. GitHub ist daher nicht nur ein Speicherort für Code, sondern ein umfassendes Werkzeug für die kollaborative Entwicklung und das Projektmanagement.",
-    "crumbs": [
-      "GitHub"
     ]
   }
 ]
