@@ -1,0 +1,1297 @@
+# Kapitel: erste-schritte
+
+# Datei: projektumgebung.qmd
+# Pfad: erste-schritte/projektumgebung.qmd
+
+# Projektumgebung 
+
+Das systematische Anlegen von Verzeichnissen und Dateien ist eine wichtige Grundlage für erfolgreiche Datenprojekte. Wir erstellen daher zuerst einen Ordner namens "toolkit-lab" und legen darin die Unterordner "code" für unsere Code-Dateien und "data" zum Speichern von Datensätzen an, um unser Projekt strukturiert zu halten.
+
+Unsere Ordnerstruktur kann wie folgt dargestellt werden:
+
+::: {#fig-ordnerstruktur layout-ncol=2 layout-valign="bottom"}
+
+![Visuelle Darstellung](../images/ordner.png){#fig-ordner width=35%}
+
+![Baumstruktur](../images/ordner2.png){#fig-ordner2 width=45%}
+
+Darstellung der Ordnerstruktur
+
+:::
+
+Für die Darstellung der Ordnerstruktur verwenden wir typischerweise eine **Baumstruktur**, wie in @fig-ordner2 dargestellt. Diese kann mit Hilfe unterschiedlicher Zeichen dargestellt und auch wie folgt erstellt werden: 
+
+```plaintext
+toolkit-lab/
+- code/
+- data/
+```
+
+Anstatt eine grafische Benutzeroberfläche wie den [Windows-Explorer](https://support.microsoft.com/de-de/windows/suchen-und-%C3%B6ffnen-von-explorer-ef370130-1cca-9dc5-e0df-2f7416fe1cb1) oder den [macOS Finder](https://support.apple.com/de-ch/guide/mac-help/mchlp2605/mac) zu verwenden, werden wir die **Befehlszeile** nutzen, um die Ordner einzurichten. Die Befehlszeile ist ein leistungsstarkes Werkzeug zum Einrichten unserer Arbeitsumgebung. Sie ermöglicht eine Kommunikation mit dem Betriebssystem über textbasierte Eingaben.
+
+:::{.callout-note appearance="minimal"}
+Die Befehlszeile eröffnet eine neue Ebene der Interaktion mit unserem Computer. Viele Aufgaben können damit effizienter erledigt werden als mit einer grafischen Benutzeroberfläche.
+:::
+
+Weitere gängige Bezeichnung für die Befehlszeile sind:
+
+- Kommandozeile, 
+- Befehlszeilenschnittstelle,
+- Command Line Interface (CLI). 
+
+In Windows ist die Bezeichnung für das entsprechende Programm *Eingabeaufforderung* (siehe @fig-eingabe), auf dem Mac heißt es *Terminal* (siehe @fig-terminal).
+
+::: {#fig-cli layout-ncol=2 layout-valign="bottom"}
+
+![Eingabeaufforderung in Windows](../images/eingabe.png){#fig-eingabe width="70%" }
+
+![Terminal auf dem Mac](../images/terminal.png){#fig-terminal width="100%"}
+
+Kommandozeilen 
+
+:::
+
+
+Wenn wir von der Befehlszeile sprechen, ist es wichtig, auch das Konzept der "**Shell**" zu verstehen. Die Shell ist ein Programm, das als Vermittler zwischen uns und dem Betriebssystem fungiert. Sie interpretiert unsere Eingaben und übersetzt sie in Anweisungen, die das System ausführen kann.
+
+Die Kommandozeile, die wir sehen und in die wir Befehle eingeben, ist die Schnittstelle zur Shell. Sie ist sozusagen das "Blatt Papier", auf dem wir unsere Anweisungen schreiben, während die Shell der "Übersetzer" ist, der diese Anweisungen versteht und umsetzt.
+
+
+Auf Windows-Systemen:
+
+- Das Standard-Programm für die Kommandozeile heißt "Eingabeaufforderung" (Command Prompt).
+- Es verwendet standardmäßig die cmd.exe als Shell.
+- In neueren Windows-Versionen gibt es auch die leistungsfähigere PowerShell als Alternative.
+
+Auf Mac-Systemen:
+
+- Das Programm für die Kommandozeile heißt "Terminal".
+- Eine Alternative zum Terminal ist die Open-Source-Software [iTerm2](https://iterm2.com/)
+- In neueren macOS-Versionen ist die Standard-Shell "zsh" (Z Shell), vor September 2019 war es "bash" (Bourne Again Shell).
+
+Trotz dieser Unterschiede ist das grundlegende Konzept auf beiden Systemen gleich: Wir geben Befehle ein, und die Shell interpretiert und führt sie aus.
+
+Die Verwendung der Kommandozeile und das Verständnis der Shell-Umgebung sind wichtige Fähigkeiten in der Datenanalyse und Softwareentwicklung. Sie ermöglichen uns eine präzisere Kontrolle über unser System und sind besonders nützlich für Automatisierungen.
+
+In den folgenden Abschnitten werden wir lernen, wie wir grundlegende Befehle nutzen können, um unsere Projektstruktur einzurichten und zu verwalten.
+
+
+## Projektumgebung in Windows
+
+### Eingabeaufforderung
+
+Hier die Schritte, um die Ordner mit der Windows-Eingabeaufforderung ("Command Prompt" bzw. "cmd") zu erstellen.
+
+1. In dem Windows-Suchfenster "Eingabeaufforderung" eingeben und dann mit rechtem Mausklick auf das Symbol des Eingabeaufforderungs-Programms klicken. "Als Adminsitrator ausführen" auswählen. Falls die Frage erscheint: "Möchten Sie zulassen, dass durch diese App Änderungen an Ihrem Gerät vorgenommen werden?" auf Ja klicken.
+
+2. Wenn die Eingabeaufforderung geöffnet wird, erscheint eventuell zunächst ein Windows-Verzeichnis wie bspw "C:\\Windows\\System32". Wir müssen daher mit `cd` (change directory)zu unserem Benutzerkonto wechseln. Den Befehl unten eingeben und Eingabetaste drücken: 
+
+    ```bash
+    cd %userprofile%
+    ```
+
+    %userprofile% ist eine sogenannte Umgebungsvariable in Windows. Sie repräsentiert den Pfad zum Profilordner des aktuell angemeldeten Benutzers. 
+
+3. Nun sollte das angezeigte Verzeichnis das Home-Verzeichnis sein. In meinem Fall lautet der Pfad "C:\\Users\\jankirenz", da mein Benutzername jankirenz heißt.
+
+    ![Eingabeaufforderung in Windows](../images/eingabe.png){#fig-eingabe-2 width="100%" }
+
+
+2. Wir erstellen nun mit `mkdir` (make directory) einen neuen Ordner namens "toolkit-lab" in dem Home-Verzeichnis. Befehl eingeben und Eingabetaste drücken (falls hier der Hinweis erscheint, dass Sie dazu keine Berechtigung haben, haben Sie die Eingabeaufforderung in Schritt 1 eventuell nicht als Administrator gestartet):
+
+    ```bash
+    mkdir toolkit-lab
+    ```
+
+    ![Erstellung des Ordners toolkit-lab](../images/eingabe-mkdir-toolkit-lab.png){#fig-eingabe-mkdir-toolkit width="100%" }
+
+
+
+3. Damit wir in dem neuen Ordner "toolkit-lab" die beiden Unterordner anlegen können, müssen wir zuerst in den Ordner navigieren. Mit `cd` (change directory) können wir in das Verzeichnis "toolkit-lab" navigieren:
+
+    ```bash
+    cd toolkit-lab
+    ```
+
+    ![Wechseln in den Ordner toolkit-lab](../images/eingabe-cd-toolkit-lab.png){#fig-eingabe-mkdir-toolkit width="100%" }
+
+
+4. Wir verwenden nun nochmals `mkdir` (make directory), um die Ordner `code` und `data` zu erstellen. 
+
+    ```bash
+    mkdir code data
+    ```
+
+    Dieser Befehl erzeugt beide Ordner gleichzeitig.
+
+    ![Wechseln in den Ordner toolkit-lab](../images/eingabe-mkdir-code-data.png){#fig-eingabe-mkdir-toolkit width="100%" }
+
+
+5. Mit dem Befehl `dir` (directory) können wir die Verzeichnisse in dem aktuellen Pfad anzeigen lassen. 
+
+    ```bash
+    dir
+    ```
+
+    Da wir uns in dem Ordner "toolkit-lab" befinden, werden di Ordner "code" und "data" angezeigt. 
+
+    ![Wechseln in den Ordner toolkit-lab](../images/eingabe-dir.png){#fig-eingabe-mkdir-toolkit width="100%" }
+
+
+6. Die Eingabeaufforderung kann nun geschlossen werden. `exit` eingegeben und Eingabetaste drücken. 
+
+    ```bash
+    exit
+    ```
+
+
+Wir haben damit ein Hauptverzeichnis `toolkit-lab` mit zwei Unterverzeichnissen eingerichtet: `code` für unsere Skripte und `data` zum Speichern von Datensätzen.
+
+### Explorer
+
+Damit wir die Ordner in dem Windows-Explorer anzeigen können, gehen wir wie folgt vor:
+
+1. In dem Windows-Suchfenster Explorer eingeben und das Programm anklicken.
+
+2. In der linken Menüleiste im Explorer auf "Dieser PC" klicken.
+
+3. "Lokaler Datenträger (C:)" auswählen.
+
+4. Users anklicken.
+
+5. Den eigenen Benutzernamen auswählen.
+
+6. Hier sollte nun der Ordner toolkit-lab erscheinen.
+
+## Projektumgebung auf Mac
+
+Hier die Schritte, um das Hauptverzeichnis und die Unterverzeichnisse mit dem Terminal (dies ist die Bezeichnung der Befehlszeile in macOS) in macOS zu erstellen.
+
+### Terminal öffnen
+
+1. Um das Terminal in macOS zu öffnen, nutzen wir die Spotlight-Suche. Wir öffnen diese mit der Tastenkombination `Command + Leertaste` (erst `Command` gedrückt halten und dann zusätzlich die `Leertaste` drücken).  
+
+    ![Tastenkombination für Spotlight-Suche](../images/keyboard.png){#fig-keyboard width="60%" .lightbox}
+
+
+2. In der Spotlight-Suche "Terminal" eingeben und Terminal-app anklicken. Nun sollte das Terminal sichtbar sein. 
+
+    ![Terminal auf dem Mac](../images/terminal.png){#fig-terminal3 width="60%"}
+
+
+3. Wir geben nun den Befehl `echo $SHELL` ein und bestätigen mit Eingabetaste um zu prüfen, welche Shell-Ausführung auf dem Gerät verwendet wird. Bis Oktober 2019 war bash (Bourne Again Shell) der Standard, danach hat Apple auf zsh umgestellt. 
+
+
+    ```bash
+    echo $SHELL
+    ```
+
+   :::{.callout-tip collapse="true" title="Erklärung der Befehle"}
+    - `echo`: Befehl, der Text auf der Konsole ausgibt.
+    - `$`: signalisiert der Shell, dass auf den Wert einer Variable zugegriffen werden soll. Der Name der entsprechenden Variable folgt direkt auf das `$`.
+    - `SHELL`: Dies ist eine Umgebungsvariable, die den Pfad zur aktuell verwendeten Shell speichert (z.B. /bin/bash, /bin/zsh).
+   :::
+
+    Wenn wir also $SHELL schreiben, sagt das der Shell: "Gib mir den Wert der Variable namens SHELL".
+
+    Ist die Ausgabe "/bin/zsh", wird bereits zsh verwendet. Wenn das Ergebnis "/bin/bash" ist, verwendet das Gerät derzeit noch bash. 
+
+    Falls aktuell noch bash verwendet wird, sollte zunächst auf zsh umgestellt werden:
+
+    a) Zuerst überprüfen, ob zsh bereits installiert ist:
+
+     ```bash
+    zsh --version
+     ```
+
+    Falls eine Version angezeigt wird, weiter mit c). Ansonsten zu Schritt b).
+
+    b) Falls zsh noch nicht installiert sein sollte, können die Apple Xcode Command Line Tools installiert werden, die zsh enthalten:
+
+
+    ```bash
+    xcode-select --install
+     ```
+
+    <!-- Falls der Befehl nicht ausgeführt werden kann, ist XCode auch [über den App-Store](https://apps.apple.com/de/app/xcode/id497799835?mt=12) erhältlich.  -->
+
+    c) Wenn zsh installiert ist, kann mit diesem Befehl direkt zu zsh gewechselt werden:
+
+    ```bash
+    chsh -s /bin/zsh
+    ```
+
+    Bei Bedarf Benutzerpasswort eingeben, wenn dazu aufgefordert wird. Dann das Terminal schließen und nochmals mit der Spotlight-Suche öffnen.
+
+    Hinweise zu dem Befehl: `chsh` ist der Befehl zum Ändern der Standard-Shell. Die Option `-s` bewirkt, dass die Shell für den aktuellen Benutzer geändert wird. Und /bin/zsh  ist der Pfad zur Z-Shell (zsh).
+
+
+### Terminal-Elemente
+
+Hier eine Erklärung zu den unterschiedlichen Elementen im Terminal, die in der zsh-Shell angezeigt werden:
+
+![Terminal mit zsh-Shell auf dem Mac](../images/terminal.png){#fig-terminal-zsh width="80%"}
+
+
+- *Benutzername*: Dieser steht ganz links in der ersten Zeile. In diesem Fall `jankirenz`. Es zeigt an, welcher Benutzer aktuell am System angemeldet ist.
+
+- *Hostname*: Der Hostname wird nach dem @-Symbol aufgeführt. Hier `kirenziMac`. Dies ist der Name des Computers, auf dem das Terminal läuft.  
+
+- *Aktuelles Verzeichnis (Pfad)*: Nach dem Hostnamen wird das Verzeichnis angezeigt, in welchem wir uns gerade befinden. In dem Bild isr das Tilde-Symbol `~` zu sehen. Dies ist ein Platzhalter und steht für das Home-Verzeichnis des aktuellen Benutzers. Der vollständige Pfad des Home-Verzeichnisses wäre in meinem Fall "/Users/jankirenz". Es setzt sich beim Mac immer aus dem Ordner "Users" und einem Unterordner, der die Bezeichnung des Benutzernamens hat, zusammen.    
+
+- *Prompt*: Das `%` Symbol am Ende der Zeile ist der sogenannte Prompt. Dieser signalisiert, dass das Terminal bereit ist, einen Befehl entgegenzunehmen.
+
+
+### Terminal-Befehle
+
+Als nächstes behandeln wie einige Terminal-Befehle.
+
+1. Zuerst verwenden wir den Befehl `pwd` (print working directory) und drücken die Eingabetaste, um den vollständigen Pfad des aktuellen Verzeichnisses anzuzeigen. 
+    
+    ```bash
+    pwd
+    ```
+
+    Wenn das Terminal gerade geöffnet wurde, sollte das aktuelle Verzeichnis das sogenannte Home-Verzeichnis sein (in meinem Fall lautet der Pfad "/Users/jankirenz", da mein Benutzername jankirenz heißt).
+
+2. Wir erstellen nun mit `mkdir` (make directory) einen neuen Ordner namens "toolkit-lab" in dem Home-Verzeichnis:
+
+    ```bash
+    mkdir toolkit-lab
+    ```
+
+3. Damit wir in dem neuen Ordner "toolkit-lab" die beiden Unterordner anlegen können, müssen wir zuerst in den Ordner navigieren. Mit `cd` (change directory) können wir in das Verzeichnis "toolkit-lab" navigieren:
+
+    ```bash
+    cd toolkit-lab
+    ```
+
+4. Wir verwenden nun nochmals `mkdir` (make directory), um die Ordner `code` und `data` zu erstellen. 
+
+    ```bash
+    mkdir code data
+    ```
+
+    Dieser Befehl erzeigt beide Ordner gleichzeitig.
+
+
+5. Mit dem Befehl `ls` (list) können wir die Verzeichnisse in dem aktuellen Pfad anzeigen lassen. 
+
+    ```bash
+    ls
+    ```
+
+    Da wir uns in dem Ordner "toolkit-lab" befinden, werden dir Ordner "code" und "data" angezeigt.  
+
+6. Das Terminal kann nun geschlossen werden.
+
+
+### Finder nutzen
+
+Um die Ordner auch im Finder anzeigen zu lassen, müssen wir zuerst eine Einstellung anpassen.
+
+1. Wir öffnen die Spotlight-Suche mit der Tastenkombination `Command + Leertaste`, geben Finder ein und wählen das Programm aus.  
+
+    ![Finder in Spotlight-Suche öffnen](../images/finder-spotlight.png){#fig-finder-spotlight width=50% fig-align="center"}
+
+
+2. In der oberen Mac-Menüleiste auf "Finder" gehen und auf Einstellungen klicken.  Finder Einstellungen ändern
+
+
+    ![Finder-Einstellungen](../images/finder-1.png){#fig-finder-einstellungen width=50%}
+
+3. In den Finder-Einstellungen auf "Seitenliste" klicken und den Benutzernamen auswählen. Damit wird dieser in der Seitenleiste des Finders angezeigt. Danach kann das Menü geschlossen werden (auf den roten Knopf oben links klicken).
+
+    ![Finder-Seitenleiste](../images/finder-2.png){#fig-finder-seitenleiste width=50%}
+
+
+4. In dem Finder-Fenster sehen wir in der linken Seitenleiste den Benutzername (in meinem Fall jankirenz). Wenn wir darauf klicken, sollte in dem Fenster rechts danaben der Ordner "toolkit-lab" angezeigt werden. Damit die Ansicht wie in dem Bild unten erscheint, muss in der oberen Taskleiste die sogenannte "Spaltenansicht" (Symbol mit drei Spalten) ausgewählt sein.  
+
+    ![Finder-Fenster](../images/finder-3.png){#fig-finder-fenster width=80%}
+
+Geschafft! Wir ein Hauptverzeichnis "toolkit-lab" mit zwei Unterverzeichnissen eingerichtet: "code" für unsere Code-Dateien und "data" zum Speichern von Datensätzen.
+
+# Datei: uv.qmd
+# Pfad: erste-schritte/uv.qmd
+
+# Python-Paketmanager uv
+
+uv repräsentiert die nächste Generation von Python-Paketmanagern. Als Alternative zu pip entwickelt, adressiert uv zentrale Herausforderungen in der modernen Python-Entwicklung: Geschwindigkeit, Zuverlässigkeit und reproduzierbare Entwicklungsumgebungen.
+
+### Was ist ein Paketmanager?
+
+Ein Paketmanager ist ein zentrales Werkzeug in der Softwareentwicklung. Er ermöglicht die automatische Installation, Aktualisierung und Verwaltung von Softwarepaketen und deren Abhängigkeiten. In der Python-Welt war pip lange Zeit der Standard-Paketmanager. uv bringt hier signifikante Verbesserungen:
+
+1. *Höhere Geschwindigkeit*: Die Installation von Paketen erfolgt deutlich schneller
+2. *Bessere Abhängigkeitsauflösung*: Konflikte zwischen verschiedenen Paketversionen werden effizienter gelöst
+3. *Modernes Caching*: Bereits heruntergeladene Pakete werden intelligent zwischengespeichert
+4. *Volle pip-Kompatibilität*: Bestehende Projekte können problemlos migriert werden
+
+## Installation von uv
+
+### Systemvoraussetzungen
+
+Vor der Installation sollten folgende Voraussetzungen erfüllt sein:
+
+- Python 3.7 oder höher
+- Internetverbindung für den Download
+- Ausreichende Berechtigungen im System
+
+### Installationsschritte
+
+1. Öffnen der Kommandozeile:
+   - Windows: PowerShell oder Anaconda Prompt
+   - macOS/Linux: Terminal
+
+2. Installation via pip:
+```bash
+pip install uv
+```
+
+3. Überprüfung der Installation:
+```bash
+uv --version
+```
+
+## Virtuelle Umgebungen mit .venv
+
+### Bedeutung virtueller Umgebungen
+
+Virtuelle Umgebungen sind isolierte Python-Installationen. Sie verhindern Konflikte zwischen verschiedenen Projekten und deren Abhängigkeiten. Der Name `.venv` hat sich als Standard etabliert:
+
+1. *IDE-Integration*: Entwicklungsumgebungen wie PyCharm oder VSCode erkennen `.venv` automatisch
+2. *Versionskontrolle*: Der Name ist in Standard-.gitignore-Dateien bereits enthalten
+3. *Teamarbeit*: Einheitliche Benennung erleichtert die Zusammenarbeit
+
+### Erstellen einer virtuellen Umgebung
+
+```bash
+# Im Projektverzeichnis
+uv venv .venv
+```
+
+### Aktivierung der Umgebung
+
+Windows:
+```bash
+.venv\Scripts\activate
+```
+
+macOS/Linux:
+```bash
+source .venv/bin/activate
+```
+
+## Das requirements.in-Konzept
+
+### Grundlegendes Verständnis
+
+`requirements.in` ist eine Datei, die direkte Projektabhängigkeiten definiert. Im Gegensatz zur bekannten `requirements.txt` enthält sie nur die explizit benötigten Pakete ohne Versionsdetails der Unterpakete.
+
+### Beispiel einer requirements.in
+
+```plaintext
+# KI und Machine Learning
+torch
+transformers
+datasets
+
+# Web-Interface
+streamlit
+
+# Datenverarbeitung
+pandas
+numpy
+```
+
+### Kompilierung zur requirements.txt
+
+Der Kompilierungsprozess erstellt eine detaillierte `requirements.txt`:
+
+```bash
+uv pip compile requirements.in -o requirements.txt
+```
+
+Dieser Befehl:
+- Analysiert alle Abhängigkeiten
+- Löst Versionskonflikte
+- Erstellt eine vollständige Liste aller benötigten Pakete
+
+## Praktische Projekteinrichtung
+
+### 1. Projektstruktur erstellen
+
+```bash
+# Projektordner erstellen
+mkdir mein-projekt
+cd mein-projekt
+
+# Virtuelle Umgebung erstellen und aktivieren
+uv venv .venv
+source .venv/bin/activate  # oder .venv\Scripts\activate unter Windows
+```
+
+### 2. Abhängigkeiten definieren
+
+Erstellen der `requirements.in`:
+```bash
+touch requirements.in  # unter Windows: type nul > requirements.in
+```
+
+Inhalt der `requirements.in`:
+```plaintext
+# Machine Learning Framework
+torch>=2.0.0
+transformers
+
+# Web Framework
+streamlit
+
+# Datenverarbeitung
+pandas
+numpy
+```
+
+### 3. Abhängigkeiten installieren
+
+```bash
+# Kompilieren der requirements.txt
+uv pip compile requirements.in -o requirements.txt
+
+# Installation aller Pakete
+uv pip install -r requirements.txt
+```
+
+## Wartung und Updates 
+
+### Regelmäßige Aktualisierungen
+
+```bash
+# Aktualisierung aller Pakete
+uv pip compile requirements.in -o requirements.txt --upgrade
+
+# Neuinstallation
+uv pip install -r requirements.txt
+```
+
+### Überprüfung der Installation
+
+```bash
+# Liste aller installierten Pakete
+uv pip freeze
+
+# Überprüfung spezifischer Versionen
+python -c "import torch; print(torch.__version__)"
+```
+
+::: {.callout-note}
+Regelmäßige Updates sind wichtig für die Sicherheit und Stabilität des Projekts. Dabei sollten die Änderungen immer in einer Testumgebung geprüft werden.
+:::
+
+## Fehlerbehebung und Best Practices
+
+### Häufige Probleme
+
+1. *Aktivierungsprobleme*:
+   - Überprüfung des Python-Interpreters
+   - Sicherstellung der korrekten Aktivierung
+
+2. *Installationsfehler*:
+   - Überprüfung der Internetverbindung
+   - Kontrolle der Systemberechtigungen
+   - Prüfung auf Konflikte zwischen Paketen
+
+### Best Practices
+
+1. *Projektorganisation*:
+   - Klare Verzeichnisstruktur
+   - Dokumentation der Abhängigkeiten
+   - Regelmäßige Backups
+
+2. *Versionskontrolle*:
+   - Einbindung in Git
+   - Dokumentation von Änderungen
+   - Regelmäßige Updates
+
+## Nächste Schritte
+
+Nach der erfolgreichen Einrichtung können folgende Schritte angegangen werden:
+
+1. Integration in die bevorzugte Entwicklungsumgebung
+2. Einrichtung der Projektstruktur
+3. Entwicklung erster Funktionalitäten
+
+::: {.callout-tip}
+Die sorgfältige Planung und Dokumentation der Projektstruktur zahlt sich in späteren Entwicklungsphasen aus.
+:::
+
+# Datei: markdown.qmd
+# Pfad: erste-schritte/markdown.qmd
+
+# Markdown 
+
+Markdown ist eine einfache Auszeichnungssprache (d.h. ein System zur Formatierung von Text), die entwickelt wurde, um leicht in HTML umgewandelt zu werden. Aufgrund ihrer Einfachheit und Vielseitigkeit wird sie häufig verwendet und eignet sich sehr gut für Dokumentationen, Berichte und die Aufzeichnung von Forschungsergebnissen.
+
+In der Datenwissenschaft findet Markdown breite Anwendung. Wir nutzen es nicht nur zur Dokumentation von Projekten, sondern auch zur Erstellung dynamischer Berichte. Diese Berichte verbinden nahtlos erklärenden Text mit den Ergebnissen von Datenanalysen, oft mithilfe von Werkzeugen wie Jupyter Notebooks.
+
+## Markdown in Jupyter Notebook 
+
+Um mit Markdown in Jupyter Notebook zu beginnen, folgen wir diesen Schritten:
+
+1. Wir erstellen ein neues Jupyter-Notebook, wie zuvor in diesem Leitfaden zu [Jupyter Notebook starten](jupyter-notebook#jupyter-notebook-erstellen.qmd).
+2. Wir benennen unser Notebook `hello-markdown.ipynb` und speichern es im Ordner `code`:
+   - Dazu navigieren wir zu "File > Save As..." und geben den Namen `hello-markdown` ein.
+3. Auf die erste Zelle klicken, so dass diese am linken Rand blau markiert erscheint.
+
+   ![Markierte Zelle in Jupyter Notebook](../images/jupyter-notebook-markiert.png){#fig-jupyter-notebook-markiert width="100%" }
+
+3. Wir ändern den Zelltyp der ersten Zelle mithilfe des Dropdown-Menüs in der Symbolleiste auf "Markdown".
+
+
+   ![Markdown in Dropdown-Menü auswählen](../images/jupyter-notebook-markiert-markdown.png){#fig-jupyter-notebook-markiert-markdown width="100%" }
+
+
+4. Nun kann Text in diese Zelle eingegeben werden. In diesem Beispiel fügen wir eine Überschrift in die Zelle ein. Dies wird in Markdown mit der Auszeichnung `#` erzielt.
+
+   ```markdown
+   # Dies ist eine Überschrift
+   ```
+
+   ![Markdown-Überschrift in Jupyter Notebook](../images/jupyter-notebook-h1.png){#fig-jupyter-notebook-h1 width="100%" }
+
+
+5. Um den Markdown-Text zu rendern (d.h. in HTML umzuwandeln), führen wir die markierte Zelle mit `Shift+Eingabetaste` aus oder nutzen den Run-Button (die Zelle muss dafür blau markiert sein). Dies überführt den "rohen" Markdown-Text in eine HTML-Ausgabe:
+
+   ![Markdown-Überschrift als HTML-Ausgabe in Jupyter Notebook](../images/jupyter-notebook-h1-rendered.png){#fig-jupyter-notebook-h1-rendered width="100%" }
+
+In dem folgenden Abschnitt behandelen wir einige nützliche Markdown-Formatierungsoptionen. 
+
+
+## Markdown-Basics
+
+### Überschriften
+
+Mit Überschriften strukturieren wir unser Dokument und schaffen eine Hierarchie der Abschnitte.
+
+```markdown
+# Hauptüberschrift (H1)
+## Unterüberschrift (H2)
+### Kleinere Unterüberschrift (H3)
+```
+
+### Listen
+
+Listen helfen uns, Informationen klar und prägnant zu organisieren.
+
+Geordnete Listen:
+
+```markdown
+1. Erster Punkt
+2. Zweiter Punkt
+```
+
+1. Erster Punkt
+2. Zweiter Punkt
+
+Ungeordnete Listen:
+
+```markdown
+- Aufzählungspunkt A
+- Aufzählungspunkt B
+```
+
+- Aufzählungspunkt A
+- Aufzählungspunkt B
+
+### Hervorhebungen
+
+Durch Hervorhebungen können wir wichtige Punkte betonen. Dafür können wir die Auszeichnung mit dem Symbol `*` oder alternativ mit `_` vornehmen.
+
+```markdown
+*Kursiv*  
+**Fett**  
+
+_Kursiv mit Unterstrichen_  
+__Fett mit Unterstrichen__
+```
+
+*Kursiv*  
+**Fett**  
+
+_Kursiv mit Unterstrichen_  
+__Fett mit Unterstrichen__
+
+### Blockzitate
+
+Blockzitate verwenden wir, um Quellen oder wichtige Informationen zu zitieren.
+
+```markdown
+> "Dies ist ein Blockzitat."
+```
+
+> "Dies ist ein Blockzitat."
+
+### Tabellen
+
+Tabellen sind entscheidend für die effiziente Organisation von Daten.
+
+```markdown
+| Spalte 1 | Spalte 2 |
+|----------|----------|
+| Zeile 1  | Wert 1   |
+```
+
+| Spalte 1 | Spalte 2 |
+|----------|----------|
+| Zeile 1  | Wert 1   |
+
+
+Im Internet finden sich zahlreiche Tools, um einfach Markdown-Tabellen erstellen zu können (bspw. [Table to Markdown](https://tabletomarkdown.com/generate-markdown-table/))
+
+
+### Links und Bilder
+
+Mit Links und Bildern bereichern wir unser Dokument und bieten zusätzlichen Kontext.
+
+Links:
+
+```markdown
+[Python-Dokumentation](https://docs.python.org/)
+```
+
+[Python-Dokumentation](https://docs.python.org/)
+
+Bilder:
+
+```markdown
+![Alt-Text](image_url_or_path)
+```
+
+### Mathematische Ausdrücke
+
+Durch die Integration von LaTeX können wir komplexe mathematische Formeln darstellen.
+
+Inline-Gleichung:
+
+```markdown
+$E = mc^2$
+```
+
+$E = mc^2$
+
+Block-Gleichung:
+
+```markdown
+$$
+\frac{a}{b} + \sqrt{x}
+$$
+```
+
+$$
+\frac{a}{b} + \sqrt{x}
+$$
+
+### Horizontale Linien
+
+Horizontale Linien helfen uns, Abschnitte visuell zu trennen.
+
+```markdown
+---
+```
+
+---
+
+### Code-Blöcke
+
+Mit Code-Blöcken präsentieren wir Code-Snippets und nutzen dabei Syntax-Hervorhebung.
+
+````markdown
+```python
+print("Hallo, Python!")
+```
+````
+
+```python
+print("Hallo, Python!")
+```
+
+### Weiterführendes Lernen
+
+Um das Verständnis von Markdown weiter zu vertiefen, können diese Ressourcen genutzt werden:
+
+- [Interaktives 10-minütiges Markdown-Tutorial](https://commonmark.org/help/)  
+
+- [Markdown meistern](https://guides.github.com/features/mastering-markdown/)
+
+
+## Praktische Übung
+
+Als nächstes werden wir das Gelernte in einer kleinen Übung anwenden:
+
+1. Neues Jupyter Notebook öffnen.
+2. Markdown-Zelle erstellen folgenden Text einfügen:
+
+   ````markdown
+   # Markdown-Dokument
+   
+   Hier ist eine Liste meiner Datenwissenschafts-Tools:
+   
+   1. Python
+   2. Jupyter Notebooks
+   3. Pandas
+   
+   Hier ist ein **wichtiger** Punkt zu beachten:
+   
+   > Üben ist der Schlüssel zum Erfolg!
+   
+   Dies ist als Python-Code formatierter Text innerhalb einer Markdown-Zelle (und kann deswegen nicht ausgeführt werden):
+
+   ```python
+   print("Hallo, Python!")
+   ```
+   ````
+
+3. Zelle ausführen.
+
+
+
+
+# Datei: jupyter-notebook.qmd
+# Pfad: erste-schritte/jupyter-notebook.qmd
+
+# Jupyter Notebook
+
+In der Welt der Data Science und künstlichen Intelligenz ist Jupyter Notebook ein wichtiges Werkzeug. Es ist in der Anaconda-Distribution enthalten und bietet eine leistungsstarke Umgebung für interaktive Code-Entwicklung und Datenanalyse.
+
+:::{.callout-note}
+Jupyter Notebook ist mehr als nur ein einfacher Code-Editor. Es ist eine webbasierte, interaktive Umgebung, die es uns ermöglicht, Python-Code zu schreiben und auszuführen, erklärende Texte zu integrieren und die Ergebnisse unserer Analysen direkt in der Web-Oberfläche zu visualisieren.
+:::
+
+
+![Jupyter Notebook](../images/jupyter-notebook.png){#fig-jupyter-notebook width="50%" }
+
+
+Im Vergleich zum eher einfachen Python IDLE bietet Jupyter Notebook eine Reihe von Vorteilen, die unsere Arbeit erheblich erleichtern:
+
+1. **Selektive Code-Ausführung:** In Jupyter Notebook arbeiten wir mit sogenannten "Zellen". Jede Zelle kann Python-Code enthalten, den wir unabhängig voneinander ausführen können. Dies ermöglicht uns, unseren Code schrittweise zu entwickeln und zu testen, was besonders bei komplexen Datenanalysen von Vorteil ist. 
+
+   ![Jupyter Notebook-Zelle](../images/jupyter-notebook-mathe-1.png){#fig-jupyter-notebook-mathe-1 width="100%" }
+
+
+2. **Reproduzierbarkeit:** Jupyter Notebooks speichern nicht nur unseren Code, sondern auch die Ausgaben. Dies bedeutet, dass wir unsere gesamte Analyse, einschließlich der Ergebnisse, in einer einzigen Datei speichern und mit anderen teilen können. Dies fördert die Reproduzierbarkeit unserer Arbeit und erleichtert die Zusammenarbeit im Team.
+
+   ![Jupyter Notebook-Zelle und Ergbnisausgabe](../images/jupyter-notebook-mathe.png){#fig-jupyter-notebook-mathe width="100%" }
+
+
+3. **Nahtlose Integration von Code und Text:** Mit Jupyter Notebook können wir durch die Umstellung einer Zelle in den "Markdown"-Modus (mehr dazu in dem Kapitel über [Markdown](markdown.qmd)) problemlos zwischen Code und Erklärungen wechseln. Dies hilft uns, unsere Gedankengänge und Analyseansätze klar zu dokumentieren.
+
+   ![Jupyter Notebook-Zelle mit Text](../images/jupyter-notebook-text.png){#fig-jupyter-notebook-text width="100%" }
+
+4. **Sofortige Visualisierung von Ergebnissen:** Eines der besonderen Merkmale von Jupyter Notebook ist die Möglichkeit, Diagramme, Grafiken und andere Visualisierungen direkt im Notebook anzuzeigen. Dies gibt uns unmittelbares visuelles Feedback zu unseren Analysen und ist besonders wertvoll für explorative Datenanalysen.
+
+   ![Ausgabe einer Visualisierung](../images/jupyter-notebook-altair.png){#fig-jupyter-notebook-altair width="100%" }
+
+
+5. **Flexibilität:** Neben Python unterstützt Jupyter Notebook auch viele andere Programmiersprachen. Dies gibt uns die Flexibilität, bei Bedarf zwischen verschiedenen Sprachen zu wechseln.
+
+   ![Einige unterstützte Programmiersprachen](../images/jupyter-notebook-kernels.png){#fig-jupyter-notebook-kernels width="100%" }
+
+
+Im nächsten Abschnitt erstellen wir einen Jupyter Notebook.
+
+## Jupyter Notebook erstellen
+
+Hier der Prozess zur Erstellung eines Jupyter Notebooks.
+
+### Notebook starten
+
+1. **Starten des Anaconda Navigators:**
+   - Für Windows-Nutzer: Startmenü öffnen und nach "Anaconda Navigator" suchen. Ein Klick darauf startet die Anwendung.
+   - Für macOS/Linux-Nutzer: Wir können entweder in unseren Anwendungen nach "Anaconda Navigator" suchen oder ein Terminal öffnen und folgenden Befehl eingeben:
+     ```bash
+     anaconda-navigator
+     ```
+
+2. **Jupyter Notebook starten:**
+   Im Anaconda Navigator finden wir die Kachel für Jupyter Notebook. Ein Klick auf "Launch" öffnet Jupyter Notebook in unserem Standard-Webbrowser.
+
+   ![Jupyter in Anconda Navigator](../images/anaconda-navigator-jupyter.png){#fig-anaconda-navigator-jupyter width="100%" }
+
+
+3. **Navigation zum richtigen Verzeichnis:**
+   In der Web-Oberfläche von Jupyter navigieren wir zum `code`-Verzeichnis. Dieses Verzeichnis ist Teil unserer [eingerichteten Ordnerstruktur](projektumgebung.qmd), die uns hilft, unsere Projekte übersichtlich zu organisieren. Zunächst den Ordner "toolkit-lab" öffnen und dann den Unterornder "code".
+
+
+   ![Ordner toolkit-lab/code in Jupyter Notebook](../images/jupyter-toolkit-lab-code.png){#fig-jupyter-toolkit-lab-code width="100%" }
+
+
+4. **Erstellung eines neuen Notebooks:**
+   Oben rechts klicken wir auf "New" und wählen "Notebook" aus der Drop-down-Liste. 
+
+   ![Neuer Jupyter Notebook](../images/jupyter-notebook-new-notebook.png){#fig-jupyter-notebook-new-notebook width="100%" }
+
+5. **Auswahl des Kernels:**
+   Nun öffnet sich ein Fenster, in dem wir den Kernel (eine Python-Instanz) auswählen können. Für den Anfang wählen wir die von Anaconda installierte `base`-Umgebung aus. Alternativ dazu kann auch Python 3 (ipykernel) ausgewählt werden.
+
+6. **Unser erstes Notebook ist bereit:**
+   Eine neue Notebook-Seite öffnet sich mit einer leeren Code-Zelle, bereit für unseren ersten Python-Code.
+
+   ![Jupyter Notebook-Seite](../images/jupyter-notebook-zelle.png){#fig-jupyter-notebook-zelle width="100%" }
+
+
+
+### Notebook bearbeiten
+
+Jetzt, da unser Notebook geöffnet ist, können wir mit dem Schreiben von Code beginnen:
+
+1. In die erste Zelle geben wir einen einfachen Python-Code ein, zum Beispiel:
+   ```python
+   print("Hello, Jupyter!")
+   ```
+
+2. Um diesen Code auszuführen, drücken wir `Shift+Enter` oder klicken auf den "Run"-Button in der Toolbar. Die Ausgabe erscheint direkt unter der Zelle.
+
+   ![Run-Button in der Toolbar](../images/jupyter-notebook-hello.png){#fig-jupyter-notebook-hello width="100%" }
+
+
+3. Jupyter Notebook erstellt automatisch eine neue Zelle unter der ausgeführten Zelle. Wir können auch selbst eine neue Zelle hinzufügen, indem wir oben in der Toolbar auf die Schaltfläche "+" klicken.
+
+
+### Notebook speichern
+
+Es ist wichtig, unsere Arbeit regelmäßig zu speichern:
+
+1. Im "File"-Menü wählen wir "Save" aus, oder wir nutzen das Disketten-Symbol in der Toolbar.
+
+2. Beim ersten Speichern werden wir nach einem Namen für unser Notebook gefragt. Wir nennen es `hello-jupyter.ipynb` und speichern es im `code`-Verzeichnis.
+
+:::{.callout-note}
+Die Dateierweiterung `.ipynb` steht für "IPython Notebook". Diese Dateien enthalten nicht nur unseren Code, sondern auch alle Ausgaben, Markdown-Texte und sogar eingebettete Visualisierungen. 
+:::
+
+Jede `.ipynb`-Datei ist im [JSON-Format](../daten/json.qmd) strukturiert und enthält eine geordnete Liste von "Zellen". Diese Struktur bietet uns mehrere Vorteile:
+
+1. **Selektive Ausführung:** Wie bereits erwähnt können wir einzelne Codeabschnitte ausführen, ohne das gesamte Skript neu starten zu müssen. Dies ist besonders nützlich bei zeitaufwändigen Berechnungen oder beim Testen verschiedener Ansätze.
+
+2. **Nicht-lineare Arbeitsweise:** Im Gegensatz zu traditionellen Python `.py`-Skripten, die von Anfang bis Ende ausgeführt werden, können wir in einem Jupyter Notebook Zellen in beliebiger Reihenfolge ausführen. Dies unterstützt einen explorativen Ansatz in der Datenanalyse.
+
+3. **Einfache Überarbeitung:** Wir können jederzeit zu früheren Zellen zurückkehren, den Code ändern und neu ausführen, ohne den gesamten Arbeitsablauf zu stören.
+
+
+
+
+
+# Datei: python-und-idle.qmd
+# Pfad: erste-schritte/python-und-idle.qmd
+
+# Python und IDLE
+
+In diesem Kapitel lernen wir die grundlegenden Schritte kennen, um mit Python zu beginnen. 
+
+Python hat sich zu einer der beliebtesten Programmiersprachen in den Bereichen Data Science und KI entwickelt, und das aus gutem Grund. Hier sind einige der Hauptvorteile von Python:
+
+1. *Einfach zu erlernen*: Python wurde mit dem Ziel entwickelt, leicht lesbar und verständlich zu sein. Seine klare und übersichtliche Syntax macht es ideal für Einsteiger/innen.
+
+2. *Vielseitig einsetzbar*: Von Analytics und Statistik über Data Science bis hin zu künstlicher Intelligenz - Python kann in vielen Bereichen eingesetzt werden.
+
+3. *Umfangreiche Software-Pakete*: Python verfügt über eine breite Palette an Erweiterungen für verschiedene Anwendungsbereiche (bspw. spezialisierte Werkzeuge für Datenanalyse und -verarbeitung).
+
+4. *Große Community und KI-Unterstützung*: Die Python-Community ist riesig und sehr aktiv. Das bedeutet, dass es eine Fülle von [Dokumentationen](https://www.python.org/doc/), Tutorials und Hilfe (bspw. in dem Forum [stack overflow](https://stackoverflow.com/)) gibt, wenn man sie braucht. Zusätzlich können auch generative KI-Modelle wie [ChatGPT](https://chatgpt.com/), [Claude](https://claude.ai/) oder [Gemini](https://gemini.google.com/app) Python-Code verstehen und bei Fragen oder Problemen Hilfestellung geben. 
+
+Größere Python-Aktualisierungen werden in der Regel einmal pro Jahr veröffentlicht. Dieser regelmäßige Release-Zyklus sorgt dafür, dass neue Funktionen, Verbesserungen und Fehlerbehebungen kontinuierlich in die Sprache einfließen und Python auf dem neuesten Stand bleibt. Im September 2024 war die aktuelle Python-Version `3.12.5`. 
+
+Die **Versionsnummer** setzt sich wie folgt zusammen:
+
+- `3`: Zeigt die dritte Hauptversion von Python an. Diese Zahl ändert sich nur selten und kennzeichnet grundlegende Veränderungen in der Sprache.
+- `12`: Steht für die zwölfte größere Aktualisierung innerhalb der Python 3-Serie. Diese Zahl erhöht sich üblicherweise einmal jedes Jahr und bringt neue Funktionen und Verbesserungen.
+- `5`: Bezeichnet die fünfte kleinere Verbesserung oder Fehlerbehebung in der Version 3.12. Diese Zahl ändert sich häufiger und steht für Bugfixes und kleinere Optimierungen.
+
+Diese Struktur der Versionsnummern hilft, die Art und Bedeutung der Änderungen in jeder neuen Python-Version zu verstehen. Ähnlich wie bei Software-Updates auf einem Smartphone oder Computer zeigen diese Zahlen an, dass Python kontinuierlich verbessert und aktualisiert wird, wobei größere Änderungen seltener sind als kleinere Anpassungen und Fehlerbehebungen.
+
+Um mit Python zu arbeiten, benötigt man eine Entwicklungsumgebung. Eine der einfachsten und am leichtesten zugänglichen Optionen ist **IDLE** (Integrated Development and Learning Environment). 
+
+Als nächstes werden wir Python installieren und erste Schritte mit dem Python-Editor IDLE machen.
+
+## Python-Installation Windows
+
+1. **Download des Installationsprogramms**: 
+   - [Offizielle Python-Website](https://www.python.org/downloads/) besuchen.
+   - Neueste Version für Windows herunterladen (in der Regel die 64-Bit-Version: "Windows installer (64-bit)"").
+
+2. **Ausführen des Installationsprogramms**: 
+   - Wichtig: Programm als Administrator ausführen (Rechtsklick -> "Als Administrator ausführen").
+   - Das Kästchen "Add Python 3.x to PATH" am unteren Rand des Installationsfensters anzukreuzen. Dies ermöglicht es uns, Python von überall auf unserem System aus zu nutzen.
+
+3. **Anpassung der Installation (optional)**: 
+   - Für Fortgeschrittene: Mit einem Klick auf "Customize installation" können wir zusätzliche Funktionen auswählen.
+
+4. **Start der Installation**: 
+   - Ein Klick auf "Install Now" startet den Prozess.
+
+
+Nach der Installation wollen wir sicherstellen, dass alles korrekt funktioniert:
+
+1. Öffnen der Eingabeaufforderung.
+2. Folgenden Befehl eingeben:
+
+```bash
+python3 --version
+```
+
+Wenn alles geklappt hat, sehen wir die Versionsnummer der installierten Python-Version.
+
+::: {.callout-note title="Hinweis zu verschiedenen Python-Versionen"}
+Es kann vorkommen, dass wir mehrere Python-Versionen auf unserem System haben. Das ist normal und kein Grund zur Sorge. Später im Kurs werden wir lernen, wie wir effektiv mit verschiedenen Python-Umgebungen arbeiten können.
+:::
+
+## Python-Installation Mac
+
+1. **Download des Installationsprogramms**: 
+   - [Offizielle Python-Website](https://www.python.org/downloads/) besuchen.
+   - Neueste Mac-Version herunterladen.
+
+2. **Python installieren**: 
+   - Öffnen der heruntergeladenen `.pkg`-Datei.
+   - Anweisungen des Installationsassistenten folgen.
+
+   :::{.callout-note}
+   Auf dem Mac ist eine .pkg-Datei ein Installationspaket, das verwendet wird, um Software oder andere Dateien auf dem System zu installieren.
+   :::
+
+
+Nach der Installation wollen wir sicherstellen, dass alles korrekt funktioniert:
+
+1. Öffnen des Terminals
+2. Folgenden Befehl eingeben:
+
+```bash
+python3 --version
+```
+
+Wenn alles geklappt hat, sehen wir die Versionsnummer der installierten Python-Version.
+
+::: {.callout-note title="Hinweis zu verschiedenen Python-Versionen"}
+Es kann vorkommen, dass wir mehrere Python-Versionen auf unserem System haben. Das ist normal und kein Grund zur Sorge. Später im Kurs werden wir lernen, wie wir effektiv mit verschiedenen Python-Umgebungen arbeiten können.
+:::
+
+
+## Python IDLE
+
+IDLE (Integrated Development and Learning Environment) ist eine integrierte Entwicklungsumgebung, die speziell für Python entwickelt wurde und mit jeder Standard-Python-Installation mitgeliefert wird. Sie ist besonders nützlich für Anfänger/innen und für kleine Projekte.
+
+IDLE bietet zwei Hauptmodi für die Arbeit mit Python:
+
+1. Die **Shell**: Eine interaktive Schnittstelle zum Python-Interpreter, in dem wir Python-Code direkt eingeben und ausführen können. Dies ist nützlich für schnelle Experimente und das Testen von Codezeilen.
+
+2. Der **Skript-Editor**: Hier können längere Python-Programme (Skripte) geschrieben, bearbeitet und als Textdateien gespeichert werden.
+
+
+In @fig-idle ist die interaktive IDLE-Shell mit der Python-Version 3.12.1 zu sehen.
+
+![IDLE Shell](../images/idle.png){#fig-idle width="80%" }
+
+### Python Interpreter
+
+Der Python-Interpreter ist das Kernstück der Python-Programmierumgebung. Er hat folgende Hauptfunktionen:
+
+- Ausführung: Liest und führt Python-Code aus, indem er ihn in für den Computer verständliche Anweisungen übersetzt.
+- Interaktivität: Ermöglicht die direkte Eingabe und Ausführung von Python-Befehlen.
+- Fehlerprüfung: Erkennt Fehler und gibt entsprechende Fehlermeldungen aus.
+
+IDLE nutzt den Python-Interpreter, um Code auszuführen. In der Python Shell arbeiten wir direkt mit dem Interpreter im interaktiven Modus, während der Datei-Editor es uns ermöglicht, längere Skripte zu schreiben, die dann vom Interpreter ausgeführt werden können.
+
+
+### Python-Skript
+
+Ein Python-Skript ist eine Textdatei mit der Endung `.py`, die eine Reihe von Python-Anweisungen enthält. Diese Anweisungen dienen dazu, eine spezifische Aufgabe auszuführen oder ein Problem zu lösen.
+
+Eigenschaften von Python-Skripten:
+
+- Ausführung: Skripte werden direkt vom Python-Interpreter Zeile für Zeile ausgeführt, ohne vorherige Übersetzung ("Kompilierung") in Maschinencode.
+- Lesbarkeit: Der Code kann mit jedem Texteditor geöffnet und bearbeitet werden.
+- Organisation: Skripte helfen, Python-Programme zu strukturieren und zu organisieren.
+
+
+::: {.callout-note}
+## Vorteile von Skripten
+- Wiederverwendbarkeit: Einmal geschrieben, kann ein Skript immer wieder ausgeführt werden.
+- Automatisierung: Skripte eignen sich hervorragend, um wiederholende Aufgaben zu automatisieren.
+- Schnelle Entwicklung: Änderungen können schnell vorgenommen und getestet werden.
+- Dokumentation: Skripte dienen als dokumentierte Abfolge von Befehlen, die leicht geteilt und verstanden werden können.
+:::
+
+
+### Arbeiten mit IDLE
+
+- **Windows**: Startmenü öffnen und nach "IDLE" suchen.
+- **Mac**: In Spotlight-Suche (Cmd + Leertaste)  "IDLE" eingeben und auswählen.
+
+1. **IDLE-Shell**: 
+   - Ist eine interaktive Schnittstelle zum Python-Interpreter.
+   - Hier können wir direkt Python-Code eingeben und ausführen.
+   - Probieren wir es aus: Geben wir `2 + 3` ein und drücken Enter. Wir sehen sofort das Ergebnis!
+
+2. **Unser erstes Python-Skript**:
+   - Wir öffnen eine neue Datei mit: `Datei` > `Neue Datei`
+   - Es öffnet sich ein neues Fenster, in dem das Skript geschrieben werden kann
+   - Folgenden Code eingeben:
+
+     ```python
+     print("Hallo, Python!")
+     ```
+
+   In @fig-idle-hello sehen wir den Code in der Datei.
+
+
+
+   ![IDLE Skript](../images/idle-hello.png){#fig-idle-hello width="80%" }
+
+
+   - Die Datei nun als `hallo.py` speichern (idealerweise in unserem `code`-Ordner).
+   - Skript ausführen: F5 drücken (Mac: fn + F5) oder `Ausführen` > `Modul ausführen` wählen.
+   - Wir sehen nun unterhalb des Skripts unsere Ausgabe in der IDLE-Shell (siehe @fig-idle-script-shell).  
+
+
+   ![IDLE Skript und darunter die Ausgabe in der Shell](../images/idle-script-shell.png){#fig-idle-script-shell width="80%" }
+ 
+
+Wie wir gesehen haben, bietet Python IDLE eine einfache Oberfläche für die Codeentwicklung und -ausführung. In einem der folgenden Abschnitte werden wir fortschrittlichere Entwicklungsumgebungen wie Visual Studio Code kennenlernen, die größere Projekte mit zusätzlichen Funktionen unterstützen.
+
+# Datei: erste-schritte-all.qmd
+# Pfad: erste-schritte/erste-schritte-all.qmd
+
+
+
+# Datei: index.qmd
+# Pfad: erste-schritte/index.qmd
+
+# Erste Schritte
+
+In diesem ersten Abschnitt werden wir eine grundlegende Arbeitsumgebung einrichten, die für jedes datenbezogene Vorhaben unerlässlich ist. 
+
+Wir werden:
+
+- Die Befehlszeile des Computers nutzen. 
+- Python zum ersten Mal einrichten. 
+- Die Anaconda-Distribution (ein Data-Science-Softwarepaket) verwenden.
+- Jupyter Notebook, ein leistungsstarkes Werkzeug zur interaktiven Datenexploration, nutzen. 
+
+
+# Datei: anaconda-installation.qmd
+# Pfad: erste-schritte/anaconda-installation.qmd
+
+# Anaconda Distribution
+
+Die Anaconda Distribution ist ein umfangreiches Softwarepaket, das Python und eine Vielzahl wichtiger Data Science-Tools beinhaltet. Sie stellt eine zentrale Plattform für die Arbeit mit Daten dar und erleichtert den Einstieg in die Welt der Data Science erheblich.
+
+Anaconda, Inc. ist das Unternehmen hinter der Anaconda Distribution. Mit der kostenfreien Bereitstellung der Anaconda Distribution hat das Unternehmen einen bedeutenden Beitrag zur Data Science-Community geleistet.
+
+Die Anaconda Distribution umfasst die folgende Hauptkomponenten:
+
+1. *Programmiersprachen*: Unterstützt Python und R, zwei leistungsstarke und vielseitige Programmiersprachen, die sich besonders gut für Data Science eignen.
+
+2. *Conda*: Ein leistungsfähiges Paket- und Umgebungsmanagement-System.
+
+3. *Über 250 vorinstallierte Pakete*: Darunter befinden sich wichtige Software-Pakete für Data Science und KI.
+
+4. *Anaconda Navigator*: Eine grafische Benutzeroberfläche zur einfachen Verwaltung von Umgebungen und Paketen. Außerdem bietet es Zugriff auf verschiedene Data Science-Tools (bspw. Jupyter Notebook).
+
+
+![Anaconda Navigator](../images/anaconda-navigator.png){#fig-anaconda-navigator width="70%" }
+
+
+::: {.callout-note}
+Die Anaconda Distribution ermöglicht es, schnell und unkompliziert mit Data Science-Projekten zu beginnen, ohne sich um die Installation und Konfiguration einzelner Pakete kümmern zu müssen. Dies ist besonders wertvoll für Einsteiger/innen, da es den Einstieg in die Data Science erheblich erleichtert.
+:::
+
+
+
+## Anaconda in Windows installieren
+
+1. Zunächst besuchen wir die [Anaconda-Download-Seite](https://www.anaconda.com/download/success).
+2. Hier wählen wir die Windows-Version aus.
+3. Grafischen Installer herunterladen.
+4. Nach dem Download klicken wir mit der rechten Maustaste auf den Installer und wählen "Als Administrator ausführen".
+5. Im Setup-Assistenten klicken wir uns durch die verschiedenen Bildschirme:
+   - Wir stimmen den Geschäftsbedingungen zu.
+   - Als Installationstyp wählen wir "Nur für mich" (empfohlen).
+   - Wir wählen den gewünschten Zielordner für die Installation.
+   - Wichtig: Wir aktivieren die Option "Anaconda zu meiner PATH-Umgebungsvariablen hinzufügen".
+   - Ebenso aktivieren wir "Anaconda als meine Standard-Python-Version registrieren".
+6. Mit einem Klick auf "Installieren" starten wir den Installationsprozess.
+7. Nach Abschluss der Installation klicken wir auf "Fertig stellen".
+
+
+### Anaconda Command Prompt 
+
+Anaconda Command Prompt ist ein spezielles Kommandozeilentool, das mit der Anaconda-Distribution für Windows installiert wird. Es bietet eine Umgebung, in der Python und verschiedene Data-Science-Werkzeuge direkt über die Kommandozeile genutzt werden können.
+
+Das Pogramm ist im Wesentlichen eine angepasste Version der Windows-Eingabeaufforderung. Der Hauptunterschied besteht darin, dass sie automatisch die notwendigen Umgebungsvariablen setzt, um auf die in Anaconda installierten Python-Pakete und -Tools zuzugreifen.
+
+::: {.callout-note}
+Anaconda Command Prompt ermöglicht es, Python-Skripte auszuführen, Pakete zu installieren oder zu aktualisieren und verschiedene Conda-Befehle zu verwenden, ohne dass zusätzliche Konfigurationen vorgenommen werden müssen.
+:::
+
+Es ist wichtig zu beachten, dass Befehle, die in Anaconda Command Prompt funktionieren, möglicherweise nicht in der normalen Windows-Eingabeaufforderung verfügbar sind, es sei denn, die Umgebungsvariablen wurden manuell konfiguriert.
+
+### Zugriff auf Anaconda Command Prompt
+
+Um Anaconda Command Prompt in Windows zu öffnen, können folgende Schritte durchgeführt werden:
+
+1. Das Windows-Startmenü öffnen
+2. Nach "Anaconda" suchen
+3. "Anaconda Prompt" auswählen
+
+Alternativ kann auch der folgende Pfad genutzt werden:
+
+```
+Start > Alle Programme > Anaconda3 > Anaconda Prompt
+```
+
+
+## Anaconda auf Mac installieren
+
+1. Wir öffnen die [Anaconda-Download-Seite](https://www.anaconda.com/download/success).
+2. Hier wählen wir die passende macOS-Version aus (hier eine Übersicht über die [Mac-Ausführungen](https://support.apple.com/en-us/116943)):
+   - Für Geräte mit Apple-Chip wählen wir "Apple Silicon".
+   - Für ältere Geräte wählen wir die Intel-Version.
+3. Wir laden den grafischen Installer herunter.
+4. Nach dem Download auf die heruntergeladene *.pkg*-Datei doppelklicken.
+5. Im Installationsassistenten folgen wir den Anweisungen:
+   - Lizenzvereinbarung lesen und akzeptieren.
+   - Als Zielort wählen wir unser Home-Verzeichnis (z.B. */Users/benutzername*).
+6. Mit einem Klick auf "Installieren" starten wir den Prozess.
+7. Nach Abschluss schließen wir den Installer.
+
+## Anaconda überprüfen und aktualisieren
+
+In diesem Abschnitt wollen wir sicherzustellen, dass Conda korrekt installiert wurde und einige conda-Befehle kennenleren.
+
+
+### Kommandozeile öffnen
+
+Zunächst öffnen wir die Kommandozeile:
+
+- **Windows**: Anaconda Command Prompt (Achtung: nicht die reguläre Eingabeaufforderung öffnen)
+- **Mac**: Terminal
+
+In der Kommandozeile sollte das Wort `base` sichtbar sein. Die `base`-Umgebung ist die Standardumgebung, die bei der Installation von Anaconda erstellt wird. Sie enthält eine Vielzahl vorinstallierter Pakete.
+
+### Version prüfen
+
+Um sicherzustellen, dass Conda korrekt installiert ist und um die aktuelle Version zu überprüfen, kann folgender Befehl in der Kommandozeile eingegeben werden:
+
+```bash
+conda --version
+```
+
+
+Bei korrekter Installation wird die Versionsnummer angezeigt. Dies ist nützlich, um zu überprüfen, ob Conda auf dem System verfügbar ist und welche Version verwendet wird. Die Versionsnummer kann wichtig sein, um Kompatibilitätsprobleme zu vermeiden und zu entscheiden, ob ein Update erforderlich ist.
+
+
+### Informationen anzeigen
+
+Um detaillierte Informationen über die Conda-Installation zu erhalten, kann folgender Befehl verwendet werden:
+
+```bash
+conda info
+```
+
+Dieser Befehl liefert umfassende Informationen zur Anaconda-Software. Die Ausgabe enthält wichtige Details wie:
+
+1. Den Pfad zur Conda-Installation
+2. Die aktuelle aktive Umgebung
+3. Die Kanäle, aus denen Pakete bezogen werden
+4. Die Plattform und das Betriebssystem
+5. Die Python-Version in der Basis-Umgebung
+
+Diese Informationen sind besonders nützlich bei der Fehlersuche oder wenn spezifische Konfigurationsdetails benötigt werden.
+
+
+### Installierte Pakete anzeigen
+
+Um eine Übersicht aller installierten Pakete in der aktuellen Conda-Umgebung (in unserem Fall ist dies die `base`-Umgebung) zu erhalten, kann folgender Befehl verwendet werden:
+
+```bash
+conda list
+```
+
+Dieser Befehl zeigt Informationen zu allen installierten Paketen in der aktiven Conda-Umgebung an. Die Ausgabe enthält typischerweise:
+
+1. Den Namen jedes Pakets
+2. Die installierte Version
+3. Den Build-String (enthält zusätzliche Details zur spezifischen Version eines Pakets)
+4. Den Kanal, aus dem das Paket installiert wurde (Ein Kanal ist eine Quelle, aus der Pakete bezogen werden können)
+
+Diese Informationen sind besonders wertvoll, um:
+- Zu überprüfen, ob bestimmte Pakete installiert sind
+- Die Versionen der installierten Pakete zu kontrollieren
+
+Es ist zu beachten, dass die Ausgabe die Pakete in der aktuell aktiven Umgebung anzeigt. Wenn wir uns also in der `base`-Umgebung befinden, werden die dort installierten Pakete aufgelistet. Um Pakete in anderen Umgebungen anzuzeigen, muss zuerst in diese Umgebung gewechselt werden. Dieses Thema behandeln wir in Kapitel [](../python/python-umgebung.qmd).
+
+
+### conda aktualisieren
+
+Es ist ratsam, nach der Installation alle Standardpakete zu aktualisieren:
+
+```bash
+conda update --all
+```
+
+Wir folgen den Anweisungen, um die Aktualisierung abzuschließen (d.h. `y` für "yes" eingeben und Eingabetaste drücken).
+
+
+## Nächste Schritte
+
+Mit der erfolgreichen Installation von Anaconda haben wir nun Zugriff auf Jupyter Notebook, eine webbasierte Umgebung zum Schreiben und Ausführen von Python-Code. Diese Umgebung wird uns in unseren Data Science-Projekten begleiten und bietet mehr Möglichkeiten als die einfache IDLE-Umgebung.
+
+In den nächsten Kapiteln werden wir lernen, wie wir Jupyter Notebook effektiv für unsere Data Science-Aufgaben nutzen können.
+
+# Datei: python-idle.qmd
+# Pfad: erste-schritte/python-idle.qmd
+
+# Python IDLE
+
+Python IDLE ist eine einfache integrierte Entwicklungsumgebung (IDE), die standardmäßig mit Python installiert wird. Sie wurde speziell entwickelt, um das Schreiben und Ausführen von Python-Code zu erleichtern.
+
+
+## Erste Schritte in IDLE 
+
+Nach der Installation von Python können wir IDLE über das Suchmenü des Betriebssystems starten:
+
+- Unter Windows: Das Startmenü öffnen und 'IDLE' eingeben.
+
+- Unter MacOS: Die Spotlight-Suche (Cmd + Leertaste) verwenden, 'IDLE' eingeben und Enter drücken.
+
+Das IDLE-Shell-Fenster funktioniert als interaktiver Interpreter. Hier wird jede eingegebene Codezeile sofort ausgeführt, sobald wir Enter drücken.
+
+In der IDLE-Shell können wir direkt arithmetische Ausdrücke wie `2 + 3` eingeben und erhalten sofort das Ergebnis. Diese Funktion macht IDLE besonders nützlich für schnelle Berechnungen und Experimente mit den mathematischen Fähigkeiten von Python, ohne dass wir ein separates Skript speichern oder ausführen müssen.
+
+## Python-Skripte in IDLE
+
+Nun wollen wir ein einfaches Python-Skript erstellen und ausführen:
+
+1. **Eine neue Datei öffnen**: In IDLE navigieren wir zu `Datei` > `Neue Datei`, um ein Editor-Fenster zu öffnen.
+2. **Code eingeben**: Im neuen Editor-Fenster geben wir folgenden Code ein:
+
+   ```python
+   print("Hallo, Python!")
+   ```
+
+3. **Skript speichern**: Wir speichern die Datei über `Datei` > `Speichern unter...` und nennen sie `hello.py`. Es empfiehlt sich, die Datei im Verzeichnis `code` innerhalb des `toolkit-labs`-Ordners zu speichern (weitere Informationen zur [Ordnerstruktur](project-environment#projektumgebung.qmd) finden sich im entsprechenden Kapitel).
+4. **Skript ausführen**: Mit `F5` oder über `Ausführen` > `Modul ausführen` können wir unser Skript starten. In der IDLE-Shell sollte nun die Ausgabe `Hallo, Python!` erscheinen.
+
+Um unser Verständnis zu vertiefen, können wir das Skript mit verschiedenen Nachrichten modifizieren. Zusätzlich bietet die IDLE-Shell die Möglichkeit, durch Eingabe von `help(print)` oder `help()` die umfangreiche Hilfedokumentation von Python zu erkunden und weitere Funktionen kennenzulernen.
+
+## Tipps für die Arbeit mit IDLE
+
+- **Code-Vervollständigung**: IDLE unterstützt die automatische Vervollständigung von Code. Wenn wir den Anfang eines Befehls oder einer Variablen eingeben und dann `Tab` drücken, schlägt IDLE mögliche Vervollständigungen vor.
+
+- **Farbkodierung**: IDLE verwendet verschiedene Farben, um unterschiedliche Elemente des Python-Codes hervorzuheben. Dies erleichtert das Lesen und Verstehen des Codes.
+
+- **Debugger**: IDLE verfügt über einen integrierten Debugger, den wir über `Debuggen` > `Debugger` aktivieren können. Dies ist besonders nützlich, wenn wir Fehler in unserem Code finden und beheben möchten.
+
+- **Shell-Verlauf**: Mit den Pfeiltasten können wir durch frühere Eingaben in der IDLE-Shell navigieren. Dies ist praktisch, um vorherige Befehle schnell wiederzuverwenden oder zu modifizieren.
+
+Durch die Nutzung dieser Funktionen können wir IDLE effektiv als Lernwerkzeug für unsere ersten Schritte in der Python-Programmierung einsetzen.
+
