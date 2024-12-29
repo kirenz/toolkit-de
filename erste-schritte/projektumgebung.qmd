@@ -77,7 +77,7 @@ In den folgenden Abschnitten werden wir lernen, wie wir grundlegende Befehle nut
 
 Hier die Schritte, um die Ordner mit der Windows-Eingabeaufforderung ("Command Prompt" bzw. "cmd") zu erstellen.
 
-1. In dem Windows-Suchfenster "Eingabeaufforderung" eingeben und dann mit rechtem Mausklick auf das Symbol des Eingabeaufforderungs-Programms klicken. "Als Adminsitrator ausführen" auswählen. Falls die Frage erscheint: "Möchten Sie zulassen, dass durch diese App Änderungen an Ihrem Gerät vorgenommen werden?" auf Ja klicken.
+1. In dem Windows-Suchfenster "Eingabeaufforderung" eingeben und dann mit rechtem Mausklick auf das Symbol des Eingabeaufforderungs-Programms klicken. "Als Administrator ausführen" auswählen. Falls die Frage erscheint: "Möchten Sie zulassen, dass durch diese App Änderungen an Ihrem Gerät vorgenommen werden?" auf Ja klicken.
 
 2. Wenn die Eingabeaufforderung geöffnet wird, erscheint eventuell zunächst ein Windows-Verzeichnis wie bspw "C:\\Windows\\System32". Wir müssen daher mit `cd` (change directory)zu unserem Benutzerkonto wechseln. Den Befehl unten eingeben und Eingabetaste drücken: 
 
