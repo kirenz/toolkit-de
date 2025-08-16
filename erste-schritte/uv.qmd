@@ -22,6 +22,7 @@ uv bietet eine Vielzahl von Funktionen, die die Arbeit mit Python-Projekten erle
 
 1. PowerShell als Administrator öffnen
 2. Folgenden Befehl eingeben und Enter drücken:
+
 ```powershell
 curl -LsSf https://astral.sh/uv/install.ps1 | powershell -c -
 ```

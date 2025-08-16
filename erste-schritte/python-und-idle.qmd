@@ -10,11 +10,11 @@ Python hat sich zu einer der beliebtesten Programmiersprachen in den Bereichen D
 
 3. *Umfangreiche Software-Pakete*: Python verfügt über eine breite Palette an Erweiterungen für verschiedene Anwendungsbereiche (bspw. spezialisierte Werkzeuge für Datenanalyse und -verarbeitung).
 
-4. *Große Community und KI-Unterstützung*: Die Python-Community ist riesig und sehr aktiv. Das bedeutet, dass es eine Fülle von [Dokumentationen](https://www.python.org/doc/), Tutorials und Hilfe (bspw. in dem Forum [stack overflow](https://stackoverflow.com/)) gibt, wenn man sie braucht. Zusätzlich können auch generative KI-Modelle wie [ChatGPT](https://chatgpt.com/), [Claude](https://claude.ai/) oder [Gemini](https://gemini.google.com/app) Python-Code verstehen und bei Fragen oder Problemen Hilfestellung geben. 
+4. *Große Community und KI-Unterstützung*: Die Python-Community ist riesig und sehr aktiv. Das bedeutet, dass es eine Fülle von [Dokumentationen](https://www.python.org/doc/), Tutorials und Hilfe (bspw. in dem Forum [stack overflow](https://stackoverflow.com/)) gibt, wenn man sie braucht. Zusätzlich können Chatbots wie [ChatGPT](https://chatgpt.com/), [Claude](https://claude.ai/) oder [Gemini](https://gemini.google.com/app) Python-Code verstehen und bei Fragen oder Problemen Hilfestellung geben. 
 
-Größere Python-Aktualisierungen werden in der Regel einmal pro Jahr veröffentlicht. Dieser regelmäßige Release-Zyklus sorgt dafür, dass neue Funktionen, Verbesserungen und Fehlerbehebungen kontinuierlich in die Sprache einfließen und Python auf dem neuesten Stand bleibt. Im September 2024 war die aktuelle Python-Version `3.12.5`. 
+Größere Python-Aktualisierungen werden in der Regel einmal pro Jahr veröffentlicht. Dieser regelmäßige Release-Zyklus sorgt dafür, dass neue Funktionen, Verbesserungen und Fehlerbehebungen kontinuierlich in die Sprache einfließen und Python auf dem neuesten Stand bleibt. 
 
-Die **Versionsnummer** setzt sich wie folgt zusammen:
+Die **Versionsnummer** setzt sich wie folgt zusammen: bspw. `3.12.5`
 
 - `3`: Zeigt die dritte Hauptversion von Python an. Diese Zahl ändert sich nur selten und kennzeichnet grundlegende Veränderungen in der Sprache.
 - `12`: Steht für die zwölfte größere Aktualisierung innerhalb der Python 3-Serie. Diese Zahl erhöht sich üblicherweise einmal jedes Jahr und bringt neue Funktionen und Verbesserungen.
@@ -45,11 +45,11 @@ Als nächstes werden wir Python installieren und erste Schritte mit dem Python-E
 
 Nach der Installation wollen wir sicherstellen, dass alles korrekt funktioniert:
 
-1. Öffnen der Eingabeaufforderung.
+1. Öffnen von Git Bash.
 2. Folgenden Befehl eingeben:
 
 ```bash
-python3 --version
+python --version
 ```
 
 Wenn alles geklappt hat, sehen wir die Versionsnummer der installierten Python-Version.

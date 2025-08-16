@@ -25,14 +25,9 @@ toolkit-lab/
 Anstatt eine grafische Benutzeroberfläche wie den [Windows-Explorer](https://support.microsoft.com/de-de/windows/suchen-und-%C3%B6ffnen-von-explorer-ef370130-1cca-9dc5-e0df-2f7416fe1cb1) oder den [macOS Finder](https://support.apple.com/de-ch/guide/mac-help/mchlp2605/mac) zu verwenden, werden wir die **Befehlszeile** nutzen, um die Ordner einzurichten. Die Befehlszeile ist ein leistungsstarkes Werkzeug zum Einrichten unserer Arbeitsumgebung. Sie ermöglicht eine Kommunikation mit dem Betriebssystem über textbasierte Eingaben.
 
 :::{.callout-note appearance="minimal"}
-Die Befehlszeile eröffnet eine neue Ebene der Interaktion mit unserem Computer. Viele Aufgaben können damit effizienter erledigt werden als mit einer grafischen Benutzeroberfläche.
+Die Befehlszeile, auch Kommandozeile oder Command Line Interface (CLI) genannt, eröffnet eine neue Ebene der Interaktion mit unserem Computer. Viele Aufgaben können damit effizienter erledigt werden als mit einer grafischen Benutzeroberfläche.
 :::
 
-Weitere gängige Bezeichnung für die Befehlszeile sind:
-
-- Kommandozeile, 
-- Befehlszeilenschnittstelle,
-- Command Line Interface (CLI). 
 
 In Windows ist die Bezeichnung für das entsprechende Programm *Eingabeaufforderung* (siehe @fig-eingabe), auf dem Mac heißt es *Terminal* (siehe @fig-terminal).
 
@@ -49,31 +44,218 @@ Kommandozeilen
 
 Wenn wir von der Befehlszeile sprechen, ist es wichtig, auch das Konzept der "**Shell**" zu verstehen. Die Shell ist ein Programm, das als Vermittler zwischen uns und dem Betriebssystem fungiert. Sie interpretiert unsere Eingaben und übersetzt sie in Anweisungen, die das System ausführen kann.
 
+
+:::{.callout-note appearance="minimal" title="Kommandozeilen auf Windows-Systemen" collapse="true"}
+
+Das Standard-Programm für die Kommandozeile heißt *Eingabeaufforderung* (Command Prompt). In neueren Windows-Versionen gibt es auch die leistungsfähigere *PowerShell* als Alternative.
+
+:::
+
 Die Kommandozeile, die wir sehen und in die wir Befehle eingeben, ist die Schnittstelle zur Shell. Sie ist sozusagen das "Blatt Papier", auf dem wir unsere Anweisungen schreiben, während die Shell der "Übersetzer" ist, der diese Anweisungen versteht und umsetzt.
 
 
-Auf Windows-Systemen:
+:::{.callout-note appearance="minimal" title="Kommandozeilen auf Mac-Systemen" collapse="true"}
 
-- Das Standard-Programm für die Kommandozeile heißt "Eingabeaufforderung" (Command Prompt).
-- Es verwendet standardmäßig die cmd.exe als Shell.
-- In neueren Windows-Versionen gibt es auch die leistungsfähigere PowerShell als Alternative.
+Das Standard-Programm für die Kommandozeile heißt *Terminal*. Eine Alternative zum Terminal ist bspw. die Open-Source-Software [iTerm2](https://iterm2.com/). In neueren macOS-Versionen ist die Standard-Shell "zsh" (Z Shell), vor September 2019 war es "bash" (Bourne Again Shell).
+:::
 
-Auf Mac-Systemen:
-
-- Das Programm für die Kommandozeile heißt "Terminal".
-- Eine Alternative zum Terminal ist die Open-Source-Software [iTerm2](https://iterm2.com/)
-- In neueren macOS-Versionen ist die Standard-Shell "zsh" (Z Shell), vor September 2019 war es "bash" (Bourne Again Shell).
-
-Trotz dieser Unterschiede ist das grundlegende Konzept auf beiden Systemen gleich: Wir geben Befehle ein, und die Shell interpretiert und führt sie aus.
+Trotz einiger Unterschiede zwischen Windows- und Mac-Systemen ist das grundlegende Konzept gleich: Wir geben Befehle ein, und die Shell interpretiert und führt sie aus.
 
 Die Verwendung der Kommandozeile und das Verständnis der Shell-Umgebung sind wichtige Fähigkeiten in der Datenanalyse und Softwareentwicklung. Sie ermöglichen uns eine präzisere Kontrolle über unser System und sind besonders nützlich für Automatisierungen.
 
 In den folgenden Abschnitten werden wir lernen, wie wir grundlegende Befehle nutzen können, um unsere Projektstruktur einzurichten und zu verwalten.
 
+## Kommandozeile öffnen
 
+### Hinweise für macOS
+
+1. Um das Terminal in macOS zu öffnen, nutzen wir die Spotlight-Suche. Wir öffnen diese mit der Tastenkombination `Command + Leertaste` (erst `Command` gedrückt halten und dann zusätzlich die `Leertaste` drücken).  
+
+    ![Tastenkombination für Spotlight-Suche](../images/keyboard.png){#fig-keyboard width="60%" .lightbox}
+
+
+2. In der Spotlight-Suche "Terminal" eingeben und Terminal-app anklicken. Nun sollte das Terminal sichtbar sein. 
+
+    ![Terminal auf dem Mac](../images/terminal.png){#fig-terminal3 width="60%"}
+
+
+3. Wir geben nun den Befehl `echo $SHELL` ein und bestätigen mit Eingabetaste um zu prüfen, welche Shell-Ausführung auf dem Gerät verwendet wird. Bis Oktober 2019 war bash (Bourne Again Shell) der Standard, danach hat Apple auf zsh umgestellt. 
+
+
+    ```bash
+    echo $SHELL
+    ```
+
+   :::{.callout-tip collapse="true" title="Erklärung der Befehle"}
+    - `echo`: Befehl, der Text auf der Konsole ausgibt.
+    - `$`: signalisiert der Shell, dass auf den Wert einer Variable zugegriffen werden soll. Der Name der entsprechenden Variable folgt direkt auf das `$`.
+    - `SHELL`: Dies ist eine Umgebungsvariable, die den Pfad zur aktuell verwendeten Shell speichert (z.B. /bin/bash, /bin/zsh).
+   :::
+
+    Wenn wir also $SHELL schreiben, sagt das der Shell: "Gib mir den Wert der Variable namens SHELL".
+
+    Ist die Ausgabe "/bin/zsh", wird bereits zsh verwendet. Wenn das Ergebnis "/bin/bash" ist, verwendet das Gerät derzeit noch bash. 
+
+Falls aktuell noch bash verwendet wird, sollte zunächst auf zsh umgestellt werden. 
+
+:::{.callout-tip collapse="true" title="Umstellung auf zsh" collapse="true"}
+
+Die hier aufgeführten Schritte sind nur relevant, falls zuvor bash ausgegeben wurde. 
+
+a) Zuerst überprüfen, ob zsh bereits installiert ist:
+
+```bash
+zsh --version
+```
+
+Falls eine Version angezeigt wird, weiter mit c). Ansonsten zu Schritt b).
+
+b) Falls zsh noch nicht installiert sein sollte, können die Apple Xcode CommanLine Tools installiert werden, die zsh enthalten:
+
+
+```bash
+xcode-select --install
+```
+
+<!-- Falls der Befehl nicht ausgeführt werden kann, ist XCode auch [über deApp-Store](https://apps.apple.com/de/app/xcode/id497799835?mt=12) erhältlich.-->
+
+c) Wenn zsh installiert ist, kann mit diesem Befehl direkt zu zsh gewechselwerden:
+
+```bash
+chsh -s /bin/zsh
+```
+
+Bei Bedarf Benutzerpasswort eingeben, wenn dazu aufgefordert wird. Dann daTerminal schließen und nochmals mit der Spotlight-Suche öffnen.
+
+Hinweise zu dem Befehl: `chsh` ist der Befehl zum Ändern der Standard-Shell. DiOption `-s` bewirkt, dass die Shell für den aktuellen Benutzer geändert wirdUnd /bin/zsh  ist der Pfad zur Z-Shell (zsh).
+
+:::
+
+
+
+### Hinweise für Windows
+
+Im Data-Science-Umfeld sind viele Werkzeuge für eine Unix-ähnliche Kommandozeile optimiert. Man kann sich Unix wie eine einflussreiche "Sprachfamilie" für Betriebssysteme vorstellen, aus der heutige Systeme wie macOS und Linux direkt hervorgegangen sind. Sie alle teilen sich einen Kernsatz an Befehlen.
+
+Damit auf Windows diese standardisierte und weitverbreitete "Sprache" ebenfalls genutzt werden kann, verwenden wir in diesem Kurs nicht die Eingabeaufforderung,  sondern die sogenannte *Git Bash*.
+
+1.  **Git for Windows** herunterladen: [git-scm.com/download/win](https://git-scm.com/download/win)
+2.  Die heruntergeladene Installationsdatei wird ausgeführt. Bei allen Installationsschritten können die Standardeinstellungen beibehalten werden. Es genügt, sich mit "Next" durch den Installer zu klicken.
+3.  Nach der Installation findet sich im Windows-Startmenü ein neues Programm namens **Git Bash**. Dieses wird geöffnet.
+
+Das Fenster von Git Bash ähnelt dem Terminal von macOS und funktioniert für die hier beschriebenen Zwecke identisch.
+
+## Elemente der Kommandozeile
+
+Hier eine Erklärung zu den unterschiedlichen Elementen der Kommandozeile:
+
+![Terminal mit zsh-Shell auf dem Mac](../images/terminal.png){#fig-terminal-zsh width="80%"}
+
+- *Benutzername*: Dieser steht ganz links in der ersten Zeile. In diesem Fall `jankirenz`. Es zeigt an, welcher Benutzer aktuell am System angemeldet ist.
+
+- *Hostname*: Der Hostname wird nach dem @-Symbol aufgeführt. Hier `kirenziMac`. Dies ist der Name des Computers, auf dem das Programm läuft.  
+
+- *Aktuelles Verzeichnis (Pfad)*: Nach dem Hostnamen wird das Verzeichnis angezeigt, in welchem wir uns gerade befinden. In dem Bild ist das Tilde-Symbol `~` zu sehen. Dies ist ein Platzhalter und steht für das Home-Verzeichnis des aktuellen Benutzers. Der vollständige Pfad des Home-Verzeichnisses wäre in meinem Fall "/Users/jankirenz". Es setzt sich beim Mac immer aus dem Ordner "Users" und einem Unterordner, der die Bezeichnung des Benutzernamens hat, zusammen. In Windows wäre es "/c/Users/jankirenz".    
+
+- *Prompt*: Das `%` (Terminal) oder `$` (Git Bash) Symbol am Ende der Zeile ist der sogenannte Prompt. Dieser signalisiert, dass die Kommandozeile bereit ist, einen Befehl entgegenzunehmen.
+
+
+
+## Projektumgebung
+
+Die folgenden Schritte sind für Windows (in Git Bash) und macOS (im Terminal) identisch.
+
+1.  **Standortbestimmung: Das Home-Verzeichnis.**
+    Nach dem Öffnen von Terminal oder Git Bash befindet man sich normalerweise im **Home-Verzeichnis**. Dies ist der persönliche Ordner im System. Das Tilde-Symbol `~` ist eine Abkürzung dafür. Mit dem folgenden Befehl wird der vollständige Pfad des Home-Verzeichnisses angezeigt (`pwd` steht für "print working directory"):
+
+    ```bash
+    pwd
+    ```
+
+2.  **Hauptordner erstellen.**
+    Nun wird mit `mkdir` (make directory) der Projektordner namens "toolkit-lab" erstellt:
+
+    ```bash
+    mkdir toolkit-lab
+    ```
+
+3.  **In den neuen Ordner wechseln.**
+    Mit `cd` (change directory) wird in den gerade erstellten Ordner navigiert:
+
+    ```bash
+    cd toolkit-lab
+    ```
+
+4.  **Unterordner erstellen.**
+    Jetzt werden die beiden Unterordner `code` und `data` angelegt. `mkdir` kann auch mehrere Ordner auf einmal erstellen:
+
+    ```bash
+    mkdir code data
+    ```
+
+5.  **Struktur überprüfen.**
+    Mit dem Befehl `ls` (list) wird der Inhalt des aktuellen Verzeichnisses angezeigt. Es sollten die beiden neuen Ordner zu sehen sein.
+
+    ```bash
+    ls
+    ```
+
+6.  **Terminal schließen.**
+    Das Fenster kann nun geschlossen oder der Befehl `exit` verwendet werden:
+
+    ```bash
+    exit
+    ```
+
+Damit wurde ein Hauptverzeichnis `toolkit-lab` mit den Unterverzeichnissen `code` und `data` eingerichtet.
+
+Als letzten Schritt lassen wir uns die Ordner im Windows-Explorer bzw. macOS Finder anzeigen.
+
+### Windows: Explorer nutzen
+
+Damit wir die Ordner in dem Windows-Explorer anzeigen können, gehen wir wie folgt vor:
+
+1. In dem Windows-Suchfenster Explorer eingeben und das Programm anklicken.
+
+2. In der linken Menüleiste im Explorer auf "Dieser PC" klicken.
+
+3. "Lokaler Datenträger (C:)" auswählen.
+
+4. Users anklicken.
+
+5. Den eigenen Benutzernamen auswählen.
+
+6. Hier sollte nun der Ordner toolkit-lab erscheinen.
+
+### macOS: Finder nutzen
+
+Um die Ordner im Finder anzeigen zu lassen, müssen wir zuerst eine Einstellung anpassen.
+
+1. Wir öffnen die Spotlight-Suche mit der Tastenkombination `Command + Leertaste`, geben Finder ein und wählen das Programm aus.  
+
+    ![Finder in Spotlight-Suche öffnen](../images/finder-spotlight.png){#fig-finder-spotlight width=50% fig-align="center"}
+
+
+2. In der oberen Mac-Menüleiste auf "Finder" gehen und auf Einstellungen klicken.  Finder Einstellungen ändern
+
+
+    ![Finder-Einstellungen](../images/finder-1.png){#fig-finder-einstellungen width=50%}
+
+3. In den Finder-Einstellungen auf "Seitenliste" klicken und den Benutzernamen auswählen. Damit wird dieser in der Seitenleiste des Finders angezeigt. Danach kann das Menü geschlossen werden (auf den roten Knopf oben links klicken).
+
+    ![Finder-Seitenleiste](../images/finder-2.png){#fig-finder-seitenleiste width=50%}
+
+
+4. In dem Finder-Fenster sehen wir in der linken Seitenleiste den Benutzername (in meinem Fall jankirenz). Wenn wir darauf klicken, sollte in dem Fenster rechts danaben der Ordner "toolkit-lab" angezeigt werden. Damit die Ansicht wie in dem Bild unten erscheint, muss in der oberen Taskleiste die sogenannte "Spaltenansicht" (Symbol mit drei Spalten) ausgewählt sein.  
+
+    ![Finder-Fenster](../images/finder-3.png){#fig-finder-fenster width=80%}
+
+
+
+<!-- 
 ## Projektumgebung in Windows
 
-### Eingabeaufforderung
+### Windows-Eingabeaufforderung
 
 Hier die Schritte, um die Ordner mit der Windows-Eingabeaufforderung ("Command Prompt" bzw. "cmd") zu erstellen.
 
@@ -140,168 +322,4 @@ Hier die Schritte, um die Ordner mit der Windows-Eingabeaufforderung ("Command P
     ```
 
 
-Wir haben damit ein Hauptverzeichnis `toolkit-lab` mit zwei Unterverzeichnissen eingerichtet: `code` für unsere Skripte und `data` zum Speichern von Datensätzen.
-
-### Explorer
-
-Damit wir die Ordner in dem Windows-Explorer anzeigen können, gehen wir wie folgt vor:
-
-1. In dem Windows-Suchfenster Explorer eingeben und das Programm anklicken.
-
-2. In der linken Menüleiste im Explorer auf "Dieser PC" klicken.
-
-3. "Lokaler Datenträger (C:)" auswählen.
-
-4. Users anklicken.
-
-5. Den eigenen Benutzernamen auswählen.
-
-6. Hier sollte nun der Ordner toolkit-lab erscheinen.
-
-## Projektumgebung auf Mac
-
-Hier die Schritte, um das Hauptverzeichnis und die Unterverzeichnisse mit dem Terminal (dies ist die Bezeichnung der Befehlszeile in macOS) in macOS zu erstellen.
-
-### Terminal öffnen
-
-1. Um das Terminal in macOS zu öffnen, nutzen wir die Spotlight-Suche. Wir öffnen diese mit der Tastenkombination `Command + Leertaste` (erst `Command` gedrückt halten und dann zusätzlich die `Leertaste` drücken).  
-
-    ![Tastenkombination für Spotlight-Suche](../images/keyboard.png){#fig-keyboard width="60%" .lightbox}
-
-
-2. In der Spotlight-Suche "Terminal" eingeben und Terminal-app anklicken. Nun sollte das Terminal sichtbar sein. 
-
-    ![Terminal auf dem Mac](../images/terminal.png){#fig-terminal3 width="60%"}
-
-
-3. Wir geben nun den Befehl `echo $SHELL` ein und bestätigen mit Eingabetaste um zu prüfen, welche Shell-Ausführung auf dem Gerät verwendet wird. Bis Oktober 2019 war bash (Bourne Again Shell) der Standard, danach hat Apple auf zsh umgestellt. 
-
-
-    ```bash
-    echo $SHELL
-    ```
-
-   :::{.callout-tip collapse="true" title="Erklärung der Befehle"}
-    - `echo`: Befehl, der Text auf der Konsole ausgibt.
-    - `$`: signalisiert der Shell, dass auf den Wert einer Variable zugegriffen werden soll. Der Name der entsprechenden Variable folgt direkt auf das `$`.
-    - `SHELL`: Dies ist eine Umgebungsvariable, die den Pfad zur aktuell verwendeten Shell speichert (z.B. /bin/bash, /bin/zsh).
-   :::
-
-    Wenn wir also $SHELL schreiben, sagt das der Shell: "Gib mir den Wert der Variable namens SHELL".
-
-    Ist die Ausgabe "/bin/zsh", wird bereits zsh verwendet. Wenn das Ergebnis "/bin/bash" ist, verwendet das Gerät derzeit noch bash. 
-
-    Falls aktuell noch bash verwendet wird, sollte zunächst auf zsh umgestellt werden:
-
-    a) Zuerst überprüfen, ob zsh bereits installiert ist:
-
-     ```bash
-    zsh --version
-     ```
-
-    Falls eine Version angezeigt wird, weiter mit c). Ansonsten zu Schritt b).
-
-    b) Falls zsh noch nicht installiert sein sollte, können die Apple Xcode Command Line Tools installiert werden, die zsh enthalten:
-
-
-    ```bash
-    xcode-select --install
-     ```
-
-    <!-- Falls der Befehl nicht ausgeführt werden kann, ist XCode auch [über den App-Store](https://apps.apple.com/de/app/xcode/id497799835?mt=12) erhältlich.  -->
-
-    c) Wenn zsh installiert ist, kann mit diesem Befehl direkt zu zsh gewechselt werden:
-
-    ```bash
-    chsh -s /bin/zsh
-    ```
-
-    Bei Bedarf Benutzerpasswort eingeben, wenn dazu aufgefordert wird. Dann das Terminal schließen und nochmals mit der Spotlight-Suche öffnen.
-
-    Hinweise zu dem Befehl: `chsh` ist der Befehl zum Ändern der Standard-Shell. Die Option `-s` bewirkt, dass die Shell für den aktuellen Benutzer geändert wird. Und /bin/zsh  ist der Pfad zur Z-Shell (zsh).
-
-
-### Terminal-Elemente
-
-Hier eine Erklärung zu den unterschiedlichen Elementen im Terminal, die in der zsh-Shell angezeigt werden:
-
-![Terminal mit zsh-Shell auf dem Mac](../images/terminal.png){#fig-terminal-zsh width="80%"}
-
-
-- *Benutzername*: Dieser steht ganz links in der ersten Zeile. In diesem Fall `jankirenz`. Es zeigt an, welcher Benutzer aktuell am System angemeldet ist.
-
-- *Hostname*: Der Hostname wird nach dem @-Symbol aufgeführt. Hier `kirenziMac`. Dies ist der Name des Computers, auf dem das Terminal läuft.  
-
-- *Aktuelles Verzeichnis (Pfad)*: Nach dem Hostnamen wird das Verzeichnis angezeigt, in welchem wir uns gerade befinden. In dem Bild isr das Tilde-Symbol `~` zu sehen. Dies ist ein Platzhalter und steht für das Home-Verzeichnis des aktuellen Benutzers. Der vollständige Pfad des Home-Verzeichnisses wäre in meinem Fall "/Users/jankirenz". Es setzt sich beim Mac immer aus dem Ordner "Users" und einem Unterordner, der die Bezeichnung des Benutzernamens hat, zusammen.    
-
-- *Prompt*: Das `%` Symbol am Ende der Zeile ist der sogenannte Prompt. Dieser signalisiert, dass das Terminal bereit ist, einen Befehl entgegenzunehmen.
-
-
-### Terminal-Befehle
-
-Als nächstes behandeln wie einige Terminal-Befehle.
-
-1. Zuerst verwenden wir den Befehl `pwd` (print working directory) und drücken die Eingabetaste, um den vollständigen Pfad des aktuellen Verzeichnisses anzuzeigen. 
-    
-    ```bash
-    pwd
-    ```
-
-    Wenn das Terminal gerade geöffnet wurde, sollte das aktuelle Verzeichnis das sogenannte Home-Verzeichnis sein (in meinem Fall lautet der Pfad "/Users/jankirenz", da mein Benutzername jankirenz heißt).
-
-2. Wir erstellen nun mit `mkdir` (make directory) einen neuen Ordner namens "toolkit-lab" in dem Home-Verzeichnis:
-
-    ```bash
-    mkdir toolkit-lab
-    ```
-
-3. Damit wir in dem neuen Ordner "toolkit-lab" die beiden Unterordner anlegen können, müssen wir zuerst in den Ordner navigieren. Mit `cd` (change directory) können wir in das Verzeichnis "toolkit-lab" navigieren:
-
-    ```bash
-    cd toolkit-lab
-    ```
-
-4. Wir verwenden nun nochmals `mkdir` (make directory), um die Ordner `code` und `data` zu erstellen. 
-
-    ```bash
-    mkdir code data
-    ```
-
-    Dieser Befehl erzeigt beide Ordner gleichzeitig.
-
-
-5. Mit dem Befehl `ls` (list) können wir die Verzeichnisse in dem aktuellen Pfad anzeigen lassen. 
-
-    ```bash
-    ls
-    ```
-
-    Da wir uns in dem Ordner "toolkit-lab" befinden, werden dir Ordner "code" und "data" angezeigt.  
-
-6. Das Terminal kann nun geschlossen werden.
-
-
-### Finder nutzen
-
-Um die Ordner auch im Finder anzeigen zu lassen, müssen wir zuerst eine Einstellung anpassen.
-
-1. Wir öffnen die Spotlight-Suche mit der Tastenkombination `Command + Leertaste`, geben Finder ein und wählen das Programm aus.  
-
-    ![Finder in Spotlight-Suche öffnen](../images/finder-spotlight.png){#fig-finder-spotlight width=50% fig-align="center"}
-
-
-2. In der oberen Mac-Menüleiste auf "Finder" gehen und auf Einstellungen klicken.  Finder Einstellungen ändern
-
-
-    ![Finder-Einstellungen](../images/finder-1.png){#fig-finder-einstellungen width=50%}
-
-3. In den Finder-Einstellungen auf "Seitenliste" klicken und den Benutzernamen auswählen. Damit wird dieser in der Seitenleiste des Finders angezeigt. Danach kann das Menü geschlossen werden (auf den roten Knopf oben links klicken).
-
-    ![Finder-Seitenleiste](../images/finder-2.png){#fig-finder-seitenleiste width=50%}
-
-
-4. In dem Finder-Fenster sehen wir in der linken Seitenleiste den Benutzername (in meinem Fall jankirenz). Wenn wir darauf klicken, sollte in dem Fenster rechts danaben der Ordner "toolkit-lab" angezeigt werden. Damit die Ansicht wie in dem Bild unten erscheint, muss in der oberen Taskleiste die sogenannte "Spaltenansicht" (Symbol mit drei Spalten) ausgewählt sein.  
-
-    ![Finder-Fenster](../images/finder-3.png){#fig-finder-fenster width=80%}
-
-Geschafft! Wir ein Hauptverzeichnis "toolkit-lab" mit zwei Unterverzeichnissen eingerichtet: "code" für unsere Code-Dateien und "data" zum Speichern von Datensätzen.
+Wir haben damit ein Hauptverzeichnis `toolkit-lab` mit zwei Unterverzeichnissen eingerichtet: `code` für unsere Skripte und `data` zum Speichern von Datensätzen. -->

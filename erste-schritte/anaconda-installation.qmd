@@ -26,9 +26,11 @@ Die Anaconda Distribution ermöglicht es, schnell und unkompliziert mit Data Sci
 
 ## Anaconda in Windows installieren
 
+Hier die Schritte zur Installation (weitere Hinweise dazu finden sich auf [dieser Anaconda-Seite](https://www.anaconda.com/docs/getting-started/anaconda/install#basic-install-instructions))
+
 1. Zunächst besuchen wir die [Anaconda-Download-Seite](https://www.anaconda.com/download/success).
-2. Hier wählen wir die Windows-Version aus.
-3. Grafischen Installer herunterladen.
+2. Hier wählen wir die Windows-Version des Distribution Installers aus.
+3. Grafischen Distribution Installer herunterladen.
 4. Nach dem Download klicken wir mit der rechten Maustaste auf den Installer und wählen "Als Administrator ausführen".
 5. Im Setup-Assistenten klicken wir uns durch die verschiedenen Bildschirme:
    - Wir stimmen den Geschäftsbedingungen zu.
@@ -38,6 +40,7 @@ Die Anaconda Distribution ermöglicht es, schnell und unkompliziert mit Data Sci
    - Ebenso aktivieren wir "Anaconda als meine Standard-Python-Version registrieren".
 6. Mit einem Klick auf "Installieren" starten wir den Installationsprozess.
 7. Nach Abschluss der Installation klicken wir auf "Fertig stellen".
+
 
 
 ### Anaconda Command Prompt 
@@ -69,8 +72,10 @@ Start > Alle Programme > Anaconda3 > Anaconda Prompt
 
 ## Anaconda auf Mac installieren
 
+Hier die Schritte zur Installation (weitere Hinweise dazu finden sich auf [dieser Anaconda-Seite](https://www.anaconda.com/docs/getting-started/anaconda/install#basic-install-instructions))
+
 1. Wir öffnen die [Anaconda-Download-Seite](https://www.anaconda.com/download/success).
-2. Hier wählen wir die passende macOS-Version aus (hier eine Übersicht über die [Mac-Ausführungen](https://support.apple.com/en-us/116943)):
+2. Hier wählen wir die passende Anaconda Distribution macOS-Version aus (hier eine Übersicht über die [Mac-Ausführungen](https://support.apple.com/en-us/116943)):
    - Für Geräte mit Apple-Chip wählen wir "Apple Silicon".
    - Für ältere Geräte wählen wir die Intel-Version.
 3. Wir laden den grafischen Installer herunter.
@@ -90,7 +95,7 @@ In diesem Abschnitt wollen wir sicherzustellen, dass Conda korrekt installiert w
 
 Zunächst öffnen wir die Kommandozeile:
 
-- **Windows**: Anaconda Command Prompt (Achtung: nicht die reguläre Eingabeaufforderung öffnen)
+- **Windows**: Anaconda Command Prompt 
 - **Mac**: Terminal
 
 In der Kommandozeile sollte das Wort `base` sichtbar sein. Die `base`-Umgebung ist die Standardumgebung, die bei der Installation von Anaconda erstellt wird. Sie enthält eine Vielzahl vorinstallierter Pakete.
