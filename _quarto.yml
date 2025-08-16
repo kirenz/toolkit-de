@@ -48,6 +48,11 @@ book:
         - vscode/visual-studio-code-installation.qmd
         - vscode/visual-studio-code-basics.qmd
 
+    - part: uv/index.qmd
+      chapters:
+        - uv/uv.qmd
+        - uv/uv-projekt.qmd
+
     - part: daten/index.qmd
       chapters:
         - text: "CSV"      

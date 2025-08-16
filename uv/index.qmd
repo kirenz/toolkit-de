@@ -1,0 +1,7 @@
+# uv 
+
+uv ist ein moderner Paketmanager für Python, der sich durch seine Geschwindigkeit und Effizienz auszeichnet und insbesondere bei komplexeren Python-Projekten verwendet werden kann. 
+
+:::{.callout-note}
+uv zielt darauf ab, die Verwaltung von Python-Paketen und -Projekten zu vereinfachen und kann als Alternative zu Anaconda genutzt werden. 
+:::

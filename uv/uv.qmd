@@ -1,6 +1,6 @@
-# Python-Projektmanagement mit uv
+# Projektmanagement mit uv
 
-uv ist ein relativ neuer Paketmanager für Python, der sich durch seine Geschwindigkeit und Effizienz auszeichnet. Er wurde in der Programmiersprache Rust entwickelt und zielt darauf ab, die Verwaltung von Python-Paketen und -Projekten zu vereinfachen. 
+uv ist ein Paketmanager für Python, der sich durch seine Geschwindigkeit und Effizienz auszeichnet. Er wurde in der Programmiersprache Rust entwickelt und zielt darauf ab, die Verwaltung von Python-Paketen und -Projekten zu vereinfachen. 
 
 uv verfolgt das Ziel, ein umfassendes Werkzeug für Python zu bieten, das alle Aspekte der Python-Entwicklung nahtlos miteinander verbindet. Es ermöglicht die Python-Installation und bietet eine einheitliche und schnelle Lösung für die Verwaltung von Paket-Abhängigkeiten, virtuellen Umgebungen und Python-Versionen. Typischerweise ist uv dabei 10-100x schneller als `pip`. 
 
@@ -15,39 +15,35 @@ uv bietet eine Vielzahl von Funktionen, die die Arbeit mit Python-Projekten erle
 * **Kompatibilität mit `pip`:** uv bietet eine `pip`-kompatible Schnittstelle und kann als Ersatz für `pip`, `pip-tools` und `virtualenv` verwendet werden.
 
 
-
 ## Installation von uv
 
-### Windows
-
-1. PowerShell als Administrator öffnen
-2. Folgenden Befehl eingeben und Enter drücken:
-
-```powershell
-curl -LsSf https://astral.sh/uv/install.ps1 | powershell -c -
-```
-3. Warten, bis die Installation abgeschlossen ist
-
-### Mac und Linux
-
-1. Terminal öffnen
+1. Terminal oder Git Bash öffnen
 2. Folgenden Befehl eingeben und Enter drücken:
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
+
+:::{.callout-important title="Falls curl nicht installiert ist" collapse="true"}
+Falls curl nicht vorhanden sein sollte, kann alternativ auch wget genutzt werden:
+
+```bash
+wget -qO- https://astral.sh/uv/install.sh | sh
+```
+:::
+
 3. Warten, bis die Installation abgeschlossen ist
 
 ### Installation überprüfen
 
 Nach der Installation sollte man überprüfen, ob uv korrekt installiert wurde:
 
-1. Ein neues Terminal-Fenster öffnen
+1. Ein neues Terminal- bzw. Git-Bash-Fenster öffnen
 2. Folgenden Befehl eingeben:
 ```bash
 uv --version
 ```
-3. Es sollte eine Versionsnummer angezeigt werden (z.B. `0.5.11`)
+3. Es sollte eine Versionsnummer angezeigt werden (z.B. `0.6.8`)
 
 ::: {.callout-important}
-Falls die Meldung "Command not found" erscheint, muss das Terminal neu gestartet werden.
+Falls die Meldung "Command not found" erscheint, sollte die Kommandozeile neu gestartet werden.
 :::
