@@ -9,7 +9,7 @@
 <meta name="author" content="Jan Kirenz">
 <meta name="description" content="Programming Toolkit für Data Science, AI &amp; Analytics">
 
-<title>GitHub – Data Science, AI &amp; Analytics Toolkit</title>
+<title>18&nbsp; Erstellung eines Projekts mit uv – Data Science, AI &amp; Analytics Toolkit</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +22,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -32,8 +67,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../github/github-git.html" rel="next">
-<link href="../daten/mongodb.html" rel="prev">
+<link href="../daten/index.html" rel="next">
+<link href="../uv/uv.html" rel="prev">
 <link href="..//images/logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -86,7 +121,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../github/index.html">GitHub</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../uv/index.html">uv</a></li><li class="breadcrumb-item"><a href="../uv/uv-projekt.html"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Erstellung eines Projekts mit uv</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Suchen" onclick="window.quartoOpenSearch();">
@@ -261,7 +296,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../uv/uv-projekt.html" class="sidebar-item-text sidebar-link">
+  <a href="../uv/uv-projekt.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Erstellung eines Projekts mit uv</span></span></a>
   </div>
 </li>
@@ -316,7 +351,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../github/index.html" class="sidebar-item-text sidebar-link active">
+            <a href="../github/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">GitHub</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -360,15 +395,28 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Inhaltsverzeichnis</h2>
+   
+  <ul>
+  <li><a href="#projekterstellung-mit-uv-init" id="toc-projekterstellung-mit-uv-init" class="nav-link active" data-scroll-target="#projekterstellung-mit-uv-init"><span class="header-section-number">18.1</span> Projekterstellung mit uv init</a></li>
+  <li><a href="#virtuelle-umgebung-mit-uv-sync" id="toc-virtuelle-umgebung-mit-uv-sync" class="nav-link" data-scroll-target="#virtuelle-umgebung-mit-uv-sync"><span class="header-section-number">18.2</span> Virtuelle Umgebung mit uv sync</a></li>
+  <li><a href="#pakete-installieren" id="toc-pakete-installieren" class="nav-link" data-scroll-target="#pakete-installieren"><span class="header-section-number">18.3</span> Pakete installieren</a></li>
+  <li><a href="#uv-in-vs-code" id="toc-uv-in-vs-code" class="nav-link" data-scroll-target="#uv-in-vs-code"><span class="header-section-number">18.4</span> uv in VS Code</a>
+  <ul class="collapse">
+  <li><a href="#python-interpreter-auswählen" id="toc-python-interpreter-auswählen" class="nav-link" data-scroll-target="#python-interpreter-auswählen"><span class="header-section-number">18.4.1</span> Python-Interpreter auswählen</a></li>
+  <li><a href="#nutzung-des-integrierten-terminals" id="toc-nutzung-des-integrierten-terminals" class="nav-link" data-scroll-target="#nutzung-des-integrierten-terminals"><span class="header-section-number">18.4.2</span> Nutzung des integrierten Terminals</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../uv/index.html">uv</a></li><li class="breadcrumb-item"><a href="../uv/uv-projekt.html"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Erstellung eines Projekts mit uv</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">GitHub</h1>
+<h1 class="title"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Erstellung eines Projekts mit uv</span></h1>
 </div>
 
 
@@ -385,16 +433,166 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><a href="https://github.com/">GitHub</a> bietet Hosting für Softwareentwicklungsprojekte, die Git, ein Versionskontrollsystem, verwenden.</p>
-<p><br></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/w3jLJU7DT5E" title="YouTube-Video-Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
-</iframe>
-<p><br></p>
-<p>GitHub ist wie ein kollaborativer Arbeitsbereich, in dem mehrere Entwickler ihre Projekte speichern, verwalten und Änderungen verfolgen können, ähnlich wie eine Online-Bibliothek digitaler Projekte.</p>
-<p>Es ist eine Plattform, die es Entwicklern ermöglicht, gemeinsam an Softwareprojekten zu arbeiten, indem sie Git, ein verteiltes Versionskontrollsystem, nutzen. Mit GitHub können mehrere Entwickler gleichzeitig an verschiedenen Teilen eines Projekts arbeiten, Änderungen verfolgen und den Projektverlauf verwalten. Dies macht die Zusammenarbeit effizienter und die Verwaltung von Codeänderungen transparenter.</p>
-<p>Zusätzlich zu den grundlegenden Funktionen der Versionskontrolle bietet GitHub zahlreiche Tools und Features, die die Softwareentwicklung erleichtern. GitHub ist daher nicht nur ein Speicherort für Code, sondern ein umfassendes Werkzeug für die kollaborative Entwicklung und das Projektmanagement.</p>
+<p>uv macht die Python-Projektinitialisierung zu einem einfachen Prozess. Mit wenigen Befehlen erhalten wir eine vollständig konfigurierte Entwicklungsumgebung mit der richtigen Python-Version.</p>
+<section id="projekterstellung-mit-uv-init" class="level2" data-number="18.1">
+<h2 data-number="18.1" class="anchored" data-anchor-id="projekterstellung-mit-uv-init"><span class="header-section-number">18.1</span> Projekterstellung mit uv init</h2>
+<p>Zunächst erstellen wir ein neues Projekt in der Kommandozeile (Terminal bzw. Git Bash). Wir erstellen das Projekt wieder im Home-Verzeichnis.</p>
+<div class="callout callout-style-simple callout-note callout-titled" title="Installation in einem anderen Ordner">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Installation in einem anderen Ordner
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Um das Projekt in einem anderen Ordner zu installieren, einfach zuerst in das gewünschte Verzeichnis navigieren, (z. B. <code>cd Documents</code>).</p>
+</div>
+</div>
+<p>Wir nutzen den Befehl <code>uv init</code> und geben den gewünschten Namen (hier: <code>mein-projekt</code>) und die Python-Version (hier <code>3.11</code>) an:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> init mein-projekt <span class="at">--python</span> 3.11</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Damit wird ein neuer Ordner mit der Bezeichnung “mein-projekt” angelegt.</p>
+<p>Wir navigieren nun in diesen Ordner:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> mein-projekt</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Und verwenden <code>ls -a</code> um alle darin enthaltenen Dateien anzuzeigen (auch versteckte Ordner und Dateien)</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> <span class="at">-a</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Hier einige Hinweise zu den Inhalten:</p>
+<pre><code>mein-projekt/
+├── README.md         # Projektdokumentation
+└── pyproject.toml    # Projektkonfiguration
+├── main.py           # Python-Beispieldatei
+├── .python-version   # Python-Versionsangabe
+├── .gitignore        # Git-Ausschlussliste
+└── .git/             # Git-Metadate</code></pre>
+<p><code>README.md</code> dient der Dokumentation, die <code>pyproject.toml</code> enthält die Projektkonfiguration und <code>main.py</code> ist eine Beispieldatei zum Einstieg.</p>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Eine <strong>TOML-Datei</strong> ist ein Konfigurationsdateiformat, das für “Tom’s Obvious, Minimal Language” steht. Es wurde entwickelt, um menschenlesbar und einfach zu bearbeiten zu sein, während es gleichzeitig strukturiert und maschinenlesbar ist. TOML wird oft in Projekten verwendet, die eine unkomplizierte und klare Konfigurationsdatei benötigen.</p>
+</div>
+</div>
+</div>
+<p>uv erstellt auch einige verborgene Dateien (sogenannte “dotfiles”), die wichtige Funktionen erfüllen. Diese Dateien beginnen mit einem Punkt und sind in normalen Verzeichnisansichten oft ausgeblendet.</p>
+<p>Die <code>.gitignore</code>-Datei ist eine wichtige Datei für die Arbeit mit Git. Sie enthält Regeln, welche Dateien nicht unter Versionskontrolle gestellt werden sollen. Zudem wurde ein .git-Ordner erstellt (mehr zu Git in einem anderen Kapitel). Eine weitere verborgene Datei ist die <code>.python-version</code>. Sie enthält nur eine einzige Zeile, die verwendete Python-Version.</p>
+</section>
+<section id="virtuelle-umgebung-mit-uv-sync" class="level2" data-number="18.2">
+<h2 data-number="18.2" class="anchored" data-anchor-id="virtuelle-umgebung-mit-uv-sync"><span class="header-section-number">18.2</span> Virtuelle Umgebung mit uv sync</h2>
+<p>Damit eine virtuelle Python-Umgebung für unser Projekt erstellt wird, initialisieren wir das Projekt mit dem Befehl <code>uv sync</code> (wir könnten stattdessen auch <code>uv run</code> nutzen) :</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> sync</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Dadurch wird ein Ordner mit der Bezeichnung <code>.venv</code> (für virtual environment) in dem Projekt erzeugt.</p>
+<div class="callout callout-style-simple callout-note callout-titled" title="Virtuelle Umgebung .venv">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Virtuelle Umgebung .venv
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Das <code>.venv</code>-Verzeichnis enthält eine isolierte Python-Umgebung speziell für unser Projekt. uv richtet diese automatisch mit der angegebenen Python-Version ein.</p>
+<p>Dies bedeutet:</p>
+<ul>
+<li>Die gewünschte Python-Version wird automatisch heruntergeladen und installiert</li>
+<li>Die Umgebung ist sofort einsatzbereit für die Paketinstallation</li>
+<li>Andere Projekte bleiben von unseren Paketinstallationen unberührt</li>
+</ul>
+<p>Ohne aktivierte virtuelle Umgebung werden Pakete weiterhin “global” installiert, d.h. in die allgemeine Python-Umgebung. Mit aktivierter virtueller Umgebung werden Pakete nur in diese spezifische Umgebung installiert.</p>
+</div>
+</div>
+</div>
+<p>Außerdem hat uv eine <code>uv.lock</code>-Datei erstellt. Dies ist eine TOML-Datei, wird jedoch von uv verwaltet und sollte nicht manuell bearbeitet werden.</p>
+<div class="callout callout-style-simple callout-note callout-titled" title="Was ist uv.lock?">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Was ist uv.lock?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Die Datei <code>uv.lock</code> ist eine <em>universelle</em> bzw. <em>plattformübergreifende</em> Lockfile, die alle Pakete erfasst, die installiert wurden. Eine Lockfile stellt sicher, dass Personen, die mit verschiedenen Geräten an einem Projekt arbeiten, immer die gleichen Paketversionen nutzen.</p>
+<p>Die Lockfile wird während uv-Aufrufen erstellt und aktualisiert, die die Projektumgebung nutzen, d.h. <code>uv sync</code> und <code>uv run</code>. Die Lockfile kann auch explizit über <code>uv lock</code> aktualisiert werden.</p>
+<p>Im Gegensatz zur <code>pyproject.toml</code>, die zur Spezifikation der allgemeinen Projektanforderungen dient, enthält die Lockfile die exakten Paket-Versionen, die in der Projektumgebung installiert sind. Diese Datei sollte in die Versionskontrolle aufgenommen werden, um konsistente und reproduzierbare Installationen über verschiedene Systeme hinweg zu ermöglichen.</p>
+</div>
+</div>
+</div>
+<p>Damit wir die virtuelle Umgebung nutzen können, muss sie zunächst aktiviert werden:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> .venv/bin/activate</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Wir können nun prüfen, ob tatsächlich die Python-Version 3.11 installiert wurde. Dafür nutzen mir den Befehl <code>uv run</code> (damit wird immer unsere uv-Python-Umgebung genutzt, selbst wenn wir vergessen haben sollten, die Umgebung zuvor zu aktivieren)</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> run python <span class="at">--version</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Führen wir außerdem die Beispieldatei main.py aus, um sicherzustellen, dass alles funktioniert:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> run python main.py</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Es sollte eine “Hello from mein-projekt!” Nachricht angezeigt werden</p>
+</section>
+<section id="pakete-installieren" class="level2" data-number="18.3">
+<h2 data-number="18.3" class="anchored" data-anchor-id="pakete-installieren"><span class="header-section-number">18.3</span> Pakete installieren</h2>
+<p>Nach der Initialisierung können wir mit der Entwicklung beginnen. Da uv bereits die virtuelle Umgebung eingerichtet hat, können wir nun Pakete hinzufügen.</p>
+<p>In diesem Beispiel nutzen wir <code>uv add</code> um die Pakete pandas und openai zu installieren:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> add pandas openai </span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>uv aktualisiert bei jedem <code>uv add</code>-Befehl automatisch die <code>pyproject.toml</code> und uv.lock-Datei und installiert die Pakete in die bereits vorhandene virtuelle Umgebung.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="uv-in-vs-code" class="level2" data-number="18.4">
+<h2 data-number="18.4" class="anchored" data-anchor-id="uv-in-vs-code"><span class="header-section-number">18.4</span> uv in VS Code</h2>
+<p>Zur Arbeit in Visual Studio Code (VS Code) das Projekt öffnen.</p>
+<ol type="1">
+<li>VS Code starten</li>
+<li>Im Menü oben links „Datei“ wählen</li>
+<li>„Ordner öffnen…“ auswählen</li>
+<li>Ordner <code>mein-projekt</code> wählen</li>
+</ol>
+<section id="python-interpreter-auswählen" class="level3" data-number="18.4.1">
+<h3 data-number="18.4.1" class="anchored" data-anchor-id="python-interpreter-auswählen"><span class="header-section-number">18.4.1</span> Python-Interpreter auswählen</h3>
+<p>Damit VS Code die richtige Python-Umgebung nutzt, den Interpreter der virtuellen Umgebung auswählen:</p>
+<ul>
+<li>Befehlspalette öffnen: <code>Strg</code>+<code>Shift</code>+<code>P</code> (Windows/Linux) bzw. <code>Cmd</code>+<code>Shift</code>+<code>P</code> (macOS)</li>
+<li>„Python: Interpreter auswählen“ eingeben</li>
+<li>Interpreter wählen (Python 3.11.xx (mein-projekt)):
+<ul>
+<li>macOS/Linux: <code>.venv/bin/python</code></li>
+<li>Windows: <code>.venv\Scripts\python.exe</code></li>
+</ul></li>
+<li>Falls nicht sichtbar: „Interpreter durchsuchen…“ wählen und den Pfad manuell angeben</li>
+</ul>
+</section>
+<section id="nutzung-des-integrierten-terminals" class="level3" data-number="18.4.2">
+<h3 data-number="18.4.2" class="anchored" data-anchor-id="nutzung-des-integrierten-terminals"><span class="header-section-number">18.4.2</span> Nutzung des integrierten Terminals</h3>
+<p>Zuerst wird der Terminal-Bereich geöffnet, falls dieser noch nicht sichtbar ist.</p>
+<ul>
+<li>Über das Menü: “Terminal” auswählen und “Neues Terminal” anklicken.</li>
+</ul>
+<p>Im nun sichtbaren Terminal-Bereich befindet sich rechts eine Leiste mit Symbolen. Mit der Maus in den Terminal-Bereich navigieren und:</p>
+<ul>
+<li>Ein Klick auf den kleinen <strong>Pfeil nach unten (<code>v</code>)</strong> neben dem Plus-Symbol (<code>+</code>) öffnet eine Liste aller verfügbaren Terminal-Profile.
+<ul>
+<li>Aus dieser Liste wird <strong>Git Bash</strong> (Windows) oder <strong>zsh</strong> (macOS) ausgewählt.</li>
+</ul></li>
+</ul>
+<p>Daraufhin wird ein neuer Tab im Terminal-Bereich geöffnet.</p>
+<p>Beispieldatei mit uv ausführen (dadurch wird garantiert die Projektumgebung verwendet):</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> run python main.py</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -798,13 +996,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../daten/mongodb.html" class="pagination-link" aria-label="MongoDB">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">MongoDB</span></span>
+      <a href="../uv/uv.html" class="pagination-link" aria-label="Projektmanagement mit uv">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Projektmanagement mit uv</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../github/github-git.html" class="pagination-link" aria-label="Git">
-        <span class="nav-page-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Git</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../daten/index.html" class="pagination-link" aria-label="Daten &amp; Datenbanken">
+        <span class="nav-page-text">Daten &amp; Datenbanken</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
