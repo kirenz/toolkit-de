@@ -93,9 +93,9 @@ Folgende Schritte führen durch den Prozess der Repository-Erstellung:
     - Description: *Wir verzichten hier auf eine Beschreibung*. Dieses Feld hilft anderen zu verstehen, worum es bei dem Projekt geht.
     - Public or Private: Wir wählen  *Public*. Hier können wir entscheiden, ob das Repository öffentlich (für jeden sichtbar) oder privat (nur für uns und Personen, denen wir explizit Zugriff gewähren) sein soll.
     
-    :::{.callout-tip}
-    Repository-Namen sollten prägnant und beschreibend sein, um den Inhalt oder Zweck des Projekts auf den ersten Blick zu vermitteln.
-    :::
+:::{.callout-tip}
+Repository-Namen sollten prägnant und beschreibend sein, um den Inhalt oder Zweck des Projekts auf den ersten Blick zu vermitteln.
+:::
     
 
 5. Repository initialisieren
@@ -103,15 +103,15 @@ Folgende Schritte führen durch den Prozess der Repository-Erstellung:
     
     - .gitignore: Die Python-Vorlage wählen. 
     
-    :::{.callout-note}
-    Eine .gitignore-Datei definiert, welche Dateien und Verzeichnisse von der Versionskontrolle ausgeschlossen werden sollen, z.B. temporäre Dateien oder vertrauliche Informationen.
-    :::
+:::{.callout-note}
+Eine .gitignore-Datei definiert, welche Dateien und Verzeichnisse von der Versionskontrolle ausgeschlossen werden sollen, z.B. temporäre Dateien oder vertrauliche Informationen.
+:::
     
     - License: Die MIT License auswählen. 
     
-    :::{.callout-tip}
-    Die Wahl einer Lizenz legt fest, wie andere Ihr Projekt nutzen, modifizieren und teilen dürfen. Die MIT-Lizenz ist besonders permissiv und erlaubt eine breite Nutzung, solange der ursprüngliche Copyright-Hinweis beibehalten wird.
-    :::
+:::{.callout-tip}
+Die Wahl einer Lizenz legt fest, wie andere Ihr Projekt nutzen, modifizieren und teilen dürfen. Die MIT-Lizenz ist besonders permissiv und erlaubt eine breite Nutzung, solange der ursprüngliche Copyright-Hinweis beibehalten wird.
+:::
 
 6. Repository erstellen
     - Auf die grüne Schaltfläche "Create repository" klicken, um das neue Repository auf GitHub zu generieren.
@@ -134,9 +134,9 @@ Schritte zum Klonen eines Repositorys:
     - In GitHub Desktop öffnet sich ein Dialogfeld zur Bestätigung des lokalen Pfads für das Repository.
     - Das Verzeichnis `toolkit-lab` auf dem lokalen Rechner als Zielort für das `hello-github`-Repository auswählen. 
 
-    :::{.callout-warning}
-    Es ist wichtig sicherzustellen, dass das gewählte Verzeichnis nicht mit Cloud-Speicherdiensten wie iCloud, OneDrive oder Google Drive synchronisiert wird. Eine Synchronisierung mit diesen Diensten kann zu Konflikten und Problemen mit dem Git-Repository führen.
-    :::
+:::{.callout-warning}
+Es ist wichtig sicherzustellen, dass das gewählte Verzeichnis nicht mit Cloud-Speicherdiensten wie iCloud, OneDrive oder Google Drive synchronisiert wird. Eine Synchronisierung mit diesen Diensten kann zu Konflikten und Problemen mit dem Git-Repository führen.
+:::
 
     - Auf "Clone" klicken, um das `hello-github`-Repository auf den lokalen Rechner herunterzuladen.
 
