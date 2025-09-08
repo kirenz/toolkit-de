@@ -478,38 +478,67 @@ ul.task-list li input[type="checkbox"] {
 <p>GitHub-Repositories können mit essentiellen Dateien wie README, <code>.gitignore</code> und einer Lizenz initialisiert werden, um dem Projekt von Anfang an Struktur und Klarheit zu verleihen.</p>
 <p>Folgende Schritte führen durch den Prozess der Repository-Erstellung:</p>
 <ol type="1">
-<li><p>Anmelden bei GitHub</p>
+<li>Anmelden bei GitHub
 <ul>
 <li>Die <a href="https://github.com">GitHub-Website</a> im Webbrowser öffnen.</li>
 <li>Mit dem GitHub-Konto anmelden. Falls noch kein Konto vorhanden ist, muss zunächst eines erstellt werden (siehe <a href="../github/github-setup.html">GitHub Setup</a>).</li>
 </ul></li>
-<li><p>Zum Dashboard navigieren</p>
+<li>Zum Dashboard navigieren
 <ul>
 <li>Nach erfolgreicher Anmeldung wird das persönliche GitHub-Dashboard angezeigt.</li>
 </ul></li>
-<li><p>Neues Repository erstellen</p>
+<li>Neues Repository erstellen
 <ul>
 <li>Auf das +-Symbol in der oberen rechten Ecke klicken und “New Repository” aus dem Dropdown-Menü wählen.</li>
 </ul></li>
-<li><p>Repository-Details eingeben</p>
+<li>Repository-Details eingeben
 <ul>
 <li>Repository template: “No template” auswählen.</li>
 <li>Repository name: Den Namen <code>hello-github</code> eingeben.</li>
 <li>Description: <em>Wir verzichten hier auf eine Beschreibung</em>. Dieses Feld hilft anderen zu verstehen, worum es bei dem Projekt geht.</li>
 <li>Public or Private: Wir wählen <em>Public</em>. Hier können wir entscheiden, ob das Repository öffentlich (für jeden sichtbar) oder privat (nur für uns und Personen, denen wir explizit Zugriff gewähren) sein soll.</li>
-</ul>
-<p>:::{.callout-tip} Repository-Namen sollten prägnant und beschreibend sein, um den Inhalt oder Zweck des Projekts auf den ersten Blick zu vermitteln. :::</p></li>
-<li><p>Repository initialisieren</p>
+</ul></li>
+</ol>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Repository-Namen sollten prägnant und beschreibend sein, um den Inhalt oder Zweck des Projekts auf den ersten Blick zu vermitteln.</p>
+</div>
+</div>
+</div>
+<ol start="5" type="1">
+<li>Repository initialisieren
 <ul>
 <li><p>README file: Das Kontrollkästchen “Add a README file” aktivieren. Eine README-Datei dient als Einstiegspunkt und Übersicht für das Projekt. Sie sollte eine kurze Beschreibung, Installationsanweisungen und Nutzungshinweise enthalten.</p></li>
 <li><p>.gitignore: Die Python-Vorlage wählen.</p></li>
-</ul>
-<p>:::{.callout-note} Eine .gitignore-Datei definiert, welche Dateien und Verzeichnisse von der Versionskontrolle ausgeschlossen werden sollen, z.B. temporäre Dateien oder vertrauliche Informationen. :::</p>
-<ul>
-<li>License: Die MIT License auswählen.</li>
-</ul>
-<p>:::{.callout-tip} Die Wahl einer Lizenz legt fest, wie andere Ihr Projekt nutzen, modifizieren und teilen dürfen. Die MIT-Lizenz ist besonders permissiv und erlaubt eine breite Nutzung, solange der ursprüngliche Copyright-Hinweis beibehalten wird. :::</p></li>
-<li><p>Repository erstellen</p>
+</ul></li>
+</ol>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Eine .gitignore-Datei definiert, welche Dateien und Verzeichnisse von der Versionskontrolle ausgeschlossen werden sollen, z.B. temporäre Dateien oder vertrauliche Informationen.</p>
+</div>
+</div>
+</div>
+<pre><code>- License: Die MIT License auswählen. </code></pre>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Die Wahl einer Lizenz legt fest, wie andere Ihr Projekt nutzen, modifizieren und teilen dürfen. Die MIT-Lizenz ist besonders permissiv und erlaubt eine breite Nutzung, solange der ursprüngliche Copyright-Hinweis beibehalten wird.</p>
+</div>
+</div>
+</div>
+<ol start="6" type="1">
+<li>Repository erstellen
 <ul>
 <li>Auf die grüne Schaltfläche “Create repository” klicken, um das neue Repository auf GitHub zu generieren.</li>
 </ul></li>
@@ -520,26 +549,35 @@ ul.task-list li input[type="checkbox"] {
 <p>Das Klonen eines Repositorys erzeugt eine lokale Kopie eines Remote-Repositorys auf dem eigenen Computer. Dies ermöglicht offline Arbeit an den Projektdateien, lokale Änderungen und anschließende Synchronisation mit dem Remote-Repository auf GitHub.</p>
 <p>Schritte zum Klonen eines Repositorys:</p>
 <ol type="1">
-<li><p>GitHub öffnen</p>
+<li>GitHub öffnen
 <ul>
 <li><a href="https://github.com">GitHub</a> im Webbrowser öffnen und zum <code>hello-github</code>-Repository navigieren.</li>
 <li>Auf der Hauptseite des Repositorys die grüne Schaltfläche “Code” anklicken.</li>
 </ul></li>
-<li><p>Klon-Option auswählen</p>
+<li>Klon-Option auswählen
 <ul>
 <li>Im Dropdown-Menü “Open with GitHub Desktop” wählen. Dies startet GitHub Desktop und initiiert den Klonvorgang.</li>
 <li>Bei Aufforderung durch den Browser die Öffnung von GitHub Desktop bestätigen.</li>
 </ul></li>
-<li><p>Mit GitHub Desktop klonen</p>
+<li>Mit GitHub Desktop klonen
 <ul>
 <li>In GitHub Desktop öffnet sich ein Dialogfeld zur Bestätigung des lokalen Pfads für das Repository.</li>
 <li>Das Verzeichnis <code>toolkit-lab</code> auf dem lokalen Rechner als Zielort für das <code>hello-github</code>-Repository auswählen.</li>
-</ul>
-<p>:::{.callout-warning} Es ist wichtig sicherzustellen, dass das gewählte Verzeichnis nicht mit Cloud-Speicherdiensten wie iCloud, OneDrive oder Google Drive synchronisiert wird. Eine Synchronisierung mit diesen Diensten kann zu Konflikten und Problemen mit dem Git-Repository führen. :::</p>
-<ul>
-<li>Auf “Clone” klicken, um das <code>hello-github</code>-Repository auf den lokalen Rechner herunterzuladen.</li>
 </ul></li>
-<li><p>Repository in GitHub Desktop öffnen</p>
+</ol>
+<div class="callout callout-style-simple callout-warning">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Es ist wichtig sicherzustellen, dass das gewählte Verzeichnis nicht mit Cloud-Speicherdiensten wie iCloud, OneDrive oder Google Drive synchronisiert wird. Eine Synchronisierung mit diesen Diensten kann zu Konflikten und Problemen mit dem Git-Repository führen.</p>
+</div>
+</div>
+</div>
+<pre><code>- Auf "Clone" klicken, um das `hello-github`-Repository auf den lokalen Rechner herunterzuladen.</code></pre>
+<ol start="4" type="1">
+<li>Repository in GitHub Desktop öffnen
 <ul>
 <li>Nach Abschluss des Klonvorgangs öffnet GitHub Desktop automatisch das <code>hello-github</code>-Repository.</li>
 </ul></li>
